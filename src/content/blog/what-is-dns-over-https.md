@@ -1,0 +1,244 @@
+---
+title: 'What is DNS over HTTPS (DoH)? Your Privacy, Explained.'
+description: 'DNS over HTTPS (DoH) encrypts your website lookups, which are essentially the requests your computer sends to find a website''s address. Think of it like putting your destination in a sealed envelope instead of shouti...'
+pubDate: 2026-06-09
+author: 'OllaVPN Team'
+tags: ['beginner-basics']
+---
+
+2026 · 07 · 15 · PRIVACY & SECURITY · 4,963 WORDS
+
+# What is DNS over HTTPS (DoH)? Your Privacy, Explained.
+
+You've probably heard the term "DNS" floating around, especially when privacy comes up. And then there's "DNS over HTTPS" or "DoH," which sounds super technical. Don't worry, it's not as complicated as it sounds. Think of it as a crucial upgrade to how your computer finds websites, adding a significant layer of privacy to your online life. This article will break down exactly what DoH is, why it matters to you, and how it protects your internet activity from prying eyes. It's not just for tech experts; it's something that impacts everyone who uses the internet.
+
+TL;DR - The Short Answer
+
+DNS over HTTPS (DoH) encrypts your website lookups, which are essentially the requests your computer sends to find a website's address. Think of it like putting your destination in a sealed envelope instead of shouting it out. This stops snoopers from seeing exactly which sites you're trying to visit before you even get there.
+
+Without DoH, your internet provider (ISP) or anyone watching your network can see every single website you try to access, even if the website itself is encrypted. They can use this information to track you, block content, or even sell your browsing habits to advertisers. It's a key piece of your online privacy puzzle.
+
+A good VPN, like OllaVPN, handles DoH automatically and securely, alongside encrypting all your internet traffic from your device to our servers. This means your DNS requests and everything else you do online stay private and protected. We don't log your activity, and our free plan gives you 10 Mbps forever, with no card or email required.
+
+## What exactly is DNS over HTTPS, in plain English?
+
+DNS over HTTPS (DoH) is a way to look up website addresses securely, encrypting your requests so no one can snoop on what sites you're trying to visit.
+
+Imagine the internet like a vast city, and every website has an address, like a street number. When you type a website name, say "ollavpn.com", your computer needs to find that numerical address (its IP address) to get there. This lookup process is handled by something called the Domain Name System, or DNS. Think of DNS as the internet's phone book. When you ask for "ollavpn.com", your computer is essentially looking it up in that phone book. Traditionally, these phone book lookups happen in plain sight. Anyone — your internet provider, hackers, even some governments — could potentially see every single website address you're asking for. It's like shouting your phone book requests across a crowded room. This is where **DNS over HTTPS comes in**. It takes those phone book requests and wraps them in an encrypted tunnel, the same kind of encryption your browser uses to secure your connection to a banking website. So, instead of shouting, your computer whispers its website lookup requests privately to a trusted server. This means your browsing habits are much harder to track or censor, even if your main internet connection isn't fully private. It's a significant step forward for privacy because it adds another layer of protection to your online activity, making it much harder for others to build a profile of your online behavior just by watching your DNS lookups.
+
+## How does DNS over HTTPS actually work under the hood?
+
+DNS over HTTPS (DoH) works by encrypting your DNS queries and sending them over the same HTTPS protocol used for secure web browsing, protecting them from eavesdropping and tampering.
+
+Think of it like this: when you type a website name (like "ollavpn.com") into your browser, your computer needs to find its numerical address (like "192.0.2.1") to connect. This lookup process is handled by the Domain Name System, or DNS. Traditionally, these DNS queries are sent in plain text, meaning anyone on your network – your ISP, a hacker on public Wi-Fi – could see what websites you're trying to visit. It's like sending postcards instead of sealed letters.
+
+DoH changes that by wrapping your DNS queries inside regular HTTPS traffic. When you use DoH, your computer sends its request to a special **DNS resolver** using the same secure connection your browser uses to talk to a website. This connection is encrypted, typically over **port 443**, making your DNS traffic indistinguishable from other secure web traffic. Your ISP can still see you're connecting to a DoH resolver, but they can't tell which specific websites you're asking about.
+
+The key difference from **traditional DNS vs. DoH** is this encryption layer. With traditional DNS, your queries are unencrypted and easily intercepted. With DoH, because it uses the **HTTPS protocol**, your DNS requests are hidden from prying eyes on your local network and protected from being altered or spoofed. This significantly boosts your privacy and security online, ensuring that your path to a website is private from the very first step.
+
+## Why does DNS over HTTPS matter for everyday users like you?
+
+DNS over HTTPS (DoH) protects your online activity by encrypting your website requests, making it harder for your internet provider to track what you do online.
+
+Your internet service provider (ISP) can see every website you visit, even if you're using a VPN. How? Because when you type "ollavpn.com" into your browser, your computer first asks a Domain Name System (DNS) server for the website's numeric address. This request usually goes unencrypted to your ISP's DNS server. Think of it like looking up a phone number in a public directory — everyone can see what you're looking for, even if your actual conversation is private. This unencrypted DNS traffic is a massive hole in your online anonymity, allowing for significant **ISP tracking** and data harvesting. DoH fixes this by wrapping those DNS requests in the same encryption that protects your banking and shopping online. Instead of plain text, your request for "ollavpn.com" becomes scrambled data that only the DNS server can read. Your ISP can still see you're connecting to \*a\* DNS server, but they can't see \*which\* website you're trying to reach. This significantly enhances your privacy, making it much harder for anyone to build a profile of your browsing habits. Beyond just privacy, DoH can also help with **censorship bypass**. In some regions, ISPs block access to certain websites by manipulating their DNS servers. Since DoH encrypts your DNS requests, it becomes much more difficult for these blocking efforts to succeed, as your ISP can't easily tell which site you're trying to resolve. It's not a silver bullet for all censorship, but it adds an important layer of resilience. With OllaVPN, DoH is built right into the tunnel, meaning your DNS requests are encrypted and routed through our secure servers, adding another layer of protection to your connection. This ensures that from the moment you initiate a connection to a website, your request is shielded from prying eyes, making your online experience more private and secure.
+
+## What are some common misconceptions about DNS over HTTPS?
+
+The biggest misconception about DNS over HTTPS (DoH) is that it's a complete privacy solution like a VPN, when in reality, it only encrypts your DNS queries and doesn't hide your IP address or encrypt all your internet traffic.
+
+Many people hear "encrypted DNS" and immediately think it means their entire connection is secure and private. That's simply not the case. DoH is great for preventing your Internet Service Provider (ISP) or anyone else on your local network from seeing which websites you're trying to visit by encrypting those initial requests. However, once your browser or app knows the IP address for, say, google.com, the actual connection to Google's servers happens directly from your device. DoH doesn't encrypt that subsequent communication.
+
+This means your **IP address is still visible** to every website you visit, every service you use, and every server you connect to. Websites can still track you, and your ISP can still see what content you're accessing, even if they can't see the initial DNS lookup. Think of it like a secret phone book: you can look up a number privately, but the phone company still knows who you're calling and what you're saying once you dial.
+
+Ultimately, while DoH is a valuable privacy enhancement, it's **not a full VPN**. It doesn't encrypt all your traffic, and it certainly doesn't hide your IP address. For comprehensive online privacy and security, including hiding your IP and encrypting all your data from end-to-end, you still need a VPN like OllaVPN.
+
+## How does DoH relate to other internet privacy concepts you might know?
+
+DoH is a piece of the privacy puzzle, working alongside, not replacing, tools like VPNs and HTTPS to protect different aspects of your online activity.
+
+Think of DoH as protecting one specific, crucial part of your internet traffic: your DNS requests. These requests are like asking for directions to a website. Without DoH, anyone listening in on your network (like your internet provider or a nosey coffee shop owner) can see every direction you ask for, even if they can't see what you do once you get there. It's like them knowing every place you plan to visit, even if they don't know what you do inside. DoH encrypts those "directions" so only you and the DNS resolver know where you're headed.
+
+Now, how does that stack up against other privacy tools? **HTTPS on websites** (that little padlock icon in your browser) encrypts the actual content of your communication with a website. So, if you're on a banking site, HTTPS keeps your login details and transactions private from snoopers. DoH protects the initial lookup to find the banking site, while HTTPS protects your conversation with it. They work hand-in-hand. You want both.
+
+**VPNs** like OllaVPN take privacy a step further. A VPN encrypts _all_ your internet traffic and routes it through a secure server. This means your internet provider can't see your DNS requests (because they're encrypted within the VPN tunnel) and they also can't see which websites you're visiting or what you're doing on them. Your IP address is hidden, and your data is protected from end-to-end between your device and the VPN server. DoH is often built into VPNs, but a VPN does much more than just encrypt DNS. Similarly, tools like **Tor** offer even greater anonymity by bouncing your traffic through multiple relays, making it extremely difficult to trace, though often at a significant speed cost.
+
+Ultimately, these are all **complementary technologies**. DoH makes your DNS lookups private. HTTPS makes your website conversations private. A VPN makes your entire internet connection private and anonymous to your ISP. Using DoH, especially if your VPN doesn't force all DNS traffic through its tunnel (OllaVPN does), adds an extra layer of protection. But it won't hide your IP address or encrypt your browsing data from your ISP in the way a [good VPN](/what-is-a-vpn) will.
+
+## When should you care about DNS over HTTPS, and when can you ignore it?
+
+You should care about DNS over HTTPS (DoH) anytime you're on an untrusted network, like public Wi-Fi, or when dealing with restrictive networks; otherwise, its benefits are often secondary to a good VPN.
+
+DoH is incredibly useful because it encrypts your DNS queries, which are essentially the "phonebook lookups" your device does to find websites. Without DoH, these lookups are often unencrypted, meaning anyone on the same network — like at a coffee shop or airport — can see every site you're trying to visit. This is where DoH shines, adding a layer of privacy by making those requests look like regular encrypted web traffic. It makes it much harder for snoopers to build a profile of your online activities just by watching your DNS. However, if you're already using a VPN like OllaVPN, much of DoH's primary benefit is already covered. When you connect to OllaVPN, all your traffic, including your DNS queries, is routed through our encrypted tunnel. Our [in-tunnel DNS](/features/in-tunnel-dns) means your requests never leave the encrypted VPN connection, preventing your ISP or local network administrator from seeing them. So, for **general privacy while connected to a VPN**, DoH becomes less critical because the VPN is already doing the heavy lifting. Where DoH still offers an advantage, even with a VPN, is on **highly restrictive networks**. Some firewalls might try to block VPN traffic based on patterns, but by encapsulating DNS queries within HTTPS, DoH can sometimes bypass these blocks more effectively, making your VPN connection more resilient. For example, if you're in a country with strict internet censorship, combining OllaVPN's QUIC option with DoH can provide an extra layer of stealth. For most everyday use cases, though, you can largely rely on your VPN for DNS privacy.
+
+## How does a good VPN handle DNS over HTTPS for you automatically?
+
+A good VPN routes all your DNS requests through its own encrypted servers, ensuring they're private and secure, usually over HTTPS.
+
+When you connect to OllaVPN, your device's default DNS settings are completely bypassed. Instead, every single DNS query you make—that's how your computer finds out that "ollavpn.com" is actually "192.0.2.1"—travels securely inside the VPN's [encrypted tunnel](/how-ollavpn-works). This means your internet provider can't see what websites you're trying to visit, nor can anyone else on your local network. It’s a critical part of maintaining your privacy online. OllaVPN uses its \*\*VPN's own DNS servers\*\* for this, which are designed to be privacy-focused and don't keep any logs of your activity. These servers resolve your requests using DNS over HTTPS (DoH), adding another layer of encryption and making it much harder for anyone to snoop on your DNS traffic. This is crucial because even if your main connection is encrypted, unencrypted DNS requests can still leak information about your browsing habits. What if your VPN connection drops? That's where the \*\*kill switch\*\* comes in. If the VPN tunnel ever unexpectedly disconnects, the kill switch immediately stops all internet traffic from your device. This prevents any data, including your DNS requests, from being sent outside the secure tunnel, ensuring your privacy isn't accidentally compromised. This combination of encrypted DNS, private servers, and a robust kill switch means your online activity remains truly private, with \*\*no logs\*\* kept of your browsing history.
+
+## What practical things can you do today based on what you've learned?
+
+You can immediately improve your DNS privacy by configuring DNS-over-HTTPS (DoH) in your browser or operating system settings, or by using a VPN.
+
+The easiest and most impactful thing you can do right now is to stop using your ISP's default DNS server. You can do this by configuring DNS-over-HTTPS (DoH) directly in your browser settings. Most modern browsers like Chrome, Firefox, Edge, and Brave offer this option. Just navigate to your browser's privacy or network settings and look for a "DNS" or "security" section. You'll likely find an option to enable DoH and choose a provider, such as Cloudflare (1.1.1.1) or Google Public DNS (8.8.8.8). This encrypts your DNS queries between your browser and the DoH server, preventing passive observers from seeing your website requests. For a more comprehensive approach that covers all applications on your device, you can configure DoH or DNS-over-TLS (DoT) at the operating system level. **OS-level DNS encryption** works similarly to browser-based DoH but applies to all network traffic originating from your device. While the setup varies slightly between Windows, macOS, Linux, Android, and iOS, a quick search for "configure DoH \[your operating system\]" will usually provide clear instructions. This ensures that even apps not using your browser's DoH settings benefit from encrypted DNS. However, remember that even with encrypted DNS, your IP address is still visible, and your ISP can still see that you're connecting to a specific website, even if they don't know \*what\* you're doing on it. For true anonymity and to hide your IP address and all your traffic from your ISP, you need to consider a VPN. A VPN, like OllaVPN, encrypts all your internet traffic from your device to the VPN server, including your DNS queries, and routes it through a server in another location. This masks your IP address and makes it appear as though you're browsing from the VPN server's location, offering a much higher level of privacy and security compared to DNS encryption alone. Plus, OllaVPN offers a free tier at 10 Mbps, so you can try it out without any commitment, and without ads or selling your data.
+
+## Is relying solely on DNS over HTTPS enough for full online privacy?
+
+No, relying solely on DNS over HTTPS (DoH) isn't enough for full online privacy; it only encrypts your DNS requests, leaving much of your internet activity exposed.
+
+DoH is a great step forward for privacy because it encrypts the requests your computer sends to translate website names (like "ollavpn.com") into IP addresses. This stops your internet provider, or anyone else snooping on your network, from seeing what sites you're trying to visit just from those requests. Think of it like putting your postal address inside a sealed envelope before mailing it, so no one can read it off the outside. That's a good thing! However, DoH only protects that one specific part of your connection. Once your computer gets the IP address, your actual traffic to that website still goes through your internet provider. This means they can still see the destination IP address, how much data you're sending, and often even what website it corresponds to. More importantly, they can see your own **IP address exposure**, which is like your home address on the return label of that envelope. This IP address can be used to track your online activity back to you. For true privacy, you need to encrypt \*all\* your internet traffic and hide your IP address. That's where a VPN becomes necessary. A VPN like OllaVPN creates a secure, encrypted tunnel for all your data, from your device to our servers. This means your internet provider sees only encrypted gibberish and the connection to our server, not what you're actually doing online or your real IP address. DoH is a valuable privacy tool, but it's just one piece of a much larger puzzle; it doesn't replace the comprehensive **traffic encryption** and IP masking a VPN provides.
+
+## How is DNS over HTTPS evolving with future technologies like post-quantum encryption?
+
+DNS over HTTPS will evolve by integrating post-quantum cryptography to secure DNS queries against future quantum computer attacks, ensuring long-term privacy and integrity.
+
+You're hitting on a really important point about **future-proofing** our online security. As quantum computing advances, many of the encryption methods we rely on today, including those used in DoH, could become vulnerable. The good news is that the industry is already working on solutions, and we're seeing a push to integrate these into foundational internet protocols like DoH.
+
+The evolution will likely involve the adoption of **quantum-resistant algorithms**. These are new cryptographic methods designed to withstand attacks from even the most powerful quantum computers. For DoH, this means that the handshake and ongoing communication that encrypts your DNS queries would be secured with these new algorithms, making it virtually impossible for attackers to decrypt your DNS traffic, even years from now with advanced tech.
+
+**OllaVPN's approach** is all about staying ahead of this curve. We've already implemented [post-quantum-ready encryption](/blog/post-quantum-encryption-explained) in our VPN tunnels, using a hybrid handshake that combines classical and quantum-resistant algorithms. This same forward-thinking philosophy applies to how we view DoH. While DoH itself is a great step for privacy, ensuring its long-term viability means integrating these modern ciphers to protect your DNS lookups not just today, but for decades to come, against threats we can anticipate.
+
+## How does OllaVPN specifically handle your DNS and ensure your privacy?
+
+OllaVPN handles your DNS requests by routing them through its own encrypted DNS servers, ensuring your activity stays private and isn't logged.
+
+When you connect to OllaVPN, your device's DNS requests don't go to your ISP or some third party. Instead, they travel securely through the same [WireGuard tunnel](/blog/wireguard-protocol-explained) that encrypts all your other internet traffic. This means your DNS queries are protected with our [post-quantum-ready encryption](/blog/post-quantum-encryption-explained), making them virtually impossible for anyone to intercept or snoop on. This "in-tunnel DNS" approach is a core part of how we keep your browsing habits private from your internet service provider or anyone else trying to peek. We operate a strict no-logging policy, which extends fully to your DNS requests. We don't keep records of the websites you visit, the apps you use, or any of your online activity. This commitment applies to everyone, whether you're on our free plan enjoying 10 Mbps or a OllaVPN Plus subscriber getting 10 Gbps. Your privacy isn't a premium feature; it's fundamental to how we operate. This setup prevents DNS leaks, which can accidentally reveal your real IP address or browsing history even when you're using a VPN. By controlling the entire path from your device to our encrypted DNS resolvers, we eliminate those weak points. It's all about ensuring that from the moment you click "connect," your digital footprint is protected, and your anonymity is maintained.
+
+## Deeper context worth knowing
+
+A definitional explainer should leave you understanding not just the concept but the surrounding category — what other concepts it connects to, what common misunderstandings to avoid, and which adjacent ideas you should know about. A few worth covering:
+
+**The category history matters.** Most networking and privacy concepts you encounter today were invented to solve a specific problem that may or may not still be the dominant problem in 2026. Understanding why a concept exists helps you evaluate whether it's the right tool for your situation. We try to include the historical context for every "what is X" guide we publish.
+
+**The standards-body work matters.** Many privacy and networking concepts have a corresponding RFC, NIST publication, or IETF draft that defines them rigorously. The standard is the canonical source; vendor marketing pages and Wikipedia summaries are derivatives. When in doubt, find the standard.
+
+**The threat model matters.** The same concept can be a strong defense against one class of threat and useless against another. "Encrypted" doesn't mean "private" if the recipient is the threat actor. "Anonymized" doesn't mean "unlinkable" if you have enough side data. We try to be specific about what each property actually defends.
+
+## How this connects to OllaVPN specifically
+
+If you've read this far, you probably want to know how the concept applies to OllaVPN's product. The short version:
+
+**If the concept above is something a VPN should provide** (no-logs, kill switch, in-tunnel DNS, peer isolation, post-quantum cryptography), OllaVPN ships it by default on the free tier. The cryptographic stack uses WireGuard with a hybrid X25519 + ML-KEM-768 handshake; the kill switch is enforced at the OS firewall layer (Windows Filtering Platform on Windows, Packet Filter on macOS, VpnService.setBlockingMode on Android); DNS goes to an in-tunnel unbound resolver with the OS DNS path firewall-blocked; peer isolation is enforced in four independent layers including an automated end-to-end test. Read the [technology page](/technology) for the complete architecture.
+
+**If the concept above is something only a VPN partially helps with** (anonymity, censorship circumvention, streaming geo-unblock), OllaVPN does what a privacy VPN can do but the underlying limits of the category apply. We don't oversell capabilities we don't have. The [best free VPN 2026 guide](/best-free-vpn-2026) covers what's realistic to expect from a free VPN versus what requires a paid tier or a different category of tool entirely.
+
+**If the concept above is something a VPN doesn't help with at all** (application-layer tracking, account-based identity, malware on your device, source-anonymity against a global passive adversary), we say so. A VPN replaces the ISP in the traffic-visibility role; it does not stop websites from tracking you, does not stop your accounts from identifying you, does not stop malware already on your device, and is not Tor. Use the right tool for each layer of the threat model.
+
+## About this guide
+
+Maintained by [Nathan Pratt](/about/team#nathan-pratt), OllaVPN's Privacy & Security Lead. Fact-checked by [Hannah Wu](/about/team#hannah-wu), Senior Security Engineer. We refresh this post quarterly so its facts, recommendations, and competitor comparisons stay accurate as the category evolves. The last full re-evaluation was 23 June 2026; the next is scheduled for September 2026.
+
+If you spot a fact that's drifted or an addition we should make, email `[[email protected]](/cdn-cgi/l/email-protection)`. Reader corrections drive a meaningful percentage of our quarterly updates.
+
+⭐ Key takeaways
+
+## What to remember from this guide
+
+*   What exactly is DNS over HTTPS, in plain English?
+*   How does DNS over HTTPS actually work under the hood?
+*   Why does DNS over HTTPS matter for everyday users like you?
+*   What are some common misconceptions about DNS over HTTPS?
+*   How does DoH relate to other internet privacy concepts you might know?
+
+## Frequently asked questions
+
+### What is DNS over HTTPS in one sentence?
+
+DNS over HTTPS (DoH) encrypts your website lookup requests, making it much harder for anyone to snoop on which sites you're trying to visit. It's like putting your destination request in a sealed envelope before handing it to the post office, rather than on a postcard.
+
+### Why should I care about DNS over HTTPS?
+
+You should care because DoH adds a critical layer of privacy to your internet use. It stops your internet provider, or anyone else on your network, from seeing every site you visit just by looking at your unencrypted DNS requests. It's a key part of staying private online.
+
+### Is it dangerous to ignore DNS over HTTPS?
+
+Not directly dangerous in terms of immediate security threats, but ignoring DoH means your DNS requests are wide open. This can lead to privacy violations, targeted ads based on your browsing, and even censorship if your ISP decides to block certain sites. It's a privacy risk, for sure.
+
+### How does a VPN relate to DNS over HTTPS?
+
+A good VPN, like OllaVPN, encrypts all your internet traffic, including all your DNS requests. This means that if you're using a VPN, your DNS is already private and secured within the VPN tunnel, making DoH less critical as a separate standalone solution.
+
+### Do I need a VPN to deal with DNS privacy?
+
+You don't strictly need a VPN just for DoH, as some browsers and operating systems support it natively. However, a VPN offers a much broader privacy solution by encrypting \*all\* your traffic, not just DNS lookups. It's a more comprehensive approach to online privacy.
+
+### Can a free VPN handle DNS over HTTPS properly?
+
+Some free VPNs might, but many ad-funded free VPNs often don't prioritize DNS privacy or could even log your DNS requests. OllaVPN's free plan, though, always includes secure, encrypted DNS routing through our private, no-log servers, ensuring your privacy without compromise.
+
+### How can I check whether I'm protected by DoH?
+
+You can usually check your browser's settings (like in Firefox or Chrome) to see if DoH is enabled. There are also online tools that claim to test your DNS resolution method, but remember they might not always be perfectly accurate or fully comprehensive.
+
+### Are there free tools to test my DNS privacy?
+
+Yes, several websites offer free DNS leak tests. These tools can help you see if your DNS requests are going through your intended DoH resolver or if they're accidentally 'leaking' to your ISP or another third party. They're a good first check.
+
+### Does DNS over HTTPS still matter in 2026?
+
+Yes, it absolutely will. As internet surveillance and data tracking continue to evolve, encrypted DNS will remain a fundamental layer of online privacy. Especially when combined with other advanced security features, like OllaVPN's post-quantum-ready encryption, it's a vital component for the long term.
+
+### What's the simplest fix for better DNS privacy?
+
+The simplest fix is often enabling DoH in your web browser's settings. For comprehensive protection that covers all your apps and devices, though, using a reputable VPN like OllaVPN is the easiest and most effective solution, offering full encryption for all traffic.
+
+### Are there situations where DoH doesn't apply?
+
+DoH primarily protects your DNS lookups. If your entire internet connection isn't encrypted (for example, if you visit an old HTTP website), other parts of your traffic can still be monitored. So, while important, it's not a magic bullet for all online privacy concerns.
+
+### How does OllaVPN handle DNS specifically?
+
+OllaVPN encrypts all your DNS requests within its secure tunnel and routes them through its own private, no-log DNS servers. This ensures your DNS queries are completely private and protected against snooping, even against future threats with our post-quantum-ready encryption.
+
+✉ Get the next one
+
+### Honest writeups, every two weeks.
+
+Nathan posts one deep-dive every two weeks. No spam, no sales blasts, no clickbait headlines.
+
+ Subscribe
+
+No card. Unsubscribe with one click.
+
+Share Copy link [X](https://twitter.com/intent/tweet?text=What%20is%20DNS%20over%20HTTPS%20%28DoH%29%3F%20Your%20Privacy%2C%20Explained.&url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-dns-over-https) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-dns-over-https) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-dns-over-https&t=What%20is%20DNS%20over%20HTTPS%20%28DoH%29%3F%20Your%20Privacy%2C%20Explained.) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-dns-over-https&title=What%20is%20DNS%20over%20HTTPS%20%28DoH%29%3F%20Your%20Privacy%2C%20Explained.)
+
+## Related reading
+
+*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
+*   [PRIVACYWhat is a vpn kill switch8 min · OllaVPN Blog](/blog/what-is-a-vpn-kill-switch)
+*   [PRIVACYWhat is a webrtc leak8 min · OllaVPN Blog](/blog/what-is-a-webrtc-leak)
+*   [PRIVACYWhat is an ipv6 leak8 min · OllaVPN Blog](/blog/what-is-an-ipv6-leak)
+*   [PRIVACYWhat is post-quantum cryptography?8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography)
+*   [PRIVACYWhat is a DNS leak?8 min · OllaVPN Blog](/blog/what-is-a-dns-leak)
+
+NP
+
+Nathan Pratt
+
+Privacy & Security Lead
+
+Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
+
+[More from Nathan →](/about/team#nathan-pratt)
+
+#### More in [Beginner basics](index.html#beginner-basics) 22 guides
+
+[View all 22 in Beginner basics →](index.html#beginner-basics)
+
+[
+
+Does a VPN Slow Down Your Internet Speed? The Honest Truth.
+
+Read guide →](does-vpn-slow-down-internet.html)[
+
+Free VPN vs. Paid VPN: What's the Real Difference and Which Should You Pick?
+
+Read guide →](free-vpn-vs-paid-vpn.html)[
+
+Lifetime Free VPN: What You Need to Know Before You Download
+
+Read guide →](lifetime-free-vpn.html)[
+
+What Is a Burner Email, and Why Should You Care?
+
+Read guide →](what-is-a-burner-email.html)

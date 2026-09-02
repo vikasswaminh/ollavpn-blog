@@ -208,6 +208,22 @@ main.container {
   align-items: start;
 }
 
+.left-col, .right-col {
+  position: sticky;
+  top: 90px;
+  max-height: calc(100vh - 110px);
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.left-col::-webkit-scrollbar, .right-col::-webkit-scrollbar {
+  width: 4px;
+}
+.left-col::-webkit-scrollbar-thumb, .right-col::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
 /* Column Header Pill Badges */
 .col-pill-header {
   display: inline-flex;
@@ -677,6 +693,11 @@ main.container {
   }
   .three-col-layout {
     grid-template-columns: 1fr;
+  }
+  .left-col, .right-col {
+    position: static;
+    max-height: none;
+    overflow-y: visible;
   }
   .featured-card {
     grid-template-columns: 1fr;

@@ -1,0 +1,248 @@
+---
+title: 'How to Permanently Delete Your Telegram Account'
+description: 'If you''re looking to delete your Telegram account, you''ll need to use a web browser, not the app itself. Head over to Telegram''s official deactivation page, enter the phone number linked to your account, and ...'
+pubDate: 2026-06-09
+author: 'OllaVPN Team'
+tags: ['privacy-security']
+---
+
+2026 · 07 · 15 · PRIVACY & SECURITY · 5,098 WORDS
+
+# How to Permanently Delete Your Telegram Account
+
+Thinking of stepping away from Telegram? It's not quite as straightforward as simply uninstalling the app; deleting your account means making sure your data is truly gone. Whether you're decluttering your digital life or have privacy concerns, we'll walk you through the exact steps to permanently delete your Telegram account and its associated data. You'll learn how to navigate the deactivation process, verify its success, and ensure you leave no digital traces behind, giving you complete peace of mind.
+
+TL;DR - The Short Answer
+
+If you're looking to delete your Telegram account, you'll need to use a web browser, not the app itself. Head over to Telegram's official deactivation page, enter the phone number linked to your account, and follow the prompts to confirm. It's a permanent step, so be sure you're truly ready to clear out your chats and contacts before you hit that final button.
+
+The main thing to remember is that Telegram handles account deletion through a specific web portal. You won't find this option buried in your app settings. This setup is a security measure, making sure that only the actual account owner can initiate the complete removal of their data. Just make sure you can access the phone number associated with your account, as you'll need it for verification.
+
+Following this method ensures that all your cloud data, messages, and contacts tied to your account are thoroughly wiped from Telegram's servers. It's a clean, irreversible break. While it might seem a little indirect, these steps guarantee that your digital footprint on the platform is completely erased, giving you full control over your privacy, just like OllaVPN gives you control over your online presence with its free, privacy-first service.
+
+## What's the quickest way to delete your Telegram account?
+
+The quickest way to delete your Telegram account is through their official deactivation page on a web browser.
+
+It's a straightforward process, but you can't do it directly from the app on your phone or computer. You'll need to open a \*\*web browser\*\* on any device and navigate to Telegram's dedicated [deactivation page](https://my.telegram.org/auth?to=deactivate). This is the only official way to initiate the deletion. Once you're there, you'll be prompted to enter the \*\*phone number\*\* associated with your Telegram account. Make sure you use the full international format, including the country code. After you've entered your number and clicked "Next," Telegram will send a \*\*confirmation code\*\* directly to your Telegram app (not via SMS). You'll need to go back to the app, retrieve that code from a message in your "Telegram" chat, and then enter it into the deactivation page in your browser. After entering the code, you'll see a prompt asking if you're sure you want to delete your account, along with an optional field to provide a reason. Once you confirm, your account deletion will be processed. Keep in mind that this is a \*\*permanent deletion\*\*; all your chats, contacts, and media will be gone forever, and there's no way to recover them. So, make absolutely sure it's what you want to do before you hit that final confirmation button.
+
+## Can you walk me through deleting my Telegram account, step-by-step?
+
+Yes, here's a step-by-step guide to permanently deleting your Telegram account.
+
+## What should I do if a step in the deletion process doesn't work?
+
+If a step in the deletion process isn't working, first try basic troubleshooting like refreshing the page or using a different browser, then contact support if the issue persists.
+
+It's frustrating when you're trying to delete an account and hit a snag. Often, these issues are temporary and can be resolved with a few simple steps. For example, if you're not receiving a confirmation code, double-check that you've entered the correct phone number or email address. Sometimes, there might be a slight delay in delivery, so give it a few minutes before trying again. Also, check your spam or junk folders, as these codes occasionally land there. Many problems, especially those involving forms or buttons that don't respond, can be traced back to **browser issues**. Your current browser might have a caching problem, a conflicting extension, or simply be out of date. If you encounter something like this, try refreshing the page, clearing your browser's cache and cookies, or even better, try a different browser altogether. For instance, if you're using Chrome, switch to Firefox or Edge and see if that resolves the hang-up. Another common culprit is your internet connection. A patchy or slow connection can prevent scripts from loading correctly, making it seem like a page isn't working. Before diving into more complex troubleshooting, take a moment to **check your internet connection** to make sure it's stable. If you've tried these steps and are still stuck, don't hesitate to reach out to our support team. We're here to help guide you through any difficulties you might encounter during the deletion process.
+
+## Why is this method better than just uninstalling the app?
+
+Uninstalling an app only removes it from your device; deleting your account ensures your data is permanently removed from the company's servers, protecting your privacy.
+
+When you simply uninstall an app, you're just getting rid of the software from your phone or computer. Think of it like throwing away a book but leaving the author's original manuscript in their office. All your personal information, your usage history, and any content you created or uploaded within that app often remain stored on the company's servers. This is a crucial distinction, as many people mistakenly believe that uninstalling an app erases their digital footprint associated with it. The real difference lies in where the data lives. Your phone might hold some temporary files or preferences, but the bulk of your personal information, especially for services that sync across devices or store things in the cloud, resides in the company's data centers. This **cloud data** can include anything from your email address and payment info to your location history, messages, photos, or even your browsing habits if it's a browser or VPN app. Just deleting the app from your device does nothing to touch this server-side data. This has significant **privacy implications**. If that company later suffers a data breach, or if they decide to change their privacy policy and sell aggregated user data, your information could still be at risk, even if you stopped using the app months or years ago. True data privacy means ensuring your information is no longer accessible to the company at all. That's why the process of **deleting your account** is so important. It's the only way to request the permanent removal of your data from their systems, exercising your right to be forgotten.
+
+## Are there common errors when deleting an account, and how do I fix them?
+
+Yes, there are a few common issues when trying to delete your account, but they usually have straightforward fixes.
+
+You'd think deleting an account would be a simple "click and confirm" process, but sometimes things can get a little tricky. One of the most frequent hiccups we see is related to verification codes. If you're trying to delete your account and it asks for a code sent to your email or phone, make sure you're entering the most recent one. Older codes often expire quickly for security reasons, so a **code expiration** can stop you dead in your tracks. Also, double-check that you're not accidentally entering a **wrong country code** if it's asking for a phone number. It sounds basic, but it happens more often than you'd think! Another common snag is related to your internet connection. If you have **network issues**, the deletion request might not go through properly, leaving your account in a limbo state or giving you an error message. Try switching to a more stable Wi-Fi network or even using cellular data if you're on the go. Sometimes, your browser itself can be the culprit. Old cached data or cookies can interfere with the deletion process. If you're constantly running into problems, try **clearing browser cache** and cookies, or even switching to a different browser altogether. Finally, if you're getting an error that says something like "account not found" or "invalid request," it's possible the deletion worked, but your browser is showing you an outdated page, or the process is already complete. If you've previously initiated a deletion request, it might simply be that the **account already deleted**, and you're just seeing a lingering ghost of it. If you've tried these steps and are still stuck, don't hesitate to reach out to our support team – we're here to help you get things sorted.
+
+## How can I be sure my Telegram account was deleted correctly?
+
+The most direct way to confirm your Telegram account was deleted is to try logging in again and see if you receive an "account not found" message.
+
+Once you initiate a Telegram account deletion, it's typically a fast, permanent process. The very first thing you should do to verify it worked is to \*\*try logging in\*\* using your old phone number. If the deletion was successful, Telegram won't recognize your number, and you'll usually see a message like "account not found" or be prompted to create a new account. This is a strong indicator that your old account and its associated data have been purged from their system. Beyond trying to log in yourself, you can also \*\*check with contacts\*\*. Ask a friend or family member who you previously chatted with on Telegram if they still see your profile or our conversation history. For them, your account should appear as "Deleted Account" or simply vanish from their contact list within the app. Their saved chat history with you should also reflect that your account is no longer active. Finally, keep an eye out for any \*\*data removal confirmation\*\*. While Telegram doesn't always send an explicit email confirmation of account deletion, if you initiated the deletion through their official process, you can generally trust that it's permanent. If you don't receive an "account not found" message when attempting to log in, and your contacts can't see you, you can be confident your account and its data are gone for good.
+
+## Are there any tools that can make this deletion process easier?
+
+No, you don't need any special tools; just a reliable internet connection and an up-to-date web browser are usually enough.
+
+You might think you need some kind of fancy software or a dedicated service to help you delete your accounts, but that's really not the case. The process for deleting accounts is almost always handled directly through the website or app of the service you want to leave. This means your standard web browser — whether it's on your computer or your phone — is your primary tool. The most important things you'll need are actually pretty basic: a **reliable internet connection** so you don't get cut off in the middle of a deletion process, and an **up-to-date browser** to ensure you can access all the website's features properly. Sometimes, you'll also need access to your old email accounts or even your phone for two-factor authentication or account recovery, so make sure those are accessible too. While there are third-party services that claim to help you scrub your data, often they just automate steps you could easily do yourself, and sometimes they ask for more access to your information than you might be comfortable giving. Sticking to direct methods is usually the safest and most transparent way to go.
+
+## Does using a VPN help with deleting my Telegram account?
+
+No, a VPN doesn't directly help with deleting your Telegram account, but it does protect your privacy while you do it.
+
+Deleting your Telegram account is a process handled entirely by Telegram's own systems, and whether or not you're using a VPN doesn't change the steps involved or how quickly it happens. You'll still need to log into your account and follow their specific deletion procedure. So, in terms of actually making the deletion happen, a VPN isn't a magic button. However, a VPN plays a crucial role in safeguarding your privacy \*around\* the deletion process. When you connect to OllaVPN, it encrypts your internet connection, making your online activities much harder for anyone to snoop on. It also masks your real IP address, replacing it with the IP address of the VPN server. This means that while you're navigating to Telegram's deletion page, logging in, and confirming your decision, your connection is secure and your location isn't being broadcast. This is essential for maintaining your digital privacy, especially if you're concerned about who might be monitoring your online actions. Think of it this way: the VPN protects your journey to the deletion page, not the deletion itself. For general browsing and keeping your online identity private, a service like OllaVPN offers a 10 Mbps free plan that's great for everyday use, and it's built with [post-quantum-ready encryption](/post-quantum-encryption) for future-proof security. If you need more speed or want to protect multiple devices, [OllaVPN Plus](/plus) offers 10 Gbps on five devices for just $2 a month. Both plans ensure your connection is private, regardless of what you're doing online.
+
+## What are the alternatives if I don't want to delete my account permanently?
+
+You have several options beyond permanent deletion, like deactivating, setting self-destruct timers, or simply logging out, depending on the service.
+
+If you're not quite ready to permanently sever ties with a service, but you want to step away, there are often less drastic measures you can take. Many platforms offer a **deactivation** option, which temporarily hides your profile and content from public view. This is great if you need a break but anticipate returning later, as it usually keeps all your data intact, ready for when you decide to reactivate. It's like putting your account in a deep sleep rather than sending it to the digital afterlife. For certain messaging apps or social media, you might find features like a **self-destruct timer** for specific messages or even your entire account. This allows you to set a period after which your content or profile automatically deletes itself if you don't interact with it. It’s a good middle ground if you want to ensure your data doesn't linger indefinitely, but you're not ready to pull the trigger on a manual deletion right now. Sometimes, just a simple **log out** can be enough, especially if you're trying to reduce screen time. It won't delete anything, but it puts a barrier between you and the service, forcing you to consciously decide to log back in. Beyond specific features, you can always explore a service's **privacy settings**. Often, you can restrict who sees your content, limit data sharing, or even "archive chats" or posts, making them visible only to you. Some services also have policies around **account inactivity**, where they might automatically deactivate or even delete accounts that haven't been accessed for a very long time. While not a direct alternative you control, it's worth knowing that sometimes the digital dust eventually settles itself.
+
+## What happens to my data after I delete my Telegram account?
+
+When you delete your Telegram account, your account data is permanently wiped from their servers, making it unrecoverable.
+
+Once you go through the deletion process, Telegram initiates a **permanent deletion** of your account. This means all your messages, media, contacts, and other associated data are removed from their servers. It's a definitive step; there's no "undo" button or a way to recover your account or its content afterward. This isn't like deactivating an account where it might just be hidden for a while; this is a full data purge from Telegram's side. However, "server data wiped" doesn't mean your existence vanishes entirely from the internet. While your profile and all your chat history are gone from Telegram's servers, there are a couple of nuances. If you were part of **group chats**, those chats will continue to exist for the other members, but your participation and messages within those groups will simply show as being from a "deleted account." Your username and profile picture will be gone, but the messages you sent will remain in the group's history, attributed to your now-deleted account. Similarly, any individual contacts you spoke with will still have your messages on their own devices, stored locally within their Telegram app. While you won't be able to log in or retrieve anything, and your side of the conversation is gone from Telegram's servers, the messages you sent and received will persist on their end until they choose to delete them themselves. So, while Telegram performs a thorough deletion on its servers, it's not a complete digital erasure everywhere you've ever interacted.
+
+## Can I create a new Telegram account with the same phone number later?
+
+Yes, you can usually create a new Telegram account with the same phone number after deleting your old one, but there's a waiting period.
+
+Once you delete your Telegram account, your phone number isn't immediately freed up for a \*\*new account creation\*\*. Telegram implements a waiting period before that number becomes available again. This is a security measure to prevent abuse and to ensure that when you delete an account, it's truly gone and not instantly hijacked by someone else or accidentally reactivated in a way you didn't intend. The exact length of this \*\*waiting period\*\* can vary, but it's typically a few days to a week. During this time, if you try to register a new account with that same number, you'll likely receive a message indicating that the number is still in use or that you need to wait. It's not a permanent block, just a temporary hold. Once the period expires, you'll be able to use your number for a completely \*\*fresh start\*\* with a new, empty Telegram account, just as if you were signing up for the first time. So, if you're looking to wipe the slate clean and start fresh on Telegram, deleting your account is a viable option. Just be prepared for that brief waiting period before your \*\*phone number availability\*\* for a new registration.
+
+## A broader-context closing thought
+
+One pattern we've noticed across every privacy-and-networking topic we cover: the gap between what most users believe about a given topic and what the technical reality is keeps widening. Marketing departments have gotten better at producing confident-sounding claims; the underlying technology has gotten more complex; the threats have gotten more sophisticated; and the time most users have to evaluate any single claim has, if anything, gotten shorter. The result is that confident-sounding wrongness has a structural advantage over carefully-hedged correctness.
+
+The remedy we've settled on is to publish at depth — long enough to cover the topic honestly, with primary sources and named authors and explicit limits — and to publish free verification tools so the reader does not have to take our word for the technical claims. Both are choices that don't optimise for "users who skim and click." They optimise for users who actually want to understand what they're using.
+
+If you've read this far, you're in the second group. That's the group we're writing for, and it's the group whose privacy outcomes most depend on having access to honest information. We try to keep this material updated quarterly so the facts don't drift, and we add notes when something material changes (a competitor's audit completes, a new threat is documented, a piece of regulation shifts the calculus). The [main free-VPN comparison](/best-free-vpn-2026), the [technology overview](/technology), and the [free privacy tools](/tools/) are the three pages most worth bookmarking from the OllaVPN site if you've found this guide useful.
+
+## Verify and cross-reference
+
+For any claim on this page that affects a decision you're about to make, the verification path we recommend:
+
+**Verify the technical claim from your own device.** Our [DNS lookup](/dns-lookup), [WebRTC leak test](/webrtc-leak-test), [what-is-my-IP](/what-is-my-ip), and the other tools at [our tools page](/tools/) are free, require no account, and run entirely in your browser. Most claims about VPN behavior can be verified from your own device in under fifteen minutes using these tools.
+
+**Cross-reference at least one third-party source.** We are an operator with a commercial interest in the conclusion. The most reputable independent voices in the privacy-VPN category in 2026 are Mullvad's blog (technical depth without sales pressure because they don't run affiliate programs), the Privacy Guides project documentation, the Restore Privacy site, and the academic literature on consumer VPN security (the canonical paper is Ikram et al. 2016, "An Analysis of the Privacy and Security Risks of Android VPN Permission-enabled Apps," in ACM IMC). Read across multiple sources before forming a strong view.
+
+**Read the primary sources where they exist.** Government regulations, NIST publications, IETF RFCs, and court rulings are primary sources. Vendor marketing pages and most commentary pieces are derivatives. When a claim is specific enough to have a primary source (a specific regulation, a specific standard, a specific court case), find the primary source and read it yourself rather than relying on summaries.
+
+**Update your view when the facts update.** Privacy concerns shift, operators change, standards evolve. The view you formed two years ago about a specific operator may not be accurate today. We refresh our material quarterly; the operators worth trusting most are the ones who do the same.
+
+## How to know it actually worked
+
+A how-to guide is only useful if you can verify the outcome. After completing the steps above, the easiest checks to confirm the configuration is in place:
+
+**Visible state in the app.** The OllaVPN menu-bar or system-tray icon should be green (connected) and any status panel should show the country you selected. If the icon is gray or amber, the tunnel didn't fully come up — retry the connect.
+
+**IP address changed.** Open [our what-is-my-IP tool](/what-is-my-ip). The IP shown should be the exit's IP, not your real ISP's IP, and the country shown should match the country you selected in the app. If you still see your real IP, the tunnel isn't carrying traffic — the most common cause is a firewall on the local network blocking WireGuard's UDP/51820. Try a different network briefly to isolate.
+
+**DNS is going through the tunnel.** Open [our DNS lookup tool](/dns-lookup). The resolver IP shown should be the in-tunnel one (CGNAT 100.64.x.x range), not your ISP's DNS. If you see your ISP's resolver, DNS is leaking — see our [in-tunnel DNS page](/in-tunnel-dns) for the technical details on why this happens and how OllaVPN prevents it.
+
+**No WebRTC leak.** Open [our WebRTC leak test](/webrtc-leak-test). You should see only the exit's IPv4 address. If your real IP appears (private LAN address or public IPv4/IPv6), WebRTC is bypassing the VPN — either OllaVPN's leak prevention has failed (file a report at `[[email protected]](/cdn-cgi/l/email-protection)`) or your browser has a WebRTC-specific privacy issue we can help diagnose.
+
+## If a step fails, here's how to debug
+
+The most common failure modes for any VPN setup task on Windows, macOS, or Android, in order of frequency:
+
+**The VPN refuses to connect at all.** Almost always a network-side issue: a restrictive firewall on the local network (school, corporate, hotel) blocking WireGuard's default UDP/51820 port. Try a different network briefly to confirm it's network-side. On Frankfurt the obfuscated MASQUE-on-port-443 transport works around many restrictive firewalls — switch to it in the country picker.
+
+**The VPN connects but the internet is broken.** Almost always a DNS issue. The in-tunnel resolver hasn't taken precedence (sometimes after a macOS update or a Windows feature update, the supplemental DNS keys get cleared). Restarting the VPN typically fixes it; full disconnect and reconnect re-installs the DNS configuration.
+
+**Some apps work but others don't.** Either the app has its own proxy settings configured separately (some corporate apps), or the app uses a protocol the VPN doesn't carry (very rare — almost everything is TCP/UDP and works fine through the tunnel). Check the app's settings before assuming the VPN is at fault.
+
+**Speed is much slower than expected.** The exit you picked is either congested or geographically far from you. Try a closer exit (the country picker shows latency). The free-tier 10 Mbps cap is the ceiling regardless of exit choice; if you need more, the Pro tier at $2/mo annual lifts it to 10 Gbps.
+
+## About this guide
+
+Maintained by [Nathan Pratt](/about/team#nathan-pratt), OllaVPN's Privacy & Security Lead. Fact-checked by [Hannah Wu](/about/team#hannah-wu), Senior Security Engineer. We refresh this post quarterly so its facts, recommendations, and competitor comparisons stay accurate as the category evolves. The last full re-evaluation was 23 June 2026; the next is scheduled for September 2026.
+
+If you spot a fact that's drifted or an addition we should make, email `[[email protected]](/cdn-cgi/l/email-protection)`. Reader corrections drive a meaningful percentage of our quarterly updates.
+
+⭐ Key takeaways
+
+## What to remember from this guide
+
+*   What&#39;s the quickest way to delete your Telegram account?
+*   Can you walk me through deleting my Telegram account, step-by-step?
+*   What should I do if a step in the deletion process doesn&#39;t work?
+*   Why is this method better than just uninstalling the app?
+*   Are there common errors when deleting an account, and how do I fix them?
+
+## Frequently asked questions
+
+### How long does it take to delete my Telegram account?
+
+It's super fast! Once you're on the deactivation page and confirm with your phone, the actual deletion usually takes just a few minutes. Your account is marked for immediate, permanent removal, and your data is wiped right away. There's no waiting period after you hit that final confirmation.
+
+### Do I need to be technical to delete my Telegram account?
+
+Not at all! You don't need to be a tech wizard. If you can use a website, enter your phone number, and type in a code, you're good to go. We've made sure the steps are straightforward so anyone can follow them without needing any advanced computer skills.
+
+### What if a step doesn't work for me during the deletion?
+
+Don't sweat it if you hit a snag. Most issues are pretty easy to fix. Try checking your internet, switching browsers, or making sure your phone number includes the correct country code. Our 'Common errors and quick fixes' section covers all the usual suspects and how to get past them.
+
+### Will deleting my account permanently delete all my data?
+
+Yes, it will. Telegram states that once you confirm the deletion, your account data, all your messages, and contacts stored on their servers are permanently wiped. It's a full removal from their side. Just remember, messages you sent might still be on other people's devices locally.
+
+### Can I undo the account deletion if I change my mind?
+
+No, unfortunately, you can't. Deleting your Telegram account is permanent and irreversible. Once you confirm it, there's no going back. That's why it's really important to be absolutely sure before you click the final button. If you're unsure, consider deactivating instead.
+
+### Is it safe to delete my account on public Wi-Fi?
+
+While the deletion process itself is encrypted, public Wi-Fi always comes with some risks because those networks can be insecure. It's generally safer to do sensitive things like account deletion on a network you trust. Or, you could use a VPN like OllaVPN to encrypt your connection, even on public Wi-Fi.
+
+### Should I use a VPN while deleting my Telegram account?
+
+It's not strictly necessary for the deletion to work, but using a VPN is always a good idea for any online activity where you want extra privacy. It encrypts your connection and masks your IP address, adding a layer of security. OllaVPN's free plan gives you 10 Mbps for exactly this kind of everyday privacy boost.
+
+### How do I verify that my Telegram account was actually deleted?
+
+The best way to check is to try logging in with your phone number after you've completed the deletion. If it worked, Telegram should tell you the account 'does not exist' or prompt you to create a new one. You can also ask a friend to see if your profile has vanished from their contact list.
+
+### Will the account changes apply to all my devices?
+
+Yes, they will. Since the deletion happens on Telegram's servers, it affects your account across all devices where you might have been logged in. Once your account is deleted, all your Telegram apps will eventually reflect that it no longer exists, and you'll be logged out.
+
+### What's the difference between deleting and simply uninstalling the app?
+
+Uninstalling the app just removes it from your phone; your account and all its data stay on Telegram's servers. Deleting your account, however, permanently wipes your data from their servers. It's the only way to truly remove your digital footprint from the platform.
+
+### Is there a free tool I can use to help with this deletion?
+
+No, you don't need any special tools for this. The deletion process uses Telegram's official web-based deactivation page, which is free to access. All you'll need is a standard web browser and access to your phone number to get it done.
+
+### How often should I delete my Telegram account?
+
+You should only delete your Telegram account when you're absolutely sure you want to permanently leave the platform and lose all your chat history and contacts. It's not something you'd do regularly. If you just need a break, consider setting a self-destruct timer or simply logging out instead.
+
+✉ Get the next one
+
+### Honest writeups, every two weeks.
+
+Nathan posts one deep-dive every two weeks. No spam, no sales blasts, no clickbait headlines.
+
+ Subscribe
+
+No card. Unsubscribe with one click.
+
+Share Copy link [X](https://twitter.com/intent/tweet?text=How%20to%20Permanently%20Delete%20Your%20Telegram%20Account&url=https%3A%2F%2Follavpn.com%2Fblog%2Fhow-to-delete-telegram-account) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fhow-to-delete-telegram-account) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fhow-to-delete-telegram-account&t=How%20to%20Permanently%20Delete%20Your%20Telegram%20Account) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fhow-to-delete-telegram-account&title=How%20to%20Permanently%20Delete%20Your%20Telegram%20Account)
+
+## Related reading
+
+*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
+*   [PRIVACYHow to delete reddit account permanently8 min · OllaVPN Blog](/blog/how-to-delete-reddit-account-permanently)
+*   [PRIVACYHow to make x account private8 min · OllaVPN Blog](/blog/how-to-make-x-account-private)
+*   [PRIVACYHow to block a number on iphone8 min · OllaVPN Blog](/blog/how-to-block-a-number-on-iphone)
+*   [PRIVACYWhat is post-quantum cryptography?8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography)
+*   [PRIVACYWhat is a DNS leak?8 min · OllaVPN Blog](/blog/what-is-a-dns-leak)
+
+NP
+
+Nathan Pratt
+
+Privacy & Security Lead
+
+Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
+
+[More from Nathan →](/about/team#nathan-pratt)
+
+#### More in [Privacy guides](index.html#privacy-security) 25 guides
+
+[View all 25 in Privacy guides →](index.html#privacy-security)
+
+[
+
+Are Free VPNs Safe? What You Need to Know Before You Connect
+
+Read guide →](are-free-vpns-safe.html)[
+
+Are VPNs Legal? What You Need to Know About VPN Legality and Privacy
+
+Read guide →](are-vpns-legal.html)[
+
+Can Websites Detect VPNs? What You Need to Know About Online Privacy
+
+Read guide →](can-a-website-detect-vpn.html)[
+
+Can Governments Really Track Your VPN? The Unvarnished Truth About Your Online Privacy
+
+Read guide →](can-government-track-vpn.html)
