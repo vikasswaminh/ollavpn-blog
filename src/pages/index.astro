@@ -6,150 +6,28 @@ import { getPublishedPosts, readingTime } from '../utils/posts';
 
 const posts = await getPublishedPosts();
 const featured = posts[0];
-const rest = posts.slice(1);
 
-const founderSpecialLinks = [
-  { title: "Why CCNA Alone Won't Get You a Job in 2026", href: "#" },
-  { title: "Palo Alto vs Fortinet vs Check Point — Comparison", href: "#" },
-  { title: "12-Month Blueprint: Fresher to Security Engineer", href: "#" },
-  { title: "Network Engineering vs Administration", href: "#" },
-  { title: "Freshers: Start Networking, Not Coding", href: "#" },
-  { title: "BGP in Production — What They Don't Teach", href: "#" },
-  { title: "Zero Trust Is Not a Product", href: "#" },
-  { title: "Lab Hours Matter More Than Study Hours", href: "#" },
-];
+const founderSpecialLinks = posts.slice(1, 9).map(p => ({
+  title: p.data.title,
+  href: `/blog/${p.slug}/`
+}));
 
-const aiSpecialLinks = [
-  { title: "Google Antigravity Guide 2026 — IDE + AI Coding Tips", href: "#" },
-  { title: "AI Won't Replace Network Engineers — But...", href: "#" },
-  { title: "Cisco Hypershield: The Self-Writing Firewall", href: "#" },
-  { title: "Free Cisco AI Certifications 2026 Guide", href: "#" },
-  { title: "Cisco AI Assistant for Security Explained", href: "#" },
-  { title: "Network Engineer's AI Toolkit — 12 Tools", href: "#" },
-  { title: "7 AI Skills Cisco Is Betting On", href: "#" },
-  { title: "AI Is Creating New Security Roles", href: "#" },
-  { title: "Post-Quantum Security Explained", href: "#" },
-];
+const aiSpecialLinks = posts.slice(9, 18).map(p => ({
+  title: p.data.title,
+  href: `/blog/${p.slug}/`
+}));
 
-const middleGridCards = [
-  {
-    tag: "Cisco",
-    tagClass: "",
-    title: "CCNA Exam Guide 2026",
-    desc: "Complete 200-301 exam guide for 2026 — blueprint, lab strategy, study plan, and what changed in v1.1.",
-    readTime: "20 min read"
-  },
-  {
-    tag: "Firewall",
-    tagClass: "tag-firewall",
-    title: "PCNSE Exam Guide 2026",
-    desc: "Palo Alto PCNSE certification guide — blueprint, hands-on lab plan, exam-day strategy.",
-    readTime: "18 min read"
-  },
-  {
-    tag: "Cloud",
-    tagClass: "tag-cloud",
-    title: "AWS Solutions Architect Guide 2026",
-    desc: "Complete career and study guide for AWS Solutions Architect Associate (SAA-C03) in 2026.",
-    readTime: "22 min read"
-  },
-  {
-    tag: "Cisco",
-    tagClass: "",
-    title: "CCIE Scope and Career Opportunities in 2026",
-    desc: "What the CCIE actually unlocks — roles, salary ranges, employer expectations, and ROI.",
-    readTime: "16 min read"
-  },
-  {
-    tag: "Career Strategy",
-    tagClass: "tag-career",
-    title: "Why CCNA Holders Get Stuck at Entry Level — Breaking Through",
-    desc: "The career trap CCNA holders hit and the concrete skills that move you past it.",
-    readTime: "14 min read"
-  },
-  {
-    tag: "Career Strategy",
-    tagClass: "tag-career",
-    title: "Career Switching to IT — Reality Check for Non-Tech Backgrounds",
-    desc: "Honest assessment of switching to IT from non-tech — timeline, trade-offs, and what works.",
-    readTime: "16 min read"
-  },
-  {
-    tag: "Cisco",
-    tagClass: "",
-    title: "CCNP Enterprise Guide 2026",
-    desc: "Complete 2026 guide to CCNP Enterprise — exam blueprint, lab strategy, what changed from v1.1.",
-    readTime: "18 min read"
-  },
-  {
-    tag: "Career Strategy",
-    tagClass: "tag-career",
-    title: "From Fresher to Production-Ready Engineer — Complete Roadmap",
-    desc: "The skill stack that takes you from fresher to engineer companies actually deploy on production.",
-    readTime: "20 min read"
-  },
-  {
-    tag: "Career Strategy",
-    tagClass: "tag-career",
-    title: "Why CCNA Is Not Enough in 2026 — Career Reality Check",
-    desc: "Honest analysis of why CCNA certification alone fails in 2026 job market. What hiring managers actually expect.",
-    readTime: "14 min read"
-  }
-];
-
-const allArticlesList = [
-  {
-    tag: "AI Coding",
-    title: "Google Antigravity Guide 2026 — IDE Setup...",
-    desc: "How to use Google's free AI IDE, honest Gemini vs Claude comparison for coding, and 10 ways to cut your monthly AI coding bill by 73%.",
-    date: "Jun 15, 2026"
-  },
-  {
-    tag: "Cisco",
-    title: "CCNA Exam Guide 2026",
-    desc: "Complete 200-301 exam guide for 2026 — blueprint, lab strategy, study plan, and what changed in v1.1.",
-    date: "May 12, 2026"
-  },
-  {
-    tag: "Firewall",
-    title: "PCNSE Exam Guide 2026",
-    desc: "Palo Alto PCNSE certification guide — blueprint, hands-on lab plan, exam-day strategy.",
-    date: "May 8, 2026"
-  },
-  {
-    tag: "Cloud",
-    title: "AWS Solutions Architect Guide 2026",
-    desc: "Complete career and study guide for AWS Solutions Architect Associate (SAA-C03) in 2026.",
-    date: "May 4, 2026"
-  },
-  {
-    tag: "Cisco",
-    title: "CCIE Scope and Career Opportunities in 2026",
-    desc: "What the CCIE actually unlocks — roles, salary ranges, employer expectations, and ROI.",
-    date: "Apr 28, 2026"
-  },
-  {
-    tag: "Career Strategy",
-    title: "Why CCNA Holders Get Stuck at Entry Level — ...",
-    desc: "The career trap CCNA holders hit and the concrete skills that move you past it.",
-    date: "Apr 20, 2026"
-  },
-  {
-    tag: "Career Strategy",
-    title: "Career Switching to IT — Reality Check for Non-...",
-    desc: "Honest assessment of switching to IT from non-tech — timeline, trade-offs, and what works.",
-    date: "Apr 15, 2026"
-  },
-  {
-    tag: "Cisco",
-    title: "CCNP Enterprise Guide 2026",
-    desc: "Complete 2026 guide to CCNP Enterprise — exam blueprint, lab strategy, what changed.",
-    date: "Apr 10, 2026"
-  }
-];
+const middleGridCards = posts.slice(18, 27).map(p => ({
+  tag: p.data.tags && p.data.tags[0] ? p.data.tags[0] : 'VPN & Privacy',
+  tagClass: '',
+  title: p.data.title,
+  desc: p.data.description,
+  readTime: `${readingTime(p.body)} min read`,
+  href: `/blog/${p.slug}/`
+}));
 
 const categoryFilters = [
-  "All", "AI Coding", "Cisco", "Firewall", "Cloud", "Career Strategy", "AI Special", "Networking", "Certifications", "Cybersecurity"
+  "All", "buyer-guides", "privacy-security", "comparisons", "how-to-guides", "beginner-basics", "protocol-tech", "use-cases", "pillars"
 ];
 ---
 
@@ -239,7 +117,7 @@ const categoryFilters = [
       <!-- 3x3 Grid Cards (2nd Scroll) -->
       <div class="middle-grid-3x3">
         {middleGridCards.map(card => (
-          <a href="#" class="grid-card">
+          <a href={card.href} class="grid-card">
             <div>
               <span class={`grid-card-tag ${card.tagClass}`}>{card.tag}</span>
               <h3 class="grid-card-title">{card.title}</h3>
@@ -250,13 +128,13 @@ const categoryFilters = [
         ))}
       </div>
 
-      <!-- 3RD SCROLL: All Articles Section with Search & Filter Bar -->
+      <!-- 3RD SCROLL: All 123 OllaVPN Articles Section with Search & Filter Bar -->
       <section class="all-articles-section">
         <div class="all-articles-header">
-          <h2 class="all-articles-title">All Articles</h2>
+          <h2 class="all-articles-title">All Articles ({posts.length})</h2>
           <div class="search-box-wrapper">
             <span class="search-icon">🔍</span>
-            <input type="text" id="article-search" class="search-input" placeholder="Search articles..." />
+            <input type="text" id="article-search" class="search-input" placeholder="Search 123 articles..." />
           </div>
         </div>
 
@@ -271,26 +149,31 @@ const categoryFilters = [
           </div>
         </div>
 
-        <!-- 4-Column Grid for All Articles -->
+        <!-- 4-Column Grid for All 123 OllaVPN Articles -->
         <div class="grid-4col" id="all-articles-grid">
-          {allArticlesList.map(card => (
-            <a href="#" class="grid-card article-card-item" data-tag={card.tag} data-title={card.title.toLowerCase()}>
-              <div>
-                <span class="grid-card-tag">{card.tag}</span>
-                <h3 class="grid-card-title">{card.title}</h3>
-                <p class="grid-card-desc">{card.desc}</p>
-              </div>
-              <div class="grid-card-date">{card.date}</div>
-            </a>
-          ))}
+          {posts.map(p => {
+            const firstTag = (p.data.tags && p.data.tags[0]) ? p.data.tags[0] : 'privacy-security';
+            const allTagsStr = (p.data.tags || []).join(' ');
+            const formattedDate = new Date(p.data.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+            return (
+              <a href={`/blog/${p.slug}/`} class="grid-card article-card-item" data-tag={firstTag} data-alltags={allTagsStr} data-title={p.data.title.toLowerCase()}>
+                <div>
+                  <span class="grid-card-tag">{firstTag}</span>
+                  <h3 class="grid-card-title">{p.data.title}</h3>
+                  <p class="grid-card-desc">{p.data.description}</p>
+                </div>
+                <div class="grid-card-date">{formattedDate}</div>
+              </a>
+            );
+          })}
         </div>
       </section>
 
       <!-- Remaining Posts List if any -->
-      {rest.length > 0 && (
+      {posts.length > 27 && (
         <div class="post-list" style="margin-top: 2rem;">
           <h3 style="color: var(--primary); font-size: 1.2rem; margin-bottom: 1rem;">More Articles</h3>
-          {rest.map((p) => (
+          {posts.slice(27, 35).map((p) => (
             <PostCard
               url={`/blog/${p.slug}/`}
               title={p.data.title}
@@ -340,9 +223,10 @@ const categoryFilters = [
       cards.forEach((card) => {
         const item = card as HTMLElement;
         const tag = item.dataset.tag || '';
+        const allTags = item.dataset.alltags || '';
         const title = item.dataset.title || '';
 
-        const matchesTag = currentFilter === 'All' || tag === currentFilter;
+        const matchesTag = currentFilter === 'All' || tag === currentFilter || allTags.includes(currentFilter);
         const matchesQuery = !query || title.includes(query) || item.innerText.toLowerCase().includes(query);
 
         if (matchesTag && matchesQuery) {
