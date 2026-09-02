@@ -7,41 +7,366 @@ import { getPublishedPosts, readingTime } from '../utils/posts';
 const posts = await getPublishedPosts();
 const featured = posts[0];
 const rest = posts.slice(1);
+
+const founderSpecialLinks = [
+  { title: "Why CCNA Alone Won't Get You a Job in 2026", href: "#" },
+  { title: "Palo Alto vs Fortinet vs Check Point — Comparison", href: "#" },
+  { title: "12-Month Blueprint: Fresher to Security Engineer", href: "#" },
+  { title: "Network Engineering vs Administration", href: "#" },
+  { title: "Freshers: Start Networking, Not Coding", href: "#" },
+  { title: "BGP in Production — What They Don't Teach", href: "#" },
+  { title: "Zero Trust Is Not a Product", href: "#" },
+  { title: "Lab Hours Matter More Than Study Hours", href: "#" },
+];
+
+const aiSpecialLinks = [
+  { title: "Google Antigravity Guide 2026 — IDE + AI Coding Tips", href: "#" },
+  { title: "AI Won't Replace Network Engineers — But...", href: "#" },
+  { title: "Cisco Hypershield: The Self-Writing Firewall", href: "#" },
+  { title: "Free Cisco AI Certifications 2026 Guide", href: "#" },
+  { title: "Cisco AI Assistant for Security Explained", href: "#" },
+  { title: "Network Engineer's AI Toolkit — 12 Tools", href: "#" },
+  { title: "7 AI Skills Cisco Is Betting On", href: "#" },
+  { title: "AI Is Creating New Security Roles", href: "#" },
+  { title: "Post-Quantum Security Explained", href: "#" },
+];
+
+const middleGridCards = [
+  {
+    tag: "Cisco",
+    tagClass: "",
+    title: "CCNA Exam Guide 2026",
+    desc: "Complete 200-301 exam guide for 2026 — blueprint, lab strategy, study plan, and what changed in v1.1.",
+    readTime: "20 min read"
+  },
+  {
+    tag: "Firewall",
+    tagClass: "tag-firewall",
+    title: "PCNSE Exam Guide 2026",
+    desc: "Palo Alto PCNSE certification guide — blueprint, hands-on lab plan, exam-day strategy.",
+    readTime: "18 min read"
+  },
+  {
+    tag: "Cloud",
+    tagClass: "tag-cloud",
+    title: "AWS Solutions Architect Guide 2026",
+    desc: "Complete career and study guide for AWS Solutions Architect Associate (SAA-C03) in 2026.",
+    readTime: "22 min read"
+  },
+  {
+    tag: "Cisco",
+    tagClass: "",
+    title: "CCIE Scope and Career Opportunities in 2026",
+    desc: "What the CCIE actually unlocks — roles, salary ranges, employer expectations, and ROI.",
+    readTime: "16 min read"
+  },
+  {
+    tag: "Career Strategy",
+    tagClass: "tag-career",
+    title: "Why CCNA Holders Get Stuck at Entry Level — Breaking Through",
+    desc: "The career trap CCNA holders hit and the concrete skills that move you past it.",
+    readTime: "14 min read"
+  },
+  {
+    tag: "Career Strategy",
+    tagClass: "tag-career",
+    title: "Career Switching to IT — Reality Check for Non-Tech Backgrounds",
+    desc: "Honest assessment of switching to IT from non-tech — timeline, trade-offs, and what works.",
+    readTime: "16 min read"
+  },
+  {
+    tag: "Cisco",
+    tagClass: "",
+    title: "CCNP Enterprise Guide 2026",
+    desc: "Complete 2026 guide to CCNP Enterprise — exam blueprint, lab strategy, what changed from v1.1.",
+    readTime: "18 min read"
+  },
+  {
+    tag: "Career Strategy",
+    tagClass: "tag-career",
+    title: "From Fresher to Production-Ready Engineer — Complete Roadmap",
+    desc: "The skill stack that takes you from fresher to engineer companies actually deploy on production.",
+    readTime: "20 min read"
+  },
+  {
+    tag: "Career Strategy",
+    tagClass: "tag-career",
+    title: "Why CCNA Is Not Enough in 2026 — Career Reality Check",
+    desc: "Honest analysis of why CCNA certification alone fails in 2026 job market. What hiring managers actually expect.",
+    readTime: "14 min read"
+  }
+];
+
+const allArticlesList = [
+  {
+    tag: "AI Coding",
+    title: "Google Antigravity Guide 2026 — IDE Setup...",
+    desc: "How to use Google's free AI IDE, honest Gemini vs Claude comparison for coding, and 10 ways to cut your monthly AI coding bill by 73%.",
+    date: "Jun 15, 2026"
+  },
+  {
+    tag: "Cisco",
+    title: "CCNA Exam Guide 2026",
+    desc: "Complete 200-301 exam guide for 2026 — blueprint, lab strategy, study plan, and what changed in v1.1.",
+    date: "May 12, 2026"
+  },
+  {
+    tag: "Firewall",
+    title: "PCNSE Exam Guide 2026",
+    desc: "Palo Alto PCNSE certification guide — blueprint, hands-on lab plan, exam-day strategy.",
+    date: "May 8, 2026"
+  },
+  {
+    tag: "Cloud",
+    title: "AWS Solutions Architect Guide 2026",
+    desc: "Complete career and study guide for AWS Solutions Architect Associate (SAA-C03) in 2026.",
+    date: "May 4, 2026"
+  },
+  {
+    tag: "Cisco",
+    title: "CCIE Scope and Career Opportunities in 2026",
+    desc: "What the CCIE actually unlocks — roles, salary ranges, employer expectations, and ROI.",
+    date: "Apr 28, 2026"
+  },
+  {
+    tag: "Career Strategy",
+    title: "Why CCNA Holders Get Stuck at Entry Level — ...",
+    desc: "The career trap CCNA holders hit and the concrete skills that move you past it.",
+    date: "Apr 20, 2026"
+  },
+  {
+    tag: "Career Strategy",
+    title: "Career Switching to IT — Reality Check for Non-...",
+    desc: "Honest assessment of switching to IT from non-tech — timeline, trade-offs, and what works.",
+    date: "Apr 15, 2026"
+  },
+  {
+    tag: "Cisco",
+    title: "CCNP Enterprise Guide 2026",
+    desc: "Complete 2026 guide to CCNP Enterprise — exam blueprint, lab strategy, what changed.",
+    date: "Apr 10, 2026"
+  }
+];
+
+const categoryFilters = [
+  "All", "AI Coding", "Cisco", "Firewall", "Cloud", "Career Strategy", "AI Special", "Networking", "Certifications", "Cybersecurity"
+];
 ---
 
 <BaseLayout>
-  <section class="hero">
-    <h1 class="hero-title">{SITE.brand} <span>Blog</span></h1>
-    <p class="hero-tagline">{SITE.description}</p>
-  </section>
-
-  {posts.length === 0 && <p class="empty">No posts yet — check back soon.</p>}
-
-  {
-    featured && (
-      <a class="featured" href={`/blog/${featured.slug}/`}>
-        <span class="featured-label">Latest</span>
-        <h2 class="featured-title">{featured.data.title}</h2>
-        <p class="featured-desc">{featured.data.description}</p>
-        <span class="featured-more">Read article →</span>
-      </a>
-    )
-  }
-
-  {
-    rest.length > 0 && (
-      <div class="post-list">
-        {rest.map((p) => (
-          <PostCard
-            url={`/blog/${p.slug}/`}
-            title={p.data.title}
-            description={p.data.description}
-            pubDate={p.data.pubDate}
-            tags={p.data.tags}
-            minutes={readingTime(p.body)}
-          />
+  <!-- 3-Column Main Grid Matching Image 1 -->
+  <div class="three-col-layout">
+    
+    <!-- LEFT COLUMN: Founder Special -->
+    <aside class="left-col">
+      <div class="col-pill-header founder-pill">
+        FOUNDER SPECIAL
+      </div>
+      <div class="side-article-list">
+        {founderSpecialLinks.map(item => (
+          <a href={item.href} class="side-article-item">
+            {item.title}
+          </a>
         ))}
       </div>
-    )
-  }
+      <a href="#" class="view-all-link">View All →</a>
+    </aside>
+
+    <!-- MIDDLE COLUMN: Main Content & Featured Post & 3x3 Grid Cards -->
+    <main class="middle-col">
+      <div class="main-heading-block">
+        <h1 class="main-heading-title">Networking, Cloud Security & Cybersecurity Blog</h1>
+        <p class="main-heading-sub">Expert articles on cloud security, AI/ML, networking certifications & IT careers</p>
+      </div>
+
+      <div class="section-sub-pill">
+        <span class="col-pill-header newest-pill">🔥 NEWEST ARTICLES</span>
+        <span class="latest-label">Latest from our experts</span>
+      </div>
+
+      {featured && (
+        <a class="featured-card" href={`/blog/${featured.slug}/`}>
+          <div class="badge-new">🔥 NEW</div>
+          <div class="featured-img-wrapper">
+            <svg width="100%" height="100%" viewBox="0 0 400 260" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#388087" />
+                  <stop offset="50%" stop-color="#6FB3B8" />
+                  <stop offset="100%" stop-color="#1e5c63" />
+                </linearGradient>
+              </defs>
+              <rect width="400" height="260" fill="url(#cardGrad)" />
+              <circle cx="120" cy="130" r="70" fill="#BADFE7" opacity="0.25" />
+              <rect x="180" y="50" width="180" height="120" rx="8" fill="#ffffff" opacity="0.9" />
+              <path d="M 200 90 L 260 140 L 320 80" stroke="#388087" stroke-width="4" fill="none" stroke-linecap="round" />
+              <circle cx="260" cy="140" r="6" fill="#ff6b35" />
+              <circle cx="320" cy="80" r="6" fill="#388087" />
+            </svg>
+          </div>
+          <div class="featured-content">
+            <span class="featured-tag">AI Coding</span>
+            <h2 class="featured-title">{featured.data.title}</h2>
+            <p class="featured-desc">{featured.data.description}</p>
+            <div class="featured-meta">
+              <span>{readingTime(featured.body)} min read</span>
+              <span>•</span>
+              <span class="read-more">Read article →</span>
+            </div>
+          </div>
+        </a>
+      )}
+
+      <!-- Bottom Category Grid Cards (Cisco, Firewall, Cloud) -->
+      <div class="category-pills-grid">
+        <a href="#" class="category-pill-card">
+          <span class="category-pill-badge">Cisco</span>
+          <strong>CCNA Exam Guide</strong>
+          <span style="font-size: 0.8rem; color: var(--muted);">Complete 200-301 Strategy</span>
+        </a>
+        <a href="#" class="category-pill-card">
+          <span class="category-pill-badge tag-firewall" style="background-color: #d97706;">Firewall</span>
+          <strong>PCNSE Guide</strong>
+          <span style="font-size: 0.8rem; color: var(--muted);">Palo Alto Certification</span>
+        </a>
+        <a href="#" class="category-pill-card">
+          <span class="category-pill-badge tag-cloud" style="background-color: #2563eb;">Cloud</span>
+          <strong>AWS Solutions</strong>
+          <span style="font-size: 0.8rem; color: var(--muted);">Architect Associate Guide</span>
+        </a>
+      </div>
+
+      <!-- 3x3 Grid Cards (2nd Scroll) -->
+      <div class="middle-grid-3x3">
+        {middleGridCards.map(card => (
+          <a href="#" class="grid-card">
+            <div>
+              <span class={`grid-card-tag ${card.tagClass}`}>{card.tag}</span>
+              <h3 class="grid-card-title">{card.title}</h3>
+              <p class="grid-card-desc">{card.desc}</p>
+            </div>
+            <div class="grid-card-readtime">{card.readTime}</div>
+          </a>
+        ))}
+      </div>
+
+      <!-- 3RD SCROLL: All Articles Section with Search & Filter Bar -->
+      <section class="all-articles-section">
+        <div class="all-articles-header">
+          <h2 class="all-articles-title">All Articles</h2>
+          <div class="search-box-wrapper">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="article-search" class="search-input" placeholder="Search articles..." />
+          </div>
+        </div>
+
+        <!-- Filter Tags Row -->
+        <div class="filter-tags-scroll-container">
+          <div class="filter-tags-row">
+            {categoryFilters.map((filter, idx) => (
+              <button class={`filter-pill ${idx === 0 ? 'active' : ''}`} data-filter={filter}>
+                {filter}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <!-- 4-Column Grid for All Articles -->
+        <div class="grid-4col" id="all-articles-grid">
+          {allArticlesList.map(card => (
+            <a href="#" class="grid-card article-card-item" data-tag={card.tag} data-title={card.title.toLowerCase()}>
+              <div>
+                <span class="grid-card-tag">{card.tag}</span>
+                <h3 class="grid-card-title">{card.title}</h3>
+                <p class="grid-card-desc">{card.desc}</p>
+              </div>
+              <div class="grid-card-date">{card.date}</div>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <!-- Remaining Posts List if any -->
+      {rest.length > 0 && (
+        <div class="post-list" style="margin-top: 2rem;">
+          <h3 style="color: var(--primary); font-size: 1.2rem; margin-bottom: 1rem;">More Articles</h3>
+          {rest.map((p) => (
+            <PostCard
+              url={`/blog/${p.slug}/`}
+              title={p.data.title}
+              description={p.data.description}
+              pubDate={p.data.pubDate}
+              tags={p.data.tags}
+              minutes={readingTime(p.body)}
+            />
+          ))}
+        </div>
+      )}
+    </main>
+
+    <!-- RIGHT COLUMN: AI Special -->
+    <aside class="right-col">
+      <div class="col-pill-header ai-pill">
+        AI SPECIAL
+      </div>
+      <div class="side-article-list">
+        {aiSpecialLinks.map(item => (
+          <a href={item.href} class="side-article-item">
+            {item.title}
+          </a>
+        ))}
+      </div>
+      <a href="#" class="view-all-link">View All AI Specials →</a>
+    </aside>
+
+  </div>
+
+  <!-- Floating Action Button -->
+  <a href={SITE.marketingUrl} class="floating-cta-btn">
+    ⚡ Get OllaVPN Free
+  </a>
+
+  <!-- Interactive Search & Filtering Script -->
+  <script>
+    const searchInput = document.getElementById('article-search');
+    const filterPills = document.querySelectorAll('.filter-pill');
+    const cards = document.querySelectorAll('.article-card-item');
+
+    let currentFilter = 'All';
+
+    function filterArticles() {
+      const query = searchInput ? (searchInput as HTMLInputElement).value.toLowerCase() : '';
+
+      cards.forEach((card) => {
+        const item = card as HTMLElement;
+        const tag = item.dataset.tag || '';
+        const title = item.dataset.title || '';
+
+        const matchesTag = currentFilter === 'All' || tag === currentFilter;
+        const matchesQuery = !query || title.includes(query) || item.innerText.toLowerCase().includes(query);
+
+        if (matchesTag && matchesQuery) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    if (searchInput) {
+      searchInput.addEventListener('input', filterArticles);
+    }
+
+    filterPills.forEach((pill) => {
+      pill.addEventListener('click', () => {
+        filterPills.forEach((p) => p.classList.remove('active'));
+        pill.classList.add('active');
+        currentFilter = pill.getAttribute('data-filter') || 'All';
+        filterArticles();
+      });
+    });
+  </script>
 </BaseLayout>
+
+
+
