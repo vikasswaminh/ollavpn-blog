@@ -25,6 +25,7 @@ body {
   line-height: 1.6;
   font-size: 15px;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 a { color: var(--primary); text-decoration: none; }
@@ -175,17 +176,16 @@ main.container {
 .ticker-bar {
   background: linear-gradient(90deg, #2e696f, var(--primary), #3b878e);
   color: #ffffff;
-  padding: 0.5rem 0;
+  padding: 0.6rem 0;
   font-size: 0.83rem;
   font-weight: 600;
-  overflow-x: auto;
 }
 .ticker-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1.25rem;
-  white-space: nowrap;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.25rem;
 }
 .ticker-item {
   display: inline-flex;
@@ -612,40 +612,22 @@ main.container {
   box-shadow: 0 0 0 3px rgba(56, 128, 135, 0.15);
 }
 
-/* Category Filter Tags Scrollbar Bar */
+/* Category Filter Tags Bar (No Horizontal Scroll) */
 .filter-tags-scroll-container {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
   margin-bottom: 1.5rem;
-  position: relative;
 }
 
 .filter-tags-row {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
-  overflow-x: auto;
-  padding-bottom: 0.5rem;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
-
-.filter-tags-row::-webkit-scrollbar {
-  height: 4px;
-}
-.filter-tags-row::-webkit-scrollbar-track {
-  background: #e2eeef;
-  border-radius: 4px;
-}
-.filter-tags-row::-webkit-scrollbar-thumb {
-  background: var(--primary);
-  border-radius: 4px;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .filter-pill {
-  white-space: nowrap;
-  padding: 0.4rem 1rem;
+  padding: 0.4rem 0.9rem;
   border-radius: 20px;
   font-size: 0.82rem;
   font-weight: 700;
