@@ -10,7 +10,7 @@ export const SITE = {
   marketingUrl: 'https://ollavpn.com',
   marketingLabel: 'ollavpn.com',
   author: 'OllaVPN Team',
-  accent: '#388087',
+  accent: '#2f6fed',
   tagline: 'Privacy, unlocked.',
   locale: 'en',
 } as const;
