@@ -44,6 +44,8 @@ jobs:
         run: |
           git clone --depth 1 https://github.com/vikasswaminh/ollavpn-marketing.git _marketing
           cp -r public/blog/* _marketing/blog/
+          cp public/styles.css _marketing/styles.css
+          cp public/styles.css _marketing/blog/styles.css
           rm -rf _marketing/.git _marketing/.github _marketing/.gitea
           npx --yes wrangler@4 pages deploy _marketing --project-name ollavpn-marketing --branch main --commit-dirty=true
         env:
