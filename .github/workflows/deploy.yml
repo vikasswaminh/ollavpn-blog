@@ -32,9 +32,20 @@ jobs:
           npm ci || npm install
           npm run build
 
-      - name: Deploy to Cloudflare Pages
+      - name: Deploy to Cloudflare Pages (ollavpn-blog)
         if: github.ref == 'refs/heads/main'
         run: npx --yes wrangler@4 pages deploy dist --project-name ollavpn-blog --branch main --commit-dirty=true
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Deploy to Cloudflare Pages (ollavpn-marketing)
+        if: github.ref == 'refs/heads/main'
+        run: |
+          git clone --depth 1 https://github.com/vikasswaminh/ollavpn-marketing.git _marketing
+          cp -r public/blog/* _marketing/blog/
+          rm -rf _marketing/.git _marketing/.github _marketing/.gitea
+          npx --yes wrangler@4 pages deploy _marketing --project-name ollavpn-marketing --branch main --commit-dirty=true
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
