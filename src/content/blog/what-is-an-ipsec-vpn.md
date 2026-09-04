@@ -232,14 +232,6 @@ No card. Unsubscribe with one click.
 
 Share Copy link [X](https://twitter.com/intent/tweet?text=What%20Exactly%20Is%20an%20IPSec%20VPN%2C%20and%20Why%20Should%20You%20Care%3F&url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-an-ipsec-vpn) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-an-ipsec-vpn) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-an-ipsec-vpn&t=What%20Exactly%20Is%20an%20IPSec%20VPN%2C%20and%20Why%20Should%20You%20Care%3F) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-an-ipsec-vpn&title=What%20Exactly%20Is%20an%20IPSec%20VPN%2C%20and%20Why%20Should%20You%20Care%3F)
 
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [PRIVACYFree WireGuard VPN8 min · OllaVPN Blog](/free-wireguard-vpn)
-*   [PRIVACYWhat is a vpn protocol8 min · OllaVPN Blog](/blog/what-is-a-vpn-protocol)
-*   [PRIVACYWireguard vs ikev28 min · OllaVPN Blog](/blog/wireguard-vs-ikev2)
-*   [PRIVACYWhat is a vpn tunnel8 min · OllaVPN Blog](/blog/what-is-a-vpn-tunnel)
-*   [PRIVACYWhat is post-quantum cryptography?8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography)
 
 NP
 
@@ -250,25 +242,3 @@ Privacy & Security Lead
 Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
 
 [More from Nathan →](/about/team#nathan-pratt)
-
-#### More in [Protocol & tech](index.html#protocol-tech) 12 guides
-
-[View all 12 in Protocol & tech →](index.html#protocol-tech)
-
-[
-
-What is Encrypted Client Hello (ECH) and Why Should You Care?
-
-Read guide →](what-is-encrypted-client-hello.html)[
-
-MASQUE Protocol Explained: What It Is, How It Works, and Why You Should Care
-
-Read guide →](what-is-masque.html)[
-
-What is Multi-Hop VPN and How Does it Boost Your Privacy?
-
-Read guide →](what-is-multi-hop-vpn.html)[
-
-What is Onion Over VPN, and Why Should You Care?
-
-Read guide →](what-is-onion-over-vpn.html)

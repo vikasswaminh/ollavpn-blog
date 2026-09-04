@@ -232,14 +232,6 @@ No card. Unsubscribe with one click.
 
 Share Copy link [X](https://twitter.com/intent/tweet?text=MASQUE%20Protocol%20Explained%3A%20What%20It%20Is%2C%20How%20It%20Works%2C%20and%20Why%20You%20Should%20Care&url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-masque) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-masque) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-masque&t=MASQUE%20Protocol%20Explained%3A%20What%20It%20Is%2C%20How%20It%20Works%2C%20and%20Why%20You%20Should%20Care) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-masque&title=MASQUE%20Protocol%20Explained%3A%20What%20It%20Is%2C%20How%20It%20Works%2C%20and%20Why%20You%20Should%20Care)
 
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [PRIVACYFree QUIC VPN for restrictive networks8 min · OllaVPN Blog](/free-quic-vpn)
-*   [PRIVACYWhat is quic8 min · OllaVPN Blog](/blog/what-is-quic)
-*   [PRIVACYWhat is vpn obfuscation8 min · OllaVPN Blog](/blog/what-is-vpn-obfuscation)
-*   [PRIVACYWireguard vs openvpn8 min · OllaVPN Blog](/blog/wireguard-vs-openvpn)
-*   [PRIVACYWhat is post-quantum cryptography?8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography)
 
 NP
 
@@ -250,25 +242,3 @@ Privacy & Security Lead
 Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
 
 [More from Nathan →](/about/team#nathan-pratt)
-
-#### More in [Protocol & tech](index.html#protocol-tech) 12 guides
-
-[View all 12 in Protocol & tech →](index.html#protocol-tech)
-
-[
-
-What Exactly Is an IPSec VPN, and Why Should You Care?
-
-Read guide →](what-is-an-ipsec-vpn.html)[
-
-What is Encrypted Client Hello (ECH) and Why Should You Care?
-
-Read guide →](what-is-encrypted-client-hello.html)[
-
-What is Multi-Hop VPN and How Does it Boost Your Privacy?
-
-Read guide →](what-is-multi-hop-vpn.html)[
-
-What is Onion Over VPN, and Why Should You Care?
-
-Read guide →](what-is-onion-over-vpn.html)

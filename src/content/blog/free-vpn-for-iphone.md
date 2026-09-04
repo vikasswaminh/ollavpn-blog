@@ -24,20 +24,6 @@ Nathan Pratt — Privacy & Security Lead ✓
 
 Reviewed by Hannah Wu · Senior Security Engineer · Last fact-checked 17 July 2026
 
-JUMP TO A SECTION
-
-1.  [What does "no credit card, no logs" actually mean?](#what-does-no-credit-card)
-2.  [What should you expect from any honest free iPhone VPN in 2026?](#what-should-you-expect-from)
-3.  [What does OllaVPN Free specifically give your iPhone?](#what-does-ollavpn-free-specifically)
-4.  [How does OllaVPN's free plan compare to other free iPhone VPNs?](#how-does-ollavpns-free-plan)
-5.  [How do you set up a free VPN on your iPhone?](#how-do-you-set-up)
-6.  [Is 10 Mbps enough for daily iPhone use?](#is-10-mbps-enough-for)
-7.  [What common mistakes do people make choosing a free iPhone VPN?](#what-common-mistakes-do-people)
-8.  [When does a paid plan make more sense for your iPhone?](#when-does-a-paid-plan)
-9.  [Why does post-quantum-ready encryption matter on a phone specifically?](#why-does-postquantumready-encryption-matter)
-10.  [How does a "no-logs" claim actually get verified?](#how-does-a-nologs-claim)
-11.  [Frequently asked questions](#frequently-asked-questions)
-
 **TL;DR — The Summary**
 
 A genuinely free iPhone VPN with no credit card and no logs in 2026 means exactly what it says: you download the app, tap connect, and get a private, encrypted connection without entering payment details, without your usage being tracked or sold, and without a countdown timer quietly running in the background.

@@ -18,24 +18,6 @@ TL;DR — The Short Answer
 
 The **Five Eyes** is an intelligence-sharing alliance between the United States, United Kingdom, Canada, Australia, and New Zealand, formalized by the 1946 UKUSA Agreement. The **Nine Eyes** adds Denmark, France, the Netherlands, and Norway. The **Fourteen Eyes** further adds Germany, Belgium, Italy, Spain, and Sweden. Each tier represents a different level of cooperation in sharing signals intelligence. In VPN terms, jurisdictions outside these alliances — like Switzerland, Panama, and the British Virgin Islands — are often preferred. But here's the honest truth: **a properly built no-logs VPN is privacy-protective regardless of jurisdiction**, because there is nothing for any government to obtain. Jurisdiction matters; a strong product matters more.
 
-Jump to a section
-
-1.  [Why this comes up in every VPN conversation](#why-care)
-2.  [What the Five Eyes is](#five-eyes)
-3.  [What the Nine Eyes is](#nine-eyes)
-4.  [What the Fourteen Eyes is](#fourteen-eyes)
-5.  [All the countries, at a glance](#table)
-6.  [What the alliances actually do](#what-they-do)
-7.  [A short history](#history)
-8.  [Beyond Fourteen Eyes](#beyond)
-9.  [Does this matter for VPN users?](#vpn-matter)
-10.  [Jurisdiction vs server location](#jurisdiction)
-11.  [Five common misconceptions](#myths)
-12.  [The "privacy-friendly" jurisdictions](#preferred)
-13.  [Your jurisdiction checklist](#checklist)
-14.  [How OllaVPN thinks about jurisdiction](#ollavpn)
-15.  [Frequently asked questions](#faq)
-
 Spend any time reading about VPNs and you'll quickly run into a phrase that sounds vaguely ominous: the _Five Eyes_. Or maybe its more comprehensive cousins, the _Nine Eyes_ and the _Fourteen Eyes_. Most VPN marketing pages reference them. Most don't quite explain what they are.
 
 This guide does. Written plainly, with respect for your time. We'll cover what the alliances actually are, what they actually do, what's legitimately worth thinking about as a VPN user, and — equally important — what's overstated. The goal is to leave you with a clear, balanced understanding that no marketing page will give you.
@@ -303,16 +285,6 @@ Five devices on one account. Same protection, faster connection.
 
 [Try OllaVPN free](../dl/) — no card, no email required.
 
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [TECHNOLOGYWhat is post-quantum cryptography? A 2026 guide8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography.html)
-*   [SECURITYWhat is a DNS leak? How to test, fix, and prevent it9 min · OllaVPN Blog](/blog/what-is-a-dns-leak.html)
-*   [COMPARISONMullvad vs ProtonVPN: Privacy Comparison8 min · OllaVPN Blog](/blog/mullvad-vs-protonvpn.html)
-*   [COMPARISONNordVPN vs ProtonVPN: Panama vs Switzerland8 min · OllaVPN Blog](/blog/nordvpn-vs-protonvpn.html)
-*   [PRIVACYLifetime Free VPN: Is OllaVPN Really Free Forever?10 min · OllaVPN Blog](/blog/lifetime-free-vpn.html)
-
-* * *
 
 ## A broader-context closing thought
 
@@ -435,25 +407,3 @@ Nathan posts one deep-dive every two weeks. No spam, no sales blasts, no clickba
 No card. Unsubscribe with one click.
 
 Share Copy link [X](https://twitter.com/intent/tweet?text=OllaVPN%20blog&url=https%3A%2F%2Follavpn.com%2Fblog%2Ffive-eyes-nine-eyes-fourteen-eyes) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Ffive-eyes-nine-eyes-fourteen-eyes) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Ffive-eyes-nine-eyes-fourteen-eyes&t=OllaVPN%20blog) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Ffive-eyes-nine-eyes-fourteen-eyes&title=OllaVPN%20blog)
-
-#### More in [Privacy guides](index.html#privacy-security) 25 guides
-
-[View all 25 in Privacy guides →](index.html#privacy-security)
-
-[
-
-Are Free VPNs Safe? What You Need to Know Before You Connect
-
-Read guide →](are-free-vpns-safe.html)[
-
-Are VPNs Legal? What You Need to Know About VPN Legality and Privacy
-
-Read guide →](are-vpns-legal.html)[
-
-Can Websites Detect VPNs? What You Need to Know About Online Privacy
-
-Read guide →](can-a-website-detect-vpn.html)[
-
-Can Governments Really Track Your VPN? The Unvarnished Truth About Your Online Privacy
-
-Read guide →](can-government-track-vpn.html)

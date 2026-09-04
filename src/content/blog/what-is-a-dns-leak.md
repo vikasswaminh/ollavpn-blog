@@ -18,22 +18,6 @@ TL;DR — The Short Answer
 
 A **DNS leak** happens when your device sends DNS requests — the lookups that turn website names into numbers — outside your VPN's encrypted tunnel. Your browsing activity becomes visible to your internet service provider even while you think the VPN is protecting it. **To test:** connect to your VPN, then visit a DNS leak test site like _dnsleaktest.com_. If the test shows only your VPN provider's DNS servers, you're safe. If it shows your ISP's servers, you have a leak. **To prevent it for good:** use a reputable VPN that handles DNS inside the encrypted tunnel by default, with an always-on kill switch. [OllaVPN does this automatically](../dl/) on every connection.
 
-Jump to a section
-
-1.  [What DNS actually does](#what-is-dns)
-2.  [What a DNS leak is](#what-is-leak)
-3.  [Why DNS leaks matter](#why-matters)
-4.  [What causes DNS leaks](#causes)
-5.  [How to test for a DNS leak](#test)
-6.  [How to read the test results](#read-results)
-7.  [How to fix a DNS leak](#fix)
-8.  [How to prevent leaks for good](#prevent)
-9.  [DNS leak protection vs the kill switch](#kill-switch)
-10.  [A note on IPv6 leaks](#ipv6)
-11.  [Your privacy checklist](#checklist)
-12.  [How OllaVPN handles DNS](#ollavpn)
-13.  [Frequently asked questions](#faq)
-
 Most privacy stories on the internet are dramatic. A DNS leak is the opposite. It is the quiet, easy-to-miss way that a VPN you trust can still hand your browsing history to your internet provider — not because the VPN is malicious, but because of how the request for "where is this website" travels through your computer.
 
 The good news: a DNS leak is one of the easiest privacy problems to test for, and one of the easiest to fix. This guide walks you through both, in plain English, the way we'd explain it over coffee.
@@ -217,16 +201,6 @@ Five devices on one account. Fast enough for gigabit home internet. Cheap enough
 
 You can [try the free plan](../dl/) right now — no email, no card. Then run a DNS leak test and see for yourself.
 
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [SECURITYWhat is a WebRTC leak and how to fix it7 min · OllaVPN Blog](/blog/what-is-webrtc-leak.html)
-*   [SECURITYWhat is an IPv6 leak and why it matters7 min · OllaVPN Blog](/blog/what-is-an-ipv6-leak.html)
-*   [HOW-TOHow to Test for DNS Leaks (Step-by-Step)6 min · OllaVPN Blog](/blog/how-to-test-for-dns-leak.html)
-*   [TECHNOLOGYWhat is post-quantum cryptography? A 2026 guide8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography.html)
-*   [PRIVACYLifetime Free VPN: Is OllaVPN Really Free Forever?10 min · OllaVPN Blog](/blog/lifetime-free-vpn.html)
-
-* * *
 
 ## A broader-context closing thought
 
@@ -347,25 +321,3 @@ Nathan posts one deep-dive every two weeks. No spam, no sales blasts, no clickba
 No card. Unsubscribe with one click.
 
 Share Copy link [X](https://twitter.com/intent/tweet?text=OllaVPN%20blog&url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-a-dns-leak) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-a-dns-leak) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-a-dns-leak&t=OllaVPN%20blog) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-a-dns-leak&title=OllaVPN%20blog)
-
-#### More in [Privacy guides](index.html#privacy-security) 25 guides
-
-[View all 25 in Privacy guides →](index.html#privacy-security)
-
-[
-
-Are Free VPNs Safe? What You Need to Know Before You Connect
-
-Read guide →](are-free-vpns-safe.html)[
-
-Are VPNs Legal? What You Need to Know About VPN Legality and Privacy
-
-Read guide →](are-vpns-legal.html)[
-
-Can Websites Detect VPNs? What You Need to Know About Online Privacy
-
-Read guide →](can-a-website-detect-vpn.html)[
-
-Can Governments Really Track Your VPN? The Unvarnished Truth About Your Online Privacy
-
-Read guide →](can-government-track-vpn.html)

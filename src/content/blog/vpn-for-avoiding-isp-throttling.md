@@ -198,14 +198,6 @@ No card. Unsubscribe with one click.
 
 Share Copy link [X](https://twitter.com/intent/tweet?text=Is%20Your%20ISP%20Slowing%20You%20Down%3F%20How%20a%20VPN%20Can%20Help%20You%20Beat%20Throttling&url=https%3A%2F%2Follavpn.com%2Fblog%2Fvpn-for-avoiding-isp-throttling) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fvpn-for-avoiding-isp-throttling) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fvpn-for-avoiding-isp-throttling&t=Is%20Your%20ISP%20Slowing%20You%20Down%3F%20How%20a%20VPN%20Can%20Help%20You%20Beat%20Throttling) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fvpn-for-avoiding-isp-throttling&title=Is%20Your%20ISP%20Slowing%20You%20Down%3F%20How%20a%20VPN%20Can%20Help%20You%20Beat%20Throttling)
 
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [PRIVACYWhy is my vpn so slow8 min · OllaVPN Blog](/blog/why-is-my-vpn-so-slow)
-*   [PRIVACYHow to lower ping in online games8 min · OllaVPN Blog](/blog/how-to-lower-ping-in-online-games)
-*   [PRIVACYVpn for online gaming8 min · OllaVPN Blog](/blog/vpn-for-online-gaming)
-*   [PRIVACYWhat is post-quantum cryptography?8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography)
-*   [PRIVACYWhat is a DNS leak?8 min · OllaVPN Blog](/blog/what-is-a-dns-leak)
 
 NP
 
@@ -216,25 +208,3 @@ Privacy & Security Lead
 Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
 
 [More from Nathan →](/about/team#nathan-pratt)
-
-#### More in [Use cases](index.html#use-cases) 8 guides
-
-[View all 8 in Use cases →](index.html#use-cases)
-
-[
-
-Free VPN for Netflix 2026: Does It Actually Work?
-
-Read guide →](free-vpn-for-netflix.html)[
-
-Do You Need a VPN for Cryptocurrency and Web3 Activity?
-
-Read guide →](vpn-for-cryptocurrency-users.html)[
-
-VPN for Journalists & Activists: Your Essential Digital Shield?
-
-Read guide →](vpn-for-journalists-activists.html)[
-
-Online Banking and VPNs: Do You Really Need One to Stay Safe?
-
-Read guide →](vpn-for-online-banking.html)

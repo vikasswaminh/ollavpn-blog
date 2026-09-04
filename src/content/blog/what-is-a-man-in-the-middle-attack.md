@@ -18,27 +18,6 @@ No credit card. Or $2/mo for 5 devices on a faster plan.
 
 The plain-English guide to one of the oldest tricks in networking, still working in 2026. How someone intercepts communications and how to defend yourself.
 
-JUMP TO A SECTION
-
-1.  [1\. Why this old attack still works in 2026](#why-this-old-attack-still-works-in-2026)
-2.  [2\. A simple analogy — the mail carrier who reads your letters](#a-simple-analogy-the-mail-carrier-who-reads-your-letters)
-3.  [3\. What a man-in-the-middle attack actually is](#what-a-man-in-the-middle-attack-actually-is)
-4.  [4\. The three things every MITM attack needs](#the-three-things-every-mitm-attack-needs)
-5.  [5\. How attackers actually get in the middle](#how-attackers-actually-get-in-the-middle)
-6.  [6\. The evil twin — fake Wi-Fi hotspots explained](#the-evil-twin-fake-wi-fi-hotspots-explained)
-7.  [7\. ARP spoofing — hijacking traffic on your own network](#arp-spoofing-hijacking-traffic-on-your-own-network)
-8.  [8\. DNS spoofing — sending you to the wrong address entirely](#dns-spoofing-sending-you-to-the-wrong-address-entirely)
-9.  [9\. SSL stripping and forged certificates](#ssl-stripping-and-forged-certificates)
-10.  [10\. BGP hijacking — MITM at internet scale](#bgp-hijacking-mitm-at-internet-scale)
-11.  [11\. Real incidents worth knowing about](#real-incidents-worth-knowing-about)
-12.  [12\. How HTTPS actually defeats most of this](#how-https-actually-defeats-most-of-this)
-13.  [13\. Where HTTPS still leaves a gap](#where-https-still-leaves-a-gap)
-14.  [14\. Five myths about man-in-the-middle attacks](#five-myths-about-man-in-the-middle-attacks)
-15.  [15\. How to actually protect yourself](#how-to-actually-protect-yourself)
-16.  [16\. How OllaVPN closes the network-level gap](#how-ollavpn-closes-the-network-level-gap)
-17.  [17\. Frequently asked questions](#frequently-asked-questions)
-18.  [18\. If you've ever connected to café Wi-Fi without a second thought, or clicked past a browser warning about an "insecure connection" because you were in a hurry, this guide is for you.](#if-you-ve-ever-connected-to-caf-wi-fi-without-a-second-thought-or-clicked-past-a-browser-warning-about-an-insecure-connection-because-you-were-in-a-hurry-this-guide-is-for-you)
-
 What Is a [Man-in-the-Middle](/blog/what-is-a-man-in-the-middle-attack.html) (MITM) Attack?
 
 The plain-English guide to one of the oldest tricks in networking, still working in 2026. How someone can quietly insert themselves into a conversation you think is private, the specific techniques that make it possible, and the handful of habits that shut the door on almost all of them.

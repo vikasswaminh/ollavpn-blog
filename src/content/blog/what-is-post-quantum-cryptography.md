@@ -18,24 +18,6 @@ TL;DR — The Short Answer
 
 **Post-quantum cryptography (PQC)** is a new family of encryption algorithms designed to remain secure even when powerful quantum computers eventually exist. Today's encryption protects most of the internet, but it's based on math problems that a sufficiently advanced quantum computer could one day solve. The threat that matters _today_ is called **"harvest now, decrypt later"** — adversaries capturing encrypted traffic right now to decrypt years from now. In response, the U.S. National Institute of Standards and Technology finalized three post-quantum standards in 2024, and companies like Apple, Signal, Google, Cloudflare, and Mullvad have already deployed PQC in production. [OllaVPN is built PQC-ready](../dl/) on every connection, including the lifetime free plan.
 
-Jump to a section
-
-1.  [Why this matters now](#why-now)
-2.  [A simple analogy — the padlock](#the-padlock)
-3.  [What post-quantum cryptography actually is](#what-is-pqc)
-4.  ["Harvest now, decrypt later"](#hndl)
-5.  [When quantum computers might arrive](#quantum-timeline)
-6.  [The new NIST standards](#nist)
-7.  [The four math families of PQC](#families)
-8.  [Hybrid mode — belt and suspenders](#hybrid)
-9.  [Who has already deployed PQC](#real-world)
-10.  [What PQC means for a VPN specifically](#vpn-context)
-11.  [Government and standards bodies](#government)
-12.  [Five myths about post-quantum cryptography](#myths)
-13.  [How to evaluate a PQC-ready VPN](#choose)
-14.  [How OllaVPN handles PQC](#ollavpn)
-15.  [Frequently asked questions](#faq)
-
 If you've come across the phrase _"post-quantum cryptography"_ in a news article, a software update note, or a VPN comparison and wondered what exactly it means and whether it matters to you — this is the guide for you. Written in plain English, with real examples, by people who care about getting it right.
 
 We won't pretend this is a topic with no nuance. It isn't. But the central ideas are accessible to anyone, and understanding them will change how you think about the encryption that runs almost every interaction you have online.
@@ -316,16 +298,6 @@ Same post-quantum protection, faster connection. Five devices on one account.
 
 You can [try the free plan](../dl/) right now — no email, no card, no upsell. The post-quantum protection is on from your first connection.
 
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [SECURITYWhat is a DNS leak? How to test, fix, and prevent it9 min · OllaVPN Blog](/blog/what-is-a-dns-leak.html)
-*   [JURISDICTIONFive Eyes, Nine Eyes, Fourteen Eyes: VPN Guide9 min · OllaVPN Blog](/blog/five-eyes-nine-eyes-fourteen-eyes.html)
-*   [PROTOCOLWhat is MASQUE? Next-Gen VPN Protocols8 min · OllaVPN Blog](/blog/what-is-masque.html)
-*   [COMPARISONWireGuard vs OpenVPN: Speed & Security Benchmarks8 min · OllaVPN Blog](/blog/wireguard-vs-openvpn.html)
-*   [PRIVACYLifetime Free VPN: Is OllaVPN Really Free Forever?10 min · OllaVPN Blog](/blog/lifetime-free-vpn.html)
-
-* * *
 
 ## Deeper context worth knowing
 
@@ -426,25 +398,3 @@ Nathan posts one deep-dive every two weeks. No spam, no sales blasts, no clickba
 No card. Unsubscribe with one click.
 
 Share Copy link [X](https://twitter.com/intent/tweet?text=OllaVPN%20blog&url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-post-quantum-cryptography) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-post-quantum-cryptography) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-post-quantum-cryptography&t=OllaVPN%20blog) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-post-quantum-cryptography&title=OllaVPN%20blog)
-
-#### More in [Protocol & tech](index.html#protocol-tech) 12 guides
-
-[View all 12 in Protocol & tech →](index.html#protocol-tech)
-
-[
-
-What Exactly Is an IPSec VPN, and Why Should You Care?
-
-Read guide →](what-is-an-ipsec-vpn.html)[
-
-What is Encrypted Client Hello (ECH) and Why Should You Care?
-
-Read guide →](what-is-encrypted-client-hello.html)[
-
-MASQUE Protocol Explained: What It Is, How It Works, and Why You Should Care
-
-Read guide →](what-is-masque.html)[
-
-What is Multi-Hop VPN and How Does it Boost Your Privacy?
-
-Read guide →](what-is-multi-hop-vpn.html)

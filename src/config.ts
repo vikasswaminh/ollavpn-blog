@@ -16,8 +16,9 @@ export const SITE = {
 } as const;
 
 export const NAV = [
-  { label: 'Courses', href: '#' },
-  { label: 'Blog', href: '/' },
-  { label: 'Knowledge Hub', href: '/tags/' },
-  { label: 'Careers', href: '/about/' },
+  { label: 'Technology', href: '/tags/protocol-tech/' },
+  { label: 'Blogs', href: '/' },
+  { label: 'Free VPN', href: '/free-vpn' },
+  { label: 'Apps', href: '/tags/use-cases/' },
+  { label: 'Download', href: 'https://ollavpn.com/download' },
 ];

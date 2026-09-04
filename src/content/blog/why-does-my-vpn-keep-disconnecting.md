@@ -206,14 +206,6 @@ No card. Unsubscribe with one click.
 
 Share Copy link [X](https://twitter.com/intent/tweet?text=Why%20Does%20My%20VPN%20Keep%20Disconnecting%3F%20Here%26%2339%3Bs%20How%20to%20Fix%20It.&url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhy-does-my-vpn-keep-disconnecting) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhy-does-my-vpn-keep-disconnecting) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fwhy-does-my-vpn-keep-disconnecting&t=Why%20Does%20My%20VPN%20Keep%20Disconnecting%3F%20Here%26%2339%3Bs%20How%20to%20Fix%20It.) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhy-does-my-vpn-keep-disconnecting&title=Why%20Does%20My%20VPN%20Keep%20Disconnecting%3F%20Here%26%2339%3Bs%20How%20to%20Fix%20It.)
 
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [PRIVACYWhy is my vpn so slow8 min · OllaVPN Blog](/blog/why-is-my-vpn-so-slow)
-*   [PRIVACYHow to fix vpn not connecting on windows8 min · OllaVPN Blog](/blog/how-to-fix-vpn-not-connecting-on-windows)
-*   [PRIVACYWhat is a vpn kill switch8 min · OllaVPN Blog](/blog/what-is-a-vpn-kill-switch)
-*   [PRIVACYWhat is post-quantum cryptography?8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography)
-*   [PRIVACYWhat is a DNS leak?8 min · OllaVPN Blog](/blog/what-is-a-dns-leak)
 
 NP
 
@@ -224,25 +216,3 @@ Privacy & Security Lead
 Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
 
 [More from Nathan →](/about/team#nathan-pratt)
-
-#### More in [Beginner basics](index.html#beginner-basics) 22 guides
-
-[View all 22 in Beginner basics →](index.html#beginner-basics)
-
-[
-
-Does a VPN Slow Down Your Internet Speed? The Honest Truth.
-
-Read guide →](does-vpn-slow-down-internet.html)[
-
-Free VPN vs. Paid VPN: What's the Real Difference and Which Should You Pick?
-
-Read guide →](free-vpn-vs-paid-vpn.html)[
-
-Lifetime Free VPN: What You Need to Know Before You Download
-
-Read guide →](lifetime-free-vpn.html)[
-
-What Is a Burner Email, and Why Should You Care?
-
-Read guide →](what-is-a-burner-email.html)

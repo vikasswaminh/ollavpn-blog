@@ -226,14 +226,6 @@ No card. Unsubscribe with one click.
 
 Share Copy link [X](https://twitter.com/intent/tweet?text=What%26%2339%3Bs%20the%20Best%20Free%20VPN%20for%20Chrome%20in%202024%3F%20%28Hint%3A%20It%26%2339%3Bs%20Us.%29&url=https%3A%2F%2Follavpn.com%2Fblog%2Fbest-free-vpn-for-chrome) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fbest-free-vpn-for-chrome) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fbest-free-vpn-for-chrome&t=What%26%2339%3Bs%20the%20Best%20Free%20VPN%20for%20Chrome%20in%202024%3F%20%28Hint%3A%20It%26%2339%3Bs%20Us.%29) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fbest-free-vpn-for-chrome&title=What%26%2339%3Bs%20the%20Best%20Free%20VPN%20for%20Chrome%20in%202024%3F%20%28Hint%3A%20It%26%2339%3Bs%20Us.%29)
 
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [PRIVACYBest free vpn for firefox8 min · OllaVPN Blog](/blog/best-free-vpn-for-firefox)
-*   [PRIVACYBest free vpn for chromebook8 min · OllaVPN Blog](/blog/best-free-vpn-for-chromebook)
-*   [PRIVACYCan a website detect vpn8 min · OllaVPN Blog](/blog/can-a-website-detect-vpn)
-*   [PRIVACYWhat is post-quantum cryptography?8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography)
-*   [PRIVACYWhat is a DNS leak?8 min · OllaVPN Blog](/blog/what-is-a-dns-leak)
 
 NP
 
@@ -244,25 +236,3 @@ Privacy & Security Lead
 Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
 
 [More from Nathan →](/about/team#nathan-pratt)
-
-#### More in [Buyer guides](index.html#buyer-guides) 16 guides
-
-[View all 16 in Buyer guides →](index.html#buyer-guides)
-
-[
-
-The Best Free VPN for Android: Truly Free, No Catch, No Compromises
-
-Read guide →](best-free-vpn-for-android.html)[
-
-What's the Best Free VPN for Australia?
-
-Read guide →](best-free-vpn-for-australia.html)[
-
-Is OllaVPN the Best Free VPN for Canada?
-
-Read guide →](best-free-vpn-for-canada.html)[
-
-The Best Free VPN for Chromebook: What You Need to Know
-
-Read guide →](best-free-vpn-for-chromebook.html)

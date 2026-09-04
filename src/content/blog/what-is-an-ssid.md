@@ -208,14 +208,6 @@ No card. Unsubscribe with one click.
 
 Share Copy link [X](https://twitter.com/intent/tweet?text=What%20is%20an%20SSID%3F%20Your%20Wi-Fi%20Network%20Name%2C%20Explained%20Simply&url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-an-ssid) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-an-ssid) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-an-ssid&t=What%20is%20an%20SSID%3F%20Your%20Wi-Fi%20Network%20Name%2C%20Explained%20Simply) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-an-ssid&title=What%20is%20an%20SSID%3F%20Your%20Wi-Fi%20Network%20Name%2C%20Explained%20Simply)
 
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [PRIVACYWhat is a static ip8 min · OllaVPN Blog](/blog/what-is-a-static-ip)
-*   [PRIVACYWhat is a port number8 min · OllaVPN Blog](/blog/what-is-a-port-number)
-*   [PRIVACYVpn for public wifi traveler8 min · OllaVPN Blog](/blog/vpn-for-public-wifi-traveler)
-*   [PRIVACYWhat is post-quantum cryptography?8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography)
-*   [PRIVACYWhat is a DNS leak?8 min · OllaVPN Blog](/blog/what-is-a-dns-leak)
 
 NP
 
@@ -226,25 +218,3 @@ Privacy & Security Lead
 Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
 
 [More from Nathan →](/about/team#nathan-pratt)
-
-#### More in [Beginner basics](index.html#beginner-basics) 22 guides
-
-[View all 22 in Beginner basics →](index.html#beginner-basics)
-
-[
-
-Does a VPN Slow Down Your Internet Speed? The Honest Truth.
-
-Read guide →](does-vpn-slow-down-internet.html)[
-
-Free VPN vs. Paid VPN: What's the Real Difference and Which Should You Pick?
-
-Read guide →](free-vpn-vs-paid-vpn.html)[
-
-Lifetime Free VPN: What You Need to Know Before You Download
-
-Read guide →](lifetime-free-vpn.html)[
-
-What Is a Burner Email, and Why Should You Care?
-
-Read guide →](what-is-a-burner-email.html)

@@ -202,14 +202,6 @@ No card. Unsubscribe with one click.
 
 Share Copy link [X](https://twitter.com/intent/tweet?text=What%20Logs%20Does%20a%20VPN%20Keep%2C%20and%20What%20Does%20That%20Really%20Mean%20for%20Your%20Privacy%3F&url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-logs-does-vpn-keep) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-logs-does-vpn-keep) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-logs-does-vpn-keep&t=What%20Logs%20Does%20a%20VPN%20Keep%2C%20and%20What%20Does%20That%20Really%20Mean%20for%20Your%20Privacy%3F) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-logs-does-vpn-keep&title=What%20Logs%20Does%20a%20VPN%20Keep%2C%20and%20What%20Does%20That%20Really%20Mean%20for%20Your%20Privacy%3F)
 
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [PRIVACYCan my isp see vpn traffic8 min · OllaVPN Blog](/blog/can-my-isp-see-vpn-traffic)
-*   [PRIVACYCan government track vpn8 min · OllaVPN Blog](/blog/can-government-track-vpn)
-*   [PRIVACYAre vpns legal8 min · OllaVPN Blog](/blog/are-vpns-legal)
-*   [PRIVACYWhat is post-quantum cryptography?8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography)
-*   [PRIVACYWhat is a DNS leak?8 min · OllaVPN Blog](/blog/what-is-a-dns-leak)
 
 NP
 
@@ -220,25 +212,3 @@ Privacy & Security Lead
 Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
 
 [More from Nathan →](/about/team#nathan-pratt)
-
-#### More in [Privacy guides](index.html#privacy-security) 25 guides
-
-[View all 25 in Privacy guides →](index.html#privacy-security)
-
-[
-
-Are Free VPNs Safe? What You Need to Know Before You Connect
-
-Read guide →](are-free-vpns-safe.html)[
-
-Are VPNs Legal? What You Need to Know About VPN Legality and Privacy
-
-Read guide →](are-vpns-legal.html)[
-
-Can Websites Detect VPNs? What You Need to Know About Online Privacy
-
-Read guide →](can-a-website-detect-vpn.html)[
-
-Can Governments Really Track Your VPN? The Unvarnished Truth About Your Online Privacy
-
-Read guide →](can-government-track-vpn.html)

@@ -467,34 +467,3 @@ Not necessarily. Public Wi‑Fi is convenient and, for many people, essential. T
 *   Juice jacking and malicious USB charging stations can compromise mobile devices without Wi-Fi connection
 *   In-tunnel DNS and full-tunnel post-quantum encryption ensure zero unencrypted traffic leaves your device
 *   Always enable an automatic kill switch to prevent data leaks if the Wi-Fi connection drops
-
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [SECURITYFree VPN for Public Wi-Fi: Complete Traveler Defense7 min · OllaVPN Blog](/blog/free-vpn-for-public-wifi-guide.html)
-*   [SECURITYWhat is a DNS leak? How to test, fix, and prevent it9 min · OllaVPN Blog](/blog/what-is-a-dns-leak.html)
-*   [PRIVACYHow Advertisers Track You Across the Internet10 min · OllaVPN Blog](/blog/how-advertisers-track-you-across-the-internet.html)
-*   [TECHNOLOGYWhat is post-quantum cryptography? A 2026 guide8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography.html)
-*   [PRIVACYLifetime Free VPN: Is OllaVPN Really Free Forever?10 min · OllaVPN Blog](/blog/lifetime-free-vpn.html)
-
-#### More in [Privacy guides](index.html#privacy-security) 25 guides
-
-[View all 25 in Privacy guides →](index.html#privacy-security)
-
-[
-
-Five Eyes, Nine Eyes, and Fourteen Eyes Explained (2026 Guide)
-
-Read guide →](five-eyes-nine-eyes-fourteen-eyes.html)[
-
-What Is a DNS Leak? How to Test, Fix, and Prevent It (2026 Guide)
-
-Read guide →](what-is-a-dns-leak.html)[
-
-What Is a VPN Kill Switch and Why Is It Critical? (2026 Guide)
-
-Read guide →](what-is-a-vpn-kill-switch.html)[
-
-What Logs Does a VPN Keep, and What Does That Really Mean for Your Privacy?
-
-Read guide →](what-logs-does-vpn-keep.html)

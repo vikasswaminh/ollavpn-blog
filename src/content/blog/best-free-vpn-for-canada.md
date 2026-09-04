@@ -230,14 +230,6 @@ No card. Unsubscribe with one click.
 
 Share Copy link [X](https://twitter.com/intent/tweet?text=Is%20OllaVPN%20the%20Best%20Free%20VPN%20for%20Canada%3F&url=https%3A%2F%2Follavpn.com%2Fblog%2Fbest-free-vpn-for-canada) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fbest-free-vpn-for-canada) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fbest-free-vpn-for-canada&t=Is%20OllaVPN%20the%20Best%20Free%20VPN%20for%20Canada%3F) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fbest-free-vpn-for-canada&title=Is%20OllaVPN%20the%20Best%20Free%20VPN%20for%20Canada%3F)
 
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [PRIVACYBest free vpn for usa8 min · OllaVPN Blog](/blog/best-free-vpn-for-usa)
-*   [PRIVACYBest free vpn for uk8 min · OllaVPN Blog](/blog/best-free-vpn-for-uk)
-*   [PRIVACYVpn for online banking8 min · OllaVPN Blog](/blog/vpn-for-online-banking)
-*   [PRIVACYWhat is post-quantum cryptography?8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography)
-*   [PRIVACYWhat is a DNS leak?8 min · OllaVPN Blog](/blog/what-is-a-dns-leak)
 
 NP
 
@@ -248,25 +240,3 @@ Privacy & Security Lead
 Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
 
 [More from Nathan →](/about/team#nathan-pratt)
-
-#### More in [Buyer guides](index.html#buyer-guides) 16 guides
-
-[View all 16 in Buyer guides →](index.html#buyer-guides)
-
-[
-
-The Best Free VPN for Android: Truly Free, No Catch, No Compromises
-
-Read guide →](best-free-vpn-for-android.html)[
-
-What's the Best Free VPN for Australia?
-
-Read guide →](best-free-vpn-for-australia.html)[
-
-What's the Best Free VPN for Chrome in 2024? (Hint: It's Us.)
-
-Read guide →](best-free-vpn-for-chrome.html)[
-
-The Best Free VPN for Chromebook: What You Need to Know
-
-Read guide →](best-free-vpn-for-chromebook.html)

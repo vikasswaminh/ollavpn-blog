@@ -1,17 +1,39 @@
----
-import type { CollectionEntry } from 'astro:content';
+﻿---
 import BaseLayout from './BaseLayout.astro';
-import FormattedDate from '../components/FormattedDate.astro';
 import { SITE } from '../config';
-import { readingTime } from '../utils/posts';
 
 interface Props {
-  post: CollectionEntry<'blog'>;
+  post: any;
+  headings: { depth: number; slug: string; text: string }[];
+  relatedPosts?: any[];
 }
-const { post } = Astro.props;
-const { title, description, pubDate, updatedDate, author, tags, cover } = post.data;
-const minutes = readingTime(post.body);
-const canonical = new URL(`/blog/${post.slug}/`, Astro.site).href;
+
+const { post, headings = [], relatedPosts = [] } = Astro.props;
+
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  author = SITE.author,
+  cover,
+  tags = [],
+  canonical = Astro.url.href,
+} = post.data;
+
+const minutes = Math.max(3, Math.ceil((post.body ? post.body.split(/\s+/).length : 1500) / 220));
+
+const formattedDate = new Date(pubDate).toLocaleDateString('en-US', {
+  month: 'long',
+  day: 'numeric',
+  year: 'numeric'
+});
+
+const updatedFormattedDate = updatedDate
+  ? new Date(updatedDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
+  : formattedDate;
+
+const firstTag = tags && tags[0] ? tags[0].replace(/-/g, ' ') : 'buyer guide';
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -37,37 +59,131 @@ const jsonLd = {
     author: author ?? SITE.author,
     tags,
   }}
+  fullWidth={true}
 >
-  <article class="post">
-    <header class="post-header">
-      <p class="post-eyebrow"><a href="/">← All posts</a></p>
-      <h1 class="post-title">{title}</h1>
-      <p class="post-meta">
-        <FormattedDate date={pubDate} />
-        <span aria-hidden="true">·</span>
-        <span>{minutes} min read</span>
-        {author && <span aria-hidden="true">·</span>}
-        {author && <span>{author}</span>}
-      </p>
-      {
-        tags && tags.length > 0 && (
-          <p class="post-tags">
-            {tags.map((t) => (
-              <a class="tag" href={`/tags/${t}/`}>
-                #{t}
-              </a>
-            ))}
+  <main class="page-container-24obs">
+    <div class="layout-flex-24obs">
+      
+      <!-- LEFT SIDEBAR: Minimized Navigation -->
+      <aside class="desktop-sidebar-24obs left-sidebar">
+        <div class="sidebar-header-pill-wrap">
+          <span class="sidebar-pill-badge">
+            FEATURED GUIDES
+          </span>
+        </div>
+        <nav class="sidebar-nav-list">
+          <a href="/blog/free-vpn-for-public-wifi-security/" class="sidebar-nav-item">
+            Free VPN for Public Wi-Fi Security (2026)
+          </a>
+          <a href="/blog/how-public-wifi-steals-passwords/" class="sidebar-nav-item">
+            How Public Wi-Fi Steals Passwords
+          </a>
+          <a href="/blog/vpn-for-public-wifi-traveler/" class="sidebar-nav-item">
+            VPN for Public Wi-Fi Traveler Guide
+          </a>
+          <a href="/blog/free-vpn-for-public-wifi-guide/" class="sidebar-nav-item">
+            Free VPN for Public WiFi: Setup
+          </a>
+          <a href="/blog/vpn-for-traveling-abroad/" class="sidebar-nav-item">
+            VPN for Traveling Abroad in 2026
+          </a>
+          <a href="/blog/can-a-vpn-stop-hackers/" class="sidebar-nav-item">
+            Can a VPN Stop Hackers on Wi-Fi?
+          </a>
+          <a href="/blog/vpn-for-online-banking/" class="sidebar-nav-item">
+            VPN for Safe Online Banking
+          </a>
+          <a href="/blog/free-vpn-for-iphone/" class="sidebar-nav-item">
+            Best Free VPN for iPhone &amp; iOS
+          </a>
+          <a href="/blog/best-free-vpn-for-android/" class="sidebar-nav-item">
+            Best Free VPN for Android Devices
+          </a>
+          <a href="/blog/best-free-vpn-for-windows/" class="sidebar-nav-item">
+            Best Free VPN for Windows 11
+          </a>
+        </nav>
+        <a href="/tags/buyer-guides/" class="sidebar-view-all-link">
+          View All Guides &rarr;
+        </a>
+      </aside>
+
+      <!-- CENTER MAIN CONTENT COLUMN -->
+      <article class="article-center-col">
+        
+        <!-- Header: Eyebrow, H1, Subtitle -->
+        <header class="article-header">
+          <div class="article-meta-row">
+            <span>{firstTag.toUpperCase()}</span>
+            <span>&bull;</span>
+            <span>UPDATED {updatedFormattedDate.toUpperCase()}</span>
+            <span>&bull;</span>
+            <span>{minutes} MIN READ</span>
+          </div>
+          <h1 class="article-main-title">
+            {title}
+          </h1>
+          <p class="article-main-desc">
+            {description}
           </p>
-        )
-      }
-    </header>
-    {cover && <img class="post-cover" src={cover} alt="" loading="lazy" />}
-    <div class="prose">
-      <slot />
+        </header>
+
+        <!-- Markdown Article Prose Slot -->
+        <div class="prose">
+          <slot />
+        </div>
+
+      </article>
+
+      <!-- RIGHT SIDEBAR: Minimized Navigation + Minimized Promo Card -->
+      <aside class="desktop-sidebar-24obs right-sidebar">
+        <div class="sidebar-header-pill-wrap">
+          <span class="sidebar-pill-badge">
+            VPN PROTOCOLS &amp; TECH
+          </span>
+        </div>
+        <nav class="sidebar-nav-list">
+          <a href="/blog/wireguard-vs-openvpn/" class="sidebar-nav-item">
+            WireGuard vs. OpenVPN Comparison
+          </a>
+          <a href="/blog/wireguard-vs-ikev2/" class="sidebar-nav-item">
+            WireGuard vs IKEv2: Speed &amp; Latency
+          </a>
+          <a href="/blog/what-is-a-vpn-kill-switch/" class="sidebar-nav-item">
+            What is a VPN Kill Switch?
+          </a>
+          <a href="/blog/what-is-a-dns-leak/" class="sidebar-nav-item">
+            What Is a DNS Leak &amp; How to Fix It
+          </a>
+          <a href="/blog/what-is-post-quantum-cryptography/" class="sidebar-nav-item">
+            What Is Post-Quantum Cryptography?
+          </a>
+          <a href="/blog/what-is-a-vpn-protocol/" class="sidebar-nav-item">
+            What is a VPN Protocol?
+          </a>
+          <a href="/blog/what-is-a-vpn-tunnel/" class="sidebar-nav-item">
+            What is a VPN Tunnel?
+          </a>
+          <a href="/blog/what-is-a-webrtc-leak/" class="sidebar-nav-item">
+            What is a WebRTC Leak?
+          </a>
+        </nav>
+        <a href="/tags/protocol-tech/" class="sidebar-view-all-link">
+          View All Protocols &rarr;
+        </a>
+
+        <!-- Minimized Promo Card -->
+        <div class="sidebar-promo-card">
+          <p class="sidebar-promo-text">
+            Free, high-speed WireGuard VPN for public Wi-Fi security on every device.
+          </p>
+          <a href={SITE.marketingUrl} class="sidebar-cta-btn">
+            Download OllaVPN Free &rarr;
+          </a>
+        </div>
+      </aside>
+
     </div>
-    <footer class="post-footer">
-      <a class="btn" href={SITE.marketingUrl}>Learn more about {SITE.brand} →</a>
-    </footer>
-  </article>
+  </main>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 </BaseLayout>

@@ -4,13 +4,31 @@ import { getPublishedPosts } from '../../utils/posts';
 
 export async function getStaticPaths() {
   const posts = await getPublishedPosts();
-  return posts.map((post) => ({ params: { slug: post.slug }, props: { post } }));
+  return posts.map((post) => {
+    // Find 4 related posts matching shared tags or category, fallback to others
+    const postTags = post.data.tags || [];
+    const related = posts
+      .filter((p) => p.slug !== post.slug)
+      .filter((p) => {
+        const pTags = p.data.tags || [];
+        return pTags.some((t) => postTags.includes(t));
+      })
+      .slice(0, 4);
+
+    const fallback = posts.filter((p) => p.slug !== post.slug).slice(0, 4);
+    const relatedPosts = related.length >= 2 ? related : fallback;
+
+    return {
+      params: { slug: post.slug },
+      props: { post, relatedPosts },
+    };
+  });
 }
 
-const { post } = Astro.props;
-const { Content } = await post.render();
+const { post, relatedPosts } = Astro.props;
+const { Content, headings } = await post.render();
 ---
 
-<PostLayout post={post}>
+<PostLayout post={post} headings={headings} relatedPosts={relatedPosts}>
   <Content />
 </PostLayout>

@@ -198,14 +198,6 @@ No card. Unsubscribe with one click.
 
 Share Copy link [X](https://twitter.com/intent/tweet?text=Do%20You%20Need%20a%20VPN%20for%20Cryptocurrency%20and%20Web3%20Activity%3F&url=https%3A%2F%2Follavpn.com%2Fblog%2Fvpn-for-cryptocurrency-users) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fvpn-for-cryptocurrency-users) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fvpn-for-cryptocurrency-users&t=Do%20You%20Need%20a%20VPN%20for%20Cryptocurrency%20and%20Web3%20Activity%3F) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fvpn-for-cryptocurrency-users&title=Do%20You%20Need%20a%20VPN%20for%20Cryptocurrency%20and%20Web3%20Activity%3F)
 
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [PRIVACYVpn for online banking8 min · OllaVPN Blog](/blog/vpn-for-online-banking)
-*   [PRIVACYWhat is a burner email8 min · OllaVPN Blog](/blog/what-is-a-burner-email)
-*   [PRIVACYWhat is tor vs vpn8 min · OllaVPN Blog](/blog/what-is-tor-vs-vpn)
-*   [PRIVACYWhat is post-quantum cryptography?8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography)
-*   [PRIVACYWhat is a DNS leak?8 min · OllaVPN Blog](/blog/what-is-a-dns-leak)
 
 NP
 
@@ -216,25 +208,3 @@ Privacy & Security Lead
 Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
 
 [More from Nathan →](/about/team#nathan-pratt)
-
-#### More in [Use cases](index.html#use-cases) 8 guides
-
-[View all 8 in Use cases →](index.html#use-cases)
-
-[
-
-Free VPN for Netflix 2026: Does It Actually Work?
-
-Read guide →](free-vpn-for-netflix.html)[
-
-Is Your ISP Slowing You Down? How a VPN Can Help You Beat Throttling
-
-Read guide →](vpn-for-avoiding-isp-throttling.html)[
-
-VPN for Journalists & Activists: Your Essential Digital Shield?
-
-Read guide →](vpn-for-journalists-activists.html)[
-
-Online Banking and VPNs: Do You Really Need One to Stay Safe?
-
-Read guide →](vpn-for-online-banking.html)

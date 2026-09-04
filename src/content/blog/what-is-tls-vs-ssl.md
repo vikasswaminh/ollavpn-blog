@@ -204,14 +204,6 @@ No card. Unsubscribe with one click.
 
 Share Copy link [X](https://twitter.com/intent/tweet?text=TLS%20vs%20SSL%3A%20What%26%2339%3Bs%20the%20Difference%2C%20and%20Why%20Should%20You%20Care%3F&url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-tls-vs-ssl) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-tls-vs-ssl) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-tls-vs-ssl&t=TLS%20vs%20SSL%3A%20What%26%2339%3Bs%20the%20Difference%2C%20and%20Why%20Should%20You%20Care%3F) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-tls-vs-ssl&title=TLS%20vs%20SSL%3A%20What%26%2339%3Bs%20the%20Difference%2C%20and%20Why%20Should%20You%20Care%3F)
 
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [PRIVACYWhat is end to end encryption8 min · OllaVPN Blog](/blog/what-is-end-to-end-encryption)
-*   [PRIVACYWhat is encrypted client hello8 min · OllaVPN Blog](/blog/what-is-encrypted-client-hello)
-*   [PRIVACYWhat is a vpn protocol8 min · OllaVPN Blog](/blog/what-is-a-vpn-protocol)
-*   [PRIVACYWhat is post-quantum cryptography?8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography)
-*   [PRIVACYWhat is a DNS leak?8 min · OllaVPN Blog](/blog/what-is-a-dns-leak)
 
 NP
 
@@ -222,25 +214,3 @@ Privacy & Security Lead
 Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
 
 [More from Nathan →](/about/team#nathan-pratt)
-
-#### More in [Protocol & tech](index.html#protocol-tech) 12 guides
-
-[View all 12 in Protocol & tech →](index.html#protocol-tech)
-
-[
-
-What Exactly Is an IPSec VPN, and Why Should You Care?
-
-Read guide →](what-is-an-ipsec-vpn.html)[
-
-What is Encrypted Client Hello (ECH) and Why Should You Care?
-
-Read guide →](what-is-encrypted-client-hello.html)[
-
-MASQUE Protocol Explained: What It Is, How It Works, and Why You Should Care
-
-Read guide →](what-is-masque.html)[
-
-What is Multi-Hop VPN and How Does it Boost Your Privacy?
-
-Read guide →](what-is-multi-hop-vpn.html)

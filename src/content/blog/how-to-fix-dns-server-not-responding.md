@@ -196,14 +196,6 @@ No card. Unsubscribe with one click.
 
 Share Copy link [X](https://twitter.com/intent/tweet?text=DNS%20Server%20Not%20Responding%3F%20Here%26%2339%3Bs%20How%20to%20Fix%20It%20Quickly&url=https%3A%2F%2Follavpn.com%2Fblog%2Fhow-to-fix-dns-server-not-responding) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fhow-to-fix-dns-server-not-responding) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fhow-to-fix-dns-server-not-responding&t=DNS%20Server%20Not%20Responding%3F%20Here%26%2339%3Bs%20How%20to%20Fix%20It%20Quickly) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fhow-to-fix-dns-server-not-responding&title=DNS%20Server%20Not%20Responding%3F%20Here%26%2339%3Bs%20How%20to%20Fix%20It%20Quickly)
 
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [PRIVACYHow to test for dns leak8 min · OllaVPN Blog](/blog/how-to-test-for-dns-leak)
-*   [PRIVACYWhat is dns over https8 min · OllaVPN Blog](/blog/what-is-dns-over-https)
-*   [PRIVACYHow to lower ping in online games8 min · OllaVPN Blog](/blog/how-to-lower-ping-in-online-games)
-*   [PRIVACYWhat is post-quantum cryptography?8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography)
-*   [PRIVACYWhat is a DNS leak?8 min · OllaVPN Blog](/blog/what-is-a-dns-leak)
 
 NP
 
@@ -214,25 +206,3 @@ Privacy & Security Lead
 Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
 
 [More from Nathan →](/about/team#nathan-pratt)
-
-#### More in [How-to guides](index.html#how-to-guides) 12 guides
-
-[View all 12 in How-to guides →](index.html#how-to-guides)
-
-[
-
-VPN Not Connecting on Mac? Your Guide to Getting Back Online
-
-Read guide →](how-to-fix-vpn-not-connecting-on-mac.html)[
-
-VPN Not Connecting on Windows? Let's Get You Connected.
-
-Read guide →](how-to-fix-vpn-not-connecting-on-windows.html)[
-
-How to Lower Ping in Online Games for a Smoother Experience
-
-Read guide →](how-to-lower-ping-in-online-games.html)[
-
-How to Set Up a VPN on Android: Your 5-Minute Guide
-
-Read guide →](how-to-set-up-vpn-on-android.html)

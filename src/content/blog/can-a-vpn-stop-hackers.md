@@ -20,23 +20,6 @@ You've probably seen the ad: ominous music, a hooded figure hunched over a lapto
 
 Here’s what a VPN actually stops, what it doesn’t touch at all, and how to think about it as one piece of a bigger security plan.
 
-JUMP TO A SECTION
-
-1.  [Can a VPN actually stop hackers?](#can-a-vpn-actually-stop)
-2.  [What's the technical reality of how a VPN blocks certain attacks?](#whats-the-technical-reality-of)
-3.  [What can hackers actually see when you're connected to a VPN?](#what-can-hackers-actually-see)
-4.  [How does a VPN protect you specifically on public Wi‑Fi?](#how-does-a-vpn-protect)
-5.  [What kinds of hacking can a VPN not stop, at all?](#what-kinds-of-hacking-can)
-6.  [What are the common myths about VPNs and hacker protection?](#what-are-the-common-myths)
-7.  [How can you evaluate a VPN's security claims?](#how-can-you-evaluate-a)
-8.  [What does OllaVPN specifically do to reduce your exposure to hackers?](#what-does-ollavpn-specifically-do)
-9.  [Are there situations where a VPN just isn't enough?](#are-there-situations-where-a)
-10.  [What should you actually pair a VPN with for real security?](#what-should-you-actually-pair)
-11.  [What does the future look like for VPNs and hacking threats?](#what-does-the-future-look)
-12.  [The fuller context behind the question](#the-fuller-context-behind-the)
-13.  [How to evaluate any "answer" you read on the internet](#how-to-evaluate-any-answer)
-14.  [Frequently asked questions](#frequently-asked-questions)
-
 **TL;DR — The Summary**
 
 Partially, yes—and partially, no. A VPN encrypts your internet traffic and hides your real IP address. That genuinely blocks whole categories of hacking that depend on intercepting or watching your connection, especially on public Wi‑Fi. If a hacker is sitting on the same coffee-shop network as you, trying to snoop your traffic or run a man-in-the-middle attack, a properly configured VPN largely shuts them out.

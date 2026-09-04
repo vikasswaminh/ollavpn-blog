@@ -5,12 +5,18 @@ const year = new Date().getFullYear();
 
 <footer class="site-footer">
   <div class="container footer-inner">
-    <p>© {year} {SITE.brand}. All rights reserved.</p>
+    <div class="footer-brand-row">
+      <a class="brand" href="/" aria-label={SITE.brand}>
+        <img src="/logo.png" alt="" class="footer-logo-img" />
+        <span class="brand-name footer-brand-name">{SITE.brand}</span>
+      </a>
+      <p>&copy; {year} {SITE.brand}. All rights reserved.</p>
+    </div>
     <p class="footer-links">
       <a href={SITE.marketingUrl}>{SITE.marketingLabel}</a>
-      <span aria-hidden="true">·</span>
+      <span aria-hidden="true">&bull;</span>
       <a href="/rss.xml">RSS</a>
-      <span aria-hidden="true">·</span>
+      <span aria-hidden="true">&bull;</span>
       <a href="/tags/">Tags</a>
     </p>
   </div>

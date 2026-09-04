@@ -206,14 +206,6 @@ No card. Unsubscribe with one click.
 
 Share Copy link [X](https://twitter.com/intent/tweet?text=Is%20TikTok%20Shop%20Safe%3F%20An%20Honest%20Look%20at%20Your%20Privacy%20and%20Data&url=https%3A%2F%2Follavpn.com%2Fblog%2Fis-tiktok-shop-safe) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fis-tiktok-shop-safe) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fis-tiktok-shop-safe&t=Is%20TikTok%20Shop%20Safe%3F%20An%20Honest%20Look%20at%20Your%20Privacy%20and%20Data) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fis-tiktok-shop-safe&title=Is%20TikTok%20Shop%20Safe%3F%20An%20Honest%20Look%20at%20Your%20Privacy%20and%20Data)
 
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [PRIVACYIs temu safe8 min · OllaVPN Blog](/blog/is-temu-safe)
-*   [PRIVACYIs shein safe8 min · OllaVPN Blog](/blog/is-shein-safe)
-*   [PRIVACYHow to delete reddit account permanently8 min · OllaVPN Blog](/blog/how-to-delete-reddit-account-permanently)
-*   [PRIVACYWhat is post-quantum cryptography?8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography)
-*   [PRIVACYWhat is a DNS leak?8 min · OllaVPN Blog](/blog/what-is-a-dns-leak)
 
 NP
 
@@ -224,25 +216,3 @@ Privacy & Security Lead
 Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
 
 [More from Nathan →](/about/team#nathan-pratt)
-
-#### More in [Privacy guides](index.html#privacy-security) 25 guides
-
-[View all 25 in Privacy guides →](index.html#privacy-security)
-
-[
-
-Are Free VPNs Safe? What You Need to Know Before You Connect
-
-Read guide →](are-free-vpns-safe.html)[
-
-Are VPNs Legal? What You Need to Know About VPN Legality and Privacy
-
-Read guide →](are-vpns-legal.html)[
-
-Can Websites Detect VPNs? What You Need to Know About Online Privacy
-
-Read guide →](can-a-website-detect-vpn.html)[
-
-Can Governments Really Track Your VPN? The Unvarnished Truth About Your Online Privacy
-
-Read guide →](can-government-track-vpn.html)

@@ -208,14 +208,6 @@ No card. Unsubscribe with one click.
 
 Share Copy link [X](https://twitter.com/intent/tweet?text=VPN%20Not%20Connecting%20on%20Windows%3F%20Let%26%2339%3Bs%20Get%20You%20Connected.&url=https%3A%2F%2Follavpn.com%2Fblog%2Fhow-to-fix-vpn-not-connecting-on-windows) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fhow-to-fix-vpn-not-connecting-on-windows) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fhow-to-fix-vpn-not-connecting-on-windows&t=VPN%20Not%20Connecting%20on%20Windows%3F%20Let%26%2339%3Bs%20Get%20You%20Connected.) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fhow-to-fix-vpn-not-connecting-on-windows&title=VPN%20Not%20Connecting%20on%20Windows%3F%20Let%26%2339%3Bs%20Get%20You%20Connected.)
 
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [PRIVACYFree VPN for Windows8 min · OllaVPN Blog](/free-vpn-for-windows)
-*   [PRIVACYHow to fix vpn not connecting on mac8 min · OllaVPN Blog](/blog/how-to-fix-vpn-not-connecting-on-mac)
-*   [PRIVACYWhy does my vpn keep disconnecting8 min · OllaVPN Blog](/blog/why-does-my-vpn-keep-disconnecting)
-*   [PRIVACYHow to set up vpn on windows 118 min · OllaVPN Blog](/blog/how-to-set-up-vpn-on-windows-11)
-*   [PRIVACYWhat is post-quantum cryptography?8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography)
 
 NP
 
@@ -226,25 +218,3 @@ Privacy & Security Lead
 Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
 
 [More from Nathan →](/about/team#nathan-pratt)
-
-#### More in [How-to guides](index.html#how-to-guides) 12 guides
-
-[View all 12 in How-to guides →](index.html#how-to-guides)
-
-[
-
-DNS Server Not Responding? Here's How to Fix It Quickly
-
-Read guide →](how-to-fix-dns-server-not-responding.html)[
-
-VPN Not Connecting on Mac? Your Guide to Getting Back Online
-
-Read guide →](how-to-fix-vpn-not-connecting-on-mac.html)[
-
-How to Lower Ping in Online Games for a Smoother Experience
-
-Read guide →](how-to-lower-ping-in-online-games.html)[
-
-How to Set Up a VPN on Android: Your 5-Minute Guide
-
-Read guide →](how-to-set-up-vpn-on-android.html)

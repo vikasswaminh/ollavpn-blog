@@ -198,14 +198,6 @@ No card. Unsubscribe with one click.
 
 Share Copy link [X](https://twitter.com/intent/tweet?text=The%20Best%20Free%20VPN%20for%20Chromebook%3A%20What%20You%20Need%20to%20Know&url=https%3A%2F%2Follavpn.com%2Fblog%2Fbest-free-vpn-for-chromebook) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fbest-free-vpn-for-chromebook) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fbest-free-vpn-for-chromebook&t=The%20Best%20Free%20VPN%20for%20Chromebook%3A%20What%20You%20Need%20to%20Know) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fbest-free-vpn-for-chromebook&title=The%20Best%20Free%20VPN%20for%20Chromebook%3A%20What%20You%20Need%20to%20Know)
 
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [PRIVACYBest free vpn for firefox8 min · OllaVPN Blog](/blog/best-free-vpn-for-firefox)
-*   [PRIVACYBest free vpn for chrome8 min · OllaVPN Blog](/blog/best-free-vpn-for-chrome)
-*   [PRIVACYBest free vpn for android8 min · OllaVPN Blog](/blog/best-free-vpn-for-android)
-*   [PRIVACYWhat is post-quantum cryptography?8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography)
-*   [PRIVACYWhat is a DNS leak?8 min · OllaVPN Blog](/blog/what-is-a-dns-leak)
 
 NP
 
@@ -216,25 +208,3 @@ Privacy & Security Lead
 Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
 
 [More from Nathan →](/about/team#nathan-pratt)
-
-#### More in [Buyer guides](index.html#buyer-guides) 16 guides
-
-[View all 16 in Buyer guides →](index.html#buyer-guides)
-
-[
-
-The Best Free VPN for Android: Truly Free, No Catch, No Compromises
-
-Read guide →](best-free-vpn-for-android.html)[
-
-What's the Best Free VPN for Australia?
-
-Read guide →](best-free-vpn-for-australia.html)[
-
-Is OllaVPN the Best Free VPN for Canada?
-
-Read guide →](best-free-vpn-for-canada.html)[
-
-What's the Best Free VPN for Chrome in 2024? (Hint: It's Us.)
-
-Read guide →](best-free-vpn-for-chrome.html)

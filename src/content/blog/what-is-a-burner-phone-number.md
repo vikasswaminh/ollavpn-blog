@@ -192,14 +192,6 @@ No card. Unsubscribe with one click.
 
 Share Copy link [X](https://twitter.com/intent/tweet?text=What%20is%20a%20Burner%20Phone%20Number%2C%20and%20Why%20Should%20You%20Care%3F&url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-a-burner-phone-number) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-a-burner-phone-number) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-a-burner-phone-number&t=What%20is%20a%20Burner%20Phone%20Number%2C%20and%20Why%20Should%20You%20Care%3F) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-a-burner-phone-number&title=What%20is%20a%20Burner%20Phone%20Number%2C%20and%20Why%20Should%20You%20Care%3F)
 
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [PRIVACYWhat is a burner email8 min · OllaVPN Blog](/blog/what-is-a-burner-email)
-*   [PRIVACYWhat is rcs messaging8 min · OllaVPN Blog](/blog/what-is-rcs-messaging)
-*   [PRIVACYVpn for cryptocurrency users8 min · OllaVPN Blog](/blog/vpn-for-cryptocurrency-users)
-*   [PRIVACYWhat is post-quantum cryptography?8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography)
-*   [PRIVACYWhat is a DNS leak?8 min · OllaVPN Blog](/blog/what-is-a-dns-leak)
 
 NP
 
@@ -210,25 +202,3 @@ Privacy & Security Lead
 Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
 
 [More from Nathan →](/about/team#nathan-pratt)
-
-#### More in [Beginner basics](index.html#beginner-basics) 22 guides
-
-[View all 22 in Beginner basics →](index.html#beginner-basics)
-
-[
-
-Does a VPN Slow Down Your Internet Speed? The Honest Truth.
-
-Read guide →](does-vpn-slow-down-internet.html)[
-
-Free VPN vs. Paid VPN: What's the Real Difference and Which Should You Pick?
-
-Read guide →](free-vpn-vs-paid-vpn.html)[
-
-Lifetime Free VPN: What You Need to Know Before You Download
-
-Read guide →](lifetime-free-vpn.html)[
-
-What Is a Burner Email, and Why Should You Care?
-
-Read guide →](what-is-a-burner-email.html)

@@ -220,14 +220,6 @@ No card. Unsubscribe with one click.
 
 Share Copy link [X](https://twitter.com/intent/tweet?text=Why%20Are%20Free%20VPNs%20Free%3F%20What%26%2339%3Bs%20the%20Catch%3F&url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhy-are-free-vpns-free) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhy-are-free-vpns-free) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fwhy-are-free-vpns-free&t=Why%20Are%20Free%20VPNs%20Free%3F%20What%26%2339%3Bs%20the%20Catch%3F) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhy-are-free-vpns-free&title=Why%20Are%20Free%20VPNs%20Free%3F%20What%26%2339%3Bs%20the%20Catch%3F)
 
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [PRIVACYAre free vpns safe8 min · OllaVPN Blog](/blog/are-free-vpns-safe)
-*   [PRIVACYFree vpn vs paid vpn8 min · OllaVPN Blog](/blog/free-vpn-vs-paid-vpn)
-*   [PRIVACYWhat logs does vpn keep8 min · OllaVPN Blog](/blog/what-logs-does-vpn-keep)
-*   [PRIVACYWhat is post-quantum cryptography?8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography)
-*   [PRIVACYWhat is a DNS leak?8 min · OllaVPN Blog](/blog/what-is-a-dns-leak)
 
 NP
 
@@ -238,25 +230,3 @@ Privacy & Security Lead
 Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
 
 [More from Nathan →](/about/team#nathan-pratt)
-
-#### More in [Beginner basics](index.html#beginner-basics) 22 guides
-
-[View all 22 in Beginner basics →](index.html#beginner-basics)
-
-[
-
-Does a VPN Slow Down Your Internet Speed? The Honest Truth.
-
-Read guide →](does-vpn-slow-down-internet.html)[
-
-Free VPN vs. Paid VPN: What's the Real Difference and Which Should You Pick?
-
-Read guide →](free-vpn-vs-paid-vpn.html)[
-
-Lifetime Free VPN: What You Need to Know Before You Download
-
-Read guide →](lifetime-free-vpn.html)[
-
-What Is a Burner Email, and Why Should You Care?
-
-Read guide →](what-is-a-burner-email.html)

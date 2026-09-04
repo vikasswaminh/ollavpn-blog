@@ -196,14 +196,6 @@ No card. Unsubscribe with one click.
 
 Share Copy link [X](https://twitter.com/intent/tweet?text=PrivadoVPN%20Free%20vs.%20Proton%20VPN%20Free%3A%20An%20Honest%20Comparison&url=https%3A%2F%2Follavpn.com%2Fblog%2Fprivadovpn-free-vs-protonvpn-free) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fprivadovpn-free-vs-protonvpn-free) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fprivadovpn-free-vs-protonvpn-free&t=PrivadoVPN%20Free%20vs.%20Proton%20VPN%20Free%3A%20An%20Honest%20Comparison) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fprivadovpn-free-vs-protonvpn-free&title=PrivadoVPN%20Free%20vs.%20Proton%20VPN%20Free%3A%20An%20Honest%20Comparison)
 
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [PRIVACYWindscribe vs protonvpn free8 min · OllaVPN Blog](/blog/windscribe-vs-protonvpn-free)
-*   [PRIVACYAre free vpns safe8 min · OllaVPN Blog](/blog/are-free-vpns-safe)
-*   [PRIVACYWhy are free vpns free8 min · OllaVPN Blog](/blog/why-are-free-vpns-free)
-*   [PRIVACYWhat is post-quantum cryptography?8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography)
-*   [PRIVACYWhat is a DNS leak?8 min · OllaVPN Blog](/blog/what-is-a-dns-leak)
 
 NP
 
@@ -214,25 +206,3 @@ Privacy & Security Lead
 Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
 
 [More from Nathan →](/about/team#nathan-pratt)
-
-#### More in [Comparisons](index.html#comparisons) 15 guides
-
-[View all 15 in Comparisons →](index.html#comparisons)
-
-[
-
-CyberGhost vs NordVPN (2026): Beginner UI Simplicity vs Advanced Security Tools
-
-Read guide →](cyberghost-vs-nordvpn.html)[
-
-ExpressVPN vs CyberGhost (2026): Lightway Protocol Performance vs Dedicated Profiles
-
-Read guide →](expressvpn-vs-cyberghost.html)[
-
-IPVanish vs NordVPN (2026): Self-Owned Tier-1 Network vs Massive Server Mesh
-
-Read guide →](ipvanish-vs-nordvpn.html)[
-
-Mullvad vs ExpressVPN (2026): Hardcore Anonymity vs Global Unblocking Reach
-
-Read guide →](mullvad-vs-expressvpn.html)

@@ -200,14 +200,6 @@ No card. Unsubscribe with one click.
 
 Share Copy link [X](https://twitter.com/intent/tweet?text=Mullvad%20vs.%20ExpressVPN%3A%20An%20Honest%20Comparison%20for%20Discerning%20Users&url=https%3A%2F%2Follavpn.com%2Fblog%2Fmullvad-vs-expressvpn) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fmullvad-vs-expressvpn) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fmullvad-vs-expressvpn&t=Mullvad%20vs.%20ExpressVPN%3A%20An%20Honest%20Comparison%20for%20Discerning%20Users) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fmullvad-vs-expressvpn&title=Mullvad%20vs.%20ExpressVPN%3A%20An%20Honest%20Comparison%20for%20Discerning%20Users)
 
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [PRIVACYMullvad vs nordvpn8 min · OllaVPN Blog](/blog/mullvad-vs-nordvpn)
-*   [PRIVACYSurfshark vs expressvpn8 min · OllaVPN Blog](/blog/surfshark-vs-expressvpn)
-*   [PRIVACYAre free vpns safe8 min · OllaVPN Blog](/blog/are-free-vpns-safe)
-*   [PRIVACYWhat is post-quantum cryptography?8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography)
-*   [PRIVACYWhat is a DNS leak?8 min · OllaVPN Blog](/blog/what-is-a-dns-leak)
 
 NP
 
@@ -218,25 +210,3 @@ Privacy & Security Lead
 Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
 
 [More from Nathan →](/about/team#nathan-pratt)
-
-#### More in [Comparisons](index.html#comparisons) 15 guides
-
-[View all 15 in Comparisons →](index.html#comparisons)
-
-[
-
-CyberGhost vs NordVPN (2026): Beginner UI Simplicity vs Advanced Security Tools
-
-Read guide →](cyberghost-vs-nordvpn.html)[
-
-ExpressVPN vs CyberGhost (2026): Lightway Protocol Performance vs Dedicated Profiles
-
-Read guide →](expressvpn-vs-cyberghost.html)[
-
-IPVanish vs NordVPN (2026): Self-Owned Tier-1 Network vs Massive Server Mesh
-
-Read guide →](ipvanish-vs-nordvpn.html)[
-
-Mullvad vs NordVPN (2026): Strict Zero-Knowledge vs Feature-Rich Powerhouse
-
-Read guide →](mullvad-vs-nordvpn.html)

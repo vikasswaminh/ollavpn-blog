@@ -200,14 +200,6 @@ No card. Unsubscribe with one click.
 
 Share Copy link [X](https://twitter.com/intent/tweet?text=VPN%20Blocked%20at%20School%20or%20Work%3F%20Here%26%2339%3Bs%20How%20to%20Get%20Back%20Online%20Fast.&url=https%3A%2F%2Follavpn.com%2Fblog%2Fhow-to-use-vpn-when-network-blocks-wireguard) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fhow-to-use-vpn-when-network-blocks-wireguard) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fhow-to-use-vpn-when-network-blocks-wireguard&t=VPN%20Blocked%20at%20School%20or%20Work%3F%20Here%26%2339%3Bs%20How%20to%20Get%20Back%20Online%20Fast.) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fhow-to-use-vpn-when-network-blocks-wireguard&title=VPN%20Blocked%20at%20School%20or%20Work%3F%20Here%26%2339%3Bs%20How%20to%20Get%20Back%20Online%20Fast.)
 
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [PRIVACYFree WireGuard VPN8 min · OllaVPN Blog](/free-wireguard-vpn)
-*   [PRIVACYFree QUIC VPN for restrictive networks8 min · OllaVPN Blog](/free-quic-vpn)
-*   [PRIVACYWhat is vpn obfuscation8 min · OllaVPN Blog](/blog/what-is-vpn-obfuscation)
-*   [PRIVACYWhat is masque8 min · OllaVPN Blog](/blog/what-is-masque)
-*   [PRIVACYCan a website detect vpn8 min · OllaVPN Blog](/blog/can-a-website-detect-vpn)
 
 NP
 
@@ -218,25 +210,3 @@ Privacy & Security Lead
 Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
 
 [More from Nathan →](/about/team#nathan-pratt)
-
-#### More in [How-to guides](index.html#how-to-guides) 12 guides
-
-[View all 12 in How-to guides →](index.html#how-to-guides)
-
-[
-
-DNS Server Not Responding? Here's How to Fix It Quickly
-
-Read guide →](how-to-fix-dns-server-not-responding.html)[
-
-VPN Not Connecting on Mac? Your Guide to Getting Back Online
-
-Read guide →](how-to-fix-vpn-not-connecting-on-mac.html)[
-
-VPN Not Connecting on Windows? Let's Get You Connected.
-
-Read guide →](how-to-fix-vpn-not-connecting-on-windows.html)[
-
-How to Lower Ping in Online Games for a Smoother Experience
-
-Read guide →](how-to-lower-ping-in-online-games.html)

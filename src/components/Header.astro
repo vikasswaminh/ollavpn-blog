@@ -1,67 +1,98 @@
----
+﻿---
 import { SITE, NAV } from '../config';
 const path = Astro.url.pathname;
 const isActive = (href: string) => (href === '/' ? path === '/' : path.startsWith(href));
 ---
 
-<!-- Top Announcement Banner -->
-<div class="top-announcement-bar">
-  🔒 SPECIAL OFFER: GET 30 DAYS UNLIMITED FREE VPN ACCESS WITH HIGH-SPEED SERVERS
-</div>
-
-<!-- Sub Info Bar -->
-<div class="sub-info-bar">
-  <div class="container sub-info-inner">
-    <div class="sub-info-left">
-      <span class="sub-info-item">🌐 OLLA-NETWORK GLOBAL</span>
-      <span class="sub-info-item">📞 +1 800 555-OLLA</span>
-      <span class="sub-info-item">🕒 24/7 SUPPORT AVAILABLE</span>
-    </div>
-    <div class="sub-info-right">
-      <a href="#" class="sub-info-link">PORTAL LOGIN</a>
-      <span>•</span>
-      <a href="#" class="sub-info-link">SERVER SPEED TEST</a>
-      <span>•</span>
-      <a href="#" class="sub-info-link">FREE IP CHECKER</a>
-      <span>•</span>
-      <span class="highlight-text">✦ OLLA ENGINE v2.0 READY →</span>
-    </div>
-  </div>
-</div>
-
 <!-- Main Header -->
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="/">
-      <span class="brand-logo-badge">NH</span>
-      <div class="brand-name-group">
-        <span class="brand-title">{SITE.brand}</span>
-        <span class="brand-sub">NETWORKERS HOME</span>
-      </div>
-    </a>
-    <nav class="nav" aria-label="Primary">
-      {
-        NAV.map((item) => (
-          <a href={item.href} class:list={['nav-link', { active: isActive(item.href) }]}>
-            {item.label}
+    <div class="header-left">
+      <a class="brand" href="/" aria-label={SITE.brand}>
+        <img src="/logo.png" alt="" class="brand-logo-img" />
+        <span class="brand-name">{SITE.brand}</span>
+      </a>
+    </div>
+
+    <nav class="nav nav-center" aria-label="Primary">
+      <!-- Technology Dropdown -->
+      <div class="nav-item has-dropdown">
+        <a href="/tags/protocol-tech/" class="nav-link dropdown-trigger">
+          <span>Technology</span>
+          <svg class="nav-arrow" width="9" height="9" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M7 10l5 5 5-5z"/>
+          </svg>
+        </a>
+        <div class="dropdown-menu">
+          <a href="/blog/what-is-post-quantum-cryptography" class="dropdown-link">
+            <strong>Post-Quantum Encryption</strong>
+            <span>Future-proof NIST-standard lattice security</span>
           </a>
-        ))
-      }
-      <a class="btn-contact" href={SITE.marketingUrl}>Get OllaVPN</a>
+          <a href="/blog/wireguard-vs-openvpn" class="dropdown-link">
+            <strong>WireGuard Protocol</strong>
+            <span>Lightweight, high-speed 10Gbps tunneling</span>
+          </a>
+          <a href="/blog/which-free-vpn-does-not-keep-logs" class="dropdown-link">
+            <strong>Zero-Logs Architecture</strong>
+            <span>RAM-only server infrastructure</span>
+          </a>
+          <a href="/blog/what-is-a-vpn-kill-switch" class="dropdown-link">
+            <strong>Kill Switch Protection</strong>
+            <span>Automatic system-level network fallback</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Blogs Dropdown -->
+      <div class="nav-item has-dropdown">
+        <a href="/" class="nav-link dropdown-trigger">
+          <span>Blogs</span>
+          <svg class="nav-arrow" width="9" height="9" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M7 10l5 5 5-5z"/>
+          </svg>
+        </a>
+        <div class="dropdown-menu">
+          <a href="/" class="dropdown-link">
+            <strong>All Articles (124)</strong>
+            <span>Explore our complete library</span>
+          </a>
+          <a href="/tags/buyer-guides/" class="dropdown-link">
+            <strong>Buyer Guides</strong>
+            <span>Device &amp; platform recommendations</span>
+          </a>
+          <a href="/tags/privacy-security/" class="dropdown-link">
+            <strong>Privacy &amp; Security</strong>
+            <span>Digital footprint &amp; data defense</span>
+          </a>
+          <a href="/tags/how-to-guides/" class="dropdown-link">
+            <strong>How-To Guides</strong>
+            <span>Step-by-step setup &amp; configurations</span>
+          </a>
+          <a href="/tags/comparisons/" class="dropdown-link">
+            <strong>VPN Comparisons</strong>
+            <span>In-depth head-to-head performance benchmarks</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Free VPN -->
+      <a href="/free-vpn" class="nav-link">
+        <span>Free VPN</span>
+      </a>
+
+      <!-- Apps -->
+      <a href="/tags/use-cases/" class="nav-link">
+        <span>Apps</span>
+      </a>
+
+      <!-- Download -->
+      <a href="https://ollavpn.com/download" class="nav-link">
+        <span>Download</span>
+      </a>
     </nav>
+
+    <div class="header-right">
+      <a class="btn-contact" href={SITE.marketingUrl}>Get OllaVPN</a>
+    </div>
   </div>
 </header>
-
-<!-- Ticker Bar -->
-<div class="ticker-bar">
-  <div class="container ticker-inner">
-    <span class="ticker-item">👤 No-Logs Audit Passed</span>
-    <span class="ticker-item"><span class="dot">•</span> ⭐ 4.9★ User Rating (12,500+)</span>
-    <span class="ticker-item"><span class="dot">•</span> ⚡ WireGuard & OpenVPN</span>
-    <span class="ticker-item"><span class="dot">•</span> 🌐 50+ Server Locations</span>
-    <span class="ticker-item"><span class="dot">•</span> 🛡️ Kill Switch Built-in</span>
-    <span class="ticker-item"><span class="dot">•</span> 💻 Multi-Device Support</span>
-    <span class="ticker-item"><span class="dot">•</span> 🚀 10Gbps Bandwidth</span>
-  </div>
-</div>
-

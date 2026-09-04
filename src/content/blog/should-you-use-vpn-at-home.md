@@ -206,14 +206,6 @@ No card. Unsubscribe with one click.
 
 Share Copy link [X](https://twitter.com/intent/tweet?text=Do%20I%20Really%20Need%20a%20VPN%20at%20Home%3F&url=https%3A%2F%2Follavpn.com%2Fblog%2Fshould-you-use-vpn-at-home) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fshould-you-use-vpn-at-home) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fshould-you-use-vpn-at-home&t=Do%20I%20Really%20Need%20a%20VPN%20at%20Home%3F) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fshould-you-use-vpn-at-home&title=Do%20I%20Really%20Need%20a%20VPN%20at%20Home%3F)
 
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [PRIVACYVpn for online banking8 min · OllaVPN Blog](/blog/vpn-for-online-banking)
-*   [PRIVACYVpn for public wifi traveler8 min · OllaVPN Blog](/blog/vpn-for-public-wifi-traveler)
-*   [PRIVACYWhat is a vpn and how does it work8 min · OllaVPN Blog](/blog/what-is-a-vpn-and-how-does-it-work)
-*   [PRIVACYWhat is post-quantum cryptography?8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography)
-*   [PRIVACYWhat is a DNS leak?8 min · OllaVPN Blog](/blog/what-is-a-dns-leak)
 
 NP
 
@@ -224,25 +216,3 @@ Privacy & Security Lead
 Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
 
 [More from Nathan →](/about/team#nathan-pratt)
-
-#### More in [Privacy guides](index.html#privacy-security) 25 guides
-
-[View all 25 in Privacy guides →](index.html#privacy-security)
-
-[
-
-Are Free VPNs Safe? What You Need to Know Before You Connect
-
-Read guide →](are-free-vpns-safe.html)[
-
-Are VPNs Legal? What You Need to Know About VPN Legality and Privacy
-
-Read guide →](are-vpns-legal.html)[
-
-Can Websites Detect VPNs? What You Need to Know About Online Privacy
-
-Read guide →](can-a-website-detect-vpn.html)[
-
-Can Governments Really Track Your VPN? The Unvarnished Truth About Your Online Privacy
-
-Read guide →](can-government-track-vpn.html)

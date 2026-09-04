@@ -208,14 +208,6 @@ No card. Unsubscribe with one click.
 
 Share Copy link [X](https://twitter.com/intent/tweet?text=What%20is%20Multi-Hop%20VPN%20and%20How%20Does%20it%20Boost%20Your%20Privacy%3F&url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-multi-hop-vpn) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-multi-hop-vpn) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-multi-hop-vpn&t=What%20is%20Multi-Hop%20VPN%20and%20How%20Does%20it%20Boost%20Your%20Privacy%3F) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-multi-hop-vpn&title=What%20is%20Multi-Hop%20VPN%20and%20How%20Does%20it%20Boost%20Your%20Privacy%3F)
 
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [PRIVACYWhat is split tunneling8 min · OllaVPN Blog](/blog/what-is-split-tunneling)
-*   [PRIVACYWhat is tor vs vpn8 min · OllaVPN Blog](/blog/what-is-tor-vs-vpn)
-*   [PRIVACYWhat is onion over vpn8 min · OllaVPN Blog](/blog/what-is-onion-over-vpn)
-*   [PRIVACYWhat is post-quantum cryptography?8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography)
-*   [PRIVACYWhat is a DNS leak?8 min · OllaVPN Blog](/blog/what-is-a-dns-leak)
 
 NP
 
@@ -226,25 +218,3 @@ Privacy & Security Lead
 Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
 
 [More from Nathan →](/about/team#nathan-pratt)
-
-#### More in [Protocol & tech](index.html#protocol-tech) 12 guides
-
-[View all 12 in Protocol & tech →](index.html#protocol-tech)
-
-[
-
-What Exactly Is an IPSec VPN, and Why Should You Care?
-
-Read guide →](what-is-an-ipsec-vpn.html)[
-
-What is Encrypted Client Hello (ECH) and Why Should You Care?
-
-Read guide →](what-is-encrypted-client-hello.html)[
-
-MASQUE Protocol Explained: What It Is, How It Works, and Why You Should Care
-
-Read guide →](what-is-masque.html)[
-
-What is Onion Over VPN, and Why Should You Care?
-
-Read guide →](what-is-onion-over-vpn.html)

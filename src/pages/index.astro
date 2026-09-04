@@ -7,149 +7,224 @@ import { getPublishedPosts, readingTime } from '../utils/posts';
 const posts = await getPublishedPosts();
 const featured = posts[0];
 
-const founderSpecialLinks = posts.slice(1, 9).map(p => ({
-  title: p.data.title,
-  href: `/blog/${p.slug}/`
-}));
+// VPN Essentials & VPN Security Curated Links
+const vpnEssentialsSlugs = [
+  'what-is-a-vpn-and-how-does-it-work',
+  'are-free-vpns-safe',
+  'free-vpn-vs-paid-vpn',
+  'which-free-vpn-does-not-keep-logs'
+];
+const vpnEssentialsLinks = vpnEssentialsSlugs.map(slug => {
+  const p = posts.find(post => post.slug === slug);
+  return {
+    title: p ? p.data.title : 'VPN Guide',
+    href: `/blog/${slug}/`
+  };
+});
 
-const aiSpecialLinks = posts.slice(9, 18).map(p => ({
-  title: p.data.title,
-  href: `/blog/${p.slug}/`
-}));
+const vpnSecuritySlugs = [
+  'wireguard-vs-openvpn',
+  'what-is-a-vpn-kill-switch',
+  'what-is-a-dns-leak',
+  'what-is-post-quantum-cryptography'
+];
+const vpnSecurityLinks = vpnSecuritySlugs.map(slug => {
+  const p = posts.find(post => post.slug === slug);
+  return {
+    title: p ? p.data.title : 'VPN Security',
+    href: `/blog/${slug}/`
+  };
+});
 
-const middleGridCards = posts.slice(18, 27).map(p => ({
+// Exactly 3 Cards row directly matching the user's reference image
+const middleGridCards = posts.slice(9, 18).map(p => ({
   tag: p.data.tags && p.data.tags[0] ? p.data.tags[0] : 'VPN & Privacy',
   tagClass: '',
   title: p.data.title,
   desc: p.data.description,
+  pubDate: new Date(p.data.pubDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }),
   readTime: `${readingTime(p.body)} min read`,
   href: `/blog/${p.slug}/`
 }));
 
 const categoryFilters = [
-  "All", "buyer-guides", "privacy-security", "comparisons", "how-to-guides", "beginner-basics", "protocol-tech", "use-cases", "pillars"
+  "All", "comparisons", "buyer-guides", "privacy-security", "how-to-guides", "beginner-basics", "protocol-tech", "use-cases", "pillars"
 ];
+
+const categoryLabels: Record<string, { label: string; count: number }> = {
+  "All": { label: "All", count: 124 },
+  "comparisons": { label: "Comparisons", count: 19 },
+  "buyer-guides": { label: "Buyer Guides", count: 24 },
+  "privacy-security": { label: "Privacy & Security", count: 26 },
+  "how-to-guides": { label: "How-To Guides", count: 13 },
+  "beginner-basics": { label: "Beginner Basics", count: 20 },
+  "protocol-tech": { label: "Protocol & Tech", count: 12 },
+  "use-cases": { label: "Use Cases", count: 6 },
+  "pillars": { label: "Pillar Guides", count: 14 }
+};
 ---
 
 <BaseLayout>
-  <!-- 3-Column Main Grid Matching Image 1 -->
+  <!-- 3-Column Main Layout Matching Target Design -->
   <div class="three-col-layout">
     
-    <!-- LEFT COLUMN: Founder Special -->
+    <!-- LEFT COLUMN: VPN Essentials -->
     <aside class="left-col">
       <div class="col-pill-header founder-pill">
-        FOUNDER SPECIAL
+        VPN ESSENTIALS
       </div>
-      <div class="side-article-list">
-        {founderSpecialLinks.map(item => (
+      <nav class="side-article-list">
+        {vpnEssentialsLinks.map(item => (
           <a href={item.href} class="side-article-item">
             {item.title}
           </a>
         ))}
-      </div>
-      <a href="#" class="view-all-link">View All →</a>
+      </nav>
+      <a href="/blog/" class="view-all-btn view-all-amber">View all articles &rarr;</a>
     </aside>
 
-    <!-- MIDDLE COLUMN: Main Content & Featured Post & 3x3 Grid Cards -->
+    <!-- MIDDLE COLUMN: Main Content & Featured Post & 3 Cards -->
     <main class="middle-col">
       <div class="main-heading-block">
-        <h1 class="main-heading-title">Networking, Cloud Security & Cybersecurity Blog</h1>
-        <p class="main-heading-sub">Expert articles on cloud security, AI/ML, networking certifications & IT careers</p>
+        <h1 class="main-heading-title">VPN, Online Privacy & Cyber Security Blog</h1>
+        <p class="main-heading-sub">Expert insights on VPN protocols, digital encryption, IP protection & internet safety</p>
       </div>
 
       <div class="section-sub-pill">
-        <span class="col-pill-header newest-pill">🔥 NEWEST ARTICLES</span>
+        <span class="col-pill-header newest-pill">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="margin-right: 4px;">
+            <path d="M12 23c6.075 0 11-4.925 11-11C23 6 17 2 17 2s.4 3.7-2.3 6.4C12 11.1 9.8 11.2 9 8.5 7.4 10.2 6 12.5 6 15c0 4.418 2.686 8 6 8zm-1-7.5c-.552 0-1-.448-1-1 0-1.5 1-2.5 2-3.5 1 1 2 2 2 3.5 0 .552-.448 1-1 1h-2z"/>
+          </svg>
+          NEWEST ARTICLES
+        </span>
         <span class="latest-label">Latest from our experts</span>
       </div>
 
       {featured && (
         <a class="featured-card" href={`/blog/${featured.slug}/`}>
-          <div class="badge-new">🔥 NEW</div>
           <div class="featured-img-wrapper">
             <svg width="100%" height="100%" viewBox="0 0 400 260" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
               <defs>
-                <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#388087" />
-                  <stop offset="50%" stop-color="#6FB3B8" />
-                  <stop offset="100%" stop-color="#1e5c63" />
+                <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#0f172a" />
+                  <stop offset="50%" stop-color="#1e293b" />
+                  <stop offset="100%" stop-color="#090d16" />
+                </linearGradient>
+                <linearGradient id="screenGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#0284c7" />
+                  <stop offset="100%" stop-color="#0369a1" />
+                </linearGradient>
+                <linearGradient id="warmLight" x1="100%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#ea580c" stop-opacity="0.35" />
+                  <stop offset="100%" stop-color="#0f172a" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#fbbf24" />
+                  <stop offset="100%" stop-color="#f59e0b" />
                 </linearGradient>
               </defs>
-              <rect width="400" height="260" fill="url(#cardGrad)" />
-              <circle cx="120" cy="130" r="70" fill="#BADFE7" opacity="0.25" />
-              <rect x="180" y="50" width="180" height="120" rx="8" fill="#ffffff" opacity="0.9" />
-              <path d="M 200 90 L 260 140 L 320 80" stroke="#388087" stroke-width="4" fill="none" stroke-linecap="round" />
-              <circle cx="260" cy="140" r="6" fill="#ff6b35" />
-              <circle cx="320" cy="80" r="6" fill="#388087" />
+              <!-- Dark Modern Office / Lab Background -->
+              <rect width="400" height="260" fill="url(#bgGrad)" />
+              <rect width="400" height="260" fill="url(#warmLight)" />
+              <circle cx="280" cy="110" r="100" fill="#f97316" opacity="0.12" />
+              <!-- Desk Surface -->
+              <rect x="0" y="210" width="400" height="50" fill="#1e293b" />
+              <line x1="0" y1="210" x2="400" y2="210" stroke="#334155" stroke-width="2" />
+              
+              <!-- Left Monitor (Code & Security Diagnostics) -->
+              <rect x="35" y="68" width="128" height="98" rx="5" fill="#020617" stroke="#334155" stroke-width="2.5" />
+              <rect x="41" y="74" width="116" height="86" rx="3" fill="url(#screenGrad1)" opacity="0.9" />
+              <rect x="94" y="166" width="14" height="44" fill="#475569" />
+              <ellipse cx="101" cy="210" rx="26" ry="5" fill="#334155" />
+              <line x1="50" y1="86" x2="110" y2="86" stroke="#7dd3fc" stroke-width="2.5" stroke-linecap="round" />
+              <line x1="50" y1="96" x2="135" y2="96" stroke="#bae6fd" stroke-width="2" stroke-linecap="round" />
+              <line x1="50" y1="106" x2="100" y2="106" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" />
+              <line x1="60" y1="116" x2="142" y2="116" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.85" />
+              <line x1="60" y1="126" x2="120" y2="126" stroke="#bae6fd" stroke-width="2" stroke-linecap="round" />
+              <line x1="50" y1="136" x2="95" y2="136" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" />
+              <line x1="50" y1="146" x2="132" y2="146" stroke="#7dd3fc" stroke-width="2" stroke-linecap="round" />
+              
+              <!-- Right Main Curved Monitor (Cyber Security Center) -->
+              <rect x="178" y="52" width="150" height="114" rx="6" fill="#020617" stroke="#f59e0b" stroke-width="2" />
+              <rect x="184" y="58" width="138" height="102" rx="4" fill="#0f172a" />
+              <rect x="246" y="166" width="14" height="44" fill="#475569" />
+              <ellipse cx="253" cy="210" rx="28" ry="5" fill="#334155" />
+              <!-- Cyber Shield Graphic -->
+              <path d="M 253 74 L 288 88 V 120 C 288 138 253 148 253 148 C 253 148 218 138 218 120 V 88 Z" fill="url(#shieldGrad)" opacity="0.9" stroke="#ffffff" stroke-width="2" />
+              <circle cx="253" cy="106" r="5" fill="#0f172a" />
+              <polygon points="251,106 255,106 256,120 250,120" fill="#0f172a" />
+              <circle cx="202" cy="82" r="4" fill="#38bdf8" />
+              <circle cx="304" cy="82" r="4" fill="#38bdf8" />
+              <line x1="202" y1="82" x2="224" y2="92" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="2 2" />
+              <line x1="304" y1="82" x2="282" y2="92" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="2 2" />
+              <circle cx="198" cy="138" r="3.5" fill="#fbbf24" />
+              <circle cx="308" cy="138" r="3.5" fill="#fbbf24" />
+              
+              <!-- Keyboard & Mouse on Desk -->
+              <rect x="145" y="215" width="95" height="12" rx="3" fill="#334155" />
+              <rect x="260" y="216" width="16" height="10" rx="4" fill="#334155" />
             </svg>
           </div>
           <div class="featured-content">
-            <span class="featured-tag">AI Coding</span>
+            <span class="featured-tag">{featured.data.tags && featured.data.tags[0] ? featured.data.tags[0] : 'VPN & Privacy'}</span>
             <h2 class="featured-title">{featured.data.title}</h2>
             <p class="featured-desc">{featured.data.description}</p>
             <div class="featured-meta">
+              <span>{new Date(featured.data.pubDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+              <span>&bull;</span>
               <span>{readingTime(featured.body)} min read</span>
-              <span>•</span>
-              <span class="read-more">Read article →</span>
+              <span>&bull;</span>
+              <span class="read-more">Read article &rarr;</span>
             </div>
           </div>
         </a>
       )}
 
-      <!-- Bottom Category Grid Cards (Cisco, Firewall, Cloud) -->
-      <div class="category-pills-grid">
-        <a href="#" class="category-pill-card">
-          <span class="category-pill-badge">Cisco</span>
-          <strong>CCNA Exam Guide</strong>
-          <span style="font-size: 0.8rem; color: var(--muted);">Complete 200-301 Strategy</span>
-        </a>
-        <a href="#" class="category-pill-card">
-          <span class="category-pill-badge tag-firewall" style="background-color: #d97706;">Firewall</span>
-          <strong>PCNSE Guide</strong>
-          <span style="font-size: 0.8rem; color: var(--muted);">Palo Alto Certification</span>
-        </a>
-        <a href="#" class="category-pill-card">
-          <span class="category-pill-badge tag-cloud" style="background-color: #2563eb;">Cloud</span>
-          <strong>AWS Solutions</strong>
-          <span style="font-size: 0.8rem; color: var(--muted);">Architect Associate Guide</span>
-        </a>
-      </div>
-
-      <!-- 3x3 Grid Cards (2nd Scroll) -->
-      <div class="middle-grid-3x3">
+      <!-- 9 YELLOW BLOG CARDS (3 Rows of 3 Cards Below Featured Card) -->
+      <div class="middle-3cards-grid">
         {middleGridCards.map(card => (
-          <a href={card.href} class="grid-card">
-            <div>
-              <span class={`grid-card-tag ${card.tagClass}`}>{card.tag}</span>
-              <h3 class="grid-card-title">{card.title}</h3>
-              <p class="grid-card-desc">{card.desc}</p>
+          <a href={card.href} class="middle-3card">
+            <div class="middle-3card-inner">
+              <div>
+                <span class="middle-3card-tag">{card.tag}</span>
+                <h3 class="middle-3card-title">{card.title}</h3>
+                <p class="middle-3card-desc">{card.desc}</p>
+              </div>
+              <div class="middle-3card-meta">{card.pubDate} &bull; {card.readTime}</div>
             </div>
-            <div class="grid-card-readtime">{card.readTime}</div>
           </a>
         ))}
       </div>
 
-      <!-- 3RD SCROLL: All 123 OllaVPN Articles Section with Search & Filter Bar -->
+      <!-- 3RD SCROLL: All 124 OllaVPN Articles Section with Search & Filter Bar -->
       <section class="all-articles-section">
         <div class="all-articles-header">
-          <h2 class="all-articles-title">All Articles ({posts.length})</h2>
+          <h2 class="all-articles-title">All Articles (124)</h2>
           <div class="search-box-wrapper">
-            <span class="search-icon">🔍</span>
-            <input type="text" id="article-search" class="search-input" placeholder="Search 123 articles..." />
+            <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="article-search" class="search-input" placeholder="Search 124 articles..." />
           </div>
         </div>
 
         <!-- Filter Tags Row -->
         <div class="filter-tags-scroll-container">
           <div class="filter-tags-row">
-            {categoryFilters.map((filter, idx) => (
-              <button class={`filter-pill ${idx === 0 ? 'active' : ''}`} data-filter={filter}>
-                {filter}
-              </button>
-            ))}
+            {categoryFilters.map((filter, idx) => {
+              const info = categoryLabels[filter];
+              const displayLabel = info ? `${info.label} (${info.count})` : filter;
+              return (
+                <button class={`filter-pill ${idx === 0 ? 'active' : ''}`} data-filter={filter}>
+                  {displayLabel}
+                </button>
+              );
+            })}
           </div>
         </div>
 
-        <!-- 4-Column Grid for All 123 OllaVPN Articles -->
+        <!-- 4-Column Grid for All 124 OllaVPN Articles -->
         <div class="grid-4col" id="all-articles-grid">
           {posts.map(p => {
             const firstTag = (p.data.tags && p.data.tags[0]) ? p.data.tags[0] : 'privacy-security';
@@ -162,51 +237,37 @@ const categoryFilters = [
                   <h3 class="grid-card-title">{p.data.title}</h3>
                   <p class="grid-card-desc">{p.data.description}</p>
                 </div>
-                <div class="grid-card-date">{formattedDate}</div>
+                <div class="grid-card-date">{formattedDate} &bull; {readingTime(p.body)} min read</div>
               </a>
             );
           })}
         </div>
       </section>
-
-      <!-- Remaining Posts List if any -->
-      {posts.length > 27 && (
-        <div class="post-list" style="margin-top: 2rem;">
-          <h3 style="color: var(--primary); font-size: 1.2rem; margin-bottom: 1rem;">More Articles</h3>
-          {posts.slice(27, 35).map((p) => (
-            <PostCard
-              url={`/blog/${p.slug}/`}
-              title={p.data.title}
-              description={p.data.description}
-              pubDate={p.data.pubDate}
-              tags={p.data.tags}
-              minutes={readingTime(p.body)}
-            />
-          ))}
-        </div>
-      )}
     </main>
 
-    <!-- RIGHT COLUMN: AI Special -->
+    <!-- RIGHT COLUMN: VPN Security -->
     <aside class="right-col">
       <div class="col-pill-header ai-pill">
-        AI SPECIAL
+        VPN SECURITY
       </div>
-      <div class="side-article-list">
-        {aiSpecialLinks.map(item => (
+      <nav class="side-article-list">
+        {vpnSecurityLinks.map(item => (
           <a href={item.href} class="side-article-item">
             {item.title}
           </a>
         ))}
-      </div>
-      <a href="#" class="view-all-link">View All AI Specials →</a>
+      </nav>
+      <a href="/blog/" class="view-all-btn view-all-purple">View all articles &rarr;</a>
     </aside>
 
   </div>
 
-  <!-- Floating Action Button -->
+  <!-- Floating Action Button Matching Target Image (Red Pill) -->
   <a href={SITE.marketingUrl} class="floating-cta-btn">
-    ⚡ Get OllaVPN Free
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"/>
+    </svg>
+    Get OllaVPN Free
   </a>
 
   <!-- Interactive Search & Filtering Script -->
@@ -251,6 +312,3 @@ const categoryFilters = [
     });
   </script>
 </BaseLayout>
-
-
-

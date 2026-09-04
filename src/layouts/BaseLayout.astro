@@ -15,8 +15,9 @@ interface Props {
     author?: string;
     tags?: string[];
   };
+  fullWidth?: boolean;
 }
-const { title = SITE.title, description, image, article } = Astro.props;
+const { title = SITE.title, description, image, article, fullWidth = false } = Astro.props;
 ---
 
 <!doctype html>
@@ -26,7 +27,7 @@ const { title = SITE.title, description, image, article } = Astro.props;
   </head>
   <body>
     <Header />
-    <main class="container">
+    <main class={fullWidth ? 'main-fullwidth' : 'container'}>
       <slot />
     </main>
     <Footer />

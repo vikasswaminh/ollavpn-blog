@@ -208,14 +208,6 @@ No card. Unsubscribe with one click.
 
 Share Copy link [X](https://twitter.com/intent/tweet?text=Why%20Is%20My%20VPN%20So%20Slow%3F%20Get%20Your%20Speed%20Back%20Now.&url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhy-is-my-vpn-so-slow) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhy-is-my-vpn-so-slow) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fwhy-is-my-vpn-so-slow&t=Why%20Is%20My%20VPN%20So%20Slow%3F%20Get%20Your%20Speed%20Back%20Now.) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhy-is-my-vpn-so-slow&title=Why%20Is%20My%20VPN%20So%20Slow%3F%20Get%20Your%20Speed%20Back%20Now.)
 
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [PRIVACYWhy does my vpn keep disconnecting8 min · OllaVPN Blog](/blog/why-does-my-vpn-keep-disconnecting)
-*   [PRIVACYHow to test vpn actually working8 min · OllaVPN Blog](/blog/how-to-test-vpn-actually-working)
-*   [PRIVACYWhat is vpn passthrough8 min · OllaVPN Blog](/blog/what-is-vpn-passthrough)
-*   [PRIVACYWhat is post-quantum cryptography?8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography)
-*   [PRIVACYWhat is a DNS leak?8 min · OllaVPN Blog](/blog/what-is-a-dns-leak)
 
 NP
 
@@ -226,25 +218,3 @@ Privacy & Security Lead
 Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
 
 [More from Nathan →](/about/team#nathan-pratt)
-
-#### More in [Beginner basics](index.html#beginner-basics) 22 guides
-
-[View all 22 in Beginner basics →](index.html#beginner-basics)
-
-[
-
-Does a VPN Slow Down Your Internet Speed? The Honest Truth.
-
-Read guide →](does-vpn-slow-down-internet.html)[
-
-Free VPN vs. Paid VPN: What's the Real Difference and Which Should You Pick?
-
-Read guide →](free-vpn-vs-paid-vpn.html)[
-
-Lifetime Free VPN: What You Need to Know Before You Download
-
-Read guide →](lifetime-free-vpn.html)[
-
-What Is a Burner Email, and Why Should You Care?
-
-Read guide →](what-is-a-burner-email.html)

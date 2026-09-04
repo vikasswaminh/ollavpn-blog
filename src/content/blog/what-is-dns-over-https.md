@@ -202,14 +202,6 @@ No card. Unsubscribe with one click.
 
 Share Copy link [X](https://twitter.com/intent/tweet?text=What%20is%20DNS%20over%20HTTPS%20%28DoH%29%3F%20Your%20Privacy%2C%20Explained.&url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-dns-over-https) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-dns-over-https) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-dns-over-https&t=What%20is%20DNS%20over%20HTTPS%20%28DoH%29%3F%20Your%20Privacy%2C%20Explained.) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-dns-over-https&title=What%20is%20DNS%20over%20HTTPS%20%28DoH%29%3F%20Your%20Privacy%2C%20Explained.)
 
-## Related reading
-
-*   [PRIVACYFree VPN — the honest 2026 guide8 min · OllaVPN Blog](/free-vpn)
-*   [PRIVACYWhat is a vpn kill switch8 min · OllaVPN Blog](/blog/what-is-a-vpn-kill-switch)
-*   [PRIVACYWhat is a webrtc leak8 min · OllaVPN Blog](/blog/what-is-a-webrtc-leak)
-*   [PRIVACYWhat is an ipv6 leak8 min · OllaVPN Blog](/blog/what-is-an-ipv6-leak)
-*   [PRIVACYWhat is post-quantum cryptography?8 min · OllaVPN Blog](/blog/what-is-post-quantum-cryptography)
-*   [PRIVACYWhat is a DNS leak?8 min · OllaVPN Blog](/blog/what-is-a-dns-leak)
 
 NP
 
@@ -220,25 +212,3 @@ Privacy & Security Lead
 Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
 
 [More from Nathan →](/about/team#nathan-pratt)
-
-#### More in [Beginner basics](index.html#beginner-basics) 22 guides
-
-[View all 22 in Beginner basics →](index.html#beginner-basics)
-
-[
-
-Does a VPN Slow Down Your Internet Speed? The Honest Truth.
-
-Read guide →](does-vpn-slow-down-internet.html)[
-
-Free VPN vs. Paid VPN: What's the Real Difference and Which Should You Pick?
-
-Read guide →](free-vpn-vs-paid-vpn.html)[
-
-Lifetime Free VPN: What You Need to Know Before You Download
-
-Read guide →](lifetime-free-vpn.html)[
-
-What Is a Burner Email, and Why Should You Care?
-
-Read guide →](what-is-a-burner-email.html)
