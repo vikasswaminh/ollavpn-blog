@@ -943,8 +943,8 @@ main.main-fullwidth {
 }
 
 .sidebar-ad-tag {
-  background: #ede9fe;
-  color: #6366f1;
+  background: rgba(218, 41, 28, 0.08);
+  color: #DA291C;
   font-size: 11px;
   font-weight: 700;
   padding: 3px 10px;
@@ -1044,11 +1044,11 @@ main.main-fullwidth {
 }
 
 .sidebar-related-link:hover {
-  color: #2563eb;
+  color: #DA291C;
 }
 
 .sidebar-related-link .bullet-dot {
-  color: #3b82f6;
+  color: #DA291C;
   font-size: 1.1rem;
   line-height: 1;
   margin-top: -1px;
@@ -1204,14 +1204,14 @@ main.main-fullwidth {
   align-items: center;
   gap: 6px;
   font-size: 0.86rem;
-  color: #2563eb;
+  color: #DA291C;
   line-height: 1.4;
   transition: color 0.15s ease;
   text-decoration: none !important;
 }
 
 .jump-box-link:hover {
-  color: #1d4ed8;
+  color: #B91C1C;
   text-decoration: underline !important;
 }
 
@@ -1405,7 +1405,7 @@ main.main-fullwidth {
   gap: 5px;
   background-color: #f8fafc;
   border: 1px solid #e2e8f0;
-  color: #2563eb;
+  color: #DA291C;
   font-size: 0.8rem;
   font-weight: 700;
   font-family: var(--font);
@@ -1418,9 +1418,9 @@ main.main-fullwidth {
 }
 
 .toc-view-all-btn:hover {
-  background-color: #ede9fe;
-  border-color: #c7d2fe;
-  color: #1d4ed8;
+  background-color: rgba(218, 41, 28, 0.08);
+  border-color: rgba(218, 41, 28, 0.2);
+  color: #DA291C;
 }
 
 /* Sidebar View All Buttons (Home Page) */
@@ -1828,11 +1828,11 @@ main.main-fullwidth {
 }
 
 .category-purple {
-  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  background: linear-gradient(135deg, #0F172A, #334155);
 }
 
 .category-blue {
-  background: linear-gradient(135deg, #0284c7, #2563eb);
+  background: linear-gradient(135deg, #DA291C, #B91C1C);
 }
 
 .sidebar-blog-links {
@@ -2027,7 +2027,7 @@ main.main-fullwidth {
   width: 38px;
   height: 38px;
   border-radius: 10px;
-  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  background: linear-gradient(135deg, #DA291C, #B91C1C);
   color: #ffffff;
   font-weight: 900;
   font-size: 1.25rem;
@@ -2204,7 +2204,7 @@ main.main-fullwidth {
 .quick-answer-box {
   background: #f8fafc !important;
   border: 1px solid #e2e8f0 !important;
-  border-left: 4px solid #3b82f6 !important;
+  border-left: 4px solid #DA291C !important;
   border-radius: 0 12px 12px 0 !important;
   padding: 1.15rem 1.4rem !important;
   margin: 1.35rem 0 1.75rem !important;
@@ -2213,8 +2213,8 @@ main.main-fullwidth {
 
 .quick-answer-tag {
   display: inline-block !important;
-  background: #eff6ff !important;
-  color: #1d4ed8 !important;
+  background: rgba(218, 41, 28, 0.08) !important;
+  color: #DA291C !important;
   font-size: 11px !important;
   font-weight: 800 !important;
   letter-spacing: 0.08em !important;
@@ -2222,7 +2222,7 @@ main.main-fullwidth {
   padding: 2px 9px !important;
   border-radius: 5px !important;
   margin-bottom: 0.5rem !important;
-  border: 1px solid #bfdbfe !important;
+  border: 1px solid rgba(218, 41, 28, 0.2) !important;
 }
 
 .quick-answer-box p {
@@ -2381,7 +2381,7 @@ main.main-fullwidth {
   width: 42px !important;
   height: 42px !important;
   border-radius: 11px !important;
-  background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+  background: linear-gradient(135deg, #DA291C, #B91C1C) !important;
   color: #ffffff !important;
   font-weight: 900 !important;
   font-size: 1.35rem !important;
@@ -2415,9 +2415,9 @@ main.main-fullwidth {
 }
 
 .faq-item[open] {
-  border-color: #93c5fd !important;
+  border-color: rgba(218, 41, 28, 0.3) !important;
   background: #ffffff !important;
-  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.05) !important;
+  box-shadow: 0 4px 14px rgba(218, 41, 28, 0.05) !important;
 }
 
 .faq-question {

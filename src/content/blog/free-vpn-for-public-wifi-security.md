@@ -363,7 +363,7 @@ This model lets us offer a genuinely free service — 10 Mbps speed, every count
 <p style="font-size: 1.08rem; color: #475569; max-width: 650px; margin: 0 auto 18px auto; line-height: 1.65;">
 Enjoy unlimited data, next-generation WireGuard encryption, and audited zero activity logs on Android, iOS, Windows, and macOS.
 </p>
-<a href="https://ollavpn.com" class="btn-primary" style="display: inline-block; background: #0F172A !important; color: #FFFFFF !important; font-size: 1.08rem; font-weight: 800; padding: 14px 36px; border-radius: 10px; text-decoration: none !important; box-shadow: 0 4px 16px rgba(50, 54, 82, 0.25); transition: all 0.2s ease;">
+<a href="https://ollavpn.com" class="btn-primary" style="display: inline-block; background: #DA291C !important; color: #FFFFFF !important; font-size: 1.08rem; font-weight: 800; padding: 14px 36px; border-radius: 10px; text-decoration: none !important; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.25); transition: all 0.2s ease;">
   Download OllaVPN Free &rarr;
 </a>
 <div style="margin-top: 14px; font-size: 0.85rem; color: #64748b; font-weight: 600;">
