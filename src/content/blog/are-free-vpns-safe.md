@@ -8,7 +8,7 @@ tags: ['buyer-guides']
 
 S
 
-Try OllaVPN free — post-quantum-ready, lifetime free plan.
+Try OllaVPN free  -  post-quantum-ready, lifetime free plan.
 
 No credit card. Or $2/mo for 5 devices on a faster plan.
 
@@ -26,7 +26,7 @@ The complete, no-spin breakdown of which free VPNs are genuinely safe, which one
 
 Hannah Wu · Senior Security Engineer
 
-TL;DR — THE SHORT ANSWERMost free VPNs are not safe - but the reason is more specific than “free things are bad.” The problem is the business model. A VPN service costs real money to run: servers, bandwidth, engineers, audits. When a free VPN charges users nothing, it has to cover those costs somewhere. The majority do it by collecting and selling user data, injecting ads, or cutting corners on encryption and security infrastructure. Those trade-offs directly undermine the privacy a VPN is supposed to provide. A small number of free VPNs are genuinely safe - typically services that cap speed rather than monetizing data, operate under an audited no-logs policy, and fund the free tier through a paid upgrade. OllaVPN's free plan is built on exactly that model: 10 Mbps speed cap, zero data logging, no ads, post-quantum encryption, and a kill switch on by default - funded by Plus subscribers, not by your browsing history.
+TL;DR  -  THE SHORT ANSWERMost free VPNs are not safe - but the reason is more specific than “free things are bad.” The problem is the business model. A VPN service costs real money to run: servers, bandwidth, engineers, audits. When a free VPN charges users nothing, it has to cover those costs somewhere. The majority do it by collecting and selling user data, injecting ads, or cutting corners on encryption and security infrastructure. Those trade-offs directly undermine the privacy a VPN is supposed to provide. A small number of free VPNs are genuinely safe - typically services that cap speed rather than monetizing data, operate under an audited no-logs policy, and fund the free tier through a paid upgrade. OllaVPN's free plan is built on exactly that model: 10 Mbps speed cap, zero data logging, no ads, post-quantum encryption, and a kill switch on by default - funded by Plus subscribers, not by your browsing history.
 
 The complication is not about price - it's about what economic model sits behind the product. A free VPN that charges nothing for unlimited data, unlimited speed, and thousands of servers is making money somehow. In most cases, you are the revenue. Understanding exactly how that works - and what it means for your actual safety - is the point of this guide.
 

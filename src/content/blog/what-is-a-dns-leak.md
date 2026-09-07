@@ -10,58 +10,58 @@ tags: ['privacy-security']
 
 # What Is a DNS Leak? How to Test, Fix, and Prevent It (2026 Guide)
 
-A plain-English guide to one of the most quietly important privacy concepts on the internet — what a DNS leak actually is, why it matters, how to test for one in under five minutes, and how to make sure you never have to worry about it again.
+A plain-English guide to one of the most quietly important privacy concepts on the internet  -  what a DNS leak actually is, why it matters, how to test for one in under five minutes, and how to make sure you never have to worry about it again.
 
-TL;DR — The Short Answer
+TL;DR  -  The Short Answer
 
-[S **Try OllaVPN free — post-quantum-ready, lifetime free plan.** No credit card. Or $2/mo for 5 devices on a faster plan. DOWNLOAD →](/dl/)
+[S **Try OllaVPN free  -  post-quantum-ready, lifetime free plan.** No credit card. Or $2/mo for 5 devices on a faster plan. DOWNLOAD →](/dl/)
 
-A **DNS leak** happens when your device sends DNS requests — the lookups that turn website names into numbers — outside your VPN's encrypted tunnel. Your browsing activity becomes visible to your internet service provider even while you think the VPN is protecting it. **To test:** connect to your VPN, then visit a DNS leak test site like _dnsleaktest.com_. If the test shows only your VPN provider's DNS servers, you're safe. If it shows your ISP's servers, you have a leak. **To prevent it for good:** use a reputable VPN that handles DNS inside the encrypted tunnel by default, with an always-on kill switch. [OllaVPN does this automatically](../dl/) on every connection.
+A **DNS leak** happens when your device sends DNS requests  -  the lookups that turn website names into numbers  -  outside your VPN's encrypted tunnel. Your browsing activity becomes visible to your internet service provider even while you think the VPN is protecting it. **To test:** connect to your VPN, then visit a DNS leak test site like _dnsleaktest.com_. If the test shows only your VPN provider's DNS servers, you're safe. If it shows your ISP's servers, you have a leak. **To prevent it for good:** use a reputable VPN that handles DNS inside the encrypted tunnel by default, with an always-on kill switch. [OllaVPN does this automatically](../dl/) on every connection.
 
-Most privacy stories on the internet are dramatic. A DNS leak is the opposite. It is the quiet, easy-to-miss way that a VPN you trust can still hand your browsing history to your internet provider — not because the VPN is malicious, but because of how the request for "where is this website" travels through your computer.
+Most privacy stories on the internet are dramatic. A DNS leak is the opposite. It is the quiet, easy-to-miss way that a VPN you trust can still hand your browsing history to your internet provider  -  not because the VPN is malicious, but because of how the request for "where is this website" travels through your computer.
 
 The good news: a DNS leak is one of the easiest privacy problems to test for, and one of the easiest to fix. This guide walks you through both, in plain English, the way we'd explain it over coffee.
 
 ## What DNS actually does, in one paragraph
 
-QUICK ANSWER DNS — the Domain Name System — translates human-readable website names like "ollavpn.com" into the numeric IP addresses that computers use to communicate. Every time you visit a website, your device asks a DNS server for the right number. That request is what can leak.
+QUICK ANSWER DNS  -  the Domain Name System  -  translates human-readable website names like "ollavpn.com" into the numeric IP addresses that computers use to communicate. Every time you visit a website, your device asks a DNS server for the right number. That request is what can leak.
 
-Every website on the internet has a numeric address — something like `104.21.74.182`. Humans don't memorize numbers, so we type names: _ollavpn.com_, _nytimes.com_, _your-bank.com_. **DNS** — the Domain Name System — is the lookup service that turns the name you typed into the number your computer actually uses to connect.
+Every website on the internet has a numeric address  -  something like `104.21.74.182`. Humans don't memorize numbers, so we type names: _ollavpn.com_, _nytimes.com_, _your-bank.com_. **DNS**  -  the Domain Name System  -  is the lookup service that turns the name you typed into the number your computer actually uses to connect.
 
 Think of it as a phonebook for the internet. You ask, "Where is ollavpn.com?" The DNS server answers with a number. Your computer then makes the connection to that number.
 
-By default, your computer asks **your internet service provider's DNS server** for every lookup. Your provider sees the question — and therefore sees the list of websites you visit — even if it can't see the content of the pages once you load them. That's where the privacy problem starts.
+By default, your computer asks **your internet service provider's DNS server** for every lookup. Your provider sees the question  -  and therefore sees the list of websites you visit  -  even if it can't see the content of the pages once you load them. That's where the privacy problem starts.
 
 ## What a DNS leak is, in plain English
 
-QUICK ANSWER A DNS leak is when your device sends DNS lookups _outside_ the encrypted VPN tunnel — to your internet provider instead of to your VPN's servers. The rest of your traffic might be private, but your DNS lookups reveal which sites you're visiting.
+QUICK ANSWER A DNS leak is when your device sends DNS lookups _outside_ the encrypted VPN tunnel  -  to your internet provider instead of to your VPN's servers. The rest of your traffic might be private, but your DNS lookups reveal which sites you're visiting.
 
 When you connect to a VPN, the expectation is straightforward: everything your device sends should go through the encrypted tunnel. Your internet provider sees that you're using a VPN, but it can't see what you do inside it.
 
-A **DNS leak** is when that expectation breaks. Your VPN tunnel handles most of your traffic correctly, but your DNS lookups slip out through a side door — they get sent to your internet provider instead of to your VPN's servers. To your provider, the list of websites you visited still looks the same as it did before you turned the VPN on.
+A **DNS leak** is when that expectation breaks. Your VPN tunnel handles most of your traffic correctly, but your DNS lookups slip out through a side door  -  they get sent to your internet provider instead of to your VPN's servers. To your provider, the list of websites you visited still looks the same as it did before you turned the VPN on.
 
 It's a small leak. But for the same reason a small drip ruins a basement, a DNS leak quietly undoes much of what a VPN is supposed to do.
 
 ## Why DNS leaks matter (and when they don't)
 
-QUICK ANSWER A DNS leak doesn't expose the content of your traffic — only which sites you're visiting. For most people that's a privacy concern. For journalists, activists, business travelers, and anyone in a restrictive network environment, it can be a serious one.
+QUICK ANSWER A DNS leak doesn't expose the content of your traffic  -  only which sites you're visiting. For most people that's a privacy concern. For journalists, activists, business travelers, and anyone in a restrictive network environment, it can be a serious one.
 
 Let's be honest about scale. For a casual user reading the news from a coffee-shop Wi-Fi, a DNS leak is a privacy concern but rarely a crisis. Your internet provider seeing that you visited the BBC website is not the same as your internet provider reading your email.
 
 Where DNS leaks matter more:
 
 *   **If your country restricts internet access**, the list of sites you visited can have real consequences. A VPN that leaks DNS is not actually protecting you.
-*   **If you're a journalist or activist** communicating with sources, the metadata — who you talked to, what sites you accessed — often matters more than the content of the conversations.
+*   **If you're a journalist or activist** communicating with sources, the metadata  -  who you talked to, what sites you accessed  -  often matters more than the content of the conversations.
 *   **If you're a business traveler** on a hotel or airport Wi-Fi, you probably don't want every site you visited on the trip stored by an opaque third-party network operator.
 *   **If you're at home and you simply value privacy**, you don't want your internet provider building a profile of your habits to sell to advertising networks.
 
-The best way to think about it: a DNS leak doesn't undo your VPN — but it dramatically narrows what your VPN is protecting.
+The best way to think about it: a DNS leak doesn't undo your VPN  -  but it dramatically narrows what your VPN is protecting.
 
 ## What causes DNS leaks
 
 QUICK ANSWER The most common causes are VPNs that don't handle DNS inside their own infrastructure, IPv6 traffic bypassing the tunnel, unexpected VPN disconnects without a kill switch, and operating-system misconfigurations. Choosing a VPN that handles DNS correctly by default removes most of the risk.
 
-DNS leaks have a handful of common root causes. Most of them are unintentional — bugs in older VPN clients, oversights in operating-system networking, side effects of recent network changes.
+DNS leaks have a handful of common root causes. Most of them are unintentional  -  bugs in older VPN clients, oversights in operating-system networking, side effects of recent network changes.
 
 #### The VPN doesn't run its own DNS
 
@@ -73,7 +73,7 @@ Many VPNs tunnel only IPv4 traffic. If your network has IPv6 enabled, those look
 
 #### The VPN disconnects unexpectedly
 
-If your VPN drops for even a few seconds without a kill switch, your device falls back to your provider's network, including its DNS — and your in-progress browsing leaks. An always-on kill switch prevents this.
+If your VPN drops for even a few seconds without a kill switch, your device falls back to your provider's network, including its DNS  -  and your in-progress browsing leaks. An always-on kill switch prevents this.
 
 #### Operating-system misconfiguration
 
@@ -87,17 +87,17 @@ If you've set a custom DNS server (like Google's 8.8.8.8 or Cloudflare's 1.1.1.1
 
 A small number of internet providers intercept DNS requests at the network level and force them through their own resolvers, regardless of what the device asked for. A well-built VPN can route around this.
 
-## How to test for a DNS leak — the five-minute method
+## How to test for a DNS leak  -  the five-minute method
 
 QUICK ANSWER Disconnect your VPN, visit a DNS leak test site to record a baseline, then reconnect to the VPN and run the test again. If the DNS servers shown change from your internet provider to your VPN provider, you're protected.
 
 You don't need any technical knowledge to test for a DNS leak. Five minutes and a browser.
 
-1.  **Disconnect from your VPN.** Make sure the VPN app shows you're not connected. Open a browser and visit a DNS leak test site such as _dnsleaktest.com_ or _browserleaks.com/dns_. Note the DNS servers shown — they belong to your internet provider and represent your baseline.
+1.  **Disconnect from your VPN.** Make sure the VPN app shows you're not connected. Open a browser and visit a DNS leak test site such as _dnsleaktest.com_ or _browserleaks.com/dns_. Note the DNS servers shown  -  they belong to your internet provider and represent your baseline.
 2.  **Connect to your VPN.** Open your VPN app and connect to any server. Wait a few seconds for the connection to fully establish.
-3.  **Run the test again.** Reload the leak-test page or run the test fresh. The DNS servers shown should now be different — they should belong to your VPN provider, not your internet provider.
+3.  **Run the test again.** Reload the leak-test page or run the test fresh. The DNS servers shown should now be different  -  they should belong to your VPN provider, not your internet provider.
 4.  **Run the extended test.** Most leak-test sites offer a "standard" test and an "extended" test. The extended test makes more lookups and catches edge cases the standard test can miss. Run it.
-5.  **Interpret the result.** If the only DNS servers shown belong to your VPN provider, you have no DNS leak. If the test shows any of your internet provider's servers — alongside the VPN's or instead of them — you have a leak that needs fixing.
+5.  **Interpret the result.** If the only DNS servers shown belong to your VPN provider, you have no DNS leak. If the test shows any of your internet provider's servers  -  alongside the VPN's or instead of them  -  you have a leak that needs fixing.
 
 That's it. The whole test takes under five minutes and costs nothing. We recommend doing it once when you first install a VPN, and again any time you make a significant change to your network or operating system.
 
@@ -120,7 +120,7 @@ If your test showed a leak, the fix depends on the cause. In order of how likely
 1.  **Update your VPN app to the latest version.** Many DNS-handling bugs have been fixed in newer releases. Open the VPN app and check for updates.
 2.  **Enable your VPN's DNS leak protection setting.** Most reputable VPN apps have this turned on by default, but some let you disable it. Make sure it's on.
 3.  **Enable the kill switch.** If a leak only appears during a disconnect, the kill switch will stop it. On most VPN apps this is in the main settings.
-4.  **Disable IPv6 on your device** if your VPN doesn't tunnel it. Windows, macOS, and Linux all let you do this in network settings. This is a workaround, not a permanent solution — choose a VPN that handles IPv6 instead.
+4.  **Disable IPv6 on your device** if your VPN doesn't tunnel it. Windows, macOS, and Linux all let you do this in network settings. This is a workaround, not a permanent solution  -  choose a VPN that handles IPv6 instead.
 5.  **Restart your network adapter** after connecting the VPN. Sometimes Windows in particular gets confused about which DNS to use until the adapter is reset.
 6.  **Switch to a VPN that handles DNS securely by default.** If your current VPN persistently leaks despite the above, the problem is in the product. The simplest fix is changing products.
 
@@ -138,15 +138,15 @@ What to look for in a VPN if you want to set it and forget it:
 *   **The VPN updates its app regularly**. Networking edge cases get found and fixed over time. An app that hasn't updated in two years is more likely to leak than one that updates monthly.
 *   **The VPN passes its own DNS leak test**. Test it yourself once, just to confirm. Then let it run.
 
-## DNS leak protection vs the kill switch — they're not the same thing
+## DNS leak protection vs the kill switch  -  they're not the same thing
 
-QUICK ANSWER A kill switch blocks all traffic during a VPN disconnect, preventing leaks that would happen in those brief moments. Built-in DNS leak protection prevents leaks while the VPN is connected. You want both — they protect against different failure modes.
+QUICK ANSWER A kill switch blocks all traffic during a VPN disconnect, preventing leaks that would happen in those brief moments. Built-in DNS leak protection prevents leaks while the VPN is connected. You want both  -  they protect against different failure modes.
 
 One of the most common pieces of bad advice on the internet is "you just need a kill switch to prevent DNS leaks." That's only half right.
 
 A **kill switch** stops all traffic when the VPN connection drops. If your VPN disconnects unexpectedly, the kill switch holds the door closed until the tunnel is back. That prevents leaks during disconnect events.
 
-But a kill switch can't help with leaks that happen _while the VPN is connected_ — which is when most DNS leaks actually occur. If your VPN routes the rest of your traffic correctly but sends DNS lookups to your internet provider, the kill switch sees nothing wrong because the tunnel is up. The leak happens anyway.
+But a kill switch can't help with leaks that happen _while the VPN is connected_  -  which is when most DNS leaks actually occur. If your VPN routes the rest of your traffic correctly but sends DNS lookups to your internet provider, the kill switch sees nothing wrong because the tunnel is up. The leak happens anyway.
 
 What you want is both: **built-in DNS leak protection inside the tunnel, plus an always-on kill switch around the tunnel**. They work together. They protect against different things.
 
@@ -154,11 +154,11 @@ What you want is both: **built-in DNS leak protection inside the tunnel, plus an
 
 IPv6 deserves its own mention because it's the source of more "I thought I was protected" VPN incidents than any other single cause.
 
-Most VPNs were originally built for IPv4 — the older addressing system the internet has used for decades. When IPv6 — the newer system — became available on residential networks, many VPNs simply ignored it. The result: IPv4 traffic went through the tunnel, IPv6 traffic went around it. If your home network uses both, you had what's effectively a permanent partial leak.
+Most VPNs were originally built for IPv4  -  the older addressing system the internet has used for decades. When IPv6  -  the newer system  -  became available on residential networks, many VPNs simply ignored it. The result: IPv4 traffic went through the tunnel, IPv6 traffic went around it. If your home network uses both, you had what's effectively a permanent partial leak.
 
 Modern reputable VPNs handle IPv6 either by routing it through the tunnel or by disabling it inside the tunnel by default. Either is a valid approach. What's not valid is letting it leak.
 
-When you run a DNS leak test, also check whether the site offers an **IPv6 leak test** — many do. Run both.
+When you run a DNS leak test, also check whether the site offers an **IPv6 leak test**  -  many do. Run both.
 
 ## Your privacy checklist
 
@@ -169,11 +169,11 @@ When you run a DNS leak test, also check whether the site offers an **IPv6 leak 
 *   **Run a WebRTC leak test** from a browser. (Browsers sometimes leak real IPs through WebRTC even when the VPN is up.)
 *   **Verify the kill switch is enabled** in your VPN app's settings.
 *   **Update your VPN app** to the latest version.
-*   **Check that your operating system is up to date** — Windows, macOS, and Linux release networking fixes regularly.
+*   **Check that your operating system is up to date**  -  Windows, macOS, and Linux release networking fixes regularly.
 
 If all six come back clean, you can stop worrying about leaks for the rest of the year.
 
-## How OllaVPN handles DNS — by default, without configuration
+## How OllaVPN handles DNS  -  by default, without configuration
 
 We built **OllaVPN** to be the answer to the question "what should a modern privacy VPN do automatically?" When it comes to DNS, the answer is simple:
 
@@ -181,11 +181,11 @@ We built **OllaVPN** to be the answer to the question "what should a modern priv
 *   **The kill switch is always on.** You can't accidentally disable it. If the tunnel ever drops, traffic stops until the tunnel is back.
 *   **IPv6 is handled by default.** No partial leaks, no manual configuration.
 *   **No third-party DNS resolver in the loop.** We don't hand your lookups to a public resolver and call it private. They go through us, inside the tunnel.
-*   **Post-quantum cryptography ready from day one.** The same encryption that protects your traffic today is built to remain secure against future quantum computers — the "harvest now, decrypt later" concern explained in our [comparison guide](nordvpn-vs-protonvpn.html).
+*   **Post-quantum cryptography ready from day one.** The same encryption that protects your traffic today is built to remain secure against future quantum computers  -  the "harvest now, decrypt later" concern explained in our [comparison guide](nordvpn-vs-protonvpn.html).
 
 The result: if you run a DNS leak test while connected to OllaVPN, the test should show only OllaVPN's resolver. Every connection. Every time. There's nothing for you to configure.
 
-**Try OllaVPN — the whole menu:**
+**Try OllaVPN  -  the whole menu:**
 
 Lifetime free
 
@@ -199,14 +199,14 @@ $2 / month · 10 Gbps
 
 Five devices on one account. Fast enough for gigabit home internet. Cheap enough that it isn't a decision.
 
-You can [try the free plan](../dl/) right now — no email, no card. Then run a DNS leak test and see for yourself.
+You can [try the free plan](../dl/) right now  -  no email, no card. Then run a DNS leak test and see for yourself.
 
 
 ## A broader-context closing thought
 
 One pattern we've noticed across every privacy-and-networking topic we cover: the gap between what most users believe about a given topic and what the technical reality is keeps widening. Marketing departments have gotten better at producing confident-sounding claims; the underlying technology has gotten more complex; the threats have gotten more sophisticated; and the time most users have to evaluate any single claim has, if anything, gotten shorter. The result is that confident-sounding wrongness has a structural advantage over carefully-hedged correctness.
 
-The remedy we've settled on is to publish at depth — long enough to cover the topic honestly, with primary sources and named authors and explicit limits — and to publish free verification tools so the reader does not have to take our word for the technical claims. Both are choices that don't optimise for "users who skim and click." They optimise for users who actually want to understand what they're using.
+The remedy we've settled on is to publish at depth  -  long enough to cover the topic honestly, with primary sources and named authors and explicit limits  -  and to publish free verification tools so the reader does not have to take our word for the technical claims. Both are choices that don't optimise for "users who skim and click." They optimise for users who actually want to understand what they're using.
 
 If you've read this far, you're in the second group. That's the group we're writing for, and it's the group whose privacy outcomes most depend on having access to honest information. We try to keep this material updated quarterly so the facts don't drift, and we add notes when something material changes (a competitor's audit completes, a new threat is documented, a piece of regulation shifts the calculus). The [main free-VPN comparison](/best-free-vpn-2026), the [technology overview](/technology), and the [free privacy tools](/tools/) are the three pages most worth bookmarking from the OllaVPN site if you've found this guide useful.
 
@@ -224,7 +224,7 @@ For any claim on this page that affects a decision you're about to make, the ver
 
 ## Deeper context worth knowing
 
-A definitional explainer should leave you understanding not just the concept but the surrounding category — what other concepts it connects to, what common misunderstandings to avoid, and which adjacent ideas you should know about. A few worth covering:
+A definitional explainer should leave you understanding not just the concept but the surrounding category  -  what other concepts it connects to, what common misunderstandings to avoid, and which adjacent ideas you should know about. A few worth covering:
 
 **The category history matters.** Most networking and privacy concepts you encounter today were invented to solve a specific problem that may or may not still be the dominant problem in 2026. Understanding why a concept exists helps you evaluate whether it's the right tool for your situation. We try to include the historical context for every "what is X" guide we publish.
 
@@ -256,13 +256,13 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
 *   What a DNS leak is, in plain English
 *   Why DNS leaks matter (and when they don't)
 *   What causes DNS leaks
-*   How to test for a DNS leak — the five-minute method
+*   How to test for a DNS leak  -  the five-minute method
 
 ## Frequently asked questions
 
 ### What is a DNS leak in simple terms?
 
-A DNS leak happens when your device sends DNS requests — the lookups that turn "ollavpn.com" into a numeric address — **outside the encrypted VPN tunnel**. Even though the rest of your traffic is private, the leaked DNS requests reveal which websites you're visiting to your internet service provider or another third party.
+A DNS leak happens when your device sends DNS requests  -  the lookups that turn "ollavpn.com" into a numeric address  -  **outside the encrypted VPN tunnel**. Even though the rest of your traffic is private, the leaked DNS requests reveal which websites you're visiting to your internet service provider or another third party.
 
 ### How do I check if my VPN is leaking DNS?
 
@@ -282,11 +282,11 @@ A kill switch prevents leaks that happen during a VPN disconnect by blocking all
 
 ### Do free VPNs leak DNS?
 
-Some do, some don't. Many free VPNs use third-party DNS resolvers or fail to handle IPv6 traffic, which causes leaks. **Reputable free options — including [OllaVPN's lifetime free plan](/free-vpn) — route DNS through their own infrastructure inside the tunnel by default.**
+Some do, some don't. Many free VPNs use third-party DNS resolvers or fail to handle IPv6 traffic, which causes leaks. **Reputable free options  -  including [OllaVPN's lifetime free plan](/free-vpn)  -  route DNS through their own infrastructure inside the tunnel by default.**
 
 ### Can I prevent DNS leaks without a VPN?
 
-Partially. You can switch your device to use an encrypted DNS resolver such as Cloudflare's 1.1.1.1 or Quad9, which prevents your ISP from seeing your DNS lookups. This doesn't encrypt the rest of your traffic — for that you still need a VPN.
+Partially. You can switch your device to use an encrypted DNS resolver such as Cloudflare's 1.1.1.1 or Quad9, which prevents your ISP from seeing your DNS lookups. This doesn't encrypt the rest of your traffic  -  for that you still need a VPN.
 
 ### Is a DNS leak the same as an IP leak?
 
@@ -298,7 +298,7 @@ Once when you first install a VPN, once after any major operating-system update,
 
 ### Does OllaVPN protect against DNS leaks?
 
-Yes. OllaVPN routes all DNS requests inside the encrypted tunnel by default — there is nothing to configure. The kill switch is always on. The result: when you're connected to OllaVPN, the DNS leak test should show only OllaVPN's resolver, every time. [Download free](../dl/) to try it.
+Yes. OllaVPN routes all DNS requests inside the encrypted tunnel by default  -  there is nothing to configure. The kill switch is always on. The result: when you're connected to OllaVPN, the DNS leak test should show only OllaVPN's resolver, every time. [Download free](../dl/) to try it.
 
 NP
 

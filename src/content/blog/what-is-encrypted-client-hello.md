@@ -10,7 +10,7 @@ tags: ['protocol-tech']
 
 # What is Encrypted Client Hello (ECH) and Why Should You Care?
 
-You know how websites use HTTPS to encrypt your connection, right? Well, even with that, anyone watching your network — like your internet provider — could still see \*which\* website you were trying to visit, even if they couldn't see what you were doing on it. Encrypted Client Hello (ECH) is here to fix that. It's a new privacy feature that stops those initial peeks, making it much harder for snoopers to know where you're going online. Let's dive into what ECH is, how it works, and why it's a big step forward for your digital privacy.
+You know how websites use HTTPS to encrypt your connection, right? Well, even with that, anyone watching your network  -  like your internet provider  -  could still see \*which\* website you were trying to visit, even if they couldn't see what you were doing on it. Encrypted Client Hello (ECH) is here to fix that. It's a new privacy feature that stops those initial peeks, making it much harder for snoopers to know where you're going online. Let's dive into what ECH is, how it works, and why it's a big step forward for your digital privacy.
 
 TL;DR - The Short Answer
 
@@ -54,7 +54,7 @@ Yes, many people misunderstand what ECH does and doesn't protect, often assuming
 
 The biggest misconception is that ECH is some kind of VPN replacement. It's absolutely not. While ECH encrypts the server name you're trying to reach (the SNI), that's just one tiny piece of your overall internet activity. Your IP address is still fully visible to your internet provider and anyone else watching your connection. ECH works at a very specific layer of the connection setup, meaning it only protects that initial handshake. It doesn't hide your location, nor does it encrypt the actual content of your browsing once the connection is established.
 
-Another common misunderstanding is that ECH encrypts all your traffic. Again, this isn't true. While it makes it harder for observers to see _which_ specific website you're visiting within a domain, the vast majority of your data—the actual content you're viewing, sending, or receiving—is still protected by HTTPS, not ECH. ECH simply helps obscure the destination of that encrypted tunnel. Think of it like putting an opaque wrapper on the label of a delivery truck; you can't tell exactly where it's going, but you can still see the truck driving by, and you certainly can't see what's inside.
+Another common misunderstanding is that ECH encrypts all your traffic. Again, this isn't true. While it makes it harder for observers to see _which_ specific website you're visiting within a domain, the vast majority of your data - the actual content you're viewing, sending, or receiving - is still protected by HTTPS, not ECH. ECH simply helps obscure the destination of that encrypted tunnel. Think of it like putting an opaque wrapper on the label of a delivery truck; you can't tell exactly where it's going, but you can still see the truck driving by, and you certainly can't see what's inside.
 
 So, while ECH is a welcome step forward for privacy, protecting that crucial SNI information from casual snooping, it's vital to remember its limitations. It's a foundational privacy feature, not a comprehensive solution. For true anonymity, IP address hiding, and encryption of all your network traffic from end to end, you still need a VPN like OllaVPN.
 
@@ -120,7 +120,7 @@ For truly robust censorship circumvention, a full [VPN is more effective](/what-
 
 ## Deeper context worth knowing
 
-A definitional explainer should leave you understanding not just the concept but the surrounding category — what other concepts it connects to, what common misunderstandings to avoid, and which adjacent ideas you should know about. A few worth covering:
+A definitional explainer should leave you understanding not just the concept but the surrounding category  -  what other concepts it connects to, what common misunderstandings to avoid, and which adjacent ideas you should know about. A few worth covering:
 
 **The category history matters.** Most networking and privacy concepts you encounter today were invented to solve a specific problem that may or may not still be the dominant problem in 2026. Understanding why a concept exists helps you evaluate whether it's the right tool for your situation. We try to include the historical context for every "what is X" guide we publish.
 

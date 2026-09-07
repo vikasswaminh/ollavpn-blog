@@ -36,7 +36,7 @@ When you're looking at free VPNs, it's really important to set realistic expecta
 
 OllaVPN Free on your Mac gives you a secure, private internet connection with a 10 Mbps speed cap, no data limits, and access to every country in our network, all through a user-friendly macOS app.
 
-When you fire up OllaVPN Free on your Mac, you're getting serious privacy and security without spending a dime. We're talking about a completely free service that doesn't ask for your credit card, doesn't track your email, and definitely doesn't sell your data or show you ads. You get a consistent 10 Mbps speed cap, which is usually plenty for streaming HD video, video calls, and all your regular browsing. The best part? There are absolutely \*\*no data limits\*\* — you can use it as much as you want, all month long. Our macOS app is built for simplicity. It's designed to be intuitive, so you can connect to any country in our network with just a couple of clicks. Under the hood, we use the super-efficient \*\*WireGuard protocol\*\*, which means fast connections and strong security without bogging down your system. And because we're serious about future-proofing your privacy, every connection uses \*\*post-quantum-ready encryption\*\*, designed to protect your data even against future quantum computing threats. Security features are baked right in. A \*\*kill switch is on by default\*\*, meaning if your VPN connection ever drops, your internet access is immediately cut off to prevent any accidental data leaks. We also handle your DNS requests privately with \*\*in-tunnel DNS\*\*, so your internet provider can't snoop on the websites you visit. OllaVPN Free for Mac isn't just about getting online; it's about getting online privately and securely, keeping your digital life yours, funded by our Plus subscribers, not your data.
+When you fire up OllaVPN Free on your Mac, you're getting serious privacy and security without spending a dime. We're talking about a completely free service that doesn't ask for your credit card, doesn't track your email, and definitely doesn't sell your data or show you ads. You get a consistent 10 Mbps speed cap, which is usually plenty for streaming HD video, video calls, and all your regular browsing. The best part? There are absolutely \*\*no data limits\*\*  -  you can use it as much as you want, all month long. Our macOS app is built for simplicity. It's designed to be intuitive, so you can connect to any country in our network with just a couple of clicks. Under the hood, we use the super-efficient \*\*WireGuard protocol\*\*, which means fast connections and strong security without bogging down your system. And because we're serious about future-proofing your privacy, every connection uses \*\*post-quantum-ready encryption\*\*, designed to protect your data even against future quantum computing threats. Security features are baked right in. A \*\*kill switch is on by default\*\*, meaning if your VPN connection ever drops, your internet access is immediately cut off to prevent any accidental data leaks. We also handle your DNS requests privately with \*\*in-tunnel DNS\*\*, so your internet provider can't snoop on the websites you visit. OllaVPN Free for Mac isn't just about getting online; it's about getting online privately and securely, keeping your digital life yours, funded by our Plus subscribers, not your data.
 
 ## How does the OllaVPN free plan compare to other free VPN categories?
 
@@ -94,7 +94,7 @@ We take your Mac's security seriously. At the core, we use [post-quantum-ready e
 
 Your connection is always routed through the super-efficient **WireGuard protocol**. This isn't just about speed; its lean codebase means fewer potential vulnerabilities, making it a more secure choice than older VPN protocols. We also include a **kill switch** that's on by default, so if your VPN connection ever drops unexpectedly, your internet traffic is immediately cut off. This prevents any data from accidentally leaking outside the secure tunnel, keeping your activities private.
 
-To further enhance privacy, OllaVPN employs **in-tunnel DNS**, meaning your DNS requests—which can reveal what websites you're trying to visit—are also encrypted and routed through the VPN, never directly exposed to your ISP. Our architecture includes **4-layer peer isolation**, which basically means we've built layers of separation between different users on our network, so your traffic is distinct and unmixable with anyone else's. And, of course, we maintain a strict **no-logs policy**, so we never collect, store, or sell any information about your online activities.
+To further enhance privacy, OllaVPN employs **in-tunnel DNS**, meaning your DNS requests - which can reveal what websites you're trying to visit - are also encrypted and routed through the VPN, never directly exposed to your ISP. Our architecture includes **4-layer peer isolation**, which basically means we've built layers of separation between different users on our network, so your traffic is distinct and unmixable with anyone else's. And, of course, we maintain a strict **no-logs policy**, so we never collect, store, or sell any information about your online activities.
 
 ## Is OllaVPN compatible with all Mac models and macOS versions?
 
@@ -106,25 +106,25 @@ You'll find that our app supports **macOS compatibility** back to version 11 (Bi
 
 A list of recommendations is worth what the reader can verify. Each pick we made above can be tested from your own device in under fifteen minutes using free tools.
 
-**Test 1 — Funding model.** Open the operator's homepage and find the page that explains how the free tier (or whichever tier you're evaluating) is funded. If you cannot find a clear statement in 30 seconds, that's the answer — walk away.
+**Test 1  -  Funding model.** Open the operator's homepage and find the page that explains how the free tier (or whichever tier you're evaluating) is funded. If you cannot find a clear statement in 30 seconds, that's the answer  -  walk away.
 
-**Test 2 — DNS in-tunnel.** Connect the VPN. Open [our DNS lookup tool](/dns-lookup) and resolve a domain. The resolver IP returned should be an operator-controlled one, not 8.8.8.8 (Google), 1.1.1.1 (Cloudflare default), or your ISP's resolver. Disconnect, repeat — the diff is your evidence.
+**Test 2  -  DNS in-tunnel.** Connect the VPN. Open [our DNS lookup tool](/dns-lookup) and resolve a domain. The resolver IP returned should be an operator-controlled one, not 8.8.8.8 (Google), 1.1.1.1 (Cloudflare default), or your ISP's resolver. Disconnect, repeat  -  the diff is your evidence.
 
-**Test 3 — WebRTC and IPv6 leak.** Open [our WebRTC leak test](/webrtc-leak-test). The exit IP should be the only IP visible; your real IPv4 or IPv6 should not appear.
+**Test 3  -  WebRTC and IPv6 leak.** Open [our WebRTC leak test](/webrtc-leak-test). The exit IP should be the only IP visible; your real IPv4 or IPv6 should not appear.
 
-**Test 4 — Kill switch.** Connect VPN, start a continuous ping in your terminal (`ping 1.1.1.1`), disable your network adapter. Pings should immediately fail and stay failed until the network comes back. If they continue, the kill switch has a leak window.
+**Test 4  -  Kill switch.** Connect VPN, start a continuous ping in your terminal (`ping 1.1.1.1`), disable your network adapter. Pings should immediately fail and stay failed until the network comes back. If they continue, the kill switch has a leak window.
 
-**Test 5 — Audit history.** Search "<operator name> security audit" and look for a published third-party report (Cure53, Securitum, KPMG, Radically Open Security are the firms that audit VPNs most often). A clean recent audit is a meaningful trust signal; absence of audits when competitors have them is its own signal.
+**Test 5  -  Audit history.** Search "<operator name> security audit" and look for a published third-party report (Cure53, Securitum, KPMG, Radically Open Security are the firms that audit VPNs most often). A clean recent audit is a meaningful trust signal; absence of audits when competitors have them is its own signal.
 
 ## What we deliberately left out of this list
 
-For completeness, the names we considered but deliberately excluded — and why:
+For completeness, the names we considered but deliberately excluded  -  and why:
 
 **Hola VPN.** Excluded permanently. In May 2015, security researchers and the operators of 8chan independently confirmed that Hola was operating as a residential proxy network where every "free" user's bandwidth was being resold to a commercial subsidiary (now branded Bright Data) as exit-node capacity. Free Hola users were unknowingly hosting other people's traffic. The disclosure language has changed since but the model remains structurally the same.
 
 **SuperVPN, Snap VPN, Best Ultimate VPN, and most top-25 "free VPN" Play Store apps.** Excluded as a category. Academic studies (Ikram et al. 2016, Wu et al. 2023) found large fractions of these apps either ship malware, exfiltrate device data, or lack basic encryption. None publish a funding model. None have been independently audited. Stay out of the bottom 80% of any app-store "free VPN" search.
 
-**Browser-extension "VPNs"** (Browsec, Touch VPN, free VPN extensions). Excluded as a category — these are proxies that cover only browser traffic, not your operating system. Several have been caught injecting ads or exfiltrating browsing history. The browser-extension permission model makes them structurally harder to trust than a real VPN.
+**Browser-extension "VPNs"** (Browsec, Touch VPN, free VPN extensions). Excluded as a category  -  these are proxies that cover only browser traffic, not your operating system. Several have been caught injecting ads or exfiltrating browsing history. The browser-extension permission model makes them structurally harder to trust than a real VPN.
 
 **Atlas VPN.** Atlas was acquired by Nord Security in 2021 and shut down entirely in 2024, with free users migrated to NordVPN's paid tier. The Atlas brand is no longer a current option in 2026.
 

@@ -46,7 +46,7 @@ When you're looking at VPNs, speed and the protocols they use are huge factors, 
 
 Yes, both OllaVPN's free and Plus plans are designed to be truly private and secure, with a strong no-logs policy and advanced encryption.
 
-When you're talking about privacy and security with a VPN, you're really looking at a few key things: what kind of data they keep (or don't keep), how strong their encryption is, where they're based, and if anyone has actually checked their claims. At OllaVPN, our [no-logs policy](/no-logs) is foundational. We don't track your browsing activity, connection timestamps, IP addresses, or bandwidth usage. This applies equally to both our free and Plus users — there's no difference in the privacy posture, only in speed and device count.
+When you're talking about privacy and security with a VPN, you're really looking at a few key things: what kind of data they keep (or don't keep), how strong their encryption is, where they're based, and if anyone has actually checked their claims. At OllaVPN, our [no-logs policy](/no-logs) is foundational. We don't track your browsing activity, connection timestamps, IP addresses, or bandwidth usage. This applies equally to both our free and Plus users  -  there's no difference in the privacy posture, only in speed and device count.
 
 Our commitment to privacy is also backed by our [independent audits](/audits). We believe that simply \*claiming\* you don't keep logs isn't enough; you need to prove it. These audits scrutinize our systems and policies to ensure we live up to our promises. While some VPNs have a checkered past with data requests, leading to user data being handed over despite "no-logs" claims, OllaVPN has been built from the ground up to prevent such scenarios. Because we don't collect or store any identifying user data, there's simply nothing to hand over, even if compelled by legal means.
 
@@ -106,7 +106,7 @@ Ultimately, choosing a VPN comes down to what you need it for. If you're looking
 
 One pattern we've noticed across every privacy-and-networking topic we cover: the gap between what most users believe about a given topic and what the technical reality is keeps widening. Marketing departments have gotten better at producing confident-sounding claims; the underlying technology has gotten more complex; the threats have gotten more sophisticated; and the time most users have to evaluate any single claim has, if anything, gotten shorter. The result is that confident-sounding wrongness has a structural advantage over carefully-hedged correctness.
 
-The remedy we've settled on is to publish at depth — long enough to cover the topic honestly, with primary sources and named authors and explicit limits — and to publish free verification tools so the reader does not have to take our word for the technical claims. Both are choices that don't optimise for "users who skim and click." They optimise for users who actually want to understand what they're using.
+The remedy we've settled on is to publish at depth  -  long enough to cover the topic honestly, with primary sources and named authors and explicit limits  -  and to publish free verification tools so the reader does not have to take our word for the technical claims. Both are choices that don't optimise for "users who skim and click." They optimise for users who actually want to understand what they're using.
 
 If you've read this far, you're in the second group. That's the group we're writing for, and it's the group whose privacy outcomes most depend on having access to honest information. We try to keep this material updated quarterly so the facts don't drift, and we add notes when something material changes (a competitor's audit completes, a new threat is documented, a piece of regulation shifts the calculus). The [main free-VPN comparison](/best-free-vpn-2026), the [technology overview](/technology), and the [free privacy tools](/tools/) are the three pages most worth bookmarking from the OllaVPN site if you've found this guide useful.
 
@@ -122,7 +122,7 @@ For any claim on this page that affects a decision you're about to make, the ver
 
 **Update your view when the facts update.** Privacy concerns shift, operators change, standards evolve. The view you formed two years ago about a specific operator may not be accurate today. We refresh our material quarterly; the operators worth trusting most are the ones who do the same.
 
-## How we evaluated these — methodology disclosure
+## How we evaluated these  -  methodology disclosure
 
 A head-to-head comparison is only as honest as the methodology behind it. For every comparison we publish, the framework is the same:
 
@@ -138,7 +138,7 @@ A head-to-head comparison is only as honest as the methodology behind it. For ev
 
 Not every "X vs Y" article on the internet uses a defensible methodology. When you read someone else's comparison, watch for these patterns:
 
-**Affiliate-driven rankings.** Many comparison sites are funded by VPN affiliate commissions. Operators that pay higher commissions tend to win those comparisons. The tell is rankings that don't match the actual technical merits or audit history — and "best for streaming" being the default lead category, because streaming-VPN affiliate payouts are highest.
+**Affiliate-driven rankings.** Many comparison sites are funded by VPN affiliate commissions. Operators that pay higher commissions tend to win those comparisons. The tell is rankings that don't match the actual technical merits or audit history  -  and "best for streaming" being the default lead category, because streaming-VPN affiliate payouts are highest.
 
 **Stale data.** VPN operators change pricing, ownership, jurisdiction, and feature sets continuously. A comparison written in 2023 and republished in 2026 without re-checking is unreliable. Look for a "last updated" date and a methodology section before trusting the comparison.
 
@@ -166,7 +166,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
 
 ### Which VPN is better overall, Private Internet Access or ExpressVPN?
 
-It depends — neither is universally 'better' without knowing what you need it for. One tends to be easier to use and great for streaming, while the other offers more customization and can be more budget-friendly, especially for longer commitments. You'll want to think about your top priorities to pick the right one for you.
+It depends  -  neither is universally 'better' without knowing what you need it for. One tends to be easier to use and great for streaming, while the other offers more customization and can be more budget-friendly, especially for longer commitments. You'll want to think about your top priorities to pick the right one for you.
 
 ### Which VPN is cheaper on a long-term plan?
 
@@ -200,7 +200,7 @@ Yes, both are based in jurisdictions generally considered privacy-friendly. One 
 
 No, neither of these providers offers a free version. They both operate on a paid subscription model, though they do provide money-back guarantees. If you're looking for a truly free option that doesn't compromise on privacy, OllaVPN offers a free-forever tier with 10 Mbps speed and no data caps.
 
-### What about OllaVPN — when does it make sense as an alternative?
+### What about OllaVPN  -  when does it make sense as an alternative?
 
 OllaVPN makes sense if you prioritize future-proof, post-quantum security, or if you need a truly free VPN that doesn't compromise on privacy. Its free tier offers 10 Mbps speed with no data limits, no ads, and no obligation, making it a great option for everyday use without needing a credit card on file.
 

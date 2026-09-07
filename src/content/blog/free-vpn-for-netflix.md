@@ -22,7 +22,7 @@ You try a different server. Same error. You try a different app. Different error
 
 This guide exists to answer that question properly. The honest truth is that most free VPNs fail with Netflix - but the reasons are specific and structural, not mysterious. Once you understand why, picking a free option that actually works becomes a lot simpler.
 
-We test VPNs against Netflix directly and regularly at OllaVPN. What follows is what we actually saw in July 2026—no SEO fluff, no vague promises.
+We test VPNs against Netflix directly and regularly at OllaVPN. What follows is what we actually saw in July 2026 - no SEO fluff, no vague promises.
 
 ## The short answer on free VPNs and Netflix
 

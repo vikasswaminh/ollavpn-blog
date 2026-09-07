@@ -110,7 +110,7 @@ Ultimately, the future of VPN protocols is about **ongoing development** and a r
 
 One pattern we've noticed across every privacy-and-networking topic we cover: the gap between what most users believe about a given topic and what the technical reality is keeps widening. Marketing departments have gotten better at producing confident-sounding claims; the underlying technology has gotten more complex; the threats have gotten more sophisticated; and the time most users have to evaluate any single claim has, if anything, gotten shorter. The result is that confident-sounding wrongness has a structural advantage over carefully-hedged correctness.
 
-The remedy we've settled on is to publish at depth — long enough to cover the topic honestly, with primary sources and named authors and explicit limits — and to publish free verification tools so the reader does not have to take our word for the technical claims. Both are choices that don't optimise for "users who skim and click." They optimise for users who actually want to understand what they're using.
+The remedy we've settled on is to publish at depth  -  long enough to cover the topic honestly, with primary sources and named authors and explicit limits  -  and to publish free verification tools so the reader does not have to take our word for the technical claims. Both are choices that don't optimise for "users who skim and click." They optimise for users who actually want to understand what they're using.
 
 If you've read this far, you're in the second group. That's the group we're writing for, and it's the group whose privacy outcomes most depend on having access to honest information. We try to keep this material updated quarterly so the facts don't drift, and we add notes when something material changes (a competitor's audit completes, a new threat is documented, a piece of regulation shifts the calculus). The [main free-VPN comparison](/best-free-vpn-2026), the [technology overview](/technology), and the [free privacy tools](/tools/) are the three pages most worth bookmarking from the OllaVPN site if you've found this guide useful.
 
@@ -126,7 +126,7 @@ For any claim on this page that affects a decision you're about to make, the ver
 
 **Update your view when the facts update.** Privacy concerns shift, operators change, standards evolve. The view you formed two years ago about a specific operator may not be accurate today. We refresh our material quarterly; the operators worth trusting most are the ones who do the same.
 
-## How we evaluated these — methodology disclosure
+## How we evaluated these  -  methodology disclosure
 
 A head-to-head comparison is only as honest as the methodology behind it. For every comparison we publish, the framework is the same:
 
@@ -142,7 +142,7 @@ A head-to-head comparison is only as honest as the methodology behind it. For ev
 
 Not every "X vs Y" article on the internet uses a defensible methodology. When you read someone else's comparison, watch for these patterns:
 
-**Affiliate-driven rankings.** Many comparison sites are funded by VPN affiliate commissions. Operators that pay higher commissions tend to win those comparisons. The tell is rankings that don't match the actual technical merits or audit history — and "best for streaming" being the default lead category, because streaming-VPN affiliate payouts are highest.
+**Affiliate-driven rankings.** Many comparison sites are funded by VPN affiliate commissions. Operators that pay higher commissions tend to win those comparisons. The tell is rankings that don't match the actual technical merits or audit history  -  and "best for streaming" being the default lead category, because streaming-VPN affiliate payouts are highest.
 
 **Stale data.** VPN operators change pricing, ownership, jurisdiction, and feature sets continuously. A comparison written in 2023 and republished in 2026 without re-checking is unreliable. Look for a "last updated" date and a methodology section before trusting the comparison.
 

@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Five, Nine, and Fourteen Eyes Explained · OllaVPN</title>
-<meta name="description" content="Plain-English guide to the Five, Nine, and Fourteen Eyes intelligence alliances — what they are, what they do, and what it means for VPN users." />
+<meta name="description" content="Plain-English guide to the Five, Nine, and Fourteen Eyes intelligence alliances - what they are, what they do, and what it means for VPN users." />
 <link rel="canonical" href="https://ollavpn.com/blog/five-eyes-nine-eyes-fourteen-eyes.html" />
 <meta name="theme-color" content="#ffffff" />
 <meta name="msapplication-TileColor" content="#DC2626" />
@@ -20,12 +20,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="OllaVPN" />
 <meta property="og:title" content="Five, Nine, and Fourteen Eyes Explained · OllaVPN" />
-<meta property="og:description" content="Plain-English guide to the Five, Nine, and Fourteen Eyes intelligence alliances — what they are, what they do, and what it means for VPN users." />
+<meta property="og:description" content="Plain-English guide to the Five, Nine, and Fourteen Eyes intelligence alliances - what they are, what they do, and what it means for VPN users." />
 <meta property="og:url" content="https://ollavpn.com/blog/five-eyes-nine-eyes-fourteen-eyes.html" />
 <meta property="og:image" content="https://ollavpn.com/blog/og-five-eyes-nine-eyes-fourteen-eyes.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="Five Eyes, Nine Eyes, Fourteen Eyes — what they are, what they aren't" />
+<meta property="og:image:alt" content="Five Eyes, Nine Eyes, Fourteen Eyes - what they are, what they aren't" />
 <meta property="article:published_time" content="2026-05-16T00:00:00Z" />
 <meta property="article:modified_time" content="2026-05-16T00:00:00Z" />
 <meta property="article:author" content="The OllaVPN team" />
@@ -37,7 +37,7 @@
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Five, Nine, and Fourteen Eyes Explained · OllaVPN" />
-<meta name="twitter:description" content="Plain-English guide to the Five, Nine, and Fourteen Eyes intelligence alliances — what they are, what they do, and what it means for VPN users." />
+<meta name="twitter:description" content="Plain-English guide to the Five, Nine, and Fourteen Eyes intelligence alliances - what they are, what they do, and what it means for VPN users." />
 
 <meta name="twitter:image" content="https://ollavpn.com/blog/og-five-eyes-nine-eyes-fourteen-eyes.png" />
 <!-- Self-hosted Lato (no Google Fonts CDN call for primary type). JetBrains Mono is still pulled
@@ -45,7 +45,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css?v=20260907_v126red26red" />
+<link rel="stylesheet" href="/styles.css?v=20260907_v126sidebar" />
 
 <script type="application/ld+json">
 {
@@ -1496,729 +1496,730 @@
 </head>
 <body>
 
-  <div class="cad-frame">
-    <div class="cad-inner-border">
+ <div class="cad-frame">
+ <div class="cad-inner-border">
 <div class="reading-progress" aria-hidden="true"></div>
 
 <!-- Top utility bar - networkershome.com pattern: a thin mono-typeface
      row above the main nav for live status + secondary links. -->
 <div class="top-status-bar">
-        <span>● All systems operational <a href="https://status.ollavpn.com/" target="_blank" style="color: var(--accent);">status.ollavpn.com</a></span>
-        <div style="display: flex; gap: 16px;">
-          <a href="/technology.html">Trust</a>
-          <span>·</span>
-          <a href="/blog/">Blogs</a>
-          <span>·</span>
-          <a href="/contact.html">Contact</a>
-        </div>
-      </div>
+ <span>● All systems operational <a href="https://status.ollavpn.com/" target="_blank" style="color: var(--accent);">status.ollavpn.com</a></span>
+ <div style="display: flex; gap: 16px;">
+ <a href="/technology.html">Trust</a>
+ <span>·</span>
+ <a href="/blog/">Blogs</a>
+ <span>·</span>
+ <a href="/contact.html">Contact</a>
+ </div>
+ </div>
 
-      <nav class="top-cad-nav">
-        <div class="nav-left-links">
-          <a href="/index.html" style="font-size: 1.5rem; font-weight: 700; color: #111; margin-right: 12px;">Olla<span style="color: var(--accent);">VPN</span></a>
+ <nav class="top-cad-nav">
+ <div class="nav-left-links">
+ <a href="/index.html" style="font-size: 1.5rem; font-weight: 700; color: #111; margin-right: 12px;">Olla<span style="color: var(--accent);">VPN</span></a>
 
-          <div class="drop-cad-wrap">
-            Technology ▾
-            <div class="drop-cad-box">
-              <div style="color: var(--accent); font-size: 0.75rem; margin-bottom: 4px; font-weight: 700;">Crypto</div>
-              <a href="/pqc">Post-quantum handshake</a>
-              <a href="/pqc">WireGuard hybrid</a>
-              <a href="/pqc">Forward secrecy</a>
-              <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Architecture</div>
-              <a href="/peer-isolation">Network topology</a>
-              <a href="/peer-isolation">Tunnel addressing (CGNAT)</a>
-              <a href="/peer-isolation">Exit operation</a>
-              <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Privacy</div>
-              <a href="/in-tunnel-dns">DNS-leak defense</a>
-              <a href="/in-tunnel-dns">IPv6 handling</a>
-              <a href="/peer-isolation">Abuse defense</a>
-            </div>
-          </div>
+ <div class="drop-cad-wrap">
+ Technology ▾
+ <div class="drop-cad-box">
+ <div style="color: var(--accent); font-size: 0.75rem; margin-bottom: 4px; font-weight: 700;">Crypto</div>
+ <a href="/pqc">Post-quantum handshake</a>
+ <a href="/pqc">WireGuard hybrid</a>
+ <a href="/pqc">Forward secrecy</a>
+ <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Architecture</div>
+ <a href="/peer-isolation">Network topology</a>
+ <a href="/peer-isolation">Tunnel addressing (CGNAT)</a>
+ <a href="/peer-isolation">Exit operation</a>
+ <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Privacy</div>
+ <a href="/in-tunnel-dns">DNS-leak defense</a>
+ <a href="/in-tunnel-dns">IPv6 handling</a>
+ <a href="/peer-isolation">Abuse defense</a>
+ </div>
+ </div>
 
-          <a href="/pricing">Pricing</a>
+ <a href="/pricing">Pricing</a>
 
-          <div class="drop-cad-wrap">
-            Blogs ▾
-            <div class="drop-cad-box">
-              <div style="color: var(--accent); font-size: 0.75rem; margin-bottom: 4px; font-weight: 700;">Guides</div>
-              <a href="/blog/best-free-vpn-for-windows.html">Best free VPN for Windows</a>
-              <a href="/blog/what-is-a-dns-leak.html">DNS leak test</a>
-              <a href="/blog/what-is-post-quantum-cryptography.html">What is post-quantum crypto?</a>
-              <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Comparisons</div>
-              <a href="/blog/mullvad-vs-protonvpn.html">Mullvad vs ProtonVPN</a>
-              <a href="/blog/nordvpn-vs-protonvpn.html">NordVPN vs ProtonVPN</a>
-              <a href="/blog/nordvpn-vs-expressvpn.html">NordVPN vs ExpressVPN</a>
-              <a href="/blog/five-eyes-nine-eyes-fourteen-eyes.html">5/9/14-Eyes explained</a>
-              <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Tools</div>
-              <a href="https://status.ollavpn.com/">Status page</a>
-              <a href="/dns-lookup.html">Network tools</a>
-              <a href="/llms.txt">llms.txt</a>
-            </div>
-          </div>
+ <div class="drop-cad-wrap">
+ Blogs ▾
+ <div class="drop-cad-box">
+ <div style="color: var(--accent); font-size: 0.75rem; margin-bottom: 4px; font-weight: 700;">Guides</div>
+ <a href="/blog/best-free-vpn-for-windows.html">Best free VPN for Windows</a>
+ <a href="/blog/what-is-a-dns-leak.html">DNS leak test</a>
+ <a href="/blog/what-is-post-quantum-cryptography.html">What is post-quantum crypto?</a>
+ <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Comparisons</div>
+ <a href="/blog/mullvad-vs-protonvpn.html">Mullvad vs ProtonVPN</a>
+ <a href="/blog/nordvpn-vs-protonvpn.html">NordVPN vs ProtonVPN</a>
+ <a href="/blog/nordvpn-vs-expressvpn.html">NordVPN vs ExpressVPN</a>
+ <a href="/blog/five-eyes-nine-eyes-fourteen-eyes.html">5/9/14-Eyes explained</a>
+ <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Tools</div>
+ <a href="https://status.ollavpn.com/">Status page</a>
+ <a href="/dns-lookup.html">Network tools</a>
+ <a href="/llms.txt">llms.txt</a>
+ </div>
+ </div>
 
-          <a href="/free-vpn.html">Free VPN</a>
-          <a href="/apps.html">Apps</a>
-          <a href="/dl/">Download</a>
-        </div>
+ <a href="/free-vpn.html">Free VPN</a>
+ <a href="/apps.html">Apps</a>
+ <a href="/dl/">Download</a>
+ </div>
 
-        <div class="nav-right-links">
-          <a href="https://login.ollavpn.com/">Sign in</a>
-          <a href="/dl/" class="btn-cad btn-cad-filled">Download free →</a>
-        </div>
-      </nav>
+ <div class="nav-right-links">
+ <a href="https://login.ollavpn.com/">Sign in</a>
+ <a href="/dl/" class="btn-cad btn-cad-filled">Download free →</a>
+ </div>
+ </nav>
 
 <main class="article-layout">
-  <!-- LHS Sidebar -->
-  <aside class="article-sidebar-left" aria-label="Article overview">
-    <div class="sidebar-card">
-      <span class="chip"><span class="dot"></span>Privacy & Security &middot; 2026</span>
-      <h4 style="margin:12px 0 8px;font-size:14px;color:#0F172A;">Published by OllaVPN</h4>
-      <p style="font-size:12.5px;color: #64748B;margin:0 0 16px;line-height:1.5;">Plain-English guide to the Five, Nine, and Fourteen Eyes intelligence alliances — what they are, what they do, and what it means for VPN users.</p>
-      <a class="btn primary" style="display:block;text-align:center;font-size:12px;padding:8px;" href="/dl/">Download OllaVPN free &rarr;</a>
-    </div>
-    <div>
-      <h4 class="sub-heading">Related reading</h4>
-      <ul class="related-list">
-        <li><a href="/blog/are-free-vpns-safe.html">Are Free VPNs Safe? What You Need…</a></li>
-        <li><a href="/blog/are-vpns-legal.html">Are VPNs Legal? What You Need to…</a></li>
-        <li><a href="/blog/best-free-vpn-for-android.html">The Best Free VPN for Android</a></li>
-        <li><a href="/blog/best-free-vpn-for-australia.html">What's the Best Free VPN for…</a></li>
-        <li><a href="/blog/best-free-vpn-for-canada.html">Is OllaVPN the Best Free VPN for…</a></li>
-      </ul>
-    </div>
-  </aside>
+ <!-- LHS Sidebar -->
+ <aside class="article-sidebar-left" aria-label="Article overview and related reading">
+ <div class="sidebar-card">
+ <span class="chip"><span class="dot"></span>Privacy & Security · 2026</span>
+ <h4>Five Eyes, Nine Eyes, and Fourteen Eyes…</h4>
+ <p>Plain-English guide to the Five, Nine, and Fourteen Eyes intelligence alliances - what they are, what they do, and what it means for VPN users.</p>
+ </div>
+ <div class="sidebar-card" style="margin-top: 20px;">
+ <div class="side-related-title">Related Guides</div>
+ <ul class="side-related-list">
+ <li><a href="/blog/what-your-isp-can-see-about-you.html">What Your ISP Can See About You (And How…</a></li>
+ <li><a href="/blog/what-logs-does-vpn-keep.html">What Logs Does a VPN Keep, and What Does…</a></li>
+ <li><a href="/blog/what-is-an-ipv6-leak.html">What is an IPv6 Leak, and How Does It…</a></li>
+ <li><a href="/blog/what-is-a-webrtc-leak.html">What is a WebRTC Leak, and Why Does It…</a></li>
+ <li><a href="/blog/what-is-a-vpn-kill-switch.html">What is a VPN Kill Switch, How Does it…</a></li>
+ <li><a href="/blog/vpn-for-public-wifi-traveler.html">Public WiFi and Travel: Do You Really…</a></li>
+ <li><a href="/blog/should-you-use-vpn-at-home.html">Do I Really Need a VPN at Home?</a></li>
+ </ul>
+ </div>
+ </aside>
 
-  <!-- Center Article -->
-  <article class="article">
-    <span class="meta" style="font-family:var(--mono);font-size:12px;color:var(--text-mute);text-transform:uppercase;letter-spacing:0.06em;">2026 &middot; 07 &middot; 15 &middot; PRIVACY & SECURITY &middot; 5,125 WORDS</span>
-    <h1 style="margin-top:12px;">Five Eyes, Nine Eyes, and Fourteen Eyes Explained (2026 Guide)</h1>
+ <!-- Center Article -->
+ <article class="article">
+ <span class="meta" style="font-family:var(--mono);font-size:12px;color:var(--text-mute);text-transform:uppercase;letter-spacing:0.06em;">2026 &middot; 07 &middot; 15 &middot; PRIVACY & SECURITY &middot; 5,125 WORDS</span>
+ <h1 style="margin-top:12px;">Five Eyes, Nine Eyes, and Fourteen Eyes Explained (2026 Guide)</h1>
 
-    <p class="lede" style="font-size:17px;line-height:1.65;color:#0F172A;margin-bottom:24px;">The plain-English guide to the intelligence-sharing alliances that come up in every serious VPN privacy conversation. What they actually are, what they actually do, what it means for you as a user — and the parts that VPN marketing tends to overstate.</p>
+ <p class="lede" style="font-size:17px;line-height:1.65;color:#0F172A;margin-bottom:24px;">The plain-English guide to the intelligence-sharing alliances that come up in every serious VPN privacy conversation. What they actually are, what they actually do, what it means for you as a user - and the parts that VPN marketing tends to overstate.</p>
 
-    <div class="tldr">
-    <div class="label">TL;DR — The Short Answer</div>
+ <div class="tldr">
+ <div class="label">TL;DR - The Short Answer</div>
 
 <a class="post-cta" href="/dl/" style="display:flex;align-items:center;gap:14px;margin:28px 0 0;padding:18px 22px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(180deg,rgba(220,38,38,0.06),var(--panel));text-decoration:none;color:inherit;transition:border-color .15s ease,transform .15s ease;">
-    <span style="display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:10px;background:var(--red);color:#0F172A;font-weight:700;font-size:18px;flex-shrink:0;">S</span>
-    <span style="flex:1;font-size:15px;line-height:1.45;color:var(--text);">
-      <strong>Try OllaVPN free — post-quantum-ready, lifetime free plan.</strong>
-      <span style="display:block;color:var(--text-mute);font-size:13px;margin-top:2px;">No credit card. Or $2/mo for 5 devices on a faster plan.</span>
-    </span>
-    <span style="font-family:var(--mono);font-size:12px;color:var(--red);letter-spacing:0.06em;flex-shrink:0;">DOWNLOAD →</span>
-  </a>
-
-    <p>The <strong>Five Eyes</strong> is an intelligence-sharing alliance between the United States, United Kingdom, Canada, Australia, and New Zealand, formalized by the 1946 UKUSA Agreement. The <strong>Nine Eyes</strong> adds Denmark, France, the Netherlands, and Norway. The <strong>Fourteen Eyes</strong> further adds Germany, Belgium, Italy, Spain, and Sweden. Each tier represents a different level of cooperation in sharing signals intelligence. In VPN terms, jurisdictions outside these alliances — like Switzerland, Panama, and the British Virgin Islands — are often preferred. But here's the honest truth: <strong>a properly built no-logs VPN is privacy-protective regardless of jurisdiction</strong>, because there is nothing for any government to obtain. Jurisdiction matters; a strong product matters more.</p>
-  </div>
-
-  <div class="toc">
-    <div class="label">Jump to a section</div>
-    <ol>
-      <li><a href="#why-care">Why this comes up in every VPN conversation</a></li>
-      <li><a href="#five-eyes">What the Five Eyes is</a></li>
-      <li><a href="#nine-eyes">What the Nine Eyes is</a></li>
-      <li><a href="#fourteen-eyes">What the Fourteen Eyes is</a></li>
-      <li><a href="#table">All the countries, at a glance</a></li>
-      <li><a href="#what-they-do">What the alliances actually do</a></li>
-      <li><a href="#history">A short history</a></li>
-      <li><a href="#beyond">Beyond Fourteen Eyes</a></li>
-      <li><a href="#vpn-matter">Does this matter for VPN users?</a></li>
-      <li><a href="#jurisdiction">Jurisdiction vs server location</a></li>
-      <li><a href="#myths">Five common misconceptions</a></li>
-      <li><a href="#preferred">The "privacy-friendly" jurisdictions</a></li>
-      <li><a href="#checklist">Your jurisdiction checklist</a></li>
-      <li><a href="#ollavpn">How OllaVPN thinks about jurisdiction</a></li>
-      <li><a href="#faq">Frequently asked questions</a></li>
-    </ol>
-  </div>
-
-  <p>Spend any time reading about VPNs and you'll quickly run into a phrase that sounds vaguely ominous: the <em>Five Eyes</em>. Or maybe its more comprehensive cousins, the <em>Nine Eyes</em> and the <em>Fourteen Eyes</em>. Most VPN marketing pages reference them. Most don't quite explain what they are.</p>
-
-  <p>This guide does. Written plainly, with respect for your time. We'll cover what the alliances actually are, what they actually do, what's legitimately worth thinking about as a VPN user, and — equally important — what's overstated. The goal is to leave you with a clear, balanced understanding that no marketing page will give you.</p>
-
-  <h2 id="why-care">Why this comes up in every VPN conversation</h2>
-
-  <div class="answer-card">
-    <span class="q-label">QUICK ANSWER</span>
-    The Five Eyes and its extensions are intelligence-sharing alliances between Western democracies. They come up in VPN conversations because the country where a VPN provider is legally based determines what government data requests the company could face, and what intelligence sharing those requests could feed into.
-  </div>
-
-  <p>The simple reason this topic comes up so often: <strong>a VPN provider is subject to the laws of the country where it's incorporated</strong>. If a government in that country can compel the VPN to share data — or to do so secretly without telling its users — that data could then be shared with allied governments under treaty arrangements like the Five Eyes.</p>
-
-  <p>This is why "where is the VPN based?" is a standard question in any thoughtful privacy comparison. It's also why several of the most respected privacy VPNs are deliberately based outside these alliances: ProtonVPN (Switzerland), NordVPN (Panama), ExpressVPN (British Virgin Islands), Mullvad (Sweden — inside Fourteen Eyes but with a deliberately minimal-data posture). You can read more about how this plays out in practice in our <a href="mullvad-vs-protonvpn.html">Mullvad vs ProtonVPN comparison</a>.</p>
-
-  <h2 id="five-eyes">What the Five Eyes is</h2>
-
-  <div class="answer-card">
-    <span class="q-label">QUICK ANSWER</span>
-    The Five Eyes (FVEY) is an intelligence-sharing alliance comprising the United States, United Kingdom, Canada, Australia, and New Zealand. It was formalized by the 1946 UKUSA Agreement and is the oldest and most integrated of the Eyes alliances.
-  </div>
-
-  <p>The <strong>Five Eyes</strong> — sometimes written FVEY — is an intelligence alliance between five English-speaking countries:</p>
-
-  <ul>
-    <li><strong>United States</strong></li>
-    <li><strong>United Kingdom</strong></li>
-    <li><strong>Canada</strong></li>
-    <li><strong>Australia</strong></li>
-    <li><strong>New Zealand</strong></li>
-  </ul>
-
-  <p>It originated as the <strong>BRUSA Agreement</strong> between the US and UK in 1943, during the Second World War. After the war, this became the <strong>UKUSA Agreement</strong> in 1946. Canada joined the arrangement in 1948, with Australia and New Zealand joining in 1956. The alliance was kept secret from the public for decades — its existence was not formally acknowledged by the UK government until 2010.</p>
-
-  <p>The Five Eyes is the most formal and most integrated of the Eyes alliances. Cooperation between member intelligence agencies — the NSA in the US, GCHQ in the UK, CSE in Canada, ASD in Australia, and GCSB in New Zealand — is deep, ongoing, and covers signals intelligence (SIGINT), satellite intelligence, and aspects of human intelligence as well.</p>
-
-  <h2 id="nine-eyes">What the Nine Eyes is</h2>
-
-  <div class="answer-card">
-    <span class="q-label">QUICK ANSWER</span>
-    The Nine Eyes is an expanded version of the Five Eyes that adds Denmark, France, the Netherlands, and Norway. It is less formal than the Five Eyes core and represents a wider European cooperation framework.
-  </div>
-
-  <p>The <strong>Nine Eyes</strong> extends the Five Eyes by adding four more European countries:</p>
-
-  <ul>
-    <li><strong>Denmark</strong></li>
-    <li><strong>France</strong></li>
-    <li><strong>Netherlands</strong></li>
-    <li><strong>Norway</strong></li>
-  </ul>
-
-  <p>The Nine Eyes is less formally structured than the Five Eyes core. It's better understood as a working level of cooperation — a circle of countries that share intelligence on specific topics, rather than a single unified treaty arrangement. The grouping became publicly known largely through documents disclosed by Edward Snowden in 2013.</p>
-
-  <h2 id="fourteen-eyes">What the Fourteen Eyes is</h2>
-
-  <div class="answer-card">
-    <span class="q-label">QUICK ANSWER</span>
-    The Fourteen Eyes — formally known as SIGINT Seniors Europe (SSEUR) — adds Germany, Belgium, Italy, Spain, and Sweden to the Nine Eyes countries. Cooperation has historically been focused on counterterrorism intelligence sharing.
-  </div>
-
-  <p>The <strong>Fourteen Eyes</strong> is the widest of the named alliances. It adds five more countries to the Nine Eyes group:</p>
-
-  <ul>
-    <li><strong>Germany</strong></li>
-    <li><strong>Belgium</strong></li>
-    <li><strong>Italy</strong></li>
-    <li><strong>Spain</strong></li>
-    <li><strong>Sweden</strong></li>
-  </ul>
-
-  <p>The Fourteen Eyes has a formal name: <strong>SIGINT Seniors Europe (SSEUR)</strong>. It was established in the late 1980s and has been particularly focused on signals-intelligence cooperation across Western Europe, including counterterrorism work after the September 11, 2001 attacks. It is the broadest of the three Eyes groupings most commonly mentioned in VPN privacy discussions.</p>
-
-  <h2 id="table">All the countries, at a glance</h2>
-
-  <p>Here's the full picture in one place. The Five Eyes is the innermost circle; each subsequent ring adds countries on top of the previous one.</p>
-
-  <table class="alliance-table">
-    <thead>
-      <tr><th>Alliance</th><th>Member countries</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Five Eyes (FVEY)</td>
-        <td class="countries">
-          <span class="new">United States</span>
-          <span class="new">United Kingdom</span>
-          <span class="new">Canada</span>
-          <span class="new">Australia</span>
-          <span class="new">New Zealand</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Nine Eyes</td>
-        <td class="countries">
-          <span class="existing">United States · United Kingdom · Canada · Australia · New Zealand</span>
-          <span class="new">Denmark</span>
-          <span class="new">France</span>
-          <span class="new">Netherlands</span>
-          <span class="new">Norway</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Fourteen Eyes (SSEUR)</td>
-        <td class="countries">
-          <span class="existing">USA · UK · Canada · Australia · NZ · Denmark · France · Netherlands · Norway</span>
-          <span class="new">Germany</span>
-          <span class="new">Belgium</span>
-          <span class="new">Italy</span>
-          <span class="new">Spain</span>
-          <span class="new">Sweden</span>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <p>Red highlighted countries are the new additions at each tier. The Fourteen Eyes is, in effect, a near-comprehensive map of major Western democracies.</p>
-
-  <h2 id="what-they-do">What the alliances actually do</h2>
-
-  <div class="answer-card">
-    <span class="q-label">QUICK ANSWER</span>
-    The Eyes alliances enable member governments to share signals intelligence — intercepted communications, metadata, and electronic surveillance data — with each other. They are not a single unified spying organization. Each member country operates its own intelligence services under its own laws and chooses what to share.
-  </div>
-
-  <p>This is where many marketing pages get carried away. Let's be precise.</p>
-
-  <p>The Eyes alliances <strong>are not a unified surveillance apparatus that monitors everyone in member countries</strong>. They are <em>cooperation frameworks</em> — treaties and informal agreements that govern how member intelligence agencies share information they collect through their own legal processes.</p>
-
-  <p>What they enable, in practice:</p>
-
-  <ul>
-    <li><strong>Sharing of signals intelligence (SIGINT)</strong> — intercepted communications, metadata about who-talks-to-whom, and similar electronic surveillance data.</li>
-    <li><strong>Joint operations</strong> on shared targets — terrorism investigations, organized crime, foreign-intelligence threats.</li>
-    <li><strong>Mutual assistance with technical capabilities</strong> — sharing decryption advances, surveillance technology, and methodology.</li>
-    <li><strong>Reduced political friction</strong> when one member needs data the other already has — formal request processes are smoother between allies than between non-allies.</li>
-  </ul>
-
-  <p>What they do <em>not</em> do:</p>
-
-  <ul>
-    <li>They don't constitute a single agency reading everyone's email.</li>
-    <li>They don't mean every country in the alliance shares everything with every other country — much intelligence is bilateral, not multilateral.</li>
-    <li>They don't override domestic law. A VPN provider in the UK still has to respond to UK legal processes, not to direct requests from the US (which would typically have to be routed through a UK legal process).</li>
-  </ul>
-
-  <p>The honest summary: the alliances are real, they matter for some user threat models, and they're nothing like the cinematic picture some VPN ads imply.</p>
-
-  <h2 id="history">A short history</h2>
-
-  <div class="timeline">
-    <div class="timeline-row">
-      <div class="year">1943</div>
-      <div class="event">The <strong>BRUSA Agreement</strong> establishes formal SIGINT cooperation between the US and UK during the Second World War.</div>
-    </div>
-    <div class="timeline-row">
-      <div class="year">1946</div>
-      <div class="event">BRUSA evolves into the <strong>UKUSA Agreement</strong>, formalizing post-war intelligence cooperation between the two countries. Canada, Australia, and New Zealand are added in subsequent years to form what becomes the Five Eyes.</div>
-    </div>
-    <div class="timeline-row">
-      <div class="year">1956</div>
-      <div class="event">Australia and New Zealand formally join. The <strong>Five Eyes alliance</strong> as we know it today is now in place, though kept secret from the public.</div>
-    </div>
-    <div class="timeline-row">
-      <div class="year">1980s</div>
-      <div class="event">European cooperation grows. <strong>SIGINT Seniors Europe (SSEUR)</strong> — the Fourteen Eyes — is established to coordinate signals intelligence sharing between Western European countries and the Five Eyes core.</div>
-    </div>
-    <div class="timeline-row">
-      <div class="year">2001</div>
-      <div class="event">The European Parliament publishes a report on the <strong>ECHELON</strong> surveillance system, the first major public acknowledgment that Five Eyes-style global signals monitoring existed.</div>
-    </div>
-    <div class="timeline-row">
-      <div class="year">2010</div>
-      <div class="event">The UK government, for the first time, <strong>publicly acknowledges</strong> the existence of the UKUSA Agreement.</div>
-    </div>
-    <div class="timeline-row">
-      <div class="year">2013</div>
-      <div class="event">The <strong>Edward Snowden disclosures</strong> reveal the scope and detail of Five Eyes signals-intelligence cooperation. The Nine Eyes and Fourteen Eyes groupings enter mainstream privacy discussion for the first time.</div>
-    </div>
-    <div class="timeline-row">
-      <div class="year">2017</div>
-      <div class="event">A trove of <strong>NSA tools is leaked</strong> by the Shadow Brokers, further illuminating the technical capabilities of Five Eyes signals intelligence.</div>
-    </div>
-    <div class="timeline-row">
-      <div class="year">2020s</div>
-      <div class="event">Five Eyes cooperation expands publicly into new domains — particularly cybersecurity, foreign-influence operations, and cooperation with non-member partners like Japan and South Korea.</div>
-    </div>
-  </div>
-
-  <h2 id="beyond">Beyond Fourteen Eyes — the wider picture</h2>
-
-  <p>The Five Eyes, Nine Eyes, and Fourteen Eyes are the formal named tiers. The reality of international intelligence cooperation extends well beyond them.</p>
-
-  <ul>
-    <li><strong>Five Eyes Plus</strong> arrangements reportedly extend cooperation to additional countries on specific topics. Israel, Japan, South Korea, and Singapore are often mentioned in this context.</li>
-    <li><strong>SIGINT Seniors Pacific</strong> is the Pacific counterpart to SSEUR, with additional Asia-Pacific partners.</li>
-    <li><strong>The Quintet of Attorneys General</strong> (US, UK, Canada, Australia, New Zealand) is a Five Eyes-aligned legal cooperation framework.</li>
-    <li><strong>Bilateral agreements</strong> — most actual intelligence cooperation happens through pairs of countries with specific treaties, rather than through named multilateral groupings.</li>
-  </ul>
-
-  <p>For practical purposes as a VPN user, the named alliances are still the most useful framework. The wider picture is mainly relevant if your threat model includes specific state actors and you want a very deep dive.</p>
-
-  <h2 id="vpn-matter">Does this matter for VPN users?</h2>
-
-  <div class="answer-card">
-    <span class="q-label">QUICK ANSWER</span>
-    It matters more than VPN marketing sometimes admits, and less than VPN marketing often implies. Jurisdiction determines what legal demands a VPN could face. But a well-implemented no-logs policy means there's little to hand over regardless of jurisdiction. The strongest privacy posture is "no logs, audited, regardless of country."
-  </div>
-
-  <p>This is the honest, balanced answer that most "Eyes" articles avoid. Let's break it down.</p>
-
-  <h3>When jurisdiction matters more</h3>
-
-  <p>Jurisdiction matters most when a VPN does retain user data — connection logs, IP-mapping records, session timestamps, browsing history. If the data exists, the question of who can legally compel its disclosure becomes important.</p>
-
-  <p>It also matters more for users with specific high-risk threat models — journalists protecting sources, activists in restrictive networks, business travelers carrying sensitive information through hostile jurisdictions. For these users, choosing a VPN incorporated outside the Five Eyes is a sensible additional layer.</p>
-
-  <h3>When jurisdiction matters less</h3>
-
-  <p>For most users, the practical privacy difference between a Switzerland-based VPN and a Canada-based VPN — assuming both run audited no-logs policies on RAM-only infrastructure — is small. There is little to disclose in either case, because there is little to keep.</p>
-
-  <p>Several highly respected privacy-focused VPNs are based in Five or Fourteen Eyes countries and remain trustworthy precisely because their <strong>data-minimization posture</strong> matters more than their jurisdiction. Mullvad (Sweden — in Fourteen Eyes) is one of the most privacy-respected VPNs in the world. Windscribe (Canada) is in the Five Eyes core but maintains a strong privacy track record. Private Internet Access (US) has been audited and has track record of resisting legal demands.</p>
-
-  <p>The principle: <strong>a provider can't disclose what it doesn't have</strong>. That's a stronger guarantee than jurisdiction alone.</p>
-
-  <h2 id="jurisdiction">Jurisdiction vs server location — they're not the same thing</h2>
-
-  <div class="answer-card">
-    <span class="q-label">QUICK ANSWER</span>
-    Jurisdiction is the country where a VPN company is legally incorporated, and whose laws govern the company's obligations. Server location is the country where the physical or virtual servers are located. These are different things — and they affect privacy in different ways.
-  </div>
-
-  <p>This distinction trips up a lot of readers, and it's worth being explicit about.</p>
-
-  <ul>
-    <li><strong>Jurisdiction</strong> is where the <em>company</em> is incorporated. Switzerland, Panama, BVI, Sweden, etc. Determines what laws the company itself must obey.</li>
-    <li><strong>Server location</strong> is where individual VPN servers are <em>physically or virtually located</em>. A company based in Switzerland might run servers in fifty countries.</li>
-  </ul>
-
-  <p>When you connect to a Switzerland-based VPN's New York server, you are routing your traffic through New York. That traffic is subject to US server-location law for as long as it exists on those servers. <em>But</em> — and this is the important part — if the VPN runs a no-logs policy on RAM-only servers, the server-location matters less than people think, because nothing persists. The encrypted traffic is in transit, processed, and forgotten.</p>
-
-  <p>For users who want to be especially careful, the strongest posture combines <strong>company jurisdiction outside Five Eyes</strong> + <strong>RAM-only server infrastructure regardless of location</strong> + <strong>audited no-logs policy</strong> + <strong>strong encryption</strong>. That's belt and suspenders — and it's what the most privacy-conscious VPNs aim for.</p>
-
-  <h2 id="myths">Five common misconceptions about the Eyes alliances</h2>
-
-  <div class="myth">
-    <span class="label">Myth 1</span>
-    <h3>"VPNs based in Five Eyes countries are unsafe."</h3>
-    <p>Untrue as a blanket statement. A no-logs VPN with strong technical practices can be highly privacy-protective regardless of jurisdiction. The "no logs to hand over" posture is what really protects you. Several highly respected privacy VPNs are based in Five or Fourteen Eyes countries.</p>
-  </div>
-
-  <div class="myth">
-    <span class="label">Myth 2</span>
-    <h3>"The Five Eyes share everything with each other automatically."</h3>
-    <p>Untrue. Intelligence sharing within Five Eyes is selective and based on specific agreements. Member countries don't dump all their data into a shared pool. Much intelligence cooperation is bilateral rather than multilateral, and each country still operates under its own legal framework.</p>
-  </div>
-
-  <div class="myth">
-    <span class="label">Myth 3</span>
-    <h3>"If I use a VPN, the Five Eyes can't see my traffic at all."</h3>
-    <p>Misleading. A VPN encrypts your traffic between your device and the VPN server. After that, your traffic exits to its destination in the normal way. Surveillance at the destination side, or at the website you're visiting, is unaffected by your VPN. What the VPN reliably hides is your IP address and your specific browsing activity from anyone watching your local network.</p>
-  </div>
-
-  <div class="myth">
-    <span class="label">Myth 4</span>
-    <h3>"Switzerland is completely safe from intelligence cooperation."</h3>
-    <p>Partial truth. Switzerland is outside the Five and Fourteen Eyes, and it has strong privacy laws. But Switzerland cooperates with other governments through ordinary diplomatic and legal channels, and Swiss intelligence has its own interests. The benefit of Swiss jurisdiction is real, not absolute.</p>
-  </div>
-
-  <div class="myth">
-    <span class="label">Myth 5</span>
-    <h3>"The Eyes alliances mean a VPN in those countries will spy on me."</h3>
-    <p>Untrue. The alliances are about <em>government</em> intelligence cooperation. A VPN company in a Five Eyes country isn't part of the intelligence apparatus and doesn't proactively monitor users. The relevant concern is whether the company could be compelled to share data it has — which loops back to the no-logs question, not directly to the alliances themselves.</p>
-  </div>
-
-  <h2 id="preferred">The "privacy-friendly" jurisdictions</h2>
-
-  <p>If you do want to factor jurisdiction into your VPN choice — and we think it's a reasonable thing to consider, just not the only thing — these are the jurisdictions most commonly cited as privacy-friendly for VPN providers.</p>
-
-  <ul>
-    <li><strong>Switzerland</strong> — outside Five and Fourteen Eyes, strong personal-privacy laws, long tradition of bank secrecy and data protection. Home to ProtonVPN, PrivadoVPN, and others.</li>
-    <li><strong>Panama</strong> — outside Five and Fourteen Eyes, no mandatory data-retention laws for VPN providers. Home to NordVPN.</li>
-    <li><strong>British Virgin Islands</strong> — outside Five and Fourteen Eyes, requires data requests to be processed through formal legal channels. Home to ExpressVPN.</li>
-    <li><strong>Iceland</strong> — outside the Eyes alliances, with relatively strong privacy laws. Less commonly chosen by major VPNs but considered favorable.</li>
-    <li><strong>Romania</strong> — EU member but historically resistant to mandatory data-retention requirements. Home to several privacy-focused services.</li>
-  </ul>
-
-  <p>The point isn't that other jurisdictions are bad — many aren't. The point is that these are jurisdictions where the legal environment tilts a little further in the user's favor by default.</p>
-
-  <h2 id="checklist">Your jurisdiction checklist</h2>
-
-  <p>If you want to evaluate a VPN's jurisdiction story honestly, here's the framework.</p>
-
-  <div class="checklist">
-    <h4>The four questions that actually matter</h4>
-    <ul>
-      <li><strong>Does the VPN run an audited no-logs policy?</strong> This is the most important question. A no-logs provider has little to hand over regardless of jurisdiction.</li>
-      <li><strong>Where is the company legally incorporated?</strong> The country whose laws govern the company. Outside Five/Fourteen Eyes is a small additional safeguard.</li>
-      <li><strong>Does the company use RAM-only diskless servers?</strong> Servers that store no data on disk dramatically reduce the practical impact of any legal demand.</li>
-      <li><strong>Has the company been tested under real legal pressure?</strong> A company that has actually faced a demand and successfully demonstrated it had no data to hand over is more reassuring than one that has only made the claim.</li>
-    </ul>
-  </div>
-
-  <p>If a VPN passes all four, jurisdiction becomes a minor footnote. If it fails some, jurisdiction matters more.</p>
-
-  <h2 id="ollavpn">How OllaVPN thinks about jurisdiction</h2>
-
-  <p>Our position on this whole question is straightforward: <strong>the strongest privacy posture is to have nothing worth sharing in the first place</strong>. Jurisdiction is a meaningful factor, but it's not the primary factor — and the privacy industry has historically over-weighted it relative to product fundamentals.</p>
-
-  <p><a href="/free-vpn">OllaVPN's</a> approach reflects that view:</p>
-
-  <ul>
-    <li><strong>A no-logs policy</strong> means there is essentially nothing for any government to obtain through any legal process, regardless of jurisdiction.</li>
-    <li><strong>An always-on kill switch</strong> means the connection fails closed — your traffic doesn't leak even briefly during reconnects.</li>
-    <li><strong><a href="what-is-post-quantum-cryptography.html">Post-quantum cryptography</a> from day one</strong>, on every connection including the lifetime free plan, protects against the "harvest now, decrypt later" threat — the encrypted traffic captured today that adversaries hope to decrypt years from now.</li>
-    <li><strong>DNS is handled inside the encrypted tunnel by default</strong> — see our <a href="what-is-a-dns-leak.html">DNS leak guide</a> for what that means.</li>
-    <li><strong>Free for life</strong> — privacy upgrades worth having shouldn't be paywalled.</li>
-  </ul>
-
-  <div class="pull-card">
-    <p style="margin-bottom: 6px;"><strong>OllaVPN — built around the things that actually matter:</strong></p>
-    <div class="pricing">
-      <div class="tier">
-        <div class="label">Lifetime free</div>
-        <div class="price">$0 · 10 Mbps</div>
-        <div class="desc">Unlimited data. Every country we serve. Post-quantum protection on by default. No email required.</div>
-      </div>
-      <div class="tier">
-        <div class="label">Paid plan</div>
-        <div class="price">$2 / month · 10 Gbps</div>
-        <div class="desc">Five devices on one account. Same protection, faster connection.</div>
-      </div>
-    </div>
-  </div>
-
-  <p><a href="../dl/">Try OllaVPN free</a> — no card, no email required.</p>
-
-  <div class="related">
-      <h2 id="related-reading">Related reading</h2>
-      <ul class="related-cards">
-        <li><a href="/free-vpn"><span class="card-tag">PRIVACY</span><span class="card-title">Free VPN — the honest 2026 guide</span><span class="card-meta">8 min &middot; OllaVPN Blog</span></a></li>
-        <li><a href="/blog/what-is-post-quantum-cryptography.html"><span class="card-tag">TECHNOLOGY</span><span class="card-title">What is post-quantum cryptography? A 2026 guide</span><span class="card-meta">8 min &middot; OllaVPN Blog</span></a></li>
-        <li><a href="/blog/what-is-a-dns-leak.html"><span class="card-tag">SECURITY</span><span class="card-title">What is a DNS leak? How to test, fix, and prevent it</span><span class="card-meta">9 min &middot; OllaVPN Blog</span></a></li>
-        <li><a href="/blog/mullvad-vs-protonvpn.html"><span class="card-tag">COMPARISON</span><span class="card-title">Mullvad vs ProtonVPN: Privacy Comparison</span><span class="card-meta">8 min &middot; OllaVPN Blog</span></a></li>
-        <li><a href="/blog/nordvpn-vs-protonvpn.html"><span class="card-tag">COMPARISON</span><span class="card-title">NordVPN vs ProtonVPN: Panama vs Switzerland</span><span class="card-meta">8 min &middot; OllaVPN Blog</span></a></li>
-        <li><a href="/blog/lifetime-free-vpn.html"><span class="card-tag">PRIVACY</span><span class="card-title">Lifetime Free VPN: Is OllaVPN Really Free Forever?</span><span class="card-meta">10 min &middot; OllaVPN Blog</span></a></li>
-      </ul>
-    </div>
-
-  <hr />
-
-  
+ <span style="display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:10px;background:var(--red);color:#0F172A;font-weight:700;font-size:18px;flex-shrink:0;">S</span>
+ <span style="flex:1;font-size:15px;line-height:1.45;color:var(--text);">
+ <strong>Try OllaVPN free - post-quantum-ready, lifetime free plan.</strong>
+ <span style="display:block;color:var(--text-mute);font-size:13px;margin-top:2px;">No credit card. Or $2/mo for 5 devices on a faster plan.</span>
+ </span>
+ <span style="font-family:var(--mono);font-size:12px;color:var(--red);letter-spacing:0.06em;flex-shrink:0;">DOWNLOAD →</span>
+ </a>
+
+ <p>The <strong>Five Eyes</strong> is an intelligence-sharing alliance between the United States, United Kingdom, Canada, Australia, and New Zealand, formalized by the 1946 UKUSA Agreement. The <strong>Nine Eyes</strong> adds Denmark, France, the Netherlands, and Norway. The <strong>Fourteen Eyes</strong> further adds Germany, Belgium, Italy, Spain, and Sweden. Each tier represents a different level of cooperation in sharing signals intelligence. In VPN terms, jurisdictions outside these alliances - like Switzerland, Panama, and the British Virgin Islands - are often preferred. But here's the honest truth: <strong>a properly built no-logs VPN is privacy-protective regardless of jurisdiction</strong>, because there is nothing for any government to obtain. Jurisdiction matters; a strong product matters more.</p>
+ </div>
+
+ <div class="toc">
+ <div class="label">Jump to a section</div>
+ <ol>
+ <li><a href="#why-care">Why this comes up in every VPN conversation</a></li>
+ <li><a href="#five-eyes">What the Five Eyes is</a></li>
+ <li><a href="#nine-eyes">What the Nine Eyes is</a></li>
+ <li><a href="#fourteen-eyes">What the Fourteen Eyes is</a></li>
+ <li><a href="#table">All the countries, at a glance</a></li>
+ <li><a href="#what-they-do">What the alliances actually do</a></li>
+ <li><a href="#history">A short history</a></li>
+ <li><a href="#beyond">Beyond Fourteen Eyes</a></li>
+ <li><a href="#vpn-matter">Does this matter for VPN users?</a></li>
+ <li><a href="#jurisdiction">Jurisdiction vs server location</a></li>
+ <li><a href="#myths">Five common misconceptions</a></li>
+ <li><a href="#preferred">The "privacy-friendly" jurisdictions</a></li>
+ <li><a href="#checklist">Your jurisdiction checklist</a></li>
+ <li><a href="#ollavpn">How OllaVPN thinks about jurisdiction</a></li>
+ <li><a href="#faq">Frequently asked questions</a></li>
+ </ol>
+ </div>
+
+ <p>Spend any time reading about VPNs and you'll quickly run into a phrase that sounds vaguely ominous: the <em>Five Eyes</em>. Or maybe its more comprehensive cousins, the <em>Nine Eyes</em> and the <em>Fourteen Eyes</em>. Most VPN marketing pages reference them. Most don't quite explain what they are.</p>
+
+ <p>This guide does. Written plainly, with respect for your time. We'll cover what the alliances actually are, what they actually do, what's legitimately worth thinking about as a VPN user, and - equally important - what's overstated. The goal is to leave you with a clear, balanced understanding that no marketing page will give you.</p>
+
+ <h2 id="why-care">Why this comes up in every VPN conversation</h2>
+
+ <div class="answer-card">
+ <span class="q-label">QUICK ANSWER</span>
+ The Five Eyes and its extensions are intelligence-sharing alliances between Western democracies. They come up in VPN conversations because the country where a VPN provider is legally based determines what government data requests the company could face, and what intelligence sharing those requests could feed into.
+ </div>
+
+ <p>The simple reason this topic comes up so often: <strong>a VPN provider is subject to the laws of the country where it's incorporated</strong>. If a government in that country can compel the VPN to share data - or to do so secretly without telling its users - that data could then be shared with allied governments under treaty arrangements like the Five Eyes.</p>
+
+ <p>This is why "where is the VPN based?" is a standard question in any thoughtful privacy comparison. It's also why several of the most respected privacy VPNs are deliberately based outside these alliances: ProtonVPN (Switzerland), NordVPN (Panama), ExpressVPN (British Virgin Islands), Mullvad (Sweden - inside Fourteen Eyes but with a deliberately minimal-data posture). You can read more about how this plays out in practice in our <a href="mullvad-vs-protonvpn.html">Mullvad vs ProtonVPN comparison</a>.</p>
+
+ <h2 id="five-eyes">What the Five Eyes is</h2>
+
+ <div class="answer-card">
+ <span class="q-label">QUICK ANSWER</span>
+ The Five Eyes (FVEY) is an intelligence-sharing alliance comprising the United States, United Kingdom, Canada, Australia, and New Zealand. It was formalized by the 1946 UKUSA Agreement and is the oldest and most integrated of the Eyes alliances.
+ </div>
+
+ <p>The <strong>Five Eyes</strong> - sometimes written FVEY - is an intelligence alliance between five English-speaking countries:</p>
+
+ <ul>
+ <li><strong>United States</strong></li>
+ <li><strong>United Kingdom</strong></li>
+ <li><strong>Canada</strong></li>
+ <li><strong>Australia</strong></li>
+ <li><strong>New Zealand</strong></li>
+ </ul>
+
+ <p>It originated as the <strong>BRUSA Agreement</strong> between the US and UK in 1943, during the Second World War. After the war, this became the <strong>UKUSA Agreement</strong> in 1946. Canada joined the arrangement in 1948, with Australia and New Zealand joining in 1956. The alliance was kept secret from the public for decades - its existence was not formally acknowledged by the UK government until 2010.</p>
+
+ <p>The Five Eyes is the most formal and most integrated of the Eyes alliances. Cooperation between member intelligence agencies - the NSA in the US, GCHQ in the UK, CSE in Canada, ASD in Australia, and GCSB in New Zealand - is deep, ongoing, and covers signals intelligence (SIGINT), satellite intelligence, and aspects of human intelligence as well.</p>
+
+ <h2 id="nine-eyes">What the Nine Eyes is</h2>
+
+ <div class="answer-card">
+ <span class="q-label">QUICK ANSWER</span>
+ The Nine Eyes is an expanded version of the Five Eyes that adds Denmark, France, the Netherlands, and Norway. It is less formal than the Five Eyes core and represents a wider European cooperation framework.
+ </div>
+
+ <p>The <strong>Nine Eyes</strong> extends the Five Eyes by adding four more European countries:</p>
+
+ <ul>
+ <li><strong>Denmark</strong></li>
+ <li><strong>France</strong></li>
+ <li><strong>Netherlands</strong></li>
+ <li><strong>Norway</strong></li>
+ </ul>
+
+ <p>The Nine Eyes is less formally structured than the Five Eyes core. It's better understood as a working level of cooperation - a circle of countries that share intelligence on specific topics, rather than a single unified treaty arrangement. The grouping became publicly known largely through documents disclosed by Edward Snowden in 2013.</p>
+
+ <h2 id="fourteen-eyes">What the Fourteen Eyes is</h2>
+
+ <div class="answer-card">
+ <span class="q-label">QUICK ANSWER</span>
+ The Fourteen Eyes - formally known as SIGINT Seniors Europe (SSEUR) - adds Germany, Belgium, Italy, Spain, and Sweden to the Nine Eyes countries. Cooperation has historically been focused on counterterrorism intelligence sharing.
+ </div>
+
+ <p>The <strong>Fourteen Eyes</strong> is the widest of the named alliances. It adds five more countries to the Nine Eyes group:</p>
+
+ <ul>
+ <li><strong>Germany</strong></li>
+ <li><strong>Belgium</strong></li>
+ <li><strong>Italy</strong></li>
+ <li><strong>Spain</strong></li>
+ <li><strong>Sweden</strong></li>
+ </ul>
+
+ <p>The Fourteen Eyes has a formal name: <strong>SIGINT Seniors Europe (SSEUR)</strong>. It was established in the late 1980s and has been particularly focused on signals-intelligence cooperation across Western Europe, including counterterrorism work after the September 11, 2001 attacks. It is the broadest of the three Eyes groupings most commonly mentioned in VPN privacy discussions.</p>
+
+ <h2 id="table">All the countries, at a glance</h2>
+
+ <p>Here's the full picture in one place. The Five Eyes is the innermost circle; each subsequent ring adds countries on top of the previous one.</p>
+
+ <table class="alliance-table">
+ <thead>
+ <tr><th>Alliance</th><th>Member countries</th></tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Five Eyes (FVEY)</td>
+ <td class="countries">
+ <span class="new">United States</span>
+ <span class="new">United Kingdom</span>
+ <span class="new">Canada</span>
+ <span class="new">Australia</span>
+ <span class="new">New Zealand</span>
+ </td>
+ </tr>
+ <tr>
+ <td>Nine Eyes</td>
+ <td class="countries">
+ <span class="existing">United States · United Kingdom · Canada · Australia · New Zealand</span>
+ <span class="new">Denmark</span>
+ <span class="new">France</span>
+ <span class="new">Netherlands</span>
+ <span class="new">Norway</span>
+ </td>
+ </tr>
+ <tr>
+ <td>Fourteen Eyes (SSEUR)</td>
+ <td class="countries">
+ <span class="existing">USA · UK · Canada · Australia · NZ · Denmark · France · Netherlands · Norway</span>
+ <span class="new">Germany</span>
+ <span class="new">Belgium</span>
+ <span class="new">Italy</span>
+ <span class="new">Spain</span>
+ <span class="new">Sweden</span>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+
+ <p>Red highlighted countries are the new additions at each tier. The Fourteen Eyes is, in effect, a near-comprehensive map of major Western democracies.</p>
+
+ <h2 id="what-they-do">What the alliances actually do</h2>
+
+ <div class="answer-card">
+ <span class="q-label">QUICK ANSWER</span>
+ The Eyes alliances enable member governments to share signals intelligence - intercepted communications, metadata, and electronic surveillance data - with each other. They are not a single unified spying organization. Each member country operates its own intelligence services under its own laws and chooses what to share.
+ </div>
+
+ <p>This is where many marketing pages get carried away. Let's be precise.</p>
+
+ <p>The Eyes alliances <strong>are not a unified surveillance apparatus that monitors everyone in member countries</strong>. They are <em>cooperation frameworks</em> - treaties and informal agreements that govern how member intelligence agencies share information they collect through their own legal processes.</p>
+
+ <p>What they enable, in practice:</p>
+
+ <ul>
+ <li><strong>Sharing of signals intelligence (SIGINT)</strong> - intercepted communications, metadata about who-talks-to-whom, and similar electronic surveillance data.</li>
+ <li><strong>Joint operations</strong> on shared targets - terrorism investigations, organized crime, foreign-intelligence threats.</li>
+ <li><strong>Mutual assistance with technical capabilities</strong> - sharing decryption advances, surveillance technology, and methodology.</li>
+ <li><strong>Reduced political friction</strong> when one member needs data the other already has - formal request processes are smoother between allies than between non-allies.</li>
+ </ul>
+
+ <p>What they do <em>not</em> do:</p>
+
+ <ul>
+ <li>They don't constitute a single agency reading everyone's email.</li>
+ <li>They don't mean every country in the alliance shares everything with every other country - much intelligence is bilateral, not multilateral.</li>
+ <li>They don't override domestic law. A VPN provider in the UK still has to respond to UK legal processes, not to direct requests from the US (which would typically have to be routed through a UK legal process).</li>
+ </ul>
+
+ <p>The honest summary: the alliances are real, they matter for some user threat models, and they're nothing like the cinematic picture some VPN ads imply.</p>
+
+ <h2 id="history">A short history</h2>
+
+ <div class="timeline">
+ <div class="timeline-row">
+ <div class="year">1943</div>
+ <div class="event">The <strong>BRUSA Agreement</strong> establishes formal SIGINT cooperation between the US and UK during the Second World War.</div>
+ </div>
+ <div class="timeline-row">
+ <div class="year">1946</div>
+ <div class="event">BRUSA evolves into the <strong>UKUSA Agreement</strong>, formalizing post-war intelligence cooperation between the two countries. Canada, Australia, and New Zealand are added in subsequent years to form what becomes the Five Eyes.</div>
+ </div>
+ <div class="timeline-row">
+ <div class="year">1956</div>
+ <div class="event">Australia and New Zealand formally join. The <strong>Five Eyes alliance</strong> as we know it today is now in place, though kept secret from the public.</div>
+ </div>
+ <div class="timeline-row">
+ <div class="year">1980s</div>
+ <div class="event">European cooperation grows. <strong>SIGINT Seniors Europe (SSEUR)</strong> - the Fourteen Eyes - is established to coordinate signals intelligence sharing between Western European countries and the Five Eyes core.</div>
+ </div>
+ <div class="timeline-row">
+ <div class="year">2001</div>
+ <div class="event">The European Parliament publishes a report on the <strong>ECHELON</strong> surveillance system, the first major public acknowledgment that Five Eyes-style global signals monitoring existed.</div>
+ </div>
+ <div class="timeline-row">
+ <div class="year">2010</div>
+ <div class="event">The UK government, for the first time, <strong>publicly acknowledges</strong> the existence of the UKUSA Agreement.</div>
+ </div>
+ <div class="timeline-row">
+ <div class="year">2013</div>
+ <div class="event">The <strong>Edward Snowden disclosures</strong> reveal the scope and detail of Five Eyes signals-intelligence cooperation. The Nine Eyes and Fourteen Eyes groupings enter mainstream privacy discussion for the first time.</div>
+ </div>
+ <div class="timeline-row">
+ <div class="year">2017</div>
+ <div class="event">A trove of <strong>NSA tools is leaked</strong> by the Shadow Brokers, further illuminating the technical capabilities of Five Eyes signals intelligence.</div>
+ </div>
+ <div class="timeline-row">
+ <div class="year">2020s</div>
+ <div class="event">Five Eyes cooperation expands publicly into new domains - particularly cybersecurity, foreign-influence operations, and cooperation with non-member partners like Japan and South Korea.</div>
+ </div>
+ </div>
+
+ <h2 id="beyond">Beyond Fourteen Eyes - the wider picture</h2>
+
+ <p>The Five Eyes, Nine Eyes, and Fourteen Eyes are the formal named tiers. The reality of international intelligence cooperation extends well beyond them.</p>
+
+ <ul>
+ <li><strong>Five Eyes Plus</strong> arrangements reportedly extend cooperation to additional countries on specific topics. Israel, Japan, South Korea, and Singapore are often mentioned in this context.</li>
+ <li><strong>SIGINT Seniors Pacific</strong> is the Pacific counterpart to SSEUR, with additional Asia-Pacific partners.</li>
+ <li><strong>The Quintet of Attorneys General</strong> (US, UK, Canada, Australia, New Zealand) is a Five Eyes-aligned legal cooperation framework.</li>
+ <li><strong>Bilateral agreements</strong> - most actual intelligence cooperation happens through pairs of countries with specific treaties, rather than through named multilateral groupings.</li>
+ </ul>
+
+ <p>For practical purposes as a VPN user, the named alliances are still the most useful framework. The wider picture is mainly relevant if your threat model includes specific state actors and you want a very deep dive.</p>
+
+ <h2 id="vpn-matter">Does this matter for VPN users?</h2>
+
+ <div class="answer-card">
+ <span class="q-label">QUICK ANSWER</span>
+ It matters more than VPN marketing sometimes admits, and less than VPN marketing often implies. Jurisdiction determines what legal demands a VPN could face. But a well-implemented no-logs policy means there's little to hand over regardless of jurisdiction. The strongest privacy posture is "no logs, audited, regardless of country."
+ </div>
+
+ <p>This is the honest, balanced answer that most "Eyes" articles avoid. Let's break it down.</p>
+
+ <h3>When jurisdiction matters more</h3>
+
+ <p>Jurisdiction matters most when a VPN does retain user data - connection logs, IP-mapping records, session timestamps, browsing history. If the data exists, the question of who can legally compel its disclosure becomes important.</p>
+
+ <p>It also matters more for users with specific high-risk threat models - journalists protecting sources, activists in restrictive networks, business travelers carrying sensitive information through hostile jurisdictions. For these users, choosing a VPN incorporated outside the Five Eyes is a sensible additional layer.</p>
+
+ <h3>When jurisdiction matters less</h3>
+
+ <p>For most users, the practical privacy difference between a Switzerland-based VPN and a Canada-based VPN - assuming both run audited no-logs policies on RAM-only infrastructure - is small. There is little to disclose in either case, because there is little to keep.</p>
+
+ <p>Several highly respected privacy-focused VPNs are based in Five or Fourteen Eyes countries and remain trustworthy precisely because their <strong>data-minimization posture</strong> matters more than their jurisdiction. Mullvad (Sweden - in Fourteen Eyes) is one of the most privacy-respected VPNs in the world. Windscribe (Canada) is in the Five Eyes core but maintains a strong privacy track record. Private Internet Access (US) has been audited and has track record of resisting legal demands.</p>
+
+ <p>The principle: <strong>a provider can't disclose what it doesn't have</strong>. That's a stronger guarantee than jurisdiction alone.</p>
+
+ <h2 id="jurisdiction">Jurisdiction vs server location - they're not the same thing</h2>
+
+ <div class="answer-card">
+ <span class="q-label">QUICK ANSWER</span>
+ Jurisdiction is the country where a VPN company is legally incorporated, and whose laws govern the company's obligations. Server location is the country where the physical or virtual servers are located. These are different things - and they affect privacy in different ways.
+ </div>
+
+ <p>This distinction trips up a lot of readers, and it's worth being explicit about.</p>
+
+ <ul>
+ <li><strong>Jurisdiction</strong> is where the <em>company</em> is incorporated. Switzerland, Panama, BVI, Sweden, etc. Determines what laws the company itself must obey.</li>
+ <li><strong>Server location</strong> is where individual VPN servers are <em>physically or virtually located</em>. A company based in Switzerland might run servers in fifty countries.</li>
+ </ul>
+
+ <p>When you connect to a Switzerland-based VPN's New York server, you are routing your traffic through New York. That traffic is subject to US server-location law for as long as it exists on those servers. <em>But</em> - and this is the important part - if the VPN runs a no-logs policy on RAM-only servers, the server-location matters less than people think, because nothing persists. The encrypted traffic is in transit, processed, and forgotten.</p>
+
+ <p>For users who want to be especially careful, the strongest posture combines <strong>company jurisdiction outside Five Eyes</strong> + <strong>RAM-only server infrastructure regardless of location</strong> + <strong>audited no-logs policy</strong> + <strong>strong encryption</strong>. That's belt and suspenders - and it's what the most privacy-conscious VPNs aim for.</p>
+
+ <h2 id="myths">Five common misconceptions about the Eyes alliances</h2>
+
+ <div class="myth">
+ <span class="label">Myth 1</span>
+ <h3>"VPNs based in Five Eyes countries are unsafe."</h3>
+ <p>Untrue as a blanket statement. A no-logs VPN with strong technical practices can be highly privacy-protective regardless of jurisdiction. The "no logs to hand over" posture is what really protects you. Several highly respected privacy VPNs are based in Five or Fourteen Eyes countries.</p>
+ </div>
+
+ <div class="myth">
+ <span class="label">Myth 2</span>
+ <h3>"The Five Eyes share everything with each other automatically."</h3>
+ <p>Untrue. Intelligence sharing within Five Eyes is selective and based on specific agreements. Member countries don't dump all their data into a shared pool. Much intelligence cooperation is bilateral rather than multilateral, and each country still operates under its own legal framework.</p>
+ </div>
+
+ <div class="myth">
+ <span class="label">Myth 3</span>
+ <h3>"If I use a VPN, the Five Eyes can't see my traffic at all."</h3>
+ <p>Misleading. A VPN encrypts your traffic between your device and the VPN server. After that, your traffic exits to its destination in the normal way. Surveillance at the destination side, or at the website you're visiting, is unaffected by your VPN. What the VPN reliably hides is your IP address and your specific browsing activity from anyone watching your local network.</p>
+ </div>
+
+ <div class="myth">
+ <span class="label">Myth 4</span>
+ <h3>"Switzerland is completely safe from intelligence cooperation."</h3>
+ <p>Partial truth. Switzerland is outside the Five and Fourteen Eyes, and it has strong privacy laws. But Switzerland cooperates with other governments through ordinary diplomatic and legal channels, and Swiss intelligence has its own interests. The benefit of Swiss jurisdiction is real, not absolute.</p>
+ </div>
+
+ <div class="myth">
+ <span class="label">Myth 5</span>
+ <h3>"The Eyes alliances mean a VPN in those countries will spy on me."</h3>
+ <p>Untrue. The alliances are about <em>government</em> intelligence cooperation. A VPN company in a Five Eyes country isn't part of the intelligence apparatus and doesn't proactively monitor users. The relevant concern is whether the company could be compelled to share data it has - which loops back to the no-logs question, not directly to the alliances themselves.</p>
+ </div>
+
+ <h2 id="preferred">The "privacy-friendly" jurisdictions</h2>
+
+ <p>If you do want to factor jurisdiction into your VPN choice - and we think it's a reasonable thing to consider, just not the only thing - these are the jurisdictions most commonly cited as privacy-friendly for VPN providers.</p>
+
+ <ul>
+ <li><strong>Switzerland</strong> - outside Five and Fourteen Eyes, strong personal-privacy laws, long tradition of bank secrecy and data protection. Home to ProtonVPN, PrivadoVPN, and others.</li>
+ <li><strong>Panama</strong> - outside Five and Fourteen Eyes, no mandatory data-retention laws for VPN providers. Home to NordVPN.</li>
+ <li><strong>British Virgin Islands</strong> - outside Five and Fourteen Eyes, requires data requests to be processed through formal legal channels. Home to ExpressVPN.</li>
+ <li><strong>Iceland</strong> - outside the Eyes alliances, with relatively strong privacy laws. Less commonly chosen by major VPNs but considered favorable.</li>
+ <li><strong>Romania</strong> - EU member but historically resistant to mandatory data-retention requirements. Home to several privacy-focused services.</li>
+ </ul>
+
+ <p>The point isn't that other jurisdictions are bad - many aren't. The point is that these are jurisdictions where the legal environment tilts a little further in the user's favor by default.</p>
+
+ <h2 id="checklist">Your jurisdiction checklist</h2>
+
+ <p>If you want to evaluate a VPN's jurisdiction story honestly, here's the framework.</p>
+
+ <div class="checklist">
+ <h4>The four questions that actually matter</h4>
+ <ul>
+ <li><strong>Does the VPN run an audited no-logs policy?</strong> This is the most important question. A no-logs provider has little to hand over regardless of jurisdiction.</li>
+ <li><strong>Where is the company legally incorporated?</strong> The country whose laws govern the company. Outside Five/Fourteen Eyes is a small additional safeguard.</li>
+ <li><strong>Does the company use RAM-only diskless servers?</strong> Servers that store no data on disk dramatically reduce the practical impact of any legal demand.</li>
+ <li><strong>Has the company been tested under real legal pressure?</strong> A company that has actually faced a demand and successfully demonstrated it had no data to hand over is more reassuring than one that has only made the claim.</li>
+ </ul>
+ </div>
+
+ <p>If a VPN passes all four, jurisdiction becomes a minor footnote. If it fails some, jurisdiction matters more.</p>
+
+ <h2 id="ollavpn">How OllaVPN thinks about jurisdiction</h2>
+
+ <p>Our position on this whole question is straightforward: <strong>the strongest privacy posture is to have nothing worth sharing in the first place</strong>. Jurisdiction is a meaningful factor, but it's not the primary factor - and the privacy industry has historically over-weighted it relative to product fundamentals.</p>
+
+ <p><a href="/free-vpn">OllaVPN's</a> approach reflects that view:</p>
+
+ <ul>
+ <li><strong>A no-logs policy</strong> means there is essentially nothing for any government to obtain through any legal process, regardless of jurisdiction.</li>
+ <li><strong>An always-on kill switch</strong> means the connection fails closed - your traffic doesn't leak even briefly during reconnects.</li>
+ <li><strong><a href="what-is-post-quantum-cryptography.html">Post-quantum cryptography</a> from day one</strong>, on every connection including the lifetime free plan, protects against the "harvest now, decrypt later" threat - the encrypted traffic captured today that adversaries hope to decrypt years from now.</li>
+ <li><strong>DNS is handled inside the encrypted tunnel by default</strong> - see our <a href="what-is-a-dns-leak.html">DNS leak guide</a> for what that means.</li>
+ <li><strong>Free for life</strong> - privacy upgrades worth having shouldn't be paywalled.</li>
+ </ul>
+
+ <div class="pull-card">
+ <p style="margin-bottom: 6px;"><strong>OllaVPN - built around the things that actually matter:</strong></p>
+ <div class="pricing">
+ <div class="tier">
+ <div class="label">Lifetime free</div>
+ <div class="price">$0 · 10 Mbps</div>
+ <div class="desc">Unlimited data. Every country we serve. Post-quantum protection on by default. No email required.</div>
+ </div>
+ <div class="tier">
+ <div class="label">Paid plan</div>
+ <div class="price">$2 / month · 10 Gbps</div>
+ <div class="desc">Five devices on one account. Same protection, faster connection.</div>
+ </div>
+ </div>
+ </div>
+
+ <p><a href="../dl/">Try OllaVPN free</a> - no card, no email required.</p>
+
+ <div class="related">
+ <h2 id="related-reading">Related reading</h2>
+ <ul class="related-cards">
+ <li><a href="/free-vpn"><span class="card-tag">PRIVACY</span><span class="card-title">Free VPN - the honest 2026 guide</span><span class="card-meta">8 min &middot; OllaVPN Blog</span></a></li>
+ <li><a href="/blog/what-is-post-quantum-cryptography.html"><span class="card-tag">TECHNOLOGY</span><span class="card-title">What is post-quantum cryptography? A 2026 guide</span><span class="card-meta">8 min &middot; OllaVPN Blog</span></a></li>
+ <li><a href="/blog/what-is-a-dns-leak.html"><span class="card-tag">SECURITY</span><span class="card-title">What is a DNS leak? How to test, fix, and prevent it</span><span class="card-meta">9 min &middot; OllaVPN Blog</span></a></li>
+ <li><a href="/blog/mullvad-vs-protonvpn.html"><span class="card-tag">COMPARISON</span><span class="card-title">Mullvad vs ProtonVPN: Privacy Comparison</span><span class="card-meta">8 min &middot; OllaVPN Blog</span></a></li>
+ <li><a href="/blog/nordvpn-vs-protonvpn.html"><span class="card-tag">COMPARISON</span><span class="card-title">NordVPN vs ProtonVPN: Panama vs Switzerland</span><span class="card-meta">8 min &middot; OllaVPN Blog</span></a></li>
+ <li><a href="/blog/lifetime-free-vpn.html"><span class="card-tag">PRIVACY</span><span class="card-title">Lifetime Free VPN: Is OllaVPN Really Free Forever?</span><span class="card-meta">10 min &middot; OllaVPN Blog</span></a></li>
+ </ul>
+ </div>
+
+ <hr />
+
+ 
 
 <!-- TIER1-TOPUP -->
 
-  <h2 id="tier1-topup-broader-context">A broader-context closing thought</h2>
-  <p>One pattern we've noticed across every privacy-and-networking topic we cover: the gap between what most users believe about a given topic and what the technical reality is keeps widening. Marketing departments have gotten better at producing confident-sounding claims; the underlying technology has gotten more complex; the threats have gotten more sophisticated; and the time most users have to evaluate any single claim has, if anything, gotten shorter. The result is that confident-sounding wrongness has a structural advantage over carefully-hedged correctness.</p>
-  <p>The remedy we've settled on is to publish at depth — long enough to cover the topic honestly, with primary sources and named authors and explicit limits — and to publish free verification tools so the reader does not have to take our word for the technical claims. Both are choices that don't optimise for "users who skim and click." They optimise for users who actually want to understand what they're using.</p>
-  <p>If you've read this far, you're in the second group. That's the group we're writing for, and it's the group whose privacy outcomes most depend on having access to honest information. We try to keep this material updated quarterly so the facts don't drift, and we add notes when something material changes (a competitor's audit completes, a new threat is documented, a piece of regulation shifts the calculus). The <a href="/best-free-vpn-2026">main free-VPN comparison</a>, the <a href="/technology">technology overview</a>, and the <a href="/tools/">free privacy tools</a> are the three pages most worth bookmarking from the OllaVPN site if you've found this guide useful.</p>
-  <h2 id="tier1-topup-verify-cross-references">Verify and cross-reference</h2>
-  <p>For any claim on this page that affects a decision you're about to make, the verification path we recommend:</p>
-  <p><strong>Verify the technical claim from your own device.</strong> Our <a href="/dns-lookup">DNS lookup</a>, <a href="/webrtc-leak-test">WebRTC leak test</a>, <a href="/what-is-my-ip">what-is-my-IP</a>, and the other tools at <a href="/tools/">our tools page</a> are free, require no account, and run entirely in your browser. Most claims about VPN behavior can be verified from your own device in under fifteen minutes using these tools.</p>
-  <p><strong>Cross-reference at least one third-party source.</strong> We are an operator with a commercial interest in the conclusion. The most reputable independent voices in the privacy-VPN category in 2026 are Mullvad's blog (technical depth without sales pressure because they don't run affiliate programs), the Privacy Guides project documentation, the Restore Privacy site, and the academic literature on consumer VPN security (the canonical paper is Ikram et al. 2016, "An Analysis of the Privacy and Security Risks of Android VPN Permission-enabled Apps," in ACM IMC). Read across multiple sources before forming a strong view.</p>
-  <p><strong>Read the primary sources where they exist.</strong> Government regulations, NIST publications, IETF RFCs, and court rulings are primary sources. Vendor marketing pages and most commentary pieces are derivatives. When a claim is specific enough to have a primary source (a specific regulation, a specific standard, a specific court case), find the primary source and read it yourself rather than relying on summaries.</p>
-  <p><strong>Update your view when the facts update.</strong> Privacy concerns shift, operators change, standards evolve. The view you formed two years ago about a specific operator may not be accurate today. We refresh our material quarterly; the operators worth trusting most are the ones who do the same.</p>
+ <h2 id="tier1-topup-broader-context">A broader-context closing thought</h2>
+ <p>One pattern we've noticed across every privacy-and-networking topic we cover: the gap between what most users believe about a given topic and what the technical reality is keeps widening. Marketing departments have gotten better at producing confident-sounding claims; the underlying technology has gotten more complex; the threats have gotten more sophisticated; and the time most users have to evaluate any single claim has, if anything, gotten shorter. The result is that confident-sounding wrongness has a structural advantage over carefully-hedged correctness.</p>
+ <p>The remedy we've settled on is to publish at depth - long enough to cover the topic honestly, with primary sources and named authors and explicit limits - and to publish free verification tools so the reader does not have to take our word for the technical claims. Both are choices that don't optimise for "users who skim and click." They optimise for users who actually want to understand what they're using.</p>
+ <p>If you've read this far, you're in the second group. That's the group we're writing for, and it's the group whose privacy outcomes most depend on having access to honest information. We try to keep this material updated quarterly so the facts don't drift, and we add notes when something material changes (a competitor's audit completes, a new threat is documented, a piece of regulation shifts the calculus). The <a href="/best-free-vpn-2026">main free-VPN comparison</a>, the <a href="/technology">technology overview</a>, and the <a href="/tools/">free privacy tools</a> are the three pages most worth bookmarking from the OllaVPN site if you've found this guide useful.</p>
+ <h2 id="tier1-topup-verify-cross-references">Verify and cross-reference</h2>
+ <p>For any claim on this page that affects a decision you're about to make, the verification path we recommend:</p>
+ <p><strong>Verify the technical claim from your own device.</strong> Our <a href="/dns-lookup">DNS lookup</a>, <a href="/webrtc-leak-test">WebRTC leak test</a>, <a href="/what-is-my-ip">what-is-my-IP</a>, and the other tools at <a href="/tools/">our tools page</a> are free, require no account, and run entirely in your browser. Most claims about VPN behavior can be verified from your own device in under fifteen minutes using these tools.</p>
+ <p><strong>Cross-reference at least one third-party source.</strong> We are an operator with a commercial interest in the conclusion. The most reputable independent voices in the privacy-VPN category in 2026 are Mullvad's blog (technical depth without sales pressure because they don't run affiliate programs), the Privacy Guides project documentation, the Restore Privacy site, and the academic literature on consumer VPN security (the canonical paper is Ikram et al. 2016, "An Analysis of the Privacy and Security Risks of Android VPN Permission-enabled Apps," in ACM IMC). Read across multiple sources before forming a strong view.</p>
+ <p><strong>Read the primary sources where they exist.</strong> Government regulations, NIST publications, IETF RFCs, and court rulings are primary sources. Vendor marketing pages and most commentary pieces are derivatives. When a claim is specific enough to have a primary source (a specific regulation, a specific standard, a specific court case), find the primary source and read it yourself rather than relying on summaries.</p>
+ <p><strong>Update your view when the facts update.</strong> Privacy concerns shift, operators change, standards evolve. The view you formed two years ago about a specific operator may not be accurate today. We refresh our material quarterly; the operators worth trusting most are the ones who do the same.</p>
 <!-- TIER1-ENRICHED -->
 
-  <h2 id="tier1-other-context">Why this topic matters beyond the immediate question</h2>
-  <p>The topic above sits at the intersection of several broader concerns that are worth understanding even if your immediate question has been answered:</p>
-  <p><strong>The privacy-tooling category has matured rapidly.</strong> What was leading-edge in 2020 is table stakes in 2026. Standards have finalized (NIST PQC, RFC 9116 security disclosure, the IETF MASQUE work), jurisdictions have clarified (post-CERT-In, post-DSA, post-Investigatory Powers Act), and a clear trustworthy/untrustworthy line has emerged in the consumer VPN category specifically. Decisions you make today should reflect the 2026 state of the market, not the 2020 state.</p>
-  <p><strong>The threat landscape has shifted.</strong> Bulk traffic capture by intelligence services is well-documented and continuous. The "harvest now, decrypt later" threat against captured-today-decrypted-tomorrow ciphertext is operational, not theoretical. ISP-level metadata sales to advertising data brokers are routine in the US. Geo-blocking and censorship are both more sophisticated and more widespread. The tools that defended you adequately five years ago may not be adequate now.</p>
-  <p><strong>The user has more power than ever — if they use it.</strong> Strong free privacy tools exist in every category. The question is whether the user knows about them, knows how to verify they actually work, and is willing to take the small additional steps required. We try to make the verification path as short as possible because users who can verify are users who can choose well.</p>
-  <h2 id="tier1-other-action">What to actually do about it</h2>
-  <p>If the topic above suggests you should take action, the practical next steps in priority order:</p>
-  <p><strong>Pick a trustworthy VPN and start using it by default.</strong> Even on the free tier. The threat model on every internet-connected device benefits from VPN coverage, and a free VPN you can trust is materially better than no VPN. <a href="/best-free-vpn-2026">Our best free VPN 2026 guide</a> compares the trustworthy options across platforms.</p>
-  <p><strong>Run a privacy-properties check on your current setup.</strong> Even if you already use a VPN, run our <a href="/dns-lookup">DNS lookup</a>, <a href="/webrtc-leak-test">WebRTC leak test</a>, and <a href="/what-is-my-ip">what-is-my-IP</a> tools while connected. The results tell you whether your current VPN is actually delivering the privacy properties it claims.</p>
-  <p><strong>Update your threat-model evaluation periodically.</strong> Privacy concerns shift. The tools and operators that were appropriate three years ago may need re-evaluation now. Quarterly is a reasonable cadence for non-targeted users; monthly is appropriate if you're in a higher-risk situation.</p>
-  <p><strong>Combine layers.</strong> No single tool covers the full threat surface. VPN + privacy-respecting browser + tracker blocker + password manager + virtual cards + careful account hygiene — together they're materially better than any one alone. Each layer is cheap (most are free); the compound effect is large.</p>
+ <h2 id="tier1-other-context">Why this topic matters beyond the immediate question</h2>
+ <p>The topic above sits at the intersection of several broader concerns that are worth understanding even if your immediate question has been answered:</p>
+ <p><strong>The privacy-tooling category has matured rapidly.</strong> What was leading-edge in 2020 is table stakes in 2026. Standards have finalized (NIST PQC, RFC 9116 security disclosure, the IETF MASQUE work), jurisdictions have clarified (post-CERT-In, post-DSA, post-Investigatory Powers Act), and a clear trustworthy/untrustworthy line has emerged in the consumer VPN category specifically. Decisions you make today should reflect the 2026 state of the market, not the 2020 state.</p>
+ <p><strong>The threat landscape has shifted.</strong> Bulk traffic capture by intelligence services is well-documented and continuous. The "harvest now, decrypt later" threat against captured-today-decrypted-tomorrow ciphertext is operational, not theoretical. ISP-level metadata sales to advertising data brokers are routine in the US. Geo-blocking and censorship are both more sophisticated and more widespread. The tools that defended you adequately five years ago may not be adequate now.</p>
+ <p><strong>The user has more power than ever - if they use it.</strong> Strong free privacy tools exist in every category. The question is whether the user knows about them, knows how to verify they actually work, and is willing to take the small additional steps required. We try to make the verification path as short as possible because users who can verify are users who can choose well.</p>
+ <h2 id="tier1-other-action">What to actually do about it</h2>
+ <p>If the topic above suggests you should take action, the practical next steps in priority order:</p>
+ <p><strong>Pick a trustworthy VPN and start using it by default.</strong> Even on the free tier. The threat model on every internet-connected device benefits from VPN coverage, and a free VPN you can trust is materially better than no VPN. <a href="/best-free-vpn-2026">Our best free VPN 2026 guide</a> compares the trustworthy options across platforms.</p>
+ <p><strong>Run a privacy-properties check on your current setup.</strong> Even if you already use a VPN, run our <a href="/dns-lookup">DNS lookup</a>, <a href="/webrtc-leak-test">WebRTC leak test</a>, and <a href="/what-is-my-ip">what-is-my-IP</a> tools while connected. The results tell you whether your current VPN is actually delivering the privacy properties it claims.</p>
+ <p><strong>Update your threat-model evaluation periodically.</strong> Privacy concerns shift. The tools and operators that were appropriate three years ago may need re-evaluation now. Quarterly is a reasonable cadence for non-targeted users; monthly is appropriate if you're in a higher-risk situation.</p>
+ <p><strong>Combine layers.</strong> No single tool covers the full threat surface. VPN + privacy-respecting browser + tracker blocker + password manager + virtual cards + careful account hygiene - together they're materially better than any one alone. Each layer is cheap (most are free); the compound effect is large.</p>
 
-  <h2 id="tier1-about">About this guide</h2>
-  <p>Maintained by <a href="/about/team#nathan-pratt">Nathan Pratt</a>, OllaVPN's Privacy &amp; Security Lead. Fact-checked by <a href="/about/team#hannah-wu">Hannah Wu</a>, Senior Security Engineer. We refresh this post quarterly so its facts, recommendations, and competitor comparisons stay accurate as the category evolves. The last full re-evaluation was 23 June 2026; the next is scheduled for September 2026.</p>
-  <p>If you spot a fact that's drifted or an addition we should make, email <code>guides@ollavpn.com</code>. Reader corrections drive a meaningful percentage of our quarterly updates.</p>
+ <h2 id="tier1-about">About this guide</h2>
+ <p>Maintained by <a href="/about/team#nathan-pratt">Nathan Pratt</a>, OllaVPN's Privacy &amp; Security Lead. Fact-checked by <a href="/about/team#hannah-wu">Hannah Wu</a>, Senior Security Engineer. We refresh this post quarterly so its facts, recommendations, and competitor comparisons stay accurate as the category evolves. The last full re-evaluation was 23 June 2026; the next is scheduled for September 2026.</p>
+ <p>If you spot a fact that's drifted or an addition we should make, email <code>guides@ollavpn.com</code>. Reader corrections drive a meaningful percentage of our quarterly updates.</p>
 <div class="key-takeaways">
-      <span class="label">&#11088; Key takeaways</span>
-      <h2 id="what-to-remember-from-this-guide">What to remember from this guide</h2>
-      <ul>
-        <li>Why this comes up in every VPN conversation</li>
-        <li>What the Five Eyes is</li>
-        <li>What the Nine Eyes is</li>
-        <li>What the Fourteen Eyes is</li>
-        <li>All the countries, at a glance</li>
-      </ul>
-    </div>
+ <span class="label">&#11088; Key takeaways</span>
+ <h2 id="what-to-remember-from-this-guide">What to remember from this guide</h2>
+ <ul>
+ <li>Why this comes up in every VPN conversation</li>
+ <li>What the Five Eyes is</li>
+ <li>What the Nine Eyes is</li>
+ <li>What the Fourteen Eyes is</li>
+ <li>All the countries, at a glance</li>
+ </ul>
+ </div>
 
-    <h2 id="faq">Frequently asked questions</h2>
+ <h2 id="faq">Frequently asked questions</h2>
 
-  <h3>What are the Five Eyes, Nine Eyes, and Fourteen Eyes?</h3>
-  <p>They are concentric intelligence-sharing alliances between governments. The <strong>Five Eyes</strong> (USA, UK, Canada, Australia, New Zealand) is the original and most formal, established by the 1946 UKUSA Agreement. The <strong>Nine Eyes</strong> adds Denmark, France, the Netherlands, and Norway. The <strong>Fourteen Eyes</strong> — formally known as SIGINT Seniors Europe — further adds Germany, Belgium, Italy, Spain, and Sweden.</p>
+ <h3>What are the Five Eyes, Nine Eyes, and Fourteen Eyes?</h3>
+ <p>They are concentric intelligence-sharing alliances between governments. The <strong>Five Eyes</strong> (USA, UK, Canada, Australia, New Zealand) is the original and most formal, established by the 1946 UKUSA Agreement. The <strong>Nine Eyes</strong> adds Denmark, France, the Netherlands, and Norway. The <strong>Fourteen Eyes</strong> - formally known as SIGINT Seniors Europe - further adds Germany, Belgium, Italy, Spain, and Sweden.</p>
 
-  <h3>Should I avoid VPNs based in Five Eyes countries?</h3>
-  <p><strong>Not necessarily.</strong> Jurisdiction is one factor among several, and a well-implemented no-logs policy matters more in practice. Several highly respected VPN providers are based in Five Eyes countries — TunnelBear and Windscribe in Canada, Private Internet Access in the US — and they remain trustworthy because they don't store the data anyone could compel them to hand over.</p>
+ <h3>Should I avoid VPNs based in Five Eyes countries?</h3>
+ <p><strong>Not necessarily.</strong> Jurisdiction is one factor among several, and a well-implemented no-logs policy matters more in practice. Several highly respected VPN providers are based in Five Eyes countries - TunnelBear and Windscribe in Canada, Private Internet Access in the US - and they remain trustworthy because they don't store the data anyone could compel them to hand over.</p>
 
-  <h3>Which countries are in the Five Eyes alliance?</h3>
-  <p>The Five Eyes consists of the <strong>United States, United Kingdom, Canada, Australia, and New Zealand</strong>. The alliance grew out of the BRUSA Agreement of 1943 and was formalized as the UKUSA Agreement in 1946.</p>
+ <h3>Which countries are in the Five Eyes alliance?</h3>
+ <p>The Five Eyes consists of the <strong>United States, United Kingdom, Canada, Australia, and New Zealand</strong>. The alliance grew out of the BRUSA Agreement of 1943 and was formalized as the UKUSA Agreement in 1946.</p>
 
-  <h3>Which countries are in the Nine Eyes alliance?</h3>
-  <p>The Nine Eyes is the Five Eyes plus <strong>Denmark, France, the Netherlands, and Norway</strong>. It is a less formal expansion focused on signals intelligence sharing.</p>
+ <h3>Which countries are in the Nine Eyes alliance?</h3>
+ <p>The Nine Eyes is the Five Eyes plus <strong>Denmark, France, the Netherlands, and Norway</strong>. It is a less formal expansion focused on signals intelligence sharing.</p>
 
-  <h3>Which countries are in the Fourteen Eyes alliance?</h3>
-  <p>The Fourteen Eyes — formally <strong>SIGINT Seniors Europe (SSEUR)</strong> — comprises the Nine Eyes countries plus <strong>Germany, Belgium, Italy, Spain, and Sweden</strong>.</p>
+ <h3>Which countries are in the Fourteen Eyes alliance?</h3>
+ <p>The Fourteen Eyes - formally <strong>SIGINT Seniors Europe (SSEUR)</strong> - comprises the Nine Eyes countries plus <strong>Germany, Belgium, Italy, Spain, and Sweden</strong>.</p>
 
-  <h3>What can the Five Eyes alliances actually do?</h3>
-  <p>The Eyes alliances enable member governments to share signals intelligence — intercepted communications, metadata, and other electronic surveillance data. <strong>They do not constitute a single shared spying organization.</strong> Each member country operates its own intelligence services under its own laws but cooperates on data sharing.</p>
+ <h3>What can the Five Eyes alliances actually do?</h3>
+ <p>The Eyes alliances enable member governments to share signals intelligence - intercepted communications, metadata, and other electronic surveillance data. <strong>They do not constitute a single shared spying organization.</strong> Each member country operates its own intelligence services under its own laws but cooperates on data sharing.</p>
 
-  <h3>Does VPN jurisdiction really matter?</h3>
-  <p>It matters less than people often think, and more than VPN marketing often admits. Jurisdiction determines what legal demands a VPN provider could face. <strong>If the provider has nothing to hand over — because it doesn't log activity and uses RAM-only servers — the practical impact of jurisdiction is small.</strong></p>
+ <h3>Does VPN jurisdiction really matter?</h3>
+ <p>It matters less than people often think, and more than VPN marketing often admits. Jurisdiction determines what legal demands a VPN provider could face. <strong>If the provider has nothing to hand over - because it doesn't log activity and uses RAM-only servers - the practical impact of jurisdiction is small.</strong></p>
 
-  <h3>Are there other intelligence-sharing arrangements beyond Fourteen Eyes?</h3>
-  <p>Yes. The "Five Eyes Plus" arrangement reportedly extends cooperation to <strong>Israel, Singapore, South Korea, and Japan</strong> on certain topics. Most intelligence cooperation occurs through bilateral agreements that aren't part of any named multilateral grouping.</p>
+ <h3>Are there other intelligence-sharing arrangements beyond Fourteen Eyes?</h3>
+ <p>Yes. The "Five Eyes Plus" arrangement reportedly extends cooperation to <strong>Israel, Singapore, South Korea, and Japan</strong> on certain topics. Most intelligence cooperation occurs through bilateral agreements that aren't part of any named multilateral grouping.</p>
 
-  <h3>Which countries are considered privacy-friendly for VPN providers?</h3>
-  <p><strong>Switzerland, Panama, the British Virgin Islands, and Iceland</strong> are often cited because they are outside the Five and Fourteen Eyes structures, lack mandatory data-retention laws for VPN providers, and have strong personal-privacy protections.</p>
+ <h3>Which countries are considered privacy-friendly for VPN providers?</h3>
+ <p><strong>Switzerland, Panama, the British Virgin Islands, and Iceland</strong> are often cited because they are outside the Five and Fourteen Eyes structures, lack mandatory data-retention laws for VPN providers, and have strong personal-privacy protections.</p>
 
-  <h3>Does OllaVPN keep logs that could be shared under any of these alliances?</h3>
-  <p><strong>No.</strong> OllaVPN runs a no-logs policy and is designed so that there is essentially nothing to hand over under any government data request, regardless of jurisdiction. Combined with <a href="what-is-post-quantum-cryptography.html">post-quantum cryptography</a> and an always-on kill switch, that's the practical posture that matters more than which country the company is registered in.</p>
+ <h3>Does OllaVPN keep logs that could be shared under any of these alliances?</h3>
+ <p><strong>No.</strong> OllaVPN runs a no-logs policy and is designed so that there is essentially nothing to hand over under any government data request, regardless of jurisdiction. Combined with <a href="what-is-post-quantum-cryptography.html">post-quantum cryptography</a> and an always-on kill switch, that's the practical posture that matters more than which country the company is registered in.</p>
 
-    <aside class="author-bio-card">
-      <div class="author-avatar" aria-hidden="true">NP</div>
-      <div>
-        <div class="bio-name">Nathan Pratt</div>
-        <div class="bio-role">Privacy &amp; Security Lead</div>
-        <p class="bio-text">Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.</p>
-        <a class="bio-more" href="/about/team#nathan-pratt">More from Nathan &rarr;</a>
-      </div>
-    </aside>
+ <aside class="author-bio-card">
+ <div class="author-avatar" aria-hidden="true">NP</div>
+ <div>
+ <div class="bio-name">Nathan Pratt</div>
+ <div class="bio-role">Privacy &amp; Security Lead</div>
+ <p class="bio-text">Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.</p>
+ <a class="bio-more" href="/about/team#nathan-pratt">More from Nathan &rarr;</a>
+ </div>
+ </aside>
 
-  <div class="inline-newsletter">
-  <span class="label">&#9993; Get the next one</span>
-  <h3>Honest writeups, every two weeks.</h3>
-  <p>Nathan posts one deep-dive every two weeks. No spam, no sales blasts, no clickbait headlines.</p>
-  <form>
-    <input type="email" name="email" placeholder="you@example.com" required autocomplete="email" />
-    <button type="submit">Subscribe</button>
-  </form>
-  <div class="msg" aria-live="polite">No card. Unsubscribe with one click.</div>
+ <div class="inline-newsletter">
+ <span class="label">&#9993; Get the next one</span>
+ <h3>Honest writeups, every two weeks.</h3>
+ <p>Nathan posts one deep-dive every two weeks. No spam, no sales blasts, no clickbait headlines.</p>
+ <form>
+ <input type="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+ <button type="submit">Subscribe</button>
+ </form>
+ <div class="msg" aria-live="polite">No card. Unsubscribe with one click.</div>
 </div>
 
-    <div class="share-row">
-  <span class="share-label">Share</span>
-  <button class="copy-link" type="button" aria-label="Copy link"><span class="share-text">Copy link</span></button>
-  <a href="https://twitter.com/intent/tweet?text=OllaVPN%20blog&amp;url=https%3A%2F%2Follavpn.com%2Fblog%2Ffive-eyes-nine-eyes-fourteen-eyes" target="_blank" rel="noopener">X</a>
-  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Ffive-eyes-nine-eyes-fourteen-eyes" target="_blank" rel="noopener">LinkedIn</a>
-  <a href="https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Ffive-eyes-nine-eyes-fourteen-eyes&amp;t=OllaVPN%20blog" target="_blank" rel="noopener">HN</a>
-  <a href="https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Ffive-eyes-nine-eyes-fourteen-eyes&amp;title=OllaVPN%20blog" target="_blank" rel="noopener">Reddit</a>
+ <div class="share-row">
+ <span class="share-label">Share</span>
+ <button class="copy-link" type="button" aria-label="Copy link"><span class="share-text">Copy link</span></button>
+ <a href="https://twitter.com/intent/tweet?text=OllaVPN%20blog&amp;url=https%3A%2F%2Follavpn.com%2Fblog%2Ffive-eyes-nine-eyes-fourteen-eyes" target="_blank" rel="noopener">X</a>
+ <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Ffive-eyes-nine-eyes-fourteen-eyes" target="_blank" rel="noopener">LinkedIn</a>
+ <a href="https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Ffive-eyes-nine-eyes-fourteen-eyes&amp;t=OllaVPN%20blog" target="_blank" rel="noopener">HN</a>
+ <a href="https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Ffive-eyes-nine-eyes-fourteen-eyes&amp;title=OllaVPN%20blog" target="_blank" rel="noopener">Reddit</a>
 </div>
 
-    
-    <!-- Category Explore Section (Discover all hidden blogs) -->
-    
+ 
+ <!-- Category Explore Section (Discover all hidden blogs) -->
+ 
 
-  
-    <!-- Category Explore Section (Discover all hidden blogs) -->
-    
+ 
+ <!-- Category Explore Section (Discover all hidden blogs) -->
+ 
 
-  
-    <!-- Category Explore Section (Discover all hidden blogs) -->
-    <section class="category-explore-deck" aria-label="Related articles in Privacy guides">
-      <div class="category-deck-header">
-        <h4>More in <a href="index.html#privacy-security">Privacy guides</a> <span class="deck-count">25 guides</span></h4>
-        <a class="view-all-link" href="index.html#privacy-security">View all 25 in Privacy guides &rarr;</a>
-      </div>
-      <div class="category-deck-grid">
-          <a class="deck-card" href="are-free-vpns-safe.html">
-            <div class="deck-card-title">Are Free VPNs Safe? What You Need to Know Before You Connect</div>
-            <span class="deck-card-read">Read guide &rarr;</span>
-          </a>
-          <a class="deck-card" href="are-vpns-legal.html">
-            <div class="deck-card-title">Are VPNs Legal? What You Need to Know About VPN Legality and Privacy</div>
-            <span class="deck-card-read">Read guide &rarr;</span>
-          </a>
-          <a class="deck-card" href="can-a-website-detect-vpn.html">
-            <div class="deck-card-title">Can Websites Detect VPNs? What You Need to Know About Online Privacy</div>
-            <span class="deck-card-read">Read guide &rarr;</span>
-          </a>
-          <a class="deck-card" href="can-government-track-vpn.html">
-            <div class="deck-card-title">Can Governments Really Track Your VPN? The Unvarnished Truth About Your Online Privacy</div>
-            <span class="deck-card-read">Read guide &rarr;</span>
-          </a>
-      </div>
-    </section>
-  </article>
+ 
+ <!-- Category Explore Section (Discover all hidden blogs) -->
+ <section class="category-explore-deck" aria-label="Related articles in Privacy guides">
+ <div class="category-deck-header">
+ <h4>More in <a href="index.html#privacy-security">Privacy guides</a> <span class="deck-count">25 guides</span></h4>
+ <a class="view-all-link" href="index.html#privacy-security">View all 25 in Privacy guides &rarr;</a>
+ </div>
+ <div class="category-deck-grid">
+ <a class="deck-card" href="are-free-vpns-safe.html">
+ <div class="deck-card-title">Are Free VPNs Safe? What You Need to Know Before You Connect</div>
+ <span class="deck-card-read">Read guide &rarr;</span>
+ </a>
+ <a class="deck-card" href="are-vpns-legal.html">
+ <div class="deck-card-title">Are VPNs Legal? What You Need to Know About VPN Legality and Privacy</div>
+ <span class="deck-card-read">Read guide &rarr;</span>
+ </a>
+ <a class="deck-card" href="can-a-website-detect-vpn.html">
+ <div class="deck-card-title">Can Websites Detect VPNs? What You Need to Know About Online Privacy</div>
+ <span class="deck-card-read">Read guide &rarr;</span>
+ </a>
+ <a class="deck-card" href="can-government-track-vpn.html">
+ <div class="deck-card-title">Can Governments Really Track Your VPN? The Unvarnished Truth About Your Online Privacy</div>
+ <span class="deck-card-read">Read guide &rarr;</span>
+ </a>
+ </div>
+ </section>
+ </article>
 
-  <!-- RHS Sidebar -->
-  <aside class="toc-rail" aria-label="Table of contents">
-    <span class="label">On this page</span>
-    <ol>
-      <li><a href="#why-care">Why this comes up in every VPN…</a></li>
-      <li><a href="#five-eyes">What the Five Eyes is</a></li>
-      <li><a href="#nine-eyes">What the Nine Eyes is</a></li>
-      <li><a href="#fourteen-eyes">What the Fourteen Eyes is</a></li>
-      <li><a href="#table">All the countries, at a glance</a></li>
-      <li><a href="#what-they-do">What the alliances actually do</a></li>
-      <li><a href="#history">A short history</a></li>
-      <li><a href="#beyond">Beyond Fourteen Eyes — the wider…</a></li>
-      <li><a href="#vpn-matter">Does this matter for VPN users?</a></li>
-      <li><a href="#jurisdiction">Jurisdiction vs server location —…</a></li>
-      <li><a href="#myths">Five common misconceptions about…</a></li>
-      <li><a href="#preferred">The "privacy-friendly" jurisdictions</a></li>
-    </ol>
-  </aside>
+ <!-- RHS Sidebar -->
+ <aside class="toc-rail" aria-label="Table of contents">
+ <span class="label">On this page</span>
+ <ol>
+ <li><a href="#why-care">Why this comes up in every VPN…</a></li>
+ <li><a href="#five-eyes">What the Five Eyes is</a></li>
+ <li><a href="#nine-eyes">What the Nine Eyes is</a></li>
+ <li><a href="#fourteen-eyes">What the Fourteen Eyes is</a></li>
+ <li><a href="#table">All the countries, at a glance</a></li>
+ <li><a href="#what-they-do">What the alliances actually do</a></li>
+ <li><a href="#history">A short history</a></li>
+ <li><a href="#beyond">Beyond Fourteen Eyes - the wider…</a></li>
+ <li><a href="#vpn-matter">Does this matter for VPN users?</a></li>
+ <li><a href="#jurisdiction">Jurisdiction vs server location - …</a></li>
+ <li><a href="#myths">Five common misconceptions about…</a></li>
+ <li><a href="#preferred">The "privacy-friendly" jurisdictions</a></li>
+ </ol>
+ </aside>
 </main>
 
 <footer class="footer">
-        <div style="margin-bottom: 32px;">
-          <div style="font-size: 1.6rem; font-weight: 700; color: var(--accent); margin-bottom: 4px;">OllaVPN</div>
-          <p style="color: #1a1a1a; font-size: 0.88rem;">A modern, post-quantum-ready privacy VPN. Lifetime free plan or $2/month for 5 devices.</p>
-        </div>
+ <div style="margin-bottom: 32px;">
+ <div style="font-size: 1.6rem; font-weight: 700; color: var(--accent); margin-bottom: 4px;">OllaVPN</div>
+ <p style="color: #1a1a1a; font-size: 0.88rem;">A modern, post-quantum-ready privacy VPN. Lifetime free plan or $2/month for 5 devices.</p>
+ </div>
 
-        <div class="top" style="display: grid; grid-template-columns: 2fr repeat(5, 1fr); gap: 24px; margin-bottom: 40px;">
-          <div>
-            <div class="brand">OllaVPN</div>
-            <p style="color: #1a1a1a; font-size: 0.88rem;">A modern, post-quantum-ready privacy VPN. Lifetime free plan or $2/month for 5 devices.</p>
-          </div>
+ <div class="top" style="display: grid; grid-template-columns: 2fr repeat(5, 1fr); gap: 24px; margin-bottom: 40px;">
+ <div>
+ <div class="brand">OllaVPN</div>
+ <p style="color: #1a1a1a; font-size: 0.88rem;">A modern, post-quantum-ready privacy VPN. Lifetime free plan or $2/month for 5 devices.</p>
+ </div>
 
-          <div>
-            <h4>Product</h4>
-            <div class="docket-col-links" style="display: grid; gap: 10px;">
-              <a href="/apps.html" style="color: var(--text-sub);">Apps</a>
-              <a href="/technology.html" style="color: var(--text-sub);">Technology</a>
-              <a href="/pricing.html" style="color: var(--text-sub);">Pricing</a>
-              <a href="/dl/" style="color: var(--text-sub);">Download</a>
-            </div>
-          </div>
+ <div>
+ <h4>Product</h4>
+ <div class="docket-col-links" style="display: grid; gap: 10px;">
+ <a href="/apps.html" style="color: var(--text-sub);">Apps</a>
+ <a href="/technology.html" style="color: var(--text-sub);">Technology</a>
+ <a href="/pricing.html" style="color: var(--text-sub);">Pricing</a>
+ <a href="/dl/" style="color: var(--text-sub);">Download</a>
+ </div>
+ </div>
 
-          <div>
-            <h4>Free VPN</h4>
-            <div class="docket-col-links" style="display: grid; gap: 10px;">
-              <a href="/free-vpn.html" style="color: var(--text-sub);">Free VPN — honest guide</a>
-              <a href="/free-vpn-for-windows.html" style="color: var(--text-sub);">Free VPN for Windows</a>
-              <a href="/free-vpn-for-india.html" style="color: var(--text-sub);">Free VPN for India</a>
-              <a href="/free-wireguard-vpn.html" style="color: var(--text-sub);">Free WireGuard VPN</a>
-              <a href="/free-quic-vpn.html" style="color: var(--text-sub);">Free QUIC VPN</a>
-            </div>
-          </div>
+ <div>
+ <h4>Free VPN</h4>
+ <div class="docket-col-links" style="display: grid; gap: 10px;">
+ <a href="/free-vpn.html" style="color: var(--text-sub);">Free VPN - honest guide</a>
+ <a href="/free-vpn-for-windows.html" style="color: var(--text-sub);">Free VPN for Windows</a>
+ <a href="/free-vpn-for-india.html" style="color: var(--text-sub);">Free VPN for India</a>
+ <a href="/free-wireguard-vpn.html" style="color: var(--text-sub);">Free WireGuard VPN</a>
+ <a href="/free-quic-vpn.html" style="color: var(--text-sub);">Free QUIC VPN</a>
+ </div>
+ </div>
 
-          <div>
-            <h4>Account</h4>
-            <div class="docket-col-links" style="display: grid; gap: 10px;">
-              <a href="https://login.ollavpn.com/" style="color: var(--text-sub);">Sign in</a>
-              <a href="https://login.ollavpn.com/signup" style="color: var(--text-sub);">Sign up</a>
-              <a href="https://login.ollavpn.com/" style="color: var(--text-sub);">Dashboard</a>
-            </div>
-          </div>
+ <div>
+ <h4>Account</h4>
+ <div class="docket-col-links" style="display: grid; gap: 10px;">
+ <a href="https://login.ollavpn.com/" style="color: var(--text-sub);">Sign in</a>
+ <a href="https://login.ollavpn.com/signup" style="color: var(--text-sub);">Sign up</a>
+ <a href="https://login.ollavpn.com/" style="color: var(--text-sub);">Dashboard</a>
+ </div>
+ </div>
 
-          <div>
-            <h4>Company</h4>
-            <div class="docket-col-links" style="display: grid; gap: 10px;">
-              <a href="/careers.html" style="color: var(--text-sub);">Careers</a>
-              <a href="/contact.html" style="color: var(--text-sub);">Contact</a>
-              <a href="/blog/" style="color: var(--text-sub);">Blog</a>
-            </div>
-          </div>
+ <div>
+ <h4>Company</h4>
+ <div class="docket-col-links" style="display: grid; gap: 10px;">
+ <a href="/careers.html" style="color: var(--text-sub);">Careers</a>
+ <a href="/contact.html" style="color: var(--text-sub);">Contact</a>
+ <a href="/blog/" style="color: var(--text-sub);">Blog</a>
+ </div>
+ </div>
 
-          <div>
-            <h4>Legal</h4>
-            <div class="docket-col-links" style="display: grid; gap: 10px;">
-              <a href="/privacy.html" style="color: var(--text-sub);">Privacy policy</a>
-              <a href="/terms.html" style="color: var(--text-sub);">Terms of service</a>
-              <a href="/warrant-canary.html" style="color: var(--text-sub);">Warrant canary</a>
-            </div>
-          </div>
-        </div>
+ <div>
+ <h4>Legal</h4>
+ <div class="docket-col-links" style="display: grid; gap: 10px;">
+ <a href="/privacy.html" style="color: var(--text-sub);">Privacy policy</a>
+ <a href="/terms.html" style="color: var(--text-sub);">Terms of service</a>
+ <a href="/warrant-canary.html" style="color: var(--text-sub);">Warrant canary</a>
+ </div>
+ </div>
+ </div>
 
-        <div class="bottom">
-          <div>© 2026 OllaVPN · A modern, post-quantum-ready privacy VPN.</div>
-          <div style="display: flex; gap: 20px; font-weight: 700; color: var(--accent);">
-            <span>POST-QUANTUM READY</span>
-            <span>NO LOGS</span>
-            <span>LIFETIME FREE</span>
-          </div>
-        </div>
-      </footer>
+ <div class="bottom">
+ <div>© 2026 OllaVPN · A modern, post-quantum-ready privacy VPN.</div>
+ <div style="display: flex; gap: 20px; font-weight: 700; color: var(--accent);">
+ <span>POST-QUANTUM READY</span>
+ <span>NO LOGS</span>
+ <span>LIFETIME FREE</span>
+ </div>
+ </div>
+ </footer>
 
 <script src="../shared.js"></script>
 
 <script defer src="/blog.js?v=20260819_v7"></script>
-    </div>
-  </div>
+ </div>
+ </div>
 
 </body>
 </html>

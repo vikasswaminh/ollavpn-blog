@@ -8,7 +8,7 @@ tags: ['comparisons']
 
 S
 
-Try OllaVPN free — post-quantum-ready, lifetime free plan.
+Try OllaVPN free  -  post-quantum-ready, lifetime free plan.
 
 No credit card. Or $2/mo for 5 devices on a faster plan.
 
@@ -24,7 +24,7 @@ An honest, no-fluff breakdown of what you actually get - and give up - when you 
 
 ✓ Reviewed
 
-TL;DR — THE SHORT ANSWERFree VPNs can be genuinely useful - but most come with trade-offs that go deeper than slower speeds or fewer servers. The real question is how the free tier is funded. Paid VPNs remove most of those trade-offs and give you something you can actually lean on daily. A handful of free tiers from reputable providers - ProtonVPN Free, OllaVPN Free - are genuine exceptions worth knowing about. For everyone else, the math of "free" is more complicated than it first looks.
+TL;DR  -  THE SHORT ANSWERFree VPNs can be genuinely useful - but most come with trade-offs that go deeper than slower speeds or fewer servers. The real question is how the free tier is funded. Paid VPNs remove most of those trade-offs and give you something you can actually lean on daily. A handful of free tiers from reputable providers - ProtonVPN Free, OllaVPN Free - are genuine exceptions worth knowing about. For everyone else, the math of "free" is more complicated than it first looks.
 
 If you've ever opened your phone's app store and searched "VPN," you already know the problem. There are hundreds of them. Dozens are free. The paid ones ask you to commit to a subscription before you've had a chance to decide if they're any good. And the marketing for both is almost uniformly unhinged - promises of "military-grade encryption," "bulletproof anonymity," and "blazing fast speeds" that no VPN on earth consistently delivers.
 

@@ -28,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css?v=20260907_v126red26red" />
+<link rel="stylesheet" href="/styles.css?v=20260907_v126sidebar" />
 <style>
 
 /* ==========================================================================
@@ -348,38 +348,13 @@
     text-decoration: none !important;
   }
 
-  .side-related-title {
-    font-family: var(--mono);
-    font-size: 11px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--text-mute);
-    margin: 0 0 12px;
-    padding-bottom: 6px;
-    border-bottom: 1px solid var(--line);
-  }
+  
 
-  .side-related-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+  
 
-  .side-related-list li {
-    margin-bottom: 10px;
-    font-size: 13px;
-    line-height: 1.45;
-    position: relative;
-    padding-left: 14px;
-  }
+  
 
-  .side-related-list li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: var(--red);
-  }
+  
 
   .side-related-list a {
     color: var(--text-dim);
@@ -699,124 +674,127 @@
 <body>
 
 
-  <div class="cad-frame">
-    <div class="cad-inner-border">
+ <div class="cad-frame">
+ <div class="cad-inner-border">
 <div class="reading-progress" aria-hidden="true"></div>
 
 <nav class="top-cad-nav">
-        <div class="nav-left-links">
-          <a href="/index.html" style="font-size: 1.5rem; font-weight: 700; color: #111; margin-right: 12px;">Olla<span style="color: var(--accent);">VPN</span></a>
+ <div class="nav-left-links">
+ <a href="/index.html" style="font-size: 1.5rem; font-weight: 700; color: #111; margin-right: 12px;">Olla<span style="color: var(--accent);">VPN</span></a>
 
-          <div class="drop-cad-wrap">
-            Technology ▾
-            <div class="drop-cad-box">
-              <div style="color: var(--accent); font-size: 0.75rem; margin-bottom: 4px; font-weight: 700;">Crypto</div>
-              <a href="/pqc">Post-quantum handshake</a>
-              <a href="/pqc">WireGuard hybrid</a>
-              <a href="/pqc">Forward secrecy</a>
-              <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Architecture</div>
-              <a href="/peer-isolation">Network topology</a>
-              <a href="/peer-isolation">Tunnel addressing (CGNAT)</a>
-              <a href="/peer-isolation">Exit operation</a>
-              <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Privacy</div>
-              <a href="/in-tunnel-dns">DNS-leak defense</a>
-              <a href="/in-tunnel-dns">IPv6 handling</a>
-              <a href="/peer-isolation">Abuse defense</a>
-            </div>
-          </div>
+ <div class="drop-cad-wrap">
+ Technology ▾
+ <div class="drop-cad-box">
+ <div style="color: var(--accent); font-size: 0.75rem; margin-bottom: 4px; font-weight: 700;">Crypto</div>
+ <a href="/pqc">Post-quantum handshake</a>
+ <a href="/pqc">WireGuard hybrid</a>
+ <a href="/pqc">Forward secrecy</a>
+ <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Architecture</div>
+ <a href="/peer-isolation">Network topology</a>
+ <a href="/peer-isolation">Tunnel addressing (CGNAT)</a>
+ <a href="/peer-isolation">Exit operation</a>
+ <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Privacy</div>
+ <a href="/in-tunnel-dns">DNS-leak defense</a>
+ <a href="/in-tunnel-dns">IPv6 handling</a>
+ <a href="/peer-isolation">Abuse defense</a>
+ </div>
+ </div>
 
-          <a href="/pricing">Pricing</a>
+ <a href="/pricing">Pricing</a>
 
-          <div class="drop-cad-wrap">
-            Blogs ▾
-            <div class="drop-cad-box">
-              <div style="color: var(--accent); font-size: 0.75rem; margin-bottom: 4px; font-weight: 700;">Guides</div>
-              <a href="/blog/best-free-vpn-for-windows.html">Best free VPN for Windows</a>
-              <a href="/blog/what-is-a-dns-leak.html">DNS leak test</a>
-              <a href="/blog/what-is-post-quantum-cryptography.html">What is post-quantum crypto?</a>
-              <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Comparisons</div>
-              <a href="/blog/mullvad-vs-protonvpn.html">Mullvad vs ProtonVPN</a>
-              <a href="/blog/nordvpn-vs-protonvpn.html">NordVPN vs ProtonVPN</a>
-              <a href="/blog/nordvpn-vs-expressvpn.html">NordVPN vs ExpressVPN</a>
-              <a href="/blog/five-eyes-nine-eyes-fourteen-eyes.html">5/9/14-Eyes explained</a>
-              <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Tools</div>
-              <a href="https://status.ollavpn.com/">Status page</a>
-              <a href="/dns-lookup.html">Network tools</a>
-              <a href="/llms.txt">llms.txt</a>
-            </div>
-          </div>
+ <div class="drop-cad-wrap">
+ Blogs ▾
+ <div class="drop-cad-box">
+ <div style="color: var(--accent); font-size: 0.75rem; margin-bottom: 4px; font-weight: 700;">Guides</div>
+ <a href="/blog/best-free-vpn-for-windows.html">Best free VPN for Windows</a>
+ <a href="/blog/what-is-a-dns-leak.html">DNS leak test</a>
+ <a href="/blog/what-is-post-quantum-cryptography.html">What is post-quantum crypto?</a>
+ <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Comparisons</div>
+ <a href="/blog/mullvad-vs-protonvpn.html">Mullvad vs ProtonVPN</a>
+ <a href="/blog/nordvpn-vs-protonvpn.html">NordVPN vs ProtonVPN</a>
+ <a href="/blog/nordvpn-vs-expressvpn.html">NordVPN vs ExpressVPN</a>
+ <a href="/blog/five-eyes-nine-eyes-fourteen-eyes.html">5/9/14-Eyes explained</a>
+ <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Tools</div>
+ <a href="https://status.ollavpn.com/">Status page</a>
+ <a href="/dns-lookup.html">Network tools</a>
+ <a href="/llms.txt">llms.txt</a>
+ </div>
+ </div>
 
-          <a href="/free-vpn.html">Free VPN</a>
-          <a href="/apps.html">Apps</a>
-          <a href="/dl/">Download</a>
-        </div>
+ <a href="/free-vpn.html">Free VPN</a>
+ <a href="/apps.html">Apps</a>
+ <a href="/dl/">Download</a>
+ </div>
 
-        <div class="nav-right-links">
-          <a href="https://login.ollavpn.com/">Sign in</a>
-          <a href="/dl/" class="btn-cad btn-cad-filled">Download free →</a>
-        </div>
-      </nav>
+ <div class="nav-right-links">
+ <a href="https://login.ollavpn.com/">Sign in</a>
+ <a href="/dl/" class="btn-cad btn-cad-filled">Download free →</a>
+ </div>
+ </nav>
 
 <main class="article-layout">
 
-  <!-- LHS SIDEBAR -->
-  <aside class="article-sidebar-left" aria-label="Article author and metadata">
-    <div class="sidebar-card">
-      <span class="chip"><span class="dot"></span>Buyer guide &middot; 2026</span>
-      <h4>Published by OllaVPN</h4>
-      <p>A 2026 checklist and technical guide on what true zero-log VPN architecture requires.</p>
-      <a class="btn primary" href="/apps.html">Download OllaVPN free &rarr;</a>
-    </div>
+ <!-- LHS SIDEBAR -->
+ <aside class="article-sidebar-left" aria-label="Article overview and related reading">
+ <div class="sidebar-card">
+ <span class="chip"><span class="dot"></span>Buyer Guide · 2026</span>
+ <h4>Which Free VPN Does Not Keep Logs? A 2026…</h4>
+ <p>Which free VPN does not keep logs in 2026? Independent audit verification, connection metadata risks, RAM-only servers, and a practical no-logs…</p>
+ </div>
+ <div class="sidebar-card" style="margin-top: 20px;">
+ <div class="side-related-title">Related Guides</div>
+ <ul class="side-related-list">
+ <li><a href="/blog/lifetime-free-vpn.html">Lifetime Free VPN: Is OllaVPN Really…</a></li>
+ <li><a href="/blog/free-vpn-for-public-wifi-security.html">Free VPN for Public WiFi Security 2026</a></li>
+ <li><a href="/blog/free-vpn-for-netflix.html">Free VPN for Netflix 2026: Does It…</a></li>
+ <li><a href="/blog/free-vpn-for-iphone.html">Free VPN for iPhone 2026</a></li>
+ <li><a href="/blog/best-free-vpn-for-windows.html">Best Free VPN for Windows in 2026</a></li>
+ <li><a href="/blog/best-free-vpn-for-usa.html">The Best Free VPN for USA: What You…</a></li>
+ <li><a href="/blog/best-free-vpn-for-uk.html">Is OllaVPN the Best Free VPN for UK Users?</a></li>
+ </ul>
+ </div>
+ </aside>
 
-    <h4 class="side-related-title">Related reading</h4>
-    <ul class="side-related-list">
-<li><a href="/blog/are-free-vpns-safe.html">Are Free VPNs Safe? 2026 Guide</a></li>
-      <li><a href="/blog/what-your-isp-can-see-about-you.html">What Your ISP Can See About You</a></li>
-      <li><a href="/blog/does-chatgpt-store-your-conversations.html">Does ChatGPT Store Your Conversations?</a></li>
-      <li><a href="/blog/free-vpn-vs-paid-vpn.html">Free VPN vs Paid VPN: Honest Breakdown</a></li>
-    </ul>
-  </aside>
+ <!-- CENTER CONTENT -->
+ <article class="article" id="main-article">
+ 
+ <div class="hero-callout">
+ <div class="hero-callout-left">
+ <div class="hero-callout-icon">S</div>
+ <div>
+ <div class="hero-callout-title">Try OllaVPN free - post-quantum-ready, lifetime free plan.</div>
+ <div class="hero-callout-sub">No credit card. Or $2/mo for 5 devices on a faster plan.</div>
+ </div>
+ </div>
+ <a class="hero-callout-btn" href="/apps.html">DOWNLOAD &rarr;</a>
+ </div>
 
-  <!-- CENTER CONTENT -->
-  <article class="article" id="main-article">
-    
-    <div class="hero-callout">
-      <div class="hero-callout-left">
-        <div class="hero-callout-icon">S</div>
-        <div>
-          <div class="hero-callout-title">Try OllaVPN free &mdash; post-quantum-ready, lifetime free plan.</div>
-          <div class="hero-callout-sub">No credit card. Or $2/mo for 5 devices on a faster plan.</div>
-        </div>
-      </div>
-      <a class="hero-callout-btn" href="/apps.html">DOWNLOAD &rarr;</a>
-    </div>
+ <h1 style="font-family:var(--display);font-size:clamp(28px,3.8vw,40px);font-weight:800;letter-spacing:-0.03em;line-height:1.2;margin:0 0 12px;color:#0F172A;">Which Free VPN Does Not Keep Logs? A 2026 No-Logs VPN Checklist</h1>
+ <p style="font-size:16.5px;color:var(--text-dim);line-height:1.55;margin-bottom:20px;">A plain-English guide to what “no logs” actually means, what it doesn't mean, how to verify it, and which free VPNs in 2026 genuinely hold up under scrutiny.</p>
 
-    <h1 style="font-family:var(--display);font-size:clamp(28px,3.8vw,40px);font-weight:800;letter-spacing:-0.03em;line-height:1.2;margin:0 0 12px;color:#0F172A;">Which Free VPN Does Not Keep Logs? A 2026 No-Logs VPN Checklist</h1>
-    <p style="font-size:16.5px;color:var(--text-dim);line-height:1.55;margin-bottom:20px;">A plain-English guide to what “no logs” actually means, what it doesn't mean, how to verify it, and which free VPNs in 2026 genuinely hold up under scrutiny.</p>
-
-    <div class="jump-box">
-      <span class="jump-label">JUMP TO A SECTION</span>
-      <ol class="jump-grid">
+ <div class="jump-box">
+ <span class="jump-label">JUMP TO A SECTION</span>
+ <ol class="jump-grid">
 <li><a href="#what-no-logs-actually-means-and-what-it-doesn-t">1. What “no logs” actually means - and what it doesn&#x27;t</a></li>
-        <li><a href="#the-three-types-of-vpn-logs">2. The three types of VPN logs</a></li>
-        <li><a href="#why-we-don-t-log-isn-t-enough-on-its-own">3. Why “we don&#x27;t log” isn&#x27;t enough on its own</a></li>
-        <li><a href="#what-a-real-no-logs-audit-looks-like">4. What a real no-logs audit looks like</a></li>
-        <li><a href="#the-no-logs-checklist-what-to-look-for">5. The no-logs checklist - what to look for</a></li>
-        <li><a href="#free-vpns-and-logs-the-business-model-problem">6. Free VPNs and logs - the business model problem</a></li>
-        <li><a href="#which-free-vpns-genuinely-don-t-keep-logs-in-2026">7. Which free VPNs genuinely don&#x27;t keep logs in 2026</a></li>
-        <li><a href="#red-flags-that-should-make-you-walk-away">8. Red flags that should make you walk away</a></li>
-        <li><a href="#jurisdiction-matters-where-the-vpn-is-based">9. Jurisdiction matters - where the VPN is based</a></li>
-        <li><a href="#ram-only-servers-what-they-are-and-why-they-matter">10. RAM-only servers - what they are and why they matter</a></li>
-        <li><a href="#five-myths-about-no-logs-vpns">11. Five myths about no-logs VPNs</a></li>
-        <li><a href="#the-no-logs-vpn-evaluation-checklist">12. The no-logs VPN evaluation checklist</a></li>
-        <li><a href="#how-ollavpn-handles-your-logs-by-default">13. How OllaVPN handles your logs - by default</a></li>
-        <li><a href="#frequently-asked-questions">14. Frequently asked questions</a></li>
-      </ol>
-    </div>
+ <li><a href="#the-three-types-of-vpn-logs">2. The three types of VPN logs</a></li>
+ <li><a href="#why-we-don-t-log-isn-t-enough-on-its-own">3. Why “we don&#x27;t log” isn&#x27;t enough on its own</a></li>
+ <li><a href="#what-a-real-no-logs-audit-looks-like">4. What a real no-logs audit looks like</a></li>
+ <li><a href="#the-no-logs-checklist-what-to-look-for">5. The no-logs checklist - what to look for</a></li>
+ <li><a href="#free-vpns-and-logs-the-business-model-problem">6. Free VPNs and logs - the business model problem</a></li>
+ <li><a href="#which-free-vpns-genuinely-don-t-keep-logs-in-2026">7. Which free VPNs genuinely don&#x27;t keep logs in 2026</a></li>
+ <li><a href="#red-flags-that-should-make-you-walk-away">8. Red flags that should make you walk away</a></li>
+ <li><a href="#jurisdiction-matters-where-the-vpn-is-based">9. Jurisdiction matters - where the VPN is based</a></li>
+ <li><a href="#ram-only-servers-what-they-are-and-why-they-matter">10. RAM-only servers - what they are and why they matter</a></li>
+ <li><a href="#five-myths-about-no-logs-vpns">11. Five myths about no-logs VPNs</a></li>
+ <li><a href="#the-no-logs-vpn-evaluation-checklist">12. The no-logs VPN evaluation checklist</a></li>
+ <li><a href="#how-ollavpn-handles-your-logs-by-default">13. How OllaVPN handles your logs - by default</a></li>
+ <li><a href="#frequently-asked-questions">14. Frequently asked questions</a></li>
+ </ol>
+ </div>
 
 <p>Which Free VPN Does Not Keep Logs? A 2026 <a href="/blog/which-free-vpn-does-not-keep-logs.html">No-Logs</a> VPN Checklist</p>
 <p>A plain-English guide to one of the most misunderstood claims in the VPN industry - what “no logs” actually means, what it doesn’t mean, how to verify it, and which free VPNs in 2026 genuinely hold up under scrutiny.</p>
-<div class="answer-card"><span class="q-label">TL;DR — THE SHORT ANSWER</span>“No logs” is the most commonly claimed and most frequently misrepresented feature in the VPN market. A genuine no-logs VPN stores nothing that could identify what you did online, who you talked to, when you were connected, or where you connected from. The catch: almost every VPN on the market claims “no logs,” and the claims vary wildly in what they actually cover. This guide explains what the term really means, which parts of a VPN log most people miss, how to evaluate an audit, and which free VPNs in 2026 have earned genuine trust on this claim - with a practical checklist so you never have to guess.</div>
+<div class="answer-card"><span class="q-label">TL;DR - THE SHORT ANSWER</span>“No logs” is the most commonly claimed and most frequently misrepresented feature in the VPN market. A genuine no-logs VPN stores nothing that could identify what you did online, who you talked to, when you were connected, or where you connected from. The catch: almost every VPN on the market claims “no logs,” and the claims vary wildly in what they actually cover. This guide explains what the term really means, which parts of a VPN log most people miss, how to evaluate an audit, and which free VPNs in 2026 have earned genuine trust on this claim - with a practical checklist so you never have to guess.</div>
 <p>The phrase “no logs” appears in the marketing of virtually every VPN on the market. Free, paid, budget, premium - they all say it. But if you read the privacy policies closely, cross-reference the technical architecture, and look at how each one has behaved when faced with a legal demand for user data, the picture becomes much more complicated.</p>
 <p>Some VPNs that claim “no logs” have handed user data to law enforcement and had that data be genuinely useful in court. Some have been caught logging connection metadata while advertising “zero logs.” Others have built architectures that make it technically impossible to produce logs even if a court orders it. Those are three very different products wearing the same marketing badge.</p>
 <p>This guide is for anyone trying to tell the difference - starting from scratch, in plain English, with real examples and a practical checklist at the end.</p>
@@ -1075,104 +1053,104 @@
 <p>Why do some free VPNs that claim <a href="/blog/which-free-vpn-does-not-keep-logs.html">no-logs</a> still sell user data?</p>
 <p>Because a privacy policy is a legal document, not a technical guarantee. A provider can claim “no logs” for its VPN server infrastructure while embedding third-party analytics SDKs in its mobile app that report your behaviour to advertising networks. The VPN server isn’t logging - but the app layer is. This is why checking for third-party code in the app (using tools like Exodus Privacy) matters as much as reading the privacy policy.</p>
 
-  </article>
+ </article>
 
-  <!-- RHS TABLE OF CONTENTS RAIL -->
-  <aside class="toc-rail" aria-label="Table of contents">
-    <span class="label">ON THIS PAGE</span>
-    <ol>
-      <li><a href="#what-no-logs-actually-means-and-what-it-doesn-t">What “no logs” actually means - and what it doesn&#x27;t</a></li>
-      <li><a href="#the-three-types-of-vpn-logs">The three types of VPN logs</a></li>
-      <li><a href="#why-we-don-t-log-isn-t-enough-on-its-own">Why “we don&#x27;t log” isn&#x27;t enough on its own</a></li>
-      <li><a href="#what-a-real-no-logs-audit-looks-like">What a real no-logs audit looks like</a></li>
-      <li><a href="#the-no-logs-checklist-what-to-look-for">The no-logs checklist - what to look for</a></li>
-      <li><a href="#free-vpns-and-logs-the-business-model-problem">Free VPNs and logs - the business model problem</a></li>
-      <li><a href="#which-free-vpns-genuinely-don-t-keep-logs-in-2026">Which free VPNs genuinely don&#x27;t keep logs in 2026</a></li>
-      <li><a href="#red-flags-that-should-make-you-walk-away">Red flags that should make you walk away</a></li>
-      <li><a href="#jurisdiction-matters-where-the-vpn-is-based">Jurisdiction matters - where the VPN is based</a></li>
-      <li><a href="#ram-only-servers-what-they-are-and-why-they-matter">RAM-only servers - what they are and why they matter</a></li>
-      <li><a href="#five-myths-about-no-logs-vpns">Five myths about no-logs VPNs</a></li>
-      <li><a href="#the-no-logs-vpn-evaluation-checklist">The no-logs VPN evaluation checklist</a></li>
-      <li><a href="#how-ollavpn-handles-your-logs-by-default">How OllaVPN handles your logs - by default</a></li>
-      <li><a href="#frequently-asked-questions">Frequently asked questions</a></li>
-    </ol>
-  </aside>
+ <!-- RHS TABLE OF CONTENTS RAIL -->
+ <aside class="toc-rail" aria-label="Table of contents">
+ <span class="label">ON THIS PAGE</span>
+ <ol>
+ <li><a href="#what-no-logs-actually-means-and-what-it-doesn-t">What “no logs” actually means - and what it doesn&#x27;t</a></li>
+ <li><a href="#the-three-types-of-vpn-logs">The three types of VPN logs</a></li>
+ <li><a href="#why-we-don-t-log-isn-t-enough-on-its-own">Why “we don&#x27;t log” isn&#x27;t enough on its own</a></li>
+ <li><a href="#what-a-real-no-logs-audit-looks-like">What a real no-logs audit looks like</a></li>
+ <li><a href="#the-no-logs-checklist-what-to-look-for">The no-logs checklist - what to look for</a></li>
+ <li><a href="#free-vpns-and-logs-the-business-model-problem">Free VPNs and logs - the business model problem</a></li>
+ <li><a href="#which-free-vpns-genuinely-don-t-keep-logs-in-2026">Which free VPNs genuinely don&#x27;t keep logs in 2026</a></li>
+ <li><a href="#red-flags-that-should-make-you-walk-away">Red flags that should make you walk away</a></li>
+ <li><a href="#jurisdiction-matters-where-the-vpn-is-based">Jurisdiction matters - where the VPN is based</a></li>
+ <li><a href="#ram-only-servers-what-they-are-and-why-they-matter">RAM-only servers - what they are and why they matter</a></li>
+ <li><a href="#five-myths-about-no-logs-vpns">Five myths about no-logs VPNs</a></li>
+ <li><a href="#the-no-logs-vpn-evaluation-checklist">The no-logs VPN evaluation checklist</a></li>
+ <li><a href="#how-ollavpn-handles-your-logs-by-default">How OllaVPN handles your logs - by default</a></li>
+ <li><a href="#frequently-asked-questions">Frequently asked questions</a></li>
+ </ol>
+ </aside>
 
 </main>
 
 <footer class="footer">
-        <div style="margin-bottom: 32px;">
-          <div style="font-size: 1.6rem; font-weight: 700; color: var(--accent); margin-bottom: 4px;">OllaVPN</div>
-          <p style="color: #1a1a1a; font-size: 0.88rem;">A modern, post-quantum-ready privacy VPN. Lifetime free plan or $2/month for 5 devices.</p>
-        </div>
+ <div style="margin-bottom: 32px;">
+ <div style="font-size: 1.6rem; font-weight: 700; color: var(--accent); margin-bottom: 4px;">OllaVPN</div>
+ <p style="color: #1a1a1a; font-size: 0.88rem;">A modern, post-quantum-ready privacy VPN. Lifetime free plan or $2/month for 5 devices.</p>
+ </div>
 
-        <div class="top" style="display: grid; grid-template-columns: 2fr repeat(5, 1fr); gap: 24px; margin-bottom: 40px;">
-          <div>
-            <div class="brand">OllaVPN</div>
-            <p style="color: #1a1a1a; font-size: 0.88rem;">A modern, post-quantum-ready privacy VPN. Lifetime free plan or $2/month for 5 devices.</p>
-          </div>
+ <div class="top" style="display: grid; grid-template-columns: 2fr repeat(5, 1fr); gap: 24px; margin-bottom: 40px;">
+ <div>
+ <div class="brand">OllaVPN</div>
+ <p style="color: #1a1a1a; font-size: 0.88rem;">A modern, post-quantum-ready privacy VPN. Lifetime free plan or $2/month for 5 devices.</p>
+ </div>
 
-          <div>
-            <h4>Product</h4>
-            <div class="docket-col-links" style="display: grid; gap: 10px;">
-              <a href="/apps.html" style="color: var(--text-sub);">Apps</a>
-              <a href="/technology.html" style="color: var(--text-sub);">Technology</a>
-              <a href="/pricing.html" style="color: var(--text-sub);">Pricing</a>
-              <a href="/dl/" style="color: var(--text-sub);">Download</a>
-            </div>
-          </div>
+ <div>
+ <h4>Product</h4>
+ <div class="docket-col-links" style="display: grid; gap: 10px;">
+ <a href="/apps.html" style="color: var(--text-sub);">Apps</a>
+ <a href="/technology.html" style="color: var(--text-sub);">Technology</a>
+ <a href="/pricing.html" style="color: var(--text-sub);">Pricing</a>
+ <a href="/dl/" style="color: var(--text-sub);">Download</a>
+ </div>
+ </div>
 
-          <div>
-            <h4>Free VPN</h4>
-            <div class="docket-col-links" style="display: grid; gap: 10px;">
-              <a href="/free-vpn.html" style="color: var(--text-sub);">Free VPN — honest guide</a>
-              <a href="/free-vpn-for-windows.html" style="color: var(--text-sub);">Free VPN for Windows</a>
-              <a href="/free-vpn-for-india.html" style="color: var(--text-sub);">Free VPN for India</a>
-              <a href="/free-wireguard-vpn.html" style="color: var(--text-sub);">Free WireGuard VPN</a>
-              <a href="/free-quic-vpn.html" style="color: var(--text-sub);">Free QUIC VPN</a>
-            </div>
-          </div>
+ <div>
+ <h4>Free VPN</h4>
+ <div class="docket-col-links" style="display: grid; gap: 10px;">
+ <a href="/free-vpn.html" style="color: var(--text-sub);">Free VPN - honest guide</a>
+ <a href="/free-vpn-for-windows.html" style="color: var(--text-sub);">Free VPN for Windows</a>
+ <a href="/free-vpn-for-india.html" style="color: var(--text-sub);">Free VPN for India</a>
+ <a href="/free-wireguard-vpn.html" style="color: var(--text-sub);">Free WireGuard VPN</a>
+ <a href="/free-quic-vpn.html" style="color: var(--text-sub);">Free QUIC VPN</a>
+ </div>
+ </div>
 
-          <div>
-            <h4>Account</h4>
-            <div class="docket-col-links" style="display: grid; gap: 10px;">
-              <a href="https://login.ollavpn.com/" style="color: var(--text-sub);">Sign in</a>
-              <a href="https://login.ollavpn.com/signup" style="color: var(--text-sub);">Sign up</a>
-              <a href="https://login.ollavpn.com/" style="color: var(--text-sub);">Dashboard</a>
-            </div>
-          </div>
+ <div>
+ <h4>Account</h4>
+ <div class="docket-col-links" style="display: grid; gap: 10px;">
+ <a href="https://login.ollavpn.com/" style="color: var(--text-sub);">Sign in</a>
+ <a href="https://login.ollavpn.com/signup" style="color: var(--text-sub);">Sign up</a>
+ <a href="https://login.ollavpn.com/" style="color: var(--text-sub);">Dashboard</a>
+ </div>
+ </div>
 
-          <div>
-            <h4>Company</h4>
-            <div class="docket-col-links" style="display: grid; gap: 10px;">
-              <a href="/careers.html" style="color: var(--text-sub);">Careers</a>
-              <a href="/contact.html" style="color: var(--text-sub);">Contact</a>
-              <a href="/blog/" style="color: var(--text-sub);">Blog</a>
-            </div>
-          </div>
+ <div>
+ <h4>Company</h4>
+ <div class="docket-col-links" style="display: grid; gap: 10px;">
+ <a href="/careers.html" style="color: var(--text-sub);">Careers</a>
+ <a href="/contact.html" style="color: var(--text-sub);">Contact</a>
+ <a href="/blog/" style="color: var(--text-sub);">Blog</a>
+ </div>
+ </div>
 
-          <div>
-            <h4>Legal</h4>
-            <div class="docket-col-links" style="display: grid; gap: 10px;">
-              <a href="/privacy.html" style="color: var(--text-sub);">Privacy policy</a>
-              <a href="/terms.html" style="color: var(--text-sub);">Terms of service</a>
-              <a href="/warrant-canary.html" style="color: var(--text-sub);">Warrant canary</a>
-            </div>
-          </div>
-        </div>
+ <div>
+ <h4>Legal</h4>
+ <div class="docket-col-links" style="display: grid; gap: 10px;">
+ <a href="/privacy.html" style="color: var(--text-sub);">Privacy policy</a>
+ <a href="/terms.html" style="color: var(--text-sub);">Terms of service</a>
+ <a href="/warrant-canary.html" style="color: var(--text-sub);">Warrant canary</a>
+ </div>
+ </div>
+ </div>
 
-        <div class="bottom">
-          <div>© 2026 OllaVPN · A modern, post-quantum-ready privacy VPN.</div>
-          <div style="display: flex; gap: 20px; font-weight: 700; color: var(--accent);">
-            <span>POST-QUANTUM READY</span>
-            <span>NO LOGS</span>
-            <span>LIFETIME FREE</span>
-          </div>
-        </div>
-      </footer>
+ <div class="bottom">
+ <div>© 2026 OllaVPN · A modern, post-quantum-ready privacy VPN.</div>
+ <div style="display: flex; gap: 20px; font-weight: 700; color: var(--accent);">
+ <span>POST-QUANTUM READY</span>
+ <span>NO LOGS</span>
+ <span>LIFETIME FREE</span>
+ </div>
+ </div>
+ </footer>
 
-    </div>
-  </div>
+ </div>
+ </div>
 
 </body>
 </html>

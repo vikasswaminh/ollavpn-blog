@@ -68,7 +68,7 @@ One of the most common myths is the idea of **absolute anonymity** with a VPN. W
 
 You can evaluate a VPN's logging claims by looking for independent audits, transparency reports, and a warrant canary, and by carefully reading their privacy policy and terms of service.
 
-It's tough to truly know if a VPN is logging your data, because ultimately, you're trusting them. A VPN could tell you they don't log anything, but how would you ever really know? However, there are several things you can look for that build trust and demonstrate a VPN's commitment to privacy. The first and most important is a track record of \*\*independent audits\*\*. These are third-party security experts who comb through a VPN's code, infrastructure, and policies to verify their no-logs claims. If a VPN has nothing to hide, they'll usually pay for these audits and publish the results. Next, look for \*\*transparency reports\*\*. These reports detail requests for user data from governments or law enforcement. A truly no-logs VPN won't have any data to provide, so their transparency report should reflect that — often stating "zero user data provided" because there was nothing to hand over. Related to this is a \*\*warrant canary\*\*. This is a subtle, ongoing declaration that a VPN has \*not\* received any secret government demands for user data. If the canary suddenly disappears, it's a silent warning that they might have been compromised or compelled to log. Finally, always read the fine print. Dig into the VPN's \*\*privacy policy\*\* and \*\*terms of service\*\*. This is where they legally lay out what data they \*do\* collect (even if it's just anonymous connection data to maintain service quality) and what they \*don't\*. Be wary of vague language. A truly privacy-focused VPN will be explicit about what they collect and why, and crucially, what they absolutely do not log. At OllaVPN, we don't log your activity, period, and our business model (funded by Plus subscribers, not data sales) means we're never incentivized to do so.
+It's tough to truly know if a VPN is logging your data, because ultimately, you're trusting them. A VPN could tell you they don't log anything, but how would you ever really know? However, there are several things you can look for that build trust and demonstrate a VPN's commitment to privacy. The first and most important is a track record of \*\*independent audits\*\*. These are third-party security experts who comb through a VPN's code, infrastructure, and policies to verify their no-logs claims. If a VPN has nothing to hide, they'll usually pay for these audits and publish the results. Next, look for \*\*transparency reports\*\*. These reports detail requests for user data from governments or law enforcement. A truly no-logs VPN won't have any data to provide, so their transparency report should reflect that  -  often stating "zero user data provided" because there was nothing to hand over. Related to this is a \*\*warrant canary\*\*. This is a subtle, ongoing declaration that a VPN has \*not\* received any secret government demands for user data. If the canary suddenly disappears, it's a silent warning that they might have been compromised or compelled to log. Finally, always read the fine print. Dig into the VPN's \*\*privacy policy\*\* and \*\*terms of service\*\*. This is where they legally lay out what data they \*do\* collect (even if it's just anonymous connection data to maintain service quality) and what they \*don't\*. Be wary of vague language. A truly privacy-focused VPN will be explicit about what they collect and why, and crucially, what they absolutely do not log. At OllaVPN, we don't log your activity, period, and our business model (funded by Plus subscribers, not data sales) means we're never incentivized to do so.
 
 ## What does OllaVPN specifically do to address logging concerns?
 
@@ -110,7 +110,7 @@ The topic above sits at the intersection of several broader concerns that are wo
 
 **The threat landscape has shifted.** Bulk traffic capture by intelligence services is well-documented and continuous. The "harvest now, decrypt later" threat against captured-today-decrypted-tomorrow ciphertext is operational, not theoretical. ISP-level metadata sales to advertising data brokers are routine in the US. Geo-blocking and censorship are both more sophisticated and more widespread. The tools that defended you adequately five years ago may not be adequate now.
 
-**The user has more power than ever — if they use it.** Strong free privacy tools exist in every category. The question is whether the user knows about them, knows how to verify they actually work, and is willing to take the small additional steps required. We try to make the verification path as short as possible because users who can verify are users who can choose well.
+**The user has more power than ever  -  if they use it.** Strong free privacy tools exist in every category. The question is whether the user knows about them, knows how to verify they actually work, and is willing to take the small additional steps required. We try to make the verification path as short as possible because users who can verify are users who can choose well.
 
 ## What to actually do about it
 
@@ -122,7 +122,7 @@ If the topic above suggests you should take action, the practical next steps in 
 
 **Update your threat-model evaluation periodically.** Privacy concerns shift. The tools and operators that were appropriate three years ago may need re-evaluation now. Quarterly is a reasonable cadence for non-targeted users; monthly is appropriate if you're in a higher-risk situation.
 
-**Combine layers.** No single tool covers the full threat surface. VPN + privacy-respecting browser + tracker blocker + password manager + virtual cards + careful account hygiene — together they're materially better than any one alone. Each layer is cheap (most are free); the compound effect is large.
+**Combine layers.** No single tool covers the full threat surface. VPN + privacy-respecting browser + tracker blocker + password manager + virtual cards + careful account hygiene  -  together they're materially better than any one alone. Each layer is cheap (most are free); the compound effect is large.
 
 ## About this guide
 
@@ -148,7 +148,7 @@ Yes, for most places, using a VPN is perfectly legal. There are a few countries 
 
 ### Can my ISP see what I do when I use a VPN?
 
-Not directly. Your ISP can see that you're connected to a VPN server and how much data you're using, but they can't see the content of your encrypted traffic. They won't know what websites you visit, what you're downloading, or what you're doing online. That's the whole point of using a service like OllaVPN — to add a layer of privacy.
+Not directly. Your ISP can see that you're connected to a VPN server and how much data you're using, but they can't see the content of your encrypted traffic. They won't know what websites you visit, what you're downloading, or what you're doing online. That's the whole point of using a service like OllaVPN  -  to add a layer of privacy.
 
 ### Can the government track me if I use a VPN?
 

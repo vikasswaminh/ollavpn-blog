@@ -34,7 +34,7 @@ When you connect to Onion Over VPN, your device first establishes a secure [VPN 
 
 From there, your traffic enters the Tor network through a **Tor entry node**. Tor works by routing your data through at least three random relays (nodes) around the world: an entry node, a middle node, and an exit node. Each hop adds and removes a layer of encryption, much like peeling an onion – hence the name. This multi-layered encryption makes it incredibly difficult to trace the origin of the traffic, even for sophisticated observers. The middle node further obscures the connection between the entry and exit nodes, adding to your anonymity.
 
-Finally, your data exits the Tor network through a **Tor exit node**. This exit node is the point where your traffic leaves the Tor network and goes out to the public internet to reach its intended destination, like a website or an online service. The crucial part here is that the IP address seen by the destination server is that of the Tor exit node, not your original IP address, and not even the IP address of the OllaVPN server. This multi-layered approach — VPN first, then Tor — provides a much higher degree of anonymity than using either technology alone, combining the privacy of the VPN with the deep anonymity of Tor.
+Finally, your data exits the Tor network through a **Tor exit node**. This exit node is the point where your traffic leaves the Tor network and goes out to the public internet to reach its intended destination, like a website or an online service. The crucial part here is that the IP address seen by the destination server is that of the Tor exit node, not your original IP address, and not even the IP address of the OllaVPN server. This multi-layered approach  -  VPN first, then Tor  -  provides a much higher degree of anonymity than using either technology alone, combining the privacy of the VPN with the deep anonymity of Tor.
 
 ## Why does Onion Over VPN matter for everyday users?
 
@@ -90,13 +90,13 @@ When you use Onion Over VPN, your internet traffic goes through multiple encrypt
 
 Onion Over VPN protects your connection from your ISP, hides your real IP from the Tor network, and makes traffic analysis significantly harder.
 
-When you combine OllaVPN with Tor (often called Onion Over VPN), you create a powerful privacy setup that goes beyond just anonymity. Your internet service provider (ISP) can't see Tor usage directly because all they see is encrypted traffic going to a OllaVPN server. This is a big win for privacy, as many ISPs flag direct Tor connections. By connecting to OllaVPN first, your real IP address is hidden from the Tor entry node. Normally, the first node in the Tor network knows your true IP. With OllaVPN, that entry node only sees OllaVPN's IP, adding another layer of separation. This also makes it significantly harder for traffic correlation attacks, where an attacker tries to match your incoming and outgoing traffic patterns to identify you. While Tor is designed for anonymity, its exit nodes can sometimes be malicious, potentially monitoring or manipulating your traffic. Onion Over VPN offers some protection against malicious exit nodes by encrypting your traffic \*before\* it even enters the Tor network. However, it's important to remember that this protection is partial — your traffic still exits Tor unencrypted unless you're connecting to an HTTPS site.
+When you combine OllaVPN with Tor (often called Onion Over VPN), you create a powerful privacy setup that goes beyond just anonymity. Your internet service provider (ISP) can't see Tor usage directly because all they see is encrypted traffic going to a OllaVPN server. This is a big win for privacy, as many ISPs flag direct Tor connections. By connecting to OllaVPN first, your real IP address is hidden from the Tor entry node. Normally, the first node in the Tor network knows your true IP. With OllaVPN, that entry node only sees OllaVPN's IP, adding another layer of separation. This also makes it significantly harder for traffic correlation attacks, where an attacker tries to match your incoming and outgoing traffic patterns to identify you. While Tor is designed for anonymity, its exit nodes can sometimes be malicious, potentially monitoring or manipulating your traffic. Onion Over VPN offers some protection against malicious exit nodes by encrypting your traffic \*before\* it even enters the Tor network. However, it's important to remember that this protection is partial  -  your traffic still exits Tor unencrypted unless you're connecting to an HTTPS site.
 
 ## Is using Onion Over VPN legal?
 
 Using Onion Over VPN is generally legal, as both VPNs and Tor are legal in most countries, but the legality ultimately depends on your location and what you're doing online.
 
-VPNs are legal in most places around the world, and Tor, the network that powers Onion sites, is also legal in the vast majority of countries. So, combining them—which is what "Onion Over VPN" means—doesn't inherently make it illegal. Think of it like using a locked door (VPN) to enter a maze (Tor); neither the door nor the maze is illegal, but what you do once inside might be.
+VPNs are legal in most places around the world, and Tor, the network that powers Onion sites, is also legal in the vast majority of countries. So, combining them - which is what "Onion Over VPN" means - doesn't inherently make it illegal. Think of it like using a locked door (VPN) to enter a maze (Tor); neither the door nor the maze is illegal, but what you do once inside might be.
 
 The key here is that the legality of your online activity isn't usually determined by the tools you use, but by the activity itself. If something is illegal without a VPN or Tor, it remains illegal with them. So, if you're engaging in illegal activities, using Onion Over VPN won't suddenly make them legal or protect you from consequences. **Jurisdictional Differences** do play a role, as some countries have strict internet censorship and surveillance laws where even using a VPN or Tor might be frowned upon or restricted, though outright illegalization is rare for these technologies themselves.
 
@@ -104,7 +104,7 @@ For most people, using Onion Over VPN is a privacy choice, enhancing anonymity b
 
 ## Deeper context worth knowing
 
-A definitional explainer should leave you understanding not just the concept but the surrounding category — what other concepts it connects to, what common misunderstandings to avoid, and which adjacent ideas you should know about. A few worth covering:
+A definitional explainer should leave you understanding not just the concept but the surrounding category  -  what other concepts it connects to, what common misunderstandings to avoid, and which adjacent ideas you should know about. A few worth covering:
 
 **The category history matters.** Most networking and privacy concepts you encounter today were invented to solve a specific problem that may or may not still be the dominant problem in 2026. Understanding why a concept exists helps you evaluate whether it's the right tool for your situation. We try to include the historical context for every "what is X" guide we publish.
 
@@ -162,7 +162,7 @@ You don't strictly 'need' a VPN to use Tor, but using a VPN \*before\* Tor (Onio
 
 ### Can a free VPN handle Onion Over VPN properly?
 
-Mostly — here's where it breaks. Many ad-funded free VPNs aren't designed for this level of privacy and often lack the speed or trust needed. OllaVPN's free tier offers 10 Mbps and strong privacy, which is enough to use with Tor Browser, but remember Tor itself will slow you down. Our free plan is $0 forever, no ads, and no data selling, so you can trust it.
+Mostly  -  here's where it breaks. Many ad-funded free VPNs aren't designed for this level of privacy and often lack the speed or trust needed. OllaVPN's free tier offers 10 Mbps and strong privacy, which is enough to use with Tor Browser, but remember Tor itself will slow you down. Our free plan is $0 forever, no ads, and no data selling, so you can trust it.
 
 ### How can I check whether I'm protected by Onion Over VPN?
 

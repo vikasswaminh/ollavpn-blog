@@ -20,7 +20,7 @@ Often, the quickest fix for a slow VPN is to simply try connecting to a differen
 
 If switching servers doesn't help, consider checking your local network for issues, or even restarting your devices. While OllaVPN's free plan gives you a reliable 10 Mbps connection in every country, some ad-funded free VPNs might intentionally throttle your speed or sell your data, which can definitely make things feel sluggish. If you need more speed, OllaVPN Plus offers 10 Gbps on five devices for just $2 a month, ensuring your VPN isn't the bottleneck.
 
-## Quick diagnosis — is the problem your VPN or your network?
+## Quick diagnosis  -  is the problem your VPN or your network?
 
 You can diagnose whether your VPN or your network is causing slow internet by comparing speed tests with and without the VPN connected.
 
@@ -36,7 +36,7 @@ It's frustrating when your internet speed tanks the moment you connect to a VPN.
 
 If a quick server switch didn't fix your VPN issue, you should methodically check your connection, local network, protocol settings, and DNS.
 
-Alright, so the "turn it off and on again" of VPNs — changing servers — didn't quite cut it. No worries, we've got a systematic approach to tackle most common issues. It's usually something fairly simple, so let's walk through it. First, verify your basic internet connection. Can you browse the web normally when OllaVPN is disconnected? If not, the problem likely isn't the VPN at all, but your internet service provider or your home network. Try restarting your modem and Wi-Fi router. Sometimes, that simple action clears up a lot of mysterious connectivity problems. Next, let's look at your OllaVPN application itself. Sometimes, a temporary glitch means the app isn't quite aligned with the network. Try fully closing the OllaVPN app and then reopening it. If that doesn't work, a full reboot of your device (computer, phone, tablet) can often resolve strange software conflicts. Make sure your OllaVPN app is updated to the latest version, too; we're constantly pushing out improvements, especially for handling tricky network conditions. Now, let's dive a bit deeper into the VPN settings. OllaVPN defaults to using the [WireGuard protocol](/blog/wireguard-protocol-explained), which is fast and efficient, but some highly restrictive networks might try to block it. In your OllaVPN app, look for an option to **change protocol**. If you're on a very restrictive network, like some public Wi-Fi or corporate firewalls, switching to QUIC (if available) can sometimes help because it disguises VPN traffic better. Also, double-check your **DNS settings** within the app. OllaVPN uses its own secure, in-tunnel DNS by default, which is usually best, but if you've manually configured anything, it might be worth reverting to automatic or trying a well-known public DNS like Cloudflare's (1.1.1.1) or Google's (8.8.8.8) to see if that resolves a specific website loading issue. Finally, consider the **kill switch**. This feature is designed to protect your privacy by blocking all internet traffic if your VPN connection drops unexpectedly. While it's crucial for security, it can sometimes be perceived as a connection issue if you're not aware it's active. If you're having trouble connecting to anything \*at all\* when OllaVPN is trying to establish a connection, temporarily disabling the kill switch in the app settings can help diagnose if it's interfering. Remember to re-enable it once you've sorted things out to ensure your privacy is always protected.
+Alright, so the "turn it off and on again" of VPNs  -  changing servers  -  didn't quite cut it. No worries, we've got a systematic approach to tackle most common issues. It's usually something fairly simple, so let's walk through it. First, verify your basic internet connection. Can you browse the web normally when OllaVPN is disconnected? If not, the problem likely isn't the VPN at all, but your internet service provider or your home network. Try restarting your modem and Wi-Fi router. Sometimes, that simple action clears up a lot of mysterious connectivity problems. Next, let's look at your OllaVPN application itself. Sometimes, a temporary glitch means the app isn't quite aligned with the network. Try fully closing the OllaVPN app and then reopening it. If that doesn't work, a full reboot of your device (computer, phone, tablet) can often resolve strange software conflicts. Make sure your OllaVPN app is updated to the latest version, too; we're constantly pushing out improvements, especially for handling tricky network conditions. Now, let's dive a bit deeper into the VPN settings. OllaVPN defaults to using the [WireGuard protocol](/blog/wireguard-protocol-explained), which is fast and efficient, but some highly restrictive networks might try to block it. In your OllaVPN app, look for an option to **change protocol**. If you're on a very restrictive network, like some public Wi-Fi or corporate firewalls, switching to QUIC (if available) can sometimes help because it disguises VPN traffic better. Also, double-check your **DNS settings** within the app. OllaVPN uses its own secure, in-tunnel DNS by default, which is usually best, but if you've manually configured anything, it might be worth reverting to automatic or trying a well-known public DNS like Cloudflare's (1.1.1.1) or Google's (8.8.8.8) to see if that resolves a specific website loading issue. Finally, consider the **kill switch**. This feature is designed to protect your privacy by blocking all internet traffic if your VPN connection drops unexpectedly. While it's crucial for security, it can sometimes be perceived as a connection issue if you're not aware it's active. If you're having trouble connecting to anything \*at all\* when OllaVPN is trying to establish a connection, temporarily disabling the kill switch in the app settings can help diagnose if it's interfering. Remember to re-enable it once you've sorted things out to ensure your privacy is always protected.
 
 ## Why does this specific problem happen with VPNs in the first place?
 
@@ -120,7 +120,7 @@ Questions like the one above usually have a short answer at the top of the page 
 
 You'll find competing answers to the same question across many sites. A few signals that distinguish trustworthy answers from junk:
 
-**Cites primary sources where they exist.** Government law, NIST publications, IETF RFCs, court rulings, academic papers — these are primary sources. A guide that cites them is generally more reliable than one that doesn't.
+**Cites primary sources where they exist.** Government law, NIST publications, IETF RFCs, court rulings, academic papers  -  these are primary sources. A guide that cites them is generally more reliable than one that doesn't.
 
 **Names an author.** Anonymous "by editorial team" content can be solid, but a named author with verifiable credentials is more accountable. Author bylines on YMYL (your-money-or-your-life) topics like privacy and security are a meaningful trust signal.
 
@@ -140,7 +140,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
 
 ## What to remember from this guide
 
-*   Quick diagnosis — is the problem your VPN or your network?
+*   Quick diagnosis  -  is the problem your VPN or your network?
 *   What&#39;s the most common cause of VPN slowdowns, and how do I fix it fast?
 *   The quick fix didn&#39;t work. What&#39;s my next step-by-step troubleshooting guide?
 *   Why does this specific problem happen with VPNs in the first place?
@@ -182,7 +182,7 @@ Ideally, your VPN speed should be close to your regular internet speed, though a
 
 ### Will this issue affect my kill switch protection?
 
-Mostly — here's where it breaks. A slow VPN connection itself won't disable your kill switch. However, if the connection becomes so unstable that it frequently drops, your kill switch will activate to prevent data leaks. This protects your privacy but means you'll temporarily lose internet access until the VPN reconnects.
+Mostly  -  here's where it breaks. A slow VPN connection itself won't disable your kill switch. However, if the connection becomes so unstable that it frequently drops, your kill switch will activate to prevent data leaks. This protects your privacy but means you'll temporarily lose internet access until the VPN reconnects.
 
 ### What's the difference between connection drops and slow speeds?
 

@@ -60,7 +60,7 @@ OllaVPN is an **honest-loss-leader free VPN**. This means we consciously offer a
 
 Setting up OllaVPN Free to protect yourself on public WiFi is incredibly simple: just download the app, install it, and hit the connect button.
 
-It really is that straightforward. You don't need any technical know-how or complex configurations. When you find yourself on an unsecured public WiFi network — at a coffee shop, airport, or hotel — simply open the OllaVPN app you've already installed. You'll see a prominent \*\*Connect button\*\*. Tap it, and OllaVPN will instantly establish a secure, encrypted tunnel for all your internet traffic. This protects your data from anyone else on that same public network who might be trying to snoop on your activity. We designed OllaVPN to be as user-friendly as possible, because privacy shouldn't be a premium feature or require an IT degree. The process is the same whether you're on your phone, tablet, or laptop. Just \*\*download the app\*\* from our website or your device's app store, follow the quick installation prompts, and you're good to go. There's no account to create, no email to provide, and certainly no credit card details needed for the free plan. Once connected, OllaVPN works silently in the background, encrypting your data and routing it through our private network. You can browse, stream, and work with peace of mind. Plus, our \*\*kill switch\*\* feature is on by default, meaning if your VPN connection ever unexpectedly drops, your internet access will be immediately blocked, preventing any accidental data leaks. It's truly a "set it and forget it" solution for staying safe online, especially when you're out and about.
+It really is that straightforward. You don't need any technical know-how or complex configurations. When you find yourself on an unsecured public WiFi network  -  at a coffee shop, airport, or hotel  -  simply open the OllaVPN app you've already installed. You'll see a prominent \*\*Connect button\*\*. Tap it, and OllaVPN will instantly establish a secure, encrypted tunnel for all your internet traffic. This protects your data from anyone else on that same public network who might be trying to snoop on your activity. We designed OllaVPN to be as user-friendly as possible, because privacy shouldn't be a premium feature or require an IT degree. The process is the same whether you're on your phone, tablet, or laptop. Just \*\*download the app\*\* from our website or your device's app store, follow the quick installation prompts, and you're good to go. There's no account to create, no email to provide, and certainly no credit card details needed for the free plan. Once connected, OllaVPN works silently in the background, encrypting your data and routing it through our private network. You can browse, stream, and work with peace of mind. Plus, our \*\*kill switch\*\* feature is on by default, meaning if your VPN connection ever unexpectedly drops, your internet access will be immediately blocked, preventing any accidental data leaks. It's truly a "set it and forget it" solution for staying safe online, especially when you're out and about.
 
 ## Is OllaVPN's 10 Mbps speed cap enough for most public WiFi uses?
 
@@ -84,7 +84,7 @@ The free OllaVPN plan gives you 10 Mbps, which is enough for most everyday onlin
 
 OllaVPN's post-quantum-ready encryption protects your data against decryption by future quantum computers, which is especially vital when using public WiFi where your traffic could be recorded and attacked later.
 
-When you connect to public WiFi, your data travels across networks you don't control. While current encryption methods are strong against today's computers, the threat of quantum computers is real. These incredibly powerful machines, still in development, could eventually break much of the encryption we rely on today. If someone records your encrypted public WiFi traffic now, they might be able to decrypt it years from now once quantum computers become powerful enough. That means your sensitive information — even if it seems secure today — could be exposed in the future.
+When you connect to public WiFi, your data travels across networks you don't control. While current encryption methods are strong against today's computers, the threat of quantum computers is real. These incredibly powerful machines, still in development, could eventually break much of the encryption we rely on today. If someone records your encrypted public WiFi traffic now, they might be able to decrypt it years from now once quantum computers become powerful enough. That means your sensitive information  -  even if it seems secure today  -  could be exposed in the future.
 
 OllaVPN addresses this with **post-quantum-ready** encryption. We use a unique **hybrid handshake** that combines a classical, proven encryption algorithm with a new, **quantum-resistant** one. Even if one of these algorithms is eventually broken (either by a classical or quantum computer), the other stands firm, protecting your connection. This makes your data **forward-secure**, meaning even if future attackers get their hands on your encrypted traffic and develop quantum computers, they still won't be able to decrypt it.
 
@@ -106,7 +106,7 @@ When you connect to public WiFi, your device is usually exposed to every other d
 
 One pattern we've noticed across every privacy-and-networking topic we cover: the gap between what most users believe about a given topic and what the technical reality is keeps widening. Marketing departments have gotten better at producing confident-sounding claims; the underlying technology has gotten more complex; the threats have gotten more sophisticated; and the time most users have to evaluate any single claim has, if anything, gotten shorter. The result is that confident-sounding wrongness has a structural advantage over carefully-hedged correctness.
 
-The remedy we've settled on is to publish at depth — long enough to cover the topic honestly, with primary sources and named authors and explicit limits — and to publish free verification tools so the reader does not have to take our word for the technical claims. Both are choices that don't optimise for "users who skim and click." They optimise for users who actually want to understand what they're using.
+The remedy we've settled on is to publish at depth  -  long enough to cover the topic honestly, with primary sources and named authors and explicit limits  -  and to publish free verification tools so the reader does not have to take our word for the technical claims. Both are choices that don't optimise for "users who skim and click." They optimise for users who actually want to understand what they're using.
 
 If you've read this far, you're in the second group. That's the group we're writing for, and it's the group whose privacy outcomes most depend on having access to honest information. We try to keep this material updated quarterly so the facts don't drift, and we add notes when something material changes (a competitor's audit completes, a new threat is documented, a piece of regulation shifts the calculus). The [main free-VPN comparison](/best-free-vpn-2026), the [technology overview](/technology), and the [free privacy tools](/tools/) are the three pages most worth bookmarking from the OllaVPN site if you've found this guide useful.
 
@@ -126,15 +126,15 @@ For any claim on this page that affects a decision you're about to make, the ver
 
 Free VPNs make a lot of marketing claims and the bad ones don't survive verification. Five tests you can run on any free VPN candidate in under fifteen minutes:
 
-**Test 1 — Funding model.** Find the operator's funding-model statement (typically on the homepage or FAQ). The honest answers are "paid-tier conversion funds the free service" or "we're a non-profit funded by a grant." If you can't find a clear statement in 30 seconds, that's the answer.
+**Test 1  -  Funding model.** Find the operator's funding-model statement (typically on the homepage or FAQ). The honest answers are "paid-tier conversion funds the free service" or "we're a non-profit funded by a grant." If you can't find a clear statement in 30 seconds, that's the answer.
 
-**Test 2 — DNS leak.** Connect the free VPN. Use [our DNS lookup tool](/dns-lookup) to confirm the DNS resolver IP is operator-controlled and not your ISP's resolver. Disconnect, repeat — the difference is your evidence.
+**Test 2  -  DNS leak.** Connect the free VPN. Use [our DNS lookup tool](/dns-lookup) to confirm the DNS resolver IP is operator-controlled and not your ISP's resolver. Disconnect, repeat  -  the difference is your evidence.
 
-**Test 3 — WebRTC leak.** Open [our WebRTC leak test](/webrtc-leak-test). You should see only the exit's IPv4 address.
+**Test 3  -  WebRTC leak.** Open [our WebRTC leak test](/webrtc-leak-test). You should see only the exit's IPv4 address.
 
-**Test 4 — Kill switch.** Connect VPN, start a continuous ping (`ping 1.1.1.1`), disable your network adapter. Pings should immediately fail and stay failed. If they continue, the kill switch is broken.
+**Test 4  -  Kill switch.** Connect VPN, start a continuous ping (`ping 1.1.1.1`), disable your network adapter. Pings should immediately fail and stay failed. If they continue, the kill switch is broken.
 
-**Test 5 — Audit history.** Search "<operator> security audit" — a clean recent audit by Cure53, Securitum, KPMG, or Radically Open Security is the strongest trust signal in the category. Operators that talk about being audited without naming the firm and date are doing less than the claim suggests.
+**Test 5  -  Audit history.** Search "<operator> security audit"  -  a clean recent audit by Cure53, Securitum, KPMG, or Radically Open Security is the strongest trust signal in the category. Operators that talk about being audited without naming the firm and date are doing less than the claim suggests.
 
 ## Red flags to walk away from
 
@@ -142,17 +142,17 @@ The category has enough bad actors that a defensive posture is the right default
 
 **No funding-model disclosure.** Covered above. The most reliable single signal.
 
-**"Lifetime license for $9.99."** Real VPN operations have ongoing infrastructure costs. A one-time fee that "covers you forever" requires a non-subscription revenue stream — usually selling your data.
+**"Lifetime license for $9.99."** Real VPN operations have ongoing infrastructure costs. A one-time fee that "covers you forever" requires a non-subscription revenue stream  -  usually selling your data.
 
 **"Anonymized analytics shared with partners"** in the privacy policy. "Anonymized" is a word data brokers use to mean "we removed your name." Browsing patterns are highly identifying without a name attached.
 
 **Unusual app permissions.** A VPN needs network and tunnel-interface access. It does not need contacts, camera, location (beyond a coarse country selector), installed-apps list, or accessibility services. Permissions beyond network/tunnel are a sign the app is doing something other than VPN.
 
-**Opaque parent company.** If you can't find out who owns the operator in five minutes, you don't know whom you're trusting with your traffic. Several of the most-downloaded "free VPN" apps have undisclosed Chinese ownership — a separate jurisdiction concern even if everything else looks fine.
+**Opaque parent company.** If you can't find out who owns the operator in five minutes, you don't know whom you're trusting with your traffic. Several of the most-downloaded "free VPN" apps have undisclosed Chinese ownership  -  a separate jurisdiction concern even if everything else looks fine.
 
 **No kill switch, or it's off by default.** A kill switch is engineering basic in 2026. If a free VPN doesn't have one or ships it disabled, that tells you about the engineering standards of the entire codebase.
 
-**First version shipped in the last 30 days.** Trust takes time to earn. There is no urgency to install a brand-new free VPN — wait six months and let the security community find any obvious problems first.
+**First version shipped in the last 30 days.** Trust takes time to earn. There is no urgency to install a brand-new free VPN  -  wait six months and let the security community find any obvious problems first.
 
 ## About this guide
 

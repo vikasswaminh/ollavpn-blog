@@ -26,7 +26,7 @@ End-to-end encryption (E2EE) is a way of scrambling your digital messages so tha
 
 Think of it like putting your message in a special box with a unique digital lock. You're the only one with the key to lock it, and your intended recipient is the only one with the key to unlock it. Nobody else, not even the service provider (like your email or messaging app), can open that box and peek inside. From the moment you hit send until it arrives at its destination, your message remains completely private.
 
-This "digital lock and key" system means that even if someone intercepts your message while it's traveling across the internet, all they'll see is a jumbled, unreadable mess — a truly **scrambled message**. It's essentially gibberish without the right key. The beauty of E2EE is that it ensures there are **no intermediaries** who can access the content of your communication. The data is encrypted on your device, stays encrypted as it travels, and is only decrypted on the recipient's device.
+This "digital lock and key" system means that even if someone intercepts your message while it's traveling across the internet, all they'll see is a jumbled, unreadable mess  -  a truly **scrambled message**. It's essentially gibberish without the right key. The beauty of E2EE is that it ensures there are **no intermediaries** who can access the content of your communication. The data is encrypted on your device, stays encrypted as it travels, and is only decrypted on the recipient's device.
 
 For us at OllaVPN, applying this kind of thinking to your entire internet connection is fundamental. While a VPN doesn't provide "end-to-end" encryption in the same way a messaging app does (because the VPN server is an intentional intermediary), it does ensure that your traffic from your device to our server is completely private and secure, free from prying eyes. Our [post-quantum-ready encryption](/post-quantum-encryption) takes this a step further, protecting your data not just now, but against future threats.
 
@@ -122,7 +122,7 @@ Achieving true online privacy requires a more **holistic approach** that combine
 
 ## Deeper context worth knowing
 
-A definitional explainer should leave you understanding not just the concept but the surrounding category — what other concepts it connects to, what common misunderstandings to avoid, and which adjacent ideas you should know about. A few worth covering:
+A definitional explainer should leave you understanding not just the concept but the surrounding category  -  what other concepts it connects to, what common misunderstandings to avoid, and which adjacent ideas you should know about. A few worth covering:
 
 **The category history matters.** Most networking and privacy concepts you encounter today were invented to solve a specific problem that may or may not still be the dominant problem in 2026. Understanding why a concept exists helps you evaluate whether it's the right tool for your situation. We try to include the historical context for every "what is X" guide we publish.
 

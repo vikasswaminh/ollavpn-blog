@@ -58,7 +58,7 @@ So, how do you fix these? First, always make sure your VPN client is properly co
 
 You can verify your DNS leak fix by running multiple DNS leak tests and confirming that all reported servers match your VPN's chosen location.
 
-After you've applied whatever fix you think worked — whether it's configuring your router, changing network settings on your device, or updating your VPN client — the next step is to **re-run the test**. Don't just do it once; aim for at least two or three tests back-to-back. This helps ensure that the fix is stable and not just a fluke. You want to see consistent results across all of them.
+After you've applied whatever fix you think worked  -  whether it's configuring your router, changing network settings on your device, or updating your VPN client  -  the next step is to **re-run the test**. Don't just do it once; aim for at least two or three tests back-to-back. This helps ensure that the fix is stable and not just a fluke. You want to see consistent results across all of them.
 
 When you re-test, pay close attention to the IP addresses and locations reported for your DNS servers. Ideally, these should all point to the same country you've connected to via OllaVPN. If you see any DNS servers listed that are outside of your VPN's location, especially ones that point back to your actual physical location or your ISP, then the leak hasn't been fully resolved. It's also a good idea to **check for consistency** across different websites. While a dedicated DNS leak test site is great, also try visiting a few general "What's My IP" type sites to see what they report for your DNS.
 
@@ -98,23 +98,23 @@ Your computer usually looks up website addresses using your internet provider's 
 
 A how-to guide is only useful if you can verify the outcome. After completing the steps above, the easiest checks to confirm the configuration is in place:
 
-**Visible state in the app.** The OllaVPN menu-bar or system-tray icon should be green (connected) and any status panel should show the country you selected. If the icon is gray or amber, the tunnel didn't fully come up — retry the connect.
+**Visible state in the app.** The OllaVPN menu-bar or system-tray icon should be green (connected) and any status panel should show the country you selected. If the icon is gray or amber, the tunnel didn't fully come up  -  retry the connect.
 
-**IP address changed.** Open [our what-is-my-IP tool](/what-is-my-ip). The IP shown should be the exit's IP, not your real ISP's IP, and the country shown should match the country you selected in the app. If you still see your real IP, the tunnel isn't carrying traffic — the most common cause is a firewall on the local network blocking WireGuard's UDP/51820. Try a different network briefly to isolate.
+**IP address changed.** Open [our what-is-my-IP tool](/what-is-my-ip). The IP shown should be the exit's IP, not your real ISP's IP, and the country shown should match the country you selected in the app. If you still see your real IP, the tunnel isn't carrying traffic  -  the most common cause is a firewall on the local network blocking WireGuard's UDP/51820. Try a different network briefly to isolate.
 
-**DNS is going through the tunnel.** Open [our DNS lookup tool](/dns-lookup). The resolver IP shown should be the in-tunnel one (CGNAT 100.64.x.x range), not your ISP's DNS. If you see your ISP's resolver, DNS is leaking — see our [in-tunnel DNS page](/in-tunnel-dns) for the technical details on why this happens and how OllaVPN prevents it.
+**DNS is going through the tunnel.** Open [our DNS lookup tool](/dns-lookup). The resolver IP shown should be the in-tunnel one (CGNAT 100.64.x.x range), not your ISP's DNS. If you see your ISP's resolver, DNS is leaking  -  see our [in-tunnel DNS page](/in-tunnel-dns) for the technical details on why this happens and how OllaVPN prevents it.
 
-**No WebRTC leak.** Open [our WebRTC leak test](/webrtc-leak-test). You should see only the exit's IPv4 address. If your real IP appears (private LAN address or public IPv4/IPv6), WebRTC is bypassing the VPN — either OllaVPN's leak prevention has failed (file a report at `[[email protected]](/cdn-cgi/l/email-protection)`) or your browser has a WebRTC-specific privacy issue we can help diagnose.
+**No WebRTC leak.** Open [our WebRTC leak test](/webrtc-leak-test). You should see only the exit's IPv4 address. If your real IP appears (private LAN address or public IPv4/IPv6), WebRTC is bypassing the VPN  -  either OllaVPN's leak prevention has failed (file a report at `[[email protected]](/cdn-cgi/l/email-protection)`) or your browser has a WebRTC-specific privacy issue we can help diagnose.
 
 ## If a step fails, here's how to debug
 
 The most common failure modes for any VPN setup task on Windows, macOS, or Android, in order of frequency:
 
-**The VPN refuses to connect at all.** Almost always a network-side issue: a restrictive firewall on the local network (school, corporate, hotel) blocking WireGuard's default UDP/51820 port. Try a different network briefly to confirm it's network-side. On Frankfurt the obfuscated MASQUE-on-port-443 transport works around many restrictive firewalls — switch to it in the country picker.
+**The VPN refuses to connect at all.** Almost always a network-side issue: a restrictive firewall on the local network (school, corporate, hotel) blocking WireGuard's default UDP/51820 port. Try a different network briefly to confirm it's network-side. On Frankfurt the obfuscated MASQUE-on-port-443 transport works around many restrictive firewalls  -  switch to it in the country picker.
 
 **The VPN connects but the internet is broken.** Almost always a DNS issue. The in-tunnel resolver hasn't taken precedence (sometimes after a macOS update or a Windows feature update, the supplemental DNS keys get cleared). Restarting the VPN typically fixes it; full disconnect and reconnect re-installs the DNS configuration.
 
-**Some apps work but others don't.** Either the app has its own proxy settings configured separately (some corporate apps), or the app uses a protocol the VPN doesn't carry (very rare — almost everything is TCP/UDP and works fine through the tunnel). Check the app's settings before assuming the VPN is at fault.
+**Some apps work but others don't.** Either the app has its own proxy settings configured separately (some corporate apps), or the app uses a protocol the VPN doesn't carry (very rare  -  almost everything is TCP/UDP and works fine through the tunnel). Check the app's settings before assuming the VPN is at fault.
 
 **Speed is much slower than expected.** The exit you picked is either congested or geographically far from you. Try a closer exit (the country picker shows latency). The free-tier 10 Mbps cap is the ceiling regardless of exit choice; if you need more, the Pro tier at $2/mo annual lifts it to 10 Gbps.
 

@@ -66,7 +66,7 @@ Ultimately, the core problem is a general **lack of transparency**. When a compa
 
 ## Are There Red Flags That Mean You Should Walk Away?
 
-Yes, definitely — if you spot certain red flags, it's wise to be cautious or even stop using Shein.
+Yes, definitely  -  if you spot certain red flags, it's wise to be cautious or even stop using Shein.
 
 You're putting a lot of personal information into any online shopping app, and Shein is no different. So, it's crucial to pay attention to anything that feels off. One of the biggest red flags to watch out for is **unusual app permissions**. If the Shein app starts asking for access to things it clearly doesn't need to function – like your microphone, photo gallery, or contacts list – that should set off alarm bells. A shopping app has no business recording your conversations or peering into your private photos, so deny those permissions immediately.
 

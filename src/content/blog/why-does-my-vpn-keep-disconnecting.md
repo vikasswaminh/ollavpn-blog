@@ -118,7 +118,7 @@ Questions like the one above usually have a short answer at the top of the page 
 
 You'll find competing answers to the same question across many sites. A few signals that distinguish trustworthy answers from junk:
 
-**Cites primary sources where they exist.** Government law, NIST publications, IETF RFCs, court rulings, academic papers — these are primary sources. A guide that cites them is generally more reliable than one that doesn't.
+**Cites primary sources where they exist.** Government law, NIST publications, IETF RFCs, court rulings, academic papers  -  these are primary sources. A guide that cites them is generally more reliable than one that doesn't.
 
 **Names an author.** Anonymous "by editorial team" content can be solid, but a named author with verifiable credentials is more accountable. Author bylines on YMYL (your-money-or-your-life) topics like privacy and security are a meaningful trust signal.
 

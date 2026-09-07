@@ -84,7 +84,7 @@ We've built OllaVPN from the ground up to offer both speed and privacy without c
 
 Yes, there's a significant speed difference between OllaVPN's free and Plus plans, by design, to keep the free plan sustainable.
 
-You get 10 Mbps on the free plan, which is plenty for most everyday uses like streaming HD video, video calls, web browsing, and even casual gaming. It's truly [free forever](/free-vpn), with no data cap, no hidden catches, and no payment method required. This 10 Mbps speed is available across every country in our network, 24/7. The reason for this speed cap is simple: every bit of data costs us money. Bandwidth, server maintenance, engineering time — it all adds up. Unlike ad-funded free VPNs or those that sell your data, we fund our free tier through our paid subscribers. The 10 Mbps cap allows us to offer a genuinely private and unlimited free service without resorting to compromising your data or bombarding you with ads. If you need more speed, perhaps for 4K streaming, large downloads, or just want the absolute fastest connection possible, that's where the OllaVPN Plus plan comes in. For just $2 a month, Plus bumps your speed limit up to a blazing 10 Gbps and covers up to five devices. It's the trade-off that makes our unique "free forever" model work for everyone.
+You get 10 Mbps on the free plan, which is plenty for most everyday uses like streaming HD video, video calls, web browsing, and even casual gaming. It's truly [free forever](/free-vpn), with no data cap, no hidden catches, and no payment method required. This 10 Mbps speed is available across every country in our network, 24/7. The reason for this speed cap is simple: every bit of data costs us money. Bandwidth, server maintenance, engineering time  -  it all adds up. Unlike ad-funded free VPNs or those that sell your data, we fund our free tier through our paid subscribers. The 10 Mbps cap allows us to offer a genuinely private and unlimited free service without resorting to compromising your data or bombarding you with ads. If you need more speed, perhaps for 4K streaming, large downloads, or just want the absolute fastest connection possible, that's where the OllaVPN Plus plan comes in. For just $2 a month, Plus bumps your speed limit up to a blazing 10 Gbps and covers up to five devices. It's the trade-off that makes our unique "free forever" model work for everyone.
 
 ## Does choosing a closer VPN server improve speed?
 
@@ -112,7 +112,7 @@ Questions like the one above usually have a short answer at the top of the page 
 
 You'll find competing answers to the same question across many sites. A few signals that distinguish trustworthy answers from junk:
 
-**Cites primary sources where they exist.** Government law, NIST publications, IETF RFCs, court rulings, academic papers — these are primary sources. A guide that cites them is generally more reliable than one that doesn't.
+**Cites primary sources where they exist.** Government law, NIST publications, IETF RFCs, court rulings, academic papers  -  these are primary sources. A guide that cites them is generally more reliable than one that doesn't.
 
 **Names an author.** Anonymous "by editorial team" content can be solid, but a named author with verifiable credentials is more accountable. Author bylines on YMYL (your-money-or-your-life) topics like privacy and security are a meaningful trust signal.
 
@@ -150,7 +150,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
 
 ### Can the government track me if I use a VPN?
 
-<p class="short-answer">Not directly, if you're using a good VPN.</p><p>A strong VPN makes it much harder for anyone, including governments, to track your online activities. They'd need to compel your VPN provider to hand over data. That's why OllaVPN's strict no-logs policy is so important — we simply don't have any data about your online activity to give anyone.</p>
+<p class="short-answer">Not directly, if you're using a good VPN.</p><p>A strong VPN makes it much harder for anyone, including governments, to track your online activities. They'd need to compel your VPN provider to hand over data. That's why OllaVPN's strict no-logs policy is so important  -  we simply don't have any data about your online activity to give anyone.</p>
 
 ### What about Five Eyes or Fourteen Eyes countries and VPNs?
 

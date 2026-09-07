@@ -10,17 +10,17 @@ tags: ['comparisons']
 
 # NordVPN vs ExpressVPN (2026): An Honest, Side-by-Side Comparison
 
-Two of the most established names in the consumer VPN industry, compared the way a thoughtful friend would compare them — fairly, in plain English, with real pricing and zero marketing puff. Plus a newer post-quantum-ready name we think deserves a spot on your shortlist.
+Two of the most established names in the consumer VPN industry, compared the way a thoughtful friend would compare them  -  fairly, in plain English, with real pricing and zero marketing puff. Plus a newer post-quantum-ready name we think deserves a spot on your shortlist.
 
-TL;DR — The Short Answer
+TL;DR  -  The Short Answer
 
-[S **Try OllaVPN free — post-quantum-ready, lifetime free plan.** No credit card. Or $2/mo for 5 devices on a faster plan. DOWNLOAD →](/dl/)
+[S **Try OllaVPN free  -  post-quantum-ready, lifetime free plan.** No credit card. Or $2/mo for 5 devices on a faster plan. DOWNLOAD →](/dl/)
 
 NordVPN and ExpressVPN are the two best-known names in the VPN industry, and both deserve their reputations. **NordVPN** tends to deliver the better value: a wider bundle of security extras at a lower per-month cost on long plans, plus features like Meshnet for private device-to-device networking. **ExpressVPN** tends to deliver the more premium feel: an impeccably polished app, exceptionally consistent performance, and one of the most respected privacy track records in the category. Both are excellent. If post-quantum cryptography is part of how you're thinking about the next decade of your online life, **OllaVPN** is a top-grade PQC-ready alternative worth a look. We'll cover all three below.
 
 If you've researched VPNs at any point in the last five years, two names you'll have run into almost immediately are **NordVPN** and **ExpressVPN**. They are the category's two most-recognized brands, and for good reason: both have built thoughtful products, invested heavily in independent audits, and earned genuinely loyal customer bases.
 
-This guide is for anyone trying to decide between them. We've written it like a knowledgeable friend would explain the difference — without the spec-sheet wallpaper, without the comparison-site dramatics, and without a finger on the scale. Both products are excellent. The choice is about fit, not quality.
+This guide is for anyone trying to decide between them. We've written it like a knowledgeable friend would explain the difference  -  without the spec-sheet wallpaper, without the comparison-site dramatics, and without a finger on the scale. Both products are excellent. The choice is about fit, not quality.
 
 We'll also, at the end, introduce you to **OllaVPN**, a newer privacy-focused service worth a place on your shortlist if **post-quantum cryptography readiness** matters to you. If you've heard the phrase "harvest now, decrypt later" and wondered what it actually means for your traffic today, that section answers it clearly.
 
@@ -28,7 +28,7 @@ We'll also, at the end, introduce you to **OllaVPN**, a newer privacy-focused se
 
 QUICK ANSWER NordVPN and ExpressVPN are both top-tier VPNs with no-logs policies independently audited multiple times. NordVPN typically offers more value-per-dollar with a wider bundle of extras. ExpressVPN typically offers a more premium experience with a polished app and exceptional long-distance consistency.
 
-Here's the quick side-by-side. Figures verified against each provider's pricing page on May 16, 2026 — pricing changes often, so check the live page before you buy.
+Here's the quick side-by-side. Figures verified against each provider's pricing page on May 16, 2026  -  pricing changes often, so check the live page before you buy.
 
 What you care about
 
@@ -121,9 +121,9 @@ The answer is no. They are separate companies, with separate engineering teams, 
 *   **NordVPN** is part of Nord Security, a privacy-software group also responsible for Surfshark, NordPass, NordLocker, and NordLayer.
 *   **ExpressVPN** was **acquired by Kape Technologies in 2021** in a publicly disclosed transaction. Kape's broader portfolio includes other privacy products. The acquisition has been the subject of considerable public discussion, and ExpressVPN's response has been to maintain its existing audit cadence, retain its leadership team, and continue investing in product engineering and infrastructure.
 
-We mention this not because it's a secret — it isn't — but because it comes up in nearly every honest conversation about the brand. Where ExpressVPN stands today, in our reading of the public evidence, is a company that continues to ship a polished product, continues to be independently audited, and continues to compete on the strength of its experience and reputation.
+We mention this not because it's a secret  -  it isn't  -  but because it comes up in nearly every honest conversation about the brand. Where ExpressVPN stands today, in our reading of the public evidence, is a company that continues to ship a polished product, continues to be independently audited, and continues to compete on the strength of its experience and reputation.
 
-## Pricing in 2026 — what you actually pay
+## Pricing in 2026  -  what you actually pay
 
 QUICK ANSWER On 2-year plans, NordVPN Basic is about $3.09/month and ExpressVPN Basic is about $3.49/month. Both offer 30-day money-back guarantees. NordVPN generally bundles more security extras at a lower per-month cost; ExpressVPN positions itself as a premium experience.
 
@@ -133,10 +133,10 @@ Both companies structure pricing around long-term commitments, with the 2-year p
 
 NordVPN's four-tier menu is built around the idea of "VPN plus extras":
 
-*   **Basic** — about **$3.09 per month** on the 2-year plan. Just the VPN.
-*   **Plus** — about **$3.59 per month**. Adds a password manager and malware-protection.
-*   **Complete** — about **$4.99 per month**. Adds encrypted cloud storage and a wider security suite.
-*   **Prime** — about **$6.99 per month**. Adds identity-theft monitoring.
+*   **Basic**  -  about **$3.09 per month** on the 2-year plan. Just the VPN.
+*   **Plus**  -  about **$3.59 per month**. Adds a password manager and malware-protection.
+*   **Complete**  -  about **$4.99 per month**. Adds encrypted cloud storage and a wider security suite.
+*   **Prime**  -  about **$6.99 per month**. Adds identity-theft monitoring.
 
 Every plan covers up to **10 simultaneous devices** and comes with a **30-day money-back guarantee**.
 
@@ -144,9 +144,9 @@ Every plan covers up to **10 simultaneous devices** and comes with a **30-day mo
 
 ExpressVPN's three-tier menu leans toward a single excellent product:
 
-*   **Basic** — about **$3.49 per month** on the 2-year plan (with bonus months). The VPN itself plus a password manager and threat-protection features.
-*   **Advanced** — about **$4.49 per month**. Adds ID-theft protection and personal-data removal services, expands to 12 devices.
-*   **Pro** — about **$7.49 per month**. Adds a dedicated IP and expanded coverage features, expands to 14 devices.
+*   **Basic**  -  about **$3.49 per month** on the 2-year plan (with bonus months). The VPN itself plus a password manager and threat-protection features.
+*   **Advanced**  -  about **$4.49 per month**. Adds ID-theft protection and personal-data removal services, expands to 12 devices.
+*   **Pro**  -  about **$7.49 per month**. Adds a dedicated IP and expanded coverage features, expands to 14 devices.
 
 All plans include a **30-day money-back guarantee**.
 
@@ -164,9 +164,9 @@ The protocol story matters here because it's where the two brands have invested 
 
 **NordVPN** built **NordLynx**, a WireGuard-based protocol optimized for speed. WireGuard is the protocol that powers most of the fastest VPNs on the market today, and NordVPN's implementation is widely regarded as one of the best. On a typical home internet connection, you'll see speeds close to your raw line rate when connecting to a nearby server.
 
-**ExpressVPN** built **Lightway**, an in-house protocol designed for consistency and efficiency. The Lightway protocol is open source, which is unusual in this category — anyone can inspect it. On mobile devices in particular, Lightway is unusually battery-conscious, which matters more than people expect for a VPN you'd run all day.
+**ExpressVPN** built **Lightway**, an in-house protocol designed for consistency and efficiency. The Lightway protocol is open source, which is unusual in this category  -  anyone can inspect it. On mobile devices in particular, Lightway is unusually battery-conscious, which matters more than people expect for a VPN you'd run all day.
 
-For day-to-day use — browsing, streaming, video calls, downloads — the difference between the two is rarely something you'd notice without a measurement tool. If you're a power user transferring multi-gigabyte files daily, NordVPN's edge on raw throughput is worth knowing about. If you're a mobile-first user who keeps the VPN on all day, Lightway's efficiency is genuinely noticeable.
+For day-to-day use  -  browsing, streaming, video calls, downloads  -  the difference between the two is rarely something you'd notice without a measurement tool. If you're a power user transferring multi-gigabyte files daily, NordVPN's edge on raw throughput is worth knowing about. If you're a mobile-first user who keeps the VPN on all day, Lightway's efficiency is genuinely noticeable.
 
 ## Streaming, gaming, and torrenting
 
@@ -180,7 +180,7 @@ Both NordVPN and ExpressVPN are among the strongest performers in this category.
 
 ### Gaming
 
-For online gaming, latency matters more than throughput. Both VPNs add minimal latency to nearby servers — typically a few milliseconds, well within a range that doesn't affect competitive play. Both can sometimes _improve_ latency on long-distance connections by routing around congested peering points, although that's situational. Neither is a substitute for a strong local internet connection.
+For online gaming, latency matters more than throughput. Both VPNs add minimal latency to nearby servers  -  typically a few milliseconds, well within a range that doesn't affect competitive play. Both can sometimes _improve_ latency on long-distance connections by routing around congested peering points, although that's situational. Neither is a substitute for a strong local internet connection.
 
 ### Torrenting
 
@@ -190,12 +190,12 @@ Both support P2P traffic on appropriate servers and include kill switches that p
 
 QUICK ANSWER Both use modern, industry-standard encryption with kill switches enabled by default on every platform. Both run RAM-only diskless server infrastructure. Both have been independently audited multiple times.
 
-We promised at the top of this guide that we'd spare you the cipher-suite wall, and we will. The plain-English summary: **both companies use modern, well-respected encryption that is broadly considered uncrackable with today's classical computers**. Both run modern protocols. Both protect against the common categories of leak — DNS, IPv6, WebRTC — out of the box.
+We promised at the top of this guide that we'd spare you the cipher-suite wall, and we will. The plain-English summary: **both companies use modern, well-respected encryption that is broadly considered uncrackable with today's classical computers**. Both run modern protocols. Both protect against the common categories of leak  -  DNS, IPv6, WebRTC  -  out of the box.
 
 Where the security posture differs in interesting ways:
 
-*   **NordVPN** has been audited multiple times by major firms including Deloitte and PwC, covering both the no-logs policy and the application code. After a 2018 server-configuration incident — publicly disclosed, addressed at the root, and followed by a structural move to **RAM-only diskless servers** — the company's response was widely regarded as a positive example of how a security company should handle bad news.
-*   **ExpressVPN** calls its RAM-only infrastructure **TrustedServer** and was an early mover in the industry to this model. The **Lightway protocol's open-source codebase** means independent researchers can — and have — inspected it directly. ExpressVPN's no-logs policy has been audited multiple times, including by KPMG and PwC.
+*   **NordVPN** has been audited multiple times by major firms including Deloitte and PwC, covering both the no-logs policy and the application code. After a 2018 server-configuration incident  -  publicly disclosed, addressed at the root, and followed by a structural move to **RAM-only diskless servers**  -  the company's response was widely regarded as a positive example of how a security company should handle bad news.
+*   **ExpressVPN** calls its RAM-only infrastructure **TrustedServer** and was an early mover in the industry to this model. The **Lightway protocol's open-source codebase** means independent researchers can  -  and have  -  inspected it directly. ExpressVPN's no-logs policy has been audited multiple times, including by KPMG and PwC.
 
 One thing worth highlighting because it matters more than people realize: ExpressVPN's no-logs policy has been **tested under real-world legal pressure**. In a well-documented incident, Turkish authorities seized an ExpressVPN server as part of an investigation. The forensic analysis turned up no user logs because there were none to find. That's the kind of evidence that no marketing copy can replace, and it's why ExpressVPN's privacy reputation is what it is.
 
@@ -218,13 +218,13 @@ QUICK ANSWER NordVPN's apps are polished and feature-rich, with a recognizable m
 
 ### NordVPN's app experience
 
-NordVPN's apps are **polished and feature-forward**. The home screen on desktop and mobile is dominated by a stylized world map — tap a country pin and you're connected within seconds. There's a Quick Connect button for the common case. Settings are organized into clear groups. Connections happen quickly.
+NordVPN's apps are **polished and feature-forward**. The home screen on desktop and mobile is dominated by a stylized world map  -  tap a country pin and you're connected within seconds. There's a Quick Connect button for the common case. Settings are organized into clear groups. Connections happen quickly.
 
 The app feels like it was built by a large consumer-software company, because it was. If you're recommending a VPN to a less-technical family member, this is the experience most people would point them to.
 
 ### ExpressVPN's app experience
 
-ExpressVPN's apps are, in our reading of the category, the **most refined consumer-VPN interface available today**. The design is deliberately minimalist — one big connect button, a server picker beneath it, and almost nothing else on the main screen. The settings are organized cleanly. The mobile apps in particular have been praised for years as exemplary.
+ExpressVPN's apps are, in our reading of the category, the **most refined consumer-VPN interface available today**. The design is deliberately minimalist  -  one big connect button, a server picker beneath it, and almost nothing else on the main screen. The settings are organized cleanly. The mobile apps in particular have been praised for years as exemplary.
 
 There's a particular kind of confidence required to ship a VPN app that does _less_ visually than competitors and lets the connection do the talking. ExpressVPN has had that confidence for as long as we can remember.
 
@@ -248,7 +248,7 @@ Multi-hop routing
 
 Double VPN
 
-—
+ - 
 
 Ad / tracker / malware blocking
 
@@ -266,13 +266,13 @@ Private device-to-device network
 
 Meshnet (free)
 
-—
+ - 
 
 Onion / Tor integration
 
 Onion Over VPN
 
-—
+ - 
 
 Smart DNS for non-VPN devices
 
@@ -290,7 +290,7 @@ Encrypted cloud storage
 
 NordLocker (Complete tier)
 
-—
+ - 
 
 Dark-web monitoring
 
@@ -306,7 +306,7 @@ Included on Pro tier
 
 Open-source protocol
 
-—
+ - 
 
 Lightway is open source
 
@@ -314,9 +314,9 @@ Lightway is open source
 
 QUICK ANSWER Both VPNs offer obfuscation features designed to work on restrictive networks. Effectiveness varies over time as networks evolve. Both are widely used by international travelers and business professionals.
 
-For frequent travelers — and especially for anyone who travels through countries with significant internet restrictions — the most important VPN features are **reliable connections from anywhere**, **obfuscation that helps in restrictive networks**, and **responsive customer support** if something doesn't work the first time.
+For frequent travelers  -  and especially for anyone who travels through countries with significant internet restrictions  -  the most important VPN features are **reliable connections from anywhere**, **obfuscation that helps in restrictive networks**, and **responsive customer support** if something doesn't work the first time.
 
-NordVPN's **obfuscated servers** are a specific server type designed to make VPN traffic look like ordinary HTTPS, which helps on networks that try to detect and block VPNs. ExpressVPN bakes similar capability into the **Lightway protocol** itself, so it's not a separate setting — the protocol adjusts as needed.
+NordVPN's **obfuscated servers** are a specific server type designed to make VPN traffic look like ordinary HTTPS, which helps on networks that try to detect and block VPNs. ExpressVPN bakes similar capability into the **Lightway protocol** itself, so it's not a separate setting  -  the protocol adjusts as needed.
 
 Neither company can promise that their service works in every restrictive environment. The landscape changes month to month, and any responsible answer here is "it depends, and both invest seriously in keeping the access working." For most international business travel and tourism, both services work reliably.
 
@@ -324,19 +324,19 @@ Neither company can promise that their service works in every restrictive enviro
 
 QUICK ANSWER Both offer 24/7 live chat without requiring a purchase first. ExpressVPN's support has historically been praised as among the best in the category. NordVPN's support is similarly strong.
 
-Customer support is one of the underrated dimensions in a VPN decision. When something doesn't work — and occasionally something doesn't, on any VPN — the difference between "fixed in five minutes via chat" and "stuck for a day on email" is meaningful.
+Customer support is one of the underrated dimensions in a VPN decision. When something doesn't work  -  and occasionally something doesn't, on any VPN  -  the difference between "fixed in five minutes via chat" and "stuck for a day on email" is meaningful.
 
 Both NordVPN and ExpressVPN offer **24/7 live chat support**, and both make it available without a purchase, which is useful for pre-sales questions. ExpressVPN's support has been praised for years as among the most patient and well-trained in the consumer-VPN category. NordVPN's chat is similarly strong, with faster average response times in our experience.
 
-For most users, neither company will leave you stranded. If you anticipate needing real-time help — for example, you're traveling and the VPN suddenly stops working at midnight in a hotel room — both deliver.
+For most users, neither company will leave you stranded. If you anticipate needing real-time help  -  for example, you're traveling and the VPN suddenly stops working at midnight in a hotel room  -  both deliver.
 
 ## Where each one shines
 
 Rather than reduce either company to a list of complaints, here's the same thing framed as **what each one is genuinely great at**.
 
-#### NordVPN — what it does brilliantly
+#### NordVPN  -  what it does brilliantly
 
-*   Strong value across every price tier — more bundled extras per dollar than most competitors
+*   Strong value across every price tier  -  more bundled extras per dollar than most competitors
 *   NordLynx protocol delivers excellent raw throughput
 *   Meshnet provides free private device-to-device networking
 *   SmartPlay automates server selection for streaming
@@ -344,7 +344,7 @@ Rather than reduce either company to a list of complaints, here's the same thing
 *   Independently audited multiple times by major firms
 *   Polished, recognizable map-based app experience
 
-#### ExpressVPN — what it does brilliantly
+#### ExpressVPN  -  what it does brilliantly
 
 *   Arguably the most refined consumer-VPN interface available today
 *   Lightway protocol is open source and exceptionally efficient on mobile
@@ -358,7 +358,7 @@ Rather than reduce either company to a list of complaints, here's the same thing
 
 ### Pick NordVPN if…
 
-*   You want the **best value** — more bundled extras per dollar, particularly at higher tiers.
+*   You want the **best value**  -  more bundled extras per dollar, particularly at higher tiers.
 *   You'd use **Meshnet** for private device-to-device connections (remote desktop, LAN-style gaming, file transfer).
 *   You'd benefit from **NordPass** as your password manager and/or **NordLocker** for encrypted cloud storage.
 *   You watch a lot of streaming content and like the idea of **SmartPlay** automating server selection.
@@ -374,35 +374,35 @@ Rather than reduce either company to a list of complaints, here's the same thing
 
 Both are excellent. Both will protect you. The choice is really about which of the two philosophies sounds more like you.
 
-## The post-quantum question — why it matters now
+## The post-quantum question  -  why it matters now
 
 QUICK ANSWER Post-quantum cryptography (PQC) is a new family of encryption algorithms designed to remain secure even against future quantum computers. The "harvest now, decrypt later" concern is that encrypted traffic captured today could be saved and decrypted years from now. A PQC-ready VPN protects against that future, today.
 
 One topic that didn't traditionally appear in VPN comparisons but is rapidly becoming a category expectation: **post-quantum cryptography**, often shortened to **PQC**.
 
-The short version: most of the encryption used on the internet today — including inside VPNs — relies on math problems that are very hard for today's classical computers but that a sufficiently powerful **quantum computer** could solve. We don't have such a quantum computer yet. Researchers expect we eventually will.
+The short version: most of the encryption used on the internet today  -  including inside VPNs  -  relies on math problems that are very hard for today's classical computers but that a sufficiently powerful **quantum computer** could solve. We don't have such a quantum computer yet. Researchers expect we eventually will.
 
-What privacy-aware people worry about isn't the year quantum computers arrive. It's a pattern researchers call **"harvest now, decrypt later"**: an adversary captures and stores your encrypted traffic _today_, even though they can't read it today, on the bet that they'll be able to decrypt it five or ten years from now. The encrypted messages you sent this morning, the files you uploaded, the sessions you ran — all of it could be sitting in storage somewhere, waiting for the day the locks become breakable.
+What privacy-aware people worry about isn't the year quantum computers arrive. It's a pattern researchers call **"harvest now, decrypt later"**: an adversary captures and stores your encrypted traffic _today_, even though they can't read it today, on the bet that they'll be able to decrypt it five or ten years from now. The encrypted messages you sent this morning, the files you uploaded, the sessions you ran  -  all of it could be sitting in storage somewhere, waiting for the day the locks become breakable.
 
-This is why some of the biggest names in security — Apple, Signal, Cloudflare, Google — have been quietly rolling out **post-quantum cryptography** across their own products over the last two years. PQC algorithms are designed to remain secure against quantum computers. They are the future of secure communication, and that future has already started.
+This is why some of the biggest names in security  -  Apple, Signal, Cloudflare, Google  -  have been quietly rolling out **post-quantum cryptography** across their own products over the last two years. PQC algorithms are designed to remain secure against quantum computers. They are the future of secure communication, and that future has already started.
 
 Both NordVPN and ExpressVPN are **working on post-quantum protections**, and they deserve credit for moving in that direction. The next natural question is: _are there VPNs that have built post-quantum readiness in from day one?_
 
-## A newer name to know — OllaVPN
+## A newer name to know  -  OllaVPN
 
-The reason we wrote this guide — and the reason we tried very hard to be fair to both NordVPN and ExpressVPN in it — is that we think readers shopping for a VPN in 2026 deserve to know about **OllaVPN**, a newer privacy-focused service built to be **post-quantum-ready out of the box**.
+The reason we wrote this guide  -  and the reason we tried very hard to be fair to both NordVPN and ExpressVPN in it  -  is that we think readers shopping for a VPN in 2026 deserve to know about **OllaVPN**, a newer privacy-focused service built to be **post-quantum-ready out of the box**.
 
 OllaVPN is, full disclosure, our own service. We've tried to keep the rest of this guide honest enough that you can trust this section too. If you walked away from this page and bought NordVPN or ExpressVPN tomorrow, we'd consider that a totally reasonable decision and we'd be glad you read something useful.
 
 Here's what makes OllaVPN a top-grade alternative worth a place on your shortlist:
 
 *   **Post-quantum cryptography ready from day one.** Not a roadmap item. Not a paid add-on. Built in.
-*   **A lifetime free plan that really is free** — no time limits, no data caps, no ads, no nag screens, access to every country we serve. Ten megabits per second is enough for browsing, streaming most things in HD, and calls.
-*   **A paid plan that's deliberately simple and deliberately affordable** — $2 per month, five devices, 10 Gbps connection speed. Fast enough that you'll forget the VPN is even on. Cheap enough that it isn't a household-budget conversation.
+*   **A lifetime free plan that really is free**  -  no time limits, no data caps, no ads, no nag screens, access to every country we serve. Ten megabits per second is enough for browsing, streaming most things in HD, and calls.
+*   **A paid plan that's deliberately simple and deliberately affordable**  -  $2 per month, five devices, 10 Gbps connection speed. Fast enough that you'll forget the VPN is even on. Cheap enough that it isn't a household-budget conversation.
 *   **A kill switch that is on by default and cannot be disabled.** Privacy is not a setting you can accidentally turn off.
 *   **One company, one product.** We don't sell a password manager, a calendar, a productivity suite, an antivirus, or a data-broker removal service. We make a VPN, and we try to make it really, really well.
 
-**OllaVPN pricing — the whole menu:**
+**OllaVPN pricing  -  the whole menu:**
 
 Lifetime free
 
@@ -416,7 +416,7 @@ $2 / month · 10 Gbps
 
 Five devices on one account. Fast enough for gigabit home internet. Cheap enough that it isn't a decision.
 
-If you're already happy with NordVPN or ExpressVPN, stay where you are — they're both excellent and we'd be the last to talk you out of them. But if post-quantum readiness is on your list, or if the idea of a [no-strings lifetime free plan](/free-vpn) appeals to you, **OllaVPN is a top-grade alternative worth trying alongside the two names you came here to compare**.
+If you're already happy with NordVPN or ExpressVPN, stay where you are  -  they're both excellent and we'd be the last to talk you out of them. But if post-quantum readiness is on your list, or if the idea of a [no-strings lifetime free plan](/free-vpn) appeals to you, **OllaVPN is a top-grade alternative worth trying alongside the two names you came here to compare**.
 
 You can [try the free plan](../dl/) right now without an email or a card.
 
@@ -431,7 +431,7 @@ If we had to summarize this entire guide into three lines:
 The truth is that this is a category that has matured. The leaders are all good. The differences are now about fit, not quality. Whichever one you pick, having a reputable VPN is meaningfully better than having none.
 
 
-## How we evaluated these — methodology disclosure
+## How we evaluated these  -  methodology disclosure
 
 A head-to-head comparison is only as honest as the methodology behind it. For every comparison we publish, the framework is the same:
 
@@ -447,7 +447,7 @@ A head-to-head comparison is only as honest as the methodology behind it. For ev
 
 Not every "X vs Y" article on the internet uses a defensible methodology. When you read someone else's comparison, watch for these patterns:
 
-**Affiliate-driven rankings.** Many comparison sites are funded by VPN affiliate commissions. Operators that pay higher commissions tend to win those comparisons. The tell is rankings that don't match the actual technical merits or audit history — and "best for streaming" being the default lead category, because streaming-VPN affiliate payouts are highest.
+**Affiliate-driven rankings.** Many comparison sites are funded by VPN affiliate commissions. Operators that pay higher commissions tend to win those comparisons. The tell is rankings that don't match the actual technical merits or audit history  -  and "best for streaming" being the default lead category, because streaming-VPN affiliate payouts are highest.
 
 **Stale data.** VPN operators change pricing, ownership, jurisdiction, and feature sets continuously. A comparison written in 2023 and republished in 2026 without re-checking is unreliable. Look for a "last updated" date and a methodology section before trusting the comparison.
 
@@ -467,7 +467,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
 
 *   At a glance
 *   A quick note on ownership
-*   Pricing in 2026 — what you actually pay
+*   Pricing in 2026  -  what you actually pay
 *   Speed and performance
 *   Streaming, gaming, and torrenting
 
@@ -475,7 +475,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
 
 ### Is NordVPN better than ExpressVPN?
 
-Neither is objectively better — they are tuned for slightly different buyers. **NordVPN** tends to offer better value through a wider security bundle at a lower price point. **ExpressVPN** tends to win on app polish, customer support, and consistency across long-distance servers. Most readers will be happy with either.
+Neither is objectively better  -  they are tuned for slightly different buyers. **NordVPN** tends to offer better value through a wider security bundle at a lower price point. **ExpressVPN** tends to win on app polish, customer support, and consistency across long-distance servers. Most readers will be happy with either.
 
 ### Does NordVPN own ExpressVPN?
 
@@ -483,7 +483,7 @@ No. NordVPN and ExpressVPN are operated by completely separate parent companies.
 
 ### Which is cheaper, NordVPN or ExpressVPN?
 
-On the 2-year plan, **NordVPN Basic is about $3.09/month and ExpressVPN Basic is about $3.49/month** — both are excellent value for a long-term plan. Across higher tiers, NordVPN tends to bundle more security tools at a lower per-month cost.
+On the 2-year plan, **NordVPN Basic is about $3.09/month and ExpressVPN Basic is about $3.49/month**  -  both are excellent value for a long-term plan. Across higher tiers, NordVPN tends to bundle more security tools at a lower per-month cost.
 
 ### Which is faster, NordVPN or ExpressVPN?
 
@@ -491,7 +491,7 @@ Both perform excellently. NordVPN's **NordLynx protocol** is widely regarded as 
 
 ### Are NordVPN and ExpressVPN both safe to use?
 
-Yes. Both run **independently audited no-logs policies**, use modern encryption, and include kill switches enabled by default. NordVPN is based in Panama; ExpressVPN is based in the British Virgin Islands — both jurisdictions with strong privacy protections.
+Yes. Both run **independently audited no-logs policies**, use modern encryption, and include kill switches enabled by default. NordVPN is based in Panama; ExpressVPN is based in the British Virgin Islands  -  both jurisdictions with strong privacy protections.
 
 ### Which is better for streaming Netflix, Disney+, and BBC iPlayer?
 

@@ -46,7 +46,7 @@ Think about it: your internet connection is only as good as its weakest link. Fo
 
 Many people focus on things like changing DNS servers or using a VPN to "speed up" their connection, but these are often secondary or even tertiary concerns compared to your local network. While [OllaVPN](/blog/what-is-ollavpn) can certainly help with privacy and bypassing geo-restrictions, it can't magically fix a flaky Wi-Fi signal or a worn-out Ethernet cable. If you're experiencing severe **signal degradation** from too many walls or interference, or frequent **packet loss** on your home network, no amount of external optimization will truly solve your problem. You're trying to put a high-performance engine into a car with flat tires.
 
-Other solutions, like choosing a different VPN server, mostly deal with **network congestion** or optimizing **ISP routing** once your data leaves your home. Those are important, especially for things like gaming or streaming from specific regions. But if your connection to the internet is fundamentally unstable or slow \*before\* it even reaches your ISP, you're building on shaky ground. By focusing on your local setup first, you ensure that whatever you do beyond your router — whether it's a VPN, a gaming server, or just browsing — has the best possible starting point.
+Other solutions, like choosing a different VPN server, mostly deal with **network congestion** or optimizing **ISP routing** once your data leaves your home. Those are important, especially for things like gaming or streaming from specific regions. But if your connection to the internet is fundamentally unstable or slow \*before\* it even reaches your ISP, you're building on shaky ground. By focusing on your local setup first, you ensure that whatever you do beyond your router  -  whether it's a VPN, a gaming server, or just browsing  -  has the best possible starting point.
 
 ## What are the most common errors people make, and how can you fix them quickly?
 
@@ -110,23 +110,23 @@ While a VPN like OllaVPN can help with privacy and bypassing geo-restrictions, i
 
 A how-to guide is only useful if you can verify the outcome. After completing the steps above, the easiest checks to confirm the configuration is in place:
 
-**Visible state in the app.** The OllaVPN menu-bar or system-tray icon should be green (connected) and any status panel should show the country you selected. If the icon is gray or amber, the tunnel didn't fully come up — retry the connect.
+**Visible state in the app.** The OllaVPN menu-bar or system-tray icon should be green (connected) and any status panel should show the country you selected. If the icon is gray or amber, the tunnel didn't fully come up  -  retry the connect.
 
-**IP address changed.** Open [our what-is-my-IP tool](/what-is-my-ip). The IP shown should be the exit's IP, not your real ISP's IP, and the country shown should match the country you selected in the app. If you still see your real IP, the tunnel isn't carrying traffic — the most common cause is a firewall on the local network blocking WireGuard's UDP/51820. Try a different network briefly to isolate.
+**IP address changed.** Open [our what-is-my-IP tool](/what-is-my-ip). The IP shown should be the exit's IP, not your real ISP's IP, and the country shown should match the country you selected in the app. If you still see your real IP, the tunnel isn't carrying traffic  -  the most common cause is a firewall on the local network blocking WireGuard's UDP/51820. Try a different network briefly to isolate.
 
-**DNS is going through the tunnel.** Open [our DNS lookup tool](/dns-lookup). The resolver IP shown should be the in-tunnel one (CGNAT 100.64.x.x range), not your ISP's DNS. If you see your ISP's resolver, DNS is leaking — see our [in-tunnel DNS page](/in-tunnel-dns) for the technical details on why this happens and how OllaVPN prevents it.
+**DNS is going through the tunnel.** Open [our DNS lookup tool](/dns-lookup). The resolver IP shown should be the in-tunnel one (CGNAT 100.64.x.x range), not your ISP's DNS. If you see your ISP's resolver, DNS is leaking  -  see our [in-tunnel DNS page](/in-tunnel-dns) for the technical details on why this happens and how OllaVPN prevents it.
 
-**No WebRTC leak.** Open [our WebRTC leak test](/webrtc-leak-test). You should see only the exit's IPv4 address. If your real IP appears (private LAN address or public IPv4/IPv6), WebRTC is bypassing the VPN — either OllaVPN's leak prevention has failed (file a report at `[[email protected]](/cdn-cgi/l/email-protection)`) or your browser has a WebRTC-specific privacy issue we can help diagnose.
+**No WebRTC leak.** Open [our WebRTC leak test](/webrtc-leak-test). You should see only the exit's IPv4 address. If your real IP appears (private LAN address or public IPv4/IPv6), WebRTC is bypassing the VPN  -  either OllaVPN's leak prevention has failed (file a report at `[[email protected]](/cdn-cgi/l/email-protection)`) or your browser has a WebRTC-specific privacy issue we can help diagnose.
 
 ## If a step fails, here's how to debug
 
 The most common failure modes for any VPN setup task on Windows, macOS, or Android, in order of frequency:
 
-**The VPN refuses to connect at all.** Almost always a network-side issue: a restrictive firewall on the local network (school, corporate, hotel) blocking WireGuard's default UDP/51820 port. Try a different network briefly to confirm it's network-side. On Frankfurt the obfuscated MASQUE-on-port-443 transport works around many restrictive firewalls — switch to it in the country picker.
+**The VPN refuses to connect at all.** Almost always a network-side issue: a restrictive firewall on the local network (school, corporate, hotel) blocking WireGuard's default UDP/51820 port. Try a different network briefly to confirm it's network-side. On Frankfurt the obfuscated MASQUE-on-port-443 transport works around many restrictive firewalls  -  switch to it in the country picker.
 
 **The VPN connects but the internet is broken.** Almost always a DNS issue. The in-tunnel resolver hasn't taken precedence (sometimes after a macOS update or a Windows feature update, the supplemental DNS keys get cleared). Restarting the VPN typically fixes it; full disconnect and reconnect re-installs the DNS configuration.
 
-**Some apps work but others don't.** Either the app has its own proxy settings configured separately (some corporate apps), or the app uses a protocol the VPN doesn't carry (very rare — almost everything is TCP/UDP and works fine through the tunnel). Check the app's settings before assuming the VPN is at fault.
+**Some apps work but others don't.** Either the app has its own proxy settings configured separately (some corporate apps), or the app uses a protocol the VPN doesn't carry (very rare  -  almost everything is TCP/UDP and works fine through the tunnel). Check the app's settings before assuming the VPN is at fault.
 
 **Speed is much slower than expected.** The exit you picked is either congested or geographically far from you. Try a closer exit (the country picker shows latency). The free-tier 10 Mbps cap is the ceiling regardless of exit choice; if you need more, the Pro tier at $2/mo annual lifts it to 10 Gbps.
 
@@ -170,7 +170,7 @@ Yes, for the most part, these changes are easily reversible. You can unplug the 
 
 ### Is it safe to try these ping-lowering methods on a public Wi-Fi network?
 
-Mostly — here's where it breaks. While some things, like closing background apps, are safe anywhere, you generally shouldn't mess with router settings or DNS on a public network. You don't own it! It's best to stick to your home network for most of these optimizations.
+Mostly  -  here's where it breaks. While some things, like closing background apps, are safe anywhere, you generally shouldn't mess with router settings or DNS on a public network. You don't own it! It's best to stick to your home network for most of these optimizations.
 
 ### Should I use a VPN while trying to lower my ping for gaming?
 

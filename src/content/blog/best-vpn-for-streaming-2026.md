@@ -114,25 +114,25 @@ Ultimately, your choice in a VPN for streaming comes down to what you prioritize
 
 A list of recommendations is worth what the reader can verify. Each pick we made above can be tested from your own device in under fifteen minutes using free tools.
 
-**Test 1 — Funding model.** Open the operator's homepage and find the page that explains how the free tier (or whichever tier you're evaluating) is funded. If you cannot find a clear statement in 30 seconds, that's the answer — walk away.
+**Test 1  -  Funding model.** Open the operator's homepage and find the page that explains how the free tier (or whichever tier you're evaluating) is funded. If you cannot find a clear statement in 30 seconds, that's the answer  -  walk away.
 
-**Test 2 — DNS in-tunnel.** Connect the VPN. Open [our DNS lookup tool](/dns-lookup) and resolve a domain. The resolver IP returned should be an operator-controlled one, not 8.8.8.8 (Google), 1.1.1.1 (Cloudflare default), or your ISP's resolver. Disconnect, repeat — the diff is your evidence.
+**Test 2  -  DNS in-tunnel.** Connect the VPN. Open [our DNS lookup tool](/dns-lookup) and resolve a domain. The resolver IP returned should be an operator-controlled one, not 8.8.8.8 (Google), 1.1.1.1 (Cloudflare default), or your ISP's resolver. Disconnect, repeat  -  the diff is your evidence.
 
-**Test 3 — WebRTC and IPv6 leak.** Open [our WebRTC leak test](/webrtc-leak-test). The exit IP should be the only IP visible; your real IPv4 or IPv6 should not appear.
+**Test 3  -  WebRTC and IPv6 leak.** Open [our WebRTC leak test](/webrtc-leak-test). The exit IP should be the only IP visible; your real IPv4 or IPv6 should not appear.
 
-**Test 4 — Kill switch.** Connect VPN, start a continuous ping in your terminal (`ping 1.1.1.1`), disable your network adapter. Pings should immediately fail and stay failed until the network comes back. If they continue, the kill switch has a leak window.
+**Test 4  -  Kill switch.** Connect VPN, start a continuous ping in your terminal (`ping 1.1.1.1`), disable your network adapter. Pings should immediately fail and stay failed until the network comes back. If they continue, the kill switch has a leak window.
 
-**Test 5 — Audit history.** Search "<operator name> security audit" and look for a published third-party report (Cure53, Securitum, KPMG, Radically Open Security are the firms that audit VPNs most often). A clean recent audit is a meaningful trust signal; absence of audits when competitors have them is its own signal.
+**Test 5  -  Audit history.** Search "<operator name> security audit" and look for a published third-party report (Cure53, Securitum, KPMG, Radically Open Security are the firms that audit VPNs most often). A clean recent audit is a meaningful trust signal; absence of audits when competitors have them is its own signal.
 
 ## What we deliberately left out of this list
 
-For completeness, the names we considered but deliberately excluded — and why:
+For completeness, the names we considered but deliberately excluded  -  and why:
 
 **Hola VPN.** Excluded permanently. In May 2015, security researchers and the operators of 8chan independently confirmed that Hola was operating as a residential proxy network where every "free" user's bandwidth was being resold to a commercial subsidiary (now branded Bright Data) as exit-node capacity. Free Hola users were unknowingly hosting other people's traffic. The disclosure language has changed since but the model remains structurally the same.
 
 **SuperVPN, Snap VPN, Best Ultimate VPN, and most top-25 "free VPN" Play Store apps.** Excluded as a category. Academic studies (Ikram et al. 2016, Wu et al. 2023) found large fractions of these apps either ship malware, exfiltrate device data, or lack basic encryption. None publish a funding model. None have been independently audited. Stay out of the bottom 80% of any app-store "free VPN" search.
 
-**Browser-extension "VPNs"** (Browsec, Touch VPN, free VPN extensions). Excluded as a category — these are proxies that cover only browser traffic, not your operating system. Several have been caught injecting ads or exfiltrating browsing history. The browser-extension permission model makes them structurally harder to trust than a real VPN.
+**Browser-extension "VPNs"** (Browsec, Touch VPN, free VPN extensions). Excluded as a category  -  these are proxies that cover only browser traffic, not your operating system. Several have been caught injecting ads or exfiltrating browsing history. The browser-extension permission model makes them structurally harder to trust than a real VPN.
 
 **Atlas VPN.** Atlas was acquired by Nord Security in 2021 and shut down entirely in 2024, with free users migrated to NordVPN's paid tier. The Atlas brand is no longer a current option in 2026.
 
@@ -190,7 +190,7 @@ Yes, many privacy-focused VPNs strategically choose jurisdictions known for stro
 
 Not directly. Many popular VPNs don't offer a true "free forever" tier; they usually provide free trials or money-back guarantees. If you're looking for a genuinely free VPN, OllaVPN offers 10 Mbps, no data caps, and access to our full network, with no card required, forever.
 
-### What about OllaVPN — when does it make sense as an alternative?
+### What about OllaVPN  -  when does it make sense as an alternative?
 
 OllaVPN makes sense if you prioritize privacy above all, want post-quantum-ready security, and need either a free, no-strings-attached VPN (10 Mbps forever) or a very affordable, high-speed option (10 Gbps for $2/month). It's perfect if you're tired of ads, data selling, and hidden costs found elsewhere.
 

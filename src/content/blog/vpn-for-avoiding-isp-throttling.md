@@ -44,7 +44,7 @@ A VPN can't magically fix an internet connection that's already slow due to fact
 
 You might hear a lot about VPNs speeding up your internet, but that's only true in very specific circumstances. Think of it this way: a VPN is like a secure tunnel for your data. If the road leading to the tunnel is already full of potholes or jammed with traffic, the tunnel itself won't make your car go faster. A VPN isn't a magic bullet for slow internet; it can't add bandwidth where there isn't any to begin with.
 
-There are several reasons your internet might be slow that a VPN simply can't help with. First, if you're dealing with **overall network congestion** on your local network or at your Internet Service Provider (ISP), a VPN won't bypass that. Your data still has to travel through those congested points to reach our servers. Similarly, if there are issues with your **physical infrastructure**—like a bad Wi-Fi signal, old cables in your home, or problems with the lines coming into your building—a VPN won't make those physical limitations disappear. It's software, not a hardware upgrade.
+There are several reasons your internet might be slow that a VPN simply can't help with. First, if you're dealing with **overall network congestion** on your local network or at your Internet Service Provider (ISP), a VPN won't bypass that. Your data still has to travel through those congested points to reach our servers. Similarly, if there are issues with your **physical infrastructure** - like a bad Wi-Fi signal, old cables in your home, or problems with the lines coming into your building - a VPN won't make those physical limitations disappear. It's software, not a hardware upgrade.
 
 Another big one is your **ISP's general speed cap**. If your internet plan is 50 Mbps, a VPN won't suddenly give you 100 Mbps. Your ISP controls the maximum speed you can reach, and a VPN operates within those limits. In some cases, ISPs might even engage in [data allowance throttling](/blog/data-allowance-throttling-explained), slowing down your connection once you hit a certain usage limit. While a VPN can hide your activity from your ISP, preventing them from selectively throttling based on what you're doing (like streaming video), it won't prevent them from generally slowing down your entire connection if you've hit an overall data cap they impose. If your internet is just slow, it'll still be slow with a VPN.
 
@@ -102,7 +102,7 @@ It's important to understand that using a VPN itself is legal in most countries.
 
 VPN marketing tends to overpromise on specific use cases. The honest framing for the scenario above:
 
-**What the VPN actually changes.** Your apparent IP address (the destination sees the exit's IP, not yours). Your ISP's visibility into your destinations and DNS lookups (your ISP sees you're using a VPN; not what's inside). Whether other devices on the local network can sniff your traffic (they cannot). The presence or absence of encryption end-to-end depends on what the destination supports — HTTPS handles encryption between you and the destination; the VPN handles encryption between you and the exit.
+**What the VPN actually changes.** Your apparent IP address (the destination sees the exit's IP, not yours). Your ISP's visibility into your destinations and DNS lookups (your ISP sees you're using a VPN; not what's inside). Whether other devices on the local network can sniff your traffic (they cannot). The presence or absence of encryption end-to-end depends on what the destination supports  -  HTTPS handles encryption between you and the destination; the VPN handles encryption between you and the exit.
 
 **What the VPN doesn't change.** Whether the destination service can fingerprint your browser. Whether your account login identifies you to the service you're logging into. Whether your installed apps phone home with telemetry. Whether your operating system itself has compromised components. The VPN is one privacy layer; it doesn't replace browser hardening, account hygiene, or endpoint security.
 
@@ -116,7 +116,7 @@ Honest recommendations for this use case include knowing when to reach for somet
 
 **If the goal is bypassing extreme state-level censorship** (Iran's Great Firewall equivalent, China's Great Firewall), specialised tools like Psiphon, Lantern, and Tor bridges are built for that exact use case and invest heavily in obfuscation. Consumer VPNs work some days and not others in those environments; specialised tools work consistently.
 
-**If the goal is protecting devices on your home network from each other** (a compromised IoT camera attacking your laptop), a VPN doesn't address that — segmentation at the local-network level (VLANs, a separate IoT Wi-Fi network) is the right tool.
+**If the goal is protecting devices on your home network from each other** (a compromised IoT camera attacking your laptop), a VPN doesn't address that  -  segmentation at the local-network level (VLANs, a separate IoT Wi-Fi network) is the right tool.
 
 **If the goal is blocking ads and trackers**, a VPN doesn't do this by itself (though OllaVPN's planned Pro-tier resolver-level blocker will help, and uBlock Origin in the browser already does most of the work today). VPN + ad blocker + privacy-respecting browser is the layered approach.
 

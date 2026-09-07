@@ -24,7 +24,7 @@ Setting up OllaVPN on Linux is simple, and you'll get features like a kill switc
 
 For Linux, a truly 'free' VPN means transparent service without hidden costs, data selling, or invasive ads, funded ethically.
 
-What this kind of free VPN actually means and what it doesn't, especially for Linux users who often prioritize transparency and control, is pretty straightforward. It means you get a functional, reliable service without needing to put a credit card on file, ever. There are no hidden costs, no sneaky upsells disguised as "free trials" that auto-renew, and certainly no data selling to third parties to make up for the lack of subscription fees. It also means no invasive ads popping up, hijacking your browser, or tracking your activity across the web. Many "free" VPNs out there operate on a model where if you're not paying for the product, you \*are\* the product. They might log your activities, inject ads into your browsing, or sell your data to advertisers. That's a non-starter for us, and it should be for you too, especially if you're running Linux where privacy and open source are often core values. A truly free VPN should respect those values, not undermine them. At OllaVPN, our free plan is sustained directly by our paid [OllaVPN Plus](/plus) subscribers. This model means we don't ever need to compromise your privacy or data to keep the lights on for our free users. You get 10 Mbps speed, every country in our network, and a post-quantum ready connection — all completely free, forever, with no strings attached. It's about providing a genuine privacy tool, not a data-harvesting scheme in disguise.
+What this kind of free VPN actually means and what it doesn't, especially for Linux users who often prioritize transparency and control, is pretty straightforward. It means you get a functional, reliable service without needing to put a credit card on file, ever. There are no hidden costs, no sneaky upsells disguised as "free trials" that auto-renew, and certainly no data selling to third parties to make up for the lack of subscription fees. It also means no invasive ads popping up, hijacking your browser, or tracking your activity across the web. Many "free" VPNs out there operate on a model where if you're not paying for the product, you \*are\* the product. They might log your activities, inject ads into your browsing, or sell your data to advertisers. That's a non-starter for us, and it should be for you too, especially if you're running Linux where privacy and open source are often core values. A truly free VPN should respect those values, not undermine them. At OllaVPN, our free plan is sustained directly by our paid [OllaVPN Plus](/plus) subscribers. This model means we don't ever need to compromise your privacy or data to keep the lights on for our free users. You get 10 Mbps speed, every country in our network, and a post-quantum ready connection  -  all completely free, forever, with no strings attached. It's about providing a genuine privacy tool, not a data-harvesting scheme in disguise.
 
 ## What should you expect from any honest free VPN in this category?
 
@@ -102,7 +102,7 @@ We mean it when we say \*\*$0 forever\*\*. There are no hidden fees, no "introdu
 
 One pattern we've noticed across every privacy-and-networking topic we cover: the gap between what most users believe about a given topic and what the technical reality is keeps widening. Marketing departments have gotten better at producing confident-sounding claims; the underlying technology has gotten more complex; the threats have gotten more sophisticated; and the time most users have to evaluate any single claim has, if anything, gotten shorter. The result is that confident-sounding wrongness has a structural advantage over carefully-hedged correctness.
 
-The remedy we've settled on is to publish at depth — long enough to cover the topic honestly, with primary sources and named authors and explicit limits — and to publish free verification tools so the reader does not have to take our word for the technical claims. Both are choices that don't optimise for "users who skim and click." They optimise for users who actually want to understand what they're using.
+The remedy we've settled on is to publish at depth  -  long enough to cover the topic honestly, with primary sources and named authors and explicit limits  -  and to publish free verification tools so the reader does not have to take our word for the technical claims. Both are choices that don't optimise for "users who skim and click." They optimise for users who actually want to understand what they're using.
 
 If you've read this far, you're in the second group. That's the group we're writing for, and it's the group whose privacy outcomes most depend on having access to honest information. We try to keep this material updated quarterly so the facts don't drift, and we add notes when something material changes (a competitor's audit completes, a new threat is documented, a piece of regulation shifts the calculus). The [main free-VPN comparison](/best-free-vpn-2026), the [technology overview](/technology), and the [free privacy tools](/tools/) are the three pages most worth bookmarking from the OllaVPN site if you've found this guide useful.
 
@@ -122,25 +122,25 @@ For any claim on this page that affects a decision you're about to make, the ver
 
 A list of recommendations is worth what the reader can verify. Each pick we made above can be tested from your own device in under fifteen minutes using free tools.
 
-**Test 1 — Funding model.** Open the operator's homepage and find the page that explains how the free tier (or whichever tier you're evaluating) is funded. If you cannot find a clear statement in 30 seconds, that's the answer — walk away.
+**Test 1  -  Funding model.** Open the operator's homepage and find the page that explains how the free tier (or whichever tier you're evaluating) is funded. If you cannot find a clear statement in 30 seconds, that's the answer  -  walk away.
 
-**Test 2 — DNS in-tunnel.** Connect the VPN. Open [our DNS lookup tool](/dns-lookup) and resolve a domain. The resolver IP returned should be an operator-controlled one, not 8.8.8.8 (Google), 1.1.1.1 (Cloudflare default), or your ISP's resolver. Disconnect, repeat — the diff is your evidence.
+**Test 2  -  DNS in-tunnel.** Connect the VPN. Open [our DNS lookup tool](/dns-lookup) and resolve a domain. The resolver IP returned should be an operator-controlled one, not 8.8.8.8 (Google), 1.1.1.1 (Cloudflare default), or your ISP's resolver. Disconnect, repeat  -  the diff is your evidence.
 
-**Test 3 — WebRTC and IPv6 leak.** Open [our WebRTC leak test](/webrtc-leak-test). The exit IP should be the only IP visible; your real IPv4 or IPv6 should not appear.
+**Test 3  -  WebRTC and IPv6 leak.** Open [our WebRTC leak test](/webrtc-leak-test). The exit IP should be the only IP visible; your real IPv4 or IPv6 should not appear.
 
-**Test 4 — Kill switch.** Connect VPN, start a continuous ping in your terminal (`ping 1.1.1.1`), disable your network adapter. Pings should immediately fail and stay failed until the network comes back. If they continue, the kill switch has a leak window.
+**Test 4  -  Kill switch.** Connect VPN, start a continuous ping in your terminal (`ping 1.1.1.1`), disable your network adapter. Pings should immediately fail and stay failed until the network comes back. If they continue, the kill switch has a leak window.
 
-**Test 5 — Audit history.** Search "<operator name> security audit" and look for a published third-party report (Cure53, Securitum, KPMG, Radically Open Security are the firms that audit VPNs most often). A clean recent audit is a meaningful trust signal; absence of audits when competitors have them is its own signal.
+**Test 5  -  Audit history.** Search "<operator name> security audit" and look for a published third-party report (Cure53, Securitum, KPMG, Radically Open Security are the firms that audit VPNs most often). A clean recent audit is a meaningful trust signal; absence of audits when competitors have them is its own signal.
 
 ## What we deliberately left out of this list
 
-For completeness, the names we considered but deliberately excluded — and why:
+For completeness, the names we considered but deliberately excluded  -  and why:
 
 **Hola VPN.** Excluded permanently. In May 2015, security researchers and the operators of 8chan independently confirmed that Hola was operating as a residential proxy network where every "free" user's bandwidth was being resold to a commercial subsidiary (now branded Bright Data) as exit-node capacity. Free Hola users were unknowingly hosting other people's traffic. The disclosure language has changed since but the model remains structurally the same.
 
 **SuperVPN, Snap VPN, Best Ultimate VPN, and most top-25 "free VPN" Play Store apps.** Excluded as a category. Academic studies (Ikram et al. 2016, Wu et al. 2023) found large fractions of these apps either ship malware, exfiltrate device data, or lack basic encryption. None publish a funding model. None have been independently audited. Stay out of the bottom 80% of any app-store "free VPN" search.
 
-**Browser-extension "VPNs"** (Browsec, Touch VPN, free VPN extensions). Excluded as a category — these are proxies that cover only browser traffic, not your operating system. Several have been caught injecting ads or exfiltrating browsing history. The browser-extension permission model makes them structurally harder to trust than a real VPN.
+**Browser-extension "VPNs"** (Browsec, Touch VPN, free VPN extensions). Excluded as a category  -  these are proxies that cover only browser traffic, not your operating system. Several have been caught injecting ads or exfiltrating browsing history. The browser-extension permission model makes them structurally harder to trust than a real VPN.
 
 **Atlas VPN.** Atlas was acquired by Nord Security in 2021 and shut down entirely in 2024, with free users migrated to NordVPN's paid tier. The Atlas brand is no longer a current option in 2026.
 

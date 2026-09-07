@@ -8,7 +8,7 @@ tags: ['pillars']
 
 S
 
-Try OllaVPN free — post-quantum-ready, lifetime free plan.
+Try OllaVPN free  -  post-quantum-ready, lifetime free plan.
 
 No credit card. Or $2/mo for 5 devices on a faster plan.
 
@@ -22,47 +22,47 @@ What Is a [Man-in-the-Middle](/blog/what-is-a-man-in-the-middle-attack.html) (MI
 
 The plain-English guide to one of the oldest tricks in networking, still working in 2026. How someone can quietly insert themselves into a conversation you think is private, the specific techniques that make it possible, and the handful of habits that shut the door on almost all of them.
 
-TL;DR — THE SHORT ANSWERA man-in-the-middle attack (MITM) happens when someone secretly inserts themselves between you and whatever you're communicating with — a website, an app, a Wi-Fi network — so that all your traffic passes through them first. They can read it, and in some cases quietly alter it, before it reaches its actual destination, without either side realizing anything is wrong. The classic setting is public Wi-Fi, where an attacker on the same network can impersonate the router itself. But the same basic idea shows up in fake Wi-Fi hotspots, spoofed DNS responses, forged certificates, and even large-scale internet routing hijacks. HTTPS was built specifically to defeat this attack, and it does an excellent job when implemented correctly. Still, weak configurations, expired-certificate warnings people click through, and unencrypted DNS still leave real gaps. A VPN closes most of the remaining ones by encrypting your traffic before it ever reaches the local network an attacker might control. OllaVPN encrypts every connection with a post-quantum-ready tunnel, free on every plan.
+TL;DR  -  THE SHORT ANSWERA man-in-the-middle attack (MITM) happens when someone secretly inserts themselves between you and whatever you're communicating with  -  a website, an app, a Wi-Fi network  -  so that all your traffic passes through them first. They can read it, and in some cases quietly alter it, before it reaches its actual destination, without either side realizing anything is wrong. The classic setting is public Wi-Fi, where an attacker on the same network can impersonate the router itself. But the same basic idea shows up in fake Wi-Fi hotspots, spoofed DNS responses, forged certificates, and even large-scale internet routing hijacks. HTTPS was built specifically to defeat this attack, and it does an excellent job when implemented correctly. Still, weak configurations, expired-certificate warnings people click through, and unencrypted DNS still leave real gaps. A VPN closes most of the remaining ones by encrypting your traffic before it ever reaches the local network an attacker might control. OllaVPN encrypts every connection with a post-quantum-ready tunnel, free on every plan.
 
-[Man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attacks are one of the oldest tricks in the networking playbook — older than the modern web itself — and despite decades of defensive engineering, they still work often enough to matter.
+[Man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attacks are one of the oldest tricks in the networking playbook  -  older than the modern web itself  -  and despite decades of defensive engineering, they still work often enough to matter.
 
-This is a plain-English walkthrough of exactly how someone gets in the middle of your connection, the specific techniques involved, and the honest answer to how much HTTPS actually fixed versus what's still left over. No vague warnings — real mechanisms, real examples, real fixes.
+This is a plain-English walkthrough of exactly how someone gets in the middle of your connection, the specific techniques involved, and the honest answer to how much HTTPS actually fixed versus what's still left over. No vague warnings  -  real mechanisms, real examples, real fixes.
 
 ## Why this old attack still works in 2026
 
 QUICK ANSWER :
 
-[Man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attacks exploit a basic structural fact about networking: your device usually can't directly verify who it's actually talking to at the network level — it can only verify identity at the application level (via certificates). Wherever that verification is missing, skipped, or spoofable — an unsecured Wi-Fi network, an unencrypted DNS lookup — an attacker positioned nearby can quietly take the place of the thing you meant to talk to.
+[Man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attacks exploit a basic structural fact about networking: your device usually can't directly verify who it's actually talking to at the network level  -  it can only verify identity at the application level (via certificates). Wherever that verification is missing, skipped, or spoofable  -  an unsecured Wi-Fi network, an unencrypted DNS lookup  -  an attacker positioned nearby can quietly take the place of the thing you meant to talk to.
 
-The idea behind a [MITM](/blog/what-is-a-man-in-the-middle-attack.html) attack predates the internet by a long way — intercepting mail, tapping phone lines, and forging diplomatic cables are all the same trick in earlier technology. What keeps it relevant in modern networking is that a lot of the infrastructure connecting your device to the internet was built for functionality first and authentication second.
+The idea behind a [MITM](/blog/what-is-a-man-in-the-middle-attack.html) attack predates the internet by a long way  -  intercepting mail, tapping phone lines, and forging diplomatic cables are all the same trick in earlier technology. What keeps it relevant in modern networking is that a lot of the infrastructure connecting your device to the internet was built for functionality first and authentication second.
 
 Wi-Fi routers broadcast their presence to anyone in range. DNS, by default, has no built-in way to prove a response actually came from a legitimate resolver. Local networks trust address-resolution messages from any device on them, by design, because verifying every one would have been impractical when these protocols were designed decades ago.
 
-None of that was a mistake exactly — these protocols needed to be fast, simple, and universally compatible, and strong authentication at every layer would have made 1980s and 1990s networking hardware unworkable. But it left structural gaps that a nearby, motivated attacker can exploit, and those gaps haven't disappeared just because the web layered strong encryption on top decades later.
+None of that was a mistake exactly  -  these protocols needed to be fast, simple, and universally compatible, and strong authentication at every layer would have made 1980s and 1990s networking hardware unworkable. But it left structural gaps that a nearby, motivated attacker can exploit, and those gaps haven't disappeared just because the web layered strong encryption on top decades later.
 
 HTTPS fixed an enormous amount. It did not fix everything sitting underneath it.
 
-## A simple analogy — the mail carrier who reads your letters
+## A simple analogy  -  the mail carrier who reads your letters
 
-Imagine you're writing a letter to a friend and handing it to what you believe is your regular mail carrier. In a [man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attack, someone has quietly taken your regular carrier's place — maybe they're wearing a convincing uniform, maybe they've simply shown up at your mailbox first. You hand over the letter as normal. They open it, read it, perhaps copy down anything interesting, reseal it, and deliver it onward.
+Imagine you're writing a letter to a friend and handing it to what you believe is your regular mail carrier. In a [man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attack, someone has quietly taken your regular carrier's place  -  maybe they're wearing a convincing uniform, maybe they've simply shown up at your mailbox first. You hand over the letter as normal. They open it, read it, perhaps copy down anything interesting, reseal it, and deliver it onward.
 
 Your friend gets a reply back through the same impostor carrier, who reads that too before handing it to you.
 
-Neither you nor your friend notices anything unusual, because the letters still arrive, still look normal, and the conversation continues exactly as expected. The only thing that changed is who's actually handling the mail in between — and that's precisely what makes this attack dangerous. It doesn't look like an attack. It looks like nothing happened at all.
+Neither you nor your friend notices anything unusual, because the letters still arrive, still look normal, and the conversation continues exactly as expected. The only thing that changed is who's actually handling the mail in between  -  and that's precisely what makes this attack dangerous. It doesn't look like an attack. It looks like nothing happened at all.
 
 Modern network encryption is the equivalent of sealing that letter inside a tamper-evident envelope that only your actual friend has the key to open, and that shows unmistakable signs of interference if anyone tries to open it along the way.
 
-A [man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attack, at its core, is always some version of an attacker trying to get their hands on your letters before that seal makes tampering pointless — either by intercepting them before the envelope goes on, or by tricking you into using a broken envelope in the first place.
+A [man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attack, at its core, is always some version of an attacker trying to get their hands on your letters before that seal makes tampering pointless  -  either by intercepting them before the envelope goes on, or by tricking you into using a broken envelope in the first place.
 
 ## What a man-in-the-middle attack actually is
 
 A [man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attack is any situation where a third party secretly positions itself between two communicating parties, relaying (and potentially reading or altering) traffic between them, while both original parties believe they're communicating directly with each other.
 
-Stripped of any specific technique, the definition is simple: an attacker sits between two parties who believe they're talking directly to each other, and relays traffic between them while secretly observing or modifying it. Both the "man" and the "middle" in the name are literal — a third party has inserted itself into the middle of a two-party exchange.
+Stripped of any specific technique, the definition is simple: an attacker sits between two parties who believe they're talking directly to each other, and relays traffic between them while secretly observing or modifying it. Both the "man" and the "middle" in the name are literal  -  a third party has inserted itself into the middle of a two-party exchange.
 
 What makes this category broader than most people assume is that it isn't tied to any single technique. It's a description of a position an attacker achieves, not a specific tool or exploit.
 
-An attacker can get into that position through a fake Wi-Fi hotspot, through manipulating how your device resolves domain names, through exploiting how devices on a local network trust each other's identity claims, or even — at a much larger scale — through manipulating how traffic gets routed across the internet backbone itself.
+An attacker can get into that position through a fake Wi-Fi hotspot, through manipulating how your device resolves domain names, through exploiting how devices on a local network trust each other's identity claims, or even  -  at a much larger scale  -  through manipulating how traffic gets routed across the internet backbone itself.
 
 Later sections in this guide walk through each of these individually, because the specific mechanism matters enormously for understanding both the risk and the fix.
 
@@ -76,9 +76,9 @@ It helps to break the attack down into its constituent requirements, because doi
 
 • Positioning: The attacker needs your traffic, or the other party's traffic, to physically or logically pass through them. This might mean being on the same Wi-Fi network as you, controlling a router along your traffic's path, or manipulating routing tables somewhere further upstream.
 
-• Impersonation: Once positioned, the attacker needs each side to believe they're talking to the legitimate party. This is where certificates, domain names, and network identities come in — an attacker either forges a convincing fake identity or exploits a system that doesn't verify identity strongly enough to catch the forgery.
+• Impersonation: Once positioned, the attacker needs each side to believe they're talking to the legitimate party. This is where certificates, domain names, and network identities come in  -  an attacker either forges a convincing fake identity or exploits a system that doesn't verify identity strongly enough to catch the forgery.
 
-• Interception or tampering: With both of the above in place, the attacker can now passively read traffic (the more common goal — credentials, session cookies, personal data) or actively alter it in transit (injecting malicious content, redirecting payments, modifying downloaded files).
+• Interception or tampering: With both of the above in place, the attacker can now passively read traffic (the more common goal  -  credentials, session cookies, personal data) or actively alter it in transit (injecting malicious content, redirecting payments, modifying downloaded files).
 
 Every specific [MITM](/blog/what-is-a-man-in-the-middle-attack.html) technique covered in this guide is really just a different way of satisfying these same three requirements. Understanding that pattern is more useful than memorizing any single technique, because new variations keep appearing that are really just new answers to the same three-part problem.
 
@@ -88,57 +88,57 @@ Every specific [MITM](/blog/what-is-a-man-in-the-middle-attack.html) technique c
 
 The rest of this guide walks through the specific techniques one at a time, roughly ordered from the most common and accessible (something a moderately skilled attacker can do at a coffee shop with cheap hardware) to the most sophisticated (something that typically requires access to internet infrastructure itself).
 
-Knowing the names matters less than understanding the shape of each one — but knowing the names does help you make sense of security news and vendor advisories when they come up.
+Knowing the names matters less than understanding the shape of each one  -  but knowing the names does help you make sense of security news and vendor advisories when they come up.
 
-## The evil twin — fake Wi-Fi hotspots explained
+## The evil twin  -  fake Wi-Fi hotspots explained
 
 QUICK ANSWER :
 
-An "evil twin" is a fake Wi-Fi access point set up to look identical to a legitimate one — often with the exact same network name — luring devices to connect to the attacker's hardware instead of the real network. Once connected, every byte of your traffic passes through the attacker's equipment before continuing on to the internet.
+An "evil twin" is a fake Wi-Fi access point set up to look identical to a legitimate one  -  often with the exact same network name  -  luring devices to connect to the attacker's hardware instead of the real network. Once connected, every byte of your traffic passes through the attacker's equipment before continuing on to the internet.
 
-This is the most accessible [MITM](/blog/what-is-a-man-in-the-middle-attack.html) technique in this guide, requiring nothing more exotic than inexpensive, widely available hardware and a public location where people expect free Wi-Fi. An attacker sets up a wireless access point broadcasting a network name identical or very similar to a legitimate one — "Airport\_Free\_WiFi," "Starbucks\_Guest," a hotel's actual network name copied exactly — often with a stronger signal than the real network, so nearby devices are more likely to connect to the impostor automatically.
+This is the most accessible [MITM](/blog/what-is-a-man-in-the-middle-attack.html) technique in this guide, requiring nothing more exotic than inexpensive, widely available hardware and a public location where people expect free Wi-Fi. An attacker sets up a wireless access point broadcasting a network name identical or very similar to a legitimate one  -  "Airport\_Free\_WiFi," "Starbucks\_Guest," a hotel's actual network name copied exactly  -  often with a stronger signal than the real network, so nearby devices are more likely to connect to the impostor automatically.
 
 Once a device connects, the attacker's equipment functions as that device's gateway to the internet. That means every unencrypted request, every DNS lookup, and every piece of metadata about which sites are being visited flows directly through hardware the attacker controls.
 
 Some evil-twin setups go further, presenting a fake captive-portal login page designed to harvest credentials directly. This is especially effective against travelers who expect to enter hotel or flight confirmation details to get online.
 
-The defense here is mostly about habits rather than technology: verifying a network name with staff before connecting, treating any "free Wi-Fi requires login with your email/password" prompt with suspicion, and — most reliably — running a VPN so that even a successful evil-twin connection only gets the attacker an encrypted stream they can't read.
+The defense here is mostly about habits rather than technology: verifying a network name with staff before connecting, treating any "free Wi-Fi requires login with your email/password" prompt with suspicion, and  -  most reliably  -  running a VPN so that even a successful evil-twin connection only gets the attacker an encrypted stream they can't read.
 
-## ARP spoofing — hijacking traffic on your own network
+## ARP spoofing  -  hijacking traffic on your own network
 
 Address Resolution Protocol (ARP) spoofing exploits the fact that devices on a local network trust unauthenticated broadcast messages claiming "this IP address belongs to this hardware address." An attacker already on the same network sends forged ARP messages claiming to be the router, redirecting nearby devices' traffic through their own machine.
 
-This technique targets a specific, decades-old weak point in how local networks function. Every device on a network needs to translate IP addresses into physical hardware addresses (MAC addresses) to actually deliver traffic, and it does this using the Address Resolution Protocol (ARP) — a simple broadcast-based system with essentially no built-in authentication.
+This technique targets a specific, decades-old weak point in how local networks function. Every device on a network needs to translate IP addresses into physical hardware addresses (MAC addresses) to actually deliver traffic, and it does this using the Address Resolution Protocol (ARP)  -  a simple broadcast-based system with essentially no built-in authentication.
 
 Any device on the network can claim, via an ARP message, "I am the hardware behind this IP address," and other devices will generally believe it without verification.
 
-An attacker who has already gained access to a local network — a shared office network, a poorly secured home network, a public network without client isolation — can send forged ARP messages claiming to be the router. Nearby devices update their internal tables accordingly and start sending their internet-bound traffic to the attacker's machine instead of the actual router.
+An attacker who has already gained access to a local network  -  a shared office network, a poorly secured home network, a public network without client isolation  -  can send forged ARP messages claiming to be the router. Nearby devices update their internal tables accordingly and start sending their internet-bound traffic to the attacker's machine instead of the actual router.
 
 The router then typically forwards the traffic onward (to avoid an obvious outage that would tip off the target) while quietly copying it along the way.
 
-This is precisely the kind of attack that a well-built VPN's network architecture is designed to make irrelevant — a properly isolated tunnel means that even if an attacker successfully spoofs the local network's traffic flow, everything they capture is encrypted at a layer their local-network trickery can't touch.
+This is precisely the kind of attack that a well-built VPN's network architecture is designed to make irrelevant  -  a properly isolated tunnel means that even if an attacker successfully spoofs the local network's traffic flow, everything they capture is encrypted at a layer their local-network trickery can't touch.
 
-## DNS spoofing — sending you to the wrong address entirely
+## DNS spoofing  -  sending you to the wrong address entirely
 
 QUICK ANSWER :
 
-DNS spoofing involves an attacker forging responses to your device's domain-name lookups, redirecting you to a malicious server instead of the legitimate one — potentially without any visible change to the URL you typed. This can happen through a compromised local network, a poisoned DNS cache, or a malicious DNS resolver.
+DNS spoofing involves an attacker forging responses to your device's domain-name lookups, redirecting you to a malicious server instead of the legitimate one  -  potentially without any visible change to the URL you typed. This can happen through a compromised local network, a poisoned DNS cache, or a malicious DNS resolver.
 
 Every website visit typically starts with a DNS lookup translating a human-readable domain into a numeric IP address. By default, that lookup happens over an old, unauthenticated protocol.
 
-An attacker capable of intercepting or answering that lookup — whether by controlling the local network, poisoning a shared DNS cache, or operating a malicious resolver you've been redirected to use — can simply lie about the answer. They send your device to a server they control instead of the real one, all while the address bar continues to show the domain name you actually typed.
+An attacker capable of intercepting or answering that lookup  -  whether by controlling the local network, poisoning a shared DNS cache, or operating a malicious resolver you've been redirected to use  -  can simply lie about the answer. They send your device to a server they control instead of the real one, all while the address bar continues to show the domain name you actually typed.
 
-This is a particularly effective [MITM](/blog/what-is-a-man-in-the-middle-attack.html) technique specifically because it operates before your browser has connected to anything. That means the visual cues people are trained to look for — the padlock icon, the URL itself — can appear entirely normal right up until the point where the fake site's own certificate (or lack of one) becomes the giveaway.
+This is a particularly effective [MITM](/blog/what-is-a-man-in-the-middle-attack.html) technique specifically because it operates before your browser has connected to anything. That means the visual cues people are trained to look for  -  the padlock icon, the URL itself  -  can appear entirely normal right up until the point where the fake site's own certificate (or lack of one) becomes the giveaway.
 
 A well-executed DNS spoofing attack combined with a convincing fake login page has been behind a meaningful share of real-world credential theft over the years.
 
-Encrypted DNS — DNS over HTTPS (DoH) or DNS over TLS (DoT) — directly addresses this by making the lookup itself unreadable and unforgeable to anyone sitting on the local network, closing off this specific technique regardless of how compromised the local network otherwise is.
+Encrypted DNS  -  DNS over HTTPS (DoH) or DNS over TLS (DoT)  -  directly addresses this by making the lookup itself unreadable and unforgeable to anyone sitting on the local network, closing off this specific technique regardless of how compromised the local network otherwise is.
 
 ## SSL stripping and forged certificates
 
 QUICK ANSWER :
 
-SSL stripping (or downgrade attacks) intercept a connection during its initial, often-unencrypted first request. Then it quietly keeps the victim on plain HTTP while presenting an encrypted HTTPS connection to the real website — meaning the attacker sees everything in plain text while the victim may not notice anything unusual.
+SSL stripping (or downgrade attacks) intercept a connection during its initial, often-unencrypted first request. Then it quietly keeps the victim on plain HTTP while presenting an encrypted HTTPS connection to the real website  -  meaning the attacker sees everything in plain text while the victim may not notice anything unusual.
 
 Forged or maliciously issued certificates achieve a similar result by convincing a device to trust an attacker-controlled encrypted connection outright.
 
@@ -150,19 +150,19 @@ The victim sees a functioning website. They may or may not notice the missing pa
 
 Modern browsers and a security mechanism called HSTS (HTTP Strict Transport Security) have significantly reduced this attack's effectiveness by telling browsers to refuse plain-HTTP connections to sites that have opted in. But not every site has opted in, and not every browsing scenario benefits from the protection.
 
-Forged or maliciously trusted certificates take a more direct approach: if an attacker can get a device to trust a fraudulent certificate — through a compromised certificate authority, a corporate or malicious root certificate installed on the device, or a user clicking through a security warning — they can present themselves as the legitimate site with a fully valid-looking HTTPS connection, encryption and all.
+Forged or maliciously trusted certificates take a more direct approach: if an attacker can get a device to trust a fraudulent certificate  -  through a compromised certificate authority, a corporate or malicious root certificate installed on the device, or a user clicking through a security warning  -  they can present themselves as the legitimate site with a fully valid-looking HTTPS connection, encryption and all.
 
 They then quietly relay (and read) everything in between. This is precisely why browser certificate warnings exist, and precisely why clicking through them without understanding what they mean is one of the more dangerous habits in everyday browsing.
 
-## BGP hijacking — MITM at internet scale
+## BGP hijacking  -  MITM at internet scale
 
-Border Gateway Protocol (BGP) hijacking involves manipulating the routing announcements that tell the internet's backbone how to reach a given block of IP addresses. It redirects traffic destined for a legitimate service through infrastructure the attacker controls — a [MITM](/blog/what-is-a-man-in-the-middle-attack.html) attack executed at the level of internet infrastructure rather than a single local network.
+Border Gateway Protocol (BGP) hijacking involves manipulating the routing announcements that tell the internet's backbone how to reach a given block of IP addresses. It redirects traffic destined for a legitimate service through infrastructure the attacker controls  -  a [MITM](/blog/what-is-a-man-in-the-middle-attack.html) attack executed at the level of internet infrastructure rather than a single local network.
 
 This is the least common technique in this guide for an individual to encounter directly, but it's worth understanding because of its scale and because it's periodically responsible for major, headline-making incidents.
 
-The internet's backbone routers rely on BGP (Border Gateway Protocol) to figure out how to reach any given block of IP addresses. BGP was designed decades ago around a basic assumption of trust between network operators — an assumption that doesn't hold up against a network operator, or someone impersonating one, who deliberately announces false routing information.
+The internet's backbone routers rely on BGP (Border Gateway Protocol) to figure out how to reach any given block of IP addresses. BGP was designed decades ago around a basic assumption of trust between network operators  -  an assumption that doesn't hold up against a network operator, or someone impersonating one, who deliberately announces false routing information.
 
-A successful BGP hijack can redirect a significant volume of traffic destined for a specific service — a bank, a cryptocurrency exchange, a major platform — through infrastructure controlled by the attacker. The attacker can then intercept, analyze, or in some documented cases actively manipulate that traffic before releasing it onward, all while affected users typically see no obvious sign anything has changed.
+A successful BGP hijack can redirect a significant volume of traffic destined for a specific service  -  a bank, a cryptocurrency exchange, a major platform  -  through infrastructure controlled by the attacker. The attacker can then intercept, analyze, or in some documented cases actively manipulate that traffic before releasing it onward, all while affected users typically see no obvious sign anything has changed.
 
 Because this technique operates at the routing-infrastructure level rather than targeting individual users, it's largely outside what any individual's personal security habits can defend against. The defense here lives with network operators implementing route validation standards like RPKI (Resource Public Key Infrastructure), not with end-user behavior.
 
@@ -172,7 +172,7 @@ What it does mean for you personally: strong end-to-end encryption (HTTPS, a VPN
 
 2011
 
-DigiNotar, a Dutch certificate authority, is compromised. Attackers issue fraudulent certificates for major domains including Google — later linked to interception of Iranian users' Gmail traffic through forged, trusted certificates.
+DigiNotar, a Dutch certificate authority, is compromised. Attackers issue fraudulent certificates for major domains including Google  -  later linked to interception of Iranian users' Gmail traffic through forged, trusted certificates.
 
 2013
 
@@ -180,7 +180,7 @@ Public disclosures around bulk network interception programs bring mainstream at
 
 2015
 
-Superfish, adware pre-installed on some consumer laptops, is found to install a root certificate that lets it — and potentially any attacker who reverse-engineered its private key — intercept and decrypt HTTPS traffic on affected machines. It was a textbook [MITM](/blog/what-is-a-man-in-the-middle-attack.html) vulnerability shipped by default.
+Superfish, adware pre-installed on some consumer laptops, is found to install a root certificate that lets it  -  and potentially any attacker who reverse-engineered its private key  -  intercept and decrypt HTTPS traffic on affected machines. It was a textbook [MITM](/blog/what-is-a-man-in-the-middle-attack.html) vulnerability shipped by default.
 
 2017
 
@@ -188,13 +188,13 @@ A widely reported BGP hijacking incident briefly reroutes traffic for a range of
 
 2018
 
-Major browsers begin visually flagging plain-HTTP sites as "Not Secure" — a direct response to how effective SSL-stripping-style attacks had been against users who never noticed the missing padlock.
+Major browsers begin visually flagging plain-HTTP sites as "Not Secure"  -  a direct response to how effective SSL-stripping-style attacks had been against users who never noticed the missing padlock.
 
 2020s
 
 Evil-twin Wi-Fi attacks at conferences, airports, and hotels continue to be documented by security researchers as a persistent, low-cost, high-yield technique, particularly against travelers using unfamiliar networks.
 
-If there's a single takeaway from this timeline, it's that [MITM](/blog/what-is-a-man-in-the-middle-attack.html) attacks haven't gone away as encryption has improved — they've moved to whichever layer still has the weakest verification. Over time, that shifted from raw traffic interception toward certificate trust and routing infrastructure.
+If there's a single takeaway from this timeline, it's that [MITM](/blog/what-is-a-man-in-the-middle-attack.html) attacks haven't gone away as encryption has improved  -  they've moved to whichever layer still has the weakest verification. Over time, that shifted from raw traffic interception toward certificate trust and routing infrastructure.
 
 ## How HTTPS actually defeats most of this
 
@@ -204,19 +204,19 @@ HTTPS (TLS) was specifically designed to defeat [man-in-the-middle](/blog/what-i
 
 It's worth pausing to give HTTPS real credit here, because a lot of [MITM](/blog/what-is-a-man-in-the-middle-attack.html)\-focused content skips past just how effective it actually is when working as intended.
 
-TLS, the encryption protocol underneath HTTPS, was explicitly engineered with the [man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) threat model in mind — not as an afterthought, but as the central problem it exists to solve.
+TLS, the encryption protocol underneath HTTPS, was explicitly engineered with the [man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) threat model in mind  -  not as an afterthought, but as the central problem it exists to solve.
 
 Two mechanisms do the heavy lifting.
 
-Encryption means that even if an attacker successfully positions themselves in the middle — through an evil twin, ARP spoofing, or a compromised router — the traffic they intercept is unreadable ciphertext. It's useless without the private key that only the legitimate server holds.
+Encryption means that even if an attacker successfully positions themselves in the middle  -  through an evil twin, ARP spoofing, or a compromised router  -  the traffic they intercept is unreadable ciphertext. It's useless without the private key that only the legitimate server holds.
 
-Certificate-based identity verification means that before any of that encryption even begins, your browser checks a cryptographically signed certificate proving the server actually is who it claims to be. It's issued by a certificate authority your device already trusts — making it extremely difficult for an attacker to simply claim to be a legitimate site without either compromising that trust chain or triggering a very visible browser warning.
+Certificate-based identity verification means that before any of that encryption even begins, your browser checks a cryptographically signed certificate proving the server actually is who it claims to be. It's issued by a certificate authority your device already trusts  -  making it extremely difficult for an attacker to simply claim to be a legitimate site without either compromising that trust chain or triggering a very visible browser warning.
 
 Put together, this is why plain ARP spoofing or an evil-twin Wi-Fi network, on their own, mostly fail against a properly HTTPS-secured site today: the attacker can redirect your traffic through their equipment, but they can't read it, and they can't convincingly impersonate the destination without the browser noticing something is wrong.
 
 ## Where HTTPS still leaves a gap
 
-HTTPS doesn't help if a user clicks through a certificate warning, if a site never migrated to HTTPS in the first place, if a device has been tricked into trusting a fraudulent root certificate, or if the attack targets the layer underneath HTTPS entirely — like DNS or raw network metadata, both of which remain visible even on a fully HTTPS-protected connection.
+HTTPS doesn't help if a user clicks through a certificate warning, if a site never migrated to HTTPS in the first place, if a device has been tricked into trusting a fraudulent root certificate, or if the attack targets the layer underneath HTTPS entirely  -  like DNS or raw network metadata, both of which remain visible even on a fully HTTPS-protected connection.
 
 Despite everything HTTPS does well, several real gaps remain, and being honest about them is more useful than pretending the problem is fully solved.
 
@@ -224,7 +224,7 @@ Certificate warnings that get clicked through. The entire security model depends
 
 Sites that never adopted HTTPS. A shrinking but nonzero share of the web, along with plenty of older embedded devices and internal corporate tools, still serves plain HTTP. That offers zero protection against interception for anyone using them.
 
-Fraudulently trusted root certificates. If an attacker — or pre-installed adware, as in the Superfish incident — has gotten a device to trust a certificate it shouldn't, HTTPS's identity verification is compromised from the inside. The encrypted padlock icon can appear fully legitimate while an attacker reads everything.
+Fraudulently trusted root certificates. If an attacker  -  or pre-installed adware, as in the Superfish incident  -  has gotten a device to trust a certificate it shouldn't, HTTPS's identity verification is compromised from the inside. The encrypted padlock icon can appear fully legitimate while an attacker reads everything.
 
 Everything DNS and metadata. HTTPS protects content, not the domain lookup or network-level metadata surrounding a connection. That means DNS spoofing can still redirect a user before HTTPS ever gets involved. Even on a fully protected connection, the destination domain, timing, and volume of traffic often remain visible to anyone positioned on the network.
 
@@ -242,11 +242,11 @@ Mostly true, but not entirely. Certificate warnings clicked through, sites that 
 
 "A VPN completely eliminates any [MITM](/blog/what-is-a-man-in-the-middle-attack.html) risk."
 
-A VPN closes most of the network-positioning techniques covered in this guide — an evil twin or ARP spoofing attacker only captures encrypted traffic they can't read once it's inside a VPN tunnel. It doesn't fix a fraudulently trusted certificate already installed on your device. It also shifts some trust to the VPN provider itself, which is exactly why a VPN's own security practices matter.
+A VPN closes most of the network-positioning techniques covered in this guide  -  an evil twin or ARP spoofing attacker only captures encrypted traffic they can't read once it's inside a VPN tunnel. It doesn't fix a fraudulently trusted certificate already installed on your device. It also shifts some trust to the VPN provider itself, which is exactly why a VPN's own security practices matter.
 
 "Only technical experts can pull off a [MITM](/blog/what-is-a-man-in-the-middle-attack.html) attack."
 
-Evil-twin hotspots and basic ARP spoofing can be executed with inexpensive, widely available hardware and freely available tools. That requires far less technical sophistication than most people assume — which is part of why the attack remains common rather than a fading relic of less-secure networking eras.
+Evil-twin hotspots and basic ARP spoofing can be executed with inexpensive, widely available hardware and freely available tools. That requires far less technical sophistication than most people assume  -  which is part of why the attack remains common rather than a fading relic of less-secure networking eras.
 
 "If my connection still works normally, nothing suspicious is happening."
 
@@ -268,11 +268,11 @@ What actually closes the gap
 
 • Use encrypted DNS (DoH or DoT), which closes the DNS-spoofing gap regardless of how compromised the local network otherwise is.
 
-• Run a VPN on any network you don't personally control — coffee shops, hotels, airports, conference Wi-Fi. This turns a successful evil-twin or ARP-spoofing capture into useless encrypted noise.
+• Run a VPN on any network you don't personally control  -  coffee shops, hotels, airports, conference Wi-Fi. This turns a successful evil-twin or ARP-spoofing capture into useless encrypted noise.
 
 • Keep browsers and operating systems updated, since HSTS enforcement, certificate-trust lists, and other [MITM](/blog/what-is-a-man-in-the-middle-attack.html)\-relevant protections improve continuously and rely on running current software.
 
-• Check for duplicate network names when connecting somewhere new — two networks with the identical name in the same location is a specific, recognizable evil-twin pattern.
+• Check for duplicate network names when connecting somewhere new  -  two networks with the identical name in the same location is a specific, recognizable evil-twin pattern.
 
 • Avoid installing unnecessary root certificates, and periodically review which ones are trusted on devices where that's feasible, particularly after installing free or ad-supported software.
 
@@ -284,11 +284,11 @@ We built OllaVPN around the idea that the network you happen to be connected to 
 
 • DNS is handled entirely inside the tunnel, closing the DNS-spoofing gap described above without requiring any separate configuration.
 
-• A post-quantum-ready hybrid handshake on every connection, protecting the tunnel's own key exchange against future decryption — see our pillar guide on post-quantum cryptography for the full picture.
+• A post-quantum-ready hybrid handshake on every connection, protecting the tunnel's own key exchange against future decryption  -  see our pillar guide on post-quantum cryptography for the full picture.
 
 • An always-on kill switch ensures that if the tunnel ever drops on an untrusted network, traffic stops rather than silently falling back to an exposed, unencrypted connection.
 
-• Free for life, on every plan — the protection that matters most on [public Wi-Fi](/blog/how-public-wifi-steals-passwords.html) shouldn't be reserved for people willing to pay for it first.
+• Free for life, on every plan  -  the protection that matters most on [public Wi-Fi](/blog/how-public-wifi-steals-passwords.html) shouldn't be reserved for people willing to pay for it first.
 
 ⭐ Key takeaways
 
@@ -296,7 +296,7 @@ We built OllaVPN around the idea that the network you happen to be connected to 
 
 ## • Why this old attack still works in 2026
 
-## • A simple analogy — the mail carrier who reads your letters
+## • A simple analogy  -  the mail carrier who reads your letters
 
 ## • What a man-in-the-middle attack actually is
 
@@ -308,19 +308,19 @@ We built OllaVPN around the idea that the network you happen to be connected to 
 
 What is a [man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attack in simple terms?
 
-A [man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attack is when someone secretly positions themselves between you and whatever you're communicating with — a website, an app, a network — so your traffic passes through them first. They can read it, and sometimes alter it, before it reaches its real destination, often without either side noticing.
+A [man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attack is when someone secretly positions themselves between you and whatever you're communicating with  -  a website, an app, a network  -  so your traffic passes through them first. They can read it, and sometimes alter it, before it reaches its real destination, often without either side noticing.
 
 How common are [man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attacks in 2026?
 
-The specific techniques vary widely in prevalence — evil-twin Wi-Fi attacks and ARP spoofing remain relatively common and low-cost for an attacker to attempt, while large-scale BGP hijacking is rarer and generally requires infrastructure-level access. HTTPS adoption has significantly reduced the success rate of many [MITM](/blog/what-is-a-man-in-the-middle-attack.html) attempts even where the attempt itself still occurs.
+The specific techniques vary widely in prevalence  -  evil-twin Wi-Fi attacks and ARP spoofing remain relatively common and low-cost for an attacker to attempt, while large-scale BGP hijacking is rarer and generally requires infrastructure-level access. HTTPS adoption has significantly reduced the success rate of many [MITM](/blog/what-is-a-man-in-the-middle-attack.html) attempts even where the attempt itself still occurs.
 
 Does HTTPS completely prevent [man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attacks?
 
-It prevents the large majority of them when correctly implemented and not bypassed. It doesn't help if a certificate warning gets clicked through, if a site never adopted HTTPS, or if a device has been tricked into trusting a fraudulent root certificate — and it doesn't hide DNS lookups or network metadata, which remain visible even on protected connections.
+It prevents the large majority of them when correctly implemented and not bypassed. It doesn't help if a certificate warning gets clicked through, if a site never adopted HTTPS, or if a device has been tricked into trusting a fraudulent root certificate  -  and it doesn't hide DNS lookups or network metadata, which remain visible even on protected connections.
 
 Can a VPN stop a [man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attack?
 
-A VPN closes most of the network-positioning techniques — an evil-twin hotspot or ARP-spoofing attacker on the local network only captures encrypted traffic they can't read once your data is inside a VPN tunnel. It doesn't fix a fraudulent certificate already trusted on your device, and it shifts trust to the VPN provider, which is why the provider's own security practices matter.
+A VPN closes most of the network-positioning techniques  -  an evil-twin hotspot or ARP-spoofing attacker on the local network only captures encrypted traffic they can't read once your data is inside a VPN tunnel. It doesn't fix a fraudulent certificate already trusted on your device, and it shifts trust to the VPN provider, which is why the provider's own security practices matter.
 
 What is an evil twin Wi-Fi attack?
 
@@ -332,15 +332,15 @@ ARP spoofing exploits the fact that devices on a local network trust unauthentic
 
 What is DNS spoofing?
 
-DNS spoofing involves an attacker forging the response to a domain-name lookup, redirecting a device to a malicious server instead of the legitimate one — often without any visible change to the URL typed. Encrypted DNS (DoH or DoT) is the direct technical fix.
+DNS spoofing involves an attacker forging the response to a domain-name lookup, redirecting a device to a malicious server instead of the legitimate one  -  often without any visible change to the URL typed. Encrypted DNS (DoH or DoT) is the direct technical fix.
 
 Can a [man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attack happen on my home network?
 
-Yes, if an attacker has already gained access to your home network — through a weak Wi-Fi password, a compromised device already connected, or physical access — ARP spoofing and similar techniques work the same way regardless of whether the network is public or private.
+Yes, if an attacker has already gained access to your home network  -  through a weak Wi-Fi password, a compromised device already connected, or physical access  -  ARP spoofing and similar techniques work the same way regardless of whether the network is public or private.
 
 How do I know if I've been targeted by a [man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attack?
 
-Warning signs include unexpected certificate warnings, a site that normally uses HTTPS suddenly loading over plain HTTP, unfamiliar duplicate Wi-Fi network names, or a captive portal unexpectedly asking for a full email and password on a network that previously didn't require one. A fully passive attacker, however, often leaves no visible sign at all — which is exactly why preventive habits matter more than after-the-fact detection.
+Warning signs include unexpected certificate warnings, a site that normally uses HTTPS suddenly loading over plain HTTP, unfamiliar duplicate Wi-Fi network names, or a captive portal unexpectedly asking for a full email and password on a network that previously didn't require one. A fully passive attacker, however, often leaves no visible sign at all  -  which is exactly why preventive habits matter more than after-the-fact detection.
 
 Does OllaVPN protect against [man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attacks?
 

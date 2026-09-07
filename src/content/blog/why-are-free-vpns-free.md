@@ -102,7 +102,7 @@ So, how can we afford to do this? It's pretty straightforward: **our free plan i
 
 One pattern we've noticed across every privacy-and-networking topic we cover: the gap between what most users believe about a given topic and what the technical reality is keeps widening. Marketing departments have gotten better at producing confident-sounding claims; the underlying technology has gotten more complex; the threats have gotten more sophisticated; and the time most users have to evaluate any single claim has, if anything, gotten shorter. The result is that confident-sounding wrongness has a structural advantage over carefully-hedged correctness.
 
-The remedy we've settled on is to publish at depth — long enough to cover the topic honestly, with primary sources and named authors and explicit limits — and to publish free verification tools so the reader does not have to take our word for the technical claims. Both are choices that don't optimise for "users who skim and click." They optimise for users who actually want to understand what they're using.
+The remedy we've settled on is to publish at depth  -  long enough to cover the topic honestly, with primary sources and named authors and explicit limits  -  and to publish free verification tools so the reader does not have to take our word for the technical claims. Both are choices that don't optimise for "users who skim and click." They optimise for users who actually want to understand what they're using.
 
 If you've read this far, you're in the second group. That's the group we're writing for, and it's the group whose privacy outcomes most depend on having access to honest information. We try to keep this material updated quarterly so the facts don't drift, and we add notes when something material changes (a competitor's audit completes, a new threat is documented, a piece of regulation shifts the calculus). The [main free-VPN comparison](/best-free-vpn-2026), the [technology overview](/technology), and the [free privacy tools](/tools/) are the three pages most worth bookmarking from the OllaVPN site if you've found this guide useful.
 
@@ -132,7 +132,7 @@ Questions like the one above usually have a short answer at the top of the page 
 
 You'll find competing answers to the same question across many sites. A few signals that distinguish trustworthy answers from junk:
 
-**Cites primary sources where they exist.** Government law, NIST publications, IETF RFCs, court rulings, academic papers — these are primary sources. A guide that cites them is generally more reliable than one that doesn't.
+**Cites primary sources where they exist.** Government law, NIST publications, IETF RFCs, court rulings, academic papers  -  these are primary sources. A guide that cites them is generally more reliable than one that doesn't.
 
 **Names an author.** Anonymous "by editorial team" content can be solid, but a named author with verifiable credentials is more accountable. Author bylines on YMYL (your-money-or-your-life) topics like privacy and security are a meaningful trust signal.
 

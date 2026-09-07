@@ -76,7 +76,7 @@ It's all about making an informed decision when you pick a VPN. Now that you und
 
 Yes, the security of a VPN concentrator is absolutely critical because it's effectively your gateway to the internet.
 
-Think of the VPN concentrator as the bouncer at the most exclusive club on the internet, and also the only door out. Every single bit of your encrypted traffic passes through it, both coming and going. If that concentrator isn't reliable secure, then your entire VPN connection—and all the privacy and security you expect—is at risk. It becomes a **single point of failure** in your privacy chain.
+Think of the VPN concentrator as the bouncer at the most exclusive club on the internet, and also the only door out. Every single bit of your encrypted traffic passes through it, both coming and going. If that concentrator isn't reliable secure, then your entire VPN connection - and all the privacy and security you expect - is at risk. It becomes a **single point of failure** in your privacy chain.
 
 An insecure concentrator could be a target for all sorts of attacks. If an attacker gains control, they could potentially decrypt your traffic, see what you're doing online, or even inject malicious content. That compromises your **data integrity** and destroys the whole point of using a VPN. That's why we put so much effort into securing ours, from the hardware up through the software, with regular third-party [audits](/blog/audits) to verify everything.
 
@@ -102,7 +102,7 @@ We engineer our entire network, including our concentrators, with a "privacy-fir
 
 One pattern we've noticed across every privacy-and-networking topic we cover: the gap between what most users believe about a given topic and what the technical reality is keeps widening. Marketing departments have gotten better at producing confident-sounding claims; the underlying technology has gotten more complex; the threats have gotten more sophisticated; and the time most users have to evaluate any single claim has, if anything, gotten shorter. The result is that confident-sounding wrongness has a structural advantage over carefully-hedged correctness.
 
-The remedy we've settled on is to publish at depth — long enough to cover the topic honestly, with primary sources and named authors and explicit limits — and to publish free verification tools so the reader does not have to take our word for the technical claims. Both are choices that don't optimise for "users who skim and click." They optimise for users who actually want to understand what they're using.
+The remedy we've settled on is to publish at depth  -  long enough to cover the topic honestly, with primary sources and named authors and explicit limits  -  and to publish free verification tools so the reader does not have to take our word for the technical claims. Both are choices that don't optimise for "users who skim and click." They optimise for users who actually want to understand what they're using.
 
 If you've read this far, you're in the second group. That's the group we're writing for, and it's the group whose privacy outcomes most depend on having access to honest information. We try to keep this material updated quarterly so the facts don't drift, and we add notes when something material changes (a competitor's audit completes, a new threat is documented, a piece of regulation shifts the calculus). The [main free-VPN comparison](/best-free-vpn-2026), the [technology overview](/technology), and the [free privacy tools](/tools/) are the three pages most worth bookmarking from the OllaVPN site if you've found this guide useful.
 
@@ -120,7 +120,7 @@ For any claim on this page that affects a decision you're about to make, the ver
 
 ## Deeper context worth knowing
 
-A definitional explainer should leave you understanding not just the concept but the surrounding category — what other concepts it connects to, what common misunderstandings to avoid, and which adjacent ideas you should know about. A few worth covering:
+A definitional explainer should leave you understanding not just the concept but the surrounding category  -  what other concepts it connects to, what common misunderstandings to avoid, and which adjacent ideas you should know about. A few worth covering:
 
 **The category history matters.** Most networking and privacy concepts you encounter today were invented to solve a specific problem that may or may not still be the dominant problem in 2026. Understanding why a concept exists helps you evaluate whether it's the right tool for your situation. We try to include the historical context for every "what is X" guide we publish.
 

@@ -28,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css?v=20260907_v126red26red" />
+<link rel="stylesheet" href="/styles.css?v=20260907_v126sidebar" />
 <style>
 
 /* ==========================================================================
@@ -345,36 +345,13 @@
     text-decoration: none !important;
   }
 
-  .side-related-title {
-    font-family: var(--mono);
-    font-size: 11px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--text-mute);
-    margin: 0 0 12px;
-  }
+  
 
-  .side-related-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+  
 
-  .side-related-list li {
-    margin-bottom: 10px;
-    font-size: 13px;
-    line-height: 1.4;
-    position: relative;
-    padding-left: 14px;
-  }
+  
 
-  .side-related-list li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: var(--red);
-  }
+  
 
   .side-related-list a {
     color: var(--text-dim);
@@ -676,127 +653,130 @@
 <body>
 
 
-  <div class="cad-frame">
-    <div class="cad-inner-border">
+ <div class="cad-frame">
+ <div class="cad-inner-border">
 <div class="reading-progress" aria-hidden="true"></div>
 
 <nav class="top-cad-nav">
-        <div class="nav-left-links">
-          <a href="/index.html" style="font-size: 1.5rem; font-weight: 700; color: #111; margin-right: 12px;">Olla<span style="color: var(--accent);">VPN</span></a>
+ <div class="nav-left-links">
+ <a href="/index.html" style="font-size: 1.5rem; font-weight: 700; color: #111; margin-right: 12px;">Olla<span style="color: var(--accent);">VPN</span></a>
 
-          <div class="drop-cad-wrap">
-            Technology ▾
-            <div class="drop-cad-box">
-              <div style="color: var(--accent); font-size: 0.75rem; margin-bottom: 4px; font-weight: 700;">Crypto</div>
-              <a href="/pqc">Post-quantum handshake</a>
-              <a href="/pqc">WireGuard hybrid</a>
-              <a href="/pqc">Forward secrecy</a>
-              <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Architecture</div>
-              <a href="/peer-isolation">Network topology</a>
-              <a href="/peer-isolation">Tunnel addressing (CGNAT)</a>
-              <a href="/peer-isolation">Exit operation</a>
-              <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Privacy</div>
-              <a href="/in-tunnel-dns">DNS-leak defense</a>
-              <a href="/in-tunnel-dns">IPv6 handling</a>
-              <a href="/peer-isolation">Abuse defense</a>
-            </div>
-          </div>
+ <div class="drop-cad-wrap">
+ Technology ▾
+ <div class="drop-cad-box">
+ <div style="color: var(--accent); font-size: 0.75rem; margin-bottom: 4px; font-weight: 700;">Crypto</div>
+ <a href="/pqc">Post-quantum handshake</a>
+ <a href="/pqc">WireGuard hybrid</a>
+ <a href="/pqc">Forward secrecy</a>
+ <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Architecture</div>
+ <a href="/peer-isolation">Network topology</a>
+ <a href="/peer-isolation">Tunnel addressing (CGNAT)</a>
+ <a href="/peer-isolation">Exit operation</a>
+ <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Privacy</div>
+ <a href="/in-tunnel-dns">DNS-leak defense</a>
+ <a href="/in-tunnel-dns">IPv6 handling</a>
+ <a href="/peer-isolation">Abuse defense</a>
+ </div>
+ </div>
 
-          <a href="/pricing">Pricing</a>
+ <a href="/pricing">Pricing</a>
 
-          <div class="drop-cad-wrap">
-            Blogs ▾
-            <div class="drop-cad-box">
-              <div style="color: var(--accent); font-size: 0.75rem; margin-bottom: 4px; font-weight: 700;">Guides</div>
-              <a href="/blog/best-free-vpn-for-windows.html">Best free VPN for Windows</a>
-              <a href="/blog/what-is-a-dns-leak.html">DNS leak test</a>
-              <a href="/blog/what-is-post-quantum-cryptography.html">What is post-quantum crypto?</a>
-              <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Comparisons</div>
-              <a href="/blog/mullvad-vs-protonvpn.html">Mullvad vs ProtonVPN</a>
-              <a href="/blog/nordvpn-vs-protonvpn.html">NordVPN vs ProtonVPN</a>
-              <a href="/blog/nordvpn-vs-expressvpn.html">NordVPN vs ExpressVPN</a>
-              <a href="/blog/five-eyes-nine-eyes-fourteen-eyes.html">5/9/14-Eyes explained</a>
-              <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Tools</div>
-              <a href="https://status.ollavpn.com/">Status page</a>
-              <a href="/dns-lookup.html">Network tools</a>
-              <a href="/llms.txt">llms.txt</a>
-            </div>
-          </div>
+ <div class="drop-cad-wrap">
+ Blogs ▾
+ <div class="drop-cad-box">
+ <div style="color: var(--accent); font-size: 0.75rem; margin-bottom: 4px; font-weight: 700;">Guides</div>
+ <a href="/blog/best-free-vpn-for-windows.html">Best free VPN for Windows</a>
+ <a href="/blog/what-is-a-dns-leak.html">DNS leak test</a>
+ <a href="/blog/what-is-post-quantum-cryptography.html">What is post-quantum crypto?</a>
+ <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Comparisons</div>
+ <a href="/blog/mullvad-vs-protonvpn.html">Mullvad vs ProtonVPN</a>
+ <a href="/blog/nordvpn-vs-protonvpn.html">NordVPN vs ProtonVPN</a>
+ <a href="/blog/nordvpn-vs-expressvpn.html">NordVPN vs ExpressVPN</a>
+ <a href="/blog/five-eyes-nine-eyes-fourteen-eyes.html">5/9/14-Eyes explained</a>
+ <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Tools</div>
+ <a href="https://status.ollavpn.com/">Status page</a>
+ <a href="/dns-lookup.html">Network tools</a>
+ <a href="/llms.txt">llms.txt</a>
+ </div>
+ </div>
 
-          <a href="/free-vpn.html">Free VPN</a>
-          <a href="/apps.html">Apps</a>
-          <a href="/dl/">Download</a>
-        </div>
+ <a href="/free-vpn.html">Free VPN</a>
+ <a href="/apps.html">Apps</a>
+ <a href="/dl/">Download</a>
+ </div>
 
-        <div class="nav-right-links">
-          <a href="https://login.ollavpn.com/">Sign in</a>
-          <a href="/dl/" class="btn-cad btn-cad-filled">Download free →</a>
-        </div>
-      </nav>
+ <div class="nav-right-links">
+ <a href="https://login.ollavpn.com/">Sign in</a>
+ <a href="/dl/" class="btn-cad btn-cad-filled">Download free →</a>
+ </div>
+ </nav>
 
 <main class="article-layout">
 
-  <!-- LHS SIDEBAR -->
-  <aside class="article-sidebar-left" aria-label="Article author and metadata">
-    <div class="sidebar-card">
-      <span class="chip"><span class="dot"></span>Comparisons &middot; 2026</span>
-      <h4>Published by OllaVPN</h4>
-      <p>An honest side-by-side analysis of free VPN trade-offs, paid subscription value, and privacy architectures.</p>
-      <a class="btn primary" href="/apps.html">Download OllaVPN free &rarr;</a>
-    </div>
+ <!-- LHS SIDEBAR -->
+ <aside class="article-sidebar-left" aria-label="Article overview and related reading">
+ <div class="sidebar-card">
+ <span class="chip"><span class="dot"></span>Comparisons · 2026</span>
+ <h4>Free VPN vs Paid VPN</h4>
+ <p>Free VPN vs Paid VPN comparison in 2026. Speed benchmarks, logging policies, streaming support, and when a free VPN is genuinely enough.</p>
+ </div>
+ <div class="sidebar-card" style="margin-top: 20px;">
+ <div class="side-related-title">Related Guides</div>
+ <ul class="side-related-list">
+ <li><a href="/blog/windscribe-vs-protonvpn-free.html">Windscribe vs. Proton VPN</a></li>
+ <li><a href="/blog/vpn-vs-proxy-vs-tor.html">VPN vs Proxy vs Tor: Which Protects Your…</a></li>
+ <li><a href="/blog/smart-dns-vs-vpn.html">Smart DNS vs VPN</a></li>
+ <li><a href="/blog/privadovpn-free-vs-protonvpn-free.html">PrivadoVPN Free vs. Proton VPN Free</a></li>
+ <li><a href="/blog/which-free-vpn-does-not-keep-logs.html">Which Free VPN Does Not Keep Logs? A…</a></li>
+ <li><a href="/blog/lifetime-free-vpn.html">Lifetime Free VPN: Is OllaVPN Really…</a></li>
+ <li><a href="/blog/free-vpn-for-public-wifi-security.html">Free VPN for Public WiFi Security 2026</a></li>
+ </ul>
+ </div>
+ </aside>
 
-    <h4 class="side-related-title">Related reading</h4>
-    <ul class="side-related-list">
-<li><a href="/blog/are-free-vpns-safe.html">Are Free VPNs Safe? 2026 Guide</a></li>
-      <li><a href="/blog/which-free-vpn-does-not-keep-logs.html">Which Free VPN Does Not Keep Logs?</a></li>
-      <li><a href="/blog/what-your-isp-can-see-about-you.html">What Your ISP Can See About You</a></li>
-      <li><a href="/blog/lifetime-free-vpn.html">Lifetime Free VPN: Really Free Forever?</a></li>
-    </ul>
-  </aside>
+ <!-- CENTER CONTENT -->
+ <article class="article" id="main-article">
+ 
+ <div class="hero-callout">
+ <div class="hero-callout-left">
+ <div class="hero-callout-icon">S</div>
+ <div>
+ <div class="hero-callout-title">Try OllaVPN free - post-quantum-ready, lifetime free plan.</div>
+ <div class="hero-callout-sub">No credit card. Or $2/mo for 5 devices on a faster plan.</div>
+ </div>
+ </div>
+ <a class="hero-callout-btn" href="/apps.html">DOWNLOAD &rarr;</a>
+ </div>
 
-  <!-- CENTER CONTENT -->
-  <article class="article" id="main-article">
-    
-    <div class="hero-callout">
-      <div class="hero-callout-left">
-        <div class="hero-callout-icon">S</div>
-        <div>
-          <div class="hero-callout-title">Try OllaVPN free &mdash; post-quantum-ready, lifetime free plan.</div>
-          <div class="hero-callout-sub">No credit card. Or $2/mo for 5 devices on a faster plan.</div>
-        </div>
-      </div>
-      <a class="hero-callout-btn" href="/apps.html">DOWNLOAD &rarr;</a>
-    </div>
+ <h1 style="font-family:var(--display);font-size:clamp(28px,3.8vw,40px);font-weight:800;letter-spacing:-0.03em;line-height:1.2;margin:0 0 12px;color:#0F172A;">Free VPN vs Paid VPN: Which One Is Actually Worth It?</h1>
+ <p style="font-size:16.5px;color:var(--text-dim);line-height:1.55;margin-bottom:20px;">An honest, no-fluff breakdown of what you actually get - and give up - when you choose a free VPN over a paid one. Because the answer isn't as simple as 'just pay for it.'</p>
 
-    <h1 style="font-family:var(--display);font-size:clamp(28px,3.8vw,40px);font-weight:800;letter-spacing:-0.03em;line-height:1.2;margin:0 0 12px;color:#0F172A;">Free VPN vs Paid VPN: Which One Is Actually Worth It?</h1>
-    <p style="font-size:16.5px;color:var(--text-dim);line-height:1.55;margin-bottom:20px;">An honest, no-fluff breakdown of what you actually get - and give up - when you choose a free VPN over a paid one. Because the answer isn't as simple as 'just pay for it.'</p>
-
-    <div class="jump-box">
-      <span class="jump-label">JUMP TO A SECTION</span>
-      <ol class="jump-grid">
+ <div class="jump-box">
+ <span class="jump-label">JUMP TO A SECTION</span>
+ <ol class="jump-grid">
 <li><a href="#at-a-glance">1. At a glance</a></li>
-        <li><a href="#the-real-question-what-do-you-need-from-a-vpn">2. The real question: what do you need from a VPN?</a></li>
-        <li><a href="#how-free-vpns-make-money-and-why-it-matters">3. How free VPNs make money - and why it matters</a></li>
-        <li><a href="#security-and-encryption">4. Security and encryption</a></li>
-        <li><a href="#speed-and-performance">5. Speed and performance</a></li>
-        <li><a href="#privacy-and-logging-policies">6. Privacy and logging policies</a></li>
-        <li><a href="#data-caps-and-server-limits">7. Data caps and server limits</a></li>
-        <li><a href="#streaming-and-torrenting">8. Streaming and torrenting</a></li>
-        <li><a href="#device-limits-and-platform-support">9. Device limits and platform support</a></li>
-        <li><a href="#customer-support">10. Customer support</a></li>
-        <li><a href="#the-hidden-costs-of-free-vpns">11. The hidden costs of free VPNs</a></li>
-        <li><a href="#when-a-free-vpn-is-genuinely-enough">12. When a free VPN is genuinely enough</a></li>
-        <li><a href="#when-you-absolutely-need-a-paid-vpn">13. When you absolutely need a paid VPN</a></li>
-        <li><a href="#ollavpn-the-exception-that-changes-the-conversation">14. OllaVPN - the exception that changes the conversation</a></li>
-        <li><a href="#final-verdict">15. Final verdict</a></li>
-        <li><a href="#frequently-asked-questions">16. Frequently asked questions</a></li>
-      </ol>
-    </div>
+ <li><a href="#the-real-question-what-do-you-need-from-a-vpn">2. The real question: what do you need from a VPN?</a></li>
+ <li><a href="#how-free-vpns-make-money-and-why-it-matters">3. How free VPNs make money - and why it matters</a></li>
+ <li><a href="#security-and-encryption">4. Security and encryption</a></li>
+ <li><a href="#speed-and-performance">5. Speed and performance</a></li>
+ <li><a href="#privacy-and-logging-policies">6. Privacy and logging policies</a></li>
+ <li><a href="#data-caps-and-server-limits">7. Data caps and server limits</a></li>
+ <li><a href="#streaming-and-torrenting">8. Streaming and torrenting</a></li>
+ <li><a href="#device-limits-and-platform-support">9. Device limits and platform support</a></li>
+ <li><a href="#customer-support">10. Customer support</a></li>
+ <li><a href="#the-hidden-costs-of-free-vpns">11. The hidden costs of free VPNs</a></li>
+ <li><a href="#when-a-free-vpn-is-genuinely-enough">12. When a free VPN is genuinely enough</a></li>
+ <li><a href="#when-you-absolutely-need-a-paid-vpn">13. When you absolutely need a paid VPN</a></li>
+ <li><a href="#ollavpn-the-exception-that-changes-the-conversation">14. OllaVPN - the exception that changes the conversation</a></li>
+ <li><a href="#final-verdict">15. Final verdict</a></li>
+ <li><a href="#frequently-asked-questions">16. Frequently asked questions</a></li>
+ </ol>
+ </div>
 
 <p>Free VPN vs Paid VPN: Which One Is Actually Worth It?</p>
 <p>An honest, no-fluff breakdown of what you actually get - and give up - when you choose a free VPN over a paid one. Because the answer isn&#x27;t as simple as &quot;just pay for it.&quot;</p>
 <p>✓ Reviewed</p>
-<div class="answer-card"><span class="q-label">TL;DR — THE SHORT ANSWER</span>Free VPNs can be genuinely useful - but most come with trade-offs that go deeper than slower speeds or fewer servers. The real question is how the free tier is funded. Paid VPNs remove most of those trade-offs and give you something you can actually lean on daily. A handful of free tiers from reputable providers - ProtonVPN Free, OllaVPN Free - are genuine exceptions worth knowing about. For everyone else, the math of &quot;free&quot; is more complicated than it first looks.</div>
+<div class="answer-card"><span class="q-label">TL;DR - THE SHORT ANSWER</span>Free VPNs can be genuinely useful - but most come with trade-offs that go deeper than slower speeds or fewer servers. The real question is how the free tier is funded. Paid VPNs remove most of those trade-offs and give you something you can actually lean on daily. A handful of free tiers from reputable providers - ProtonVPN Free, OllaVPN Free - are genuine exceptions worth knowing about. For everyone else, the math of &quot;free&quot; is more complicated than it first looks.</div>
 <p>If you&#x27;ve ever opened your phone&#x27;s app store and searched &quot;VPN,&quot; you already know the problem. There are hundreds of them. Dozens are free. The paid ones ask you to commit to a subscription before you&#x27;ve had a chance to decide if they&#x27;re any good. And the marketing for both is almost uniformly unhinged - promises of &quot;military-grade encryption,&quot; &quot;bulletproof anonymity,&quot; and &quot;blazing fast speeds&quot; that no VPN on earth consistently delivers.</p>
 <p>The question people actually want answered isn&#x27;t &quot;which VPN is the best.&quot; It&#x27;s simpler and more honest: is a free VPN actually any good, or do I need to pay?</p>
 <p>The answer, like most things in privacy tech, is: it depends - but there are clear signals that point you in the right direction. This guide walks through all of them.</p>
@@ -988,106 +968,106 @@
 <p>What is post-quantum cryptography and do I need it in my VPN?</p>
 <p>Post-quantum cryptography is a new family of encryption algorithms designed to remain secure even if large-scale quantum computers become practical - which most cryptographers expect to happen within the next decade. The concern is &quot;harvest now, decrypt later&quot;: adversaries storing your encrypted traffic today, betting they&#x27;ll be able to decrypt it in the future. A post-quantum-ready VPN protects against that future threat. Most VPNs don&#x27;t offer this yet. Mullvad pioneered it in production tunnels. OllaVPN includes it on every connection, free and paid.</p>
 
-  </article>
+ </article>
 
-  <!-- RHS TABLE OF CONTENTS RAIL -->
-  <aside class="toc-rail" aria-label="Table of contents">
-    <span class="label">ON THIS PAGE</span>
-    <ol>
+ <!-- RHS TABLE OF CONTENTS RAIL -->
+ <aside class="toc-rail" aria-label="Table of contents">
+ <span class="label">ON THIS PAGE</span>
+ <ol>
 <li><a href="#at-a-glance">At a glance</a></li>
-      <li><a href="#the-real-question-what-do-you-need-from-a-vpn">The real question: what do you need from a VPN?</a></li>
-      <li><a href="#how-free-vpns-make-money-and-why-it-matters">How free VPNs make money - and why it matters</a></li>
-      <li><a href="#security-and-encryption">Security and encryption</a></li>
-      <li><a href="#speed-and-performance">Speed and performance</a></li>
-      <li><a href="#privacy-and-logging-policies">Privacy and logging policies</a></li>
-      <li><a href="#data-caps-and-server-limits">Data caps and server limits</a></li>
-      <li><a href="#streaming-and-torrenting">Streaming and torrenting</a></li>
-      <li><a href="#device-limits-and-platform-support">Device limits and platform support</a></li>
-      <li><a href="#customer-support">Customer support</a></li>
-      <li><a href="#the-hidden-costs-of-free-vpns">The hidden costs of free VPNs</a></li>
-      <li><a href="#when-a-free-vpn-is-genuinely-enough">When a free VPN is genuinely enough</a></li>
-      <li><a href="#when-you-absolutely-need-a-paid-vpn">When you absolutely need a paid VPN</a></li>
-      <li><a href="#ollavpn-the-exception-that-changes-the-conversation">OllaVPN - the exception that changes the conversation</a></li>
-      <li><a href="#final-verdict">Final verdict</a></li>
-      <li><a href="#frequently-asked-questions">Frequently asked questions</a></li>
-    </ol>
-  </aside>
+ <li><a href="#the-real-question-what-do-you-need-from-a-vpn">The real question: what do you need from a VPN?</a></li>
+ <li><a href="#how-free-vpns-make-money-and-why-it-matters">How free VPNs make money - and why it matters</a></li>
+ <li><a href="#security-and-encryption">Security and encryption</a></li>
+ <li><a href="#speed-and-performance">Speed and performance</a></li>
+ <li><a href="#privacy-and-logging-policies">Privacy and logging policies</a></li>
+ <li><a href="#data-caps-and-server-limits">Data caps and server limits</a></li>
+ <li><a href="#streaming-and-torrenting">Streaming and torrenting</a></li>
+ <li><a href="#device-limits-and-platform-support">Device limits and platform support</a></li>
+ <li><a href="#customer-support">Customer support</a></li>
+ <li><a href="#the-hidden-costs-of-free-vpns">The hidden costs of free VPNs</a></li>
+ <li><a href="#when-a-free-vpn-is-genuinely-enough">When a free VPN is genuinely enough</a></li>
+ <li><a href="#when-you-absolutely-need-a-paid-vpn">When you absolutely need a paid VPN</a></li>
+ <li><a href="#ollavpn-the-exception-that-changes-the-conversation">OllaVPN - the exception that changes the conversation</a></li>
+ <li><a href="#final-verdict">Final verdict</a></li>
+ <li><a href="#frequently-asked-questions">Frequently asked questions</a></li>
+ </ol>
+ </aside>
 
 </main>
 
 <footer class="footer">
-        <div style="margin-bottom: 32px;">
-          <div style="font-size: 1.6rem; font-weight: 700; color: var(--accent); margin-bottom: 4px;">OllaVPN</div>
-          <p style="color: #1a1a1a; font-size: 0.88rem;">A modern, post-quantum-ready privacy VPN. Lifetime free plan or $2/month for 5 devices.</p>
-        </div>
+ <div style="margin-bottom: 32px;">
+ <div style="font-size: 1.6rem; font-weight: 700; color: var(--accent); margin-bottom: 4px;">OllaVPN</div>
+ <p style="color: #1a1a1a; font-size: 0.88rem;">A modern, post-quantum-ready privacy VPN. Lifetime free plan or $2/month for 5 devices.</p>
+ </div>
 
-        <div class="top" style="display: grid; grid-template-columns: 2fr repeat(5, 1fr); gap: 24px; margin-bottom: 40px;">
-          <div>
-            <div class="brand">OllaVPN</div>
-            <p style="color: #1a1a1a; font-size: 0.88rem;">A modern, post-quantum-ready privacy VPN. Lifetime free plan or $2/month for 5 devices.</p>
-          </div>
+ <div class="top" style="display: grid; grid-template-columns: 2fr repeat(5, 1fr); gap: 24px; margin-bottom: 40px;">
+ <div>
+ <div class="brand">OllaVPN</div>
+ <p style="color: #1a1a1a; font-size: 0.88rem;">A modern, post-quantum-ready privacy VPN. Lifetime free plan or $2/month for 5 devices.</p>
+ </div>
 
-          <div>
-            <h4>Product</h4>
-            <div class="docket-col-links" style="display: grid; gap: 10px;">
-              <a href="/apps.html" style="color: var(--text-sub);">Apps</a>
-              <a href="/technology.html" style="color: var(--text-sub);">Technology</a>
-              <a href="/pricing.html" style="color: var(--text-sub);">Pricing</a>
-              <a href="/dl/" style="color: var(--text-sub);">Download</a>
-            </div>
-          </div>
+ <div>
+ <h4>Product</h4>
+ <div class="docket-col-links" style="display: grid; gap: 10px;">
+ <a href="/apps.html" style="color: var(--text-sub);">Apps</a>
+ <a href="/technology.html" style="color: var(--text-sub);">Technology</a>
+ <a href="/pricing.html" style="color: var(--text-sub);">Pricing</a>
+ <a href="/dl/" style="color: var(--text-sub);">Download</a>
+ </div>
+ </div>
 
-          <div>
-            <h4>Free VPN</h4>
-            <div class="docket-col-links" style="display: grid; gap: 10px;">
-              <a href="/free-vpn.html" style="color: var(--text-sub);">Free VPN — honest guide</a>
-              <a href="/free-vpn-for-windows.html" style="color: var(--text-sub);">Free VPN for Windows</a>
-              <a href="/free-vpn-for-india.html" style="color: var(--text-sub);">Free VPN for India</a>
-              <a href="/free-wireguard-vpn.html" style="color: var(--text-sub);">Free WireGuard VPN</a>
-              <a href="/free-quic-vpn.html" style="color: var(--text-sub);">Free QUIC VPN</a>
-            </div>
-          </div>
+ <div>
+ <h4>Free VPN</h4>
+ <div class="docket-col-links" style="display: grid; gap: 10px;">
+ <a href="/free-vpn.html" style="color: var(--text-sub);">Free VPN - honest guide</a>
+ <a href="/free-vpn-for-windows.html" style="color: var(--text-sub);">Free VPN for Windows</a>
+ <a href="/free-vpn-for-india.html" style="color: var(--text-sub);">Free VPN for India</a>
+ <a href="/free-wireguard-vpn.html" style="color: var(--text-sub);">Free WireGuard VPN</a>
+ <a href="/free-quic-vpn.html" style="color: var(--text-sub);">Free QUIC VPN</a>
+ </div>
+ </div>
 
-          <div>
-            <h4>Account</h4>
-            <div class="docket-col-links" style="display: grid; gap: 10px;">
-              <a href="https://login.ollavpn.com/" style="color: var(--text-sub);">Sign in</a>
-              <a href="https://login.ollavpn.com/signup" style="color: var(--text-sub);">Sign up</a>
-              <a href="https://login.ollavpn.com/" style="color: var(--text-sub);">Dashboard</a>
-            </div>
-          </div>
+ <div>
+ <h4>Account</h4>
+ <div class="docket-col-links" style="display: grid; gap: 10px;">
+ <a href="https://login.ollavpn.com/" style="color: var(--text-sub);">Sign in</a>
+ <a href="https://login.ollavpn.com/signup" style="color: var(--text-sub);">Sign up</a>
+ <a href="https://login.ollavpn.com/" style="color: var(--text-sub);">Dashboard</a>
+ </div>
+ </div>
 
-          <div>
-            <h4>Company</h4>
-            <div class="docket-col-links" style="display: grid; gap: 10px;">
-              <a href="/careers.html" style="color: var(--text-sub);">Careers</a>
-              <a href="/contact.html" style="color: var(--text-sub);">Contact</a>
-              <a href="/blog/" style="color: var(--text-sub);">Blog</a>
-            </div>
-          </div>
+ <div>
+ <h4>Company</h4>
+ <div class="docket-col-links" style="display: grid; gap: 10px;">
+ <a href="/careers.html" style="color: var(--text-sub);">Careers</a>
+ <a href="/contact.html" style="color: var(--text-sub);">Contact</a>
+ <a href="/blog/" style="color: var(--text-sub);">Blog</a>
+ </div>
+ </div>
 
-          <div>
-            <h4>Legal</h4>
-            <div class="docket-col-links" style="display: grid; gap: 10px;">
-              <a href="/privacy.html" style="color: var(--text-sub);">Privacy policy</a>
-              <a href="/terms.html" style="color: var(--text-sub);">Terms of service</a>
-              <a href="/warrant-canary.html" style="color: var(--text-sub);">Warrant canary</a>
-            </div>
-          </div>
-        </div>
+ <div>
+ <h4>Legal</h4>
+ <div class="docket-col-links" style="display: grid; gap: 10px;">
+ <a href="/privacy.html" style="color: var(--text-sub);">Privacy policy</a>
+ <a href="/terms.html" style="color: var(--text-sub);">Terms of service</a>
+ <a href="/warrant-canary.html" style="color: var(--text-sub);">Warrant canary</a>
+ </div>
+ </div>
+ </div>
 
-        <div class="bottom">
-          <div>© 2026 OllaVPN · A modern, post-quantum-ready privacy VPN.</div>
-          <div style="display: flex; gap: 20px; font-weight: 700; color: var(--accent);">
-            <span>POST-QUANTUM READY</span>
-            <span>NO LOGS</span>
-            <span>LIFETIME FREE</span>
-          </div>
-        </div>
-      </footer>
+ <div class="bottom">
+ <div>© 2026 OllaVPN · A modern, post-quantum-ready privacy VPN.</div>
+ <div style="display: flex; gap: 20px; font-weight: 700; color: var(--accent);">
+ <span>POST-QUANTUM READY</span>
+ <span>NO LOGS</span>
+ <span>LIFETIME FREE</span>
+ </div>
+ </div>
+ </footer>
 
-    </div>
-  </div>
+ </div>
+ </div>
 
 </body>
 </html>

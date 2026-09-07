@@ -64,7 +64,7 @@ We get it – you've got a lot of devices these days. Your laptop, your phone, m
 
 We offer 24/7 live chat for immediate help, email support for more complex issues, and a comprehensive knowledge base for self-service.
 
-When you're trying to get your VPN working, or have a question about how something works, you don't want to wait. That's why we prioritize fast, accessible support. Our \*\*24/7 live chat\*\* is available directly through our website and apps, putting you in touch with a real person who can help troubleshoot or answer your questions right away. We know your privacy matters, so we don't ask for personal details to use our chat — just your question. For issues that might need a bit more back-and-forth, or if you prefer to write out your problem in detail, \*\*email support\*\* is always an option. Our team aims to respond quickly, usually within a few hours, to make sure you're never left hanging. This is often best for things like feature requests or in-depth technical queries that might involve sharing screenshots or logs. Beyond direct contact, we've built an extensive \*\*knowledge base/FAQs\*\* that's packed with guides, troubleshooting steps, and answers to common questions. Many users find exactly what they're looking for there without needing to reach out. It's a great first stop if you're looking for quick answers or want to learn more about how OllaVPN protects your privacy and secures your connection.
+When you're trying to get your VPN working, or have a question about how something works, you don't want to wait. That's why we prioritize fast, accessible support. Our \*\*24/7 live chat\*\* is available directly through our website and apps, putting you in touch with a real person who can help troubleshoot or answer your questions right away. We know your privacy matters, so we don't ask for personal details to use our chat  -  just your question. For issues that might need a bit more back-and-forth, or if you prefer to write out your problem in detail, \*\*email support\*\* is always an option. Our team aims to respond quickly, usually within a few hours, to make sure you're never left hanging. This is often best for things like feature requests or in-depth technical queries that might involve sharing screenshots or logs. Beyond direct contact, we've built an extensive \*\*knowledge base/FAQs\*\* that's packed with guides, troubleshooting steps, and answers to common questions. Many users find exactly what they're looking for there without needing to reach out. It's a great first stop if you're looking for quick answers or want to learn more about how OllaVPN protects your privacy and secures your connection.
 
 ## Why should you care about post-quantum encryption for your VPN?
 
@@ -96,7 +96,7 @@ Ultimately, choosing a VPN comes down to what you prioritize. If you're looking 
 
 One pattern we've noticed across every privacy-and-networking topic we cover: the gap between what most users believe about a given topic and what the technical reality is keeps widening. Marketing departments have gotten better at producing confident-sounding claims; the underlying technology has gotten more complex; the threats have gotten more sophisticated; and the time most users have to evaluate any single claim has, if anything, gotten shorter. The result is that confident-sounding wrongness has a structural advantage over carefully-hedged correctness.
 
-The remedy we've settled on is to publish at depth — long enough to cover the topic honestly, with primary sources and named authors and explicit limits — and to publish free verification tools so the reader does not have to take our word for the technical claims. Both are choices that don't optimise for "users who skim and click." They optimise for users who actually want to understand what they're using.
+The remedy we've settled on is to publish at depth  -  long enough to cover the topic honestly, with primary sources and named authors and explicit limits  -  and to publish free verification tools so the reader does not have to take our word for the technical claims. Both are choices that don't optimise for "users who skim and click." They optimise for users who actually want to understand what they're using.
 
 If you've read this far, you're in the second group. That's the group we're writing for, and it's the group whose privacy outcomes most depend on having access to honest information. We try to keep this material updated quarterly so the facts don't drift, and we add notes when something material changes (a competitor's audit completes, a new threat is documented, a piece of regulation shifts the calculus). The [main free-VPN comparison](/best-free-vpn-2026), the [technology overview](/technology), and the [free privacy tools](/tools/) are the three pages most worth bookmarking from the OllaVPN site if you've found this guide useful.
 
@@ -112,7 +112,7 @@ For any claim on this page that affects a decision you're about to make, the ver
 
 **Update your view when the facts update.** Privacy concerns shift, operators change, standards evolve. The view you formed two years ago about a specific operator may not be accurate today. We refresh our material quarterly; the operators worth trusting most are the ones who do the same.
 
-## How we evaluated these — methodology disclosure
+## How we evaluated these  -  methodology disclosure
 
 A head-to-head comparison is only as honest as the methodology behind it. For every comparison we publish, the framework is the same:
 
@@ -128,7 +128,7 @@ A head-to-head comparison is only as honest as the methodology behind it. For ev
 
 Not every "X vs Y" article on the internet uses a defensible methodology. When you read someone else's comparison, watch for these patterns:
 
-**Affiliate-driven rankings.** Many comparison sites are funded by VPN affiliate commissions. Operators that pay higher commissions tend to win those comparisons. The tell is rankings that don't match the actual technical merits or audit history — and "best for streaming" being the default lead category, because streaming-VPN affiliate payouts are highest.
+**Affiliate-driven rankings.** Many comparison sites are funded by VPN affiliate commissions. Operators that pay higher commissions tend to win those comparisons. The tell is rankings that don't match the actual technical merits or audit history  -  and "best for streaming" being the default lead category, because streaming-VPN affiliate payouts are highest.
 
 **Stale data.** VPN operators change pricing, ownership, jurisdiction, and feature sets continuously. A comparison written in 2023 and republished in 2026 without re-checking is unreliable. Look for a "last updated" date and a methodology section before trusting the comparison.
 
@@ -190,7 +190,7 @@ Yes, many reputable VPNs are in privacy-friendly jurisdictions. Some are based i
 
 Some reputable VPNs offer a free tier, though it comes with limitations on speed and available server locations. Other popular services don't offer a free version, but provide a money-back guarantee. OllaVPN offers a genuinely free, unlimited data plan at 10 Mbps, no card required, forever.
 
-### What about OllaVPN — when does it make sense as an alternative?
+### What about OllaVPN  -  when does it make sense as an alternative?
 
 OllaVPN makes sense if you're looking for a truly free VPN with no data limits, no ads, and strong privacy, or if you're concerned about future-proofing your security with post-quantum-ready encryption. It's a great choice for simple, reliable daily browsing and streaming without hidden costs or data selling.
 

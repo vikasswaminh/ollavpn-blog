@@ -66,7 +66,7 @@ While we can't guarantee 100% uptime against every single streaming service 24/7
 
 OllaVPN offers user-friendly apps for Windows, macOS, Android, iOS, and Linux, with Plus users enjoying up to 5 simultaneous connections.
 
-We've worked hard to make OllaVPN's apps as straightforward and intuitive as possible, regardless of what device you're on. Our goal is for you to open the app, pick a country, and connect with minimal fuss. This focus on **app usability** means you won't get bogged down in complex settings unless you want to — the default setup is designed to just work for most people right out of the box. You'll find a consistent look and feel across all platforms, making it easy to switch between your devices. You can download OllaVPN apps for all the major operating systems: **Windows, macOS, Android, iOS, and Linux**. We understand that people use a variety of devices in their daily lives, and privacy shouldn't be limited to just one. While we don't offer direct **router support** right now, you can still protect all devices on your network by setting up our VPN client on a compatible router if you're comfortable with a bit of manual configuration. When it comes to **simultaneous connections**, our free plan lets you connect one device at a time. This is usually fine for personal use, but if you've got a household full of gadgets or just want to protect your laptop, phone, and tablet all at once, you'll appreciate OllaVPN Plus. A Plus subscription covers up to 5 devices simultaneously, meaning your whole family or all your personal devices can stay protected for just $2 a month.
+We've worked hard to make OllaVPN's apps as straightforward and intuitive as possible, regardless of what device you're on. Our goal is for you to open the app, pick a country, and connect with minimal fuss. This focus on **app usability** means you won't get bogged down in complex settings unless you want to  -  the default setup is designed to just work for most people right out of the box. You'll find a consistent look and feel across all platforms, making it easy to switch between your devices. You can download OllaVPN apps for all the major operating systems: **Windows, macOS, Android, iOS, and Linux**. We understand that people use a variety of devices in their daily lives, and privacy shouldn't be limited to just one. While we don't offer direct **router support** right now, you can still protect all devices on your network by setting up our VPN client on a compatible router if you're comfortable with a bit of manual configuration. When it comes to **simultaneous connections**, our free plan lets you connect one device at a time. This is usually fine for personal use, but if you've got a household full of gadgets or just want to protect your laptop, phone, and tablet all at once, you'll appreciate OllaVPN Plus. A Plus subscription covers up to 5 devices simultaneously, meaning your whole family or all your personal devices can stay protected for just $2 a month.
 
 ## How Reliable is Their Customer Support?
 
@@ -90,7 +90,7 @@ Ultimately, choosing a VPN comes down to what you prioritize. If you're looking 
 
 OllaVPN offers a unique suite of security features, including post-quantum-ready encryption, a mandatory kill switch, in-tunnel DNS, and 4-layer peer isolation, to keep your connection private and secure.
 
-You're probably familiar with common VPN security features like a \*\*kill switch\*\* — which OllaVPN has, and it's on by default and can't be turned off, ensuring your real IP address is never exposed even if your VPN connection drops. Many VPNs also offer things like \*\*split tunneling\*\*, letting you choose which apps go through the VPN and which don't, or \*\*double VPN\*\* and \*\*obfuscated servers\*\* to hide the fact you're even using a VPN. These are good features, and some of them are incredibly useful for specific situations, but they're not OllaVPN's core focus. Our approach to security is a bit different. We concentrate on foundational, modern privacy rather than piling on optional features that most people never use. Our biggest differentiator is our post-quantum-ready encryption. This means we're building for the long term, using forward-secure methods that combine classical and quantum-resistant algorithms to protect your data not just today, but against future threats from quantum computers that could break current encryption standards. It’s about making sure your past and present data remains private even years from now. Beyond that, we build security in at every layer. You get \*\*OllaVPN's in-tunnel DNS\*\* which means your DNS requests never leave the encrypted tunnel, preventing leaks and ensuring your browsing history stays private even from your ISP. We also implement \*\*4-layer peer isolation\*\* to strongly separate user traffic, making it incredibly difficult for anyone to correlate your activity. We're not just selling you a VPN; we're building a secure, private network from the ground up, funded by our [Plus subscribers](/plus) rather than by selling your data.
+You're probably familiar with common VPN security features like a \*\*kill switch\*\*  -  which OllaVPN has, and it's on by default and can't be turned off, ensuring your real IP address is never exposed even if your VPN connection drops. Many VPNs also offer things like \*\*split tunneling\*\*, letting you choose which apps go through the VPN and which don't, or \*\*double VPN\*\* and \*\*obfuscated servers\*\* to hide the fact you're even using a VPN. These are good features, and some of them are incredibly useful for specific situations, but they're not OllaVPN's core focus. Our approach to security is a bit different. We concentrate on foundational, modern privacy rather than piling on optional features that most people never use. Our biggest differentiator is our post-quantum-ready encryption. This means we're building for the long term, using forward-secure methods that combine classical and quantum-resistant algorithms to protect your data not just today, but against future threats from quantum computers that could break current encryption standards. It’s about making sure your past and present data remains private even years from now. Beyond that, we build security in at every layer. You get \*\*OllaVPN's in-tunnel DNS\*\* which means your DNS requests never leave the encrypted tunnel, preventing leaks and ensuring your browsing history stays private even from your ISP. We also implement \*\*4-layer peer isolation\*\* to strongly separate user traffic, making it incredibly difficult for anyone to correlate your activity. We're not just selling you a VPN; we're building a secure, private network from the ground up, funded by our [Plus subscribers](/plus) rather than by selling your data.
 
 ## How Do Their Server Networks Compare?
 
@@ -102,7 +102,7 @@ Another crucial distinction is between \*\*physical vs. virtual servers\*\*. Phy
 
 Beyond just the count or type, the way a VPN manages its network affects your experience. A well-maintained network with up-to-date hardware and efficient routing protocols will generally perform better, even if it has a slightly lower "number of servers" than a competitor. This also impacts the reliability and consistency of your connection. Our focus is on delivering a stable, fast connection, even for our [free plan users at 10 Mbps](/free-vpn), by carefully managing our network resources.
 
-## How we evaluated these — methodology disclosure
+## How we evaluated these  -  methodology disclosure
 
 A head-to-head comparison is only as honest as the methodology behind it. For every comparison we publish, the framework is the same:
 
@@ -118,7 +118,7 @@ A head-to-head comparison is only as honest as the methodology behind it. For ev
 
 Not every "X vs Y" article on the internet uses a defensible methodology. When you read someone else's comparison, watch for these patterns:
 
-**Affiliate-driven rankings.** Many comparison sites are funded by VPN affiliate commissions. Operators that pay higher commissions tend to win those comparisons. The tell is rankings that don't match the actual technical merits or audit history — and "best for streaming" being the default lead category, because streaming-VPN affiliate payouts are highest.
+**Affiliate-driven rankings.** Many comparison sites are funded by VPN affiliate commissions. Operators that pay higher commissions tend to win those comparisons. The tell is rankings that don't match the actual technical merits or audit history  -  and "best for streaming" being the default lead category, because streaming-VPN affiliate payouts are highest.
 
 **Stale data.** VPN operators change pricing, ownership, jurisdiction, and feature sets continuously. A comparison written in 2023 and republished in 2026 without re-checking is unreliable. Look for a "last updated" date and a methodology section before trusting the comparison.
 
@@ -180,7 +180,7 @@ One service is based in Panama, generally considered privacy-friendly with no ma
 
 Not directly. Neither service offers a perpetually free version. They might have free trials or money-back guarantees that let you test them out, but not a free tier you can use indefinitely. OllaVPN, however, offers a "free forever" plan at 10 Mbps, with access to every country in our network, no credit card or email required.
 
-### What about OllaVPN — when does it make sense as an alternative?
+### What about OllaVPN  -  when does it make sense as an alternative?
 
 OllaVPN makes a lot of sense if you prioritize future-proof security with post-quantum readiness, or if you're looking for a genuinely free, no-strings-attached VPN that doesn't compromise your privacy with ads or data sales. It's also great if you need reliable, basic VPN access for browsing and HD streaming without paying a dime.
 
@@ -190,7 +190,7 @@ Yes, both typically offer a 30-day money-back guarantee. This is a great way to 
 
 ### Should I just use a free VPN instead?
 
-Mostly — here's where it breaks. Many "free" VPNs come with significant privacy trade-offs, like logging your data, injecting ads, or even selling your browsing history. While tempting, they often aren't truly free. OllaVPN is an exception, as it's funded by its Plus subscribers, allowing it to offer a secure, privacy-focused free tier without those compromises.
+Mostly  -  here's where it breaks. Many "free" VPNs come with significant privacy trade-offs, like logging your data, injecting ads, or even selling your browsing history. While tempting, they often aren't truly free. OllaVPN is an exception, as it's funded by its Plus subscribers, allowing it to offer a secure, privacy-focused free tier without those compromises.
 
 ✉ Get the next one
 
