@@ -8,7 +8,7 @@ tags: ["buyer-guides"]
 
 
 <section id="tldr" class="article-tldr-box">
-<h3 style="font-size: 1.15rem; font-weight: 800; color: #323652; margin: 0 0 6px 0;">TL;DR</h3>
+<h3 style="font-size: 1.15rem; font-weight: 800; color: #0F172A; margin: 0 0 6px 0;">TL;DR</h3>
 <p style="font-size: 1.05rem; line-height: 1.7; color: #09090b; margin: 0;">
 A free VPN creates an encrypted tunnel between your device and the internet on public Wi-Fi — protecting your passwords, session tokens, and browsing traffic from eavesdroppers, evil twins, and compromised routers. For basic web security at airports, hotels, and cafes, OllaVPN Free delivers unlimited data, WireGuard speeds, and zero activity logs without requiring credit card registration.
 </p>
@@ -17,27 +17,27 @@ A free VPN creates an encrypted tunnel between your device and the internet on p
 
 
 <section id="key-takeaways" class="article-takeaways-box">
-<h3 style="font-size: 1.3rem; font-weight: 800; color: #323652; margin: 0 0 16px 0;">Key Takeaways</h3>
+<h3 style="font-size: 1.3rem; font-weight: 800; color: #0F172A; margin: 0 0 16px 0;">Key Takeaways</h3>
 <ul class="takeaways-list-24obs">
 <li>
   <span class="takeaway-bullet">•</span>
-  <div><strong style="color: #323652; font-weight: 800;">Public Wi-Fi Is Intrinsically Unencrypted:</strong> Open networks broadcast data packets over open airwaves where anyone with basic packet-sniffing software can capture unencrypted traffic, session cookies, and credentials.</div>
+  <div><strong style="color: #0F172A; font-weight: 800;">Public Wi-Fi Is Intrinsically Unencrypted:</strong> Open networks broadcast data packets over open airwaves where anyone with basic packet-sniffing software can capture unencrypted traffic, session cookies, and credentials.</div>
 </li>
 <li>
   <span class="takeaway-bullet">•</span>
-  <div><strong style="color: #323652; font-weight: 800;">HTTPS Protects Content, Not Metadata:</strong> While HTTPS encrypts page content, DNS lookups, visited domain names, and connection timing remain visible to network operators and attackers.</div>
+  <div><strong style="color: #0F172A; font-weight: 800;">HTTPS Protects Content, Not Metadata:</strong> While HTTPS encrypts page content, DNS lookups, visited domain names, and connection timing remain visible to network operators and attackers.</div>
 </li>
 <li>
   <span class="takeaway-bullet">•</span>
-  <div><strong style="color: #323652; font-weight: 800;">WireGuard Encryption Eliminates the Threat:</strong> A modern VPN wraps every network packet in ChaCha20-Poly1305 authenticated encryption, rendering intercepted data computationally impossible to decipher.</div>
+  <div><strong style="color: #0F172A; font-weight: 800;">WireGuard Encryption Eliminates the Threat:</strong> A modern VPN wraps every network packet in ChaCha20-Poly1305 authenticated encryption, rendering intercepted data computationally impossible to decipher.</div>
 </li>
 <li>
   <span class="takeaway-bullet">•</span>
-  <div><strong style="color: #323652; font-weight: 800;">Beware of Predatory "Free" VPNs:</strong> Many free VPN services monetize by injecting ads, tracking browsing history, or embedding device-profiling SDKs. Always verify third-party audited no-log commitments.</div>
+  <div><strong style="color: #0F172A; font-weight: 800;">Beware of Predatory "Free" VPNs:</strong> Many free VPN services monetize by injecting ads, tracking browsing history, or embedding device-profiling SDKs. Always verify third-party audited no-log commitments.</div>
 </li>
 <li>
   <span class="takeaway-bullet">•</span>
-  <div><strong style="color: #323652; font-weight: 800;">Always Verify Your Tunnel:</strong> After connecting to public Wi-Fi, run an IP leak test and DNS leak check to ensure your VPN tunnel and kill switch are actively shielding traffic.</div>
+  <div><strong style="color: #0F172A; font-weight: 800;">Always Verify Your Tunnel:</strong> After connecting to public Wi-Fi, run an IP leak test and DNS leak check to ensure your VPN tunnel and kill switch are actively shielding traffic.</div>
 </li>
 </ul>
 </section>
@@ -48,7 +48,7 @@ A free VPN creates an encrypted tunnel between your device and the internet on p
 ## 1\. What exactly does a free VPN protect on public Wi-Fi?
 
 <div class="content-point-box">
-<h4 style="font-size: 1.08rem; font-weight: 700; margin: 0 0 6px 0; color: #323652;">Quick Answer</h4>
+<h4 style="font-size: 1.08rem; font-weight: 700; margin: 0 0 6px 0; color: #0F172A;">Quick Answer</h4>
 <p style="font-size: 1.02rem; line-height: 1.65; color: #09090b; margin: 0;">A VPN encrypts your internet traffic between your device and the VPN server, so anyone else on the same public Wi-Fi network — including someone actively trying to intercept traffic — sees only unreadable, scrambled data instead of your browsing activity, logins, or messages.
 </p>
 </div>
@@ -62,7 +62,7 @@ So whether you're checking your bank balance from a hotel lobby, sending a work 
 ## 2\. Why is public Wi-Fi actually risky, technically speaking?
 
 <div class="content-point-box">
-<h4 style="font-size: 1.08rem; font-weight: 700; margin: 0 0 6px 0; color: #323652;">Quick Answer</h4>
+<h4 style="font-size: 1.08rem; font-weight: 700; margin: 0 0 6px 0; color: #0F172A;">Quick Answer</h4>
 <p style="font-size: 1.02rem; line-height: 1.65; color: #09090b; margin: 0;">Public Wi-Fi networks are often unencrypted or use a shared password with minimal protection between connected devices, meaning anyone else on the same network can, in some circumstances, intercept traffic passing between other devices and the router.
 </p>
 </div>
@@ -80,7 +80,7 @@ A VPN solves this by adding its own independent layer of encryption underneath e
 ## 3\. How does a man-in-the-middle attack work on open networks?
 
 <div class="content-point-box">
-<h4 style="font-size: 1.08rem; font-weight: 700; margin: 0 0 6px 0; color: #323652;">Quick Answer</h4>
+<h4 style="font-size: 1.08rem; font-weight: 700; margin: 0 0 6px 0; color: #0F172A;">Quick Answer</h4>
 <p style="font-size: 1.02rem; line-height: 1.65; color: #09090b; margin: 0;">A man-in-the-middle attack happens when someone positions themselves between your device and the website or service you're trying to reach, secretly intercepting — and sometimes altering — the data passing between the two without either side realizing it.
 </p>
 </div>
@@ -96,7 +96,7 @@ A VPN adds a second, independent layer of encryption underneath all of this. Eve
 ## 4\. What is an "evil twin" hotspot, and how does a VPN help?
 
 <div class="content-point-box">
-<h4 style="font-size: 1.08rem; font-weight: 700; margin: 0 0 6px 0; color: #323652;">Quick Answer</h4>
+<h4 style="font-size: 1.08rem; font-weight: 700; margin: 0 0 6px 0; color: #0F172A;">Quick Answer</h4>
 <p style="font-size: 1.02rem; line-height: 1.65; color: #09090b; margin: 0;">An "evil twin" is a fake Wi-Fi network set up by an attacker to look identical to a legitimate one — often with the exact same name as a real cafe or airport network — designed to trick you into connecting so your traffic passes directly through the attacker's equipment.
 </p>
 </div>
@@ -112,7 +112,7 @@ Think of it as two separate layers of defense: avoiding the fake network in the 
 ## 5\. How does encryption keep your data unreadable on a shared network?
 
 <div class="content-point-box">
-<h4 style="font-size: 1.08rem; font-weight: 700; margin: 0 0 6px 0; color: #323652;">Quick Answer</h4>
+<h4 style="font-size: 1.08rem; font-weight: 700; margin: 0 0 6px 0; color: #0F172A;">Quick Answer</h4>
 <p style="font-size: 1.02rem; line-height: 1.65; color: #09090b; margin: 0;">Encryption scrambles your internet traffic into an unreadable format using a key only your device and the VPN server possess, so anyone intercepting that traffic on the shared network — including on a public Wi-Fi hotspot — sees only meaningless, scrambled data.
 </p>
 </div>
@@ -126,7 +126,7 @@ This is the specific reason encryption matters more on shared networks than on, 
 ## 6\. Does a VPN protect you from every public Wi-Fi risk?
 
 <div class="content-point-box">
-<h4 style="font-size: 1.08rem; font-weight: 700; margin: 0 0 6px 0; color: #323652;">Quick Answer</h4>
+<h4 style="font-size: 1.08rem; font-weight: 700; margin: 0 0 6px 0; color: #0F172A;">Quick Answer</h4>
 <p style="font-size: 1.02rem; line-height: 1.65; color: #09090b; margin: 0;">No. A VPN protects the confidentiality of your traffic as it travels across the network, but it doesn't protect you from connecting to a malicious hotspot in the first place, from malware already on your device, or from phishing attempts that trick you into handing over information directly.
 </p>
 </div>
@@ -144,7 +144,7 @@ None of this diminishes what a VPN does well. It closes off a specific, common, 
 ## 7\. Why does post-quantum encryption matter for travelers specifically?
 
 <div class="content-point-box">
-<h4 style="font-size: 1.08rem; font-weight: 700; margin: 0 0 6px 0; color: #323652;">Quick Answer</h4>
+<h4 style="font-size: 1.08rem; font-weight: 700; margin: 0 0 6px 0; color: #0F172A;">Quick Answer</h4>
 <p style="font-size: 1.02rem; line-height: 1.65; color: #09090b; margin: 0;">Post-quantum-ready encryption protects the VPN handshake against future decryption of traffic recorded today — a genuinely relevant concern for travelers, who often send unusually sensitive data (banking, work logins, personal messages) over networks they have the least ability to trust.
 </p>
 </div>
@@ -160,7 +160,7 @@ With OllaVPN's post-quantum-ready hybrid handshake, you're combining a classical
 ## 8\. Which everyday situations actually need a VPN on public Wi-Fi?
 
 <div class="content-point-box">
-<h4 style="font-size: 1.08rem; font-weight: 700; margin: 0 0 6px 0; color: #323652;">Quick Answer</h4>
+<h4 style="font-size: 1.08rem; font-weight: 700; margin: 0 0 6px 0; color: #0F172A;">Quick Answer</h4>
 <p style="font-size: 1.02rem; line-height: 1.65; color: #09090b; margin: 0;">Banking, work logins, personal messaging, and any account login are the highest-value situations for using a VPN on public Wi-Fi, since these involve credentials or sensitive data that would cause real harm if intercepted; casual browsing carries lower but still real risk.
 </p>
 </div>
@@ -178,7 +178,7 @@ Casual, logged-out browsing — reading news, checking public information — ca
 ## 9\. How does OllaVPN Free compare to other free VPNs for this exact use case?
 
 <div class="content-point-box">
-<h4 style="font-size: 1.08rem; font-weight: 700; margin: 0 0 6px 0; color: #323652;">Quick Answer</h4>
+<h4 style="font-size: 1.08rem; font-weight: 700; margin: 0 0 6px 0; color: #0F172A;">Quick Answer</h4>
 <p style="font-size: 1.02rem; line-height: 1.65; color: #09090b; margin: 0;">OllaVPN Free offers unlimited data and no ads, unlike most free VPNs that cap data volume aggressively or monetize your activity — a meaningful difference specifically for public Wi-Fi use, where you want a VPN active by default rather than rationed.
 </p>
 </div>
@@ -192,7 +192,7 @@ This is possible because we operate on an honest-loss-leader model: our Plus sub
 ## 10\. How do you verify a VPN is actually protecting you, from your own device?
 
 <div class="content-point-box">
-<h4 style="font-size: 1.08rem; font-weight: 700; margin: 0 0 6px 0; color: #323652;">Quick Answer</h4>
+<h4 style="font-size: 1.08rem; font-weight: 700; margin: 0 0 6px 0; color: #0F172A;">Quick Answer</h4>
 <p style="font-size: 1.02rem; line-height: 1.65; color: #09090b; margin: 0;">Four free tests from your own device — confirming your exit IP, checking for DNS leaks, checking for WebRTC leaks, and testing the kill switch — take about ten minutes total and directly verify the specific protections that matter on public Wi-Fi.
 </p>
 </div>
@@ -212,7 +212,7 @@ Running through these once, before you rely on a VPN for a trip, takes about ten
 ## 11\. When does the Plus tier make sense for frequent travelers?
 
 <div class="content-point-box">
-<h4 style="font-size: 1.08rem; font-weight: 700; margin: 0 0 6px 0; color: #323652;">Quick Answer</h4>
+<h4 style="font-size: 1.08rem; font-weight: 700; margin: 0 0 6px 0; color: #0F172A;">Quick Answer</h4>
 <p style="font-size: 1.02rem; line-height: 1.65; color: #09090b; margin: 0;">OllaVPN Plus makes sense if you regularly need faster speeds for 4K streaming or large downloads while traveling, or want to cover multiple devices — a phone, laptop, and tablet — under one account rather than switching between them.
 </p>
 </div>
@@ -226,7 +226,7 @@ Outside of those two specific needs, the free tier is built to be genuinely suff
 ## 12\. How does OllaVPN keep its free plan truly free without selling your data?
 
 <div class="content-point-box">
-<h4 style="font-size: 1.08rem; font-weight: 700; margin: 0 0 6px 0; color: #323652;">Quick Answer</h4>
+<h4 style="font-size: 1.08rem; font-weight: 700; margin: 0 0 6px 0; color: #0F172A;">Quick Answer</h4>
 <p style="font-size: 1.02rem; line-height: 1.65; color: #09090b; margin: 0;">OllaVPN's free plan is funded directly by Plus subscribers, creating a sustainable model that avoids ads, data sales, or other privacy-compromising practices — a meaningful distinction specifically for a tool you're using to protect sensitive data on untrusted networks.
 </p>
 </div>
@@ -242,10 +242,10 @@ This model lets us offer a genuinely free service — 10 Mbps speed, every count
 
 <!-- SEPARATE BOX 1: Frequently Asked Questions -->
 <section id="faq" class="faq-section-box" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.03); box-sizing: border-box;">
-  <h2 style="font-size: 1.8rem; font-weight: 800; margin-bottom: 16px; color: #323652; border-bottom: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
+  <h2 style="font-size: 1.8rem; font-weight: 800; margin-bottom: 16px; color: #0F172A; border-bottom: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
   <div style="display: flex; flex-direction: column; gap: 14px;">
 <details class="faq-accordion-item" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px 20px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.08rem; font-weight: 800; color: #323652; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 1.08rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>1. Is it actually necessary to use a VPN on public Wi-Fi in 2026?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #5A6090; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
@@ -255,7 +255,7 @@ This model lets us offer a genuinely free service — 10 Mbps speed, every count
   </details>
 
   <details class="faq-accordion-item" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px 20px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.08rem; font-weight: 800; color: #323652; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 1.08rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>2. Can someone see my passwords if I'm on public Wi-Fi without a VPN?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #5A6090; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
@@ -265,7 +265,7 @@ This model lets us offer a genuinely free service — 10 Mbps speed, every count
   </details>
 
   <details class="faq-accordion-item" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px 20px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.08rem; font-weight: 800; color: #323652; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 1.08rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>3. Does a VPN stop me from connecting to a fake "evil twin" Wi-Fi network?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #5A6090; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
@@ -275,7 +275,7 @@ This model lets us offer a genuinely free service — 10 Mbps speed, every count
   </details>
 
   <details class="faq-accordion-item" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px 20px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.08rem; font-weight: 800; color: #323652; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 1.08rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>4. Is 10 Mbps enough for using a VPN while traveling?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #5A6090; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
@@ -285,7 +285,7 @@ This model lets us offer a genuinely free service — 10 Mbps speed, every count
   </details>
 
   <details class="faq-accordion-item" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px 20px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.08rem; font-weight: 800; color: #323652; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 1.08rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>5. Will OllaVPN work on hotel and airport Wi-Fi that requires a login page?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #5A6090; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
@@ -295,7 +295,7 @@ This model lets us offer a genuinely free service — 10 Mbps speed, every count
   </details>
 
   <details class="faq-accordion-item" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px 20px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.08rem; font-weight: 800; color: #323652; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 1.08rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>6. Does a VPN protect me from malware I might download on public Wi-Fi?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #5A6090; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
@@ -305,7 +305,7 @@ This model lets us offer a genuinely free service — 10 Mbps speed, every count
   </details>
 
   <details class="faq-accordion-item" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px 20px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.08rem; font-weight: 800; color: #323652; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 1.08rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>7. Why does post-quantum encryption matter for a short trip, not just long-term data?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #5A6090; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
@@ -315,7 +315,7 @@ This model lets us offer a genuinely free service — 10 Mbps speed, every count
   </details>
 
   <details class="faq-accordion-item" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px 20px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.08rem; font-weight: 800; color: #323652; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 1.08rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>8. Is OllaVPN's free plan safe enough for banking on public Wi-Fi?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #5A6090; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
@@ -325,7 +325,7 @@ This model lets us offer a genuinely free service — 10 Mbps speed, every count
   </details>
 
   <details class="faq-accordion-item" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px 20px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.08rem; font-weight: 800; color: #323652; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 1.08rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>9. What happens if my VPN connection drops while I'm on public Wi-Fi?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #5A6090; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
@@ -335,7 +335,7 @@ This model lets us offer a genuinely free service — 10 Mbps speed, every count
   </details>
 
   <details class="faq-accordion-item" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px 20px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.08rem; font-weight: 800; color: #323652; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 1.08rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>10. Can I use OllaVPN's free plan every day, or is it meant for occasional use?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #5A6090; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
@@ -348,7 +348,7 @@ This model lets us offer a genuinely free service — 10 Mbps speed, every count
 
 <!-- SEPARATE BOX 2: Wrapping It Up -->
 <section id="wrapping-it-up" class="wrap-up-box" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.03); box-sizing: border-box;">
-  <h2 style="font-size: 1.8rem; font-weight: 800; margin: 0 0 10px 0; color: #323652; border-bottom: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
+  <h2 style="font-size: 1.8rem; font-weight: 800; margin: 0 0 10px 0; color: #0F172A; border-bottom: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
   <p style="font-size: 1.05rem; line-height: 1.75; color: #09090b; margin-bottom: 12px;">
     Free public Wi-Fi security is no longer an optional luxury — it is the baseline requirement for remote workers, travelers, and everyday smartphone users. When you connect to an open network at an airport, hotel, or cafe, you are sharing that transmission medium with everyone else in range. Without encryption, your session tokens, unencrypted app traffic, and DNS lookups remain exposed to anyone running basic packet-sniffing utilities.
   </p>
@@ -359,11 +359,11 @@ This model lets us offer a genuinely free service — 10 Mbps speed, every count
 
 
 <section id="download" class="download-section-box" style="background: linear-gradient(135deg, #ffffff 0%, #f8f9fd 100%); border: 1.5px solid #e2e8f0; border-radius: 18px; padding: 24px 28px; margin-bottom: 24px; text-align: center; width: 100%; box-shadow: 0 6px 24px rgba(50, 54, 82, 0.06);">
-<h2 style="font-size: 2rem; font-weight: 800; color: #323652; margin: 0 0 10px 0; border-bottom: none !important; padding-bottom: 0 !important;">Protect Your Connection with OllaVPN</h2>
+<h2 style="font-size: 2rem; font-weight: 800; color: #0F172A; margin: 0 0 10px 0; border-bottom: none !important; padding-bottom: 0 !important;">Protect Your Connection with OllaVPN</h2>
 <p style="font-size: 1.08rem; color: #475569; max-width: 650px; margin: 0 auto 18px auto; line-height: 1.65;">
 Enjoy unlimited data, next-generation WireGuard encryption, and audited zero activity logs on Android, iOS, Windows, and macOS.
 </p>
-<a href="https://ollavpn.com" class="btn-primary" style="display: inline-block; background: #323652 !important; color: #FFFFFF !important; font-size: 1.08rem; font-weight: 800; padding: 14px 36px; border-radius: 10px; text-decoration: none !important; box-shadow: 0 4px 16px rgba(50, 54, 82, 0.25); transition: all 0.2s ease;">
+<a href="https://ollavpn.com" class="btn-primary" style="display: inline-block; background: #0F172A !important; color: #FFFFFF !important; font-size: 1.08rem; font-weight: 800; padding: 14px 36px; border-radius: 10px; text-decoration: none !important; box-shadow: 0 4px 16px rgba(50, 54, 82, 0.25); transition: all 0.2s ease;">
   Download OllaVPN Free &rarr;
 </a>
 <div style="margin-top: 14px; font-size: 0.85rem; color: #64748b; font-weight: 600;">
