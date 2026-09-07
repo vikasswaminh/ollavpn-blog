@@ -45,7 +45,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css?v=20260907_v126tight" />
+<link rel="stylesheet" href="/styles.css?v=20260907_v129polished" />
 
 <script type="application/ld+json">
 {
@@ -161,7 +161,7 @@
   color: #475569 !important;
   font-family: var(--mono, monospace) !important;
   font-size: 11.5px !important;
-  border-bottom: 1px solid #e2e8f0 !important;
+  border-bottom: none !important;
   padding: 7px 0 !important;
   letter-spacing: 0.04em !important;
 }
@@ -181,7 +181,7 @@
   top: 0 !important;
   z-index: 1000 !important;
   background: #ffffff !important;
-  border-bottom: 1px solid #e2e8f0 !important;
+  border-bottom: none !important;
   transition: background .15s ease, box-shadow .15s ease, border-color .15s ease !important;
 }
 .nav.scrolled {
@@ -392,7 +392,7 @@
 }
 .mobile-drawer a {
   color: #0F172A !important;
-  border-bottom: 1px solid #e2e8f0 !important;
+  border-bottom: none !important;
   text-decoration: none !important;
 }
 .mobile-drawer h5 {
@@ -427,7 +427,7 @@
   .article em { font-style: italic; color: var(--text); }
   .article a { color: var(--red); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
   .article a:hover { text-decoration-thickness: 2px; }
-  .article hr { border: 0; border-top: 1px solid var(--line); margin: 2.4em auto; max-width: 80px; }
+  .article hr { border: 0; border-top: none !important; margin: 2.4em auto; max-width: 80px; }
 
   .tldr { border: 1px solid var(--line); border-radius: 12px; background: var(--panel); padding: 22px 26px; margin: 0 0 1.4em; }
   .tldr .label { font-family: var(--mono); font-size: 11px; color: var(--red); letter-spacing: 0.06em; text-transform: uppercase; }
@@ -1010,7 +1010,7 @@
   }
   .drawer-foot {
     padding: 10px 14px;
-    border-top: 1px solid var(--line);
+    border-top: none !important;
     text-align: center;
     background: rgba(255,255,255,0.02);
   }
@@ -1390,6 +1390,113 @@
   color: #DA291C !important;
 }
 </style>
+<!-- Universal Blog Typography & Spacing Polish -->
+<style id="blog-typography-polish">
+/* ==========================================================================
+   BLOG TYPOGRAPHY & SPACING POLISH (UNIVERSAL FOR ALL 129 BLOGS)
+   - Remove faint underline above/below section headings
+   - Enlarge section / paragraph numbers (01 ·, 02 ·, 03 ·, etc.)
+   - Decrease spacing between each points, headings, lists, and paragraphs
+   ========================================================================== */
+.article {
+  counter-reset: section;
+}
+
+.article h2,
+.article > h2,
+article h2,
+.article-center-col h2,
+.prose h2,
+.prose > h2 {
+  border-top: none !important;
+  border-bottom: none !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 22px !important;
+  margin-bottom: 8px !important;
+  line-height: 1.3 !important;
+  position: relative !important;
+}
+
+.article > h2::before,
+.article h2::before,
+article h2::before,
+.article-center-col h2::before,
+.prose > h2::before {
+  counter-increment: section;
+  content: counter(section, decimal-leading-zero) " · ";
+  color: #DA291C !important;
+  font-family: var(--mono, 'Fira Code', monospace) !important;
+  font-weight: 800 !important;
+  font-size: 1.4em !important;
+  letter-spacing: 0.02em !important;
+  margin-right: 10px !important;
+  vertical-align: baseline !important;
+  display: inline-block !important;
+}
+
+/* Suppress counter number on FAQs and Key Takeaways headings */
+.faqs-section h2::before,
+#faqs h2::before,
+.faq-section h2::before,
+.faq-section-box h2::before,
+.key-takeaways h2::before,
+.key-takeaways h3::before {
+  content: none !important;
+  display: none !important;
+}
+
+.article h3,
+.article > h3,
+.prose h3 {
+  margin-top: 18px !important;
+  margin-bottom: 6px !important;
+}
+
+.article p,
+.prose p {
+  margin-top: 0 !important;
+  margin-bottom: 12px !important;
+  line-height: 1.68 !important;
+}
+
+.article ul,
+.article ol,
+.prose ul,
+.prose ol {
+  margin-top: 0 !important;
+  margin-bottom: 10px !important;
+  padding-left: 22px !important;
+}
+
+.article li,
+.prose li {
+  margin-bottom: 3px !important;
+  line-height: 1.55 !important;
+}
+
+.key-takeaways ul {
+  gap: 5px !important;
+}
+
+.key-takeaways ul li {
+  font-size: 15px !important;
+  line-height: 1.5 !important;
+}
+
+.jump-grid {
+  gap: 6px !important;
+}
+
+.jump-grid li {
+  margin-bottom: 3px !important;
+}
+</style>
+
 </head>
 <body>
 
