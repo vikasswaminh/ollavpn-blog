@@ -225,7 +225,7 @@
         <li><a href="/blog/what-is-encrypted-client-hello.html">What is Encrypted Client Hello (ECH)?</a></li>
         <li><a href="/blog/can-my-isp-see-vpn-traffic.html">Can My ISP See My VPN Traffic?</a></li>
         <li><a href="/blog/how-to-test-for-dns-leak.html">How to Test for DNS Leaks in 2026</a></li>
-        <li><a href="/blog/what-is-a-man-in-the-middle-attack.html">What is a Man - in - the - Middle Attack?</a></li>
+        <li><a href="/blog/what-is-a-man-in-the-middle-attack.html">What is a Man-in-the-Middle Attack?</a></li>
         <li><a href="/blog/smart-dns-vs-vpn.html">Smart DNS vs VPN: Which Is Better?</a></li>
       </ul>
     </div>
@@ -256,16 +256,50 @@
     <h1>Why HTTPS Alone Isn't Enough</h1>
     <p style="font-size: 18px; color: #475569; line-height: 1.6; margin-bottom: 24px;">You've probably been trained for years to look for that little padlock icon in your browser address bar before typing in a password or credit card number. Honestly? That habit is solid advice, and you should definitely keep doing it. But somewhere along the line, "the padlock is showing" quietly turned into "I'm completely private online" in most people's minds. And those are two very, very different things.</p>
 
-    <!-- TL;DR BOX -->
-    <div class="quick-answer" style="border-left-width: 5px; font-size: 16px; margin-bottom: 32px;">
-      <strong style="display:block; margin-bottom:8px; font-size:17px;">TL;DR - Key Summary</strong>
-      <p style='margin-bottom:12px;'>HTTPS is genuinely essential, and you should absolutely insist on seeing it whenever you browse. What it does is encrypt the content moving back and forth between your browser and a single website - your login credentials, your credit card details, the private messages you send, or the exact article you're reading. That means nobody hanging out between you and that server can eavesdrop on your conversation. That is real, meaningful protection, and the modern web is vastly safer because almost every site uses it today.</p><p style='margin-bottom:12px;'>Here's the catch: HTTPS was never built to hide which website you're talking to in the first place. Nor does it touch a long list of other sneaky privacy headaches living right alongside it. Your DNS lookups can blurt out every domain name you try to visit before an encrypted connection even begins. The size and timing of your scrambled data packets can reveal what you're doing even when the words themselves are unreadable. Browser fingerprinting can track you across the web using subtle hardware signals that HTTPS never sees. And your real IP address tells every server on earth your general physical location, padlock or not.</p><p style='margin-bottom:12px;'>None of this means HTTPS is broken or a gimmick. It is doing the exact job it was created to do. It just means the padlock answers a much narrower question than most of us assume. Truly covering your tracks takes a few extra pieces: handling your DNS properly, using a trustworthy VPN that hides your IP address and routes DNS inside its own encrypted tunnel (the way OllaVPN does), and running a browser designed to resist fingerprinting. Let's walk through how all of this fits together.</p>
+    <!-- TL;DR HIGHLIGHT BOX -->
+    <div class="tldr-highlight-box" style="background: rgba(218, 41, 28, 0.04); border: 1px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 10px; padding: 22px 26px; margin: 28px 0 20px; box-shadow: 0 2px 12px rgba(218, 41, 28, 0.06);">
+      <div class="tldr-header" style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
+        <span class="tldr-dot" style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#DA291C;"></span>
+        <span class="tldr-badge" style="font-family:var(--mono, monospace); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:#DA291C;">TL;DR &bull; KEY SUMMARY</span>
+      </div>
+      <p style='margin:0 0 12px; font-size:15.5px; line-height:1.7; color:#334155;'>HTTPS is genuinely essential, and you should absolutely insist on seeing it whenever you browse. What it does is encrypt the content moving back and forth between your browser and a single website - your login credentials, your credit card details, the private messages you send, or the exact article you're reading. That means nobody hanging out between you and that server can eavesdrop on your conversation. That is real, meaningful protection, and the modern web is vastly safer because almost every site uses it today.</p><p style='margin:0 0 12px; font-size:15.5px; line-height:1.7; color:#334155;'>Here's the catch: HTTPS was never built to hide which website you're talking to in the first place. Nor does it touch a long list of other sneaky privacy headaches living right alongside it. Your DNS lookups can blurt out every domain name you try to visit before an encrypted connection even begins. The size and timing of your scrambled data packets can reveal what you're doing even when the words themselves are unreadable. Browser fingerprinting can track you across the web using subtle hardware signals that HTTPS never sees. And your real IP address tells every server on earth your general physical location, padlock or not.</p><p style='margin:0 0 12px; font-size:15.5px; line-height:1.7; color:#334155;'>None of this means HTTPS is broken or a gimmick. It is doing the exact job it was created to do. It just means the padlock answers a much narrower question than most of us assume. Truly covering your tracks takes a few extra pieces: handling your DNS properly, using a trustworthy VPN that hides your IP address and routes DNS inside its own encrypted tunnel (the way OllaVPN does), and running a browser designed to resist fingerprinting. Let's walk through how all of this fits together.</p>
+    </div>
+
+    <!-- KEY TAKEAWAYS (DIRECTLY AFTER TL;DR) -->
+    <div class="key-takeaways" id="key-takeaways" style="margin: 0 0 32px 0; padding: 24px 28px; background: #f8fafc; border: 1px solid #e2e8f0; border-left: 5px solid #DA291C; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.03);">
+      <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
+        <span style="font-size:16px;">⭐</span>
+        <h3 style="margin:0; color:#0F172A; font-size:18px; font-weight:700;">Key Takeaways</h3>
+      </div>
+      <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px;">
+        <li style="position: relative; padding-left: 24px; font-size: 15px; line-height: 1.65; color: #334155;">
+          <span style="position: absolute; left: 0; top: 0; color: #DA291C; font-size: 18px; line-height: 1.4; font-weight: 700;">&bull;</span>
+          HTTPS encrypts communication between your device and a server, preventing content interception.
+        </li>
+        <li style="position: relative; padding-left: 24px; font-size: 15px; line-height: 1.65; color: #334155;">
+          <span style="position: absolute; left: 0; top: 0; color: #DA291C; font-size: 18px; line-height: 1.4; font-weight: 700;">&bull;</span>
+          HTTPS does not hide which websites you visit; domain names are exposed through DNS queries and SNI headers.
+        </li>
+        <li style="position: relative; padding-left: 24px; font-size: 15px; line-height: 1.65; color: #334155;">
+          <span style="position: absolute; left: 0; top: 0; color: #DA291C; font-size: 18px; line-height: 1.4; font-weight: 700;">&bull;</span>
+          Your ISP still logs connection timestamps, data volume, and domain destinations on HTTPS connections.
+        </li>
+        <li style="position: relative; padding-left: 24px; font-size: 15px; line-height: 1.65; color: #334155;">
+          <span style="position: absolute; left: 0; top: 0; color: #DA291C; font-size: 18px; line-height: 1.4; font-weight: 700;">&bull;</span>
+          Browser fingerprinting runs locally inside the browser after TLS decryption, completely bypassing HTTPS.
+        </li>
+        <li style="position: relative; padding-left: 24px; font-size: 15px; line-height: 1.65; color: #334155;">
+          <span style="position: absolute; left: 0; top: 0; color: #DA291C; font-size: 18px; line-height: 1.4; font-weight: 700;">&bull;</span>
+          A zero-logs VPN complements HTTPS by encrypting all traffic, masking IP addresses, and routing DNS in-tunnel.
+        </li>
+      </ul>
     </div>
 
     <!-- JUMP GRID -->
     <div class="jump-box">
       <div class="jump-box-title">On this page</div>
       <ul class="jump-grid">
+        <li><a href="#key-takeaways">⭐ Key Takeaways</a></li>
         <li><a href="#what-does-https-actually-protect-in-plain-eng">What does HTTPS actually protect, in plain English?</a></li>
         <li><a href="#what-does-https-not-protect-you-from">What does HTTPS not protect you from?</a></li>
         <li><a href="#what-can-your-isp-still-see-even-when-youre-o">What can your ISP still see even when you're on an HTTPS site?</a></li>
@@ -402,18 +436,6 @@
 <p>4.Test your setup for leaks. Run periodic diagnostic checks using DNS leak tests, WebRTC leak tests, and IP lookup tools to make sure your location and domain queries aren't leaking out behind the scenes.</p>
 <p>5.Hardening your browser against fingerprinting. Use a privacy - focused browser (like Firefox with strict protection enabled, or Brave) and install tracker - blocking extensions to stop scripts from building a unique hardware fingerprint of your device.</p>
 
-      <!-- KEY TAKEAWAYS -->
-      <div class="key-takeaways" style="margin: 36px 0; padding: 24px; background: rgba(218, 41, 28, 0.04); border-left: 4px solid #DA291C; border-radius: 8px;">
-        <h3 style="margin-top:0; color:#0F172A; font-size:18px;">⭐ Key Takeaways</h3>
-        <ul style="margin: 12px 0 0; padding-left: 20px; line-height: 1.7; color:#334155;">
-        <li>HTTPS encrypts communication between your device and a server, preventing content interception.</li>
-        <li>HTTPS does not hide which websites you visit; domain names are exposed through DNS queries and SNI headers.</li>
-        <li>Your ISP still logs connection timestamps, data volume, and domain destinations on HTTPS connections.</li>
-        <li>Browser fingerprinting runs locally inside the browser after TLS decryption, completely bypassing HTTPS.</li>
-        <li>A zero - logs VPN complements HTTPS by encrypting all traffic, masking IP addresses, and routing DNS in - tunnel.</li>
-        </ul>
-      </div>
-
     <!-- FAQS SECTION -->
     <section class="faqs-section" id="faqs" style="margin-top: 48px;">
       <h2>Frequently Asked Questions</h2>
@@ -543,6 +565,7 @@
   <aside class="toc-rail" aria-label="Table of contents">
     <h4>Contents</h4>
     <ul>
+      <li><a href="#key-takeaways">⭐ Key Takeaways</a></li>
       <li><a href="#what-does-https-actually-protect-in-plain-eng">What does HTTPS actually protect, in plain English?</a></li>
       <li><a href="#what-does-https-not-protect-you-from">What does HTTPS not protect you from?</a></li>
       <li><a href="#what-can-your-isp-still-see-even-when-youre-o">What can your ISP still see even when you're on an HTTPS site?</a></li>

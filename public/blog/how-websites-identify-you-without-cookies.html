@@ -225,7 +225,7 @@
         <li><a href="/blog/what-is-a-webrtc-leak.html">What is a WebRTC Leak, and Why Does It Matter?</a></li>
         <li><a href="/blog/how-to-test-for-dns-leak.html">How to Test for DNS Leaks in 2026</a></li>
         <li><a href="/blog/passkeys-vs-passwords.html">Passkeys vs. Passwords: Which One Protects You?</a></li>
-        <li><a href="/blog/what-logs-does-vpn-keep.html">What Logs Does a VPN Keep? No - Logs Explained</a></li>
+        <li><a href="/blog/what-logs-does-vpn-keep.html">What Logs Does a VPN Keep? No-Logs Explained</a></li>
         <li><a href="/blog/are-vpns-legal.html">Are VPNs Legal? The Honest Truth</a></li>
       </ul>
     </div>
@@ -256,16 +256,50 @@
     <h1>How Websites Identify You Even Without Cookies</h1>
     <p style="font-size: 18px; color: #475569; line-height: 1.6; margin-bottom: 24px;">You clear your cookies religiously. You’ve got a strict browser - privacy setup. And yet, somehow, that pair of shoes you looked at once follows you across three different websites, and a login form somehow “knows” it’s you before you’ve typed a single character. If you’ve ever wondered how that’s possible when you supposedly “deleted everything,” the answer is that cookies were never the only trick in the book. They were just the easiest one to explain - and the easiest one to delete. In this guide, we’ll walk through the other ways websites actually recognize you, in plain language, and what genuinely helps versus what’s mostly theater.</p>
 
-    <!-- TL;DR BOX -->
-    <div class="quick-answer" style="border-left-width: 5px; font-size: 16px; margin-bottom: 32px;">
-      <strong style="display:block; margin-bottom:8px; font-size:17px;">TL;DR - Key Summary</strong>
-      <p style='margin-bottom:12px;'>Cookies are just one identification method among many, and they’re often the weakest one, because you can delete them with a click. The more durable technique is called browser fingerprinting: quietly measuring dozens of small technical details about your device and browser - screen size, installed fonts, graphics - card quirks, timezone, battery level, even how your device renders a tiny invisible image - and combining them into a “fingerprint” that’s often unique enough to re - identify you across visits, even in a fresh incognito window with every cookie cleared.</p><p style='margin-bottom:12px;'>Your IP address adds another identifying layer that’s separate from cookies. It reveals your rough location and, on many home connections, stays the same for weeks or months at a time. Combine an IP address with a fingerprint, and a website (or the ad network watching in the background) can often recognize you with unsettling consistency - cookie - free.</p><p style='margin-bottom:12px;'>No single tool fixes all of this, because fingerprinting pulls from many different browser features at once. But a few things genuinely move the needle: a privacy - respecting browser that resists fingerprinting by design, a tracker - blocking extension, and a VPN that hides your real IP address. On a well - built one like OllaVPN, DNS is resolved entirely inside the encrypted tunnel, so your browsing habits aren’t leaking out through the back door even while you think cookies are the only thing to worry about.</p>
+    <!-- TL;DR HIGHLIGHT BOX -->
+    <div class="tldr-highlight-box" style="background: rgba(218, 41, 28, 0.04); border: 1px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 10px; padding: 22px 26px; margin: 28px 0 20px; box-shadow: 0 2px 12px rgba(218, 41, 28, 0.06);">
+      <div class="tldr-header" style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
+        <span class="tldr-dot" style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#DA291C;"></span>
+        <span class="tldr-badge" style="font-family:var(--mono, monospace); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:#DA291C;">TL;DR &bull; KEY SUMMARY</span>
+      </div>
+      <p style='margin:0 0 12px; font-size:15.5px; line-height:1.7; color:#334155;'>Cookies are just one identification method among many, and they’re often the weakest one, because you can delete them with a click. The more durable technique is called browser fingerprinting: quietly measuring dozens of small technical details about your device and browser - screen size, installed fonts, graphics - card quirks, timezone, battery level, even how your device renders a tiny invisible image - and combining them into a “fingerprint” that’s often unique enough to re - identify you across visits, even in a fresh incognito window with every cookie cleared.</p><p style='margin:0 0 12px; font-size:15.5px; line-height:1.7; color:#334155;'>Your IP address adds another identifying layer that’s separate from cookies. It reveals your rough location and, on many home connections, stays the same for weeks or months at a time. Combine an IP address with a fingerprint, and a website (or the ad network watching in the background) can often recognize you with unsettling consistency - cookie - free.</p><p style='margin:0 0 12px; font-size:15.5px; line-height:1.7; color:#334155;'>No single tool fixes all of this, because fingerprinting pulls from many different browser features at once. But a few things genuinely move the needle: a privacy - respecting browser that resists fingerprinting by design, a tracker - blocking extension, and a VPN that hides your real IP address. On a well - built one like OllaVPN, DNS is resolved entirely inside the encrypted tunnel, so your browsing habits aren’t leaking out through the back door even while you think cookies are the only thing to worry about.</p>
+    </div>
+
+    <!-- KEY TAKEAWAYS (DIRECTLY AFTER TL;DR) -->
+    <div class="key-takeaways" id="key-takeaways" style="margin: 0 0 32px 0; padding: 24px 28px; background: #f8fafc; border: 1px solid #e2e8f0; border-left: 5px solid #DA291C; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.03);">
+      <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
+        <span style="font-size:16px;">⭐</span>
+        <h3 style="margin:0; color:#0F172A; font-size:18px; font-weight:700;">Key Takeaways</h3>
+      </div>
+      <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px;">
+        <li style="position: relative; padding-left: 24px; font-size: 15px; line-height: 1.65; color: #334155;">
+          <span style="position: absolute; left: 0; top: 0; color: #DA291C; font-size: 18px; line-height: 1.4; font-weight: 700;">&bull;</span>
+          If cookies aren’t the whole story, what’s actually happening?
+        </li>
+        <li style="position: relative; padding-left: 24px; font-size: 15px; line-height: 1.65; color: #334155;">
+          <span style="position: absolute; left: 0; top: 0; color: #DA291C; font-size: 18px; line-height: 1.4; font-weight: 700;">&bull;</span>
+          What is browser fingerprinting, and how does it actually work?
+        </li>
+        <li style="position: relative; padding-left: 24px; font-size: 15px; line-height: 1.65; color: #334155;">
+          <span style="position: absolute; left: 0; top: 0; color: #DA291C; font-size: 18px; line-height: 1.4; font-weight: 700;">&bull;</span>
+          What specific signals make up a fingerprint?
+        </li>
+        <li style="position: relative; padding-left: 24px; font-size: 15px; line-height: 1.65; color: #334155;">
+          <span style="position: absolute; left: 0; top: 0; color: #DA291C; font-size: 18px; line-height: 1.4; font-weight: 700;">&bull;</span>
+          How does canvas and WebGL fingerprinting actually pull this off?
+        </li>
+        <li style="position: relative; padding-left: 24px; font-size: 15px; line-height: 1.65; color: #334155;">
+          <span style="position: absolute; left: 0; top: 0; color: #DA291C; font-size: 18px; line-height: 1.4; font-weight: 700;">&bull;</span>
+          What role does your IP address play in identifying you?
+        </li>
+      </ul>
     </div>
 
     <!-- JUMP GRID -->
     <div class="jump-box">
       <div class="jump-box-title">On this page</div>
       <ul class="jump-grid">
+        <li><a href="#key-takeaways">⭐ Key Takeaways</a></li>
         <li><a href="#if-cookies-arent-the-whole-story-whats-actual">If cookies aren't the whole story, what's actually happening?</a></li>
         <li><a href="#what-is-browser-fingerprinting-and-how-does-i">What is browser fingerprinting, and how does it actually work?</a></li>
         <li><a href="#what-specific-signals-make-up-a-fingerprint">What specific signals make up a fingerprint?</a></li>
@@ -422,18 +456,6 @@
 <p>Run a leak check on your current setup, VPN or not. Our DNS lookup, WebRTC leak test, and what - is - my - IP tools show you clearly whether your network - level protections are delivering what they claim.</p>
 <p>Combine layers rather than expecting one tool to solve everything. A fingerprint - resistant browser + tracker blocker + VPN with in - tunnel DNS and a real kill switch + careful account hygiene (not staying logged into services you don’t need) is materially better than any single tool alone. Each layer is also inexpensive or free.</p>
 
-      <!-- KEY TAKEAWAYS -->
-      <div class="key-takeaways" style="margin: 36px 0; padding: 24px; background: rgba(218, 41, 28, 0.04); border-left: 4px solid #DA291C; border-radius: 8px;">
-        <h3 style="margin-top:0; color:#0F172A; font-size:18px;">⭐ Key Takeaways</h3>
-        <ul style="margin: 12px 0 0; padding-left: 20px; line-height: 1.7; color:#334155;">
-        <li>If cookies aren’t the whole story, what’s actually happening?</li>
-        <li>What is browser fingerprinting, and how does it actually work?</li>
-        <li>What specific signals make up a fingerprint?</li>
-        <li>How does canvas and WebGL fingerprinting actually pull this off?</li>
-        <li>What role does your IP address play in identifying you?</li>
-        </ul>
-      </div>
-
     <!-- FAQS SECTION -->
     <section class="faqs-section" id="faqs" style="margin-top: 48px;">
       <h2>Frequently Asked Questions</h2>
@@ -563,6 +585,7 @@
   <aside class="toc-rail" aria-label="Table of contents">
     <h4>Contents</h4>
     <ul>
+      <li><a href="#key-takeaways">⭐ Key Takeaways</a></li>
       <li><a href="#if-cookies-arent-the-whole-story-whats-actual">If cookies aren't the whole story, what's actually happening?</a></li>
       <li><a href="#what-is-browser-fingerprinting-and-how-does-i">What is browser fingerprinting, and how does it actually work?</a></li>
       <li><a href="#what-specific-signals-make-up-a-fingerprint">What specific signals make up a fingerprint?</a></li>

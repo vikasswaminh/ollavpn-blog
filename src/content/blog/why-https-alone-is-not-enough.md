@@ -18,6 +18,14 @@ HTTPS is genuinely essential, and you should absolutely insist on seeing it when
 Here's the catch: HTTPS was never built to hide which website you're talking to in the first place. Nor does it touch a long list of other sneaky privacy headaches living right alongside it. Your DNS lookups can blurt out every domain name you try to visit before an encrypted connection even begins. The size and timing of your scrambled data packets can reveal what you're doing even when the words themselves are unreadable. Browser fingerprinting can track you across the web using subtle hardware signals that HTTPS never sees. And your real IP address tells every server on earth your general physical location, padlock or not.
 None of this means HTTPS is broken or a gimmick. It is doing the exact job it was created to do. It just means the padlock answers a much narrower question than most of us assume. Truly covering your tracks takes a few extra pieces: handling your DNS properly, using a trustworthy VPN that hides your IP address and routes DNS inside its own encrypted tunnel (the way OllaVPN does), and running a browser designed to resist fingerprinting. Let's walk through how all of this fits together.
 
+## Key Takeaways
+
+- HTTPS encrypts communication between your device and a server, preventing content interception.
+- HTTPS does not hide which websites you visit; domain names are exposed through DNS queries and SNI headers.
+- Your ISP still logs connection timestamps, data volume, and domain destinations on HTTPS connections.
+- Browser fingerprinting runs locally inside the browser after TLS decryption, completely bypassing HTTPS.
+- A zero-logs VPN complements HTTPS by encrypting all traffic, masking IP addresses, and routing DNS in-tunnel.
+
 ## What does HTTPS actually protect, in plain English?
 
 HTTPS encrypts the content of the connection between your browser and a specific website, so that anyone intercepting the traffic in transit sees scrambled data instead of readable text.
@@ -209,14 +217,6 @@ If you want to step beyond basic "padlock security" and take control of your onl
 4.Test your setup for leaks. Run periodic diagnostic checks using DNS leak tests, WebRTC leak tests, and IP lookup tools to make sure your location and domain queries aren't leaking out behind the scenes.
 
 5.Hardening your browser against fingerprinting. Use a privacy - focused browser (like Firefox with strict protection enabled, or Brave) and install tracker - blocking extensions to stop scripts from building a unique hardware fingerprint of your device.
-
-## Key Takeaways
-
-- HTTPS encrypts communication between your device and a server, preventing content interception.
-- HTTPS does not hide which websites you visit; domain names are exposed through DNS queries and SNI headers.
-- Your ISP still logs connection timestamps, data volume, and domain destinations on HTTPS connections.
-- Browser fingerprinting runs locally inside the browser after TLS decryption, completely bypassing HTTPS.
-- A zero - logs VPN complements HTTPS by encrypting all traffic, masking IP addresses, and routing DNS in - tunnel.
 
 ## Frequently Asked Questions
 

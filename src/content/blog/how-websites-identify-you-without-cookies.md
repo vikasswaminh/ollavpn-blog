@@ -18,6 +18,14 @@ Cookies are just one identification method among many, and they’re often the w
 Your IP address adds another identifying layer that’s separate from cookies. It reveals your rough location and, on many home connections, stays the same for weeks or months at a time. Combine an IP address with a fingerprint, and a website (or the ad network watching in the background) can often recognize you with unsettling consistency - cookie - free.
 No single tool fixes all of this, because fingerprinting pulls from many different browser features at once. But a few things genuinely move the needle: a privacy - respecting browser that resists fingerprinting by design, a tracker - blocking extension, and a VPN that hides your real IP address. On a well - built one like OllaVPN, DNS is resolved entirely inside the encrypted tunnel, so your browsing habits aren’t leaking out through the back door even while you think cookies are the only thing to worry about.
 
+## Key Takeaways
+
+- If cookies aren’t the whole story, what’s actually happening?
+- What is browser fingerprinting, and how does it actually work?
+- What specific signals make up a fingerprint?
+- How does canvas and WebGL fingerprinting actually pull this off?
+- What role does your IP address play in identifying you?
+
 ## If cookies aren't the whole story, what's actually happening?
 
 Cookies are a small, deletable file your browser stores. Fingerprinting is a technique that identifies you using dozens of undeletable technical characteristics your device reveals just by existing.
@@ -259,14 +267,6 @@ Pick a trustworthy VPN and use it by default, even on the free tier. This closes
 Run a leak check on your current setup, VPN or not. Our DNS lookup, WebRTC leak test, and what - is - my - IP tools show you clearly whether your network - level protections are delivering what they claim.
 
 Combine layers rather than expecting one tool to solve everything. A fingerprint - resistant browser + tracker blocker + VPN with in - tunnel DNS and a real kill switch + careful account hygiene (not staying logged into services you don’t need) is materially better than any single tool alone. Each layer is also inexpensive or free.
-
-## Key Takeaways
-
-- If cookies aren’t the whole story, what’s actually happening?
-- What is browser fingerprinting, and how does it actually work?
-- What specific signals make up a fingerprint?
-- How does canvas and WebGL fingerprinting actually pull this off?
-- What role does your IP address play in identifying you?
 
 ## Frequently Asked Questions
 
