@@ -4486,3 +4486,68 @@ body:has(.article-page-wrapper) .ticker-bar {
 }
 
 
+
+
+/* ==========================================================================
+   HEADING NUMBER SCALE, UNDERLINE REMOVAL, AND TIGHTER POINT SPACING
+   ========================================================================== */
+.article h2,
+.article > h2,
+.prose h2,
+.prose > h2 {
+  border-top: none !important;
+  border-bottom: none !important;
+  padding-top: 0 !important;
+  margin-top: 28px !important;
+  margin-bottom: 10px !important;
+}
+
+.article > h2::before,
+.article h2::before,
+.prose > h2::before {
+  font-size: 1.05em !important;
+  font-weight: 800 !important;
+  color: var(--red) !important;
+  font-family: var(--mono), 'Fira Code', monospace !important;
+  letter-spacing: 0.02em !important;
+  margin-right: 8px !important;
+  vertical-align: baseline !important;
+  display: inline-block !important;
+}
+
+.faqs-section h2::before,
+#faqs h2::before,
+.key-takeaways h2::before,
+.key-takeaways h3::before {
+  content: none !important;
+  display: none !important;
+}
+
+.article p,
+.prose p {
+  margin-bottom: 14px !important;
+}
+
+.article ul,
+.article ol,
+.prose ul,
+.prose ol {
+  margin-top: 0 !important;
+  margin-bottom: 12px !important;
+  padding-left: 22px !important;
+}
+
+.article li,
+.prose li {
+  margin-bottom: 4px !important;
+  line-height: 1.6 !important;
+}
+
+.key-takeaways ul {
+  gap: 6px !important;
+}
+
+.key-takeaways ul li {
+  font-size: 15px !important;
+  line-height: 1.55 !important;
+}
