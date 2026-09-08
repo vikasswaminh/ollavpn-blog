@@ -53,13 +53,13 @@ tags: ['protocol-tech']
 
 You know how websites use HTTPS to encrypt your connection, right? Well, even with that, anyone watching your network  -  like your internet provider  -  could still see \*which\* website you were trying to visit, even if they couldn't see what you were doing on it. Encrypted Client Hello (ECH) is here to fix that. It's a new privacy feature that stops those initial peeks, making it much harder for snoopers to know where you're going online. Let's dive into what ECH is, how it works, and why it's a big step forward for your digital privacy.
 
-## What exactly is Encrypted Client Hello (ECH)?
+## 1. What exactly is Encrypted Client Hello (ECH)?
 
 Encrypted Client Hello (ECH) is a new internet standard that encrypts the very first part of your connection to a website, hiding which specific site you're trying to visit.
 
 Think about when you type a website address into your browser. Even if you're using a secure HTTPS connection, there's always been a tiny bit of information that's sent in the clear, right at the beginning of that connection. This unencrypted part tells the server which specific **domain name** you're trying to reach. For example, it might say "I want to talk to example.com." This creates a significant **privacy gap** because even if your actual browsing content is encrypted, an observer can still see \*which\* website you're going to. It's like seeing the address on an envelope, even if you can't read the letter inside. ECH steps in to fix this by **encrypting this initial connection** handshake. When ECH is used, that "I want to talk to example.com" message is scrambled, so anyone monitoring your network traffic can't easily tell which website you're visiting. They'll know you're connecting to \*a\* secure server, but not \*which\* one. This makes it much harder for internet service providers, governments, or other snoopers to track your online activity based solely on domain names. While HTTPS has been great for securing the content of your communications, ECH takes privacy a step further by obscuring the destination itself. It's an important evolution in internet security, making it harder for third parties to build a profile of your browsing habits just by watching your connection requests. It doesn't replace a VPN, which encrypts and routes \*all\* your traffic through a secure tunnel, but it definitely makes the internet a more private place for everyone, especially when combined with services like OllaVPN.
 
-## How does ECH actually work its magic under the hood?
+## 2. How does ECH actually work its magic under the hood?
 
 ECH works by encrypting the very first message your browser sends to a website, hiding the site's name from anyone who might be watching.
 
@@ -71,7 +71,7 @@ The server then uses its corresponding private key to decrypt the SNI, figures o
 
 The magic really lies in how this encryption happens \*before\* the main secure connection is even established. It's like putting your destination address inside a sealed envelope before you even mail the letter. **Browser support** for ECH is growing, with major browsers like Chrome, Firefox, and Edge gradually rolling it out, but for it to work end-to-end, the website you're visiting also needs to support it. When both sides are ECH-enabled, you get a much more private browsing experience.
 
-## Why should I care about ECH as an everyday internet user?
+## 3. Why should I care about ECH as an everyday internet user?
 
 ECH significantly improves your online privacy by encrypting the last unencrypted part of your web traffic, making it harder for others to see which websites you're visiting.
 
@@ -81,7 +81,7 @@ With ECH, that last piece of information gets encrypted too. This means your **b
 
 For everyday users, this translates to a more private and secure internet experience. It also offers a degree of **censorship resistance**, as it becomes more difficult for oppressive regimes to block access to specific websites by merely inspecting the initial connection request. When combined with a VPN like OllaVPN, which already encrypts your entire connection and hides your IP address, ECH adds another powerful layer of anonymity, making it exceptionally difficult for anyone to observe your online movements.
 
-## Are there any common misconceptions about ECH I should know about?
+## 4. Are there any common misconceptions about ECH I should know about?
 
 Yes, many people misunderstand what ECH does and doesn't protect, often assuming it provides more comprehensive privacy than it actually does.
 
@@ -91,7 +91,7 @@ Another common misunderstanding is that ECH encrypts all your traffic. Again, th
 
 So, while ECH is a welcome step forward for privacy, protecting that crucial SNI information from casual snooping, it's vital to remember its limitations. It's a foundational privacy feature, not a comprehensive solution. For true anonymity, IP address hiding, and encryption of all your network traffic from end to end, you still need a VPN like OllaVPN.
 
-## How does ECH fit in with other internet privacy concepts like DNS over HTTPS?
+## 5. How does ECH fit in with other internet privacy concepts like DNS over HTTPS?
 
 ECH (Encrypted Client Hello) is a complementary privacy technology that works alongside, rather than replacing, tools like DNS over HTTPS (DoH) and VPNs, creating a stronger layered security approach.
 
@@ -103,13 +103,13 @@ Where do **VPNs** fit in? A VPN like OllaVPN is like moving your entire house to
 
 Ultimately, these are all **complementary technologies**. Using DoH and ECH with a VPN creates a powerful setup for [layered security](/blog/layered-security). The VPN hides your IP address and encrypts your full tunnel, while DoH and ECH further strengthen the privacy of specific connection details, even if the VPN connection were somehow compromised or observed at a deeper level. It's about building as many privacy safeguards as possible.
 
-## When is ECH super important, and when can I mostly ignore it?
+## 6. When is ECH super important, and when can I mostly ignore it?
 
 ECH is most important when you're under targeted surveillance or on highly restrictive networks, but less critical when you're already using a VPN for basic browsing.
 
 You should definitely pay attention to ECH (Encrypted Client Hello) if you're in a situation where your internet traffic might be monitored by a sophisticated adversary, or if you frequently encounter highly \*\*restrictive networks\*\* that try to block access to certain sites. ECH helps hide the domain name you're trying to reach even from passive observers looking at the initial connection setup. Without it, even if the rest of your browsing is encrypted, an observer can still see \*which\* website you're attempting to connect to. This metadata can be enough to block access or flag you for further investigation. For anyone facing \*\*targeted surveillance\*\*, ECH adds another crucial layer of camouflage. However, for most people just doing \*\*basic browsing\*\*, especially when combined with \*\*VPN use\*\*, ECH's immediate impact might be less critical. When you're connected to OllaVPN, all your traffic, including the initial connection metadata that ECH protects, is already routed through our encrypted tunnel. This means your Internet Service Provider (ISP) or local network administrator can only see that you're connected to a OllaVPN server, not the specific websites you're visiting. In this scenario, the VPN itself is doing the heavy lifting of concealing your browsing destination. That's not to say ECH is useless with a VPN; it's still a valuable privacy enhancement. It just shifts from being a primary defense mechanism to a secondary one. Think of it as adding an extra layer of privacy \*within\* the VPN tunnel itself, making it even harder for very advanced, active attackers to deduce your browsing habits. For everyday use, though, your VPN is already providing the core privacy you need. OllaVPN also offers a [QUIC option](/blog/quic-for-restricted-networks) for getting past particularly tricky blocks, which can often achieve a similar effect to ECH in certain contexts.
 
-## How does a good VPN, like OllaVPN, handle ECH for you automatically?
+## 7. How does a good VPN, like OllaVPN, handle ECH for you automatically?
 
 A good VPN wraps all your traffic, including the parts ECH protects, in its own secure tunnel, making ECH less critical for your privacy.
 
@@ -119,19 +119,19 @@ When you're using a VPN, especially one like OllaVPN with its **full tunnel encr
 
 So, while ECH is a fantastic step forward for general internet privacy, it's largely redundant when you're connected to a VPN. The VPN's job is to already obscure your traffic, mask your IP address, and encrypt everything you send and receive. OllaVPN handles all your traffic this way, whether you're on our [10 Mbps free plan](/free-vpn) or enjoying the 10 Gbps speeds with [OllaVPN Plus](/plus). Your privacy benefits come from the VPN itself, providing a comprehensive layer of protection that goes beyond what ECH alone can offer.
 
-## What practical steps can I take today based on what I've learned about ECH?
+## 8. What practical steps can I take today based on what I've learned about ECH?
 
 You can immediately improve your privacy by enabling ECH in your browser, using a private DNS provider, and always connecting through a VPN.
 
 You've learned quite a bit about Encrypted Client Hello (ECH) and how it helps mask your initial connection to a website. The good news is you don't have to wait for widespread adoption to start protecting yourself. The first step is to dive into your **browser settings**. Most modern browsers like Chrome, Firefox, and Edge now offer experimental flags or settings to enable ECH. It might be buried a bit, but a quick search for "enable ECH" plus your browser's name should point you in the right direction. Turning this on helps ensure that even the very first handshake with a website is encrypted, making it harder for snoopers to see what site you're trying to reach. Another crucial layer of protection comes from your **DNS provider**. Your internet service provider (ISP) typically handles your DNS requests, meaning they see every website you try to visit. Switching to a privacy-focused DNS provider that supports DNS-over-HTTPS (DoH) or DNS-over-TLS (DoT) encrypts these requests, so your ISP can't snoop on them. You can usually change your DNS settings directly in your operating system or, again, within your browser. Combining ECH with encrypted DNS significantly shrinks the window of opportunity for passive surveillance. Finally, and perhaps most importantly, you should always **use a VPN**. While ECH and DoH are excellent for protecting specific parts of your web traffic, a VPN creates an encrypted tunnel for \*all\* your internet activity. This means your ISP sees you connected to the VPN server, but they can't see what you're doing beyond that. OllaVPN, for example, offers strong encryption and routes your traffic through our secure servers, adding a comprehensive layer of privacy that ECH and DoH alone can't provide. Remember to **stay updated** on your browser and operating system, as privacy features are constantly evolving and improving.
 
-## Is ECH here to stay, or will something else replace it soon?
+## 9. Is ECH here to stay, or will something else replace it soon?
 
 ECH is definitely here to stay, with its adoption and standardization continuing to grow.
 
 You might have heard about Encrypted Client Hello (ECH), the successor to Encrypted Server Name Indication (ESNI). It's a crucial technology for
 
-## Is ECH just a fancy version of HTTPS, or is it something entirely different?
+## 10. Is ECH just a fancy version of HTTPS, or is it something entirely different?
 
 ECH isn't a replacement for HTTPS; it's an extension that adds another layer of privacy to your web browsing.
 
@@ -141,7 +141,7 @@ This is where ECH, or Encrypted Client Hello, comes in. It literally **extends H
 
 For you, the user, this means even greater privacy. When you use OllaVPN, which handles your DNS requests and encrypts your entire connection, ECH adds an extra layer of stealth. It makes it significantly tougher for anyone monitoring your internet service provider or public Wi-Fi to build a profile of your browsing habits based on the websites you visit.
 
-## Can ECH help me get around internet censorship in some regions?
+## 11. Can ECH help me get around internet censorship in some regions?
 
 Yes, ECH can help you bypass some forms of internet censorship, but it's not a complete solution like a VPN.
 
@@ -151,7 +151,7 @@ However, ECH isn't a magic bullet for censorship. It primarily tackles domain bl
 
 For truly robust censorship circumvention, a full [VPN is more effective](/what-is-a-vpn). A VPN doesn't just encrypt the initial handshake; it encrypts \*all\* your internet traffic and routes it through a server in another location, effectively hiding your real IP address and making your online activity appear to originate from the VPN server. This comprehensive approach is much harder for censors to block. OllaVPN even offers a **QUIC option** which can sometimes be more effective at bypassing restrictive network firewalls than traditional VPN protocols.
 
-## Deeper context worth knowing
+## 12. Deeper context worth knowing
 
 A definitional explainer should leave you understanding not just the concept but the surrounding category  -  what other concepts it connects to, what common misunderstandings to avoid, and which adjacent ideas you should know about. A few worth covering:
 
@@ -161,7 +161,7 @@ A definitional explainer should leave you understanding not just the concept but
 
 **The threat model matters.** The same concept can be a strong defense against one class of threat and useless against another. "Encrypted" doesn't mean "private" if the recipient is the threat actor. "Anonymized" doesn't mean "unlinkable" if you have enough side data. We try to be specific about what each property actually defends.
 
-## How this connects to OllaVPN specifically
+## 13. How this connects to OllaVPN specifically
 
 If you've read this far, you probably want to know how the concept applies to OllaVPN's product. The short version:
 
@@ -171,7 +171,7 @@ If you've read this far, you probably want to know how the concept applies to Ol
 
 **If the concept above is something a VPN doesn't help with at all** (application-layer tracking, account-based identity, malware on your device, source-anonymity against a global passive adversary), we say so. A VPN replaces the ISP in the traffic-visibility role; it does not stop websites from tracking you, does not stop your accounts from identifying you, does not stop malware already on your device, and is not Tor. Use the right tool for each layer of the threat model.
 
-## About this guide
+## 14. About this guide
 
 Maintained by [Nathan Pratt](/about/team#nathan-pratt), OllaVPN's Privacy & Security Lead. Fact-checked by [Hannah Wu](/about/team#hannah-wu), Senior Security Engineer. We refresh this post quarterly so its facts, recommendations, and competitor comparisons stay accurate as the category evolves. The last full re-evaluation was 23 June 2026; the next is scheduled for September 2026.
 
@@ -179,14 +179,13 @@ If you spot a fact that's drifted or an addition we should make, email `[[email¬
 
 ‚≠ê Key takeaways
 
-## What to remember from this guide
+## 15. What to remember from this guide
 
 *   What exactly is Encrypted Client Hello (ECH)?
 *   How does ECH actually work its magic under the hood?
 *   Why should I care about ECH as an everyday internet user?
 *   Are there any common misconceptions about ECH I should know about?
 *   How does ECH fit in with other internet privacy concepts like DNS over HTTPS?
-
 </div>
 
 <section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">

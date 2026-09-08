@@ -53,7 +53,7 @@ tags: ['buyer-guides']
 
 If you've searched "free VPN India" more than once, you already know the pattern: an app promises unlimited free access, and three days later you're staring at a paywall, a 500 MB data cap, or a barrage of ads. India's VPN market has its own wrinkles too  -  [CERT-In](/blog/best-free-vpn-for-india.html)'s data-logging directions, ISP throttling on certain apps, and a large field of "free" VPNs that don't explain how they stay in business. This guide walks through what a truly free VPN should mean for an Indian user in 2026, and how OllaVPN's free plan holds up against that bar.
 
-## What does "really free" actually mean for a VPN in India? [#](#what-does-really-free-actually-mean-for-a-vpn-in-india)
+## 1. What does "really free" actually mean for a VPN in India? [#](#what-does-really-free-actually-mean-for-a-vpn-in-india)
 
 **Quick Answer**
 
@@ -67,7 +67,7 @@ These phrases are used loosely enough in app listings aimed at Indian users that
 
 Put together, "really free, no credit card, no logs" is a genuinely high bar  -  free at the point of use, and free of the surveillance business model that funds a lot of "free" software. Most listings that use these exact words in India's app stores don't actually clear it.
 
-## What should you expect from any honest free VPN in India? [#](#what-should-you-expect-from-any-honest-free-vpn-in-india)
+## 2. What should you expect from any honest free VPN in India? [#](#what-should-you-expect-from-any-honest-free-vpn-in-india)
 
 **Quick Answer**
 
@@ -89,7 +89,7 @@ Regular updates and a real, native app on Play Store or App Store  -  not a side
 
 Every claim we make about OllaVPN in this guide is measured against exactly this checklist, and we'll say plainly anywhere we fall short of it rather than gloss over it.
 
-## Why does India specifically need careful VPN vetting? [#](#why-does-india-specifically-need-careful-vpn-vetting)
+## 3. Why does India specifically need careful VPN vetting? [#](#why-does-india-specifically-need-careful-vpn-vetting)
 
 **Quick Answer**
 
@@ -105,7 +105,7 @@ Network conditions in India vary widely by region and carrier, which makes an ho
 
 None of this means every VPN operating in India is compromised  -  it means the vetting checklist above matters more here than it might in a smaller, less contested market, and it's worth applying it deliberately rather than trusting whichever app has the most downloads.
 
-## What does [OllaVPN Free](/free-vpn) specifically give Indian users? [#](#what-does-ollavpn-free-specifically-give-indian-users)
+## 4. What does [OllaVPN Free](/free-vpn) specifically give Indian users? [#](#what-does-ollavpn-free-specifically-give-indian-users)
 
 **Quick Answer**
 
@@ -119,7 +119,7 @@ The kill switch is on by default and can't be casually disabled, so if your VPN 
 
 Every free user also gets four-layer peer isolation, segmenting your connection from other users on the same server. You can connect to any country in our network  -  there's no "premium locations only" restriction on the free tier, whether you want a nearby server for speed or a specific overseas location for a different reason. The one limitation is speed, capped at 10 Mbps, which we cover in detail below.
 
-## How does OllaVPN's free plan compare to other free VPNs available in India? [#](#how-does-ollavpn-s-free-plan-compare-to-other-free-vpns-available-in-india)
+## 5. How does OllaVPN's free plan compare to other free VPNs available in India? [#](#how-does-ollavpn-s-free-plan-compare-to-other-free-vpns-available-in-india)
 
 **Quick Answer**
 
@@ -137,7 +137,7 @@ Free VPNs with servers physically inside India are worth a specific mention give
 
 OllaVPN's approach: unlimited data, every country, no ads, no data sales, no card, capped at 10 Mbps. We fund the free tier the same way a small number of other honest operators do  -  from paying Plus subscribers, not by monetizing free users. The trade-off is transparent and one-dimensional: speed, not data volume, not country access, not core security features.
 
-## How do you set up a free VPN in India? [#](#how-do-you-set-up-a-free-vpn-in-india)
+## 6. How do you set up a free VPN in India? [#](#how-do-you-set-up-a-free-vpn-in-india)
 
 **Quick Answer**
 
@@ -159,7 +159,7 @@ The process is designed to take under two minutes, and it's identical whether yo
 
 That's the entire setup, with nothing to configure manually and no third-party guide required to get it working correctly.
 
-## Is 10 Mbps enough for streaming and daily use in India? [#](#is-10-mbps-enough-for-streaming-and-daily-use-in-india)
+## 7. Is 10 Mbps enough for streaming and daily use in India? [#](#is-10-mbps-enough-for-streaming-and-daily-use-in-india)
 
 **Quick Answer**
 
@@ -173,7 +173,7 @@ Where the cap genuinely shows: 4K streaming, which typically wants 25 Mbps or mo
 
 For the realistic mix of what most people actually do day to day, 10 Mbps is a genuine sweet spot, especially useful context if your underlying mobile data connection already varies through the day depending on network congestion. It's also the honest mechanism that lets a free plan stay funded by paying subscribers rather than needing to touch ads or data sales.
 
-## What common mistakes do Indian users make choosing a free VPN? [#](#what-common-mistakes-do-indian-users-make-choosing-a-free-vpn)
+## 8. What common mistakes do Indian users make choosing a free VPN? [#](#what-common-mistakes-do-indian-users-make-choosing-a-free-vpn)
 
 **Quick Answer**
 
@@ -195,7 +195,7 @@ Trial-disguised-as-free billing. As covered above, payment details collected up 
 
 OllaVPN's approach avoids each of these specifically: a plain, specific no-logs policy; official Play Store and App Store distribution only; zero ads anywhere in the app; no permissions beyond what VPN functionality actually requires; and no payment method required at any point on the free tier.
 
-## When does a paid plan make more sense? [#](#when-does-a-paid-plan-make-more-sense)
+## 9. When does a paid plan make more sense? [#](#when-does-a-paid-plan-make-more-sense)
 
 **Quick Answer**
 
@@ -211,7 +211,7 @@ If you specifically want to support the model that keeps the free tier ad-free a
 
 Outside those situations, there's genuinely no pressure to upgrade  -  the free tier isn't designed to expire or gradually become less usable over time.
 
-## Why does post-quantum-ready encryption matter for Indian users specifically? [#](#why-does-post-quantum-ready-encryption-matter-for-indian-users-specifically)
+## 10. Why does post-quantum-ready encryption matter for Indian users specifically? [#](#why-does-post-quantum-ready-encryption-matter-for-indian-users-specifically)
 
 **Quick Answer**
 
@@ -227,7 +227,7 @@ OllaVPN addresses this with a hybrid handshake combining a classical, well-estab
 
 Given how much of daily financial and personal life in India already runs through a phone, this isn't a hypothetical concern reserved for governments or large companies  -  it applies to anyone whose UPI history, banking logins, or private messages should still be private a decade from now.
 
-## How does a "no-logs" claim actually get verified? [#](#how-does-a-no-logs-claim-actually-get-verified)
+## 11. How does a "no-logs" claim actually get verified? [#](#how-does-a-no-logs-claim-actually-get-verified)
 
 **Quick Answer**
 
@@ -245,7 +245,7 @@ Test what you can from your own device. You can't verify "we don't log your brow
 
 We publish our own policy specifics rather than a vague reassurance, and we'd encourage applying this same checklist to us, not just to competitors.
 
-## How can a VPN afford to be truly free? [#](#how-can-a-vpn-afford-to-be-truly-free)
+## 12. How can a VPN afford to be truly free? [#](#how-can-a-vpn-afford-to-be-truly-free)
 
 **Quick Answer**
 
@@ -290,7 +290,6 @@ Apps requesting permissions with no plausible connection to VPN functionality (c
 Apps with no update in over a year. Excluded regardless of past reputation. Network conditions, CERT-In's regulatory guidance, and mobile OS behavior all shift over time; an unmaintained app is increasingly likely to leak or malfunction.
 
 #
-
 </div>
 
 <section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">

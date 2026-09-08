@@ -61,9 +61,9 @@ The plain-English guide to what OpenAI actually does with everything you type in
 
 Hannah Wu · Senior Security Engineer
 
-## Who can see your conversations?
+## 1. Who can see your conversations?
 
-## What happens when you delete a conversation?
+## 2. What happens when you delete a conversation?
 
 The difference between free, Plus, Team, and Enterprise
 
@@ -71,7 +71,7 @@ Temporary Chat - what it does and doesn't do
 
 What ChatGPT knows about you beyond your messages
 
-## Can OpenAI be compelled to hand over your data?
+## 3. Can OpenAI be compelled to hand over your data?
 
 What you should never type into ChatGPT
 
@@ -81,7 +81,7 @@ Where a VPN fits into AI privacy
 
 Common myths about ChatGPT privacy
 
-## How OllaVPN protects your network layer when using AI tools
+## 4. How OllaVPN protects your network layer when using AI tools
 
 Frequently asked questions
 
@@ -89,7 +89,7 @@ Most people who use ChatGPT every day have never read OpenAI’s privacy policy.
 
 This guide explains it in plain English, without panic and without dismissing the concerns. The goal is simple: give you an accurate picture, practical options, and an honest assessment of what tools (including VPNs) can and can’t help with when privacy is on the line.
 
-## The plain-English answer - yes, and here's what that means
+## 5. The plain-English answer - yes, and here's what that means
 
 Yes, ChatGPT stores your conversations. By default, they’re saved in your account indefinitely. OpenAI may use them to train future AI models unless you opt out. When you delete them, they remain on OpenAI’s internal systems for up to 30 days. Even in the most privacy-friendly setup, some retention still happens.
 
@@ -119,7 +119,7 @@ Voice input: If you use voice mode, your audio is transcribed and processed. Ope
 
 The combination of conversation content and session metadata is the most sensitive part - because your IP address can be linked back to your identity through your ISP, and then it’s paired with what you said.
 
-## How long does OpenAI keep your conversations?
+## 6. How long does OpenAI keep your conversations?
 
 Conversations you keep in your account are stored indefinitely until you delete them. After deletion, they remain on OpenAI’s internal systems for up to 30 days. In Temporary Chat mode, conversations are deleted from your view immediately and removed from OpenAI’s systems within 30 days. Legal obligations can extend retention beyond these defaults
 
@@ -133,7 +133,7 @@ Legal retention exceptions: Both windows include a carve-out: “unless we are l
 
 Enterprise and API: Business customers using ChatGPT Team, Enterprise, or the API have different retention settings. Enterprise customers can configure zero-day retention. API users have retention governed by their service agreement, not personal account settings.
 
-## Does ChatGPT use your chats to train its AI?
+## 7. Does ChatGPT use your chats to train its AI?
 
 QUICK ANSWER : By default, on the free and Plus plans, your conversations can be used to improve OpenAI’s models. You can opt out - but even after opting out, OpenAI may still use conversations for safety monitoring. Enterprise and API customers are not subject to training data use by default.
 
@@ -147,7 +147,7 @@ Enterprise and API: By default, OpenAI does not use conversations from Enterpris
 
 The honest framing: Opting out of model training narrows what OpenAI does with your data, not whether it holds it. Conversations are still stored, still subject to legal demands, and still reviewable under safety policies.
 
-## Who can see your conversations?
+## 8. Who can see your conversations?
 
 Your conversations can be seen by: you (via your account), OpenAI staff (under safety, abuse, and quality review policies), OpenAI’s AI systems (for model training, unless you opt out), and law enforcement (under valid legal process). Third-party plugins or integrations you authorize can also access conversation context.
 
@@ -163,7 +163,7 @@ Third-party plugins and integrations: If you use ChatGPT plugins or connect it t
 
 Shared conversations: ChatGPT lets you generate a shareable link for any conversation. Anyone with the link can read it. This is opt-in and requires your action.
 
-## What happens when you delete a conversation?
+## 9. What happens when you delete a conversation?
 
 Deleting a conversation removes it from your account view immediately. It is then permanently deleted from OpenAI’s systems within 30 days, unless a legal obligation requires longer retention. Deletion does not retroactively remove conversation content already incorporated into model training runs
 
@@ -271,7 +271,7 @@ Cookies and tracking technologies: OpenAI uses cookies on the ChatGPT web interf
 
 Single sign-on (SSO): If you log into ChatGPT using “Continue with Google” or “Continue with Microsoft,” those platforms know you’re using ChatGPT and your account is linked to your identity there.
 
-## Can OpenAI be compelled to hand over your data?
+## 10. Can OpenAI be compelled to hand over your data?
 
 Yes. OpenAI is a US company and must comply with valid US legal process - subpoenas, court orders, and national security letters. It publishes a transparency report. Whether it notifies you of a legal demand depends on whether the order includes a non-disclosure provision. Conversations stored on its servers are legally accessible to US authorities under appropriate legal process.
 
@@ -369,7 +369,7 @@ Myth 5: "Using a VPN means OpenAI can't track me."
 
 A VPN masks your IP address from OpenAI - a real improvement. It does not prevent OpenAI from seeing your conversation content, and it does not prevent account-based identification if you’re logged in. A VPN is one layer of a privacy approach, not a complete solution.
 
-## How OllaVPN protects your network layer when using AI tools
+## 11. How OllaVPN protects your network layer when using AI tools
 
 When you use ChatGPT, your network connection carries two types of identifiable information: the content of your requests, and metadata about your connection (primarily your IP address and session timing). A VPN addresses the metadata layer. OllaVPN is built to handle it thoroughly.
 
@@ -400,7 +400,6 @@ Lifetime free · $0 · 10 Mbps Zero-logs. In-tunnel DNS. Kill switch always on. 
 Paid plan · $2 / month · 10 Gbps Same privacy architecture. Faster. Five devices.
 
 Try the free plan https://ollavpn.com/dl/ - no email, no card. Your ISP stops seeing which AI services you use from the first connection.
-
 </div>
 
 <section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">

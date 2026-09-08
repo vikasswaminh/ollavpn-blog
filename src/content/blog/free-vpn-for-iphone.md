@@ -71,7 +71,7 @@ Nathan Pratt  -  Privacy & Security Lead ✓
 
 Reviewed by Hannah Wu · Senior Security Engineer · Last fact-checked 17 July 2026
 
-## 1\. What does "no credit card, no logs" actually mean?
+## 1. 1\. What does "no credit card, no logs" actually mean?
 
 **Quick Answer** “No credit card” means you can download, install, and start using the VPN without entering payment details - not a free trial that quietly converts to a paid subscription.
 
@@ -87,7 +87,7 @@ The catch is that “no logs” is one of the most abused phrases in VPN marketi
 
 Put together, “no credit card, no logs” is a promise that the product is free at the point of use and free of the surveillance that funds a lot of “free” software. It’s a high bar, and most listings that use the phrase don’t actually clear it.
 
-## 2\. What should you expect from any honest free iPhone VPN in 2026?
+## 2. 2\. What should you expect from any honest free iPhone VPN in 2026?
 
 **Quick Answer** An honest free iPhone VPN has a transparent, explainable business model, a specific and verifiable no-logs policy, a usable service with reasonable limitations, and no requirement for a credit card or email address just to get started.
 
@@ -107,7 +107,7 @@ A real, native iOS app - not a configuration profile you have to manually instal
 
 Every claim we make about OllaVPN in this guide is measured against this list. If we fall short anywhere, we flag it plainly instead of smoothing it over.
 
-## 3\. What does OllaVPN Free specifically give your iPhone?
+## 3. 3\. What does OllaVPN Free specifically give your iPhone?
 
 **Quick Answer** OllaVPN Free gives your iPhone 10 Mbps speeds, access to every country in our network, the WireGuard protocol, post-quantum-ready encryption, a kill switch on by default, in-tunnel DNS, and four-layer peer isolation - with no credit card, no email, and no ads required to use it.
 
@@ -125,7 +125,7 @@ Every free user also benefits from four-layer peer isolation, which segments you
 
 You can connect to any country in our network - there’s no “premium countries only” restriction on the free tier. The one limitation is speed: 10 Mbps. We explain below why that’s enough for the overwhelming majority of what people actually do on a phone.
 
-## 4\. How does OllaVPN's free plan compare to other free iPhone VPNs?
+## 4. 4\. How does OllaVPN's free plan compare to other free iPhone VPNs?
 
 **Quick Answer** OllaVPN’s free plan offers unlimited data at a capped 10 Mbps speed, funded by paid subscribers rather than ads or data sales. That’s a different trade-off than most free iPhone VPNs, which usually cap data instead of speed - or fund themselves through advertising and data monetization.
 
@@ -141,7 +141,7 @@ OllaVPN takes a different approach: unlimited data, every country, no ads, no da
 
 The trade-off is transparent and single-dimensional: speed, not data volume, not country access, not features. You get the entire security stack either way. Plus simply buys you a higher ceiling on throughput and support for more devices - not a “better” version of privacy.
 
-## 5\. How do you set up a free VPN on your iPhone?
+## 5. 5\. How do you set up a free VPN on your iPhone?
 
 **Quick Answer** Download the app from the App Store, open it, tap Connect, and approve the “Add VPN Configurations” prompt iOS shows you. No account, email, or payment details are required for OllaVPN’s free plan.
 
@@ -161,7 +161,7 @@ The whole process is designed to take under two minutes.
 
 That’s it. No configuration profiles to install manually, no settings menus to dig through, and nothing that requires you to trust a third-party guide just to get it working.
 
-## 6\. Is 10 Mbps enough for daily iPhone use?
+## 6. 6\. Is 10 Mbps enough for daily iPhone use?
 
 **Quick Answer** Yes - for the overwhelming majority of everyday iPhone activity. That includes HD video streaming, video calls, browsing, social media, and most mobile games. 10 Mbps is comfortably sufficient. It becomes a limiting factor mainly for 4K streaming and very large downloads.
 
@@ -179,7 +179,7 @@ Where 10 Mbps starts to show its limits: 4K video streaming, which typically wan
 
 For the realistic day-to-day mix most people do on a phone, 10 Mbps is a genuine sweet spot rather than a compromise you’ll constantly notice. It’s also the speed tier that lets a free plan stay funded by paid subscribers without needing ads or data sales - the cap is the honest mechanism that makes the rest of the free plan possible.
 
-## 7\. What common mistakes do people make choosing a free iPhone VPN?
+## 7. 7\. What common mistakes do people make choosing a free iPhone VPN?
 
 **Quick Answer** The most common mistake is assuming every “free” VPN operates ethically. In reality, a meaningful share of free VPN apps - including some with high App Store rankings - fund themselves through data sales, intrusive advertising, or, in rarer but documented cases, outright malicious behavior.
 
@@ -197,7 +197,7 @@ Aggressive upgrade nagging. If a “free” tier constantly interrupts your sess
 
 OllaVPN avoids all five of these specifically: a plain, specific no-logs policy; zero ads anywhere in the app; a native iOS implementation reviewed through Apple’s process; no payment method required at any point on the free tier; and no upgrade nagging beyond a single, dismissible mention of Plus in settings.
 
-## 8\. When does a paid plan make more sense for your iPhone?
+## 8. 8\. When does a paid plan make more sense for your iPhone?
 
 **Quick Answer** A paid plan makes sense when you regularly need speeds above 10 Mbps - for 4K streaming or large downloads - or when you want to cover multiple devices under one account instead of reinstalling and reconfiguring separately.
 
@@ -211,7 +211,7 @@ If you specifically want to support the model that keeps the free tier ad-free a
 
 Outside of those three situations, there’s genuinely no pressure to upgrade. The free tier isn’t designed to expire, throttle further over time, or become gradually less usable.
 
-## 9\. Why does post-quantum-ready encryption matter on a phone specifically?
+## 9. 9\. Why does post-quantum-ready encryption matter on a phone specifically?
 
 **Quick Answer** Your iPhone carries an unusually concentrated, long-lived record of sensitive personal data - messages, health information, financial logins, location history - much of which needs to stay confidential for years or decades. Post-quantum-ready encryption protects the VPN handshake securing that data against future quantum decryption of traffic recorded today.
 
@@ -229,7 +229,7 @@ If the post-quantum component ever turned out to have an undiscovered flaw, the 
 
 Given how much of your life genuinely lives on your iPhone, this is one case where “future-proofing” is a pretty literal description of what’s happening, not a marketing flourish.
 
-## 10\. How does a "no-logs" claim actually get verified?
+## 10. 10\. How does a "no-logs" claim actually get verified?
 
 **Quick Answer** A no-logs claim is best verified through independent third-party security audits, a specific and named list of what isn’t collected, and - where possible - direct technical testing from your own device, rather than trusting marketing copy alone.
 
@@ -307,7 +307,7 @@ Maintained by Nathan Pratt, OllaVPN’s Privacy & Security Lead. Fact-checked by
 
 If you spot a fact that’s drifted or an addition we should make, email us through the contact page. Reader corrections drive a meaningful share of our updates.
 
-## 12\. Frequently asked questions
+## 11. 12\. Frequently asked questions
 
 Is OllaVPN's free plan safe to use on my iPhone?
 
@@ -358,7 +358,6 @@ If you need speeds faster than 10 Mbps for 4K streaming or large downloads, or w
 10 Mbps speed, unlimited data, zero logs, and post-quantum encryption. Free forever.
 
 [Download OllaVPN Free →](/dl/)
-
 </div>
 
 <section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">

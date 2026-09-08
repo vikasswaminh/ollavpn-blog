@@ -53,13 +53,13 @@ tags: ['privacy-security']
 
 Even with a VPN, your real IP address can sometimes peek through, and a WebRTC leak is often the sneaky culprit. It's a common vulnerability that can quietly undermine your online privacy, exposing your location and identity despite your best efforts. Don't worry, though; it's not a catastrophic flaw, and once you understand how it works, you'll be fully equipped to protect yourself. We'll explain what WebRTC is, why it matters for your privacy, and how to make sure you're always protected.
 
-## What exactly is a WebRTC leak, in plain English?
+## 1. What exactly is a WebRTC leak, in plain English?
 
 A WebRTC leak is when your real IP address is exposed to websites, even when you're using a VPN, because of how certain browser features work.
 
 Think of it like this: you've put on a disguise (your VPN) to appear as someone else online, but a tiny part of your real face (your actual IP address) is still showing through a gap. **WebRTC** stands for Web Real-Time Communication, and it's a technology built into most modern browsers like Chrome, Firefox, and Edge. It's super useful for things like video calls, voice chat, and file sharing directly in your browser without needing extra software. It allows your browser to find the quickest way to connect to another browser for these real-time communications. The problem is, to make these direct connections fast and efficient, WebRTC often needs to discover your true, local IP address, even if it's behind a router (a private, internal IP) or your public IP address. While this is usually fine for its intended purpose, it can become a privacy risk when you're actively trying to hide your location and identity using a VPN. Your VPN routes all your internet traffic through its secure tunnel, masking your IP. But under specific circumstances, WebRTC might bypass that tunnel to find your true IP, leaking it to websites that specifically look for it. So, even though your VPN is working as it should for most of your browsing, a website specifically designed to detect WebRTC leaks could potentially see your original IP address. This completely defeats the purpose of using a VPN for anonymity, as your true location could still be pinpointed. That's why it's important to understand what a WebRTC leak is and how to prevent it, ensuring your privacy tools are actually doing their job.
 
-## How does WebRTC actually work under the hood to expose my IP?
+## 2. How does WebRTC actually work under the hood to expose my IP?
 
 WebRTC can expose your IP address by using STUN/TURN servers to establish a direct connection between your browser and another peer, bypassing your VPN tunnel.
 
@@ -69,7 +69,7 @@ When you start a WebRTC connection, your browser needs to figure out where it is
 
 Once your browser has both its local and public IP addresses, it tries to establish a **direct connection** with the other browser. This direct connection is the whole point of WebRTC for speed and efficiency. But if your real IP address was revealed during the STUN/TURN process, that direct connection can then be made using your actual IP, completely bypassing the secure tunnel your VPN provides. It's like having a secret back door that WebRTC sometimes uses to get around the main, secure entrance you've set up with your VPN.
 
-## Why should I care about a WebRTC leak for my everyday online privacy?
+## 3. Why should I care about a WebRTC leak for my everyday online privacy?
 
 A WebRTC leak can expose your real IP address, revealing your actual location and undermining your privacy efforts, even when using a VPN.
 
@@ -79,19 +79,19 @@ This leak directly compromises your **location tracking** privacy. If your real 
 
 So, while you might think your online activity is shielded, a WebRTC leak can expose the very thing you're trying to hide: your digital identity. It's a subtle but significant vulnerability that can reveal your ISP, your general region, and ultimately, a piece of information that helps connect your anonymous browsing to your real-world self. That's why [OllaVPN automatically protects against WebRTC leaks](/features/webrtc-leak-protection), ensuring your real IP stays hidden, always.
 
-## Are there common misconceptions about WebRTC leaks I should know?
+## 4. Are there common misconceptions about WebRTC leaks I should know?
 
 Yes, many people misunderstand what WebRTC leaks reveal, how they happen, and their overall severity.
 
 One big misconception is that a WebRTC leak exposes your entire browsing history or all your personal data. That's not quite right. A WebRTC leak primarily reveals your real IP address, which is definitely a privacy concern, especially if you're using a VPN to hide it. However, it doesn't directly expose your passwords, credit card numbers, or the content of your communications. It's more about identity and location than deep data theft. It's also often mistakenly lumped in with **browser fingerprinting**, which is a different, though related, privacy issue where websites gather many data points about your browser and device to create a unique profile, even without cookies. Another common myth is that WebRTC leaks are always caused by some kind of advanced **malware** or a sophisticated hack. In reality, they're usually a side effect of how WebRTC technology is designed to work efficiently. It tries to establish the most direct connection possible between two peers, and part of that process involves discovering all available network interfaces, including your local and public IP addresses. When a website or service requests this information through JavaScript, your browser might expose your real IP even if your VPN is active, simply by following the WebRTC standard. Finally, some people think that as long as they're on **HTTPS**, they're safe from WebRTC leaks. While HTTPS encrypts the connection between your browser and the website, protecting your data in transit, it doesn't prevent your browser from executing JavaScript that might trigger a WebRTC leak. The leak happens within your browser's communication with your operating system and network interfaces, not as a flaw in the HTTPS encryption itself. So, while HTTPS is crucial for security, it's not a standalone solution for WebRTC privacy.
 
-## How does a WebRTC leak relate to other internet privacy concepts like DNS leaks or browser fingerprinting?
+## 5. How does a WebRTC leak relate to other internet privacy concepts like DNS leaks or browser fingerprinting?
 
 A WebRTC leak can expose your real IP address outside your VPN tunnel, much like a DNS leak, while browser fingerprinting is a separate, more insidious method of tracking you without needing your IP at all.
 
 These three concepts  -  WebRTC leaks, DNS leaks, and browser fingerprinting  -  all chip away at your online privacy, but they do it in different ways and at different layers of your internet activity. Think of them as different holes in your privacy bucket. A **DNS leak** happens when your device, despite being connected to a VPN, sends your domain name requests (like "ollavpn.com") to your internet provider's DNS servers instead of the VPN's. This reveals to your ISP what websites you're trying to visit, even if the content itself is encrypted. Both DNS leaks and WebRTC leaks are failures of the VPN to fully conceal your IP. A **WebRTC leak** is specifically about your real IP address being exposed through a feature built into many browsers for real-time communication. Even with your VPN active, certain WebRTC requests can bypass the [VPN tunnel](/blog/what-is-a-vpn-tunnel) and directly query your network for your local and public IP addresses. This is a critical flaw because it directly defeats one of the primary purposes of a VPN: hiding your true location. It means that while your browsing traffic might be encrypted and routed through the VPN server, a website could still potentially see your actual IP. **Browser fingerprinting**, on the other hand, is a much broader and more sophisticated privacy threat. It doesn't rely on exposing your IP address directly. Instead, it creates a unique "fingerprint" of your browser and device by collecting data points like your screen resolution, installed fonts, operating system, browser plugins, language settings, hardware details, and even how you type. This fingerprint can then be used to track you across websites, even if you change your IP address with a VPN or clear your cookies. It's less about a "leak" and more about an enduring digital signature your browser unknowingly broadcasts, making it a particularly challenging problem for privacy enthusiasts.
 
-## When should I really worry about a WebRTC leak, and when can I probably ignore it?
+## 6. When should I really worry about a WebRTC leak, and when can I probably ignore it?
 
 You should worry about a WebRTC leak when your privacy relies on concealing your real IP address, especially during sensitive online activities.
 
@@ -101,25 +101,25 @@ On the other hand, for **casual browsing** or activities where your IP address i
 
 Ultimately, it comes down to your **threat model**. If your personal online privacy and anonymity are paramount, you should always be concerned about WebRTC leaks. OllaVPN includes built-in WebRTC leak protection to ensure your real IP address stays hidden, regardless of what you're doing online.
 
-## How does a good VPN handle WebRTC leaks automatically for me?
+## 7. How does a good VPN handle WebRTC leaks automatically for me?
 
 A good VPN handles WebRTC leaks automatically by blocking the underlying communication requests at the network level, before they can reveal your real IP address.
 
 You're right to be concerned about WebRTC leaks; they're a legitimate privacy risk that can expose your true IP address even when you think your VPN is active. This happens because WebRTC (Web Real-Time Communication) is designed to allow direct communication between browsers for things like video calls, and to do that efficiently, it often tries to discover your local and public IP addresses directly, bypassing your VPN tunnel. The best way to prevent this isn't through tricky browser settings or unreliable browser extensions. Those are often temporary fixes or can be bypassed by different browser versions or configurations. Instead, a robust VPN like OllaVPN tackles this at the source. Our \*\*VPN client\*\* intercepts these WebRTC requests at the operating system level, effectively preventing them from ever reaching the internet outside your secure tunnel. This is a form of \*\*network-level blocking\*\* that ensures your real IP is never exposed. Because OllaVPN implements this kind of deep, system-wide protection, you don't need to worry about manually configuring your browser or trusting third-party add-ons. When you connect to OllaVPN, you can be confident that your WebRTC traffic is being handled securely, keeping your identity private.
 
-## What practical things can I do today to protect myself from WebRTC leaks?
+## 8. What practical things can I do today to protect myself from WebRTC leaks?
 
 You can mostly protect yourself from WebRTC leaks today by using a good VPN, adjusting browser settings, using specific extensions, and regularly testing for leaks.
 
 So, you're worried about WebRTC leaks exposing your real IP address even when you're using a VPN. Good for you  -  it's a valid concern, and thankfully, there are concrete steps you can take. First and foremost, using a robust, privacy-focused VPN like OllaVPN is your primary defense. While a VPN can't magically "fix" a browser's WebRTC implementation, it \*should\* route all your traffic, including WebRTC STUN requests, through its encrypted tunnel. If your VPN is properly configured, your browser won't be able to "see" your real IP address to leak it in the first place. Beyond a VPN, you can adjust your **browser settings**. Many browsers, especially those built on Chromium (like Chrome, Brave, and Edge), used to have flags or settings that let you disable WebRTC entirely or specifically control how it handles IP addresses. These options tend to move around or get deprecated, so you might need to search your browser's \`about:flags\` or \`chrome://flags\` page for terms like "WebRTC" or "STUN" to see what's currently available. Firefox has historically offered more granular control over WebRTC through its \`about:config\` settings, allowing you to disable it or force it to use only mDNS candidates, which can mask your local IP. Another layer of protection comes from **extensions**. Browser add-ons specifically designed to block or modify WebRTC behavior can be very effective. Look for extensions that explicitly state they prevent WebRTC IP leaks. Just be mindful of what permissions you grant these extensions, as some can be overly intrusive. Finally, and crucially, always use **testing tools** to verify your setup. After you've enabled your VPN, adjusted browser settings, and installed extensions, go to a WebRTC leak test website (you can find several with a quick search) to see if your real IP address is still showing. If it is, you know you need to troubleshoot further.
 
-## How can I test if I have a WebRTC leak right now?
+## 9. How can I test if I have a WebRTC leak right now?
 
 You can test for WebRTC leaks using various online tools that display your public and local IP addresses.
 
 It's actually pretty straightforward to check if your browser is leaking your real IP address through WebRTC. There are many online tools designed for this, and they typically work the same way: they show you what your browser is revealing about your network connection. To get a clear picture, you'll want to run this test twice: once \*\*before you connect to your VPN\*\*, and again \*\*after you've connected to OllaVPN\*\*. When you run the test \*\*before VPN\*\*, note down the public IP address and any local IP addresses (usually starting with 192.168.x.x or 10.x.x.x) that the tool displays. These are your real, unmasked addresses. Then, connect to OllaVPN and run the same test again. If OllaVPN is working correctly and preventing WebRTC leaks, the public IP address shown should be one belonging to OllaVPN's network, and crucially, your original public and local IP addresses shouldn't appear anywhere. A successful test means that \*\*after VPN\*\*, you should only see the VPN's IP address, and no signs of your own. If you still see your real public IP or any local IP addresses that match what you saw before connecting to the VPN, then you have a WebRTC leak. Don't worry, OllaVPN is designed to prevent these leaks by default, ensuring your privacy is maintained and your true location isn't accidentally exposed.
 
-## Does the WebRTC leak issue still matter as much in 2024 and beyond?
+## 10. Does the WebRTC leak issue still matter as much in 2024 and beyond?
 
 Yes, WebRTC leaks still matter, though modern browser development has significantly reduced their prevalence.
 
@@ -129,13 +129,13 @@ The issue arises because WebRTC often tries to establish direct connections betw
 
 At OllaVPN, we take this seriously. Our client includes built-in protections against WebRTC leaks, ensuring that even if your browser tries to make that direct connection, your real IP remains hidden. It's one of those silent guardians working in the background to keep your privacy intact, even as web standards evolve and new browser versions come out.
 
-## How does OllaVPN specifically protect me from WebRTC leaks?
+## 11. How does OllaVPN specifically protect me from WebRTC leaks?
 
 OllaVPN prevents WebRTC leaks by routing all your traffic, including WebRTC, through the VPN tunnel, and by controlling your DNS requests directly.
 
 WebRTC (Web Real-Time Communication) is a technology that lets browsers and mobile apps communicate directly with each other for things like video calls and file sharing. The problem is, it can sometimes reveal your real IP address even when you're connected to a VPN, bypassing the very privacy you're trying to achieve. OllaVPN tackles this on several fronts, whether you're on the $0 forever free plan or the $2/month Plus plan. First, our implementation of the **WireGuard protocol** ensures that all network traffic originating from your device is captured and sent through the encrypted tunnel. This isn't just your regular web browsing; it includes all the various protocols and connections that applications like your browser might try to make, WebRTC included. Secondly, OllaVPN uses **in-tunnel DNS**, meaning your device's DNS requests - which can sometimes be another source of leaks - are also routed through our secure servers, not your ISP's or a public one that could expose your location. This prevents your browser from trying to resolve WebRTC connections outside the VPN tunnel using your local DNS. Think of it like making sure every single piece of mail, even the tiny postcards, goes through the same secure post office, not a back alley. Finally, the **kill switch** feature, which is on by default for all OllaVPN users, adds another layer of protection. If your VPN connection ever unexpectedly drops, the kill switch immediately stops all internet traffic from leaving your device. This prevents any possibility of your real IP address being exposed, even for a split second, during a WebRTC connection attempt or anything else. Whether you're enjoying 10 Mbps on the free plan or blazing 10 Gbps with Plus, these core protections are always active, ensuring your privacy remains intact.
 
-## Deeper context worth knowing
+## 12. Deeper context worth knowing
 
 A definitional explainer should leave you understanding not just the concept but the surrounding category  -  what other concepts it connects to, what common misunderstandings to avoid, and which adjacent ideas you should know about. A few worth covering:
 
@@ -145,7 +145,7 @@ A definitional explainer should leave you understanding not just the concept but
 
 **The threat model matters.** The same concept can be a strong defense against one class of threat and useless against another. "Encrypted" doesn't mean "private" if the recipient is the threat actor. "Anonymized" doesn't mean "unlinkable" if you have enough side data. We try to be specific about what each property actually defends.
 
-## How this connects to OllaVPN specifically
+## 13. How this connects to OllaVPN specifically
 
 If you've read this far, you probably want to know how the concept applies to OllaVPN's product. The short version:
 
@@ -155,7 +155,7 @@ If you've read this far, you probably want to know how the concept applies to Ol
 
 **If the concept above is something a VPN doesn't help with at all** (application-layer tracking, account-based identity, malware on your device, source-anonymity against a global passive adversary), we say so. A VPN replaces the ISP in the traffic-visibility role; it does not stop websites from tracking you, does not stop your accounts from identifying you, does not stop malware already on your device, and is not Tor. Use the right tool for each layer of the threat model.
 
-## About this guide
+## 14. About this guide
 
 Maintained by [Nathan Pratt](/about/team#nathan-pratt), OllaVPN's Privacy & Security Lead. Fact-checked by [Hannah Wu](/about/team#hannah-wu), Senior Security Engineer. We refresh this post quarterly so its facts, recommendations, and competitor comparisons stay accurate as the category evolves. The last full re-evaluation was 23 June 2026; the next is scheduled for September 2026.
 
@@ -163,14 +163,13 @@ If you spot a fact that's drifted or an addition we should make, email `[[email¬
 
 ‚≠ê Key takeaways
 
-## What to remember from this guide
+## 15. What to remember from this guide
 
 *   What exactly is a WebRTC leak, in plain English?
 *   How does WebRTC actually work under the hood to expose my IP?
 *   Why should I care about a WebRTC leak for my everyday online privacy?
 *   Are there common misconceptions about WebRTC leaks I should know?
 *   How does a WebRTC leak relate to other internet privacy concepts like DNS leaks or browser fingerprinting?
-
 </div>
 
 <section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">

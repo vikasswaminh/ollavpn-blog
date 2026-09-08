@@ -51,7 +51,7 @@ If you want a VPN that genuinely helps with PUBG Mobile's ping and ISP throttlin
 
 You've optimized your sensitivity settings, cleaned out your storage, and closed every background app you can find, and you're still getting deleted by someone with a suspiciously smooth 40 ping while you're fighting a stuttery 140. Sometimes the fix isn't your phone at all - it's the road your data is taking to get to the game server. Here's the honest, hand-picked list of VPNs actually worth trying, and the real explanation of what a VPN can and can't do for your ping.
 
-## What makes a VPN actually good for PUBG Mobile
+## 1. What makes a VPN actually good for PUBG Mobile
 
 <div class="content-point-box">
 <h4 style="font-size: 1.08rem; font-weight: 700; margin: 0 0 6px 0; color: #323652; font-family: var(--font), 'Lato', sans-serif;">Quick Answer</h4>
@@ -59,7 +59,6 @@ You've optimized your sensitivity settings, cleaned out your storage, and closed
 A good gaming VPN for PUBG Mobile runs a modern, low-overhead protocol like WireGuard, has servers positioned to offer a genuinely shorter route to your regional game servers, includes a mobile app that's light on battery and data, supports split tunneling so only the game (not your whole phone) goes through the tunnel if you want, and has a kill switch that won't leave you disconnected mid-match if the tunnel briefly drops.
 Before we get to the names, here's the framework we use to evaluate every VPN on this list specifically for a fast-paced competitive mobile game, rather than for general browsing.
 </p>
-
 </div>
 
 <section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box; font-family: var(--font), 'Lato', sans-serif;">

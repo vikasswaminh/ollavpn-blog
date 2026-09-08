@@ -262,7 +262,7 @@ If we boiled this entire guide down to three lines:
 
 The honest truth is that Smart DNS was a clever, narrow fix for a narrow moment  -  a world full of streaming boxes and older TVs with no room for a real app  -  and it still earns its keep on exactly that hardware. But for the large majority of streaming that happens today, on devices perfectly capable of running a real app, a good modern VPN simply does more, for a price that’s stopped being a meaningful barrier, without asking you to give up any of the speed that made Smart DNS attractive in the first place.
 
-## How we evaluated this: methodology disclosure
+## 18. How we evaluated this: methodology disclosure
 
 A comparison like this one is only as trustworthy as the process behind it. For every guide we publish, the framework stays the same:
 
@@ -271,7 +271,7 @@ A comparison like this one is only as trustworthy as the process behind it. For 
 - **What we do not test:** Long-term day-by-day catalog availability (this rotates too quickly for any snapshot to remain accurate for long), and per-ISP speed variance (this depends heavily on your own provider and location, not on Smart DNS or VPN technology itself).
 - **Conflict-of-interest disclosure:** OllaVPN is a VPN provider, and this guide compares VPNs against a category (Smart DNS) that isn’t our product. We manage that conflict by being explicit about where Smart DNS genuinely outperforms a VPN  -  device compatibility and raw speed chief among them  -  rather than pretending those advantages don’t exist.
 
-## A vetting checklist for any Smart DNS vs VPN article you read
+## 19. A vetting checklist for any Smart DNS vs VPN article you read
 
 Not every article comparing these two uses a fair process. When you’re reading someone else’s version of this comparison, watch for:
 
@@ -280,7 +280,7 @@ Not every article comparing these two uses a fair process. When you’re reading
 - **No mention of device compatibility:** A fair comparison should tell you plainly that VPN apps don’t exist for every piece of streaming hardware, and that Smart DNS fills that specific gap  -  omitting this is a sign the article isn’t thinking about your actual devices.
 - **Vague claims about &ldquo;unblocking everything:&rdquo;** Neither Smart DNS nor any VPN can honestly promise every catalog will unblock on every server forever  -  streaming platforms actively fight both. Be skeptical of absolute promises from either category.
 
-## 18. Frequently asked questions
+## Frequently asked questions
 
 ### Is Smart DNS better than a VPN for streaming?
 It depends entirely on your device. Smart DNS is faster and works on hardware that can’t install apps, like many older smart TVs and consoles, but it provides zero encryption or privacy protection. A VPN does the same unblocking job while also encrypting your traffic and hiding your real IP address, and modern protocols like WireGuard have closed most of the speed gap. For phones, laptops, and app-capable smart TVs, a VPN is the more complete choice.
@@ -311,7 +311,6 @@ Post-quantum cryptography (PQC) is a newer family of encryption algorithms desig
 
 ### Do streaming services ban accounts for using Smart DNS or a VPN?
 Streaming platforms generally block the connection rather than banning the underlying account  -  if a server or DNS address is detected, you’ll typically see an error or be shown your actual local catalog rather than losing access to your subscription entirely. Still, always check the specific terms of service for the platform you use.
-
 </div>
 
 <section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">

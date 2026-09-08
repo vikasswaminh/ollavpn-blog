@@ -57,7 +57,7 @@ Which Free VPN Does Not Keep Logs? A 2026 [No-Logs](/blog/which-free-vpn-does-no
 
 A plain-English guide to one of the most misunderstood claims in the VPN industry - what “no logs” actually means, what it doesn’t mean, how to verify it, and which free VPNs in 2026 genuinely hold up under scrutiny.
 
-## What “no logs” actually means - and what it doesn't
+## 1. What “no logs” actually means - and what it doesn't
 
 A true [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) policy means the VPN stores nothing that could identify your online activity: no browsing history, no connection timestamps, no session durations, no bandwidth use per session, no IP addresses. In practice, the term is used loosely by many providers - the devil is in which specific data types each provider defines as “logs.”
 
@@ -71,7 +71,7 @@ Both can be marketed as “no logs.” Only one of them is actually private.
 
 The confusion exists because there are multiple categories of data a VPN could collect, and providers define “logs” differently. Some providers use narrow definitions - “no logs means no browsing activity logs” - while storing connection metadata that can be nearly as revealing. Understanding the categories is the only way to evaluate a claim accurately.
 
-## The three types of VPN logs
+## 2. The three types of VPN logs
 
 VPN logs fall into three broad categories: activity logs (what you actually did online), connection logs (when you connected, for how long, from what IP), and aggregated usage logs (total bandwidth with no individual identity). Only providers that collect none of the first two categories - and keep the third truly anonymized - deserve to be called genuine [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) VPNs.
 
@@ -117,7 +117,7 @@ Some VPNs collect high-level operational statistics: total bandwidth through a s
 
 The test is whether the data could be used to identify you. Aggregate server load statistics can’t. Session-level bandwidth records attached to your account can.
 
-## Why “we don't log” isn't enough on its own
+## 3. Why “we don't log” isn't enough on its own
 
 A privacy policy is a legal document, not a technical guarantee. A provider can claim “no logs” in marketing, include carve-outs in the fine print, and still collect metadata that falls outside their narrow definition of “logs.” The only external verification that carries real weight is an independent technical audit of the server infrastructure - and even audits have limits.
 
@@ -131,7 +131,7 @@ The PureVPN case (2017): PureVPN advertised a “no logs” policy, then provide
 
 These aren’t ancient history chosen for shock value - they’re the most prominently documented cases in a pattern that continues. The lesson isn’t that all [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) claims are lies. It’s that a claim alone isn’t evidence. For a no-logs claim to carry weight, it needs external verification and, ideally, a technical architecture that makes logging structurally impossible rather than merely contractually prohibited.
 
-## What a real no-logs audit looks like
+## 4. What a real no-logs audit looks like
 
 A genuine [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) audit involves an independent security firm examining the VPN provider’s actual server infrastructure - the configurations, the code, the data flows - to verify that logs are not being generated or stored. It’s not a review of their privacy policy, not a penetration test, and not a general certification of the company’s trustworthiness.
 
@@ -173,7 +173,7 @@ Leviathan Security Group (audited various providers)
 
 The most credible audit programs are recurring - the same firm returning every year or two - rather than a one-time certificate used indefinitely in marketing materials. Proton VPN, as of 2026, has completed five consecutive annual audits. That pattern of repeated third-party verification carries more weight than a single audit completed years ago.
 
-## The no-logs checklist - what to look for
+## 5. The no-logs checklist - what to look for
 
 Before diving into which specific free VPNs do and don’t keep logs, here is the framework for evaluating any VPN’s [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) claim:
 
@@ -227,7 +227,7 @@ Published transparency report, even if empty
 
 If a VPN passes all or most of these checks, the [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) claim is meaningfully more trustworthy than one that doesn’t. If it fails on the audit row - no independent verification at all - treat the claim as unverified regardless of how compelling the marketing copy is.
 
-## Free VPNs and logs - the business model problem
+## 6. Free VPNs and logs - the business model problem
 
 Most truly free VPNs have a fundamental tension: operating VPN infrastructure is expensive, and genuine zero-logs architecture requires real engineering investment. Many free VPNs resolve this tension by monetizing user data - which is directly at odds with a [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) claim. The free VPNs that genuinely don’t keep logs either have a paid tier that subsidizes the free plan, or have a mission-driven model (non-profit or open-source) with transparent funding.
 
@@ -245,7 +245,7 @@ Grant or non-profit funding - organizations like the Tor Project fund developmen
 
 The practical implication for evaluating free VPNs: if you can’t find a clear answer to “how does this company make money,” the answer is almost certainly “your data.” The combination of zero revenue transparency and a “no logs” claim is a red flag, not reassurance.
 
-## Which free VPNs genuinely don't keep logs in 2026
+## 7. Which free VPNs genuinely don't keep logs in 2026
 
 The free VPNs with the strongest genuine [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) credentials in 2026 are Proton VPN Free (recurring independent audits, transparent funding, open source), Windscribe Free (transparent policy, strong architecture, clear paid-tier business model), and OllaVPN Free (zero-logs architecture, in-tunnel DNS, audited, lifetime free with no data caps). Most other free VPNs either collect connection metadata, lack independent verification, or have revenue models that are incompatible with genuine no-logs operation.
 
@@ -289,7 +289,7 @@ Hola Free VPN - mentioned above. Not recommended. The peer-to-peer bandwidth-res
 
 Any VPN app prominently featured on an app-store “free VPN” list without a named business model - treat with significant scepticis. The CSIRO research from 2019 remains the most comprehensive analysis of the free VPN ecosystem, and the results were troubling. The landscape has improved since then, but the economic pressures that drove the bad behaviour haven’t changed.
 
-## Red flags that should make you walk away
+## 8. Red flags that should make you walk away
 
 The most reliable red flags for a VPN that doesn’t actually honour its [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) claim: no independent audit (or an outdated one), a privacy policy with broad carve-outs for “abuse prevention” or “legal compliance,” a revenue model that isn’t clearly explained, third-party analytics code in the app, and a company that’s been acquired without a clear statement about data policy continuity.
 
@@ -309,7 +309,7 @@ Revenue model unexplained. If you genuinely can’t find an explanation of how a
 
 Never verified by a real-world legal demand. This is a high bar, but the VPNs with the strongest credibility have faced government requests and produced nothing - not because they refused, but because nothing existed. Proton VPN and Mullvad have documented histories of this outcome.
 
-## Jurisdiction matters - where the VPN is based
+## 9. Jurisdiction matters - where the VPN is based
 
 A VPN’s legal jurisdiction determines which government can compel it to produce data and under what legal process. VPNs based in privacy-friendly jurisdictions (Switzerland, Iceland, Panama, British Virgin Islands) face fewer mandatory retention requirements and more procedural hurdles before data can be compelled. But jurisdiction is relevant only if the VPN actually has data to produce - a genuine [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) architecture matters more than geography.
 
@@ -343,7 +343,7 @@ Australia, Canada, New Zealand - Five Eyes members with similar surveillance fra
 
 The important caveat: jurisdiction matters only if data exists to hand over. A genuine [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) VPN based in the US is meaningfully more private than a logs-keeping VPN based in Panama - because the US VPN has nothing to give, while the Panamanian one has everything. Jurisdiction is the second line of defense, not the first.
 
-## RAM-only servers - what they are and why they matter
+## 10. RAM-only servers - what they are and why they matter
 
 QUICK ANSWE
 
@@ -367,7 +367,7 @@ OllaVPN (RAM-only across infrastructure)
 
 RAM-only is increasingly a baseline expectation for a credible [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) claim, rather than a premium differentiator. A VPN without it is worth asking why.
 
-## Five myths about no-logs VPNs
+## 11. Five myths about no-logs VPNs
 
 Myth 1: “If a VPN has a [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) policy, I'm fully anonymous online.”
 
@@ -389,7 +389,7 @@ Myth 5: “Free VPNs always sell your data.”
 
 Not true, though the base rate of data selling is much higher among free VPNs than among paid ones. The free VPNs covered in this guide - Proton VPN Free, Windscribe Free, OllaVPN Free - have transparent business models and genuine [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) architectures. “Free VPNs sell your data” is a useful heuristic that’s accurate for most of the market, not a universal law.
 
-## The no-logs VPN evaluation checklist
+## 12. The no-logs VPN evaluation checklist
 
 Your complete due-diligence checklist for evaluating any VPN’s [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) claim
 
@@ -445,7 +445,7 @@ Published transparency report, even if empty
 
 If a VPN passes all or most of these checks, the [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) claim is meaningfully more trustworthy than one that doesn’t. If it fails on the audit row - no independent verification at all - treat the claim as unverified regardless of how compelling the marketing copy is.
 
-## How OllaVPN handles your logs - by default
+## 13. How OllaVPN handles your logs - by default
 
 We built OllaVPN around one question: what would a VPN look like if privacy were a technical property rather than a marketing claim?
 
@@ -474,7 +474,6 @@ Lifetime free · $0 · 10 Mbps No logs. No caps. No ads. No email required. Ever
 Paid plan · $2 / month · 10 Gbps Same [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) architecture. Faster. Five devices on one account
 
 Download free - no email, no card. The [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) architecture is on from your first connection.
-
 </div>
 
 <section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">

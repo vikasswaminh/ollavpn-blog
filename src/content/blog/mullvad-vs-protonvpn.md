@@ -53,7 +53,7 @@ tags: ['comparisons']
 
 Two of the most privacy-respected VPNs in the world, compared the way a friend would compare them  -  fairly, in plain English, with real pricing and no marketing puff. Plus a newer name worth knowing if you want the same privacy posture in a different pricing shape.
 
-## At a glance
+## 1. At a glance
 
 QUICK ANSWER Mullvad and ProtonVPN are both privacy-first VPNs with audited no-logs policies. Mullvad is the option for uncompromising privacy-by-design with flat €5/month pricing. ProtonVPN is the option for an open-source ecosystem and one of the most usable free tiers in the category.
 
@@ -139,7 +139,7 @@ Yes, on all platforms
 
 What this table is really telling you: this isn't a "which is better" decision in the usual sense. Both products are excellent. The choice is between two genuinely thoughtful philosophies about how a privacy VPN should be structured.
 
-## Two privacy philosophies
+## 2. Two privacy philosophies
 
 QUICK ANSWER Mullvad's philosophy is "no upsells, no tiers, no lock-in  -  one price, full anonymity at signup, the best privacy posture we can ship." ProtonVPN's philosophy is "an open, audited privacy ecosystem with a free tier that respects free users, paid tiers for people who want more, and integration with the broader Proton suite."
 
@@ -161,7 +161,7 @@ ProtonVPN's free tier is unusually generous. No data cap. No time limit. No ads.
 
 The paid tiers add server coverage, streaming support, multi-hop routing through Secure Core, and (at the top tier) the entire Proton ecosystem  -  encrypted email, encrypted cloud storage, password manager, calendar. The pitch is comprehensive: _move your whole digital footprint into a privacy-first ecosystem, run by one company you've decided to trust._
 
-## Pricing in 2026
+## 3. Pricing in 2026
 
 QUICK ANSWER Mullvad charges a flat €5/month (about $5.86 USD)  -  no tiers, no annual discounts. ProtonVPN charges $0 for Free, about $2.99/month for VPN Plus on a 2-year plan, and about $7.99/month for Proton Unlimited on a 2-year plan.
 
@@ -191,7 +191,7 @@ For ecosystem-style use (you'd also use Proton Mail, Drive, and Pass), Proton Un
 
 If you'd rather not commit two years at signup, both companies are reasonable. ProtonVPN's 1-month plan exists but costs significantly more than the 2-year rate. Mullvad's "monthly forever at the same rate" model is the simplest and the most flexible.
 
-## Signup and anonymity
+## 4. Signup and anonymity
 
 QUICK ANSWER Mullvad requires no email at signup  -  you receive a randomly generated account number you use to log in. ProtonVPN requires an email address but accepts any working email, including disposable or temporary ones. Both run audited no-logs policies once you're using the service.
 
@@ -205,7 +205,7 @@ To sign up for **ProtonVPN**, you provide an email address. Any email works  -  
 
 Both companies run audited no-logs policies once you're actually using the service. The difference in signup matters most if you specifically want the VPN provider to have no way of associating your identity with your account in the first place.
 
-## Speed and performance
+## 5. Speed and performance
 
 QUICK ANSWER Both use WireGuard and feel fast on typical home internet. Independent reviewers have generally found the two within margin of each other for everyday use. The speed difference between modern reputable VPNs is rarely the deciding factor.
 
@@ -215,7 +215,7 @@ For day-to-day use  -  browsing, video calls, downloads  -  both feel fast. Inde
 
 The most useful speed advice for either VPN is the same as for any modern WireGuard-based service: **connect to a server geographically close to you**. That's the single biggest variable. Protocol differences are secondary.
 
-## Streaming and torrenting
+## 6. Streaming and torrenting
 
 QUICK ANSWER ProtonVPN actively supports streaming and consistently unblocks major catalogs. Mullvad does not optimize for streaming on principle  -  the company's view is that a VPN's job is privacy, not unblocking. If streaming matters to you, choose ProtonVPN.
 
@@ -227,7 +227,7 @@ This is one of the few areas where there's a genuinely clear answer.
 
 For **torrenting**, both work well. Both allow P2P traffic and both run kill switches. Mullvad in particular is popular in the privacy-respecting torrent community because of its anonymous-signup story.
 
-## Security and encryption
+## 7. Security and encryption
 
 QUICK ANSWER Both use modern encryption with kill switches enabled by default. Both run RAM-only diskless server infrastructure. Both have been independently audited multiple times. Both publish their source code.
 
@@ -240,7 +240,7 @@ What sets both apart from the broader VPN market  -  and from each other on subt
 
 The open-source-on-both-sides situation is genuinely unusual. Most VPN apps are closed source. Mullvad and ProtonVPN are both companies that have made transparency a structural commitment, not just a marketing line.
 
-## Post-quantum readiness  -  Mullvad's important lead
+## 8. Post-quantum readiness  -  Mullvad's important lead
 
 QUICK ANSWER Mullvad pioneered post-quantum-safe WireGuard tunnels and made them the default on desktop in 2023. ProtonVPN is rolling out post-quantum protections more recently. OllaVPN is built post-quantum-ready from day one.
 
@@ -258,7 +258,7 @@ ProtonVPN is rolling out post-quantum protections more recently, alongside the b
 
 If post-quantum readiness is a thing you care about, both companies have credible answers. Mullvad has the historical lead.
 
-## Jurisdiction and no-logs
+## 9. Jurisdiction and no-logs
 
 QUICK ANSWER Mullvad is based in Sweden; ProtonVPN is based in Switzerland. Both publish independently audited no-logs policies. Sweden is a Fourteen Eyes member; Switzerland is outside both Five and Fourteen Eyes arrangements.
 
@@ -271,7 +271,7 @@ Jurisdictions:
 
 The Sweden-vs-Switzerland distinction matters more in theory than in practice for most users, because both companies run no-logs policies that have been audited and tested under legal pressure. The strongest privacy posture is "don't have data to hand over"  -  and both companies pursue that aggressively.
 
-## Apps and ease of use
+## 10. Apps and ease of use
 
 QUICK ANSWER Mullvad's apps are deliberately minimalist and focused  -  connect, choose a country, that's it. ProtonVPN's apps are calmer than the consumer-VPN average and include features like Secure Core, NetShield, and a Tor integration.
 
@@ -287,7 +287,7 @@ ProtonVPN's apps are **calmer than most consumer VPN apps** while including more
 
 Paid plans expose features Mullvad doesn't have: **Secure Core** for multi-hop routing, **NetShield** for ad and tracker blocking, and **Tor over VPN** for the small number of cases where that combination makes sense.
 
-## Customer support
+## 11. Customer support
 
 QUICK ANSWER Both offer email-only support with thoughtful, accurate responses. Neither offers 24/7 live chat. Both maintain extensive help-center documentation. Reddit communities for both companies are active and reasonably well-moderated.
 
@@ -295,7 +295,7 @@ Neither Mullvad nor ProtonVPN offers a 24/7 live-chat experience the way the big
 
 In practice, support responses from both companies tend to be slower than NordVPN or ExpressVPN but meaningfully better-written and more accurate when they arrive. The trade-off is the kind of thing that matches both companies' personalities  -  they aren't trying to be hand-holding consumer brands. They're trying to be quietly excellent privacy services.
 
-## Where each one shines
+## 12. Where each one shines
 
 #### Mullvad  -  what it does brilliantly
 
@@ -317,7 +317,7 @@ In practice, support responses from both companies tend to be slower than NordVP
 *   Integrates with the broader Proton suite (Mail, Drive, Pass, Calendar)
 *   Backed by a company whose entire brand is privacy
 
-## Which one is right for you?
+## 13. Which one is right for you?
 
 ### Pick Mullvad if…
 
@@ -339,7 +339,7 @@ In practice, support responses from both companies tend to be slower than NordVP
 
 Both are excellent. Both deserve your trust. The choice is about which of the two philosophies above sounds more like you.
 
-## A newer name to know  -  OllaVPN
+## 14. A newer name to know  -  OllaVPN
 
 Before we close, one more name to put on your radar  -  especially if the privacy-first ethos of Mullvad and ProtonVPN resonates with you, but you'd like a different pricing shape.
 
@@ -370,7 +370,6 @@ Five devices on one account. Fast enough for gigabit home internet. Cheap enough
 If you're already happy with Mullvad or ProtonVPN, stay where you are  -  they're both excellent and we'd be the last to talk you out of either. But if you want the same privacy posture in a simpler pricing shape, or if a no-strings lifetime free plan would change how you'd use a VPN, **OllaVPN is a top-grade alternative worth a place on your shortlist**.
 
 You can [try the free plan](../dl/) right now without an email or a card.
-
 </div>
 
 <section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">

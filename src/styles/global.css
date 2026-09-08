@@ -5107,3 +5107,19 @@ article h2::before,
   margin-bottom: 32px !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02) !important;
 }
+
+
+/* ==========================================================================
+   PROPORTIONAL SECTION NUMBERING CLEANUP (SUPPRESS BROKEN PSEUDO-ELEMENTS)
+   ========================================================================== */
+.article > h2::before,
+.article h2::before,
+article h2::before,
+.article-center-col h2::before,
+.prose > h2::before,
+.prose h2::before,
+.blog-main-content-box h2::before {
+  content: none !important;
+  display: none !important;
+  counter-increment: none !important;
+}

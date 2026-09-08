@@ -53,19 +53,19 @@ tags: ['privacy-security']
 
 You're probably here because you're thinking about using Rocket Money to get a handle on your subscriptions or budget, but you're also wisely wondering, "Is this actually safe?" It's a smart question to ask whenever you're thinking of linking your financial accounts to a third-party app. We're going to dive into what Rocket Money does, what data it collects, and the real risks and benefits so you can make an informed decision about your money and your privacy. We'll cover everything from their data security practices to their privacy policy, so you can decide if it's the right tool for you.
 
-## Is Rocket Money safe to use for your finances?
+## 1. Is Rocket Money safe to use for your finances?
 
 Yes, but with caveats: Rocket Money employs strong technical security, but you're making significant privacy trade-offs for its convenience.
 
 Rocket Money, like many financial aggregators, uses robust technical security measures to protect your data. They employ encryption for data in transit and at rest, multi-factor authentication, and often undergo regular security audits to ensure their systems are protected from external threats. Your financial data isn't just sitting there exposed; it's behind multiple layers of digital protection designed to prevent unauthorized access. From a purely technical standpoint, they're doing what you'd expect a reputable financial tech company to do to keep your information safe. However, "safe" doesn't just mean technically secure; it also means considering the privacy implications. When you link your bank accounts, credit cards, and investment portfolios to Rocket Money, you're granting them extensive access to your financial life. This is the very definition of **data aggregation**, and while it's how the service provides its value, it's also a significant privacy trade-off. They see every transaction, every balance, every financial move you make across all linked accounts. This doesn't necessarily mean they're \_misusing\_ your data, but it does mean you're centralizing a vast amount of sensitive personal information with a single third-party service. While they commit to not selling your personal data, their business model relies on analyzing this aggregated data to find savings, cancel subscriptions, and offer personalized financial advice  -  which means they're constantly processing and understanding your financial habits. It's a question of comfort and trust: are you comfortable giving that much insight into your financial world to one company, even if they promise to keep it secure and private?
 
-## What exactly does Rocket Money do with your data?
+## 2. What exactly does Rocket Money do with your data?
 
 Rocket Money collects your financial and personal data to provide services like subscription management, budgeting, and bill negotiation, and it may also use anonymized data for business purposes or share it with third-party services.
 
 Rocket Money's core business model revolves around using your connected bank accounts and credit cards to help you manage your finances. When you link your accounts, they pull transaction data to identify recurring subscriptions, track your spending for **budgeting**, and even help you negotiate lower bills. This requires pretty intimate access to your financial life. They need to see where your money is going and coming from to offer these services effectively. The data you provide  -  bank statements, transaction history, personal details  -  is used to power these features. For example, to identify subscriptions you might have forgotten about, they analyze your spending patterns. For **bill negotiation**, they might use your past payment history or service details to advocate on your behalf. This level of **personalization** means they're constantly processing your financial information to deliver tailored recommendations and actions. While they aim to help you save money, it's important to understand that your data is also a resource for them. They often use **anonymized data**  -  meaning it's stripped of personally identifiable information  -  for internal analytics, product development, and even sharing with partners. They also rely on **third-party services** for various functions, from data aggregation to customer support, which means some of your data might pass through these external providers, though typically under strict privacy agreements. This is how they can offer a free tier: some of their revenue comes from premium features, but also from how they use the aggregate data they collect.
 
-## What are the legitimate reasons people use Rocket Money?
+## 3. What are the legitimate reasons people use Rocket Money?
 
 People legitimately use Rocket Money to gain better visibility into their spending, manage subscriptions, and ultimately save money through financial oversight and convenience.
 
@@ -75,7 +75,7 @@ One of its standout features, and a primary reason people use it, is its ability
 
 Beyond just subscriptions, the app excels at providing **convenience** by categorizing your spending automatically. This makes it easier to track expenses and set budgets without manually inputting every transaction. While no app can replace thoughtful financial planning, Rocket Money acts as a powerful tool for those looking to automate some of the more tedious aspects of money management and get a handle on their spending habits.
 
-## What are the genuine privacy concerns with Rocket Money?
+## 4. What are the genuine privacy concerns with Rocket Money?
 
 The genuine privacy concerns with Rocket Money stem from the extensive access it requires to your financial data, creating a centralized target for breaches and enabling potential data sharing that can lead to targeted offers.
 
@@ -87,31 +87,31 @@ Beyond security, you need to consider **data sharing with partners**. While Rock
 
 Ultimately, the tradeoff for the convenience Rocket Money offers is a significant relinquishing of control over your financial data. While they have legitimate uses for this data to provide their service, it's essential to be aware of the inherent risks that come with centralizing such sensitive information and how it might be used beyond simply helping you manage your money.
 
-## Are there any red flags that should make you walk away from Rocket Money?
+## 5. Are there any red flags that should make you walk away from Rocket Money?
 
 Yes, several red flags should make you reconsider using Rocket Money, especially around data privacy, support, and unexpected offers.
 
 It's smart to be cautious, especially with apps that handle your financial data. One of the biggest red flags to watch out for with any service, including Rocket Money, is **unclear data practices**. If you find yourself digging through privacy policies and still can't get a straightforward answer on how your information is collected, used, or shared, that's a problem. You should always know exactly what you're signing up for, and if it feels like they're being intentionally vague, it's a sign to step back. Another significant concern can be **unsolicited offers**. While some financial apps might suggest products or services, a constant barrage of irrelevant or aggressive promotions can indicate that your data is being used to push sales rather than genuinely help you manage your money. This often goes hand-in-hand with less-than-transparent data handling. Similarly, if you start seeing a pattern of **poor customer support reviews**  -  especially about difficulty canceling subscriptions or getting issues resolved  -  it signals potential trouble. An app that can't reliably help its users when things go wrong isn't one you want managing your financial life. Finally, keep an eye out for **changes in terms of service** that seem to shift the balance away from your privacy or control. Companies sometimes update their policies, but if these updates are quietly rolled out and significantly alter how your data is handled or how the service operates, it's a major red flag. Always read those update notifications carefully. If a service becomes too intrusive or difficult to manage, it might be time to look for alternatives.
 
-## How can you use Rocket Money more safely if you decide to?
+## 6. How can you use Rocket Money more safely if you decide to?
 
 You can use Rocket Money more safely by minimizing the data you share, protecting your account with strong security, and regularly monitoring your financial information for anything unusual.
 
 If you've weighed the pros and cons and decided that the convenience of an app like Rocket Money outweighs the privacy concerns, there are still several steps you can take to significantly reduce your risk. First and foremost, practice good digital hygiene. This means always using strong, unique passwords for Rocket Money and any financial accounts you link. Don't reuse passwords, and consider a password manager to keep track of them securely. Also, enable two-factor authentication (2FA) wherever it's offered, especially on your bank accounts and Rocket Money itself. This adds an extra layer of security, making it much harder for unauthorized users to access your data even if they get your password. Next, be very deliberate about what you share. When you first set up Rocket Money, you're prompted to link various accounts. Only link the accounts you absolutely need for the features you want to use. Don't link every single account you have just because you can. Regularly review Rocket Money's permissions within the app and on your phone's settings to ensure it only has access to what's necessary. If you're using it to track subscriptions, you might not need to link your primary checking account; a credit card might suffice. Limiting linked accounts directly reduces your exposure if there's ever a breach. Finally, stay vigilant. Even with the best precautions, no system is perfectly secure. Make a habit of actively monitoring accounts for suspicious activity, both within Rocket Money and directly with your banks and credit card companies. If you see a transaction you don't recognize, investigate it immediately. Rocket Money can be a tool for monitoring, but it shouldn't be your only one. Keep an eye on your credit reports too, as unauthorized accounts or loans can be a sign of deeper trouble. The key is to be proactive and understand that while convenience is appealing, it always comes with a degree of responsibility on your end.
 
-## How does a VPN change the threat model when using Rocket Money?
+## 7. How does a VPN change the threat model when using Rocket Money?
 
 Using a VPN significantly enhances your security and privacy when accessing financial services like Rocket Money by encrypting your data and masking your IP address.
 
 When you connect to Rocket Money, your device sends and receives information. Without a VPN, this data travels across the internet in a way that your Internet Service Provider (ISP) and other network snoopers can observe, even if the connection to Rocket Money itself is encrypted. A VPN, however, creates an [encrypted connection](/blog/what-is-a-vpn-and-how-does-it-work) between your device and the VPN server. This means all your traffic, including your interaction with Rocket Money, is scrambled and unreadable to anyone trying to intercept it on your local network or via your ISP. This is crucial for preventing **ISP snooping** and ensuring your financial activities remain private. Another key benefit is **IP address masking**. When you connect through OllaVPN, your real IP address is hidden, and Rocket Money (or any other service) only sees the IP address of the VPN server. This adds a layer of anonymity, making it much harder to track your online activities back to your physical location. It also protects you when using **public Wi-Fi protection**, which is notorious for being insecure. On public networks, malicious actors can easily snoop on unencrypted traffic. A VPN ensures that even if a public Wi-Fi network is compromised, your connection to Rocket Money remains secure and private. While Rocket Money itself uses encryption, OllaVPN adds another layer of protection at the network level, before your data even reaches Rocket Money's servers. This defense is further strengthened by OllaVPN's post-quantum ready encryption, meaning your data is protected with forward-secure algorithms designed to resist even future, more powerful attacks. It's about protecting your entire connection, not just the segment between your device and the Rocket Money app.
 
-## Is OllaVPN's free plan enough protection for using Rocket Money?
+## 8. Is OllaVPN's free plan enough protection for using Rocket Money?
 
 Yes, OllaVPN's free plan offers ample protection for using financial apps like Rocket Money, securing your connection without cost.
 
 When you're dealing with sensitive financial information, like you do with Rocket Money, securing your internet connection is paramount. OllaVPN's free plan encrypts all your traffic between your device and our servers, making it impossible for anyone on your local network – like a nosy cafe Wi-Fi administrator or a hacker – to snoop on your data. This means your Rocket Money login details and financial transactions are scrambled and unreadable to third parties. Our free plan is genuinely \*\*$0 forever\*\*, with no hidden fees, no data ceiling, and absolutely no card on file required. You get a solid 10 Mbps speed, which is more than enough for securely checking your finances, browsing, and even streaming HD video. You can connect to every country in our network, giving you plenty of options to mask your location while keeping your data safe. The core security features that protect your financial transactions are identical whether you're on the free plan or on OllaVPN Plus. The only difference is speed; Plus offers a blazing 10 Gbps for $2/month across five devices. So, for the specific task of securing Rocket Money, the free 10 Mbps is perfectly robust and reliable for your peace of mind.
 
-## Are there safer alternatives to Rocket Money?
+## 9. Are there safer alternatives to Rocket Money?
 
 Yes, there are several safer alternatives to Rocket Money, depending on how much convenience you need versus how much data you're willing to share.
 
@@ -123,7 +123,7 @@ If you're comfortable with a bit more tech, **open-source financial apps** can b
 
 Finally, there are **less data-intensive services** that function more like personal finance aggregators without the aggressive "optimization" features that often require deeper access. These might focus solely on displaying your balances or categorizing transactions without trying to actively manage subscriptions or negotiate bills on your behalf. Always read their privacy policies carefully to understand exactly what data they collect and how it's used. The key is finding the balance that works for you: convenience balanced against how much of your financial life you're comfortable sharing.
 
-## What are Rocket Money's data security practices?
+## 10. What are Rocket Money's data security practices?
 
 Rocket Money uses industry-standard security measures, including encryption, multi-factor authentication, and regular audits, to protect your financial data.
 
@@ -133,13 +133,13 @@ To prevent unauthorized access to your account, Rocket Money supports **multi-fa
 
 Beyond technical measures, Rocket Money also adheres to various **compliance standards**, though the specifics of which ones aren't always publicly detailed. Generally, for financial services, this would involve frameworks like SOC 2 or similar certifications that demonstrate a commitment to data security and privacy best practices. While no system is 100% impenetrable, these combined efforts aim to provide a robust security posture for your financial information.
 
-## How do you delete your Rocket Money account and data?
+## 11. How do you delete your Rocket Money account and data?
 
 You can delete your Rocket Money account and associated data primarily through its in-app or website settings, though you might need to contact customer support for full data removal.
 
 If you've decided Rocket Money isn't for you, getting rid of your account is usually a straightforward process. Most services like this offer a way to initiate deletion directly within your **account settings**. Look for an option related to "Account Management," "Privacy," or "Delete Account." This initial step typically deactivates your account and stops any further data collection from your linked financial institutions. However, simply deactivating your account might not remove all your historical data from their servers. Many companies have **data retention policies** that dictate how long they hold onto certain information, even after you've "deleted" your account. If you want to ensure a more thorough scrub, you'll likely need to reach out to their **customer support** team. Be prepared to confirm your identity, as they need to verify you're the legitimate account holder before processing such a request. When contacting support, be explicit that you want all your data permanently deleted, not just your account deactivated. It's a good idea to follow up after a week or two to inquire about the status and confirm the deletion; this step, often called **verifying deletion**, ensures your request was fully processed according to their policies and your expectations.
 
-## How we evaluate "is X safe" questions
+## 12. How we evaluate "is X safe" questions
 
 Safety questions are deceptively hard because "safe" depends entirely on what you're trying to be safe from. The framework we use whenever we publish a safety evaluation:
 
@@ -151,7 +151,7 @@ Safety questions are deceptively hard because "safe" depends entirely on what yo
 
 **State what would change the answer.** A safety evaluation should include the conditions under which it would change. If new evidence emerges, if the operator's ownership changes, if a third-party audit is published, those events should update the conclusion. We say what we'd watch for.
 
-## Practical steps regardless of which "safe" we're talking about
+## 13. Practical steps regardless of which "safe" we're talking about
 
 For any consumer service or product you're evaluating for safety, the steps that consistently reduce risk:
 
@@ -163,7 +163,7 @@ For any consumer service or product you're evaluating for safety, the steps that
 
 **Use a VPN on hostile networks.** For any service accessed from public Wi-Fi, hotel networks, or anywhere you don't fully trust the network operator, a VPN closes the most common metadata-exposure channel. OllaVPN's free tier covers this use case at no cost; see [the broader buyer guide](/best-free-vpn-2026) for alternatives.
 
-## About this guide
+## 14. About this guide
 
 Maintained by [Nathan Pratt](/about/team#nathan-pratt), OllaVPN's Privacy & Security Lead. Fact-checked by [Hannah Wu](/about/team#hannah-wu), Senior Security Engineer. We refresh this post quarterly so its facts, recommendations, and competitor comparisons stay accurate as the category evolves. The last full re-evaluation was 23 June 2026; the next is scheduled for September 2026.
 
@@ -171,14 +171,13 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
 
 ⭐ Key takeaways
 
-## What to remember from this guide
+## 15. What to remember from this guide
 
 *   Is Rocket Money safe to use for your finances?
 *   What exactly does Rocket Money do with your data?
 *   What are the legitimate reasons people use Rocket Money?
 *   What are the genuine privacy concerns with Rocket Money?
 *   Are there any red flags that should make you walk away from Rocket Money?
-
 </div>
 
 <section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">

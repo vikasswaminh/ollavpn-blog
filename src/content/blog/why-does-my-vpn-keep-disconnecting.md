@@ -53,19 +53,19 @@ tags: ['beginner-basics']
 
 It's incredibly frustrating when your VPN keeps cutting out, especially when you're in the middle of something important. You're trying to protect your privacy, stream a show, or just browse securely, and suddenly, poof – your connection drops. We get it. This guide is designed to help you quickly diagnose why your VPN is disconnecting and, more importantly, how to get it working reliably again. We'll walk you through the most common culprits and give you step-by-step solutions, starting with the fastest fixes.
 
-## How do you quickly tell if the problem is your VPN or your network?
+## 1. How do you quickly tell if the problem is your VPN or your network?
 
 The quickest way to tell if your VPN is causing an issue is to disconnect it and see if your internet connection improves.
 
 It's a common scenario: you're browsing along, and suddenly everything slows down, or a website won't load. Is it your internet provider, your Wi-Fi, or is your VPN the culprit? The simplest diagnostic step is to disconnect OllaVPN for a moment and try to **browse normally** without it. If your internet springs back to life, loads pages quickly, and streams flawlessly, then the issue likely lies with the VPN connection itself. If things are still slow or broken, then it's almost certainly a problem with your underlying internet connection. Another useful test is a **ping test**. This measures the time it takes for a small packet of data to travel from your device to a server on the internet and back. A higher ping time means more lag. You can run a ping test with OllaVPN connected, then disconnect and run another. If your ping times drop significantly when disconnected, that points to the VPN adding overhead. Remember, a VPN always adds a tiny bit of latency because your data has to travel further, but a massive spike in ping usually indicates a problem. If you find that your internet is slow even after you disconnect OllaVPN, then you'll want to troubleshoot your home network. Try restarting your router, checking your Wi-Fi signal strength, or even contacting your internet service provider. Conversely, if disconnecting OllaVPN solves the problem, you might try switching to a different server location within the OllaVPN app, or checking for any app updates.
 
-## What's the most common cause of VPN disconnects, and what's the 30-second fix?
+## 2. What's the most common cause of VPN disconnects, and what's the 30-second fix?
 
 The most common cause of VPN disconnects is a temporary network glitch or server overload, and the quickest fix is usually to restart your VPN app or switch to a different server.
 
 It's frustrating when your VPN suddenly drops, cutting off your secure connection. While there are many reasons a VPN might disconnect, the vast majority aren't complex technical issues. Often, it's just a momentary hiccup in your internet connection, a brief overload on the server you're connected to, or even something as simple as your device moving between Wi-Fi networks. Think of it like a brief static burst on a phone call – usually, it clears up on its own or with a quick redial. For these common, fleeting issues, the fix is almost always incredibly simple. First, try completely closing and then reopening your OllaVPN app. This often clears out any minor software bugs or temporary connection states that might be causing trouble. If that doesn't work, your next step should be to switch to a different server location within the OllaVPN network. Sometimes, a specific server might be experiencing high traffic or a temporary glitch, and simply connecting to another one resolves the problem instantly. These quick steps address the vast majority of disconnects because they reset the connection and give you a fresh start. We build OllaVPN to be incredibly stable, but the internet itself is a complex, constantly shifting landscape. If you've tried these two simple fixes and you're still having trouble, then it's worth checking your own internet connection – maybe your Wi-Fi router needs a reboot too, or there's a wider outage in your area. But seriously, start with the app restart and server switch; you'll be surprised how often that's all it takes.
 
-## What are the step-by-step troubleshooting steps if the quick fix didn't work?
+## 3. What are the step-by-step troubleshooting steps if the quick fix didn't work?
 
 If the quick fixes didn't work, you'll need to methodically check your internet stability, OllaVPN settings, and local network for conflicts.
 
@@ -77,7 +77,7 @@ Your local environment can also throw a wrench in the works. Your **firewall/ant
 
 Finally, always make sure your OllaVPN app is up to date. We're constantly improving and fixing bugs, and an outdated app might be the culprit. If all else fails, don't hesitate to reach out to our [support team](/support). They're real people, not bots, and they're ready to help you get connected securely.
 
-## Why does this specific problem happen with VPNs in the first place?
+## 4. Why does this specific problem happen with VPNs in the first place?
 
 VPN connections frequently disconnect due to common network instability, packet loss, firewall interference, server load, and inherent limitations in VPN protocols.
 
@@ -87,7 +87,7 @@ Then there's **packet loss**. Imagine sending a message where a few words random
 
 The VPN server itself can also be a factor. If a server is handling too many users or is experiencing technical issues, it might struggle to keep up with all the connections. This is known as **server load**, and it can cause your connection to drop. Finally, the very nature of some **VPN protocol limitations** plays a role. Older protocols weren't designed for today's constantly changing mobile environments. While newer ones like WireGuard are much better at handling these shifts, even they have limits when the underlying network is fundamentally unstable. All these factors combine to make VPN connections surprisingly fragile if they're not built with resilience in mind.
 
-## How can you prevent your VPN from disconnecting again?
+## 5. How can you prevent your VPN from disconnecting again?
 
 You can prevent future VPN disconnects by ensuring you have a stable network, using up-to-date VPN software, and configuring your VPN settings correctly.
 
@@ -97,13 +97,13 @@ Another common culprit is outdated software. Make sure your OllaVPN app is alway
 
 Sometimes, your VPN settings can play a role. While OllaVPN automatically picks the best settings for most users, if you're frequently disconnecting, you might try experimenting with different protocols if available, or ensuring features like our built-in **kill switch** are active. A kill switch is crucial because it automatically cuts your internet connection if the VPN drops, preventing your real IP address from being exposed. You can find more details on how to configure these settings in our [support section](/support/settings).
 
-## Are there related issues you might also be experiencing alongside disconnects?
+## 6. Are there related issues you might also be experiencing alongside disconnects?
 
 Yes, absolutely. VPN disconnects often come hand-in-hand with other frustrating issues like slow speeds, connection failures, or even IP leaks.
 
 When your VPN isn't stable, it rarely just drops out cleanly. More often, you'll experience a degradation of service before a full disconnect. This can show up as incredibly **slow speeds**, making browsing or streaming a crawl, or even creating complete **connection failures** where you can't establish a VPN tunnel at all. It's like your internet connection is trying to fight through treacle, and sometimes it just gives up. These issues are often symptoms of the same underlying problems that cause full disconnects. A particularly nasty related issue is an **IP leak**. While a full disconnect shows you plainly that your VPN isn't working, an IP leak is more insidious. It means your actual IP address is briefly exposed even while your VPN \*seems\* to be connected, completely defeating the purpose of using a VPN for privacy. This can happen during reconnect attempts or if the VPN client isn't properly configured to block all traffic when the tunnel drops. At OllaVPN, we focus on building a robust, always-on connection to minimize all these related issues. Our built-in kill switch is on by default, preventing IP leaks by cutting your internet if the VPN disconnects for any reason. And with our post-quantum-ready encryption and lightweight WireGuard protocol, we aim for a stable, fast connection that reduces the chances of those frustrating speed drops and connection failures in the first place.
 
-## When is the problem likely with your VPN provider and not something you're doing?
+## 7. When is the problem likely with your VPN provider and not something you're doing?
 
 When you're experiencing frequent, persistent issues that don't go away with basic troubleshooting, the problem is often your VPN provider.
 
@@ -113,31 +113,31 @@ Another strong indicator is poor support. You're paying for a service (or at lea
 
 Finally, if you're consistently experiencing slow speeds, even when connecting to servers that should be fast, or if you're having trouble accessing content you normally could, it could be due to server overload. Many providers, especially those offering "free" tiers funded by ads or data sales, pack too many users onto too few servers. This leads to congestion and a degraded experience for everyone. OllaVPN avoids this by funding our free tier directly from our paid Plus subscribers, ensuring that server capacity is always adequate and you're not sharing your connection with hundreds of other users on an overloaded server.
 
-## How can you switch to a VPN that handles these connection issues better?
+## 8. How can you switch to a VPN that handles these connection issues better?
 
 You can switch to a VPN that prioritizes modern, stable protocols, uses reliable infrastructure, and offers features designed to maintain your connection.
 
 When you're constantly fighting dropped connections or slow speeds with your current VPN, it's a sign that it might be time to look for something more robust. The core of a stable VPN experience comes down to a few key things. First, you want a service built on **stable protocols** like WireGuard. Many older VPNs still rely on less efficient or more easily blocked protocols, which can lead to frequent disconnections, especially on mobile or in restrictive network environments. WireGuard is designed for speed and stability, making it much more resilient to network changes. Beyond the protocol, the underlying **reliable infrastructure** matters a lot. A VPN provider that invests in high-quality servers and network architecture is less likely to experience congestion or unexpected outages. This isn't just about having "more" servers, but about having well-maintained, performant ones. Look for providers who are transparent about their technology choices and focus on the fundamentals of network engineering rather than just marketing hype. This also includes things like built-in kill switches and in-tunnel DNS, which prevent your real IP from leaking if the connection does momentarily drop. Finally, consider the future. With the increasing power of quantum computers, even today's strongest encryption methods could eventually be broken. A VPN that's already implementing **post-quantum-ready encryption** shows a commitment to long-term security and stability, anticipating future threats rather than reacting to them. This kind of forward-thinking approach usually translates to a more resilient service overall. If you're looking for a service that fits this description, the OllaVPN free tier lets you experience a stable, modern VPN connection for $0 forever, or you can upgrade to [$2/month Plus](/plus) for even faster speeds and more device support.
 
-## How does OllaVPN specifically address and prevent frequent disconnections?
+## 9. How does OllaVPN specifically address and prevent frequent disconnections?
 
 OllaVPN is built from the ground up for stability, using modern protocols like WireGuard, smart connection handling, and a dedicated kill switch to prevent disconnections and data leaks.
 
 We've all been there: your VPN drops, and suddenly your connection is exposed, or worse, you can't get back online. OllaVPN tackles this head-on by focusing on reliability at every layer. Our core protocol is [WireGuard](/blog/wireguard-explained), which is inherently more stable and efficient than older VPN protocols. It's designed to maintain a connection even when your network environment changes, like switching from Wi-Fi to cellular data, or moving between different Wi-Fi networks. This means fewer drops and a smoother experience for you. For particularly challenging network conditions, like heavily restricted public Wi-Fi or networks with deep packet inspection, we offer a **QUIC option**. This alternative transport layer can often bypass blocks that traditional VPN connections might struggle with, ensuring you stay connected even when others can't. Furthermore, our **4-layer peer isolation** architecture means that even if one part of our network experiences a hiccup, it's far less likely to impact your specific connection. This design prevents a single point of failure from taking down your entire VPN session. Beyond preventing disconnections, we're serious about preventing data leaks if a drop \*does\* occur. That's why our **kill switch** is on by default. If your VPN connection ever unexpectedly breaks, the kill switch immediately halts all internet traffic, protecting your privacy until the VPN can re-establish itself. You don't have to worry about your real IP address or unencrypted data accidentally slipping out. We also bake in future-proofing with our **post-quantum-ready** encryption, ensuring that even as technology evolves, your connection remains secure and stable against new threats, maintaining long-term reliability.
 
-## Could your ISP be intentionally blocking your VPN connection?
+## 10. Could your ISP be intentionally blocking your VPN connection?
 
 Yes, your ISP can potentially block or interfere with your VPN connection, though it's not always intentional.
 
 It's a common concern, and for good reason. While most ISPs don't outright block VPN traffic, they can sometimes make it harder to use. This isn't always malicious; some network management tools might flag encrypted traffic as unusual, especially if it's coming from a server that handles a lot of connections. However, in some regions or with certain ISPs, there can be more deliberate attempts to restrict VPN use, often through techniques like **deep packet inspection (DPI)**. DPI allows them to examine the characteristics of the data packets, even if the content itself is encrypted, looking for patterns that suggest VPN usage. If you suspect your ISP is intentionally throttling or blocking your VPN, there are ways to fight back. One effective method is to use **obfuscation**. This technique disguises your VPN traffic to look like regular HTTPS traffic, making it much harder for DPI systems to detect and block. Some VPNs offer this as a built-in feature, essentially cloaking your connection. Another modern approach is to use protocols like **QUIC**. While primarily designed for speed and efficiency, QUIC can sometimes bypass basic VPN blocks because it uses UDP, which is often less scrutinized than TCP in certain network environments. At OllaVPN, we understand the importance of getting connected, especially in environments where ISPs might be less than cooperative. Our engineering team is constantly working on methods to ensure your connection remains private and accessible, even against sophisticated blocking attempts. Remember, your right to privacy shouldn't be dictated by your internet provider.
 
-## Is there a free VPN that doesn't suffer from constant disconnections?
+## 11. Is there a free VPN that doesn't suffer from constant disconnections?
 
 Yes, OllaVPN offers a free VPN that provides stable, consistent connections without the usual drawbacks of free services.
 
 Most free VPNs struggle with constant disconnections because they're trying to cut costs wherever possible. This often means overloaded servers, poor infrastructure, and a lack of proper maintenance. You'll find yourself constantly reconnecting, experiencing slow speeds, or even having your connection drop entirely, exposing your IP. Many of these services are also **ad-funded free VPNs**, meaning they inject ads into your browsing or, worse, engage in **data selling** to make a profit. That's a huge privacy risk, and it funds the very infrastructure that's failing you. OllaVPN takes a different approach. Our free tier is funded by our optional paid Plus subscriptions, not by selling your data or showing you ads. This means we can invest in reliable infrastructure to ensure stable connections for everyone. You get a consistent **OllaVPN 10 Mbps** speed cap, which is more than enough for HD streaming, video calls, and general browsing, without worrying about your connection dropping out unexpectedly. There's **no card** required to sign up, so you can try it out and see the difference for yourself. We believe that basic online privacy and security should be accessible to everyone, **$0 forever**. Our free plan gives you access to every country in our network, the same robust security features as our paid plan, and a connection you can actually rely on. You won't find yourself fighting against disconnections or wondering if your "free" VPN is secretly compromising your data. It's just stable, private internet access, as it should be.
 
-## The fuller context behind the question
+## 12. The fuller context behind the question
 
 Questions like the one above usually have a short answer at the top of the page and a longer, more honest answer underneath. The fuller context worth knowing:
 
@@ -147,7 +147,7 @@ Questions like the one above usually have a short answer at the top of the page 
 
 **The answer changes over time.** The 2024 answer to most VPN-related questions is meaningfully different from the 2020 answer, and the 2028 answer will be different again. Standards finalize. Threats evolve. Specific operators get acquired or shut down. We refresh the answer on a quarterly cadence and date-stamp the page so readers know how fresh the data is.
 
-## How to evaluate any "answer" you read on the internet
+## 13. How to evaluate any "answer" you read on the internet
 
 You'll find competing answers to the same question across many sites. A few signals that distinguish trustworthy answers from junk:
 
@@ -161,7 +161,7 @@ You'll find competing answers to the same question across many sites. A few sign
 
 **Distinguishes between certainty and uncertainty.** Hedged language ("typically," "depends on," "in most cases") is often more accurate than confident absolutes. The author who claims certainty about a question that genuinely has nuance is probably oversimplifying.
 
-## About this guide
+## 14. About this guide
 
 Maintained by [Nathan Pratt](/about/team#nathan-pratt), OllaVPN's Privacy & Security Lead. Fact-checked by [Hannah Wu](/about/team#hannah-wu), Senior Security Engineer. We refresh this post quarterly so its facts, recommendations, and competitor comparisons stay accurate as the category evolves. The last full re-evaluation was 23 June 2026; the next is scheduled for September 2026.
 
@@ -169,14 +169,13 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
 
 ⭐ Key takeaways
 
-## What to remember from this guide
+## 15. What to remember from this guide
 
 *   How do you quickly tell if the problem is your VPN or your network?
 *   What&#39;s the most common cause of VPN disconnects, and what&#39;s the 30-second fix?
 *   What are the step-by-step troubleshooting steps if the quick fix didn&#39;t work?
 *   Why does this specific problem happen with VPNs in the first place?
 *   How can you prevent your VPN from disconnecting again?
-
 </div>
 
 <section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">

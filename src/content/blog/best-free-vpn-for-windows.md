@@ -53,7 +53,7 @@ tags: ['buyer-guides']
 
 There are dozens of free VPNs for Windows, and most of them aren't worth your time. This is the short list  -  the names that have earned genuine trust, the trade-offs between them, and how to choose the one that fits how you actually use your computer.
 
-## What makes a free Windows VPN trustworthy
+## 1. What makes a free Windows VPN trustworthy
 
 QUICK ANSWER A trustworthy free Windows VPN has a transparent business model, runs a no-logs policy, includes a kill switch enabled by default, protects against DNS and IPv6 leaks, and updates its app regularly. Most importantly, it's run by a company whose primary revenue doesn't depend on monetizing your data.
 
@@ -69,7 +69,7 @@ Before we get to the names, here's the framework we use to evaluate every free W
 
 Every name in this guide meets all seven criteria. Many free VPNs you'll see in search results do not.
 
-## Quick comparison table
+## 2. Quick comparison table
 
 Figures verified against each provider's pricing page on May 16, 2026. Pricing and limits change occasionally; check the live page before signing up.
 
@@ -143,7 +143,7 @@ Unlimited
 
 No
 
-## #1. OllaVPN  -  PQC-ready and lifetime free
+## 3. #1. OllaVPN  -  PQC-ready and lifetime free
 
 EDITOR'S PICK
 
@@ -173,7 +173,7 @@ Built in from day one, free and paid alike
 
 **Who it's for:** Windows users who want a genuinely free VPN with modern, future-ready encryption  -  and who'd appreciate the option of a $2/month upgrade if they ever need more speed or want to cover more devices. [Download for Windows](../dl/).
 
-## #2. Proton VPN  -  Swiss-based, open source, and famously generous
+## 4. #2. Proton VPN  -  Swiss-based, open source, and famously generous
 
 02
 
@@ -203,7 +203,7 @@ Yes (every platform)
 
 **Who it's for:** Windows users who care about open-source verifiability and Swiss jurisdiction. See our [NordVPN vs ProtonVPN comparison](nordvpn-vs-protonvpn.html) for context on Proton's broader positioning.
 
-## #3. Windscribe  -  feature-rich Canadian VPN with a strong free tier
+## 5. #3. Windscribe  -  feature-rich Canadian VPN with a strong free tier
 
 03
 
@@ -233,7 +233,7 @@ R.O.B.E.R.T. ad/tracker blocker
 
 **Who it's for:** Households or shared computers where multiple people want VPN protection from the same account, and 10 GB/month is enough for their typical usage.
 
-## #4. PrivadoVPN  -  Swiss-based with a focused 10 GB free tier
+## 6. #4. PrivadoVPN  -  Swiss-based with a focused 10 GB free tier
 
 04
 
@@ -263,7 +263,7 @@ Switzerland
 
 **Who it's for:** Windows users who want a Swiss-based alternative to Proton and don't need unlimited free data.
 
-## #5. hide.me  -  sign up without an email address
+## 7. #5. hide.me  -  sign up without an email address
 
 05
 
@@ -293,7 +293,7 @@ No email required
 
 **Who it's for:** Windows users who want to minimize the personal information they share with the VPN provider at signup.
 
-## #6. TunnelBear  -  the friendliest free VPN, with the smallest cap
+## 8. #6. TunnelBear  -  the friendliest free VPN, with the smallest cap
 
 06
 
@@ -323,7 +323,7 @@ GhostBear obfuscation
 
 **Who it's for:** First-time VPN users who want the most approachable possible experience and don't need much data.
 
-## How free VPNs actually make money  -  and why it matters
+## 9. How free VPNs actually make money  -  and why it matters
 
 QUICK ANSWER Reputable free VPNs are funded by paying customers on a separate paid tier. The free tier is offered as a way to introduce users to the brand and convert some of them to paid plans. If a free VPN doesn't have a paid tier and doesn't disclose how it operates, the funding likely comes from monetizing user data or activity  -  exactly what you're trying to avoid by using a VPN.
 
@@ -337,7 +337,7 @@ When a free VPN has **no paid tier and no obvious funding source**, the math doe
 
 The rule we'd suggest: **if you can't explain how a free VPN makes money, don't use it**.
 
-## Red flags to watch out for
+## 10. Red flags to watch out for
 
 Rather than name names  -  we'd rather stay positive in this guide  -  here are the principles that should make you walk away from any free VPN, regardless of how good the marketing looks.
 
@@ -355,7 +355,7 @@ Rather than name names  -  we'd rather stay positive in this guide  -  here are 
 
 The names in this guide pass all of these. Many free Windows VPNs you'll see in search results do not.
 
-## Why post-quantum cryptography matters for free VPNs too
+## 11. Why post-quantum cryptography matters for free VPNs too
 
 QUICK ANSWER Post-quantum cryptography (PQC) protects against the "harvest now, decrypt later" threat  -  where adversaries capture encrypted traffic today to decrypt years from now. Free VPN users aren't exempt from this concern. The good news: PQC adds almost no overhead and a few VPNs now include it on their free tiers.
 
@@ -367,7 +367,7 @@ OllaVPN ships post-quantum protection on every connection, including the lifetim
 
 If post-quantum readiness matters to you, it's worth noting that **most free VPN tiers do not yet offer it**. As the technology rolls out across the industry, this gap will close  -  but if you want it today, on a free plan, your options are limited.
 
-## How to choose the right one for you
+## 12. How to choose the right one for you
 
 A short decision guide.
 
@@ -378,7 +378,7 @@ A short decision guide.
 *   **If you'd rather not give the VPN provider an email address**, choose **hide.me**.
 *   **If you want the friendliest possible first-time VPN experience and you only use it occasionally**, choose **TunnelBear**.
 
-## Installing a free VPN on Windows  -  the basics
+## 13. Installing a free VPN on Windows  -  the basics
 
 The process is essentially the same for every product on this list.
 
@@ -408,7 +408,7 @@ Five devices on one account. Same post-quantum protection, faster connection.
 
 [Download OllaVPN for Windows](../dl/) and try the free plan. No card, no email needed.
 
-## A broader-context closing thought
+## 14. A broader-context closing thought
 
 One pattern we've noticed across every privacy-and-networking topic we cover: the gap between what most users believe about a given topic and what the technical reality is keeps widening. Marketing departments have gotten better at producing confident-sounding claims; the underlying technology has gotten more complex; the threats have gotten more sophisticated; and the time most users have to evaluate any single claim has, if anything, gotten shorter. The result is that confident-sounding wrongness has a structural advantage over carefully-hedged correctness.
 
@@ -416,7 +416,7 @@ The remedy we've settled on is to publish at depth  -  long enough to cover the 
 
 If you've read this far, you're in the second group. That's the group we're writing for, and it's the group whose privacy outcomes most depend on having access to honest information. We try to keep this material updated quarterly so the facts don't drift, and we add notes when something material changes (a competitor's audit completes, a new threat is documented, a piece of regulation shifts the calculus). The [main free-VPN comparison](/best-free-vpn-2026), the [technology overview](/technology), and the [free privacy tools](/tools/) are the three pages most worth bookmarking from the OllaVPN site if you've found this guide useful.
 
-## Verify and cross-reference
+## 15. Verify and cross-reference
 
 For any claim on this page that affects a decision you're about to make, the verification path we recommend:
 
@@ -428,7 +428,7 @@ For any claim on this page that affects a decision you're about to make, the ver
 
 **Update your view when the facts update.** Privacy concerns shift, operators change, standards evolve. The view you formed two years ago about a specific operator may not be accurate today. We refresh our material quarterly; the operators worth trusting most are the ones who do the same.
 
-## How to verify any picks on this list yourself
+## 16. How to verify any picks on this list yourself
 
 A list of recommendations is worth what the reader can verify. Each pick we made above can be tested from your own device in under fifteen minutes using free tools.
 
@@ -442,7 +442,7 @@ A list of recommendations is worth what the reader can verify. Each pick we made
 
 **Test 5  -  Audit history.** Search "<operator name> security audit" and look for a published third-party report (Cure53, Securitum, KPMG, Radically Open Security are the firms that audit VPNs most often). A clean recent audit is a meaningful trust signal; absence of audits when competitors have them is its own signal.
 
-## What we deliberately left out of this list
+## 17. What we deliberately left out of this list
 
 For completeness, the names we considered but deliberately excluded  -  and why:
 
@@ -454,7 +454,7 @@ For completeness, the names we considered but deliberately excluded  -  and why:
 
 **Atlas VPN.** Atlas was acquired by Nord Security in 2021 and shut down entirely in 2024, with free users migrated to NordVPN's paid tier. The Atlas brand is no longer a current option in 2026.
 
-## About this guide
+## 18. About this guide
 
 Maintained by [Nathan Pratt](/about/team#nathan-pratt), OllaVPN's Privacy & Security Lead. Fact-checked by [Hannah Wu](/about/team#hannah-wu), Senior Security Engineer. We refresh this post quarterly so its facts, recommendations, and competitor comparisons stay accurate as the category evolves. The last full re-evaluation was 23 June 2026; the next is scheduled for September 2026.
 
@@ -462,14 +462,13 @@ If you spot a fact that's drifted or an addition we should make, email `[[email¬
 
 ‚≠ê Key takeaways
 
-## What to remember from this guide
+## 19. What to remember from this guide
 
 *   What makes a free Windows VPN trustworthy
 *   Quick comparison table
 *   #1. OllaVPN  -  PQC-ready and lifetime free
 *   #2. Proton VPN  -  Swiss-based, open source, and famously generous
 *   #3. Windscribe  -  feature-rich Canadian VPN with a strong free tier
-
 </div>
 
 <section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">

@@ -53,7 +53,7 @@ No single tool fixes all of this, because fingerprinting pulls from many differe
 
 You clear your cookies religiously. You’ve got a strict browser-privacy setup. And yet, somehow, that pair of shoes you looked at once follows you across three different websites, and a login form somehow “knows” it’s you before you’ve typed a single character. If you’ve ever wondered how that’s possible when you supposedly “deleted everything,” the answer is that cookies were never the only trick in the book. They were just the easiest one to explain - and the easiest one to delete. In this guide, we’ll walk through the other ways websites actually recognize you, in plain language, and what genuinely helps versus what’s mostly theater.
 
-## If cookies aren’t the whole story, what’s actually happening?
+## 1. If cookies aren’t the whole story, what’s actually happening?
 
 Cookies are a small, deletable file your browser stores. Fingerprinting is a technique that identifies you using dozens of undeletable technical characteristics your device reveals just by existing.
 Here’s the useful mental shift: a cookie is something a website hands to you and stores on you - like a sticker placed on your jacket. You can peel it off any time. Clear your cookies, and that tracking thread snaps.
@@ -61,7 +61,7 @@ Fingerprinting works differently. Instead of handing you something to carry arou
 Individually, almost none of these signals mean much. Plenty of people share your screen resolution. Plenty of people run the same operating system version. But websites don’t rely on one signal at a time. They combine twenty or thirty of them into a single snapshot, and the combination of ordinary details is often unique enough to single you out - like a detailed physical description narrowing a crowd down to one person even when no single trait would.
 That’s why clearing cookies, using private/incognito mode, or switching networks doesn’t always stop the tracking you’re worried about. The “sticker” is gone, but the description of you walks right back in on the next page load, because your device keeps describing itself the same way.
 
-## What is browser fingerprinting, and how does it actually work?
+## 2. What is browser fingerprinting, and how does it actually work?
 
 Browser fingerprinting works by running small pieces of code as soon as a page loads. The script quietly asks your browser dozens of routine questions, then hashes the combined answers into a single, highly specific identifier.
 Every browser is, by design, a chatty piece of software. To render a webpage correctly, it needs to tell the website things like: what screen size am I working with, what fonts are available so text renders properly, what plugins or extensions are installed, what language should content appear in, and what timezone should dates be formatted for. This isn’t sinister by itself - these are legitimate compatibility questions a browser answers so websites can display correctly on your setup.
@@ -69,7 +69,7 @@ A fingerprinting script simply asks all of these questions in one go, using stan
 After collecting the answers, the script typically runs them through a hashing function - a math step that turns a long list of details into a short fixed-length string. That string becomes your fingerprint for that session. Next time you visit - even after clearing cookies, even in a new private window, even after restarting your computer - if your device still answers those questions the same way (and it usually does, because your hardware and software configuration doesn’t change overnight), the script generates the same hash. The website recognizes you instantly, no cookie required.
 The part that makes this hard to fully defend against is that fingerprinting scripts don’t have to break any rules. They’re using ordinary browser features exactly as designed. That’s very different from a virus exploiting a security flaw. Fingerprinting exploits the fact that browsers are helpful, not that they’re broken.
 
-## What specific signals make up a fingerprint?
+## 3. What specific signals make up a fingerprint?
 
 A typical fingerprint combines dozens of small signals - screen and window dimensions, installed fonts, GPU and rendering details, timezone, language, battery status, installed browser plugins, and hardware capabilities - into one composite identifier.
 It helps to see the list, because once you see what’s being measured, the topic stops feeling abstract and starts feeling personal. A modern fingerprinting script commonly checks:
@@ -84,7 +84,7 @@ It helps to see the list, because once you see what’s being measured, the topi
 •	Canvas, WebGL, and audio rendering quirks - how your specific combination of graphics hardware, drivers, and audio stack renders invisible test content. This is covered in detail in the next two sections because it’s especially effective.
 None of these signals were created for tracking. Every one exists because a browser needs to answer a legitimate technical question to render a page properly. In that sense, fingerprinting is less like a hidden camera and more like reading a long, specific questionnaire your browser was already going to answer - whether you wanted it to or not.
 
-## How does canvas and WebGL fingerprinting actually pull this off?
+## 4. How does canvas and WebGL fingerprinting actually pull this off?
 
 Canvas fingerprinting works by asking your browser to silently draw a tiny, invisible image and then reading back the exact pixels produced. Tiny rendering differences between graphics hardware and drivers can make that image subtly, consistently unique to your machine.
 This is the technique that surprises people most, because it doesn’t rely on a setting you can see or a preference you consciously chose. It exploits something fundamental: how your graphics hardware draws.
@@ -94,7 +94,7 @@ The script reads the resulting image data, hashes it, and gets a value that’s 
 WebGL fingerprinting uses the same idea but goes deeper into your graphics stack. Instead of flat 2D drawing, it uses 3D rendering commands and can query your GPU vendor and renderer strings directly. Those details are exposed for legitimate reasons (so websites can adjust 3D quality to match your hardware), but they’re also a goldmine for distinguishing devices.
 The unsettling part is how invisible it all is. There’s no permission prompt, no visible canvas on your screen, and no sign in the address bar that anything unusual happened. The test can run and finish in a fraction of a second - often before the page has fully loaded the images you can actually see.
 
-## What is audio fingerprinting, and why does it work at all?
+## 5. What is audio fingerprinting, and why does it work at all?
 
 Audio fingerprinting works almost the same way as canvas fingerprinting, except it uses your device’s audio-processing hardware to generate and analyze a silent sound wave instead of a silent image.
 This one sound far-fetched until you see the mechanism. A script uses the Web Audio API, a legitimate browser feature that lets websites generate and process sound for things like games, music apps, and audio tools. A fingerprinting script asks the browser to generate a specific audio signal - often at a frequency you wouldn’t realistically hear - and then measures exactly how that signal comes out after passing through your device’s audio pipeline.
@@ -102,7 +102,7 @@ As with canvas rendering, the exact output depends on your hardware and software
 None of the sound is actually played through your speakers. The test happens silently in memory and takes a fraction of a second. The resulting waveform data gets hashed into another consistent, device-specific value that a script can compare across future visits.
 Combined with canvas and WebGL fingerprinting, audio fingerprinting adds another layer of specificity. Because all three techniques run silently and quickly, most people go their entire browsing lives without realizing it happened.
 
-## What role does your IP address play in identifying you?
+## 6. What role does your IP address play in identifying you?
 
 Your IP address is a separate identifier from cookies and fingerprinting. It reveals your rough location and - on many home connections - stays consistent enough over weeks or months to link activity across sessions.
 It’s worth separating this from fingerprinting, because it’s easy to treat “fingerprinting” as the whole story and forget that your IP address has been doing identifying work long before these browser techniques became mainstream. It keeps doing that work in the background regardless of what your browser settings look like.
@@ -111,7 +111,7 @@ That means a website - or more commonly an advertising network embedded across m
 An IP address alone also reveals a fair amount: your rough geographic location (often down to a city or region), your internet service provider, and sometimes whether you’re on residential, business, or mobile infrastructure. None of that requires a cookie. It’s visible to any server your device connects to.
 Where it becomes especially powerful is in combination. A fingerprint alone gets you far. An IP address alone gets you far. But a fingerprint plus a consistent IP address plus the timing pattern of when you’re online creates a composite picture that’s extremely hard to shake off using cookie deletion alone - because cookie deletion was never the thing protecting you from these signals in the first place.
 
-## How do ETags, cache tricks, and "supercookies" sneak past cookie deletion?
+## 7. How do ETags, cache tricks, and "supercookies" sneak past cookie deletion?
 
 Beyond fingerprinting, some tracking techniques abuse legitimate browser storage and caching features - like ETags, favicon caches, and HTTP Strict Transport Security flags - to rebuild an identifier even after cookies are wiped. This category is sometimes nicknamed “supercookies” or “zombie cookies.”
 These techniques sit in a middle ground. Unlike fingerprinting, they do store something on your device. That makes them more like traditional cookies. But unlike traditional cookies, they hide inside browser features most people - and until recently, many privacy tools - don’t think to clear.
@@ -122,7 +122,7 @@ HSTS supercookies are the most invasive. They exploit HTTP Strict Transport Secu
 The good news is that browser makers have spent real engineering effort closing many of these holes. Modern browsers increasingly clear caches and related storage more thoroughly, and some of the most aggressive supercookie techniques have been patched out.
 The bad news is that the cat-and-mouse game keeps producing new variants. That’s exactly why “just clear your cookies” was never a complete privacy strategy - even before fingerprinting became the dominant conversation.
 
-## How unique is a typical fingerprint, really?
+## 8. How unique is a typical fingerprint, really?
 
 Independent research has repeatedly found that a large majority of tested browsers produce a fingerprint unique enough to distinguish them from every other browser in the same test set - even among people using mainstream setups.
 This is the number that hits hardest when people hear about fingerprinting for the first time, because the instinctive assumption is: “Surely my setup looks like everyone else’s.”
@@ -133,7 +133,7 @@ It’s the same underlying math behind the “birthday paradox,” just applied 
 It’s also fair to add nuance: fingerprint uniqueness isn’t fixed forever. Software updates can change fingerprints. Switching networks can shift some signals. Browser makers periodically ship changes intended to make fingerprints less unique or less stable over time, specifically because this research keeps drawing attention to the problem.
 But at any given snapshot in time, for most people on most days, the honest answer to “how identifiable is my browser” is: more identifiable than feels comfortable - and considerably more identifiable than clearing cookies alone suggests.
 
-## What are the common myths about cookie-less tracking?
+## 9. What are the common myths about cookie-less tracking?
 
 The biggest myths are that incognito mode stops fingerprinting, that fingerprinting requires something to be installed on your device, and that clearing cookies plus using a VPN is a complete privacy solution.
 Myth one: “incognito or private browsing mode stops this.” Private browsing modes were built to solve a narrower problem. They stop your own device from saving a local record of history, cookies, and form data after you close the window. That’s genuinely useful if you share a computer or don’t want your browser remembering things.
@@ -143,7 +143,7 @@ Fingerprinting scripts are ordinary JavaScript running inside the normal, sandbo
 Myth three: “a VPN alone solves this.” A VPN is genuinely useful here, and we’ll get into why in a moment. But it solves the IP-address half of the problem, not the fingerprinting half. Your IP address changes when you connect to a VPN. Your screen resolution, installed fonts, and canvas-rendering quirks do not.
 So, if a VPN is marketed as a complete anti-fingerprinting solution, that’s overselling what the technology can actually do. It’s better to be clear-eyed than to let a VPN subscription create a false sense of total invisibility.
 
-## How can you test your own fingerprint right now?
+## 10. How can you test your own fingerprint right now?
 
 You can see your own browser fingerprint using free, well-established testing tools that show which signals are exposed and how unique your combination is compared to other visitors.
 Instead of taking any of this on faith, the most convincing approach is to measure it directly. The EFF’s Cover Your Tracks tool (successor to the long-running Panopticlick project) shows which signals your browser exposes and explains - clearly - how unique your combination is. It also breaks down which specific tests (canvas, fonts, plugins, and more) contribute most to your uniqueness. It’s free, takes under a minute, and is often the most persuasive five minutes you can spend on this topic, because seeing your own score is different from reading about the concept in the abstract.
@@ -152,7 +152,7 @@ Your own what-is-my-IP tool shows what your IP address reveals about your locati
 Our DNS lookup tool and WebRTC leak test help you see whether your browsing habits or real IP address are leaking through channels a quick glance at your address bar won’t reveal.
 Individually, these don’t test canvas or audio fingerprinting. But together with a dedicated fingerprinting test, they give a more complete picture of what different parts of the internet can currently see about you.
 
-## What actually reduces your fingerprint, and what’s mostly theater?
+## 11. What actually reduces your fingerprint, and what’s mostly theater?
 
 Switching to a browser designed to resist fingerprinting - and using extensions that standardize or randomize the signals fingerprinting scripts rely on - can genuinely help. But simply adjusting individual settings one at a time can sometimes make your fingerprint more unique rather than less.
 This is worth saying plainly: if you change one obscure browser setting “for privacy,” but almost nobody else who visits that same site changes that same setting, you become the unusual visitor. Your setup stops blending in, and your fingerprint can become more distinctive.
@@ -164,7 +164,7 @@ With that caveat in mind, here’s what genuinely moves the needle:
 •	A VPN, specifically for the IP-address half of the equation. A VPN doesn’t touch your fingerprint, but it removes a second independent identifying signal that often gets combined with fingerprinting.
 What’s mostly theatre is manually disabling obscure features one at a time in the hope of becoming “invisible.” Uniqueness often comes from being different from the crowd. A browser configured with fifteen manually tweaked settings can be one of the most recognizable browsers on the internet - precisely because almost nobody else bothers to tweak all fifteen.
 
-## How does a VPN fit into this picture?
+## 12. How does a VPN fit into this picture?
 
 A VPN removes your real IP address from the equation. It hides your location and breaks the “same IP shows up again and again” pattern that trackers rely on. But it does not, by itself, change your browser’s fingerprint.
 It’s important to be straightforward here. A VPN solves one real piece of the puzzle, and pretending it solves everything would undermine the honest explanation this guide has been building toward.
@@ -175,7 +175,7 @@ That’s why fingerprinting and IP-based tracking should be treated as two separ
 Where a VPN becomes genuinely important is in closing off other leaks that can quietly undo the privacy you think you have - even while you’re focused on fingerprinting. A VPN that doesn’t properly route DNS lookups through its encrypted tunnel can leak the list of every site you visit to your internet provider, separately from fingerprinting or cookies. That’s covered in detail in our DNS leak guide.
 And a VPN without a reliable kill switch can briefly expose your real IP address when a connection drops - undoing the protection you expected, right when you least expect it.
 
-## What does OllaVPN specifically do to help here?
+## 13. What does OllaVPN specifically do to help here?
 
 OllaVPN hides your real IP address behind its own servers, resolves all DNS requests inside the encrypted tunnel so your browsing habits don’t leak separately, and runs a kill switch by default so a dropped connection never briefly exposes your real address. That covers the identifiable-network-signal half of this problem thoroughly on both the free and paid plans.
 We built OllaVPN around a simple idea: the parts of your privacy that a VPN can control should be handled as completely and as honestly as possible - without pretending it solves problems that live inside your browser.
@@ -188,14 +188,14 @@ What we won’t claim is that any of this changes your browser’s fingerprint. 
 For that half of the picture, you need a fingerprinting-resistant browser and a tracker-blocking extension - the combination covered earlier in this guide.
 Whether you’re on our free 10 Mbps plan or OllaVPN Plus at 10 Gbps for five devices, the privacy architecture underneath is the same. We don’t hold back protection for free users, because the point of building this was to make the network-level half of your privacy accessible to everyone - not just paying customers.
 
-## Why this topic matters beyond the immediate question
+## 14. Why this topic matters beyond the immediate question
 
 This guide sits at the intersection of several broader concerns worth understanding, even if your immediate question has already been answered.
 The tracking industry adapted the moment cookies became a target. Regulators, browser makers, and privacy advocates spent years pushing back against third-party cookies. The advertising and analytics industry didn’t disappear - it shifted investment toward fingerprinting and other cookie-independent techniques, because those methods survive the defenses people learned to use against cookies. Understanding this shift matters because “I clear my cookies” is advice from an earlier chapter of the story, not a complete defense against the current one.
 The signals involved are dual-use by design, which makes this genuinely hard to fully fix. Almost every fingerprinting signal exists because it serves a legitimate rendering or compatibility purpose. Browser makers can’t simply remove screen-size reporting, font enumeration, or canvas rendering without breaking huge parts of the web. This is fundamentally different from patching a security bug. There’s no single flaw to fix - just trade-offs between compatibility and privacy that browser makers keep negotiating, one version at a time.
 Your exposure compounds across layers of the internet you touch. A fingerprint identifies your browser. An IP address identifies your network connection. Account logins identify you by name the moment you sign in. None of these layers automatically protects the others. That’s why privacy in 2026 is best thought of as a stack of independent defenses, not a single switch.
 
-## What to actually do about it
+## 15. What to actually do about it
 
 If this guide makes you feel like you should take action, here are practical next steps in priority order:
 Test your current fingerprint before changing anything. Run the EFF’s Cover Your Tracks tool once,  note your uniqueness score, and treat it as your baseline. You can’t improve what you haven’t measured, and the result is often the single most convincing five minutes you’ll spend on this topic.
@@ -247,7 +247,6 @@ It can help in a limited way. A fingerprint generated on one browser won’t aut
 ### Is my phone’s browser as fingerprintable as my desktop browser?
 
 Historically, mobile browsers were considered more standardized and therefore harder to fingerprint. But research over the past several years has found high uniqueness rates on mobile too - especially once app-installed fonts, screen details, and sensor data are factored in.
-
 </div>
 
 <section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box; font-family: var(--font), 'Lato', sans-serif;">

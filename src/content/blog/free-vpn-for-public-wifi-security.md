@@ -51,13 +51,12 @@ tags: ["buyer-guides"]
 
 <div class="blog-main-content-box">
 
-## 1\. What exactly does a free VPN protect on public Wi-Fi?
+## 1. 1\. What exactly does a free VPN protect on public Wi-Fi?
 
 <div class="content-point-box">
 <h4 style="font-size: 1.08rem; font-weight: 700; margin: 0 0 6px 0; color: #0F172A;">Quick Answer</h4>
 <p style="font-size: 1.02rem; line-height: 1.65; color: #09090b; margin: 0;">A VPN encrypts your internet traffic between your device and the VPN server, so anyone else on the same public Wi-Fi network  -  including someone actively trying to intercept traffic  -  sees only unreadable, scrambled data instead of your browsing activity, logins, or messages.
 </p>
-
 </div>
 
 <section id="faq" class="faq-section-box" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.03); box-sizing: border-box;">

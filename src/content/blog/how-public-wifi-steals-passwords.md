@@ -51,9 +51,9 @@ tags: ['pillars']
 
 <div class="blog-main-content-box">
 
-## How Public Wi‑Fi Can Steal Your Passwords (2026 Guide) [#](#how-public-wi-fi-can-steal-your-passwords-2026-guide)
+## 1. How Public Wi‑Fi Can Steal Your Passwords (2026 Guide) [#](#how-public-wi-fi-can-steal-your-passwords-2026-guide)
 
-## How public Wi‑Fi attacks actually work [#](#how-public-wi-fi-attacks-actually-work)
+## 2. How public Wi‑Fi attacks actually work [#](#how-public-wi-fi-attacks-actually-work)
 
 **Quick Answer**
 
@@ -67,7 +67,7 @@ Most public Wi‑Fi networks use open authentication  -  no password required, o
 
 This is not a vulnerability in the coffee shop's router. It is a fundamental property of how shared wireless networks work. The security responsibility falls on the connection between your device and the websites you visit  -  not on the network itself.
 
-## Packet sniffing  -  the silent listener [#](#packet-sniffing-the-silent-listener)
+## 3. Packet sniffing  -  the silent listener [#](#packet-sniffing-the-silent-listener)
 
 **Quick Answer**
 
@@ -75,7 +75,7 @@ Packet sniffing is the simplest public Wi‑Fi attack. An attacker uses free sof
 
 Packet sniffing is exactly what it sounds like: an attacker uses software to "sniff" the data packets traveling across the network. Tools like Wireshark, tcpdump, and BetterCap are free, widely available, and require no special hardware. A laptop with a standard Wi‑Fi card is sufficient.
 
-## What a packet sniffing attack looks like: [#](#what-a-packet-sniffing-attack-looks-like)
+## 4. What a packet sniffing attack looks like: [#](#what-a-packet-sniffing-attack-looks-like)
 
 The attacker connects to the same public Wi‑Fi network as you  -  the same coffee shop, airport lounge, or hotel lobby.
 
@@ -87,7 +87,7 @@ If any of those packets are unencrypted  -  sent over HTTP instead of HTTPS, or 
 
 Quick self-check (30 seconds): If you ever see a login page that loads over HTTP (no padlock, or browser warning), stop. That’s the exact scenario packet sniffers exploit.
 
-## Evil twin attacks  -  the impostor network [#](#evil-twin-attacks-the-impostor-network)
+## 5. Evil twin attacks  -  the impostor network [#](#evil-twin-attacks-the-impostor-network)
 
 **Quick Answer**
 
@@ -95,7 +95,7 @@ An evil twin attack is when an attacker sets up a fake Wi‑Fi access point with
 
 Packet sniffing requires the attacker to be on the same network as you. Evil twin attacks are more aggressive: the attacker creates a network that becomes the network you connect to.
 
-## How it works: [#](#how-it-works)
+## 6. How it works: [#](#how-it-works)
 
 The attacker sets up a portable Wi‑Fi hotspot  -  using a laptop, a Raspberry Pi, or a purpose-built device like a Wi‑Fi Pineapple  -  with the same network name (SSID) as a legitimate public Wi‑Fi network nearby.
 
@@ -107,7 +107,7 @@ The attacker can also forward your traffic to the real internet, so everything a
 
 Quick self-check (before you type anything): If your Wi‑Fi name is familiar but the captive portal looks “off” (different branding, weird certificate prompts, unexpected redirects), disconnect and reconnect using the official network instructions.
 
-## Session hijacking  -  stealing your login without the password [#](#session-hijacking-stealing-your-login-without-the-password)
+## 7. Session hijacking  -  stealing your login without the password [#](#session-hijacking-stealing-your-login-without-the-password)
 
 **Quick Answer**
 
@@ -127,7 +127,7 @@ Visit the same website. The server sees the valid cookie and grants the attacker
 
 Quick self-check: If you log in on public Wi‑Fi and then later see “new device login” alerts you didn’t trigger, assume session risk and rotate passwords from a trusted connection.
 
-## Man-in-the-middle  -  the active intercept [#](#man-in-the-middle-the-active-intercept)
+## 8. Man-in-the-middle  -  the active intercept [#](#man-in-the-middle-the-active-intercept)
 
 **Quick Answer**
 
@@ -137,7 +137,7 @@ Man-in-the-middle is the most sophisticated of the four attack types, and the on
 
 In a passive sniffing attack, the attacker reads what is already visible. In a MITM attack, the attacker actively intercepts the connection between your device and the server, creating two separate connections: one between you and the attacker, and one between the attacker and the server. Your device thinks it is talking directly to the server. The server thinks it is talking directly to you. In reality, both are talking to the attacker.
 
-## SSL stripping (SSL downgrading)  -  how it works: [#](#ssl-stripping-ssl-downgrading-how-it-works)
+## 9. SSL stripping (SSL downgrading)  -  how it works: [#](#ssl-stripping-ssl-downgrading-how-it-works)
 
 Your browser attempts to connect to https://your-bank.com.
 
@@ -149,7 +149,7 @@ Your browser shows no padlock  -  but many users do not notice. You enter your c
 
 Quick self-check: Enable HTTPS-Only Mode. If your browser ever tries to load HTTP for a site that should be HTTPS, that’s a red flag.
 
-## The "HTTPS protects me" myth [#](#the-https-protects-me-myth)
+## 10. The "HTTPS protects me" myth [#](#the-https-protects-me-myth)
 
 **Quick Answer**
 
@@ -159,7 +159,7 @@ HTTPS is essential. It is not sufficient.
 
 What HTTPS does: It encrypts the communication between your browser and the website's server. An attacker on the same Wi‑Fi network cannot read the contents of your HTTPS traffic  -  the credit card number you type into a form, the email you send, the password you enter on a properly configured login page.
 
-## What HTTPS does NOT do: [#](#what-https-does-not-do)
+## 11. What HTTPS does NOT do: [#](#what-https-does-not-do)
 
 It does not hide which websites you visit. The domain name (like your-bank.com) is visible in the [DNS lookup](/dns-lookup.html) and the TLS handshake's Server Name Indication (SNI).
 
@@ -171,7 +171,7 @@ It can be stripped by SSL stripping if HTTPS-Only mode isn’t enforced.
 
 Correct mental model: HTTPS protects the pipe between you and the server. It does not protect the network you are on, the DNS lookups your device makes, or the cookies your browser stores. A VPN protects all of those things by encrypting everything before it leaves your device.
 
-## How likely is this, really? [#](#how-likely-is-this-really)
+## 12. How likely is this, really? [#](#how-likely-is-this-really)
 
 **Quick Answer**
 
@@ -179,7 +179,7 @@ The risk varies dramatically by context. A casual user reading news on a coffee 
 
 For most people, most of the time: The risk of being specifically targeted on a public Wi‑Fi network is low. The attacker needs to be on the same network as you, at the same time, with the right tools and the intent to target you specifically.
 
-## Where the risk is real: [#](#where-the-risk-is-real)
+## 13. Where the risk is real: [#](#where-the-risk-is-real)
 
 ### Business travelers accessing corporate credentials
 
@@ -191,13 +191,13 @@ Legacy/unpatched devices
 
 The pragmatic takeaway: you do not need to be paranoid about public Wi‑Fi. You do need to take basic precautions.
 
-## How to protect yourself [#](#how-to-protect-yourself)
+## 14. How to protect yourself [#](#how-to-protect-yourself)
 
 **Quick Answer**
 
 Use a VPN on every public Wi‑Fi network. Enable HTTPS-Only Mode in your browser. Turn off auto-connect to open networks. Forget the network when you're done. Keep your device and apps updated. These habits eliminate the vast majority of public Wi‑Fi risk.
 
-## Layered protection: [#](#layered-protection)
+## 15. Layered protection: [#](#layered-protection)
 
 Use a VPN  -  always, on every public network. Encrypts all traffic before it leaves your device.
 
@@ -251,7 +251,7 @@ Price
 
 Details
 
-## Attack map: what each threat targets [#](#attack-map-what-each-threat-targets)
+## 16. Attack map: what each threat targets [#](#attack-map-what-each-threat-targets)
 
 **Quick Answer**
 
@@ -265,7 +265,7 @@ What breaks the attack
 
 What VPN/HTTPS does
 
-## Honeypots and Canary Tokens: How to Detect if You’re Being Watched [#](#honeypots-and-canary-tokens-how-to-detect-if-you-re-being-watched)
+## 17. Honeypots and Canary Tokens: How to Detect if You’re Being Watched [#](#honeypots-and-canary-tokens-how-to-detect-if-you-re-being-watched)
 
 **Quick Answer**
 
@@ -291,7 +291,7 @@ The Result: You know exactly when the breach happened and can disconnect before 
 
 Verification tip: Treat a canary “chirp” as a signal to isolate the device (disconnect Wi‑Fi, stop sharing, rotate credentials from a trusted network).
 
-## Juice Jacking: The USB-to-Wi‑Fi Pivot [#](#juice-jacking-the-usb-to-wi-fi-pivot)
+## 18. Juice Jacking: The USB-to-Wi‑Fi Pivot [#](#juice-jacking-the-usb-to-wi-fi-pivot)
 
 **Quick Answer**
 
@@ -311,7 +311,7 @@ The Fix: Use a "USB Data Blocker" (a "USB Condom") that physically disconnects t
 
 Quick self-check: If your phone suddenly shows new connection prompts (tethering/debugging) after plugging in, unplug immediately.
 
-## The Psychology of the "Free" Button: Dark Patterns in Captive Portals [#](#the-psychology-of-the-free-button-dark-patterns-in-captive-portals)
+## 19. The Psychology of the "Free" Button: Dark Patterns in Captive Portals [#](#the-psychology-of-the-free-button-dark-patterns-in-captive-portals)
 
 **Quick Answer**
 
@@ -331,7 +331,7 @@ Nathan’s Rule: If a captive portal asks for anything more than a room number o
 
 Verification tip: If you’re prompted to install a certificate you didn’t request, refuse.
 
-## Side-Channel Analysis: Reading the "Silence" in Encryption [#](#side-channel-analysis-reading-the-silence-in-encryption)
+## 20. Side-Channel Analysis: Reading the "Silence" in Encryption [#](#side-channel-analysis-reading-the-silence-in-encryption)
 
 **Quick Answer**
 
@@ -351,7 +351,7 @@ How OllaVPN Fights This: We use Traffic Padding. By adding "noise" (random bits 
 
 Verification tip: If you want to validate “padding” claims, compare packet-size distributions with and without the VPN using a packet capture tool on your own device (don’t share captures publicly).
 
-## The "DarkHotel" Case Study: High-Value Targeting [#](#the-darkhotel-case-study-high-value-targeting)
+## 21. The "DarkHotel" Case Study: High-Value Targeting [#](#the-darkhotel-case-study-high-value-targeting)
 
 **Quick Answer**
 
@@ -371,7 +371,7 @@ The Result: The guest installs the "update," and the attackers now have a keylog
 
 The Lesson: Never, ever download a "required" update while on a public or hotel network. Wait until you are back on a trusted home or office connection.
 
-## · Li‑Fi: Is Light the Future of Secure Public Access? [#](#li-fi-is-light-the-future-of-secure-public-access)
+## 22. · Li‑Fi: Is Light the Future of Secure Public Access? [#](#li-fi-is-light-the-future-of-secure-public-access)
 
 **Quick Answer**
 
@@ -389,7 +389,7 @@ Directional Security: You have to be physically under the light beam to capture 
 
 The Current Reality: While Li‑Fi is faster and more secure, it requires specialized receivers. Until your phone has a Li‑Fi sensor built-in, we are stuck with the "leaky" radio waves of Wi‑Fi  -  and the need for a VPN.
 
-## · Zero Trust: Why the Network Doesn't Matter Anymore [#](#zero-trust-why-the-network-doesn-t-matter-anymore)
+## 23. · Zero Trust: Why the Network Doesn't Matter Anymore [#](#zero-trust-why-the-network-doesn-t-matter-anymore)
 
 **Quick Answer**
 
@@ -407,7 +407,7 @@ Assume Breach: Treat the coffee shop Wi‑Fi and your home Wi‑Fi with the same
 
 OllaVPN and Zero Trust: We built OllaVPN with this mindset. We don't care if you're on a "trusted" home network; we provide the same 4-layer [peer isolation](/peer-isolation) and PQC encryption everywhere.
 
-## The "Terms of Service" Trap: What You Legally Sign Away [#](#the-terms-of-service-trap-what-you-legally-sign-away)
+## 24. The "Terms of Service" Trap: What You Legally Sign Away [#](#the-terms-of-service-trap-what-you-legally-sign-away)
 
 **Quick Answer**
 
@@ -423,7 +423,7 @@ Persistent Tracking: Some agreements allow them to place a "Supercookie" on your
 
 The Fix: Don't just "Agree." Use a VPN to encrypt the traffic so that even if they have the legal right to see your data, they don't have the technical ability to read it.
 
-## Travel Routers: Creating Your Own Secure Bubble [#](#travel-routers-creating-your-own-secure-bubble)
+## 25. Travel Routers: Creating Your Own Secure Bubble [#](#travel-routers-creating-your-own-secure-bubble)
 
 **Quick Answer**
 
@@ -437,7 +437,7 @@ Hardware Firewall: It acts as a physical barrier between the "hostile" hotel net
 
 Always-On VPN: You can configure the router to use OllaVPN's [WireGuard](/free-wireguard-vpn) settings. Every device that joins your private Wi‑Fi is automatically encrypted, even if the device itself doesn't support VPN apps (like a Chromecast).
 
-## · Hardware Security: TPMs and Secure Enclaves [#](#hardware-security-tpms-and-secure-enclaves)
+## 26. · Hardware Security: TPMs and Secure Enclaves [#](#hardware-security-tpms-and-secure-enclaves)
 
 **Quick Answer**
 
@@ -470,7 +470,6 @@ Cross-reference at least one third-party source. The most reputable independent 
 Read the primary sources. NIST publications on PQC standards and IETF RFCs for modern VPN-related protocols are the ground truth.
 
 #
-
 </div>
 
 <section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">

@@ -56,7 +56,7 @@ pillar: false
 VPN vs Proxy vs Tor: Which Protects Your Privacy Best?
 Three tools that all promise to hide you online, explained the way a friend who's actually used all three would explain them  -  what each one hides, what each one leaves exposed, and honestly, which situations call for which tool, rather than pretending one wins every category.
 
-## At a glance
+## 1. At a glance
 QUICK ANSWER: A proxy reroutes one app's traffic through a middleman, usually unencrypted. A VPN encrypts all your device's traffic through one trusted server. Tor routes traffic through three independent relays with layered encryption for maximum anonymity, at a real cost in speed.
 Here's the quick side-by-side.
 What you care about	Proxy	VPN	Tor
@@ -71,7 +71,7 @@ Best for	Quick, low-stakes IP changes	Daily driver  -  privacy + usability	High-
 Setup effort	Low	Low  -  one app	Low, but usage habits matter more
 What this table is really telling you: these tools sit on a spectrum from "convenient and shallow" to "slow and maximally anonymous," and the right choice depends entirely on which end of that spectrum your actual situation calls for.
 
-## Three different tools, three different jobs
+## 2. Three different tools, three different jobs
 QUICK ANSWER: A proxy exists to change your apparent location or IP for one app, quickly and cheaply. A VPN exists to protect your entire device's traffic with real encryption for everyday use. Tor exists to make it extremely hard for anyone, including well-resourced adversaries, to link your identity to your online activity  -  a narrower, higher-stakes job than either of the other two.
 If you only remember one thing from this guide, remember this: these three tools were built to solve different problems, not to compete for the same job. Treating them as interchangeable is where most of the confusion in this space comes from.
 A proxy's job
@@ -81,45 +81,45 @@ A VPN's job is broader and structurally different: encrypt everything your devic
 Tor's job
 Tor's job is the most specialized of the three: make it extremely difficult for any single party  -  not your ISP, not a website, not even a compromised relay along the way  -  to connect your identity to your destination. It does this by routing traffic through three independent, volunteer-operated relays, each of which only knows part of the picture. This is a genuinely different threat model, built for situations where the adversary might be well-resourced and where even a VPN provider's trustworthiness isn't a risk you're willing to accept.
 
-## What a proxy actually does
+## 3. What a proxy actually does
 QUICK ANSWER :A proxy server relays traffic between your device and a destination, presenting the proxy's IP address instead of yours. Most consumer proxies  -  including the free ones bundled into browser extensions  -  provide little or no encryption, meaning your ISP or anyone else on the network path can often still see and read what you're sending.
 Technically, a proxy is the simplest of the three tools covered in this guide. Your app  -  a browser, typically  -  is configured to send its requests to a proxy server rather than directly to the destination. The proxy forwards the request, receives the response, and passes it back to you. From the destination's point of view, the request came from the proxy's IP address, not yours.
 There are a few common flavors. HTTP proxies handle web traffic specifically and are the type most often bundled into free browser extensions. SOCKS proxies are more general-purpose and can handle a wider range of traffic types, which is why they're popular for applications like torrent clients. Neither type encrypts traffic by default  -  encryption, where it exists at all in a proxy setup, typically comes from HTTPS on the destination site itself, exactly the same protection you'd have without a proxy in the picture.
 This is the crucial limitation: a proxy changes who the destination thinks you are, but it generally does nothing to protect the content of your traffic from anyone positioned on the network in between  -  your ISP, someone on shared Wi-Fi, or the proxy operator itself, who can typically see everything passing through unencrypted. Free proxy services in particular have a well-documented history of monetizing exactly that visibility, logging and reselling user traffic data as their actual business model.
 
-## What a VPN actually does
+## 4. What a VPN actually does
 QUICK ANSWER: A VPN encrypts all traffic leaving your device inside a tunnel to a server it operates, hiding your IP address from destinations and hiding your destinations and DNS lookups from your ISP. Unlike a proxy, this protection covers your whole device, not just one app.
 A VPN works at a lower, more comprehensive layer than a proxy. Instead of configuring one app to talk to a middleman, a VPN intercepts all outbound traffic from your device  -  browser, background apps, system processes, everything  -  and routes it through an encrypted tunnel to a server operated by your VPN provider. From there, traffic continues to its actual destination, appearing to originate from the VPN server's IP address.
 The encryption is the meaningful upgrade over a bare proxy: even if someone is positioned on the network between you and the VPN server  -  an attacker on public Wi-Fi, your ISP's own equipment  -  all they see is unreadable ciphertext, not the content of your requests. A well-built VPN also handles DNS lookups inside that same encrypted tunnel, closing off the domain-visibility gap that would otherwise let your ISP see which sites you're visiting even on an HTTPS connection  -  a topic we cover in full in our guide to what your ISP can see.
 The trade-off, compared to Tor, is that a VPN concentrates trust in a single party: your VPN provider can, in principle, see what your ISP used to see. This is exactly why a VPN's no-logs policy, jurisdiction, and technical practices matter as much as its encryption strength  -  you're not eliminating a point of trust by using a VPN, you're choosing which company gets to hold it.
 
-## What Tor actually does
+## 5. What Tor actually does
 QUICK ANSWER: Tor routes your traffic through three independently operated relays  -  an entry node, a middle relay, and an exit node  -  encrypting it in layers so that no single relay knows both who you are and what you're accessing. This structural separation is what gives Tor its strong anonymity guarantees, at a real cost in speed.
 Tor  -  short for "The Onion Router"  -  takes a fundamentally different architectural approach than either a proxy or a VPN, and the name is a genuine hint at how it works: your traffic is wrapped in multiple layers of encryption, like an onion, with each relay along the path only able to peel back one layer.
 Here's the flow: your traffic first passes through an entry node, which knows your real IP address but not your final destination. It then passes through a middle relay, which knows neither your identity nor your destination  -  it's simply a link in the chain. Finally, it exits through an exit node, which knows the destination you're reaching but not who you actually are. No single relay in this chain has the complete picture, which is the entire point: even if one relay were compromised or malicious, it alone can't connect your identity to your activity.
 This structure is why Tor is generally considered the strongest anonymity tool of the three covered in this guide  -  it doesn't require you to fully trust any single operator the way a VPN does, because the design deliberately splits that trust across independent parties. The cost is speed: routing through three relays, each potentially in a different part of the world, with layered encryption at every hop, adds meaningfully more latency than a direct VPN connection to one nearby server. Tor is typically accessed through the dedicated Tor Browser, which also includes additional privacy hardening  -  like resisting browser fingerprinting  -  beyond just the network routing itself.
 
-## Encryption depth, side by side
+## 6. Encryption depth, side by side
 QUICK ANSWER :A typical proxy provides no encryption of its own. A VPN provides strong, modern encryption for the leg between your device and the VPN server. Tor provides layered encryption across three independent hops, each relay only able to decrypt its own layer.
 It's worth being precise about the actual cryptographic picture here, because "encrypted" gets used loosely across all three categories in casual conversation.
 A bare proxy, in the most common consumer configurations, adds no encryption of its own  -  any protection you get comes entirely from HTTPS on the destination site, exactly the same protection available with no proxy at all. This is the single biggest reason security-conscious users generally don't treat a proxy as a genuine privacy tool.
 A VPN encrypts the connection between your device and the VPN server using modern protocols like WireGuard, providing strong protection against anyone positioned on that leg of the journey  -  public Wi-Fi, your ISP, a compromised local router. From the VPN server onward, ordinary internet rules apply, meaning HTTPS (where present) continues to protect the content independently, layered on top.
 Tor encrypts traffic in layers specifically designed so that each relay can only remove the layer meant for it, never seeing the full picture. This is architecturally the most sophisticated of the three, engineered from the ground up around the assumption that any single relay operator might be hostile or compromised  -  a stronger baseline assumption than either a proxy or a VPN makes about the party running it.
 
-## Speed and everyday usability
+## 7. Speed and everyday usability
 QUICK ANSWER: A proxy typically adds minimal overhead. A modern VPN using WireGuard adds a small, usually unnoticeable amount of latency. Tor is meaningfully slower than either, due to routing through three relays scattered across the network rather than one nearby server.
 This is one of the more decisive practical differences between the three, and it's worth being honest about rather than glossing over.
 A proxy's overhead is generally minimal, since it's just relaying traffic through one additional hop with little to no processing overhead from encryption. This is part of why proxies remain popular for tasks like large-scale web scraping, where speed matters and genuine privacy doesn't.
 A VPN's overhead, on a modern protocol like WireGuard, is small enough that most people never notice it during ordinary browsing, streaming, or calls  -  the connection typically stays close to the raw line rate of a nearby server, with the main variable being how far that server is from your actual location.
 Tor is noticeably slower than both, and this isn't a minor implementation detail  -  it's a direct, unavoidable consequence of routing through three separate relays, often geographically distant from each other and from you, with layered encryption processed at every hop. Streaming video or downloading large files over Tor is a genuinely frustrating experience for most people, and the Tor Project itself doesn't market the network for that kind of everyday use.
 
-## Anonymity  -  how far does each one actually go?
+## 8. Anonymity  -  how far does each one actually go?
 QUICK ANSWER: A proxy offers weak anonymity  -  it changes your visible IP but rarely encrypts content and often keeps its own logs. A VPN offers strong practical privacy against your ISP and the sites you visit, concentrated in trust of one provider. Tor offers the strongest anonymity of the three by structurally splitting trust across independent relays.
 Ranking these three by anonymity alone: Tor sits at the top, specifically because no single party in its architecture can connect your identity to your destination  -  a structural guarantee a VPN, by design, doesn't fully replicate, since the VPN provider itself is positioned to see both ends. A VPN sits in the middle, offering strong protection against your ISP, local network attackers, and the destination sites you visit, with the trade-off that you're placing meaningful trust in one company. A bare proxy sits at the bottom of this ranking  -  it changes your visible IP, which is a real and sometimes useful protection, but it typically doesn't encrypt your traffic and frequently comes with its own logging practices that undercut the privacy pitch entirely.
 It's worth noting this ranking is specifically about anonymity from network-level observation and IP-based tracking. None of the three tools protect you from a site you've logged into knowing who you are, and none of them substitute for good account security practices  -  that's a separate layer of the privacy picture entirely, covered in our guide on what a VPN actually protects against when it comes to hacking.
 It's also worth separating "anonymity" from "privacy" as concepts, because the two get conflated constantly in casual conversation about these tools. Privacy, in the sense most people mean when reaching for a VPN, is about keeping your everyday browsing out of your ISP's hands and off data brokers' spreadsheets  -  a goal a well-configured VPN accomplishes thoroughly for the vast majority of situations. Anonymity, in the stricter sense Tor is built around, is about making sure no single party, however well-resourced, can definitively tie a specific action back to a specific identity  -  a meaningfully higher bar, and one that most people, most of the time, don't actually need to clear.
 
-## A quick real-world way to picture the difference
+## 9. A quick real-world way to picture the difference
 It's easier to internalize the gap between these three tools with a concrete scenario than with abstract definitions alone.
 Imagine you're sending a physical letter. A proxy is like asking a stranger at the post office to mail it for you under their own return address  -  the recipient sees the stranger's address instead of yours, but the letter itself is still sitting in a plain, unsealed envelope anyone handling it along the way could open and read. It's a quick trick for hiding who sent it, and nothing more.
 A VPN is like sealing that same letter in a locked, tamper-evident box and handing it to one trusted courier company you've personally vetted. The courier carries the box all the way to a drop-off point, then forwards the letter onward through the ordinary postal system. Nobody along the courier's route can read what's inside, and the recipient never sees your original address  -  but the courier company itself could, in principle, open the box, which is exactly why you chose a courier with a track record you trust rather than the cheapest option available.
@@ -131,16 +131,16 @@ Proxy operators are frequently the least transparent of the three. Many free pro
 VPN providers are a single, identifiable company, which is both a strength and a limitation. The strength: you can research them  -  check for independent audits, read the privacy policy, verify the jurisdiction, look at their track record under legal pressure. The limitation: you're still trusting one party with a genuinely complete picture of your traffic's transit, which is why choosing a reputable, audited, no-logs provider matters enormously, and why a large chunk of any serious VPN comparison  -  including this website's other comparisons  -  spends real time on exactly this question rather than treating it as a footnote.
 Tor's relay network takes the opposite structural approach: thousands of volunteers around the world run the entry, middle, and exit relays that make up the network, and no single operator sees the whole picture for any given user's session. This is a deliberate design choice to avoid concentrating trust in any one party  -  the trade-off, as covered above, is speed, and a small residual risk that a malicious exit node could observe unencrypted traffic leaving the network toward a non-HTTPS destination. The Tor Project publishes guidance specifically addressing this exit-node risk, and it's a large part of why HTTPS adoption across the wider web has made Tor meaningfully safer over the past decade than it was when exit-node snooping was a more commonly cited concern.
 
-## Streaming, torrenting, and everyday browsing
+## 10. Streaming, torrenting, and everyday browsing
 QUICK ANSWER: For everyday streaming, torrenting, and general browsing, a VPN is by far the most practical choice  -  proxies lack real security and Tor is too slow for bandwidth-heavy use. Some VPN providers actively support these use cases; Tor and most bare proxies are poorly suited to them.
 This is one of the more clear-cut sections in this guide. For streaming, a VPN with dedicated infrastructure for the purpose is the practical choice  -  Tor's speed makes video streaming a frustrating experience, and proxies generally lack the reliability and geographic server diversity that streaming unblocking actually requires. For torrenting, a VPN with a kill switch and P2P support is the standard, sensible choice; Tor's own documentation actively discourages torrenting over the network, both because it strains the volunteer-run relay capacity and because torrent clients have historically leaked real IP addresses even when routed through Tor. For everyday browsing  -  checking email, reading the news, shopping  -  a VPN offers the best balance of genuine privacy and a browsing experience that doesn't feel like a compromise.
 Proxies remain useful for a narrower set of tasks outside the privacy conversation entirely  -  quickly checking how a page renders from a different country, or automating requests at scale  -  where the lack of encryption isn't really the point.
 
-## Combining tools  -  VPN over Tor and other setups
+## 11. Combining tools  -  VPN over Tor and other setups
 QUICK ANSWER :Some privacy-focused setups combine a VPN with Tor, either connecting to a VPN before entering the Tor network or after exiting it, each configuration offering different trade-offs. For most people, this added complexity isn't necessary  -  a single, well-configured VPN already covers the overwhelming majority of everyday privacy needs.
 For readers going deeper into this topic, it's worth knowing that VPN and Tor aren't mutually exclusive  -  some setups deliberately combine them. Connecting to a VPN before Tor ("Tor over VPN") hides the fact that you're using Tor from your ISP, which can matter in regions where Tor usage itself might draw unwanted attention, and it means your VPN provider  -  rather than your ISP  -  sees that you're connecting to the Tor network, without seeing what you do inside it. Connecting to Tor before a VPN ("VPN over Tor") is less common and technically trickier to set up correctly, generally used in narrower, more advanced scenarios.
 For the overwhelming majority of readers, this combination is unnecessary complexity solving a problem they don't actually have. A single, well-configured VPN  -  one with in-tunnel DNS, a kill switch, and a genuine no-logs policy  -  already closes the large majority of everyday privacy gaps this guide has walked through. Layering Tor on top makes sense specifically for the higher-stakes situations covered in the next section, not as a default habit for ordinary browsing.
-## Where each one shines
+## 12. Where each one shines
 Rather than framing this as a single winner, here's what each tool is genuinely, specifically great at.
 Proxy  -  what it does well
 •	Quick, low-effort IP changes for a single app or browser session
@@ -159,7 +159,7 @@ Tor  -  what it does well
 •	Purpose-built for situations where even a VPN provider's trustworthiness is a risk you won't accept
 •	Includes browser-level privacy hardening beyond just network routing
 
-## Which one is right for you?
+## 13. Which one is right for you?
 Choose a proxy if…
 •	You need a quick, disposable IP change for one browser tab or app.
 •	Genuine privacy isn't the actual goal  -  convenience or geographic testing is.
@@ -176,7 +176,7 @@ Choose Tor if…
 •	You're accessing sensitive information where even a well-run VPN's risk profile is too high.
 Most people reading this guide fall into the second category, and that's not an accident  -  a VPN is the tool built specifically for the privacy problem most ordinary internet use actually has.
 
-## A newer name to know  -  OllaVPN
+## 14. A newer name to know  -  OllaVPN
 If this guide has convinced you a VPN is the right daily-driver choice, we'd like to introduce OllaVPN, a newer privacy-focused service built to close the same gaps this guide has covered, without asking you to compromise on speed or trust. Full disclosure: this is our own product, and we've tried to keep the rest of this guide honest enough that you can trust this section too.
 •	Every connection runs through a real encrypted tunnel, closing the exact protection gap that separates a genuine VPN from a bare, unencrypted proxy.
 •	In-tunnel DNS by default, so your ISP doesn't quietly regain visibility into your browsing destinations the moment DNS steps outside the tunnel.
@@ -184,7 +184,7 @@ If this guide has convinced you a VPN is the right daily-driver choice, we'd lik
 •	A strict no-logs policy, addressing the single-party-trust trade-off inherent to any VPN honestly rather than pretending it doesn't exist.
 •	A lifetime free plan with no data caps  -  the network-level protection this guide describes shouldn't be reserved for paying customers only.
 
-## Final verdict
+## 15. Final verdict
 If we had to boil this whole comparison down to three lines:
 •	A proxy changes your visible IP for one app, quickly and cheaply, usually without real encryption  -  fine for low-stakes tasks, weak for genuine privacy.
 •	A VPN encrypts your whole device's traffic through one trusted provider  -  the practical, everyday choice for most people, most of the time.
@@ -202,7 +202,6 @@ Treating all three as roughly interchangeable. A trustworthy comparison is expli
 No mention of who operates the servers. This is arguably the single most important trust question for a proxy or VPN, and it's routinely skipped in favor of feature-list comparisons.
 Overselling proxy privacy. Content that describes a bare, unencrypted proxy as a genuine privacy tool without mentioning the lack of encryption is misleading readers about a meaningful security gap.
 Dismissing Tor as "just for illegal stuff." Tor has a long, well-documented history of legitimate use by journalists, researchers, and ordinary privacy-conscious users  -  a comparison that frames it purely as a tool for wrongdoing is misrepresenting its actual use base.
-
 </div>
 
 <section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">

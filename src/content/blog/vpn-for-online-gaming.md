@@ -53,7 +53,7 @@ tags: ['buyer-guides']
 
 The honest guide to free VPNs for gaming in 2026 - what actually reduces ping, which free tiers are worth using, and what to ignore.
 
-## Does a VPN actually help with gaming ping?
+## 1. Does a VPN actually help with gaming ping?
 
 QUICK ANSWER
 
@@ -71,7 +71,7 @@ The practical test is simple: check your ping to a game server without a VPN, th
 
 When a free VPN for gaming helps vs hurts ping - flat infographic showing ISP throttling on the left as the case for VPN, and already-optimal routing on the right as the case against
 
-## What's really causing your lag
+## 2. What's really causing your lag
 
 QUICK ANSWER
 
@@ -117,7 +117,7 @@ The checklist is simple: if the free VPN you're considering doesn't list WireGua
 
 How VPN routing affects gaming ping - a flat flow diagram showing a squiggly ISP path resulting in 120ms ping versus a direct VPN-optimized path resulting in 42ms ping
 
-## What to look for in a free gaming VPN
+## 3. What to look for in a free gaming VPN
 
 QUICK ANSWER
 
@@ -137,7 +137,7 @@ A [kill switch](/blog/what-is-a-vpn-kill-switch.html) - if the VPN connection dr
 
 A real no-logs policy - many free VPNs are free because they log your browsing data and sell it. This defeats the purpose. Look for an explicit, specific no-logs policy: no sites visited, no traffic patterns, no session metadata. Vague "privacy-friendly" claims aren't a substitute for a written commitment.
 
-## The free gaming VPN checklist
+## 4. The free gaming VPN checklist
 
 WireGuard or WireGuard-based protocol
 
@@ -153,7 +153,7 @@ Explicit no-logs policy with specifics
 
 No credit card required to start
 
-## The free tier reality check
+## 5. The free tier reality check
 
 QUICK ANSWER
 
@@ -241,7 +241,7 @@ OllaVPN's approach is different: a kernel-enforced 10 Mbps speed cap per session
 
 Free VPN tier comparison table for gaming - showing typical free vs good free vs ideal free tier on bandwidth, server countries, protocol, speed cap, and gaming suitability
 
-## The best free VPNs for gaming in 2026
+## 6. The best free VPNs for gaming in 2026
 
 QUICK ANSWER
 
@@ -257,7 +257,7 @@ Best for: Privacy-conscious players on NA or EU servers who want a credible, wel
 
 Watch out for: The server limitation means it only helps your ping if a free server happens to be near your game's regional server. Don't assume it will reduce latency without testing.
 
-## Windscribe free
+## 7. Windscribe free
 
 Windscribe gives free users access to 10 server countries - more than Proton VPN's five - and runs WireGuard. The 10GB monthly cap is the main friction point for gaming. If you run Windscribe only when you need it (region-switching, accessing a geo-blocked game), 10GB is probably enough. If you run it all the time, you'll exhaust the cap in about 24 hours of active gaming.
 
@@ -267,7 +267,7 @@ Best for: Casual or occasional gamers who don't need a VPN running 24/7 - or any
 
 Watch out for: The 10GB cap is a real constraint. If you hit it on July 20th, you wait until August 1st or upgrade. Plan accordingly.
 
-## OllaVPN free
+## 8. OllaVPN free
 
 OllaVPN is the outlier in this list in a few ways. The free tier is genuinely permanent - no trial, no countdown, no credit card. The server coverage on the free tier is 120+ countries, which is broader than most paid VPNs' free tiers and more than most competitors offer at any price. The protocol is WireGuard-class (their own implementation built on WireGuard's data plane), with forward-secret key exchange re-keyed every session.
 
@@ -279,13 +279,13 @@ Best for: Gamers who want a permanent free option with broad regional coverage, 
 
 Watch out for: The 10 Mbps cap means you'll want to pause the VPN for large game downloads. Use it for the session, not for the 80GB download that precedes it.
 
-## A note on "gaming VPN" apps in app stores
+## 9. A note on "gaming VPN" apps in app stores
 
 The app stores are full of apps with names like "Gaming VPN - Low Ping" and "Fast VPN for Gamers" that claim to reduce ping and offer unlimited free access. Almost none of these should be trusted for a few reasons: they typically use IKEv2 or proprietary protocols that add more overhead than WireGuard, they monetize by logging your traffic data, and the "unlimited" claims in the description often come with session resets every few minutes. If an app's business model for a free VPN isn't clear, the product is your data.
 
 The Reddit thread in r/RecommandedVPN on gaming VPNs in 2026 is worth reading: the community consensus is consistently that named, audited providers (Proton, Windscribe, and OllaVPN come up repeatedly) are the only free options worth trusting.
 
-## Gaming use cases where a VPN genuinely pays off
+## 10. Gaming use cases where a VPN genuinely pays off
 
 QUICK ANSWER
 
@@ -301,7 +301,7 @@ Regional game pricing - game prices on platforms like Steam vary by region. Conn
 
 Playing on public Wi-Fi without exposing your connection - gaming from a hotel, airport, or café Wi-Fi puts your traffic on a network with strangers. A VPN encrypts that traffic end-to-end, preventing anyone on the same network from intercepting or monitoring it. The WireGuard-class encryption in OllaVPN, combined with their [post-quantum](/pqc) key exchange, makes this a meaningful protection even on adversarial networks.
 
-## How to set up your gaming VPN
+## 11. How to set up your gaming VPN
 
 QUICK ANSWER
 
@@ -323,7 +323,7 @@ Run a quick ping check to your game's servers before and after connecting - most
 
 A WireGuard-based VPN like OllaVPN connects in roughly one second, so you can toggle it quickly if you want to compare ping before and after. It's a thirty-second test that tells you whether a VPN is going to help your specific setup.
 
-## On Android and iOS
+## 12. On Android and iOS
 
 Mobile gaming has exploded, and the setup on Android and iOS is straightforward. Download the VPN app from the App Store or Google Play, log in, select your server region, and connect. On Android, WireGuard-based apps integrate with the system VPN settings natively. On iOS, a similar system VPN integration handles the tunnel.
 
@@ -337,37 +337,37 @@ Router method (recommended):
 
 Flash your router with DD-WRT or similar firmware, install the VPN client on the router, and all devices on your network - including consoles - route through the VPN automatically. This requires a compatible router and some technical comfort.
 
-## Hotspot method (easier):
+## 13. Hotspot method (easier):
 
 Connect your PC to your VPN, then create a Wi-Fi hotspot on your PC and connect your console to that hotspot. The console's traffic routes through the PC and then through the VPN. This works on Windows with the built-in Mobile Hotspot feature. It's a workaround rather than a clean solution, but it works reliably.
 
 A Reddit thread from r/RecommandedVPN specifically mentions ExpressVPN as easy to configure on a router for console gaming - the router method is broadly applicable to any WireGuard-capable VPN, not just premium ones.
 
-## Five myths about free VPNs and gaming
+## 14. Five myths about free VPNs and gaming
 
 Myth 1: "A VPN will always increase your ping."
 
 This is the most common claim, and it's accurate on average - but not universally. A VPN adds a hop, and more hops usually means more latency. However, if your ISP routes your traffic inefficiently - through several exchange points before reaching the game server - a VPN exit positioned more directly can cut latency. The only way to know which applies to your setup is to test. Assume a VPN will add latency until your own measurements show otherwise.
 
-## Myth 2: "Free VPNs are too slow for gaming."
+## 15. Myth 2: "Free VPNs are too slow for gaming."
 
 Gaming doesn't need a lot of bandwidth. Valorant uses roughly 100 Kbps, League of Legends around 50 Kbps, Call of Duty: Warzone around 75–100 Kbps. A 10 Mbps connection - the speed cap on OllaVPN's free tier - provides 100x the bandwidth that most competitive games require. "Too slow" is true for 4K streaming and large game downloads, not for playing a game that's already downloaded.
 
 The real risk isn't bandwidth - it's overloaded free servers. When a free VPN server is shared among thousands of users simultaneously, jitter increases and latency becomes unpredictable. This is why choosing a VPN with honest infrastructure (kernel-enforced speed limits rather than oversubscribed shared servers) matters more than the headline speed number.
 
-## Myth 3: "Using a VPN will get you banned from games."
+## 16. Myth 3: "Using a VPN will get you banned from games."
 
 Most major game publishers - Riot Games, Valve, EA, Activision - don't ban accounts for using a VPN. VPNs are normal internet infrastructure, and a VPN connection is indistinguishable from a normal internet connection from the game server's perspective. The scenarios where VPNs cause issues are specific: using a VPN to evade an existing ban (using a different IP to bypass an IP ban) or using a VPN in a way that triggers region-restriction enforcement (some games restrict certain content to specific countries). Using a VPN to play legitimately in a different region isn't something we see as bannable on major platforms.
 
-## Myth 4: "Premium VPNs are always better for gaming than free ones."
+## 17. Myth 4: "Premium VPNs are always better for gaming than free ones."
 
 Paid VPNs have more servers, higher speed caps, and more consistent infrastructure. Those things matter. But the premium-vs-free gap in gaming specifically is narrower than you'd think, because gaming doesn't need the resources that make paid VPNs worth it for other use cases. If a free VPN runs WireGuard and has an exit node close to your game's servers, the practical gaming experience may be indistinguishable from a paid option. The clearest advantage of a premium tier is when you specifically need low-latency exits - like OllaVPN's Pro plan - or when you need simultaneous connections across five devices.
 
-## Myth 5: "Any VPN works for region-switching."
+## 18. Myth 5: "Any VPN works for region-switching."
 
 Region-switching - connecting to a server in another country to access geo-restricted games or earlier launch dates - requires a VPN exit in that specific region. Most free VPNs cover 5–10 countries, which is adequate for common regions (US, UK, Germany, Japan) and completely inadequate for less common ones (Vietnam, Brazil, Turkey, South Africa). OllaVPN's 120-country free tier is an unusual exception to this - it's the only free tier we're aware of that covers regions like Southeast Asia, South America, and Africa on the free plan, not just as a paid upsell.
 
-## How OllaVPN handles gaming
+## 19. How OllaVPN handles gaming
 
 We built OllaVPN around a question: what does a VPN that actually respects its users look like in 2026? When it comes to gaming, the answer comes down to the free tier architecture.
 
@@ -376,7 +376,6 @@ Most free VPNs make their free tier bad enough that upgrading is the obvious cho
 The 120-country coverage on the free tier is the part that genuinely sets it apart for gaming. Where Proton VPN's free tier covers five regions and Windscribe covers ten, OllaVPN's free tier covers 120+. For a gamer who plays on servers in Southeast Asia, Latin America, or the Middle East, that's not a minor distinction - it's the difference between a free VPN that can actually connect close to your game server and one that routes you through Amsterdam regardless.
 
 The Pro plan - starting at $2.99/month on a 24-month commitment - adds five simultaneous devices, a 10 Gbps speed cap per session, and dedicated low-latency gaming exits that are explicitly optimized for gaming traffic. If you find the free tier works for you and want to remove the remaining constraints, the Pro plan is the natural next step.
-
 </div>
 
 <section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">

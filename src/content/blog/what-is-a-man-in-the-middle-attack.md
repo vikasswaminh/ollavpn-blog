@@ -57,7 +57,7 @@ What Is a [Man-in-the-Middle](/blog/what-is-a-man-in-the-middle-attack.html) (MI
 
 The plain-English guide to one of the oldest tricks in networking, still working in 2026. How someone can quietly insert themselves into a conversation you think is private, the specific techniques that make it possible, and the handful of habits that shut the door on almost all of them.
 
-## Why this old attack still works in 2026
+## 1. Why this old attack still works in 2026
 
 QUICK ANSWER :
 
@@ -71,7 +71,7 @@ None of that was a mistake exactly  -  these protocols needed to be fast, simple
 
 HTTPS fixed an enormous amount. It did not fix everything sitting underneath it.
 
-## A simple analogy  -  the mail carrier who reads your letters
+## 2. A simple analogy  -  the mail carrier who reads your letters
 
 Imagine you're writing a letter to a friend and handing it to what you believe is your regular mail carrier. In a [man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attack, someone has quietly taken your regular carrier's place  -  maybe they're wearing a convincing uniform, maybe they've simply shown up at your mailbox first. You hand over the letter as normal. They open it, read it, perhaps copy down anything interesting, reseal it, and deliver it onward.
 
@@ -83,7 +83,7 @@ Modern network encryption is the equivalent of sealing that letter inside a tamp
 
 A [man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attack, at its core, is always some version of an attacker trying to get their hands on your letters before that seal makes tampering pointless  -  either by intercepting them before the envelope goes on, or by tricking you into using a broken envelope in the first place.
 
-## What a man-in-the-middle attack actually is
+## 3. What a man-in-the-middle attack actually is
 
 A [man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attack is any situation where a third party secretly positions itself between two communicating parties, relaying (and potentially reading or altering) traffic between them, while both original parties believe they're communicating directly with each other.
 
@@ -95,7 +95,7 @@ An attacker can get into that position through a fake Wi-Fi hotspot, through man
 
 Later sections in this guide walk through each of these individually, because the specific mechanism matters enormously for understanding both the risk and the fix.
 
-## The three things every MITM attack needs
+## 4. The three things every MITM attack needs
 
 QUICK ANSWER :
 
@@ -111,7 +111,7 @@ It helps to break the attack down into its constituent requirements, because doi
 
 Every specific [MITM](/blog/what-is-a-man-in-the-middle-attack.html) technique covered in this guide is really just a different way of satisfying these same three requirements. Understanding that pattern is more useful than memorizing any single technique, because new variations keep appearing that are really just new answers to the same three-part problem.
 
-## How attackers actually get in the middle
+## 5. How attackers actually get in the middle
 
 [MITM](/blog/what-is-a-man-in-the-middle-attack.html) attacks fall into a handful of well-documented categories: fake Wi-Fi hotspots (evil twins), local-network identity spoofing (ARP spoofing), domain-resolution manipulation (DNS spoofing), certificate and encryption downgrade attacks (SSL stripping), and large-scale internet routing manipulation (BGP hijacking). Each achieves the same basic goal through a different weak point.
 
@@ -119,7 +119,7 @@ The rest of this guide walks through the specific techniques one at a time, roug
 
 Knowing the names matters less than understanding the shape of each one  -  but knowing the names does help you make sense of security news and vendor advisories when they come up.
 
-## The evil twin  -  fake Wi-Fi hotspots explained
+## 6. The evil twin  -  fake Wi-Fi hotspots explained
 
 QUICK ANSWER :
 
@@ -133,7 +133,7 @@ Some evil-twin setups go further, presenting a fake captive-portal login page de
 
 The defense here is mostly about habits rather than technology: verifying a network name with staff before connecting, treating any "free Wi-Fi requires login with your email/password" prompt with suspicion, and  -  most reliably  -  running a VPN so that even a successful evil-twin connection only gets the attacker an encrypted stream they can't read.
 
-## ARP spoofing  -  hijacking traffic on your own network
+## 7. ARP spoofing  -  hijacking traffic on your own network
 
 Address Resolution Protocol (ARP) spoofing exploits the fact that devices on a local network trust unauthenticated broadcast messages claiming "this IP address belongs to this hardware address." An attacker already on the same network sends forged ARP messages claiming to be the router, redirecting nearby devices' traffic through their own machine.
 
@@ -147,7 +147,7 @@ The router then typically forwards the traffic onward (to avoid an obvious outag
 
 This is precisely the kind of attack that a well-built VPN's network architecture is designed to make irrelevant  -  a properly isolated tunnel means that even if an attacker successfully spoofs the local network's traffic flow, everything they capture is encrypted at a layer their local-network trickery can't touch.
 
-## DNS spoofing  -  sending you to the wrong address entirely
+## 8. DNS spoofing  -  sending you to the wrong address entirely
 
 QUICK ANSWER :
 
@@ -163,7 +163,7 @@ A well-executed DNS spoofing attack combined with a convincing fake login page h
 
 Encrypted DNS  -  DNS over HTTPS (DoH) or DNS over TLS (DoT)  -  directly addresses this by making the lookup itself unreadable and unforgeable to anyone sitting on the local network, closing off this specific technique regardless of how compromised the local network otherwise is.
 
-## SSL stripping and forged certificates
+## 9. SSL stripping and forged certificates
 
 QUICK ANSWER :
 
@@ -183,7 +183,7 @@ Forged or maliciously trusted certificates take a more direct approach: if an at
 
 They then quietly relay (and read) everything in between. This is precisely why browser certificate warnings exist, and precisely why clicking through them without understanding what they mean is one of the more dangerous habits in everyday browsing.
 
-## BGP hijacking  -  MITM at internet scale
+## 10. BGP hijacking  -  MITM at internet scale
 
 Border Gateway Protocol (BGP) hijacking involves manipulating the routing announcements that tell the internet's backbone how to reach a given block of IP addresses. It redirects traffic destined for a legitimate service through infrastructure the attacker controls  -  a [MITM](/blog/what-is-a-man-in-the-middle-attack.html) attack executed at the level of internet infrastructure rather than a single local network.
 
@@ -197,7 +197,7 @@ Because this technique operates at the routing-infrastructure level rather than 
 
 What it does mean for you personally: strong end-to-end encryption (HTTPS, a VPN tunnel) still protects the content of your traffic even if it's briefly routed somewhere unexpected at the infrastructure level.
 
-## Real incidents worth knowing about
+## 11. Real incidents worth knowing about
 
 2011
 
@@ -225,7 +225,7 @@ Evil-twin Wi-Fi attacks at conferences, airports, and hotels continue to be docu
 
 If there's a single takeaway from this timeline, it's that [MITM](/blog/what-is-a-man-in-the-middle-attack.html) attacks haven't gone away as encryption has improved  -  they've moved to whichever layer still has the weakest verification. Over time, that shifted from raw traffic interception toward certificate trust and routing infrastructure.
 
-## How HTTPS actually defeats most of this
+## 12. How HTTPS actually defeats most of this
 
 QUICK ANSWER :
 
@@ -243,7 +243,7 @@ Certificate-based identity verification means that before any of that encryption
 
 Put together, this is why plain ARP spoofing or an evil-twin Wi-Fi network, on their own, mostly fail against a properly HTTPS-secured site today: the attacker can redirect your traffic through their equipment, but they can't read it, and they can't convincingly impersonate the destination without the browser noticing something is wrong.
 
-## Where HTTPS still leaves a gap
+## 13. Where HTTPS still leaves a gap
 
 HTTPS doesn't help if a user clicks through a certificate warning, if a site never migrated to HTTPS in the first place, if a device has been tricked into trusting a fraudulent root certificate, or if the attack targets the layer underneath HTTPS entirely  -  like DNS or raw network metadata, both of which remain visible even on a fully HTTPS-protected connection.
 
@@ -259,7 +259,7 @@ Everything DNS and metadata. HTTPS protects content, not the domain lookup or ne
 
 This is exactly why the practical advice in this guide layers multiple defenses rather than treating HTTPS as a single complete solution.
 
-## Five myths about man-in-the-middle attacks
+## 14. Five myths about man-in-the-middle attacks
 
 "[MITM](/blog/what-is-a-man-in-the-middle-attack.html) attacks only happen on [public Wi-Fi](/blog/how-public-wifi-steals-passwords.html)."
 
@@ -281,7 +281,7 @@ Evil-twin hotspots and basic ARP spoofing can be executed with inexpensive, wide
 
 This is precisely the point of a well-executed [MITM](/blog/what-is-a-man-in-the-middle-attack.html) attack. A passive attacker who's only reading traffic, not altering it, leaves the connection functioning exactly as expected. The absence of visible disruption is not evidence of safety; it's often the goal.
 
-## How to actually protect yourself
+## 15. How to actually protect yourself
 
 QUICK ANSWER :
 
@@ -305,7 +305,7 @@ What actually closes the gap
 
 • Avoid installing unnecessary root certificates, and periodically review which ones are trusted on devices where that's feasible, particularly after installing free or ad-supported software.
 
-## How OllaVPN closes the network-level gap
+## 16. How OllaVPN closes the network-level gap
 
 We built OllaVPN around the idea that the network you happen to be connected to shouldn't determine how exposed your traffic is. For the specific [MITM](/blog/what-is-a-man-in-the-middle-attack.html) techniques covered in this guide, here's what that means in practice.
 
@@ -323,16 +323,15 @@ We built OllaVPN around the idea that the network you happen to be connected to 
 
 • What to remember from this guide
 
-## • Why this old attack still works in 2026
+## 17. • Why this old attack still works in 2026
 
-## • A simple analogy  -  the mail carrier who reads your letters
+## 18. • A simple analogy  -  the mail carrier who reads your letters
 
-## • What a man-in-the-middle attack actually is
+## 19. • What a man-in-the-middle attack actually is
 
-## • The three things every MITM attack needs
+## 20. • The three things every MITM attack needs
 
-## • How HTTPS actually defeats most of this
-
+## 21. • How HTTPS actually defeats most of this
 </div>
 
 <section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">

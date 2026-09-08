@@ -53,19 +53,19 @@ tags: ['how-to-guides']
 
 It's incredibly frustrating when your VPN suddenly stops working, especially on your Mac, leaving you exposed or locked out of content. You're not alone; it's a common hiccup, and thankfully, it's usually something you can fix without needing to call in a tech expert. We're going to dive into the most frequent culprits behind a stubborn VPN connection on macOS, offering practical, step-by-step solutions. Our goal is to get you back online, securely and smoothly, so you can get back to browsing, streaming, or working with peace of mind.
 
-## What's the short answer to fixing your VPN connection in 5 minutes?
+## 1. What's the short answer to fixing your VPN connection in 5 minutes?
 
 The quickest way to fix a VPN connection is often to restart your devices and the VPN app, then try switching servers or protocols.
 
 Most of the time, when your VPN isn't connecting or is acting flaky, it's not a deep, complex issue. It's usually something simple that a quick reset will resolve. Think of it like rebooting your computer when it's acting up  -  the same principle applies here. Your first steps should always be to perform a series of restarts, as these often clear out temporary glitches or stale network states. Start by fully quitting your OllaVPN app and then reopening it. If that doesn't work, try restarting your entire computer  -  yes, even your Mac needs a fresh start sometimes. While your computer is rebooting, it's a great idea to also restart your router. Unplug it from power for about 30 seconds, then plug it back in. This clears your home network's connection and can resolve many internet-related issues that might be preventing your VPN from connecting properly. Make sure you can actually load web pages without the VPN before trying to connect again. If you've done all that and you're still having trouble, the next step is to open your OllaVPN app and try connecting to a different VPN server location. Sometimes a specific server might be temporarily overloaded or experiencing maintenance. You can also try switching your VPN protocol; for example, if you're using WireGuard, see if switching to our QUIC option helps, especially if you're on a restrictive network. These simple steps cover the vast majority of connection problems you might encounter.
 
-## How do I troubleshoot my Mac VPN connection step-by-step?
+## 2. How do I troubleshoot my Mac VPN connection step-by-step?
 
 Troubleshooting your Mac VPN connection typically involves checking your internet, confirming app settings, and sometimes resetting network configurations.
 
 When your VPN isn't connecting on your Mac, it can be frustrating. Let's walk through the most common fixes, starting simple and moving to more involved solutions. First, and it might sound obvious, but always \*\*check your internet connection\*\* directly. Can you browse the web without the VPN connected? If not, the issue isn't your VPN, it's your local network. Try restarting your router and modem. If your internet is fine, then we move to the VPN itself. Often, security software can interfere. Temporarily \*\*disable your firewall/antivirus\*\* software and try connecting to the VPN again. If it works, you'll need to add an exception for your VPN app in your security settings. Next, ensure your VPN app has the necessary permissions. On macOS, this often means checking System Settings > Privacy & Security > Full Disk Access or Accessibility, and making sure your VPN app is listed and enabled. Sometimes, a simple restart of the VPN application, or even your entire Mac, can clear up temporary glitches. If those don't work, consider a fresh start. You might need to \*\*reinstall your VPN client\*\*. This ensures you have the latest version and a clean installation without any corrupted files. Before reinstalling, make sure to completely uninstall the old version, including any helper tools or profiles it might have installed. For more persistent issues, you could look at your \*\*DNS settings\*\*. Sometimes, manually setting your Mac's DNS to a public resolver like Cloudflare (1.1.1.1) or Google (8.8.8.8) can resolve connectivity problems, especially if your ISP's DNS is causing conflicts. Finally, for the trickiest problems, you might need a \*\*network settings reset (cautiously)\*\*. This is a more drastic step and should be done only if other options fail, as it will clear all your saved Wi-Fi networks and other network configurations. You can do this by going to System Settings > Network, selecting a network interface (like Wi-Fi), clicking "Details," and then "Reset Wi-Fi Settings" or similar options for other interfaces. Make sure you know your Wi-Fi password before doing this! Remember, OllaVPN is designed to just work, but sometimes your local environment needs a little nudge.
 
-## What should I do if a specific troubleshooting step doesn't work for me?
+## 3. What should I do if a specific troubleshooting step doesn't work for me?
 
 If a troubleshooting step doesn't work, document what happened, try alternative solutions, and then contact OllaVPN support for personalized help.
 
@@ -75,7 +75,7 @@ Once you've documented the outcome, it's time to **try alternative solutions**. 
 
 If you've exhausted the self-help options and are still stuck, don't hesitate to **contact VPN support**. That's what we're here for! When you reach out, provide all the documentation you gathered – the exact problem, the steps you tried, and any error messages you received. This allows our team to quickly diagnose the issue and provide more targeted assistance, getting you back online and secure as fast as possible. Remember, even with the [OllaVPN free plan](/free-vpn), you get access to our dedicated support team.
 
-## Why does this troubleshooting approach work better than just guessing?
+## 4. Why does this troubleshooting approach work better than just guessing?
 
 This approach works better because it systematically eliminates variables, quickly isolating the root cause of the problem.
 
@@ -85,7 +85,7 @@ By focusing on **systematic elimination**, you're not just guessing; you're acti
 
 This method also helps you understand what's happening under the hood. As you go through the steps, you'll learn a bit more about how your connection works, what various error messages might mean, and how to perform basic **network diagnostics**. This knowledge empowers you to troubleshoot future issues more effectively and helps in **avoiding unnecessary changes** that could destabilize your system. It's a structured way to approach problems, preventing the "blind flailing" that often makes technical issues more frustrating than they need to be.
 
-## What are the most common VPN connection errors on Mac, and how do I fix them quickly?
+## 5. What are the most common VPN connection errors on Mac, and how do I fix them quickly?
 
 The most common Mac VPN connection errors often stem from network configuration, authentication problems, or local software conflicts, and can usually be resolved by checking your internet, re-authenticating, or adjusting security settings.
 
@@ -95,13 +95,13 @@ If your internet is fine, you might see errors like **"authentication failed"** 
 
 Sometimes, your Mac's own security features or other software can interfere. Your firewall might be blocking the VPN connection, so temporarily disabling it (just for a test!) can help diagnose the problem. Also, other security software or even outdated network drivers can cause issues. For **DNS issues**, OllaVPN handles DNS within the tunnel, but if you've manually configured DNS on your Mac, it can sometimes conflict. Try reverting to automatic DNS settings. If you're on a very restrictive network, switching OllaVPN to use the QUIC protocol instead of the default WireGuard can sometimes bypass blocks, as QUIC is designed to be more resilient to network interference.
 
-## How can I verify that my VPN is actually connected and working correctly?
+## 6. How can I verify that my VPN is actually connected and working correctly?
 
 You can verify your VPN connection by checking your IP address and running a DNS leak test after connecting.
 
 The simplest way to confirm your VPN is active is to perform an **IP address check**. Before you connect to OllaVPN, visit a site like [whatismyipaddress.com](https://whatismyipaddress.com) to note your current public IP address. Then, connect to OllaVPN and refresh that same page. If the IP address has changed to one associated with OllaVPN's network, you're successfully connected. This tells you that your internet traffic is now routing through our secure servers. Beyond just an IP address change, you'll also want to confirm there are no leaks. A **DNS leak test** is crucial here. Your Domain Name System (DNS) requests can sometimes bypass your VPN, revealing your actual location or ISP even when your IP address appears hidden. Sites like [dnsleaktest.com](https://www.dnsleaktest.com) can help. After connecting to OllaVPN, run their extended test. You should see only OllaVPN's DNS servers, or generic public ones, but crucially not your ISP's original DNS servers. OllaVPN uses its own in-tunnel DNS to prevent these types of leaks, making sure your requests stay private. Finally, confirm your **kill switch** is active too. OllaVPN's kill switch is on by default, ensuring that if your VPN connection ever unexpectedly drops, your internet access is immediately cut off. This prevents any data from accidentally leaking outside the secure tunnel. While the IP and DNS tests confirm an active connection, the kill switch provides peace of mind that your privacy remains protected even during unforeseen network interruptions.
 
-## Are there tools that can make fixing VPN connection issues easier?
+## 7. Are there tools that can make fixing VPN connection issues easier?
 
 Yes, both your operating system and your VPN app often have built-in tools that can help you diagnose and fix connection problems.
 
@@ -111,19 +111,19 @@ Beyond the operating system, a good VPN application itself usually provides inte
 
 The **OllaVPN's user interface** is also designed to give you clear feedback. It won't just say "failed to connect"; it'll try to provide a more specific reason or suggest next steps. For example, if you're on a very restrictive network, our QUIC option might be a good alternative, and the app will guide you to that. Remember, even on our [10 Mbps free plan](/free-vpn), you get access to all these diagnostic tools and the same underlying connection technology as our Plus users, so you're never left in the dark when troubleshooting.
 
-## How does a VPN (or its absence) actually impact your Mac's internet connection?
+## 8. How does a VPN (or its absence) actually impact your Mac's internet connection?
 
 A VPN encrypts your internet traffic and routes it through a secure server, changing your visible IP address and protecting your online activity from prying eyes.
 
 When you connect to the internet without a VPN, your Mac sends data directly to websites and services. Your internet service provider (ISP) can see everything you do: every site you visit, every app you use, and potentially even the unencrypted content of your communications. Your public IP address, which is tied to your physical location, is also visible to every website you interact with. This direct path makes your data vulnerable to surveillance, tracking, and even content blocking based on your location. A VPN changes this by creating an **encryption tunnel** between your Mac and a VPN server. All your internet traffic goes through this tunnel, completely scrambled and unreadable to anyone outside it, including your ISP. Once it reaches the VPN server, it then goes out to the internet from the server's IP address, effectively achieving **IP address masking**. This makes it look like your traffic is originating from the VPN server's **server location**, not your actual one, giving you privacy and the ability to bypass geo-restrictions. Of course, this extra step isn't entirely "free." There's some **network overhead** involved. Encrypting and decrypting data, plus routing it through an additional server, can introduce a slight delay or reduce your connection speed. This is why a good VPN aims for efficiency. OllaVPN, for instance, uses modern protocols like WireGuard and offers 10 Mbps on its free tier, which is plenty for most daily tasks. For those who need more, our Plus plan offers up to 10 Gbps. We also use **post-quantum-ready encryption**, meaning your privacy is protected not just today, but against future advances in computing power as well. So, while not having a VPN means a simpler, more direct connection, it comes at the cost of your privacy and freedom. With a VPN, you gain a powerful shield, but you're trading a tiny bit of raw speed for significant security and anonymity.
 
-## Should I adjust advanced network settings on my Mac to fix VPN problems?
+## 9. Should I adjust advanced network settings on my Mac to fix VPN problems?
 
 You generally shouldn't adjust advanced network settings on your Mac unless you know exactly what you're doing, and you've backed up your current settings.
 
 It's tempting to dive into your Mac's network preferences when your VPN isn't behaving, but for most users, this is rarely the solution and can often create more problems than it solves. OllaVPN is designed to work out-of-the-box with default network configurations. If you're experiencing issues, it's far more likely to be a temporary network glitch, a firewall blocking access, or an issue with the VPN application itself, rather than a deep-seated macOS network setting. There are a few niche scenarios where tweaking things might be necessary. For instance, if you're on a highly restrictive network that uses specific **proxy settings**, you might need to configure those in your Mac's network preferences for \*any\* internet traffic to work, VPN or not. Similarly, some very old or unusual routers might have issues with **IPv6**, and disabling it could help, though this is rare with modern equipment. Adjusting **MTU size** is another advanced tweak that can sometimes resolve connectivity issues on specific networks, but incorrect values can severely degrade performance or prevent connections entirely. Before touching anything, always make sure to **backup your settings**. Take screenshots of your current configurations or export them if the option is available. That way, if things go sideways, you can restore your Mac to its previous working state without a full system reinstall. If you're unsure, it's always best to contact [OllaVPN support](/support) or a trusted IT professional first.
 
-## Could my router or network firewall be blocking my VPN connection?
+## 10. Could my router or network firewall be blocking my VPN connection?
 
 Yes, your router or network firewall can absolutely block your VPN connection, and it's a common cause of connectivity issues.
 
@@ -133,7 +133,7 @@ Most of the time, if your router is blocking your VPN, it's not trying to be mal
 
 If you're having trouble, it's worth logging into your router's administration panel (usually by typing its IP address into your browser, often 192.168.1.1 or 192.168.0.1). Look for sections related to "firewall," "security," or "VPN passthrough." Make sure your router has the latest **firmware updates** too, as manufacturers often release patches that improve compatibility and performance for various internet services, including VPNs.
 
-## When is it time to consider switching to a different VPN service?
+## 11. When is it time to consider switching to a different VPN service?
 
 It's time to consider switching VPNs when you face persistent issues, poor support, slow speeds, or growing privacy concerns.
 
@@ -143,7 +143,7 @@ Another major red flag is **poor support**. If you can't get clear, timely answe
 
 That's where OllaVPN comes in. We offer a completely free plan with 10 Mbps speed, every country in our network, and no data limits, no ads, and no obligation to upgrade. It’s designed to be a transparent, privacy-first option that just works. If you need more speed for 4K streaming or heavy downloads, **OllaVPN Plus** gives you 10 Gbps and support for five devices for just $2 a month. We fund our free tier through our Plus subscribers, not by selling your data or running intrusive ads, so you know exactly where you stand.
 
-## How to know it actually worked
+## 12. How to know it actually worked
 
 A how-to guide is only useful if you can verify the outcome. After completing the steps above, the easiest checks to confirm the configuration is in place:
 
@@ -155,7 +155,7 @@ A how-to guide is only useful if you can verify the outcome. After completing th
 
 **No WebRTC leak.** Open [our WebRTC leak test](/webrtc-leak-test). You should see only the exit's IPv4 address. If your real IP appears (private LAN address or public IPv4/IPv6), WebRTC is bypassing the VPN  -  either OllaVPN's leak prevention has failed (file a report at `[[email protected]](/cdn-cgi/l/email-protection)`) or your browser has a WebRTC-specific privacy issue we can help diagnose.
 
-## If a step fails, here's how to debug
+## 13. If a step fails, here's how to debug
 
 The most common failure modes for any VPN setup task on Windows, macOS, or Android, in order of frequency:
 
@@ -167,7 +167,7 @@ The most common failure modes for any VPN setup task on Windows, macOS, or Andro
 
 **Speed is much slower than expected.** The exit you picked is either congested or geographically far from you. Try a closer exit (the country picker shows latency). The free-tier 10 Mbps cap is the ceiling regardless of exit choice; if you need more, the Pro tier at $2/mo annual lifts it to 10 Gbps.
 
-## About this guide
+## 14. About this guide
 
 Maintained by [Nathan Pratt](/about/team#nathan-pratt), OllaVPN's Privacy & Security Lead. Fact-checked by [Hannah Wu](/about/team#hannah-wu), Senior Security Engineer. We refresh this post quarterly so its facts, recommendations, and competitor comparisons stay accurate as the category evolves. The last full re-evaluation was 23 June 2026; the next is scheduled for September 2026.
 
@@ -175,14 +175,13 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
 
 ⭐ Key takeaways
 
-## What to remember from this guide
+## 15. What to remember from this guide
 
 *   What&#39;s the short answer to fixing your VPN connection in 5 minutes?
 *   How do I troubleshoot my Mac VPN connection step-by-step?
 *   What should I do if a specific troubleshooting step doesn&#39;t work for me?
 *   Why does this troubleshooting approach work better than just guessing?
 *   What are the most common VPN connection errors on Mac, and how do I fix them quickly?
-
 </div>
 
 <section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
