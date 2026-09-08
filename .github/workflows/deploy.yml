@@ -44,6 +44,11 @@ jobs:
         run: |
           git clone --depth 1 https://github.com/vikasswaminh/ollavpn-marketing.git _marketing
           cp -r public/blog/* _marketing/blog/
+          mkdir -p _marketing/_astro _marketing/blog/_astro
+          cp -r dist/_astro/* _marketing/_astro/ 2>/dev/null || true
+          cp -r dist/_astro/* _marketing/blog/_astro/ 2>/dev/null || true
+          cp -r public/_astro/* _marketing/_astro/ 2>/dev/null || true
+          cp -r public/_astro/* _marketing/blog/_astro/ 2>/dev/null || true
           mkdir -p _marketing/images _marketing/blog/images
           cp -r public/images/* _marketing/images/
           cp -r public/images/* _marketing/blog/images/
