@@ -17,33 +17,33 @@ tags: ['beginner-basics']
   <h3 style="font-size: 1.25rem; font-weight: 800; color: #0F172A; margin: 0 0 14px 0;">Key Takeaways</h3>
   <ul class="takeaways-list-24obs" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column;">
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">What exactly is DNS over HTTPS, in plain English:</strong> .
+        <strong style="color: #0F172A; font-weight: 800;">What exactly is DNS over HTTPS, in plain English:</strong> DNS over HTTPS (DoH) is a way to look up website addresses securely, encrypting your requests so no one can snoop on what sites you're trying to visit.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">How does DNS over HTTPS actually work under the hood:</strong> .
+        <strong style="color: #0F172A; font-weight: 800;">How does DNS over HTTPS actually work under the hood:</strong> DNS over HTTPS (DoH) is a way to look up website addresses securely, encrypting your requests so no one can snoop on what sites you're trying to visit.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">Why does DNS over HTTPS matter for everyday users like you:</strong> .
+        <strong style="color: #0F172A; font-weight: 800;">Why does DNS over HTTPS matter for everyday users like you:</strong> DNS over HTTPS (DoH) is a way to look up website addresses securely, encrypting your requests so no one can snoop on what sites you're trying to visit.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">What are some common misconceptions about DNS over HTTPS:</strong> .
+        <strong style="color: #0F172A; font-weight: 800;">What are some common misconceptions about DNS over HTTPS:</strong> DNS over HTTPS (DoH) is a way to look up website addresses securely, encrypting your requests so no one can snoop on what sites you're trying to visit.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">How does DoH relate to other internet privacy concepts you might know:</strong> .
+        <strong style="color: #0F172A; font-weight: 800;">How does DoH relate to other internet privacy concepts you might know:</strong> DoH is a piece of the privacy puzzle, working alongside, not replacing, tools like VPNs and HTTPS to protect different aspects of your online activity.
       </div>
     </li>
   </ul>
@@ -51,18 +51,7 @@ tags: ['beginner-basics']
 
 <div class="blog-main-content-box">
 
-2026 · 07 · 15 · PRIVACY & SECURITY · 4,963 WORDS
-
-
 You've probably heard the term "DNS" floating around, especially when privacy comes up. And then there's "DNS over HTTPS" or "DoH," which sounds super technical. Don't worry, it's not as complicated as it sounds. Think of it as a crucial upgrade to how your computer finds websites, adding a significant layer of privacy to your online life. This article will break down exactly what DoH is, why it matters to you, and how it protects your internet activity from prying eyes. It's not just for tech experts; it's something that impacts everyone who uses the internet.
-
-TL;DR - The Short Answer
-
-DNS over HTTPS (DoH) encrypts your website lookups, which are essentially the requests your computer sends to find a website's address. Think of it like putting your destination in a sealed envelope instead of shouting it out. This stops snoopers from seeing exactly which sites you're trying to visit before you even get there.
-
-Without DoH, your internet provider (ISP) or anyone watching your network can see every single website you try to access, even if the website itself is encrypted. They can use this information to track you, block content, or even sell your browsing habits to advertisers. It's a key piece of your online privacy puzzle.
-
-A good VPN, like OllaVPN, handles DoH automatically and securely, alongside encrypting all your internet traffic from your device to our servers. This means your DNS requests and everything else you do online stay private and protected. We don't log your activity, and our free plan gives you 10 Mbps forever, with no card or email required.
 
 ## What exactly is DNS over HTTPS, in plain English?
 

@@ -17,33 +17,33 @@ tags: ['beginner-basics']
   <h3 style="font-size: 1.25rem; font-weight: 800; color: #0F172A; margin: 0 0 14px 0;">Key Takeaways</h3>
   <ul class="takeaways-list-24obs" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column;">
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">What exactly is split tunneling:</strong> .
+        <strong style="color: #0F172A; font-weight: 800;">What exactly is split tunneling:</strong> Split tunneling is a VPN feature that lets you choose which of your internet traffic goes through the encrypted VPN tunnel and which connects directly to the internet.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">How does split tunneling actually work under the hood:</strong> .
+        <strong style="color: #0F172A; font-weight: 800;">How does split tunneling actually work under the hood:</strong> Split tunneling is a VPN feature that lets you choose which of your internet traffic goes through the encrypted VPN tunnel and which connects directly to the internet.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">Why should you care about split tunneling for your daily internet use:</strong> .
+        <strong style="color: #0F172A; font-weight: 800;">Why should you care about split tunneling for your daily internet use:</strong> Split tunneling is a VPN feature that lets you choose which of your internet traffic goes through the encrypted VPN tunnel and which connects directly to the internet.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">Are there common misunderstandings about split tunneling:</strong> .
+        <strong style="color: #0F172A; font-weight: 800;">Are there common misunderstandings about split tunneling:</strong> Split tunneling is a VPN feature that lets you choose which of your internet traffic goes through the encrypted VPN tunnel and which connects directly to the internet.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">How does split tunneling relate to your overall internet privacy:</strong> .
+        <strong style="color: #0F172A; font-weight: 800;">How does split tunneling relate to your overall internet privacy:</strong> Split tunneling is a VPN feature that lets you choose which of your internet traffic goes through the encrypted VPN tunnel and which connects directly to the internet.
       </div>
     </li>
   </ul>
@@ -51,18 +51,7 @@ tags: ['beginner-basics']
 
 <div class="blog-main-content-box">
 
-2026 · 07 · 15 · PRIVACY & SECURITY · 5,204 WORDS
-
-
 You've probably heard that a VPN encrypts all your internet traffic, but what if you don't want everything to go through the VPN? Sometimes, you need to access local network resources while protecting your browsing, or maybe you want to stream international content without slowing down your local downloads. That's where split tunneling comes in. It's a clever feature that gives you fine-grained control over which apps or websites use your VPN and which don't, offering a balance between security and convenience. We'll break down how it works and why you might want it.
-
-TL;DR - The Short Answer
-
-Split tunneling is a clever feature that lets you decide which internet traffic uses your VPN's secure tunnel and which goes directly to the internet. It's like having two separate pathways for your online activity, giving you a lot more control over your connection.
-
-This is super handy for a few reasons. You can keep your sensitive browsing or streaming private and encrypted through OllaVPN, while allowing other apps to connect directly at full local speed. This helps you balance security with convenience, especially if you need to access local network devices or services that might be blocked by a VPN.
-
-OllaVPN offers split tunneling so you can customize exactly what you protect. While our free plan already gives you a solid 10 Mbps for everything you need, split tunneling lets you fine-tune your setup even further, ensuring you get the best performance for every online task without compromising your privacy with OllaVPN.
 
 ## What exactly is split tunneling?
 

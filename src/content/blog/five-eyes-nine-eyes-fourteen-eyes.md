@@ -51,20 +51,7 @@ tags: ['privacy-security']
 
 <div class="blog-main-content-box">
 
-2026 · 07 · 15 · PRIVACY & SECURITY · 5,125 WORDS
-
-
 The plain-English guide to the intelligence-sharing alliances that come up in every serious VPN privacy conversation. What they actually are, what they actually do, what it means for you as a user  -  and the parts that VPN marketing tends to overstate.
-
-TL;DR  -  The Short Answer
-
-[S **Try OllaVPN free  -  post-quantum-ready, lifetime free plan.** No credit card. Or $2/mo for 5 devices on a faster plan. DOWNLOAD →](/dl/)
-
-The **Five Eyes** is an intelligence-sharing alliance between the United States, United Kingdom, Canada, Australia, and New Zealand, formalized by the 1946 UKUSA Agreement. The **Nine Eyes** adds Denmark, France, the Netherlands, and Norway. The **Fourteen Eyes** further adds Germany, Belgium, Italy, Spain, and Sweden. Each tier represents a different level of cooperation in sharing signals intelligence. In VPN terms, jurisdictions outside these alliances  -  like Switzerland, Panama, and the British Virgin Islands  -  are often preferred. But here's the honest truth: **a properly built no-logs VPN is privacy-protective regardless of jurisdiction**, because there is nothing for any government to obtain. Jurisdiction matters; a strong product matters more.
-
-Spend any time reading about VPNs and you'll quickly run into a phrase that sounds vaguely ominous: the _Five Eyes_. Or maybe its more comprehensive cousins, the _Nine Eyes_ and the _Fourteen Eyes_. Most VPN marketing pages reference them. Most don't quite explain what they are.
-
-This guide does. Written plainly, with respect for your time. We'll cover what the alliances actually are, what they actually do, what's legitimately worth thinking about as a VPN user, and  -  equally important  -  what's overstated. The goal is to leave you with a clear, balanced understanding that no marketing page will give you.
 
 ## Why this comes up in every VPN conversation
 
@@ -328,7 +315,6 @@ $2 / month · 10 Gbps
 Five devices on one account. Same protection, faster connection.
 
 [Try OllaVPN free](../dl/)  -  no card, no email required.
-
 
 ## A broader-context closing thought
 

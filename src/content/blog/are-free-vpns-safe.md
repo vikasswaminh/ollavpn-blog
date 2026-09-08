@@ -23,9 +23,9 @@ tags: ['buyer-guides']
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">What makes a free VPN dangerous:</strong> .
+        <strong style="color: #0F172A; font-weight: 800;">What makes a free VPN dangerous:</strong> A free VPN becomes dangerous when its revenue depends on monetizing user data, injecting ads, or cutting corners on security infrastructure - all of which directly undermine the privacy the VPN is supposed to provide.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
@@ -60,12 +60,6 @@ The complete, no-spin breakdown of which free VPNs are genuinely safe, which one
 ✓ Reviewed
 
 Hannah Wu · Senior Security Engineer
-
-TL;DR  -  THE SHORT ANSWERMost free VPNs are not safe - but the reason is more specific than “free things are bad.” The problem is the business model. A VPN service costs real money to run: servers, bandwidth, engineers, audits. When a free VPN charges users nothing, it has to cover those costs somewhere. The majority do it by collecting and selling user data, injecting ads, or cutting corners on encryption and security infrastructure. Those trade-offs directly undermine the privacy a VPN is supposed to provide. A small number of free VPNs are genuinely safe - typically services that cap speed rather than monetizing data, operate under an audited no-logs policy, and fund the free tier through a paid upgrade. OllaVPN's free plan is built on exactly that model: 10 Mbps speed cap, zero data logging, no ads, post-quantum encryption, and a kill switch on by default - funded by Plus subscribers, not by your browsing history.
-
-The complication is not about price - it's about what economic model sits behind the product. A free VPN that charges nothing for unlimited data, unlimited speed, and thousands of servers is making money somehow. In most cases, you are the revenue. Understanding exactly how that works - and what it means for your actual safety - is the point of this guide.
-
-Free VPNs are downloaded hundreds of millions of times every year - often by people who've just connected to a suspicious public network, heard about [ISP tracking](/blog/what-your-isp-can-see-about-you.html) for the first time, or simply want a little more privacy without committing to a paid subscription. That's a completely reasonable starting point. The problem is that the category has been systematically exploited by operators who understand that privacy-seeking users won't read a privacy policy carefully before installing. This guide gives you the tools to do that evaluation quickly - and correctly.
 
 ## The honest answer - most aren't, but some are
 

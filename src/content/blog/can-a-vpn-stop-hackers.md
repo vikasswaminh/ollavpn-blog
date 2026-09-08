@@ -21,33 +21,33 @@ OllaVPN is designed to handle the network-layer part the right way: post-quantum
   <h3 style="font-size: 1.25rem; font-weight: 800; color: #0F172A; margin: 0 0 14px 0;">Key Takeaways</h3>
   <ul class="takeaways-list-24obs" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column;">
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">Can a VPN actually stop hackers:</strong> .
+        <strong style="color: #0F172A; font-weight: 800;">Can a VPN actually stop hackers:</strong> Yes, for a specific and important category of hacking - attacks that rely on a hacker intercepting or messing with your network connection.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">What's the technical reality of how a VPN blocks certain attacks:</strong> .
+        <strong style="color: #0F172A; font-weight: 800;">What's the technical reality of how a VPN blocks certain attacks:</strong> A VPN builds an encrypted tunnel between your device and a VPN server.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">What can hackers actually see when you're connected to a VPN:</strong> .
+        <strong style="color: #0F172A; font-weight: 800;">What can hackers actually see when you're connected to a VPN:</strong> Yes, for a specific and important category of hacking - attacks that rely on a hacker intercepting or messing with your network connection.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">How does a VPN protect you specifically on public Wi‑Fi:</strong> .
+        <strong style="color: #0F172A; font-weight: 800;">How does a VPN protect you specifically on public Wi‑Fi:</strong> Public Wi‑Fi is often unencrypted or weakly secured, which makes it easier for a nearby attacker to intercept traffic.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">What kinds of hacking can a VPN not stop, at all:</strong> .
+        <strong style="color: #0F172A; font-weight: 800;">What kinds of hacking can a VPN not stop, at all:</strong> A VPN provides zero protection against malware, phishing, weak or reused passwords, credential-stuffing attacks using leaked passwords, social engineering, or vulnerabilities in the software running on your device - because none of these attacks depend on intercepting your network traffic.
       </div>
     </li>
   </ul>
@@ -61,11 +61,9 @@ Shield your privacy with OllaVPN free  -  post-quantum encryption & zero logs.
 
 HOW-TO GUIDE · UPDATED July 16, 2026 · 14 MIN READ
 
-
 You've probably seen the ad: ominous music, a hooded figure hunched over a laptop, and a voiceover promising you’ll be “invisible to hackers.” It’s a catchy story, and it’s also only half-right. In some situations, a VPN really does block the kind of attack people worry about most. In other situations, it changes almost nothing. If you’re trying to decide whether a VPN will protect you from being hacked, you deserve the real mechanics - not the marketing version.
 
 Here’s what a VPN actually stops, what it doesn’t touch at all, and how to think about it as one piece of a bigger security plan.
-
 
 ## 1\. Can a VPN actually stop hackers?
 

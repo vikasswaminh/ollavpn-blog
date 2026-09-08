@@ -51,20 +51,7 @@ tags: ['privacy-security']
 
 <div class="blog-main-content-box">
 
-2026 · 07 · 15 · PRIVACY & SECURITY · 5,064 WORDS
-
-
 A plain-English guide to one of the most quietly important privacy concepts on the internet  -  what a DNS leak actually is, why it matters, how to test for one in under five minutes, and how to make sure you never have to worry about it again.
-
-TL;DR  -  The Short Answer
-
-[S **Try OllaVPN free  -  post-quantum-ready, lifetime free plan.** No credit card. Or $2/mo for 5 devices on a faster plan. DOWNLOAD →](/dl/)
-
-A **DNS leak** happens when your device sends DNS requests  -  the lookups that turn website names into numbers  -  outside your VPN's encrypted tunnel. Your browsing activity becomes visible to your internet service provider even while you think the VPN is protecting it. **To test:** connect to your VPN, then visit a DNS leak test site like _dnsleaktest.com_. If the test shows only your VPN provider's DNS servers, you're safe. If it shows your ISP's servers, you have a leak. **To prevent it for good:** use a reputable VPN that handles DNS inside the encrypted tunnel by default, with an always-on kill switch. [OllaVPN does this automatically](../dl/) on every connection.
-
-Most privacy stories on the internet are dramatic. A DNS leak is the opposite. It is the quiet, easy-to-miss way that a VPN you trust can still hand your browsing history to your internet provider  -  not because the VPN is malicious, but because of how the request for "where is this website" travels through your computer.
-
-The good news: a DNS leak is one of the easiest privacy problems to test for, and one of the easiest to fix. This guide walks you through both, in plain English, the way we'd explain it over coffee.
 
 ## What DNS actually does, in one paragraph
 
@@ -244,7 +231,6 @@ $2 / month · 10 Gbps
 Five devices on one account. Fast enough for gigabit home internet. Cheap enough that it isn't a decision.
 
 You can [try the free plan](../dl/) right now  -  no email, no card. Then run a DNS leak test and see for yourself.
-
 
 ## A broader-context closing thought
 

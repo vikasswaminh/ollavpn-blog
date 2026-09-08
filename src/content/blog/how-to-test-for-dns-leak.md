@@ -17,33 +17,33 @@ tags: ['how-to-guides']
   <h3 style="font-size: 1.25rem; font-weight: 800; color: #0F172A; margin: 0 0 14px 0;">Key Takeaways</h3>
   <ul class="takeaways-list-24obs" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column;">
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">What's the quick way to test for a DNS leak:</strong> .
+        <strong style="color: #0F172A; font-weight: 800;">What's the quick way to test for a DNS leak:</strong> To quickly test for a DNS leak, visit a dedicated DNS leak test website with your VPN off, note your original IP and DNS servers, then connect your VPN and re-run the test to ensure only your VPN's IP and DNS servers appear.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">How do you perform a DNS leak test, step-by-step:</strong> .
+        <strong style="color: #0F172A; font-weight: 800;">How do you perform a DNS leak test, step-by-step:</strong> You perform a DNS leak test by comparing your detected IP address and DNS servers before and after connecting to your VPN.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">What should you do if a step in the test doesn't work:</strong> .
+        <strong style="color: #0F172A; font-weight: 800;">What should you do if a step in the test doesn't work:</strong> If a step in the test doesn't work, re-read the instructions carefully, then refresh the page or try a different browser.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">Why is this DNS leak testing method reliable:</strong> .
+        <strong style="color: #0F172A; font-weight: 800;">Why is this DNS leak testing method reliable:</strong> Our DNS leak testing method is reliable because it uses direct observation of your network traffic to verify your DNS resolver in real-time, making no assumptions about your configuration.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">What are common DNS leak errors, and how do you fix them quickly:</strong> .
+        <strong style="color: #0F172A; font-weight: 800;">What are common DNS leak errors, and how do you fix them quickly:</strong> Common DNS leak errors often stem from misconfigured network settings or vulnerabilities in your browser, but you can usually fix them by checking your VPN's settings, clearing your DNS cache, or ensuring your VPN handles all DNS requests.
       </div>
     </li>
   </ul>
@@ -51,18 +51,7 @@ tags: ['how-to-guides']
 
 <div class="blog-main-content-box">
 
-2026 · 07 · 15 · PRIVACY & SECURITY · 5,176 WORDS
-
-
 You're using a VPN because you care about your privacy, but sometimes, a hidden vulnerability called a DNS leak can unintentionally expose your browsing, even with your VPN on. It's like locking your front door but leaving a window wide open! This guide will show you a simple, effective way to check for DNS leaks on any device, ensuring your online activity truly stays private and that your internet requests aren't taking an unprotected detour outside your secure VPN tunnel.
-
-TL;DR - The Short Answer
-
-A DNS leak is when your device accidentally sends your website requests to your internet provider instead of your VPN. This can expose what you're browsing and even your real location, completely defeating the purpose of using a VPN for privacy. It's a common issue, and something you definitely want to prevent.
-
-Testing for a DNS leak is really simple and only takes a couple of minutes. You'll just visit a specific website, make a note of the IP addresses and DNS servers it shows, and then compare those to what you expect when your VPN is connected. If you see your actual IP or your ISP's DNS servers, you've got a leak.
-
-If you do find a leak, don't worry, it's usually easy to fix. We'll walk you through why these leaks happen and the steps you can take to make sure your internet traffic stays encrypted and private. OllaVPN is designed to prevent these issues, giving you that peace of mind for free, with no data caps and no card ever required.
 
 ## What's the quick way to test for a DNS leak?
 

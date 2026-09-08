@@ -57,12 +57,6 @@ What Your ISP Can See About You (And How to Hide It)
 
 The plain-English guide to exactly what your internet provider logs, sells, and hands over - down to the packet level. What’s actually visible, what stopped being visible when HTTPS became the default, and the specific settings that close the rest of the gap.
 
-TL;DR  -  THE SHORT ANSWERYour internet service provider sits at a single, unavoidable choke point between your device and the entire internet, and that position gives it visibility most people underestimate. Even though most web traffic today is encrypted with HTTPS, your ISP can still see every domain you visit (through DNS lookups and the unencrypted SNI field of the TLS handshake), exactly when and for how long you’re connected to each service, how much data you send and receive, your approximate physical location, and the identity of every device on your home network. In the United States, ISPs are legally permitted to sell aggregated and even semi-identifiable browsing data to advertisers, since the 2017 repeal of the FCC’s broadband privacy rules. The fix isn’t complicated: a properly configured VPN encrypts your traffic before it ever reaches your ISP’s routers, pairing it with encrypted DNS and Encrypted Client Hello closes the remaining metadata leaks almost entirely. Jurisdiction and marketing claims matter less than whether the product actually implements these three things correctly.
-
-Somewhere between your laptop and the website you’re trying to reach sits a company you almost never think about - one you probably can’t switch away from easily - and that sees more of your daily life than your search engine, your social network, and your bank combined. That company is your internet service provider.
-
-This guide lays out, without scare-tactic exaggeration, exactly what an ISP can and can’t see. It also covers what changed when the web moved to HTTPS, what still leaks through the cracks, and the specific, verifiable steps that close those gaps. No vague warnings - actual mechanisms, actual protocols, actual settings.
-
 ## Why this matters more than people think
 
 Your ISP is a mandatory intermediary - unlike a website you can choose not to visit, you can’t get online without going through it. That gives it a uniquely complete view of your online life: every service you use, when you use it, and roughly what you do there, aggregated day after day, year after year.

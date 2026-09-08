@@ -23,33 +23,33 @@ The honest trade-off is speed: 10 Mbps on free versus 10 Gbps on the $2/month Pl
   <h3 style="font-size: 1.25rem; font-weight: 800; color: #0F172A; margin: 0 0 14px 0;">Key Takeaways</h3>
   <ul class="takeaways-list-24obs" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column;">
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">What does "no credit card, no logs" actually mean:</strong> .
+        <strong style="color: #0F172A; font-weight: 800;">What does "no credit card, no logs" actually mean:</strong> “No credit card” means you can download, install, and start using the VPN without entering payment details - not a free trial that quietly converts to a paid subscription.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">What should you expect from any honest free iPhone VPN in 2026:</strong> .
+        <strong style="color: #0F172A; font-weight: 800;">What should you expect from any honest free iPhone VPN in 2026:</strong> An honest free iPhone VPN has a transparent, explainable business model, a specific and verifiable no-logs policy, a usable service with reasonable limitations, and no requirement for a credit card or email address just to get started.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">What does OllaVPN Free specifically give your iPhone:</strong> .
+        <strong style="color: #0F172A; font-weight: 800;">What does OllaVPN Free specifically give your iPhone:</strong> An honest free iPhone VPN has a transparent, explainable business model, a specific and verifiable no-logs policy, a usable service with reasonable limitations, and no requirement for a credit card or email address just to get started.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">How does OllaVPN's free plan compare to other free iPhone VPNs:</strong> .
+        <strong style="color: #0F172A; font-weight: 800;">How does OllaVPN's free plan compare to other free iPhone VPNs:</strong> An honest free iPhone VPN has a transparent, explainable business model, a specific and verifiable no-logs policy, a usable service with reasonable limitations, and no requirement for a credit card or email address just to get started.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">How do you set up a free VPN on your iPhone:</strong> .
+        <strong style="color: #0F172A; font-weight: 800;">How do you set up a free VPN on your iPhone:</strong> An honest free iPhone VPN has a transparent, explainable business model, a specific and verifiable no-logs policy, a usable service with reasonable limitations, and no requirement for a credit card or email address just to get started.
       </div>
     </li>
   </ul>
@@ -63,7 +63,6 @@ Shield your privacy with OllaVPN free  -  post-quantum encryption & zero logs.
 
 BUYER GUIDE · UPDATED July 12, 2026 · 15 MIN READ
 
-
 Finding a genuinely free VPN for your iPhone - one that doesn’t ask for a credit card “just to verify you’re human,” doesn’t quietly log your browsing, and doesn’t turn into a 500 MB trial after a week - feels harder than it should in 2026. You’ve probably scrolled past a dozen App Store listings promising “100% free, no catch,” only to hit a paywall on day three.
 
 This guide cuts through the noise. It explains what “no credit card, no logs” should actually mean, how to verify it instead of just trusting the listing, and how OllaVPN’s free iPhone plan holds up against that standard.
@@ -71,7 +70,6 @@ This guide cuts through the noise. It explains what “no credit card, no logs�
 Nathan Pratt  -  Privacy & Security Lead ✓
 
 Reviewed by Hannah Wu · Senior Security Engineer · Last fact-checked 17 July 2026
-
 
 ## 1\. What does "no credit card, no logs" actually mean?
 

@@ -1712,13 +1712,7 @@ body.mobile-nav-open { overflow: hidden; }
 /* ==========================================================================
    EXACT 3-Column Blog Layout (All 111 Blog Pages Matching Screenshot)
    ========================================================================== */
-body {
-  background-color: #FFFFFF !important;
-  background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px) !important;
-  background-size: 36px 36px !important;
-}
+body { background-color: #FAFAFC !important; background-image: none !important; }
 
 .article-layout {
   display: grid !important;
@@ -3183,4 +3177,91 @@ article h2::before,
 .ug-cat-btn span,
 .ug-cat-btn svg {
   pointer-events: none;
+}
+
+
+/* ==========================================================================
+   NO BACKGROUND GRID + LIGHT BOX CONTENT + REMOVE FAINT UNDERLINES (UNIVERSAL)
+   ========================================================================== */
+body {
+  background-color: #FAFAFC !important;
+  background-image: none !important;
+}
+
+/* 1. Remove background grid pattern across entire site */
+body, .page-hero, #post-grid, .blog-layout, .article-center-col {
+  background-image: none !important;
+}
+
+/* 2. Light Box Container for Core Article Content */
+.blog-main-content-box {
+  background: #FFFFFF !important;
+  border: 1.5px solid #E2E8F0 !important;
+  border-radius: 16px !important;
+  padding: 36px 40px !important;
+  margin-bottom: 32px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02) !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+}
+
+@media (max-width: 768px) {
+  .blog-main-content-box {
+    padding: 24px 20px !important;
+  }
+}
+
+/* 3. STRICT REMOVAL OF FAINT UNDERLINES UNDER ALL POINTS, HEADINGS & LIST ITEMS */
+.blog-main-content-box h1,
+.blog-main-content-box h2,
+.blog-main-content-box h3,
+.blog-main-content-box h4,
+.blog-main-content-box h5,
+.blog-main-content-box h6,
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6,
+.article-center-col h1,
+.article-center-col h2,
+.article-center-col h3,
+.article-center-col h4,
+.article-center-col h5,
+.article-center-col h6 {
+  border-bottom: none !important;
+  border-top: none !important;
+  border-left-width: 0 !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+}
+
+.blog-main-content-box li,
+.blog-main-content-box ul,
+.blog-main-content-box ol,
+.prose li,
+.prose ul,
+.prose ol,
+.takeaways-list-24obs li,
+.takeaways-list-24obs ul,
+.content-point-box,
+.article-center-col li {
+  border-bottom: none !important;
+  border-top: none !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+}
+
+.key-takeaways-header,
+.faqs-main-header,
+.faqs-heading-bar,
+.takeaways-badge-header {
+  border-bottom: none !important;
+}
+
+.blog-main-content-box hr,
+.prose hr {
+  display: none !important;
+  border: none !important;
 }

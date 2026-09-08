@@ -57,12 +57,6 @@ What Is a [Man-in-the-Middle](/blog/what-is-a-man-in-the-middle-attack.html) (MI
 
 The plain-English guide to one of the oldest tricks in networking, still working in 2026. How someone can quietly insert themselves into a conversation you think is private, the specific techniques that make it possible, and the handful of habits that shut the door on almost all of them.
 
-TL;DR  -  THE SHORT ANSWERA man-in-the-middle attack (MITM) happens when someone secretly inserts themselves between you and whatever you're communicating with  -  a website, an app, a Wi-Fi network  -  so that all your traffic passes through them first. They can read it, and in some cases quietly alter it, before it reaches its actual destination, without either side realizing anything is wrong. The classic setting is public Wi-Fi, where an attacker on the same network can impersonate the router itself. But the same basic idea shows up in fake Wi-Fi hotspots, spoofed DNS responses, forged certificates, and even large-scale internet routing hijacks. HTTPS was built specifically to defeat this attack, and it does an excellent job when implemented correctly. Still, weak configurations, expired-certificate warnings people click through, and unencrypted DNS still leave real gaps. A VPN closes most of the remaining ones by encrypting your traffic before it ever reaches the local network an attacker might control. OllaVPN encrypts every connection with a post-quantum-ready tunnel, free on every plan.
-
-[Man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attacks are one of the oldest tricks in the networking playbook  -  older than the modern web itself  -  and despite decades of defensive engineering, they still work often enough to matter.
-
-This is a plain-English walkthrough of exactly how someone gets in the middle of your connection, the specific techniques involved, and the honest answer to how much HTTPS actually fixed versus what's still left over. No vague warnings  -  real mechanisms, real examples, real fixes.
-
 ## Why this old attack still works in 2026
 
 QUICK ANSWER :

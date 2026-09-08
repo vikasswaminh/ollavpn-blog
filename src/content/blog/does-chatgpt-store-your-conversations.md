@@ -61,10 +61,6 @@ The plain-English guide to what OpenAI actually does with everything you type in
 
 Hannah Wu · Senior Security Engineer
 
-TL;DR  -  THE SHORT ANSWERYes, ChatGPT stores your conversations - but how long, how they’re used, and whether they feed AI training depends heavily on your account settings and which plan you’re on. By default, conversations are saved indefinitely in your account until you delete them. After deletion, OpenAI retains them on internal systems for up to 30 days, unless a legal obligation requires longer retention. Your conversations can also be used to train OpenAI’s models unless you explicitly opt out. This guide walks through the full data story - what OpenAI collects, how long it keeps it, who can access it, how to limit it, and what using a VPN can and cannot do for your privacy.
-
-## Does ChatGPT use your chats to train its AI?
-
 ## Who can see your conversations?
 
 ## What happens when you delete a conversation?

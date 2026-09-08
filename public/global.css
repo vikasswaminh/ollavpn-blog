@@ -5088,3 +5088,22 @@ article h2::before,
 .ug-cat-btn svg {
   pointer-events: none;
 }
+
+
+/* NO BACKGROUND GRID + LIGHT BOX CONTENT + REMOVE FAINT UNDERLINES */
+.blog-main-content-box h1, .blog-main-content-box h2, .blog-main-content-box h3, .blog-main-content-box h4,
+.prose h1, .prose h2, .prose h3, .prose h4, .article-center-col h1, .article-center-col h2, .article-center-col h3, .article-center-col h4,
+.blog-main-content-box li, .prose li, .takeaways-list-24obs li, .article-center-col li {
+  border-bottom: none !important;
+  border-top: none !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+}
+.blog-main-content-box {
+  background: #FFFFFF !important;
+  border: 1.5px solid #E2E8F0 !important;
+  border-radius: 16px !important;
+  padding: 36px 40px !important;
+  margin-bottom: 32px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02) !important;
+}

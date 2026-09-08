@@ -51,20 +51,7 @@ tags: ['protocol-tech']
 
 <div class="blog-main-content-box">
 
-2026 · 07 · 15 · PRIVACY & SECURITY · 5,342 WORDS
-
-
 The plain-English guide to one of the most important  -  and most misunderstood  -  shifts happening in internet security right now. What post-quantum cryptography actually is, why it matters this decade rather than next, and what to look for in a future-ready VPN.
-
-TL;DR  -  The Short Answer
-
-[S **Try OllaVPN free  -  post-quantum-ready, lifetime free plan.** No credit card. Or $2/mo for 5 devices on a faster plan. DOWNLOAD →](/dl/)
-
-**Post-quantum cryptography (PQC)** is a new family of encryption algorithms designed to remain secure even when powerful quantum computers eventually exist. Today's encryption protects most of the internet, but it's based on math problems that a sufficiently advanced quantum computer could one day solve. The threat that matters _today_ is called **"harvest now, decrypt later"**  -  adversaries capturing encrypted traffic right now to decrypt years from now. In response, the U.S. National Institute of Standards and Technology finalized three post-quantum standards in 2024, and companies like Apple, Signal, Google, Cloudflare, and Mullvad have already deployed PQC in production. [OllaVPN is built PQC-ready](../dl/) on every connection, including the lifetime free plan.
-
-If you've come across the phrase _"post-quantum cryptography"_ in a news article, a software update note, or a VPN comparison and wondered what exactly it means and whether it matters to you  -  this is the guide for you. Written in plain English, with real examples, by people who care about getting it right.
-
-We won't pretend this is a topic with no nuance. It isn't. But the central ideas are accessible to anyone, and understanding them will change how you think about the encryption that runs almost every interaction you have online.
 
 ## Why this matters now (not in ten years)
 
@@ -341,7 +328,6 @@ $2 / month · 10 Gbps
 Same post-quantum protection, faster connection. Five devices on one account.
 
 You can [try the free plan](../dl/) right now  -  no email, no card, no upsell. The post-quantum protection is on from your first connection.
-
 
 ## Deeper context worth knowing
 

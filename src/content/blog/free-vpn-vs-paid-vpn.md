@@ -59,16 +59,6 @@ An honest, no-fluff breakdown of what you actually get - and give up - when you 
 
 ✓ Reviewed
 
-TL;DR  -  THE SHORT ANSWERFree VPNs can be genuinely useful - but most come with trade-offs that go deeper than slower speeds or fewer servers. The real question is how the free tier is funded. Paid VPNs remove most of those trade-offs and give you something you can actually lean on daily. A handful of free tiers from reputable providers - ProtonVPN Free, OllaVPN Free - are genuine exceptions worth knowing about. For everyone else, the math of "free" is more complicated than it first looks.
-
-If you've ever opened your phone's app store and searched "VPN," you already know the problem. There are hundreds of them. Dozens are free. The paid ones ask you to commit to a subscription before you've had a chance to decide if they're any good. And the marketing for both is almost uniformly unhinged - promises of "military-grade encryption," "bulletproof anonymity," and "blazing fast speeds" that no VPN on earth consistently delivers.
-
-The question people actually want answered isn't "which VPN is the best." It's simpler and more honest: is a free VPN actually any good, or do I need to pay?
-
-The answer, like most things in privacy tech, is: it depends - but there are clear signals that point you in the right direction. This guide walks through all of them.
-
-We'll look at what separates free VPNs from paid ones, where the real risks live, when free is genuinely fine, and when cutting corners will cost you more than the subscription would have. We'll also introduce OllaVPN's free tier, which sits in a category of its own and changes some of the conventional wisdom.
-
 ## At a glance
 
 Free VPNs vary enormously. The good ones (ProtonVPN Free, OllaVPN Free) are built by companies with business models that don't require selling your data. The bad ones - the majority of the market - monetize you in ways you didn't sign up for. Paid VPNs remove almost all of those trade-offs. The real divide isn't free vs paid; it's "trustworthy business model" vs "not."
