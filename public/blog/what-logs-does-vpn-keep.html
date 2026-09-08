@@ -1,2006 +1,260 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>What VPN Logs Does a VPN Keep? | OllaVPN</title>
-<meta name="description" content="Don't fall for marketing hype. What VPN logs really are, what your VPN can see, and what truly protects your privacy. The honest truth." />
-<link rel="canonical" href="https://ollavpn.com/what-logs-does-vpn-keep" />
-<meta name="theme-color" content="#ffffff" />
-<meta name="msapplication-TileColor" content="#DC2626" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
-<link rel="icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<link rel="manifest" href="/site.webmanifest" />
-<meta name="author" content="The OllaVPN team" />
-<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-
-<meta property="og:type" content="article" />
-<meta property="og:site_name" content="OllaVPN" />
-<meta property="og:title" content="What VPN Logs Does a VPN Keep? | OllaVPN" />
-<meta property="og:description" content="Don't fall for marketing hype. What VPN logs really are, what your VPN can see, and what truly protects your privacy. The honest truth." />
-<meta property="og:url" content="https://ollavpn.com/what-logs-does-vpn-keep" />
-<meta property="og:image" content="https://ollavpn.com/og-what-logs-does-vpn-keep.png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="Vpn Logs - explained by OllaVPN" />
-<meta property="article:published_time" content="2026-06-09T00:00:00Z" />
-<meta property="article:modified_time" content="2026-06-09T00:00:00Z" />
-<meta property="article:author" content="The OllaVPN team" />
-<meta property="article:section" content="Free VPN" />
-
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="What VPN Logs Does a VPN Keep? | OllaVPN" />
-<meta name="twitter:description" content="Don't fall for marketing hype. What VPN logs really are, what your VPN can see, and what truly protects your privacy. The honest truth." />
-<meta name="twitter:image" content="https://ollavpn.com/og-what-logs-does-vpn-keep.png" />
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css?v=20260907_v129polished" />
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "What Logs Does a VPN Keep, and What Does That Really Mean for Your Privacy?",
-  "description": "Don't fall for marketing hype. We break down what VPN logs really are, what your VPN can see, and what truly protects your privacy. Get the honest truth from OllaVPN.",
-  "image": "https://ollavpn.com/og-what-logs-does-vpn-keep.png",
-  "author": {
-    "@type": "Person",
-    "name": "Nathan Pratt",
-    "url": "https://ollavpn.com/about/team#nathan-pratt",
-    "jobTitle": "Privacy & Security Lead",
-    "worksFor": { "@type": "Organization", "name": "OllaVPN", "url": "https://ollavpn.com" }
-  },
-  "reviewedBy": {
-    "@type": "Person",
-    "name": "Hannah Wu",
-    "url": "https://ollavpn.com/about/team#hannah-wu",
-    "jobTitle": "Senior Security Engineer"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "OllaVPN",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://ollavpn.com/favicon-256.png"
-    }
-  },
-  "datePublished": "2026-06-09",
-  "dateModified": "2026-06-09",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://ollavpn.com/what-logs-does-vpn-keep"
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Is using a VPN legal in my country?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, for most places, using a VPN is perfectly legal. There are a few countries where it's restricted or illegal, but generally, if you're not doing anything illegal with it, you're fine. It's always a good idea to check your local laws, just in case, but for the vast majority of people, VPNs are a legal and ethical privacy tool."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can my ISP see what I do when I use a VPN?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Not directly. Your ISP can see that you're connected to a VPN server and how much data you're using, but they can't see the content of your encrypted traffic. They won't know what websites you visit, what you're downloading, or what you're doing online. That's the whole point of using a service like OllaVPN \u2014 to add a layer of privacy."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can the government track me if I use a VPN?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "If your VPN keeps no identifiable logs, the government can't easily track your online activity through your VPN provider. They might know you're using a VPN, but not what you're doing inside the encrypted tunnel. OllaVPN's strict no-logs policy means there's simply no data to hand over, even if compelled, protecting your privacy from start to finish."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What about Five Eyes or Fourteen Eyes countries and VPNs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "These alliances mean member countries share intelligence. While OllaVPN isn't based in one of those countries, a true no-logs policy makes the point moot. If there's nothing to log, there's nothing to share, even if compelled by law. Your data isn't logged, so it can't be handed over, regardless of jurisdiction or international agreements."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Will using a VPN make me look suspicious?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Mostly not. Millions use VPNs every day for legitimate reasons like privacy, security, and accessing geo-restricted content. While some services might detect VPN usage, it rarely makes you inherently suspicious to authorities unless combined with other activities. Using a VPN is a common practice for everyday digital security."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What if my VPN provider gets a legal subpoena for my data?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "If your VPN provider truly keeps no logs that can identify you or your activity, then there's simply nothing for them to hand over, even with a subpoena. This is why a verifiable no-logs policy, like OllaVPN's, is so crucial. We can't give up what we don't have, ensuring your privacy remains intact."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What logs does OllaVPN keep specifically?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "OllaVPN keeps no logs that can identify you or your online activity. This means no connection timestamps, no IP addresses, no websites visited, and no bandwidth used. We're truly a no-logs VPN, for both our free and Plus users. Our business model, funded by Plus subscribers, doesn't rely on selling or tracking your data."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How is a VPN different from Tor regarding logging and anonymity?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Both enhance privacy, but differently. Tor routes traffic through many relays for high anonymity, but it can be slower and isn't ideal for all uses. A VPN, like OllaVPN, encrypts your traffic directly to a server, offering a good balance of speed and privacy with a strict no-logs policy. They serve different, but often complementary, privacy needs."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are there situations where a VPN actually doesn't help with privacy?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, but with caveats. If you log into services that already know who you are (like your email or social media), they'll still know it's you. A VPN hides your IP address and encrypts your connection, but it doesn't anonymize your personal identity if you actively give it away by logging into personal accounts or sharing information online."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can I verify a VPN's no-logs claim?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Look for independent third-party audits of their no-logs policy, transparency reports, and a clear, unambiguous privacy policy. Also, consider their business model; if it relies on ads or data, be wary. OllaVPN is funded by our Plus subscribers, not by selling your data, which helps us maintain our ironclad no-logs promise."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does post-quantum encryption matter for logging concerns?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, it absolutely does for long-term privacy. Even if an adversary somehow collected your encrypted data now, post-quantum encryption, like what OllaVPN uses, makes it impossible for them to decrypt it later with future quantum computers. It future-proofs your privacy, ensuring your past communications remain private for decades to come."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is OllaVPN's free plan as private as the paid one?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absolutely. Our free plan offers the exact same privacy and no-logs policy as OllaVPN Plus. The only difference is the speed \u2013 10 Mbps for free, 10 Gbps for Plus. Your privacy isn't a premium feature for us; it's a fundamental right we provide to everyone, with no ads, no data selling, and no hidden catches."
-      }
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://ollavpn.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Free VPN",
-      "item": "https://ollavpn.com/free-vpn"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Vpn Logs",
-      "item": "https://ollavpn.com/what-logs-does-vpn-keep"
-    }
-  ]
-}
-</script>
-
-<style>
-
-/* ==========================================================================
-   ORIGINAL LIGHT ENTERPRISE RED NAVIGATION BAR SYSTEM
-   ========================================================================== */
-.utilbar {
-  background: #f8fafc !important;
-  color: #475569 !important;
-  font-family: var(--mono, monospace) !important;
-  font-size: 11.5px !important;
-  border-bottom: none !important;
-  padding: 7px 0 !important;
-  letter-spacing: 0.04em !important;
-}
-.utilbar a {
-  color: #334155 !important;
-  text-decoration: none !important;
-}
-.utilbar a:hover {
-  color: #DA291C !important;
-}
-.utilbar .green-dot {
-  color: #2F9E44 !important;
-}
-
-.nav {
-  position: sticky !important;
-  top: 0 !important;
-  z-index: 1000 !important;
-  background: #ffffff !important;
-  border-bottom: none !important;
-  transition: background .15s ease, box-shadow .15s ease, border-color .15s ease !important;
-}
-.nav.scrolled {
-  background: #ffffff !important;
-  border-bottom-color: #334155;
-  box-shadow: 0 4px 20px -4px rgba(15, 23, 42, 0.08) !important;
-}
-.nav-inner {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  height: 64px !important;
-  padding: 0 28px !important;
-  max-width: 1440px !important;
-  margin: 0 auto !important;
-}
-.brand, a.brand, .brand:visited {
-  display: flex !important;
-  align-items: center !important;
-  gap: 10px !important;
-  font-weight: 700 !important;
-  letter-spacing: -0.02em !important;
-  font-size: 17.5px !important;
-  color: #0F172A !important;
-  text-decoration: none !important;
-  flex: 1 !important;
-}
-.brand span {
-  color: #0F172A !important;
-  font-weight: 700 !important;
-}
-.brand-mark {
-  width: 28px !important;
-  height: 28px !important;
-  flex: 0 0 28px !important;
-  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect x='4' y='4' width='56' height='56' rx='13' fill='%23DA291C'/><path d='M 18 50 L 18 30 A 14 14 0 0 1 46 30 L 46 50 Z' fill='%23FFFFFF'/><circle cx='32' cy='36' r='5' fill='%23DA291C'/></svg>") center/contain no-repeat !important;
-}
-
-.nav-links {
-  display: flex !important;
-  align-items: center !important;
-  gap: 26px !important;
-  font-size: 14px !important;
-  color: #475569 !important;
-  justify-content: center !important;
-  flex: 2 !important;
-}
-.nav-links a, .nav-item, .nav-item .nav-head {
-  position: relative !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  padding: 6px 0 !important;
-  color: #475569 !important;
-  text-decoration: none !important;
-  font-weight: 500 !important;
-  transition: color .15s ease !important;
-  white-space: nowrap !important;
-  line-height: 1 !important;
-  cursor: pointer !important;
-}
-.nav-links a::after, .nav-item::after {
-  content: "" !important;
-  position: absolute !important;
-  left: 0 !important;
-  right: 0 !important;
-  bottom: -6px !important;
-  height: 2px !important;
-  background: #DA291C !important;
-  transform: scaleX(0) !important;
-  transform-origin: left !important;
-  transition: transform .18s ease !important;
-}
-.nav-links a:hover, .nav-item:hover, .nav-item:hover .nav-head, .nav-item:focus-within .nav-head {
-  color: #0F172A !important;
-}
-.nav-links a.active, .nav-item.active, .nav-item.active .nav-head {
-  color: #DA291C !important;
-  font-weight: 600 !important;
-}
-.nav-links a:hover::after, .nav-links a.active::after, .nav-item:hover::after, .nav-item.active::after {
-  transform: scaleX(1) !important;
-}
-.nav-item .caret {
-  display: inline-block !important;
-  margin-left: 5px !important;
-  font-size: 10px !important;
-  color: #64748B !important;
-  transition: transform .18s ease, color .18s ease !important;
-}
-.nav-item:hover .caret, .nav-item:focus-within .caret {
-  transform: rotate(180deg) !important;
-  color: #0F172A !important;
-}
-
-/* Mega dropdown */
-.mega {
-  position: absolute !important;
-  top: calc(100% + 2px) !important;
-  left: 50% !important;
-  transform: translate(-50%, -4px) !important;
-  min-width: 720px !important;
-  background: #ffffff !important;
-  border: 1px solid #e2e8f0 !important;
-  border-radius: 14px !important;
-  box-shadow: 0 20px 48px rgba(15, 23, 42, 0.10) !important;
-  padding: 24px !important;
-  z-index: 99999 !important;
-  opacity: 0 !important;
-  visibility: hidden !important;
-  pointer-events: none !important;
-  transition: opacity .15s ease, transform .15s ease, visibility .15s !important;
-}
-.nav-item:hover .mega, .nav-item:focus-within .mega, .mega:hover {
-  opacity: 1 !important;
-  visibility: visible !important;
-  pointer-events: auto !important;
-  transform: translate(-50%, 0) !important;
-}
-.mega-col h5 {
-  margin: 0 0 12px !important;
-  font-size: 11px !important;
-  font-weight: 700 !important;
-  color: #64748B !important;
-  letter-spacing: 0.08em !important;
-  text-transform: uppercase !important;
-}
-.mega-col a {
-  display: block !important;
-  padding: 8px 10px !important;
-  margin: 0 -10px !important;
-  font-size: 14px !important;
-  color: #334155 !important;
-  font-weight: 500 !important;
-  border-radius: 8px !important;
-  text-decoration: none !important;
-  transition: background .12s, color .12s !important;
-}
-.mega-col a:hover {
-  background: #f8fafc !important;
-  color: #DA291C !important;
-}
-
-/* Nav CTAs */
-.nav-cta {
-  display: flex !important;
-  gap: 12px !important;
-  align-items: center !important;
-  justify-content: flex-end !important;
-  flex: 1 !important;
-}
-.nav-cta .btn.ghost {
-  display: inline-flex !important;
-  align-items: center !important;
-  padding: 8px 16px !important;
-  font-size: 13.5px !important;
-  font-weight: 500 !important;
-  color: #0F172A !important;
-  background: #ffffff !important;
-  border: 1px solid #cbd5e1 !important;
-  border-radius: 8px !important;
-  text-decoration: none !important;
-  transition: all .15s ease !important;
-}
-.nav-cta .btn.ghost:hover {
-  background: #f8fafc !important;
-  color: #DA291C !important;
-  border-color: #DA291C !important;
-}
-.nav-cta .btn.primary {
-  display: inline-flex !important;
-  align-items: center !important;
-  background: #DA291C !important;
-  color: #0F172A;
-  font-weight: 600 !important;
-  border-radius: 8px !important;
-  padding: 9px 18px !important;
-  font-size: 13.5px !important;
-  text-decoration: none !important;
-  border: none !important;
-  transition: all .15s ease !important;
-}
-.nav-cta .btn.primary:hover {
-  background: #A61E1E !important;
-  box-shadow: 0 4px 16px rgba(218, 41, 28, 0.3) !important;
-  color: #0F172A;
-}
-
-/* Mobile Hamburger & Drawer */
-.nav-hamburger {
-  align-items: center !important;
-  justify-content: center !important;
-  width: 40px !important;
-  height: 40px !important;
-  background: #f8fafc !important;
-  border: 1px solid #e2e8f0 !important;
-  border-radius: 8px !important;
-  cursor: pointer !important;
-  color: #0F172A !important;
-  padding: 0 !important;
-  margin-left: 4px !important;
-}
-.nav-hamburger .bars, .nav-hamburger .bars::before, .nav-hamburger .bars::after {
-  background: #0F172A !important;
-}
-.mobile-drawer {
-  background: #ffffff !important;
-  border-left: 1px solid #e2e8f0 !important;
-}
-.mobile-drawer a {
-  color: #0F172A !important;
-  border-bottom: none !important;
-  text-decoration: none !important;
-}
-.mobile-drawer h5 {
-  color: #64748B !important;
-}
-
-  .article-hero { padding: 88px 0 36px; position: relative; overflow: hidden; }
-  .article-hero::before { content:""; position:absolute; inset:0;
-    background: radial-gradient(50% 50% at 50% 0%, rgba(238,62,71,0.10), transparent 60%);
-    pointer-events:none; }
-  .article-hero .wrap { position: relative; max-width: 1180px; margin: 0 auto; padding: 0 28px; }
-  .article-hero .meta { font-family: var(--mono); font-size: 12px; color: var(--text-mute);
-    letter-spacing: 0.06em; text-transform: uppercase; }
-  .article-hero h1 { font-family: var(--display); font-weight: 600; letter-spacing: -0.025em;
-    line-height: 1.08; font-size: clamp(30px, 4vw, 46px); margin-top: 18px; color: var(--text);
-    max-width: 880px; }
-  .article-hero .lede { font-size: 19px; line-height: 1.55; color: var(--text-dim);
-    margin-top: 20px; max-width: 760px; }
-
-  .article-layout {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 12px 28px 56px;
-    gap: 56px;
-  }
-  @media (min-width: 980px) {
-    .article-layout { grid-template-columns: minmax(0, 720px) 260px; align-items: start; gap: 64px; }
-  }
-
-  .article {
-    min-width: 0;
-    font-size: 17px; line-height: 1.72; color: var(--text);
-  }
-  .article > p { margin: 0 0 1.25em; }
-  .article h2 {
-    font-family: var(--display); font-weight: 600;
-    font-size: 28px; letter-spacing: -0.02em;
-    margin: 2.4em 0 0.5em; scroll-margin-top: 96px;
-    color: var(--text);
-  }
-  .article .short-answer {
-    font-size: 20px; font-weight: 600; line-height: 1.45;
-    color: var(--text); margin: 0 0 0.9em;
-  }
-  .article p strong { font-weight: 700; color: var(--text); }
-  .article a { color: var(--red); text-decoration: underline; text-underline-offset: 3px;
-    text-decoration-thickness: 1px; }
-  .article a:hover { text-decoration-thickness: 2px; }
-
-  .tldr { border: 1px solid var(--line); border-radius: 12px; background: var(--panel);
-    padding: 22px 26px; margin: 0 0 2em; }
-  .tldr .label { font-family: var(--mono); font-size: 11px; color: var(--red);
-    letter-spacing: 0.08em; text-transform: uppercase; }
-  .tldr p { margin: 12px 0 0; font-size: 16px; line-height: 1.65; }
-
-  .toc-rail { display: none; 
-    scrollbar-width: none !important;
-    -ms-overflow-style: none !important;
-  }
-  .toc-rail::-webkit-scrollbar { display: none !important; width: 0 !important; }
-  @media (min-width: 980px) {
-    .toc-rail { display: block; position: sticky; top: 96px; align-self: start; padding: 4px 0 0; 
-    scrollbar-width: none !important;
-    -ms-overflow-style: none !important;
-  }
-  .toc-rail::-webkit-scrollbar { display: none !important; width: 0 !important; }
-  }
-  .toc-inline {
-    display: block; margin: 0 0 2.2em;
-    border: 1px solid var(--line); border-radius: 12px; padding: 18px 24px;
-    background: var(--panel);
-  }
-  @media (min-width: 980px) { .toc-inline { display: none; } }
-
-  .toc-rail .label, .toc-inline .label {
-    font-family: var(--mono); font-size: 11px; color: var(--text-mute);
-    letter-spacing: 0.08em; text-transform: uppercase;
-    padding-bottom: 12px; border-bottom: 1px solid var(--line); display: block;
-  }
-  .toc-rail ol, .toc-inline ol {
-    list-style: none; margin: 0; padding: 12px 0 0;
-  }
-  .toc-rail ol li, .toc-inline ol li {
-    font-size: 14px; line-height: 1.5; margin: 0 0 8px;
-  }
-  .toc-rail ol li a, .toc-inline ol li a {
-    color: var(--text-dim); text-decoration: none;
-    display: block; padding: 4px 0 4px 14px;
-    border-left: 2px solid transparent;
-    transition: border-color .12s ease, color .12s ease;
-  }
-  .toc-rail ol li a:hover,
-  .toc-inline ol li a:hover,
-  .toc-rail ol li.is-current a {
-    color: var(--red); border-left-color: var(--red);
-  }
-
-  .faq h3 { font-family: var(--display); font-weight: 600; font-size: 18px;
-    margin: 1.8em 0 0.4em; color: var(--text); scroll-margin-top: 96px; }
-  .faq h3 + p { margin-top: 0.4em; }
-
-  .related { border-top: none !important; margin-top: 3em; padding-top: 1.8em; }
-  .related h2 { font-size: 20px; margin: 0 0 0.8em; }
-  .related ul { list-style: none; padding-left: 0; }
-  .related ul li { margin: 0.55em 0; font-size: 16px; }
-  .related ul li::before { content: "→ "; color: var(--red); font-weight: 700; }
-
-  /* Article left sidebar — hidden by default; shown at >= 1200px. */
-  .article-sidebar-left { display: none; }
-  .article-sidebar-left h4 {
-    font-family: var(--mono);
-    font-size: 11px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--text-mute);
-    margin: 0 0 12px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid var(--line);
-  }
-  .article-sidebar-list { list-style: none; padding: 0; margin: 0 0 28px; }
-  .article-sidebar-list li { margin: 0; }
-  .article-sidebar-list a {
-    display: block;
-    color: var(--text-dim);
-    text-decoration: none;
-    padding: 5px 0;
-    font-size: 14px;
-    line-height: 1.4;
-  }
-  .article-sidebar-list a:hover { color: var(--red); }
-  .sidebar-card-mini {
-    padding: 16px;
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    background: var(--panel);
-    margin-bottom: 24px;
-  }
-  .sidebar-card-mini h4 { border-bottom: none; padding-bottom: 4px; margin-bottom: 10px; }
-  .sidebar-card-mini p.smallcopy { font-size: 13px; color: var(--text-dim); line-height: 1.5; margin: 0 0 12px; }
-  .sidebar-card-mini .btn { display: block; text-align: center; }
-  .author-mini { display: flex; gap: 12px; align-items: flex-start; }
-  .author-mini .avatar {
-    flex: none;
-    width: 36px; height: 36px; border-radius: 50%;
-    background: rgba(238,62,71,0.12);
-    color: var(--red);
-    display: grid; place-items: center;
-    font-family: var(--mono); font-size: 11px; font-weight: 600;
-    border: 1px solid rgba(238,62,71,0.3);
-  }
-  .author-mini .meta { line-height: 1.35; }
-  .author-mini .meta a { color: var(--text); text-decoration: none; font-weight: 600; font-size: 14px; }
-  .author-mini .meta a:hover { color: var(--red); }
-  .author-mini .role { font-size: 12px; color: var(--text-mute); }
-  @media (min-width: 1200px) {
-    .article-layout {
-      grid-template-columns: 200px minmax(0, 680px) 240px;
-      max-width: 1240px;
-      gap: 32px;
-    }
-    .article-sidebar-left { display: block; position: sticky; top: 24px; }
-  }
-
-/* ==========================================================================
-   Category Explore Deck - Window / Tab Card Component
-   ========================================================================== */
-.category-explore-deck {
-  display: block !important;
-  margin: 48px 0 36px !important;
-  padding: 28px 32px !important;
-  border: 1px solid var(--line) !important;
-  border-radius: 16px !important;
-  background: var(--panel) !important;
-  box-shadow: 0 8px 32px -8px rgba(0, 0, 0, 0.5) !important;
-}
-
-.category-deck-header {
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  margin-bottom: 24px !important;
-  padding-bottom: 16px !important;
-  border-bottom: 1px solid var(--line) !important;
-  flex-wrap: wrap !important;
-  gap: 12px !important;
-}
-
-.category-deck-header h4 {font-family: var(--display) !important;
-  font-size: 20px !important;
-  font-weight: 700 !important;
-  color: #0F172A !important;
-  margin: 0 !important;
-  display: flex !important;
-  align-items: center !important;
-  gap: 10px !important;
-  letter-spacing: -0.01em !important;
-}
-
-.category-deck-header h4 a {color: #0F172A !important;
-  text-decoration: none !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
-  transition: all 0.2s ease !important;
-}
-
-.category-deck-header h4 a:hover {
-  color: var(--red) !important;
-  border-color: var(--red) !important;
-}
-
-.deck-count {
-  display: inline-block !important;
-  font-family: var(--mono) !important;
-  font-size: 11px !important;
-  font-weight: 600 !important;
-  padding: 3px 10px !important;
-  background: rgba(238, 62, 71, 0.12) !important;
-  color: var(--red) !important;
-  border: 1px solid rgba(238, 62, 71, 0.3) !important;
-  border-radius: 12px !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.06em !important;
-}
-
-.view-all-link {
-  font-family: var(--mono) !important;
-  font-size: 12px !important;
-  font-weight: 600 !important;
-  color: var(--red) !important;
-  text-decoration: none !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 6px !important;
-  padding: 7px 16px !important;
-  background: rgba(255, 255, 255, 0.04) !important;
-  border: 1px solid var(--line) !important;
-  border-radius: 8px !important;
-  transition: all 0.2s ease !important;
-}
-
-.view-all-link:hover {
-  background: rgba(238, 62, 71, 0.12) !important;
-  border-color: var(--red) !important;
-  color: #DA291C !important;
-  transform: translateX(2px) !important;
-}
-
-.category-deck-grid {
-  display: grid !important;
-  grid-template-columns: repeat(2, 1fr) !important;
-  gap: 16px !important;
-}
-
-@media (max-width: 768px) {
-  .category-deck-grid {
-    grid-template-columns: 1fr !important;
-  }
-}
-
-.deck-card {
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: space-between !important;
-  padding: 22px 24px !important;
-  background: #ffffff !important;
-  border: 1px solid var(--line) !important;
-  border-radius: 12px !important;
-  text-decoration: none !important;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
-  min-height: 120px !important;
-  position: relative !important;
-  overflow: hidden !important;
-}
-
-.deck-card::before {
-  content: "" !important;
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  height: 2px !important;
-  background: linear-gradient(90deg, var(--red), transparent) !important;
-  opacity: 0.4 !important;
-  transition: opacity 0.2s ease !important;
-}
-
-.deck-card:hover {
-  background: #ffffff !important;
-  border-color: rgba(238, 62, 71, 0.5) !important;
-  transform: translateY(-3px) !important;
-  box-shadow: 0 10px 28px -6px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(238, 62, 71, 0.3) !important;
-}
-
-.deck-card:hover::before {
-  opacity: 1 !important;
-}
-
-.deck-card-title {font-family: var(--display) !important;
-  font-size: 16px !important;
-  font-weight: 700 !important;
-  line-height: 1.45 !important;
-  color: #0F172A !important;
-  margin-bottom: 14px !important;
-  text-decoration: none !important;
-}
-
-.deck-card-read {
-  font-family: var(--mono) !important;
-  font-size: 12px !important;
-  font-weight: 600 !important;
-  color: var(--red) !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 4px !important;
-  margin-top: auto !important;
-  text-decoration: none !important;
-  transition: all 0.2s ease !important;
-}
-
-.deck-card:hover .deck-card-read {
-  color: #FF6B72 !important;
-  gap: 8px !important;
-}
-
-
-/* ==========================================================================
-   Standard 3-Column Blog Article Layout (All 111 Blog Pages)
-   ========================================================================== */
-.article-layout {
-  display: grid !important;
-  grid-template-columns: 240px minmax(0, 1fr) 260px !important;
-  gap: 36px !important;
-  align-items: start !important;
-  max-width: 1440px !important;
-  margin: 0 auto !important;
-  padding: 40px 24px 80px !important;
-}
-
-.article-sidebar-left {
-  position: sticky !important;
-  top: 84px !important;
-  font-size: 14px !important;
-  display: block !important;
-}
-
-.sidebar-card {
-  background: var(--panel) !important;
-  border: 1px solid var(--line) !important;
-  border-radius: 12px !important;
-  padding: 18px 20px !important;
-}
-
-.sidebar-card .chip {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 6px !important;
-  padding: 4px 10px !important;
-  border-radius: 999px !important;
-  border: 1px solid var(--line) !important;
-  background: var(--bg-2) !important;
-  font-family: var(--mono) !important;
-  font-size: 10.5px !important;
-  color: var(--text-dim) !important;
-  letter-spacing: 0.04em !important;
-}
-
-.sidebar-card .dot {
-  width: 6px !important;
-  height: 6px !important;
-  border-radius: 50% !important;
-  background: var(--red) !important;
-  box-shadow: 0 0 0 3px rgba(225, 28, 38, 0.2) !important;
-}
-
-.sidebar-card h4 {margin: 12px 0 8px !important;
-  font-size: 14px !important;
-  font-weight: 700 !important;
-  color: #0F172A !important;
-}
-
-.sidebar-card p {
-  font-size: 12.5px !important;
-  color: var(--text-dim) !important;
-  margin: 0 0 16px !important;
-  line-height: 1.5 !important;
-}
-
-.sidebar-card .btn.primary {
-  display: block !important;
-  text-align: center !important;
-  font-size: 12px !important;
-  padding: 8px 12px !important;
-  text-decoration: none !important;
-}
-
-.toc-rail {
-  position: sticky !important;
-  top: 84px !important;
-  font-size: 13px !important;
-  max-height: calc(100vh - 100px) !important;
-  overflow-y: auto !important;
-  padding-left: 14px !important;
-  border-left: 1px solid var(--line) !important;
-  display: block !important;
-
-    scrollbar-width: none !important;
-    -ms-overflow-style: none !important;
-  }
-  .toc-rail::-webkit-scrollbar { display: none !important; width: 0 !important; }
-
-.toc-rail .label {
-  font-family: var(--mono) !important;
-  font-size: 11px !important;
-  font-weight: 700 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.08em !important;
-  color: var(--text-mute) !important;
-  display: block !important;
-  margin-bottom: 12px !important;
-}
-
-.toc-rail ol {
-  list-style: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 8px !important;
-}
-
-.toc-rail li {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.toc-rail a {color: #334155 !important;
-  text-decoration: none !important;
-  display: block !important;
-  line-height: 1.4 !important;
-  transition: color .15s ease !important;
-}
-
-.toc-rail a:hover,
-.toc-rail li.is-current a {
-  color: var(--red) !important;
-  font-weight: 600 !important;
-}
-
-@media (max-width: 1200px) {
-  .article-layout {
-    grid-template-columns: minmax(0, 1fr) 240px !important;
-  }
-  .article-sidebar-left {
-    display: none !important;
-  }
-}
-
-@media (max-width: 800px) {
-  .article-layout {
-    grid-template-columns: 1fr !important;
-  }
-  .toc-rail {
-    display: none !important;
-  
-    scrollbar-width: none !important;
-    -ms-overflow-style: none !important;
-  }
-  .toc-rail::-webkit-scrollbar { display: none !important; width: 0 !important; }
-}
-
-</style>
-
-<style id="related-category-styles">
-  /* Category Explore Section at end of article */
-  .category-explore-deck {
-    margin: 48px 0 32px;
-    padding: 24px;
-    border: 1px solid var(--line);
-    border-radius: 14px;
-    background: var(--panel);
-  }
-  .category-deck-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 18px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid var(--line);
-  }
-  .category-deck-header h4 {
-    font-family: var(--display);
-    font-size: 18px;
-    font-weight: 700;
-    margin: 0;
-    color: var(--text);
-  }
-  .category-deck-header h4 a {
-    color: var(--red);
-    text-decoration: none;
-  }
-  .category-deck-header .deck-count {
-    font-family: var(--mono);
-    font-size: 11px;
-    color: var(--red);
-    background: rgba(99, 102, 241, 0.15);
-    padding: 2px 8px;
-    border-radius: 99px;
-    margin-left: 6px;
-  }
-  .category-deck-header .view-all-link {
-    font-family: var(--mono);
-    font-size: 12px;
-    color: var(--red);
-    text-decoration: none;
-    font-weight: 600;
-  }
-  .category-deck-header .view-all-link:hover { text-decoration: underline; }
-  .category-deck-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 12px;
-  }
-  .deck-card {
-    display: block;
-    padding: 14px 16px;
-    border: 1px solid var(--line);
-    border-radius: 10px;
-    background: rgba(255,255,255,0.02);
-    text-decoration: none;
-    color: inherit;
-    transition: all .15s ease;
-  }
-  .deck-card:hover {
-    border-color: var(--red);
-    background: rgba(99, 102, 241, 0.08);
-    transform: translateY(-1px);
-  }
-  .deck-card-title {
-    font-family: var(--display);
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--text);
-    line-height: 1.35;
-    margin-bottom: 4px;
-  }
-  .deck-card-read {
-    font-family: var(--mono);
-    font-size: 11px;
-    color: var(--red);
-  }
-
-  /* Floating Bottom Category Widget */
-  
-  .floating-cat-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 28px -4px rgba(99, 102, 241, 0.7);
-  }
-  
-  @keyframes fadeInSlide {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  .floating-cat-drawer.open { display: flex; }
-  .drawer-head {
-    padding: 14px 18px;
-    border-bottom: 1px solid var(--line);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(255,255,255,0.03);
-  }
-  .drawer-head h5 {
-    margin: 0;
-    font-family: var(--display);
-    font-size: 14px;
-    color: var(--text);
-    font-weight: 600;
-  }
-  .drawer-close {
-    background: none;
-    border: none;
-    color: var(--text-mute);
-    cursor: pointer;
-    font-size: 16px;
-    padding: 0;
-  }
-  .drawer-body {
-    padding: 12px 14px;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
-  .drawer-item {
-    display: block;
-    padding: 8px 10px;
-    border-radius: 8px;
-    text-decoration: none;
-    color: var(--text-dim);
-    font-size: 13px;
-    line-height: 1.35;
-    transition: all .15s ease;
-  }
-  .drawer-item:hover {
-    color: var(--text);
-    background: rgba(99, 102, 241, 0.12);
-  }
-  .drawer-foot {
-    padding: 10px 14px;
-    border-top: none !important;
-    text-align: center;
-    background: rgba(255,255,255,0.02);
-  }
-  .drawer-foot a {
-    font-family: var(--mono);
-    font-size: 12px;
-    color: var(--red);
-    text-decoration: none;
-  }
-
-/* ==========================================================================
-   Category Explore Deck - Window / Tab Card Component
-   ========================================================================== */
-.category-explore-deck {
-  display: block !important;
-  margin: 48px 0 36px !important;
-  padding: 28px 32px !important;
-  border: 1px solid var(--line) !important;
-  border-radius: 16px !important;
-  background: var(--panel) !important;
-  box-shadow: 0 8px 32px -8px rgba(0, 0, 0, 0.5) !important;
-}
-
-.category-deck-header {
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  margin-bottom: 24px !important;
-  padding-bottom: 16px !important;
-  border-bottom: 1px solid var(--line) !important;
-  flex-wrap: wrap !important;
-  gap: 12px !important;
-}
-
-.category-deck-header h4 {font-family: var(--display) !important;
-  font-size: 20px !important;
-  font-weight: 700 !important;
-  color: #0F172A !important;
-  margin: 0 !important;
-  display: flex !important;
-  align-items: center !important;
-  gap: 10px !important;
-  letter-spacing: -0.01em !important;
-}
-
-.category-deck-header h4 a {color: #0F172A !important;
-  text-decoration: none !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
-  transition: all 0.2s ease !important;
-}
-
-.category-deck-header h4 a:hover {
-  color: var(--red) !important;
-  border-color: var(--red) !important;
-}
-
-.deck-count {
-  display: inline-block !important;
-  font-family: var(--mono) !important;
-  font-size: 11px !important;
-  font-weight: 600 !important;
-  padding: 3px 10px !important;
-  background: rgba(238, 62, 71, 0.12) !important;
-  color: var(--red) !important;
-  border: 1px solid rgba(238, 62, 71, 0.3) !important;
-  border-radius: 12px !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.06em !important;
-}
-
-.view-all-link {
-  font-family: var(--mono) !important;
-  font-size: 12px !important;
-  font-weight: 600 !important;
-  color: var(--red) !important;
-  text-decoration: none !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 6px !important;
-  padding: 7px 16px !important;
-  background: rgba(255, 255, 255, 0.04) !important;
-  border: 1px solid var(--line) !important;
-  border-radius: 8px !important;
-  transition: all 0.2s ease !important;
-}
-
-.view-all-link:hover {
-  background: rgba(238, 62, 71, 0.12) !important;
-  border-color: var(--red) !important;
-  color: #DA291C !important;
-  transform: translateX(2px) !important;
-}
-
-.category-deck-grid {
-  display: grid !important;
-  grid-template-columns: repeat(2, 1fr) !important;
-  gap: 16px !important;
-}
-
-@media (max-width: 768px) {
-  .category-deck-grid {
-    grid-template-columns: 1fr !important;
-  }
-}
-
-.deck-card {
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: space-between !important;
-  padding: 22px 24px !important;
-  background: #ffffff !important;
-  border: 1px solid var(--line) !important;
-  border-radius: 12px !important;
-  text-decoration: none !important;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
-  min-height: 120px !important;
-  position: relative !important;
-  overflow: hidden !important;
-}
-
-.deck-card::before {
-  content: "" !important;
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  height: 2px !important;
-  background: linear-gradient(90deg, var(--red), transparent) !important;
-  opacity: 0.4 !important;
-  transition: opacity 0.2s ease !important;
-}
-
-.deck-card:hover {
-  background: #ffffff !important;
-  border-color: rgba(238, 62, 71, 0.5) !important;
-  transform: translateY(-3px) !important;
-  box-shadow: 0 10px 28px -6px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(238, 62, 71, 0.3) !important;
-}
-
-.deck-card:hover::before {
-  opacity: 1 !important;
-}
-
-.deck-card-title {font-family: var(--display) !important;
-  font-size: 16px !important;
-  font-weight: 700 !important;
-  line-height: 1.45 !important;
-  color: #0F172A !important;
-  margin-bottom: 14px !important;
-  text-decoration: none !important;
-}
-
-.deck-card-read {
-  font-family: var(--mono) !important;
-  font-size: 12px !important;
-  font-weight: 600 !important;
-  color: var(--red) !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 4px !important;
-  margin-top: auto !important;
-  text-decoration: none !important;
-  transition: all 0.2s ease !important;
-}
-
-.deck-card:hover .deck-card-read {
-  color: #FF6B72 !important;
-  gap: 8px !important;
-}
-
-
-/* ==========================================================================
-   Standard 3-Column Blog Article Layout (All 111 Blog Pages)
-   ========================================================================== */
-.article-layout {
-  display: grid !important;
-  grid-template-columns: 240px minmax(0, 1fr) 260px !important;
-  gap: 36px !important;
-  align-items: start !important;
-  max-width: 1440px !important;
-  margin: 0 auto !important;
-  padding: 40px 24px 80px !important;
-}
-
-.article-sidebar-left {
-  position: sticky !important;
-  top: 84px !important;
-  font-size: 14px !important;
-  display: block !important;
-}
-
-.sidebar-card {
-  background: var(--panel) !important;
-  border: 1px solid var(--line) !important;
-  border-radius: 12px !important;
-  padding: 18px 20px !important;
-}
-
-.sidebar-card .chip {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 6px !important;
-  padding: 4px 10px !important;
-  border-radius: 999px !important;
-  border: 1px solid var(--line) !important;
-  background: var(--bg-2) !important;
-  font-family: var(--mono) !important;
-  font-size: 10.5px !important;
-  color: var(--text-dim) !important;
-  letter-spacing: 0.04em !important;
-}
-
-.sidebar-card .dot {
-  width: 6px !important;
-  height: 6px !important;
-  border-radius: 50% !important;
-  background: var(--red) !important;
-  box-shadow: 0 0 0 3px rgba(225, 28, 38, 0.2) !important;
-}
-
-.sidebar-card h4 {margin: 12px 0 8px !important;
-  font-size: 14px !important;
-  font-weight: 700 !important;
-  color: #0F172A !important;
-}
-
-.sidebar-card p {
-  font-size: 12.5px !important;
-  color: var(--text-dim) !important;
-  margin: 0 0 16px !important;
-  line-height: 1.5 !important;
-}
-
-.sidebar-card .btn.primary {
-  display: block !important;
-  text-align: center !important;
-  font-size: 12px !important;
-  padding: 8px 12px !important;
-  text-decoration: none !important;
-}
-
-.toc-rail {
-  position: sticky !important;
-  top: 84px !important;
-  font-size: 13px !important;
-  max-height: calc(100vh - 100px) !important;
-  overflow-y: auto !important;
-  padding-left: 14px !important;
-  border-left: 1px solid var(--line) !important;
-  display: block !important;
-
-    scrollbar-width: none !important;
-    -ms-overflow-style: none !important;
-  }
-  .toc-rail::-webkit-scrollbar { display: none !important; width: 0 !important; }
-
-.toc-rail .label {
-  font-family: var(--mono) !important;
-  font-size: 11px !important;
-  font-weight: 700 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.08em !important;
-  color: var(--text-mute) !important;
-  display: block !important;
-  margin-bottom: 12px !important;
-}
-
-.toc-rail ol {
-  list-style: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 8px !important;
-}
-
-.toc-rail li {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.toc-rail a {color: #334155 !important;
-  text-decoration: none !important;
-  display: block !important;
-  line-height: 1.4 !important;
-  transition: color .15s ease !important;
-}
-
-.toc-rail a:hover,
-.toc-rail li.is-current a {
-  color: var(--red) !important;
-  font-weight: 600 !important;
-}
-
-@media (max-width: 1200px) {
-  .article-layout {
-    grid-template-columns: minmax(0, 1fr) 240px !important;
-  }
-  .article-sidebar-left {
-    display: none !important;
-  }
-}
-
-@media (max-width: 800px) {
-  .article-layout {
-    grid-template-columns: 1fr !important;
-  }
-  .toc-rail {
-    display: none !important;
-  
-    scrollbar-width: none !important;
-    -ms-overflow-style: none !important;
-  }
-  .toc-rail::-webkit-scrollbar { display: none !important; width: 0 !important; }
-}
-
-</style>
-
-<style id="cad-nav-critical">
-/* Fail-safe Critical Navbar & Dropdown CSS */
-.top-cad-nav {
-  position: relative;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.drop-cad-wrap {
-  position: relative;
-  display: inline-block;
-}
-.drop-cad-box {
-  display: none !important;
-  position: absolute !important;
-  top: 100% !important;
-  left: 0 !important;
-  width: 320px !important;
-  background: #ffffff !important;
-  border: 1px solid #DA291C !important;
-  padding: 18px !important;
-  z-index: 2000 !important;
-  margin-top: 6px !important;
-  text-transform: none !important;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12) !important;
-  border-radius: 8px !important;
-  text-align: left !important;
-}
-.drop-cad-wrap:hover .drop-cad-box,
-.drop-cad-wrap:focus-within .drop-cad-box {
-  display: block !important;
-}
-.drop-cad-cat {
-  font-family: var(--mono, monospace);
-  font-size: 0.7rem !important;
-  color: #DA291C !important;
-  text-transform: uppercase !important;
-  letter-spacing: 1px !important;
-  margin: 10px 0 4px !important;
-  font-weight: 700 !important;
-}
-.drop-cad-cat:first-child {
-  margin-top: 0 !important;
-}
-.drop-cad-box a {
-  display: block !important;
-  color: #0F172A !important;
-  padding: 6px 0 !important;
-  font-size: 0.82rem !important;
-  border-bottom: 1px dashed #e2e8f0 !important;
-  text-decoration: none !important;
-  line-height: 1.4 !important;
-}
-.drop-cad-box a:last-child {
-  border-bottom: none !important;
-}
-.drop-cad-box a:hover {
-  color: #DA291C !important;
-}
-</style>
-<!-- Universal Blog Typography & Spacing Polish -->
-<style id="blog-typography-polish">
-/* ==========================================================================
-   BLOG TYPOGRAPHY & SPACING POLISH (UNIVERSAL FOR ALL 129 BLOGS)
-   - Remove faint underline above/below section headings
-   - Enlarge section / paragraph numbers (01 ·, 02 ·, 03 ·, etc.)
-   - Decrease spacing between each points, headings, lists, and paragraphs
-   ========================================================================== */
-.article {
-  counter-reset: section;
-}
-
-.article h2,
-.article > h2,
-article h2,
-.article-center-col h2,
-.prose h2,
-.prose > h2 {
-  border-top: none !important;
-  border-bottom: none !important;
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-  text-decoration: none !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  margin-top: 22px !important;
-  margin-bottom: 8px !important;
-  line-height: 1.3 !important;
-  position: relative !important;
-}
-
-.article > h2::before,
-.article h2::before,
-article h2::before,
-.article-center-col h2::before,
-.prose > h2::before {
-  counter-increment: section;
-  content: counter(section, decimal-leading-zero) " · ";
-  color: #DA291C !important;
-  font-family: var(--mono, 'Fira Code', monospace) !important;
-  font-weight: 800 !important;
-  font-size: 1.4em !important;
-  letter-spacing: 0.02em !important;
-  margin-right: 10px !important;
-  vertical-align: baseline !important;
-  display: inline-block !important;
-}
-
-/* Suppress counter number on FAQs and Key Takeaways headings */
-.faqs-section h2::before,
-#faqs h2::before,
-.faq-section h2::before,
-.faq-section-box h2::before,
-.key-takeaways h2::before,
-.key-takeaways h3::before {
-  content: none !important;
-  display: none !important;
-}
-
-.article h3,
-.article > h3,
-.prose h3 {
-  margin-top: 18px !important;
-  margin-bottom: 6px !important;
-}
-
-.article p,
-.prose p {
-  margin-top: 0 !important;
-  margin-bottom: 12px !important;
-  line-height: 1.68 !important;
-}
-
-.article ul,
-.article ol,
-.prose ul,
-.prose ol {
-  margin-top: 0 !important;
-  margin-bottom: 10px !important;
-  padding-left: 22px !important;
-}
-
-.article li,
-.prose li {
-  margin-bottom: 3px !important;
-  line-height: 1.55 !important;
-}
-
-.key-takeaways ul {
-  gap: 5px !important;
-}
-
-.key-takeaways ul li {
-  font-size: 15px !important;
-  line-height: 1.5 !important;
-}
-
-.jump-grid {
-  gap: 6px !important;
-}
-
-.jump-grid li {
-  margin-bottom: 3px !important;
-}
-</style>
-
-</head>
-
-<body>
-
- <div class="cad-frame">
- <div class="cad-inner-border">
-<div class="reading-progress" aria-hidden="true"></div>
-
-<div class="top-status-bar">
- <span>● All systems operational <a href="https://status.ollavpn.com/" target="_blank" style="color: var(--accent);">status.ollavpn.com</a></span>
- <div style="display: flex; gap: 16px;">
- <a href="/technology.html">Trust</a>
- <span>·</span>
- <a href="/blog/">Blogs</a>
- <span>·</span>
- <a href="/contact.html">Contact</a>
- </div>
- </div>
-
- <nav class="top-cad-nav">
- <div class="nav-left-links">
- <a href="/index.html" style="font-size: 1.5rem; font-weight: 700; color: #111; margin-right: 12px;">Olla<span style="color: var(--accent);">VPN</span></a>
-
- <div class="drop-cad-wrap">
- Technology ▾
- <div class="drop-cad-box">
- <div style="color: var(--accent); font-size: 0.75rem; margin-bottom: 4px; font-weight: 700;">Crypto</div>
- <a href="/pqc">Post-quantum handshake</a>
- <a href="/pqc">WireGuard hybrid</a>
- <a href="/pqc">Forward secrecy</a>
- <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Architecture</div>
- <a href="/peer-isolation">Network topology</a>
- <a href="/peer-isolation">Tunnel addressing (CGNAT)</a>
- <a href="/peer-isolation">Exit operation</a>
- <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Privacy</div>
- <a href="/in-tunnel-dns">DNS-leak defense</a>
- <a href="/in-tunnel-dns">IPv6 handling</a>
- <a href="/peer-isolation">Abuse defense</a>
- </div>
- </div>
-
- <a href="/pricing">Pricing</a>
-
- <div class="drop-cad-wrap">
- Blogs ▾
- <div class="drop-cad-box">
- <div style="color: var(--accent); font-size: 0.75rem; margin-bottom: 4px; font-weight: 700;">Guides</div>
- <a href="/blog/best-free-vpn-for-windows.html">Best free VPN for Windows</a>
- <a href="/blog/what-is-a-dns-leak.html">DNS leak test</a>
- <a href="/blog/what-is-post-quantum-cryptography.html">What is post-quantum crypto?</a>
- <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Comparisons</div>
- <a href="/blog/mullvad-vs-protonvpn.html">Mullvad vs ProtonVPN</a>
- <a href="/blog/nordvpn-vs-protonvpn.html">NordVPN vs ProtonVPN</a>
- <a href="/blog/nordvpn-vs-expressvpn.html">NordVPN vs ExpressVPN</a>
- <a href="/blog/five-eyes-nine-eyes-fourteen-eyes.html">5/9/14-Eyes explained</a>
- <div style="color: var(--accent); font-size: 0.75rem; margin: 10px 0 4px; font-weight: 700;">Tools</div>
- <a href="https://status.ollavpn.com/">Status page</a>
- <a href="/dns-lookup.html">Network tools</a>
- <a href="/llms.txt">llms.txt</a>
- </div>
- </div>
-
- <a href="/free-vpn.html">Free VPN</a>
- <a href="/apps.html">Apps</a>
- <a href="/dl/">Download</a>
- </div>
-
- <div class="nav-right-links">
- <a href="https://login.ollavpn.com/">Sign in</a>
- <a href="/dl/" class="btn-cad btn-cad-filled">Download free →</a>
- </div>
- </nav>
-
-<main class="article-layout">
- <!-- LHS Sidebar -->
- <aside class="article-sidebar-left" aria-label="Article overview and related reading">
-  <div class="sidebar-card">
-    <div class="side-related-title">Related Guides</div>
- <ul class="side-related-list">
- <li><a href="/blog/which-free-vpn-does-not-keep-logs.html">Which Free VPN Does Not Keep Logs? A…</a></li>
- <li><a href="/blog/why-does-my-vpn-keep-disconnecting.html">Why Does My VPN Keep Disconnecting…</a></li>
- <li><a href="/blog/what-is-a-vpn-kill-switch.html">What is a VPN Kill Switch, How Does it…</a></li>
- <li><a href="/blog/vpn-for-public-wifi-traveler.html">Public WiFi and Travel: Do You Really…</a></li>
- <li><a href="/blog/should-you-use-vpn-at-home.html">Do I Really Need a VPN at Home?</a></li>
- <li><a href="/blog/free-vpn-for-public-wifi-guide.html">Is a Free VPN Safe for Public WiFi? What…</a></li>
- <li><a href="/blog/can-my-isp-see-vpn-traffic.html">Can Your ISP See Your VPN Traffic? Let's…</a></li>
- </ul>
- </div>
- </aside>
-
- <!-- Center Article -->
- <article class="article">
- <span class="meta" style="font-family:var(--mono);font-size:12px;color:var(--text-mute);text-transform:uppercase;letter-spacing:0.06em;">2026 &middot; 07 &middot; 15 &middot; PRIVACY & SECURITY &middot; 5,111 WORDS</span>
- <h1 style="margin-top:12px;">What Logs Does a VPN Keep, and What Does That Really Mean for Your Privacy?</h1>
-
- <p class="lede" style="font-size:17px;line-height:1.65;color:#0F172A;margin-bottom:24px;">You&#39;ve likely heard the term &#34;no-logs policy&#34; thrown around a lot when it comes to VPNs. It&#39;s a major selling point, but what does it actually mean for your privacy? And, more importantly, what can a VPN *really* log, and what does that imply for your online security? We&#39;re going to cut through the marketing jargon and give you the straightforward, technical reality of VPN logging, what governments and ISPs can see, and how to tell if a VPN&#39;s claims are truly protecting you.</p>
-
- <div class="tldr">
- <span class="tldr-label">TL;DR - The Short Answer</span>
- 
- <p>When a VPN says &#34;no logs,&#34; what does that actually mean? It&#39;s simple: it means they don&#39;t record anything that can identify you or your online activities. That includes your IP address, connection times, how much data you use, or what sites you visit. Anything less than that isn&#39;t truly a no-logs VPN, and that&#39;s an important distinction.</p>
- 
- <p>While a VPN encrypts your traffic from your ISP or government, they can still see that you&#39;re using a VPN. The real privacy risk often comes from the VPN provider itself. If they keep logs, that data could be compromised or legally compelled, exposing your private information. This is why a genuine no-logs policy is so crucial.</p>
- 
- <p>OllaVPN holds itself to this standard. Whether you&#39;re on our free 10 Mbps plan or OllaVPN Plus, we don&#39;t log anything that could identify you. Our post-quantum-ready encryption means your data is secure not just today, but against future threats, making logging a non-issue for your privacy. It&#39;s truly $0 forever, with no card required, and no compromises on your privacy.</p>
- 
- </div>
-
-<h2 id="short-answer-plain-english">What does &#34;VPN logs&#34; mean in plain English?</h2>
- <p class="short-answer">"VPN logs" refers to any information a VPN provider stores about your usage of their service, ranging from harmless technical data to sensitive details about your online activity.</p>
-
-When you connect to a VPN, there's always some information exchanged between your device and the VPN server. What a VPN provider chooses to record, and for how long, is what we mean by "logs." Think of it like a phone call: the phone company always knows you called someone and for how long (that's connection data), but they don't usually record what you actually said (that would be activity data).
-
-There are generally two types of logs to consider. <strong>Connection logs</strong> are usually benign. This might include things like the time you connected, the amount of data transferred, or the server you used. This kind of data helps the VPN run smoothly, diagnose issues, and ensure fair use of resources. It doesn't usually reveal what you're doing online, and if it's not tied to any <strong>personally identifiable information</strong>, it's generally not a privacy concern. Many honest-loss-leader free VPNs, like OllaVPN, keep minimal, anonymized connection data for operational purposes, but never linked to you.
-
-The real privacy concern comes with <strong>activity logs</strong>. These are records of *what* you do while connected: the websites you visit, the apps you use, your search queries, or the files you download. This is often called "traffic logs" or "usage logs." Some ad-funded free VPNs collect this kind of sensitive data, often to build profiles for targeted advertising or even sell to third parties. They might also log your real IP address and link it to your activity, completely defeating the purpose of a VPN. At OllaVPN, we have a strict no-logs policy when it comes to any activity that could compromise your privacy. We don't want to know what you're doing, and we certainly don't record it. Even basic <strong>metadata</strong> that could identify you is purged.
- 
- <h2 id="technical-reality-of-logging">What&#39;s the actual technical reality of what a VPN *could* log?</h2>
- <p class="short-answer">A VPN server can technically record a surprising amount of information about your activity, from your connection times to the websites you visit.</p>
-
-When you connect to any VPN, your traffic goes through their servers. Because of this, the VPN provider *could* technically see quite a bit. At a basic level, they can see your original **IP address** when you connect, the **timestamps** of when you connect and disconnect, and how much **bandwidth** you use. This is often called "connection logs" or "metadata," and even some "no-log" VPNs might keep this type of data for operational purposes, like managing server load or preventing abuse. The key is *why* they keep it and *for how long*.
-
-Beyond that, a VPN could also log the specific websites you visit. Every time you type a website into your browser, your computer sends a **DNS query** to translate that human-readable address (like ollavpn.com) into an IP address. If the VPN handles these DNS requests, they technically could log every site you visit. Some less scrupulous free VPNs, especially the ad-funded ones, might even log this **session data** to build profiles on users, which they then sell to advertisers. That's a direct betrayal of the privacy you expect from a VPN.
-
-For OllaVPN, our commitment is to collect absolutely nothing that could identify you or your activity. We don't log your original IP, we don't log timestamps, we don't log DNS queries, and we certainly don't log the content of your traffic. Our architecture, which uses the modern **WireGuard** protocol, is designed to minimize the data available to us in the first place, and what little operational data we do see is immediately discarded. We fund our free tier through our paid Plus subscribers, so we have no incentive to compromise your privacy by logging and selling your data.
- 
- <h2 id="what-governments-isps-see">What can governments and ISPs see when you use a VPN?</h2>
- <p class="short-answer">When you use a VPN, your ISP and government can see that you're connected to a VPN server and how much data you're using, but they can't see your online activity or the specific websites you visit.</p>
-
-Think of a VPN as creating a secure, encrypted tunnel from your device to a server run by us, OllaVPN. Your internet service provider (ISP) and any government agency monitoring their network can see that you've established this connection to our server. They know you're using a VPN, and they can see the IP address of that VPN server. They can also monitor the amount of data flowing through that tunnel - your traffic volume - which basically tells them how much you're using the internet, but not what you're doing with it.
-
-What they *can't* see is the actual content of your online activities. Because your connection is inside that encrypted tunnel, all your browsing, streaming, messaging, and downloads are scrambled. It's like sending a sealed, unbreakable package through the mail; the postal service knows a package was sent from you to our server, but they can't peek inside to see what's being delivered. This means they can't see which specific websites you're visiting, what you're searching for, or what you're saying in unencrypted communications.
-
-This distinction is key: <strong>what's visible vs. what's hidden</strong>. Your ISP and government can see the encrypted connection (the outer wrapper), but not the data itself (the contents). They also can't see your original IP address, as all your traffic appears to come from the IP address of our VPN server. It's also important to remember that a VPN doesn't magically encrypt everything. Services that use their own <strong>end-to-end encryption</strong>, like secure messaging apps, are already protected, but for everything else, a VPN adds that crucial layer of privacy at the network level, safeguarding your browsing habits and personal information from passive observation.
- 
- <h2 id="logging-policies-protection">How do VPN logging policies affect what you&#39;re protected from?</h2>
- <p class="short-answer">A VPN's logging policy directly determines how much anonymity and protection it can actually offer you.</p>
-
-<p>Think of it this way: if a VPN keeps detailed records of your online activity, then they effectively become a central point of failure for your privacy. Even if they promise not to share it, that data still exists. This means that if their servers are compromised in a <strong>data breach</strong>, or if they face a legal demand like a <strong>subpoena</strong>, your private browsing history could be exposed. A true privacy-first VPN minimizes the data it collects so there's nothing meaningful to hand over or leak in the first place.</p>
-
-<p>For us, a "no-logs" policy isn't just a marketing slogan; it's a fundamental part of how we protect you. We don't track your connections, the websites you visit, the data you transfer, or even the times you connect. The only information we hold is what's absolutely necessary to keep the service running - think basic account details if you're a <a href="/plus">OllaVPN Plus</a> subscriber, not anything about your online behavior. This approach ensures a high degree of <strong>anonymity</strong> because there's no personal browsing data tied back to you on our end.</p>
-
-<p>Some VPNs might claim "no logs" but still engage in extensive <strong>data retention</strong>, keeping connection timestamps or bandwidth usage for weeks or months. While this might seem harmless, it can still be used to identify users if combined with other data sets. Our philosophy is simpler: if we don't have it, we can't lose it, sell it, or be forced to give it away. This means that even under legal pressure, we literally have no user activity logs to provide, making your privacy much more robust.</p>
- 
- <h2 id="jurisdictional-considerations">Which jurisdictional considerations actually matter for VPN logs?</h2>
- <p class="short-answer">The most important jurisdictional consideration for VPN logs is whether a country has mandatory data retention laws or is part of intelligence-sharing alliances like Five Eyes.</p>
-
-<p>When you're choosing a VPN, where the company is legally based really matters. Some countries have strict <strong>data retention laws</strong> that force companies to store user data for a certain period, regardless of their own privacy policies. This means that even if a VPN advertises a "no-logs" policy, they might legally be required to keep some records if their country demands it. If a government can compel a company to log your activity, then their "no-logs" claims are pretty much moot.</p>
-
-<p>Beyond specific data retention mandates, you also need to think about international intelligence alliances. You might have heard of the <a href="https://en.wikipedia.org/wiki/Five_Eyes">Five Eyes</a> (US, UK, Canada, Australia, New Zealand) or the broader <a href="https://en.wikipedia.org/wiki/Fourteen_Eyes">Fourteen Eyes</a> agreements. These are nations that share intelligence with each other. If a VPN is based in one of these countries, even if they don't have direct data retention laws, there's a higher chance they could be pressured to cooperate with <strong>legal requests</strong> or even secret <strong>warrants</strong> from partner nations, potentially compromising your privacy. This doesn't mean they always will, but the legal framework makes it a possibility.</p>
-
-<p>That's why OllaVPN is based in a privacy-friendly jurisdiction with no mandatory data retention laws and no ties to these intelligence alliances. Our <a href="/no-logs-policy">no-logs policy</a> isn't just a marketing claim; it's reinforced by the legal environment we operate within. We couldn't be compelled to hand over data we don't even collect, and our jurisdiction means we're not under pressure from foreign governments to start collecting it either. It’s about building trust through transparency and strong legal foundations.</p>
- 
- <h2 id="common-myths-truths">What are the common myths about VPN logging, and what&#39;s actually true?</h2>
- <p class="short-answer">The biggest myths are that "no-logs" always means the same thing, and that a VPN makes you completely untraceable online.</p>
-
-One of the most common myths is the idea of <strong>absolute anonymity</strong> with a VPN. While a VPN significantly enhances your privacy by encrypting your traffic and masking your IP address, it doesn't make you completely invisible or untraceable. Your internet service provider (ISP) can still see that you're connected to a VPN server, and sophisticated trackers or state actors might still be able to correlate your online activity over time, especially if you're logged into personal accounts like Google or Facebook. A VPN is a powerful privacy tool, but it's part of a larger privacy strategy, not a magic bullet for total invisibility.
-
-Another big one revolves around "no-logs" claims. You'll see this phrase everywhere in VPN marketing, and while it's a good place to start, it's not always as straightforward as it sounds. The reality is that "no-logs" can mean different things to different providers. Some might not log your activity, but they might still collect connection logs (like timestamps or bandwidth usage) for network optimization or to enforce their terms of service. Others might have genuine, audited no-log policies. It’s crucial to look beyond the marketing claims and understand what a provider specifically means by "no-logs" and what data, if any, they *do* collect.
-
-Then there's the misconception that once you're connected to a VPN, all your privacy concerns are solved. Not directly. You can still experience issues like <strong>DNS leaks</strong>, where your DNS requests bypass the VPN tunnel and reveal your browsing activity to your ISP. Browser fingerprinting, cookies, and other tracking technologies also operate independently of your VPN. That's why OllaVPN includes features like in-tunnel DNS and a kill switch by default, but it's still important to practice good digital hygiene, like using privacy-focused browsers or extensions, to truly bolster your online privacy.
- 
- <h2 id="evaluate-vpn-claims">How can you evaluate any VPN&#39;s claims around logging?</h2>
- <p class="short-answer">You can evaluate a VPN's logging claims by looking for independent audits, transparency reports, and a warrant canary, and by carefully reading their privacy policy and terms of service.</p>
-
-It's tough to truly know if a VPN is logging your data, because ultimately, you're trusting them. A VPN could tell you they don't log anything, but how would you ever really know? However, there are several things you can look for that build trust and demonstrate a VPN's commitment to privacy. The first and most important is a track record of **independent audits**. These are third-party security experts who comb through a VPN's code, infrastructure, and policies to verify their no-logs claims. If a VPN has nothing to hide, they'll usually pay for these audits and publish the results.
-
-Next, look for **transparency reports**. These reports detail requests for user data from governments or law enforcement. A truly no-logs VPN won't have any data to provide, so their transparency report should reflect that - often stating "zero user data provided" because there was nothing to hand over. Related to this is a **warrant canary**. This is a subtle, ongoing declaration that a VPN has *not* received any secret government demands for user data. If the canary suddenly disappears, it's a silent warning that they might have been compromised or compelled to log.
-
-Finally, always read the fine print. Dig into the VPN's **privacy policy** and **terms of service**. This is where they legally lay out what data they *do* collect (even if it's just anonymous connection data to maintain service quality) and what they *don't*. Be wary of vague language. A truly privacy-focused VPN will be explicit about what they collect and why, and crucially, what they absolutely do not log. At OllaVPN, we don't log your activity, period, and our business model (funded by Plus subscribers, not data sales) means we're never incentivized to do so.
- 
- <h2 id="ollavpn-addressing-concerns">What does OllaVPN specifically do to address logging concerns?</h2>
- <p class="short-answer">OllaVPN is built from the ground up to collect no logs, funding its free service through paid subscriptions rather than data collection or advertising.</p>
-
-<p>Our commitment to "no logs" means exactly that. We don't track your IP address, your connection timestamps, your browsing history, or the amount of data you use. We have no interest in what you do online. Our entire business model is built around providing a private internet connection, not around selling your data or serving you ads. You get $0 forever, no card, no email tracking, no ads, and absolutely no data sale.</p>
-
-<p>We can maintain this strict <a href="/no-logs-policy">no-logs policy</a> because of how we fund our service. Unlike many "free" VPNs that rely on shady data practices or intrusive advertising, OllaVPN's free tier is subsidized by our paid **OllaVPN Plus** subscribers. You get 10 Mbps free, with no data caps and no strings attached. If you need more speed for 4K streaming or very heavy downloads, our Plus plan offers 10 Gbps on five devices for just $2/month. This direct support from Plus users means we never have to compromise your privacy to keep the lights on for our free users.</p>
-
-<p>Beyond our policy, we also employ technical safeguards. Our network is designed to minimize any transient data that might be generated, and we use advanced, post-quantum-ready encryption to protect your connection from even future threats. Our infrastructure is built to be stateless where possible, meaning there's simply no persistent information about your activities to log. It's a fundamental part of our architecture, not just a marketing claim.</p>
- 
- <h2 id="free-vs-paid-privacy">Is the free OllaVPN plan as private as the paid one?</h2>
- <p class="short-answer">Yes, the free OllaVPN plan offers the exact same privacy and security features as the paid Plus plan.</p>
-
-You might be used to other "free" VPNs that secretly log your data, inject ads, or cap your data to push you to a paid tier. That's not how we operate. Our commitment to privacy is absolute, whether you're using our free forever plan or you've upgraded to Plus. There's no compromise on privacy for free users. You get the same <a href="/features">post-quantum-ready encryption</a>, the same no-logs policy, the same secure protocols, and the same in-tunnel DNS.
-
-The only difference between the free and Plus plans is speed and the number of simultaneous connections. The free plan gives you 10 Mbps on one device, which is enough for most everyday tasks like streaming HD video, browsing, and video calls. If you need more speed or want to connect up to five devices, Plus bumps you up to 10 Gbps for just $2 a month. This **speed cap** is how we manage to keep the free plan genuinely free forever, without resorting to shady tactics.
-
-Our **funding model** is simple and transparent: Plus subscribers fund the entire network. This means we don't have to sell your data, run ads, or find other ways to monetize free users. You get full privacy, regardless of whether you pay or not. It's a key part of our mission to make strong privacy accessible to everyone.
- 
- <h2 id="post-quantum-encryption-logs">How does post-quantum encryption relate to logging?</h2>
- <p class="short-answer">Post-quantum encryption protects your past and present data from future decryption, making logs less valuable to an attacker who might try to "harvest now, decrypt later."</p>
-
-It's not directly about whether a VPN logs your activity, but rather about protecting your encrypted traffic from being decrypted by powerful computers in the future. Think of it this way: even if a malicious actor somehow recorded all of your VPN traffic today, they couldn't break OllaVPN's encryption with today's computers. However, quantum computers promise to change that, potentially making current encryption methods obsolete. This is where the concept of "harvest now, decrypt later" comes in - adversaries might store encrypted data today, betting on the ability to decrypt it years down the line with quantum machines.
-
-OllaVPN's <a href="/post-quantum-encryption">post-quantum-ready encryption</a> is all about <strong>future-proofing your privacy</strong>. We use a hybrid handshake that combines classical and quantum-resistant algorithms, making your connection secure against both current and anticipated future threats. This means that even if someone were to capture your encrypted data packets and store them for decades, they still wouldn't be able to decrypt them once quantum computers become powerful enough to break traditional encryption.
-
-This commitment to <strong>long-term security</strong> significantly reduces the value of any theoretical logs an adversary might possess. Even if a VPN service were somehow compelled to log your connection metadata (which OllaVPN doesn't do, ever), the actual content of your communications remains unreadable and will stay that way. It's a core part of what makes OllaVPN's approach to privacy different and is a major <a href="/why-ollavpn">OllaVPN's differentiator</a> in the VPN space. We're building for tomorrow's threats, today.
- 
- <h2 id="beyond-no-logs">What other features are important for privacy beyond a no-logs policy?</h2>
- <p class="short-answer">Beyond a no-logs policy, crucial privacy features include a kill switch, in-tunnel DNS, strong protocols like WireGuard, and robust peer isolation.</p>
-
-<p>A no-logs policy is foundational, but it's only one piece of the privacy puzzle. You need to look for a VPN that builds privacy into its entire technical architecture. For instance, a reliable <strong>kill switch</strong> is non-negotiable. This feature instantly cuts your internet connection if the VPN unexpectedly drops, preventing your real IP address or unencrypted traffic from ever being exposed, even for a second.</p>
-
-<p>Another vital component is <strong>in-tunnel DNS</strong>. When you type a website address, your computer asks a Domain Name System (DNS) server to translate that into an IP address. If your VPN doesn't handle this securely within its encrypted tunnel, your internet provider could still see which websites you're trying to visit, even if they can't see the content. OllaVPN ensures all your DNS requests are routed securely through the VPN tunnel, keeping that information private.</p>
-
-<p>The underlying technology matters too. We use the <strong>WireGuard protocol</strong>, which is known for its modern cryptography, speed, and simplicity, making it easier to audit for security flaws compared to older, more complex protocols. And for those times when you're on a highly restrictive network, we also offer <strong>QUIC</strong> as an option to help bypass censorship. Finally, good <strong>peer isolation</strong> is essential. This means the VPN actively prevents other users on the same server from seeing or interfering with your traffic, adding another layer of security to your connection.</p>
- 
-
- 
-<!-- TIER1-ENRICHED -->
-
- <h2 id="tier1-other-context">Why this topic matters beyond the immediate question</h2>
- <p>The topic above sits at the intersection of several broader concerns that are worth understanding even if your immediate question has been answered:</p>
- <p><strong>The privacy-tooling category has matured rapidly.</strong> What was leading-edge in 2020 is table stakes in 2026. Standards have finalized (NIST PQC, RFC 9116 security disclosure, the IETF MASQUE work), jurisdictions have clarified (post-CERT-In, post-DSA, post-Investigatory Powers Act), and a clear trustworthy/untrustworthy line has emerged in the consumer VPN category specifically. Decisions you make today should reflect the 2026 state of the market, not the 2020 state.</p>
- <p><strong>The threat landscape has shifted.</strong> Bulk traffic capture by intelligence services is well-documented and continuous. The "harvest now, decrypt later" threat against captured-today-decrypted-tomorrow ciphertext is operational, not theoretical. ISP-level metadata sales to advertising data brokers are routine in the US. Geo-blocking and censorship are both more sophisticated and more widespread. The tools that defended you adequately five years ago may not be adequate now.</p>
- <p><strong>The user has more power than ever - if they use it.</strong> Strong free privacy tools exist in every category. The question is whether the user knows about them, knows how to verify they actually work, and is willing to take the small additional steps required. We try to make the verification path as short as possible because users who can verify are users who can choose well.</p>
- <h2 id="tier1-other-action">What to actually do about it</h2>
- <p>If the topic above suggests you should take action, the practical next steps in priority order:</p>
- <p><strong>Pick a trustworthy VPN and start using it by default.</strong> Even on the free tier. The threat model on every internet-connected device benefits from VPN coverage, and a free VPN you can trust is materially better than no VPN. <a href="/best-free-vpn-2026">Our best free VPN 2026 guide</a> compares the trustworthy options across platforms.</p>
- <p><strong>Run a privacy-properties check on your current setup.</strong> Even if you already use a VPN, run our <a href="/dns-lookup">DNS lookup</a>, <a href="/webrtc-leak-test">WebRTC leak test</a>, and <a href="/what-is-my-ip">what-is-my-IP</a> tools while connected. The results tell you whether your current VPN is actually delivering the privacy properties it claims.</p>
- <p><strong>Update your threat-model evaluation periodically.</strong> Privacy concerns shift. The tools and operators that were appropriate three years ago may need re-evaluation now. Quarterly is a reasonable cadence for non-targeted users; monthly is appropriate if you're in a higher-risk situation.</p>
- <p><strong>Combine layers.</strong> No single tool covers the full threat surface. VPN + privacy-respecting browser + tracker blocker + password manager + virtual cards + careful account hygiene - together they're materially better than any one alone. Each layer is cheap (most are free); the compound effect is large.</p>
-
- <h2 id="tier1-about">About this guide</h2>
- <p>Maintained by <a href="/about/team#nathan-pratt">Nathan Pratt</a>, OllaVPN's Privacy &amp; Security Lead. Fact-checked by <a href="/about/team#hannah-wu">Hannah Wu</a>, Senior Security Engineer. We refresh this post quarterly so its facts, recommendations, and competitor comparisons stay accurate as the category evolves. The last full re-evaluation was 23 June 2026; the next is scheduled for September 2026.</p>
- <p>If you spot a fact that's drifted or an addition we should make, email <code>guides@ollavpn.com</code>. Reader corrections drive a meaningful percentage of our quarterly updates.</p>
-<div class="key-takeaways">
- <span class="label">&#11088; Key takeaways</span>
- <h2 id="what-to-remember-from-this-guide">What to remember from this guide</h2>
- <ul>
- <li>What does &amp;#34;VPN logs&amp;#34; mean in plain English?</li>
- <li>What&amp;#39;s the actual technical reality of what a VPN *could* log?</li>
- <li>What can governments and ISPs see when you use a VPN?</li>
- <li>How do VPN logging policies affect what you&amp;#39;re protected from?</li>
- <li>Which jurisdictional considerations actually matter for VPN logs?</li>
- </ul>
- </div>
-
- <h2 id="faq">Frequently asked questions</h2>
- <div class="faq">
- 
- <h3>Is using a VPN legal in my country?</h3>
- <p>Yes, for most places, using a VPN is perfectly legal. There are a few countries where it&#39;s restricted or illegal, but generally, if you&#39;re not doing anything illegal with it, you&#39;re fine. It&#39;s always a good idea to check your local laws, just in case, but for the vast majority of people, VPNs are a legal and ethical privacy tool.</p>
- 
- <h3>Can my ISP see what I do when I use a VPN?</h3>
- <p>Not directly. Your ISP can see that you&#39;re connected to a VPN server and how much data you&#39;re using, but they can&#39;t see the content of your encrypted traffic. They won&#39;t know what websites you visit, what you&#39;re downloading, or what you&#39;re doing online. That&#39;s the whole point of using a service like OllaVPN - to add a layer of privacy.</p>
- 
- <h3>Can the government track me if I use a VPN?</h3>
- <p>If your VPN keeps no identifiable logs, the government can&#39;t easily track your online activity through your VPN provider. They might know you&#39;re using a VPN, but not what you&#39;re doing inside the encrypted tunnel. OllaVPN&#39;s strict no-logs policy means there&#39;s simply no data to hand over, even if compelled, protecting your privacy from start to finish.</p>
- 
- <h3>What about Five Eyes or Fourteen Eyes countries and VPNs?</h3>
- <p>These alliances mean member countries share intelligence. While OllaVPN isn&#39;t based in one of those countries, a true no-logs policy makes the point moot. If there&#39;s nothing to log, there&#39;s nothing to share, even if compelled by law. Your data isn&#39;t logged, so it can&#39;t be handed over, regardless of jurisdiction or international agreements.</p>
- 
- <h3>Will using a VPN make me look suspicious?</h3>
- <p>Mostly not. Millions use VPNs every day for legitimate reasons like privacy, security, and accessing geo-restricted content. While some services might detect VPN usage, it rarely makes you inherently suspicious to authorities unless combined with other activities. Using a VPN is a common practice for everyday digital security.</p>
- 
- <h3>What if my VPN provider gets a legal subpoena for my data?</h3>
- <p>If your VPN provider truly keeps no logs that can identify you or your activity, then there&#39;s simply nothing for them to hand over, even with a subpoena. This is why a verifiable no-logs policy, like OllaVPN&#39;s, is so crucial. We can&#39;t give up what we don&#39;t have, ensuring your privacy remains intact.</p>
- 
- <h3>What logs does OllaVPN keep specifically?</h3>
- <p>OllaVPN keeps no logs that can identify you or your online activity. This means no connection timestamps, no IP addresses, no websites visited, and no bandwidth used. We&#39;re truly a no-logs VPN, for both our free and Plus users. Our business model, funded by Plus subscribers, doesn&#39;t rely on selling or tracking your data.</p>
- 
- <h3>How is a VPN different from Tor regarding logging and anonymity?</h3>
- <p>Both enhance privacy, but differently. Tor routes traffic through many relays for high anonymity, but it can be slower and isn&#39;t ideal for all uses. A VPN, like OllaVPN, encrypts your traffic directly to a server, offering a good balance of speed and privacy with a strict no-logs policy. They serve different, but often complementary, privacy needs.</p>
- 
- <h3>Are there situations where a VPN actually doesn&#39;t help with privacy?</h3>
- <p>Yes, but with caveats. If you log into services that already know who you are (like your email or social media), they&#39;ll still know it&#39;s you. A VPN hides your IP address and encrypts your connection, but it doesn&#39;t anonymize your personal identity if you actively give it away by logging into personal accounts or sharing information online.</p>
- 
- <h3>How can I verify a VPN&#39;s no-logs claim?</h3>
- <p>Look for independent third-party audits of their no-logs policy, transparency reports, and a clear, unambiguous privacy policy. Also, consider their business model; if it relies on ads or data, be wary. OllaVPN is funded by our Plus subscribers, not by selling your data, which helps us maintain our ironclad no-logs promise.</p>
- 
- <h3>Does post-quantum encryption matter for logging concerns?</h3>
- <p>Yes, it absolutely does for long-term privacy. Even if an adversary somehow collected your encrypted data now, post-quantum encryption, like what OllaVPN uses, makes it impossible for them to decrypt it later with future quantum computers. It future-proofs your privacy, ensuring your past communications remain private for decades to come.</p>
- 
- <h3>Is OllaVPN&#39;s free plan as private as the paid one?</h3>
- <p>Absolutely. Our free plan offers the exact same privacy and no-logs policy as OllaVPN Plus. The only difference is the speed - 10 Mbps for free, 10 Gbps for Plus. Your privacy isn&#39;t a premium feature for us; it&#39;s a fundamental right we provide to everyone, with no ads, no data selling, and no hidden catches.</p>
- 
- </div>
-
- <div class="inline-newsletter">
- <span class="label">&#9993; Get the next one</span>
- <h3>Honest writeups, every two weeks.</h3>
- <p>Nathan posts one deep-dive every two weeks. No spam, no sales blasts, no clickbait headlines.</p>
- <form>
- <input type="email" name="email" placeholder="you@example.com" required autocomplete="email" />
- <button type="submit">Subscribe</button>
- </form>
- <div class="msg" aria-live="polite">No card. Unsubscribe with one click.</div>
+<!DOCTYPE html><html lang="en" style="--accent:#388087"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png" type="image/png"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="canonical" href="https://blogs.ollavpn.com/blog/what-logs-does-vpn-keep/"><meta name="generator" content="Astro v4.16.19"><title>What Logs Does a VPN Keep, and What Does That Really Mean for Your Privacy? Â· OllaVPN Blog</title><meta name="description" content="When a VPN says &#34;no logs,&#34; what does that actually mean? It's simple: it means they don't record anything that can identify you or your online activities. That includes your IP address, connection times, ..."><!-- Google Fonts: Lato (300, 400, 700, 900) --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"><meta property="og:type" content="article"><meta property="og:title" content="What Logs Does a VPN Keep, and What Does That Really Mean for Your Privacy? Â· OllaVPN Blog"><meta property="og:description" content="When a VPN says &#34;no logs,&#34; what does that actually mean? It's simple: it means they don't record anything that can identify you or your online activities. That includes your IP address, connection times, ..."><meta property="og:url" content="https://blogs.ollavpn.com/blog/what-logs-does-vpn-keep/"><meta property="og:site_name" content="OllaVPN Blog"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="What Logs Does a VPN Keep, and What Does That Really Mean for Your Privacy? Â· OllaVPN Blog"><meta name="twitter:description" content="When a VPN says &#34;no logs,&#34; what does that actually mean? It's simple: it means they don't record anything that can identify you or your online activities. That includes your IP address, connection times, ..."><meta property="article:published_time" content="2026-06-09T00:00:00.000Z"><meta property="article:modified_time" content="2026-06-09T00:00:00.000Z"><meta property="article:author" content="OllaVPN Team"><meta property="article:tag" content="privacy-security"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" title="OllaVPN Blog" href="/rss.xml"><link rel="stylesheet" href="/_astro/_slug_.C5FbUgW6.css">  <link rel="stylesheet" href="/styles.css?v=20260908_4333" />
+</head> <body> <!-- Main Header --><header class="site-header"> <div class="container header-inner"> <div class="header-left"> <a class="brand" href="/" aria-label="OllaVPN"> <img src="/logo.png" alt="" class="brand-logo-img"> <span class="brand-name">OllaVPN</span> </a> </div> <nav class="nav nav-center" aria-label="Primary"> <!-- Technology Dropdown --> <div class="nav-item has-dropdown"> <a href="/tags/protocol-tech/" class="nav-link dropdown-trigger"> <span>Technology</span> <svg class="nav-arrow" width="9" height="9" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"> <path d="M7 10l5 5 5-5z"></path> </svg> </a> <div class="dropdown-menu"> <a href="/blog/what-is-post-quantum-cryptography" class="dropdown-link"> <strong>Post-Quantum Encryption</strong> <span>Future-proof NIST-standard lattice security</span> </a> <a href="/blog/wireguard-vs-openvpn" class="dropdown-link"> <strong>WireGuard Protocol</strong> <span>Lightweight, high-speed 10Gbps tunneling</span> </a> <a href="/blog/which-free-vpn-does-not-keep-logs" class="dropdown-link"> <strong>Zero-Logs Architecture</strong> <span>RAM-only server infrastructure</span> </a> <a href="/blog/what-is-a-vpn-kill-switch" class="dropdown-link"> <strong>Kill Switch Protection</strong> <span>Automatic system-level network fallback</span> </a> </div> </div> <!-- Blogs Dropdown --> <div class="nav-item has-dropdown"> <a href="/" class="nav-link dropdown-trigger"> <span>Blogs</span> <svg class="nav-arrow" width="9" height="9" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"> <path d="M7 10l5 5 5-5z"></path> </svg> </a> <div class="dropdown-menu"> <a href="/" class="dropdown-link"> <strong>All Articles (124)</strong> <span>Explore our complete library</span> </a> <a href="/tags/buyer-guides/" class="dropdown-link"> <strong>Buyer Guides</strong> <span>Device &amp; platform recommendations</span> </a> <a href="/tags/privacy-security/" class="dropdown-link"> <strong>Privacy &amp; Security</strong> <span>Digital footprint &amp; data defense</span> </a> <a href="/tags/how-to-guides/" class="dropdown-link"> <strong>How-To Guides</strong> <span>Step-by-step setup &amp; configurations</span> </a> <a href="/tags/comparisons/" class="dropdown-link"> <strong>VPN Comparisons</strong> <span>In-depth head-to-head performance benchmarks</span> </a> </div> </div> <!-- Free VPN --> <a href="/free-vpn" class="nav-link"> <span>Free VPN</span> </a> <!-- Apps --> <a href="/tags/use-cases/" class="nav-link"> <span>Apps</span> </a> <!-- Download --> <a href="https://ollavpn.com/download" class="nav-link"> <span>Download</span> </a> </nav> <div class="header-right"> <a class="btn-contact" href="https://ollavpn.com">Get OllaVPN</a> </div> </div> </header> <main class="main-fullwidth">  <main class="page-container-24obs"> <div class="layout-flex-24obs"> <!-- LEFT SIDEBAR: Minimized Navigation --> <aside class="desktop-sidebar-24obs left-sidebar"> <div class="sidebar-header-pill-wrap"> <span class="sidebar-pill-badge">
+FEATURED GUIDES
+</span> </div> <nav class="sidebar-nav-list"> <a href="/blog/free-vpn-for-public-wifi-security/" class="sidebar-nav-item">
+Free VPN for Public Wi-Fi Security (2026)
+</a> <a href="/blog/how-public-wifi-steals-passwords/" class="sidebar-nav-item">
+How Public Wi-Fi Steals Passwords
+</a> <a href="/blog/vpn-for-public-wifi-traveler/" class="sidebar-nav-item">
+VPN for Public Wi-Fi Traveler Guide
+</a> <a href="/blog/free-vpn-for-public-wifi-guide/" class="sidebar-nav-item">
+Free VPN for Public WiFi: Setup
+</a> <a href="/blog/vpn-for-traveling-abroad/" class="sidebar-nav-item">
+VPN for Traveling Abroad in 2026
+</a> <a href="/blog/can-a-vpn-stop-hackers/" class="sidebar-nav-item">
+Can a VPN Stop Hackers on Wi-Fi?
+</a> <a href="/blog/vpn-for-online-banking/" class="sidebar-nav-item">
+VPN for Safe Online Banking
+</a> <a href="/blog/free-vpn-for-iphone/" class="sidebar-nav-item">
+Best Free VPN for iPhone &amp; iOS
+</a> <a href="/blog/best-free-vpn-for-android/" class="sidebar-nav-item">
+Best Free VPN for Android Devices
+</a> <a href="/blog/best-free-vpn-for-windows/" class="sidebar-nav-item">
+Best Free VPN for Windows 11
+</a> </nav> <a href="/tags/buyer-guides/" class="sidebar-view-all-link">
+View All Guides &rarr;
+</a> </aside> <!-- CENTER MAIN CONTENT COLUMN --> <article class="article-center-col"> <!-- Header: Eyebrow, H1, Subtitle --> <header class="article-header"> <div class="article-meta-row"> <span>PRIVACY SECURITY</span> <span>&bull;</span> <span>UPDATED JUNE 9, 2026</span> <span>&bull;</span> <span>27 MIN READ</span> </div> <h1 class="article-main-title"> What Logs Does a VPN Keep, and What Does That Really Mean for Your Privacy? </h1> <p class="article-main-desc"> When a VPN says &quot;no logs,&quot; what does that actually mean? It&#39;s simple: it means they don&#39;t record anything that can identify you or your online activities. That includes your IP address, connection times, ... </p> </header> <!-- Markdown Article Prose Slot --> <div class="prose">  <section id="tldr" class="article-tldr-box" style="background: #FCF0F1; border: 1.5px solid rgba(238, 44, 60, 0.2); border-left: 5px solid #EE2C3C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(238, 44, 60, 0.04); box-sizing: border-box;">
+  <h3 style="font-size: 1.15rem; font-weight: 800; color: #EE2C3C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR — The Short Answer</h3>
+  <p style="font-size: 1.05rem; line-height: 1.7; color: #1E293B; margin: 0;">
+    When a VPN says no logs, what does that actually mean? Its simple: it means they dont record anything that can identify you or your online activities. That includes your IP address, connection times, ... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
+  </p>
+</section>
+<section id="key-takeaways" class="article-takeaways-box" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; padding: 20px 24px; margin-bottom: 24px; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
+  <h3 style="font-size: 1.25rem; font-weight: 800; color: #0F172A; margin: 0 0 14px 0;">Key Takeaways</h3>
+  <ul class="takeaways-list-24obs" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column;">
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">What does "VPN logs" mean in plain English:</strong> .
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">What's the actual technical reality of what a VPN \could\ log:</strong> .
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">What can governments and ISPs see when you use a VPN:</strong> .
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">How do VPN logging policies affect what you're protected from:</strong> .
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">Which jurisdictional considerations actually matter for VPN logs:</strong> .
+      </div>
+    </li>
+  </ul>
+</section>
+<div class="blog-main-content-box">
+<p>2026 · 07 · 15 · PRIVACY &#x26; SECURITY · 5,111 WORDS</p>
+<p>You’ve likely heard the term “no-logs policy” thrown around a lot when it comes to VPNs. It’s a major selling point, but what does it actually mean for your privacy? And, more importantly, what can a VPN *really* log, and what does that imply for your online security? We’re going to cut through the marketing jargon and give you the straightforward, technical reality of VPN logging, what governments and ISPs can see, and how to tell if a VPN’s claims are truly protecting you.</p>
+<p>TL;DR - The Short Answer</p>
+<p>When a VPN says “no logs,” what does that actually mean? It’s simple: it means they don’t record anything that can identify you or your online activities. That includes your IP address, connection times, how much data you use, or what sites you visit. Anything less than that isn’t truly a no-logs VPN, and that’s an important distinction.</p>
+<p>While a VPN encrypts your traffic from your ISP or government, they can still see that you’re using a VPN. The real privacy risk often comes from the VPN provider itself. If they keep logs, that data could be compromised or legally compelled, exposing your private information. This is why a genuine no-logs policy is so crucial.</p>
+<p>OllaVPN holds itself to this standard. Whether you’re on our free 10 Mbps plan or OllaVPN Plus, we don’t log anything that could identify you. Our post-quantum-ready encryption means your data is secure not just today, but against future threats, making logging a non-issue for your privacy. It’s truly $0 forever, with no card required, and no compromises on your privacy.</p>
+<h2 id="what-does-vpn-logs-mean-in-plain-english">What does “VPN logs” mean in plain English?</h2>
+<p>“VPN logs” refers to any information a VPN provider stores about your usage of their service, ranging from harmless technical data to sensitive details about your online activity.</p>
+<p>When you connect to a VPN, there’s always some information exchanged between your device and the VPN server. What a VPN provider chooses to record, and for how long, is what we mean by “logs.” Think of it like a phone call: the phone company always knows you called someone and for how long (that’s connection data), but they don’t usually record what you actually said (that would be activity data). There are generally two types of logs to consider. <strong>Connection logs</strong> are usually benign. This might include things like the time you connected, the amount of data transferred, or the server you used. This kind of data helps the VPN run smoothly, diagnose issues, and ensure fair use of resources. It doesn’t usually reveal what you’re doing online, and if it’s not tied to any <strong>personally identifiable information</strong>, it’s generally not a privacy concern. Many honest-loss-leader free VPNs, like OllaVPN, keep minimal, anonymized connection data for operational purposes, but never linked to you. The real privacy concern comes with <strong>activity logs</strong>. These are records of *what* you do while connected: the websites you visit, the apps you use, your search queries, or the files you download. This is often called “traffic logs” or “usage logs.” Some ad-funded free VPNs collect this kind of sensitive data, often to build profiles for targeted advertising or even sell to third parties. They might also log your real IP address and link it to your activity, completely defeating the purpose of a VPN. At OllaVPN, we have a strict no-logs policy when it comes to any activity that could compromise your privacy. We don’t want to know what you’re doing, and we certainly don’t record it. Even basic <strong>metadata</strong> that could identify you is purged.</p>
+<h2 id="whats-the-actual-technical-reality-of-what-a-vpn-could-log">What’s the actual technical reality of what a VPN *could* log?</h2>
+<p>A VPN server can technically record a surprising amount of information about your activity, from your connection times to the websites you visit.</p>
+<p>When you connect to any VPN, your traffic goes through their servers. Because of this, the VPN provider *could* technically see quite a bit. At a basic level, they can see your original **IP address** when you connect, the **timestamps** of when you connect and disconnect, and how much **bandwidth** you use. This is often called “connection logs” or “metadata,” and even some “no-log” VPNs might keep this type of data for operational purposes, like managing server load or preventing abuse. The key is *why* they keep it and *for how long*. Beyond that, a VPN could also log the specific websites you visit. Every time you type a website into your browser, your computer sends a **DNS query** to translate that human-readable address (like ollavpn.com) into an IP address. If the VPN handles these DNS requests, they technically could log every site you visit. Some less scrupulous free VPNs, especially the ad-funded ones, might even log this **session data** to build profiles on users, which they then sell to advertisers. That’s a direct betrayal of the privacy you expect from a VPN. For OllaVPN, our commitment is to collect absolutely nothing that could identify you or your activity. We don’t log your original IP, we don’t log timestamps, we don’t log DNS queries, and we certainly don’t log the content of your traffic. Our architecture, which uses the modern **WireGuard** protocol, is designed to minimize the data available to us in the first place, and what little operational data we do see is immediately discarded. We fund our free tier through our paid Plus subscribers, so we have no incentive to compromise your privacy by logging and selling your data.</p>
+<h2 id="what-can-governments-and-isps-see-when-you-use-a-vpn">What can governments and ISPs see when you use a VPN?</h2>
+<p>When you use a VPN, your ISP and government can see that you’re connected to a VPN server and how much data you’re using, but they can’t see your online activity or the specific websites you visit.</p>
+<p>Think of a VPN as creating a secure, encrypted tunnel from your device to a server run by us, OllaVPN. Your internet service provider (ISP) and any government agency monitoring their network can see that you’ve established this connection to our server. They know you’re using a VPN, and they can see the IP address of that VPN server. They can also monitor the amount of data flowing through that tunnel – your traffic volume – which basically tells them how much you’re using the internet, but not what you’re doing with it. What they *can’t* see is the actual content of your online activities. Because your connection is inside that encrypted tunnel, all your browsing, streaming, messaging, and downloads are scrambled. It’s like sending a sealed, unbreakable package through the mail; the postal service knows a package was sent from you to our server, but they can’t peek inside to see what’s being delivered. This means they can’t see which specific websites you’re visiting, what you’re searching for, or what you’re saying in unencrypted communications. This distinction is key: <strong>what’s visible vs. what’s hidden</strong>. Your ISP and government can see the encrypted connection (the outer wrapper), but not the data itself (the contents). They also can’t see your original IP address, as all your traffic appears to come from the IP address of our VPN server. It’s also important to remember that a VPN doesn’t magically encrypt everything. Services that use their own <strong>end-to-end encryption</strong>, like secure messaging apps, are already protected, but for everything else, a VPN adds that crucial layer of privacy at the network level, safeguarding your browsing habits and personal information from passive observation.</p>
+<h2 id="how-do-vpn-logging-policies-affect-what-youre-protected-from">How do VPN logging policies affect what you’re protected from?</h2>
+<p>A VPN’s logging policy directly determines how much anonymity and protection it can actually offer you.</p>
+<p>Think of it this way: if a VPN keeps detailed records of your online activity, then they effectively become a central point of failure for your privacy. Even if they promise not to share it, that data still exists. This means that if their servers are compromised in a <strong>data breach</strong>, or if they face a legal demand like a <strong>subpoena</strong>, your private browsing history could be exposed. A true privacy-first VPN minimizes the data it collects so there’s nothing meaningful to hand over or leak in the first place.</p>
+<p>For us, a “no-logs” policy isn’t just a marketing slogan; it’s a fundamental part of how we protect you. We don’t track your connections, the websites you visit, the data you transfer, or even the times you connect. The only information we hold is what’s absolutely necessary to keep the service running – think basic account details if you’re a <a href="/plus">OllaVPN Plus</a> subscriber, not anything about your online behavior. This approach ensures a high degree of <strong>anonymity</strong> because there’s no personal browsing data tied back to you on our end.</p>
+<p>Some VPNs might claim “no logs” but still engage in extensive <strong>data retention</strong>, keeping connection timestamps or bandwidth usage for weeks or months. While this might seem harmless, it can still be used to identify users if combined with other data sets. Our philosophy is simpler: if we don’t have it, we can’t lose it, sell it, or be forced to give it away. This means that even under legal pressure, we literally have no user activity logs to provide, making your privacy much more robust.</p>
+<h2 id="which-jurisdictional-considerations-actually-matter-for-vpn-logs">Which jurisdictional considerations actually matter for VPN logs?</h2>
+<p>The most important jurisdictional consideration for VPN logs is whether a country has mandatory data retention laws or is part of intelligence-sharing alliances like Five Eyes.</p>
+<p>When you’re choosing a VPN, where the company is legally based really matters. Some countries have strict <strong>data retention laws</strong> that force companies to store user data for a certain period, regardless of their own privacy policies. This means that even if a VPN advertises a “no-logs” policy, they might legally be required to keep some records if their country demands it. If a government can compel a company to log your activity, then their “no-logs” claims are pretty much moot.</p>
+<p>Beyond specific data retention mandates, you also need to think about international intelligence alliances. You might have heard of the <a href="https://en.wikipedia.org/wiki/Five_Eyes">Five Eyes</a> (US, UK, Canada, Australia, New Zealand) or the broader <a href="https://en.wikipedia.org/wiki/Fourteen_Eyes">Fourteen Eyes</a> agreements. These are nations that share intelligence with each other. If a VPN is based in one of these countries, even if they don’t have direct data retention laws, there’s a higher chance they could be pressured to cooperate with <strong>legal requests</strong> or even secret <strong>warrants</strong> from partner nations, potentially compromising your privacy. This doesn’t mean they always will, but the legal framework makes it a possibility.</p>
+<p>That’s why OllaVPN is based in a privacy-friendly jurisdiction with no mandatory data retention laws and no ties to these intelligence alliances. Our <a href="/no-logs-policy">no-logs policy</a> isn’t just a marketing claim; it’s reinforced by the legal environment we operate within. We couldn’t be compelled to hand over data we don’t even collect, and our jurisdiction means we’re not under pressure from foreign governments to start collecting it either. It’s about building trust through transparency and strong legal foundations.</p>
+<h2 id="what-are-the-common-myths-about-vpn-logging-and-whats-actually-true">What are the common myths about VPN logging, and what’s actually true?</h2>
+<p>The biggest myths are that “no-logs” always means the same thing, and that a VPN makes you completely untraceable online.</p>
+<p>One of the most common myths is the idea of <strong>absolute anonymity</strong> with a VPN. While a VPN significantly enhances your privacy by encrypting your traffic and masking your IP address, it doesn’t make you completely invisible or untraceable. Your internet service provider (ISP) can still see that you’re connected to a VPN server, and sophisticated trackers or state actors might still be able to correlate your online activity over time, especially if you’re logged into personal accounts like Google or Facebook. A VPN is a powerful privacy tool, but it’s part of a larger privacy strategy, not a magic bullet for total invisibility. Another big one revolves around “no-logs” claims. You’ll see this phrase everywhere in VPN marketing, and while it’s a good place to start, it’s not always as straightforward as it sounds. The reality is that “no-logs” can mean different things to different providers. Some might not log your activity, but they might still collect connection logs (like timestamps or bandwidth usage) for network optimization or to enforce their terms of service. Others might have genuine, audited no-log policies. It’s crucial to look beyond the marketing claims and understand what a provider specifically means by “no-logs” and what data, if any, they *do* collect. Then there’s the misconception that once you’re connected to a VPN, all your privacy concerns are solved. Not directly. You can still experience issues like <strong>DNS leaks</strong>, where your DNS requests bypass the VPN tunnel and reveal your browsing activity to your ISP. Browser fingerprinting, cookies, and other tracking technologies also operate independently of your VPN. That’s why OllaVPN includes features like in-tunnel DNS and a kill switch by default, but it’s still important to practice good digital hygiene, like using privacy-focused browsers or extensions, to truly bolster your online privacy.</p>
+<h2 id="how-can-you-evaluate-any-vpns-claims-around-logging">How can you evaluate any VPN’s claims around logging?</h2>
+<p>You can evaluate a VPN’s logging claims by looking for independent audits, transparency reports, and a warrant canary, and by carefully reading their privacy policy and terms of service.</p>
+<p>It’s tough to truly know if a VPN is logging your data, because ultimately, you’re trusting them. A VPN could tell you they don’t log anything, but how would you ever really know? However, there are several things you can look for that build trust and demonstrate a VPN’s commitment to privacy. The first and most important is a track record of **independent audits**. These are third-party security experts who comb through a VPN’s code, infrastructure, and policies to verify their no-logs claims. If a VPN has nothing to hide, they’ll usually pay for these audits and publish the results. Next, look for **transparency reports**. These reports detail requests for user data from governments or law enforcement. A truly no-logs VPN won’t have any data to provide, so their transparency report should reflect that  -  often stating “zero user data provided” because there was nothing to hand over. Related to this is a **warrant canary**. This is a subtle, ongoing declaration that a VPN has *not* received any secret government demands for user data. If the canary suddenly disappears, it’s a silent warning that they might have been compromised or compelled to log. Finally, always read the fine print. Dig into the VPN’s **privacy policy** and **terms of service**. This is where they legally lay out what data they *do* collect (even if it’s just anonymous connection data to maintain service quality) and what they *don’t*. Be wary of vague language. A truly privacy-focused VPN will be explicit about what they collect and why, and crucially, what they absolutely do not log. At OllaVPN, we don’t log your activity, period, and our business model (funded by Plus subscribers, not data sales) means we’re never incentivized to do so.</p>
+<h2 id="what-does-ollavpn-specifically-do-to-address-logging-concerns">What does OllaVPN specifically do to address logging concerns?</h2>
+<p>OllaVPN is built from the ground up to collect no logs, funding its free service through paid subscriptions rather than data collection or advertising.</p>
+<p>Our commitment to “no logs” means exactly that. We don’t track your IP address, your connection timestamps, your browsing history, or the amount of data you use. We have no interest in what you do online. Our entire business model is built around providing a private internet connection, not around selling your data or serving you ads. You get $0 forever, no card, no email tracking, no ads, and absolutely no data sale.</p>
+<p>We can maintain this strict <a href="/no-logs-policy">no-logs policy</a> because of how we fund our service. Unlike many “free” VPNs that rely on shady data practices or intrusive advertising, OllaVPN’s free tier is subsidized by our paid **OllaVPN Plus** subscribers. You get 10 Mbps free, with no data caps and no strings attached. If you need more speed for 4K streaming or very heavy downloads, our Plus plan offers 10 Gbps on five devices for just $2/month. This direct support from Plus users means we never have to compromise your privacy to keep the lights on for our free users.</p>
+<p>Beyond our policy, we also employ technical safeguards. Our network is designed to minimize any transient data that might be generated, and we use advanced, post-quantum-ready encryption to protect your connection from even future threats. Our infrastructure is built to be stateless where possible, meaning there’s simply no persistent information about your activities to log. It’s a fundamental part of our architecture, not just a marketing claim.</p>
+<h2 id="is-the-free-ollavpn-plan-as-private-as-the-paid-one">Is the free OllaVPN plan as private as the paid one?</h2>
+<p>Yes, the free OllaVPN plan offers the exact same privacy and security features as the paid Plus plan.</p>
+<p>You might be used to other “free” VPNs that secretly log your data, inject ads, or cap your data to push you to a paid tier. That’s not how we operate. Our commitment to privacy is absolute, whether you’re using our free forever plan or you’ve upgraded to Plus. There’s no compromise on privacy for free users. You get the same <a href="/features">post-quantum-ready encryption</a>, the same no-logs policy, the same secure protocols, and the same in-tunnel DNS. The only difference between the free and Plus plans is speed and the number of simultaneous connections. The free plan gives you 10 Mbps on one device, which is enough for most everyday tasks like streaming HD video, browsing, and video calls. If you need more speed or want to connect up to five devices, Plus bumps you up to 10 Gbps for just $2 a month. This **speed cap** is how we manage to keep the free plan genuinely free forever, without resorting to shady tactics. Our **funding model** is simple and transparent: Plus subscribers fund the entire network. This means we don’t have to sell your data, run ads, or find other ways to monetize free users. You get full privacy, regardless of whether you pay or not. It’s a key part of our mission to make strong privacy accessible to everyone.</p>
+<h2 id="how-does-post-quantum-encryption-relate-to-logging">How does post-quantum encryption relate to logging?</h2>
+<p>Post-quantum encryption protects your past and present data from future decryption, making logs less valuable to an attacker who might try to “harvest now, decrypt later.”</p>
+<p>It’s not directly about whether a VPN logs your activity, but rather about protecting your encrypted traffic from being decrypted by powerful computers in the future. Think of it this way: even if a malicious actor somehow recorded all of your VPN traffic today, they couldn’t break OllaVPN’s encryption with today’s computers. However, quantum computers promise to change that, potentially making current encryption methods obsolete. This is where the concept of “harvest now, decrypt later” comes in – adversaries might store encrypted data today, betting on the ability to decrypt it years down the line with quantum machines. OllaVPN’s <a href="/post-quantum-encryption">post-quantum-ready encryption</a> is all about <strong>future-proofing your privacy</strong>. We use a hybrid handshake that combines classical and quantum-resistant algorithms, making your connection secure against both current and anticipated future threats. This means that even if someone were to capture your encrypted data packets and store them for decades, they still wouldn’t be able to decrypt them once quantum computers become powerful enough to break traditional encryption. This commitment to <strong>long-term security</strong> significantly reduces the value of any theoretical logs an adversary might possess. Even if a VPN service were somehow compelled to log your connection metadata (which OllaVPN doesn’t do, ever), the actual content of your communications remains unreadable and will stay that way. It’s a core part of what makes OllaVPN’s approach to privacy different and is a major <a href="/why-ollavpn">OllaVPN’s differentiator</a> in the VPN space. We’re building for tomorrow’s threats, today.</p>
+<h2 id="what-other-features-are-important-for-privacy-beyond-a-no-logs-policy">What other features are important for privacy beyond a no-logs policy?</h2>
+<p>Beyond a no-logs policy, crucial privacy features include a kill switch, in-tunnel DNS, strong protocols like WireGuard, and robust peer isolation.</p>
+<p>A no-logs policy is foundational, but it’s only one piece of the privacy puzzle. You need to look for a VPN that builds privacy into its entire technical architecture. For instance, a reliable <strong>kill switch</strong> is non-negotiable. This feature instantly cuts your internet connection if the VPN unexpectedly drops, preventing your real IP address or unencrypted traffic from ever being exposed, even for a second.</p>
+<p>Another vital component is <strong>in-tunnel DNS</strong>. When you type a website address, your computer asks a Domain Name System (DNS) server to translate that into an IP address. If your VPN doesn’t handle this securely within its encrypted tunnel, your internet provider could still see which websites you’re trying to visit, even if they can’t see the content. OllaVPN ensures all your DNS requests are routed securely through the VPN tunnel, keeping that information private.</p>
+<p>The underlying technology matters too. We use the <strong>WireGuard protocol</strong>, which is known for its modern cryptography, speed, and simplicity, making it easier to audit for security flaws compared to older, more complex protocols. And for those times when you’re on a highly restrictive network, we also offer <strong>QUIC</strong> as an option to help bypass censorship. Finally, good <strong>peer isolation</strong> is essential. This means the VPN actively prevents other users on the same server from seeing or interfering with your traffic, adding another layer of security to your connection.</p>
+<h2 id="why-this-topic-matters-beyond-the-immediate-question">Why this topic matters beyond the immediate question</h2>
+<p>The topic above sits at the intersection of several broader concerns that are worth understanding even if your immediate question has been answered:</p>
+<p><strong>The privacy-tooling category has matured rapidly.</strong> What was leading-edge in 2020 is table stakes in 2026. Standards have finalized (NIST PQC, RFC 9116 security disclosure, the IETF MASQUE work), jurisdictions have clarified (post-CERT-In, post-DSA, post-Investigatory Powers Act), and a clear trustworthy/untrustworthy line has emerged in the consumer VPN category specifically. Decisions you make today should reflect the 2026 state of the market, not the 2020 state.</p>
+<p><strong>The threat landscape has shifted.</strong> Bulk traffic capture by intelligence services is well-documented and continuous. The “harvest now, decrypt later” threat against captured-today-decrypted-tomorrow ciphertext is operational, not theoretical. ISP-level metadata sales to advertising data brokers are routine in the US. Geo-blocking and censorship are both more sophisticated and more widespread. The tools that defended you adequately five years ago may not be adequate now.</p>
+<p><strong>The user has more power than ever  -  if they use it.</strong> Strong free privacy tools exist in every category. The question is whether the user knows about them, knows how to verify they actually work, and is willing to take the small additional steps required. We try to make the verification path as short as possible because users who can verify are users who can choose well.</p>
+<h2 id="what-to-actually-do-about-it">What to actually do about it</h2>
+<p>If the topic above suggests you should take action, the practical next steps in priority order:</p>
+<p><strong>Pick a trustworthy VPN and start using it by default.</strong> Even on the free tier. The threat model on every internet-connected device benefits from VPN coverage, and a free VPN you can trust is materially better than no VPN. <a href="/best-free-vpn-2026">Our best free VPN 2026 guide</a> compares the trustworthy options across platforms.</p>
+<p><strong>Run a privacy-properties check on your current setup.</strong> Even if you already use a VPN, run our <a href="/dns-lookup">DNS lookup</a>, <a href="/webrtc-leak-test">WebRTC leak test</a>, and <a href="/what-is-my-ip">what-is-my-IP</a> tools while connected. The results tell you whether your current VPN is actually delivering the privacy properties it claims.</p>
+<p><strong>Update your threat-model evaluation periodically.</strong> Privacy concerns shift. The tools and operators that were appropriate three years ago may need re-evaluation now. Quarterly is a reasonable cadence for non-targeted users; monthly is appropriate if you’re in a higher-risk situation.</p>
+<p><strong>Combine layers.</strong> No single tool covers the full threat surface. VPN + privacy-respecting browser + tracker blocker + password manager + virtual cards + careful account hygiene  -  together they’re materially better than any one alone. Each layer is cheap (most are free); the compound effect is large.</p>
+<h2 id="about-this-guide">About this guide</h2>
+<p>Maintained by <a href="/about/team#nathan-pratt">Nathan Pratt</a>, OllaVPN’s Privacy &#x26; Security Lead. Fact-checked by <a href="/about/team#hannah-wu">Hannah Wu</a>, Senior Security Engineer. We refresh this post quarterly so its facts, recommendations, and competitor comparisons stay accurate as the category evolves. The last full re-evaluation was 23 June 2026; the next is scheduled for September 2026.</p>
+<p>If you spot a fact that’s drifted or an addition we should make, email <code>[[email protected]](/cdn-cgi/l/email-protection)</code>. Reader corrections drive a meaningful percentage of our quarterly updates.</p>
+<p>⭐ Key takeaways</p>
+<h2 id="what-to-remember-from-this-guide">What to remember from this guide</h2>
+<ul>
+<li>What does “VPN logs” mean in plain English?</li>
+<li>What’s the actual technical reality of what a VPN *could* log?</li>
+<li>What can governments and ISPs see when you use a VPN?</li>
+<li>How do VPN logging policies affect what you’re protected from?</li>
+<li>Which jurisdictional considerations actually matter for VPN logs?</li>
+</ul>
 </div>
-
- <div class="share-row">
- <span class="share-label">Share</span>
- <button class="copy-link" type="button" aria-label="Copy link"><span class="share-text">Copy link</span></button>
- <a href="https://twitter.com/intent/tweet?text=What%20Logs%20Does%20a%20VPN%20Keep%2C%20and%20What%20Does%20That%20Really%20Mean%20for%20Your%20Privacy%3F&amp;url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-logs-does-vpn-keep" target="_blank" rel="noopener">X</a>
- <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-logs-does-vpn-keep" target="_blank" rel="noopener">LinkedIn</a>
- <a href="https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-logs-does-vpn-keep&amp;t=What%20Logs%20Does%20a%20VPN%20Keep%2C%20and%20What%20Does%20That%20Really%20Mean%20for%20Your%20Privacy%3F" target="_blank" rel="noopener">HN</a>
- <a href="https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-logs-does-vpn-keep&amp;title=What%20Logs%20Does%20a%20VPN%20Keep%2C%20and%20What%20Does%20That%20Really%20Mean%20for%20Your%20Privacy%3F" target="_blank" rel="noopener">Reddit</a>
-</div>
-
- <div class="related">
- <h2 id="related-reading">Related reading</h2>
- <ul><ul class="related-cards">
- <li><a href="/free-vpn"><span class="card-tag">PRIVACY</span><span class="card-title">Free VPN - the honest 2026 guide</span><span class="card-meta">8 min &middot; OllaVPN Blog</span></a></li>
- <li><a href="/blog/can-my-isp-see-vpn-traffic"><span class="card-tag">PRIVACY</span><span class="card-title">Can my isp see vpn traffic</span><span class="card-meta">8 min &middot; OllaVPN Blog</span></a></li>
- <li><a href="/blog/can-government-track-vpn"><span class="card-tag">PRIVACY</span><span class="card-title">Can government track vpn</span><span class="card-meta">8 min &middot; OllaVPN Blog</span></a></li>
- <li><a href="/blog/are-vpns-legal"><span class="card-tag">PRIVACY</span><span class="card-title">Are vpns legal</span><span class="card-meta">8 min &middot; OllaVPN Blog</span></a></li>
- <li><a href="/blog/what-is-post-quantum-cryptography"><span class="card-tag">PRIVACY</span><span class="card-title">What is post-quantum cryptography?</span><span class="card-meta">8 min &middot; OllaVPN Blog</span></a></li>
- <li><a href="/blog/what-is-a-dns-leak"><span class="card-tag">PRIVACY</span><span class="card-title">What is a DNS leak?</span><span class="card-meta">8 min &middot; OllaVPN Blog</span></a></li>
- </ul>
- </div>
-
- <aside class="author-bio-card">
- <div class="author-avatar" aria-hidden="true">NP</div>
- <div>
- <div class="bio-name">Nathan Pratt</div>
- <div class="bio-role">Privacy &amp; Security Lead</div>
- <p class="bio-text">Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.</p>
- <a class="bio-more" href="/about/team#nathan-pratt">More from Nathan &rarr;</a>
- </div>
- </aside>
-
- 
- <!-- Category Explore Section (Discover all hidden blogs) -->
- 
-
- 
- <!-- Category Explore Section (Discover all hidden blogs) -->
- 
-
- 
- <!-- Category Explore Section (Discover all hidden blogs) -->
- <section class="category-explore-deck" aria-label="Related articles in Privacy guides">
- <div class="category-deck-header">
- <h4>More in <a href="index.html#privacy-security">Privacy guides</a> <span class="deck-count">25 guides</span></h4>
- <a class="view-all-link" href="index.html#privacy-security">View all 25 in Privacy guides &rarr;</a>
- </div>
- <div class="category-deck-grid">
- <a class="deck-card" href="are-free-vpns-safe.html">
- <div class="deck-card-title">Are Free VPNs Safe? What You Need to Know Before You Connect</div>
- <span class="deck-card-read">Read guide &rarr;</span>
- </a>
- <a class="deck-card" href="are-vpns-legal.html">
- <div class="deck-card-title">Are VPNs Legal? What You Need to Know About VPN Legality and Privacy</div>
- <span class="deck-card-read">Read guide &rarr;</span>
- </a>
- <a class="deck-card" href="can-a-website-detect-vpn.html">
- <div class="deck-card-title">Can Websites Detect VPNs? What You Need to Know About Online Privacy</div>
- <span class="deck-card-read">Read guide &rarr;</span>
- </a>
- <a class="deck-card" href="can-government-track-vpn.html">
- <div class="deck-card-title">Can Governments Really Track Your VPN? The Unvarnished Truth About Your Online Privacy</div>
- <span class="deck-card-read">Read guide &rarr;</span>
- </a>
- </div>
- </section>
- </article>
-
- <!-- RHS Sidebar -->
- <aside class="toc-rail" aria-label="Table of contents">
- <span class="label">On this page</span>
- <ol>
- <li><a href="#short-answer-plain-english">What does "VPN logs" mean in…</a></li>
- <li><a href="#technical-reality-of-logging">What's the actual technical…</a></li>
- <li><a href="#what-governments-isps-see">What can governments and ISPs see…</a></li>
- <li><a href="#logging-policies-protection">How do VPN logging policies…</a></li>
- <li><a href="#jurisdictional-considerations">Which jurisdictional…</a></li>
- <li><a href="#common-myths-truths">What are the common myths about…</a></li>
- <li><a href="#evaluate-vpn-claims">How can you evaluate any VPN's…</a></li>
- <li><a href="#ollavpn-addressing-concerns">What does OllaVPN specifically do…</a></li>
- <li><a href="#free-vs-paid-privacy">Is the free OllaVPN plan as…</a></li>
- <li><a href="#post-quantum-encryption-logs">How does post-quantum encryption…</a></li>
- <li><a href="#beyond-no-logs">What other features are important…</a></li>
- </ol>
- </aside>
-</main>
-
-<footer class="footer">
- <div style="margin-bottom: 32px;">
- <div style="font-size: 1.6rem; font-weight: 700; color: var(--accent); margin-bottom: 4px;">OllaVPN</div>
- <p style="color: #1a1a1a; font-size: 0.88rem;">A modern, post-quantum-ready privacy VPN. Lifetime free plan or $2/month for 5 devices.</p>
- </div>
-
- <div class="top" style="display: grid; grid-template-columns: 2fr repeat(5, 1fr); gap: 24px; margin-bottom: 40px;">
- <div>
- <div class="brand">OllaVPN</div>
- <p style="color: #1a1a1a; font-size: 0.88rem;">A modern, post-quantum-ready privacy VPN. Lifetime free plan or $2/month for 5 devices.</p>
- </div>
-
- <div>
- <h4>Product</h4>
- <div class="docket-col-links" style="display: grid; gap: 10px;">
- <a href="/apps.html" style="color: var(--text-sub);">Apps</a>
- <a href="/technology.html" style="color: var(--text-sub);">Technology</a>
- <a href="/pricing.html" style="color: var(--text-sub);">Pricing</a>
- <a href="/dl/" style="color: var(--text-sub);">Download</a>
- </div>
- </div>
-
- <div>
- <h4>Free VPN</h4>
- <div class="docket-col-links" style="display: grid; gap: 10px;">
- <a href="/free-vpn.html" style="color: var(--text-sub);">Free VPN - honest guide</a>
- <a href="/free-vpn-for-windows.html" style="color: var(--text-sub);">Free VPN for Windows</a>
- <a href="/free-vpn-for-india.html" style="color: var(--text-sub);">Free VPN for India</a>
- <a href="/free-wireguard-vpn.html" style="color: var(--text-sub);">Free WireGuard VPN</a>
- <a href="/free-quic-vpn.html" style="color: var(--text-sub);">Free QUIC VPN</a>
- </div>
- </div>
-
- <div>
- <h4>Account</h4>
- <div class="docket-col-links" style="display: grid; gap: 10px;">
- <a href="https://login.ollavpn.com/" style="color: var(--text-sub);">Sign in</a>
- <a href="https://login.ollavpn.com/signup" style="color: var(--text-sub);">Sign up</a>
- <a href="https://login.ollavpn.com/" style="color: var(--text-sub);">Dashboard</a>
- </div>
- </div>
-
- <div>
- <h4>Company</h4>
- <div class="docket-col-links" style="display: grid; gap: 10px;">
- <a href="/careers.html" style="color: var(--text-sub);">Careers</a>
- <a href="/contact.html" style="color: var(--text-sub);">Contact</a>
- <a href="/blog/" style="color: var(--text-sub);">Blog</a>
- </div>
- </div>
-
- <div>
- <h4>Legal</h4>
- <div class="docket-col-links" style="display: grid; gap: 10px;">
- <a href="/privacy.html" style="color: var(--text-sub);">Privacy policy</a>
- <a href="/terms.html" style="color: var(--text-sub);">Terms of service</a>
- <a href="/warrant-canary.html" style="color: var(--text-sub);">Warrant canary</a>
- </div>
- </div>
- </div>
-
- <div class="bottom">
- <div>© 2026 OllaVPN · A modern, post-quantum-ready privacy VPN.</div>
- <div style="display: flex; gap: 20px; font-weight: 700; color: var(--accent);">
- <span>POST-QUANTUM READY</span>
- <span>NO LOGS</span>
- <span>LIFETIME FREE</span>
- </div>
- </div>
- </footer>
-
-
-<script defer src="/blog.js?v=20260819_v7"></script>
- </div>
- </div>
-
-</body>
-</html>
+<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 16px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
+  <div style="display: flex; flex-direction: column;">
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>1. Is using a VPN legal in my country?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Yes, for most places, using a VPN is perfectly legal. There are a few countries where it's restricted or illegal, but generally, if you're not doing anything illegal with it, you're fine. It's always a good idea to check your local laws, just in case, but for the vast majority of people, VPNs are a legal and ethical privacy tool.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>2. Can my ISP see what I do when I use a VPN?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Not directly. Your ISP can see that you're connected to a VPN server and how much data you're using, but they can't see the content of your encrypted traffic. They won't know what websites you visit, what you're downloading, or what you're doing online. That's the whole point of using a service like OllaVPN - to add a layer of privacy.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>3. Can the government track me if I use a VPN?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      If your VPN keeps no identifiable logs, the government can't easily track your online activity through your VPN provider. They might know you're using a VPN, but not what you're doing inside the encrypted tunnel. OllaVPN's strict no-logs policy means there's simply no data to hand over, even if compelled, protecting your privacy from start to finish.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>4. What about Five Eyes or Fourteen Eyes countries and VPNs?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      These alliances mean member countries share intelligence. While OllaVPN isn't based in one of those countries, a true no-logs policy makes the point moot. If there's nothing to log, there's nothing to share, even if compelled by law. Your data isn't logged, so it can't be handed over, regardless of jurisdiction or international agreements.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>5. Will using a VPN make me look suspicious?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Mostly not. Millions use VPNs every day for legitimate reasons like privacy, security, and accessing geo-restricted content. While some services might detect VPN usage, it rarely makes you inherently suspicious to authorities unless combined with other activities. Using a VPN is a common practice for everyday digital security.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>6. What if my VPN provider gets a legal subpoena for my data?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      If your VPN provider truly keeps no logs that can identify you or your activity, then there's simply nothing for them to hand over, even with a subpoena. This is why a verifiable no-logs policy, like OllaVPN's, is so crucial. We can't give up what we don't have, ensuring your privacy remains intact.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>7. What logs does OllaVPN keep specifically?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      OllaVPN keeps no logs that can identify you or your online activity. This means no connection timestamps, no IP addresses, no websites visited, and no bandwidth used. We're truly a no-logs VPN, for both our free and Plus users. Our business model, funded by Plus subscribers, doesn't rely on selling or tracking your data.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>8. How is a VPN different from Tor regarding logging and anonymity?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Both enhance privacy, but differently. Tor routes traffic through many relays for high anonymity, but it can be slower and isn't ideal for all uses. A VPN, like OllaVPN, encrypts your traffic directly to a server, offering a good balance of speed and privacy with a strict no-logs policy. They serve different, but often complementary, privacy needs.
+    </p>
+  </details>
+  </div>
+</section>
+<section id="wrapping-it-up" class="wrap-up-box" style="background: #FFF7F8; border: 1px solid rgba(238, 44, 60, 0.2); border-left: 5px solid #EE2C3C; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(238, 44, 60, 0.03); box-sizing: border-box;">
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 10px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
+  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 12px;">
+    Navigating What Logs Does a VPN Keep, and What Does That Really Mean for Your Privacy? effectively requires choosing security architectures built on transparency, strong encryption, and verified zero data logging.
+  </p>
+  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
+    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on kill switch defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
+  </p>
+</section>
+<section id="download" class="download-section-box" style="background: linear-gradient(135deg, #ffffff 0%, #FFF7F8 100%); border: 1.5px solid rgba(238, 44, 60, 0.2); border-radius: 18px; padding: 32px 28px; margin-bottom: 24px; text-align: center; width: 100%; box-shadow: 0 6px 24px rgba(238, 44, 60, 0.06); box-sizing: border-box;">
+  <h2 style="font-size: 2rem; font-weight: 800; color: #0F172A; margin: 0 0 10px 0; border: none !important; padding-bottom: 0 !important;">Protect Your Connection with OllaVPN</h2>
+  <p style="font-size: 1.05rem; color: #475569; max-width: 650px; margin: 0 auto 18px auto; line-height: 1.65;">
+    Enjoy unlimited data, next-generation WireGuard encryption, and audited zero activity logs on Android, iOS, Windows, and macOS.
+  </p>
+  <a href="https://ollavpn.com/apps.html" target="_blank" rel="noopener" class="btn-primary" style="display: inline-block; background: #EE2C3C !important; color: #FFFFFF !important; font-size: 1.08rem; font-weight: 800; padding: 14px 36px; border-radius: 10px; text-decoration: none !important; box-shadow: 0 4px 16px rgba(238, 44, 60, 0.25); transition: all 0.2s ease;">
+    Download OllaVPN Free →
+  </a>
+  <div style="margin-top: 14px; font-size: 0.85rem; color: #64748b; font-weight: 600;">
+    Available for iOS, Android, Windows &#x26; macOS • Instant Setup
+  </div>
+</section>  </div> </article> <!-- RIGHT SIDEBAR: Minimized Navigation + Minimized Promo Card --> <aside class="desktop-sidebar-24obs right-sidebar"> <div class="sidebar-header-pill-wrap"> <span class="sidebar-pill-badge">
+VPN PROTOCOLS &amp; TECH
+</span> </div> <nav class="sidebar-nav-list"> <a href="/blog/wireguard-vs-openvpn/" class="sidebar-nav-item">
+WireGuard vs. OpenVPN Comparison
+</a> <a href="/blog/wireguard-vs-ikev2/" class="sidebar-nav-item">
+WireGuard vs IKEv2: Speed &amp; Latency
+</a> <a href="/blog/what-is-a-vpn-kill-switch/" class="sidebar-nav-item">
+What is a VPN Kill Switch?
+</a> <a href="/blog/what-is-a-dns-leak/" class="sidebar-nav-item">
+What Is a DNS Leak &amp; How to Fix It
+</a> <a href="/blog/what-is-post-quantum-cryptography/" class="sidebar-nav-item">
+What Is Post-Quantum Cryptography?
+</a> <a href="/blog/what-is-a-vpn-protocol/" class="sidebar-nav-item">
+What is a VPN Protocol?
+</a> <a href="/blog/what-is-a-vpn-tunnel/" class="sidebar-nav-item">
+What is a VPN Tunnel?
+</a> <a href="/blog/what-is-a-webrtc-leak/" class="sidebar-nav-item">
+What is a WebRTC Leak?
+</a> </nav> <a href="/tags/protocol-tech/" class="sidebar-view-all-link">
+View All Protocols &rarr;
+</a> <!-- Minimized Promo Card --> <div class="sidebar-promo-card"> <p class="sidebar-promo-text">
+Free, high-speed WireGuard VPN for public Wi-Fi security on every device.
+</p> <a href="https://ollavpn.com" class="sidebar-cta-btn">
+Download OllaVPN Free &rarr;
+</a> </div> </aside> </div> </main> <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"What Logs Does a VPN Keep, and What Does That Really Mean for Your Privacy?","description":"When a VPN says \"no logs,\" what does that actually mean? It's simple: it means they don't record anything that can identify you or your online activities. That includes your IP address, connection times, ...","datePublished":"2026-06-09T00:00:00.000Z","dateModified":"2026-06-09T00:00:00.000Z","author":{"@type":"Organization","name":"OllaVPN Team"},"publisher":{"@type":"Organization","name":"OllaVPN"},"mainEntityOfPage":"https://blogs.ollavpn.com/blog/what-logs-does-vpn-keep/"}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand-row"> <a class="brand" href="/" aria-label="OllaVPN"> <img src="/logo.png" alt="" class="footer-logo-img"> <span class="brand-name footer-brand-name">OllaVPN</span> </a> <p>&copy; 2026 OllaVPN. All rights reserved.</p> </div> <p class="footer-links"> <a href="https://ollavpn.com">ollavpn.com</a> <span aria-hidden="true">&bull;</span> <a href="/rss.xml">RSS</a> <span aria-hidden="true">&bull;</span> <a href="/tags/">Tags</a> </p> </div> </footer> </body></html>

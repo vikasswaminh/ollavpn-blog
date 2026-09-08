@@ -1,0 +1,1758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Mascot & Sentinel Logos • OllaVPN Design System</title>
+  <meta name="description" content="12 charismatic, biomechanical, and predator-grade security mascots representing OllaVPN. Crafted with faceted character vectors, watchful cyber optics, and defensive archetypes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --canvas: #FFFFFF;
+      --content: #171A21;
+      --tech: #3E506F;
+      --support: #667085;
+      --separation: #F7F8FA;
+      --structure: #E1E5EA;
+      --action: #D92D20;
+      --action-hover: #B82015;
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --shadow-sm: 0 1px 3px rgba(16,24,40,0.06);
+      --shadow-md: 0 4px 16px rgba(16,24,40,0.08);
+      --shadow-lg: 0 12px 32px rgba(16,24,40,0.12);
+      --transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--canvas);
+      color: var(--content);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--structure);
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand-mark {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--content);
+    }
+
+    .brand-logo-icon {
+      width: 32px;
+      height: 32px;
+      background: var(--content);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      font-weight: 800;
+      font-size: 16px;
+      border: 1px solid var(--structure);
+    }
+    .brand-logo-icon span { color: var(--action); }
+
+    .brand-text {
+      font-weight: 800;
+      font-size: 1.1rem;
+      letter-spacing: -0.02em;
+    }
+    .brand-text span { color: var(--action); }
+
+    .brand-badge {
+      background: var(--separation);
+      color: var(--tech);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: 20px;
+      border: 1px solid var(--structure);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .collection-tabs {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--separation);
+      padding: 0.3rem;
+      border-radius: 10px;
+      border: 1px solid var(--structure);
+    }
+
+    .tab-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.4rem 0.9rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--support);
+      border-radius: 7px;
+      transition: var(--transition);
+    }
+
+    .tab-link:hover {
+      color: var(--content);
+      background: rgba(255, 255, 255, 0.8);
+    }
+
+    .tab-link.active {
+      background: #FFFFFF;
+      color: var(--action);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--structure);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.45rem 0.9rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: 1px solid var(--structure);
+      background: #FFFFFF;
+      color: var(--content);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--tech);
+      background: var(--separation);
+    }
+
+    .hero-header {
+      padding: 3.5rem 1.5rem 2.5rem;
+      max-width: 1280px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(217, 45, 32, 0.08);
+      color: var(--action);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 0.35rem 0.9rem;
+      border-radius: 30px;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(217, 45, 32, 0.2);
+      letter-spacing: 0.04em;
+    }
+
+    .hero-title {
+      font-size: 2.75rem;
+      font-weight: 800;
+      color: var(--content);
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+
+    .hero-desc {
+      font-size: 1.15rem;
+      color: var(--support);
+      max-width: 760px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+
+    .studio-controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      background: var(--separation);
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--structure);
+      max-width: fit-content;
+      margin: 0 auto;
+    }
+
+    .control-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--support);
+      letter-spacing: 0.05em;
+    }
+
+    .stage-switchers {
+      display: flex;
+      gap: 0.4rem;
+    }
+
+    .stage-btn {
+      padding: 0.35rem 0.75rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      border: 1px solid var(--structure);
+      background: #FFFFFF;
+      color: var(--support);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .stage-btn.active {
+      background: var(--content);
+      color: #FFFFFF;
+      border-color: var(--content);
+    }
+
+    .catalog-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 1.5rem 1.5rem 5rem;
+    }
+
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 2rem;
+    }
+
+    .logo-card {
+      background: #FFFFFF;
+      border: 1px solid var(--structure);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+      box-shadow: var(--shadow-sm);
+      position: relative;
+    }
+
+    .logo-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: #CBD3E0;
+    }
+
+    .stage-canvas {
+      height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      background: #FFFFFF;
+      border-bottom: 1px solid var(--structure);
+      position: relative;
+      transition: background 0.3s ease;
+    }
+
+    .stage-canvas.dark-mode {
+      background: #0E1117 !important;
+      border-bottom-color: #222733;
+    }
+
+    .stage-canvas.slate-mode {
+      background: #1B212D !important;
+      border-bottom-color: #2A3345;
+    }
+
+    .stage-canvas svg {
+      width: 190px;
+      height: 190px;
+      filter: drop-shadow(0 8px 24px rgba(0,0,0,0.06));
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .logo-card:hover .stage-canvas svg {
+      transform: scale(1.06);
+    }
+
+    .card-badge {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(4px);
+      border: 1px solid var(--structure);
+      padding: 0.2rem 0.55rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--content);
+    }
+
+    .stage-canvas.dark-mode .card-badge,
+    .stage-canvas.slate-mode .card-badge {
+      background: rgba(20, 25, 35, 0.8);
+      border-color: #333C4E;
+      color: #E1E5EA;
+    }
+
+    .card-body {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      gap: 1rem;
+    }
+
+    .card-header-block {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--content);
+      letter-spacing: -0.02em;
+    }
+
+    .card-tagline {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--tech);
+    }
+
+    .lockup-preview {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: var(--separation);
+      padding: 0.75rem 1rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--structure);
+    }
+
+    .lockup-mini-svg {
+      width: 32px;
+      height: 32px;
+      flex-shrink: 0;
+    }
+
+    .lockup-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .lockup-brand {
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--content);
+      line-height: 1.1;
+    }
+    .lockup-brand span { color: var(--action); }
+
+    .lockup-sub {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--support);
+    }
+
+    .card-rationale {
+      font-size: 0.875rem;
+      color: var(--content);
+      line-height: 1.55;
+    }
+
+    .specs-box {
+      background: var(--separation);
+      border-left: 3px solid var(--tech);
+      padding: 0.5rem 0.75rem;
+      font-size: 0.75rem;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--tech);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    }
+
+    .swatches {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .swatch {
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      border: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .card-footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid var(--structure);
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      padding: 0.55rem 0.75rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: var(--transition);
+      border: 1px solid var(--structure);
+      background: #FFFFFF;
+      color: var(--content);
+    }
+
+    .btn-action:hover {
+      background: var(--separation);
+      border-color: var(--tech);
+    }
+
+    .btn-action.primary {
+      background: var(--content);
+      color: #FFFFFF;
+      border-color: var(--content);
+    }
+
+    .btn-action.primary:hover {
+      background: #252B38;
+    }
+
+    #toast {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: var(--content);
+      color: #FFFFFF;
+      padding: 0.75rem 1.25rem;
+      border-radius: 8px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 1000;
+      border: 1px solid var(--structure);
+    }
+
+    #toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+      .top-nav { flex-direction: column; align-items: stretch; gap: 0.75rem; }
+      .collection-tabs { overflow-x: auto; justify-content: flex-start; }
+      .hero-title { font-size: 2rem; }
+      .logo-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="top-nav">
+    <a href="/" class="brand-mark">
+      <div class="brand-logo-icon">O<span>•</span></div>
+      <div class="brand-text">Olla<span>VPN</span></div>
+      <span class="brand-badge">Brand Studio</span>
+    </a>
+
+    <nav class="collection-tabs" aria-label="Logo Categories">
+      <a href="isometric-geometry-3d.html" class="tab-link ">
+        <span>📐</span> Isometric 3D (12)
+      </a>
+      <a href="mascot-designs.html" class="tab-link active">
+        <span>🦊</span> Mascots (12)
+      </a>
+      <a href="emblem-designs.html" class="tab-link ">
+        <span>🛡️</span> Emblems (12)
+      </a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="/" class="btn-outline">
+        <span>←</span> Back to Knowledge Base
+      </a>
+    </div>
+  </header>
+
+  <section class="hero-header">
+    <div class="hero-eyebrow">
+      <span>●</span> COLLECTION 02 • 12 SECURITY MASCOT DESIGNS
+    </div>
+    <h1 class="hero-title">Cyber Mascot & Sentinel Logos</h1>
+    <p class="hero-desc">12 charismatic, biomechanical, and predator-grade security mascots representing OllaVPN. Crafted with faceted character vectors, watchful cyber optics, and defensive archetypes.</p>
+
+    <div class="studio-controls">
+      <span class="control-label">Canvas Stage:</span>
+      <div class="stage-switchers">
+        <button class="stage-btn active" onclick="setCanvasMode('light')">White (#FFFFFF)</button>
+        <button class="stage-btn" onclick="setCanvasMode('dark')">Midnight (#0E1117)</button>
+        <button class="stage-btn" onclick="setCanvasMode('slate')">Deep Slate (#1B212D)</button>
+      </div>
+    </div>
+  </section>
+
+  <main class="catalog-container">
+    <div class="logo-grid">
+      
+        <article class="logo-card" id="mascot-01">
+          <div class="stage-canvas" id="stage-mascot-01">
+            <span class="card-badge">01 / 12</span>
+            <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="m1-head" x1="120" y1="40" x2="120" y2="160" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#324158"/>
+      <stop offset="100%" stop-color="#141821"/>
+    </linearGradient>
+    <linearGradient id="m1-eye-glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF5C4D"/>
+      <stop offset="100%" stop-color="#D92D20"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Sentinel Halo -->
+  <circle cx="120" cy="120" r="78" stroke="#E1E5EA" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <!-- Owl Ear Horns / Tuft Facets -->
+  <polygon points="70,72 82,42 102,68" fill="#222B3A" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="170,72 158,42 138,68" fill="#2E394D" stroke="#E1E5EA" stroke-width="1"/>
+  <!-- Crown Plate -->
+  <polygon points="82,68 120,54 158,68 120,82" fill="#3D4D68" stroke="#E1E5EA" stroke-width="1"/>
+  <!-- Forehead Brow Shield -->
+  <polygon points="82,68 120,82 120,105 80,95" fill="#283244"/>
+  <polygon points="158,68 120,82 120,105 160,95" fill="#36435A"/>
+  <!-- Hexagonal Eye Visors -->
+  <!-- Left Eye -->
+  <polygon points="86,96 106,96 114,112 102,126 82,126 74,110" fill="#0C0E13" stroke="#3E506F" stroke-width="2"/>
+  <circle cx="94" cy="111" r="9" fill="url(#m1-eye-glow)"/>
+  <circle cx="94" cy="111" r="3.5" fill="#FFFFFF"/>
+  <!-- Right Eye -->
+  <polygon points="154,96 134,96 126,112 138,126 158,126 166,110" fill="#0C0E13" stroke="#3E506F" stroke-width="2"/>
+  <circle cx="146" cy="111" r="9" fill="url(#m1-eye-glow)"/>
+  <circle cx="146" cy="111" r="3.5" fill="#FFFFFF"/>
+  <!-- Cyber Beak -->
+  <polygon points="114,105 126,105 120,132" fill="#D92D20"/>
+  <polygon points="114,105 120,132 120,105" fill="#B31E13"/>
+  <!-- Armored Chest Breastplates (Stepped Feather Scales) -->
+  <polygon points="100,136 120,126 140,136 120,154" fill="#3E506F" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="88,152 120,146 120,172 88,166" fill="#1C232F" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="152,152 120,146 120,172 152,166" fill="#2B3445" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="104,172 120,166 136,172 120,190" fill="#D92D20" stroke="#FFFFFF" stroke-width="1"/>
+  <!-- Perch Laser Conduit -->
+  <line x1="50" y1="196" x2="190" y2="196" stroke="#3E506F" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="86" cy="196" r="4" fill="#D92D20"/>
+  <circle cx="154" cy="196" r="4" fill="#D92D20"/>
+</svg>
+          </div>
+
+          <div class="card-body">
+            <div class="card-header-block">
+              <h2 class="card-title">01. Olla the Cyber Owl</h2>
+              <span class="card-tagline">Nocturnal Threat Radar & All-Seeing Sentry</span>
+            </div>
+
+            <div class="lockup-preview">
+              <div class="lockup-mini-svg">
+                <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="m1-head" x1="120" y1="40" x2="120" y2="160" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#324158"/>
+      <stop offset="100%" stop-color="#141821"/>
+    </linearGradient>
+    <linearGradient id="m1-eye-glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF5C4D"/>
+      <stop offset="100%" stop-color="#D92D20"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Sentinel Halo -->
+  <circle cx="120" cy="120" r="78" stroke="#E1E5EA" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <!-- Owl Ear Horns / Tuft Facets -->
+  <polygon points="70,72 82,42 102,68" fill="#222B3A" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="170,72 158,42 138,68" fill="#2E394D" stroke="#E1E5EA" stroke-width="1"/>
+  <!-- Crown Plate -->
+  <polygon points="82,68 120,54 158,68 120,82" fill="#3D4D68" stroke="#E1E5EA" stroke-width="1"/>
+  <!-- Forehead Brow Shield -->
+  <polygon points="82,68 120,82 120,105 80,95" fill="#283244"/>
+  <polygon points="158,68 120,82 120,105 160,95" fill="#36435A"/>
+  <!-- Hexagonal Eye Visors -->
+  <!-- Left Eye -->
+  <polygon points="86,96 106,96 114,112 102,126 82,126 74,110" fill="#0C0E13" stroke="#3E506F" stroke-width="2"/>
+  <circle cx="94" cy="111" r="9" fill="url(#m1-eye-glow)"/>
+  <circle cx="94" cy="111" r="3.5" fill="#FFFFFF"/>
+  <!-- Right Eye -->
+  <polygon points="154,96 134,96 126,112 138,126 158,126 166,110" fill="#0C0E13" stroke="#3E506F" stroke-width="2"/>
+  <circle cx="146" cy="111" r="9" fill="url(#m1-eye-glow)"/>
+  <circle cx="146" cy="111" r="3.5" fill="#FFFFFF"/>
+  <!-- Cyber Beak -->
+  <polygon points="114,105 126,105 120,132" fill="#D92D20"/>
+  <polygon points="114,105 120,132 120,105" fill="#B31E13"/>
+  <!-- Armored Chest Breastplates (Stepped Feather Scales) -->
+  <polygon points="100,136 120,126 140,136 120,154" fill="#3E506F" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="88,152 120,146 120,172 88,166" fill="#1C232F" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="152,152 120,146 120,172 152,166" fill="#2B3445" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="104,172 120,166 136,172 120,190" fill="#D92D20" stroke="#FFFFFF" stroke-width="1"/>
+  <!-- Perch Laser Conduit -->
+  <line x1="50" y1="196" x2="190" y2="196" stroke="#3E506F" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="86" cy="196" r="4" fill="#D92D20"/>
+  <circle cx="154" cy="196" r="4" fill="#D92D20"/>
+</svg>
+              </div>
+              <div class="lockup-text">
+                <div class="lockup-brand">Olla<span>VPN</span></div>
+                <div class="lockup-sub">Sovereign WireGuard Tunnel</div>
+              </div>
+            </div>
+
+            <p class="card-rationale">The flagship brand ambassador for OllaVPN. An angular, geometric cyber owl with glowing dual-band radar eyes and layered feather plates. Perched atop a fiber-optic node, Olla scans network packets 24/7 with zero latency.</p>
+
+            <div class="specs-box">
+              Faceted Low-Poly Aesthetics • Dual Sensor Optics • Hexagonal Feathers • Nocturnal Guard
+            </div>
+
+            <div class="swatches" title="Color Hierarchy Palette">
+              <div class="swatch" style="background-color: #171A21;" title="#171A21"></div><div class="swatch" style="background-color: #3E506F;" title="#3E506F"></div><div class="swatch" style="background-color: #D92D20;" title="#D92D20"></div><div class="swatch" style="background-color: #FFFFFF;" title="#FFFFFF"></div>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-action primary" onclick="copySVG('mascot-01')">
+                <span>📋</span> Copy SVG
+              </button>
+              <button class="btn-action" onclick="downloadSVG('mascot-01', 'olla-the-cyber-owl')">
+                <span>⬇️</span> Download
+              </button>
+            </div>
+          </div>
+        </article>
+      
+
+        <article class="logo-card" id="mascot-02">
+          <div class="stage-canvas" id="stage-mascot-02">
+            <span class="card-badge">02 / 12</span>
+            <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="m2-plate" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#495D7D"/>
+      <stop offset="100%" stop-color="#1A212E"/>
+    </linearGradient>
+  </defs>
+  <!-- Curled Body Shell Arc -->
+  <path d="M60,140 C50,80 95,45 150,55 C195,65 205,120 185,165 C165,200 110,210 75,180" stroke="#E1E5EA" stroke-width="2" stroke-dasharray="4 4" fill="none"/>
+  <!-- Overlapping Armor Scales -->
+  <!-- Scale 1 (Spine Top) -->
+  <path d="M120,48 L146,65 L130,92 L105,75 Z" fill="#4B5E82" stroke="#FFFFFF" stroke-width="1.5"/>
+  <!-- Scale 2 (Spine Upper Right) -->
+  <path d="M146,65 L174,86 L155,112 L130,92 Z" fill="#384762" stroke="#FFFFFF" stroke-width="1.5"/>
+  <!-- Scale 3 (Spine Mid Right) -->
+  <path d="M174,86 L188,120 L162,138 L155,112 Z" fill="#2A3549" stroke="#FFFFFF" stroke-width="1.5"/>
+  <!-- Scale 4 (Spine Lower Right) -->
+  <path d="M188,120 L180,158 L150,165 L162,138 Z" fill="#1E2635" stroke="#FFFFFF" stroke-width="1.5"/>
+  <!-- Scale 5 (Spine Bottom) -->
+  <path d="M180,158 L150,192 L125,178 L150,165 Z" fill="#151A24" stroke="#FFFFFF" stroke-width="1.5"/>
+  <!-- Curled Pangolin Head & Protective Snout -->
+  <path d="M85,130 L115,115 L125,145 L95,160 Z" fill="#2D394C" stroke="#3E506F" stroke-width="1.5"/>
+  <polygon points="75,145 92,138 90,158" fill="#171A21" stroke="#3E506F" stroke-width="1.5"/>
+  <!-- Glowing Crimson Eye Slit -->
+  <line x1="86" y1="144" x2="98" y2="140" stroke="#D92D20" stroke-width="3" stroke-linecap="round"/>
+  <!-- Claws / Arm Guard Base -->
+  <polygon points="90,165 110,185 100,195 80,175" fill="#D92D20" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="132" cy="138" r="4.5" fill="#D92D20"/>
+</svg>
+          </div>
+
+          <div class="card-body">
+            <div class="card-header-block">
+              <h2 class="card-title">02. Vipera the Armored Pangolin</h2>
+              <span class="card-tagline">Geometric Ballistic Defense & Threat Rolling</span>
+            </div>
+
+            <div class="lockup-preview">
+              <div class="lockup-mini-svg">
+                <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="m2-plate" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#495D7D"/>
+      <stop offset="100%" stop-color="#1A212E"/>
+    </linearGradient>
+  </defs>
+  <!-- Curled Body Shell Arc -->
+  <path d="M60,140 C50,80 95,45 150,55 C195,65 205,120 185,165 C165,200 110,210 75,180" stroke="#E1E5EA" stroke-width="2" stroke-dasharray="4 4" fill="none"/>
+  <!-- Overlapping Armor Scales -->
+  <!-- Scale 1 (Spine Top) -->
+  <path d="M120,48 L146,65 L130,92 L105,75 Z" fill="#4B5E82" stroke="#FFFFFF" stroke-width="1.5"/>
+  <!-- Scale 2 (Spine Upper Right) -->
+  <path d="M146,65 L174,86 L155,112 L130,92 Z" fill="#384762" stroke="#FFFFFF" stroke-width="1.5"/>
+  <!-- Scale 3 (Spine Mid Right) -->
+  <path d="M174,86 L188,120 L162,138 L155,112 Z" fill="#2A3549" stroke="#FFFFFF" stroke-width="1.5"/>
+  <!-- Scale 4 (Spine Lower Right) -->
+  <path d="M188,120 L180,158 L150,165 L162,138 Z" fill="#1E2635" stroke="#FFFFFF" stroke-width="1.5"/>
+  <!-- Scale 5 (Spine Bottom) -->
+  <path d="M180,158 L150,192 L125,178 L150,165 Z" fill="#151A24" stroke="#FFFFFF" stroke-width="1.5"/>
+  <!-- Curled Pangolin Head & Protective Snout -->
+  <path d="M85,130 L115,115 L125,145 L95,160 Z" fill="#2D394C" stroke="#3E506F" stroke-width="1.5"/>
+  <polygon points="75,145 92,138 90,158" fill="#171A21" stroke="#3E506F" stroke-width="1.5"/>
+  <!-- Glowing Crimson Eye Slit -->
+  <line x1="86" y1="144" x2="98" y2="140" stroke="#D92D20" stroke-width="3" stroke-linecap="round"/>
+  <!-- Claws / Arm Guard Base -->
+  <polygon points="90,165 110,185 100,195 80,175" fill="#D92D20" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="132" cy="138" r="4.5" fill="#D92D20"/>
+</svg>
+              </div>
+              <div class="lockup-text">
+                <div class="lockup-brand">Olla<span>VPN</span></div>
+                <div class="lockup-sub">Sovereign WireGuard Tunnel</div>
+              </div>
+            </div>
+
+            <p class="card-rationale">Inspired by the world's most naturally fortified mammal. Vipera curls into an impregnable geodesic ball when under DDoS or man-in-the-middle attack, protecting sensitive keys inside interlocking chitinous carbon plates.</p>
+
+            <div class="specs-box">
+              Geodesic Shell Geometry • Radial Plate Overlap • Kinetic Impact Deflector
+            </div>
+
+            <div class="swatches" title="Color Hierarchy Palette">
+              <div class="swatch" style="background-color: #171A21;" title="#171A21"></div><div class="swatch" style="background-color: #3E506F;" title="#3E506F"></div><div class="swatch" style="background-color: #E1E5EA;" title="#E1E5EA"></div><div class="swatch" style="background-color: #D92D20;" title="#D92D20"></div>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-action primary" onclick="copySVG('mascot-02')">
+                <span>📋</span> Copy SVG
+              </button>
+              <button class="btn-action" onclick="downloadSVG('mascot-02', 'vipera-the-armored-pangolin')">
+                <span>⬇️</span> Download
+              </button>
+            </div>
+          </div>
+        </article>
+      
+
+        <article class="logo-card" id="mascot-03">
+          <div class="stage-canvas" id="stage-mascot-03">
+            <span class="card-badge">03 / 12</span>
+            <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="m3-wing" x1="50" y1="40" x2="190" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4F648A"/>
+      <stop offset="100%" stop-color="#141822"/>
+    </linearGradient>
+  </defs>
+  <!-- Speed Streamlines -->
+  <line x1="40" y1="70" x2="80" y2="70" stroke="#E1E5EA" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <line x1="25" y1="95" x2="70" y2="95" stroke="#D92D20" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <line x1="45" y1="120" x2="75" y2="120" stroke="#E1E5EA" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <!-- Falcon Body Silhouette in Dive Posture -->
+  <path d="M85,92 L140,55 L165,70 L145,115 L95,125 Z" fill="#242D3D" stroke="#E1E5EA" stroke-width="1.5"/>
+  <!-- Primary Swept Delta Wing Upper -->
+  <polygon points="120,68 198,42 165,85 135,82" fill="#3D4E6B" stroke="#FFFFFF" stroke-width="1.5"/>
+  <!-- Secondary Wing Layer -->
+  <polygon points="135,82 188,72 155,108 128,100" fill="#2A3549" stroke="#FFFFFF" stroke-width="1.5"/>
+  <!-- Tertiary Wing Layer -->
+  <polygon points="128,100 175,102 145,130 118,118" fill="#1C2330" stroke="#FFFFFF" stroke-width="1.5"/>
+  <!-- Swept Tail Rudder -->
+  <polygon points="95,125 72,175 110,148 118,118" fill="#151A24" stroke="#E1E5EA" stroke-width="1.5"/>
+  <!-- Falcon Head & Hook Beak -->
+  <polygon points="140,55 178,58 165,76 148,72" fill="#4B5E80"/>
+  <!-- Hook Beak -->
+  <path d="M178,58 L195,65 L182,78 L170,72 Z" fill="#D92D20" stroke="#FFFFFF" stroke-width="1"/>
+  <!-- Visor Slit Eye -->
+  <circle cx="162" cy="65" r="3.5" fill="#FFFFFF"/>
+  <line x1="152" y1="65" x2="168" y2="65" stroke="#D92D20" stroke-width="1.5"/>
+  <!-- WireGuard Vector Thrust Jet -->
+  <polygon points="68,172 50,188 78,182" fill="#D92D20"/>
+</svg>
+          </div>
+
+          <div class="card-body">
+            <div class="card-header-block">
+              <h2 class="card-title">03. Aero the Peregrine Falcon</h2>
+              <span class="card-tagline">Supersonic WireGuard Speed & Low-Latency Dive</span>
+            </div>
+
+            <div class="lockup-preview">
+              <div class="lockup-mini-svg">
+                <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="m3-wing" x1="50" y1="40" x2="190" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4F648A"/>
+      <stop offset="100%" stop-color="#141822"/>
+    </linearGradient>
+  </defs>
+  <!-- Speed Streamlines -->
+  <line x1="40" y1="70" x2="80" y2="70" stroke="#E1E5EA" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <line x1="25" y1="95" x2="70" y2="95" stroke="#D92D20" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <line x1="45" y1="120" x2="75" y2="120" stroke="#E1E5EA" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <!-- Falcon Body Silhouette in Dive Posture -->
+  <path d="M85,92 L140,55 L165,70 L145,115 L95,125 Z" fill="#242D3D" stroke="#E1E5EA" stroke-width="1.5"/>
+  <!-- Primary Swept Delta Wing Upper -->
+  <polygon points="120,68 198,42 165,85 135,82" fill="#3D4E6B" stroke="#FFFFFF" stroke-width="1.5"/>
+  <!-- Secondary Wing Layer -->
+  <polygon points="135,82 188,72 155,108 128,100" fill="#2A3549" stroke="#FFFFFF" stroke-width="1.5"/>
+  <!-- Tertiary Wing Layer -->
+  <polygon points="128,100 175,102 145,130 118,118" fill="#1C2330" stroke="#FFFFFF" stroke-width="1.5"/>
+  <!-- Swept Tail Rudder -->
+  <polygon points="95,125 72,175 110,148 118,118" fill="#151A24" stroke="#E1E5EA" stroke-width="1.5"/>
+  <!-- Falcon Head & Hook Beak -->
+  <polygon points="140,55 178,58 165,76 148,72" fill="#4B5E80"/>
+  <!-- Hook Beak -->
+  <path d="M178,58 L195,65 L182,78 L170,72 Z" fill="#D92D20" stroke="#FFFFFF" stroke-width="1"/>
+  <!-- Visor Slit Eye -->
+  <circle cx="162" cy="65" r="3.5" fill="#FFFFFF"/>
+  <line x1="152" y1="65" x2="168" y2="65" stroke="#D92D20" stroke-width="1.5"/>
+  <!-- WireGuard Vector Thrust Jet -->
+  <polygon points="68,172 50,188 78,182" fill="#D92D20"/>
+</svg>
+              </div>
+              <div class="lockup-text">
+                <div class="lockup-brand">Olla<span>VPN</span></div>
+                <div class="lockup-sub">Sovereign WireGuard Tunnel</div>
+              </div>
+            </div>
+
+            <p class="card-rationale">Peregrine falcons reach over 380 km/h in their hunting stoop. Aero embodies the unparalleled bandwidth and featherweight efficiency of the WireGuard protocol, slicing through latency bottlenecks.</p>
+
+            <div class="specs-box">
+              Aerodynamic Delta Wings • Swept-Back Vector Feathers • Razor Beak Contour
+            </div>
+
+            <div class="swatches" title="Color Hierarchy Palette">
+              <div class="swatch" style="background-color: #3E506F;" title="#3E506F"></div><div class="swatch" style="background-color: #171A21;" title="#171A21"></div><div class="swatch" style="background-color: #D92D20;" title="#D92D20"></div><div class="swatch" style="background-color: #FFFFFF;" title="#FFFFFF"></div>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-action primary" onclick="copySVG('mascot-03')">
+                <span>📋</span> Copy SVG
+              </button>
+              <button class="btn-action" onclick="downloadSVG('mascot-03', 'aero-the-peregrine-falcon')">
+                <span>⬇️</span> Download
+              </button>
+            </div>
+          </div>
+        </article>
+      
+
+        <article class="logo-card" id="mascot-04">
+          <div class="stage-canvas" id="stage-mascot-04">
+            <span class="card-badge">04 / 12</span>
+            <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="m4-pearl" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="40%" stop-color="#FF5A4A"/>
+      <stop offset="100%" stop-color="#D92D20"/>
+    </radialGradient>
+  </defs>
+  <!-- Fluid Data Waves -->
+  <path d="M40,165 C80,145 120,185 160,165 C180,155 200,160 215,175" stroke="#3E506F" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <path d="M25,185 C65,165 105,205 145,185 C175,170 195,185 210,200" stroke="#E1E5EA" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <!-- Otter Body Arc -->
+  <path d="M60,165 C55,100 95,65 145,75 C175,80 185,110 170,140 C155,170 120,175 95,160 Z" fill="#252F40" stroke="#E1E5EA" stroke-width="1.5"/>
+  <!-- Otter Head Contour -->
+  <polygon points="145,75 178,65 188,85 170,98 152,90" fill="#3B4A63" stroke="#FFFFFF" stroke-width="1"/>
+  <!-- Rounded Ear Nodes -->
+  <circle cx="152" cy="66" r="6" fill="#171A21" stroke="#3E506F" stroke-width="1.5"/>
+  <!-- Cyber Whiskers -->
+  <line x1="188" y1="85" x2="212" y2="78" stroke="#D92D20" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="188" y1="88" x2="215" y2="88" stroke="#D92D20" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="188" y1="91" x2="210" y2="98" stroke="#D92D20" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Glowing Eye -->
+  <circle cx="170" cy="78" r="3.5" fill="#FFFFFF"/>
+  <!-- Chest Lighter Contour -->
+  <path d="M125,100 C150,110 155,140 135,155 C115,145 110,120 125,100 Z" fill="#4B5E7D" opacity="0.5"/>
+  <!-- Clasped Paws Holding Cryptographic Pearl -->
+  <polygon points="120,115 135,125 125,140 110,130" fill="#171A21" stroke="#FFFFFF" stroke-width="1.5"/>
+  <circle cx="138" cy="132" r="14" fill="url(#m4-pearl)" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="134" cy="128" r="4" fill="#FFFFFF"/>
+</svg>
+          </div>
+
+          <div class="card-body">
+            <div class="card-header-block">
+              <h2 class="card-title">04. Sentry the Cyber Otter</h2>
+              <span class="card-tagline">Agile Stream Sentinel Diving with Quantum Pearl</span>
+            </div>
+
+            <div class="lockup-preview">
+              <div class="lockup-mini-svg">
+                <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="m4-pearl" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="40%" stop-color="#FF5A4A"/>
+      <stop offset="100%" stop-color="#D92D20"/>
+    </radialGradient>
+  </defs>
+  <!-- Fluid Data Waves -->
+  <path d="M40,165 C80,145 120,185 160,165 C180,155 200,160 215,175" stroke="#3E506F" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <path d="M25,185 C65,165 105,205 145,185 C175,170 195,185 210,200" stroke="#E1E5EA" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <!-- Otter Body Arc -->
+  <path d="M60,165 C55,100 95,65 145,75 C175,80 185,110 170,140 C155,170 120,175 95,160 Z" fill="#252F40" stroke="#E1E5EA" stroke-width="1.5"/>
+  <!-- Otter Head Contour -->
+  <polygon points="145,75 178,65 188,85 170,98 152,90" fill="#3B4A63" stroke="#FFFFFF" stroke-width="1"/>
+  <!-- Rounded Ear Nodes -->
+  <circle cx="152" cy="66" r="6" fill="#171A21" stroke="#3E506F" stroke-width="1.5"/>
+  <!-- Cyber Whiskers -->
+  <line x1="188" y1="85" x2="212" y2="78" stroke="#D92D20" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="188" y1="88" x2="215" y2="88" stroke="#D92D20" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="188" y1="91" x2="210" y2="98" stroke="#D92D20" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Glowing Eye -->
+  <circle cx="170" cy="78" r="3.5" fill="#FFFFFF"/>
+  <!-- Chest Lighter Contour -->
+  <path d="M125,100 C150,110 155,140 135,155 C115,145 110,120 125,100 Z" fill="#4B5E7D" opacity="0.5"/>
+  <!-- Clasped Paws Holding Cryptographic Pearl -->
+  <polygon points="120,115 135,125 125,140 110,130" fill="#171A21" stroke="#FFFFFF" stroke-width="1.5"/>
+  <circle cx="138" cy="132" r="14" fill="url(#m4-pearl)" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="134" cy="128" r="4" fill="#FFFFFF"/>
+</svg>
+              </div>
+              <div class="lockup-text">
+                <div class="lockup-brand">Olla<span>VPN</span></div>
+                <div class="lockup-sub">Sovereign WireGuard Tunnel</div>
+              </div>
+            </div>
+
+            <p class="card-rationale">Otters are playful yet ferocious river defenders, maneuvering through currents with lightning agility. Sentry dives smoothly through congested data streams, clasping an unbreakable cryptographic pearl.</p>
+
+            <div class="specs-box">
+              Hydrodynamic Fluid Curves • Faceted Forearm Plates • Quantum Pearl Core
+            </div>
+
+            <div class="swatches" title="Color Hierarchy Palette">
+              <div class="swatch" style="background-color: #171A21;" title="#171A21"></div><div class="swatch" style="background-color: #3E506F;" title="#3E506F"></div><div class="swatch" style="background-color: #D92D20;" title="#D92D20"></div><div class="swatch" style="background-color: #FFFFFF;" title="#FFFFFF"></div>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-action primary" onclick="copySVG('mascot-04')">
+                <span>📋</span> Copy SVG
+              </button>
+              <button class="btn-action" onclick="downloadSVG('mascot-04', 'sentry-the-cyber-otter')">
+                <span>⬇️</span> Download
+              </button>
+            </div>
+          </div>
+        </article>
+      
+
+        <article class="logo-card" id="mascot-05">
+          <div class="stage-canvas" id="stage-mascot-05">
+            <span class="card-badge">05 / 12</span>
+            <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Subtle Hex Matrix Shield Behind -->
+  <polygon points="120,32 185,70 185,146 120,184 55,146 55,70" stroke="#E1E5EA" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <!-- Left Ear -->
+  <polygon points="120,80 65,40 85,100" fill="#BA2216" stroke="#FFFFFF" stroke-width="1"/>
+  <polygon points="85,100 65,40 95,75" fill="#171A21"/>
+  <!-- Right Ear -->
+  <polygon points="120,80 175,40 155,100" fill="#E0382B" stroke="#FFFFFF" stroke-width="1"/>
+  <polygon points="155,100 175,40 145,75" fill="#242B38"/>
+  <!-- Forehead Diamond Bridge -->
+  <polygon points="120,70 145,105 120,135 95,105" fill="#D92D20" stroke="#FFFFFF" stroke-width="1"/>
+  <!-- Left Cheek Plate -->
+  <polygon points="95,105 50,118 85,152 120,135" fill="#1C2330" stroke="#FFFFFF" stroke-width="1"/>
+  <polygon points="50,118 85,152 75,172" fill="#FFFFFF"/>
+  <!-- Right Cheek Plate -->
+  <polygon points="145,105 190,118 155,152 120,135" fill="#2E394D" stroke="#FFFFFF" stroke-width="1"/>
+  <polygon points="190,118 155,152 165,172" fill="#FFFFFF"/>
+  <!-- Lower Muzzle & Chin -->
+  <polygon points="120,135 105,172 120,188 135,172" fill="#D92D20" stroke="#FFFFFF" stroke-width="1"/>
+  <!-- Cyber Nose Tip -->
+  <polygon points="115,182 125,182 120,192" fill="#171A21"/>
+  <!-- Slanted Stealth Eyes -->
+  <polygon points="88,118 106,122 96,128" fill="#FFFFFF"/>
+  <circle cx="97" cy="123" r="2.5" fill="#D92D20"/>
+  <polygon points="152,118 134,122 144,128" fill="#FFFFFF"/>
+  <circle cx="143" cy="123" r="2.5" fill="#D92D20"/>
+</svg>
+          </div>
+
+          <div class="card-body">
+            <div class="card-header-block">
+              <h2 class="card-title">05. Phantom the Stealth Fox</h2>
+              <span class="card-tagline">Zero-Logs Origami Fox with Stealth Mask</span>
+            </div>
+
+            <div class="lockup-preview">
+              <div class="lockup-mini-svg">
+                <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Subtle Hex Matrix Shield Behind -->
+  <polygon points="120,32 185,70 185,146 120,184 55,146 55,70" stroke="#E1E5EA" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <!-- Left Ear -->
+  <polygon points="120,80 65,40 85,100" fill="#BA2216" stroke="#FFFFFF" stroke-width="1"/>
+  <polygon points="85,100 65,40 95,75" fill="#171A21"/>
+  <!-- Right Ear -->
+  <polygon points="120,80 175,40 155,100" fill="#E0382B" stroke="#FFFFFF" stroke-width="1"/>
+  <polygon points="155,100 175,40 145,75" fill="#242B38"/>
+  <!-- Forehead Diamond Bridge -->
+  <polygon points="120,70 145,105 120,135 95,105" fill="#D92D20" stroke="#FFFFFF" stroke-width="1"/>
+  <!-- Left Cheek Plate -->
+  <polygon points="95,105 50,118 85,152 120,135" fill="#1C2330" stroke="#FFFFFF" stroke-width="1"/>
+  <polygon points="50,118 85,152 75,172" fill="#FFFFFF"/>
+  <!-- Right Cheek Plate -->
+  <polygon points="145,105 190,118 155,152 120,135" fill="#2E394D" stroke="#FFFFFF" stroke-width="1"/>
+  <polygon points="190,118 155,152 165,172" fill="#FFFFFF"/>
+  <!-- Lower Muzzle & Chin -->
+  <polygon points="120,135 105,172 120,188 135,172" fill="#D92D20" stroke="#FFFFFF" stroke-width="1"/>
+  <!-- Cyber Nose Tip -->
+  <polygon points="115,182 125,182 120,192" fill="#171A21"/>
+  <!-- Slanted Stealth Eyes -->
+  <polygon points="88,118 106,122 96,128" fill="#FFFFFF"/>
+  <circle cx="97" cy="123" r="2.5" fill="#D92D20"/>
+  <polygon points="152,118 134,122 144,128" fill="#FFFFFF"/>
+  <circle cx="143" cy="123" r="2.5" fill="#D92D20"/>
+</svg>
+              </div>
+              <div class="lockup-text">
+                <div class="lockup-brand">Olla<span>VPN</span></div>
+                <div class="lockup-sub">Sovereign WireGuard Tunnel</div>
+              </div>
+            </div>
+
+            <p class="card-rationale">Fuses the cunning agility of a red fox with origami low-poly stealth geometry. Phantom leaves zero footprints, sidestepping digital trackers and state firewalls with total optical invisibility.</p>
+
+            <div class="specs-box">
+              Low-Poly Geometric Facets • Dual-Toned Cranial Planes • Zero-Log Iris Slits
+            </div>
+
+            <div class="swatches" title="Color Hierarchy Palette">
+              <div class="swatch" style="background-color: #D92D20;" title="#D92D20"></div><div class="swatch" style="background-color: #171A21;" title="#171A21"></div><div class="swatch" style="background-color: #FFFFFF;" title="#FFFFFF"></div><div class="swatch" style="background-color: #3E506F;" title="#3E506F"></div>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-action primary" onclick="copySVG('mascot-05')">
+                <span>📋</span> Copy SVG
+              </button>
+              <button class="btn-action" onclick="downloadSVG('mascot-05', 'phantom-the-stealth-fox')">
+                <span>⬇️</span> Download
+              </button>
+            </div>
+          </div>
+        </article>
+      
+
+        <article class="logo-card" id="mascot-06">
+          <div class="stage-canvas" id="stage-mascot-06">
+            <span class="card-badge">06 / 12</span>
+            <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bear Head Profile Facing Right -->
+  <!-- Neck and Spine Armor Plates -->
+  <polygon points="50,150 75,95 110,85 95,160" fill="#1B212D" stroke="#E1E5EA" stroke-width="1.5"/>
+  <polygon points="95,160 110,85 145,85 130,175" fill="#252D3C" stroke="#E1E5EA" stroke-width="1.5"/>
+  <!-- Bear Ear Plate -->
+  <polygon points="105,85 115,55 130,65 125,85" fill="#3D4B63" stroke="#FFFFFF" stroke-width="1"/>
+  <!-- Cranium and Brow -->
+  <polygon points="125,85 170,95 195,125 155,135 130,115" fill="#323E52" stroke="#FFFFFF" stroke-width="1.5"/>
+  <!-- Snout / Muzzle -->
+  <polygon points="170,95 205,120 195,142 165,140" fill="#4B5E7D" stroke="#FFFFFF" stroke-width="1.5"/>
+  <!-- Armored Titanium Jaw -->
+  <polygon points="195,142 165,140 145,165 175,165" fill="#171A21" stroke="#E1E5EA" stroke-width="1.5"/>
+  <!-- Bear Nose -->
+  <polygon points="200,118 212,122 205,130" fill="#D92D20"/>
+  <!-- Crimson Tactical Visor -->
+  <polygon points="152,108 178,115 168,124 148,118" fill="#D92D20" stroke="#FFFFFF" stroke-width="1"/>
+  <line x1="140" y1="114" x2="185" y2="122" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Chest Shield Badge -->
+  <polygon points="110,185 130,175 150,185 130,205" fill="#D92D20" stroke="#FFFFFF" stroke-width="1.5"/>
+  <circle cx="130" cy="190" r="3" fill="#FFFFFF"/>
+</svg>
+          </div>
+
+          <div class="card-body">
+            <div class="card-header-block">
+              <h2 class="card-title">06. Kodiak the Armored Bear</h2>
+              <span class="card-tagline">Military-Grade Brute Defense & Sovereign Resilience</span>
+            </div>
+
+            <div class="lockup-preview">
+              <div class="lockup-mini-svg">
+                <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bear Head Profile Facing Right -->
+  <!-- Neck and Spine Armor Plates -->
+  <polygon points="50,150 75,95 110,85 95,160" fill="#1B212D" stroke="#E1E5EA" stroke-width="1.5"/>
+  <polygon points="95,160 110,85 145,85 130,175" fill="#252D3C" stroke="#E1E5EA" stroke-width="1.5"/>
+  <!-- Bear Ear Plate -->
+  <polygon points="105,85 115,55 130,65 125,85" fill="#3D4B63" stroke="#FFFFFF" stroke-width="1"/>
+  <!-- Cranium and Brow -->
+  <polygon points="125,85 170,95 195,125 155,135 130,115" fill="#323E52" stroke="#FFFFFF" stroke-width="1.5"/>
+  <!-- Snout / Muzzle -->
+  <polygon points="170,95 205,120 195,142 165,140" fill="#4B5E7D" stroke="#FFFFFF" stroke-width="1.5"/>
+  <!-- Armored Titanium Jaw -->
+  <polygon points="195,142 165,140 145,165 175,165" fill="#171A21" stroke="#E1E5EA" stroke-width="1.5"/>
+  <!-- Bear Nose -->
+  <polygon points="200,118 212,122 205,130" fill="#D92D20"/>
+  <!-- Crimson Tactical Visor -->
+  <polygon points="152,108 178,115 168,124 148,118" fill="#D92D20" stroke="#FFFFFF" stroke-width="1"/>
+  <line x1="140" y1="114" x2="185" y2="122" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Chest Shield Badge -->
+  <polygon points="110,185 130,175 150,185 130,205" fill="#D92D20" stroke="#FFFFFF" stroke-width="1.5"/>
+  <circle cx="130" cy="190" r="3" fill="#FFFFFF"/>
+</svg>
+              </div>
+              <div class="lockup-text">
+                <div class="lockup-brand">Olla<span>VPN</span></div>
+                <div class="lockup-sub">Sovereign WireGuard Tunnel</div>
+              </div>
+            </div>
+
+            <p class="card-rationale">An imposing, armored sovereign bear engineered for extreme perimeter defense. Kodiak commands unbreakable 256-bit encryption barriers, brushing aside brute-force decrypt attempts with titanium composure.</p>
+
+            <div class="specs-box">
+              Titanium Jaw Augmentation • Beveled Neck Flanges • Specular Battle Visor
+            </div>
+
+            <div class="swatches" title="Color Hierarchy Palette">
+              <div class="swatch" style="background-color: #171A21;" title="#171A21"></div><div class="swatch" style="background-color: #3E506F;" title="#3E506F"></div><div class="swatch" style="background-color: #D92D20;" title="#D92D20"></div><div class="swatch" style="background-color: #E1E5EA;" title="#E1E5EA"></div>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-action primary" onclick="copySVG('mascot-06')">
+                <span>📋</span> Copy SVG
+              </button>
+              <button class="btn-action" onclick="downloadSVG('mascot-06', 'kodiak-the-armored-bear')">
+                <span>⬇️</span> Download
+              </button>
+            </div>
+          </div>
+        </article>
+      
+
+        <article class="logo-card" id="mascot-07">
+          <div class="stage-canvas" id="stage-mascot-07">
+            <span class="card-badge">07 / 12</span>
+            <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sonar Depth Rings -->
+  <ellipse cx="120" cy="120" rx="80" ry="40" stroke="#E1E5EA" stroke-width="1" stroke-dasharray="3 4"/>
+  <!-- Manta Ray Wide Wingspan Body -->
+  <path d="M120,45 C150,75 210,105 215,125 C190,135 155,140 135,160 L125,205 L115,205 L105,160 C85,140 50,135 25,125 C30,105 90,75 120,45 Z" fill="#202836" stroke="#E1E5EA" stroke-width="1.5"/>
+  <!-- Wing Bevel Facets (Left Wing) -->
+  <polygon points="120,45 25,125 75,132 120,110" fill="#2E394E"/>
+  <polygon points="75,132 105,160 120,110" fill="#3D4B63"/>
+  <!-- Wing Bevel Facets (Right Wing) -->
+  <polygon points="120,45 215,125 165,132 120,110" fill="#3A485E"/>
+  <polygon points="165,132 135,160 120,110" fill="#4B5E7A"/>
+  <!-- Cephalic Fins (Head Horns) -->
+  <path d="M110,48 C108,35 114,30 118,44" stroke="#D92D20" stroke-width="3" stroke-linecap="round"/>
+  <path d="M130,48 C132,35 126,30 122,44" stroke="#D92D20" stroke-width="3" stroke-linecap="round"/>
+  <!-- Dorsal Glowing Backbone Conduit -->
+  <line x1="120" y1="52" x2="120" y2="185" stroke="#D92D20" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="120" cy="80" r="4" fill="#FFFFFF"/>
+  <circle cx="120" cy="115" r="4" fill="#FFFFFF"/>
+  <circle cx="120" cy="150" r="4" fill="#FFFFFF"/>
+  <!-- Whip-Tail Laser Packet -->
+  <circle cx="120" cy="205" r="3" fill="#D92D20"/>
+</svg>
+          </div>
+
+          <div class="card-body">
+            <div class="card-header-block">
+              <h2 class="card-title">07. Triton the Cyber Manta Ray</h2>
+              <span class="card-tagline">Deep Subsea Tunneling & Unthrottled Oceanic Flow</span>
+            </div>
+
+            <div class="lockup-preview">
+              <div class="lockup-mini-svg">
+                <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sonar Depth Rings -->
+  <ellipse cx="120" cy="120" rx="80" ry="40" stroke="#E1E5EA" stroke-width="1" stroke-dasharray="3 4"/>
+  <!-- Manta Ray Wide Wingspan Body -->
+  <path d="M120,45 C150,75 210,105 215,125 C190,135 155,140 135,160 L125,205 L115,205 L105,160 C85,140 50,135 25,125 C30,105 90,75 120,45 Z" fill="#202836" stroke="#E1E5EA" stroke-width="1.5"/>
+  <!-- Wing Bevel Facets (Left Wing) -->
+  <polygon points="120,45 25,125 75,132 120,110" fill="#2E394E"/>
+  <polygon points="75,132 105,160 120,110" fill="#3D4B63"/>
+  <!-- Wing Bevel Facets (Right Wing) -->
+  <polygon points="120,45 215,125 165,132 120,110" fill="#3A485E"/>
+  <polygon points="165,132 135,160 120,110" fill="#4B5E7A"/>
+  <!-- Cephalic Fins (Head Horns) -->
+  <path d="M110,48 C108,35 114,30 118,44" stroke="#D92D20" stroke-width="3" stroke-linecap="round"/>
+  <path d="M130,48 C132,35 126,30 122,44" stroke="#D92D20" stroke-width="3" stroke-linecap="round"/>
+  <!-- Dorsal Glowing Backbone Conduit -->
+  <line x1="120" y1="52" x2="120" y2="185" stroke="#D92D20" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="120" cy="80" r="4" fill="#FFFFFF"/>
+  <circle cx="120" cy="115" r="4" fill="#FFFFFF"/>
+  <circle cx="120" cy="150" r="4" fill="#FFFFFF"/>
+  <!-- Whip-Tail Laser Packet -->
+  <circle cx="120" cy="205" r="3" fill="#D92D20"/>
+</svg>
+              </div>
+              <div class="lockup-text">
+                <div class="lockup-brand">Olla<span>VPN</span></div>
+                <div class="lockup-sub">Sovereign WireGuard Tunnel</div>
+              </div>
+            </div>
+
+            <p class="card-rationale">Inspired by deep-sea transcontinental fiber cables. Triton glides silently below the surface tempest, channeling unthrottled gigabit bandwidth across global ocean trenches with zero surveillance wake.</p>
+
+            <div class="specs-box">
+              Fluid Biomechanical Delta Wing • Dorsal Optical Circuit • Stealth Abyssal Glide
+            </div>
+
+            <div class="swatches" title="Color Hierarchy Palette">
+              <div class="swatch" style="background-color: #3E506F;" title="#3E506F"></div><div class="swatch" style="background-color: #171A21;" title="#171A21"></div><div class="swatch" style="background-color: #D92D20;" title="#D92D20"></div><div class="swatch" style="background-color: #FFFFFF;" title="#FFFFFF"></div>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-action primary" onclick="copySVG('mascot-07')">
+                <span>📋</span> Copy SVG
+              </button>
+              <button class="btn-action" onclick="downloadSVG('mascot-07', 'triton-the-cyber-manta-ray')">
+                <span>⬇️</span> Download
+              </button>
+            </div>
+          </div>
+        </article>
+      
+
+        <article class="logo-card" id="mascot-08">
+          <div class="stage-canvas" id="stage-mascot-08">
+            <span class="card-badge">08 / 12</span>
+            <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cranium and Brow -->
+  <polygon points="80,75 110,65 130,65 160,75 145,100 95,100" fill="#2E3747" stroke="#E1E5EA" stroke-width="1.5"/>
+  <!-- Floppy Folded Ears -->
+  <polygon points="80,75 62,90 75,105 88,95" fill="#171A21" stroke="#3E506F" stroke-width="1"/>
+  <polygon points="160,75 178,90 165,105 152,95" fill="#171A21" stroke="#3E506F" stroke-width="1"/>
+  <!-- Deep Wrinkled Forehead Plate -->
+  <polygon points="95,100 145,100 152,125 88,125" fill="#3D4B60" stroke="#FFFFFF" stroke-width="1"/>
+  <!-- Bulldog Underbite Muzzle / Jowls -->
+  <polygon points="88,125 152,125 162,155 120,170 78,155" fill="#1A202A" stroke="#E1E5EA" stroke-width="1.5"/>
+  <!-- Cyber Fangs (Underbite) -->
+  <polygon points="94,142 102,142 98,130" fill="#FFFFFF"/>
+  <polygon points="146,142 138,142 142,130" fill="#FFFFFF"/>
+  <!-- Nose Node -->
+  <polygon points="112,128 128,128 120,138" fill="#D92D20"/>
+  <!-- Alert Cyber Visor -->
+  <polygon points="92,106 108,106 104,115 90,115" fill="#D92D20"/>
+  <polygon points="148,106 132,106 136,115 150,115" fill="#D92D20"/>
+  <!-- Heavy Studded Collar -->
+  <path d="M72,160 L168,160 L158,185 L82,185 Z" fill="#D92D20" stroke="#FFFFFF" stroke-width="2"/>
+  <!-- Collar Studs -->
+  <circle cx="86" cy="172" r="4" fill="#FFFFFF"/>
+  <circle cx="109" cy="172" r="4" fill="#FFFFFF"/>
+  <circle cx="131" cy="172" r="4" fill="#FFFFFF"/>
+  <circle cx="154" cy="172" r="4" fill="#FFFFFF"/>
+  <!-- Chest Padlock Charm -->
+  <rect x="112" y="188" width="16" height="14" rx="2" fill="#171A21" stroke="#FFFFFF" stroke-width="1.5"/>
+  <path d="M115,188 L115,182 C115,178 125,178 125,182 L125,188" stroke="#FFFFFF" stroke-width="1.5" fill="none"/>
+</svg>
+          </div>
+
+          <div class="card-body">
+            <div class="card-header-block">
+              <h2 class="card-title">08. Aegis the Cyber Bulldog</h2>
+              <span class="card-tagline">Fortified Gateway Sentinel with Studded Node Collar</span>
+            </div>
+
+            <div class="lockup-preview">
+              <div class="lockup-mini-svg">
+                <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cranium and Brow -->
+  <polygon points="80,75 110,65 130,65 160,75 145,100 95,100" fill="#2E3747" stroke="#E1E5EA" stroke-width="1.5"/>
+  <!-- Floppy Folded Ears -->
+  <polygon points="80,75 62,90 75,105 88,95" fill="#171A21" stroke="#3E506F" stroke-width="1"/>
+  <polygon points="160,75 178,90 165,105 152,95" fill="#171A21" stroke="#3E506F" stroke-width="1"/>
+  <!-- Deep Wrinkled Forehead Plate -->
+  <polygon points="95,100 145,100 152,125 88,125" fill="#3D4B60" stroke="#FFFFFF" stroke-width="1"/>
+  <!-- Bulldog Underbite Muzzle / Jowls -->
+  <polygon points="88,125 152,125 162,155 120,170 78,155" fill="#1A202A" stroke="#E1E5EA" stroke-width="1.5"/>
+  <!-- Cyber Fangs (Underbite) -->
+  <polygon points="94,142 102,142 98,130" fill="#FFFFFF"/>
+  <polygon points="146,142 138,142 142,130" fill="#FFFFFF"/>
+  <!-- Nose Node -->
+  <polygon points="112,128 128,128 120,138" fill="#D92D20"/>
+  <!-- Alert Cyber Visor -->
+  <polygon points="92,106 108,106 104,115 90,115" fill="#D92D20"/>
+  <polygon points="148,106 132,106 136,115 150,115" fill="#D92D20"/>
+  <!-- Heavy Studded Collar -->
+  <path d="M72,160 L168,160 L158,185 L82,185 Z" fill="#D92D20" stroke="#FFFFFF" stroke-width="2"/>
+  <!-- Collar Studs -->
+  <circle cx="86" cy="172" r="4" fill="#FFFFFF"/>
+  <circle cx="109" cy="172" r="4" fill="#FFFFFF"/>
+  <circle cx="131" cy="172" r="4" fill="#FFFFFF"/>
+  <circle cx="154" cy="172" r="4" fill="#FFFFFF"/>
+  <!-- Chest Padlock Charm -->
+  <rect x="112" y="188" width="16" height="14" rx="2" fill="#171A21" stroke="#FFFFFF" stroke-width="1.5"/>
+  <path d="M115,188 L115,182 C115,178 125,178 125,182 L125,188" stroke="#FFFFFF" stroke-width="1.5" fill="none"/>
+</svg>
+              </div>
+              <div class="lockup-text">
+                <div class="lockup-brand">Olla<span>VPN</span></div>
+                <div class="lockup-sub">Sovereign WireGuard Tunnel</div>
+              </div>
+            </div>
+
+            <p class="card-rationale">A tenacious, unyielding bulldog stationed squarely at the network entrance. Aegis locks his titanium jaw onto unwanted intrusion vectors, shutting down port sniffers and DNS leak attempts on contact.</p>
+
+            <div class="specs-box">
+              Brachycephalic Cyber Contour • Studded Cryptographic Collar • Stance of Dominance
+            </div>
+
+            <div class="swatches" title="Color Hierarchy Palette">
+              <div class="swatch" style="background-color: #171A21;" title="#171A21"></div><div class="swatch" style="background-color: #3E506F;" title="#3E506F"></div><div class="swatch" style="background-color: #D92D20;" title="#D92D20"></div><div class="swatch" style="background-color: #F7F8FA;" title="#F7F8FA"></div>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-action primary" onclick="copySVG('mascot-08')">
+                <span>📋</span> Copy SVG
+              </button>
+              <button class="btn-action" onclick="downloadSVG('mascot-08', 'aegis-the-cyber-bulldog')">
+                <span>⬇️</span> Download
+              </button>
+            </div>
+          </div>
+        </article>
+      
+
+        <article class="logo-card" id="mascot-09">
+          <div class="stage-canvas" id="stage-mascot-09">
+            <span class="card-badge">09 / 12</span>
+            <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Perch Branch Vector -->
+  <line x1="30" y1="175" x2="210" y2="175" stroke="#171A21" stroke-width="4" stroke-linecap="round"/>
+  <!-- Chameleon Body Contour -->
+  <path d="M75,170 C65,120 100,85 145,85 C175,85 185,105 178,130 C165,160 135,175 105,170 Z" fill="#283344" stroke="#E1E5EA" stroke-width="1.5"/>
+  <!-- Helmet Crest / Casque -->
+  <polygon points="120,85 145,55 165,85" fill="#4B5E7D" stroke="#FFFFFF" stroke-width="1"/>
+  <!-- Tessellated Skin Polygon Mosaic -->
+  <polygon points="110,105 130,95 140,115 120,125" fill="#3D4B60" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="130,95 155,100 160,120 140,115" fill="#D92D20" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="120,125 140,115 145,140 125,145" fill="#202734" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="95,120 110,105 120,125 105,140" fill="#D92D20" stroke="#E1E5EA" stroke-width="1"/>
+  <!-- Turret Cone Eye -->
+  <circle cx="165" cy="110" r="14" fill="#171A21" stroke="#3E506F" stroke-width="2"/>
+  <circle cx="165" cy="110" r="7" fill="#D92D20"/>
+  <circle cx="167" cy="108" r="2.5" fill="#FFFFFF"/>
+  <!-- Prehensile Spiral Tail -->
+  <path d="M75,165 C55,165 40,145 45,125 C50,105 75,105 80,120 C82,130 72,140 65,135" stroke="#3E506F" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <!-- Clasping Zygodactylous Feet -->
+  <ellipse cx="105" cy="175" rx="8" ry="4" fill="#D92D20"/>
+  <ellipse cx="150" cy="175" rx="8" ry="4" fill="#D92D20"/>
+</svg>
+          </div>
+
+          <div class="card-body">
+            <div class="card-header-block">
+              <h2 class="card-title">09. Chameleon Cloak</h2>
+              <span class="card-tagline">Dynamic IP Obfuscation & Deep-Packet Camouflage</span>
+            </div>
+
+            <div class="lockup-preview">
+              <div class="lockup-mini-svg">
+                <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Perch Branch Vector -->
+  <line x1="30" y1="175" x2="210" y2="175" stroke="#171A21" stroke-width="4" stroke-linecap="round"/>
+  <!-- Chameleon Body Contour -->
+  <path d="M75,170 C65,120 100,85 145,85 C175,85 185,105 178,130 C165,160 135,175 105,170 Z" fill="#283344" stroke="#E1E5EA" stroke-width="1.5"/>
+  <!-- Helmet Crest / Casque -->
+  <polygon points="120,85 145,55 165,85" fill="#4B5E7D" stroke="#FFFFFF" stroke-width="1"/>
+  <!-- Tessellated Skin Polygon Mosaic -->
+  <polygon points="110,105 130,95 140,115 120,125" fill="#3D4B60" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="130,95 155,100 160,120 140,115" fill="#D92D20" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="120,125 140,115 145,140 125,145" fill="#202734" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="95,120 110,105 120,125 105,140" fill="#D92D20" stroke="#E1E5EA" stroke-width="1"/>
+  <!-- Turret Cone Eye -->
+  <circle cx="165" cy="110" r="14" fill="#171A21" stroke="#3E506F" stroke-width="2"/>
+  <circle cx="165" cy="110" r="7" fill="#D92D20"/>
+  <circle cx="167" cy="108" r="2.5" fill="#FFFFFF"/>
+  <!-- Prehensile Spiral Tail -->
+  <path d="M75,165 C55,165 40,145 45,125 C50,105 75,105 80,120 C82,130 72,140 65,135" stroke="#3E506F" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <!-- Clasping Zygodactylous Feet -->
+  <ellipse cx="105" cy="175" rx="8" ry="4" fill="#D92D20"/>
+  <ellipse cx="150" cy="175" rx="8" ry="4" fill="#D92D20"/>
+</svg>
+              </div>
+              <div class="lockup-text">
+                <div class="lockup-brand">Olla<span>VPN</span></div>
+                <div class="lockup-sub">Sovereign WireGuard Tunnel</div>
+              </div>
+            </div>
+
+            <p class="card-rationale">Masters of adaptive disguise. Chameleon Cloak transforms packet headers on the fly, rendering traffic identical to ordinary HTTPS web surfing and slipping undetected past deep-packet inspection firewalls.</p>
+
+            <div class="specs-box">
+              Prehensile Tail Vortex • Tessellated Skin Matrix • Independent Turret Eye
+            </div>
+
+            <div class="swatches" title="Color Hierarchy Palette">
+              <div class="swatch" style="background-color: #3E506F;" title="#3E506F"></div><div class="swatch" style="background-color: #D92D20;" title="#D92D20"></div><div class="swatch" style="background-color: #171A21;" title="#171A21"></div><div class="swatch" style="background-color: #E1E5EA;" title="#E1E5EA"></div>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-action primary" onclick="copySVG('mascot-09')">
+                <span>📋</span> Copy SVG
+              </button>
+              <button class="btn-action" onclick="downloadSVG('mascot-09', 'chameleon-cloak')">
+                <span>⬇️</span> Download
+              </button>
+            </div>
+          </div>
+        </article>
+      
+
+        <article class="logo-card" id="mascot-10">
+          <div class="stage-canvas" id="stage-mascot-10">
+            <span class="card-badge">10 / 12</span>
+            <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="m10-lantern" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="35%" stop-color="#FF5A4A"/>
+      <stop offset="70%" stop-color="#D92D20"/>
+      <stop offset="100%" stop-color="#D92D20" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Bioluminescent Ambient Aura -->
+  <circle cx="120" cy="165" r="45" fill="url(#m10-lantern)" opacity="0.8"/>
+  <!-- Insect Antennae -->
+  <path d="M112,65 C100,45 80,45 70,55" stroke="#3E506F" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <circle cx="70" cy="55" r="3" fill="#D92D20"/>
+  <path d="M128,65 C140,45 160,45 170,55" stroke="#3E506F" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <circle cx="170" cy="55" r="3" fill="#D92D20"/>
+  <!-- Head & Thorax -->
+  <ellipse cx="120" cy="72" rx="14" ry="10" fill="#171A21" stroke="#E1E5EA" stroke-width="1.5"/>
+  <ellipse cx="120" cy="94" rx="20" ry="14" fill="#252F3F" stroke="#E1E5EA" stroke-width="1.5"/>
+  <!-- Translucent Outer Wings (Spread V-Shape) -->
+  <polygon points="112,90 45,70 70,140 115,110" fill="#3E506F" fill-opacity="0.6" stroke="#FFFFFF" stroke-width="1.5"/>
+  <polygon points="128,90 195,70 170,140 125,110" fill="#3E506F" fill-opacity="0.6" stroke="#FFFFFF" stroke-width="1.5"/>
+  <!-- Glowing Fusion Abdomen (The Lantern) -->
+  <path d="M106,115 C100,145 105,185 120,195 C135,185 140,145 134,115 Z" fill="#D92D20" stroke="#FFFFFF" stroke-width="2"/>
+  <!-- Internal Filament Lattice -->
+  <line x1="120" y1="125" x2="120" y2="185" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="112" y1="145" x2="128" y2="145" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  <line x1="114" y1="165" x2="126" y2="165" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+</svg>
+          </div>
+
+          <div class="card-body">
+            <div class="card-header-block">
+              <h2 class="card-title">10. Nexus the Electronic Firefly</h2>
+              <span class="card-tagline">Bioluminescent Beacon Illuminating Dark Networks</span>
+            </div>
+
+            <div class="lockup-preview">
+              <div class="lockup-mini-svg">
+                <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="m10-lantern" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="35%" stop-color="#FF5A4A"/>
+      <stop offset="70%" stop-color="#D92D20"/>
+      <stop offset="100%" stop-color="#D92D20" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Bioluminescent Ambient Aura -->
+  <circle cx="120" cy="165" r="45" fill="url(#m10-lantern)" opacity="0.8"/>
+  <!-- Insect Antennae -->
+  <path d="M112,65 C100,45 80,45 70,55" stroke="#3E506F" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <circle cx="70" cy="55" r="3" fill="#D92D20"/>
+  <path d="M128,65 C140,45 160,45 170,55" stroke="#3E506F" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <circle cx="170" cy="55" r="3" fill="#D92D20"/>
+  <!-- Head & Thorax -->
+  <ellipse cx="120" cy="72" rx="14" ry="10" fill="#171A21" stroke="#E1E5EA" stroke-width="1.5"/>
+  <ellipse cx="120" cy="94" rx="20" ry="14" fill="#252F3F" stroke="#E1E5EA" stroke-width="1.5"/>
+  <!-- Translucent Outer Wings (Spread V-Shape) -->
+  <polygon points="112,90 45,70 70,140 115,110" fill="#3E506F" fill-opacity="0.6" stroke="#FFFFFF" stroke-width="1.5"/>
+  <polygon points="128,90 195,70 170,140 125,110" fill="#3E506F" fill-opacity="0.6" stroke="#FFFFFF" stroke-width="1.5"/>
+  <!-- Glowing Fusion Abdomen (The Lantern) -->
+  <path d="M106,115 C100,145 105,185 120,195 C135,185 140,145 134,115 Z" fill="#D92D20" stroke="#FFFFFF" stroke-width="2"/>
+  <!-- Internal Filament Lattice -->
+  <line x1="120" y1="125" x2="120" y2="185" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="112" y1="145" x2="128" y2="145" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  <line x1="114" y1="165" x2="126" y2="165" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+</svg>
+              </div>
+              <div class="lockup-text">
+                <div class="lockup-brand">Olla<span>VPN</span></div>
+                <div class="lockup-sub">Sovereign WireGuard Tunnel</div>
+              </div>
+            </div>
+
+            <p class="card-rationale">Navigates the dark recesses of untrusted public Wi-Fi networks. Nexus carries a glowing fusion capacitor in its abdomen, transmitting luminous beacon pulses that synchronize decentralized mesh routes.</p>
+
+            <div class="specs-box">
+              Translucent Wing Elytra • Bioluminescent Fusion Glow • Micro-Antennae Sensors
+            </div>
+
+            <div class="swatches" title="Color Hierarchy Palette">
+              <div class="swatch" style="background-color: #D92D20;" title="#D92D20"></div><div class="swatch" style="background-color: #3E506F;" title="#3E506F"></div><div class="swatch" style="background-color: #171A21;" title="#171A21"></div><div class="swatch" style="background-color: #FFFFFF;" title="#FFFFFF"></div>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-action primary" onclick="copySVG('mascot-10')">
+                <span>📋</span> Copy SVG
+              </button>
+              <button class="btn-action" onclick="downloadSVG('mascot-10', 'nexus-the-electronic-firefly')">
+                <span>⬇️</span> Download
+              </button>
+            </div>
+          </div>
+        </article>
+      
+
+        <article class="logo-card" id="mascot-11">
+          <div class="stage-canvas" id="stage-mascot-11">
+            <span class="card-badge">11 / 12</span>
+            <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Heraldic Crown Pylons -->
+  <polygon points="105,45 120,32 135,45 145,55 95,55" fill="#D92D20" stroke="#FFFFFF" stroke-width="1"/>
+  <!-- Eagle Head & Beak Profile -->
+  <polygon points="100,55 140,55 155,80 130,95 95,85" fill="#3B4961" stroke="#E1E5EA" stroke-width="1.5"/>
+  <path d="M155,80 L180,88 L165,102 L150,92 Z" fill="#D92D20" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="132" cy="74" r="4" fill="#FFFFFF"/>
+  <circle cx="134" cy="74" r="2" fill="#171A21"/>
+  <!-- Lion Mane / Armored Cowl -->
+  <polygon points="95,85 130,95 145,130 90,135 70,105" fill="#242E3D" stroke="#E1E5EA" stroke-width="1.5"/>
+  <polygon points="70,105 90,135 110,165 60,145" fill="#181D26" stroke="#3E506F" stroke-width="1.5"/>
+  <!-- Outstretched Steel Wing -->
+  <polygon points="110,95 185,60 160,115 130,120" fill="#4E6282" stroke="#FFFFFF" stroke-width="1.5"/>
+  <polygon points="130,120 180,115 150,145 118,138" fill="#344359" stroke="#FFFFFF" stroke-width="1.5"/>
+  <!-- Lion Foreleg Stance -->
+  <polygon points="90,135 125,140 120,195 95,195" fill="#171A21" stroke="#E1E5EA" stroke-width="1.5"/>
+  <!-- Razor Talons -->
+  <polygon points="95,195 90,205 102,200" fill="#D92D20"/>
+  <polygon points="105,195 110,205 118,200" fill="#D92D20"/>
+  <polygon points="120,195 125,205 130,200" fill="#D92D20"/>
+  <!-- Chest Sovereign Medallion -->
+  <circle cx="108" cy="150" r="8" fill="#D92D20" stroke="#FFFFFF" stroke-width="1.5"/>
+</svg>
+          </div>
+
+          <div class="card-body">
+            <div class="card-header-block">
+              <h2 class="card-title">11. Gryphon the Sentinel Hybrid</h2>
+              <span class="card-tagline">Dual Pinnacle: Eagle Velocity & Lion Power</span>
+            </div>
+
+            <div class="lockup-preview">
+              <div class="lockup-mini-svg">
+                <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Heraldic Crown Pylons -->
+  <polygon points="105,45 120,32 135,45 145,55 95,55" fill="#D92D20" stroke="#FFFFFF" stroke-width="1"/>
+  <!-- Eagle Head & Beak Profile -->
+  <polygon points="100,55 140,55 155,80 130,95 95,85" fill="#3B4961" stroke="#E1E5EA" stroke-width="1.5"/>
+  <path d="M155,80 L180,88 L165,102 L150,92 Z" fill="#D92D20" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="132" cy="74" r="4" fill="#FFFFFF"/>
+  <circle cx="134" cy="74" r="2" fill="#171A21"/>
+  <!-- Lion Mane / Armored Cowl -->
+  <polygon points="95,85 130,95 145,130 90,135 70,105" fill="#242E3D" stroke="#E1E5EA" stroke-width="1.5"/>
+  <polygon points="70,105 90,135 110,165 60,145" fill="#181D26" stroke="#3E506F" stroke-width="1.5"/>
+  <!-- Outstretched Steel Wing -->
+  <polygon points="110,95 185,60 160,115 130,120" fill="#4E6282" stroke="#FFFFFF" stroke-width="1.5"/>
+  <polygon points="130,120 180,115 150,145 118,138" fill="#344359" stroke="#FFFFFF" stroke-width="1.5"/>
+  <!-- Lion Foreleg Stance -->
+  <polygon points="90,135 125,140 120,195 95,195" fill="#171A21" stroke="#E1E5EA" stroke-width="1.5"/>
+  <!-- Razor Talons -->
+  <polygon points="95,195 90,205 102,200" fill="#D92D20"/>
+  <polygon points="105,195 110,205 118,200" fill="#D92D20"/>
+  <polygon points="120,195 125,205 130,200" fill="#D92D20"/>
+  <!-- Chest Sovereign Medallion -->
+  <circle cx="108" cy="150" r="8" fill="#D92D20" stroke="#FFFFFF" stroke-width="1.5"/>
+</svg>
+              </div>
+              <div class="lockup-text">
+                <div class="lockup-brand">Olla<span>VPN</span></div>
+                <div class="lockup-sub">Sovereign WireGuard Tunnel</div>
+              </div>
+            </div>
+
+            <p class="card-rationale">Uniting the fastest aerial predator with the king of terrestrial beasts. The cyber gryphon personifies OllaVPN's dual engineering creed: uncompromising WireGuard speed matched with fortified cryptographic power.</p>
+
+            <div class="specs-box">
+              Bicephalic Hybrid Vectors • Feathered Steel Pinions • Crowned Heraldic Crest
+            </div>
+
+            <div class="swatches" title="Color Hierarchy Palette">
+              <div class="swatch" style="background-color: #171A21;" title="#171A21"></div><div class="swatch" style="background-color: #3E506F;" title="#3E506F"></div><div class="swatch" style="background-color: #E1E5EA;" title="#E1E5EA"></div><div class="swatch" style="background-color: #D92D20;" title="#D92D20"></div>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-action primary" onclick="copySVG('mascot-11')">
+                <span>📋</span> Copy SVG
+              </button>
+              <button class="btn-action" onclick="downloadSVG('mascot-11', 'gryphon-the-sentinel-hybrid')">
+                <span>⬇️</span> Download
+              </button>
+            </div>
+          </div>
+        </article>
+      
+
+        <article class="logo-card" id="mascot-12">
+          <div class="stage-canvas" id="stage-mascot-12">
+            <span class="card-badge">12 / 12</span>
+            <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Censorship Wall Hurdle Below (Symbolic barrier being vaulted) -->
+  <line x1="120" y1="175" x2="120" y2="215" stroke="#E1E5EA" stroke-width="3" stroke-dasharray="3 3"/>
+  <line x1="80" y1="215" x2="160" y2="215" stroke="#E1E5EA" stroke-width="2"/>
+  <!-- Kangaroo Leaping Body Silhouette -->
+  <!-- Head & Long Sensor Ears -->
+  <polygon points="155,55 170,30 178,40 168,62" fill="#3D4D66" stroke="#FFFFFF" stroke-width="1"/>
+  <polygon points="168,62 178,35 186,45 176,68" fill="#252E3E" stroke="#FFFFFF" stroke-width="1"/>
+  <polygon points="155,55 185,72 172,85 145,75" fill="#344358" stroke="#E1E5EA" stroke-width="1.5"/>
+  <polygon points="185,72 202,78 192,88 172,85" fill="#D92D20"/>
+  <circle cx="170" cy="72" r="3" fill="#FFFFFF"/>
+  <!-- Arching Back and Torso -->
+  <polygon points="145,75 110,85 100,120 140,115" fill="#232C3A" stroke="#E1E5EA" stroke-width="1.5"/>
+  <!-- Armored Pouch with Keyhole Glow -->
+  <path d="M125,108 C138,108 142,125 130,132 C120,128 118,115 125,108 Z" fill="#171A21" stroke="#D92D20" stroke-width="1.5"/>
+  <circle cx="128" cy="120" r="3" fill="#D92D20"/>
+  <!-- Powerful Hydraulic Spring Thigh and Leg -->
+  <polygon points="100,120 80,140 95,168 118,145" fill="#4B5E7D" stroke="#FFFFFF" stroke-width="1.5"/>
+  <line x1="95" y1="168" x2="145" y2="185" stroke="#171A21" stroke-width="5" stroke-linecap="round"/>
+  <polygon points="145,185 172,192 165,180" fill="#D92D20"/>
+  <!-- Counterweight Aerodynamic Tail -->
+  <path d="M100,120 C70,130 45,145 35,175 C30,190 40,195 50,185 C65,170 85,155 100,145" fill="#171A21" stroke="#E1E5EA" stroke-width="1.5"/>
+</svg>
+          </div>
+
+          <div class="card-body">
+            <div class="card-header-block">
+              <h2 class="card-title">12. Bouncer the Cyber Kangaroo</h2>
+              <span class="card-tagline">High-Mobility Firewall Leaper & Geoblock Bypass</span>
+            </div>
+
+            <div class="lockup-preview">
+              <div class="lockup-mini-svg">
+                <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Censorship Wall Hurdle Below (Symbolic barrier being vaulted) -->
+  <line x1="120" y1="175" x2="120" y2="215" stroke="#E1E5EA" stroke-width="3" stroke-dasharray="3 3"/>
+  <line x1="80" y1="215" x2="160" y2="215" stroke="#E1E5EA" stroke-width="2"/>
+  <!-- Kangaroo Leaping Body Silhouette -->
+  <!-- Head & Long Sensor Ears -->
+  <polygon points="155,55 170,30 178,40 168,62" fill="#3D4D66" stroke="#FFFFFF" stroke-width="1"/>
+  <polygon points="168,62 178,35 186,45 176,68" fill="#252E3E" stroke="#FFFFFF" stroke-width="1"/>
+  <polygon points="155,55 185,72 172,85 145,75" fill="#344358" stroke="#E1E5EA" stroke-width="1.5"/>
+  <polygon points="185,72 202,78 192,88 172,85" fill="#D92D20"/>
+  <circle cx="170" cy="72" r="3" fill="#FFFFFF"/>
+  <!-- Arching Back and Torso -->
+  <polygon points="145,75 110,85 100,120 140,115" fill="#232C3A" stroke="#E1E5EA" stroke-width="1.5"/>
+  <!-- Armored Pouch with Keyhole Glow -->
+  <path d="M125,108 C138,108 142,125 130,132 C120,128 118,115 125,108 Z" fill="#171A21" stroke="#D92D20" stroke-width="1.5"/>
+  <circle cx="128" cy="120" r="3" fill="#D92D20"/>
+  <!-- Powerful Hydraulic Spring Thigh and Leg -->
+  <polygon points="100,120 80,140 95,168 118,145" fill="#4B5E7D" stroke="#FFFFFF" stroke-width="1.5"/>
+  <line x1="95" y1="168" x2="145" y2="185" stroke="#171A21" stroke-width="5" stroke-linecap="round"/>
+  <polygon points="145,185 172,192 165,180" fill="#D92D20"/>
+  <!-- Counterweight Aerodynamic Tail -->
+  <path d="M100,120 C70,130 45,145 35,175 C30,190 40,195 50,185 C65,170 85,155 100,145" fill="#171A21" stroke="#E1E5EA" stroke-width="1.5"/>
+</svg>
+              </div>
+              <div class="lockup-text">
+                <div class="lockup-brand">Olla<span>VPN</span></div>
+                <div class="lockup-sub">Sovereign WireGuard Tunnel</div>
+              </div>
+            </div>
+
+            <p class="card-rationale">Engineered to clear arbitrary digital boundaries with effortless momentum. Bouncer uses hydraulic titanium springs to vault over national censorship walls, holding encrypted payloads securely in an armored pouch.</p>
+
+            <div class="specs-box">
+              Hydraulic Piston Legs • Aerodynamic Counterweight Tail • Shock-Absorbing Chassis
+            </div>
+
+            <div class="swatches" title="Color Hierarchy Palette">
+              <div class="swatch" style="background-color: #171A21;" title="#171A21"></div><div class="swatch" style="background-color: #3E506F;" title="#3E506F"></div><div class="swatch" style="background-color: #D92D20;" title="#D92D20"></div><div class="swatch" style="background-color: #FFFFFF;" title="#FFFFFF"></div>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-action primary" onclick="copySVG('mascot-12')">
+                <span>📋</span> Copy SVG
+              </button>
+              <button class="btn-action" onclick="downloadSVG('mascot-12', 'bouncer-the-cyber-kangaroo')">
+                <span>⬇️</span> Download
+              </button>
+            </div>
+          </div>
+        </article>
+      
+    </div>
+  </main>
+
+  <div id="toast">SVG code copied to clipboard!</div>
+
+  <script>
+    function setCanvasMode(mode) {
+      document.querySelectorAll('.stage-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      const stages = document.querySelectorAll('.stage-canvas');
+      stages.forEach(stage => {
+        stage.classList.remove('dark-mode', 'slate-mode');
+        if (mode === 'dark') stage.classList.add('dark-mode');
+        if (mode === 'slate') stage.classList.add('slate-mode');
+      });
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2500);
+    }
+
+    function copySVG(cardId) {
+      const card = document.getElementById(cardId);
+      const svg = card.querySelector('.stage-canvas svg');
+      if (!svg) return;
+      navigator.clipboard.writeText(svg.outerHTML).then(() => {
+        showToast('✓ Raw SVG vector copied to clipboard');
+      }).catch(err => {
+        showToast('Error copying SVG');
+      });
+    }
+
+    function downloadSVG(cardId, filename) {
+      const card = document.getElementById(cardId);
+      const svg = card.querySelector('.stage-canvas svg');
+      if (!svg) return;
+      const blob = new Blob([svg.outerHTML], { type: 'image/svg+xml;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'ollavpn-' + filename + '.svg';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast('✓ Downloaded ollavpn-' + filename + '.svg');
+    }
+  </script>
+</body>
+</html>

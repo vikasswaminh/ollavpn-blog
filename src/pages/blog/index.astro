@@ -1,0 +1,599 @@
+---
+import UpgradLayout from '../../layouts/UpgradLayout.astro';
+import { getPublishedPosts, readingTime } from '../../utils/posts';
+
+const allPosts = await getPublishedPosts();
+
+// Category Taxonomy Definition
+const categoryKeys = [
+  "All",
+  "privacy-security",
+  "protocol-tech",
+  "pillars",
+  "buyer-guides",
+  "beginner-basics",
+  "how-to-guides",
+  "comparisons",
+  "use-cases"
+];
+
+const categoryLabels: Record<string, string> = {
+  "All": "Latest Articles",
+  "privacy-security": "Privacy & Security",
+  "protocol-tech": "Protocols & Technology",
+  "pillars": "Post-Quantum Cryptography",
+  "buyer-guides": "Buyer Guides & Audits",
+  "beginner-basics": "Beginner Basics",
+  "how-to-guides": "How-To Guides",
+  "comparisons": "Comparisons",
+  "use-cases": "Use Cases"
+};
+
+// Compute dynamic count for each category
+const categoryCounts: Record<string, number> = { "All": allPosts.length };
+for (const post of allPosts) {
+  const tags = post.data.tags || [];
+  for (const t of tags) {
+    if (categoryLabels[t]) {
+      categoryCounts[t] = (categoryCounts[t] || 0) + 1;
+    }
+  }
+}
+
+// Hero Lead Story: Post-Quantum VPN
+const leadStory = allPosts.find(p => p.slug === 'what-is-a-post-quantum-vpn') || allPosts[0];
+const leadReadTime = readingTime(leadStory.body);
+
+// Curated visuals mapping for OllaVPN cards
+function getPostImage(slug: string, tags: string[] = []): string {
+  const s = slug.toLowerCase();
+  if (s.includes('quantum') || s.includes('cryptography')) return '/images/simple-quantum.webp';
+  if (s.includes('wireguard')) return '/images/simple-wireguard.webp';
+  if (s.includes('masque') || s.includes('quic')) return '/images/simple-masque.webp';
+  if (s.includes('multi-hop') || s.includes('hop')) return '/images/simple-multihop.webp';
+  if (s.includes('dns-leak') || s.includes('leak')) return '/images/simple-dns.webp';
+  if (s.includes('kill-switch') || s.includes('switch')) return '/images/simple-killswitch.webp';
+  if (s.includes('wifi') || s.includes('wi-fi')) return '/images/simple-wifi.webp';
+  if (s.includes('split-tunnel')) return '/images/simple-splittunnel.webp';
+  if (s.includes('isp') || s.includes('throttl')) return '/images/artistic-isp.webp';
+  if (s.includes('track') || s.includes('advertiser')) return '/images/artistic-tracking.webp';
+  if (s.includes('government') || s.includes('legal') || s.includes('law')) return '/images/artistic-gov.webp';
+  if (s.includes('chatgpt') || s.includes('ai')) return '/images/artistic-chatgpt.webp';
+  
+  if (tags.includes('protocol-tech')) return '/images/simple-wireguard.webp';
+  if (tags.includes('privacy-security')) return '/images/simple-dns.webp';
+  if (tags.includes('buyer-guides')) return '/images/simple-quantum.webp';
+  return '/images/simple-multihop.webp';
+}
+
+function formatDate(d: Date | string) {
+  const date = new Date(d);
+  return date.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+}
+
+// Top Curricula Tracks (upGrad Free Course Pattern)
+const curriculumTracks = [
+  {
+    tag: "TRACK 01",
+    title: "VPN Fundamentals & Zero-Logs Architecture",
+    desc: "Master cryptographic tunneling, packet encapsulation, and no-logs server infrastructure audited for 2026.",
+    guides: [
+      { title: "What Is a VPN and How Does It Work?", slug: "what-is-a-vpn-and-how-does-it-work" },
+      { title: "Free VPN vs Paid VPN: Full Architecture Breakdown", slug: "free-vpn-vs-paid-vpn" },
+      { title: "What Logs Does a VPN Actually Keep?", slug: "what-logs-does-vpn-keep" },
+      { title: "Why Are Free VPNs Free? The Monetization Truth", slug: "why-are-free-vpns-free" }
+    ],
+    duration: "4 Modules • 45 min",
+    cta: "Start Track"
+  },
+  {
+    tag: "TRACK 02",
+    title: "Threat Defense & Leak Prevention Lab",
+    desc: "Audit DNS exposure, WebRTC leaks, and system-level kill switch mechanisms to protect against deep-packet inspection.",
+    guides: [
+      { title: "What Is a DNS Leak & How to Prevent Data Exposure", slug: "what-is-a-dns-leak" },
+      { title: "What Is a VPN Kill Switch & When to Keep It On", slug: "what-is-a-vpn-kill-switch" },
+      { title: "What is a WebRTC Leak & Why It Matters for Privacy", slug: "what-is-a-webrtc-leak" },
+      { title: "What Your ISP Can See About You (And How to Hide It)", slug: "what-your-isp-can-see-about-you" }
+    ],
+    duration: "4 Modules • 1 hr",
+    cta: "Start Track"
+  },
+  {
+    tag: "TRACK 03",
+    title: "Next-Gen Protocols & Quantum Security",
+    desc: "Benchmark WireGuard vs OpenVPN throughput, implement MASQUE RFC 9298, and deploy NIST ML-KEM lattice cryptography.",
+    guides: [
+      { title: "What Is a Post-Quantum VPN? (2026 Security Guide)", slug: "what-is-a-post-quantum-vpn" },
+      { title: "WireGuard vs OpenVPN: Speed & Latency Benchmarks", slug: "wireguard-vs-openvpn" },
+      { title: "MASQUE Protocol Explained: Proxying UDP over HTTP/3", slug: "what-is-masque" },
+      { title: "What Is Post-Quantum Cryptography? (NIST Standards)", slug: "what-is-post-quantum-cryptography" }
+    ],
+    duration: "4 Modules • 1.5 hrs",
+    cta: "Start Track"
+  }
+];
+---
+
+<UpgradLayout
+  title="OllaVPN Blog | Cybersecurity, Protocols & Quantum Defense"
+  description="122 peer-reviewed technical guides, protocol benchmarks, DNS leak testing, and post-quantum VPN architecture verified for 2026."
+>
+  <div class="ug-container">
+
+    <!-- 1. BREADCRUMBS -->
+    <nav class="ug-breadcrumb-bar" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span class="ug-breadcrumb-sep">&rsaquo;</span>
+      <span style="color:var(--ug-text-main); font-weight:600;">Blog</span>
+    </nav>
+
+    <!-- 2. HERO FEATURED SECTION (UPGRAD BLOG HERO PATTERN) -->
+    <section class="ug-hero-section" aria-labelledby="hero-title">
+      <div class="ug-hero-header">
+        <h1 id="hero-title" class="ug-hero-h1">OllaVPN <span>Research &amp; Blogs</span></h1>
+      </div>
+
+      <article class="ug-hero-card">
+        <!-- Hero Content Column -->
+        <div class="ug-hero-content">
+          <div>
+            <div class="ug-meta-row">
+              <span class="ug-badge">Post-Quantum Cryptography</span>
+              <span>&bull;</span>
+              <time datetime="2026-07-04">{formatDate(leadStory.data.pubDate)}</time>
+              <span>&bull;</span>
+              <span>{leadReadTime} min read</span>
+            </div>
+
+            <h2 class="ug-hero-title">
+              <a href={`/blog/${leadStory.slug}/`}>
+                {leadStory.data.title}
+              </a>
+            </h2>
+
+            <!-- upGrad Key Takeaway Callout Box -->
+            <div class="ug-key-takeaway">
+              <div class="ug-takeaway-label">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                </svg>
+                Key Takeaway
+              </div>
+              <p class="ug-takeaway-text">
+                Adversaries are actively intercepting encrypted VPN tunnels today under "Harvest Now, Decrypt Later" mandates. OllaVPN implements NIST-standardized Kyber-768 lattice key exchanges to ensure zero backward decryption even against quantum adversaries.
+              </p>
+            </div>
+          </div>
+
+          <!-- Author Byline -->
+          <div class="ug-author-bar">
+            <img 
+              src="/images/vikas-swami-avatar.webp" 
+              alt="Mr. Vikas Swami" 
+              class="ug-author-avatar"
+              width="34"
+              height="34"
+            />
+            <div>
+              <div class="ug-author-name">Vikas Swami</div>
+              <div style="font-size:0.75rem; color:var(--ug-text-light);">Dual CCIE #22239 &bull; Founder &amp; Chief Architect</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Graphic Media -->
+        <div class="ug-hero-media">
+          <a href={`/blog/${leadStory.slug}/`} style="display:block; width:100%; height:100%;">
+            <img 
+              src="/images/ollavpn-hero-lock.webp" 
+              alt={leadStory.data.title}
+              width="650"
+              height="400"
+              loading="eager"
+            />
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <!-- 3. DISCOVER BLOGS BY CATEGORIES (UPGRAD SIDEBAR + 3-COLUMN GRID EXACT MATCH) -->
+    <section class="ug-category-section" id="categories-section" aria-labelledby="discover-heading">
+      <div class="ug-section-header">
+        <h2 id="discover-heading" class="ug-section-title">
+          Discover Blogs by <span style="color:var(--ug-primary);">Categories</span>
+        </h2>
+        <span id="ug-active-count" style="font-size:0.9rem; font-weight:700; color:var(--ug-primary);">
+          Showing {allPosts.length} articles
+        </span>
+      </div>
+
+      <!-- Main Layout: Left Category Sidebar + Right 3-Col Card Grid -->
+      <div class="ug-discover-layout">
+        
+        <!-- Left Sidebar: Categories Navigation List (upGrad pattern) -->
+        <aside class="ug-category-sidebar" role="tablist" aria-label="Blog Categories">
+          {categoryKeys.map((catKey, i) => (
+            <button 
+              type="button"
+              role="tab"
+              class={`ug-cat-btn ${i === 0 ? 'active' : ''}`}
+              data-category={catKey}
+              id={`tab-${catKey}`}
+            >
+              <span>{categoryLabels[catKey]}</span>
+              <svg class="ug-cat-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          ))}
+        </aside>
+
+        <!-- Right: 3-Column Card Grid + Pagination -->
+        <div class="ug-cards-container">
+          <div class="ug-grid-3" id="ug-posts-grid">
+            {allPosts.map((post, idx) => {
+              const tags = post.data.tags || [];
+              const readTime = readingTime(post.body);
+              const imgSrc = getPostImage(post.slug, tags);
+              const primaryCategory = tags[0] || 'protocol-tech';
+              const categoryLabel = categoryLabels[primaryCategory] || 'Cybersecurity';
+              const authorName = post.data.author && post.data.author !== 'OllaVPN Team' ? post.data.author : 'Vikas Swami';
+              
+              return (
+                <article 
+                  class="ug-card-clean" 
+                  data-tags={tags.join(' ')} 
+                  data-title={post.data.title.toLowerCase()}
+                  data-index={idx}
+                >
+                  <a href={`/blog/${post.slug}/`} class="ug-card-clean-media" aria-label={post.data.title}>
+                    <!-- upGrad Red Bookmark Ribbon Badge -->
+                    <div class="ug-card-ribbon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
+                      </svg>
+                    </div>
+
+                    <img 
+                      src={imgSrc} 
+                      alt={post.data.title} 
+                      width="800"
+                      height="500"
+                      loading={idx < 6 ? "eager" : "lazy"}
+                    />
+                  </a>
+
+                  <div class="ug-card-clean-body">
+                    <div class="ug-card-clean-category">
+                      {categoryLabel}
+                    </div>
+
+                    <h3 class="ug-card-clean-title">
+                      <a href={`/blog/${post.slug}/`}>
+                        {post.data.title}
+                      </a>
+                    </h3>
+
+                    <div class="ug-card-clean-meta">
+                      <div class="ug-card-clean-author">
+                        By {authorName}
+                      </div>
+                      <span class="ug-card-clean-date">
+                        {formatDate(post.data.pubDate)} | {readTime} min read
+                      </span>
+                    </div>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+
+          <!-- Interactive Pagination (Matching upGrad style) -->
+          <div class="ug-pagination" id="ug-pagination-bar" role="navigation" aria-label="Pagination">
+            <button type="button" class="ug-page-btn" id="ug-prev-page" aria-label="Previous page" disabled>&lsaquo;</button>
+            <div id="ug-page-numbers" style="display:flex; gap:0.5rem;"></div>
+            <button type="button" class="ug-page-btn" id="ug-next-page" aria-label="Next page">&rsaquo;</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- 4. MODULAR CURRICULA & FREE TOOLS TRACKS (UPGRAD FREE COURSES PATTERN) -->
+  <section class="ug-curriculum-section" id="curriculum-section" aria-labelledby="curriculum-heading">
+    <div class="ug-container">
+      <div class="ug-section-header">
+        <div>
+          <h2 id="curriculum-heading" class="ug-section-title">
+            Get Started with <span style="color:var(--ug-primary);">Core Curricula</span>
+          </h2>
+          <p style="font-size:0.92rem; color:var(--ug-text-muted); margin-top:0.35rem;">
+            Structured learning modules designed by Dual CCIE #22239 network architects.
+          </p>
+        </div>
+      </div>
+
+      <div class="ug-curriculum-grid">
+        {curriculumTracks.map(track => (
+          <div class="ug-track-card">
+            <div>
+              <div class="ug-track-header">
+                <span class="ug-track-tag">{track.tag}</span>
+                <h3 class="ug-track-title">{track.title}</h3>
+                <p class="ug-track-desc">{track.desc}</p>
+              </div>
+
+              <ul class="ug-track-items">
+                {track.guides.map(g => (
+                  <li class="ug-track-item">
+                    <span class="ug-track-bullet">&rarr;</span>
+                    <a href={`/blog/${g.slug}/`}>{g.title}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div class="ug-track-footer">
+              <span class="ug-track-badge">{track.duration}</span>
+              <a href={`/blog/${track.guides[0].slug}/`} class="ug-track-btn">
+                <span>{track.cta}</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. HIGH-CONTRAST NEWSLETTER BANNER (UPGRAD CHILD 2 PATTERN) -->
+  <section class="ug-newsletter-banner" aria-labelledby="newsletter-heading">
+    <div class="ug-container">
+      <div class="ug-newsletter-inner">
+        <div>
+          <span class="ug-newsletter-badge">SECURITY DISPATCH</span>
+          <h2 id="newsletter-heading" class="ug-newsletter-h2">
+            Stay Ahead in Privacy &amp; Quantum Defense
+          </h2>
+          <p class="ug-newsletter-p">
+            Receive monthly protocol teardowns, hardware benchmarks, zero-day threat analyses, and NIST standards directly from our engineering testbed.
+          </p>
+        </div>
+
+        <div>
+          <form class="ug-newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to OllaVPN Security Dispatch!');">
+            <input 
+              type="email" 
+              required
+              class="ug-newsletter-input" 
+              placeholder="Enter your email address *" 
+              aria-label="Email address"
+            />
+            <button type="submit" class="ug-newsletter-btn">
+              Subscribe
+            </button>
+          </form>
+          <div style="font-size:0.75rem; color:#8E95A2; margin-top:0.6rem;">
+            No spam. Strictly technical cryptographic briefs. Unsubscribe anytime.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. USER & LEARNER SUPPORT MODULE (UPGRAD CHILD 3 PATTERN) -->
+  <section class="ug-support-section" id="support-section" aria-labelledby="support-heading">
+    <div class="ug-container">
+      <div class="ug-section-header">
+        <div>
+          <h2 id="support-heading" class="ug-section-title">
+            OllaVPN <span style="color:var(--ug-primary);">Learner &amp; Research Support</span>
+          </h2>
+          <p style="font-size:0.92rem; color:var(--ug-text-muted); margin-top:0.35rem;">
+            Enterprise-grade network engineering pedigree backed by rigorous lab verification.
+          </p>
+        </div>
+      </div>
+
+      <div class="ug-support-grid">
+        <!-- Card 1 -->
+        <div class="ug-support-card">
+          <div class="ug-support-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="ug-support-h3">Dual CCIE #22239 Led</h3>
+            <p class="ug-support-desc">
+              Architecture steered by Mr. Vikas Swami, founder of Networkers Home with over 23 years of mission-critical routing and security expertise.
+            </p>
+            <a href="/author/vikas-swami/" class="ug-support-link">
+              <span>View Expert Profile</span> &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="ug-support-card">
+          <div class="ug-support-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <div>
+            <h3 class="ug-support-h3">Wireshark &amp; Ixia Audits</h3>
+            <p class="ug-support-desc">
+              Zero synthetic claims. Every benchmark is verified at the packet level on physical 10Gbps hardware testbeds under heavy load.
+            </p>
+            <a href="/blog/wireguard-vs-openvpn/" class="ug-support-link">
+              <span>Explore Benchmarks</span> &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="ug-support-card">
+          <div class="ug-support-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+              <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+          </div>
+          <div>
+            <h3 class="ug-support-h3">Community &amp; FAQ</h3>
+            <p class="ug-support-desc">
+              Clear, transparent answers on protocol choices, DNS leak testing, no-logs server verification, and kill switch configurations.
+            </p>
+            <a href="/blog/what-is-a-dns-leak/" class="ug-support-link">
+              <span>Read FAQ Guides</span> &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client-Side Interactive Filtering, Search & Pagination Script -->
+  <script is:inline>
+    (function() {
+      const POSTS_PER_PAGE = 6; // 6 cards per view (2 rows x 3 cols), matching upGrad screenshot!
+      let activeCategory = 'All';
+      let searchQuery = '';
+      let currentPage = 1;
+
+      const cards = Array.from(document.querySelectorAll('.ug-card-clean'));
+      const catBtns = Array.from(document.querySelectorAll('.ug-cat-btn'));
+      const countDisplay = document.getElementById('ug-active-count');
+      const searchInput = document.getElementById('ug-nav-search');
+      const pageNumbersContainer = document.getElementById('ug-page-numbers');
+      const prevBtn = document.getElementById('ug-prev-page');
+      const nextBtn = document.getElementById('ug-next-page');
+
+      function filterCards() {
+        let matching = cards.filter(card => {
+          const tags = (card.getAttribute('data-tags') || '').split(' ');
+          const title = card.getAttribute('data-title') || '';
+          
+          const matchesCat = activeCategory === 'All' || tags.includes(activeCategory);
+          const matchesSearch = !searchQuery || title.includes(searchQuery);
+          
+          return matchesCat && matchesSearch;
+        });
+
+        const totalMatching = matching.length;
+        const totalPages = Math.max(1, Math.ceil(totalMatching / POSTS_PER_PAGE));
+        if (currentPage > totalPages) currentPage = 1;
+
+        if (countDisplay) {
+          countDisplay.textContent = `Showing ${totalMatching} articles`;
+        }
+
+        // Hide all cards first
+        cards.forEach(card => card.style.display = 'none');
+
+        // Show cards for current page
+        const startIdx = (currentPage - 1) * POSTS_PER_PAGE;
+        const endIdx = startIdx + POSTS_PER_PAGE;
+        matching.slice(startIdx, endIdx).forEach(card => {
+          card.style.display = 'flex';
+        });
+
+        renderPagination(totalPages);
+      }
+
+      function renderPagination(totalPages) {
+        if (!pageNumbersContainer) return;
+        pageNumbersContainer.innerHTML = '';
+
+        if (prevBtn) prevBtn.disabled = currentPage <= 1;
+        if (nextBtn) nextBtn.disabled = currentPage >= totalPages;
+
+        for (let i = 1; i <= totalPages; i++) {
+          if (i === 1 || i === totalPages || (i >= currentPage - 1 && i <= currentPage + 1)) {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = `ug-page-btn ${i === currentPage ? 'active' : ''}`;
+            btn.textContent = i;
+            btn.addEventListener('click', () => {
+              currentPage = i;
+              filterCards();
+              const section = document.getElementById('categories-section');
+              if (section) section.scrollIntoView({ behavior: 'smooth' });
+            });
+            pageNumbersContainer.appendChild(btn);
+          } else if (
+            (i === currentPage - 2 && i > 1) ||
+            (i === currentPage + 2 && i < totalPages)
+          ) {
+            const span = document.createElement('span');
+            span.style.padding = '0 0.3rem';
+            span.style.alignSelf = 'center';
+            span.textContent = '...';
+            pageNumbersContainer.appendChild(span);
+          }
+        }
+      }
+
+      // Sidebar Category Button Click Handling
+      catBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          catBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeCategory = btn.getAttribute('data-category') || 'All';
+          currentPage = 1;
+          filterCards();
+        });
+      });
+
+      // Search Handling
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          searchQuery = e.target.value.trim().toLowerCase();
+          currentPage = 1;
+          filterCards();
+        });
+
+        // Shortcut /
+        window.addEventListener('keydown', (e) => {
+          if (e.key === '/' && document.activeElement !== searchInput) {
+            e.preventDefault();
+            searchInput.focus();
+          }
+        });
+      }
+
+      // Prev / Next Page Buttons
+      if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+          if (currentPage > 1) {
+            currentPage--;
+            filterCards();
+            const section = document.getElementById('categories-section');
+            if (section) section.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      }
+
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          currentPage++;
+          filterCards();
+          const section = document.getElementById('categories-section');
+          if (section) section.scrollIntoView({ behavior: 'smooth' });
+        });
+      }
+
+      // Initial filter run
+      filterCards();
+    })();
+  </script>
+</UpgradLayout>

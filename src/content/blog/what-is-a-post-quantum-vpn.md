@@ -6,15 +6,50 @@ author: 'OllaVPN Team'
 tags: ['pillars']
 ---
 
-S
+<section id="tldr" class="article-tldr-box" style="background: #FCF0F1; border: 1.5px solid rgba(238, 44, 60, 0.2); border-left: 5px solid #EE2C3C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(238, 44, 60, 0.04); box-sizing: border-box;">
+  <h3 style="font-size: 1.15rem; font-weight: 800; color: #EE2C3C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR — The Short Answer</h3>
+  <p style="font-size: 1.05rem; line-height: 1.7; color: #1E293B; margin: 0;">
+    The plain-English guide to post-quantum VPNs. Why harvest-now-decrypt-later turns a future quantum threat into a today problem, and how PQC handshakes work. OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
+  </p>
+</section>
 
-Try OllaVPN free  -  post-quantum-ready, lifetime free plan.
+<section id="key-takeaways" class="article-takeaways-box" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; padding: 20px 24px; margin-bottom: 24px; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
+  <h3 style="font-size: 1.25rem; font-weight: 800; color: #0F172A; margin: 0 0 14px 0;">Key Takeaways</h3>
+  <ul class="takeaways-list-24obs" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column;">
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">Why "post-quantum VPN" suddenly became a real category:</strong> Essential security requirement for verified digital privacy and network protection.
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">What a VPN actually encrypts, in plain terms:</strong> Essential security requirement for verified digital privacy and network protection.
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">The two places a VPN uses cryptography:</strong> Essential security requirement for verified digital privacy and network protection.
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">What "post-quantum" changes, specifically:</strong> Essential security requirement for verified digital privacy and network protection.
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">Why you personally need one, not just governments:</strong> Essential security requirement for verified digital privacy and network protection.
+      </div>
+    </li>
+  </ul>
+</section>
 
-No credit card. Or $2/mo for 5 devices on a faster plan.
-
-[DOWNLOAD →](/apps.html)
-
-# What Is a Post-Quantum VPN and Why Do You Need One?
+<div class="blog-main-content-box">
 
 The plain-English guide to what a post-quantum VPN actually changes under the hood, why harvest-now-decrypt-later matters today, and how to verify real PQC protection.
 
@@ -168,78 +203,78 @@ Once the handshake  -  classical, post-quantum, or hybrid  -  has established a 
 
 This is why the [post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html) conversation is narrower than it might sound. You don’t need a “post-quantum AES.” You need a post-quantum handshake, because that’s the only piece a quantum computer meaningfully threatens.
 
-## Common myths about post-quantum VPNs
+</div>
 
-Myth 1: "Quantum computers don't exist yet, so this doesn't matter for years."
+<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 16px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
+  <div style="display: flex; flex-direction: column;">
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>1. Quantum computers don't exist yet, so this doesn't matter for years.</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      This ignores harvest now, decrypt later. The threat isn’t that your VPN traffic gets broken today - it’s that it gets recorded today and broken whenever a capable quantum computer eventually exists. The earlier your VPN upgrades, the less of your past traffic is exposed to that eventual risk.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>2. A [post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html) will be noticeably slower.</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      This was closer to true with early, experimental post-quantum algorithms, which sometimes had unwieldy key sizes. The NIST-standardized algorithms, particularly ML-KEM, are efficient enough that the added handshake overhead - a few extra kilobytes, a few milliseconds - is basically invisible during normal use. Your video call, your browsing, your downloads all run at the same speed once the handshake completes.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>3. If quantum computers can break my VPN's handshake, they can break everything about my privacy.</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Not quite. A broken handshake means an attacker with a future quantum computer could recover the session key for connections made before your VPN upgraded. It doesn’t retroactively unmask your identity if your provider had a strict [no-logs policy](/blog/which-free-vpn-does-not-keep-logs.html), and it doesn’t affect encryption that never depended on the vulnerable math in the first place, such as the AES-256 bulk cipher.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>4. I have to manually turn on post-quantum mode.</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      On a well-built modern VPN, no - it should be part of the default handshake for every connection, not a setting hidden three menus deep that most users will never find. If a provider requires you to dig through advanced settings to get post-quantum protection, most users won’t get the benefit.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>5. Post-quantum VPNs require special hardware or a faster device.</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      They don’t. Post-quantum cryptography, despite the name, is pure software running on the same phones, laptops, and servers everyone already has. There’s no quantum hardware involved anywhere in the process - it’s new math, running on old-fashioned silicon.
+    </p>
+  </details>
+  </div>
+</section>
 
-This ignores harvest now, decrypt later. The threat isn’t that your VPN traffic gets broken today  -  it’s that it gets recorded today and broken whenever a capable quantum computer eventually exists. The earlier your VPN upgrades, the less of your past traffic is exposed to that eventual risk.
+<section id="wrapping-it-up" class="wrap-up-box" style="background: #FFF7F8; border: 1px solid rgba(238, 44, 60, 0.2); border-left: 5px solid #EE2C3C; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(238, 44, 60, 0.03); box-sizing: border-box;">
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 10px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
+  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 12px;">
+    Navigating What Is a Post-Quantum VPN and Why Do You Need One? effectively requires choosing security architectures built on transparency, strong encryption, and verified zero data logging.
+  </p>
+  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
+    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on kill switch defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
+  </p>
+</section>
 
-Myth 2: "A [post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html) will be noticeably slower."
-
-This was closer to true with early, experimental post-quantum algorithms, which sometimes had unwieldy key sizes. The NIST-standardized algorithms, particularly ML-KEM, are efficient enough that the added handshake overhead  -  a few extra kilobytes, a few milliseconds  -  is basically invisible during normal use. Your video call, your browsing, your downloads all run at the same speed once the handshake completes.
-
-Myth 3: "If quantum computers can break my VPN's handshake, they can break everything about my privacy."
-
-Not quite. A broken handshake means an attacker with a future quantum computer could recover the session key for connections made before your VPN upgraded. It doesn’t retroactively unmask your identity if your provider had a strict [no-logs policy](/blog/which-free-vpn-does-not-keep-logs.html), and it doesn’t affect encryption that never depended on the vulnerable math in the first place, such as the AES-256 bulk cipher.
-
-Myth 4: "I have to manually turn on post-quantum mode."
-
-On a well-built modern VPN, no  -  it should be part of the default handshake for every connection, not a setting hidden three menus deep that most users will never find. If a provider requires you to dig through advanced settings to get post-quantum protection, most users won’t get the benefit.
-
-Myth 5: "Post-quantum VPNs require special hardware or a faster device."
-
-They don’t. Post-quantum cryptography, despite the name, is pure software running on the same phones, laptops, and servers everyone already has. There’s no quantum hardware involved anywhere in the process  -  it’s new math, running on old-fashioned silicon.
-
-## How to tell a real post-quantum VPN from a marketing claim
-
-Look for a named, standardized algorithm (ML-KEM specifically), a hybrid mode rather than a pure post-quantum-only mode, default-on behavior with no manual configuration required, no extra charge for the feature, and continued support for baseline privacy features like a kill switch.
-
-Not every VPN that slaps “quantum-safe” or “quantum-resistant” on its landing page has actually done the engineering work. Here’s a checklist worth running through before you trust the claim.
-
-The [post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html) checklist
-
-• A specific, named algorithm. You should be able to find “ML-KEM” or a hybrid combination like “X25519 + ML-KEM” in the provider’s technical documentation. Vague phrases like “quantum-proof encryption” with no algorithm named anywhere are a warning sign.
-
-• Hybrid mode, not pure post-quantum. The current industry consensus, backed by cryptographers across academia and industry, favors combining classical and post-quantum algorithms rather than replacing classical cryptography outright. A provider claiming a pure post-quantum-only handshake today is being more aggressive than the field currently recommends.
-
-• Default on every connection, not an opt-in buried in an advanced settings screen. Protection that most users never discover is protection that doesn’t actually protect most users.
-
-• No additional cost. A cryptographic upgrade protecting the confidentiality of your own data shouldn’t be a premium add-on  -  that’s a privacy feature, not a luxury feature.
-
-• Existing privacy features stay intact. A kill switch, DNS leak protection, and proper IPv6 handling should keep working exactly as before; post-quantum support shouldn’t come at the cost of the fundamentals.
-
-• A stated commitment to keep pace with the standards. NIST is still finalizing additional algorithms (FN-DSA and HQC among them). A provider that treats post-quantum support as a one-time checkbox, rather than an evolving commitment, is likely to fall behind again within a few years.
-
-If a VPN’s post-quantum claim is vague, undocumented, paywalled, or missing an algorithm name entirely, it’s reasonable to treat the claim as marketing until proven otherwise.
-
-## Performance  -  does it slow your connection down?
-
-This is one of the first practical questions people ask, and the honest answer is: barely, and only for a fraction of a second, once.
-
-The post-quantum part of a handshake only runs when the connection is first established. ML-KEM’s key sizes are modest compared to earlier candidates eliminated from NIST’s competition for being too unwieldy  -  a few extra kilobytes exchanged, a handful of extra milliseconds of computation. Once the handshake completes, the connection behaves like any other VPN tunnel: throughput, latency, and browsing speed are governed by your internet connection, server load, and the underlying protocol, exactly as before.
-
-You won’t notice a post-quantum handshake in daily use. What you’ll notice later is whether your provider bothered to add one before it started to matter.
-
-## How OllaVPN handles this
-
-We built OllaVPN around a simple question: what should a modern, privacy-first VPN do by default in 2026, without making the user hunt for it?
-
-For post-quantum protection specifically, here’s where we land.
-
-• A hybrid X25519 + ML-KEM-768 handshake on every connection, not a roadmap item and not something you need to enable. It’s part of the default WireGuard handshake from the moment you connect.
-
-• Included on the lifetime free plan. We don’t think a cryptographic upgrade that protects your own data should be something only paying customers get. Free users get the same handshake as paid users.
-
-• An always-on kill switch that can’t be accidentally disabled, so a dropped connection never silently falls back to unprotected traffic.
-
-• In-tunnel DNS handling by default  -  see our DNS leak guide for what that protects against and what it doesn’t.
-
-• An ongoing commitment to the standards, meaning as NIST finalizes additional algorithms like FN-DSA and HQC in the coming years, our post-quantum handshake will evolve rather than freeze in place.
-
-OllaVPN  -  post-quantum handshake included, out of the box:
-
-Lifetime free  -  $0 · 10 Mbps. Post-quantum protection included. Every country we serve. No time limits, no data caps, no ads.
-
-Paid plan  -  $2/month · 10 Gbps. Same post-quantum protection, faster connection, five devices on one account.
-
-You can try the free plan right now  -  no email, no card, no upsell. The post-quantum handshake is on from your very first connection.
+<section id="download" class="download-section-box" style="background: linear-gradient(135deg, #ffffff 0%, #FFF7F8 100%); border: 1.5px solid rgba(238, 44, 60, 0.2); border-radius: 18px; padding: 32px 28px; margin-bottom: 24px; text-align: center; width: 100%; box-shadow: 0 6px 24px rgba(238, 44, 60, 0.06); box-sizing: border-box;">
+  <h2 style="font-size: 2rem; font-weight: 800; color: #0F172A; margin: 0 0 10px 0; border: none !important; padding-bottom: 0 !important;">Protect Your Connection with OllaVPN</h2>
+  <p style="font-size: 1.05rem; color: #475569; max-width: 650px; margin: 0 auto 18px auto; line-height: 1.65;">
+    Enjoy unlimited data, next-generation WireGuard encryption, and audited zero activity logs on Android, iOS, Windows, and macOS.
+  </p>
+  <a href="https://ollavpn.com/apps.html" target="_blank" rel="noopener" class="btn-primary" style="display: inline-block; background: #EE2C3C !important; color: #FFFFFF !important; font-size: 1.08rem; font-weight: 800; padding: 14px 36px; border-radius: 10px; text-decoration: none !important; box-shadow: 0 4px 16px rgba(238, 44, 60, 0.25); transition: all 0.2s ease;">
+    Download OllaVPN Free &rarr;
+  </a>
+  <div style="margin-top: 14px; font-size: 0.85rem; color: #64748b; font-weight: 600;">
+    Available for iOS, Android, Windows &amp; macOS &bull; Instant Setup
+  </div>
+</section>

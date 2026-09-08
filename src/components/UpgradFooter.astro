@@ -1,0 +1,76 @@
+---
+// UpgradFooter.astro - upGrad Deep Charcoal Footer
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="ug-footer-wrap" role="contentinfo">
+  <div class="ug-container">
+    <div class="ug-footer-top">
+      
+      <!-- Brand Column -->
+      <div>
+        <div class="ug-logo-group">
+          <div class="ug-logo-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+          </div>
+          <div class="ug-logo-text-block">
+            <div class="ug-brand-name" style="color:#FFFFFF;">olla<span style="color:var(--ug-primary);">vpn</span></div>
+            <span class="ug-brand-badge" style="color:#8E95A2;">CYBERSECURITY LAB</span>
+          </div>
+        </div>
+        <p class="ug-footer-brand-desc">
+          World-class privacy and quantum-resilient cryptographic engineering. Directed by Dual CCIE #22239 Mr. Vikas Swami, providing 122+ peer-reviewed technical guides, protocol benchmarks, and network security blueprints.
+        </p>
+      </div>
+
+      <!-- Column 1: Core Protocols -->
+      <div>
+        <h4 class="ug-footer-col-title">Protocols & NIST</h4>
+        <ul class="ug-footer-links">
+          <li><a href="/blog/what-is-a-post-quantum-vpn/">Post-Quantum VPN (Kyber-768)</a></li>
+          <li><a href="/blog/wireguard-vs-openvpn/">WireGuard vs. OpenVPN</a></li>
+          <li><a href="/blog/what-is-post-quantum-cryptography/">Lattice Cryptography</a></li>
+          <li><a href="/blog/what-is-masque/">MASQUE Protocol (RFC 9298)</a></li>
+          <li><a href="/blog/what-is-encrypted-client-hello/">Encrypted Client Hello (ECH)</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 2: Leak Defense -->
+      <div>
+        <h4 class="ug-footer-col-title">Threat Defense</h4>
+        <ul class="ug-footer-links">
+          <li><a href="/blog/what-is-a-dns-leak/">DNS Leak Prevention</a></li>
+          <li><a href="/blog/what-is-a-vpn-kill-switch/">Kill Switch Architecture</a></li>
+          <li><a href="/blog/what-is-a-webrtc-leak/">WebRTC Leak Mitigation</a></li>
+          <li><a href="/blog/what-your-isp-can-see-about-you/">ISP Traffic Inspection</a></li>
+          <li><a href="/blog/what-logs-does-vpn-keep/">Zero-Logs Server Audit</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Platform Guides -->
+      <div>
+        <h4 class="ug-footer-col-title">Apps & Verification</h4>
+        <ul class="ug-footer-links">
+          <li><a href="/blog/how-to-set-up-vpn-on-windows-11/">Windows 11 Setup</a></li>
+          <li><a href="/blog/how-to-set-up-vpn-on-macos-sequoia/">macOS Sequoia Setup</a></li>
+          <li><a href="/blog/best-free-vpn-for-android/">Android Free VPN</a></li>
+          <li><a href="/blog/best-free-vpn-for-iphone/">iOS Privacy Guide</a></li>
+          <li><a href="/author/vikas-swami/">Dual CCIE Verification</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="ug-footer-bottom">
+      <p>&copy; {currentYear} OllaVPN Inc. &amp; Networkers Home. All rights reserved. UpGrad UI theme edition.</p>
+      <div style="display:flex; gap:1.5rem;">
+        <a href="#privacy" style="color:#8E95A2; font-size:0.8rem;">Privacy Policy</a>
+        <a href="#terms" style="color:#8E95A2; font-size:0.8rem;">Terms of Service</a>
+        <a href="#nist" style="color:#8E95A2; font-size:0.8rem;">NIST SP 800-208</a>
+      </div>
+    </div>
+  </div>
+</footer>

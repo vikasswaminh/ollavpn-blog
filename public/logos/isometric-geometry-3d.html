@@ -1,0 +1,1769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isometric Geometry 3D Logos • OllaVPN Design System</title>
+  <meta name="description" content="12 mathematical, extruded, and multidimensional vector logos engineered for OllaVPN. Constructed with true 30° isometric axes, precision specular gradients, and quantum routing iconography.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --canvas: #FFFFFF;
+      --content: #171A21;
+      --tech: #3E506F;
+      --support: #667085;
+      --separation: #F7F8FA;
+      --structure: #E1E5EA;
+      --action: #D92D20;
+      --action-hover: #B82015;
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --shadow-sm: 0 1px 3px rgba(16,24,40,0.06);
+      --shadow-md: 0 4px 16px rgba(16,24,40,0.08);
+      --shadow-lg: 0 12px 32px rgba(16,24,40,0.12);
+      --transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--canvas);
+      color: var(--content);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Top Sticky Navigation Bar */
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--structure);
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand-mark {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--content);
+    }
+
+    .brand-logo-icon {
+      width: 32px;
+      height: 32px;
+      background: var(--content);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      font-weight: 800;
+      font-size: 16px;
+      border: 1px solid var(--structure);
+    }
+    .brand-logo-icon span { color: var(--action); }
+
+    .brand-text {
+      font-weight: 800;
+      font-size: 1.1rem;
+      letter-spacing: -0.02em;
+    }
+    .brand-text span { color: var(--action); }
+
+    .brand-badge {
+      background: var(--separation);
+      color: var(--tech);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: 20px;
+      border: 1px solid var(--structure);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Collection Tabs Switcher */
+    .collection-tabs {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--separation);
+      padding: 0.3rem;
+      border-radius: 10px;
+      border: 1px solid var(--structure);
+    }
+
+    .tab-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.4rem 0.9rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--support);
+      border-radius: 7px;
+      transition: var(--transition);
+    }
+
+    .tab-link:hover {
+      color: var(--content);
+      background: rgba(255, 255, 255, 0.8);
+    }
+
+    .tab-link.active {
+      background: #FFFFFF;
+      color: var(--action);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--structure);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.45rem 0.9rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: 1px solid var(--structure);
+      background: #FFFFFF;
+      color: var(--content);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--tech);
+      background: var(--separation);
+    }
+
+    /* Hero Header */
+    .hero-header {
+      padding: 3.5rem 1.5rem 2.5rem;
+      max-width: 1280px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(217, 45, 32, 0.08);
+      color: var(--action);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 0.35rem 0.9rem;
+      border-radius: 30px;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(217, 45, 32, 0.2);
+      letter-spacing: 0.04em;
+    }
+
+    .hero-title {
+      font-size: 2.75rem;
+      font-weight: 800;
+      color: var(--content);
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+
+    .hero-desc {
+      font-size: 1.15rem;
+      color: var(--support);
+      max-width: 760px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+
+    /* Studio Stage Controls */
+    .studio-controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      background: var(--separation);
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--structure);
+      max-width: fit-content;
+      margin: 0 auto;
+    }
+
+    .control-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--support);
+      letter-spacing: 0.05em;
+    }
+
+    .stage-switchers {
+      display: flex;
+      gap: 0.4rem;
+    }
+
+    .stage-btn {
+      padding: 0.35rem 0.75rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      border: 1px solid var(--structure);
+      background: #FFFFFF;
+      color: var(--support);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .stage-btn.active {
+      background: var(--content);
+      color: #FFFFFF;
+      border-color: var(--content);
+    }
+
+    /* Main Logo Grid */
+    .catalog-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 1.5rem 1.5rem 5rem;
+    }
+
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 2rem;
+    }
+
+    .logo-card {
+      background: #FFFFFF;
+      border: 1px solid var(--structure);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+      box-shadow: var(--shadow-sm);
+      position: relative;
+    }
+
+    .logo-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: #CBD3E0;
+    }
+
+    /* Stage Canvas */
+    .stage-canvas {
+      height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      background: #FFFFFF;
+      border-bottom: 1px solid var(--structure);
+      position: relative;
+      transition: background 0.3s ease;
+    }
+
+    .stage-canvas.dark-mode {
+      background: #0E1117 !important;
+      border-bottom-color: #222733;
+    }
+
+    .stage-canvas.slate-mode {
+      background: #1B212D !important;
+      border-bottom-color: #2A3345;
+    }
+
+    .stage-canvas svg {
+      width: 190px;
+      height: 190px;
+      filter: drop-shadow(0 8px 24px rgba(0,0,0,0.06));
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .logo-card:hover .stage-canvas svg {
+      transform: scale(1.06);
+    }
+
+    .card-badge {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(4px);
+      border: 1px solid var(--structure);
+      padding: 0.2rem 0.55rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--content);
+    }
+
+    .stage-canvas.dark-mode .card-badge,
+    .stage-canvas.slate-mode .card-badge {
+      background: rgba(20, 25, 35, 0.8);
+      border-color: #333C4E;
+      color: #E1E5EA;
+    }
+
+    /* Card Details Body */
+    .card-body {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      gap: 1rem;
+    }
+
+    .card-header-block {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--content);
+      letter-spacing: -0.02em;
+    }
+
+    .card-tagline {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--tech);
+    }
+
+    /* Typographic Lockup Showcase */
+    .lockup-preview {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: var(--separation);
+      padding: 0.75rem 1rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--structure);
+    }
+
+    .lockup-mini-svg {
+      width: 32px;
+      height: 32px;
+      flex-shrink: 0;
+    }
+
+    .lockup-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .lockup-brand {
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--content);
+      line-height: 1.1;
+    }
+    .lockup-brand span { color: var(--action); }
+
+    .lockup-sub {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--support);
+    }
+
+    .card-rationale {
+      font-size: 0.875rem;
+      color: var(--content);
+      line-height: 1.55;
+    }
+
+    .specs-box {
+      background: var(--separation);
+      border-left: 3px solid var(--tech);
+      padding: 0.5rem 0.75rem;
+      font-size: 0.75rem;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--tech);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    }
+
+    /* Palette Swatches */
+    .swatches {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .swatch {
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      border: 1px solid rgba(0,0,0,0.1);
+    }
+
+    /* Action Buttons Footer */
+    .card-footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid var(--structure);
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      padding: 0.55rem 0.75rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: var(--transition);
+      border: 1px solid var(--structure);
+      background: #FFFFFF;
+      color: var(--content);
+    }
+
+    .btn-action:hover {
+      background: var(--separation);
+      border-color: var(--tech);
+    }
+
+    .btn-action.primary {
+      background: var(--content);
+      color: #FFFFFF;
+      border-color: var(--content);
+    }
+
+    .btn-action.primary:hover {
+      background: #252B38;
+    }
+
+    /* Toast Notification */
+    #toast {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: var(--content);
+      color: #FFFFFF;
+      padding: 0.75rem 1.25rem;
+      border-radius: 8px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 1000;
+      border: 1px solid var(--structure);
+    }
+
+    #toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+      .top-nav { flex-direction: column; align-items: stretch; gap: 0.75rem; }
+      .collection-tabs { overflow-x: auto; justify-content: flex-start; }
+      .hero-title { font-size: 2rem; }
+      .logo-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="top-nav">
+    <a href="/" class="brand-mark">
+      <div class="brand-logo-icon">O<span>•</span></div>
+      <div class="brand-text">Olla<span>VPN</span></div>
+      <span class="brand-badge">Brand Studio</span>
+    </a>
+
+    <nav class="collection-tabs" aria-label="Logo Categories">
+      <a href="isometric-geometry-3d.html" class="tab-link active">
+        <span>📐</span> Isometric 3D (12)
+      </a>
+      <a href="mascot-designs.html" class="tab-link ">
+        <span>🦊</span> Mascots (12)
+      </a>
+      <a href="emblem-designs.html" class="tab-link ">
+        <span>🛡️</span> Emblems (12)
+      </a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="/" class="btn-outline">
+        <span>←</span> Back to Knowledge Base
+      </a>
+    </div>
+  </header>
+
+  <section class="hero-header">
+    <div class="hero-eyebrow">
+      <span>●</span> COLLECTION 01 • 12 ISOMETRIC 3D DESIGNS
+    </div>
+    <h1 class="hero-title">Isometric Geometry 3D Logos</h1>
+    <p class="hero-desc">12 mathematical, extruded, and multidimensional vector logos engineered for OllaVPN. Constructed with true 30° isometric axes, precision specular gradients, and quantum routing iconography.</p>
+
+    <div class="studio-controls">
+      <span class="control-label">Canvas Stage:</span>
+      <div class="stage-switchers">
+        <button class="stage-btn active" onclick="setCanvasMode('light')">White (#FFFFFF)</button>
+        <button class="stage-btn" onclick="setCanvasMode('dark')">Midnight (#0E1117)</button>
+        <button class="stage-btn" onclick="setCanvasMode('slate')">Deep Slate (#1B212D)</button>
+      </div>
+    </div>
+  </section>
+
+  <main class="catalog-container">
+    <div class="logo-grid">
+      
+        <article class="logo-card" id="iso-01">
+          <div class="stage-canvas" id="stage-iso-01">
+            <span class="card-badge">01 / 12</span>
+            <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iso1-top" x1="60" y1="40" x2="180" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4B5E82"/>
+      <stop offset="100%" stop-color="#3E506F"/>
+    </linearGradient>
+    <linearGradient id="iso1-left" x1="60" y1="90" x2="120" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#242B38"/>
+      <stop offset="100%" stop-color="#171A21"/>
+    </linearGradient>
+    <linearGradient id="iso1-right" x1="120" y1="90" x2="180" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#353E4F"/>
+      <stop offset="100%" stop-color="#202530"/>
+    </linearGradient>
+    <linearGradient id="iso1-core-top" x1="95" y1="100" x2="145" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF5C4D"/>
+      <stop offset="100%" stop-color="#D92D20"/>
+    </linearGradient>
+    <linearGradient id="iso1-core-left" x1="95" y1="120" x2="120" y2="155" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#C02216"/>
+      <stop offset="100%" stop-color="#91140B"/>
+    </linearGradient>
+    <linearGradient id="iso1-core-right" x1="120" y1="120" x2="145" y2="155" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#E0382B"/>
+      <stop offset="100%" stop-color="#B01D12"/>
+    </linearGradient>
+    <filter id="iso1-glow" x="70" y="70" width="100" height="100" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <polygon points="120,36 184,73 184,147 120,184 56,147 56,73" stroke="#E1E5EA" stroke-width="2" stroke-dasharray="4 4" fill="none" opacity="0.6"/>
+  <polygon points="120,44 180,78 120,113 60,78" fill="url(#iso1-top)" stroke="#E1E5EA" stroke-width="1.5"/>
+  <polygon points="60,78 120,113 120,182 60,148" fill="url(#iso1-left)" stroke="#E1E5EA" stroke-width="1.5"/>
+  <polygon points="120,113 180,78 180,148 120,182" fill="url(#iso1-right)" stroke="#E1E5EA" stroke-width="1.5"/>
+  <line x1="120" y1="44" x2="120" y2="92" stroke="#D92D20" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <line x1="60" y1="78" x2="95" y2="115" stroke="#D92D20" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <line x1="180" y1="78" x2="145" y2="115" stroke="#D92D20" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <line x1="120" y1="182" x2="120" y2="152" stroke="#D92D20" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <g filter="url(#iso1-glow)">
+    <polygon points="120,92 145,106 120,121 95,106" fill="url(#iso1-core-top)"/>
+    <polygon points="95,106 120,121 120,150 95,135" fill="url(#iso1-core-left)"/>
+    <polygon points="120,121 145,106 145,135 120,150" fill="url(#iso1-core-right)"/>
+  </g>
+  <circle cx="120" cy="121" r="3.5" fill="#FFFFFF"/>
+</svg>
+          </div>
+
+          <div class="card-body">
+            <div class="card-header-block">
+              <h2 class="card-title">01. Quantum Tesseract Tunnel</h2>
+              <span class="card-tagline">4D-to-3D Hypercube Projection</span>
+            </div>
+
+            <div class="lockup-preview">
+              <div class="lockup-mini-svg">
+                <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iso1-top" x1="60" y1="40" x2="180" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4B5E82"/>
+      <stop offset="100%" stop-color="#3E506F"/>
+    </linearGradient>
+    <linearGradient id="iso1-left" x1="60" y1="90" x2="120" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#242B38"/>
+      <stop offset="100%" stop-color="#171A21"/>
+    </linearGradient>
+    <linearGradient id="iso1-right" x1="120" y1="90" x2="180" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#353E4F"/>
+      <stop offset="100%" stop-color="#202530"/>
+    </linearGradient>
+    <linearGradient id="iso1-core-top" x1="95" y1="100" x2="145" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF5C4D"/>
+      <stop offset="100%" stop-color="#D92D20"/>
+    </linearGradient>
+    <linearGradient id="iso1-core-left" x1="95" y1="120" x2="120" y2="155" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#C02216"/>
+      <stop offset="100%" stop-color="#91140B"/>
+    </linearGradient>
+    <linearGradient id="iso1-core-right" x1="120" y1="120" x2="145" y2="155" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#E0382B"/>
+      <stop offset="100%" stop-color="#B01D12"/>
+    </linearGradient>
+    <filter id="iso1-glow" x="70" y="70" width="100" height="100" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <polygon points="120,36 184,73 184,147 120,184 56,147 56,73" stroke="#E1E5EA" stroke-width="2" stroke-dasharray="4 4" fill="none" opacity="0.6"/>
+  <polygon points="120,44 180,78 120,113 60,78" fill="url(#iso1-top)" stroke="#E1E5EA" stroke-width="1.5"/>
+  <polygon points="60,78 120,113 120,182 60,148" fill="url(#iso1-left)" stroke="#E1E5EA" stroke-width="1.5"/>
+  <polygon points="120,113 180,78 180,148 120,182" fill="url(#iso1-right)" stroke="#E1E5EA" stroke-width="1.5"/>
+  <line x1="120" y1="44" x2="120" y2="92" stroke="#D92D20" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <line x1="60" y1="78" x2="95" y2="115" stroke="#D92D20" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <line x1="180" y1="78" x2="145" y2="115" stroke="#D92D20" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <line x1="120" y1="182" x2="120" y2="152" stroke="#D92D20" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <g filter="url(#iso1-glow)">
+    <polygon points="120,92 145,106 120,121 95,106" fill="url(#iso1-core-top)"/>
+    <polygon points="95,106 120,121 120,150 95,135" fill="url(#iso1-core-left)"/>
+    <polygon points="120,121 145,106 145,135 120,150" fill="url(#iso1-core-right)"/>
+  </g>
+  <circle cx="120" cy="121" r="3.5" fill="#FFFFFF"/>
+</svg>
+              </div>
+              <div class="lockup-text">
+                <div class="lockup-brand">Olla<span>VPN</span></div>
+                <div class="lockup-sub">Sovereign WireGuard Tunnel</div>
+              </div>
+            </div>
+
+            <p class="card-rationale">Represents multi-dimensional data tunneling. An outer obsidian chassis (#171A21) encapsulates a suspended crimson hypercube core (#D92D20) connected via isometric projection vectors, signifying an encrypted channel routing through higher topological dimensions.</p>
+
+            <div class="specs-box">
+              30° Isometric Projection • 12 Outer Edges • 8 Vector Struts • Dual-Tone Gradients
+            </div>
+
+            <div class="swatches" title="Color Hierarchy Palette">
+              <div class="swatch" style="background-color: #171A21;" title="#171A21"></div><div class="swatch" style="background-color: #3E506F;" title="#3E506F"></div><div class="swatch" style="background-color: #D92D20;" title="#D92D20"></div><div class="swatch" style="background-color: #FFFFFF;" title="#FFFFFF"></div>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-action primary" onclick="copySVG('iso-01')">
+                <span>📋</span> Copy SVG
+              </button>
+              <button class="btn-action" onclick="downloadSVG('iso-01', 'quantum-tesseract-tunnel')">
+                <span>⬇️</span> Download
+              </button>
+            </div>
+          </div>
+        </article>
+      
+
+        <article class="logo-card" id="iso-02">
+          <div class="stage-canvas" id="stage-iso-02">
+            <span class="card-badge">02 / 12</span>
+            <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iso2-top" x1="120" y1="36" x2="120" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4B5E82"/>
+      <stop offset="100%" stop-color="#32425E"/>
+    </linearGradient>
+    <linearGradient id="iso2-left" x1="60" y1="100" x2="120" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#222834"/>
+      <stop offset="100%" stop-color="#14171E"/>
+    </linearGradient>
+    <linearGradient id="iso2-right" x1="120" y1="100" x2="180" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D3645"/>
+      <stop offset="100%" stop-color="#1A1F29"/>
+    </linearGradient>
+  </defs>
+  <polygon points="120,206 52,156 52,86 120,46 188,86 188,156" fill="#000000" opacity="0.08" transform="translate(0, 8)"/>
+  <polygon points="120,44 180,78 120,112 60,78" fill="url(#iso2-top)"/>
+  <polygon points="60,78 120,112 120,196 60,154" fill="url(#iso2-left)"/>
+  <polygon points="120,112 180,78 180,154 120,196" fill="url(#iso2-right)"/>
+  <path d="M120,66 L154,85 L120,104 L86,85 Z" fill="#171A21" stroke="#E1E5EA" stroke-width="1.5"/>
+  <path d="M86,85 L120,104 L120,166 L86,140 Z" fill="#0E1015" stroke="#3E506F" stroke-width="1.5"/>
+  <path d="M120,104 L154,85 L154,140 L120,166 Z" fill="#1A1F29" stroke="#3E506F" stroke-width="1.5"/>
+  <polygon points="120,95 130,101 120,107 110,101" fill="#D92D20"/>
+  <line x1="120" y1="107" x2="120" y2="165" stroke="#D92D20" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="120" cy="101" r="2" fill="#FFFFFF"/>
+</svg>
+          </div>
+
+          <div class="card-body">
+            <div class="card-header-block">
+              <h2 class="card-title">02. Hexagonal Shield Prism</h2>
+              <span class="card-tagline">Extruded Isometric Monolithic Shield</span>
+            </div>
+
+            <div class="lockup-preview">
+              <div class="lockup-mini-svg">
+                <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iso2-top" x1="120" y1="36" x2="120" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4B5E82"/>
+      <stop offset="100%" stop-color="#32425E"/>
+    </linearGradient>
+    <linearGradient id="iso2-left" x1="60" y1="100" x2="120" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#222834"/>
+      <stop offset="100%" stop-color="#14171E"/>
+    </linearGradient>
+    <linearGradient id="iso2-right" x1="120" y1="100" x2="180" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D3645"/>
+      <stop offset="100%" stop-color="#1A1F29"/>
+    </linearGradient>
+  </defs>
+  <polygon points="120,206 52,156 52,86 120,46 188,86 188,156" fill="#000000" opacity="0.08" transform="translate(0, 8)"/>
+  <polygon points="120,44 180,78 120,112 60,78" fill="url(#iso2-top)"/>
+  <polygon points="60,78 120,112 120,196 60,154" fill="url(#iso2-left)"/>
+  <polygon points="120,112 180,78 180,154 120,196" fill="url(#iso2-right)"/>
+  <path d="M120,66 L154,85 L120,104 L86,85 Z" fill="#171A21" stroke="#E1E5EA" stroke-width="1.5"/>
+  <path d="M86,85 L120,104 L120,166 L86,140 Z" fill="#0E1015" stroke="#3E506F" stroke-width="1.5"/>
+  <path d="M120,104 L154,85 L154,140 L120,166 Z" fill="#1A1F29" stroke="#3E506F" stroke-width="1.5"/>
+  <polygon points="120,95 130,101 120,107 110,101" fill="#D92D20"/>
+  <line x1="120" y1="107" x2="120" y2="165" stroke="#D92D20" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="120" cy="101" r="2" fill="#FFFFFF"/>
+</svg>
+              </div>
+              <div class="lockup-text">
+                <div class="lockup-brand">Olla<span>VPN</span></div>
+                <div class="lockup-sub">Sovereign WireGuard Tunnel</div>
+              </div>
+            </div>
+
+            <p class="card-rationale">Blends the iconic security shield with an isometric 3D extruded prism. Sliced across three perspective facets to form an engraved cryptographic 'O', creating an unshakeable sovereign bastion.</p>
+
+            <div class="specs-box">
+              Tri-Facet Extrusion • 120° Angle Axis • Precision Beveled Edges • Ambient Occlusion
+            </div>
+
+            <div class="swatches" title="Color Hierarchy Palette">
+              <div class="swatch" style="background-color: #171A21;" title="#171A21"></div><div class="swatch" style="background-color: #3E506F;" title="#3E506F"></div><div class="swatch" style="background-color: #E1E5EA;" title="#E1E5EA"></div><div class="swatch" style="background-color: #D92D20;" title="#D92D20"></div>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-action primary" onclick="copySVG('iso-02')">
+                <span>📋</span> Copy SVG
+              </button>
+              <button class="btn-action" onclick="downloadSVG('iso-02', 'hexagonal-shield-prism')">
+                <span>⬇️</span> Download
+              </button>
+            </div>
+          </div>
+        </article>
+      
+
+        <article class="logo-card" id="iso-03">
+          <div class="stage-canvas" id="stage-iso-03">
+            <span class="card-badge">03 / 12</span>
+            <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iso3-loop1" x1="40" y1="60" x2="200" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3E506F"/>
+      <stop offset="50%" stop-color="#171A21"/>
+      <stop offset="100%" stop-color="#D92D20"/>
+    </linearGradient>
+    <linearGradient id="iso3-loop2" x1="200" y1="60" x2="40" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#D92D20"/>
+      <stop offset="60%" stop-color="#3E506F"/>
+      <stop offset="100%" stop-color="#171A21"/>
+    </linearGradient>
+    <linearGradient id="iso3-under" x1="80" y1="140" x2="160" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#12141A"/>
+      <stop offset="100%" stop-color="#242E40"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="120" cy="120" rx="76" ry="46" stroke="#E1E5EA" stroke-width="1.5" stroke-dasharray="3 5" transform="rotate(-25 120 120)"/>
+  <path d="M72,138 C54,116 62,82 92,68 C122,54 154,68 178,92" stroke="url(#iso3-under)" stroke-width="18" stroke-linecap="round"/>
+  <path d="M168,102 C186,124 178,158 148,172 C118,186 86,172 62,148" stroke="url(#iso3-loop1)" stroke-width="18" stroke-linecap="round"/>
+  <path d="M82,130 C108,102 136,88 162,112 C188,136 158,168 128,154" stroke="url(#iso3-loop2)" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="172" cy="116" r="4.5" fill="#D92D20"/>
+  <circle cx="172" cy="116" r="2" fill="#FFFFFF"/>
+  <circle cx="68" cy="124" r="3.5" fill="#3E506F"/>
+  <circle cx="120" cy="62" r="3" fill="#D92D20"/>
+</svg>
+          </div>
+
+          <div class="card-body">
+            <div class="card-header-block">
+              <h2 class="card-title">03. Möbius Data Loop</h2>
+              <span class="card-tagline">Continuous 3D Non-Orientable Ribbon</span>
+            </div>
+
+            <div class="lockup-preview">
+              <div class="lockup-mini-svg">
+                <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iso3-loop1" x1="40" y1="60" x2="200" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3E506F"/>
+      <stop offset="50%" stop-color="#171A21"/>
+      <stop offset="100%" stop-color="#D92D20"/>
+    </linearGradient>
+    <linearGradient id="iso3-loop2" x1="200" y1="60" x2="40" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#D92D20"/>
+      <stop offset="60%" stop-color="#3E506F"/>
+      <stop offset="100%" stop-color="#171A21"/>
+    </linearGradient>
+    <linearGradient id="iso3-under" x1="80" y1="140" x2="160" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#12141A"/>
+      <stop offset="100%" stop-color="#242E40"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="120" cy="120" rx="76" ry="46" stroke="#E1E5EA" stroke-width="1.5" stroke-dasharray="3 5" transform="rotate(-25 120 120)"/>
+  <path d="M72,138 C54,116 62,82 92,68 C122,54 154,68 178,92" stroke="url(#iso3-under)" stroke-width="18" stroke-linecap="round"/>
+  <path d="M168,102 C186,124 178,158 148,172 C118,186 86,172 62,148" stroke="url(#iso3-loop1)" stroke-width="18" stroke-linecap="round"/>
+  <path d="M82,130 C108,102 136,88 162,112 C188,136 158,168 128,154" stroke="url(#iso3-loop2)" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="172" cy="116" r="4.5" fill="#D92D20"/>
+  <circle cx="172" cy="116" r="2" fill="#FFFFFF"/>
+  <circle cx="68" cy="124" r="3.5" fill="#3E506F"/>
+  <circle cx="120" cy="62" r="3" fill="#D92D20"/>
+</svg>
+              </div>
+              <div class="lockup-text">
+                <div class="lockup-brand">Olla<span>VPN</span></div>
+                <div class="lockup-sub">Sovereign WireGuard Tunnel</div>
+              </div>
+            </div>
+
+            <p class="card-rationale">Inspired by the mathematical Möbius strip: an infinite, unbroken continuous cryptographic loop where inside and outside seamlessly merge. Symbolizes zero-knowledge privacy with no start or end for surveillance trackers.</p>
+
+            <div class="specs-box">
+              Curved Isometric Spline • Single-Surface Topology • WireGuard Red Accents
+            </div>
+
+            <div class="swatches" title="Color Hierarchy Palette">
+              <div class="swatch" style="background-color: #D92D20;" title="#D92D20"></div><div class="swatch" style="background-color: #3E506F;" title="#3E506F"></div><div class="swatch" style="background-color: #171A21;" title="#171A21"></div><div class="swatch" style="background-color: #667085;" title="#667085"></div>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-action primary" onclick="copySVG('iso-03')">
+                <span>📋</span> Copy SVG
+              </button>
+              <button class="btn-action" onclick="downloadSVG('iso-03', 'm-bius-data-loop')">
+                <span>⬇️</span> Download
+              </button>
+            </div>
+          </div>
+        </article>
+      
+
+        <article class="logo-card" id="iso-04">
+          <div class="stage-canvas" id="stage-iso-04">
+            <span class="card-badge">04 / 12</span>
+            <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iso4-t" x1="120" y1="40" x2="120" y2="105" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4F6488"/>
+      <stop offset="100%" stop-color="#364560"/>
+    </linearGradient>
+    <linearGradient id="iso4-l" x1="55" y1="80" x2="120" y2="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#232936"/>
+      <stop offset="100%" stop-color="#14161E"/>
+    </linearGradient>
+    <linearGradient id="iso4-r" x1="120" y1="80" x2="185" y2="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D3647"/>
+      <stop offset="100%" stop-color="#1A1E27"/>
+    </linearGradient>
+  </defs>
+  <polygon points="120,40 185,77 120,114 55,77" fill="url(#iso4-t)" stroke="#E1E5EA" stroke-width="1.5"/>
+  <polygon points="55,77 120,114 120,188 55,151" fill="url(#iso4-l)" stroke="#E1E5EA" stroke-width="1.5"/>
+  <polygon points="120,114 185,77 185,151 120,188" fill="url(#iso4-r)" stroke="#E1E5EA" stroke-width="1.5"/>
+  <polygon points="120,68 160,91 120,114 80,91" fill="#1F2533"/>
+  <polygon points="80,91 120,114 120,160 80,137" fill="#101218"/>
+  <polygon points="120,114 160,91 160,137 120,160" fill="#171A21"/>
+  <ellipse cx="120" cy="114" rx="22" ry="12" fill="#242C3D" stroke="#D92D20" stroke-width="2.5"/>
+  <circle cx="120" cy="114" r="5" fill="#D92D20"/>
+  <circle cx="70" cy="88" r="2.5" fill="#E1E5EA"/>
+  <circle cx="170" cy="88" r="2.5" fill="#E1E5EA"/>
+  <circle cx="70" cy="142" r="2.5" fill="#3E506F"/>
+  <circle cx="170" cy="142" r="2.5" fill="#3E506F"/>
+  <circle cx="120" cy="178" r="2.5" fill="#D92D20"/>
+</svg>
+          </div>
+
+          <div class="card-body">
+            <div class="card-header-block">
+              <h2 class="card-title">04. Cyber Fortress Vault</h2>
+              <span class="card-tagline">Heavy Isometric Monolith with Stepped Keyhole</span>
+            </div>
+
+            <div class="lockup-preview">
+              <div class="lockup-mini-svg">
+                <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iso4-t" x1="120" y1="40" x2="120" y2="105" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4F6488"/>
+      <stop offset="100%" stop-color="#364560"/>
+    </linearGradient>
+    <linearGradient id="iso4-l" x1="55" y1="80" x2="120" y2="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#232936"/>
+      <stop offset="100%" stop-color="#14161E"/>
+    </linearGradient>
+    <linearGradient id="iso4-r" x1="120" y1="80" x2="185" y2="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D3647"/>
+      <stop offset="100%" stop-color="#1A1E27"/>
+    </linearGradient>
+  </defs>
+  <polygon points="120,40 185,77 120,114 55,77" fill="url(#iso4-t)" stroke="#E1E5EA" stroke-width="1.5"/>
+  <polygon points="55,77 120,114 120,188 55,151" fill="url(#iso4-l)" stroke="#E1E5EA" stroke-width="1.5"/>
+  <polygon points="120,114 185,77 185,151 120,188" fill="url(#iso4-r)" stroke="#E1E5EA" stroke-width="1.5"/>
+  <polygon points="120,68 160,91 120,114 80,91" fill="#1F2533"/>
+  <polygon points="80,91 120,114 120,160 80,137" fill="#101218"/>
+  <polygon points="120,114 160,91 160,137 120,160" fill="#171A21"/>
+  <ellipse cx="120" cy="114" rx="22" ry="12" fill="#242C3D" stroke="#D92D20" stroke-width="2.5"/>
+  <circle cx="120" cy="114" r="5" fill="#D92D20"/>
+  <circle cx="70" cy="88" r="2.5" fill="#E1E5EA"/>
+  <circle cx="170" cy="88" r="2.5" fill="#E1E5EA"/>
+  <circle cx="70" cy="142" r="2.5" fill="#3E506F"/>
+  <circle cx="170" cy="142" r="2.5" fill="#3E506F"/>
+  <circle cx="120" cy="178" r="2.5" fill="#D92D20"/>
+</svg>
+              </div>
+              <div class="lockup-text">
+                <div class="lockup-brand">Olla<span>VPN</span></div>
+                <div class="lockup-sub">Sovereign WireGuard Tunnel</div>
+              </div>
+            </div>
+
+            <p class="card-rationale">Built on the archetype of a Swiss bank digital vault. The isometric cubic monolith features an extruded labyrinthine gateway leading to an armored keyhole that emits a vertical security laser.</p>
+
+            <div class="specs-box">
+              Multi-Tier Recessed Voxel • Negative Space Keyhole • Specular Bevel Highlights
+            </div>
+
+            <div class="swatches" title="Color Hierarchy Palette">
+              <div class="swatch" style="background-color: #171A21;" title="#171A21"></div><div class="swatch" style="background-color: #3E506F;" title="#3E506F"></div><div class="swatch" style="background-color: #F7F8FA;" title="#F7F8FA"></div><div class="swatch" style="background-color: #D92D20;" title="#D92D20"></div>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-action primary" onclick="copySVG('iso-04')">
+                <span>📋</span> Copy SVG
+              </button>
+              <button class="btn-action" onclick="downloadSVG('iso-04', 'cyber-fortress-vault')">
+                <span>⬇️</span> Download
+              </button>
+            </div>
+          </div>
+        </article>
+      
+
+        <article class="logo-card" id="iso-05">
+          <div class="stage-canvas" id="stage-iso-05">
+            <span class="card-badge">05 / 12</span>
+            <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iso5-plane1" x1="50" y1="50" x2="190" y2="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3E506F" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#171A21" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="iso5-plane2" x1="190" y1="50" x2="50" y2="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4E6285" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#242B3A" stop-opacity="0.75"/>
+    </linearGradient>
+  </defs>
+  <circle cx="120" cy="120" r="75" stroke="#E1E5EA" stroke-width="1.5" stroke-dasharray="2 4"/>
+  <polygon points="120,52 186,90 120,128 54,90" fill="url(#iso5-plane1)" stroke="#3E506F" stroke-width="2"/>
+  <polygon points="54,90 120,128 120,204 54,166" fill="url(#iso5-plane2)" stroke="#171A21" stroke-width="2"/>
+  <polygon points="120,128 186,90 186,166 120,204" fill="#2B3444" fill-opacity="0.8" stroke="#3E506F" stroke-width="2"/>
+  <line x1="120" y1="52" x2="120" y2="204" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+  <line x1="54" y1="90" x2="186" y2="166" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+  <line x1="186" y1="90" x2="54" y2="166" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+  <polygon points="120,105 133,113 133,127 120,135 107,127 107,113" fill="#D92D20" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="120" cy="120" r="3" fill="#FFFFFF"/>
+  <line x1="120" y1="105" x2="120" y2="78" stroke="#D92D20" stroke-width="3" stroke-linecap="round"/>
+  <line x1="133" y1="127" x2="157" y2="141" stroke="#D92D20" stroke-width="3" stroke-linecap="round"/>
+  <line x1="107" y1="127" x2="83" y2="141" stroke="#D92D20" stroke-width="3" stroke-linecap="round"/>
+</svg>
+          </div>
+
+          <div class="card-body">
+            <div class="card-header-block">
+              <h2 class="card-title">05. WireGuard Matrix Node</h2>
+              <span class="card-tagline">Three Orthogonal Planes Forming an Optical Node</span>
+            </div>
+
+            <div class="lockup-preview">
+              <div class="lockup-mini-svg">
+                <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iso5-plane1" x1="50" y1="50" x2="190" y2="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3E506F" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#171A21" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="iso5-plane2" x1="190" y1="50" x2="50" y2="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4E6285" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#242B3A" stop-opacity="0.75"/>
+    </linearGradient>
+  </defs>
+  <circle cx="120" cy="120" r="75" stroke="#E1E5EA" stroke-width="1.5" stroke-dasharray="2 4"/>
+  <polygon points="120,52 186,90 120,128 54,90" fill="url(#iso5-plane1)" stroke="#3E506F" stroke-width="2"/>
+  <polygon points="54,90 120,128 120,204 54,166" fill="url(#iso5-plane2)" stroke="#171A21" stroke-width="2"/>
+  <polygon points="120,128 186,90 186,166 120,204" fill="#2B3444" fill-opacity="0.8" stroke="#3E506F" stroke-width="2"/>
+  <line x1="120" y1="52" x2="120" y2="204" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+  <line x1="54" y1="90" x2="186" y2="166" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+  <line x1="186" y1="90" x2="54" y2="166" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+  <polygon points="120,105 133,113 133,127 120,135 107,127 107,113" fill="#D92D20" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="120" cy="120" r="3" fill="#FFFFFF"/>
+  <line x1="120" y1="105" x2="120" y2="78" stroke="#D92D20" stroke-width="3" stroke-linecap="round"/>
+  <line x1="133" y1="127" x2="157" y2="141" stroke="#D92D20" stroke-width="3" stroke-linecap="round"/>
+  <line x1="107" y1="127" x2="83" y2="141" stroke="#D92D20" stroke-width="3" stroke-linecap="round"/>
+</svg>
+              </div>
+              <div class="lockup-text">
+                <div class="lockup-brand">Olla<span>VPN</span></div>
+                <div class="lockup-sub">Sovereign WireGuard Tunnel</div>
+              </div>
+            </div>
+
+            <p class="card-rationale">Constructed from 3 intersecting planar disks rotated into isometric 3D space (XY, XZ, YZ planes). At their precise mathematical nexus sits the WireGuard red routing packet with quantum velocity vectors.</p>
+
+            <div class="specs-box">
+              3-Axis Orthogonal Coordinate Lattice • 60°/120° Symmetry • WireGuard Red Core
+            </div>
+
+            <div class="swatches" title="Color Hierarchy Palette">
+              <div class="swatch" style="background-color: #3E506F;" title="#3E506F"></div><div class="swatch" style="background-color: #171A21;" title="#171A21"></div><div class="swatch" style="background-color: #D92D20;" title="#D92D20"></div><div class="swatch" style="background-color: #F7F8FA;" title="#F7F8FA"></div>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-action primary" onclick="copySVG('iso-05')">
+                <span>📋</span> Copy SVG
+              </button>
+              <button class="btn-action" onclick="downloadSVG('iso-05', 'wireguard-matrix-node')">
+                <span>⬇️</span> Download
+              </button>
+            </div>
+          </div>
+        </article>
+      
+
+        <article class="logo-card" id="iso-06">
+          <div class="stage-canvas" id="stage-iso-06">
+            <span class="card-badge">06 / 12</span>
+            <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(0, -5)">
+    <polygon points="120,45 140,56 120,68 100,56" fill="#4D5F80" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="100,56 120,68 120,86 100,74" fill="#232936" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="120,68 140,56 140,74 120,86" fill="#2E3747" stroke="#E1E5EA" stroke-width="1"/>
+    
+    <polygon points="150,62 170,73 150,85 130,73" fill="#4D5F80" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="130,73 150,85 150,103 130,91" fill="#232936" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="150,85 170,73 170,91 150,103" fill="#2E3747" stroke="#E1E5EA" stroke-width="1"/>
+
+    <polygon points="170,97 190,108 170,120 150,108" fill="#4D5F80" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="150,108 170,120 170,138 150,126" fill="#232936" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="170,120 190,108 190,126 170,138" fill="#2E3747" stroke="#E1E5EA" stroke-width="1"/>
+
+    <polygon points="150,132 170,143 150,155 130,143" fill="#FF5C4D" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="130,143 150,155 150,173 130,161" fill="#BA1F14" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="150,155 170,143 170,161 150,173" fill="#D92D20" stroke="#E1E5EA" stroke-width="1"/>
+
+    <polygon points="120,149 140,160 120,172 100,160" fill="#4D5F80" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="100,160 120,172 120,190 100,178" fill="#232936" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="120,172 140,160 140,178 120,190" fill="#2E3747" stroke="#E1E5EA" stroke-width="1"/>
+
+    <polygon points="90,132 110,143 90,155 70,143" fill="#4D5F80" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="70,143 90,155 90,173 70,161" fill="#232936" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="90,155 110,143 110,161 90,173" fill="#2E3747" stroke="#E1E5EA" stroke-width="1"/>
+
+    <polygon points="70,97 90,108 70,120 50,108" fill="#4D5F80" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="50,108 70,120 70,138 50,126" fill="#232936" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="70,120 90,108 90,126 70,138" fill="#2E3747" stroke="#E1E5EA" stroke-width="1"/>
+
+    <polygon points="90,62 110,73 90,85 70,73" fill="#4D5F80" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="70,73 90,85 90,103 70,91" fill="#232936" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="90,85 110,73 110,91 90,103" fill="#2E3747" stroke="#E1E5EA" stroke-width="1"/>
+  </g>
+  <circle cx="120" cy="120" r="4.5" fill="#D92D20"/>
+</svg>
+          </div>
+
+          <div class="card-body">
+            <div class="card-header-block">
+              <h2 class="card-title">06. Isometric Stepped Monogram 'O'</h2>
+              <span class="card-tagline">Voxel Toroid with Ascending Security Steps</span>
+            </div>
+
+            <div class="lockup-preview">
+              <div class="lockup-mini-svg">
+                <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(0, -5)">
+    <polygon points="120,45 140,56 120,68 100,56" fill="#4D5F80" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="100,56 120,68 120,86 100,74" fill="#232936" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="120,68 140,56 140,74 120,86" fill="#2E3747" stroke="#E1E5EA" stroke-width="1"/>
+    
+    <polygon points="150,62 170,73 150,85 130,73" fill="#4D5F80" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="130,73 150,85 150,103 130,91" fill="#232936" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="150,85 170,73 170,91 150,103" fill="#2E3747" stroke="#E1E5EA" stroke-width="1"/>
+
+    <polygon points="170,97 190,108 170,120 150,108" fill="#4D5F80" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="150,108 170,120 170,138 150,126" fill="#232936" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="170,120 190,108 190,126 170,138" fill="#2E3747" stroke="#E1E5EA" stroke-width="1"/>
+
+    <polygon points="150,132 170,143 150,155 130,143" fill="#FF5C4D" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="130,143 150,155 150,173 130,161" fill="#BA1F14" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="150,155 170,143 170,161 150,173" fill="#D92D20" stroke="#E1E5EA" stroke-width="1"/>
+
+    <polygon points="120,149 140,160 120,172 100,160" fill="#4D5F80" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="100,160 120,172 120,190 100,178" fill="#232936" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="120,172 140,160 140,178 120,190" fill="#2E3747" stroke="#E1E5EA" stroke-width="1"/>
+
+    <polygon points="90,132 110,143 90,155 70,143" fill="#4D5F80" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="70,143 90,155 90,173 70,161" fill="#232936" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="90,155 110,143 110,161 90,173" fill="#2E3747" stroke="#E1E5EA" stroke-width="1"/>
+
+    <polygon points="70,97 90,108 70,120 50,108" fill="#4D5F80" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="50,108 70,120 70,138 50,126" fill="#232936" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="70,120 90,108 90,126 70,138" fill="#2E3747" stroke="#E1E5EA" stroke-width="1"/>
+
+    <polygon points="90,62 110,73 90,85 70,73" fill="#4D5F80" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="70,73 90,85 90,103 70,91" fill="#232936" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="90,85 110,73 110,91 90,103" fill="#2E3747" stroke="#E1E5EA" stroke-width="1"/>
+  </g>
+  <circle cx="120" cy="120" r="4.5" fill="#D92D20"/>
+</svg>
+              </div>
+              <div class="lockup-text">
+                <div class="lockup-brand">Olla<span>VPN</span></div>
+                <div class="lockup-sub">Sovereign WireGuard Tunnel</div>
+              </div>
+            </div>
+
+            <p class="card-rationale">A monumental 3D voxel monogram 'O' configured as an ascending cryptographic spiral. As data ascends through the 12 voxel steps, each tier applies a higher layer of cipher abstraction.</p>
+
+            <div class="specs-box">
+              12 Voxel Elements • 3D Stepped Relief • Distinct Lighting Model (Top/Left/Right)
+            </div>
+
+            <div class="swatches" title="Color Hierarchy Palette">
+              <div class="swatch" style="background-color: #FFFFFF;" title="#FFFFFF"></div><div class="swatch" style="background-color: #3E506F;" title="#3E506F"></div><div class="swatch" style="background-color: #171A21;" title="#171A21"></div><div class="swatch" style="background-color: #D92D20;" title="#D92D20"></div>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-action primary" onclick="copySVG('iso-06')">
+                <span>📋</span> Copy SVG
+              </button>
+              <button class="btn-action" onclick="downloadSVG('iso-06', 'isometric-stepped-monogram-o-')">
+                <span>⬇️</span> Download
+              </button>
+            </div>
+          </div>
+        </article>
+      
+
+        <article class="logo-card" id="iso-07">
+          <div class="stage-canvas" id="stage-iso-07">
+            <span class="card-badge">07 / 12</span>
+            <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iso7-f1" x1="120" y1="36" x2="80" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#60769D"/>
+      <stop offset="100%" stop-color="#3B4962"/>
+    </linearGradient>
+    <linearGradient id="iso7-f2" x1="120" y1="36" x2="160" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4B5C7D"/>
+      <stop offset="100%" stop-color="#283244"/>
+    </linearGradient>
+    <linearGradient id="iso7-f3" x1="80" y1="120" x2="120" y2="204" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#232B3B"/>
+      <stop offset="100%" stop-color="#141720"/>
+    </linearGradient>
+    <linearGradient id="iso7-f4" x1="160" y1="120" x2="120" y2="204" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2E384C"/>
+      <stop offset="100%" stop-color="#1A1E29"/>
+    </linearGradient>
+  </defs>
+  <polygon points="120,30 190,80 190,160 120,210 50,160 50,80" stroke="#E1E5EA" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.4"/>
+  <polygon points="120,38 74,90 120,120 120,38" fill="url(#iso7-f1)" stroke="#FFFFFF" stroke-width="1"/>
+  <polygon points="120,38 166,90 120,120 120,38" fill="url(#iso7-f2)" stroke="#FFFFFF" stroke-width="1"/>
+  <polygon points="56,80 74,90 120,120 68,142" fill="#2B364A" stroke="#FFFFFF" stroke-width="1"/>
+  <polygon points="184,80 166,90 120,120 172,142" fill="#3D4B63" stroke="#FFFFFF" stroke-width="1"/>
+  <polygon points="120,120 68,142 120,202 120,120" fill="url(#iso7-f3)" stroke="#FFFFFF" stroke-width="1"/>
+  <polygon points="120,120 172,142 120,202 120,120" fill="url(#iso7-f4)" stroke="#FFFFFF" stroke-width="1"/>
+  <line x1="120" y1="38" x2="120" y2="202" stroke="#D92D20" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="120" cy="120" r="5" fill="#D92D20" stroke="#FFFFFF" stroke-width="1.5"/>
+</svg>
+          </div>
+
+          <div class="card-body">
+            <div class="card-header-block">
+              <h2 class="card-title">07. Post-Quantum Lattice Shard</h2>
+              <span class="card-tagline">Faceted Rhombic Dodecahedron Cryptocrystal</span>
+            </div>
+
+            <div class="lockup-preview">
+              <div class="lockup-mini-svg">
+                <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iso7-f1" x1="120" y1="36" x2="80" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#60769D"/>
+      <stop offset="100%" stop-color="#3B4962"/>
+    </linearGradient>
+    <linearGradient id="iso7-f2" x1="120" y1="36" x2="160" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4B5C7D"/>
+      <stop offset="100%" stop-color="#283244"/>
+    </linearGradient>
+    <linearGradient id="iso7-f3" x1="80" y1="120" x2="120" y2="204" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#232B3B"/>
+      <stop offset="100%" stop-color="#141720"/>
+    </linearGradient>
+    <linearGradient id="iso7-f4" x1="160" y1="120" x2="120" y2="204" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2E384C"/>
+      <stop offset="100%" stop-color="#1A1E29"/>
+    </linearGradient>
+  </defs>
+  <polygon points="120,30 190,80 190,160 120,210 50,160 50,80" stroke="#E1E5EA" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.4"/>
+  <polygon points="120,38 74,90 120,120 120,38" fill="url(#iso7-f1)" stroke="#FFFFFF" stroke-width="1"/>
+  <polygon points="120,38 166,90 120,120 120,38" fill="url(#iso7-f2)" stroke="#FFFFFF" stroke-width="1"/>
+  <polygon points="56,80 74,90 120,120 68,142" fill="#2B364A" stroke="#FFFFFF" stroke-width="1"/>
+  <polygon points="184,80 166,90 120,120 172,142" fill="#3D4B63" stroke="#FFFFFF" stroke-width="1"/>
+  <polygon points="120,120 68,142 120,202 120,120" fill="url(#iso7-f3)" stroke="#FFFFFF" stroke-width="1"/>
+  <polygon points="120,120 172,142 120,202 120,120" fill="url(#iso7-f4)" stroke="#FFFFFF" stroke-width="1"/>
+  <line x1="120" y1="38" x2="120" y2="202" stroke="#D92D20" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="120" cy="120" r="5" fill="#D92D20" stroke="#FFFFFF" stroke-width="1.5"/>
+</svg>
+              </div>
+              <div class="lockup-text">
+                <div class="lockup-brand">Olla<span>VPN</span></div>
+                <div class="lockup-sub">Sovereign WireGuard Tunnel</div>
+              </div>
+            </div>
+
+            <p class="card-rationale">Reflects post-quantum lattice cryptography (Kyber/Dilithium). The shard is an isometric 3D crystal exhibiting razor-sharp geometric facets that deflect quantum cryptanalysis attacks.</p>
+
+            <div class="specs-box">
+              8 Rhombic Facets • Specular Angle Variation • Prismatic Edge Highlights
+            </div>
+
+            <div class="swatches" title="Color Hierarchy Palette">
+              <div class="swatch" style="background-color: #171A21;" title="#171A21"></div><div class="swatch" style="background-color: #3E506F;" title="#3E506F"></div><div class="swatch" style="background-color: #E1E5EA;" title="#E1E5EA"></div><div class="swatch" style="background-color: #D92D20;" title="#D92D20"></div>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-action primary" onclick="copySVG('iso-07')">
+                <span>📋</span> Copy SVG
+              </button>
+              <button class="btn-action" onclick="downloadSVG('iso-07', 'post-quantum-lattice-shard')">
+                <span>⬇️</span> Download
+              </button>
+            </div>
+          </div>
+        </article>
+      
+
+        <article class="logo-card" id="iso-08">
+          <div class="stage-canvas" id="stage-iso-08">
+            <span class="card-badge">08 / 12</span>
+            <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iso8-beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D92D20" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#D92D20" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <polygon points="70,55 95,70 70,85 45,70" fill="#506488" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="45,70 70,85 70,185 45,170" fill="#1B202B" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="70,85 95,70 95,170 70,185" fill="#2D3647" stroke="#E1E5EA" stroke-width="1"/>
+
+  <polygon points="170,55 195,70 170,85 145,70" fill="#506488" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="145,70 170,85 170,185 145,170" fill="#1B202B" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="170,85 195,70 195,170 170,185" fill="#2D3647" stroke="#E1E5EA" stroke-width="1"/>
+
+  <polygon points="95,70 145,70 120,55 70,55" fill="#627A9E" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="70,85 170,85 145,70 95,70" fill="#364359" stroke="#E1E5EA" stroke-width="1"/>
+
+  <polygon points="95,70 145,70 145,170 95,170" fill="url(#iso8-beam)"/>
+  <line x1="120" y1="65" x2="120" y2="175" stroke="#D92D20" stroke-width="2.5" stroke-dasharray="4 2"/>
+  <circle cx="120" cy="118" r="14" fill="#171A21" stroke="#D92D20" stroke-width="3"/>
+  <circle cx="120" cy="118" r="5" fill="#FFFFFF"/>
+</svg>
+          </div>
+
+          <div class="card-body">
+            <div class="card-header-block">
+              <h2 class="card-title">08. Bastion Gateway Arch</h2>
+              <span class="card-tagline">Isometric Cyber Pylons with Quantum Forcefield</span>
+            </div>
+
+            <div class="lockup-preview">
+              <div class="lockup-mini-svg">
+                <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iso8-beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D92D20" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#D92D20" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <polygon points="70,55 95,70 70,85 45,70" fill="#506488" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="45,70 70,85 70,185 45,170" fill="#1B202B" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="70,85 95,70 95,170 70,185" fill="#2D3647" stroke="#E1E5EA" stroke-width="1"/>
+
+  <polygon points="170,55 195,70 170,85 145,70" fill="#506488" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="145,70 170,85 170,185 145,170" fill="#1B202B" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="170,85 195,70 195,170 170,185" fill="#2D3647" stroke="#E1E5EA" stroke-width="1"/>
+
+  <polygon points="95,70 145,70 120,55 70,55" fill="#627A9E" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="70,85 170,85 145,70 95,70" fill="#364359" stroke="#E1E5EA" stroke-width="1"/>
+
+  <polygon points="95,70 145,70 145,170 95,170" fill="url(#iso8-beam)"/>
+  <line x1="120" y1="65" x2="120" y2="175" stroke="#D92D20" stroke-width="2.5" stroke-dasharray="4 2"/>
+  <circle cx="120" cy="118" r="14" fill="#171A21" stroke="#D92D20" stroke-width="3"/>
+  <circle cx="120" cy="118" r="5" fill="#FFFFFF"/>
+</svg>
+              </div>
+              <div class="lockup-text">
+                <div class="lockup-brand">Olla<span>VPN</span></div>
+                <div class="lockup-sub">Sovereign WireGuard Tunnel</div>
+              </div>
+            </div>
+
+            <p class="card-rationale">Twin monolithic isometric pillars linked by an encrypted lintel bridge. An active glowing crimson laser barrier seals the gateway, allowing only authenticated WireGuard peers to pass.</p>
+
+            <div class="specs-box">
+              Architectural Symmetry • 3D Beveled Pylons • Suspended Quantum Forcefield
+            </div>
+
+            <div class="swatches" title="Color Hierarchy Palette">
+              <div class="swatch" style="background-color: #171A21;" title="#171A21"></div><div class="swatch" style="background-color: #3E506F;" title="#3E506F"></div><div class="swatch" style="background-color: #D92D20;" title="#D92D20"></div><div class="swatch" style="background-color: #FFFFFF;" title="#FFFFFF"></div>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-action primary" onclick="copySVG('iso-08')">
+                <span>📋</span> Copy SVG
+              </button>
+              <button class="btn-action" onclick="downloadSVG('iso-08', 'bastion-gateway-arch')">
+                <span>⬇️</span> Download
+              </button>
+            </div>
+          </div>
+        </article>
+      
+
+        <article class="logo-card" id="iso-09">
+          <div class="stage-canvas" id="stage-iso-09">
+            <span class="card-badge">09 / 12</span>
+            <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="120,110 196,154 120,198 44,154" fill="#4B5C7D" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="44,154 120,198 120,214 44,170" fill="#171A21" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="120,198 196,154 196,170 120,214" fill="#252C3B" stroke="#E1E5EA" stroke-width="1"/>
+
+  <polygon points="120,90 178,124 120,158 62,124" fill="#586C91" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="62,124 120,158 120,172 62,138" fill="#1E2431" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="120,158 178,124 178,138 120,172" fill="#2F384A" stroke="#E1E5EA" stroke-width="1"/>
+
+  <polygon points="120,72 160,95 120,118 80,95" fill="#6981AB" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="80,95 120,118 120,130 80,107" fill="#272F3E" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="120,118 160,95 160,107 120,130" fill="#3B475D" stroke="#E1E5EA" stroke-width="1"/>
+
+  <polygon points="120,30 145,52 120,68 95,52" fill="#FF5242" stroke="#FFFFFF" stroke-width="1.5"/>
+  <polygon points="95,52 120,68 120,84 95,68" fill="#B31E13" stroke="#FFFFFF" stroke-width="1.5"/>
+  <polygon points="120,68 145,52 145,68 120,84" fill="#D92D20" stroke="#FFFFFF" stroke-width="1.5"/>
+  <circle cx="120" cy="52" r="3" fill="#FFFFFF"/>
+</svg>
+          </div>
+
+          <div class="card-body">
+            <div class="card-header-block">
+              <h2 class="card-title">09. Step-Pyramid Beacon (Ziggurat)</h2>
+              <span class="card-tagline">Three-Tiered Cyber Fortress with Levitating Prism</span>
+            </div>
+
+            <div class="lockup-preview">
+              <div class="lockup-mini-svg">
+                <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="120,110 196,154 120,198 44,154" fill="#4B5C7D" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="44,154 120,198 120,214 44,170" fill="#171A21" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="120,198 196,154 196,170 120,214" fill="#252C3B" stroke="#E1E5EA" stroke-width="1"/>
+
+  <polygon points="120,90 178,124 120,158 62,124" fill="#586C91" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="62,124 120,158 120,172 62,138" fill="#1E2431" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="120,158 178,124 178,138 120,172" fill="#2F384A" stroke="#E1E5EA" stroke-width="1"/>
+
+  <polygon points="120,72 160,95 120,118 80,95" fill="#6981AB" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="80,95 120,118 120,130 80,107" fill="#272F3E" stroke="#E1E5EA" stroke-width="1"/>
+  <polygon points="120,118 160,95 160,107 120,130" fill="#3B475D" stroke="#E1E5EA" stroke-width="1"/>
+
+  <polygon points="120,30 145,52 120,68 95,52" fill="#FF5242" stroke="#FFFFFF" stroke-width="1.5"/>
+  <polygon points="95,52 120,68 120,84 95,68" fill="#B31E13" stroke="#FFFFFF" stroke-width="1.5"/>
+  <polygon points="120,68 145,52 145,68 120,84" fill="#D92D20" stroke="#FFFFFF" stroke-width="1.5"/>
+  <circle cx="120" cy="52" r="3" fill="#FFFFFF"/>
+</svg>
+              </div>
+              <div class="lockup-text">
+                <div class="lockup-brand">Olla<span>VPN</span></div>
+                <div class="lockup-sub">Sovereign WireGuard Tunnel</div>
+              </div>
+            </div>
+
+            <p class="card-rationale">Represents defense-in-depth architecture. Three tiered isometric ziggurat platforms support an anti-gravity floating diamond prism emitting omnidirectional cryptographic telemetry.</p>
+
+            <div class="specs-box">
+              3-Tier Stepped Geometry • Anti-Gravity Core Separation • Omnidirectional Beacon
+            </div>
+
+            <div class="swatches" title="Color Hierarchy Palette">
+              <div class="swatch" style="background-color: #171A21;" title="#171A21"></div><div class="swatch" style="background-color: #3E506F;" title="#3E506F"></div><div class="swatch" style="background-color: #F7F8FA;" title="#F7F8FA"></div><div class="swatch" style="background-color: #D92D20;" title="#D92D20"></div>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-action primary" onclick="copySVG('iso-09')">
+                <span>📋</span> Copy SVG
+              </button>
+              <button class="btn-action" onclick="downloadSVG('iso-09', 'step-pyramid-beacon-ziggurat-')">
+                <span>⬇️</span> Download
+              </button>
+            </div>
+          </div>
+        </article>
+      
+
+        <article class="logo-card" id="iso-10">
+          <div class="stage-canvas" id="stage-iso-10">
+            <span class="card-badge">10 / 12</span>
+            <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iso10-r1" x1="60" y1="40" x2="180" y2="120">
+      <stop offset="0%" stop-color="#5B7198"/>
+      <stop offset="100%" stop-color="#34435C"/>
+    </linearGradient>
+    <linearGradient id="iso10-r2" x1="40" y1="120" x2="140" y2="200">
+      <stop offset="0%" stop-color="#2D3545"/>
+      <stop offset="100%" stop-color="#14171F"/>
+    </linearGradient>
+    <linearGradient id="iso10-r3" x1="120" y1="120" x2="200" y2="200">
+      <stop offset="0%" stop-color="#FF5A4C"/>
+      <stop offset="100%" stop-color="#B82015"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="120" cy="85" rx="55" ry="30" fill="none" stroke="url(#iso10-r1)" stroke-width="14"/>
+  <ellipse cx="90" cy="140" rx="55" ry="30" fill="none" stroke="url(#iso10-r2)" stroke-width="14" transform="rotate(30 90 140)"/>
+  <ellipse cx="150" cy="140" rx="55" ry="30" fill="none" stroke="url(#iso10-r3)" stroke-width="14" transform="rotate(-30 150 140)"/>
+  <path d="M100,68 C112,62 128,62 140,68" fill="none" stroke="url(#iso10-r1)" stroke-width="14"/>
+  <path d="M125,125 C138,135 148,150 152,165" fill="none" stroke="url(#iso10-r3)" stroke-width="14"/>
+  <path d="M75,130 C85,115 100,110 115,115" fill="none" stroke="url(#iso10-r2)" stroke-width="14"/>
+  <circle cx="120" cy="122" r="4.5" fill="#FFFFFF" stroke="#171A21" stroke-width="2"/>
+</svg>
+          </div>
+
+          <div class="card-body">
+            <div class="card-header-block">
+              <h2 class="card-title">10. Borromean Cryptographic Rings</h2>
+              <span class="card-tagline">Three Topologically Interlocked 3D Rings</span>
+            </div>
+
+            <div class="lockup-preview">
+              <div class="lockup-mini-svg">
+                <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iso10-r1" x1="60" y1="40" x2="180" y2="120">
+      <stop offset="0%" stop-color="#5B7198"/>
+      <stop offset="100%" stop-color="#34435C"/>
+    </linearGradient>
+    <linearGradient id="iso10-r2" x1="40" y1="120" x2="140" y2="200">
+      <stop offset="0%" stop-color="#2D3545"/>
+      <stop offset="100%" stop-color="#14171F"/>
+    </linearGradient>
+    <linearGradient id="iso10-r3" x1="120" y1="120" x2="200" y2="200">
+      <stop offset="0%" stop-color="#FF5A4C"/>
+      <stop offset="100%" stop-color="#B82015"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="120" cy="85" rx="55" ry="30" fill="none" stroke="url(#iso10-r1)" stroke-width="14"/>
+  <ellipse cx="90" cy="140" rx="55" ry="30" fill="none" stroke="url(#iso10-r2)" stroke-width="14" transform="rotate(30 90 140)"/>
+  <ellipse cx="150" cy="140" rx="55" ry="30" fill="none" stroke="url(#iso10-r3)" stroke-width="14" transform="rotate(-30 150 140)"/>
+  <path d="M100,68 C112,62 128,62 140,68" fill="none" stroke="url(#iso10-r1)" stroke-width="14"/>
+  <path d="M125,125 C138,135 148,150 152,165" fill="none" stroke="url(#iso10-r3)" stroke-width="14"/>
+  <path d="M75,130 C85,115 100,110 115,115" fill="none" stroke="url(#iso10-r2)" stroke-width="14"/>
+  <circle cx="120" cy="122" r="4.5" fill="#FFFFFF" stroke="#171A21" stroke-width="2"/>
+</svg>
+              </div>
+              <div class="lockup-text">
+                <div class="lockup-brand">Olla<span>VPN</span></div>
+                <div class="lockup-sub">Sovereign WireGuard Tunnel</div>
+              </div>
+            </div>
+
+            <p class="card-rationale">Mathematical Borromean rings in 3D isometric space: three closed rings woven so that no two rings are linked together on their own, but all three together are inextricably bound. Symbolizes zero-knowledge multi-party computation.</p>
+
+            <div class="specs-box">
+              Borromean Knots • True Interlacing Over-Under Weave • 3 Core Brand Hues
+            </div>
+
+            <div class="swatches" title="Color Hierarchy Palette">
+              <div class="swatch" style="background-color: #3E506F;" title="#3E506F"></div><div class="swatch" style="background-color: #171A21;" title="#171A21"></div><div class="swatch" style="background-color: #D92D20;" title="#D92D20"></div><div class="swatch" style="background-color: #667085;" title="#667085"></div>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-action primary" onclick="copySVG('iso-10')">
+                <span>📋</span> Copy SVG
+              </button>
+              <button class="btn-action" onclick="downloadSVG('iso-10', 'borromean-cryptographic-rings')">
+                <span>⬇️</span> Download
+              </button>
+            </div>
+          </div>
+        </article>
+      
+
+        <article class="logo-card" id="iso-11">
+          <div class="stage-canvas" id="stage-iso-11">
+            <span class="card-badge">11 / 12</span>
+            <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iso11-outer" x1="40" y1="40" x2="200" y2="200">
+      <stop offset="0%" stop-color="#465775"/>
+      <stop offset="100%" stop-color="#1B212D"/>
+    </linearGradient>
+  </defs>
+  <polygon points="120,35 190,75 190,155 120,195 50,155 50,75" fill="url(#iso11-outer)" stroke="#E1E5EA" stroke-width="2"/>
+  <polygon points="120,55 170,84 170,146 120,175 70,146 70,84" fill="#0C0E12" stroke="#3E506F" stroke-width="1.5"/>
+  <ellipse cx="120" cy="115" rx="42" ry="24" stroke="#3E506F" stroke-width="2" fill="none"/>
+  <ellipse cx="120" cy="115" rx="30" ry="17" stroke="#667085" stroke-width="2" fill="none"/>
+  <ellipse cx="120" cy="115" rx="18" ry="10" stroke="#D92D20" stroke-width="2.5" fill="none"/>
+  <circle cx="120" cy="115" r="7" fill="#D92D20"/>
+  <circle cx="120" cy="115" r="2.5" fill="#FFFFFF"/>
+  <line x1="70" y1="84" x2="102" y2="105" stroke="#D92D20" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="170" y1="84" x2="138" y2="105" stroke="#D92D20" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="120" y1="175" x2="120" y2="125" stroke="#D92D20" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+          </div>
+
+          <div class="card-body">
+            <div class="card-header-block">
+              <h2 class="card-title">11. Sub-Surface Hex Tunnel</h2>
+              <span class="card-tagline">Isometric Cutaway of an Encrypted Data Conduit</span>
+            </div>
+
+            <div class="lockup-preview">
+              <div class="lockup-mini-svg">
+                <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iso11-outer" x1="40" y1="40" x2="200" y2="200">
+      <stop offset="0%" stop-color="#465775"/>
+      <stop offset="100%" stop-color="#1B212D"/>
+    </linearGradient>
+  </defs>
+  <polygon points="120,35 190,75 190,155 120,195 50,155 50,75" fill="url(#iso11-outer)" stroke="#E1E5EA" stroke-width="2"/>
+  <polygon points="120,55 170,84 170,146 120,175 70,146 70,84" fill="#0C0E12" stroke="#3E506F" stroke-width="1.5"/>
+  <ellipse cx="120" cy="115" rx="42" ry="24" stroke="#3E506F" stroke-width="2" fill="none"/>
+  <ellipse cx="120" cy="115" rx="30" ry="17" stroke="#667085" stroke-width="2" fill="none"/>
+  <ellipse cx="120" cy="115" rx="18" ry="10" stroke="#D92D20" stroke-width="2.5" fill="none"/>
+  <circle cx="120" cy="115" r="7" fill="#D92D20"/>
+  <circle cx="120" cy="115" r="2.5" fill="#FFFFFF"/>
+  <line x1="70" y1="84" x2="102" y2="105" stroke="#D92D20" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="170" y1="84" x2="138" y2="105" stroke="#D92D20" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="120" y1="175" x2="120" y2="125" stroke="#D92D20" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+              </div>
+              <div class="lockup-text">
+                <div class="lockup-brand">Olla<span>VPN</span></div>
+                <div class="lockup-sub">Sovereign WireGuard Tunnel</div>
+              </div>
+            </div>
+
+            <p class="card-rationale">An isometric architectural cutaway exposing the high-speed transit tunnel beneath the surface. Concentric luminous rings guide encrypted packets through an armored subterranean tube, immune to deep-packet inspection.</p>
+
+            <div class="specs-box">
+              Cross-Section Cutaway • 6-Sided Hexagon Conduit • Concentric Laser Rings
+            </div>
+
+            <div class="swatches" title="Color Hierarchy Palette">
+              <div class="swatch" style="background-color: #171A21;" title="#171A21"></div><div class="swatch" style="background-color: #3E506F;" title="#3E506F"></div><div class="swatch" style="background-color: #D92D20;" title="#D92D20"></div><div class="swatch" style="background-color: #F7F8FA;" title="#F7F8FA"></div>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-action primary" onclick="copySVG('iso-11')">
+                <span>📋</span> Copy SVG
+              </button>
+              <button class="btn-action" onclick="downloadSVG('iso-11', 'sub-surface-hex-tunnel')">
+                <span>⬇️</span> Download
+              </button>
+            </div>
+          </div>
+        </article>
+      
+
+        <article class="logo-card" id="iso-12">
+          <div class="stage-canvas" id="stage-iso-12">
+            <span class="card-badge">12 / 12</span>
+            <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iso12-top" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#55698B"/>
+      <stop offset="100%" stop-color="#37455E"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(0, -18)">
+    <polygon points="120,40 145,55 120,70 95,55" fill="url(#iso12-top)" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="95,55 120,70 120,88 95,73" fill="#202633" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="120,70 145,55 145,73 120,88" fill="#2C3647" stroke="#E1E5EA" stroke-width="1"/>
+  </g>
+  <g transform="translate(0, 18)">
+    <polygon points="120,140 145,155 120,170 95,155" fill="url(#iso12-top)" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="95,155 120,170 120,188 95,173" fill="#202633" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="120,170 145,155 145,173 120,188" fill="#2C3647" stroke="#E1E5EA" stroke-width="1"/>
+  </g>
+  <g transform="translate(-20, 0)">
+    <polygon points="80,90 105,105 80,120 55,105" fill="url(#iso12-top)" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="55,105 80,120 80,138 55,123" fill="#202633" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="80,120 105,105 105,123 80,138" fill="#2C3647" stroke="#E1E5EA" stroke-width="1"/>
+  </g>
+  <g transform="translate(20, 0)">
+    <polygon points="160,90 185,105 160,120 135,105" fill="url(#iso12-top)" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="135,105 160,120 160,138 135,123" fill="#202633" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="160,120 185,105 185,123 160,138" fill="#2C3647" stroke="#E1E5EA" stroke-width="1"/>
+  </g>
+  <circle cx="120" cy="115" r="16" fill="#D92D20" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="120" cy="115" r="7" fill="#FFFFFF"/>
+  <line x1="120" y1="88" x2="120" y2="140" stroke="#D92D20" stroke-width="2" stroke-dasharray="2 2"/>
+  <line x1="100" y1="115" x2="140" y2="115" stroke="#D92D20" stroke-width="2" stroke-dasharray="2 2"/>
+</svg>
+          </div>
+
+          <div class="card-body">
+            <div class="card-header-block">
+              <h2 class="card-title">12. Armored Kinetic Cube</h2>
+              <span class="card-tagline">8 Exploded Octants Revealing Central Quantum Spark</span>
+            </div>
+
+            <div class="lockup-preview">
+              <div class="lockup-mini-svg">
+                <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iso12-top" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#55698B"/>
+      <stop offset="100%" stop-color="#37455E"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(0, -18)">
+    <polygon points="120,40 145,55 120,70 95,55" fill="url(#iso12-top)" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="95,55 120,70 120,88 95,73" fill="#202633" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="120,70 145,55 145,73 120,88" fill="#2C3647" stroke="#E1E5EA" stroke-width="1"/>
+  </g>
+  <g transform="translate(0, 18)">
+    <polygon points="120,140 145,155 120,170 95,155" fill="url(#iso12-top)" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="95,155 120,170 120,188 95,173" fill="#202633" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="120,170 145,155 145,173 120,188" fill="#2C3647" stroke="#E1E5EA" stroke-width="1"/>
+  </g>
+  <g transform="translate(-20, 0)">
+    <polygon points="80,90 105,105 80,120 55,105" fill="url(#iso12-top)" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="55,105 80,120 80,138 55,123" fill="#202633" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="80,120 105,105 105,123 80,138" fill="#2C3647" stroke="#E1E5EA" stroke-width="1"/>
+  </g>
+  <g transform="translate(20, 0)">
+    <polygon points="160,90 185,105 160,120 135,105" fill="url(#iso12-top)" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="135,105 160,120 160,138 135,123" fill="#202633" stroke="#E1E5EA" stroke-width="1"/>
+    <polygon points="160,120 185,105 185,123 160,138" fill="#2C3647" stroke="#E1E5EA" stroke-width="1"/>
+  </g>
+  <circle cx="120" cy="115" r="16" fill="#D92D20" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="120" cy="115" r="7" fill="#FFFFFF"/>
+  <line x1="120" y1="88" x2="120" y2="140" stroke="#D92D20" stroke-width="2" stroke-dasharray="2 2"/>
+  <line x1="100" y1="115" x2="140" y2="115" stroke="#D92D20" stroke-width="2" stroke-dasharray="2 2"/>
+</svg>
+              </div>
+              <div class="lockup-text">
+                <div class="lockup-brand">Olla<span>VPN</span></div>
+                <div class="lockup-sub">Sovereign WireGuard Tunnel</div>
+              </div>
+            </div>
+
+            <p class="card-rationale">An isometric military-grade data cube exploded symmetrically into 8 octant voxels drifting along isometric axes. At the absolute geometric center, the indestructible crimson encryption core remains suspended and untouched.</p>
+
+            <div class="specs-box">
+              8-Part Exploded Isometric Assembly • Orthogonal Vector Drift • Kinetic Energy Core
+            </div>
+
+            <div class="swatches" title="Color Hierarchy Palette">
+              <div class="swatch" style="background-color: #171A21;" title="#171A21"></div><div class="swatch" style="background-color: #3E506F;" title="#3E506F"></div><div class="swatch" style="background-color: #D92D20;" title="#D92D20"></div><div class="swatch" style="background-color: #FFFFFF;" title="#FFFFFF"></div>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-action primary" onclick="copySVG('iso-12')">
+                <span>📋</span> Copy SVG
+              </button>
+              <button class="btn-action" onclick="downloadSVG('iso-12', 'armored-kinetic-cube')">
+                <span>⬇️</span> Download
+              </button>
+            </div>
+          </div>
+        </article>
+      
+    </div>
+  </main>
+
+  <div id="toast">SVG code copied to clipboard!</div>
+
+  <script>
+    function setCanvasMode(mode) {
+      document.querySelectorAll('.stage-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      const stages = document.querySelectorAll('.stage-canvas');
+      stages.forEach(stage => {
+        stage.classList.remove('dark-mode', 'slate-mode');
+        if (mode === 'dark') stage.classList.add('dark-mode');
+        if (mode === 'slate') stage.classList.add('slate-mode');
+      });
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2500);
+    }
+
+    function copySVG(cardId) {
+      const card = document.getElementById(cardId);
+      const svg = card.querySelector('.stage-canvas svg');
+      if (!svg) return;
+      navigator.clipboard.writeText(svg.outerHTML).then(() => {
+        showToast('✓ Raw SVG vector copied to clipboard');
+      }).catch(err => {
+        showToast('Error copying SVG');
+      });
+    }
+
+    function downloadSVG(cardId, filename) {
+      const card = document.getElementById(cardId);
+      const svg = card.querySelector('.stage-canvas svg');
+      if (!svg) return;
+      const blob = new Blob([svg.outerHTML], { type: 'image/svg+xml;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'ollavpn-' + filename + '.svg';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast('✓ Downloaded ollavpn-' + filename + '.svg');
+    }
+  </script>
+</body>
+</html>

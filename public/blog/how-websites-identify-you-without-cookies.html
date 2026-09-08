@@ -1,483 +1,121 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>How Websites Identify You Even Without Cookies &middot; OllaVPN</title>
-<meta name="description" content="How websites identify and track you without cookies using browser fingerprinting, canvas and WebGL quirks, audio signals, and IP addresses." />
-<link rel="canonical" href="https://ollavpn.com/blog/how-websites-identify-you-without-cookies.html" />
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-<meta name="theme-color" content="#FFFFFF" />
-
-<meta property="og:type" content="article" />
-<meta property="og:site_name" content="OllaVPN" />
-<meta property="og:title" content="How Websites Identify You Even Without Cookies" />
-<meta property="og:description" content="How websites identify and track you without cookies using browser fingerprinting, canvas and WebGL quirks, audio signals, and IP addresses." />
-<meta property="og:url" content="https://ollavpn.com/blog/how-websites-identify-you-without-cookies.html" />
-<meta property="og:image" content="https://ollavpn.com/og-image.png" />
-<meta name="twitter:card" content="summary_large_image" />
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css?v=20260907_v129polished" />
-<link rel="stylesheet" href="/inter.css" />
-<link rel="stylesheet" href="/jetbrains-mono.css" />
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "How Websites Identify You Even Without Cookies",
-  "description": "How websites identify and track you without cookies using browser fingerprinting, canvas and WebGL quirks, audio signals, and IP addresses.",
-  "image": "https://ollavpn.com/og-image.png",
-  "datePublished": "2026-09-07",
-  "dateModified": "2026-09-07",
-  "author": {
-    "@type": "Person",
-    "name": "Nathan Pratt",
-    "url": "https://ollavpn.com/about/team#nathan-pratt"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "OllaVPN",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://ollavpn.com/favicon-256.png"
-    }
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Can websites really track me even if I never accept cookies?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Browser fingerprinting doesn\u2019t require you to accept anything. It works by silently reading technical details your browser exposes automatically - like screen size, fonts, and rendering quirks - then combining them into an identifier. Rejecting a cookie banner doesn\u2019t stop this, because fingerprinting was never a cookie in the first place."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does clearing my browser history and cookies stop fingerprinting?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Fingerprinting doesn\u2019t rely on anything stored on your device. There\u2019s nothing for a \u201cclear data\u201d button to delete. Your screen resolution, installed fonts, and canvas - rendering signature are read fresh on every visit, regardless of what you\u2019ve cleared beforehand."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does incognito or private browsing mode protect me from fingerprinting?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Not meaningfully. Private browsing mode stops your own device from saving a local record after you close the window. It doesn\u2019t change what your browser reveals to websites in real time. Fingerprinting scripts run the same in a normal window and a private one."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is browser fingerprinting illegal?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Fingerprinting exists in a legal gray area that varies by jurisdiction. Some privacy regulations, including parts of the EU\u2019s GDPR and ePrivacy rules, are increasingly interpreted to cover fingerprinting alongside cookies, which can require similar consent obligations. Enforcement and clarity still vary considerably by country and by how fingerprinting is used."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can a VPN stop browser fingerprinting?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Not by itself. A VPN hides your real IP address, which addresses one identifying signal. But it doesn\u2019t change your screen size, fonts, or canvas - rendering output - the signals fingerprinting actually relies on. You\u2019d need a fingerprinting - resistant browser or extension alongside the VPN."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What\u2019s the single most effective thing I can do to reduce my fingerprint?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Using a browser engineered so large numbers of users present an intentionally identical, standardized fingerprint is often the most effective single step. It addresses canvas, font, and rendering signals directly, rather than only hiding your IP address."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why does changing individual privacy settings sometimes make things worse?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Because uniqueness often comes from being different from the crowd, not from having the \u201cmost locked - down\u201d settings. If you\u2019re the only visitor who changed a particular obscure setting, that change can become an identifying signal - making your fingerprint more distinctive, not less."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can I check my own fingerprint uniqueness?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The EFF\u2019s free Cover Your Tracks tool (the successor to the earlier Panopticlick project) shows which signals your browser exposes and how unique your combination is compared to other recent visitors. It also breaks down which test contributes most."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does OllaVPN protect against fingerprinting?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "OllaVPN hides your real IP address, resolves your DNS entirely inside the encrypted tunnel, and runs a kill switch by default. That closes the network - level identifiers described in this guide. It does not change your browser\u2019s fingerprint, which requires a fingerprinting - resistant browser or extension used alongside it."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are supercookies and ETags still a real concern in 2026?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Less than they used to be. Browser makers have closed many of the most aggressive supercookie techniques - especially around HSTS - based tracking - and modern browsers clear related storage more thoroughly than before. Some cache - based techniques persist in more limited forms, which is one reason relying on cookie deletion alone was never a complete strategy, even before fingerprinting became the dominant conversation."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does using multiple browsers or devices help avoid fingerprinting?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It can help in a limited way. A fingerprint generated on one browser won\u2019t automatically match a different browser or device. But it doesn\u2019t reduce the fingerprint each individual browser produces. Also, juggling multiple browsers adds inconvenience without addressing the underlying signals."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is my phone\u2019s browser as fingerprintable as my desktop browser?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Historically, mobile browsers were considered more standardized and therefore harder to fingerprint. But research over the past several years has found high uniqueness rates on mobile too - especially once app - installed fonts, screen details, and sensor data are factored in."
-      }
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://ollavpn.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Blog",
-      "item": "https://ollavpn.com/blog/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "How Websites Identify You Even Without Cookies",
-      "item": "https://ollavpn.com/blog/how-websites-identify-you-without-cookies.html"
-    }
-  ]
-}
-</script>
-<!-- Universal Blog Typography & Spacing Polish -->
-<style id="blog-typography-polish">
-/* ==========================================================================
-   BLOG TYPOGRAPHY & SPACING POLISH (UNIVERSAL FOR ALL 129 BLOGS)
-   - Remove faint underline above/below section headings
-   - Enlarge section / paragraph numbers (01 ·, 02 ·, 03 ·, etc.)
-   - Decrease spacing between each points, headings, lists, and paragraphs
-   ========================================================================== */
-.article {
-  counter-reset: section;
-}
-
-.article h2,
-.article > h2,
-article h2,
-.article-center-col h2,
-.prose h2,
-.prose > h2 {
-  border-top: none !important;
-  border-bottom: none !important;
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-  text-decoration: none !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  margin-top: 22px !important;
-  margin-bottom: 8px !important;
-  line-height: 1.3 !important;
-  position: relative !important;
-}
-
-.article > h2::before,
-.article h2::before,
-article h2::before,
-.article-center-col h2::before,
-.prose > h2::before {
-  counter-increment: section;
-  content: counter(section, decimal-leading-zero) " · ";
-  color: #DA291C !important;
-  font-family: var(--mono, 'Fira Code', monospace) !important;
-  font-weight: 800 !important;
-  font-size: 1.4em !important;
-  letter-spacing: 0.02em !important;
-  margin-right: 10px !important;
-  vertical-align: baseline !important;
-  display: inline-block !important;
-}
-
-/* Suppress counter number on FAQs and Key Takeaways headings */
-.faqs-section h2::before,
-#faqs h2::before,
-.faq-section h2::before,
-.faq-section-box h2::before,
-.key-takeaways h2::before,
-.key-takeaways h3::before {
-  content: none !important;
-  display: none !important;
-}
-
-.article h3,
-.article > h3,
-.prose h3 {
-  margin-top: 18px !important;
-  margin-bottom: 6px !important;
-}
-
-.article p,
-.prose p {
-  margin-top: 0 !important;
-  margin-bottom: 12px !important;
-  line-height: 1.68 !important;
-}
-
-.article ul,
-.article ol,
-.prose ul,
-.prose ol {
-  margin-top: 0 !important;
-  margin-bottom: 10px !important;
-  padding-left: 22px !important;
-}
-
-.article li,
-.prose li {
-  margin-bottom: 3px !important;
-  line-height: 1.55 !important;
-}
-
-.key-takeaways ul {
-  gap: 5px !important;
-}
-
-.key-takeaways ul li {
-  font-size: 15px !important;
-  line-height: 1.5 !important;
-}
-
-.jump-grid {
-  gap: 6px !important;
-}
-
-.jump-grid li {
-  margin-bottom: 3px !important;
-}
-</style>
-
-</head>
-<body>
-
-<!-- UTILBAR -->
-<div class="utilbar">
-  <div class="wrap" style="display:flex; justify-content:space-between; align-items:center;">
-    <div>
-      <span class="green-dot" style="color:#2F9E44;">&#9679;</span> Network Status: All 120Gbps Core Clusters Healthy &bull; WireGuard Ready
-    </div>
-    <div style="display:flex; gap:16px;">
-      <a href="/tools/index.html">Free Network Tools</a>
-      <a href="/dl/">Download App</a>
-    </div>
-  </div>
-</div>
-
-<!-- STICKY NAVIGATION -->
-<nav class="nav">
-  <div class="nav-inner wrap">
-    <a class="brand" href="/blog/" aria-label="OllaVPN Home">
-      <span class="brand-badge">FREE</span>
-      <span class="brand-text">Olla<span class="brand-accent">VPN</span></span>
-    </a>
-    <div class="nav-links">
-      <a href="/#features">Features</a>
-      <a href="/#protocols">Protocols</a>
-      <a href="/#performance">Speed</a>
-      <a href="/blog/" class="active">Blog</a>
-      <a href="/faq">FAQ</a>
-    </div>
-    <div class="nav-cta">
-      <a href="/free-vpn" class="btn primary">Get Free VPN</a>
-    </div>
-  </div>
-</nav>
-
-<main class="article-layout">
-  <!-- LEFT SIDEBAR -->
-  <aside class="article-sidebar-left" aria-label="Article overview and related reading">
-    <div class="sidebar-card">
-      <div class="side-related-title">Related Guides</div>
-      <ul class="side-related-list">
-        <li><a href="/blog/can-a-website-detect-vpn.html">Can a Website Detect You're Using a VPN?</a></li>
-        <li><a href="/blog/how-advertisers-track-you-across-the-internet.html">How Advertisers Track You Across the Internet</a></li>
-        <li><a href="/blog/what-is-a-webrtc-leak.html">What is a WebRTC Leak, and Why Does It Matter?</a></li>
-        <li><a href="/blog/how-to-test-for-dns-leak.html">How to Test for DNS Leaks in 2026</a></li>
-        <li><a href="/blog/passkeys-vs-passwords.html">Passkeys vs. Passwords: Which One Protects You?</a></li>
-        <li><a href="/blog/what-logs-does-vpn-keep.html">What Logs Does a VPN Keep? No-Logs Explained</a></li>
-        <li><a href="/blog/are-vpns-legal.html">Are VPNs Legal? The Honest Truth</a></li>
-      </ul>
-    </div>
-  </aside>
-
-  <!-- CENTER ARTICLE -->
-  <article class="article" id="main-article">
-    
-    <!-- HERO CALLOUT -->
-    <div class="hero-callout">
-      <div class="hero-callout-left">
-        <div class="hero-callout-icon">&#9889;</div>
-        <div class="hero-callout-text">
-          PRIVACY & SECURITY &middot; UPDATED SEPTEMBER 7, 2026 &middot; 14 min read
-        </div>
+<!DOCTYPE html><html lang="en" style="--accent:#388087"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png" type="image/png"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="canonical" href="https://blogs.ollavpn.com/blog/how-websites-identify-you-without-cookies/"><meta name="generator" content="Astro v4.16.19"><title>How Websites Identify You Even Without Cookies Â· OllaVPN Blog</title><meta name="description" content="How websites identify and track you without cookies using browser fingerprinting, canvas and WebGL quirks, audio signals, and IP addresses."><!-- Google Fonts: Lato (300, 400, 700, 900) --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"><meta property="og:type" content="article"><meta property="og:title" content="How Websites Identify You Even Without Cookies Â· OllaVPN Blog"><meta property="og:description" content="How websites identify and track you without cookies using browser fingerprinting, canvas and WebGL quirks, audio signals, and IP addresses."><meta property="og:url" content="https://blogs.ollavpn.com/blog/how-websites-identify-you-without-cookies/"><meta property="og:site_name" content="OllaVPN Blog"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="How Websites Identify You Even Without Cookies Â· OllaVPN Blog"><meta name="twitter:description" content="How websites identify and track you without cookies using browser fingerprinting, canvas and WebGL quirks, audio signals, and IP addresses."><meta property="article:published_time" content="2026-09-07T00:00:00.000Z"><meta property="article:modified_time" content="2026-09-07T00:00:00.000Z"><meta property="article:author" content="Nathan Pratt"><meta property="article:tag" content="privacy-security"><meta property="article:tag" content="privacy"><meta property="article:tag" content="security"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" title="OllaVPN Blog" href="/rss.xml"><link rel="stylesheet" href="/_astro/_slug_.C5FbUgW6.css">  <link rel="stylesheet" href="/styles.css?v=20260908_4333" />
+</head> <body> <!-- Main Header --><header class="site-header"> <div class="container header-inner"> <div class="header-left"> <a class="brand" href="/" aria-label="OllaVPN"> <img src="/logo.png" alt="" class="brand-logo-img"> <span class="brand-name">OllaVPN</span> </a> </div> <nav class="nav nav-center" aria-label="Primary"> <!-- Technology Dropdown --> <div class="nav-item has-dropdown"> <a href="/tags/protocol-tech/" class="nav-link dropdown-trigger"> <span>Technology</span> <svg class="nav-arrow" width="9" height="9" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"> <path d="M7 10l5 5 5-5z"></path> </svg> </a> <div class="dropdown-menu"> <a href="/blog/what-is-post-quantum-cryptography" class="dropdown-link"> <strong>Post-Quantum Encryption</strong> <span>Future-proof NIST-standard lattice security</span> </a> <a href="/blog/wireguard-vs-openvpn" class="dropdown-link"> <strong>WireGuard Protocol</strong> <span>Lightweight, high-speed 10Gbps tunneling</span> </a> <a href="/blog/which-free-vpn-does-not-keep-logs" class="dropdown-link"> <strong>Zero-Logs Architecture</strong> <span>RAM-only server infrastructure</span> </a> <a href="/blog/what-is-a-vpn-kill-switch" class="dropdown-link"> <strong>Kill Switch Protection</strong> <span>Automatic system-level network fallback</span> </a> </div> </div> <!-- Blogs Dropdown --> <div class="nav-item has-dropdown"> <a href="/" class="nav-link dropdown-trigger"> <span>Blogs</span> <svg class="nav-arrow" width="9" height="9" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"> <path d="M7 10l5 5 5-5z"></path> </svg> </a> <div class="dropdown-menu"> <a href="/" class="dropdown-link"> <strong>All Articles (124)</strong> <span>Explore our complete library</span> </a> <a href="/tags/buyer-guides/" class="dropdown-link"> <strong>Buyer Guides</strong> <span>Device &amp; platform recommendations</span> </a> <a href="/tags/privacy-security/" class="dropdown-link"> <strong>Privacy &amp; Security</strong> <span>Digital footprint &amp; data defense</span> </a> <a href="/tags/how-to-guides/" class="dropdown-link"> <strong>How-To Guides</strong> <span>Step-by-step setup &amp; configurations</span> </a> <a href="/tags/comparisons/" class="dropdown-link"> <strong>VPN Comparisons</strong> <span>In-depth head-to-head performance benchmarks</span> </a> </div> </div> <!-- Free VPN --> <a href="/free-vpn" class="nav-link"> <span>Free VPN</span> </a> <!-- Apps --> <a href="/tags/use-cases/" class="nav-link"> <span>Apps</span> </a> <!-- Download --> <a href="https://ollavpn.com/download" class="nav-link"> <span>Download</span> </a> </nav> <div class="header-right"> <a class="btn-contact" href="https://ollavpn.com">Get OllaVPN</a> </div> </div> </header> <main class="main-fullwidth">  <main class="page-container-24obs"> <div class="layout-flex-24obs"> <!-- LEFT SIDEBAR: Minimized Navigation --> <aside class="desktop-sidebar-24obs left-sidebar"> <div class="sidebar-header-pill-wrap"> <span class="sidebar-pill-badge">
+FEATURED GUIDES
+</span> </div> <nav class="sidebar-nav-list"> <a href="/blog/free-vpn-for-public-wifi-security/" class="sidebar-nav-item">
+Free VPN for Public Wi-Fi Security (2026)
+</a> <a href="/blog/how-public-wifi-steals-passwords/" class="sidebar-nav-item">
+How Public Wi-Fi Steals Passwords
+</a> <a href="/blog/vpn-for-public-wifi-traveler/" class="sidebar-nav-item">
+VPN for Public Wi-Fi Traveler Guide
+</a> <a href="/blog/free-vpn-for-public-wifi-guide/" class="sidebar-nav-item">
+Free VPN for Public WiFi: Setup
+</a> <a href="/blog/vpn-for-traveling-abroad/" class="sidebar-nav-item">
+VPN for Traveling Abroad in 2026
+</a> <a href="/blog/can-a-vpn-stop-hackers/" class="sidebar-nav-item">
+Can a VPN Stop Hackers on Wi-Fi?
+</a> <a href="/blog/vpn-for-online-banking/" class="sidebar-nav-item">
+VPN for Safe Online Banking
+</a> <a href="/blog/free-vpn-for-iphone/" class="sidebar-nav-item">
+Best Free VPN for iPhone &amp; iOS
+</a> <a href="/blog/best-free-vpn-for-android/" class="sidebar-nav-item">
+Best Free VPN for Android Devices
+</a> <a href="/blog/best-free-vpn-for-windows/" class="sidebar-nav-item">
+Best Free VPN for Windows 11
+</a> </nav> <a href="/tags/buyer-guides/" class="sidebar-view-all-link">
+View All Guides &rarr;
+</a> </aside> <!-- CENTER MAIN CONTENT COLUMN --> <article class="article-center-col"> <!-- Header: Eyebrow, H1, Subtitle --> <header class="article-header"> <div class="article-meta-row"> <span>PRIVACY SECURITY</span> <span>&bull;</span> <span>UPDATED SEPTEMBER 7, 2026</span> <span>&bull;</span> <span>32 MIN READ</span> </div> <h1 class="article-main-title"> How Websites Identify You Even Without Cookies </h1> <p class="article-main-desc"> How websites identify and track you without cookies using browser fingerprinting, canvas and WebGL quirks, audio signals, and IP addresses. </p> </header> <!-- Markdown Article Prose Slot --> <div class="prose">  <section id="tldr" class="article-tldr-box" style="background: #FCF0F1; border: 1.5px solid rgba(238, 44, 60, 0.2); border-left: 5px solid #EE2C3C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(238, 44, 60, 0.04); box-sizing: border-box;">
+  <h3 style="font-size: 1.15rem; font-weight: 800; color: #EE2C3C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR — The Short Answer</h3>
+  <p style="font-size: 1.05rem; line-height: 1.7; color: #1E293B; margin: 0;">
+    Cookies are just one identification method among many, and they’re often the weakest one, because you can delete them with a click. The more durable technique is called browser fingerprinting: quietly measuring dozens of small technical details about your device and browser - screen size, installed fonts, graphics - card quirks, timezone, battery level, even how your device renders a tiny invisible image - and combining them into a “fingerprint” that’s often unique enough to re - identify you across visits, even in a fresh incognito window with every cookie cleared.
+Your IP address adds another identifying layer that’s separate from cookies. It reveals your rough location and, on many home connections, stays the same for weeks or months at a time. Combine an IP address with a fingerprint, and a website (or the ad network watching in the background) can often recognize you with unsettling consistency - cookie - free.
+No single tool fixes all of this, because fingerprinting pulls from many different browser features at once. But a few things genuinely move the needle: a privacy - respecting browser that resists fingerprinting by design, a tracker - blocking extension, and a VPN that hides your real IP address. On a well - built one like OllaVPN, DNS is resolved entirely inside the encrypted tunnel, so your browsing habits aren’t leaking out through the back door even while you think cookies are the only thing to worry about.
+  </p>
+</section>
+<section id="key-takeaways" class="article-takeaways-box" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; padding: 20px 24px; margin-bottom: 24px; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
+  <h3 style="font-size: 1.25rem; font-weight: 800; color: #0F172A; margin: 0 0 14px 0;">Key Takeaways</h3>
+  <ul class="takeaways-list-24obs" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column;">
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">If cookies aren’t the whole story, what’s actually happening:</strong> .
       </div>
-      <a href="/free-vpn" class="hero-callout-btn">Try OllaVPN Free</a>
-    </div>
-
-    <!-- BREADCRUMBS -->
-    <div class="meta-row">
-      <a href="/blog/">Home</a> &gt; 
-      <a href="/blog/">Blog</a> &gt; 
-      <span style="color: #DA291C; font-weight:600;">Privacy & Security</span>
-    </div>
-
-    <!-- TITLE & LEDE -->
-    <h1>How Websites Identify You Even Without Cookies</h1>
-    <p style="font-size: 18px; color: #475569; line-height: 1.6; margin-bottom: 24px;">You clear your cookies religiously. You’ve got a strict browser - privacy setup. And yet, somehow, that pair of shoes you looked at once follows you across three different websites, and a login form somehow “knows” it’s you before you’ve typed a single character. If you’ve ever wondered how that’s possible when you supposedly “deleted everything,” the answer is that cookies were never the only trick in the book. They were just the easiest one to explain - and the easiest one to delete. In this guide, we’ll walk through the other ways websites actually recognize you, in plain language, and what genuinely helps versus what’s mostly theater.</p>
-
-    <!-- TL;DR HIGHLIGHT BOX -->
-    <div class="tldr-highlight-box" style="background: rgba(218, 41, 28, 0.04); border: 1px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 10px; padding: 20px 24px; margin: 24px 0 16px; box-shadow: 0 2px 10px rgba(218, 41, 28, 0.05);">
-      <div class="tldr-header" style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
-        <span class="tldr-dot" style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#DA291C;"></span>
-        <span class="tldr-badge" style="font-family:var(--mono, monospace); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:#DA291C;">TL;DR &bull; KEY SUMMARY</span>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">What is browser fingerprinting, and how does it actually work:</strong> .
       </div>
-      <p style='margin:0 0 10px; font-size:15.5px; line-height:1.65; color:#334155;'>Cookies are just one identification method among many, and they’re often the weakest one, because you can delete them with a click. The more durable technique is called browser fingerprinting: quietly measuring dozens of small technical details about your device and browser - screen size, installed fonts, graphics - card quirks, timezone, battery level, even how your device renders a tiny invisible image - and combining them into a “fingerprint” that’s often unique enough to re - identify you across visits, even in a fresh incognito window with every cookie cleared.</p><p style='margin:0 0 10px; font-size:15.5px; line-height:1.65; color:#334155;'>Your IP address adds another identifying layer that’s separate from cookies. It reveals your rough location and, on many home connections, stays the same for weeks or months at a time. Combine an IP address with a fingerprint, and a website (or the ad network watching in the background) can often recognize you with unsettling consistency - cookie - free.</p><p style='margin:0 0 10px; font-size:15.5px; line-height:1.65; color:#334155;'>No single tool fixes all of this, because fingerprinting pulls from many different browser features at once. But a few things genuinely move the needle: a privacy - respecting browser that resists fingerprinting by design, a tracker - blocking extension, and a VPN that hides your real IP address. On a well - built one like OllaVPN, DNS is resolved entirely inside the encrypted tunnel, so your browsing habits aren’t leaking out through the back door even while you think cookies are the only thing to worry about.</p>
-    </div>
-
-    <!-- KEY TAKEAWAYS (DIRECTLY AFTER TL;DR) -->
-    <div class="key-takeaways" id="key-takeaways" style="margin: 0 0 24px 0; padding: 20px 24px; background: #f8fafc; border: 1px solid #e2e8f0; border-left: 5px solid #DA291C; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.03);">
-      <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
-        <span style="font-size:16px;">⭐</span>
-        <h3 style="margin:0; color:#0F172A; font-size:18px; font-weight:700;">Key Takeaways</h3>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">What specific signals make up a fingerprint:</strong> .
       </div>
-      <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px;">
-        <li style="position: relative; padding-left: 24px; font-size: 15px; line-height: 1.55; color: #334155;">
-          <span style="position: absolute; left: 0; top: 0; color: #DA291C; font-size: 18px; line-height: 1.4; font-weight: 700;">&bull;</span>
-          If cookies aren’t the whole story, what’s actually happening?
-        </li>
-        <li style="position: relative; padding-left: 24px; font-size: 15px; line-height: 1.55; color: #334155;">
-          <span style="position: absolute; left: 0; top: 0; color: #DA291C; font-size: 18px; line-height: 1.4; font-weight: 700;">&bull;</span>
-          What is browser fingerprinting, and how does it actually work?
-        </li>
-        <li style="position: relative; padding-left: 24px; font-size: 15px; line-height: 1.55; color: #334155;">
-          <span style="position: absolute; left: 0; top: 0; color: #DA291C; font-size: 18px; line-height: 1.4; font-weight: 700;">&bull;</span>
-          What specific signals make up a fingerprint?
-        </li>
-        <li style="position: relative; padding-left: 24px; font-size: 15px; line-height: 1.55; color: #334155;">
-          <span style="position: absolute; left: 0; top: 0; color: #DA291C; font-size: 18px; line-height: 1.4; font-weight: 700;">&bull;</span>
-          How does canvas and WebGL fingerprinting actually pull this off?
-        </li>
-        <li style="position: relative; padding-left: 24px; font-size: 15px; line-height: 1.55; color: #334155;">
-          <span style="position: absolute; left: 0; top: 0; color: #DA291C; font-size: 18px; line-height: 1.4; font-weight: 700;">&bull;</span>
-          What role does your IP address play in identifying you?
-        </li>
-      </ul>
-    </div>
-
-    <!-- JUMP GRID -->
-    <div class="jump-box">
-      <div class="jump-box-title">On this page</div>
-      <ul class="jump-grid">
-        <li><a href="#key-takeaways">⭐ Key Takeaways</a></li>
-        <li><a href="#if-cookies-arent-the-whole-story-whats-actual">If cookies aren't the whole story, what's actually happening?</a></li>
-        <li><a href="#what-is-browser-fingerprinting-and-how-does-i">What is browser fingerprinting, and how does it actually work?</a></li>
-        <li><a href="#what-specific-signals-make-up-a-fingerprint">What specific signals make up a fingerprint?</a></li>
-        <li><a href="#how-does-canvas-and-webgl-fingerprinting-actu">How does canvas and WebGL fingerprinting actually pull this off?</a></li>
-        <li><a href="#what-is-audio-fingerprinting-and-why-does-it-">What is audio fingerprinting, and why does it work at all?</a></li>
-        <li><a href="#what-role-does-your-ip-address-play-in-identi">What role does your IP address play in identifying you?</a></li>
-        <li><a href="#how-do-etags-cache-tricks-and-supercookies-sn">How do ETags, cache tricks, and "supercookies" sneak past cookie deletion?</a></li>
-        <li><a href="#how-unique-is-a-typical-fingerprint-really">How unique is a typical fingerprint, really?</a></li>
-        <li><a href="#how-can-you-test-your-own-fingerprint-right-n">How can you test your own fingerprint right now?</a></li>
-        <li><a href="#what-actually-reduces-your-fingerprint-and-wh">What actually reduces your fingerprint, and what's mostly theater?</a></li>
-        <li><a href="#how-does-a-vpn-fit-into-this-picture">How does a VPN fit into this picture?</a></li>
-        <li><a href="#what-does-ollavpn-specifically-do-to-help-her">What does OllaVPN specifically do to help here?</a></li>
-        <li><a href="#why-this-topic-matters-beyond-the-immediate-q">Why this topic matters beyond the immediate question</a></li>
-        <li><a href="#what-to-actually-do-about-it">What to actually do about it</a></li>
-        <li><a href="#faqs">Frequently asked questions</a></li>
-      </ul>
-    </div>
-
-      <!-- if-cookies-arent-the-whole-story-whats-actual -->
-      <h2 id="if-cookies-arent-the-whole-story-whats-actual">If cookies aren't the whole story, what's actually happening?</h2>
-      <p>Cookies are a small, deletable file your browser stores. Fingerprinting is a technique that identifies you using dozens of undeletable technical characteristics your device reveals just by existing.</p>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">How does canvas and WebGL fingerprinting actually pull this off:</strong> .
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">What role does your IP address play in identifying you:</strong> .
+      </div>
+    </li>
+  </ul>
+</section>
+<div class="blog-main-content-box">
+<p>You clear your cookies religiously. You’ve got a strict browser - privacy setup. And yet, somehow, that pair of shoes you looked at once follows you across three different websites, and a login form somehow “knows” it’s you before you’ve typed a single character. If you’ve ever wondered how that’s possible when you supposedly “deleted everything,” the answer is that cookies were never the only trick in the book. They were just the easiest one to explain - and the easiest one to delete. In this guide, we’ll walk through the other ways websites actually recognize you, in plain language, and what genuinely helps versus what’s mostly theater.</p>
+<h2 id="if-cookies-arent-the-whole-story-whats-actually-happening">If cookies aren’t the whole story, what’s actually happening?</h2>
+<p>Cookies are a small, deletable file your browser stores. Fingerprinting is a technique that identifies you using dozens of undeletable technical characteristics your device reveals just by existing.</p>
 <p>Here’s the useful mental shift: a cookie is something a website hands to you and stores on you - like a sticker placed on your jacket. You can peel it off any time. Clear your cookies, and that tracking thread snaps.</p>
 <p>Fingerprinting works differently. Instead of handing you something to carry around, a website simply observes you: your screen resolution, the fonts installed on your machine, the exact model of your graphics card, how your browser handles a tiny drawing task, your timezone, your language settings, your battery status, and a long list of other small technical facts your browser provides automatically when a page loads.</p>
 <p>Individually, almost none of these signals mean much. Plenty of people share your screen resolution. Plenty of people run the same operating system version. But websites don’t rely on one signal at a time. They combine twenty or thirty of them into a single snapshot, and the combination of ordinary details is often unique enough to single you out - like a detailed physical description narrowing a crowd down to one person even when no single trait would.</p>
 <p>That’s why clearing cookies, using private/incognito mode, or switching networks doesn’t always stop the tracking you’re worried about. The “sticker” is gone, but the description of you walks right back in on the next page load, because your device keeps describing itself the same way.</p>
-
-      <!-- what-is-browser-fingerprinting-and-how-does-i -->
-      <h2 id="what-is-browser-fingerprinting-and-how-does-i">What is browser fingerprinting, and how does it actually work?</h2>
-      <p>Browser fingerprinting works by running small pieces of code as soon as a page loads. The script quietly asks your browser dozens of routine questions, then hashes the combined answers into a single, highly specific identifier.</p>
+<h2 id="what-is-browser-fingerprinting-and-how-does-it-actually-work">What is browser fingerprinting, and how does it actually work?</h2>
+<p>Browser fingerprinting works by running small pieces of code as soon as a page loads. The script quietly asks your browser dozens of routine questions, then hashes the combined answers into a single, highly specific identifier.</p>
 <p>Every browser is, by design, a chatty piece of software. To render a webpage correctly, it needs to tell the website things like: what screen size am I working with, what fonts are available so text renders properly, what plugins or extensions are installed, what language should content appear in, and what timezone should dates be formatted for. This isn’t sinister by itself - these are legitimate compatibility questions a browser answers so websites can display correctly on your setup.</p>
 <p>A fingerprinting script simply asks all of these questions in one go, using standard web APIs that exist for compatibility reasons, not because browsers were “built for tracking.”</p>
 <p>After collecting the answers, the script typically runs them through a hashing function - a math step that turns a long list of details into a short fixed - length string. That string becomes your fingerprint for that session. Next time you visit - even after clearing cookies, even in a new private window, even after restarting your computer - if your device still answers those questions the same way (and it usually does, because your hardware and software configuration doesn’t change overnight), the script generates the same hash. The website recognizes you instantly, no cookie required.</p>
 <p>The part that makes this hard to fully defend against is that fingerprinting scripts don’t have to break any rules. They’re using ordinary browser features exactly as designed. That’s very different from a virus exploiting a security flaw. Fingerprinting exploits the fact that browsers are helpful, not that they’re broken.</p>
-
-      <!-- what-specific-signals-make-up-a-fingerprint -->
-      <h2 id="what-specific-signals-make-up-a-fingerprint">What specific signals make up a fingerprint?</h2>
-      <p>A typical fingerprint combines dozens of small signals - screen and window dimensions, installed fonts, GPU and rendering details, timezone, language, battery status, installed browser plugins, and hardware capabilities - into one composite identifier.</p>
+<h2 id="what-specific-signals-make-up-a-fingerprint">What specific signals make up a fingerprint?</h2>
+<p>A typical fingerprint combines dozens of small signals - screen and window dimensions, installed fonts, GPU and rendering details, timezone, language, battery status, installed browser plugins, and hardware capabilities - into one composite identifier.</p>
 <p>It helps to see the list, because once you see what’s being measured, the topic stops feeling abstract and starts feeling personal. A modern fingerprinting script commonly checks:</p>
-<div class="table-wrap" style="overflow-x:auto; margin: 28px 0;"><table class="comparison-table" style="width:100%; border-collapse:collapse; text-align:left; font-size:14.5px;"><thead><tr><th style='padding:12px; border:1px solid #e2e8f0; background:#f8fafc; font-weight:600;'>•</th><th style='padding:12px; border:1px solid #e2e8f0; background:#f8fafc; font-weight:600;'>Screen and viewport dimensions - your exact screen resolution, color depth, and the current size of your browser window, which narrows things down more than most people expect once combined with everything else.</th></tr></thead><tbody><tr><td style='padding:12px; border:1px solid #e2e8f0;'>•</td><td style='padding:12px; border:1px solid #e2e8f0;'>Operating system and browser version - the specific build number of your OS and browser. It changes often enough to be useful, but not so often that it prevents recognition between visits.</td></tr><tr><td style='padding:12px; border:1px solid #e2e8f0;'>•</td><td style='padding:12px; border:1px solid #e2e8f0;'>Installed fonts - the specific list of fonts present on your system, which varies widely depending on what software you’ve installed over the years.</td></tr><tr><td style='padding:12px; border:1px solid #e2e8f0;'>•</td><td style='padding:12px; border:1px solid #e2e8f0;'>Time zone and language settings - your system clock’s timezone offset and your browser’s configured language and locale. Both are easy to read and meaningfully narrowing.</td></tr><tr><td style='padding:12px; border:1px solid #e2e8f0;'>•</td><td style='padding:12px; border:1px solid #e2e8f0;'>Hardware concurrency and device memory - how many processor cores your device reports and, in some browsers, an approximation of installed RAM. These are exposed for legitimate performance - tuning reasons.</td></tr><tr><td style='padding:12px; border:1px solid #e2e8f0;'>•</td><td style='padding:12px; border:1px solid #e2e8f0;'>Battery status - some browsers historically exposed battery charge level and charging state through a dedicated API. That turned out to be specific enough to help identify individual devices, especially around plug - in/unplug moments.</td></tr><tr><td style='padding:12px; border:1px solid #e2e8f0;'>•</td><td style='padding:12px; border:1px solid #e2e8f0;'>Installed plugins and MIME types - a list of plugins and file types your browser can handle natively, a holdover from an era when plugins were more common and varied.</td></tr><tr><td style='padding:12px; border:1px solid #e2e8f0;'>•</td><td style='padding:12px; border:1px solid #e2e8f0;'>Touch support and input capabilities - whether your device reports touch input, a stylus, or a mouse, which subtly distinguishes phones, laptops, and hybrid devices.</td></tr><tr><td style='padding:12px; border:1px solid #e2e8f0;'>•</td><td style='padding:12px; border:1px solid #e2e8f0;'>Canvas, WebGL, and audio rendering quirks - how your specific combination of graphics hardware, drivers, and audio stack renders invisible test content. This is covered in detail in the next two sections because it’s especially effective.</td></tr></tbody></table></div>
+<p>•	Screen and viewport dimensions - your exact screen resolution, color depth, and the current size of your browser window, which narrows things down more than most people expect once combined with everything else.</p>
+<p>•	Operating system and browser version - the specific build number of your OS and browser. It changes often enough to be useful, but not so often that it prevents recognition between visits.</p>
+<p>•	Installed fonts - the specific list of fonts present on your system, which varies widely depending on what software you’ve installed over the years.</p>
+<p>•	Time zone and language settings - your system clock’s timezone offset and your browser’s configured language and locale. Both are easy to read and meaningfully narrowing.</p>
+<p>•	Hardware concurrency and device memory - how many processor cores your device reports and, in some browsers, an approximation of installed RAM. These are exposed for legitimate performance - tuning reasons.</p>
+<p>•	Battery status - some browsers historically exposed battery charge level and charging state through a dedicated API. That turned out to be specific enough to help identify individual devices, especially around plug - in/unplug moments.</p>
+<p>•	Installed plugins and MIME types - a list of plugins and file types your browser can handle natively, a holdover from an era when plugins were more common and varied.</p>
+<p>•	Touch support and input capabilities - whether your device reports touch input, a stylus, or a mouse, which subtly distinguishes phones, laptops, and hybrid devices.</p>
+<p>•	Canvas, WebGL, and audio rendering quirks - how your specific combination of graphics hardware, drivers, and audio stack renders invisible test content. This is covered in detail in the next two sections because it’s especially effective.</p>
 <p>None of these signals were created for tracking. Every one exists because a browser needs to answer a legitimate technical question to render a page properly. In that sense, fingerprinting is less like a hidden camera and more like reading a long, specific questionnaire your browser was already going to answer - whether you wanted it to or not.</p>
-
-      <!-- how-does-canvas-and-webgl-fingerprinting-actu -->
-      <h2 id="how-does-canvas-and-webgl-fingerprinting-actu">How does canvas and WebGL fingerprinting actually pull this off?</h2>
-      <p>Canvas fingerprinting works by asking your browser to silently draw a tiny, invisible image and then reading back the exact pixels produced. Tiny rendering differences between graphics hardware and drivers can make that image subtly, consistently unique to your machine.</p>
+<h2 id="how-does-canvas-and-webgl-fingerprinting-actually-pull-this-off">How does canvas and WebGL fingerprinting actually pull this off?</h2>
+<p>Canvas fingerprinting works by asking your browser to silently draw a tiny, invisible image and then reading back the exact pixels produced. Tiny rendering differences between graphics hardware and drivers can make that image subtly, consistently unique to your machine.</p>
 <p>This is the technique that surprises people most, because it doesn’t rely on a setting you can see or a preference you consciously chose. It exploits something fundamental: how your graphics hardware draws.</p>
 <p>Here’s how it plays out. A script uses the HTML5 canvas element, a standard feature in modern browsers, and instructs it to render a short piece of text or a simple shape - often with specific fonts, colors, and sometimes even a smiley face or emoji. Crucially, the canvas isn’t displayed on the page. It’s drawn invisibly in memory so the script can inspect the result.</p>
 <p>The key is that the exact pixels produced depend on your device’s stack: your graphics card, your graphics driver version, your operating system’s font - rendering engine, anti - aliasing settings, and subtle differences in how your browser implements the canvas specification. Two people running what looks like the same browser on the same operating system can still produce slightly different pixel output because their graphics hardware or drivers differ underneath.</p>
 <p>The script reads the resulting image data, hashes it, and gets a value that’s remarkably consistent for you across visits - and remarkably likely to differ from someone else’s machine.</p>
 <p>WebGL fingerprinting uses the same idea but goes deeper into your graphics stack. Instead of flat 2D drawing, it uses 3D rendering commands and can query your GPU vendor and renderer strings directly. Those details are exposed for legitimate reasons (so websites can adjust 3D quality to match your hardware), but they’re also a goldmine for distinguishing devices.</p>
 <p>The unsettling part is how invisible it all is. There’s no permission prompt, no visible canvas on your screen, and no sign in the address bar that anything unusual happened. The test can run and finish in a fraction of a second - often before the page has fully loaded the images you can actually see.</p>
-
-      <!-- what-is-audio-fingerprinting-and-why-does-it- -->
-      <h2 id="what-is-audio-fingerprinting-and-why-does-it-">What is audio fingerprinting, and why does it work at all?</h2>
-      <p>Audio fingerprinting works almost the same way as canvas fingerprinting, except it uses your device’s audio - processing hardware to generate and analyze a silent sound wave instead of a silent image.</p>
+<h2 id="what-is-audio-fingerprinting-and-why-does-it-work-at-all">What is audio fingerprinting, and why does it work at all?</h2>
+<p>Audio fingerprinting works almost the same way as canvas fingerprinting, except it uses your device’s audio - processing hardware to generate and analyze a silent sound wave instead of a silent image.</p>
 <p>This one sound far - fetched until you see the mechanism. A script uses the Web Audio API, a legitimate browser feature that lets websites generate and process sound for things like games, music apps, and audio tools. A fingerprinting script asks the browser to generate a specific audio signal - often at a frequency you wouldn’t realistically hear - and then measures exactly how that signal comes out after passing through your device’s audio pipeline.</p>
 <p>As with canvas rendering, the exact output depends on your hardware and software: your sound card or audio chip, your operating system’s audio stack, and subtle mathematical rounding differences introduced by your specific combination of drivers and components.</p>
 <p>None of the sound is actually played through your speakers. The test happens silently in memory and takes a fraction of a second. The resulting waveform data gets hashed into another consistent, device - specific value that a script can compare across future visits.</p>
 <p>Combined with canvas and WebGL fingerprinting, audio fingerprinting adds another layer of specificity. Because all three techniques run silently and quickly, most people go their entire browsing lives without realizing it happened.</p>
-
-      <!-- what-role-does-your-ip-address-play-in-identi -->
-      <h2 id="what-role-does-your-ip-address-play-in-identi">What role does your IP address play in identifying you?</h2>
-      <p>Your IP address is a separate identifier from cookies and fingerprinting. It reveals your rough location and - on many home connections - stays consistent enough over weeks or months to link activity across sessions.</p>
+<h2 id="what-role-does-your-ip-address-play-in-identifying-you">What role does your IP address play in identifying you?</h2>
+<p>Your IP address is a separate identifier from cookies and fingerprinting. It reveals your rough location and - on many home connections - stays consistent enough over weeks or months to link activity across sessions.</p>
 <p>It’s worth separating this from fingerprinting, because it’s easy to treat “fingerprinting” as the whole story and forget that your IP address has been doing identifying work long before these browser techniques became mainstream. It keeps doing that work in the background regardless of what your browser settings look like.</p>
 <p>Every device connected to the internet needs an IP address to send and receive data. That’s just how internet routing works. On home broadband, your IP address is typically assigned by your internet provider and can remain the same for days, weeks, or even months.</p>
 <p>That means a website - or more commonly an advertising network embedded across many unrelated sites - can see the same IP address show up again and again. Over time, it can reasonably infer those repeated visits from that address, especially when paired with a matching fingerprint, are coming from the same person or household.</p>
 <p>An IP address alone also reveals a fair amount: your rough geographic location (often down to a city or region), your internet service provider, and sometimes whether you’re on residential, business, or mobile infrastructure. None of that requires a cookie. It’s visible to any server your device connects to.</p>
 <p>Where it becomes especially powerful is in combination. A fingerprint alone gets you far. An IP address alone gets you far. But a fingerprint plus a consistent IP address plus the timing pattern of when you’re online creates a composite picture that’s extremely hard to shake off using cookie deletion alone - because cookie deletion was never the thing protecting you from these signals in the first place.</p>
-
-      <!-- how-do-etags-cache-tricks-and-supercookies-sn -->
-      <h2 id="how-do-etags-cache-tricks-and-supercookies-sn">How do ETags, cache tricks, and "supercookies" sneak past cookie deletion?</h2>
-      <p>Beyond fingerprinting, some tracking techniques abuse legitimate browser storage and caching features - like ETags, favicon caches, and HTTP Strict Transport Security flags - to rebuild an identifier even after cookies are wiped. This category is sometimes nicknamed “supercookies” or “zombie cookies.”</p>
+<h2 id="how-do-etags-cache-tricks-and-supercookies-sneak-past-cookie-deletion">How do ETags, cache tricks, and “supercookies” sneak past cookie deletion?</h2>
+<p>Beyond fingerprinting, some tracking techniques abuse legitimate browser storage and caching features - like ETags, favicon caches, and HTTP Strict Transport Security flags - to rebuild an identifier even after cookies are wiped. This category is sometimes nicknamed “supercookies” or “zombie cookies.”</p>
 <p>These techniques sit in a middle ground. Unlike fingerprinting, they do store something on your device. That makes them more like traditional cookies. But unlike traditional cookies, they hide inside browser features most people - and until recently, many privacy tools - don’t think to clear.</p>
 <p>ETags are a standard web - caching feature. When your browser downloads a file, the server can tag it with an identifier so that next time your browser can ask, “Has this file changed since I last got this tag?” instead of downloading everything again. It’s a legitimate performance feature.</p>
 <p>But a server can generate a unique ETag for each visitor and then re - issue that same unique tag whenever your browser checks in. That turns an efficiency feature into a tracking mechanism that survives ordinary cookie deletion, because most people don’t clear their cache with the same discipline they clear cookies.</p>
@@ -485,10 +123,8 @@ article h2::before,
 <p>HSTS supercookies are the most invasive. They exploit HTTP Strict Transport Security (a security feature designed to force secure connections) by encoding a unique identifier into a pattern of “this domain requires HTTPS” flags across a set of decoy subdomains. That pattern persists in your browser’s security settings, separate from anything a cookie - clearing button touches.</p>
 <p>The good news is that browser makers have spent real engineering effort closing many of these holes. Modern browsers increasingly clear caches and related storage more thoroughly, and some of the most aggressive supercookie techniques have been patched out.</p>
 <p>The bad news is that the cat - and - mouse game keeps producing new variants. That’s exactly why “just clear your cookies” was never a complete privacy strategy - even before fingerprinting became the dominant conversation.</p>
-
-      <!-- how-unique-is-a-typical-fingerprint-really -->
-      <h2 id="how-unique-is-a-typical-fingerprint-really">How unique is a typical fingerprint, really?</h2>
-      <p>Independent research has repeatedly found that a large majority of tested browsers produce a fingerprint unique enough to distinguish them from every other browser in the same test set - even among people using mainstream setups.</p>
+<h2 id="how-unique-is-a-typical-fingerprint-really">How unique is a typical fingerprint, really?</h2>
+<p>Independent research has repeatedly found that a large majority of tested browsers produce a fingerprint unique enough to distinguish them from every other browser in the same test set - even among people using mainstream setups.</p>
 <p>This is the number that hits hardest when people hear about fingerprinting for the first time, because the instinctive assumption is: “Surely my setup looks like everyone else’s.”</p>
 <p>The Electronic Frontier Foundation’s long - running fingerprinting research project - one of the most - cited studies in this space - found that the overwhelming majority of browsers tested produced a fingerprint unique among the sample. In other words, no other tested browser shared the same combination of signals.</p>
 <p>Follow - up research over the years, including studies focused on mobile browsers (which people often assume are harder to fingerprint because they’re more standardized), has continued to find high uniqueness rates. Even as browser makers work to reduce identifying information exposed by default.</p>
@@ -504,28 +140,25 @@ article h2::before,
 <p>Fingerprinting scripts are ordinary JavaScript running inside the normal, sandboxed environment where every website’s code runs. They use standard browser APIs that exist for legitimate reasons. No installation. No permission dialog. No malware. No unusual access. It’s closer to a website asking a long series of allowed questions than it is to a website breaking into an unlocked door.</p>
 <p>Myth three: “a VPN alone solves this.” A VPN is genuinely useful here, and we’ll get into why in a moment. But it solves the IP - address half of the problem, not the fingerprinting half. Your IP address changes when you connect to a VPN. Your screen resolution, installed fonts, and canvas - rendering quirks do not.</p>
 <p>So, if a VPN is marketed as a complete anti - fingerprinting solution, that’s overselling what the technology can actually do. It’s better to be clear - eyed than to let a VPN subscription create a false sense of total invisibility.</p>
-
-      <!-- how-can-you-test-your-own-fingerprint-right-n -->
-      <h2 id="how-can-you-test-your-own-fingerprint-right-n">How can you test your own fingerprint right now?</h2>
-      <p>You can see your own browser fingerprint using free, well - established testing tools that show which signals are exposed and how unique your combination is compared to other visitors.</p>
+<h2 id="how-can-you-test-your-own-fingerprint-right-now">How can you test your own fingerprint right now?</h2>
+<p>You can see your own browser fingerprint using free, well - established testing tools that show which signals are exposed and how unique your combination is compared to other visitors.</p>
 <p>Instead of taking any of this on faith, the most convincing approach is to measure it directly. The EFF’s Cover Your Tracks tool (successor to the long - running Panopticlick project) shows which signals your browser exposes and explains - clearly - how unique your combination is. It also breaks down which specific tests (canvas, fonts, plugins, and more) contribute most to your uniqueness. It’s free, takes under a minute, and is often the most persuasive five minutes you can spend on this topic, because seeing your own score is different from reading about the concept in the abstract.</p>
 <p>Beyond that, it’s worth checking the basic signals that don’t require a dedicated fingerprinting test:</p>
 <p>Your own what - is - my - IP tool shows what your IP address reveals about your location and provider.</p>
 <p>Our DNS lookup tool and WebRTC leak test help you see whether your browsing habits or real IP address are leaking through channels a quick glance at your address bar won’t reveal.</p>
 <p>Individually, these don’t test canvas or audio fingerprinting. But together with a dedicated fingerprinting test, they give a more complete picture of what different parts of the internet can currently see about you.</p>
-
-      <!-- what-actually-reduces-your-fingerprint-and-wh -->
-      <h2 id="what-actually-reduces-your-fingerprint-and-wh">What actually reduces your fingerprint, and what's mostly theater?</h2>
-      <p>Switching to a browser designed to resist fingerprinting - and using extensions that standardize or randomize the signals fingerprinting scripts rely on - can genuinely help. But simply adjusting individual settings one at a time can sometimes make your fingerprint more unique rather than less.</p>
+<h2 id="what-actually-reduces-your-fingerprint-and-whats-mostly-theater">What actually reduces your fingerprint, and what’s mostly theater?</h2>
+<p>Switching to a browser designed to resist fingerprinting - and using extensions that standardize or randomize the signals fingerprinting scripts rely on - can genuinely help. But simply adjusting individual settings one at a time can sometimes make your fingerprint more unique rather than less.</p>
 <p>This is worth saying plainly: if you change one obscure browser setting “for privacy,” but almost nobody else who visits that same site changes that same setting, you become the unusual visitor. Your setup stops blending in, and your fingerprint can become more distinctive.</p>
 <p>Fingerprinting resistance often works best by blending into a large crowd of similar - looking browsers, not by making your configuration as customized and locked down as possible.</p>
 <p>With that caveat in mind, here’s what genuinely moves the needle:</p>
-<div class="table-wrap" style="overflow-x:auto; margin: 28px 0;"><table class="comparison-table" style="width:100%; border-collapse:collapse; text-align:left; font-size:14.5px;"><thead><tr><th style='padding:12px; border:1px solid #e2e8f0; background:#f8fafc; font-weight:600;'>•</th><th style='padding:12px; border:1px solid #e2e8f0; background:#f8fafc; font-weight:600;'>Privacy - focused browsers built for this problem. Some browsers are engineered so huge numbers of users present an intentionally identical, standardized fingerprint by default. They suppress or randomize the small variations that make fingerprinting effective, so you blend into a large, indistinguishable crowd of users.</th></tr></thead><tbody><tr><td style='padding:12px; border:1px solid #e2e8f0;'>•</td><td style='padding:12px; border:1px solid #e2e8f0;'>Tracker - blocking browser extensions that detect and block known fingerprinting scripts before they run - not just blocking ads or known tracking cookies. Many mainstream tracker blockers have added fingerprinting - script detection over the past few years as this threat has grown.</td></tr><tr><td style='padding:12px; border:1px solid #e2e8f0;'>•</td><td style='padding:12px; border:1px solid #e2e8f0;'>Keeping your browser and OS updated. Counterintuitively, updates can help at the population level. Browser makers periodically reduce the granularity of certain signals (like rounding hardware - concurrency numbers or standardizing rendering outputs) to shrink fingerprinting power across their user base. You only benefit if you’re actually running the current version.</td></tr><tr><td style='padding:12px; border:1px solid #e2e8f0;'>•</td><td style='padding:12px; border:1px solid #e2e8f0;'>A VPN, specifically for the IP - address half of the equation. A VPN doesn’t touch your fingerprint, but it removes a second independent identifying signal that often gets combined with fingerprinting.</td></tr></tbody></table></div>
+<p>•	Privacy - focused browsers built for this problem. Some browsers are engineered so huge numbers of users present an intentionally identical, standardized fingerprint by default. They suppress or randomize the small variations that make fingerprinting effective, so you blend into a large, indistinguishable crowd of users.</p>
+<p>•	Tracker - blocking browser extensions that detect and block known fingerprinting scripts before they run - not just blocking ads or known tracking cookies. Many mainstream tracker blockers have added fingerprinting - script detection over the past few years as this threat has grown.</p>
+<p>•	Keeping your browser and OS updated. Counterintuitively, updates can help at the population level. Browser makers periodically reduce the granularity of certain signals (like rounding hardware - concurrency numbers or standardizing rendering outputs) to shrink fingerprinting power across their user base. You only benefit if you’re actually running the current version.</p>
+<p>•	A VPN, specifically for the IP - address half of the equation. A VPN doesn’t touch your fingerprint, but it removes a second independent identifying signal that often gets combined with fingerprinting.</p>
 <p>What’s mostly theatre is manually disabling obscure features one at a time in the hope of becoming “invisible.” Uniqueness often comes from being different from the crowd. A browser configured with fifteen manually tweaked settings can be one of the most recognizable browsers on the internet - precisely because almost nobody else bothers to tweak all fifteen.</p>
-
-      <!-- how-does-a-vpn-fit-into-this-picture -->
-      <h2 id="how-does-a-vpn-fit-into-this-picture">How does a VPN fit into this picture?</h2>
-      <p>A VPN removes your real IP address from the equation. It hides your location and breaks the “same IP shows up again and again” pattern that trackers rely on. But it does not, by itself, change your browser’s fingerprint.</p>
+<h2 id="how-does-a-vpn-fit-into-this-picture">How does a VPN fit into this picture?</h2>
+<p>A VPN removes your real IP address from the equation. It hides your location and breaks the “same IP shows up again and again” pattern that trackers rely on. But it does not, by itself, change your browser’s fingerprint.</p>
 <p>It’s important to be straightforward here. A VPN solves one real piece of the puzzle, and pretending it solves everything would undermine the honest explanation this guide has been building toward.</p>
 <p>When you connect to a VPN, your traffic appears to originate from the VPN server’s IP address instead of your own. That breaks the tracking pattern where an ad network watches the same IP address return over and over across weeks or months. If you connect to different VPN server locations at different times, that signal stops being consistent.</p>
 <p>It also stops your internet provider from building its own location and browsing - pattern profile of you, which matters for a separate but related set of reasons covered in our guide on what logs a VPN actually keeps.</p>
@@ -533,10 +166,8 @@ article h2::before,
 <p>That’s why fingerprinting and IP - based tracking should be treated as two separate problems requiring two separate defenses, not as one problem a single tool can fully solve.</p>
 <p>Where a VPN becomes genuinely important is in closing off other leaks that can quietly undo the privacy you think you have - even while you’re focused on fingerprinting. A VPN that doesn’t properly route DNS lookups through its encrypted tunnel can leak the list of every site you visit to your internet provider, separately from fingerprinting or cookies. That’s covered in detail in our DNS leak guide.</p>
 <p>And a VPN without a reliable kill switch can briefly expose your real IP address when a connection drops - undoing the protection you expected, right when you least expect it.</p>
-
-      <!-- what-does-ollavpn-specifically-do-to-help-her -->
-      <h2 id="what-does-ollavpn-specifically-do-to-help-her">What does OllaVPN specifically do to help here?</h2>
-      <p>OllaVPN hides your real IP address behind its own servers, resolves all DNS requests inside the encrypted tunnel so your browsing habits don’t leak separately, and runs a kill switch by default so a dropped connection never briefly exposes your real address. That covers the identifiable - network - signal half of this problem thoroughly on both the free and paid plans.</p>
+<h2 id="what-does-ollavpn-specifically-do-to-help-here">What does OllaVPN specifically do to help here?</h2>
+<p>OllaVPN hides your real IP address behind its own servers, resolves all DNS requests inside the encrypted tunnel so your browsing habits don’t leak separately, and runs a kill switch by default so a dropped connection never briefly exposes your real address. That covers the identifiable - network - signal half of this problem thoroughly on both the free and paid plans.</p>
 <p>We built OllaVPN around a simple idea: the parts of your privacy that a VPN can control should be handled as completely and as honestly as possible - without pretending it solves problems that live inside your browser.</p>
 <p>Here’s what that means in the context of everything covered above.</p>
 <p>Every connection to OllaVPN replaces your real IP address with one of ours, immediately breaking the “same IP keeps showing up” pattern that makes long - term IP - based tracking possible.</p>
@@ -546,187 +177,138 @@ article h2::before,
 <p>What we won’t claim is that any of this changes your browser’s fingerprint. Your screen resolution, installed fonts, and canvas - rendering signature are outside what a VPN is designed to change.</p>
 <p>For that half of the picture, you need a fingerprinting - resistant browser and a tracker - blocking extension - the combination covered earlier in this guide.</p>
 <p>Whether you’re on our free 10 Mbps plan or OllaVPN Plus at 10 Gbps for five devices, the privacy architecture underneath is the same. We don’t hold back protection for free users, because the point of building this was to make the network - level half of your privacy accessible to everyone - not just paying customers.</p>
-
-      <!-- why-this-topic-matters-beyond-the-immediate-q -->
-      <h2 id="why-this-topic-matters-beyond-the-immediate-q">Why this topic matters beyond the immediate question</h2>
-      <p>This guide sits at the intersection of several broader concerns worth understanding, even if your immediate question has already been answered.</p>
+<h2 id="why-this-topic-matters-beyond-the-immediate-question">Why this topic matters beyond the immediate question</h2>
+<p>This guide sits at the intersection of several broader concerns worth understanding, even if your immediate question has already been answered.</p>
 <p>The tracking industry adapted the moment cookies became a target. Regulators, browser makers, and privacy advocates spent years pushing back against third - party cookies. The advertising and analytics industry didn’t disappear - it shifted investment toward fingerprinting and other cookie - independent techniques, because those methods survive the defenses people learned to use against cookies. Understanding this shift matters because “I clear my cookies” is advice from an earlier chapter of the story, not a complete defense against the current one.</p>
 <p>The signals involved are dual - use by design, which makes this genuinely hard to fully fix. Almost every fingerprinting signal exists because it serves a legitimate rendering or compatibility purpose. Browser makers can’t simply remove screen - size reporting, font enumeration, or canvas rendering without breaking huge parts of the web. This is fundamentally different from patching a security bug. There’s no single flaw to fix - just trade - offs between compatibility and privacy that browser makers keep negotiating, one version at a time.</p>
 <p>Your exposure compounds across layers of the internet you touch. A fingerprint identifies your browser. An IP address identifies your network connection. Account logins identify you by name the moment you sign in. None of these layers automatically protects the others. That’s why privacy in 2026 is best thought of as a stack of independent defenses, not a single switch.</p>
-
-      <!-- what-to-actually-do-about-it -->
-      <h2 id="what-to-actually-do-about-it">What to actually do about it</h2>
-      <p>If this guide makes you feel like you should take action, here are practical next steps in priority order:</p>
+<h2 id="what-to-actually-do-about-it">What to actually do about it</h2>
+<p>If this guide makes you feel like you should take action, here are practical next steps in priority order:</p>
 <p>Test your current fingerprint before changing anything. Run the EFF’s Cover Your Tracks tool once,  note your uniqueness score, and treat it as your baseline. You can’t improve what you haven’t measured, and the result is often the single most convincing five minutes you’ll spend on this topic.</p>
 <p>Switch to a browser designed to resist fingerprinting, or add a dedicated tracker - blocking extension. This is the layer that addresses canvas, WebGL, audio, and font - based signals. Nothing else on this list fixes that half of the problem.</p>
 <p>Pick a trustworthy VPN and use it by default, even on the free tier. This closes the IP - address half of the problem. If the VPN routes DNS properly, it also helps stop your browsing habits from leaking to your ISP separately. Our best free VPN 2026 guide compares trustworthy options across platforms.</p>
 <p>Run a leak check on your current setup, VPN or not. Our DNS lookup, WebRTC leak test, and what - is - my - IP tools show you clearly whether your network - level protections are delivering what they claim.</p>
 <p>Combine layers rather than expecting one tool to solve everything. A fingerprint - resistant browser + tracker blocker + VPN with in - tunnel DNS and a real kill switch + careful account hygiene (not staying logged into services you don’t need) is materially better than any single tool alone. Each layer is also inexpensive or free.</p>
-
-    <!-- FAQS SECTION -->
-    <section class="faqs-section" id="faqs" style="margin-top: 48px;">
-      <h2>Frequently Asked Questions</h2>
-        <details class="faq-item" style="border-bottom: 1px solid #e2e8f0; padding: 14px 0;">
-          <summary class="faq-q" style="cursor: pointer; font-weight: 600; font-size: 16.5px; color: #0F172A; display: flex; justify-content: space-between; align-items: center; list-style: none;">
-            <span>Can websites really track me even if I never accept cookies?</span>
-            <span class="faq-icon" style="color: #DA291C; font-size: 20px; font-weight: 700;">+</span>
-          </summary>
-          <div class="faq-a" style="margin-top: 10px; color: #334155; line-height: 1.65; font-size: 15.5px;">
-            <p>Yes. Browser fingerprinting doesn’t require you to accept anything. It works by silently reading technical details your browser exposes automatically - like screen size, fonts, and rendering quirks - then combining them into an identifier. Rejecting a cookie banner doesn’t stop this, because fingerprinting was never a cookie in the first place.</p>
-          </div>
-        </details>
-        <details class="faq-item" style="border-bottom: 1px solid #e2e8f0; padding: 14px 0;">
-          <summary class="faq-q" style="cursor: pointer; font-weight: 600; font-size: 16.5px; color: #0F172A; display: flex; justify-content: space-between; align-items: center; list-style: none;">
-            <span>Does clearing my browser history and cookies stop fingerprinting?</span>
-            <span class="faq-icon" style="color: #DA291C; font-size: 20px; font-weight: 700;">+</span>
-          </summary>
-          <div class="faq-a" style="margin-top: 10px; color: #334155; line-height: 1.65; font-size: 15.5px;">
-            <p>No. Fingerprinting doesn’t rely on anything stored on your device. There’s nothing for a “clear data” button to delete. Your screen resolution, installed fonts, and canvas - rendering signature are read fresh on every visit, regardless of what you’ve cleared beforehand.</p>
-          </div>
-        </details>
-        <details class="faq-item" style="border-bottom: 1px solid #e2e8f0; padding: 14px 0;">
-          <summary class="faq-q" style="cursor: pointer; font-weight: 600; font-size: 16.5px; color: #0F172A; display: flex; justify-content: space-between; align-items: center; list-style: none;">
-            <span>Does incognito or private browsing mode protect me from fingerprinting?</span>
-            <span class="faq-icon" style="color: #DA291C; font-size: 20px; font-weight: 700;">+</span>
-          </summary>
-          <div class="faq-a" style="margin-top: 10px; color: #334155; line-height: 1.65; font-size: 15.5px;">
-            <p>Not meaningfully. Private browsing mode stops your own device from saving a local record after you close the window. It doesn’t change what your browser reveals to websites in real time. Fingerprinting scripts run the same in a normal window and a private one.</p>
-          </div>
-        </details>
-        <details class="faq-item" style="border-bottom: 1px solid #e2e8f0; padding: 14px 0;">
-          <summary class="faq-q" style="cursor: pointer; font-weight: 600; font-size: 16.5px; color: #0F172A; display: flex; justify-content: space-between; align-items: center; list-style: none;">
-            <span>Is browser fingerprinting illegal?</span>
-            <span class="faq-icon" style="color: #DA291C; font-size: 20px; font-weight: 700;">+</span>
-          </summary>
-          <div class="faq-a" style="margin-top: 10px; color: #334155; line-height: 1.65; font-size: 15.5px;">
-            <p>Fingerprinting exists in a legal gray area that varies by jurisdiction. Some privacy regulations, including parts of the EU’s GDPR and ePrivacy rules, are increasingly interpreted to cover fingerprinting alongside cookies, which can require similar consent obligations. Enforcement and clarity still vary considerably by country and by how fingerprinting is used.</p>
-          </div>
-        </details>
-        <details class="faq-item" style="border-bottom: 1px solid #e2e8f0; padding: 14px 0;">
-          <summary class="faq-q" style="cursor: pointer; font-weight: 600; font-size: 16.5px; color: #0F172A; display: flex; justify-content: space-between; align-items: center; list-style: none;">
-            <span>Can a VPN stop browser fingerprinting?</span>
-            <span class="faq-icon" style="color: #DA291C; font-size: 20px; font-weight: 700;">+</span>
-          </summary>
-          <div class="faq-a" style="margin-top: 10px; color: #334155; line-height: 1.65; font-size: 15.5px;">
-            <p>Not by itself. A VPN hides your real IP address, which addresses one identifying signal. But it doesn’t change your screen size, fonts, or canvas - rendering output - the signals fingerprinting actually relies on. You’d need a fingerprinting - resistant browser or extension alongside the VPN.</p>
-          </div>
-        </details>
-        <details class="faq-item" style="border-bottom: 1px solid #e2e8f0; padding: 14px 0;">
-          <summary class="faq-q" style="cursor: pointer; font-weight: 600; font-size: 16.5px; color: #0F172A; display: flex; justify-content: space-between; align-items: center; list-style: none;">
-            <span>What’s the single most effective thing I can do to reduce my fingerprint?</span>
-            <span class="faq-icon" style="color: #DA291C; font-size: 20px; font-weight: 700;">+</span>
-          </summary>
-          <div class="faq-a" style="margin-top: 10px; color: #334155; line-height: 1.65; font-size: 15.5px;">
-            <p>Using a browser engineered so large numbers of users present an intentionally identical, standardized fingerprint is often the most effective single step. It addresses canvas, font, and rendering signals directly, rather than only hiding your IP address.</p>
-          </div>
-        </details>
-        <details class="faq-item" style="border-bottom: 1px solid #e2e8f0; padding: 14px 0;">
-          <summary class="faq-q" style="cursor: pointer; font-weight: 600; font-size: 16.5px; color: #0F172A; display: flex; justify-content: space-between; align-items: center; list-style: none;">
-            <span>Why does changing individual privacy settings sometimes make things worse?</span>
-            <span class="faq-icon" style="color: #DA291C; font-size: 20px; font-weight: 700;">+</span>
-          </summary>
-          <div class="faq-a" style="margin-top: 10px; color: #334155; line-height: 1.65; font-size: 15.5px;">
-            <p>Because uniqueness often comes from being different from the crowd, not from having the “most locked - down” settings. If you’re the only visitor who changed a particular obscure setting, that change can become an identifying signal - making your fingerprint more distinctive, not less.</p>
-          </div>
-        </details>
-        <details class="faq-item" style="border-bottom: 1px solid #e2e8f0; padding: 14px 0;">
-          <summary class="faq-q" style="cursor: pointer; font-weight: 600; font-size: 16.5px; color: #0F172A; display: flex; justify-content: space-between; align-items: center; list-style: none;">
-            <span>How can I check my own fingerprint uniqueness?</span>
-            <span class="faq-icon" style="color: #DA291C; font-size: 20px; font-weight: 700;">+</span>
-          </summary>
-          <div class="faq-a" style="margin-top: 10px; color: #334155; line-height: 1.65; font-size: 15.5px;">
-            <p>The EFF’s free Cover Your Tracks tool (the successor to the earlier Panopticlick project) shows which signals your browser exposes and how unique your combination is compared to other recent visitors. It also breaks down which test contributes most.</p>
-          </div>
-        </details>
-        <details class="faq-item" style="border-bottom: 1px solid #e2e8f0; padding: 14px 0;">
-          <summary class="faq-q" style="cursor: pointer; font-weight: 600; font-size: 16.5px; color: #0F172A; display: flex; justify-content: space-between; align-items: center; list-style: none;">
-            <span>Does OllaVPN protect against fingerprinting?</span>
-            <span class="faq-icon" style="color: #DA291C; font-size: 20px; font-weight: 700;">+</span>
-          </summary>
-          <div class="faq-a" style="margin-top: 10px; color: #334155; line-height: 1.65; font-size: 15.5px;">
-            <p>OllaVPN hides your real IP address, resolves your DNS entirely inside the encrypted tunnel, and runs a kill switch by default. That closes the network - level identifiers described in this guide. It does not change your browser’s fingerprint, which requires a fingerprinting - resistant browser or extension used alongside it.</p>
-          </div>
-        </details>
-        <details class="faq-item" style="border-bottom: 1px solid #e2e8f0; padding: 14px 0;">
-          <summary class="faq-q" style="cursor: pointer; font-weight: 600; font-size: 16.5px; color: #0F172A; display: flex; justify-content: space-between; align-items: center; list-style: none;">
-            <span>Are supercookies and ETags still a real concern in 2026?</span>
-            <span class="faq-icon" style="color: #DA291C; font-size: 20px; font-weight: 700;">+</span>
-          </summary>
-          <div class="faq-a" style="margin-top: 10px; color: #334155; line-height: 1.65; font-size: 15.5px;">
-            <p>Less than they used to be. Browser makers have closed many of the most aggressive supercookie techniques - especially around HSTS - based tracking - and modern browsers clear related storage more thoroughly than before. Some cache - based techniques persist in more limited forms, which is one reason relying on cookie deletion alone was never a complete strategy, even before fingerprinting became the dominant conversation.</p>
-          </div>
-        </details>
-        <details class="faq-item" style="border-bottom: 1px solid #e2e8f0; padding: 14px 0;">
-          <summary class="faq-q" style="cursor: pointer; font-weight: 600; font-size: 16.5px; color: #0F172A; display: flex; justify-content: space-between; align-items: center; list-style: none;">
-            <span>Does using multiple browsers or devices help avoid fingerprinting?</span>
-            <span class="faq-icon" style="color: #DA291C; font-size: 20px; font-weight: 700;">+</span>
-          </summary>
-          <div class="faq-a" style="margin-top: 10px; color: #334155; line-height: 1.65; font-size: 15.5px;">
-            <p>It can help in a limited way. A fingerprint generated on one browser won’t automatically match a different browser or device. But it doesn’t reduce the fingerprint each individual browser produces. Also, juggling multiple browsers adds inconvenience without addressing the underlying signals.</p>
-          </div>
-        </details>
-        <details class="faq-item" style="border-bottom: 1px solid #e2e8f0; padding: 14px 0;">
-          <summary class="faq-q" style="cursor: pointer; font-weight: 600; font-size: 16.5px; color: #0F172A; display: flex; justify-content: space-between; align-items: center; list-style: none;">
-            <span>Is my phone’s browser as fingerprintable as my desktop browser?</span>
-            <span class="faq-icon" style="color: #DA291C; font-size: 20px; font-weight: 700;">+</span>
-          </summary>
-          <div class="faq-a" style="margin-top: 10px; color: #334155; line-height: 1.65; font-size: 15.5px;">
-            <p>Historically, mobile browsers were considered more standardized and therefore harder to fingerprint. But research over the past several years has found high uniqueness rates on mobile too - especially once app - installed fonts, screen details, and sensor data are factored in.</p>
-          </div>
-        </details>
-    </section>
-
-    <!-- AUTHOR BIO -->
-    <div class="author-bio-card" style="margin-top: 48px; padding: 24px; border: 1px solid #e2e8f0; border-radius: 12px; background: #f8fafc; display: flex; gap: 20px; align-items: center;">
-      <div style="width: 56px; height: 56px; border-radius: 50%; background: #DA291C; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 20px; flex-shrink: 0;">NP</div>
-      <div>
-        <div style="font-weight: 700; font-size: 16px; color: #0F172A;">Nathan Pratt</div>
-        <div style="font-size: 13px; color: #64748B; margin-bottom: 6px;">Privacy &amp; Security Lead at OllaVPN &bull; Former Mozilla &amp; Cloudflare Engineer</div>
-        <p style="font-size: 14px; color: #334155; margin: 0; line-height: 1.5;">Nathan has specialized in internet privacy architectures, cryptographic protocols, and side-channel analysis for over a decade. He leads open security audits and post-quantum deployment at OllaVPN.</p>
-      </div>
-    </div>
-
-  </article>
-
-  <!-- RIGHT SIDEBAR: TOC -->
-  <aside class="toc-rail" aria-label="Table of contents">
-    <h4>Contents</h4>
-    <ul>
-      <li><a href="#key-takeaways">⭐ Key Takeaways</a></li>
-      <li><a href="#if-cookies-arent-the-whole-story-whats-actual">If cookies aren't the whole story, what's actually happening?</a></li>
-      <li><a href="#what-is-browser-fingerprinting-and-how-does-i">What is browser fingerprinting, and how does it actually work?</a></li>
-      <li><a href="#what-specific-signals-make-up-a-fingerprint">What specific signals make up a fingerprint?</a></li>
-      <li><a href="#how-does-canvas-and-webgl-fingerprinting-actu">How does canvas and WebGL fingerprinting actually pull this off?</a></li>
-      <li><a href="#what-is-audio-fingerprinting-and-why-does-it-">What is audio fingerprinting, and why does it work at all?</a></li>
-      <li><a href="#what-role-does-your-ip-address-play-in-identi">What role does your IP address play in identifying you?</a></li>
-      <li><a href="#how-do-etags-cache-tricks-and-supercookies-sn">How do ETags, cache tricks, and "supercookies" sneak past cookie deletion?</a></li>
-      <li><a href="#how-unique-is-a-typical-fingerprint-really">How unique is a typical fingerprint, really?</a></li>
-      <li><a href="#how-can-you-test-your-own-fingerprint-right-n">How can you test your own fingerprint right now?</a></li>
-      <li><a href="#what-actually-reduces-your-fingerprint-and-wh">What actually reduces your fingerprint, and what's mostly theater?</a></li>
-      <li><a href="#how-does-a-vpn-fit-into-this-picture">How does a VPN fit into this picture?</a></li>
-      <li><a href="#what-does-ollavpn-specifically-do-to-help-her">What does OllaVPN specifically do to help here?</a></li>
-      <li><a href="#why-this-topic-matters-beyond-the-immediate-q">Why this topic matters beyond the immediate question</a></li>
-      <li><a href="#what-to-actually-do-about-it">What to actually do about it</a></li>
-      <li><a href="#faqs">Frequently asked questions</a></li>
-    </ul>
-  </aside>
-</main>
-
-<!-- FOOTER -->
-<footer class="footer" style="max-width: 1200px; margin: 60px auto 0; padding: 40px 24px 60px; border-top: 1px solid #e2e8f0;">
-  <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;">
-    <div>
-      <div style="font-weight:700; font-size:18px; color:#0F172A;">Olla<span style="color:#DA291C;">VPN</span></div>
-      <p style="font-size:13px; color:#64748B; margin:4px 0 0;">Zero logs, high-speed, post-quantum encrypted free VPN.</p>
-    </div>
-    <div style="display:flex; gap:24px; font-size:13px; color:#475569;">
-      <a href="/privacy.html" style="color:inherit; text-decoration:none;">Privacy Policy</a>
-      <a href="/terms.html" style="color:inherit; text-decoration:none;">Terms of Service</a>
-      <a href="/warrant-canary.html" style="color:inherit; text-decoration:none;">Warrant Canary</a>
-      <a href="/contact.html" style="color:inherit; text-decoration:none;">Contact Support</a>
-    </div>
+</div>
+<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 16px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
+  <div style="display: flex; flex-direction: column;">
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>1. Can websites really track me even if I never accept cookies?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Yes. Browser fingerprinting doesn’t require you to accept anything. It works by silently reading technical details your browser exposes automatically - like screen size, fonts, and rendering quirks - then combining them into an identifier. Rejecting a cookie banner doesn’t stop this, because fingerprinting was never a cookie in the first place.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>2. Does clearing my browser history and cookies stop fingerprinting?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      No. Fingerprinting doesn’t rely on anything stored on your device. There’s nothing for a “clear data” button to delete. Your screen resolution, installed fonts, and canvas - rendering signature are read fresh on every visit, regardless of what you’ve cleared beforehand.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>3. Does incognito or private browsing mode protect me from fingerprinting?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Not meaningfully. Private browsing mode stops your own device from saving a local record after you close the window. It doesn’t change what your browser reveals to websites in real time. Fingerprinting scripts run the same in a normal window and a private one.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>4. Is browser fingerprinting illegal?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Fingerprinting exists in a legal gray area that varies by jurisdiction. Some privacy regulations, including parts of the EU’s GDPR and ePrivacy rules, are increasingly interpreted to cover fingerprinting alongside cookies, which can require similar consent obligations. Enforcement and clarity still vary considerably by country and by how fingerprinting is used.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>5. Can a VPN stop browser fingerprinting?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Not by itself. A VPN hides your real IP address, which addresses one identifying signal. But it doesn’t change your screen size, fonts, or canvas - rendering output - the signals fingerprinting actually relies on. You’d need a fingerprinting - resistant browser or extension alongside the VPN.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>6. What’s the single most effective thing I can do to reduce my fingerprint?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Using a browser engineered so large numbers of users present an intentionally identical, standardized fingerprint is often the most effective single step. It addresses canvas, font, and rendering signals directly, rather than only hiding your IP address.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>7. Why does changing individual privacy settings sometimes make things worse?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Because uniqueness often comes from being different from the crowd, not from having the “most locked - down” settings. If you’re the only visitor who changed a particular obscure setting, that change can become an identifying signal - making your fingerprint more distinctive, not less.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>8. How can I check my own fingerprint uniqueness?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      The EFF’s free Cover Your Tracks tool (the successor to the earlier Panopticlick project) shows which signals your browser exposes and how unique your combination is compared to other recent visitors. It also breaks down which test contributes most.
+    </p>
+  </details>
   </div>
-</footer>
-
-</body>
-</html>
+</section>
+<section id="wrapping-it-up" class="wrap-up-box" style="background: #FFF7F8; border: 1px solid rgba(238, 44, 60, 0.2); border-left: 5px solid #EE2C3C; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(238, 44, 60, 0.03); box-sizing: border-box;">
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 10px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
+  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 12px;">
+    Navigating How Websites Identify You Even Without Cookies effectively requires choosing security architectures built on transparency, strong encryption, and verified zero data logging.
+  </p>
+  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
+    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on kill switch defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
+  </p>
+</section>
+<section id="download" class="download-section-box" style="background: linear-gradient(135deg, #ffffff 0%, #FFF7F8 100%); border: 1.5px solid rgba(238, 44, 60, 0.2); border-radius: 18px; padding: 32px 28px; margin-bottom: 24px; text-align: center; width: 100%; box-shadow: 0 6px 24px rgba(238, 44, 60, 0.06); box-sizing: border-box;">
+  <h2 style="font-size: 2rem; font-weight: 800; color: #0F172A; margin: 0 0 10px 0; border: none !important; padding-bottom: 0 !important;">Protect Your Connection with OllaVPN</h2>
+  <p style="font-size: 1.05rem; color: #475569; max-width: 650px; margin: 0 auto 18px auto; line-height: 1.65;">
+    Enjoy unlimited data, next-generation WireGuard encryption, and audited zero activity logs on Android, iOS, Windows, and macOS.
+  </p>
+  <a href="https://ollavpn.com/apps.html" target="_blank" rel="noopener" class="btn-primary" style="display: inline-block; background: #EE2C3C !important; color: #FFFFFF !important; font-size: 1.08rem; font-weight: 800; padding: 14px 36px; border-radius: 10px; text-decoration: none !important; box-shadow: 0 4px 16px rgba(238, 44, 60, 0.25); transition: all 0.2s ease;">
+    Download OllaVPN Free →
+  </a>
+  <div style="margin-top: 14px; font-size: 0.85rem; color: #64748b; font-weight: 600;">
+    Available for iOS, Android, Windows &#x26; macOS • Instant Setup
+  </div>
+</section>  </div> </article> <!-- RIGHT SIDEBAR: Minimized Navigation + Minimized Promo Card --> <aside class="desktop-sidebar-24obs right-sidebar"> <div class="sidebar-header-pill-wrap"> <span class="sidebar-pill-badge">
+VPN PROTOCOLS &amp; TECH
+</span> </div> <nav class="sidebar-nav-list"> <a href="/blog/wireguard-vs-openvpn/" class="sidebar-nav-item">
+WireGuard vs. OpenVPN Comparison
+</a> <a href="/blog/wireguard-vs-ikev2/" class="sidebar-nav-item">
+WireGuard vs IKEv2: Speed &amp; Latency
+</a> <a href="/blog/what-is-a-vpn-kill-switch/" class="sidebar-nav-item">
+What is a VPN Kill Switch?
+</a> <a href="/blog/what-is-a-dns-leak/" class="sidebar-nav-item">
+What Is a DNS Leak &amp; How to Fix It
+</a> <a href="/blog/what-is-post-quantum-cryptography/" class="sidebar-nav-item">
+What Is Post-Quantum Cryptography?
+</a> <a href="/blog/what-is-a-vpn-protocol/" class="sidebar-nav-item">
+What is a VPN Protocol?
+</a> <a href="/blog/what-is-a-vpn-tunnel/" class="sidebar-nav-item">
+What is a VPN Tunnel?
+</a> <a href="/blog/what-is-a-webrtc-leak/" class="sidebar-nav-item">
+What is a WebRTC Leak?
+</a> </nav> <a href="/tags/protocol-tech/" class="sidebar-view-all-link">
+View All Protocols &rarr;
+</a> <!-- Minimized Promo Card --> <div class="sidebar-promo-card"> <p class="sidebar-promo-text">
+Free, high-speed WireGuard VPN for public Wi-Fi security on every device.
+</p> <a href="https://ollavpn.com" class="sidebar-cta-btn">
+Download OllaVPN Free &rarr;
+</a> </div> </aside> </div> </main> <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"How Websites Identify You Even Without Cookies","description":"How websites identify and track you without cookies using browser fingerprinting, canvas and WebGL quirks, audio signals, and IP addresses.","datePublished":"2026-09-07T00:00:00.000Z","dateModified":"2026-09-07T00:00:00.000Z","author":{"@type":"Organization","name":"Nathan Pratt"},"publisher":{"@type":"Organization","name":"OllaVPN"},"mainEntityOfPage":"https://blogs.ollavpn.com/blog/how-websites-identify-you-without-cookies/"}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand-row"> <a class="brand" href="/" aria-label="OllaVPN"> <img src="/logo.png" alt="" class="footer-logo-img"> <span class="brand-name footer-brand-name">OllaVPN</span> </a> <p>&copy; 2026 OllaVPN. All rights reserved.</p> </div> <p class="footer-links"> <a href="https://ollavpn.com">ollavpn.com</a> <span aria-hidden="true">&bull;</span> <a href="/rss.xml">RSS</a> <span aria-hidden="true">&bull;</span> <a href="/tags/">Tags</a> </p> </div> </footer> </body></html>

@@ -6,9 +6,53 @@ author: 'OllaVPN Team'
 tags: ['protocol-tech']
 ---
 
+<section id="tldr" class="article-tldr-box" style="background: #FCF0F1; border: 1.5px solid rgba(238, 44, 60, 0.2); border-left: 5px solid #EE2C3C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(238, 44, 60, 0.04); box-sizing: border-box;">
+  <h3 style="font-size: 1.15rem; font-weight: 800; color: #EE2C3C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR — The Short Answer</h3>
+  <p style="font-size: 1.05rem; line-height: 1.7; color: #1E293B; margin: 0;">
+    RCS messaging is essentially an upgrade to your standard text messages, giving you features like read receipts, typing indicators, and much better quality for sharing photos and videos. Its designed to make your pho... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
+  </p>
+</section>
+
+<section id="key-takeaways" class="article-takeaways-box" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; padding: 20px 24px; margin-bottom: 24px; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
+  <h3 style="font-size: 1.25rem; font-weight: 800; color: #0F172A; margin: 0 0 14px 0;">Key Takeaways</h3>
+  <ul class="takeaways-list-24obs" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column;">
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">What Exactly is RCS Messaging, in Plain English:</strong> .
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">How Does RCS Messaging Actually Work Under the Hood:</strong> .
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">Why Does RCS Messaging Matter for You, the Everyday User:</strong> .
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">What Are Some Common Misconceptions About RCS Messaging:</strong> .
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">How Does RCS Messaging Relate to Other Internet Privacy Concepts:</strong> .
+      </div>
+    </li>
+  </ul>
+</section>
+
+<div class="blog-main-content-box">
+
 2026 · 07 · 15 · PRIVACY & SECURITY · 5,269 WORDS
 
-# What is RCS Messaging and Why Should You Care About It?
 
 You've probably noticed it: some text messages just look... different now. Maybe they have read receipts, higher quality photos, or even reactions. That's RCS messaging, and it's quietly changing how we text. It's meant to bring our phones up to speed with modern chat apps, but like any new tech, it comes with its own privacy quirks. We're going to walk you through what RCS is, what it means for your personal data, and why you should pay attention, all without the confusing tech talk.
 
@@ -138,75 +182,105 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
 *   What Are Some Common Misconceptions About RCS Messaging?
 *   How Does RCS Messaging Relate to Other Internet Privacy Concepts?
 
-## Frequently asked questions
+</div>
 
-### What is RCS messaging in one sentence?
+<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 16px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
+  <div style="display: flex; flex-direction: column;">
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>1. What is RCS messaging in one sentence?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      <p class="short-answer">RCS messaging is an advanced texting protocol that upgrades standard SMS with features like read receipts, typing indicators, and richer media sharing, making your phone's default messaging app more like a modern chat app.</p><p>Think of it as bringing your phone's built-in messaging app into the modern era, adding capabilities you'd expect from apps like Signal or WhatsApp. It's designed to replace the decades-old SMS standard, offering a much richer and more interactive experience for texting.</p>
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>2. Why should I care about RCS messaging?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      <p class="short-answer">You should care because it changes how your texts are sent and received, offering more features but potentially impacting your privacy if messages aren't end-to-end encrypted.</p><p>While the new features are great, the way RCS handles privacy can be a big difference from other chat apps. Without proper encryption, your carrier or even third parties could potentially access your message content, which is a major privacy consideration for you.</p>
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>3. Is ignoring RCS messaging dangerous to my privacy?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      <p class="short-answer">Not directly dangerous, but ignoring it means you might not be aware of how your messages are handled, which can be a privacy concern.</p><p>If your RCS isn't encrypted, your carrier or others could potentially see your message content or metadata. You're not actively putting yourself in harm's way by ignoring it, but you are missing a chance to understand and address a potential vulnerability in your digital communications.</p>
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>4. How does a VPN relate to RCS messaging privacy?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      <p class="short-answer">A VPN relates by encrypting the traffic between your device and your carrier's RCS servers, protecting your connection from prying eyes.</p><p>While it doesn't encrypt the RCS message content itself if the carrier doesn't, it prevents your ISP or others from seeing that you're using RCS and what data you're exchanging with the carrier. It's like putting an opaque envelope around your messages as they travel to the carrier, adding a strong layer of privacy with our post-quantum-ready encryption.</p>
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>5. Do I need a VPN to deal with RCS messaging concerns?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      <p class="short-answer">You don't strictly \need\ a VPN just for RCS, but it's a great tool to enhance your overall digital privacy, including the traffic associated with RCS.</p><p>A VPN adds a crucial layer of security to your entire internet connection, which is where RCS data travels. So, while RCS isn't the only reason to get a VPN, it's definitely one more good reason to protect your online activity with something like OllaVPN.</p>
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>6. Can a free VPN handle RCS messaging properly?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      <p class="short-answer">Some free VPNs can, but you need to be careful. Many 'free' VPNs might cap data, inject ads, or even sell your data.</p><p>A truly privacy-first free VPN like OllaVPN protects your connection with 10 Mbps and strong, post-quantum-ready encryption, without those hidden costs. You get every country in our network, forever, with no card on file, ensuring your RCS traffic is protected without compromise.</p>
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>7. How can I check whether my RCS messages are protected?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      <p class="short-answer">You can usually check your messaging app's settings for an indication of 'chat features' or 'RCS' and look for mentions of 'end-to-end encryption.'</p><p>If it's not explicitly stated that your messages are end-to-end encrypted, it's safer to assume they aren't. This means your carrier could potentially access the content. Using a VPN like OllaVPN helps protect the connection, but not the message content itself if your app doesn't encrypt it.</p>
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>8. Are there free tools to test RCS messaging security?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      <p class="short-answer">Not really for testing \RCS security\ directly. Your best bet is to use a free, privacy-focused VPN like OllaVPN to secure the connection your RCS messages travel over.</p><p>You can also check your messaging app's settings for encryption indicators, but there aren't widely available tools to independently verify the encryption of your RCS messages. A VPN helps by making sure your ISP can't snoop on the traffic itself, offering a baseline of protection.</p>
+    </p>
+  </details>
+  </div>
+</section>
 
-<p class="short-answer">RCS messaging is an advanced texting protocol that upgrades standard SMS with features like read receipts, typing indicators, and richer media sharing, making your phone's default messaging app more like a modern chat app.</p><p>Think of it as bringing your phone's built-in messaging app into the modern era, adding capabilities you'd expect from apps like Signal or WhatsApp. It's designed to replace the decades-old SMS standard, offering a much richer and more interactive experience for texting.</p>
+<section id="wrapping-it-up" class="wrap-up-box" style="background: #FFF7F8; border: 1px solid rgba(238, 44, 60, 0.2); border-left: 5px solid #EE2C3C; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(238, 44, 60, 0.03); box-sizing: border-box;">
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 10px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
+  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 12px;">
+    Navigating What is RCS Messaging and Why Should You Care About It? effectively requires choosing security architectures built on transparency, strong encryption, and verified zero data logging.
+  </p>
+  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
+    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on kill switch defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
+  </p>
+</section>
 
-### Why should I care about RCS messaging?
-
-<p class="short-answer">You should care because it changes how your texts are sent and received, offering more features but potentially impacting your privacy if messages aren't end-to-end encrypted.</p><p>While the new features are great, the way RCS handles privacy can be a big difference from other chat apps. Without proper encryption, your carrier or even third parties could potentially access your message content, which is a major privacy consideration for you.</p>
-
-### Is ignoring RCS messaging dangerous to my privacy?
-
-<p class="short-answer">Not directly dangerous, but ignoring it means you might not be aware of how your messages are handled, which can be a privacy concern.</p><p>If your RCS isn't encrypted, your carrier or others could potentially see your message content or metadata. You're not actively putting yourself in harm's way by ignoring it, but you are missing a chance to understand and address a potential vulnerability in your digital communications.</p>
-
-### How does a VPN relate to RCS messaging privacy?
-
-<p class="short-answer">A VPN relates by encrypting the traffic between your device and your carrier's RCS servers, protecting your connection from prying eyes.</p><p>While it doesn't encrypt the RCS message content itself if the carrier doesn't, it prevents your ISP or others from seeing that you're using RCS and what data you're exchanging with the carrier. It's like putting an opaque envelope around your messages as they travel to the carrier, adding a strong layer of privacy with our post-quantum-ready encryption.</p>
-
-### Do I need a VPN to deal with RCS messaging concerns?
-
-<p class="short-answer">You don't strictly \*need\* a VPN just for RCS, but it's a great tool to enhance your overall digital privacy, including the traffic associated with RCS.</p><p>A VPN adds a crucial layer of security to your entire internet connection, which is where RCS data travels. So, while RCS isn't the only reason to get a VPN, it's definitely one more good reason to protect your online activity with something like OllaVPN.</p>
-
-### Can a free VPN handle RCS messaging properly?
-
-<p class="short-answer">Some free VPNs can, but you need to be careful. Many 'free' VPNs might cap data, inject ads, or even sell your data.</p><p>A truly privacy-first free VPN like OllaVPN protects your connection with 10 Mbps and strong, post-quantum-ready encryption, without those hidden costs. You get every country in our network, forever, with no card on file, ensuring your RCS traffic is protected without compromise.</p>
-
-### How can I check whether my RCS messages are protected?
-
-<p class="short-answer">You can usually check your messaging app's settings for an indication of 'chat features' or 'RCS' and look for mentions of 'end-to-end encryption.'</p><p>If it's not explicitly stated that your messages are end-to-end encrypted, it's safer to assume they aren't. This means your carrier could potentially access the content. Using a VPN like OllaVPN helps protect the connection, but not the message content itself if your app doesn't encrypt it.</p>
-
-### Are there free tools to test RCS messaging security?
-
-<p class="short-answer">Not really for testing \*RCS security\* directly. Your best bet is to use a free, privacy-focused VPN like OllaVPN to secure the connection your RCS messages travel over.</p><p>You can also check your messaging app's settings for encryption indicators, but there aren't widely available tools to independently verify the encryption of your RCS messages. A VPN helps by making sure your ISP can't snoop on the traffic itself, offering a baseline of protection.</p>
-
-### Does RCS messaging still matter for privacy in 2026?
-
-<p class="short-answer">Absolutely, it will. As RCS adoption grows, its privacy implications will become even more significant.</p><p>The push for universal end-to-end encryption will continue, but until then, understanding its privacy model remains crucial. So, yes, keeping an eye on RCS privacy will be just as important, if not more so, in the coming years as more people use it for everyday communication.</p>
-
-### What's the simplest fix for RCS privacy concerns?
-
-<p class="short-answer">The simplest fix is to use a VPN like OllaVPN to secure your internet connection, which carries your RCS data, and to understand your messaging app's encryption.</p><p>For highly sensitive conversations, consider using dedicated end-to-end encrypted messaging apps like Signal or WhatsApp. A VPN provides a foundational layer of privacy for all your online activities, including RCS, by preventing your ISP from seeing your traffic.</p>
-
-### Are there situations where RCS messaging privacy doesn't apply?
-
-<p class="short-answer">Yes, if you're using a messaging app that explicitly states it uses end-to-end encryption for all its messages, then RCS privacy concerns might not apply to those conversations.</p><p>Apps like Signal encrypt messages from sender to receiver, regardless of underlying protocols. In these cases, the app handles the encryption, not the carrier's RCS implementation. However, for your phone's default messaging app using RCS, those privacy considerations definitely still apply.</p>
-
-### How does OllaVPN handle RCS messaging specifically?
-
-<p class="short-answer">OllaVPN encrypts all your internet traffic, including the data your phone sends to your carrier's RCS servers, using our post-quantum-ready encryption.</p><p>This means your ISP can't see you're using RCS or what metadata you're exchanging with the carrier, adding a strong layer of privacy to your connection. We don't log your activity, and our free plan gives you 10 Mbps and access to every country in our network, without requiring a card or selling your data.</p>
-
-✉ Get the next one
-
-### Honest writeups, every two weeks.
-
-Nathan posts one deep-dive every two weeks. No spam, no sales blasts, no clickbait headlines.
-
- Subscribe
-
-No card. Unsubscribe with one click.
-
-Share Copy link [X](https://twitter.com/intent/tweet?text=What%20is%20RCS%20Messaging%20and%20Why%20Should%20You%20Care%20About%20It%3F&url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-rcs-messaging) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-rcs-messaging) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-rcs-messaging&t=What%20is%20RCS%20Messaging%20and%20Why%20Should%20You%20Care%20About%20It%3F) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-rcs-messaging&title=What%20is%20RCS%20Messaging%20and%20Why%20Should%20You%20Care%20About%20It%3F)
-
-
-NP
-
-Nathan Pratt
-
-Privacy & Security Lead
-
-Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
-
-[More from Nathan →](/about/team#nathan-pratt)
+<section id="download" class="download-section-box" style="background: linear-gradient(135deg, #ffffff 0%, #FFF7F8 100%); border: 1.5px solid rgba(238, 44, 60, 0.2); border-radius: 18px; padding: 32px 28px; margin-bottom: 24px; text-align: center; width: 100%; box-shadow: 0 6px 24px rgba(238, 44, 60, 0.06); box-sizing: border-box;">
+  <h2 style="font-size: 2rem; font-weight: 800; color: #0F172A; margin: 0 0 10px 0; border: none !important; padding-bottom: 0 !important;">Protect Your Connection with OllaVPN</h2>
+  <p style="font-size: 1.05rem; color: #475569; max-width: 650px; margin: 0 auto 18px auto; line-height: 1.65;">
+    Enjoy unlimited data, next-generation WireGuard encryption, and audited zero activity logs on Android, iOS, Windows, and macOS.
+  </p>
+  <a href="https://ollavpn.com/apps.html" target="_blank" rel="noopener" class="btn-primary" style="display: inline-block; background: #EE2C3C !important; color: #FFFFFF !important; font-size: 1.08rem; font-weight: 800; padding: 14px 36px; border-radius: 10px; text-decoration: none !important; box-shadow: 0 4px 16px rgba(238, 44, 60, 0.25); transition: all 0.2s ease;">
+    Download OllaVPN Free &rarr;
+  </a>
+  <div style="margin-top: 14px; font-size: 0.85rem; color: #64748b; font-weight: 600;">
+    Available for iOS, Android, Windows &amp; macOS &bull; Instant Setup
+  </div>
+</section>

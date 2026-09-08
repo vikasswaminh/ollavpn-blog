@@ -6,9 +6,53 @@ author: 'OllaVPN Team'
 tags: ['privacy-security']
 ---
 
+<section id="tldr" class="article-tldr-box" style="background: #FCF0F1; border: 1.5px solid rgba(238, 44, 60, 0.2); border-left: 5px solid #EE2C3C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(238, 44, 60, 0.04); box-sizing: border-box;">
+  <h3 style="font-size: 1.15rem; font-weight: 800; color: #EE2C3C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR — The Short Answer</h3>
+  <p style="font-size: 1.05rem; line-height: 1.7; color: #1E293B; margin: 0;">
+    A DNS leak happens when your device sends DNS requests  -  the lookups that turn website names into numbers  -  outside your VPNs encrypted tunnel. Your browsing activity becomes visible to your internet service provider ev... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
+  </p>
+</section>
+
+<section id="key-takeaways" class="article-takeaways-box" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; padding: 20px 24px; margin-bottom: 24px; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
+  <h3 style="font-size: 1.25rem; font-weight: 800; color: #0F172A; margin: 0 0 14px 0;">Key Takeaways</h3>
+  <ul class="takeaways-list-24obs" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column;">
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">What DNS actually does, in one paragraph:</strong> Essential security requirement for verified digital privacy and network protection.
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">What a DNS leak is, in plain English:</strong> Essential security requirement for verified digital privacy and network protection.
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">Why DNS leaks matter (and when they don't):</strong> Essential security requirement for verified digital privacy and network protection.
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">What causes DNS leaks:</strong> Essential security requirement for verified digital privacy and network protection.
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">How to test for a DNS leak  -  the five-minute method:</strong> Essential security requirement for verified digital privacy and network protection.
+      </div>
+    </li>
+  </ul>
+</section>
+
+<div class="blog-main-content-box">
+
 2026 · 07 · 15 · PRIVACY & SECURITY · 5,064 WORDS
 
-# What Is a DNS Leak? How to Test, Fix, and Prevent It (2026 Guide)
 
 A plain-English guide to one of the most quietly important privacy concepts on the internet  -  what a DNS leak actually is, why it matters, how to test for one in under five minutes, and how to make sure you never have to worry about it again.
 
@@ -258,66 +302,105 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
 *   What causes DNS leaks
 *   How to test for a DNS leak  -  the five-minute method
 
-## Frequently asked questions
+</div>
 
-### What is a DNS leak in simple terms?
+<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 16px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
+  <div style="display: flex; flex-direction: column;">
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>1. What is a DNS leak in simple terms?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      A DNS leak happens when your device sends DNS requests - the lookups that turn "ollavpn.com" into a numeric address - outside the encrypted VPN tunnel. Even though the rest of your traffic is private, the leaked DNS requests reveal which websites you're visiting to your internet service provider or another third party.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>2. How do I check if my VPN is leaking DNS?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Connect to your VPN, then visit a DNS leak test site such as dnsleaktest.com or browserleaks.com/dns. Run the extended test. If the only DNS servers shown belong to your VPN provider, there is no leak. If the test shows your internet provider's servers, your VPN is leaking DNS.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>3. Are DNS leaks dangerous?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      DNS leaks don't expose the content of your traffic, but they do reveal which websites you're visiting. For most people that's a privacy concern rather than a security emergency. For journalists, activists, business travelers, and anyone in a restrictive network environment, the exposure can be significant.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>4. What causes a DNS leak?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Common causes include a VPN that doesn't route DNS through its own servers, IPv6 traffic bypassing the IPv4 tunnel, an unexpected VPN disconnect (no kill switch), Windows or macOS misconfigurations, and using a public DNS resolver while connected to a VPN. The simplest fix is choosing a VPN that handles DNS securely by default.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>5. Does a kill switch prevent DNS leaks?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      A kill switch prevents leaks that happen during a VPN disconnect by blocking all traffic until the tunnel is back. It doesn't prevent leaks caused by a VPN that mishandles DNS in the first place. You want both: built-in DNS leak protection AND an always-on kill switch.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>6. Do free VPNs leak DNS?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Some do, some don't. Many free VPNs use third-party DNS resolvers or fail to handle IPv6 traffic, which causes leaks. Reputable free options - including [OllaVPN's lifetime free plan](/free-vpn) - route DNS through their own infrastructure inside the tunnel by default.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>7. Can I prevent DNS leaks without a VPN?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Partially. You can switch your device to use an encrypted DNS resolver such as Cloudflare's
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>8. Is a DNS leak the same as an IP leak?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      No. A DNS leak exposes which websites you visit. An IP leak exposes your real IP address. They're different issues with different causes, and a good VPN protects against both. Many test sites check for both at the same time.
+    </p>
+  </details>
+  </div>
+</section>
 
-A DNS leak happens when your device sends DNS requests  -  the lookups that turn "ollavpn.com" into a numeric address  -  **outside the encrypted VPN tunnel**. Even though the rest of your traffic is private, the leaked DNS requests reveal which websites you're visiting to your internet service provider or another third party.
+<section id="wrapping-it-up" class="wrap-up-box" style="background: #FFF7F8; border: 1px solid rgba(238, 44, 60, 0.2); border-left: 5px solid #EE2C3C; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(238, 44, 60, 0.03); box-sizing: border-box;">
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 10px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
+  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 12px;">
+    Navigating What Is a DNS Leak? How to Test, Fix, and Prevent It (2026 Guide) effectively requires choosing security architectures built on transparency, strong encryption, and verified zero data logging.
+  </p>
+  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
+    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on kill switch defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
+  </p>
+</section>
 
-### How do I check if my VPN is leaking DNS?
-
-Connect to your VPN, then visit a DNS leak test site such as _dnsleaktest.com_ or _browserleaks.com/dns_. Run the **extended test**. If the only DNS servers shown belong to your VPN provider, there is no leak. If the test shows your internet provider's servers, your VPN is leaking DNS.
-
-### Are DNS leaks dangerous?
-
-DNS leaks don't expose the content of your traffic, but they do reveal **which websites you're visiting**. For most people that's a privacy concern rather than a security emergency. For journalists, activists, business travelers, and anyone in a restrictive network environment, the exposure can be significant.
-
-### What causes a DNS leak?
-
-Common causes include a VPN that doesn't route DNS through its own servers, IPv6 traffic bypassing the IPv4 tunnel, an unexpected VPN disconnect (no kill switch), Windows or macOS misconfigurations, and using a public DNS resolver while connected to a VPN. The simplest fix is choosing a VPN that handles DNS securely by default.
-
-### Does a kill switch prevent DNS leaks?
-
-A kill switch prevents leaks that happen during a VPN disconnect by blocking all traffic until the tunnel is back. It doesn't prevent leaks caused by a VPN that mishandles DNS in the first place. You want **both**: built-in DNS leak protection AND an always-on kill switch.
-
-### Do free VPNs leak DNS?
-
-Some do, some don't. Many free VPNs use third-party DNS resolvers or fail to handle IPv6 traffic, which causes leaks. **Reputable free options  -  including [OllaVPN's lifetime free plan](/free-vpn)  -  route DNS through their own infrastructure inside the tunnel by default.**
-
-### Can I prevent DNS leaks without a VPN?
-
-Partially. You can switch your device to use an encrypted DNS resolver such as Cloudflare's 1.1.1.1 or Quad9, which prevents your ISP from seeing your DNS lookups. This doesn't encrypt the rest of your traffic  -  for that you still need a VPN.
-
-### Is a DNS leak the same as an IP leak?
-
-No. A DNS leak exposes **which websites you visit**. An IP leak exposes your **real IP address**. They're different issues with different causes, and a good VPN protects against both. Many test sites check for both at the same time.
-
-### How often should I test for DNS leaks?
-
-Once when you first install a VPN, once after any major operating-system update, and once whenever you change network settings or switch between Wi-Fi and Ethernet on a new network. A reputable VPN handles DNS correctly out of the box, so frequent testing isn't usually necessary.
-
-### Does OllaVPN protect against DNS leaks?
-
-Yes. OllaVPN routes all DNS requests inside the encrypted tunnel by default  -  there is nothing to configure. The kill switch is always on. The result: when you're connected to OllaVPN, the DNS leak test should show only OllaVPN's resolver, every time. [Download free](../dl/) to try it.
-
-NP
-
-Nathan Pratt
-
-Privacy & Security Lead
-
-Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
-
-[More from Nathan →](/about/team#nathan-pratt)
-
-✉ Get the next one
-
-### Honest writeups, every two weeks.
-
-Nathan posts one deep-dive every two weeks. No spam, no sales blasts, no clickbait headlines.
-
- Subscribe
-
-No card. Unsubscribe with one click.
-
-Share Copy link [X](https://twitter.com/intent/tweet?text=OllaVPN%20blog&url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-a-dns-leak) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-a-dns-leak) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-a-dns-leak&t=OllaVPN%20blog) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-a-dns-leak&title=OllaVPN%20blog)
+<section id="download" class="download-section-box" style="background: linear-gradient(135deg, #ffffff 0%, #FFF7F8 100%); border: 1.5px solid rgba(238, 44, 60, 0.2); border-radius: 18px; padding: 32px 28px; margin-bottom: 24px; text-align: center; width: 100%; box-shadow: 0 6px 24px rgba(238, 44, 60, 0.06); box-sizing: border-box;">
+  <h2 style="font-size: 2rem; font-weight: 800; color: #0F172A; margin: 0 0 10px 0; border: none !important; padding-bottom: 0 !important;">Protect Your Connection with OllaVPN</h2>
+  <p style="font-size: 1.05rem; color: #475569; max-width: 650px; margin: 0 auto 18px auto; line-height: 1.65;">
+    Enjoy unlimited data, next-generation WireGuard encryption, and audited zero activity logs on Android, iOS, Windows, and macOS.
+  </p>
+  <a href="https://ollavpn.com/apps.html" target="_blank" rel="noopener" class="btn-primary" style="display: inline-block; background: #EE2C3C !important; color: #FFFFFF !important; font-size: 1.08rem; font-weight: 800; padding: 14px 36px; border-radius: 10px; text-decoration: none !important; box-shadow: 0 4px 16px rgba(238, 44, 60, 0.25); transition: all 0.2s ease;">
+    Download OllaVPN Free &rarr;
+  </a>
+  <div style="margin-top: 14px; font-size: 0.85rem; color: #64748b; font-weight: 600;">
+    Available for iOS, Android, Windows &amp; macOS &bull; Instant Setup
+  </div>
+</section>

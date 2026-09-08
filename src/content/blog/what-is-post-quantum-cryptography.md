@@ -6,9 +6,53 @@ author: 'OllaVPN Team'
 tags: ['protocol-tech']
 ---
 
+<section id="tldr" class="article-tldr-box" style="background: #FCF0F1; border: 1.5px solid rgba(238, 44, 60, 0.2); border-left: 5px solid #EE2C3C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(238, 44, 60, 0.04); box-sizing: border-box;">
+  <h3 style="font-size: 1.15rem; font-weight: 800; color: #EE2C3C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR — The Short Answer</h3>
+  <p style="font-size: 1.05rem; line-height: 1.7; color: #1E293B; margin: 0;">
+    Post-quantum cryptography (PQC) is a new family of encryption algorithms designed to remain secure even when powerful quantum computers eventually exist. Todays encryption protects most of the internet, but its based o... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
+  </p>
+</section>
+
+<section id="key-takeaways" class="article-takeaways-box" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; padding: 20px 24px; margin-bottom: 24px; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
+  <h3 style="font-size: 1.25rem; font-weight: 800; color: #0F172A; margin: 0 0 14px 0;">Key Takeaways</h3>
+  <ul class="takeaways-list-24obs" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column;">
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">Why this matters now (not in ten years):</strong> Essential security requirement for verified digital privacy and network protection.
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">A simple analogy  -  the padlock:</strong> Essential security requirement for verified digital privacy and network protection.
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">What post-quantum cryptography actually is:</strong> Essential security requirement for verified digital privacy and network protection.
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">"Harvest now, decrypt later"  -  the threat that matters today:</strong> Essential security requirement for verified digital privacy and network protection.
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">When quantum computers might actually arrive:</strong> Essential security requirement for verified digital privacy and network protection.
+      </div>
+    </li>
+  </ul>
+</section>
+
+<div class="blog-main-content-box">
+
 2026 · 07 · 15 · PRIVACY & SECURITY · 5,342 WORDS
 
-# What Is Post-Quantum Cryptography? A 2026 Guide for Anyone Who Cares About Privacy
 
 The plain-English guide to one of the most important  -  and most misunderstood  -  shifts happening in internet security right now. What post-quantum cryptography actually is, why it matters this decade rather than next, and what to look for in a future-ready VPN.
 
@@ -335,66 +379,105 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
 *   "Harvest now, decrypt later"  -  the threat that matters today
 *   When quantum computers might actually arrive
 
-## Frequently asked questions
+</div>
 
-### What is post-quantum cryptography in simple terms?
+<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 16px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
+  <div style="display: flex; flex-direction: column;">
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>1. What is post-quantum cryptography in simple terms?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Post-quantum cryptography (PQC) is a new family of encryption algorithms designed to remain secure even against future quantum computers. Today's most common encryption relies on math problems that classical computers can't solve quickly, but that a sufficiently powerful quantum computer eventually could. PQC algorithms are based on different math problems that researchers believe both classical and quantum computers will still struggle with.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>2. What is harvest now, decrypt later?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Harvest now, decrypt later (HNDL) is the practice of capturing encrypted internet traffic today, storing it, and decrypting it years later once quantum computers are powerful enough. The U.S. government and major security companies treat HNDL as a real, ongoing risk. It's the central reason post-quantum cryptography matters now, not in ten years.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>3. Do quantum computers exist that can break encryption today?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Not yet. Today's quantum computers have hundreds to a few thousand physical qubits, but breaking widely used encryption like RSA-2048 would require millions of error-corrected qubits. Mainstream estimates put the arrival of cryptographically relevant quantum computers somewhere between 2030 and 2045, though the precise date is uncertain.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>4. What are the NIST post-quantum standards?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      In August 2024, NIST finalized three post-quantum standards. FIPS 203 (ML-KEM, based on Kyber) is for key establishment. FIPS 204 (ML-DSA, based on Dilithium) and FIPS 205 (SLH-DSA, based on SPHINCS+) are for digital signatures. These standards now define what "post-quantum-ready" means in practice.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>5. Which products already use post-quantum encryption?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Apple iMessage uses PQ3 (since February 2024). Signal launched PQXDH in September
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>6. Does my VPN need post-quantum cryptography?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      If your threat model includes a well-resourced adversary who might be capturing your encrypted traffic today, the answer is yes. For most everyday users, post-quantum protection is a sensible long-term hedge rather than an immediate emergency. The good news is that adopting a PQC-ready VPN costs you nothing extra in speed or convenience.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>7. What is a hybrid post-quantum encryption mode?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      A hybrid mode combines a traditional encryption algorithm (like X25519) with a post-quantum algorithm (like ML-KEM) in the same handshake. The connection stays secure as long as either one remains unbroken. This belt-and-suspenders approach is what most major deployments use today.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>8. When will quantum computers actually break current encryption?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Mainstream expert estimates range from the early 2030s to the mid-2040s. What is not uncertain is the timeline for migrating to post-quantum cryptography - that work needs to happen years ahead of the threat, which is why standardization happened in 2024 and major rollouts are happening now.
+    </p>
+  </details>
+  </div>
+</section>
 
-Post-quantum cryptography (PQC) is a new family of encryption algorithms designed to remain secure even against future quantum computers. Today's most common encryption relies on math problems that classical computers can't solve quickly, but that a sufficiently powerful quantum computer eventually could. PQC algorithms are based on different math problems that researchers believe both classical and quantum computers will still struggle with.
+<section id="wrapping-it-up" class="wrap-up-box" style="background: #FFF7F8; border: 1px solid rgba(238, 44, 60, 0.2); border-left: 5px solid #EE2C3C; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(238, 44, 60, 0.03); box-sizing: border-box;">
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 10px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
+  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 12px;">
+    Navigating What Is Post-Quantum Cryptography? A 2026 Guide for Anyone Who Cares About Privacy effectively requires choosing security architectures built on transparency, strong encryption, and verified zero data logging.
+  </p>
+  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
+    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on kill switch defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
+  </p>
+</section>
 
-### What is "harvest now, decrypt later"?
-
-Harvest now, decrypt later (HNDL) is the practice of capturing encrypted internet traffic today, storing it, and decrypting it years later once quantum computers are powerful enough. The U.S. government and major security companies treat HNDL as a real, ongoing risk. **It's the central reason post-quantum cryptography matters now, not in ten years.**
-
-### Do quantum computers exist that can break encryption today?
-
-Not yet. Today's quantum computers have hundreds to a few thousand physical qubits, but breaking widely used encryption like RSA-2048 would require millions of error-corrected qubits. **Mainstream estimates put the arrival of cryptographically relevant quantum computers somewhere between 2030 and 2045**, though the precise date is uncertain.
-
-### What are the NIST post-quantum standards?
-
-In August 2024, NIST finalized three post-quantum standards. **FIPS 203 (ML-KEM, based on Kyber)** is for key establishment. **FIPS 204 (ML-DSA, based on Dilithium)** and **FIPS 205 (SLH-DSA, based on SPHINCS+)** are for digital signatures. These standards now define what "post-quantum-ready" means in practice.
-
-### Which products already use post-quantum encryption?
-
-**Apple iMessage** uses PQ3 (since February 2024). **Signal** launched PQXDH in September 2023. **Google Chrome** rolled out the X25519Kyber768 hybrid as default in 2024. **Cloudflare** has supported post-quantum TLS since 2022. **Mullvad** made post-quantum WireGuard tunnels the default on desktop in 2023.
-
-### Does my VPN need post-quantum cryptography?
-
-If your threat model includes a well-resourced adversary who might be capturing your encrypted traffic today, the answer is **yes**. For most everyday users, post-quantum protection is a sensible long-term hedge rather than an immediate emergency. The good news is that adopting a PQC-ready VPN costs you nothing extra in speed or convenience.
-
-### What is a hybrid post-quantum encryption mode?
-
-A hybrid mode combines a traditional encryption algorithm (like X25519) with a post-quantum algorithm (like ML-KEM) in the same handshake. **The connection stays secure as long as either one remains unbroken.** This belt-and-suspenders approach is what most major deployments use today.
-
-### When will quantum computers actually break current encryption?
-
-Mainstream expert estimates range from the **early 2030s to the mid-2040s**. What is not uncertain is the timeline for migrating to post-quantum cryptography  -  that work needs to happen years ahead of the threat, which is why standardization happened in 2024 and major rollouts are happening now.
-
-### Will post-quantum cryptography slow down my VPN?
-
-**Not noticeably.** Post-quantum key exchange adds a small amount of data to the initial connection handshake and a few extra milliseconds of computation. For everyday use, the difference is imperceptible. Once the handshake is complete, traffic flows at full VPN speed.
-
-### Is OllaVPN post-quantum ready?
-
-Yes. OllaVPN is built post-quantum-ready from day one, available on **every connection  -  free and paid alike**  -  without any configuration. The same future-readiness is available to lifetime free users at no cost. You can [try it](../dl/) without an email or card.
-
-NP
-
-Nathan Pratt
-
-Privacy & Security Lead
-
-Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
-
-[More from Nathan →](/about/team#nathan-pratt)
-
-✉ Get the next one
-
-### Honest writeups, every two weeks.
-
-Nathan posts one deep-dive every two weeks. No spam, no sales blasts, no clickbait headlines.
-
- Subscribe
-
-No card. Unsubscribe with one click.
-
-Share Copy link [X](https://twitter.com/intent/tweet?text=OllaVPN%20blog&url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-post-quantum-cryptography) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-post-quantum-cryptography) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-post-quantum-cryptography&t=OllaVPN%20blog) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fwhat-is-post-quantum-cryptography&title=OllaVPN%20blog)
+<section id="download" class="download-section-box" style="background: linear-gradient(135deg, #ffffff 0%, #FFF7F8 100%); border: 1.5px solid rgba(238, 44, 60, 0.2); border-radius: 18px; padding: 32px 28px; margin-bottom: 24px; text-align: center; width: 100%; box-shadow: 0 6px 24px rgba(238, 44, 60, 0.06); box-sizing: border-box;">
+  <h2 style="font-size: 2rem; font-weight: 800; color: #0F172A; margin: 0 0 10px 0; border: none !important; padding-bottom: 0 !important;">Protect Your Connection with OllaVPN</h2>
+  <p style="font-size: 1.05rem; color: #475569; max-width: 650px; margin: 0 auto 18px auto; line-height: 1.65;">
+    Enjoy unlimited data, next-generation WireGuard encryption, and audited zero activity logs on Android, iOS, Windows, and macOS.
+  </p>
+  <a href="https://ollavpn.com/apps.html" target="_blank" rel="noopener" class="btn-primary" style="display: inline-block; background: #EE2C3C !important; color: #FFFFFF !important; font-size: 1.08rem; font-weight: 800; padding: 14px 36px; border-radius: 10px; text-decoration: none !important; box-shadow: 0 4px 16px rgba(238, 44, 60, 0.25); transition: all 0.2s ease;">
+    Download OllaVPN Free &rarr;
+  </a>
+  <div style="margin-top: 14px; font-size: 0.85rem; color: #64748b; font-weight: 600;">
+    Available for iOS, Android, Windows &amp; macOS &bull; Instant Setup
+  </div>
+</section>

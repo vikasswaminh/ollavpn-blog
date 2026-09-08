@@ -6,6 +6,51 @@ author: 'OllaVPN Team'
 tags: ['comparisons']
 ---
 
+<section id="tldr" class="article-tldr-box" style="background: #FCF0F1; border: 1.5px solid rgba(238, 44, 60, 0.2); border-left: 5px solid #EE2C3C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(238, 44, 60, 0.04); box-sizing: border-box;">
+  <h3 style="font-size: 1.15rem; font-weight: 800; color: #EE2C3C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR — The Short Answer</h3>
+  <p style="font-size: 1.05rem; line-height: 1.7; color: #1E293B; margin: 0;">
+    Shared parent company, different strengths: Surfsharks unlimited household connections vs NordVPNs dedicated IP and Onion-over-VPN infrastructure. OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
+  </p>
+</section>
+
+<section id="key-takeaways" class="article-takeaways-box" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; padding: 20px 24px; margin-bottom: 24px; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
+  <h3 style="font-size: 1.25rem; font-weight: 800; color: #0F172A; margin: 0 0 14px 0;">Key Takeaways</h3>
+  <ul class="takeaways-list-24obs" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column;">
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">At a glance:</strong> Essential security requirement for verified digital privacy and network protection.
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">A note on the shared parent company:</strong> Essential security requirement for verified digital privacy and network protection.
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">Pricing in 2026  -  what you actually pay:</strong> Essential security requirement for verified digital privacy and network protection.
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">Devices and households:</strong> Essential security requirement for verified digital privacy and network protection.
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+      <span class="takeaway-bullet" style="color: #EE2C3C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">•</span>
+      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 800;">Speed and performance:</strong> Essential security requirement for verified digital privacy and network protection.
+      </div>
+    </li>
+  </ul>
+</section>
+
+<div class="blog-main-content-box">
+
 2026 · 07 · 15 · PRIVACY & SECURITY · 5,293 WORDS
 
 # Surfshark vs NordVPN (2026): An Honest, Side-by-Side Comparison
@@ -414,123 +459,107 @@ If you're already happy with Surfshark or NordVPN, stay where you are  -  they'r
 
 You can [try the free plan](../dl/) right now without an email or a card.
 
-## Final verdict
+</div>
 
-If we had to summarize this entire 3,500-word guide into three lines:
+<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 16px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
+  <div style="display: flex; flex-direction: column;">
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>1. Is Surfshark better than NordVPN?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Neither is objectively better - they're tuned for slightly different buyers. Surfshark is the value choice with the most generous device limit (unlimited devices on one account) and an attractive entry price. NordVPN is the all-in-one choice with the broadest bundle of extra security tools and arguably the most polished consumer experience. Most readers will be happy with either.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>2. Is Surfshark owned by NordVPN?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Surfshark and NordVPN are operated by Nord Security, the same parent company, since the brands merged in
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>3. Is Surfshark cheaper than NordVPN?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      On the 2-year plan, Surfshark Starter is about $
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>4. How many devices can I use on Surfshark vs NordVPN?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Surfshark allows unlimited simultaneous device connections on every paid plan. NordVPN allows up to 10 simultaneous devices on every paid plan. If you have a large household, Surfshark's unlimited-devices policy is genuinely useful.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>5. Which is faster, Surfshark or NordVPN?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Both use modern WireGuard-based protocols and feel fast on typical home internet. Independent reviewers have generally found NordVPN slightly faster on raw throughput, while Surfshark is competitive and notably consistent across long-distance connections. The difference is rarely noticeable for browsing, streaming, calls, or gaming.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>6. Do both VPNs work with Netflix, Disney+, and BBC iPlayer?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Both work with major streaming platforms most of the time. Streaming services constantly play cat-and-mouse with VPNs, so individual servers may or may not unlock individual catalogs on a given day. Both companies actively invest in keeping streaming access working.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>7. Are Surfshark and NordVPN safe to use?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Yes. Both run no-logs policies that have been independently audited. Both include kill switches enabled by default on every supported platform. Both use modern encryption with leak protection built in. Surfshark is based in the Netherlands; NordVPN is based in Panama.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>8. What is post-quantum cryptography, and why does it matter for a VPN?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #EE2C3C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Post-quantum cryptography (PQC) is a new family of encryption algorithms designed to remain secure against future quantum computers. The concern, often called "harvest now, decrypt later," is that encrypted traffic captured today could be saved and decrypted years from now once quantum computers mature. A PQC-ready VPN protects your sessions against that future, today. [OllaVPN is built PQC-ready](../technology.html) from day one.
+    </p>
+  </details>
+  </div>
+</section>
 
-*   Pick **Surfshark** if you want unlimited devices, a low entry price, and a cheerful modern app  -  especially for households with lots of devices to cover.
-*   Pick **NordVPN** if you want the most polished consumer VPN experience with the deepest bundle of extra security tools.
-*   Try **OllaVPN** if post-quantum readiness is part of how you're thinking about the next decade of your online life.
+<section id="wrapping-it-up" class="wrap-up-box" style="background: #FFF7F8; border: 1px solid rgba(238, 44, 60, 0.2); border-left: 5px solid #EE2C3C; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(238, 44, 60, 0.03); box-sizing: border-box;">
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 10px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
+  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 12px;">
+    If we had to summarize this entire 3,500-word guide into three lines:
+  </p>
+  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
+    Pick Surfshark if you want unlimited devices, a low entry price, and a cheerful modern app  -  especially for households with lots of devices to cover.
+   Pick NordVPN if you want the most polished consumer VPN experience with the deepest bundle of extra security tools.
+   Try OllaVPN if post-quantum readiness is part of how you're thinking about the next decade of your online life.
+  </p>
+</section>
 
-The truth is that there has never been a worse time to be the kind of person who doesn't use any VPN at all, and there has never been a better time to be the kind of person who does. The category has matured, the leaders are all good, and the differences are now about _fit_ rather than _quality_.
-
-Whichever one you pick, having any reputable VPN is meaningfully better than having none.
-
-* * *
-
-**Pillar guide:** [What is post-quantum cryptography?](what-is-post-quantum-cryptography.html)  
-**Related comparisons:** [NordVPN vs ProtonVPN](nordvpn-vs-protonvpn.html) · [NordVPN vs ExpressVPN](nordvpn-vs-expressvpn.html) · [Mullvad vs ProtonVPN](mullvad-vs-protonvpn.html)
-
-## How we evaluated these  -  methodology disclosure
-
-A head-to-head comparison is only as honest as the methodology behind it. For every comparison we publish, the framework is the same:
-
-**Data sources.** Each operator's publicly documented privacy policy (read fully, not skimmed); their published independent audit reports where available (Securitum, Cure53, Radically Open Security, and KPMG have all audited VPNs in the names we compare); their security disclosure pages and warrant canaries; their pricing pages at the time of writing; and our own hands-on testing on at least two of Windows, macOS, and Android during the most recent quarterly refresh.
-
-**What we test.** DNS-leak posture (using [our DNS lookup tool](/dns-lookup) + dnsleaktest.com cross-check), WebRTC leak posture via [our test](/webrtc-leak-test), kill-switch behavior under simulated network changes (toggling Wi-Fi off mid-session, putting the laptop to sleep with VPN active, swapping Wi-Fi networks), and IPv6 leak posture.
-
-**What we do not test.** Long-term performance under heavy load (we lack multi-month data on competitors), specific streaming-service compatibility (rotates daily, unfair to compare), and per-region speed (depends on the user's ISP and exit choice, not the VPN's design).
-
-**Conflict-of-interest disclosure.** OllaVPN is one of the operators we compare on this site. We manage the conflict by being explicit about methodology, by ranking by best-fit-for-the-reader's-situation rather than by what makes us look best, and by accepting that some readers will pick a different operator. The reader who picks Proton VPN, Mullvad, or another name after reading our comparison is a reader we still consider a good outcome.
-
-## A vetting checklist for any VPN comparison you read
-
-Not every "X vs Y" article on the internet uses a defensible methodology. When you read someone else's comparison, watch for these patterns:
-
-**Affiliate-driven rankings.** Many comparison sites are funded by VPN affiliate commissions. Operators that pay higher commissions tend to win those comparisons. The tell is rankings that don't match the actual technical merits or audit history  -  and "best for streaming" being the default lead category, because streaming-VPN affiliate payouts are highest.
-
-**Stale data.** VPN operators change pricing, ownership, jurisdiction, and feature sets continuously. A comparison written in 2023 and republished in 2026 without re-checking is unreliable. Look for a "last updated" date and a methodology section before trusting the comparison.
-
-**Missing audit attribution.** Trustworthy comparisons cite the audit firm and year for each operator's last independent audit. If a "no-logs" claim is repeated without saying who verified it and when, the claim is doing less work than it appears to.
-
-**No coverage of what each operator does NOT do.** Honest comparisons include the limitations and non-features of each operator. A comparison that only lists positives is selling, not informing.
-
-## About this guide
-
-Maintained by [Nathan Pratt](/about/team#nathan-pratt), OllaVPN's Privacy & Security Lead. Fact-checked by [Hannah Wu](/about/team#hannah-wu), Senior Security Engineer. We refresh this post quarterly so its facts, recommendations, and competitor comparisons stay accurate as the category evolves. The last full re-evaluation was 23 June 2026; the next is scheduled for September 2026.
-
-If you spot a fact that's drifted or an addition we should make, email `[[email protected]](/cdn-cgi/l/email-protection)`. Reader corrections drive a meaningful percentage of our quarterly updates.
-
-⭐ Key takeaways
-
-## What to remember from this guide
-
-*   At a glance
-*   A note on the shared parent company
-*   Pricing in 2026  -  what you actually pay
-*   Devices and households
-*   Speed and performance
-
-## Frequently asked questions
-
-### Is Surfshark better than NordVPN?
-
-Neither is objectively better  -  they're tuned for slightly different buyers. **Surfshark** is the value choice with the most generous device limit (unlimited devices on one account) and an attractive entry price. **NordVPN** is the all-in-one choice with the broadest bundle of extra security tools and arguably the most polished consumer experience. Most readers will be happy with either.
-
-### Is Surfshark owned by NordVPN?
-
-Surfshark and NordVPN are operated by Nord Security, the same parent company, since the brands merged in 2022. Both products are run as **independent brands** with separate apps, infrastructure investment, and product roadmaps. The merger was publicly disclosed and is a factual matter rather than a hidden one.
-
-### Is Surfshark cheaper than NordVPN?
-
-On the 2-year plan, **Surfshark Starter is about $1.99/month**, lower than NordVPN Basic at about $3.09/month. Surfshark's positioning has always leaned toward affordability and unlimited devices. NordVPN tends to compete on bundled extras rather than headline price.
-
-### How many devices can I use on Surfshark vs NordVPN?
-
-Surfshark allows **unlimited simultaneous device connections** on every paid plan. NordVPN allows up to **10 simultaneous devices** on every paid plan. If you have a large household, Surfshark's unlimited-devices policy is genuinely useful.
-
-### Which is faster, Surfshark or NordVPN?
-
-Both use modern WireGuard-based protocols and feel fast on typical home internet. Independent reviewers have generally found **NordVPN slightly faster on raw throughput**, while Surfshark is competitive and notably consistent across long-distance connections. The difference is rarely noticeable for browsing, streaming, calls, or gaming.
-
-### Do both VPNs work with Netflix, Disney+, and BBC iPlayer?
-
-Both work with major streaming platforms most of the time. Streaming services constantly play cat-and-mouse with VPNs, so individual servers may or may not unlock individual catalogs on a given day. Both companies actively invest in keeping streaming access working.
-
-### Are Surfshark and NordVPN safe to use?
-
-Yes. Both run **no-logs policies that have been independently audited**. Both include kill switches enabled by default on every supported platform. Both use modern encryption with leak protection built in. Surfshark is based in the Netherlands; NordVPN is based in Panama.
-
-### What is post-quantum cryptography, and why does it matter for a VPN?
-
-Post-quantum cryptography (PQC) is a new family of encryption algorithms designed to remain secure against future quantum computers. The concern, often called **"harvest now, decrypt later,"** is that encrypted traffic captured today could be saved and decrypted years from now once quantum computers mature. A PQC-ready VPN protects your sessions against that future, today. [OllaVPN is built PQC-ready](../technology.html) from day one.
-
-### Is there a money-back guarantee?
-
-Yes. Both Surfshark and NordVPN offer a **30-day money-back guarantee** on paid plans. You can request a refund within that window for any reason.
-
-### Can I use Surfshark and NordVPN for torrenting?
-
-Both support **P2P traffic** on appropriate servers and include kill switches that prevent your real IP from leaking if the tunnel drops mid-download. NordVPN also includes a SOCKS5 proxy on paid plans.
-
-NP
-
-Nathan Pratt
-
-Privacy & Security Lead
-
-Nathan covers privacy engineering, post-quantum cryptography, and the policy + technical layers of consumer VPN security. Eight years at Mozilla and Cloudflare before joining OllaVPN.
-
-[More from Nathan →](/about/team#nathan-pratt)
-
-✉ Get the next one
-
-### Honest writeups, every two weeks.
-
-Nathan posts one deep-dive every two weeks. No spam, no sales blasts, no clickbait headlines.
-
- Subscribe
-
-No card. Unsubscribe with one click.
-
-Share Copy link [X](https://twitter.com/intent/tweet?text=OllaVPN%20blog&url=https%3A%2F%2Follavpn.com%2Fblog%2Fsurfshark-vs-nordvpn) [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Follavpn.com%2Fblog%2Fsurfshark-vs-nordvpn) [HN](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Follavpn.com%2Fblog%2Fsurfshark-vs-nordvpn&t=OllaVPN%20blog) [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Follavpn.com%2Fblog%2Fsurfshark-vs-nordvpn&title=OllaVPN%20blog)
+<section id="download" class="download-section-box" style="background: linear-gradient(135deg, #ffffff 0%, #FFF7F8 100%); border: 1.5px solid rgba(238, 44, 60, 0.2); border-radius: 18px; padding: 32px 28px; margin-bottom: 24px; text-align: center; width: 100%; box-shadow: 0 6px 24px rgba(238, 44, 60, 0.06); box-sizing: border-box;">
+  <h2 style="font-size: 2rem; font-weight: 800; color: #0F172A; margin: 0 0 10px 0; border: none !important; padding-bottom: 0 !important;">Protect Your Connection with OllaVPN</h2>
+  <p style="font-size: 1.05rem; color: #475569; max-width: 650px; margin: 0 auto 18px auto; line-height: 1.65;">
+    Enjoy unlimited data, next-generation WireGuard encryption, and audited zero activity logs on Android, iOS, Windows, and macOS.
+  </p>
+  <a href="https://ollavpn.com/apps.html" target="_blank" rel="noopener" class="btn-primary" style="display: inline-block; background: #EE2C3C !important; color: #FFFFFF !important; font-size: 1.08rem; font-weight: 800; padding: 14px 36px; border-radius: 10px; text-decoration: none !important; box-shadow: 0 4px 16px rgba(238, 44, 60, 0.25); transition: all 0.2s ease;">
+    Download OllaVPN Free &rarr;
+  </a>
+  <div style="margin-top: 14px; font-size: 0.85rem; color: #64748b; font-weight: 600;">
+    Available for iOS, Android, Windows &amp; macOS &bull; Instant Setup
+  </div>
+</section>
