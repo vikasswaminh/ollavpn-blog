@@ -5033,3 +5033,58 @@ article h2::before,
   margin-bottom: 4px !important;
   line-height: 1.55 !important;
 }
+
+
+/* Structural Breadcrumbs Styling */
+.article-breadcrumbs {
+  margin-bottom: 1.1rem;
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+.breadcrumbs-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.4rem;
+}
+.breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+}
+.breadcrumb-link {
+  color: #64748B;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+.breadcrumb-link:hover {
+  color: #EE2C3C;
+  text-decoration: underline;
+}
+.breadcrumb-separator {
+  color: #94A3B8;
+  font-size: 1rem;
+  margin: 0 0.15rem;
+  user-select: none;
+}
+.breadcrumb-current {
+  color: #1E293B;
+  font-weight: 600;
+  max-width: 340px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+@media (max-width: 640px) {
+  .breadcrumb-current {
+    max-width: 180px;
+  }
+}
+.ug-cat-btn span,
+.ug-cat-btn svg {
+  pointer-events: none;
+}

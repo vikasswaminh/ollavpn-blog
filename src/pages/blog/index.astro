@@ -243,7 +243,7 @@ const curriculumTracks = [
               return (
                 <article 
                   class="ug-card-clean" 
-                  data-tags={tags.join(' ')} 
+                  data-tags={tags.join(' ')} data-category={post.data.category || primaryCategory} 
                   data-title={post.data.title.toLowerCase()}
                   data-index={idx}
                 >
@@ -462,7 +462,7 @@ const curriculumTracks = [
     </div>
   </section>
 
-  <!-- Client-Side Interactive Filtering, Search & Pagination Script -->
+    <!-- Client-Side Interactive Filtering, Search & Pagination Script -->
   <script is:inline>
     (function() {
       const POSTS_PER_PAGE = 6; // 6 cards per view (2 rows x 3 cols), matching upGrad screenshot!
@@ -478,14 +478,20 @@ const curriculumTracks = [
       const prevBtn = document.getElementById('ug-prev-page');
       const nextBtn = document.getElementById('ug-next-page');
 
+      function getCategoryLabel(catKey) {
+        const btn = catBtns.find(b => b.getAttribute('data-category') === catKey);
+        return btn ? btn.querySelector('span').textContent.trim() : catKey;
+      }
+
       function filterCards() {
         let matching = cards.filter(card => {
           const tags = (card.getAttribute('data-tags') || '').split(' ');
+          const cat = card.getAttribute('data-category') || '';
           const title = card.getAttribute('data-title') || '';
-          
-          const matchesCat = activeCategory === 'All' || tags.includes(activeCategory);
+
+          const matchesCat = activeCategory === 'All' || cat === activeCategory || tags.includes(activeCategory);
           const matchesSearch = !searchQuery || title.includes(searchQuery);
-          
+
           return matchesCat && matchesSearch;
         });
 
@@ -494,7 +500,11 @@ const curriculumTracks = [
         if (currentPage > totalPages) currentPage = 1;
 
         if (countDisplay) {
-          countDisplay.textContent = `Showing ${totalMatching} articles`;
+          if (activeCategory === 'All') {
+            countDisplay.textContent = `Showing ${totalMatching} articles`;
+          } else {
+            countDisplay.textContent = `Showing ${totalMatching} articles in ${getCategoryLabel(activeCategory)}`;
+          }
         }
 
         // Hide all cards first
@@ -543,14 +553,48 @@ const curriculumTracks = [
         }
       }
 
+      function selectCategory(targetCat, shouldScroll = true) {
+        activeCategory = targetCat;
+        catBtns.forEach(b => {
+          const isTarget = b.getAttribute('data-category') === targetCat;
+          if (isTarget) {
+            b.classList.add('active');
+            b.setAttribute('aria-selected', 'true');
+          } else {
+            b.classList.remove('active');
+            b.setAttribute('aria-selected', 'false');
+          }
+        });
+
+        currentPage = 1;
+        filterCards();
+
+        if (shouldScroll) {
+          const section = document.getElementById('categories-section');
+          if (section) {
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+
+        // Update URL parameter without reload
+        try {
+          const url = new URL(window.location.href);
+          if (targetCat === 'All') {
+            url.searchParams.delete('cat');
+            url.searchParams.delete('category');
+          } else {
+            url.searchParams.set('cat', targetCat);
+          }
+          window.history.replaceState({}, '', url.toString());
+        } catch (e) {}
+      }
+
       // Sidebar Category Button Click Handling
       catBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-          catBtns.forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          activeCategory = btn.getAttribute('data-category') || 'All';
-          currentPage = 1;
-          filterCards();
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetCat = btn.getAttribute('data-category') || 'All';
+          selectCategory(targetCat, true);
         });
       });
 
@@ -592,8 +636,18 @@ const curriculumTracks = [
         });
       }
 
-      // Initial filter run
-      filterCards();
+      // Check URL parameters for ?cat= or ?category= on initial load
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const urlCat = params.get('cat') || params.get('category');
+        if (urlCat && catBtns.some(b => b.getAttribute('data-category') === urlCat)) {
+          selectCategory(urlCat, false);
+        } else {
+          filterCards();
+        }
+      } catch (e) {
+        filterCards();
+      }
     })();
   </script>
 </UpgradLayout>
