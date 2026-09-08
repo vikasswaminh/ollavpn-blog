@@ -4607,7 +4607,11 @@ article h2::before,
 .faq-section h2::before,
 .faq-section-box h2::before,
 .key-takeaways h2::before,
-.key-takeaways h3::before {
+.key-takeaways h3::before,
+#wrapping-it-up h2::before,
+.wrap-up-box h2::before,
+#download h2::before,
+.download-section-box h2::before {
   content: none !important;
   display: none !important;
 }

@@ -63,11 +63,11 @@ Hannah Wu · Senior Security Engineer
 
 TL;DR  -  THE SHORT ANSWERYes, ChatGPT stores your conversations - but how long, how they’re used, and whether they feed AI training depends heavily on your account settings and which plan you’re on. By default, conversations are saved indefinitely in your account until you delete them. After deletion, OpenAI retains them on internal systems for up to 30 days, unless a legal obligation requires longer retention. Your conversations can also be used to train OpenAI’s models unless you explicitly opt out. This guide walks through the full data story - what OpenAI collects, how long it keeps it, who can access it, how to limit it, and what using a VPN can and cannot do for your privacy.
 
-Does ChatGPT use your chats to train its AI?
+## Does ChatGPT use your chats to train its AI?
 
-Who can see your conversations?
+## Who can see your conversations?
 
-What happens when you delete a conversation?
+## What happens when you delete a conversation?
 
 The difference between free, Plus, Team, and Enterprise
 
@@ -75,7 +75,7 @@ Temporary Chat - what it does and doesn't do
 
 What ChatGPT knows about you beyond your messages
 
-Can OpenAI be compelled to hand over your data?
+## Can OpenAI be compelled to hand over your data?
 
 What you should never type into ChatGPT
 
@@ -85,7 +85,7 @@ Where a VPN fits into AI privacy
 
 Common myths about ChatGPT privacy
 
-How OllaVPN protects your network layer when using AI tools
+## How OllaVPN protects your network layer when using AI tools
 
 Frequently asked questions
 
@@ -137,7 +137,7 @@ Legal retention exceptions: Both windows include a carve-out: “unless we are l
 
 Enterprise and API: Business customers using ChatGPT Team, Enterprise, or the API have different retention settings. Enterprise customers can configure zero-day retention. API users have retention governed by their service agreement, not personal account settings.
 
-Does ChatGPT use your chats to train its AI?
+## Does ChatGPT use your chats to train its AI?
 
 QUICK ANSWER : By default, on the free and Plus plans, your conversations can be used to improve OpenAI’s models. You can opt out - but even after opting out, OpenAI may still use conversations for safety monitoring. Enterprise and API customers are not subject to training data use by default.
 
@@ -151,7 +151,7 @@ Enterprise and API: By default, OpenAI does not use conversations from Enterpris
 
 The honest framing: Opting out of model training narrows what OpenAI does with your data, not whether it holds it. Conversations are still stored, still subject to legal demands, and still reviewable under safety policies.
 
-Who can see your conversations?
+## Who can see your conversations?
 
 Your conversations can be seen by: you (via your account), OpenAI staff (under safety, abuse, and quality review policies), OpenAI’s AI systems (for model training, unless you opt out), and law enforcement (under valid legal process). Third-party plugins or integrations you authorize can also access conversation context.
 
@@ -167,7 +167,7 @@ Third-party plugins and integrations: If you use ChatGPT plugins or connect it t
 
 Shared conversations: ChatGPT lets you generate a shareable link for any conversation. Anyone with the link can read it. This is opt-in and requires your action.
 
-What happens when you delete a conversation?
+## What happens when you delete a conversation?
 
 Deleting a conversation removes it from your account view immediately. It is then permanently deleted from OpenAI’s systems within 30 days, unless a legal obligation requires longer retention. Deletion does not retroactively remove conversation content already incorporated into model training runs
 
@@ -275,7 +275,7 @@ Cookies and tracking technologies: OpenAI uses cookies on the ChatGPT web interf
 
 Single sign-on (SSO): If you log into ChatGPT using “Continue with Google” or “Continue with Microsoft,” those platforms know you’re using ChatGPT and your account is linked to your identity there.
 
-Can OpenAI be compelled to hand over your data?
+## Can OpenAI be compelled to hand over your data?
 
 Yes. OpenAI is a US company and must comply with valid US legal process - subpoenas, court orders, and national security letters. It publishes a transparency report. Whether it notifies you of a legal demand depends on whether the order includes a non-disclosure provision. Conversations stored on its servers are legally accessible to US authorities under appropriate legal process.
 
@@ -373,7 +373,7 @@ Myth 5: "Using a VPN means OpenAI can't track me."
 
 A VPN masks your IP address from OpenAI - a real improvement. It does not prevent OpenAI from seeing your conversation content, and it does not prevent account-based identification if you’re logged in. A VPN is one layer of a privacy approach, not a complete solution.
 
-How OllaVPN protects your network layer when using AI tools
+## How OllaVPN protects your network layer when using AI tools
 
 When you use ChatGPT, your network connection carries two types of identifiable information: the content of your requests, and metadata about your connection (primarily your IP address and session timing). A VPN addresses the metadata layer. OllaVPN is built to handle it thoroughly.
 
