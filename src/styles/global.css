@@ -914,14 +914,14 @@ main.main-fullwidth {
 
 /* LEFT SIDEBAR: Ad Card + Related Guides */
 .article-left-sidebar {
-  position: sticky;
-  top: 96px;
-  align-self: start;
+  position: static !important;
+  top: auto !important;
+  align-self: flex-start !important;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  max-height: calc(100vh - 105px);
-  overflow-y: auto;
+  max-height: none !important;
+  overflow-y: visible !important;
 }
 
 .article-left-sidebar::-webkit-scrollbar {
@@ -1305,9 +1305,9 @@ main.main-fullwidth {
 
 /* RIGHT SIDEBAR: "ON THIS PAGE" Jump Section */
 .article-right-sidebar {
-  position: sticky;
-  top: 96px;
-  align-self: start;
+  position: static !important;
+  top: auto !important;
+  align-self: flex-start !important;
   width: 100%;
   min-width: 0;
   overflow: visible;
@@ -2443,13 +2443,15 @@ main.main-fullwidth {
 }
 
 .article-left-sidebar, .article-right-sidebar {
-  position: sticky;
-  top: 96px;
-  align-self: start;
+  position: static !important;
+  top: auto !important;
+  align-self: flex-start !important;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
   width: 240px;
+  max-height: none !important;
+  overflow-y: visible !important;
 }
 
 
@@ -3106,14 +3108,15 @@ h1, h2, h3, h4, h5, h6, .article-title, .featured-title {
    SIDEBAR SMOOTH SCROLLING & VIEWPORT INTEGRATION
    ========================================================================== */
 .article-left-sidebar, .article-right-sidebar {
-  position: sticky !important;
-  top: 90px !important;
-  align-self: start !important;
-  max-height: calc(100vh - 105px) !important;
-  overflow-y: auto !important;
-  scrollbar-width: thin !important;
-  scrollbar-color: #E3E4EA transparent !important;
-  padding-right: 4px !important;
+  position: static !important;
+  top: auto !important;
+  align-self: flex-start !important;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 240px;
+  max-height: none !important;
+  overflow-y: visible !important;
 }
 
 .article-left-sidebar::-webkit-scrollbar, .article-right-sidebar::-webkit-scrollbar {
@@ -3896,8 +3899,9 @@ html, body, .article-page-wrapper, main {
 .desktop-sidebar-24obs {
   width: 200px !important;
   flex-shrink: 0 !important;
-  position: sticky !important;
-  top: 84px !important;
+  position: static !important;
+  top: auto !important;
+  align-self: flex-start !important;
   margin: 0 !important;
   transform: none !important;
   box-sizing: border-box !important;
@@ -4692,9 +4696,11 @@ article h2::before,
 .desktop-sidebar-24obs {
   width: 200px !important;
   flex-shrink: 0 !important;
-  position: sticky !important;
-  top: 84px !important;
+  position: static !important;
+  top: auto !important;
+  align-self: flex-start !important;
   margin: 0 !important;
+  transform: none !important;
   box-sizing: border-box !important;
 }
 
@@ -5122,4 +5128,22 @@ article h2::before,
   content: none !important;
   display: none !important;
   counter-increment: none !important;
+}
+
+
+/* ==========================================================================
+   STATIC LHS & RHS SIDEBAR OVERRIDE (NO SCROLL-STICK)
+   ========================================================================== */
+.desktop-sidebar-24obs,
+.desktop-sidebar-24obs.left-sidebar,
+.desktop-sidebar-24obs.right-sidebar,
+.article-left-sidebar,
+.article-right-sidebar {
+  position: static !important;
+  top: auto !important;
+  bottom: auto !important;
+  align-self: flex-start !important;
+  transform: none !important;
+  max-height: none !important;
+  overflow-y: visible !important;
 }
