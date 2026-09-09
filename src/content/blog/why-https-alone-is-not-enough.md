@@ -30,7 +30,6 @@ None of this means HTTPS is broken or a gimmick. It is doing the exact job it wa
 </section>
 
 <div class="blog-main-content-box">
-
 You've probably been trained for years to look for that little padlock icon in your browser address bar before typing in a password or credit card number. Honestly? That habit is solid advice, and you should definitely keep doing it. But somewhere along the line, "the padlock is showing" quietly turned into "I'm completely private online" in most people's minds. And those are two very, very different things. In this guide, we're going to unpack exactly what HTTPS does for you, what it was never actually designed to handle, and what you actually need to close the remaining privacy gaps.
 
 ## 1. What does HTTPS actually protect, in plain English?
@@ -153,73 +152,128 @@ If you want to step beyond basic "padlock security" and take control of your onl
 3.Use a trustworthy zero-logs VPN. Running OllaVPN by default is the most reliable way to hide your real IP address, shield your network metadata, and keep your browsing history safe from ISP logging.
 4.Test your setup for leaks. Run periodic diagnostic checks using DNS leak tests, WebRTC leak tests, and IP lookup tools to make sure your location and domain queries aren't leaking out behind the scenes.
 5.Hardening your browser against fingerprinting. Use a privacy-focused browser (like Firefox with strict protection enabled, or Brave) and install tracker-blocking extensions to stop scripts from building a unique hardware fingerprint of your device.
-
-### If a site has HTTPS, can my ISP still see what site I'm visiting?
-
-Yes, in most default setups. HTTPS scrambles the content of your requests, but your DNS lookups (which happen before the connection starts) and the Server Name Indication (SNI) header in the TLS handshake usually expose the domain names you visit directly to your ISP.
-
-### Does HTTPS stop websites from tracking me?
-
-No. HTTPS protects your data from third parties eavesdropping on your connection in transit. It does not stop the website you are visiting (or the third-party tracking scripts loaded on that page) from identifying you through cookies, local storage, or browser fingerprinting.
-
-### Is a VPN a replacement for HTTPS?
-
-No, they work together as complementary security tools. HTTPS encrypts the content of your connection to a specific website. A VPN encrypts your entire network connection, masks your IP address, and routes DNS lookups internally. If you visit an unencrypted plain-HTTP site through a VPN, that final stretch from the VPN server to the website still isn't content-encrypted unless the site itself uses HTTPS.
-
-### Can HTTPS be intercepted or faked?
-
-Yes, in specific situations. If a Certificate Authority is compromised, rogue certificates can be issued to eavesdrop on traffic. Additionally, corporate or school networks often install custom Root Certificates on managed devices, allowing enterprise firewalls to decrypt and inspect employee HTTPS traffic.
-
-### What is DNS leakage, and how does it relate to HTTPS?
-
-DNS leakage happens when your browser dispatches domain lookup requests in cleartext outside your VPN tunnel to your ISP's DNS servers. Because this lookup happens before an HTTPS connection ever begins, a DNS leak reveals every domain you visit regardless of whether the target site uses HTTPS.
-
-### Can someone tell what I'm doing online just from encrypted traffic patterns?
-
-Yes. Through statistical side-channel traffic analysis, observers can examine packet sizes, transmission burst frequencies, and timing gaps to identify specific streaming videos, webpage layouts, or typing rhythms without ever breaking the underlying payload encryption.
-
-### Does OllaVPN protect against browser fingerprinting?
-
-No, and we are upfront about that. OllaVPN masks your IP address and resolves DNS queries inside an encrypted tunnel, but browser fingerprinting relies on technical details your browser voluntarily hands to scripts running inside the page. Neutralizing fingerprinting requires using a fingerprinting-resistant browser alongside your VPN.
-
-### Is it still worth checking for HTTPS if it doesn't solve everything?
-
-Yes, absolutely. HTTPS solves a critical problem - protecting your passwords, credit cards, and private content from being intercepted in transit - exceptionally well. This guide isn't an argument against HTTPS; it's an argument against assuming HTTPS alone makes you fully private.
-
-### What does OllaVPN specifically add on top of HTTPS?
-
-OllaVPN encrypts all IP traffic from your device using WireGuard, hides your real IP address and location, resolves DNS queries internally to prevent leaks, blocks ISP metadata logging, includes a default Kill Switch, and incorporates post-quantum handshake protection.
-
-### Why does a website need my IP address even over a secure HTTPS connection?
-
-Because internet routing fundamentally requires a return address to deliver requested data back to your device. HTTPS encrypts the payload inside the data packet, but the packet header must contain your IP address so routers know where to send the response. A VPN replaces your real IP address with the VPN server's IP address so your home location stays hidden.
-
-### How does Encrypted Client Hello (ECH) affect HTTPS privacy in the future?
-
-Encrypted Client Hello is a TLS extension designed to encrypt the domain name in the SNI handshake header. While ECH will make domain snooping harder for eavesdroppers on supported servers, it does not hide destination IP addresses, prevent plain-text DNS leaks if misconfigured, alter traffic shape analysis, or shield your real IP address from websites. Encapsulating your network traffic with a VPN like OllaVPN will remain essential.
 </div>
 
-<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box; font-family: var(--font), 'Lato', sans-serif;">
-  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 16px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important; font-family: var(--font), 'Lato', sans-serif;">Frequently Asked Questions</h2>
-  <div style="display: flex; flex-direction: column; gap: 10px; font-family: var(--font), 'Lato', sans-serif;">
-  <details class="faq-accordion-item" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease; font-family: var(--font), 'Lato', sans-serif;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center; font-family: var(--font), 'Lato', sans-serif;">
+<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 16px; padding: 26px 30px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 16px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
+  <div style="display: flex; flex-direction: column; gap: 10px;">
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Does the padlock icon mean a website is safe to trust?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px; font-family: var(--font), 'Lato', sans-serif;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0; font-family: var(--font), 'Lato', sans-serif;">
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       No. The padlock only confirms that your connection to that specific site is encrypted and that the site holds a valid certificate for its domain name. It says nothing about whether the site owner is trustworthy, legitimate, or running a scam. Automated certificate services make it easy for phishing and scam sites to display valid padlocks too. Always double-check the domain URL and verify the site's reputation.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>If a site has HTTPS, can my ISP still see what site I'm visiting?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Yes, in most default setups. HTTPS scrambles the content of your requests, but your DNS lookups (which happen before the connection starts) and the Server Name Indication (SNI) header in the TLS handshake usually expose the domain names you visit directly to your ISP.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>Does HTTPS stop websites from tracking me?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      No. HTTPS protects your data from third parties eavesdropping on your connection in transit. It does not stop the website you are visiting (or the third-party tracking scripts loaded on that page) from identifying you through cookies, local storage, or browser fingerprinting.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>Is a VPN a replacement for HTTPS?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      No, they work together as complementary security tools. HTTPS encrypts the content of your connection to a specific website. A VPN encrypts your entire network connection, masks your IP address, and routes DNS lookups internally. If you visit an unencrypted plain-HTTP site through a VPN, that final stretch from the VPN server to the website still isn't content-encrypted unless the site itself uses HTTPS.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>Can HTTPS be intercepted or faked?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Yes, in specific situations. If a Certificate Authority is compromised, rogue certificates can be issued to eavesdrop on traffic. Additionally, corporate or school networks often install custom Root Certificates on managed devices, allowing enterprise firewalls to decrypt and inspect employee HTTPS traffic.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>What is DNS leakage, and how does it relate to HTTPS?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      DNS leakage happens when your browser dispatches domain lookup requests in cleartext outside your VPN tunnel to your ISP's DNS servers. Because this lookup happens before an HTTPS connection ever begins, a DNS leak reveals every domain you visit regardless of whether the target site uses HTTPS.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>Can someone tell what I'm doing online just from encrypted traffic patterns?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Yes. Through statistical side-channel traffic analysis, observers can examine packet sizes, transmission burst frequencies, and timing gaps to identify specific streaming videos, webpage layouts, or typing rhythms without ever breaking the underlying payload encryption.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>Does OllaVPN protect against browser fingerprinting?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      No, and we are upfront about that. OllaVPN masks your IP address and resolves DNS queries inside an encrypted tunnel, but browser fingerprinting relies on technical details your browser voluntarily hands to scripts running inside the page. Neutralizing fingerprinting requires using a fingerprinting-resistant browser alongside your VPN.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>Is it still worth checking for HTTPS if it doesn't solve everything?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Yes, absolutely. HTTPS solves a critical problem - protecting your passwords, credit cards, and private content from being intercepted in transit - exceptionally well. This guide isn't an argument against HTTPS; it's an argument against assuming HTTPS alone makes you fully private.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>What does OllaVPN specifically add on top of HTTPS?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      OllaVPN encrypts all IP traffic from your device using WireGuard, hides your real IP address and location, resolves DNS queries internally to prevent leaks, blocks ISP metadata logging, includes a default Kill Switch, and incorporates post-quantum handshake protection.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>Why does a website need my IP address even over a secure HTTPS connection?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Because internet routing fundamentally requires a return address to deliver requested data back to your device. HTTPS encrypts the payload inside the data packet, but the packet header must contain your IP address so routers know where to send the response. A VPN replaces your real IP address with the VPN server's IP address so your home location stays hidden.
+    </p>
+  </details>
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
+    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+      <span>How does Encrypted Client Hello (ECH) affect HTTPS privacy in the future?</span>
+      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+    </summary>
+    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+      Encrypted Client Hello is a TLS extension designed to encrypt the domain name in the SNI handshake header. While ECH will make domain snooping harder for eavesdroppers on supported servers, it does not hide destination IP addresses, prevent plain-text DNS leaks if misconfigured, alter traffic shape analysis, or shield your real IP address from websites. Encapsulating your network traffic with a VPN like OllaVPN will remain essential.
     </p>
   </details>
   </div>
 </section>
 
-<section id="wrapping-it-up" class="wrap-up-box" style="background: #FFF8F8; border: 1px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box; font-family: var(--font), 'Lato', sans-serif;">
-  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 10px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important; font-family: var(--font), 'Lato', sans-serif;">Wrapping It Up</h2>
-  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 12px; font-family: var(--font), 'Lato', sans-serif;">
+<section id="wrapping-it-up" class="wrap-up-box" style="background: #FFF5F5 !important; border: 1.5px solid rgba(218, 41, 28, 0.25) !important; border-left: 5px solid #DA291C !important; border-radius: 16px !important; padding: 26px 30px !important; margin-bottom: 24px !important; width: 100% !important; box-shadow: 0 4px 20px rgba(218, 41, 28, 0.05) !important; box-sizing: border-box !important;">
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
+  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 12px;">
     Choosing the right solution for <strong>Why HTTPS Alone Isn't Enough</strong> requires balancing speed, genuine security, and uncompromised privacy.
   </p>
-  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 0; font-family: var(--font), 'Lato', sans-serif;">
+  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
     With OllaVPN, you benefit from lightweight WireGuard tunneling, zero bandwidth caps, default-on kill switch defense, and built-in post-quantum cryptography to ensure your connection remains lightning-fast and private on every network.
   </p>
 </section>

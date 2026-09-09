@@ -50,7 +50,6 @@ tags: ['protocol-tech']
 </section>
 
 <div class="blog-main-content-box">
-
 You've probably heard the term "VPN" quite a bit, but the tech behind it can sound like a foreign language. IPSec is one of those technical terms that seems complicated, but it's actually a core part of how your data stays private and secure online. Think of it as the secret handshake that keeps your information safe as it travels across the internet. Understanding IPSec isn't just for network gurus; it helps you grasp the real magic behind your online privacy, especially when you're using a VPN to protect yourself.
 
 ## 1. What is an IPSec VPN in plain English?
@@ -204,86 +203,86 @@ If you spot a fact that's drifted or an addition we should make, email `[[emailÂ
 *   How does IPSec relate to other internet privacy concepts you might know?
 </div>
 
-<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
+<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 16px; padding: 26px 30px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
   <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 16px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
-  <div style="display: flex; flex-direction: column;">
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+  <div style="display: flex; flex-direction: column; gap: 10px;">
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>1. What is an IPSec VPN in one sentence?</span>
+      <span>What is an IPSec VPN in one sentence?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      <p class="short-answer">IPSec is a framework of protocols.</p><p>It's used to secure internet communications by authenticating and encrypting each data packet. You'll often find it building secure VPN tunnels, especially in older or corporate setups, making sure your information stays private as it travels across the internet.</p>
+      <p class="short-answer">IPSec is a framework of protocols.
     </p>
   </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>2. Why should I care about IPSec?</span>
+      <span>Why should I care about IPSec?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      <p class="short-answer">You should care because it's a foundational technology.</p><p>IPSec helps ensure your online data is private and hasn't been tampered with. While you might not interact with it directly, understanding its role helps you grasp how your digital life is protected, especially in networks that still rely on it heavily.</p>
+      <p class="short-answer">You should care because it's a foundational technology.
     </p>
   </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>3. Is it dangerous to ignore IPSec?</span>
+      <span>Is it dangerous to ignore IPSec?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      <p class="short-answer">Not directly, because modern VPNs often handle security for you.</p><p>You don't need to be an expert in IPSec itself. However, understanding that various protocols exist to protect your data helps you appreciate the importance of choosing a robust privacy tool like a good VPN. It's about knowing your data is safe, no matter the protocol.</p>
+      <p class="short-answer">Not directly, because modern VPNs often handle security for you.
     </p>
   </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>4. How does a VPN relate to IPSec?</span>
+      <span>How does a VPN relate to IPSec?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      <p class="short-answer">Many VPNs, especially older or corporate ones, use IPSec.</p><p>It forms the underlying technology to establish their secure, encrypted tunnels for your data. Think of it as one of the possible blueprints a VPN can follow to build that private pathway for your internet traffic. Other VPNs, like OllaVPN, use different blueprints entirely.</p>
+      <p class="short-answer">Many VPNs, especially older or corporate ones, use IPSec.
     </p>
   </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>5. Do I need a VPN to deal with IPSec?</span>
+      <span>Do I need a VPN to deal with IPSec?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      <p class="short-answer">You don't actively 'deal with' IPSec as an end-user.</p><p>A good VPN, like OllaVPN, handles all the complex security protocols for you. We use the more modern WireGuard protocol, not IPSec, to protect your connection automatically. This means you get strong security without needing to understand the nitty-gritty details.</p>
+      <p class="short-answer">You don't actively 'deal with' IPSec as an end-user.
     </p>
   </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>6. Can a free VPN handle IPSec properly?</span>
+      <span>Can a free VPN handle IPSec properly?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      <p class="short-answer">An ad-funded free VPN might use IPSec, but its security could be compromised by its business model.</p><p>OllaVPN's free tier, funded by our Plus users, doesn't rely on IPSec. We use WireGuard with post-quantum readiness for strong security, offering 10 Mbps forever, with no ads, no data caps, and no card required.</p>
+      <p class="short-answer">An ad-funded free VPN might use IPSec, but its security could be compromised by its business model.
     </p>
   </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>7. How can I check if I'm protected by IPSec or similar protocols?</span>
+      <span>How can I check if I'm protected by IPSec or similar protocols?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      <p class="short-answer">You typically can't check for IPSec directly as an end-user.</p><p>Instead, the best way is to ensure you're using a reputable VPN service and verify your VPN app's connection status. Services like OllaVPN clearly show you're connected and protected by strong protocols like WireGuard, so you don't have to guess.</p>
+      <p class="short-answer">You typically can't check for IPSec directly as an end-user.
     </p>
   </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>8. Are there free tools to test IPSec protection?</span>
+      <span>Are there free tools to test IPSec protection?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      <p class="short-answer">There aren't really free tools for users to 'test IPSec protection' directly because it's an underlying protocol.</p><p>Your best bet is simply to verify your VPN connection is active and using a strong, modern protocol. For example, OllaVPN uses WireGuard, and you can easily see your connection status within our app.</p>
+      <p class="short-answer">There aren't really free tools for users to 'test IPSec protection' directly because it's an underlying protocol.
     </p>
   </details>
   </div>
 </section>
 
-<section id="wrapping-it-up" class="wrap-up-box" style="background: #FFF8F8; border: 1px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.03); box-sizing: border-box;">
-  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 10px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
+<section id="wrapping-it-up" class="wrap-up-box" style="background: #FFF5F5 !important; border: 1.5px solid rgba(218, 41, 28, 0.25) !important; border-left: 5px solid #DA291C !important; border-radius: 16px !important; padding: 26px 30px !important; margin-bottom: 24px !important; width: 100% !important; box-shadow: 0 4px 20px rgba(218, 41, 28, 0.05) !important; box-sizing: border-box !important;">
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
   <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 12px;">
     Navigating What Exactly Is an IPSec VPN, and Why Should You Care? effectively requires choosing security architectures built on transparency, strong encryption, and verified zero data logging.
   </p>

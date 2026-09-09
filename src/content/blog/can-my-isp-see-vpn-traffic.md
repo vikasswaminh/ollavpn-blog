@@ -50,7 +50,6 @@ tags: ['privacy-security']
 </section>
 
 <div class="blog-main-content-box">
-
 You're using a VPN because you want privacy, but how much can it truly hide from your Internet Service Provider (ISP)? It's a common and important question, and frankly, a lot of VPN providers aren't entirely upfront about the nuances. We'll cut through the marketing speak to explain exactly what your ISP can and can't see when you're connected to a VPN, why those distinctions matter for your online privacy, and how OllaVPN helps you stay truly private.
 
 ## 1. What Can Your ISP Actually See When You Use a VPN?
@@ -172,75 +171,75 @@ If you spot a fact that's drifted or an addition we should make, email `[[emailÂ
 *   Which Countries&#39; Laws Actually Affect Your VPN&#39;s Privacy Guarantees?
 </div>
 
-<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
+<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 16px; padding: 26px 30px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
   <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 16px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
-  <div style="display: flex; flex-direction: column;">
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+  <div style="display: flex; flex-direction: column; gap: 10px;">
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>1. Is using a VPN legal in my country?</span>
+      <span>Is using a VPN legal in my country?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       Mostly, yes. For most of us, VPNs are a totally legitimate tool for online privacy and security. There are a few countries with strict internet censorship that restrict or outright ban VPNs, but these are exceptions. If you're traveling to one of these places, it's always smart to double-check local regulations. Otherwise, you're good to go.
     </p>
   </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>2. Can my ISP see what websites I visit if I use a VPN?</span>
+      <span>Can my ISP see what websites I visit if I use a VPN?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       No, your ISP can't see the specific websites you're visiting when you're connected to OllaVPN. All your internet traffic is encrypted between your device and our servers. Your ISP will only see that you're connected to a OllaVPN server and how much data you're using. What you do within that encrypted tunnel is private.
     </p>
   </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>3. Can the government track me even if I use a VPN?</span>
+      <span>Can the government track me even if I use a VPN?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       It's much harder for governments to track you when you're using a quality VPN with a strict no-logs policy, but it's not impossible under extreme circumstances. If your device itself is compromised with malware, or you're specifically targeted with advanced techniques, a VPN can't magically fix that. It's a powerful privacy tool, but not a magic bullet.
     </p>
   </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>4. What about Five Eyes or Fourteen Eyes countries and VPNs?</span>
+      <span>What about Five Eyes or Fourteen Eyes countries and VPNs?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       These alliances are about intelligence sharing between governments. If a VPN provider is based in one of those countries and keeps logs, they might be compelled to hand over your data. That's why OllaVPN is incorporated in a privacy-friendly jurisdiction and has a strict no-logs policy. If we don't have your data, we can't hand it over to anyone, anywhere.
     </p>
   </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>5. Will using a VPN make me look suspicious to my ISP?</span>
+      <span>Will using a VPN make me look suspicious to my ISP?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       Not directly. Your ISP will definitely see that you're using a VPN, but that's a really common and legitimate practice for many reasons. People use them for remote work, to protect their privacy, or to bypass geo-restrictions. It doesn't automatically flag you as doing anything wrong; it just means you're using a secure connection.
     </p>
   </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>6. What if my VPN provider gets a legal subpoena for my data?</span>
+      <span>What if my VPN provider gets a legal subpoena for my data?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       This is exactly why a strict no-logs policy is so crucial. If a VPN provider genuinely doesn't keep any records of your online activities or connection data, then there's simply nothing to hand over, even under a legal subpoena. OllaVPN's policy ensures we have no data about your activities to share with anyone, ever.
     </p>
   </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>7. What logs does OllaVPN keep about its users?</span>
+      <span>What logs does OllaVPN keep about its users?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       OllaVPN keeps no logs that can identify your online activities. We don't track your originating IP address, connection timestamps, session information, or the websites you visit. We only keep minimal, anonymized data necessary for network operations, like the total bandwidth used across our entire network. Your privacy is paramount, always.
     </p>
   </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
+  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>8. How is a VPN different from Tor for privacy?</span>
+      <span>How is a VPN different from Tor for privacy?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
@@ -250,8 +249,8 @@ If you spot a fact that's drifted or an addition we should make, email `[[emailÂ
   </div>
 </section>
 
-<section id="wrapping-it-up" class="wrap-up-box" style="background: #FFF8F8; border: 1px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.03); box-sizing: border-box;">
-  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 10px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
+<section id="wrapping-it-up" class="wrap-up-box" style="background: #FFF5F5 !important; border: 1.5px solid rgba(218, 41, 28, 0.25) !important; border-left: 5px solid #DA291C !important; border-radius: 16px !important; padding: 26px 30px !important; margin-bottom: 24px !important; width: 100% !important; box-shadow: 0 4px 20px rgba(218, 41, 28, 0.05) !important; box-sizing: border-box !important;">
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
   <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 12px;">
     Navigating Can Your ISP See Your VPN Traffic? Lets Get Real About Privacy. effectively requires choosing security architectures built on transparency, strong encryption, and verified zero data logging.
   </p>
