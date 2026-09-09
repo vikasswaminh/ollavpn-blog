@@ -9,8 +9,8 @@ tags: ['buyer-guides', 'privacy-security', 'travel', 'wifi']
 ---
 
 <section id="tldr" class="article-tldr-box">
-<h3 style="font-size: 1.15rem; font-weight: 800; color: #323652; margin: 0 0 6px 0; font-family: var(--font), 'Lato', sans-serif;">TL;DR — The Short Answer</h3>
-<p style="font-size: 1.05rem; line-height: 1.7; color: #09090b; margin: 0; font-family: var(--font), 'Lato', sans-serif;">
+<h3 style="font-size: 1.03rem; font-weight: 800; color: #323652; margin: 0 0 6px 0; font-family: 'Lato', sans-serif;">TL;DR — The Short Answer</h3>
+<p style="font-size: 0.925rem; line-height: 1.7; color: #09090b; margin: 0; font-family: 'Lato', sans-serif;">
 Public Wi-Fi abroad - hotel lobbies, airport lounges, café hotspots, even the "secure" network at your conference hotel - is built for convenience, not privacy. Many of these networks use outdated or weak encryption, share a single network key among hundreds of guests, and give whoever controls the router (or whoever's sniffing packets nearby) a decent view into your traffic. Roaming data is generally better, but it isn't private from your carrier and can get expensive or throttled fast.
 OllaVPN Free gives you a genuinely free, privacy-first VPN for travel: 10 Mbps, access to every country in our network, post-quantum-ready encryption, a kill switch on by default, in-tunnel DNS, and 4-layer peer isolation - no credit card, no email, no ads, no data selling. It's funded by OllaVPN Plus subscribers, not by monetizing free users.
 10 Mbps comfortably covers what most travelers do abroad: maps, messaging, browsing, video calls home, even HD streaming on a long layover. If you edit 4K footage or need five devices covered on a family trip, OllaVPN Plus gives 10 Gbps for a small fee - an upgrade, never a requirement.
@@ -18,59 +18,59 @@ OllaVPN Free gives you a genuinely free, privacy-first VPN for travel: 10 Mbps, 
 </section>
 
 <section id="key-takeaways" class="article-takeaways-box">
-<h3 style="font-size: 1.3rem; font-weight: 800; color: #323652; margin: 0 0 16px 0; font-family: var(--font), 'Lato', sans-serif;">Key Takeaways</h3>
+<h3 style="font-size: 1.18rem; font-weight: 800; color: #323652; margin: 0 0 16px 0; font-family: 'Lato', sans-serif;">Key Takeaways</h3>
 <ul class="takeaways-list-24obs">
 <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
         <strong style="color: #0F172A; font-weight: 800;">Hotel, airport, and roaming networks each carry different but real risks - flat:</strong> Hotel Wi-Fi typically runs on flat, shared networks where every guest is one hop from every other guest, router firmware is rarely updated, and the property has full visibility into every domain you visit even when your traffic is otherwise encrypted.
       </div>
     </li><li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
         <strong style="color: #0F172A; font-weight: 800;">topology, targeted attacks, and carrier-level visibility, respectively.:</strong> Essential technical context and verified guidance regarding topology, targeted attacks, and carrier-level visibility, respectively.
       </div>
     </li><li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
         <strong style="color: #0F172A; font-weight: 800;">A trustworthy free travel VPN discloses its funding model plainly and avoids:</strong> An honest free travel VPN should protect your privacy without harvesting or selling your data, work across every country you're likely to visit, and be upfront about how it makes money if you're not paying for it.
       </div>
     </li><li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
         <strong style="color: #0F172A; font-weight: 800;">ads, data sales, and crippling data caps.:</strong> Essential technical context and verified guidance regarding ads, data sales, and crippling data caps.
       </div>
     </li><li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
         <strong style="color: #0F172A; font-weight: 800;">OllaVPN Free gives 10 Mbps, unlimited data, every country, post-quantum-ready encryption, a default-on kill switch, in-tunnel DNS, and peer isolation - no card, no email, no ads.:</strong> OllaVPN Free gives you privacy and security wherever your trip takes you: 10 Mbps of speed, access to every country in our network, the WireGuard protocol, post-quantum-ready encryption, a kill switch on by default, in-tunnel DNS, and 4-layer peer isolation - no card, no email, no ads, no data selling, ever.
       </div>
     </li><li>
   <span class="takeaway-bullet">•</span>
-  <div><strong style="color: #323652; font-weight: 800; font-family: var(--font), 'Lato', sans-serif;">10 Mbps comfortably covers most real travel use:</strong> maps, messaging, browsing, calls home, and HD streaming.</div>
+  <div><strong style="color: #323652; font-weight: 800; font-family: 'Lato', sans-serif;">10 Mbps comfortably covers most real travel use:</strong> maps, messaging, browsing, calls home, and HD streaming.</div>
 </li><li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
         <strong style="color: #0F172A; font-weight: 800;">Set up your VPN before you fly, not for the first time abroad under time pressure.:</strong> Public Wi-Fi abroad is risky because you have no way to verify who runs the network, how it's configured, or who else is on it - meaning your traffic can be intercepted, your device can be probed by others on the same segment, and fake networks can impersonate real ones.
       </div>
     </li><li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
         <strong style="color: #0F172A; font-weight: 800;">Check the current VPN legal status for any restrictive destination before you:</strong> Setting up OllaVPN before your trip takes a few minutes: download the app at home on stable Wi-Fi, skip account creation entirely, and connect once so it's ready the moment you land.
       </div>
     </li><li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
         <strong style="color: #0F172A; font-weight: 800;">travel.:</strong> An honest free travel VPN should protect your privacy without harvesting or selling your data, work across every country you're likely to visit, and be upfront about how it makes money if you're not paying for it.
       </div>
     </li><li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
         <strong style="color: #0F172A; font-weight: 800;">OllaVPN Plus is worth considering for heavy work video calls, large uploads, or:</strong> OllaVPN Free gives you privacy and security wherever your trip takes you: 10 Mbps of speed, access to every country in our network, the WireGuard protocol, post-quantum-ready encryption, a kill switch on by default, in-tunnel DNS, and 4-layer peer isolation - no card, no email, no ads, no data selling, ever.
       </div>
     </li><li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
         <strong style="color: #0F172A; font-weight: 800;">multiple devices.:</strong> Essential technical context and verified guidance regarding multiple devices.
       </div>
     </li>
@@ -223,113 +223,113 @@ Atlas VPN. Acquired by Nord Security in 2021 and shut down in 2024, with users m
 </div>
 
 <section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 16px; padding: 26px 30px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
-  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 16px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
+  <h2 style="font-size: 1.625rem; font-weight: 800; margin: 0 0 16px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
   <div style="display: flex; flex-direction: column; gap: 10px;">
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Do I really need a VPN for hotel Wi-Fi if the hotel says it's "secure"?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       Yes, generally. "Secure" usually just means there's a password step, not that the network is well-maintained. A VPN protects your traffic regardless of how the local network is configured.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Is airport Wi-Fi worse than hotel Wi-Fi for privacy?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       They carry different risks rather than one being flatly worse. Airports are a common target for fake networks aimed at rushed travelers; hotels tend to have older, less-maintained infrastructure. A VPN addresses both the same way.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Is it better to use roaming data instead of hotel orairport Wi-Fi?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       Roaming data resists casual eavesdropping better than open Wi-Fi, since cellular links are encrypted to the tower. It isn't private from your carrier, though, and can be slow or costly. A VPN is worth using on roaming data too.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Will OllaVPN work on every hotel and airport Wi-Fi network?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       Yes. OllaVPN works over any standard internet connection, including networks with captive login portals - connect locally first, get past the login page, then connect OllaVPN as usual.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Do I need to change anything for each new country I visit?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       No. OllaVPN works the same way across every country in the network - no reconfiguring as you move between hotel Wi-Fi, airport Wi-Fi, or roaming data.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Is 10 Mbps enough for video calls home while traveling?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       Yes, for one-on-one or small group calls, 10 Mbps gives a stable, good-quality experience. Larger group calls with several people sharing video sit closer to the edge of what that speed comfortably handles.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Can I use OllaVPN Free on my iPhone and Android device on the same trip?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       The free plan covers one device at a time. For multiple devices protected simultaneously, OllaVPN Plus covers up to five devices for a small monthly fee.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Are there countries where I shouldn't rely on a free VPN at all?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       A small number of countries, China being the most significant, heavily restrict or block unauthorized VPN use at the network level. Research the current situation before you travel.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Does OllaVPN log my activity while I'm traveling?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       No. OllaVPN maintains a strict no-logs policy everywhere in our network, regardless of which country you're connecting from.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>What happens if my VPN drops while switching from hotel Wi-Fi to roaming data?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       The kill switch, on by default, cuts internet access immediately rather than falling back to an unprotected connection. Once the VPN reconnects, access resumes automatically.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Should I download OllaVPN before I leave or after I arrive?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       Before you leave, on stable home Wi-Fi. Troubleshooting a new app abroad, under time pressure, is exactly the situation worth avoiding.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Will using a VPN abroad slow down my connection more than usual?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       You'll see the same 10 Mbps cap you'd see anywhere else - a consistent limit, not something that worsens while traveling. Actual speeds also depend on the local network's own quality.
     </p>
   </details>
@@ -337,24 +337,24 @@ Atlas VPN. Acquired by Nord Security in 2021 and shut down in 2024, with users m
 </section>
 
 <section id="wrapping-it-up" class="wrap-up-box" style="background: #FFF5F5 !important; border: 1.5px solid rgba(218, 41, 28, 0.25) !important; border-left: 5px solid #DA291C !important; border-radius: 16px !important; padding: 26px 30px !important; margin-bottom: 24px !important; width: 100% !important; box-shadow: 0 4px 20px rgba(218, 41, 28, 0.05) !important; box-sizing: border-box !important;">
-  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
-  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 12px;">
+  <h2 style="font-size: 1.625rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
+  <p style="font-size: 0.925rem; line-height: 1.75; color: #1E293B; margin-bottom: 12px;">
     Choosing the right solution for <strong>Free VPN for Travel Abroad 2026: Stay Private on Hotel, Airport, and Roaming Wi-Fi</strong> requires balancing speed, genuine security, and uncompromised privacy.
   </p>
-  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
+  <p style="font-size: 0.925rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
     With OllaVPN, you benefit from lightweight WireGuard tunneling, zero bandwidth caps, default-on kill switch defense, and built-in post-quantum cryptography to ensure your connection remains lightning-fast and private on every network.
   </p>
 </section>
 
 <section id="download" class="download-section-box" style="background: linear-gradient(135deg, #ffffff 0%, #FFF8F8 100%); border: 1.5px solid rgba(218, 41, 28, 0.2); border-radius: 18px; padding: 32px 28px; margin-bottom: 24px; text-align: center; width: 100%; box-shadow: 0 6px 24px rgba(218, 41, 28, 0.06); box-sizing: border-box;">
-  <h2 style="font-size: 2rem; font-weight: 800; color: #0F172A; margin: 0 0 10px 0; border: none !important; padding-bottom: 0 !important;">Protect Your Connection with OllaVPN</h2>
-  <p style="font-size: 1.05rem; color: #475569; max-width: 650px; margin: 0 auto 18px auto; line-height: 1.65;">
+  <h2 style="font-size: 1.875rem; font-weight: 800; color: #0F172A; margin: 0 0 10px 0; border: none !important; padding-bottom: 0 !important;">Protect Your Connection with OllaVPN</h2>
+  <p style="font-size: 0.925rem; color: #475569; max-width: 650px; margin: 0 auto 18px auto; line-height: 1.65;">
     Enjoy unlimited data, next-generation WireGuard encryption, and audited zero activity logs on Android, iOS, Windows, and macOS.
   </p>
-  <a href="https://ollavpn.com/apps.html" target="_blank" rel="noopener" class="btn-primary" style="display: inline-block; background: #DA291C !important; color: #FFFFFF !important; font-size: 1.08rem; font-weight: 800; padding: 14px 36px; border-radius: 10px; text-decoration: none !important; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.25); transition: all 0.2s ease;">
+  <a href="https://ollavpn.com/apps.html" target="_blank" rel="noopener" class="btn-primary" style="display: inline-block; background: #DA291C !important; color: #FFFFFF !important; font-size: 0.95rem; font-weight: 800; padding: 14px 36px; border-radius: 10px; text-decoration: none !important; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.25); transition: all 0.2s ease;">
     Download OllaVPN Free &rarr;
   </a>
-  <div style="margin-top: 14px; font-size: 0.85rem; color: #64748b; font-weight: 600;">
+  <div style="margin-top: 14px; font-size: 0.75rem; color: #64748b; font-weight: 600;">
     Available for iOS, Android, Windows &amp; macOS &bull; Instant Setup
   </div>
 </section>

@@ -9,8 +9,8 @@ tags: ['buyer-guides', 'privacy-security', 'remote-work', 'home-office']
 ---
 
 <section id="tldr" class="article-tldr-box">
-<h3 style="font-size: 1.15rem; font-weight: 800; color: #323652; margin: 0 0 6px 0; font-family: var(--font), 'Lato', sans-serif;">TL;DR — The Short Answer</h3>
-<p style="font-size: 1.05rem; line-height: 1.7; color: #09090b; margin: 0; font-family: var(--font), 'Lato', sans-serif;">
+<h3 style="font-size: 1.03rem; font-weight: 800; color: #323652; margin: 0 0 6px 0; font-family: 'Lato', sans-serif;">TL;DR — The Short Answer</h3>
+<p style="font-size: 0.925rem; line-height: 1.7; color: #09090b; margin: 0; font-family: 'Lato', sans-serif;">
 OllaVPN Free gives remote workers a genuinely free, no-credit-card VPN for their home office setup, forever. You get 10 Mbps, unlimited data, access to every country in our network, and we never ask for a card, an email, or sell your data. It’s funded entirely by our optional $2/month Plus plan, not by monetizing your work traffic.
 Your home office connection gets post-quantum-ready encryption, a kill switch that’s on by default, in-tunnel DNS, and a strict no-logs policy - the same baseline protections a company-issued VPN would give you, without waiting on IT to provision one. For video calls, cloud documents, client portals, and everyday remote-work traffic, that’s a genuinely solid setup.
 While 10 Mbps comfortably covers video calls, cloud storage sync, and remote-desktop sessions for one person, if you’re regularly moving large files, running multiple simultaneous connections across a household, or need consistently low latency for real-time collaboration tools, OllaVPN Plus offers 10 Gbps across five devices for $2 a month - with zero pressure to upgrade if the free tier already does the job.
@@ -18,36 +18,36 @@ While 10 Mbps comfortably covers video calls, cloud storage sync, and remote-des
 </section>
 
 <section id="key-takeaways" class="article-takeaways-box">
-<h3 style="font-size: 1.3rem; font-weight: 800; color: #323652; margin: 0 0 16px 0; font-family: var(--font), 'Lato', sans-serif;">Key Takeaways</h3>
+<h3 style="font-size: 1.18rem; font-weight: 800; color: #323652; margin: 0 0 16px 0; font-family: 'Lato', sans-serif;">Key Takeaways</h3>
 <ul class="takeaways-list-24obs">
 <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
         <strong style="color: #0F172A; font-weight: 800;">What does a Truly Free VPN for Remote Work Actually Mean?:</strong> When most “free VPN” listings say free, they usually mean one of three things: free for a trial period that quietly becomes a subscription, free with a data cap so small it’s basically unusable after your first video call, or free because the company funds itself by selling your browsing data to advertisers.
       </div>
     </li><li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
         <strong style="color: #0F172A; font-weight: 800;">What should Any Honest Free VPN Give a Home Office Setup?:</strong> When most “free VPN” listings say free, they usually mean one of three things: free for a trial period that quietly becomes a subscription, free with a data cap so small it’s basically unusable after your first video call, or free because the company funds itself by selling your browsing data to advertisers.
       </div>
     </li><li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
         <strong style="color: #0F172A; font-weight: 800;">What does OllaVPN Free Give You Specifically for Remote Work?:</strong> When most “free VPN” listings say free, they usually mean one of three things: free for a trial period that quietly becomes a subscription, free with a data cap so small it’s basically unusable after your first video call, or free because the company funds itself by selling your browsing data to advertisers.
       </div>
     </li><li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
         <strong style="color: #0F172A; font-weight: 800;">How does OllaVPN Compare to Other Free VPNs for Remote Work?:</strong> When most “free VPN” listings say free, they usually mean one of three things: free for a trial period that quietly becomes a subscription, free with a data cap so small it’s basically unusable after your first video call, or free because the company funds itself by selling your browsing data to advertisers.
       </div>
     </li><li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
         <strong style="color: #0F172A; font-weight: 800;">How do You Set Up a Secure Home Office VPN?:</strong> When most “free VPN” listings say free, they usually mean one of three things: free for a trial period that quietly becomes a subscription, free with a data cap so small it’s basically unusable after your first video call, or free because the company funds itself by selling your browsing data to advertisers.
       </div>
     </li><li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
         <strong style="color: #0F172A; font-weight: 800;">What else Belongs in a Secure Home Office Setup Besides a VPN?:</strong> When most “free VPN” listings say free, they usually mean one of three things: free for a trial period that quietly becomes a subscription, free with a data cap so small it’s basically unusable after your first video call, or free because the company funds itself by selling your browsing data to advertisers.
       </div>
     </li>
@@ -186,95 +186,95 @@ Any VPN whose only protocol option is PPTP. Excluded outright. PPTP has known, p
 </div>
 
 <section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 16px; padding: 26px 30px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
-  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 16px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
+  <h2 style="font-size: 1.625rem; font-weight: 800; margin: 0 0 16px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
   <div style="display: flex; flex-direction: column; gap: 10px;">
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Is a free VPN safe to use for remote work?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       It’s safe if the provider passes the fundamentals: a transparent funding model, an audited no-logs policy, a kill switch on by default, DNS/IPv6/WebRTC leak protection, and modern encryption. A free VPN funded by selling user data or with no clear funding source at all is riskier for work traffic than not using a VPN, since it inserts an untrusted party directly into your connection.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Does OllaVPN require a credit card for the free plan?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       No. OllaVPN Free requires no credit card, no email address, and no-account creation to get started. You download the app and connect. The free tier is funded entirely by optional $2/month Plus subscribers, not by requiring payment details from free users.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Will a free VPN slow down my video calls?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       Not meaningfully for typical use. OllaVPN’s free tier caps speed at 10 Mbps, which comfortably covers HD video calls on Zoom, Teams, or Google Meet, cloud document sync, and most remote-desktop sessions. You’d only notice the cap during large file transfers or if several bandwidth-heavy tasks were running at once on the same connection.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Can I use a free VPN alongside my company’s corporate VPN?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       Usually not cleanly at the same time - most operating systems route through one VPN tunnel at once, so running two simultaneously can cause conflicts. If your employer requires a specific VPN for certain internal systems, check with IT about whether a personal VPN can run alongside it, or use your personal VPN to protect everything else on your home network instead.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Does a personal VPN satisfy my employer’s security policy?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       Not automatically. Many employers have specific requirements - approved providers, particular protocols, device management enrollment - that a personal VPN doesn’t meet on its own. A personal VPN is a genuinely useful layer for your home network, but confirm with your employer whether it supplements or substitutes for their actual policy.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>What’s the difference between a free and paid VPN plan for remote work?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       The core security protections - encryption, kill switch, leak protection - are identical across OllaVPN’s free and paid tiers. The paid Plus plan adds speed (10 Gbps instead of 10 Mbps) and covers up to five devices, which matters for large file transfers or multiple household members working from home simultaneously, not for security itself.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>How does a VPN protect my home office if my router is already secure?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       A secure router protects your local network; a VPN protects your traffic once it leaves that network and travels across the internet, including through your ISP and any network in between. Both matter together - a VPN doesn’t secure an insecure router, and a secure router doesn’t encrypt traffic to a client’s server across the internet.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Why does post-quantum encryption matter for remote work specifically?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       Work data like contracts, source code, and financial records often stays sensitive for years, which makes it a more relevant target for “harvest now, decrypt later” attacks than typical browsing traffic. Post-quantum-ready encryption protects against traffic captured today being decrypted once quantum computers mature, years from now.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Will OllaVPN’s free plan work for freelancers handling client confidential data?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       Yes, with the same considerations as any remote worker: check your specific clients’ contractual security requirements, since some client agreements specify approved tools or encryption standards. For general confidentiality on a home connection, OllaVPN’s free tier meets the security fundamentals - audited-grade encryption, kill switch, no logs - that most freelance confidentiality clauses are actually asking for.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>How do I verify my VPN is actually protecting my work traffic?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       Connect the VPN, then run a DNS leak test and a WebRTC leak test - both free, both under a minute. Results should show the VPN provider’s resolver and exit IP, not your own. Then start a continuous ping and disable your network adapter to confirm the kill switch stops traffic immediately rather than failing open.
     </p>
   </details>
@@ -282,24 +282,24 @@ Any VPN whose only protocol option is PPTP. Excluded outright. PPTP has known, p
 </section>
 
 <section id="wrapping-it-up" class="wrap-up-box" style="background: #FFF5F5 !important; border: 1.5px solid rgba(218, 41, 28, 0.25) !important; border-left: 5px solid #DA291C !important; border-radius: 16px !important; padding: 26px 30px !important; margin-bottom: 24px !important; width: 100% !important; box-shadow: 0 4px 20px rgba(218, 41, 28, 0.05) !important; box-sizing: border-box !important;">
-  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
-  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 12px;">
+  <h2 style="font-size: 1.625rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
+  <p style="font-size: 0.925rem; line-height: 1.75; color: #1E293B; margin-bottom: 12px;">
     Choosing the right solution for <strong>Free VPN for Remote Work 2026: Secure Home Office Setup (No Credit Card)</strong> requires balancing speed, genuine security, and uncompromised privacy.
   </p>
-  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
+  <p style="font-size: 0.925rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
     With OllaVPN, you benefit from lightweight WireGuard tunneling, zero bandwidth caps, default-on kill switch defense, and built-in post-quantum cryptography to ensure your connection remains lightning-fast and private on every network.
   </p>
 </section>
 
 <section id="download" class="download-section-box" style="background: linear-gradient(135deg, #ffffff 0%, #FFF8F8 100%); border: 1.5px solid rgba(218, 41, 28, 0.2); border-radius: 18px; padding: 32px 28px; margin-bottom: 24px; text-align: center; width: 100%; box-shadow: 0 6px 24px rgba(218, 41, 28, 0.06); box-sizing: border-box;">
-  <h2 style="font-size: 2rem; font-weight: 800; color: #0F172A; margin: 0 0 10px 0; border: none !important; padding-bottom: 0 !important;">Protect Your Connection with OllaVPN</h2>
-  <p style="font-size: 1.05rem; color: #475569; max-width: 650px; margin: 0 auto 18px auto; line-height: 1.65;">
+  <h2 style="font-size: 1.875rem; font-weight: 800; color: #0F172A; margin: 0 0 10px 0; border: none !important; padding-bottom: 0 !important;">Protect Your Connection with OllaVPN</h2>
+  <p style="font-size: 0.925rem; color: #475569; max-width: 650px; margin: 0 auto 18px auto; line-height: 1.65;">
     Enjoy unlimited data, next-generation WireGuard encryption, and audited zero activity logs on Android, iOS, Windows, and macOS.
   </p>
-  <a href="https://ollavpn.com/apps.html" target="_blank" rel="noopener" class="btn-primary" style="display: inline-block; background: #DA291C !important; color: #FFFFFF !important; font-size: 1.08rem; font-weight: 800; padding: 14px 36px; border-radius: 10px; text-decoration: none !important; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.25); transition: all 0.2s ease;">
+  <a href="https://ollavpn.com/apps.html" target="_blank" rel="noopener" class="btn-primary" style="display: inline-block; background: #DA291C !important; color: #FFFFFF !important; font-size: 0.95rem; font-weight: 800; padding: 14px 36px; border-radius: 10px; text-decoration: none !important; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.25); transition: all 0.2s ease;">
     Download OllaVPN Free &rarr;
   </a>
-  <div style="margin-top: 14px; font-size: 0.85rem; color: #64748b; font-weight: 600;">
+  <div style="margin-top: 14px; font-size: 0.75rem; color: #64748b; font-weight: 600;">
     Available for iOS, Android, Windows &amp; macOS &bull; Instant Setup
   </div>
 </section>

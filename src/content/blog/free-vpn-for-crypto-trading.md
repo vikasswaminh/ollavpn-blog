@@ -10,54 +10,54 @@ pillar: false
 ---
 
 <section id="tldr" class="article-tldr-box">
-<h3 style="font-size: 1.15rem; font-weight: 800; color: #323652; margin: 0 0 6px 0; font-family: var(--font), 'Lato', sans-serif;">TL;DR — The Short Answer</h3>
-<p style="font-size: 1.05rem; line-height: 1.7; color: #09090b; margin: 0 0 8px 0; font-family: var(--font), 'Lato', sans-serif;">
+<h3 style="font-size: 1.03rem; font-weight: 800; color: #323652; margin: 0 0 6px 0; font-family: 'Lato', sans-serif;">TL;DR — The Short Answer</h3>
+<p style="font-size: 0.925rem; line-height: 1.7; color: #09090b; margin: 0 0 8px 0; font-family: 'Lato', sans-serif;">
 A VPN encrypts the connection between your device and the exchange or wallet interface you're using, and hides your IP address from anyone watching that connection. That's genuinely useful protection against network-level attacks like traffic interception on public Wi-Fi, and against your ISP or a local network operator seeing exactly which exchange you're logging into and when.
 </p>
-<p style="font-size: 1.05rem; line-height: 1.7; color: #09090b; margin: 0 0 8px 0; font-family: var(--font), 'Lato', sans-serif;">
+<p style="font-size: 0.925rem; line-height: 1.7; color: #09090b; margin: 0 0 8px 0; font-family: 'Lato', sans-serif;">
 What a VPN does not do is protect your seed phrase, your private keys, your exchange account password, or you personally from a convincing phishing site. Those risks live outside the network layer - and no amount of encryption on your connection changes that.
 </p>
-<p style="font-size: 1.05rem; line-height: 1.7; color: #09090b; margin: 0 0 8px 0; font-family: var(--font), 'Lato', sans-serif;">
+<p style="font-size: 0.925rem; line-height: 1.7; color: #09090b; margin: 0 0 8px 0; font-family: 'Lato', sans-serif;">
 OllaVPN Free gives you the network-layer part done properly: 10 Mbps, every country in our network, post-quantum-ready encryption, a kill switch on by default, in-tunnel DNS, and a strict no-logs policy - no credit card, no email required. If you're trading or checking a portfolio from a cafe, an airport, or any network you don't fully control, that's a real, meaningful layer of protection. This guide also walks through the other layers that matter, and why.
 </p>
 </section>
 
 <section id="key-takeaways" class="article-takeaways-box">
-<h3 style="font-size: 1.3rem; font-weight: 800; color: #323652; margin: 0 0 16px 0; font-family: var(--font), 'Lato', sans-serif;">Key Takeaways</h3>
+<h3 style="font-size: 1.18rem; font-weight: 800; color: #323652; margin: 0 0 16px 0; font-family: 'Lato', sans-serif;">Key Takeaways</h3>
 <ul class="takeaways-list-24obs">
 <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
         <strong style="color: #0F172A; font-weight: 800;">What does a VPN actually protect for crypto trading?:</strong> A VPN encrypts the connection between your device and the exchange, wallet interface, or trading platform you're using - and it swaps your visible IP address for the VPN server's. That helps protect you from network-level interception and hides which platform you're connecting to from anyone watching your local network or ISP.
       </div>
     </li>
 <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
         <strong style="color: #0F172A; font-weight: 800;">What network attacks specifically target crypto traders?:</strong> The most relevant network-level threats for crypto traders are man-in-the-middle interception on public Wi-Fi, DNS hijacking that redirects you to fake exchange or wallet sites, and traffic analysis that identifies you as a crypto holder worth targeting. A properly configured VPN meaningfully disrupts all three.
       </div>
     </li>
 <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
         <strong style="color: #0F172A; font-weight: 800;">Does a VPN protect your wallet's private keys or seed phrase?:</strong> No. A VPN encrypts your network connection. It has no visibility into or control over your private keys, seed phrase, or wallet software - all of which are protected (or exposed) by mechanisms that have nothing to do with your network traffic.
       </div>
     </li>
 <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
         <strong style="color: #0F172A; font-weight: 800;">What should you expect from any honest free VPN for crypto use?:</strong> An honest free VPN for crypto trading should have a transparent, explainable business model, a specific and verifiable no-logs policy, in-tunnel DNS handling to prevent redirection attacks, and a free tier that's actually usable - not a crippled trial that disappears the moment you need it.
       </div>
     </li>
 <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
         <strong style="color: #0F172A; font-weight: 800;">What does OllaVPN Free specifically give crypto traders?:</strong> OllaVPN Free gives you 10 Mbps speeds, access to every country in our network, the WireGuard protocol, post-quantum-ready encryption, a kill switch on by default, in-tunnel DNS handling, and four-layer peer isolation - with no credit card, no email, and no ads required.
       </div>
     </li>
 <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
         <strong style="color: #0F172A; font-weight: 800;">Does using a VPN violate exchange terms of service?:</strong> It depends on the specific exchange and jurisdiction. Some exchanges explicitly prohibit VPN use to access their platform from restricted regions. Others have no such restriction. Either way, check your exchange's terms directly instead of assuming.
       </div>
     </li>
@@ -69,8 +69,8 @@ OllaVPN Free gives you the network-layer part done properly: 10 Mbps, every coun
 ## 1. What does a VPN actually protect for crypto trading?
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 15.5px; line-height: 1.65; color: #334155;">A VPN encrypts the connection between your device and the exchange, wallet interface, or trading platform you're using - and it swaps your visible IP address for the VPN server's. That helps protect you from network-level interception and hides which platform you're connecting to from anyone watching your local network or ISP.</p>
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A VPN encrypts the connection between your device and the exchange, wallet interface, or trading platform you're using - and it swaps your visible IP address for the VPN server's. That helps protect you from network-level interception and hides which platform you're connecting to from anyone watching your local network or ISP.</p>
 </div>
 
 This is worth being precise about, because "protect your wallet" can mean different things depending on who's saying it. Only one of those meanings is actually what a VPN does.
@@ -84,8 +84,8 @@ Why this matters more for crypto than for a lot of other browsing is simple: kno
 ## 2. What network attacks specifically target crypto traders?
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 15.5px; line-height: 1.65; color: #334155;">The most relevant network-level threats for crypto traders are man-in-the-middle interception on public Wi-Fi, DNS hijacking that redirects you to fake exchange or wallet sites, and traffic analysis that identifies you as a crypto holder worth targeting. A properly configured VPN meaningfully disrupts all three.</p>
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The most relevant network-level threats for crypto traders are man-in-the-middle interception on public Wi-Fi, DNS hijacking that redirects you to fake exchange or wallet sites, and traffic analysis that identifies you as a crypto holder worth targeting. A properly configured VPN meaningfully disrupts all three.</p>
 </div>
 
 Man-in-the-middle interception is the most direct threat on shared or public networks. In some situations, an attacker on the same coffee-shop or airport Wi-Fi can intercept traffic between your device and the exchange's servers. That can expose session details or create openings for more advanced attacks. A VPN's encryption closes this gap by scrambling your traffic before it reaches the shared network hardware.
@@ -99,8 +99,8 @@ These aren't the only risks crypto traders face - they're just the network-layer
 ## 3. Does a VPN protect your wallet's private keys or seed phrase?
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 15.5px; line-height: 1.65; color: #334155;">No. A VPN encrypts your network connection. It has no visibility into or control over your private keys, seed phrase, or wallet software - all of which are protected (or exposed) by mechanisms that have nothing to do with your network traffic.</p>
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">No. A VPN encrypts your network connection. It has no visibility into or control over your private keys, seed phrase, or wallet software - all of which are protected (or exposed) by mechanisms that have nothing to do with your network traffic.</p>
 </div>
 
 This boundary is the single most important one in this entire guide, because getting it wrong can have real financial consequences.
@@ -114,8 +114,8 @@ The plain truth: the highest-value thing you can do to protect crypto holdings i
 ## 4. What should you expect from any honest free VPN for crypto use?
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 15.5px; line-height: 1.65; color: #334155;">An honest free VPN for crypto trading should have a transparent, explainable business model, a specific and verifiable no-logs policy, in-tunnel DNS handling to prevent redirection attacks, and a free tier that's actually usable - not a crippled trial that disappears the moment you need it.</p>
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">An honest free VPN for crypto trading should have a transparent, explainable business model, a specific and verifiable no-logs policy, in-tunnel DNS handling to prevent redirection attacks, and a free tier that's actually usable - not a crippled trial that disappears the moment you need it.</p>
 </div>
 
 Before naming specifics, here's the checklist worth applying to any free VPN you're considering for this use case.
@@ -135,8 +135,8 @@ Every claim we make about OllaVPN in this guide is measured against this checkli
 ## 5. What does OllaVPN Free specifically give crypto traders?
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 15.5px; line-height: 1.65; color: #334155;">OllaVPN Free gives you 10 Mbps speeds, access to every country in our network, the WireGuard protocol, post-quantum-ready encryption, a kill switch on by default, in-tunnel DNS handling, and four-layer peer isolation - with no credit card, no email, and no ads required.</p>
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">OllaVPN Free gives you 10 Mbps speeds, access to every country in our network, the WireGuard protocol, post-quantum-ready encryption, a kill switch on by default, in-tunnel DNS handling, and four-layer peer isolation - with no credit card, no email, and no ads required.</p>
 </div>
 
 You get the full core security stack at no cost, indefinitely. We don't ask for a credit card, email address, or personal information to use the free plan. There are no ads in the app, and we don't sell your data - the free tier is funded entirely by OllaVPN Plus subscribers, covered later.
@@ -150,8 +150,8 @@ Every free user gets four-layer peer isolation, segmenting your connection from 
 ## 6. Does using a VPN violate exchange terms of service?
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 15.5px; line-height: 1.65; color: #334155;">It depends on the specific exchange and jurisdiction. Some exchanges explicitly prohibit VPN use to access their platform from restricted regions. Others have no such restriction. Either way, check your exchange's terms directly instead of assuming.</p>
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">It depends on the specific exchange and jurisdiction. Some exchanges explicitly prohibit VPN use to access their platform from restricted regions. Others have no such restriction. Either way, check your exchange's terms directly instead of assuming.</p>
 </div>
 
 This matters because it's not about VPN technology. It's about the exchange's own policies.
@@ -165,8 +165,8 @@ Practical takeaway: read your specific exchange's terms of service before using 
 ## 7. How does a VPN affect exchange security features like geo-locking?
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 15.5px; line-height: 1.65; color: #334155;">Many exchanges use your IP address's apparent location as one signal in their fraud detection and account security systems. Connecting through a VPN - especially one with a server in a different country than usual - can sometimes trigger extra identity verification steps or temporary account holds, even when nothing is actually wrong.</p>
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Many exchanges use your IP address's apparent location as one signal in their fraud detection and account security systems. Connecting through a VPN - especially one with a server in a different country than usual - can sometimes trigger extra identity verification steps or temporary account holds, even when nothing is actually wrong.</p>
 </div>
 
 This is a practical friction point worth knowing about in advance, because it can feel alarming the first time you see it mid-transaction.
@@ -178,8 +178,8 @@ This isn't a flaw in the VPN or the exchange. It's the security system doing its
 ## 8. How do you set up a free VPN for crypto trading?
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 15.5px; line-height: 1.65; color: #334155;">Download the app, connect to a server in your own country before opening your exchange or wallet interface, and verify the connection is active before entering any credentials. It's straightforward and usually takes under two minutes.</p>
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Download the app, connect to a server in your own country before opening your exchange or wallet interface, and verify the connection is active before entering any credentials. It's straightforward and usually takes under two minutes.</p>
 </div>
 
 <ol style="margin: 16px 0 20px 20px; padding-left: 10px; line-height: 1.7; color: #334155;">
@@ -191,8 +191,8 @@ That's the whole process. It's the same spirit as setting up a VPN for any other
 ## 9. Is 10 Mbps enough for active trading and exchange use?
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 15.5px; line-height: 1.65; color: #334155;">Yes, comfortably. Exchange interfaces, portfolio dashboards, and order placement are lightweight web and app traffic. They use a small fraction of a 10 Mbps connection. Speed is rarely the limiting factor for trading itself - execution latency (a different concept than bandwidth) matters more for very active, time-sensitive trading.</p>
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Yes, comfortably. Exchange interfaces, portfolio dashboards, and order placement are lightweight web and app traffic. They use a small fraction of a 10 Mbps connection. Speed is rarely the limiting factor for trading itself - execution latency (a different concept than bandwidth) matters more for very active, time-sensitive trading.</p>
 </div>
 
 It helps to be specific about what "active trading" actually demands from a network connection, because the number that matters most here isn't always the one people assume.
@@ -210,8 +210,8 @@ For genuinely latency-sensitive, high-frequency trading, the VPN's added hop is 
 ## 10. What common mistakes do crypto traders make with VPNs?
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 15.5px; line-height: 1.65; color: #334155;">The most common mistake is assuming a VPN provides comprehensive protection for crypto holdings.</p>
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The most common mistake is assuming a VPN provides comprehensive protection for crypto holdings.</p>
 </div>
 
 In reality, it addresses only the network layer. Seed phrase security, phishing awareness, and exchange account hygiene are separate responsibilities - and a VPN has no bearing on them.
@@ -233,8 +233,8 @@ OllaVPN addresses the network-layer piece directly: in-tunnel DNS handling, a ki
 ## 11. When does a paid plan make more sense for frequent traders?
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 15.5px; line-height: 1.65; color: #334155;">A paid plan makes sense if you're trading very actively and want to minimize added latency, or if you want to cover multiple devices under one account.</p>
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A paid plan makes sense if you're trading very actively and want to minimize added latency, or if you want to cover multiple devices under one account.</p>
 </div>
 
 The free plan is designed to be genuinely sufficient for most people's regular crypto activity, not to push you into paying through frustration. Still, a couple scenarios make upgrading a real improvement.
@@ -250,8 +250,8 @@ Outside those situations, there's genuinely no pressure to upgrade. The free tie
 ## 12. Why does post-quantum-ready encryption matter for crypto specifically?
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 15.5px; line-height: 1.65; color: #334155;">Post-quantum-ready encryption protects the VPN handshake against future decryption of traffic recorded today. That's directly relevant to crypto activity, because financial account access patterns, exchange usage history, and the fact that a specific person holds crypto assets are exactly the kind of long-lived, sensitive information that "harvest now, decrypt later" threats target.</p>
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Post-quantum-ready encryption protects the VPN handshake against future decryption of traffic recorded today. That's directly relevant to crypto activity, because financial account access patterns, exchange usage history, and the fact that a specific person holds crypto assets are exactly the kind of long-lived, sensitive information that "harvest now, decrypt later" threats target.</p>
 </div>
 
 Crypto holders are, in a fairly literal sense, an unusually well-defined target category for this kind of long-horizon risk.
@@ -271,8 +271,8 @@ There's a small setup cost in extra milliseconds during setup - not noticeable d
 ## 13. How does a "no-logs" claim actually get verified?
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 15.5px; line-height: 1.65; color: #334155;">A no-logs claim is best verified through independent third-party security audits, a specific and named list of what isn't collected, and - where possible - direct technical testing from your own device, rather than trusting marketing copy alone.</p>
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A no-logs claim is best verified through independent third-party security audits, a specific and named list of what isn't collected, and - where possible - direct technical testing from your own device, rather than trusting marketing copy alone.</p>
 </div>
 
 This matters more than usual for crypto use because a VPN provider with poor logging practices would be sitting on exactly the kind of identifying financial-activity metadata that's supposed to be hidden. That would be a strange trade if the VPN itself became the point of exposure.
@@ -292,8 +292,8 @@ because this use case depends on the provider actually meaning what it says.
 ## 14. How can a VPN afford to be truly free?
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 15.5px; line-height: 1.65; color: #334155;">A truly free VPN tier is sustainable when it's funded by a separate paying customer base, rather than advertising or data monetization.</p>
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A truly free VPN tier is sustainable when it's funded by a separate paying customer base, rather than advertising or data monetization.</p>
 </div>
 
 OllaVPN's free plan is funded entirely by OllaVPN Plus subscribers.
@@ -341,96 +341,96 @@ Trial-disguised-as-free VPN listings. Excluded as a category. If installing the 
 </div>
 
 <section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 18px; padding: 28px 32px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 20px rgba(0,0,0,0.03); box-sizing: border-box;">
-  <h2 style="font-size: 1.85rem; font-weight: 800; color: #0F172A; margin: 0 0 8px 0; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
-  <p style="font-size: 1.05rem; color: #64748B; margin: 0 0 20px 0;">Essential answers to common questions, technical nuances, and setup best practices.</p>
+  <h2 style="font-size: 1.72rem; font-weight: 800; color: #0F172A; margin: 0 0 8px 0; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
+  <p style="font-size: 0.925rem; color: #64748B; margin: 0 0 20px 0;">Essential answers to common questions, technical nuances, and setup best practices.</p>
   <div class="faq-accordion-group" style="display: flex; flex-direction: column; gap: 12px;">
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Does a VPN protect my crypto wallet from being hacked?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       Partially, and only at the network layer. A VPN encrypts your connection and hides your IP address, protecting against network-level attacks like traffic interception and DNS hijacking. It does not protect your private keys, seed phrase, or exchange password, and it can't stop a phishing site from tricking you into handing over sensitive information directly.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Can a VPN protect my seed phrase?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       No. A VPN has no visibility into or control over how your seed phrase is stored or used. Keeping your seed phrase offline, physically written down, and never entered into any website or file is the actual protection for this specific risk - a VPN doesn't touch it at all.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Will using a VPN get my exchange account flagged or suspended?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       It can trigger additional identity verification if your apparent location suddenly changes, since many exchanges use IP-derived location as a fraud-detection signal. Using a VPN to circumvent regional restrictions specifically can violate some exchanges' terms of service, so it's worth checking your exchange's policy directly.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Is it safe to trade crypto on public Wi-Fi with a VPN?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       A VPN meaningfully improves safety on public Wi-Fi by encrypting your connection against interception, which is a real and common attack surface on shared networks. It doesn't address other risks like phishing or device-level malware, so it's one layer of protection rather than a complete solution for trading on an untrusted network.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Does a free VPN work as well as a paid one for crypto trading?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       It depends on the specific provider. Some free VPNs use the same encryption stack as their paid tier and are funded by paying subscribers, in which case security doesn't differ meaningfully. Others fund themselves through data sales or weaker infrastructure - a particularly poor trade-off for a tool meant to protect financial activity.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Should I connect to a VPN server in a different country to access a restricted exchange?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       This depends entirely on the specific exchange's terms of service, which sometimes explicitly prohibit using a VPN to circumvent regional access restrictions. Doing so can result in account suspension or frozen assets, so it's worth reading your exchange's terms directly before doing this rather than assuming it's a low-risk workaround.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Does a VPN slow down crypto trading?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       A well-built VPN adds a small amount of latency, generally more relevant to high-frequency or very active trading than to typical retail use like checking balances or placing occasional orders. Choosing a VPN server geographically close to you minimizes this added delay.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>What's more important for crypto security: a VPN or a hardware wallet?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       They protect different things and aren't substitutes for each other. A hardware wallet keeps your private keys isolated from your internet-connected device, protecting against a much more severe category of risk than a VPN addresses. A VPN protects your network connection. Serious crypto security involves both, alongside strong account hygiene and phishing awareness.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Can exchanges see that I'm using a VPN?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       Often, yes. Many exchanges can detect that a connection is coming from a known VPN server IP range. That's part of why some flag VPN use with additional verification steps even when nothing is wrong, and why others explicitly restrict VPN use in their terms of service for certain purposes.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
       <span>Is OllaVPN's free plan safe enough for checking my crypto portfolio?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
+      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
+    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
       Yes. The security stack - WireGuard, the post-quantum-ready hybrid handshake, the default-on kill switch, in-tunnel DNS, and peer isolation - is identical on the free and paid plans. The only differences are speed and the number of devices covered under one account.
     </p>
   </details>
@@ -438,24 +438,24 @@ Trial-disguised-as-free VPN listings. Excluded as a category. If installing the 
 </section>
 
 <section id="wrapping-it-up" class="wrap-up-box" style="background: #FFF5F5 !important; border: 1.5px solid rgba(218, 41, 28, 0.25) !important; border-left: 5px solid #DA291C !important; border-radius: 16px !important; padding: 26px 30px !important; margin-bottom: 24px !important; width: 100% !important; box-shadow: 0 4px 20px rgba(218, 41, 28, 0.05) !important; box-sizing: border-box !important;">
-  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
-  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 12px;">
+  <h2 style="font-size: 1.625rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
+  <p style="font-size: 0.925rem; line-height: 1.75; color: #1E293B; margin-bottom: 12px;">
     Choosing the right VPN solution for <strong>Free VPN for Crypto Trading 2026: Protect Your Wallet From Network Attacks</strong> requires balancing speed, genuine security, and uncompromised privacy.
   </p>
-  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
+  <p style="font-size: 0.925rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
     With OllaVPN, you benefit from lightweight WireGuard tunneling, zero bandwidth caps, default-on kill switch defense, and built-in post-quantum cryptography to ensure your connection remains lightning-fast and private on every network.
   </p>
 </section>
 
 <section id="download" class="download-section-box" style="background: linear-gradient(135deg, #ffffff 0%, #FFF8F8 100%); border: 1.5px solid rgba(218, 41, 28, 0.2); border-radius: 18px; padding: 32px 28px; margin-bottom: 24px; text-align: center; width: 100%; box-shadow: 0 6px 24px rgba(218, 41, 28, 0.06); box-sizing: border-box;">
-  <h2 style="font-size: 2rem; font-weight: 800; color: #0F172A; margin: 0 0 10px 0; border: none !important; padding-bottom: 0 !important;">Protect Your Connection with OllaVPN</h2>
-  <p style="font-size: 1.05rem; color: #475569; max-width: 650px; margin: 0 auto 18px auto; line-height: 1.65;">
+  <h2 style="font-size: 1.875rem; font-weight: 800; color: #0F172A; margin: 0 0 10px 0; border: none !important; padding-bottom: 0 !important;">Protect Your Connection with OllaVPN</h2>
+  <p style="font-size: 0.925rem; color: #475569; max-width: 650px; margin: 0 auto 18px auto; line-height: 1.65;">
     Enjoy unlimited data, next-generation WireGuard encryption, and audited zero activity logs on Android, iOS, Windows, and macOS.
   </p>
-  <a href="https://ollavpn.com/apps.html" target="_blank" rel="noopener" class="btn-primary" style="display: inline-block; background: #DA291C !important; color: #FFFFFF !important; font-size: 1.08rem; font-weight: 800; padding: 14px 36px; border-radius: 10px; text-decoration: none !important; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.25); transition: all 0.2s ease;">
+  <a href="https://ollavpn.com/apps.html" target="_blank" rel="noopener" class="btn-primary" style="display: inline-block; background: #DA291C !important; color: #FFFFFF !important; font-size: 0.95rem; font-weight: 800; padding: 14px 36px; border-radius: 10px; text-decoration: none !important; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.25); transition: all 0.2s ease;">
     Download OllaVPN Free &rarr;
   </a>
-  <div style="margin-top: 14px; font-size: 0.85rem; color: #64748b; font-weight: 600;">
+  <div style="margin-top: 14px; font-size: 0.75rem; color: #64748b; font-weight: 600;">
     Available for iOS, Android, Windows &amp; macOS &bull; Instant Setup
   </div>
 </section>
