@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Five Eyes, Nine Eyes, and Fourteen Eyes Explained (2026 Guide)'
 description: 'The Five Eyes is an intelligence-sharing alliance between the United States, United Kingdom, Canada, Australia, and New Zealand, formalized by the 1946 UKUSA Agreement. The Nine Eyes adds Denmark, France, the Netherlands...'
 pubDate: 2026-05-16
@@ -7,7 +7,7 @@ tags: ['privacy-security']
 ---
 
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
-  <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR — The Short Answer</h3>
+  <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
     The Five Eyes is an intelligence-sharing alliance between the United States, United Kingdom, Canada, Australia, and New Zealand, formalized by the 1946 UKUSA Agreement. The Nine Eyes adds Denmark, France, the Netherlands... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
   </p>
@@ -53,7 +53,7 @@ tags: ['privacy-security']
 
 The plain-English guide to the intelligence-sharing alliances that come up in every serious VPN privacy conversation. What they actually are, what they actually do, what it means for you as a user  -  and the parts that VPN marketing tends to overstate.
 
-## 1. Why this comes up in every VPN conversation
+## Why this comes up in every VPN conversation
 
 QUICK ANSWER The Five Eyes and its extensions are intelligence-sharing alliances between Western democracies. They come up in VPN conversations because the country where a VPN provider is legally based determines what government data requests the company could face, and what intelligence sharing those requests could feed into.
 
@@ -61,7 +61,7 @@ The simple reason this topic comes up so often: **a VPN provider is subject to t
 
 This is why "where is the VPN based?" is a standard question in any thoughtful privacy comparison. It's also why several of the most respected privacy VPNs are deliberately based outside these alliances: ProtonVPN (Switzerland), NordVPN (Panama), ExpressVPN (British Virgin Islands), Mullvad (Sweden  -  inside Fourteen Eyes but with a deliberately minimal-data posture). You can read more about how this plays out in practice in our [Mullvad vs ProtonVPN comparison](mullvad-vs-protonvpn.html).
 
-## 2. What the Five Eyes is
+## What the Five Eyes is
 
 QUICK ANSWER The Five Eyes (FVEY) is an intelligence-sharing alliance comprising the United States, United Kingdom, Canada, Australia, and New Zealand. It was formalized by the 1946 UKUSA Agreement and is the oldest and most integrated of the Eyes alliances.
 
@@ -77,7 +77,7 @@ It originated as the **BRUSA Agreement** between the US and UK in 1943, during t
 
 The Five Eyes is the most formal and most integrated of the Eyes alliances. Cooperation between member intelligence agencies  -  the NSA in the US, GCHQ in the UK, CSE in Canada, ASD in Australia, and GCSB in New Zealand  -  is deep, ongoing, and covers signals intelligence (SIGINT), satellite intelligence, and aspects of human intelligence as well.
 
-## 3. What the Nine Eyes is
+## What the Nine Eyes is
 
 QUICK ANSWER The Nine Eyes is an expanded version of the Five Eyes that adds Denmark, France, the Netherlands, and Norway. It is less formal than the Five Eyes core and represents a wider European cooperation framework.
 
@@ -90,7 +90,7 @@ The **Nine Eyes** extends the Five Eyes by adding four more European countries:
 
 The Nine Eyes is less formally structured than the Five Eyes core. It's better understood as a working level of cooperation  -  a circle of countries that share intelligence on specific topics, rather than a single unified treaty arrangement. The grouping became publicly known largely through documents disclosed by Edward Snowden in 2013.
 
-## 4. What the Fourteen Eyes is
+## What the Fourteen Eyes is
 
 QUICK ANSWER The Fourteen Eyes  -  formally known as SIGINT Seniors Europe (SSEUR)  -  adds Germany, Belgium, Italy, Spain, and Sweden to the Nine Eyes countries. Cooperation has historically been focused on counterterrorism intelligence sharing.
 
@@ -104,7 +104,7 @@ The **Fourteen Eyes** is the widest of the named alliances. It adds five more co
 
 The Fourteen Eyes has a formal name: **SIGINT Seniors Europe (SSEUR)**. It was established in the late 1980s and has been particularly focused on signals-intelligence cooperation across Western Europe, including counterterrorism work after the September 11, 2001 attacks. It is the broadest of the three Eyes groupings most commonly mentioned in VPN privacy discussions.
 
-## 5. All the countries, at a glance
+## All the countries, at a glance
 
 Here's the full picture in one place. The Five Eyes is the innermost circle; each subsequent ring adds countries on top of the previous one.
 
@@ -126,7 +126,7 @@ USA · UK · Canada · Australia · NZ · Denmark · France · Netherlands · No
 
 Red highlighted countries are the new additions at each tier. The Fourteen Eyes is, in effect, a near-comprehensive map of major Western democracies.
 
-## 6. What the alliances actually do
+## What the alliances actually do
 
 QUICK ANSWER The Eyes alliances enable member governments to share signals intelligence  -  intercepted communications, metadata, and electronic surveillance data  -  with each other. They are not a single unified spying organization. Each member country operates its own intelligence services under its own laws and chooses what to share.
 
@@ -149,7 +149,7 @@ What they do _not_ do:
 
 The honest summary: the alliances are real, they matter for some user threat models, and they're nothing like the cinematic picture some VPN ads imply.
 
-## 7. A short history
+## A short history
 
 1943
 
@@ -187,7 +187,7 @@ A trove of **NSA tools is leaked** by the Shadow Brokers, further illuminating t
 
 Five Eyes cooperation expands publicly into new domains  -  particularly cybersecurity, foreign-influence operations, and cooperation with non-member partners like Japan and South Korea.
 
-## 8. Beyond Fourteen Eyes  -  the wider picture
+## Beyond Fourteen Eyes  -  the wider picture
 
 The Five Eyes, Nine Eyes, and Fourteen Eyes are the formal named tiers. The reality of international intelligence cooperation extends well beyond them.
 
@@ -198,7 +198,7 @@ The Five Eyes, Nine Eyes, and Fourteen Eyes are the formal named tiers. The real
 
 For practical purposes as a VPN user, the named alliances are still the most useful framework. The wider picture is mainly relevant if your threat model includes specific state actors and you want a very deep dive.
 
-## 9. Does this matter for VPN users?
+## Does this matter for VPN users?
 
 QUICK ANSWER It matters more than VPN marketing sometimes admits, and less than VPN marketing often implies. Jurisdiction determines what legal demands a VPN could face. But a well-implemented no-logs policy means there's little to hand over regardless of jurisdiction. The strongest privacy posture is "no logs, audited, regardless of country."
 
@@ -218,7 +218,7 @@ Several highly respected privacy-focused VPNs are based in Five or Fourteen Eyes
 
 The principle: **a provider can't disclose what it doesn't have**. That's a stronger guarantee than jurisdiction alone.
 
-## 10. Jurisdiction vs server location  -  they're not the same thing
+## Jurisdiction vs server location  -  they're not the same thing
 
 QUICK ANSWER Jurisdiction is the country where a VPN company is legally incorporated, and whose laws govern the company's obligations. Server location is the country where the physical or virtual servers are located. These are different things  -  and they affect privacy in different ways.
 
@@ -231,7 +231,7 @@ When you connect to a Switzerland-based VPN's New York server, you are routing y
 
 For users who want to be especially careful, the strongest posture combines **company jurisdiction outside Five Eyes** + **RAM-only server infrastructure regardless of location** + **audited no-logs policy** + **strong encryption**. That's belt and suspenders  -  and it's what the most privacy-conscious VPNs aim for.
 
-## 11. Five common misconceptions about the Eyes alliances
+## Five common misconceptions about the Eyes alliances
 
 Myth 1
 
@@ -263,7 +263,7 @@ Myth 5
 
 Untrue. The alliances are about _government_ intelligence cooperation. A VPN company in a Five Eyes country isn't part of the intelligence apparatus and doesn't proactively monitor users. The relevant concern is whether the company could be compelled to share data it has  -  which loops back to the no-logs question, not directly to the alliances themselves.
 
-## 12. The "privacy-friendly" jurisdictions
+## The "privacy-friendly" jurisdictions
 
 If you do want to factor jurisdiction into your VPN choice  -  and we think it's a reasonable thing to consider, just not the only thing  -  these are the jurisdictions most commonly cited as privacy-friendly for VPN providers.
 
@@ -275,7 +275,7 @@ If you do want to factor jurisdiction into your VPN choice  -  and we think it's
 
 The point isn't that other jurisdictions are bad  -  many aren't. The point is that these are jurisdictions where the legal environment tilts a little further in the user's favor by default.
 
-## 13. Your jurisdiction checklist
+## Your jurisdiction checklist
 
 If you want to evaluate a VPN's jurisdiction story honestly, here's the framework.
 
@@ -288,7 +288,7 @@ If you want to evaluate a VPN's jurisdiction story honestly, here's the framewor
 
 If a VPN passes all four, jurisdiction becomes a minor footnote. If it fails some, jurisdiction matters more.
 
-## 14. How OllaVPN thinks about jurisdiction
+## How OllaVPN thinks about jurisdiction
 
 Our position on this whole question is straightforward: **the strongest privacy posture is to have nothing worth sharing in the first place**. Jurisdiction is a meaningful factor, but it's not the primary factor  -  and the privacy industry has historically over-weighted it relative to product fundamentals.
 
@@ -316,7 +316,7 @@ Five devices on one account. Same protection, faster connection.
 
 [Try OllaVPN free](../dl/)  -  no card, no email required.
 
-## 15. A broader-context closing thought
+## A broader-context closing thought
 
 One pattern we've noticed across every privacy-and-networking topic we cover: the gap between what most users believe about a given topic and what the technical reality is keeps widening. Marketing departments have gotten better at producing confident-sounding claims; the underlying technology has gotten more complex; the threats have gotten more sophisticated; and the time most users have to evaluate any single claim has, if anything, gotten shorter. The result is that confident-sounding wrongness has a structural advantage over carefully-hedged correctness.
 
@@ -324,7 +324,7 @@ The remedy we've settled on is to publish at depth  -  long enough to cover the 
 
 If you've read this far, you're in the second group. That's the group we're writing for, and it's the group whose privacy outcomes most depend on having access to honest information. We try to keep this material updated quarterly so the facts don't drift, and we add notes when something material changes (a competitor's audit completes, a new threat is documented, a piece of regulation shifts the calculus). The [main free-VPN comparison](/best-free-vpn-2026), the [technology overview](/technology), and the [free privacy tools](/tools/) are the three pages most worth bookmarking from the OllaVPN site if you've found this guide useful.
 
-## 16. Verify and cross-reference
+## Verify and cross-reference
 
 For any claim on this page that affects a decision you're about to make, the verification path we recommend:
 
@@ -336,7 +336,7 @@ For any claim on this page that affects a decision you're about to make, the ver
 
 **Update your view when the facts update.** Privacy concerns shift, operators change, standards evolve. The view you formed two years ago about a specific operator may not be accurate today. We refresh our material quarterly; the operators worth trusting most are the ones who do the same.
 
-## 17. Why this topic matters beyond the immediate question
+## Why this topic matters beyond the immediate question
 
 The topic above sits at the intersection of several broader concerns that are worth understanding even if your immediate question has been answered:
 
@@ -346,7 +346,7 @@ The topic above sits at the intersection of several broader concerns that are wo
 
 **The user has more power than ever  -  if they use it.** Strong free privacy tools exist in every category. The question is whether the user knows about them, knows how to verify they actually work, and is willing to take the small additional steps required. We try to make the verification path as short as possible because users who can verify are users who can choose well.
 
-## 18. What to actually do about it
+## What to actually do about it
 
 If the topic above suggests you should take action, the practical next steps in priority order:
 
@@ -358,7 +358,7 @@ If the topic above suggests you should take action, the practical next steps in 
 
 **Combine layers.** No single tool covers the full threat surface. VPN + privacy-respecting browser + tracker blocker + password manager + virtual cards + careful account hygiene  -  together they're materially better than any one alone. Each layer is cheap (most are free); the compound effect is large.
 
-## 19. About this guide
+## About this guide
 
 Maintained by [Nathan Pratt](/about/team#nathan-pratt), OllaVPN's Privacy & Security Lead. Fact-checked by [Hannah Wu](/about/team#hannah-wu), Senior Security Engineer. We refresh this post quarterly so its facts, recommendations, and competitor comparisons stay accurate as the category evolves. The last full re-evaluation was 23 June 2026; the next is scheduled for September 2026.
 
@@ -366,7 +366,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
 
 ⭐ Key takeaways
 
-## 20. What to remember from this guide
+## What to remember from this guide
 
 *   Why this comes up in every VPN conversation
 *   What the Five Eyes is
@@ -375,8 +375,8 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
 *   All the countries, at a glance
 </div>
 
-<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
-  <h2 style="font-size: 1.625rem; font-weight: 800; margin: 0 0 16px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
+<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 12px 28px 24px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
+  <h2 style="font-size: 1.625rem; font-weight: 800; margin: 0 0 14px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
   <div style="display: flex; flex-direction: column;">
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">

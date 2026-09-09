@@ -1,4 +1,4 @@
----
+﻿---
 title: 'What Logs Does a VPN Keep, and What Does That Really Mean for Your Privacy?'
 description: 'When a VPN says "no logs," what does that actually mean? It''s simple: it means they don''t record anything that can identify you or your online activities. That includes your IP address, connection times, ...'
 pubDate: 2026-06-09
@@ -7,7 +7,7 @@ tags: ['privacy-security']
 ---
 
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
-  <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR — The Short Answer</h3>
+  <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
     When a VPN says no logs, what does that actually mean? Its simple: it means they dont record anything that can identify you or your online activities. That includes your IP address, connection times, ... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
   </p>
@@ -53,25 +53,25 @@ tags: ['privacy-security']
 
 You've likely heard the term "no-logs policy" thrown around a lot when it comes to VPNs. It's a major selling point, but what does it actually mean for your privacy? And, more importantly, what can a VPN \*really\* log, and what does that imply for your online security? We're going to cut through the marketing jargon and give you the straightforward, technical reality of VPN logging, what governments and ISPs can see, and how to tell if a VPN's claims are truly protecting you.
 
-## 1. What does "VPN logs" mean in plain English?
+## What does "VPN logs" mean in plain English?
 
 "VPN logs" refers to any information a VPN provider stores about your usage of their service, ranging from harmless technical data to sensitive details about your online activity.
 
 When you connect to a VPN, there's always some information exchanged between your device and the VPN server. What a VPN provider chooses to record, and for how long, is what we mean by "logs." Think of it like a phone call: the phone company always knows you called someone and for how long (that's connection data), but they don't usually record what you actually said (that would be activity data). There are generally two types of logs to consider. **Connection logs** are usually benign. This might include things like the time you connected, the amount of data transferred, or the server you used. This kind of data helps the VPN run smoothly, diagnose issues, and ensure fair use of resources. It doesn't usually reveal what you're doing online, and if it's not tied to any **personally identifiable information**, it's generally not a privacy concern. Many honest-loss-leader free VPNs, like OllaVPN, keep minimal, anonymized connection data for operational purposes, but never linked to you. The real privacy concern comes with **activity logs**. These are records of \*what\* you do while connected: the websites you visit, the apps you use, your search queries, or the files you download. This is often called "traffic logs" or "usage logs." Some ad-funded free VPNs collect this kind of sensitive data, often to build profiles for targeted advertising or even sell to third parties. They might also log your real IP address and link it to your activity, completely defeating the purpose of a VPN. At OllaVPN, we have a strict no-logs policy when it comes to any activity that could compromise your privacy. We don't want to know what you're doing, and we certainly don't record it. Even basic **metadata** that could identify you is purged.
 
-## 2. What's the actual technical reality of what a VPN \*could\* log?
+## What's the actual technical reality of what a VPN \*could\* log?
 
 A VPN server can technically record a surprising amount of information about your activity, from your connection times to the websites you visit.
 
 When you connect to any VPN, your traffic goes through their servers. Because of this, the VPN provider \*could\* technically see quite a bit. At a basic level, they can see your original \*\*IP address\*\* when you connect, the \*\*timestamps\*\* of when you connect and disconnect, and how much \*\*bandwidth\*\* you use. This is often called "connection logs" or "metadata," and even some "no-log" VPNs might keep this type of data for operational purposes, like managing server load or preventing abuse. The key is \*why\* they keep it and \*for how long\*. Beyond that, a VPN could also log the specific websites you visit. Every time you type a website into your browser, your computer sends a \*\*DNS query\*\* to translate that human-readable address (like ollavpn.com) into an IP address. If the VPN handles these DNS requests, they technically could log every site you visit. Some less scrupulous free VPNs, especially the ad-funded ones, might even log this \*\*session data\*\* to build profiles on users, which they then sell to advertisers. That's a direct betrayal of the privacy you expect from a VPN. For OllaVPN, our commitment is to collect absolutely nothing that could identify you or your activity. We don't log your original IP, we don't log timestamps, we don't log DNS queries, and we certainly don't log the content of your traffic. Our architecture, which uses the modern \*\*WireGuard\*\* protocol, is designed to minimize the data available to us in the first place, and what little operational data we do see is immediately discarded. We fund our free tier through our paid Plus subscribers, so we have no incentive to compromise your privacy by logging and selling your data.
 
-## 3. What can governments and ISPs see when you use a VPN?
+## What can governments and ISPs see when you use a VPN?
 
 When you use a VPN, your ISP and government can see that you're connected to a VPN server and how much data you're using, but they can't see your online activity or the specific websites you visit.
 
 Think of a VPN as creating a secure, encrypted tunnel from your device to a server run by us, OllaVPN. Your internet service provider (ISP) and any government agency monitoring their network can see that you've established this connection to our server. They know you're using a VPN, and they can see the IP address of that VPN server. They can also monitor the amount of data flowing through that tunnel – your traffic volume – which basically tells them how much you're using the internet, but not what you're doing with it. What they \*can't\* see is the actual content of your online activities. Because your connection is inside that encrypted tunnel, all your browsing, streaming, messaging, and downloads are scrambled. It's like sending a sealed, unbreakable package through the mail; the postal service knows a package was sent from you to our server, but they can't peek inside to see what's being delivered. This means they can't see which specific websites you're visiting, what you're searching for, or what you're saying in unencrypted communications. This distinction is key: **what's visible vs. what's hidden**. Your ISP and government can see the encrypted connection (the outer wrapper), but not the data itself (the contents). They also can't see your original IP address, as all your traffic appears to come from the IP address of our VPN server. It's also important to remember that a VPN doesn't magically encrypt everything. Services that use their own **end-to-end encryption**, like secure messaging apps, are already protected, but for everything else, a VPN adds that crucial layer of privacy at the network level, safeguarding your browsing habits and personal information from passive observation.
 
-## 4. How do VPN logging policies affect what you're protected from?
+## How do VPN logging policies affect what you're protected from?
 
 A VPN's logging policy directly determines how much anonymity and protection it can actually offer you.
 
@@ -81,7 +81,7 @@ For us, a "no-logs" policy isn't just a marketing slogan; it's a fundamental par
 
 Some VPNs might claim "no logs" but still engage in extensive **data retention**, keeping connection timestamps or bandwidth usage for weeks or months. While this might seem harmless, it can still be used to identify users if combined with other data sets. Our philosophy is simpler: if we don't have it, we can't lose it, sell it, or be forced to give it away. This means that even under legal pressure, we literally have no user activity logs to provide, making your privacy much more robust.
 
-## 5. Which jurisdictional considerations actually matter for VPN logs?
+## Which jurisdictional considerations actually matter for VPN logs?
 
 The most important jurisdictional consideration for VPN logs is whether a country has mandatory data retention laws or is part of intelligence-sharing alliances like Five Eyes.
 
@@ -91,19 +91,19 @@ Beyond specific data retention mandates, you also need to think about internatio
 
 That's why OllaVPN is based in a privacy-friendly jurisdiction with no mandatory data retention laws and no ties to these intelligence alliances. Our [no-logs policy](/no-logs-policy) isn't just a marketing claim; it's reinforced by the legal environment we operate within. We couldn't be compelled to hand over data we don't even collect, and our jurisdiction means we're not under pressure from foreign governments to start collecting it either. It’s about building trust through transparency and strong legal foundations.
 
-## 6. What are the common myths about VPN logging, and what's actually true?
+## What are the common myths about VPN logging, and what's actually true?
 
 The biggest myths are that "no-logs" always means the same thing, and that a VPN makes you completely untraceable online.
 
 One of the most common myths is the idea of **absolute anonymity** with a VPN. While a VPN significantly enhances your privacy by encrypting your traffic and masking your IP address, it doesn't make you completely invisible or untraceable. Your internet service provider (ISP) can still see that you're connected to a VPN server, and sophisticated trackers or state actors might still be able to correlate your online activity over time, especially if you're logged into personal accounts like Google or Facebook. A VPN is a powerful privacy tool, but it's part of a larger privacy strategy, not a magic bullet for total invisibility. Another big one revolves around "no-logs" claims. You'll see this phrase everywhere in VPN marketing, and while it's a good place to start, it's not always as straightforward as it sounds. The reality is that "no-logs" can mean different things to different providers. Some might not log your activity, but they might still collect connection logs (like timestamps or bandwidth usage) for network optimization or to enforce their terms of service. Others might have genuine, audited no-log policies. It’s crucial to look beyond the marketing claims and understand what a provider specifically means by "no-logs" and what data, if any, they \*do\* collect. Then there's the misconception that once you're connected to a VPN, all your privacy concerns are solved. Not directly. You can still experience issues like **DNS leaks**, where your DNS requests bypass the VPN tunnel and reveal your browsing activity to your ISP. Browser fingerprinting, cookies, and other tracking technologies also operate independently of your VPN. That's why OllaVPN includes features like in-tunnel DNS and a kill switch by default, but it's still important to practice good digital hygiene, like using privacy-focused browsers or extensions, to truly bolster your online privacy.
 
-## 7. How can you evaluate any VPN's claims around logging?
+## How can you evaluate any VPN's claims around logging?
 
 You can evaluate a VPN's logging claims by looking for independent audits, transparency reports, and a warrant canary, and by carefully reading their privacy policy and terms of service.
 
 It's tough to truly know if a VPN is logging your data, because ultimately, you're trusting them. A VPN could tell you they don't log anything, but how would you ever really know? However, there are several things you can look for that build trust and demonstrate a VPN's commitment to privacy. The first and most important is a track record of \*\*independent audits\*\*. These are third-party security experts who comb through a VPN's code, infrastructure, and policies to verify their no-logs claims. If a VPN has nothing to hide, they'll usually pay for these audits and publish the results. Next, look for \*\*transparency reports\*\*. These reports detail requests for user data from governments or law enforcement. A truly no-logs VPN won't have any data to provide, so their transparency report should reflect that  -  often stating "zero user data provided" because there was nothing to hand over. Related to this is a \*\*warrant canary\*\*. This is a subtle, ongoing declaration that a VPN has \*not\* received any secret government demands for user data. If the canary suddenly disappears, it's a silent warning that they might have been compromised or compelled to log. Finally, always read the fine print. Dig into the VPN's \*\*privacy policy\*\* and \*\*terms of service\*\*. This is where they legally lay out what data they \*do\* collect (even if it's just anonymous connection data to maintain service quality) and what they \*don't\*. Be wary of vague language. A truly privacy-focused VPN will be explicit about what they collect and why, and crucially, what they absolutely do not log. At OllaVPN, we don't log your activity, period, and our business model (funded by Plus subscribers, not data sales) means we're never incentivized to do so.
 
-## 8. What does OllaVPN specifically do to address logging concerns?
+## What does OllaVPN specifically do to address logging concerns?
 
 OllaVPN is built from the ground up to collect no logs, funding its free service through paid subscriptions rather than data collection or advertising.
 
@@ -113,19 +113,19 @@ We can maintain this strict [no-logs policy](/no-logs-policy) because of how we 
 
 Beyond our policy, we also employ technical safeguards. Our network is designed to minimize any transient data that might be generated, and we use advanced, post-quantum-ready encryption to protect your connection from even future threats. Our infrastructure is built to be stateless where possible, meaning there's simply no persistent information about your activities to log. It's a fundamental part of our architecture, not just a marketing claim.
 
-## 9. Is the free OllaVPN plan as private as the paid one?
+## Is the free OllaVPN plan as private as the paid one?
 
 Yes, the free OllaVPN plan offers the exact same privacy and security features as the paid Plus plan.
 
 You might be used to other "free" VPNs that secretly log your data, inject ads, or cap your data to push you to a paid tier. That's not how we operate. Our commitment to privacy is absolute, whether you're using our free forever plan or you've upgraded to Plus. There's no compromise on privacy for free users. You get the same [post-quantum-ready encryption](/features), the same no-logs policy, the same secure protocols, and the same in-tunnel DNS. The only difference between the free and Plus plans is speed and the number of simultaneous connections. The free plan gives you 10 Mbps on one device, which is enough for most everyday tasks like streaming HD video, browsing, and video calls. If you need more speed or want to connect up to five devices, Plus bumps you up to 10 Gbps for just $2 a month. This \*\*speed cap\*\* is how we manage to keep the free plan genuinely free forever, without resorting to shady tactics. Our \*\*funding model\*\* is simple and transparent: Plus subscribers fund the entire network. This means we don't have to sell your data, run ads, or find other ways to monetize free users. You get full privacy, regardless of whether you pay or not. It's a key part of our mission to make strong privacy accessible to everyone.
 
-## 10. How does post-quantum encryption relate to logging?
+## How does post-quantum encryption relate to logging?
 
 Post-quantum encryption protects your past and present data from future decryption, making logs less valuable to an attacker who might try to "harvest now, decrypt later."
 
 It's not directly about whether a VPN logs your activity, but rather about protecting your encrypted traffic from being decrypted by powerful computers in the future. Think of it this way: even if a malicious actor somehow recorded all of your VPN traffic today, they couldn't break OllaVPN's encryption with today's computers. However, quantum computers promise to change that, potentially making current encryption methods obsolete. This is where the concept of "harvest now, decrypt later" comes in – adversaries might store encrypted data today, betting on the ability to decrypt it years down the line with quantum machines. OllaVPN's [post-quantum-ready encryption](/post-quantum-encryption) is all about **future-proofing your privacy**. We use a hybrid handshake that combines classical and quantum-resistant algorithms, making your connection secure against both current and anticipated future threats. This means that even if someone were to capture your encrypted data packets and store them for decades, they still wouldn't be able to decrypt them once quantum computers become powerful enough to break traditional encryption. This commitment to **long-term security** significantly reduces the value of any theoretical logs an adversary might possess. Even if a VPN service were somehow compelled to log your connection metadata (which OllaVPN doesn't do, ever), the actual content of your communications remains unreadable and will stay that way. It's a core part of what makes OllaVPN's approach to privacy different and is a major [OllaVPN's differentiator](/why-ollavpn) in the VPN space. We're building for tomorrow's threats, today.
 
-## 11. What other features are important for privacy beyond a no-logs policy?
+## What other features are important for privacy beyond a no-logs policy?
 
 Beyond a no-logs policy, crucial privacy features include a kill switch, in-tunnel DNS, strong protocols like WireGuard, and robust peer isolation.
 
@@ -135,7 +135,7 @@ Another vital component is **in-tunnel DNS**. When you type a website address, y
 
 The underlying technology matters too. We use the **WireGuard protocol**, which is known for its modern cryptography, speed, and simplicity, making it easier to audit for security flaws compared to older, more complex protocols. And for those times when you're on a highly restrictive network, we also offer **QUIC** as an option to help bypass censorship. Finally, good **peer isolation** is essential. This means the VPN actively prevents other users on the same server from seeing or interfering with your traffic, adding another layer of security to your connection.
 
-## 12. Why this topic matters beyond the immediate question
+## Why this topic matters beyond the immediate question
 
 The topic above sits at the intersection of several broader concerns that are worth understanding even if your immediate question has been answered:
 
@@ -145,7 +145,7 @@ The topic above sits at the intersection of several broader concerns that are wo
 
 **The user has more power than ever  -  if they use it.** Strong free privacy tools exist in every category. The question is whether the user knows about them, knows how to verify they actually work, and is willing to take the small additional steps required. We try to make the verification path as short as possible because users who can verify are users who can choose well.
 
-## 13. What to actually do about it
+## What to actually do about it
 
 If the topic above suggests you should take action, the practical next steps in priority order:
 
@@ -157,7 +157,7 @@ If the topic above suggests you should take action, the practical next steps in 
 
 **Combine layers.** No single tool covers the full threat surface. VPN + privacy-respecting browser + tracker blocker + password manager + virtual cards + careful account hygiene  -  together they're materially better than any one alone. Each layer is cheap (most are free); the compound effect is large.
 
-## 14. About this guide
+## About this guide
 
 Maintained by [Nathan Pratt](/about/team#nathan-pratt), OllaVPN's Privacy & Security Lead. Fact-checked by [Hannah Wu](/about/team#hannah-wu), Senior Security Engineer. We refresh this post quarterly so its facts, recommendations, and competitor comparisons stay accurate as the category evolves. The last full re-evaluation was 23 June 2026; the next is scheduled for September 2026.
 
@@ -165,7 +165,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
 
 ⭐ Key takeaways
 
-## 15. What to remember from this guide
+## What to remember from this guide
 
 *   What does &#34;VPN logs&#34; mean in plain English?
 *   What&#39;s the actual technical reality of what a VPN \*could\* log?
@@ -174,8 +174,8 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
 *   Which jurisdictional considerations actually matter for VPN logs?
 </div>
 
-<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
-  <h2 style="font-size: 1.625rem; font-weight: 800; margin: 0 0 16px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
+<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 12px 28px 24px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
+  <h2 style="font-size: 1.625rem; font-weight: 800; margin: 0 0 14px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
   <div style="display: flex; flex-direction: column;">
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">

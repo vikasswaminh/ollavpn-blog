@@ -1,4 +1,4 @@
----
+﻿---
 title: 'What Is a DNS Leak? How to Test, Fix, and Prevent It (2026 Guide)'
 description: 'A DNS leak happens when your device sends DNS requests — the lookups that turn website names into numbers — outside your VPN''s encrypted tunnel. Your browsing activity becomes visible to your internet service provider ev...'
 pubDate: 2026-05-16
@@ -7,7 +7,7 @@ tags: ['privacy-security']
 ---
 
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
-  <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR — The Short Answer</h3>
+  <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
     A DNS leak happens when your device sends DNS requests  -  the lookups that turn website names into numbers  -  outside your VPNs encrypted tunnel. Your browsing activity becomes visible to your internet service provider ev... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
   </p>
@@ -53,7 +53,7 @@ tags: ['privacy-security']
 
 A plain-English guide to one of the most quietly important privacy concepts on the internet  -  what a DNS leak actually is, why it matters, how to test for one in under five minutes, and how to make sure you never have to worry about it again.
 
-## 1. What DNS actually does, in one paragraph
+## What DNS actually does, in one paragraph
 
 QUICK ANSWER DNS  -  the Domain Name System  -  translates human-readable website names like "ollavpn.com" into the numeric IP addresses that computers use to communicate. Every time you visit a website, your device asks a DNS server for the right number. That request is what can leak.
 
@@ -63,7 +63,7 @@ Think of it as a phonebook for the internet. You ask, "Where is ollavpn.com?" Th
 
 By default, your computer asks **your internet service provider's DNS server** for every lookup. Your provider sees the question  -  and therefore sees the list of websites you visit  -  even if it can't see the content of the pages once you load them. That's where the privacy problem starts.
 
-## 2. What a DNS leak is, in plain English
+## What a DNS leak is, in plain English
 
 QUICK ANSWER A DNS leak is when your device sends DNS lookups _outside_ the encrypted VPN tunnel  -  to your internet provider instead of to your VPN's servers. The rest of your traffic might be private, but your DNS lookups reveal which sites you're visiting.
 
@@ -73,7 +73,7 @@ A **DNS leak** is when that expectation breaks. Your VPN tunnel handles most of 
 
 It's a small leak. But for the same reason a small drip ruins a basement, a DNS leak quietly undoes much of what a VPN is supposed to do.
 
-## 3. Why DNS leaks matter (and when they don't)
+## Why DNS leaks matter (and when they don't)
 
 QUICK ANSWER A DNS leak doesn't expose the content of your traffic  -  only which sites you're visiting. For most people that's a privacy concern. For journalists, activists, business travelers, and anyone in a restrictive network environment, it can be a serious one.
 
@@ -88,7 +88,7 @@ Where DNS leaks matter more:
 
 The best way to think about it: a DNS leak doesn't undo your VPN  -  but it dramatically narrows what your VPN is protecting.
 
-## 4. What causes DNS leaks
+## What causes DNS leaks
 
 QUICK ANSWER The most common causes are VPNs that don't handle DNS inside their own infrastructure, IPv6 traffic bypassing the tunnel, unexpected VPN disconnects without a kill switch, and operating-system misconfigurations. Choosing a VPN that handles DNS correctly by default removes most of the risk.
 
@@ -118,7 +118,7 @@ If you've set a custom DNS server (like Google's 8.8.8.8 or Cloudflare's 1.1.1.1
 
 A small number of internet providers intercept DNS requests at the network level and force them through their own resolvers, regardless of what the device asked for. A well-built VPN can route around this.
 
-## 5. How to test for a DNS leak  -  the five-minute method
+## How to test for a DNS leak  -  the five-minute method
 
 QUICK ANSWER Disconnect your VPN, visit a DNS leak test site to record a baseline, then reconnect to the VPN and run the test again. If the DNS servers shown change from your internet provider to your VPN provider, you're protected.
 
@@ -132,7 +132,7 @@ You don't need any technical knowledge to test for a DNS leak. Five minutes and 
 
 That's it. The whole test takes under five minutes and costs nothing. We recommend doing it once when you first install a VPN, and again any time you make a significant change to your network or operating system.
 
-## 6. How to read the test results
+## How to read the test results
 
 A DNS leak test result usually shows a short table: **IP address**, **hostname**, **ISP**, and **country**. What you want to see depends on the VPN you're using, but the pattern is consistent.
 
@@ -142,7 +142,7 @@ A DNS leak test result usually shows a short table: **IP address**, **hostname**
 
 A clean test result looks consistent across all rows. A leaky one looks like a mix.
 
-## 7. How to fix a DNS leak
+## How to fix a DNS leak
 
 QUICK ANSWER The most reliable fix is to use a VPN that handles DNS correctly out of the box. Other options include disabling IPv6 on your device, enabling your VPN's kill switch, manually setting a privacy-friendly DNS resolver, and updating your VPN app to the latest version.
 
@@ -155,7 +155,7 @@ If your test showed a leak, the fix depends on the cause. In order of how likely
 5.  **Restart your network adapter** after connecting the VPN. Sometimes Windows in particular gets confused about which DNS to use until the adapter is reset.
 6.  **Switch to a VPN that handles DNS securely by default.** If your current VPN persistently leaks despite the above, the problem is in the product. The simplest fix is changing products.
 
-## 8. How to prevent DNS leaks for good
+## How to prevent DNS leaks for good
 
 QUICK ANSWER Choose a VPN that handles DNS through its own infrastructure inside the encrypted tunnel by default, with an always-on kill switch and built-in IPv6 handling. Test once at setup, then trust the product.
 
@@ -169,7 +169,7 @@ What to look for in a VPN if you want to set it and forget it:
 *   **The VPN updates its app regularly**. Networking edge cases get found and fixed over time. An app that hasn't updated in two years is more likely to leak than one that updates monthly.
 *   **The VPN passes its own DNS leak test**. Test it yourself once, just to confirm. Then let it run.
 
-## 9. DNS leak protection vs the kill switch  -  they're not the same thing
+## DNS leak protection vs the kill switch  -  they're not the same thing
 
 QUICK ANSWER A kill switch blocks all traffic during a VPN disconnect, preventing leaks that would happen in those brief moments. Built-in DNS leak protection prevents leaks while the VPN is connected. You want both  -  they protect against different failure modes.
 
@@ -181,7 +181,7 @@ But a kill switch can't help with leaks that happen _while the VPN is connected_
 
 What you want is both: **built-in DNS leak protection inside the tunnel, plus an always-on kill switch around the tunnel**. They work together. They protect against different things.
 
-## 10. A note on IPv6 leaks
+## A note on IPv6 leaks
 
 IPv6 deserves its own mention because it's the source of more "I thought I was protected" VPN incidents than any other single cause.
 
@@ -191,7 +191,7 @@ Modern reputable VPNs handle IPv6 either by routing it through the tunnel or by 
 
 When you run a DNS leak test, also check whether the site offers an **IPv6 leak test**  -  many do. Run both.
 
-## 11. Your privacy checklist
+## Your privacy checklist
 
 #### The five-minute "no-leak" sanity check, once a year
 
@@ -204,7 +204,7 @@ When you run a DNS leak test, also check whether the site offers an **IPv6 leak 
 
 If all six come back clean, you can stop worrying about leaks for the rest of the year.
 
-## 12. How OllaVPN handles DNS  -  by default, without configuration
+## How OllaVPN handles DNS  -  by default, without configuration
 
 We built **OllaVPN** to be the answer to the question "what should a modern privacy VPN do automatically?" When it comes to DNS, the answer is simple:
 
@@ -232,7 +232,7 @@ Five devices on one account. Fast enough for gigabit home internet. Cheap enough
 
 You can [try the free plan](../dl/) right now  -  no email, no card. Then run a DNS leak test and see for yourself.
 
-## 13. A broader-context closing thought
+## A broader-context closing thought
 
 One pattern we've noticed across every privacy-and-networking topic we cover: the gap between what most users believe about a given topic and what the technical reality is keeps widening. Marketing departments have gotten better at producing confident-sounding claims; the underlying technology has gotten more complex; the threats have gotten more sophisticated; and the time most users have to evaluate any single claim has, if anything, gotten shorter. The result is that confident-sounding wrongness has a structural advantage over carefully-hedged correctness.
 
@@ -240,7 +240,7 @@ The remedy we've settled on is to publish at depth  -  long enough to cover the 
 
 If you've read this far, you're in the second group. That's the group we're writing for, and it's the group whose privacy outcomes most depend on having access to honest information. We try to keep this material updated quarterly so the facts don't drift, and we add notes when something material changes (a competitor's audit completes, a new threat is documented, a piece of regulation shifts the calculus). The [main free-VPN comparison](/best-free-vpn-2026), the [technology overview](/technology), and the [free privacy tools](/tools/) are the three pages most worth bookmarking from the OllaVPN site if you've found this guide useful.
 
-## 14. Verify and cross-reference
+## Verify and cross-reference
 
 For any claim on this page that affects a decision you're about to make, the verification path we recommend:
 
@@ -252,7 +252,7 @@ For any claim on this page that affects a decision you're about to make, the ver
 
 **Update your view when the facts update.** Privacy concerns shift, operators change, standards evolve. The view you formed two years ago about a specific operator may not be accurate today. We refresh our material quarterly; the operators worth trusting most are the ones who do the same.
 
-## 15. Deeper context worth knowing
+## Deeper context worth knowing
 
 A definitional explainer should leave you understanding not just the concept but the surrounding category  -  what other concepts it connects to, what common misunderstandings to avoid, and which adjacent ideas you should know about. A few worth covering:
 
@@ -262,7 +262,7 @@ A definitional explainer should leave you understanding not just the concept but
 
 **The threat model matters.** The same concept can be a strong defense against one class of threat and useless against another. "Encrypted" doesn't mean "private" if the recipient is the threat actor. "Anonymized" doesn't mean "unlinkable" if you have enough side data. We try to be specific about what each property actually defends.
 
-## 16. How this connects to OllaVPN specifically
+## How this connects to OllaVPN specifically
 
 If you've read this far, you probably want to know how the concept applies to OllaVPN's product. The short version:
 
@@ -272,7 +272,7 @@ If you've read this far, you probably want to know how the concept applies to Ol
 
 **If the concept above is something a VPN doesn't help with at all** (application-layer tracking, account-based identity, malware on your device, source-anonymity against a global passive adversary), we say so. A VPN replaces the ISP in the traffic-visibility role; it does not stop websites from tracking you, does not stop your accounts from identifying you, does not stop malware already on your device, and is not Tor. Use the right tool for each layer of the threat model.
 
-## 17. About this guide
+## About this guide
 
 Maintained by [Nathan Pratt](/about/team#nathan-pratt), OllaVPN's Privacy & Security Lead. Fact-checked by [Hannah Wu](/about/team#hannah-wu), Senior Security Engineer. We refresh this post quarterly so its facts, recommendations, and competitor comparisons stay accurate as the category evolves. The last full re-evaluation was 23 June 2026; the next is scheduled for September 2026.
 
@@ -280,7 +280,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
 
 ⭐ Key takeaways
 
-## 18. What to remember from this guide
+## What to remember from this guide
 
 *   What DNS actually does, in one paragraph
 *   What a DNS leak is, in plain English
@@ -289,8 +289,8 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
 *   How to test for a DNS leak  -  the five-minute method
 </div>
 
-<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
-  <h2 style="font-size: 1.625rem; font-weight: 800; margin: 0 0 16px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
+<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 12px 28px 24px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
+  <h2 style="font-size: 1.625rem; font-weight: 800; margin: 0 0 14px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
   <div style="display: flex; flex-direction: column;">
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">

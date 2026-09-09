@@ -1,4 +1,4 @@
----
+﻿---
 title: "Free VPN for Public WiFi Security 2026"
 description: "Why public Wi-Fi at airports, hotels, and cafes is risky and how a free post-quantum VPN protects your passwords, banking, and data without subscriptions."
 pubDate: 2026-07-20
@@ -7,7 +7,7 @@ tags: ["buyer-guides"]
 ---
 
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
-  <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR — The Short Answer</h3>
+  <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
     A free VPN creates an encrypted tunnel between your device and the internet on public Wi-Fi  -  protecting your passwords, session tokens, and browsing traffic from eavesdroppers, evil twins, and compromised routers. For basic web security at airports, hotels, and cafes, OllaVPN Free delivers unlimited data, WireGuard speeds, and zero activity logs without requiring credit card registration.
   </p>
@@ -51,7 +51,7 @@ tags: ["buyer-guides"]
 
 <div class="blog-main-content-box">
 
-## 1. What exactly does a free VPN protect on public Wi-Fi?
+## What exactly does a free VPN protect on public Wi-Fi?
 
 <div class="content-point-box">
 <h4 style="font-size: 0.95rem; font-weight: 700; margin: 0 0 6px 0; color: #0F172A;">Quick Answer</h4>
@@ -59,8 +59,8 @@ tags: ["buyer-guides"]
 </p>
 </div>
 
-<section id="faq" class="faq-section-box" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.03); box-sizing: border-box;">
-  <h2 style="font-size: 1.68rem; font-weight: 800; margin-bottom: 16px; color: #0F172A; border-bottom: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
+<section id="faq" class="faq-section-box" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 12px 28px 24px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.03); box-sizing: border-box;">
+  <h2 style="font-size: 1.68rem; font-weight: 800; margin: 0 0 14px 0; color: #0F172A; border-bottom: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
   <div style="display: flex; flex-direction: column; gap: 14px;">
 <details class="faq-accordion-item" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px 20px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 0.95rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">

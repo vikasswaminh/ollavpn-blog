@@ -1,4 +1,4 @@
----
+﻿---
 title: 'What Is a Post-Quantum VPN and Why Do You Need One?'
 description: 'The plain-English guide to post-quantum VPNs. Why harvest-now-decrypt-later turns a future quantum threat into a today problem, and how PQC handshakes work.'
 pubDate: 2026-07-04
@@ -7,7 +7,7 @@ tags: ['pillars']
 ---
 
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
-  <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR — The Short Answer</h3>
+  <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
     The plain-English guide to post-quantum VPNs. Why harvest-now-decrypt-later turns a future quantum threat into a today problem, and how PQC handshakes work. OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
   </p>
@@ -57,7 +57,7 @@ What Is a [Post-Quantum VPN](/blog/what-is-a-post-quantum-vpn.html) and Why Do Y
 
 The plain-English guide to the newest, most misunderstood label in the VPN world. What a “[post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html)” actually changes under the hood, why the timing of your upgrade matters even though quantum computers don’t exist yet, and how to tell a real post-quantum VPN from a marketing sticker.
 
-## 1. Why "post-quantum VPN" suddenly became a real category
+## Why "post-quantum VPN" suddenly became a real category
 
 Post-quantum VPNs moved from research curiosity to an actual product category because the underlying cryptographic standards were finalized in August 2024, and because “harvest now, decrypt later” turns a future threat into a today problem. VPN providers that ignore it are shipping tunnels that may have an expiration date.
 
@@ -67,7 +67,7 @@ That comfortable situation is changing, not because the old math suddenly got we
 
 The reason it matters specifically for VPNs  -  more than for a single website you visit once  -  is that a VPN is meant to protect an ongoing stream of everything you do online. If the tunnel’s handshake has a shelf life, so does everything that ever passed through it.
 
-## 2. What a VPN actually encrypts, in plain terms
+## What a VPN actually encrypts, in plain terms
 
 Before getting into the post-quantum part, it helps to be clear about what a VPN is doing in the first place, because a lot of confusion about “post-quantum VPNs” comes from people not being sure what a regular VPN protects.
 
@@ -77,7 +77,7 @@ The tunnel is built using a VPN protocol  -  WireGuard and OpenVPN are the two y
 
 That distinction  -  the “agreeing on a key” part versus the “using the key” part  -  is exactly where the post-quantum story lives.
 
-## 3. The two places a VPN uses cryptography
+## The two places a VPN uses cryptography
 
 A VPN tunnel relies on cryptography twice: once during the handshake, when your device and the server negotiate a shared secret key, and continuously afterward, when that key is used to symmetrically encrypt your actual traffic. Quantum computers threaten the handshake far more than the ongoing encryption.
 
@@ -91,7 +91,7 @@ Here’s why that split matters: an attacker who wants to read your VPN traffic 
 
 So when someone says “[post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html),” what they really mean, almost every time, is: the handshake has been upgraded. The bulk encryption usually doesn’t need to change at all.
 
-## 4. What "post-quantum" changes, specifically
+## What "post-quantum" changes, specifically
 
 A [post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html) replaces or supplements the handshake’s key-exchange algorithm with one built on different mathematics  -  mathematics that both classical and quantum computers are believed to struggle with. The leading approach, and the one NIST standardized as ML-KEM (Module-Lattice-based Key-Encapsulation Mechanism, formerly known by its project name, Kyber), is based on problems involving lattices: geometric structures in very high-dimensional space where finding certain hidden patterns is believed to be extremely hard, even with a quantum computer’s tricks.
 
@@ -99,7 +99,7 @@ None of this requires new hardware. It requires new software  -  an updated VPN 
 
 In other words: a [post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html) doesn’t feel different, look different, or ask you to understand lattice mathematics. It’s a change to a few kilobytes of data exchanged in the first fraction of a second of your connection, designed so that the secret those kilobytes establish stays secret for decades, not just for as long as classical computers remain the only computers that exist.
 
-## 5. Why you personally need one, not just governments
+## Why you personally need one, not just governments
 
 “Harvest now, decrypt later” doesn’t care who you are. Anyone’s VPN traffic can be captured and stored cheaply today. What determines whether it’s worth decrypting later is simply whether the data inside is still sensitive by the time quantum decryption becomes possible  -  and for ordinary people, plenty of it will be.
 
@@ -111,7 +111,7 @@ Now think about what actually flows through your VPN over a normal decade: medic
 
 You don’t need to be a journalist or an executive for this to matter. You just need to expect that some of what you do online today should still be private in 2040  -  and if that’s you, the handshake protecting your VPN traffic right now is quietly making a decades-long promise worth checking on.
 
-## 6. "Harvest now, decrypt later," VPN edition
+## "Harvest now, decrypt later," VPN edition
 
 For a VPN specifically, “harvest now, decrypt later” means an adversary records your encrypted handshake and tunnel traffic today, keeps it in storage, and  -  once a capable quantum computer exists  -  works backward from the recorded handshake to recover the session key, unlocking everything you sent through that VPN connection.
 
@@ -123,7 +123,7 @@ Today, that recording is useless to them  -  cracking classical elliptic-curve o
 
 This is exactly why the fix has to happen at the handshake, and why it has to happen before the quantum computer shows up, not after. Upgrading your VPN’s cryptography the week a cryptographically relevant quantum computer becomes public knowledge doesn’t protect the traffic you already sent. It only protects connections made after the upgrade. That’s the whole logic behind why [post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html) adoption is a today problem: every connection you make with old-style cryptography between now and your provider’s upgrade is a connection with a decryption expiration date somewhere in the 2030s or 2040s.
 
-## 7. How a quantum computer would actually break a VPN handshake
+## How a quantum computer would actually break a VPN handshake
 
 Today’s quantum computers are nowhere close to this. Breaking the elliptic-curve cryptography that protocols like WireGuard use for their handshake is estimated to require millions of stable, error-corrected logical qubits  -  current machines have hundreds to a few thousand physical qubits, which is a very different, much smaller thing.
 
@@ -133,7 +133,7 @@ Current machines from IBM, Google, IonQ, and others have made real progress  -  
 
 Estimates for when a “cryptographically relevant quantum computer” might exist range from optimistic early 2030s to conservative 2040s guesses, with some researchers doubting it happens at scale within our lifetimes. Nobody knows the exact year  -  but betting decades of recorded traffic on the pessimistic end of that range is not a bet worth making, especially when the fix costs almost nothing.
 
-## 8. The standards behind post-quantum VPNs
+## The standards behind post-quantum VPNs
 
 In August 2024, NIST finalized FIPS 203 (ML-KEM), the key-exchange standard that post-quantum VPNs use for their handshake, alongside two signature standards (FIPS 204 and FIPS 205) that matter more for certificate authentication than for the VPN handshake itself.
 
@@ -151,7 +151,7 @@ A fourth key-exchange candidate, HQC, based on error-correcting codes rather tha
 
 For a VPN, the practical takeaway is simple: when a provider says “post-quantum,” ML-KEM (FIPS 203) is the algorithm you should expect to see named. If a VPN’s marketing mentions “post-quantum” but can’t point to a specific standardized algorithm, that’s worth treating with skepticism  -  the whole point of standardization was to stop everyone from rolling their own untested math.
 
-## 9. Hybrid handshakes  -  the current best practice
+## Hybrid handshakes  -  the current best practice
 
 Almost every credible [post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html) implementation today combines a classical algorithm (like X25519) with a post-quantum one (like ML-KEM) in the same handshake, rather than replacing the classical algorithm outright. The connection stays secure as long as either algorithm holds up, which hedges against both quantum attacks and the small risk that a flaw is later found in the newer math.
 
@@ -165,7 +165,7 @@ You’ll see this written in shorthand like X25519MLKEM768  -  a combination of 
 
 The cost of this belt-and-suspenders approach is small  -  a few extra kilobytes exchanged during the handshake and a few milliseconds of additional computation, once, at the start of the connection. Given what’s being protected, that’s about as good a trade as cryptography ever offers.
 
-## 10. Who's already shipped post-quantum VPN tunnels
+## Who's already shipped post-quantum VPN tunnels
 
 This isn’t a future feature. Here’s what’s already happened, in order.
 
@@ -191,7 +191,7 @@ August 2024. NIST finalizes FIPS 203, 204, and 205  -  the moment post-quantum c
 
 If you’ve been wondering whether “[post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html)” is real yet or still a few years off: it’s real, it’s shipped in products used by hundreds of millions of people, and the VPN category specifically is now in the middle of catching up to where browsers and messaging apps already are.
 
-## 11. What doesn't change  -  symmetric encryption
+## What doesn't change  -  symmetric encryption
 
 It’s worth pausing to reassure you about the part of your VPN connection that doesn’t need a post-quantum upgrade, or this guide might leave you thinking your whole connection is one giant vulnerability. It isn’t.
 
@@ -200,8 +200,8 @@ Once the handshake  -  classical, post-quantum, or hybrid  -  has established a 
 This is why the [post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html) conversation is narrower than it might sound. You don’t need a “post-quantum AES.” You need a post-quantum handshake, because that’s the only piece a quantum computer meaningfully threatens.
 </div>
 
-<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
-  <h2 style="font-size: 1.625rem; font-weight: 800; margin: 0 0 16px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
+<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 12px 28px 24px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
+  <h2 style="font-size: 1.625rem; font-weight: 800; margin: 0 0 14px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
   <div style="display: flex; flex-direction: column;">
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">

@@ -1,4 +1,4 @@
----
+﻿---
 title: 'How to Find Saved Passwords on Your Device: A Quick Guide'
 description: 'Lost track of a saved password? Don''t worry, you can almost always find it directly within your web browser''s settings or your device''s system settings. Whether you''re using Chrome, Firefox, Edge, Safari,...'
 pubDate: 2026-06-09
@@ -7,7 +7,7 @@ tags: ['privacy-security']
 ---
 
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
-  <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR — The Short Answer</h3>
+  <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
     Lost track of a saved password? Dont worry, you can almost always find it directly within your web browsers settings or your devices system settings. Whether youre using Chrome, Firefox, Edge, Safari,... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
   </p>
@@ -53,61 +53,61 @@ tags: ['privacy-security']
 
 Ever needed a password you know you saved, but just can't remember where? You're definitely not alone. Whether it's for an old account, a new device setup, or just for peace of mind, finding those saved credentials can feel like a scavenger hunt. This guide cuts through the confusion, showing you exactly where to look on your computer or phone, and how to retrieve those passwords without a fuss. We'll walk you through the process, making sure you can access what you need quickly and securely, without any technical jargon or unnecessary detours. You'll get back to what you were doing, fast.
 
-## 1. What's the quickest way to find your saved passwords?
+## What's the quickest way to find your saved passwords?
 
 The quickest way to find your saved passwords is usually through your web browser's settings or a dedicated password manager.
 
 You're probably looking for a password you saved a while ago and now need for a new device or app. Don't worry, it happens to everyone! Most of the time, the easiest place to start is right in the web browser you use most often, like Chrome, Firefox, or Edge. They all have built-in password management features that keep track of login details as you browse the internet. To find them, you'll typically head into your browser's settings, look for a section labeled "Autofill," "Passwords," or "Privacy and security," and then navigate to the saved passwords list. You might need to enter your computer's password or use a fingerprint to unlock the list for security reasons. If you've been smart and used a dedicated **password manager** like 1Password or Bitwarden, finding your passwords is even simpler – just open the app and search there. If you saved a password to unlock your phone or tablet, that's usually found in your **device settings** under "Security," "Accounts," or "Passcode." Remember, while convenient, letting your browser save every password isn't always the most secure option for your most sensitive accounts. A good password manager offers much stronger protection and better organization.
 
-## 2. How do I find saved passwords on a Windows PC?
+## How do I find saved passwords on a Windows PC?
 
 You can find most saved passwords on a Windows PC by checking your web browser's settings or by using the built-in Credential Manager.
 
 Your web browser is usually the first place to look. Both Chrome and Edge, for example, have dedicated sections for managing saved passwords. For \*\*Chrome settings\*\*, you'll typically go to the three-dot menu, select "Settings," then "Autofill," and finally "Password Manager." Here, you can view, edit, or delete passwords saved for various websites. You'll often need to enter your Windows login password to reveal them, which is a good security measure. Similarly, \*\*Edge settings\*\* also offer a password management feature, usually found under the "Profiles" section, then "Passwords." You'll find a list of sites and their corresponding saved credentials there. Beyond browsers, Windows itself stores some passwords, particularly those for network shares, Wi-Fi networks, and applications. This is handled by the \*\*Credential Manager\*\*, which you can access through the \*\*Control Panel\*\*. Just search for "Credential Manager" in the Windows search bar. Inside, you'll see two main categories: "Web Credentials" and "Windows Credentials." Web Credentials sometimes store passwords for websites that aren't managed by your browser, while Windows Credentials handles things like network logins. You can expand each entry to see details and reveal passwords, again requiring your Windows login or PIN for security. It's important to remember that these methods only show passwords that have been explicitly saved and aren't encrypted by a master password within an application. If you use a third-party password manager or features like \*\*Windows Hello\*\* for passwordless logins, the actual password might not be directly viewable, as the system is designed to protect it. For instance, Windows Hello uses biometrics or PINs to authenticate you without exposing your actual password to you or potential snoopers.
 
-## 3. How do I find saved passwords on a Mac?
+## How do I find saved passwords on a Mac?
 
 You can find saved passwords on a Mac primarily through your browser's settings or by using the built-in Keychain Access application.
 
 Your Mac stores passwords in a few places, depending on how and where you saved them. Most commonly, you'll find them within the settings of the web browser you used to save them, like Safari, Chrome, or Firefox. For passwords saved across your Apple devices or for applications, the macOS utility **Keychain Access** is where you'll want to look. It’s also important to remember that if you're signed into iCloud, many of your passwords might be synced through **iCloud Passwords**, making them accessible across your Apple ecosystem. To check your browser, let's start with Safari. Open Safari, then go to "Safari" in the menu bar at the top of your screen, and select "Settings" (or "Preferences" on older macOS versions). From there, click on the "Passwords" tab. You'll need to authenticate with your Mac's password, Touch ID, or Apple Watch. Once authenticated, you'll see a list of all your saved website logins. You can search for specific sites and reveal the password by clicking on it. Other browsers like Chrome or Firefox have similar password managers within their own settings menus. For a more comprehensive look, especially at Wi-Fi passwords, app logins, and secure notes, open **Keychain Access**. You can find this utility by searching for it in Spotlight (Cmd + Space) or by navigating to Applications > Utilities > Keychain Access. Once open, you'll see various keychains on the left sidebar, like "login" and "iCloud." Select the appropriate keychain, then search for the item you need. Double-click on an entry, and in the pop-up window, check the "Show Password" box. Again, you'll need to authenticate to reveal the password. This method covers a wider range of stored credentials beyond just website logins from your browser.
 
-## 4. How do I find saved passwords on an iPhone or iPad?
+## How do I find saved passwords on an iPhone or iPad?
 
 You can find all your saved passwords on an iPhone or iPad directly within the Settings app under the "Passwords" section.
 
 It's actually quite straightforward to access your stored login credentials on an iOS device. Apple keeps everything neatly organized in one place, making it easy to retrieve what you need. This feature relies on your device's security, so you'll need to authenticate yourself to view them. To get started, open the \*\*Settings app\*\* on your iPhone or iPad. Scroll down a bit until you see the option labeled "Passwords" and tap on it. At this point, your device will ask for authentication. This is usually done using your device's passcode, or biometrics like \*\*Face ID or Touch ID\*\*, ensuring that only you can access your sensitive information. Once authenticated, you'll see a list of all your saved accounts. This list is essentially your \*\*iCloud Keychain\*\* in action, syncing your passwords securely across all your Apple devices. You can scroll through it to find the specific website or app you're looking for. Tapping on an entry will reveal the username and password for that account. You can then copy the username or password if you need to paste it elsewhere. You can also edit or delete entries from here if you need to update an old password or remove an unused account.
 
-## 5. How do I find saved passwords on an Android device?
+## How do I find saved passwords on an Android device?
 
 You can find saved passwords on an Android device primarily through Google Chrome's settings or the Android system's Google Password Manager.
 
 It's actually quite straightforward to dig up those forgotten login details on your Android phone or tablet. Most often, the passwords you're looking for were saved by **Google Chrome** during your browsing sessions. To get to them, open the Chrome app, tap the three-dot menu icon in the top right corner, and then select "Settings." From there, you'll see a "Password Manager" option (sometimes just "Passwords") where all your saved credentials live. You might need to authenticate with your screen lock, fingerprint, or face unlock to view them. Alternatively, if you want a more centralized approach that covers apps beyond just Chrome, you can go through your device's main **Settings app**. Scroll down and tap on "Google," then "Autofill," and finally "Autofill with Google." This will take you to the **Google Password Manager**, which is essentially the same place Chrome directs you to, but accessible directly from your Android settings. This manager handles all the passwords saved to your Google account, making them available across all your Android devices and Chrome browsers where you're signed in. The Google Password Manager is a robust tool that not only stores but also helps you manage your passwords. It's often set as your default **Autofill service**, meaning it's the one prompting you to save new logins and filling them in when you visit websites or open apps. Knowing where it lives can save you a lot of hassle when you can't quite remember that one specific password.
 
-## 6. What should you do if a step doesn't work as expected?
+## What should you do if a step doesn't work as expected?
 
 If a step fails, first check the most common culprits like network connection or incorrect credentials, then try rebooting your device.
 
 It's frustrating when things don't go as planned, but most issues with setting up or using OllaVPN have straightforward fixes. If you're stuck, start by checking the basics. Is your internet connection stable? Sometimes a flaky Wi-Fi or cellular signal can cause unexpected behavior. Also, double-check any credentials you're entering. For instance, an **incorrect master password** is a super common reason for login failures, so make sure you're typing it exactly as you set it. Our systems are designed for privacy, so we can't tell you \*what\* you typed wrong, just that it \*was\* wrong. If you're having trouble accessing certain websites or services after connecting, it might be related to **browser updates** or caching. Try clearing your browser's cache and cookies, or even switching to a different browser to see if the issue persists. Sometimes, there are also **sync issues** where your device's clock might be off, which can interfere with secure connections. Ensuring your device's time and date are set automatically can sometimes resolve these subtle problems. When all else fails, the classic IT advice often applies: try a full **reboot** of your device. A fresh start can clear up temporary software glitches or network conflicts that might be causing the problem. If you've tried these steps and are still experiencing issues, don't hesitate to reach out to our support team. We're here to help you get back on track.
 
-## 7. Why is checking your browser and device settings the best first step?
+## Why is checking your browser and device settings the best first step?
 
 Checking your browser and device settings first is often the simplest, most effective, and safest way to address many common privacy and security issues.
 
 It's tempting to immediately reach for a new app or browser extension when you're worried about your online privacy, but often, the best solutions are already built right into the tools you're using. Your operating system, web browser, and even many individual apps have powerful privacy and security controls you might not even know about. Learning to use these effectively can often solve your immediate problem without needing anything else. This approach offers a lot of **convenience** and avoids potential downsides. For starters, there's no extra software to download, install, or keep updated. This means less clutter on your device and fewer things that can go wrong. More importantly, relying on built-in security features means you're using tools developed by the same companies that built your device or browser, often with extensive security teams behind them. There are also significant **privacy concerns with external tools**. Every time you install a third-party app or browser extension, you're granting it access to some part of your digital life. While many are legitimate, some can be intrusive, collect your data for advertising, or even introduce vulnerabilities. Sticking to native settings reduces this risk significantly, giving you more control and peace of mind by minimizing the number of entities handling your sensitive information.
 
-## 8. Are there common errors when finding passwords, and how can you fix them?
+## Are there common errors when finding passwords, and how can you fix them?
 
 Yes, there are common errors when trying to find saved passwords, and most have straightforward fixes.
 
 One of the most frequent issues is looking in the **wrong browser**. You might use Chrome for work and Firefox for personal browsing, and if you saved a password in Firefox, it simply won't show up in Chrome's settings. Always double-check which browser you were using when you initially saved the password. Another common snag is when **sync is disabled**. If you relied on browser sync to keep your passwords updated across devices, and it's turned off, newer passwords might not be there, or older ones might be missing from a new installation. Make sure sync is active and working correctly in your browser settings. Sometimes, the problem isn't the browser at all, but **outdated software**. An old browser version or operating system can sometimes cause glitches in password managers or sync features. Keeping everything updated is a good practice for security and functionality. If you're using a dedicated password manager, the biggest hurdle can be **forgetting your master password**. This is the single key to unlock all your other passwords, and if you lose it, recovering your data can be challenging, if not impossible, depending on the service. That's why choosing a strong, memorable master password and keeping it safe (but not written down next to your computer!) is absolutely crucial. Finally, remember that some websites specifically tell your browser not to save passwords for security reasons, especially banking or financial sites. If a password isn't there, it might be because the site prevented it from being saved in the first place, rather than an error on your end.
 
-## 9. How can you verify that you've found the correct password?
+## How can you verify that you've found the correct password?
 
 You can verify a retrieved password by attempting to log in to the associated service, cross-referencing it with other known credentials, and checking for recent changes.
 
 Once you've retrieved a password, the most straightforward way to verify it's the correct one is to simply \*\*test login\*\* to the service or account it belongs to. Go to the website or open the application and try to log in using the username and the password you just found. If it works, great! You've successfully recovered it. If it doesn't, there might be a few reasons why, which we can explore further. Another good step is to \*\*cross-reference\*\* the recovered password. Did you use a similar password for other accounts? Or perhaps it's a slight variation of an old password you remember? Sometimes, seeing it written down can jog your memory and help you confirm its authenticity. This is especially useful if you have multiple versions of a password stored or remembered. Consider any \*\*recent changes\*\* you might have made. Did you update your password on that service recently and forget to save the new one? Or perhaps the service itself enforced a password reset? If the recovered password isn't working, it might be an older, outdated version. In such cases, you might need to use the "Forgot Password" feature on the service itself to regain access, then update your records.
 
-## 10. What tools can make password management easier in the long run?
+## What tools can make password management easier in the long run?
 
 Dedicated password managers, browser sync features, and two-factor authentication are your best friends for simplifying password management.
 
@@ -117,7 +117,7 @@ Beyond dedicated apps, many web browsers offer built-in **browser sync features*
 
 No matter which tool you pick, two practices are non-negotiable. First, always use a **strong master password** for your password manager or browser sync. This is the single key to your digital kingdom, so make it long, complex, and unique. Second, enable **two-factor authentication (2FA)** wherever it's offered. This adds an extra layer of security, often requiring a code from your phone in addition to your password, making it much harder for unauthorized users to access your accounts even if they somehow get your password. These tools and habits, together, make managing your online identity much safer and simpler.
 
-## 11. Does a VPN help with finding or securing saved passwords?
+## Does a VPN help with finding or securing saved passwords?
 
 A VPN doesn't directly help you find saved passwords, but it significantly improves the security of your existing passwords and login credentials.
 
@@ -127,7 +127,7 @@ The primary benefit here is protection against **data interception**. If you're 
 
 Whether you're on our free plan with its comfortable 10 Mbps speed, or you've upgraded to [OllaVPN Plus](/ollavpn-plus) for 10 Gbps across five devices, that encryption is always active. It's about securing the \*transmission\* of your data, not the storage. For finding or managing saved passwords, you'll still rely on your browser's built-in password manager or a dedicated third-party password application. But by routing your connection through OllaVPN, you ensure that the journey those passwords take across the internet is as secure as possible.
 
-## 12. A broader-context closing thought
+## A broader-context closing thought
 
 One pattern we've noticed across every privacy-and-networking topic we cover: the gap between what most users believe about a given topic and what the technical reality is keeps widening. Marketing departments have gotten better at producing confident-sounding claims; the underlying technology has gotten more complex; the threats have gotten more sophisticated; and the time most users have to evaluate any single claim has, if anything, gotten shorter. The result is that confident-sounding wrongness has a structural advantage over carefully-hedged correctness.
 
@@ -135,7 +135,7 @@ The remedy we've settled on is to publish at depth  -  long enough to cover the 
 
 If you've read this far, you're in the second group. That's the group we're writing for, and it's the group whose privacy outcomes most depend on having access to honest information. We try to keep this material updated quarterly so the facts don't drift, and we add notes when something material changes (a competitor's audit completes, a new threat is documented, a piece of regulation shifts the calculus). The [main free-VPN comparison](/best-free-vpn-2026), the [technology overview](/technology), and the [free privacy tools](/tools/) are the three pages most worth bookmarking from the OllaVPN site if you've found this guide useful.
 
-## 13. Verify and cross-reference
+## Verify and cross-reference
 
 For any claim on this page that affects a decision you're about to make, the verification path we recommend:
 
@@ -147,7 +147,7 @@ For any claim on this page that affects a decision you're about to make, the ver
 
 **Update your view when the facts update.** Privacy concerns shift, operators change, standards evolve. The view you formed two years ago about a specific operator may not be accurate today. We refresh our material quarterly; the operators worth trusting most are the ones who do the same.
 
-## 14. How to know it actually worked
+## How to know it actually worked
 
 A how-to guide is only useful if you can verify the outcome. After completing the steps above, the easiest checks to confirm the configuration is in place:
 
@@ -159,7 +159,7 @@ A how-to guide is only useful if you can verify the outcome. After completing th
 
 **No WebRTC leak.** Open [our WebRTC leak test](/webrtc-leak-test). You should see only the exit's IPv4 address. If your real IP appears (private LAN address or public IPv4/IPv6), WebRTC is bypassing the VPN  -  either OllaVPN's leak prevention has failed (file a report at `[[email protected]](/cdn-cgi/l/email-protection)`) or your browser has a WebRTC-specific privacy issue we can help diagnose.
 
-## 15. If a step fails, here's how to debug
+## If a step fails, here's how to debug
 
 The most common failure modes for any VPN setup task on Windows, macOS, or Android, in order of frequency:
 
@@ -171,7 +171,7 @@ The most common failure modes for any VPN setup task on Windows, macOS, or Andro
 
 **Speed is much slower than expected.** The exit you picked is either congested or geographically far from you. Try a closer exit (the country picker shows latency). The free-tier 10 Mbps cap is the ceiling regardless of exit choice; if you need more, the Pro tier at $2/mo annual lifts it to 10 Gbps.
 
-## 16. About this guide
+## About this guide
 
 Maintained by [Nathan Pratt](/about/team#nathan-pratt), OllaVPN's Privacy & Security Lead. Fact-checked by [Hannah Wu](/about/team#hannah-wu), Senior Security Engineer. We refresh this post quarterly so its facts, recommendations, and competitor comparisons stay accurate as the category evolves. The last full re-evaluation was 23 June 2026; the next is scheduled for September 2026.
 
@@ -179,7 +179,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
 
 ⭐ Key takeaways
 
-## 17. What to remember from this guide
+## What to remember from this guide
 
 *   What&#39;s the quickest way to find your saved passwords?
 *   How do I find saved passwords on a Windows PC?
@@ -188,8 +188,8 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
 *   How do I find saved passwords on an Android device?
 </div>
 
-<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
-  <h2 style="font-size: 1.625rem; font-weight: 800; margin: 0 0 16px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
+<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 12px 28px 24px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
+  <h2 style="font-size: 1.625rem; font-weight: 800; margin: 0 0 14px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
   <div style="display: flex; flex-direction: column;">
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">

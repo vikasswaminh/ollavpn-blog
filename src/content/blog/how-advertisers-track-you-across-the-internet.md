@@ -1,4 +1,4 @@
----
+﻿---
 title: 'How Advertisers Track You Across the Internet (And How to Fight Back)'
 description: 'The complete, plain-English guide to every method advertisers use to follow you around the web — third-party cookies, browser fingerprinting, pixel beacons, data brokers — and how to stop them.'
 pubDate: 2026-06-10
@@ -7,7 +7,7 @@ tags: ['privacy-security']
 ---
 
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
-  <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR — The Short Answer</h3>
+  <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
     The complete, plain-English guide to every method advertisers use to follow you around the web  -  third-party cookies, browser fingerprinting, pixel beacons, data brokers  -  and how to stop them. OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
   </p>
@@ -53,7 +53,7 @@ tags: ['privacy-security']
 
 The complete, plain-English guide to every method advertisers use to follow you around the web - from third-party cookies and browser fingerprinting to pixel tracking and data brokers - and exactly what you can do to stop them.
 
-## 1. Why ad tracking is bigger than most people realize
+## Why ad tracking is bigger than most people realize
 
 QUICK ANSWER
 
@@ -67,7 +67,7 @@ The incentive structure is simple. Advertisers pay more to show ads to people wh
 
 Once you understand how they get it, you can decide how much of it you want to give them.
 
-## 2. Third-party cookies - the original surveillance tool
+## Third-party cookies - the original surveillance tool
 
 QUICK ANSWER
 
@@ -81,7 +81,7 @@ Third-party cookies work differently. When you visit a website that includes cod
 
 Multiply that by the number of companies whose code appears across the web - Google, Meta, LiveRamp, Criteo, AppNexus, and hundreds of others - and you can see why a single browsing session generates data for so many parties at once.
 
-## 3. What gets recorded in a third-party cookie profile
+## What gets recorded in a third-party cookie profile
 
 The cookie itself is just an identifier - a string of characters that says “this is user #4829174.” The data tied to that identifier is collected and stored on the tracking company’s servers:
 
@@ -103,7 +103,7 @@ Location - derived from IP address, often to the city or neighborhood level
 
 Over weeks and months, this becomes a surprisingly detailed portrait of who you are, what you care about, and what you might be persuaded to buy.
 
-## 4. Browser fingerprinting - the cookieless tracker
+## Browser fingerprinting - the cookieless tracker
 
 QUICK ANSWER
 
@@ -141,7 +141,7 @@ Research published by the Electronic Frontier Foundation’s Panopticlick projec
 
 Fingerprinting is increasingly the fallback for trackers when cookies aren’t available - and it’s becoming a primary method as third-party cookies disappear. It’s also significantly harder to block than cookies, and most mainstream privacy advice still doesn’t address it well enough.
 
-## 5. Tracking pixels and invisible beacons
+## Tracking pixels and invisible beacons
 
 QUICK ANSWER
 
@@ -151,7 +151,7 @@ You’ve probably heard about tracking pixels in email marketing - the invisible
 
 The Meta Pixel (formerly the Facebook Pixel) is one of the most widely deployed pieces of code on the internet. A study by The Markup found the Meta Pixel on 30% of the top one million websites, including many places users wouldn’t expect - hospital patient portals, tax preparation services, news sites. When you visit a page with the Meta Pixel, Facebook records your visit regardless of whether you have a Facebook account and regardless of whether you’re logged in.
 
-## 6. What a pixel can capture
+## What a pixel can capture
 
 Page visit and URL
 
@@ -165,7 +165,7 @@ Specific events - if configured, it can fire on button clicks, form submissions,
 
 When a retailer installs the Meta Pixel on a checkout page, every purchase can send data to Meta - including, often, product name, price, and sometimes an email address hashed. That data feeds Meta’s ad targeting system, which updates its profile of you accordingly.
 
-## 7. IP address tracking and what it reveals
+## IP address tracking and what it reveals
 
 QUICK ANSWER
 
@@ -187,7 +187,7 @@ In the United States, ISPs have been legally permitted to sell customer browsing
 
 A VPN masks your IP address from websites and your browsing history from your ISP. It doesn’t solve every tracking problem, but it addresses a specific layer that it genuinely helps with. We’ll come back to this in the section on where a VPN fits.
 
-## 8. Login-based tracking - the hardest to escape
+## Login-based tracking - the hardest to escape
 
 QUICK ANSWER
 
@@ -203,7 +203,7 @@ The Social Login problem
 
 Every time you click “Sign in with Google” or “Sign in with Facebook” on a third-party app or website, you’re doing two things: creating an account on that app, and telling the platform which apps you use. Meta and Google can then add “uses this app” to your profile. For apps in sensitive categories - mental health, fertility, medical, financial - this is information many people would rather keep private.
 
-## 9. Cross-device tracking and identity graphs
+## Cross-device tracking and identity graphs
 
 QUICK ANSWER
 
@@ -227,7 +227,7 @@ Device graph correlations - your phone number linked to your email, linked to yo
 
 Companies that specialize in identity resolution - LiveRamp, the Trade Desk’s Unified ID, Oracle’s CX Unity - maintain large databases of these linkages. When an advertiser buys from a platform like The Trade Desk, they can upload lists of email addresses or phone numbers. The platform matches those identifiers to device IDs, cookie IDs, fingerprints, and IP addresses, then shows ads across whatever devices you use.
 
-## 10. Data brokers - where it all gets sold
+## Data brokers - where it all gets sold
 
 QUICK ANSWER
 
@@ -237,7 +237,7 @@ You’ve probably heard of data brokers in the context of people-search websites
 
 The major data brokers - Acxiom, Experian, LexisNexis, Oracle Data Cloud, Equifax, and many others - operate largely out of public view. Their business is assembling and selling profiles. Inputs come from everywhere:
 
-## 11. Purchase data from retailer loyalty programs
+## Purchase data from retailer loyalty programs
 
 Public records
 
@@ -257,7 +257,7 @@ Acxiom, one of the largest, claims to hold data on 700 million people across 62 
 
 The data broker industry is largely unregulated at the federal level in the US, though some states have begun passing laws that give residents rights to request deletion. In the EU, GDPR creates stronger restrictions, though enforcement has been uneven.
 
-## 12. The "cookie death" myth - what actually replaced cookies
+## The "cookie death" myth - what actually replaced cookies
 
 QUICK ANSWER
 
@@ -279,7 +279,7 @@ Server-side tracking (moving pixels to servers to bypass client-side blockers)
 
 The lesson isn’t that privacy tools don’t matter. It’s that the tracking industry adapts, and staying private requires understanding what’s being used today, not just what existed five years ago.
 
-## 13. Supercookies and CNAME cloaking
+## Supercookies and CNAME cloaking
 
 QUICK ANSWER
 
@@ -301,7 +301,7 @@ Research by Samy Kamkar showed that using multiple storage mechanisms together, 
 
 CNAME cloaking is a server-side technique. Tracking scripts loaded from a different domain can be blocked by ad blockers that use domain-based blocklists. To evade this, some companies ask publishers to create a CNAME record so the tracker appears to come from the publisher’s own domain. From the browser’s perspective, it looks first-party. Ad blockers that rely on domain matching can be defeated. Some browsers detect CNAME cloaking, but it remains an ongoing arms race.
 
-## 14. Mobile tracking - apps and the advertising ID
+## Mobile tracking - apps and the advertising ID
 
 QUICK ANSWER
 
@@ -315,7 +315,7 @@ Location data is where mobile tracking becomes most invasive. Many categories of
 
 Apple’s App Tracking Transparency (ATT) introduced in iOS 14.5 requires apps to ask permission before accessing the Advertising ID for cross-app tracking. Studies found a large majority of iOS users declined when asked. That reduced the IDFA-based tracking ecosystem for iOS. Google introduced a similar framework for Android later. Neither framework eliminates tracking completely, but both represent meaningful reductions in cross-app tracking.
 
-## 15. What advertisers actually know about you
+## What advertisers actually know about you
 
 At this point, the natural question is: what does all of this add up to?
 
@@ -341,83 +341,83 @@ These segments are inferred from behavioral data - the websites you visit, the a
 
 The Federal Trade Commission has documented cases where data brokers sold lists tied to sensitive categories like health conditions and people seeking help. What happens after the data is sold is largely uncontrolled.
 
-## 16. Five common myths about ad tracking
+## Five common myths about ad tracking
 
 Myth 1: “I don’t care if they track me, I have nothing to hide.”
 
 The privacy argument isn’t only about hiding things you’re ashamed of. It’s about who gets to know things about you and what they can do with that information. Medical profiles can affect insurance rates. Location data can reveal religious and political activity. Behavioral profiles can be used for manipulation, not just advertising. The value of privacy is control over your own information.
 
-## 17. Myth 2: “Clearing my cookies regularly protects me.”
+## Myth 2: “Clearing my cookies regularly protects me.”
 
 Clearing cookies removes one tracking vector. It doesn’t defeat fingerprinting, your IP address, your advertising ID, login-based tracking, or server-side tracking. If you clear cookies and immediately log back into Google, you’ve handed back a deterministic identifier within seconds.
 
-## 18. Myth 3: “Private browsing / Incognito mode stops tracking.”
+## Myth 3: “Private browsing / Incognito mode stops tracking.”
 
 Private browsing prevents your browser from saving history and cookies on your device. It doesn’t stop websites from tracking you. They still see the same fingerprint, the same IP address, and the same tracking pixels. Incognito mode has also been the subject of legal action alleging continued data collection.
 
-## 19. Myth 4: “GDPR / privacy law has solved this problem.”
+## Myth 4: “GDPR / privacy law has solved this problem.”
 
 GDPR improved consent requirements in the EU and created meaningful obligations for data controllers. It hasn’t eliminated ad tracking. In many cases, it produced cookie-consent banners with confusing patterns designed to maximize opt-ins. Also, many broker operations happen in places where strong privacy law doesn’t apply, and enforcement can be slow.
 
-## 20. Myth 5: “Ad blockers block all tracking.”
+## Myth 5: “Ad blockers block all tracking.”
 
 Mainstream ad blockers are effective at blocking known third-party tracking domains. They don’t block fingerprinting, first-party tracking, CNAME cloaked trackers, server-side tracking, or login-based tracking. They’re a useful part of a toolkit, but not a complete solution.
 
-## 21. How to fight back - a practical toolkit
+## How to fight back - a practical toolkit
 
 *   This is the section most people came for, so let’s be practical. These steps are listed roughly in order of effort and impact.
 *   Use a privacy-respecting browser
 *   Firefox is the most practical choice for most people. It ships with Enhanced Tracking Protection enabled by default, which blocks known third-party trackers and fingerprinting protection, and includes CNAME cloaking detection. Brave is a Chromium-based alternative with built-in fingerprint randomization and first-party-only cookie isolation. Safari has strong Intelligent Tracking Prevention on Apple devices. Chrome is the one to move away from if you care about tracking.
 
-## 22. Install uBlock Origin
+## Install uBlock Origin
 
 uBlock Origin is a strong content blocker. It blocks third-party tracking scripts, known fingerprinting domains, ad pixels, and redirecting URLs. It works at the network level, meaning it stops tracking requests before they leave your browser. Use Medium Mode for stronger protection if you’re okay with occasional website breakage.
 
 Note: uBlock Origin availability and extension capabilities depend on browser version and extension manifest support. That’s one reason many privacy-focused users prefer Firefox.
 
-## 23. Use a VPN for network-level protection
+## Use a VPN for network-level protection
 
 A VPN masks your IP address from every website you visit and prevents your ISP from seeing your browsing history. This addresses two tracking vectors: IP-based tracking and ISP data sales. It doesn’t stop cookie-based tracking or fingerprinting by itself, but it removes your ISP from the picture entirely and makes IP-based profiling harder.
 
 Choose a VPN with a genuine no-logs policy, an audited technical architecture, and a business model that doesn’t depend on selling your data.
 
-## 24. Compartmentalize your logins
+## Compartmentalize your logins
 
 Avoid “Sign in with Google” or “Sign in with Facebook” for third-party apps if you care about privacy. Use dedicated email accounts for different categories of services - one for shopping, one for newsletters, one for work. A password manager makes this easier without turning your life into a chore.
 
-## 25. Manage your advertising IDs
+## Manage your advertising IDs
 
 On iOS: Settings → Privacy & Security → Tracking. Turn off “Allow Apps to Request to Track.” Revoke permissions for apps that already have access. You can also turn off Personalized Ads in Apple Advertising settings.
 
 On Android: Settings → Privacy → Ads. Reset your advertising ID regularly, or delete it entirely on newer Android versions. Menus vary by manufacturer.
 
-## 26. Use a privacy-respecting search engine
+## Use a privacy-respecting search engine
 
 Google ties searches to your account when you’re logged in, or to your IP and fingerprint when you’re not. DuckDuckGo, Brave Search, and Startpage are practical alternatives. Kagi is a paid option some privacy-conscious users prefer.
 
-## 27. Use a tracker-blocking DNS resolver
+## Use a tracker-blocking DNS resolver
 
 A DNS resolver that blocks tracking and advertising domains adds network-level protection that works regardless of which browser or app you use. NextDNS and Cloudflare Gateway are common options. Quad9 blocks malware domains by default. These work before tracking scripts even load.
 
-## 28. Consider an email privacy service
+## Consider an email privacy service
 
 Email tracking pixels are everywhere. Hey, Fastmail, and ProtonMail offer tracking pixel blocking. Apple Mail on iOS and macOS uses privacy relay features that mask your IP and block open tracking. For a more aggressive approach, email aliasing services like SimpleLogin or Apple’s Hide My Email help you create unique masked addresses per service.
 
-## 29. Opt out of data broker databases
+## Opt out of data broker databases
 
 This is tedious, but it matters for the most sensitive data. In states with privacy laws, you can request deletion from broker databases. Services like DeleteMe or Privacy Bee automate parts of this. Manual opt-outs are possible if you’re willing to work through the largest brokers.
 
-## 30. Use end-to-end encrypted messaging
+## Use end-to-end encrypted messaging
 
 SMS and standard phone calls aren’t encrypted end-to-end and can be intercepted or subpoenaed. Signal is the gold standard for private messaging. iMessage with PQ3 is a reasonable choice if your contacts are all on Apple devices. WhatsApp is end-to-end encrypted but owned by Meta, which collects metadata.
 
-## 31. Where a VPN fits into all of this
+## Where a VPN fits into all of this
 
 QUICK ANSWERA VPN masks your IP address from websites and your browsing history from your ISP. Those are two real tracking vectors. A VPN does not stop cookie-based tracking, fingerprinting, login-based tracking, or data brokers who already have your data. It belongs in a toolkit, not as a standalone solution.
 
 Let’s be precise about what a VPN does and doesn’t do for ad tracking, because VPN marketing often overstates it.
 
-## 32. What a VPN genuinely helps with:
+## What a VPN genuinely helps with:
 
 IP address masking - every website you visit sees the VPN server’s IP, not yours. This defeats IP-based geolocation and IP-based correlation across sites.
 
@@ -427,7 +427,7 @@ Network-level eavesdropping - on public WiFi, a VPN encrypts the tunnel between 
 
 Reducing location precision - your apparent location becomes the VPN server’s location.
 
-## 33. What a VPN does not help with:
+## What a VPN does not help with:
 
 Cookie-based tracking - if you’re logged into Google, Google knows it’s you regardless of IP.
 
@@ -441,7 +441,7 @@ App-level tracking on mobile - advertising IDs and app permissions aren’t affe
 
 The honest framing: a VPN is one layer in a privacy toolkit. Used alongside a privacy browser, uBlock Origin, compartmentalized logins, and managed advertising IDs, it reduces your tracking exposure. Used alone, it reduces only one part of the picture.
 
-## 34. How OllaVPN handles your network privacy
+## How OllaVPN handles your network privacy
 
 We built OllaVPN to be the most privacy-respecting VPN we could make - not the one with the most features, the most servers, or the most aggressive marketing, but the one that does its actual job correctly.
 
@@ -459,7 +459,7 @@ Available on the lifetime free plan - privacy protections that matter aren’t p
 
 No account required for the free plan - you don’t give OllaVPN an email address to get started.
 
-## 35. OllaVPN plans:
+## OllaVPN plans:
 
 Lifetime free · $0 · 10 Mbps IP masking, no-logs, in-tunnel DNS, PQC-ready, [kill switch](/blog/what-is-a-vpn-kill-switch.html). Every country. No time limits. No data caps. No ads.
 
@@ -468,8 +468,8 @@ Paid plan · $2 / month · 10 Gbps Same privacy stack, faster connections. Five 
 You can try the free plan right now - no email, no card, no upsell. Your ISP stops seeing your traffic from your first connection.
 </div>
 
-<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
-  <h2 style="font-size: 1.625rem; font-weight: 800; margin: 0 0 16px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
+<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 12px 28px 24px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
+  <h2 style="font-size: 1.625rem; font-weight: 800; margin: 0 0 14px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
   <div style="display: flex; flex-direction: column;">
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">

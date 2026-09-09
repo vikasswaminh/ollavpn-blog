@@ -1,4 +1,4 @@
----
+﻿---
 title: 'What Your ISP Can See About You (And How to Hide It)'
 description: 'The plain-English guide to exactly what your internet provider logs, sells, and hands over—down to the packet level. What HTTPS hides, and how to close every gap.'
 pubDate: 2026-06-26
@@ -7,7 +7,7 @@ tags: ['privacy-security']
 ---
 
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
-  <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR — The Short Answer</h3>
+  <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
     The plain-English guide to exactly what your internet provider logs, sells, and hands over - down to the packet level. What HTTPS hides, and how to close every gap. OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
   </p>
@@ -57,7 +57,7 @@ What Your ISP Can See About You (And How to Hide It)
 
 The plain-English guide to exactly what your internet provider logs, sells, and hands over - down to the packet level. What’s actually visible, what stopped being visible when HTTPS became the default, and the specific settings that close the rest of the gap.
 
-## 1. Why this matters more than people think
+## Why this matters more than people think
 
 Your ISP is a mandatory intermediary - unlike a website you can choose not to visit, you can’t get online without going through it. That gives it a uniquely complete view of your online life: every service you use, when you use it, and roughly what you do there, aggregated day after day, year after year.
 
@@ -67,7 +67,7 @@ That single fact is what makes ISP visibility different from website tracking. A
 
 And unlike ad trackers, which you can block with a browser extension in thirty seconds, you generally can’t block your ISP from seeing your traffic pattern without a different category of tool: encryption applied before the traffic leaves your device. That’s the crux of this guide.
 
-## 2. What an ISP actually is, technically
+## What an ISP actually is, technically
 
 Your ISP is the company that operates the physical or wireless infrastructure connecting your home or device to the wider internet. Every request you make - a webpage, a video stream, a game server ping - is routed through their equipment before it reaches its destination, and every response is routed back through the same equipment.
 
@@ -75,7 +75,7 @@ It helps to picture the actual path a request takes. When you type a web address
 
 The return traffic - the webpage, the video stream, the game data - takes the same path in reverse. There’s no way to reach the internet from a home or mobile connection without this round trip through your provider’s network. That’s exactly why what your ISP can see matters more than what any single website can see.
 
-## 3. The full list: everything your ISP can see
+## The full list: everything your ISP can see
 
 Even with HTTPS encryption in place, an ISP can typically see the domain of every site you visit, the exact timestamps and duration of every connection, the volume of data transferred, your approximate location, the make and behavior of every device on your network, and - on unencrypted connections - the full content of what you send and receive.
 
@@ -123,7 +123,7 @@ Smart-home and IoT chatter:
 
 IoT devices - cameras, voice assistants, smart plugs - talk to cloud servers constantly, and historically they’ve had weaker encryption than mainstream apps. An ISP watching that traffic at consistent intervals can infer a household’s daily routine without ever seeing message content.
 
-## 4. What HTTPS hides  -  and what it doesn’t
+## What HTTPS hides  -  and what it doesn’t
 
 HTTPS encrypts the content of a webpage - text, images, form data, passwords - so it can’t be read in transit. It does not, by default, hide which domain you’re connecting to, when, for how long, or how much data moved. Those metadata fields remain visible to anyone positioned to see the network traffic, including your ISP.
 
@@ -131,7 +131,7 @@ It’s worth being precise here because “HTTPS means you’re safe” is one o
 
 What it was never designed to hide is the metadata around that exchange. The domain name (via SNI in most configurations), the IP addresses of both ends, the timing, and the size of the exchange are all still visible on the wire. Security researchers sometimes describe this with an analogy: HTTPS is like sending a letter in a sealed, tamper-proof envelope. Nobody can read what’s inside, but the envelope itself still has a visible return address, a visible destination, a postmark, and a visible weight. Your ISP is the postal service that handles every single envelope you send, and it can read all of that outside information on every one of them.
 
-## 5. The DNS problem, explained simply
+## The DNS problem, explained simply
 
 Every website visit typically starts with a DNS lookup, translating a domain name into an IP address. By default, that lookup travels as plain, unencrypted text to a DNS resolver - usually your ISP’s own - meaning your ISP gets a running log of every domain you visit before you even connect to it.
 
@@ -145,7 +145,7 @@ DNS over TLS (DoT) achieves the same encryption using a dedicated encrypted chan
 
 Both are now supported natively in most modern browsers and operating systems, but neither is enabled by default in every configuration. And a plain VPN connection doesn’t automatically fix DNS either. A VPN that lets DNS queries leak outside its encrypted tunnel (a “DNS leak”) defeats much of the purpose. That’s why “does the VPN handle DNS inside the tunnel” is one of the first questions worth asking about any VPN product - not an afterthought.
 
-## 6. What your ISP cannot see with a VPN
+## What your ISP cannot see with a VPN
 
 A properly configured VPN encrypts your traffic - including DNS requests, when handled correctly - inside a tunnel before it ever leaves your device. That means your ISP sees only an encrypted stream heading to a single VPN server. It can’t see the destination sites, the content, or the DNS lookups.
 
@@ -153,7 +153,7 @@ When a VPN is doing its job correctly, here’s what changes from your ISP’s p
 
 That last point is worth being honest about: a VPN is very good at hiding what and where, and it does not make you invisible in a movie-plot sense. Your ISP will still know you used a VPN, for how long, and roughly how much data you moved. For the overwhelming majority of people, that residual visibility is a non-issue. For a narrow set of high-risk users, it’s worth knowing about.
 
-## 7. A short history of ISP data privacy law
+## A short history of ISP data privacy law
 
 2015 :
 
@@ -183,7 +183,7 @@ Additional US states - Virginia, Colorado, Connecticut, and others - pass their 
 
 Enforcement actions and settlements against major US carriers over location-data resale practices bring renewed regulatory and public attention to what telecom companies do with subscriber data, even without new federal legislation being passed.
 
-## 8. Why ISPs collect this data in the first place
+## Why ISPs collect this data in the first place
 
 ISPs collect traffic metadata partly for legitimate network operations - routing, billing, capacity planning, security - and partly because aggregated and de-identified browsing-adjacent data has real commercial value to advertisers and data brokers, particularly in jurisdictions like the US where selling it doesn’t require customer opt-in.
 
@@ -195,7 +195,7 @@ Commercial reasons are where the real privacy concerns live. In the US, absent t
 
 The honest summary: some collection is structural and mundane, some is genuinely commercial, and the line between “network operations” and “monetizable profile” has blurred as data brokerage has grown.
 
-## 9. Data retention laws around the world
+## Data retention laws around the world
 
 Whether an ISP is required to keep logs - separate from whether it’s permitted to sell data - varies by country, and it affects how long a record of your activity might exist even if you never think about it again.
 
@@ -211,7 +211,7 @@ Region: India - Retention posture: Licensing conditions require telecom and inte
 
 The pattern across most jurisdictions is the same: some metadata retention is common even without personal wrongdoing, simply because it supports billing, security, and compliance functions. What actually matters for your day-to-day privacy is less “does my country mandate retention” and more “what specific data is retained and who can access it.” That’s genuinely hard to find out without reading a provider’s privacy policy. That’s one more reason the encryption-based approach in this guide beats jurisdiction-shopping for an ISP.
 
-## 10. Five common misconceptions
+## Five common misconceptions
 
 Myth 1 “Incognito or private browsing mode hides my activity from my ISP.” The reality: Incognito mode only cleans up your local room. It resets your local history, cookies, and cache, but leaves what exits your machine completely untouched. Your ISP still logs the same DNS requests and TLS handshake metadata.
 
@@ -223,7 +223,7 @@ Myth 4 “A VPN makes me completely invisible online.” The reality: A VPN shif
 
 Myth 5 “Changing my DNS provider alone is enough to stop [ISP tracking](/blog/what-your-isp-can-see-about-you.html).” The reality: Pointing at a third-party resolver only shifts who answers the query. If those requests are sent over plain text (port 53), your ISP can inspect them in transit. The channel itself must be encrypted to keep it private.
 
-## 11. How to actually hide your activity from your ISP
+## How to actually hide your activity from your ISP
 
 The combination that closes almost all of the gaps described above is: a VPN that routes all traffic - including DNS - through an encrypted tunnel, encrypted DNS as a backup layer, a browser or client that supports Encrypted Client Hello (ECH) to close the SNI leak, and basic hygiene like avoiding unencrypted HTTP sites and reviewing what your router and smart devices are permitted to do.
 
@@ -245,7 +245,7 @@ Be deliberate with smart-home devices. Isolate IoT devices on a dedicated local 
 
 Read the actual privacy policy once. It is a dry read, but reviewing the document reveals what data your provider formally reserves the right to aggregate, share, or sell.
 
-## 12. VPN vs. encrypted DNS vs. Tor
+## VPN vs. encrypted DNS vs. Tor
 
 Tool What it hides from your ISP What it doesn't hide Typical speed impact
 
@@ -257,7 +257,7 @@ Tor Destination domains, DNS lookups, content, and  -  through multi-hop routing
 
 The practical takeaway: encrypted DNS alone leaves the SNI leak wide open and is a partial fix at best. A well-implemented VPN closes the largest share of the gap for the least effort and least speed cost, which is why it’s the default recommendation for most people in this guide. Tor closes more, but at a real usability cost, and it makes the most sense for a narrower set of high-risk use cases rather than everyday browsing.
 
-## 13. Your ISP-privacy checklist
+## Your ISP-privacy checklist
 
 If you want to evaluate your own setup honestly, here’s the framework we’d use.
 
@@ -275,7 +275,7 @@ Do you know, even roughly, what your ISP’s privacy policy actually says about 
 
 If you can answer “yes” to the first three, the practical gap between what your ISP can see and total privacy is small. If you can’t, that’s exactly where to start.
 
-## 14. How OllaVPN thinks about ISP visibility
+## How OllaVPN thinks about ISP visibility
 
 Our position here follows the same logic as our approach to jurisdiction: the strongest posture is closing the actual technical gaps, not making a marketing claim about them. A lot of VPN products advertise “hide from your ISP” without handling DNS correctly, which leaves the single biggest leak wide open.
 
@@ -298,8 +298,8 @@ Lifetime free $0 · 10 Mbps Unlimited data. Every country we serve. In-tunnel DN
 Paid plan $2 / month · 10 Gbps Five devices on one account. Same protection, faster connection.
 </div>
 
-<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
-  <h2 style="font-size: 1.625rem; font-weight: 800; margin: 0 0 16px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
+<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 12px 28px 24px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
+  <h2 style="font-size: 1.625rem; font-weight: 800; margin: 0 0 14px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
   <div style="display: flex; flex-direction: column;">
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
