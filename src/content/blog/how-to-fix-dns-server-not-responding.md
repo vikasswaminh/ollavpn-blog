@@ -1,4 +1,4 @@
-ï»¿---
+---
 title: 'DNS Server Not Responding? Here''s How to Fix It Quickly'
 description: 'When you see a "DNS server not responding" error, it means your computer can''t translate website names into the numerical addresses the internet uses. Think of it like your phone''s contact list suddenly d...'
 pubDate: 2026-06-09
@@ -137,7 +137,7 @@ A how-to guide is only useful if you can verify the outcome. After completing th
 
 **DNS is going through the tunnel.** Open [our DNS lookup tool](/dns-lookup). The resolver IP shown should be the in-tunnel one (CGNAT 100.64.x.x range), not your ISP's DNS. If you see your ISP's resolver, DNS is leaking  -  see our [in-tunnel DNS page](/in-tunnel-dns) for the technical details on why this happens and how OllaVPN prevents it.
 
-**No WebRTC leak.** Open [our WebRTC leak test](/webrtc-leak-test). You should see only the exit's IPv4 address. If your real IP appears (private LAN address or public IPv4/IPv6), WebRTC is bypassing the VPN  -  either OllaVPN's leak prevention has failed (file a report at `[[emailÂ protected]](/cdn-cgi/l/email-protection)`) or your browser has a WebRTC-specific privacy issue we can help diagnose.
+**No [WebRTC leak](/blog/what-is-a-webrtc-leak/).** Open [our WebRTC leak test](/webrtc-leak-test). You should see only the exit's IPv4 address. If your real IP appears (private LAN address or public IPv4/IPv6), WebRTC is bypassing the VPN  -  either OllaVPN's leak prevention has failed (file a report at `[[emailÂ protected]](/cdn-cgi/l/email-protection)`) or your browser has a WebRTC-specific privacy issue we can help diagnose.
 
 ## If a step fails, here's how to debug
 
@@ -208,7 +208,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[emailÂ
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>6. Is it safe to perform these fixes on a public Wi-Fi network?</span>
+      <span>6. Is it safe to perform these fixes on a [public Wi-Fi network](/blog/how-public-wifi-steals-passwords/)?</span>
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
@@ -221,7 +221,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[emailÂ
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Not directly for the initial troubleshooting, as a VPN relies on a working internet connection. However, once you're back online, using a VPN like OllaVPN can prevent future DNS leaks and ensure your DNS queries are private and secure, even offering post-quantum-ready encryption. It's a great step for ongoing privacy.
+      Not directly for the initial troubleshooting, as a VPN relies on a working internet connection. However, once you're back online, using a VPN like OllaVPN can prevent future [DNS leaks](/blog/what-is-a-dns-leak/) and ensure your DNS queries are private and secure, even offering post-quantum-ready encryption. It's a great step for ongoing privacy.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
@@ -242,7 +242,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[emailÂ
     Navigating DNS Server Not Responding? Heres How to Fix It Quickly effectively requires choosing security architectures built on transparency, strong encryption, and verified zero data logging.
   </p>
   <p style="font-size: 0.925rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
-    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on kill switch defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
+    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on [kill switch](/blog/what-is-a-vpn-kill-switch/) defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
   </p>
 </section>
 

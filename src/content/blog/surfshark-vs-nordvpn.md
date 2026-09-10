@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Surfshark vs NordVPN (2026): Unlimited Devices vs Specialized Server Fleets'
 description: 'Shared parent company, different strengths: Surfshark''s unlimited household connections vs NordVPN''s dedicated IP and Onion-over-VPN infrastructure.'
 pubDate: 2026-05-16
@@ -125,13 +125,13 @@ WireGuard + OpenVPN + IKEv2
 
 WireGuard-based (NordLynx) + OpenVPN
 
-Kill switch
+[Kill switch](/blog/what-is-a-vpn-kill-switch/)
 
 Yes, on all platforms
 
 Yes, on all platforms
 
-Post-quantum cryptography
+[Post-quantum cryptography](/blog/what-is-post-quantum-cryptography/)
 
 Rolling out
 
@@ -218,12 +218,12 @@ For **torrenting**, both support P2P on supported servers. Both have kill switch
 
 ## Security and encryption
 
-The plain-English summary: **both companies use modern, well-respected encryption**. Both run WireGuard or a WireGuard variant. Both include a **kill switch** on every platform, on by default. Both protect against the common categories of leak  -  DNS leaks, IPv6 leaks, WebRTC  -  out of the box.
+The plain-English summary: **both companies use modern, well-respected encryption**. Both run WireGuard or a WireGuard variant. Both include a **kill switch** on every platform, on by default. Both protect against the common categories of leak  -  [DNS leaks](/blog/what-is-a-dns-leak/), [IPv6 leaks](/blog/what-is-an-ipv6-leak/), WebRTC  -  out of the box.
 
 On posture:
 
 *   **Surfshark** has been **independently audited** (Cure53 has audited the browser extensions and infrastructure has been reviewed by Deloitte). The apps are closed source. The company runs diskless RAM-only servers, which is the modern standard for VPN infrastructure because it limits the data that can be obtained from a seized server.
-*   **NordVPN** has also been **independently audited multiple times** by major firms including Deloitte and PwC, with the audits covering both the no-logs policy and the application code. The apps are closed source. After a server-configuration incident in 2018, the company publicly disclosed what happened, addressed the root cause, and made a structural move to diskless RAM-only infrastructure.
+*   **NordVPN** has also been **independently audited multiple times** by major firms including Deloitte and PwC, with the audits covering both the [no-logs policy](/blog/what-logs-does-vpn-keep/) and the application code. The apps are closed source. After a server-configuration incident in 2018, the company publicly disclosed what happened, addressed the root cause, and made a structural move to diskless RAM-only infrastructure.
 
 Both companies are also beginning to roll out **post-quantum cryptography** protections  -  more on what that means in the dedicated section further down.
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Lifetime Free VPN: Is OllaVPN Really Free Forever?'
 description: 'The complete, no-fluff guide to what ''lifetime free VPN'' actually means in 2026. What the free plan includes, our sustainable funding model, and zero-log architecture.'
 pubDate: 2026-06-08
@@ -108,9 +108,9 @@ Protocol: [WireGuard](/free-wireguard-vpn). The modern, fast, auditable VPN prot
 
 Post-quantum encryption: included. The same hybrid post-quantum handshake that protects paid connections is available on the free plan with no configuration required. This is not a paid feature.
 
-Kill switch: always-on, mandatory. If the VPN connection drops, traffic is blocked. There is no option to disable the kill switch. This is an unusual design choice - most VPNs make the kill switch optional - but it’s the right one for a privacy-first product.
+[Kill switch](/blog/what-is-a-vpn-kill-switch/): always-on, mandatory. If the VPN connection drops, traffic is blocked. There is no option to disable the kill switch. This is an unusual design choice - most VPNs make the kill switch optional - but it’s the right one for a privacy-first product.
 
-DNS: in-tunnel. DNS queries go through OllaVPN's in-tunnel resolver rather than your ISP's or a third-party service. This prevents DNS leaks by default.
+DNS: in-tunnel. DNS queries go through OllaVPN's in-tunnel resolver rather than your ISP's or a third-party service. This prevents [DNS leaks](/blog/what-is-a-dns-leak/) by default.
 
 IPv6: handled inside the tunnel. IPv6 traffic is protected rather than leaked. A common oversight in VPN implementations that OllaVPN addresses explicitly.
 
@@ -168,7 +168,7 @@ QUICK ANSWER Post-quantum encryption is included on OllaVPN's free plan at no ex
 
 One of the more unusual things about OllaVPN's free plan is that it includes post-quantum encryption without configuration, without a toggle, and without any additional cost.
 
-Post-quantum cryptography (PQC) is, in simple terms, a family of new encryption algorithms designed to remain secure even when powerful quantum computers eventually exist. The most important present-day threat it addresses is called "harvest now, decrypt later" - adversaries capturing your encrypted VPN traffic today and storing it to decrypt later once quantum computers become capable. For a full explainer on how this works and why it matters, see our [post-quantum cryptography](/blog/what-is-post-quantum-cryptography.html) guide.
+[Post-quantum cryptography](/blog/what-is-post-quantum-cryptography/) (PQC) is, in simple terms, a family of new encryption algorithms designed to remain secure even when powerful quantum computers eventually exist. The most important present-day threat it addresses is called "harvest now, decrypt later" - adversaries capturing your encrypted VPN traffic today and storing it to decrypt later once quantum computers become capable. For a full explainer on how this works and why it matters, see our [post-quantum cryptography](/blog/what-is-post-quantum-cryptography.html) guide.
 
 The short version: your VPN traffic from today could be decryptable by a sufficiently advanced quantum computer in ten or fifteen years. Post-quantum encryption is designed to make that impossible. The U.S. NIST finalized the first three post-quantum standards - FIPS 203, 204, and 205 - in August 2024, and major deployments followed at Apple, Signal, Google Chrome, Cloudflare, and Mullvad.
 
@@ -276,7 +276,7 @@ IPv6 support
 
 Access to every server country
 
-WireGuard protocol
+[WireGuard protocol](/blog/wireguard-vs-openvpn/)
 
 Four-layer [peer isolation](/peer-isolation)
 

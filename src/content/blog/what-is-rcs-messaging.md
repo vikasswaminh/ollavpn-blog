@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'What is RCS Messaging and Why Should You Care About It?'
 description: 'RCS messaging is essentially an upgrade to your standard text messages, giving you features like read receipts, typing indicators, and much better quality for sharing photos and videos. It''s designed to make your pho...'
 pubDate: 2026-06-09
@@ -67,7 +67,7 @@ When you send an RCS message, your phone doesn't just beam it directly to your f
 
 This whole process relies on something called the **universal profile**, which is a set of standards that ensures all these different carrier servers can talk to each other and that your phone knows how to format and display the rich features. It’s what allows you to send high-res photos, see typing indicators, or get read receipts across different phones and networks. Because it uses data packets and your internet connection, it's more like sending a message through an app like WhatsApp or Signal than a traditional SMS.
 
-However, one important thing to remember is that while it feels modern, RCS isn't always end-to-end encrypted by default, unlike some other messaging apps. This means your messages, while in transit through those carrier servers, could potentially be intercepted and read, depending on the specific implementation by your carrier or phone manufacturer. Google Messages offers end-to-end encryption for one-on-one chats, but this isn't a universal standard for all RCS traffic.
+However, one important thing to remember is that while it feels modern, RCS isn't always end-to-end encrypted by default, unlike some other messaging apps. This means your messages, while in transit through those carrier servers, could potentially be intercepted and read, depending on the specific implementation by your carrier or phone manufacturer. Google Messages offers [end-to-end encryption](/blog/what-is-end-to-end-encryption/) for one-on-one chats, but this isn't a universal standard for all RCS traffic.
 
 ## Why Does RCS Messaging Matter for You, the Everyday User?
 
@@ -246,7 +246,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
     Navigating What is RCS Messaging and Why Should You Care About It? effectively requires choosing security architectures built on transparency, strong encryption, and verified zero data logging.
   </p>
   <p style="font-size: 0.925rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
-    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on kill switch defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
+    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on [kill switch](/blog/what-is-a-vpn-kill-switch/) defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
   </p>
 </section>
 

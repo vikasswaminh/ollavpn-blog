@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Does ChatGPT Store Your Conversations?'
 description: 'The plain-English guide to what OpenAI actually does with everything you type into ChatGPT—how long it’s kept, how it’s used for training, and how to stop it.'
 pubDate: 2026-06-22
@@ -395,7 +395,7 @@ It cannot hide your conversation content from OpenAI. It cannot prevent OpenAI f
 
 OllaVPN plans:
 
-Lifetime free · $0 · 10 Mbps Zero-logs. In-tunnel DNS. Kill switch always on. PQC-ready. No account required. No data caps. Every country.
+Lifetime free · $0 · 10 Mbps Zero-logs. In-tunnel DNS. [Kill switch](/blog/what-is-a-vpn-kill-switch/) always on. PQC-ready. No account required. No data caps. Every country.
 
 Paid plan · $2 / month · 10 Gbps Same privacy architecture. Faster. Five devices.
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'How to Find Saved Passwords on Your Device: A Quick Guide'
 description: 'Lost track of a saved password? Don''t worry, you can almost always find it directly within your web browser''s settings or your device''s system settings. Whether you''re using Chrome, Firefox, Edge, Safari,...'
 pubDate: 2026-06-09
@@ -121,7 +121,7 @@ No matter which tool you pick, two practices are non-negotiable. First, always u
 
 A VPN doesn't directly help you find saved passwords, but it significantly improves the security of your existing passwords and login credentials.
 
-Think of a VPN as a secure tunnel for all your internet traffic. When you connect to OllaVPN, everything you send and receive is wrapped in strong, [post-quantum-ready encryption](/post-quantum-encryption). This means that even if someone were to intercept your data – say, on an unsecured public Wi-Fi network – they wouldn't be able to read your passwords or other sensitive information. So, while it won't recover a password you've forgotten, it makes sure the ones you use are much safer from prying eyes.
+Think of a VPN as a secure tunnel for all your internet traffic. When you connect to OllaVPN, everything you send and receive is wrapped in strong, [post-quantum-ready encryption](/post-quantum-encryption). This means that even if someone were to intercept your data – say, on an unsecured [public Wi-Fi network](/blog/how-public-wifi-steals-passwords/) – they wouldn't be able to read your passwords or other sensitive information. So, while it won't recover a password you've forgotten, it makes sure the ones you use are much safer from prying eyes.
 
 The primary benefit here is protection against **data interception**. If you're logging into your bank account, email, or social media from a coffee shop, airport, or hotel, that public Wi-Fi network is often a prime target for attackers. Without a VPN, your login credentials could be visible to anyone with the right tools. With OllaVPN, that data is scrambled and unreadable, adding a crucial layer of security that your browser's "save password" feature simply can't provide on its own.
 
@@ -157,7 +157,7 @@ A how-to guide is only useful if you can verify the outcome. After completing th
 
 **DNS is going through the tunnel.** Open [our DNS lookup tool](/dns-lookup). The resolver IP shown should be the in-tunnel one (CGNAT 100.64.x.x range), not your ISP's DNS. If you see your ISP's resolver, DNS is leaking  -  see our [in-tunnel DNS page](/in-tunnel-dns) for the technical details on why this happens and how OllaVPN prevents it.
 
-**No WebRTC leak.** Open [our WebRTC leak test](/webrtc-leak-test). You should see only the exit's IPv4 address. If your real IP appears (private LAN address or public IPv4/IPv6), WebRTC is bypassing the VPN  -  either OllaVPN's leak prevention has failed (file a report at `[[email protected]](/cdn-cgi/l/email-protection)`) or your browser has a WebRTC-specific privacy issue we can help diagnose.
+**No [WebRTC leak](/blog/what-is-a-webrtc-leak/).** Open [our WebRTC leak test](/webrtc-leak-test). You should see only the exit's IPv4 address. If your real IP appears (private LAN address or public IPv4/IPv6), WebRTC is bypassing the VPN  -  either OllaVPN's leak prevention has failed (file a report at `[[email protected]](/cdn-cgi/l/email-protection)`) or your browser has a WebRTC-specific privacy issue we can help diagnose.
 
 ## If a step fails, here's how to debug
 
@@ -262,7 +262,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
     Navigating How to Find Saved Passwords on Your Device: A Quick Guide effectively requires choosing security architectures built on transparency, strong encryption, and verified zero data logging.
   </p>
   <p style="font-size: 0.925rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
-    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on kill switch defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
+    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on [kill switch](/blog/what-is-a-vpn-kill-switch/) defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
   </p>
 </section>
 

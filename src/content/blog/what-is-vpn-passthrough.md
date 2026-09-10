@@ -1,4 +1,4 @@
-ï»¿---
+---
 title: 'What is VPN Passthrough and Why Should You Care?'
 description: 'VPN passthrough is basically your router''s way of making sure your VPN connection gets through your home network without a hitch. Imagine it like a special VIP lane for your encrypted data; without it, your VPN traff...'
 pubDate: 2026-06-09
@@ -129,7 +129,7 @@ OllaVPN uses modern protocols like WireGuard and QUIC, coupled with client-side 
 
 You know that feeling when a VPN just bogs everything down, or worse, stops working entirely because of a tricky network? We hate that too. That's why we've built OllaVPN from the ground up to be incredibly efficient and resilient. Our core protocol is [WireGuard](/blog/wireguard-explained), which is significantly faster and uses less battery than older VPN protocols. This means less overhead for your device and a snappier connection overall. Even on our [10 Mbps free plan](/free-vpn), you'll find it more than capable for streaming HD and video calls because of this efficiency.
 
-For those really sticky situations, like restrictive corporate networks or public Wi-Fi that tries to block VPNs, we have a [**QUIC option for restrictive networks**](/blog/quic-mode-explained). QUIC is the same technology that powers much of the modern web, and it's fantastic at punching through firewalls that traditional VPN protocols struggle with. This means you're much less likely to hit a "VPN blocked" wall, keeping you connected when other VPNs fail.
+For those really sticky situations, like restrictive corporate networks or [public Wi-Fi](/blog/how-public-wifi-steals-passwords/) that tries to block VPNs, we have a [**QUIC option for restrictive networks**](/blog/quic-mode-explained). QUIC is the same technology that powers much of the modern web, and it's fantastic at punching through firewalls that traditional VPN protocols struggle with. This means you're much less likely to hit a "VPN blocked" wall, keeping you connected when other VPNs fail.
 
 Beyond the protocols, a lot of the magic happens with how our client software manages your connection. We handle a lot of the complexity with **client-side handling**, meaning your app is smart about finding the best path and recovering quickly from network hiccups. This, combined with our [post-quantum-ready encryption](/blog/post-quantum-encryption), ensures not only speed and reliability but also future-proof security. And if you upgrade to the [10 Gbps Plus plan](/plus), you'll experience even more headroom for bandwidth-intensive tasks without sacrificing an ounce of that smooth, uninterrupted flow.
 
@@ -254,7 +254,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[emailÂ
     Navigating What is VPN Passthrough and Why Should You Care? effectively requires choosing security architectures built on transparency, strong encryption, and verified zero data logging.
   </p>
   <p style="font-size: 0.925rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
-    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on kill switch defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
+    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on [kill switch](/blog/what-is-a-vpn-kill-switch/) defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
   </p>
 </section>
 

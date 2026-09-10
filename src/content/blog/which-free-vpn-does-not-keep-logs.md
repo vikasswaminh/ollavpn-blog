@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Which Free VPN Does Not Keep Logs? A 2026 No-Logs VPN Checklist'
 description: 'A plain-English guide to what “no logs” actually means, what it doesn’t mean, how to verify it, and which free VPNs in 2026 genuinely hold up under scrutiny.'
 pubDate: 2026-06-18
@@ -193,7 +193,7 @@ RAM-only servers, or documented equivalent
 
 DNS resolved inside the encrypted tunnel by the VPN’s own resolver
 
-Kill switch always-on by default (not just available as an option)
+[Kill switch](/blog/what-is-a-vpn-kill-switch/) always-on by default (not just available as an option)
 
 IPv6 handled inside the tunnel or blocked by default
 
@@ -221,7 +221,7 @@ No acquisition history that changed the privacy posture
 
 Jurisdiction:
 
-Based outside Five Eyes and major surveillance alliancesNo mandatory data retention requirements in home jurisdiction
+Based outside [Five Eyes](/blog/five-eyes-nine-eyes-fourteen-eyes/) and major surveillance alliancesNo mandatory data retention requirements in home jurisdiction
 
 Published transparency report, even if empty
 
@@ -269,7 +269,7 @@ OllaVPN Free (Lifetime)
 
 OllaVPN offers a lifetime free plan with no data caps, no time limits, and no advertisements - subsidized by its paid tier. The [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) architecture covers both activity and connection logs; the company does not collect real IP addresses, session timestamps, or session durations. DNS is resolved inside the encrypted tunnel by OllaVPN’s own unbound resolver - your ISP cannot see the domains you visit, and no third-party DNS provider receives your queries.
 
-The technical architecture goes further than most: the kill switch is always-on and cannot be accidentally disabled; post-quantum cryptography (hybrid X25519 + ML-KEM-768) is applied to every connection including the free plan; peer isolation is enforced at multiple independent layers. No account or email address is required to use the free plan - there is no account to link your traffic to.
+The technical architecture goes further than most: the kill switch is always-on and cannot be accidentally disabled; [post-quantum cryptography](/blog/what-is-post-quantum-cryptography/) (hybrid X25519 + ML-KEM-768) is applied to every connection including the free plan; peer isolation is enforced at multiple independent layers. No account or email address is required to use the free plan - there is no account to link your traffic to.
 
 OllaVPN’s architecture has been independently audited. The free plan is a genuine product, not a funnel with meaningful restrictions - the only difference from the paid plan is speed (10 Mbps on free, 10 Gbps on paid) and the number of devices (one on free, five on paid).
 
@@ -347,7 +347,7 @@ The important caveat: jurisdiction matters only if data exists to hand over. A g
 
 QUICK ANSWE
 
-RAM-only servers store all data in volatile memory rather than on hard drives. When the server powers off or reboots - whether by design, by accident, or under seizure - every byte of data it ever held is permanently gone. For a [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) VPN, RAM-only servers add a physical layer of enforcement: even if a no-logs policy were violated and data were stored, it would be automatically erased at reboot.
+RAM-only servers store all data in volatile memory rather than on hard drives. When the server powers off or reboots - whether by design, by accident, or under seizure - every byte of data it ever held is permanently gone. For a [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) VPN, RAM-only servers add a physical layer of enforcement: even if a [no-logs policy](/blog/what-logs-does-vpn-keep/) were violated and data were stored, it would be automatically erased at reboot.
 
 Traditional servers write data to hard drives. If a law enforcement agency seizes a server (which has happened to multiple VPN providers), any data on those drives is potentially recoverable - even data the VPN intended to delete.
 
@@ -457,7 +457,7 @@ No connection logs, ever. We do not store your real IP address, connection times
 
 RAM-only server infrastructure. All VPN server data lives in volatile memory. A server reboot - whether scheduled, accidental, or compelled - wipes everything automatically. There are no hard drives to seize.
 
-DNS inside the encrypted tunnel. Your DNS queries - the lookups that reveal every domain you visit - go through OllaVPN’s own unbound resolver, inside the tunnel. Your ISP cannot see them. No third-party DNS provider receives them. If you want to understand why this matters, the DNS leak guide explains it in full.
+DNS inside the encrypted tunnel. Your DNS queries - the lookups that reveal every domain you visit - go through OllaVPN’s own unbound resolver, inside the tunnel. Your ISP cannot see them. No third-party DNS provider receives them. If you want to understand why this matters, the [DNS leak](/blog/what-is-a-dns-leak/) guide explains it in full.
 
 No account required on the free plan. You don’t give us an email address to get started. There is no account to link your session to. No identifier on our side connects your download to your traffic.
 

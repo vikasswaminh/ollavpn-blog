@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Free VPN for Public WiFi Security 2026"
 description: "Why public Wi-Fi at airports, hotels, and cafes is risky and how a free post-quantum VPN protects your passwords, banking, and data without subscriptions."
 pubDate: 2026-07-20
@@ -9,7 +9,7 @@ tags: ["buyer-guides"]
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    A free VPN creates an encrypted tunnel between your device and the internet on public Wi-Fi  -  protecting your passwords, session tokens, and browsing traffic from eavesdroppers, evil twins, and compromised routers. For basic web security at airports, hotels, and cafes, OllaVPN Free delivers unlimited data, WireGuard speeds, and zero activity logs without requiring credit card registration.
+    A free VPN creates an encrypted tunnel between your device and the internet on [public Wi-Fi](/blog/how-public-wifi-steals-passwords/)  -  protecting your passwords, session tokens, and browsing traffic from eavesdroppers, evil twins, and compromised routers. For basic web security at airports, hotels, and cafes, OllaVPN Free delivers unlimited data, WireGuard speeds, and zero activity logs without requiring credit card registration.
   </p>
 </section>
 
@@ -43,7 +43,7 @@ tags: ["buyer-guides"]
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">•</span>
       <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">Always Verify Your Tunnel:</strong> After connecting to public Wi-Fi, run an IP leak test and DNS leak check to ensure your VPN tunnel and kill switch are actively shielding traffic.
+        <strong style="color: #0F172A; font-weight: 800;">Always Verify Your Tunnel:</strong> After connecting to public Wi-Fi, run an IP leak test and [DNS leak](/blog/what-is-a-dns-leak/) check to ensure your VPN tunnel and [kill switch](/blog/what-is-a-vpn-kill-switch/) are actively shielding traffic.
       </div>
     </li>
   </ul>

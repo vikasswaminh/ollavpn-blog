@@ -1,4 +1,4 @@
-﻿---
+---
 title: "How Websites Identify You Even Without Cookies"
 description: "Cookies are only one way sites track you. Learn how canvas fingerprinting, WebGL, audio API, ETags, and network signals identify you and how to protect yourself."
 pubDate: 2026-07-29
@@ -148,7 +148,7 @@ You can see your own browser fingerprint using free, well-established testing to
 Instead of taking any of this on faith, the most convincing approach is to measure it directly. The EFF’s Cover Your Tracks tool (successor to the long-running Panopticlick project) shows which signals your browser exposes and explains - clearly - how unique your combination is. It also breaks down which specific tests (canvas, fonts, plugins, and more) contribute most to your uniqueness. It’s free, takes under a minute, and is often the most persuasive five minutes you can spend on this topic, because seeing your own score is different from reading about the concept in the abstract.
 Beyond that, it’s worth checking the basic signals that don’t require a dedicated fingerprinting test:
 Your own what-is-my-IP tool shows what your IP address reveals about your location and provider.
-Our DNS lookup tool and WebRTC leak test help you see whether your browsing habits or real IP address are leaking through channels a quick glance at your address bar won’t reveal.
+Our DNS lookup tool and [WebRTC leak](/blog/what-is-a-webrtc-leak/) test help you see whether your browsing habits or real IP address are leaking through channels a quick glance at your address bar won’t reveal.
 Individually, these don’t test canvas or audio fingerprinting. But together with a dedicated fingerprinting test, they give a more complete picture of what different parts of the internet can currently see about you.
 
 ## What actually reduces your fingerprint, and what’s mostly theater?
@@ -171,8 +171,8 @@ When you connect to a VPN, your traffic appears to originate from the VPN server
 It also stops your internet provider from building its own location and browsing-pattern profile of you, which matters for a separate but related set of reasons covered in our guide on what logs a VPN actually keeps.
 What a VPN does not do is touch your screen resolution, installed fonts, canvas-rendering quirks, or any of the other fingerprint signals covered earlier. Your device is still the same device, running the same browser and answering the same technical questions the same way - just routed through a different server.
 That’s why fingerprinting and IP-based tracking should be treated as two separate problems requiring two separate defenses, not as one problem a single tool can fully solve.
-Where a VPN becomes genuinely important is in closing off other leaks that can quietly undo the privacy you think you have - even while you’re focused on fingerprinting. A VPN that doesn’t properly route DNS lookups through its encrypted tunnel can leak the list of every site you visit to your internet provider, separately from fingerprinting or cookies. That’s covered in detail in our DNS leak guide.
-And a VPN without a reliable kill switch can briefly expose your real IP address when a connection drops - undoing the protection you expected, right when you least expect it.
+Where a VPN becomes genuinely important is in closing off other leaks that can quietly undo the privacy you think you have - even while you’re focused on fingerprinting. A VPN that doesn’t properly route DNS lookups through its encrypted tunnel can leak the list of every site you visit to your internet provider, separately from fingerprinting or cookies. That’s covered in detail in our [DNS leak](/blog/what-is-a-dns-leak/) guide.
+And a VPN without a reliable [kill switch](/blog/what-is-a-vpn-kill-switch/) can briefly expose your real IP address when a connection drops - undoing the protection you expected, right when you least expect it.
 
 ## What does OllaVPN specifically do to help here?
 
@@ -324,7 +324,7 @@ Combine layers rather than expecting one tool to solve everything. A fingerprint
     Choosing the right solution for <strong>How Websites Identify You Even Without Cookies</strong> requires balancing speed, genuine security, and uncompromised privacy.
   </p>
   <p style="font-size: 0.925rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
-    With OllaVPN, you benefit from lightweight WireGuard tunneling, zero bandwidth caps, default-on kill switch defense, and built-in post-quantum cryptography to ensure your connection remains lightning-fast and private on every network.
+    With OllaVPN, you benefit from lightweight WireGuard tunneling, zero bandwidth caps, default-on kill switch defense, and built-in [post-quantum cryptography](/blog/what-is-post-quantum-cryptography/) to ensure your connection remains lightning-fast and private on every network.
   </p>
 </section>
 

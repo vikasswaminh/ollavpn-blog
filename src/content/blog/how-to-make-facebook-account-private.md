@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'How to Make Your Facebook Account Private: A Step-by-Step Guide to Digital Privacy'
 description: 'You can make your Facebook account much more private in just a few minutes. The main thing is to restrict who can see your past posts, future posts, and personal information to just your "Friends" or even "On...'
 pubDate: 2026-06-09
@@ -69,7 +69,7 @@ Making your Facebook account truly private takes a bit of work, but it's totally
 
 If a specific privacy setting isn't working as expected, first try refreshing the page, clearing your browser cache, or using a different browser or device.
 
-It's frustrating when you're trying to lock down your privacy and a setting just won't stick or isn't even visible. Often, it's not a fundamental flaw but a temporary glitch. Your first go-to should always be the basics: refresh the page, then try clearing your browser's cache and cookies. Sometimes old data stored in your browser can interfere with new settings. If that doesn't work, try accessing the setting from a completely different browser, like switching from Chrome to Firefox, or even from your desktop to the mobile app, as interfaces can sometimes differ. **Connectivity and device issues** can also play a role. Make sure your internet connection stability is solid. A flaky connection might prevent settings from saving correctly. If you're using a public Wi-Fi network, try switching to your home network or mobile data. Also, consider if there might be an issue with your device itself – perhaps a browser extension is interfering, or your operating system needs an update. If you've tried these general troubleshooting steps and the problem persists, it's time to dig into the platform's own resources. For example, if it's a Facebook privacy setting, the [Facebook Help Center](https://www.facebook.com/help) is usually your next stop. They often have detailed guides or known issues sections that can shed light on why a particular setting might not be behaving. Sometimes, a feature might be rolled out gradually, or it could be a bug that the platform is already aware of and working to fix.
+It's frustrating when you're trying to lock down your privacy and a setting just won't stick or isn't even visible. Often, it's not a fundamental flaw but a temporary glitch. Your first go-to should always be the basics: refresh the page, then try clearing your browser's cache and cookies. Sometimes old data stored in your browser can interfere with new settings. If that doesn't work, try accessing the setting from a completely different browser, like switching from Chrome to Firefox, or even from your desktop to the mobile app, as interfaces can sometimes differ. **Connectivity and device issues** can also play a role. Make sure your internet connection stability is solid. A flaky connection might prevent settings from saving correctly. If you're using a [public Wi-Fi network](/blog/how-public-wifi-steals-passwords/), try switching to your home network or mobile data. Also, consider if there might be an issue with your device itself – perhaps a browser extension is interfering, or your operating system needs an update. If you've tried these general troubleshooting steps and the problem persists, it's time to dig into the platform's own resources. For example, if it's a Facebook privacy setting, the [Facebook Help Center](https://www.facebook.com/help) is usually your next stop. They often have detailed guides or known issues sections that can shed light on why a particular setting might not be behaving. Sometimes, a feature might be rolled out gradually, or it could be a bug that the platform is already aware of and working to fix.
 
 ## Why is this privacy approach better than just deleting my account?
 
@@ -137,7 +137,7 @@ A how-to guide is only useful if you can verify the outcome. After completing th
 
 **DNS is going through the tunnel.** Open [our DNS lookup tool](/dns-lookup). The resolver IP shown should be the in-tunnel one (CGNAT 100.64.x.x range), not your ISP's DNS. If you see your ISP's resolver, DNS is leaking  -  see our [in-tunnel DNS page](/in-tunnel-dns) for the technical details on why this happens and how OllaVPN prevents it.
 
-**No WebRTC leak.** Open [our WebRTC leak test](/webrtc-leak-test). You should see only the exit's IPv4 address. If your real IP appears (private LAN address or public IPv4/IPv6), WebRTC is bypassing the VPN  -  either OllaVPN's leak prevention has failed (file a report at `[[email protected]](/cdn-cgi/l/email-protection)`) or your browser has a WebRTC-specific privacy issue we can help diagnose.
+**No [WebRTC leak](/blog/what-is-a-webrtc-leak/).** Open [our WebRTC leak test](/webrtc-leak-test). You should see only the exit's IPv4 address. If your real IP appears (private LAN address or public IPv4/IPv6), WebRTC is bypassing the VPN  -  either OllaVPN's leak prevention has failed (file a report at `[[email protected]](/cdn-cgi/l/email-protection)`) or your browser has a WebRTC-specific privacy issue we can help diagnose.
 
 ## If a step fails, here's how to debug
 
@@ -242,7 +242,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
     Navigating How to Make Your Facebook Account Private: A Step-by-Step Guide to Digital Privacy effectively requires choosing security architectures built on transparency, strong encryption, and verified zero data logging.
   </p>
   <p style="font-size: 0.925rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
-    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on kill switch defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
+    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on [kill switch](/blog/what-is-a-vpn-kill-switch/) defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
   </p>
 </section>
 

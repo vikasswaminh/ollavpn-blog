@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'What Is Post-Quantum Cryptography? A 2026 Guide for Anyone Who Cares About Privacy'
 description: 'Post-quantum cryptography (PQC) is a new family of encryption algorithms designed to remain secure even when powerful quantum computers eventually exist. Today''s encryption protects most of the internet, but it''s based o...'
 pubDate: 2026-05-16
@@ -287,7 +287,7 @@ It does not. Post-quantum cryptography runs on ordinary computers. Your phone ca
 
 ## How to evaluate a PQC-ready VPN
 
-QUICK ANSWER Look for: an explicit PQC capability described on the VPN's site, a hybrid mode that combines classical and post-quantum algorithms, no requirement that you manually enable it, no additional charge for it, and continued availability of standard features like the kill switch.
+QUICK ANSWER Look for: an explicit PQC capability described on the VPN's site, a hybrid mode that combines classical and post-quantum algorithms, no requirement that you manually enable it, no additional charge for it, and continued availability of standard features like the [kill switch](/blog/what-is-a-vpn-kill-switch/).
 
 Not every "post-quantum" claim is the same. Here's what actually matters when evaluating one.
 
@@ -297,7 +297,7 @@ Not every "post-quantum" claim is the same. Here's what actually matters when ev
 *   **Hybrid mode** combining a classical and post-quantum algorithm  -  not a pure post-quantum-only mode (which is more aggressive than the industry consensus recommends today).
 *   **Available on every connection by default**, ideally without the user needing to flip any toggle. If PQC is buried in an advanced settings menu, most users won't ever benefit.
 *   **No additional charge** for PQC. Privacy upgrades should not be paywalled.
-*   **Continued availability of standard features**  -  kill switch, DNS leak protection, IPv6 handling  -  while PQC is enabled.
+*   **Continued availability of standard features**  -  kill switch, [DNS leak](/blog/what-is-a-dns-leak/) protection, IPv6 handling  -  while PQC is enabled.
 *   **An ongoing commitment to the standards**. As NIST finalizes additional algorithms in coming years, the VPN's PQC mode should evolve to incorporate them.
 
 If a VPN claims post-quantum support but the details are missing, vague, or paywalled, treat the claim with friendly skepticism.

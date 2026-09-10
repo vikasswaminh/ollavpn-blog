@@ -1,4 +1,4 @@
-ï»¿---
+---
 title: 'What Is A Port Number, And Why Should You Care?'
 description: 'Think of a port number as a specific door or channel on your computer that applications use to send and receive information over the internet. Your IP address gets data to your device, but the port number makes sure that...'
 pubDate: 2026-06-09
@@ -246,7 +246,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[emailÂ
     Navigating What Is A Port Number, And Why Should You Care? effectively requires choosing security architectures built on transparency, strong encryption, and verified zero data logging.
   </p>
   <p style="font-size: 0.925rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
-    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on kill switch defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
+    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on [kill switch](/blog/what-is-a-vpn-kill-switch/) defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
   </p>
 </section>
 

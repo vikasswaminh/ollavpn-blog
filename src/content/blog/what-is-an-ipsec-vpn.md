@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'What Exactly Is an IPSec VPN, and Why Should You Care?'
 description: 'IPSec is a set of rules that secures your internet traffic. Think of it as a digital bodyguard for your data, making sure that everything you send and receive online is private and hasn''t been messed with. It''s a...'
 pubDate: 2026-06-09
@@ -61,7 +61,7 @@ Think of IPSec not as a single thing, but as a whole **suite of protocols**. Ima
 
 The core job of IPSec is twofold: **authentication** and **encryption**. Authentication means proving that the sender is who they say they are and that the data hasn't been changed. Encryption scrambles the data so that if anyone \*does\* manage to intercept it, it just looks like gibberish. It works by securing individual **IP packets** – the small chunks of information your computer breaks down data into before sending it over the internet. These packets are then reassembled at the other end.
 
-When you use IPSec, it essentially builds a **secure tunnel** between your device and a server, like a VPN server. All your internet traffic goes through this tunnel, protected from eavesdroppers and tampering. While OllaVPN uses the more modern and efficient WireGuard protocol to protect your connection, IPSec is a foundational technology that has secured countless connections for decades, particularly in enterprise and government settings. It's robust and widely used, even if newer options offer better performance for everyday VPN use.
+When you use IPSec, it essentially builds a **secure tunnel** between your device and a server, like a VPN server. All your internet traffic goes through this tunnel, protected from eavesdroppers and tampering. While OllaVPN uses the more modern and efficient [WireGuard protocol](/blog/wireguard-vs-openvpn/) to protect your connection, IPSec is a foundational technology that has secured countless connections for decades, particularly in enterprise and government settings. It's robust and widely used, even if newer options offer better performance for everyday VPN use.
 
 ## How does IPSec actually work its magic under the hood?
 
@@ -99,7 +99,7 @@ Both OpenVPN and WireGuard are full-fledged VPN protocols that handle everything
 
 You should pay attention to IPSec if you're dealing with specific corporate networks or complex infrastructure; otherwise, for most consumer VPN uses, you can largely ignore it.
 
-For the vast majority of people using a consumer VPN like OllaVPN, IPSec is mostly historical background noise. You're probably just looking to protect your privacy, bypass geo-restrictions, or secure your connection on public Wi-Fi. In these cases, you don't need to dive into the nitty-gritty of IPSec because modern VPN protocols like WireGuard handle all the underlying security and encryption for you, often with better performance and simpler configuration.
+For the vast majority of people using a consumer VPN like OllaVPN, IPSec is mostly historical background noise. You're probably just looking to protect your privacy, bypass geo-restrictions, or secure your connection on [public Wi-Fi](/blog/how-public-wifi-steals-passwords/). In these cases, you don't need to dive into the nitty-gritty of IPSec because modern VPN protocols like WireGuard handle all the underlying security and encryption for you, often with better performance and simpler configuration.
 
 Where IPSec becomes relevant is typically in more specialized scenarios. If you're working in **corporate IT** and setting up a secure network for your company, or if you're a **network administrator** deploying site-to-site VPNs between different office locations, then understanding IPSec's various modes (transport, tunnel) and its associated protocols (ESP, AH, IKE) is crucial. It's the backbone for many legacy and VPN solutions, so it's a critical skill in those professional contexts.
 
@@ -145,7 +145,7 @@ You're not going to see IPSec disappear overnight. While newer, more agile proto
 
 So, for the foreseeable future, IPSec will continue to be maintained, updated, and used in environments where it's already deeply embedded. It's a proven, robust, and well-understood protocol suite. However, for consumer-facing VPN services like OllaVPN, you'll find that protocols like WireGuard offer better performance and simpler implementation, which is why we've focused our efforts there.
 
-The biggest long-term question for all cryptographic protocols, including IPSec, revolves around **post-quantum cryptography**. As quantum computing advances, the encryption methods used today might become vulnerable. Future iterations of IPSec, like all secure protocols, will need to adapt to incorporate quantum-resistant algorithms to maintain their security and relevance in a post-quantum world. OllaVPN is already thinking about this, with our [post-quantum-ready](/blog/post-quantum-encryption) handshake, ensuring your data stays secure long-term.
+The biggest long-term question for all cryptographic protocols, including IPSec, revolves around **[post-quantum cryptography](/blog/what-is-post-quantum-cryptography/)**. As quantum computing advances, the encryption methods used today might become vulnerable. Future iterations of IPSec, like all secure protocols, will need to adapt to incorporate quantum-resistant algorithms to maintain their security and relevance in a post-quantum world. OllaVPN is already thinking about this, with our [post-quantum-ready](/blog/post-quantum-encryption) handshake, ensuring your data stays secure long-term.
 
 ## A broader-context closing thought
 
@@ -278,7 +278,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
     Navigating What Exactly Is an IPSec VPN, and Why Should You Care? effectively requires choosing security architectures built on transparency, strong encryption, and verified zero data logging.
   </p>
   <p style="font-size: 0.925rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
-    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on kill switch defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
+    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on [kill switch](/blog/what-is-a-vpn-kill-switch/) defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
   </p>
 </section>
 

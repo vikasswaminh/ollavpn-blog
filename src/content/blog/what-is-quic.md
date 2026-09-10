@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'What is QUIC and Why Should You Care?'
 description: 'QUIC is a modern internet protocol that makes your web connections faster and more secure than older methods. It''s like a big upgrade to how your browser talks to websites, bringing together the best parts of TCP and...'
 pubDate: 2026-06-09
@@ -87,9 +87,9 @@ One big misunderstanding is that QUIC itself is a VPN or somehow makes a VPN unn
 
 ## How Does QUIC Relate to Other Internet Privacy Concepts?
 
-QUIC improves baseline privacy through mandatory encryption, but it's not a replacement for a VPN or other specialized privacy tools like DNS over HTTPS.
+QUIC improves baseline privacy through mandatory encryption, but it's not a replacement for a VPN or other specialized privacy tools like [DNS over HTTPS](/blog/what-is-dns-over-https/).
 
-QUIC brings privacy benefits primarily because it mandates **encryption by default** for all its connections. This means that unlike older protocols like TCP, where encryption was optional and often added on top (think HTTPS for HTTP), QUIC bakes it in from the start. For you, this means less chance of your basic internet traffic being sniffed or tampered with by passive observers on your local network, like your ISP or public Wi-Fi providers. It’s a great step forward for general internet security and privacy, raising the bar for everyone.
+QUIC brings privacy benefits primarily because it mandates **encryption by default** for all its connections. This means that unlike older protocols like TCP, where encryption was optional and often added on top (think HTTPS for HTTP), QUIC bakes it in from the start. For you, this means less chance of your basic internet traffic being sniffed or tampered with by passive observers on your local network, like your ISP or [public Wi-Fi](/blog/how-public-wifi-steals-passwords/) providers. It’s a great step forward for general internet security and privacy, raising the bar for everyone.
 
 However, QUIC's inherent encryption doesn't replace what a VPN does. While QUIC encrypts the data between your device and the server you're connecting to, it doesn't hide your IP address from that server, nor does it prevent your ISP from seeing that you're connecting to a specific server, even if they can't read the content. A VPN, like OllaVPN, routes all your internet traffic through a secure [VPN tunnel](/what-is-a-vpn-tunnel), encrypting it end-to-end and masking your IP address from the websites and services you visit. This protects your identity and location in a way QUIC alone can't.
 
@@ -143,7 +143,7 @@ OllaVPN integrates QUIC as an optional, enhanced transport layer for WireGuard, 
 
 QUIC is a modern network protocol that makes internet connections faster and more reliable, especially on less stable networks. Think of it like this: if WireGuard is the secure tunnel itself, QUIC is a super-efficient, multi-lane highway built specifically for that tunnel. We've implemented QUIC support as an optional feature within our app, allowing you to switch it on if you're experiencing connectivity issues or slower speeds on restrictive Wi-Fi networks or mobile data. It's about giving you more control and ensuring your VPN connection is as robust as possible, without compromising on security.
 
-Our approach to QUIC isn't just about speed; it's about making sure it works seamlessly with everything OllaVPN stands for. This means your QUIC-enabled connection still benefits from our **in-tunnel DNS**, preventing DNS leaks and keeping your browsing private. It's also fully compatible with our [post-quantum-ready encryption](/features/security), meaning your data remains protected against even future, more powerful threats. We've built it to be a transparent layer, enhancing performance without requiring you to think about complex network settings.
+Our approach to QUIC isn't just about speed; it's about making sure it works seamlessly with everything OllaVPN stands for. This means your QUIC-enabled connection still benefits from our **in-tunnel DNS**, preventing [DNS leaks](/blog/what-is-a-dns-leak/) and keeping your browsing private. It's also fully compatible with our [post-quantum-ready encryption](/features/security), meaning your data remains protected against even future, more powerful threats. We've built it to be a transparent layer, enhancing performance without requiring you to think about complex network settings.
 
 Crucially, integrating QUIC doesn't change our commitment to your privacy. We maintain our strict **no logs** policy, whether you're using QUIC or not. There are no ads, ever, on our free plan or our $2/month Plus plan. The free plan still gives you 10 Mbps of speed across our entire network, and Plus takes that to 10 Gbps on five devices. QUIC simply helps ensure that you can consistently achieve those speeds, even when your local network tries to get in the way. It's another tool in our kit to keep your internet free and open.
 
@@ -278,7 +278,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
     Navigating What is QUIC and Why Should You Care? effectively requires choosing security architectures built on transparency, strong encryption, and verified zero data logging.
   </p>
   <p style="font-size: 0.925rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
-    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on kill switch defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
+    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on [kill switch](/blog/what-is-a-vpn-kill-switch/) defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
   </p>
 </section>
 

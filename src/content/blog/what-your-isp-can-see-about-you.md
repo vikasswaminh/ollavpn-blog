@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'What Your ISP Can See About You (And How to Hide It)'
 description: 'The plain-English guide to exactly what your internet provider logs, sells, and hands over—down to the packet level. What HTTPS hides, and how to close every gap.'
 pubDate: 2026-06-26
@@ -139,7 +139,7 @@ DNS is often called the internet’s phone book: to call someone, you first look
 
 Two newer protocols address this directly:
 
-DNS over HTTPS (DoH) wraps DNS queries inside an encrypted HTTPS connection, so they look like ordinary web traffic and can’t be read by anyone in between, including your ISP.
+[DNS over HTTPS](/blog/what-is-dns-over-https/) (DoH) wraps DNS queries inside an encrypted HTTPS connection, so they look like ordinary web traffic and can’t be read by anyone in between, including your ISP.
 
 DNS over TLS (DoT) achieves the same encryption using a dedicated encrypted channel rather than disguising the traffic as HTTPS.
 
@@ -233,7 +233,7 @@ The layers that actually work
 
 Use a VPN that encrypts DNS inside its encrypted tunnel. This is your first line of defense: it wraps your destination domains, DNS requests, and content in a single encrypted connection, blocking your provider's view.
 
-Confirm there’s no DNS leak. Your VPN might show "connected" while silently leaking queries. Use a leak test tool; if your provider's name shows up, your configurations need adjusting.
+Confirm there’s no [DNS leak](/blog/what-is-a-dns-leak/). Your VPN might show "connected" while silently leaking queries. Use a leak test tool; if your provider's name shows up, your configurations need adjusting.
 
 Enable Encrypted Client Hello (ECH) where supported. This extension encrypts the SNI handshake header, stopping domain leaks on normal connections. Though adoption is ongoing, enable it in your browser flags.
 
@@ -285,9 +285,9 @@ DNS is handled entirely inside the encrypted tunnel by default, on every plan in
 
 A [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) policy means that even the visibility we could technically have as your VPN provider isn’t retained anywhere for anyone to request later.
 
-An always-on kill switch means that if the encrypted tunnel drops unexpectedly, your traffic stops rather than silently falling back to your ISP’s unencrypted view.
+An always-on [kill switch](/blog/what-is-a-vpn-kill-switch/) means that if the encrypted tunnel drops unexpectedly, your traffic stops rather than silently falling back to your ISP’s unencrypted view.
 
-Post-quantum cryptography on every connection, including the lifetime free plan, protects against traffic captured today being decrypted years from now as quantum computing matures.
+[Post-quantum cryptography](/blog/what-is-post-quantum-cryptography/) on every connection, including the lifetime free plan, protects against traffic captured today being decrypted years from now as quantum computing matures.
 
 Free for life - the specific technical fixes in this guide shouldn’t be locked behind a subscription.
 

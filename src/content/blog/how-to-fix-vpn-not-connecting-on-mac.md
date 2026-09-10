@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'VPN Not Connecting on Mac? Your Guide to Getting Back Online'
 description: 'Most VPN connection issues on your Mac are pretty straightforward: outdated software, network hiccups, or wrong settings. Start with the easiest fixes: restart your Mac, your router, and the VPN app itself. Often, just t...'
 pubDate: 2026-06-09
@@ -97,9 +97,9 @@ Sometimes, your Mac's own security features or other software can interfere. You
 
 ## How can I verify that my VPN is actually connected and working correctly?
 
-You can verify your VPN connection by checking your IP address and running a DNS leak test after connecting.
+You can verify your VPN connection by checking your IP address and running a [DNS leak](/blog/what-is-a-dns-leak/) test after connecting.
 
-The simplest way to confirm your VPN is active is to perform an **IP address check**. Before you connect to OllaVPN, visit a site like [whatismyipaddress.com](https://whatismyipaddress.com) to note your current public IP address. Then, connect to OllaVPN and refresh that same page. If the IP address has changed to one associated with OllaVPN's network, you're successfully connected. This tells you that your internet traffic is now routing through our secure servers. Beyond just an IP address change, you'll also want to confirm there are no leaks. A **DNS leak test** is crucial here. Your Domain Name System (DNS) requests can sometimes bypass your VPN, revealing your actual location or ISP even when your IP address appears hidden. Sites like [dnsleaktest.com](https://www.dnsleaktest.com) can help. After connecting to OllaVPN, run their extended test. You should see only OllaVPN's DNS servers, or generic public ones, but crucially not your ISP's original DNS servers. OllaVPN uses its own in-tunnel DNS to prevent these types of leaks, making sure your requests stay private. Finally, confirm your **kill switch** is active too. OllaVPN's kill switch is on by default, ensuring that if your VPN connection ever unexpectedly drops, your internet access is immediately cut off. This prevents any data from accidentally leaking outside the secure tunnel. While the IP and DNS tests confirm an active connection, the kill switch provides peace of mind that your privacy remains protected even during unforeseen network interruptions.
+The simplest way to confirm your VPN is active is to perform an **IP address check**. Before you connect to OllaVPN, visit a site like [whatismyipaddress.com](https://whatismyipaddress.com) to note your current public IP address. Then, connect to OllaVPN and refresh that same page. If the IP address has changed to one associated with OllaVPN's network, you're successfully connected. This tells you that your internet traffic is now routing through our secure servers. Beyond just an IP address change, you'll also want to confirm there are no leaks. A **DNS leak test** is crucial here. Your Domain Name System (DNS) requests can sometimes bypass your VPN, revealing your actual location or ISP even when your IP address appears hidden. Sites like [dnsleaktest.com](https://www.dnsleaktest.com) can help. After connecting to OllaVPN, run their extended test. You should see only OllaVPN's DNS servers, or generic public ones, but crucially not your ISP's original DNS servers. OllaVPN uses its own in-tunnel DNS to prevent these types of leaks, making sure your requests stay private. Finally, confirm your **[kill switch](/blog/what-is-a-vpn-kill-switch/)** is active too. OllaVPN's kill switch is on by default, ensuring that if your VPN connection ever unexpectedly drops, your internet access is immediately cut off. This prevents any data from accidentally leaking outside the secure tunnel. While the IP and DNS tests confirm an active connection, the kill switch provides peace of mind that your privacy remains protected even during unforeseen network interruptions.
 
 ## Are there tools that can make fixing VPN connection issues easier?
 
@@ -153,7 +153,7 @@ A how-to guide is only useful if you can verify the outcome. After completing th
 
 **DNS is going through the tunnel.** Open [our DNS lookup tool](/dns-lookup). The resolver IP shown should be the in-tunnel one (CGNAT 100.64.x.x range), not your ISP's DNS. If you see your ISP's resolver, DNS is leaking  -  see our [in-tunnel DNS page](/in-tunnel-dns) for the technical details on why this happens and how OllaVPN prevents it.
 
-**No WebRTC leak.** Open [our WebRTC leak test](/webrtc-leak-test). You should see only the exit's IPv4 address. If your real IP appears (private LAN address or public IPv4/IPv6), WebRTC is bypassing the VPN  -  either OllaVPN's leak prevention has failed (file a report at `[[email protected]](/cdn-cgi/l/email-protection)`) or your browser has a WebRTC-specific privacy issue we can help diagnose.
+**No [WebRTC leak](/blog/what-is-a-webrtc-leak/).** Open [our WebRTC leak test](/webrtc-leak-test). You should see only the exit's IPv4 address. If your real IP appears (private LAN address or public IPv4/IPv6), WebRTC is bypassing the VPN  -  either OllaVPN's leak prevention has failed (file a report at `[[email protected]](/cdn-cgi/l/email-protection)`) or your browser has a WebRTC-specific privacy issue we can help diagnose.
 
 ## If a step fails, here's how to debug
 
@@ -224,7 +224,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>6. Is it safe to troubleshoot my VPN on a public Wi-Fi network?</span>
+      <span>6. Is it safe to troubleshoot my VPN on a [public Wi-Fi network](/blog/how-public-wifi-steals-passwords/)?</span>
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">

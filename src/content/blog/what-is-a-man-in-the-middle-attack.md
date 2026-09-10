@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'What Is a Man-in-the-Middle (MITM) Attack?'
 description: 'The plain-English guide to one of the oldest tricks in networking, still working in 2026. How someone intercepts communications and how to defend yourself.'
 pubDate: 2026-06-20
@@ -161,7 +161,7 @@ This is a particularly effective [MITM](/blog/what-is-a-man-in-the-middle-attack
 
 A well-executed DNS spoofing attack combined with a convincing fake login page has been behind a meaningful share of real-world credential theft over the years.
 
-Encrypted DNS  -  DNS over HTTPS (DoH) or DNS over TLS (DoT)  -  directly addresses this by making the lookup itself unreadable and unforgeable to anyone sitting on the local network, closing off this specific technique regardless of how compromised the local network otherwise is.
+Encrypted DNS  -  [DNS over HTTPS](/blog/what-is-dns-over-https/) (DoH) or DNS over TLS (DoT)  -  directly addresses this by making the lookup itself unreadable and unforgeable to anyone sitting on the local network, closing off this specific technique regardless of how compromised the local network otherwise is.
 
 ## SSL stripping and forged certificates
 
@@ -195,7 +195,7 @@ A successful BGP hijack can redirect a significant volume of traffic destined fo
 
 Because this technique operates at the routing-infrastructure level rather than targeting individual users, it's largely outside what any individual's personal security habits can defend against. The defense here lives with network operators implementing route validation standards like RPKI (Resource Public Key Infrastructure), not with end-user behavior.
 
-What it does mean for you personally: strong end-to-end encryption (HTTPS, a VPN tunnel) still protects the content of your traffic even if it's briefly routed somewhere unexpected at the infrastructure level.
+What it does mean for you personally: strong [end-to-end encryption](/blog/what-is-end-to-end-encryption/) (HTTPS, a VPN tunnel) still protects the content of your traffic even if it's briefly routed somewhere unexpected at the infrastructure level.
 
 ## Real incidents worth knowing about
 
@@ -313,9 +313,9 @@ We built OllaVPN around the idea that the network you happen to be connected to 
 
 • DNS is handled entirely inside the tunnel, closing the DNS-spoofing gap described above without requiring any separate configuration.
 
-• A post-quantum-ready hybrid handshake on every connection, protecting the tunnel's own key exchange against future decryption  -  see our pillar guide on post-quantum cryptography for the full picture.
+• A post-quantum-ready hybrid handshake on every connection, protecting the tunnel's own key exchange against future decryption  -  see our pillar guide on [post-quantum cryptography](/blog/what-is-post-quantum-cryptography/) for the full picture.
 
-• An always-on kill switch ensures that if the tunnel ever drops on an untrusted network, traffic stops rather than silently falling back to an exposed, unencrypted connection.
+• An always-on [kill switch](/blog/what-is-a-vpn-kill-switch/) ensures that if the tunnel ever drops on an untrusted network, traffic stops rather than silently falling back to an exposed, unencrypted connection.
 
 • Free for life, on every plan  -  the protection that matters most on [public Wi-Fi](/blog/how-public-wifi-steals-passwords.html) shouldn't be reserved for people willing to pay for it first.
 </div>

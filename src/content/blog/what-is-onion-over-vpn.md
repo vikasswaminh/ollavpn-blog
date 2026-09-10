@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'What is Onion Over VPN, and Why Should You Care?'
 description: '"Onion Over VPN" means you connect to your VPN first, and then your internet traffic gets routed through the Tor network. This setup gives you the privacy benefits of your VPN – like keeping your real IP address ...'
 pubDate: 2026-06-09
@@ -246,7 +246,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
     Navigating What is Onion Over VPN, and Why Should You Care? effectively requires choosing security architectures built on transparency, strong encryption, and verified zero data logging.
   </p>
   <p style="font-size: 0.925rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
-    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on kill switch defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
+    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on [kill switch](/blog/what-is-a-vpn-kill-switch/) defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
   </p>
 </section>
 

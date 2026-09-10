@@ -1,4 +1,4 @@
-ï»¿---
+---
 title: 'How Do You Test for a DNS Leak, and Why Does It Matter?'
 description: 'A DNS leak is when your device accidentally sends your website requests to your internet provider instead of your VPN. This can expose what you''re browsing and even your real location, completely defeating the purpos...'
 pubDate: 2026-06-09
@@ -9,7 +9,7 @@ tags: ['how-to-guides']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    A DNS leak is when your device accidentally sends your website requests to your internet provider instead of your VPN. This can expose what youre browsing and even your real location, completely defeating the purpos... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
+    A [DNS leak](/blog/what-is-a-dns-leak/) is when your device accidentally sends your website requests to your internet provider instead of your VPN. This can expose what youre browsing and even your real location, completely defeating the purpos... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -83,9 +83,9 @@ Common DNS leak errors often stem from misconfigured network settings or vulnera
 
 You've heard of DNS leaks, and you're probably wondering what causes them and, more importantly, how to stop them. Most leaks happen because your device or browser bypasses your VPN's encrypted tunnel and sends DNS requests directly to your ISP or a public DNS server. This can happen for a few reasons, like incorrect network configurations or software glitches. The good news is that many common leaks are pretty straightforward to identify and fix.
 
-One frequent culprit is **IPv6 leaks**. Even if you're connected to a VPN, your operating system might try to use IPv6 for DNS queries, bypassing your VPN if it only routes IPv4 traffic. Another significant one is **WebRTC leaks**, which specifically affect browsers. WebRTC, used for real-time communication, can sometimes reveal your real IP address (and thus your DNS server) even when you're using a VPN. If you've ever set up **manual DNS settings** on your device or router, those can also override your VPN's protection, sending your queries outside the tunnel. Even just having a stale DNS record can cause issues, which is why a quick **flush DNS cache** can often resolve surprising connectivity problems.
+One frequent culprit is **[IPv6 leaks](/blog/what-is-an-ipv6-leak/)**. Even if you're connected to a VPN, your operating system might try to use IPv6 for DNS queries, bypassing your VPN if it only routes IPv4 traffic. Another significant one is **[WebRTC leaks](/blog/what-is-a-webrtc-leak/)**, which specifically affect browsers. WebRTC, used for real-time communication, can sometimes reveal your real IP address (and thus your DNS server) even when you're using a VPN. If you've ever set up **manual DNS settings** on your device or router, those can also override your VPN's protection, sending your queries outside the tunnel. Even just having a stale DNS record can cause issues, which is why a quick **flush DNS cache** can often resolve surprising connectivity problems.
 
-So, how do you fix these? First, always make sure your VPN client is properly configured. A good VPN, like OllaVPN, includes a **kill switch** that automatically blocks all internet traffic if your VPN connection drops, preventing any accidental leaks. We also use **in-tunnel DNS**, meaning all your DNS requests are routed securely through our encrypted tunnel, so your ISP never sees them. For WebRTC leaks, many browsers have settings to disable or restrict WebRTC, or you can use browser extensions designed to prevent these leaks. If you've manually set DNS servers, make sure to revert them to automatic or point them to your VPN's DNS servers if your VPN provider gives you that option. OllaVPN's approach to DNS is designed to prevent these leaks by default, ensuring your queries stay private and secure within the tunnel from the moment you connect.
+So, how do you fix these? First, always make sure your VPN client is properly configured. A good VPN, like OllaVPN, includes a **[kill switch](/blog/what-is-a-vpn-kill-switch/)** that automatically blocks all internet traffic if your VPN connection drops, preventing any accidental leaks. We also use **in-tunnel DNS**, meaning all your DNS requests are routed securely through our encrypted tunnel, so your ISP never sees them. For WebRTC leaks, many browsers have settings to disable or restrict WebRTC, or you can use browser extensions designed to prevent these leaks. If you've manually set DNS servers, make sure to revert them to automatic or point them to your VPN's DNS servers if your VPN provider gives you that option. OllaVPN's approach to DNS is designed to prevent these leaks by default, ensuring your queries stay private and secure within the tunnel from the moment you connect.
 
 ## How can you verify your DNS leak fix worked correctly?
 
@@ -208,7 +208,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[emailÂ
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>6. Is it safe to do a DNS leak test on a public Wi-Fi network?</span>
+      <span>6. Is it safe to do a DNS leak test on a [public Wi-Fi network](/blog/how-public-wifi-steals-passwords/)?</span>
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">

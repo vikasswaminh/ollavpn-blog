@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'WireGuard on Linux: Your Step-by-Step Setup Guide'
 description: 'Setting up WireGuard on Linux doesn''t have to be complicated. You''re looking for a straightforward guide to get your VPN running quickly, and we''ve got you covered. This guide will walk you through the essent...'
 pubDate: 2026-06-09
@@ -77,7 +77,7 @@ A manual WireGuard setup gives you control, transparency, and performance, espec
 
 You might be used to VPN apps with big "Connect" buttons, and while those are convenient, they often hide a lot of complexity or, worse, compromise. By giving you the raw WireGuard configuration, we're putting you in the driver's seat. You get to see exactly what's going on, which means you have full control over your connection. It's a bit like driving a stick shift versus an automatic  -  more engaging, and you understand the mechanics better.
 
-The **WireGuard protocol** itself is a huge part of why this approach works so well. It's renowned for its simplicity, which translates directly into better performance and stronger security. Unlike older, more bloated VPN protocols, WireGuard has a tiny codebase. This small footprint makes it incredibly fast, efficient, and much easier to audit for vulnerabilities. Fewer lines of code mean fewer places for mistakes or backdoors to hide, making it inherently more secure. This efficiency is especially important when you're on the [OllaVPN free plan](/free-vpn), where we cap your speed at 10 Mbps – you want every bit of that bandwidth working for you, not wasted on protocol overhead.
+The **[WireGuard protocol](/blog/wireguard-vs-openvpn/)** itself is a huge part of why this approach works so well. It's renowned for its simplicity, which translates directly into better performance and stronger security. Unlike older, more bloated VPN protocols, WireGuard has a tiny codebase. This small footprint makes it incredibly fast, efficient, and much easier to audit for vulnerabilities. Fewer lines of code mean fewer places for mistakes or backdoors to hide, making it inherently more secure. This efficiency is especially important when you're on the [OllaVPN free plan](/free-vpn), where we cap your speed at 10 Mbps – you want every bit of that bandwidth working for you, not wasted on protocol overhead.
 
 This hands-on approach also lets us implement advanced features like our **post-quantum-ready** encryption more transparently. You're not just trusting a black box; you're using a configuration that's designed to be future-proof against even the most powerful quantum computers. Plus, having direct access to the configuration means you can integrate it into almost any system that supports WireGuard, from routers to custom devices, giving you ultimate flexibility beyond what a typical app allows. It’s about empowering you with choice and transparency, not locking you into our software.
 
@@ -89,9 +89,9 @@ It's frustrating when you've followed all the steps and WireGuard just isn't con
 
 ## How can I confirm my WireGuard connection is working correctly?
 
-You can confirm your WireGuard connection by checking your IP address, running a DNS leak test, or using command-line tools like \`wg show\` or \`ip addr show wg0\`.
+You can confirm your WireGuard connection by checking your IP address, running a [DNS leak](/blog/what-is-a-dns-leak/) test, or using command-line tools like \`wg show\` or \`ip addr show wg0\`.
 
-Once you've connected to OllaVPN, the easiest way to confirm it's working is to check your public IP address. Visit a site like [ifconfig.me](https://ifconfig.me) or simply type \`curl ifconfig.me\` into your terminal. If the IP address shown is different from your actual home IP and matches the country you selected in OllaVPN, you're good. This tells you your traffic is routing through our servers. For a deeper check, especially if you're concerned about sensitive data, you'll want to perform a **DNS leakage test**. There are many free tools online that will show you which DNS servers your computer is using. If they show OllaVPN's DNS servers and not your internet provider's, your DNS queries are properly protected within the tunnel. You can also try to \`ping\` a remote server to see if the latency changes, indicating traffic is routed differently. For the more technically inclined, you can verify your WireGuard interface directly. On Linux or macOS, open your terminal and run \`wg show\` or \`ip addr show wg0\`. This will display details about your WireGuard connection, including the public key of the server you're connected to and the amount of data transferred. If you see an interface named \`wg0\` (or similar) with active traffic, your tunnel is up. Remember, the **kill switch** feature in OllaVPN is always on by default, so if the VPN connection ever drops unexpectedly, your internet traffic will be immediately blocked, preventing any accidental leaks.
+Once you've connected to OllaVPN, the easiest way to confirm it's working is to check your public IP address. Visit a site like [ifconfig.me](https://ifconfig.me) or simply type \`curl ifconfig.me\` into your terminal. If the IP address shown is different from your actual home IP and matches the country you selected in OllaVPN, you're good. This tells you your traffic is routing through our servers. For a deeper check, especially if you're concerned about sensitive data, you'll want to perform a **DNS leakage test**. There are many free tools online that will show you which DNS servers your computer is using. If they show OllaVPN's DNS servers and not your internet provider's, your DNS queries are properly protected within the tunnel. You can also try to \`ping\` a remote server to see if the latency changes, indicating traffic is routed differently. For the more technically inclined, you can verify your WireGuard interface directly. On Linux or macOS, open your terminal and run \`wg show\` or \`ip addr show wg0\`. This will display details about your WireGuard connection, including the public key of the server you're connected to and the amount of data transferred. If you see an interface named \`wg0\` (or similar) with active traffic, your tunnel is up. Remember, the **[kill switch](/blog/what-is-a-vpn-kill-switch/)** feature in OllaVPN is always on by default, so if the VPN connection ever drops unexpectedly, your internet traffic will be immediately blocked, preventing any accidental leaks.
 
 ## Are there tools that can simplify this WireGuard setup?
 
@@ -145,7 +145,7 @@ A how-to guide is only useful if you can verify the outcome. After completing th
 
 **DNS is going through the tunnel.** Open [our DNS lookup tool](/dns-lookup). The resolver IP shown should be the in-tunnel one (CGNAT 100.64.x.x range), not your ISP's DNS. If you see your ISP's resolver, DNS is leaking  -  see our [in-tunnel DNS page](/in-tunnel-dns) for the technical details on why this happens and how OllaVPN prevents it.
 
-**No WebRTC leak.** Open [our WebRTC leak test](/webrtc-leak-test). You should see only the exit's IPv4 address. If your real IP appears (private LAN address or public IPv4/IPv6), WebRTC is bypassing the VPN  -  either OllaVPN's leak prevention has failed (file a report at `[[email protected]](/cdn-cgi/l/email-protection)`) or your browser has a WebRTC-specific privacy issue we can help diagnose.
+**No [WebRTC leak](/blog/what-is-a-webrtc-leak/).** Open [our WebRTC leak test](/webrtc-leak-test). You should see only the exit's IPv4 address. If your real IP appears (private LAN address or public IPv4/IPv6), WebRTC is bypassing the VPN  -  either OllaVPN's leak prevention has failed (file a report at `[[email protected]](/cdn-cgi/l/email-protection)`) or your browser has a WebRTC-specific privacy issue we can help diagnose.
 
 ## If a step fails, here's how to debug
 
@@ -216,7 +216,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>6. Is this safe to do on a public Wi-Fi network?</span>
+      <span>6. Is this safe to do on a [public Wi-Fi network](/blog/how-public-wifi-steals-passwords/)?</span>
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">

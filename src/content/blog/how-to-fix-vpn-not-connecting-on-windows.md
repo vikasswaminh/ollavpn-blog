@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'VPN Not Connecting on Windows? Let''s Get You Connected.'
 description: 'If your OllaVPN isn''t connecting on Windows, start with the easiest fixes: restart both the app and your computer. Then, try switching to a different server location within the OllaVPN app. Often, connection hiccups ...'
 pubDate: 2026-06-09
@@ -101,7 +101,7 @@ You're trying to connect to OllaVPN, and instead of a green "Connected" message,
 
 ## How can I confirm my VPN is actually connected and working correctly?
 
-The easiest way to confirm your VPN is working is to check your IP address and run a DNS leak test, then verify through your OllaVPN app.
+The easiest way to confirm your VPN is working is to check your IP address and run a [DNS leak](/blog/what-is-a-dns-leak/) test, then verify through your OllaVPN app.
 
 First, always check your OllaVPN app itself. It should clearly indicate "Connected" or "Active" with the location you've chosen. This is your primary indicator. If it says you're connected, you probably are. But to be absolutely sure you're protected, you'll want to do a couple of quick checks outside the app. The next step is to **check your IP address**. Before connecting to OllaVPN, note your public IP. Then, connect OllaVPN to a server in a different country, like Canada. Go to a website that displays your IP address (just search "what's my IP" on Google) and verify that the displayed IP address and its associated location match the VPN server you connected to, not your actual location. Finally, run a **DNS leak test**. When you connect to a VPN, your device should use the VPN's DNS servers, not your internet provider's. Many websites offer free DNS leak tests. Connect to OllaVPN, then run one of these tests. If it only shows the IP address and DNS servers of your chosen OllaVPN location, you're good. If it shows your actual ISP's DNS servers, you might have a leak, and you should [contact support](/support). A good final check is to see if you can access **geo-restricted content** from the country you're connected to – if you can, it's definitely working as intended!
 
@@ -121,7 +121,7 @@ A VPN protects privacy and security by encrypting your internet traffic and rout
 
 OllaVPN uses modern protocols like WireGuard and QUIC, coupled with in-tunnel DNS and post-quantum-ready encryption, to maintain stable connections where older VPNs often fail.
 
-You've probably experienced it: your "reliable" VPN suddenly can't connect, especially in places with aggressive network filtering. That's usually because many VPNs still rely on older, easily detectable protocols. OllaVPN is built differently. We use the **WireGuard protocol**, which is incredibly lightweight, fast, and much harder for firewalls to block than older options. But we don't stop there.
+You've probably experienced it: your "reliable" VPN suddenly can't connect, especially in places with aggressive network filtering. That's usually because many VPNs still rely on older, easily detectable protocols. OllaVPN is built differently. We use the **[WireGuard protocol](/blog/wireguard-vs-openvpn/)**, which is incredibly lightweight, fast, and much harder for firewalls to block than older options. But we don't stop there.
 
 For even tougher network conditions, we offer a **QUIC option**. This protocol, originally designed by Google for web browsing, is fantastic at punching through highly restrictive networks and maintaining a stable connection, even when your underlying internet is flaky. Combined with **in-tunnel DNS**, which prevents DNS leaks and ensures your requests go through our encrypted tunnel, it means you're far less likely to get blocked or experience connection drops.
 
@@ -131,7 +131,7 @@ Another stability factor is our commitment to real privacy. Since we operate a s
 
 You can prevent future VPN connection issues by regularly updating your app, ensuring a strong internet connection, and understanding potential network restrictions.
 
-To keep your VPN running smoothly, a little preventative maintenance goes a long way. First and foremost, always \*\*keep your app updated\*\*. We're constantly improving OllaVPN, squashing bugs, and enhancing connection reliability, so running the latest version means you're getting the best experience we can offer. Just like any other software, updates are crucial for performance and security. Beyond updates, ensure you always have a \*\*strong internet connection\*\* before trying to connect your VPN. Think of your VPN as an encrypted tunnel – if the road leading to the tunnel is broken, you're not going to get through. Sometimes, a simple \*\*regular restart\*\* of your device and your router can clear up minor network glitches. Also, be mindful of your environment; while a VPN is essential on public Wi-Fi, these networks are often notoriously unstable and can make reliable connections harder to achieve. Try to \*\*avoid public Wi-Fi without a VPN\*\* by always connecting before you browse, but know that some of their inherent flakiness might still affect your speed. Finally, try to \*\*understand network restrictions\*\* where you are. Some very restrictive networks, like those in certain corporate environments, schools, or countries with strict censorship, might actively try to block VPN traffic. While OllaVPN uses advanced techniques like QUIC for these situations, knowing that these restrictions exist can help you understand why a connection might be challenging. If you suspect network interference, switching protocols within the app can often help.
+To keep your VPN running smoothly, a little preventative maintenance goes a long way. First and foremost, always \*\*keep your app updated\*\*. We're constantly improving OllaVPN, squashing bugs, and enhancing connection reliability, so running the latest version means you're getting the best experience we can offer. Just like any other software, updates are crucial for performance and security. Beyond updates, ensure you always have a \*\*strong internet connection\*\* before trying to connect your VPN. Think of your VPN as an encrypted tunnel – if the road leading to the tunnel is broken, you're not going to get through. Sometimes, a simple \*\*regular restart\*\* of your device and your router can clear up minor network glitches. Also, be mindful of your environment; while a VPN is essential on [public Wi-Fi](/blog/how-public-wifi-steals-passwords/), these networks are often notoriously unstable and can make reliable connections harder to achieve. Try to \*\*avoid public Wi-Fi without a VPN\*\* by always connecting before you browse, but know that some of their inherent flakiness might still affect your speed. Finally, try to \*\*understand network restrictions\*\* where you are. Some very restrictive networks, like those in certain corporate environments, schools, or countries with strict censorship, might actively try to block VPN traffic. While OllaVPN uses advanced techniques like QUIC for these situations, knowing that these restrictions exist can help you understand why a connection might be challenging. If you suspect network interference, switching protocols within the app can often help.
 
 ## When should I give up troubleshooting and contact my VPN's support?
 
@@ -149,7 +149,7 @@ A how-to guide is only useful if you can verify the outcome. After completing th
 
 **DNS is going through the tunnel.** Open [our DNS lookup tool](/dns-lookup). The resolver IP shown should be the in-tunnel one (CGNAT 100.64.x.x range), not your ISP's DNS. If you see your ISP's resolver, DNS is leaking  -  see our [in-tunnel DNS page](/in-tunnel-dns) for the technical details on why this happens and how OllaVPN prevents it.
 
-**No WebRTC leak.** Open [our WebRTC leak test](/webrtc-leak-test). You should see only the exit's IPv4 address. If your real IP appears (private LAN address or public IPv4/IPv6), WebRTC is bypassing the VPN  -  either OllaVPN's leak prevention has failed (file a report at `[[email protected]](/cdn-cgi/l/email-protection)`) or your browser has a WebRTC-specific privacy issue we can help diagnose.
+**No [WebRTC leak](/blog/what-is-a-webrtc-leak/).** Open [our WebRTC leak test](/webrtc-leak-test). You should see only the exit's IPv4 address. If your real IP appears (private LAN address or public IPv4/IPv6), WebRTC is bypassing the VPN  -  either OllaVPN's leak prevention has failed (file a report at `[[email protected]](/cdn-cgi/l/email-protection)`) or your browser has a WebRTC-specific privacy issue we can help diagnose.
 
 ## If a step fails, here's how to debug
 
@@ -254,7 +254,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
     Navigating VPN Not Connecting on Windows? Lets Get You Connected. effectively requires choosing security architectures built on transparency, strong encryption, and verified zero data logging.
   </p>
   <p style="font-size: 0.925rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
-    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on kill switch defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
+    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on [kill switch](/blog/what-is-a-vpn-kill-switch/) defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
   </p>
 </section>
 

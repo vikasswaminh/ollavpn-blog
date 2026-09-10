@@ -1,4 +1,4 @@
-ï»¿---
+---
 title: 'What is a Burner Phone Number, and Why Should You Care?'
 description: 'A burner phone number is essentially a temporary, disposable phone number you use for a limited time to keep your real identity private. It''s like having a pseudonym for your phone, letting you communicate without ev...'
 pubDate: 2026-06-09
@@ -217,7 +217,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[emailÂ
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      You can check by seeing if your real phone number is required for services you only use temporarily, or by monitoring for unexpected calls and texts. For online activity, tools like IP checkers can show if your VPN is working, and OllaVPN's kill switch is on by default to prevent leaks.
+      You can check by seeing if your real phone number is required for services you only use temporarily, or by monitoring for unexpected calls and texts. For online activity, tools like IP checkers can show if your VPN is working, and OllaVPN's [kill switch](/blog/what-is-a-vpn-kill-switch/) is on by default to prevent leaks.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
@@ -226,7 +226,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[emailÂ
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Yes, there are free IP address checkers and DNS leak tests online that can help verify if your VPN is effectively hiding your location and anonymizing your traffic. For phone numbers, you can use temporary SMS services, but you'll want to be cautious with sensitive info.
+      Yes, there are free IP address checkers and [DNS leak](/blog/what-is-a-dns-leak/) tests online that can help verify if your VPN is effectively hiding your location and anonymizing your traffic. For phone numbers, you can use temporary SMS services, but you'll want to be cautious with sensitive info.
     </p>
   </details>
   </div>

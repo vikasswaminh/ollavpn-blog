@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Mullvad vs ProtonVPN (2026): Anonymous Signup vs Swiss Ecosystem'
 description: 'Numbered accounts and cash payments vs Swiss privacy laws and a full encrypted suite. A deep look at port forwarding, speed, and real-world anonymity.'
 pubDate: 2026-05-16
@@ -131,7 +131,7 @@ Default on desktop (pioneered)
 
 Rolling out
 
-Kill switch
+[Kill switch](/blog/what-is-a-vpn-kill-switch/)
 
 Yes, on all platforms
 
@@ -246,7 +246,7 @@ QUICK ANSWER Mullvad pioneered post-quantum-safe WireGuard tunnels and made them
 
 This deserves its own section because Mullvad genuinely led the industry here, and it would be dishonest to tell this story without giving them direct credit.
 
-The concern that drives post-quantum cryptography is a pattern researchers call **"harvest now, decrypt later"**: an adversary captures and stores your encrypted traffic today, even though they can't read it today, on the bet that they'll be able to decrypt it five or ten years from now once quantum computers mature. The encrypted sessions you run this week could sit in storage somewhere, waiting for the locks to become breakable.
+The concern that drives [post-quantum cryptography](/blog/what-is-post-quantum-cryptography/) is a pattern researchers call **"harvest now, decrypt later"**: an adversary captures and stores your encrypted traffic today, even though they can't read it today, on the bet that they'll be able to decrypt it five or ten years from now once quantum computers mature. The encrypted sessions you run this week could sit in storage somewhere, waiting for the locks to become breakable.
 
 Most of the encryption used on the internet today relies on math problems that a sufficiently powerful quantum computer could solve. Post-quantum algorithms are designed to resist that future. Some of the biggest names in security  -  Apple, Signal, Cloudflare, Google  -  have been rolling out PQC across their own products over the last two years.
 

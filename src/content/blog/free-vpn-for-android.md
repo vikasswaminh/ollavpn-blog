@@ -21,7 +21,7 @@ Plenty of apps are technically free and technically encrypt something, but throt
 OllaVPN Free is built around the other definition: no ads, no data caps, no logs, and a flat 10 Mbps that's genuinely enough for HD streaming, calls, and normal browsing on your phone. It's available on every server in our network, forever, with no credit card or account required. It's funded by our optional Plus subscribers rather than by selling your activity or wearing you down with ads until you upgrade.
 </p>
 <p style="font-size: 0.925rem; line-height: 1.72; color: #09090b; margin: 0 0 8px 0; font-family: 'Lato', sans-serif;">
-We'll walk through what "no logs" needs to mean technically to be trustworthy (not just a slogan), what Android-specific privacy risks a VPN does and doesn't address, how OllaVPN's kill switch and in-tunnel DNS work on your phone, the setup steps, honest speed math for common Android use cases, and how to verify every claim in this guide yourself - without taking our word for it.
+We'll walk through what "no logs" needs to mean technically to be trustworthy (not just a slogan), what Android-specific privacy risks a VPN does and doesn't address, how OllaVPN's [kill switch](/blog/what-is-a-vpn-kill-switch/) and in-tunnel DNS work on your phone, the setup steps, honest speed math for common Android use cases, and how to verify every claim in this guide yourself - without taking our word for it.
 </p>
 </section>
 
@@ -87,7 +87,7 @@ A lot of free VPN apps are functional. They connect. They show a green checkmark
 
 "Really usable" also means not being nickel-and-dimed on locations. A free tier that only offers two overcrowded server cities isn't meaningfully free if those two servers are so congested that your real throughput is a fraction of the advertised cap.
 
-Usability isn't just the number on the settings page. It's what you actually experience in your hand: scrolling, streaming a show on the train, hopping on a video call, checking your bank app on public Wi-Fi.
+Usability isn't just the number on the settings page. It's what you actually experience in your hand: scrolling, streaming a show on the train, hopping on a video call, checking your bank app on [public Wi-Fi](/blog/how-public-wifi-steals-passwords/).
 
 The honest bar we think a free Android VPN needs to clear in 2026 is this: could you make it your only VPN, permanently, without a nagging sense that you're on the discount tier of a service that's actively rooting for you to upgrade? If the answer is no, "free" is doing a lot of marketing work that the product itself doesn't back up.
 
@@ -103,7 +103,7 @@ On Android, there's an extra wrinkle: the operating system itself, and the apps 
 
 So, a genuinely no-logs VPN is one meaningful layer of protection, not a blanket privacy fix for your entire device. We think it's worth saying that plainly, rather than letting "no logs" imply more than it actually covers.
 
-What we'd suggest looking for, concretely: a provider that states its no-logs policy specifically (not vaguely), has published the policy somewhere you can actually read it, and - ideally - has been independently audited by a third-party security firm. A self-reported no-logs claim and an audited one are not the same category of evidence.
+What we'd suggest looking for, concretely: a provider that states its [no-logs policy](/blog/what-logs-does-vpn-keep/) specifically (not vaguely), has published the policy somewhere you can actually read it, and - ideally - has been independently audited by a third-party security firm. A self-reported no-logs claim and an audited one are not the same category of evidence.
 
 ## What Privacy Risks Does Your Android Phone Create That a VPN Does and Doesn't Fix?
 
@@ -272,7 +272,7 @@ Test 1 - Funding model. Open the provider's homepage and look for a clear explan
 
 Test 2 - DNS in-tunnel. Connect the VPN on your phone, then open our DNS lookup tool in your mobile browser and resolve a domain. The resolver shown should be operator-controlled, not 8.8.8.8, 1.1.1.1, or your carrier's default resolver. Disconnect and repeat - the difference is your evidence.
 
-Test 3 - IP and WebRTC leak. Open our WebRTC leak test while connected. Only the VPN server's exit IP should appear; your real mobile or Wi-Fi IP shouldn't show up anywhere in the result.
+Test 3 - IP and [WebRTC leak](/blog/what-is-a-webrtc-leak/). Open our WebRTC leak test while connected. Only the VPN server's exit IP should appear; your real mobile or Wi-Fi IP shouldn't show up anywhere in the result.
 
 Test 4 - Kill switch under real conditions. Connect the VPN, start a video stream or continuous download, then manually enable Airplane Mode and quickly switch back to Wi-Fi or mobile data (or walk out of Wi-Fi range). Traffic should pause and resume only once the tunnel is confirmed reconnected - not silently fall back to your unprotected connection during the gap.
 
@@ -309,7 +309,7 @@ Test 6 - Audit history. Search "[operator name] security audit" and look for a p
       <span class="faq-accordion-icon" style="font-size: 1.15rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0; font-family: 'Lato', sans-serif;">
-      Not meaningfully. We use the WireGuard protocol by default specifically because it's efficient on battery and CPU compared to older, heavier VPN protocols. That matters more on a phone you carry and check throughout the day than on a device that's usually plugged in.
+      Not meaningfully. We use the [WireGuard protocol](/blog/wireguard-vs-openvpn/) by default specifically because it's efficient on battery and CPU compared to older, heavier VPN protocols. That matters more on a phone you carry and check throughout the day than on a device that's usually plugged in.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Why HTTPS Alone Isn't Enough"
 description: "HTTPS protects what you send to a website, but not who you are talking to. Understand SNI leaks, DNS visibility, ISP tracking, and why you need a VPN."
 pubDate: 2026-07-30
@@ -23,7 +23,7 @@ None of this means HTTPS is broken or a gimmick. It is doing the exact job it wa
 <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">HTTPS protects the content of your conversation, but not the fact that you're having one. Your ISP can still see which websites you visit, when you browse, and how much data you transfer. DNS leaks happen before HTTPS starts, broadcasting your visited domain names in plain text. Browser fingerprinting happens inside the encrypted tunnel, using your browser's technical specs to identify your hardware. A VPN complements HTTPS by masking your real IP address and handling DNS internally, while HTTPS handles content encryption to each site.:</strong> HTTPS encrypts the content of the connection between your browser and a specific website, so that anyone intercepting the traffic in transit sees scrambled data instead of readable text.
+        <strong style="color: #0F172A; font-weight: 800;">HTTPS protects the content of your conversation, but not the fact that you're having one. Your ISP can still see which websites you visit, when you browse, and how much data you transfer. [DNS leaks](/blog/what-is-a-dns-leak/) happen before HTTPS starts, broadcasting your visited domain names in plain text. Browser fingerprinting happens inside the encrypted tunnel, using your browser's technical specs to identify your hardware. A VPN complements HTTPS by masking your real IP address and handling DNS internally, while HTTPS handles content encryption to each site.:</strong> HTTPS encrypts the content of the connection between your browser and a specific website, so that anyone intercepting the traffic in transit sees scrambled data instead of readable text.
       </div>
     </li>
 </ul>
@@ -130,10 +130,10 @@ What a VPN does not do is replace the need for HTTPS on the sites you visit. If 
 ## What does OllaVPN do to close these specific gaps?
 
 We designed OllaVPN around the exact structural gaps this guide describes. We've never claimed that HTTPS isn't necessary - it does vital work - but it leaves critical privacy doors wide open, and those are the exact gaps a solid VPN should handle.
-1.High-Speed Encrypted Tunneling with WireGuard Every OllaVPN connection wraps your entire device's traffic inside an encrypted tunnel powered by the WireGuard protocol (using modern ChaCha20 encryption and Poly1305 authentication). The moment you connect, your real IP address is replaced with one of ours, immediately removing your location and network identity as a tracking vector across every app on your device.
+1.High-Speed Encrypted Tunneling with WireGuard Every OllaVPN connection wraps your entire device's traffic inside an encrypted tunnel powered by the [WireGuard protocol](/blog/wireguard-vs-openvpn/) (using modern ChaCha20 encryption and Poly1305 authentication). The moment you connect, your real IP address is replaced with one of ours, immediately removing your location and network identity as a tracking vector across every app on your device.
 2.In-Tunnel Private DNS Handling We eliminated the unencrypted phonebook leak completely. OllaVPN resolves all your DNS requests directly inside our encrypted tunnel using zero-log internal resolvers. Your ISP never sees your domain lookups, and your query history is never logged, closing the DNS leakage gap regardless of how a destination site sets up its encryption.
 3.Metadata Shielding & ISP Blindness By routing your entire connection through our encrypted transport layer, OllaVPN strips out recognizable packet signatures. Your ISP loses the ability to log the domain names you visit, capture SNI headers, or map out your daily browsing patterns.
-4.Always-On Fail-Closed Kill Switch Privacy protection isn't very useful if a brief Wi-Fi hiccup exposes your real identity. OllaVPN includes a system-level Kill Switch enabled by default. If your network drops or switches Wi-Fi points, OllaVPN instantly cuts off internet access at the driver level until your secure tunnel reconnects, ensuring your real IP address or plain-text DNS queries never slip out during a connection break.
+4.Always-On Fail-Closed [Kill Switch](/blog/what-is-a-vpn-kill-switch/) Privacy protection isn't very useful if a brief Wi-Fi hiccup exposes your real identity. OllaVPN includes a system-level Kill Switch enabled by default. If your network drops or switches Wi-Fi points, OllaVPN instantly cuts off internet access at the driver level until your secure tunnel reconnects, ensuring your real IP address or plain-text DNS queries never slip out during a connection break.
 5.Post-Quantum Encryption Readiness To protect your privacy against future threats, OllaVPN builds post-quantum readiness into its handshake protocol. We combine classical elliptic curve key exchanges with lattice-based quantum-resistant algorithms (ML-KEM/Kyber). This shields your traffic against "Harvest Now, Decrypt Later" surveillance, where adversaries store encrypted traffic today in hopes of decrypting it years down the road with quantum computers.
 We like to be completely transparent about what we don't do: OllaVPN doesn't replace the need for HTTPS on the sites you visit, nor does a VPN alone stop scripts from fingerprinting your browser hardware. But OllaVPN closes the IP exposure, DNS leak, and ISP metadata gaps that HTTPS structurally cannot fix.
 
@@ -150,7 +150,7 @@ If you want to step beyond basic "padlock security" and take control of your onl
 1.Keep using HTTPS everywhere. Continue looking for secure connections and use HTTPS-Only mode in your browser. Just separate the idea of "this page is encrypted" from "I am private and anonymous."
 2.Fix your DNS settings. If you aren't using a VPN, switch your browser or device to use Encrypted DNS (DNS-over-HTTPS) through trusted providers like Cloudflare or Quad9 to stop sending cleartext DNS queries to your ISP.
 3.Use a trustworthy zero-logs VPN. Running OllaVPN by default is the most reliable way to hide your real IP address, shield your network metadata, and keep your browsing history safe from ISP logging.
-4.Test your setup for leaks. Run periodic diagnostic checks using DNS leak tests, WebRTC leak tests, and IP lookup tools to make sure your location and domain queries aren't leaking out behind the scenes.
+4.Test your setup for leaks. Run periodic diagnostic checks using DNS leak tests, [WebRTC leak](/blog/what-is-a-webrtc-leak/) tests, and IP lookup tools to make sure your location and domain queries aren't leaking out behind the scenes.
 5.Hardening your browser against fingerprinting. Use a privacy-focused browser (like Firefox with strict protection enabled, or Brave) and install tracker-blocking extensions to stop scripts from building a unique hardware fingerprint of your device.
 </div>
 
@@ -274,7 +274,7 @@ If you want to step beyond basic "padlock security" and take control of your onl
     Choosing the right solution for <strong>Why HTTPS Alone Isn't Enough</strong> requires balancing speed, genuine security, and uncompromised privacy.
   </p>
   <p style="font-size: 0.925rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
-    With OllaVPN, you benefit from lightweight WireGuard tunneling, zero bandwidth caps, default-on kill switch defense, and built-in post-quantum cryptography to ensure your connection remains lightning-fast and private on every network.
+    With OllaVPN, you benefit from lightweight WireGuard tunneling, zero bandwidth caps, default-on kill switch defense, and built-in [post-quantum cryptography](/blog/what-is-post-quantum-cryptography/) to ensure your connection remains lightning-fast and private on every network.
   </p>
 </section>
 

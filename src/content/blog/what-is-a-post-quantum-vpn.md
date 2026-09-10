@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'What Is a Post-Quantum VPN and Why Do You Need One?'
 description: 'The plain-English guide to post-quantum VPNs. Why harvest-now-decrypt-later turns a future quantum threat into a today problem, and how PQC handshakes work.'
 pubDate: 2026-07-04
@@ -137,7 +137,7 @@ Estimates for when a “cryptographically relevant quantum computer” might exi
 
 In August 2024, NIST finalized FIPS 203 (ML-KEM), the key-exchange standard that post-quantum VPNs use for their handshake, alongside two signature standards (FIPS 204 and FIPS 205) that matter more for certificate authentication than for the VPN handshake itself.
 
-A [post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html) isn’t inventing its own cryptography from scratch  -  that would be a red flag, not a feature. It’s implementing algorithms that went through the U.S. National Institute of Standards and Technology’s public, multi-year Post-Quantum Cryptography competition, which ran from 2016 to 2024 and involved cryptographers around the world trying to break candidate algorithms in public.
+A [post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html) isn’t inventing its own cryptography from scratch  -  that would be a red flag, not a feature. It’s implementing algorithms that went through the U.S. National Institute of Standards and Technology’s public, multi-year [Post-Quantum Cryptography](/blog/what-is-post-quantum-cryptography/) competition, which ran from 2016 to 2024 and involved cryptographers around the world trying to break candidate algorithms in public.
 
 The result, finalized in August 2024:
 
@@ -183,7 +183,7 @@ August 2023. Google Chrome starts rolling out the X25519Kyber768 hybrid for TLS 
 
 September 2023. Signal launches PQXDH, a post-quantum hybrid upgrade to the key-agreement protocol underlying its end-to-end encrypted messaging.
 
-February 2024. Apple ships PQ3, a post-quantum upgrade to iMessage’s end-to-end encryption protocol.
+February 2024. Apple ships PQ3, a post-quantum upgrade to iMessage’s [end-to-end encryption](/blog/what-is-end-to-end-encryption/) protocol.
 
 August 2024. NIST finalizes FIPS 203, 204, and 205  -  the moment post-quantum cryptography stops being experimental and becomes a formal, deployable standard.
 
@@ -257,7 +257,7 @@ This is why the [post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html) conver
     Navigating What Is a Post-Quantum VPN and Why Do You Need One? effectively requires choosing security architectures built on transparency, strong encryption, and verified zero data logging.
   </p>
   <p style="font-size: 0.925rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
-    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on kill switch defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
+    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on [kill switch](/blog/what-is-a-vpn-kill-switch/) defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
   </p>
 </section>
 

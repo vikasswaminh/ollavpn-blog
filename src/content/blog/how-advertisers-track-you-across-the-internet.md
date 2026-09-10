@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'How Advertisers Track You Across the Internet (And How to Fight Back)'
 description: 'The complete, plain-English guide to every method advertisers use to follow you around the web — third-party cookies, browser fingerprinting, pixel beacons, data brokers — and how to stop them.'
 pubDate: 2026-06-10
@@ -379,7 +379,7 @@ Note: uBlock Origin availability and extension capabilities depend on browser ve
 
 A VPN masks your IP address from every website you visit and prevents your ISP from seeing your browsing history. This addresses two tracking vectors: IP-based tracking and ISP data sales. It doesn’t stop cookie-based tracking or fingerprinting by itself, but it removes your ISP from the picture entirely and makes IP-based profiling harder.
 
-Choose a VPN with a genuine no-logs policy, an audited technical architecture, and a business model that doesn’t depend on selling your data.
+Choose a VPN with a genuine [no-logs policy](/blog/what-logs-does-vpn-keep/), an audited technical architecture, and a business model that doesn’t depend on selling your data.
 
 ## Compartmentalize your logins
 
@@ -451,7 +451,7 @@ Zero-logs architecture - OllaVPN does not log connection timestamps, IP addresse
 
 DNS inside the encrypted tunnel - your DNS queries are resolved inside the VPN tunnel by OllaVPN’s own resolver, not by your ISP and not by a third-party DNS provider that might log them.
 
-Kill switch that cannot be accidentally disabled - if the VPN connection drops, the [kill switch](/blog/what-is-a-vpn-kill-switch.html) blocks all traffic until the connection is restored.
+[Kill switch](/blog/what-is-a-vpn-kill-switch/) that cannot be accidentally disabled - if the VPN connection drops, the [kill switch](/blog/what-is-a-vpn-kill-switch.html) blocks all traffic until the connection is restored.
 
 Post-quantum-ready encryption on every connection - hybrid X25519 + ML-KEM-768. For “harvest now, decrypt later,” this matters. For everyday ad tracking, it’s a bonus on top of the core privacy properties.
 

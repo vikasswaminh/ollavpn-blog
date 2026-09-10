@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'What Happens When Someone Knows Your IP Address? A Complete 2026 Guide'
 description: 'The full, plain-English guide to what someone can actually do with your IP address - location tracking, DDoS attacks, targeted hacking, identity fraud, and how to protect yourself.'
 pubDate: 2026-06-14
@@ -323,7 +323,7 @@ It’s worth stating clearly what your IP address does not expose, because fear 
 
 They cannot read your messages or intercept your traffic.
 
-Knowing your IP address is not the same as being on your network. Traffic sent through your connection is encrypted in transit by HTTPS, end-to-end encryption, and VPN tunnels. Knowing where traffic goes doesn’t let someone read it.
+Knowing your IP address is not the same as being on your network. Traffic sent through your connection is encrypted in transit by HTTPS, [end-to-end encryption](/blog/what-is-end-to-end-encryption/), and VPN tunnels. Knowing where traffic goes doesn’t let someone read it.
 
 They cannot directly hack your device.
 
@@ -377,7 +377,7 @@ Genuine [no-logs policy](/blog/which-free-vpn-does-not-keep-logs.html) (independ
 
 Jurisdiction outside aggressive data-retention regimes
 
-Kill switch that prevents traffic from flowing if the VPN connection drops
+[Kill switch](/blog/what-is-a-vpn-kill-switch/) that prevents traffic from flowing if the VPN connection drops
 
 DNS handled inside the encrypted tunnel
 
@@ -421,7 +421,7 @@ We built OllaVPN to answer one question: what should a privacy-first VPN do auto
 
 Your real IP is replaced from the first packet. Every connection - web, app, game, streaming - goes through the encrypted tunnel before it reaches the open internet. Your home IP is never exposed to the destination.
 
-Post-quantum cryptography, built in. The tunnel uses a hybrid classical + ML-KEM-768 handshake designed to stay secure against future quantum computers. It’s not a paid upgrade. It’s on by default, including on the free plan.
+[Post-quantum cryptography](/blog/what-is-post-quantum-cryptography/), built in. The tunnel uses a hybrid classical + ML-KEM-768 handshake designed to stay secure against future quantum computers. It’s not a paid upgrade. It’s on by default, including on the free plan.
 
 An always-on kill switch that cannot be disabled. If the VPN connection drops, your traffic stops. It doesn’t “fall back” to your real IP.
 

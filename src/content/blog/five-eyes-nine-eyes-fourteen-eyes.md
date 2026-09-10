@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Five Eyes, Nine Eyes, and Fourteen Eyes Explained (2026 Guide)'
 description: 'The Five Eyes is an intelligence-sharing alliance between the United States, United Kingdom, Canada, Australia, and New Zealand, formalized by the 1946 UKUSA Agreement. The Nine Eyes adds Denmark, France, the Netherlands...'
 pubDate: 2026-05-16
@@ -200,7 +200,7 @@ For practical purposes as a VPN user, the named alliances are still the most use
 
 ## Does this matter for VPN users?
 
-QUICK ANSWER It matters more than VPN marketing sometimes admits, and less than VPN marketing often implies. Jurisdiction determines what legal demands a VPN could face. But a well-implemented no-logs policy means there's little to hand over regardless of jurisdiction. The strongest privacy posture is "no logs, audited, regardless of country."
+QUICK ANSWER It matters more than VPN marketing sometimes admits, and less than VPN marketing often implies. Jurisdiction determines what legal demands a VPN could face. But a well-implemented [no-logs policy](/blog/what-logs-does-vpn-keep/) means there's little to hand over regardless of jurisdiction. The strongest privacy posture is "no logs, audited, regardless of country."
 
 This is the honest, balanced answer that most "Eyes" articles avoid. Let's break it down.
 
@@ -295,7 +295,7 @@ Our position on this whole question is straightforward: **the strongest privacy 
 [OllaVPN's](/free-vpn) approach reflects that view:
 
 *   **A no-logs policy** means there is essentially nothing for any government to obtain through any legal process, regardless of jurisdiction.
-*   **An always-on kill switch** means the connection fails closed  -  your traffic doesn't leak even briefly during reconnects.
+*   **An always-on [kill switch](/blog/what-is-a-vpn-kill-switch/)** means the connection fails closed  -  your traffic doesn't leak even briefly during reconnects.
 *   **[Post-quantum cryptography](what-is-post-quantum-cryptography.html) from day one**, on every connection including the lifetime free plan, protects against the "harvest now, decrypt later" threat  -  the encrypted traffic captured today that adversaries hope to decrypt years from now.
 *   **DNS is handled inside the encrypted tunnel by default**  -  see our [DNS leak guide](what-is-a-dns-leak.html) for what that means.
 *   **Free for life**  -  privacy upgrades worth having shouldn't be paywalled.
