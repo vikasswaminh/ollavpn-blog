@@ -283,14 +283,6 @@ Test 5 - Permissions check. In Android's Settings → Apps → [VPN app] → Per
 
 Test 6 - Audit history. Search "[operator name] security audit" and look for a published, dated third-party report from a firm that regularly audits VPNs. Cure53, Securitum, and Radically Open Security are common names here. A recent, clean audit is meaningful evidence. The absence of one - especially where competitors have one - is worth weighing too.
 
-⭐ Key takeaways
-
-What to remember from this guide
-
-<ul style="margin: 16px 0 20px 20px; padding-left: 10px; line-height: 1.65; color: #334155; font-family: 'Lato', sans-serif;">
-  <li style='margin-bottom:8px; font-size:0.90rem; line-height:1.62;'>"Free" and "usable" are separate promises. A technically-free VPN that's throttled or capped into frustration isn't really free in any sense that matters.</li><li style='margin-bottom:8px; font-size:0.90rem; line-height:1.62;'>"No logs" should mean no retained connection metadata that could reconstruct which device used which server at what time - not just "we don't look at your browsing."</li><li style='margin-bottom:8px; font-size:0.90rem; line-height:1.62;'>A VPN protects your network traffic. It doesn't stop app-level tracking, advertising ID profiling, or account-based tracking on Android. It's one privacy layer among several.</li><li style='margin-bottom:8px; font-size:0.90rem; line-height:1.62;'>A kill switch on by default matters more on Android than almost any other platform, given how often phones hop between Wi-Fi and mobile data throughout a normal day.</li><li style='margin-bottom:8px; font-size:0.90rem; line-height:1.62;'>OllaVPN Free funds itself entirely through Plus subscribers. Identical privacy architecture across both tiers, with speed and device count as the only real differences.</li>
-</ul>
-
 </div>
 
 <section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 18px; padding: 12px 28px 24px !important; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 20px rgba(0,0,0,0.03); box-sizing: border-box; font-family: 'Lato', sans-serif;">

@@ -206,14 +206,6 @@ That means Meta's systems still process your account activity according to Whats
 
 For genuinely comprehensive privacy around sensitive communication, a VPN is one layer among several - alongside things like WhatsApp's own disappearing messages and chat lock features, careful device security practices, and being thoughtful about what gets backed up and where. We'd rather set that expectation honestly than let a "does a VPN improve WhatsApp privacy" article answer with an uncomplicated yes and leave the actual boundaries of that yes unexplained.
 
-⭐ Key takeaways
-
-What to remember from this guide
-
-<ul style="margin: 16px 0 20px 20px; padding-left: 10px; line-height: 1.65; color: #334155; font-family: 'Lato', sans-serif;">
-  <li style='margin-bottom:8px; font-size:0.90rem; line-height:1.62;'>Does WhatsApp Already Encrypt Your Messages? What a VPN Adds on Top</li><li style='margin-bottom:8px; font-size:0.90rem; line-height:1.62;'>What Does a VPN Actually Change About Your WhatsApp Privacy?</li><li style='margin-bottom:8px; font-size:0.90rem; line-height:1.62;'>What Metadata Can Still Leak Even with End-to-End Encryption?</li><li style='margin-bottom:8px; font-size:0.90rem; line-height:1.62;'>Does OllaVPN Free Actually Improve WhatsApp Privacy?</li><li style='margin-bottom:8px; font-size:0.90rem; line-height:1.62;'>How Do You Set Up OllaVPN for WhatsApp, Step by Step?</li>
-</ul>
-
 </div>
 
 <section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 18px; padding: 12px 28px 24px !important; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 20px rgba(0,0,0,0.03); box-sizing: border-box; font-family: 'Lato', sans-serif;">

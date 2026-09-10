@@ -160,16 +160,6 @@ You'll find competing answers to the same question across many sites. A few sign
 Maintained by [Nathan Pratt](/about/team#nathan-pratt), OllaVPN's Privacy & Security Lead. Fact-checked by [Hannah Wu](/about/team#hannah-wu), Senior Security Engineer. We refresh this post quarterly so its facts, recommendations, and competitor comparisons stay accurate as the category evolves. The last full re-evaluation was 23 June 2026; the next is scheduled for September 2026.
 
 If you spot a fact that's drifted or an addition we should make, email `[[email protected]](/cdn-cgi/l/email-protection)`. Reader corrections drive a meaningful percentage of our quarterly updates.
-
-⭐ Key takeaways
-
-## What to remember from this guide
-
-*   What Can Your ISP Actually See When You Use a VPN?
-*   How Does a VPN Work to Hide Your Traffic From Your ISP?
-*   What Can Governments and Other Agencies See, Even with a VPN?
-*   Why Do VPN Logging Policies Directly Affect Your Privacy?
-*   Which Countries&#39; Laws Actually Affect Your VPN&#39;s Privacy Guarantees?
 </div>
 
 <section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 12px 28px 24px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">

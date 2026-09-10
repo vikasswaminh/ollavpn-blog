@@ -318,20 +318,6 @@ We built OllaVPN around the idea that the network you happen to be connected to 
 • An always-on kill switch ensures that if the tunnel ever drops on an untrusted network, traffic stops rather than silently falling back to an exposed, unencrypted connection.
 
 • Free for life, on every plan  -  the protection that matters most on [public Wi-Fi](/blog/how-public-wifi-steals-passwords.html) shouldn't be reserved for people willing to pay for it first.
-
-⭐ Key takeaways
-
-• What to remember from this guide
-
-## • Why this old attack still works in 2026
-
-## • A simple analogy  -  the mail carrier who reads your letters
-
-## • What a man-in-the-middle attack actually is
-
-## • The three things every MITM attack needs
-
-## • How HTTPS actually defeats most of this
 </div>
 
 <section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 12px 28px 24px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
