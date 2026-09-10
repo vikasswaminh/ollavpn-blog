@@ -55,9 +55,12 @@ The complete, plain-English guide to every method advertisers use to follow you 
 
 ## Why ad tracking is bigger than most people realize
 
-QUICK ANSWER
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The online advertising industry collects data not just to show you relevant ads, but to build detailed behavioral and psychographic profiles that are sold, shared, and used in ways you never agreed to. The scale isn’t ten or twenty trackers per website - it’s often hundreds. And the data can follow you for months or years.</p>
+</div>
 
-The online advertising industry collects data not just to show you relevant ads, but to build detailed behavioral and psychographic profiles that are sold, shared, and used in ways you never agreed to. The scale isn’t ten or twenty trackers per website - it’s often hundreds. And the data can follow you for months or years.
+
 
 Here’s a fact that changes how most people think about this: when you visit an average news website, you’re not interacting with one company. You’re interacting with a whole set of third parties. Research from Princeton’s WebTAP project and follow-up studies found that a typical major publisher loads between 70 and 200 distinct third-party tracking scripts in a single page load. Each script belongs to a different company. Each one records your behavior. And each one correlates what it sees with data it already collected about you on other websites.
 
@@ -69,9 +72,12 @@ Once you understand how they get it, you can decide how much of it you want to g
 
 ## Third-party cookies - the original surveillance tool
 
-QUICK ANSWER
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A third-party cookie is a small file placed on your device by a company other than the website you’re actually visiting. When the same company’s code appears on thousands of websites, it can use that cookie to recognize you across all of them - building a profile of everywhere you’ve been online.</p>
+</div>
 
-A third-party cookie is a small file placed on your device by a company other than the website you’re actually visiting. When the same company’s code appears on thousands of websites, it can use that cookie to recognize you across all of them - building a profile of everywhere you’ve been online.
+
 
 Cookies were invented in 1994 to solve a practical problem: HTTP is stateless, meaning a web server doesn’t inherently remember that you’re the same person who visited five minutes ago. Cookies gave websites a way to remember you across requests and sessions. They were, and still are, genuinely useful.
 
@@ -105,9 +111,12 @@ Over weeks and months, this becomes a surprisingly detailed portrait of who you 
 
 ## Browser fingerprinting - the cookieless tracker
 
-QUICK ANSWER
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Browser fingerprinting identifies you by combining dozens of technical attributes of your browser and device - installed fonts, screen resolution, GPU, timezone, browser plugins, canvas rendering output, and more - into a unique identifier that requires no cookie and leaves no file on your device. Clearing your cookies doesn’t defeat it. Changing your IP address doesn’t defeat it.</p>
+</div>
 
-Browser fingerprinting identifies you by combining dozens of technical attributes of your browser and device - installed fonts, screen resolution, GPU, timezone, browser plugins, canvas rendering output, and more - into a unique identifier that requires no cookie and leaves no file on your device. Clearing your cookies doesn’t defeat it. Changing your IP address doesn’t defeat it.
+
 
 Browser fingerprinting can feel more insidious than cookies because it’s invisible. Cookies leave a file on your device. You can see them in developer tools, clear them, or block them. A fingerprint leaves nothing on your device at all - it’s assembled on the server side from information your browser willingly hands over during normal operation.
 
@@ -143,9 +152,12 @@ Fingerprinting is increasingly the fallback for trackers when cookies aren’t a
 
 ## Tracking pixels and invisible beacons
 
-QUICK ANSWER
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A tracking pixel is a 1×1 transparent image (or a tiny JavaScript snippet) embedded in a webpage or email. When it loads, it fires a request to the tracker’s server, confirming you visited the page or opened the email - and passing your IP address, device type, browser, and timestamp along with it.</p>
+</div>
 
-A tracking pixel is a 1×1 transparent image (or a tiny JavaScript snippet) embedded in a webpage or email. When it loads, it fires a request to the tracker’s server, confirming you visited the page or opened the email - and passing your IP address, device type, browser, and timestamp along with it.
+
 
 You’ve probably heard about tracking pixels in email marketing - the invisible images that tell a sender whether you opened their newsletter, at what time, and from what kind of device. But pixels are also used across the web for ad measurement and attribution.
 
@@ -167,9 +179,12 @@ When a retailer installs the Meta Pixel on a checkout page, every purchase can s
 
 ## IP address tracking and what it reveals
 
-QUICK ANSWER
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Your IP address is visible to every server you connect to. It reveals your approximate geographic location - often to the neighborhood level in dense urban areas - and it can be used to correlate your activity across websites that share data. It also identifies your Internet Service Provider, which may sell browsing data to advertisers.</p>
+</div>
 
-Your IP address is visible to every server you connect to. It reveals your approximate geographic location - often to the neighborhood level in dense urban areas - and it can be used to correlate your activity across websites that share data. It also identifies your Internet Service Provider, which may sell browsing data to advertisers.
+
 
 Your IP address isn’t as detailed as a cookie or fingerprint, but it reveals more than most people realize. It’s also one of the most durable identifiers because there’s no easy way to hide it without a VPN or proxy.
 
@@ -189,9 +204,12 @@ A VPN masks your IP address from websites and your browsing history from your IS
 
 ## Login-based tracking - the hardest to escape
 
-QUICK ANSWER
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">When you’re logged into a Google, Meta, or Apple account, everything you do on those platforms - and everywhere their tracking code appears across the web - can be tied to your real identity. This is deterministic tracking. It’s more accurate than cookies or fingerprints, and it can’t be blocked with browser settings.</p>
+</div>
 
-When you’re logged into a Google, Meta, or Apple account, everything you do on those platforms - and everywhere their tracking code appears across the web - can be tied to your real identity. This is deterministic tracking. It’s more accurate than cookies or fingerprints, and it can’t be blocked with browser settings.
+
 
 Everything covered so far - cookies, fingerprints, pixels, IP addresses - is usually probabilistic tracking. It uses indirect signals to infer that you’re the same person across different sites and sessions. It’s powerful, but it has error rates.
 
@@ -205,9 +223,12 @@ Every time you click “Sign in with Google” or “Sign in with Facebook” on
 
 ## Cross-device tracking and identity graphs
 
-QUICK ANSWER
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Cross-device tracking matches the same person across their phone, laptop, tablet, and smart TV by correlating behavioral signals, login events, shared IP addresses, and device identifiers. The output - called an identity graph - helps advertisers reach you with a consistent message across every screen.</p>
+</div>
 
-Cross-device tracking matches the same person across their phone, laptop, tablet, and smart TV by correlating behavioral signals, login events, shared IP addresses, and device identifiers. The output - called an identity graph - helps advertisers reach you with a consistent message across every screen.
+
 
 The modern advertising industry isn’t confused about the fact that people use multiple devices. It has built infrastructure specifically to track the same person across them.
 
@@ -229,9 +250,12 @@ Companies that specialize in identity resolution - LiveRamp, the Trade Desk’s 
 
 ## Data brokers - where it all gets sold
 
-QUICK ANSWER
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Data brokers are companies that collect personal data from hundreds of sources - public records, retailer loyalty programs, website trackers, app data, ISPs, and more - and sell it to advertisers, employers, insurance companies, law enforcement, and anyone else willing to pay. Most people have never heard of the companies that hold the most detailed files about them.</p>
+</div>
 
-Data brokers are companies that collect personal data from hundreds of sources - public records, retailer loyalty programs, website trackers, app data, ISPs, and more - and sell it to advertisers, employers, insurance companies, law enforcement, and anyone else willing to pay. Most people have never heard of the companies that hold the most detailed files about them.
+
 
 You’ve probably heard of data brokers in the context of people-search websites: Spokeo, BeenVerified, Whitepages. Those are the consumer-facing tip of a much larger industry.
 
@@ -259,9 +283,12 @@ The data broker industry is largely unregulated at the federal level in the US, 
 
 ## The "cookie death" myth - what actually replaced cookies
 
-QUICK ANSWER
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Google has been announcing the end of third-party cookies since 2020. As of 2026, the deprecation has been delayed repeatedly. But even when it finally arrives, third-party cookies won’t be replaced by “nothing.” They’ll be replaced by browser-based APIs that provide similar targeting capabilities while keeping user data inside the browser. For users, the practical privacy improvement is often smaller than headlines suggest.</p>
+</div>
 
-Google has been announcing the end of third-party cookies since 2020. As of 2026, the deprecation has been delayed repeatedly. But even when it finally arrives, third-party cookies won’t be replaced by “nothing.” They’ll be replaced by browser-based APIs that provide similar targeting capabilities while keeping user data inside the browser. For users, the practical privacy improvement is often smaller than headlines suggest.
+
 
 If you’ve followed privacy news, you’ve heard “third-party cookies are dying.” Google announced plans to deprecate them in Chrome in 2020. That deadline moved to 2022, then 2023, then 2024, then 2025, then “sometime in 2024-2025.” As of mid-2026, Chrome prompts users to make a choice about cookie usage, but third-party cookies still function for those who don’t opt out.
 
@@ -281,9 +308,12 @@ The lesson isn’t that privacy tools don’t matter. It’s that the tracking i
 
 ## Supercookies and CNAME cloaking
 
-QUICK ANSWER
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Supercookies store identifiers in harder-to-clear places than regular cookies - ETags, cached resources, browser storage APIs, and IndexedDB. CNAME cloaking disguises a third-party tracker as a first-party resource by making it appear to come from the website’s own domain. Both techniques exist specifically to evade privacy tools that block third-party tracking.</p>
+</div>
 
-Supercookies store identifiers in harder-to-clear places than regular cookies - ETags, cached resources, browser storage APIs, and IndexedDB. CNAME cloaking disguises a third-party tracker as a first-party resource by making it appear to come from the website’s own domain. Both techniques exist specifically to evade privacy tools that block third-party tracking.
+
 
 Supercookies (also called evercookies or zombie cookies) use storage mechanisms most users never clear because they don’t know they exist:
 
@@ -303,9 +333,12 @@ CNAME cloaking is a server-side technique. Tracking scripts loaded from a differ
 
 ## Mobile tracking - apps and the advertising ID
 
-QUICK ANSWER
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Mobile apps track you through a device-level advertising identifier (IDFA on iOS, GAID on Android) that’s unique to your device and shared with every app that requests it. Location data from apps - often GPS-precise - is one of the most valuable data streams in the broker ecosystem. Apple’s App Tracking Transparency reduced this significantly, but it didn’t eliminate it.</p>
+</div>
 
-Mobile apps track you through a device-level advertising identifier (IDFA on iOS, GAID on Android) that’s unique to your device and shared with every app that requests it. Location data from apps - often GPS-precise - is one of the most valuable data streams in the broker ecosystem. Apple’s App Tracking Transparency reduced this significantly, but it didn’t eliminate it.
+
 
 On mobile, tracking works a bit differently than on desktop web.
 

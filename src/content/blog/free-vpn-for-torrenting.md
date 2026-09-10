@@ -65,7 +65,10 @@ We'll also walk through the setup mistakes that defeat a VPN's protection - port
 
 ## What Makes Torrenting Different From Regular Browsing?
 
-Torrenting is different from browsing because BitTorrent is a peer-to-peer protocol that broadcasts your IP address directly to every other participant in the swarm. It's not like regular browsing, where your connection usually goes through a small set of servers that don't really "see" each other.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Torrenting is different from browsing because BitTorrent is a peer-to-peer protocol that broadcasts your IP address directly to every other participant in the swarm. It's not like regular browsing, where your connection usually goes through a small set of servers that don't really "see" each other.</p>
+</div>
 
 When you load a webpage, your device talks to one server (or a content delivery network in front of it). That server generally doesn't know who else is loading the same page at the same time.
 
@@ -81,7 +84,10 @@ A practical way to think about it: with torrenting, your "identity" to the swarm
 
 ## Is Torrenting Legal? What You Actually Need to Know
 
-Torrenting itself is not illegal anywhere. BitTorrent is a neutral file-transfer protocol used for everything from Linux distributions to game patches to public-domain film archives.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Torrenting itself is not illegal anywhere. BitTorrent is a neutral file-transfer protocol used for everything from Linux distributions to game patches to public-domain film archives.</p>
+</div>
 
 Legality depends on what specific file you're downloading and distributing, and that depends on copyright status and your local jurisdiction.
 
@@ -99,7 +105,10 @@ One more nuance: even when the content is legal, torrenting still creates long-l
 
 ## What Privacy Risks Does Torrenting Create That Browsing Doesn't?
 
-Torrenting creates three privacy risks that regular browsing largely doesn't: direct IP exposure to unknown parties for extended periods, automated monitoring by copyright-enforcement firms that specifically scrape swarms, and ISP-level visibility into P2P traffic patterns even when content is encrypted.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Torrenting creates three privacy risks that regular browsing largely doesn't: direct IP exposure to unknown parties for extended periods, automated monitoring by copyright-enforcement firms that specifically scrape swarms, and ISP-level visibility into P2P traffic patterns even when content is encrypted.</p>
+</div>
 
 Your IP sits in the swarm's peer list for as long as your client has that torrent active. For a popular file being seeded, that can be hours or days - not the few seconds a typical web request takes. Anyone in that swarm has that address. Combine an IP address with a timestamp, and depending on your ISP and jurisdiction, that can be enough for a third party to request subscriber information tied to that IP at that moment.
 
@@ -113,7 +122,10 @@ A quick reminder: "encrypted" doesn't mean "invisible." Torrenting's privacy pro
 
 ## How Do Copyright Enforcement Systems Actually Find People?
 
-Copyright enforcement systems that target individual downloaders typically work by having monitoring software join a torrent swarm as a normal peer. They log the IP addresses of everyone else in that swarm, then cross-reference those IPs against ISP subscriber databases using legal discovery requests.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Copyright enforcement systems that target individual downloaders typically work by having monitoring software join a torrent swarm as a normal peer. They log the IP addresses of everyone else in that swarm, then cross-reference those IPs against ISP subscriber databases using legal discovery requests.</p>
+</div>
 
 There's no special interception technology required for the initial detection step. From the swarm's perspective, the monitoring entity's software is just another peer. It receives broadcast IP addresses the same way any peer does.
 
@@ -125,7 +137,10 @@ The key point is that the "first step" is just participation. That's why the pri
 
 ## Does a VPN Make Torrenting Legal? A Common Misconception
 
-No. A VPN does not change the legal status of any file you download or distribute. It changes who can see your IP address while you do it.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">No. A VPN does not change the legal status of any file you download or distribute. It changes who can see your IP address while you do it.</p>
+</div>
 
 Using a VPN to torrent copyrighted material without authorization is still unauthorized distribution under whatever jurisdiction's law applies. The VPN doesn't grant a license. It just removes one specific piece of evidence - your IP address in the swarm - from easy correlation with your identity.
 
@@ -141,7 +156,10 @@ If you're downloading material, you don't hold rights to, a VPN reduces the odds
 
 ## What Should You Look for in a Free VPN for Torrenting?
 
-A free VPN suitable for torrenting needs to explicitly allow P2P traffic on its servers, maintain a genuine no-logs policy, include a kill switch that's active by default, and be funded through a transparent business model rather than data sales or throttling designed to make the free tier unusable.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A free VPN suitable for torrenting needs to explicitly allow P2P traffic on its servers, maintain a genuine no-logs policy, include a kill switch that's active by default, and be funded through a transparent business model rather than data sales or throttling designed to make the free tier unusable.</p>
+</div>
 
 P2P allowed, explicitly. If a provider's terms of service don't clearly state that torrenting is permitted, assume it either isn't, or that it works only inconsistently. This should be a stated policy, not something you have to test and discover.
 
@@ -157,7 +175,10 @@ One more practical check: look for a provider that supports in-tunnel DNS (or at
 
 ## Does OllaVPN Free Support Torrenting?
 
-Yes. P2P traffic is allowed on every OllaVPN server, on both the free and paid tiers. There's no separate "P2P-optimized" server list, and no throttling specific to torrent traffic beyond the standard 10 Mbps free-tier speed cap that applies to all traffic types equally.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Yes. P2P traffic is allowed on every OllaVPN server, on both the free and paid tiers. There's no separate "P2P-optimized" server list, and no throttling specific to torrent traffic beyond the standard 10 Mbps free-tier speed cap that applies to all traffic types equally.</p>
+</div>
 
 We don't segment our network by traffic type, and we don't apply extra restrictions to torrent clients specifically. If you can connect to an OllaVPN server, you can torrent on it.
 
@@ -167,7 +188,10 @@ The rest of our privacy stack - the strict no-logs policy, the kill switch on by
 
 ## How Does OllaVPN Protect You While Torrenting?
 
-OllaVPN protects torrent traffic through the same architecture that protects every connection: your IP address is replaced with the servers for the entire duration the swarm sees you. All traffic is encrypted end-to-end with post-quantum-ready cryptography. DNS requests are resolved in-tunnel so your ISP can't see torrent-related lookups. And a default-on kill switch prevents any traffic - including your torrent client - from reaching the internet unprotected if the tunnel drops.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">OllaVPN protects torrent traffic through the same architecture that protects every connection: your IP address is replaced with the servers for the entire duration the swarm sees you. All traffic is encrypted end-to-end with post-quantum-ready cryptography. DNS requests are resolved in-tunnel so your ISP can't see torrent-related lookups. And a default-on kill switch prevents any traffic - including your torrent client - from reaching the internet unprotected if the tunnel drops.</p>
+</div>
 
 When your torrent client connects to a tracker or joins a swarm's distributed hash table, the IP address broadcast to every peer is the OllaVPN server's address, not your home connection's. Monitoring software joining that swarm sees the same server IP that thousands of other OllaVPN users are also sharing at any given moment.
 
@@ -183,7 +207,10 @@ And our strict no-logs policy means there's nothing in our systems to hand over 
 
 ## How Do You Set Up OllaVPN for Safer Torrenting?
 
-Setting up OllaVPN for torrenting takes a few extra minutes of care compared to general browsing. The main focus is verifying the kill switch is active and confirming your torrent client is actually routing through the tunnel before you start a transfer.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Setting up OllaVPN for torrenting takes a few extra minutes of care compared to general browsing. The main focus is verifying the kill switch is active and confirming your torrent client is actually routing through the tunnel before you start a transfer.</p>
+</div>
 
 <ol style="margin: 16px 0 20px 20px; padding-left: 10px; line-height: 1.65; color: #334155; font-family: 'Lato', sans-serif;">
   <li style='margin-bottom:12px; font-size:0.92rem; line-height:1.65;'><strong style="color: #0F172A;">Download and connect:</strong> Grab the app from ollavpn.com/dl for your platform &mdash; Windows, macOS, or Android currently, with iOS coming soon. No account, no email, no card required for the free tier. Open the app and tap Connect.</li>
@@ -198,7 +225,10 @@ If you want to make the setup even safer, add one more habit: confirm your torre
 
 ## What Common Mistakes Quietly Defeat a Torrenting VPN?
 
-The most common mistakes are opening a torrent client before confirming the VPN is connected, DNS leaks that expose tracker lookups outside the tunnel, router-level port forwarding that bypasses the VPN entirely, and assuming a kill switch is enabled without checking.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The most common mistakes are opening a torrent client before confirming the VPN is connected, DNS leaks that expose tracker lookups outside the tunnel, router-level port forwarding that bypasses the VPN entirely, and assuming a kill switch is enabled without checking.</p>
+</div>
 
 Torrent client already running when the VPN connects. Connections may already be established over the unprotected path. VPN first, client second, transfer third.
 
@@ -214,7 +244,10 @@ Not checking after sleep/wake or network changes. Re-check your IP periodically 
 
 ## Is 10 Mbps Enough for Torrenting?
 
-For most individual torrent downloads - software installers, ISOs, moderate-sized files - 10 Mbps is workable. It will complete a multi-gigabyte transfer in a reasonable window, though it will lag behind an uncapped connection for very large files or for maintaining strong upload ratios while seeding multiple torrents simultaneously.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">For most individual torrent downloads - software installers, ISOs, moderate-sized files - 10 Mbps is workable. It will complete a multi-gigabyte transfer in a reasonable window, though it will lag behind an uncapped connection for very large files or for maintaining strong upload ratios while seeding multiple torrents simultaneously.</p>
+</div>
 
 At a sustained 10 Mbps, you're looking at roughly 1.25 megabytes per second under ideal conditions, around 4.5 gigabytes per hour. A typical Linux distribution ISO in the 3 - 5 GB range completes in roughly an hour under good swarm conditions.
 
@@ -226,7 +259,10 @@ If your torrenting habits regularly run into that ceiling, OllaVPN Plus removes 
 
 ## When Does OllaVPN Plus Make More Sense for Torrent Users?
 
-OllaVPN Plus makes the most sense for torrent users who regularly move very large files, seed multiple torrents simultaneously to maintain tracker ratios, or want to run the VPN across several devices at once.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">OllaVPN Plus makes the most sense for torrent users who regularly move very large files, seed multiple torrents simultaneously to maintain tracker ratios, or want to run the VPN across several devices at once.</p>
+</div>
 
 The free tier's 10 Mbps ceiling handles typical individual downloads comfortably. It becomes limiting in sustained, high-volume seeding scenarios where upload speed matters.
 
@@ -236,7 +272,10 @@ At 10 Gbps, Plus effectively removes the VPN as any kind of bottleneck.
 
 ## Why Does a Kill Switch Matter So Much for Torrenting Specifically?
 
-A kill switch matters disproportionately for torrenting because sessions are long-lived and continuous. They often run for hours during active transfer and potentially much longer while seeding. That creates a far larger window for a VPN disconnection to happen mid-session.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A kill switch matters disproportionately for torrenting because sessions are long-lived and continuous. They often run for hours during active transfer and potentially much longer while seeding. That creates a far larger window for a VPN disconnection to happen mid-session.</p>
+</div>
 
 A torrent session is one continuous connection (or dozens of continuous connections to different peers) that can persist for hours during download and indefinitely during seeding. If the VPN drops at any point during that window - and there's no kill switch - most torrent clients won't pause and wait. They'll keep transmitting over whatever network interface remains available, which is now your unprotected home connection.
 
@@ -246,7 +285,10 @@ This is why we ship the kill switch on by default rather than as an opt-in setti
 
 ## How Can OllaVPN Afford to Be Truly Free?
 
-OllaVPN funds its free tier - including full P2P and torrenting support at 10 Mbps with no data caps - entirely through subscriptions to our paid OllaVPN Plus service. It's not funded through advertising, data sales, or artificial throttling designed to push free users toward upgrading out of frustration.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">OllaVPN funds its free tier - including full P2P and torrenting support at 10 Mbps with no data caps - entirely through subscriptions to our paid OllaVPN Plus service. It's not funded through advertising, data sales, or artificial throttling designed to push free users toward upgrading out of frustration.</p>
+</div>
 
 A free VPN that funds itself by monitoring P2P traffic isn't offering torrenting privacy at all. It's just relocating the exposure from your ISP to itself.
 

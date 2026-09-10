@@ -55,7 +55,12 @@ The complete, no-fluff guide to what “lifetime free VPN” actually means in 2
 
 ## Why almost every "free VPN" is a lie
 
-QUICK ANSWER The word "free" in the VPN industry usually means one of three things: you are the product being sold, you’re on a trial that expires, or you’re getting a limited experience designed to push you toward a paid plan. Truly free VPNs - funded by paying customers and not by your data - are rare. OllaVPN is one of the few that fits that category.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The word "free" in the VPN industry usually means one of three things: you are the product being sold, you’re on a trial that expires, or you’re getting a limited experience designed to push you toward a paid plan. Truly free VPNs - funded by paying customers and not by your data - are rare. OllaVPN is one of the few that fits that category.</p>
+</div>
+
+
 
 Here’s the part that gets skipped in most “best free VPN” roundups: running a VPN costs real money. Server infrastructure, bandwidth, engineering, security audits, legal compliance, customer support - none of it is free. So when a VPN says it’s free, you should ask a simple question: who is paying for all of this, and why?
 
@@ -65,7 +70,12 @@ This isn’t cynicism for its own sake. It’s the reality of an industry that h
 
 ## The four ways free VPNs actually make money
 
-QUICK ANSWER Free VPNs typically monetize through one of four mechanisms: selling user data to third parties, running in-app advertising, using free users as bandwidth proxies for other customers, or operating as a loss-leader to upsell a paid plan. The last one is the least harmful and the most common in legitimate products. The first three are where the real danger tends to be.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Free VPNs typically monetize through one of four mechanisms: selling user data to third parties, running in-app advertising, using free users as bandwidth proxies for other customers, or operating as a loss-leader to upsell a paid plan. The last one is the least harmful and the most common in legitimate products. The first three are where the real danger tends to be.</p>
+</div>
+
+
 
 Understanding how a free VPN makes money is the single most useful thing you can do before trusting it with your traffic. There are four common models:
 
@@ -78,7 +88,12 @@ OllaVPN's model is the fourth. Plus subscribers - paying $2/month for 10 Gbps sp
 
 ## What "lifetime free" means - and what it doesn't
 
-QUICK ANSWER "Lifetime free" means the plan does not expire and does not require a credit card or subscription commitment. It does not mean unlimited speed, unlimited devices, or every feature. It means the core functionality - encrypted VPN access at 10 Mbps, on one device, with no data cap - stays available at $0 indefinitely.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">"Lifetime free" means the plan does not expire and does not require a credit card or subscription commitment. It does not mean unlimited speed, unlimited devices, or every feature. It means the core functionality - encrypted VPN access at 10 Mbps, on one device, with no data cap - stays available at $0 indefinitely.</p>
+</div>
+
+
 
 The phrase "lifetime free" gets used in three very different ways in the VPN industry, and it’s worth being clear about which one OllaVPN actually offers.
 
@@ -94,7 +109,12 @@ The relevant question isn’t “is this actually free right now?” - you can v
 
 ## What OllaVPN's free plan actually includes
 
-QUICK ANSWER The free plan includes: 10 Mbps speed (no data cap), one simultaneous device, access to every country in OllaVPN's network, [WireGuard](/free-wireguard-vpn) protocol, post-quantum encryption (hybrid handshake), always-on [kill switch](/blog/what-is-a-vpn-kill-switch.html), in-tunnel DNS, IPv6 support, and no logging of activity. No credit card required. No email address required. No ads.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The free plan includes: 10 Mbps speed (no data cap), one simultaneous device, access to every country in OllaVPN's network, [WireGuard](/free-wireguard-vpn) protocol, post-quantum encryption (hybrid handshake), always-on [kill switch](/blog/what-is-a-vpn-kill-switch.html), in-tunnel DNS, IPv6 support, and no logging of activity. No credit card required. No email address required. No ads.</p>
+</div>
+
+
 
 Here is the full list of what the free plan actually includes, without any of the asterisks:
 
@@ -118,7 +138,12 @@ No account required, no email, no card. Download the app. Connect. That’s it.
 
 ## The sustainability model: how Plus funds Free
 
-QUICK ANSWER OllaVPN's free tier is funded by Plus subscribers who pay $2/month for 10 Gbps speed and five simultaneous devices. WireGuard's efficiency reduces infrastructure cost per user, making the math of a truly free tier workable. This is the same model used by ProtonVPN for its free tier and by most sustainable freemium software products.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">OllaVPN's free tier is funded by Plus subscribers who pay $2/month for 10 Gbps speed and five simultaneous devices. WireGuard's efficiency reduces infrastructure cost per user, making the math of a truly free tier workable. This is the same model used by ProtonVPN for its free tier and by most sustainable freemium software products.</p>
+</div>
+
+
 
 Let’s run the logic people usually question, because it’s fair to be skeptical.
 
@@ -134,7 +159,12 @@ The risk in this model is if the ratio of free-to-paid users gets badly out of b
 
 ## What the 10 Mbps cap means in practice
 
-QUICK ANSWER 10 Mbps is enough for: HD video streaming, video calls, general browsing, most online games, and music streaming. It is not enough for: 4K streaming at full quality, large file downloads at speed, or multiple high-bandwidth streams simultaneously. For solo everyday use, 10 Mbps is a functional VPN. For a household or power users, Plus removes the cap entirely.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">10 Mbps is enough for: HD video streaming, video calls, general browsing, most online games, and music streaming. It is not enough for: 4K streaming at full quality, large file downloads at speed, or multiple high-bandwidth streams simultaneously. For solo everyday use, 10 Mbps is a functional VPN. For a household or power users, Plus removes the cap entirely.</p>
+</div>
+
+
 
 10 Mbps - ten megabits per second - sounds abstract until you put it in context. Here is what that speed unlocks and where it falls short:
 
@@ -164,7 +194,12 @@ The honest framing: 10 Mbps is not a crippled speed - it’s a real, functional 
 
 ## Post-quantum encryption on the free plan
 
-QUICK ANSWER Post-quantum encryption is included on OllaVPN's free plan at no extra cost. The same hybrid handshake (classical X25519 + ML-KEM-768) that protects paid connections also protects free connections. This is notable because most VPNs that have deployed post-quantum protection have restricted it to premium tiers.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Post-quantum encryption is included on OllaVPN's free plan at no extra cost. The same hybrid handshake (classical X25519 + ML-KEM-768) that protects paid connections also protects free connections. This is notable because most VPNs that have deployed post-quantum protection have restricted it to premium tiers.</p>
+</div>
+
+
 
 One of the more unusual things about OllaVPN's free plan is that it includes post-quantum encryption without configuration, without a toggle, and without any additional cost.
 
@@ -178,7 +213,12 @@ What matters for the question at hand: this is available on the free plan. Not a
 
 ## Privacy architecture: what OllaVPN doesn't collect
 
-QUICK ANSWER OllaVPN does not log browsing activity, connection timestamps, assigned IP addresses, or DNS queries. No account is required - there is no email, name, or payment detail linked to a free user's usage. In-tunnel DNS prevents the DNS layer from being handled by a third party. The kill switch is enforced at the OS firewall layer on all platforms.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">OllaVPN does not log browsing activity, connection timestamps, assigned IP addresses, or DNS queries. No account is required - there is no email, name, or payment detail linked to a free user's usage. In-tunnel DNS prevents the DNS layer from being handled by a third party. The kill switch is enforced at the OS firewall layer on all platforms.</p>
+</div>
+
+
 
 A VPN’s privacy claims are only as useful as the architecture behind them. Here’s what OllaVPN’s free plan actually does and doesn’t collect:
 
@@ -228,7 +268,12 @@ Windscribe's 15 GB/month cap is workable for light use but will hit limits for a
 
 ## The kill switch and why it can't be turned off
 
-QUICK ANSWER OllaVPN's kill switch is always-on and non-disableable by design. If the VPN tunnel drops - for any reason - traffic is blocked rather than routed through your real IP. This is an unusual design choice, but it’s the right one for a privacy-first product. The alternative (a toggleable kill switch) creates a failure mode where users disable it and forget to re-enable it.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">OllaVPN's kill switch is always-on and non-disableable by design. If the VPN tunnel drops - for any reason - traffic is blocked rather than routed through your real IP. This is an unusual design choice, but it’s the right one for a privacy-first product. The alternative (a toggleable kill switch) creates a failure mode where users disable it and forget to re-enable it.</p>
+</div>
+
+
 
 Most VPN clients ship with a kill switch that defaults to off. The reasoning is that users who experience a VPN drop typically prefer to fall back to a normal internet connection rather than have their traffic blocked entirely. That’s a reasonable usability argument. It’s also an argument that undermines the core privacy property of a VPN.
 
@@ -240,7 +285,12 @@ The practical implication: if the VPN drops on OllaVPN, your internet stops. Not
 
 ## Is WireGuard on a free plan actually any good?
 
-QUICK ANSWER WireGuard on OllaVPN's free plan is the same protocol and implementation used by the paid plan. There is no protocol downgrade for free users. The difference is a speed cap (10 Mbps vs 10 Gbps), not a protocol change. WireGuard's efficiency means that 10 Mbps feels fast - you’re not fighting protocol overhead on top of the speed limit
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">WireGuard on OllaVPN's free plan is the same protocol and implementation used by the paid plan. There is no protocol downgrade for free users. The difference is a speed cap (10 Mbps vs 10 Gbps), not a protocol change. WireGuard's efficiency means that 10 Mbps feels fast - you’re not fighting protocol overhead on top of the speed limit</p>
+</div>
+
+
 
 One of the common patterns in freemium VPNs is to reserve the fastest or most modern protocol for paid users. You’ll sometimes see free plans stuck on OpenVPN while paid plans get WireGuard, or free plans on older server infrastructure that’s been deprioritized for maintenance.
 
@@ -252,7 +302,12 @@ The other WireGuard property that matters for free users is reconnection speed. 
 
 ## What free users don't get - honest about the limits
 
-QUICK ANSWER Free users are limited to 10 Mbps and one device. That’s the real constraint list. Free users do not get a stripped-down protocol, a subset of server locations, worse privacy protections, or disabled security features. The difference between free and Plus is speed and device count, not security or privacy quality.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Free users are limited to 10 Mbps and one device. That’s the real constraint list. Free users do not get a stripped-down protocol, a subset of server locations, worse privacy protections, or disabled security features. The difference between free and Plus is speed and device count, not security or privacy quality.</p>
+</div>
+
+
 
 Honest about the limits, because that’s the whole point of this guide.
 
@@ -304,7 +359,12 @@ OllaVPN's free plan clears all five: no data cap, no account required, a clear p
 
 ## Who the free plan is for (and who should upgrade)
 
-QUICK ANSWER The free plan is well-suited for: solo users, everyday browsing and streaming, privacy-conscious users who want post-quantum protection without cost, users in restrictive regions who need access, and anyone who wants to test the product before deciding whether to pay. Upgrade to Plus if: you regularly stream 4K content, need to cover more than one device, or want to support the free tier financially.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The free plan is well-suited for: solo users, everyday browsing and streaming, privacy-conscious users who want post-quantum protection without cost, users in restrictive regions who need access, and anyone who wants to test the product before deciding whether to pay. Upgrade to Plus if: you regularly stream 4K content, need to cover more than one device, or want to support the free tier financially.</p>
+</div>
+
+
 
 ## The free plan is right for you if:
 
@@ -334,7 +394,12 @@ The upgrade calculus at $2/month is straightforward. This isn’t a case where a
 
 ## How OllaVPN handles the free plan long-term
 
-QUICK ANSWER The long-term sustainability of OllaVPN's free tier depends on the paid tier continuing to generate enough revenue to cover infrastructure costs. The risk is real but structurally lower than the alternatives. A provider whose free tier is funded by paid users has financial incentives aligned with keeping the free tier functional and honest. A provider whose free tier is funded by user data has no such incentive.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The long-term sustainability of OllaVPN's free tier depends on the paid tier continuing to generate enough revenue to cover infrastructure costs. The risk is real but structurally lower than the alternatives. A provider whose free tier is funded by paid users has financial incentives aligned with keeping the free tier functional and honest. A provider whose free tier is funded by user data has no such incentive.</p>
+</div>
+
+
 
 The question that deserves a direct answer: will OllaVPN still be free in five years?
 

@@ -55,7 +55,12 @@ A plain-English guide to one of the most quietly important privacy concepts on t
 
 ## What DNS actually does, in one paragraph
 
-QUICK ANSWER DNS  -  the Domain Name System  -  translates human-readable website names like "ollavpn.com" into the numeric IP addresses that computers use to communicate. Every time you visit a website, your device asks a DNS server for the right number. That request is what can leak.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">DNS  -  the Domain Name System  -  translates human-readable website names like "ollavpn.com" into the numeric IP addresses that computers use to communicate. Every time you visit a website, your device asks a DNS server for the right number. That request is what can leak.</p>
+</div>
+
+
 
 Every website on the internet has a numeric address  -  something like `104.21.74.182`. Humans don't memorize numbers, so we type names: _ollavpn.com_, _nytimes.com_, _your-bank.com_. **DNS**  -  the Domain Name System  -  is the lookup service that turns the name you typed into the number your computer actually uses to connect.
 
@@ -65,7 +70,12 @@ By default, your computer asks **your internet service provider's DNS server** f
 
 ## What a DNS leak is, in plain English
 
-QUICK ANSWER A DNS leak is when your device sends DNS lookups _outside_ the encrypted VPN tunnel  -  to your internet provider instead of to your VPN's servers. The rest of your traffic might be private, but your DNS lookups reveal which sites you're visiting.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A DNS leak is when your device sends DNS lookups _outside_ the encrypted VPN tunnel  -  to your internet provider instead of to your VPN's servers. The rest of your traffic might be private, but your DNS lookups reveal which sites you're visiting.</p>
+</div>
+
+
 
 When you connect to a VPN, the expectation is straightforward: everything your device sends should go through the encrypted tunnel. Your internet provider sees that you're using a VPN, but it can't see what you do inside it.
 
@@ -75,7 +85,12 @@ It's a small leak. But for the same reason a small drip ruins a basement, a DNS 
 
 ## Why DNS leaks matter (and when they don't)
 
-QUICK ANSWER A DNS leak doesn't expose the content of your traffic  -  only which sites you're visiting. For most people that's a privacy concern. For journalists, activists, business travelers, and anyone in a restrictive network environment, it can be a serious one.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A DNS leak doesn't expose the content of your traffic  -  only which sites you're visiting. For most people that's a privacy concern. For journalists, activists, business travelers, and anyone in a restrictive network environment, it can be a serious one.</p>
+</div>
+
+
 
 Let's be honest about scale. For a casual user reading the news from a coffee-shop Wi-Fi, a DNS leak is a privacy concern but rarely a crisis. Your internet provider seeing that you visited the BBC website is not the same as your internet provider reading your email.
 
@@ -90,7 +105,12 @@ The best way to think about it: a DNS leak doesn't undo your VPN  -  but it dram
 
 ## What causes DNS leaks
 
-QUICK ANSWER The most common causes are VPNs that don't handle DNS inside their own infrastructure, IPv6 traffic bypassing the tunnel, unexpected VPN disconnects without a [kill switch](/blog/what-is-a-vpn-kill-switch/), and operating-system misconfigurations. Choosing a VPN that handles DNS correctly by default removes most of the risk.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The most common causes are VPNs that don't handle DNS inside their own infrastructure, IPv6 traffic bypassing the tunnel, unexpected VPN disconnects without a [kill switch](/blog/what-is-a-vpn-kill-switch/), and operating-system misconfigurations. Choosing a VPN that handles DNS correctly by default removes most of the risk.</p>
+</div>
+
+
 
 DNS leaks have a handful of common root causes. Most of them are unintentional  -  bugs in older VPN clients, oversights in operating-system networking, side effects of recent network changes.
 
@@ -120,7 +140,12 @@ A small number of internet providers intercept DNS requests at the network level
 
 ## How to test for a DNS leak  -  the five-minute method
 
-QUICK ANSWER Disconnect your VPN, visit a DNS leak test site to record a baseline, then reconnect to the VPN and run the test again. If the DNS servers shown change from your internet provider to your VPN provider, you're protected.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Disconnect your VPN, visit a DNS leak test site to record a baseline, then reconnect to the VPN and run the test again. If the DNS servers shown change from your internet provider to your VPN provider, you're protected.</p>
+</div>
+
+
 
 You don't need any technical knowledge to test for a DNS leak. Five minutes and a browser.
 
@@ -144,7 +169,12 @@ A clean test result looks consistent across all rows. A leaky one looks like a m
 
 ## How to fix a DNS leak
 
-QUICK ANSWER The most reliable fix is to use a VPN that handles DNS correctly out of the box. Other options include disabling IPv6 on your device, enabling your VPN's kill switch, manually setting a privacy-friendly DNS resolver, and updating your VPN app to the latest version.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The most reliable fix is to use a VPN that handles DNS correctly out of the box. Other options include disabling IPv6 on your device, enabling your VPN's kill switch, manually setting a privacy-friendly DNS resolver, and updating your VPN app to the latest version.</p>
+</div>
+
+
 
 If your test showed a leak, the fix depends on the cause. In order of how likely they are to resolve the problem:
 
@@ -157,7 +187,12 @@ If your test showed a leak, the fix depends on the cause. In order of how likely
 
 ## How to prevent DNS leaks for good
 
-QUICK ANSWER Choose a VPN that handles DNS through its own infrastructure inside the encrypted tunnel by default, with an always-on kill switch and built-in IPv6 handling. Test once at setup, then trust the product.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Choose a VPN that handles DNS through its own infrastructure inside the encrypted tunnel by default, with an always-on kill switch and built-in IPv6 handling. Test once at setup, then trust the product.</p>
+</div>
+
+
 
 The honest truth is that **you shouldn't have to think about DNS leaks at all**. A well-built modern VPN handles DNS correctly out of the box, and you should be able to install it, connect, and move on with your life.
 
@@ -171,7 +206,12 @@ What to look for in a VPN if you want to set it and forget it:
 
 ## DNS leak protection vs the kill switch  -  they're not the same thing
 
-QUICK ANSWER A kill switch blocks all traffic during a VPN disconnect, preventing leaks that would happen in those brief moments. Built-in DNS leak protection prevents leaks while the VPN is connected. You want both  -  they protect against different failure modes.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A kill switch blocks all traffic during a VPN disconnect, preventing leaks that would happen in those brief moments. Built-in DNS leak protection prevents leaks while the VPN is connected. You want both  -  they protect against different failure modes.</p>
+</div>
+
+
 
 One of the most common pieces of bad advice on the internet is "you just need a kill switch to prevent DNS leaks." That's only half right.
 

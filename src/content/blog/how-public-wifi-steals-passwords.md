@@ -55,9 +55,12 @@ tags: ['pillars']
 
 ## How public Wi‑Fi attacks actually work [#](#how-public-wi-fi-attacks-actually-work)
 
-**Quick Answer**
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Public Wi‑Fi networks don't encrypt traffic between connected devices. Any device on the same network can capture data packets sent by any other device. If those packets contain unencrypted information  -  like a password sent over HTTP or a session cookie sent without the Secure flag  -  the attacker can read it.</p>
+</div>
 
-Public Wi‑Fi networks don't encrypt traffic between connected devices. Any device on the same network can capture data packets sent by any other device. If those packets contain unencrypted information  -  like a password sent over HTTP or a session cookie sent without the Secure flag  -  the attacker can read it.
+
 
 To understand how passwords get stolen on public Wi‑Fi, it helps to understand how Wi‑Fi itself works at a basic level.
 
@@ -69,9 +72,12 @@ This is not a vulnerability in the coffee shop's router. It is a fundamental pro
 
 ## Packet sniffing  -  the silent listener [#](#packet-sniffing-the-silent-listener)
 
-**Quick Answer**
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Packet sniffing is the simplest public Wi‑Fi attack. An attacker uses free software (like Wireshark) to capture data packets broadcast over the network. If your traffic is unencrypted  -  for example, a website still using HTTP  -  the attacker can read your passwords, emails, and messages in plain text.</p>
+</div>
 
-Packet sniffing is the simplest public Wi‑Fi attack. An attacker uses free software (like Wireshark) to capture data packets broadcast over the network. If your traffic is unencrypted  -  for example, a website still using HTTP  -  the attacker can read your passwords, emails, and messages in plain text.
+
 
 Packet sniffing is exactly what it sounds like: an attacker uses software to "sniff" the data packets traveling across the network. Tools like Wireshark, tcpdump, and BetterCap are free, widely available, and require no special hardware. A laptop with a standard Wi‑Fi card is sufficient.
 
@@ -89,9 +95,12 @@ Quick self-check (30 seconds): If you ever see a login page that loads over HTTP
 
 ## Evil twin attacks  -  the impostor network [#](#evil-twin-attacks-the-impostor-network)
 
-**Quick Answer**
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">An evil twin attack is when an attacker sets up a fake Wi‑Fi access point with the same name (SSID) as a legitimate network  -  like "Starbucks Wi‑Fi" or "Airport\_Free". Your device connects to the attacker's network instead of the real one, giving the attacker full visibility into everything you do online.</p>
+</div>
 
-An evil twin attack is when an attacker sets up a fake Wi‑Fi access point with the same name (SSID) as a legitimate network  -  like "Starbucks Wi‑Fi" or "Airport\_Free". Your device connects to the attacker's network instead of the real one, giving the attacker full visibility into everything you do online.
+
 
 Packet sniffing requires the attacker to be on the same network as you. Evil twin attacks are more aggressive: the attacker creates a network that becomes the network you connect to.
 
@@ -109,9 +118,12 @@ Quick self-check (before you type anything): If your Wi‑Fi name is familiar bu
 
 ## Session hijacking  -  stealing your login without the password [#](#session-hijacking-stealing-your-login-without-the-password)
 
-**Quick Answer**
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Session hijacking (also called "sidejacking") targets your session cookie  -  the small token that keeps you logged in after you enter your password. If an attacker captures this cookie over public Wi‑Fi, they can import it into their own browser and access your account without ever knowing your password.</p>
+</div>
 
-Session hijacking (also called "sidejacking") targets your session cookie  -  the small token that keeps you logged in after you enter your password. If an attacker captures this cookie over public Wi‑Fi, they can import it into their own browser and access your account without ever knowing your password.
+
 
 Session hijacking is the attack that TV shows get mostly right. It does not require the attacker to see your password at all. It targets something more valuable: your active session.
 
@@ -129,9 +141,12 @@ Quick self-check: If you log in on public Wi‑Fi and then later see “new devi
 
 ## Man-in-the-middle  -  the active intercept [#](#man-in-the-middle-the-active-intercept)
 
-**Quick Answer**
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A man-in-the-middle (MITM) attack goes beyond passive listening. The attacker positions themselves between your device and the internet, actively intercepting, reading, and potentially modifying your traffic in real time. Even some HTTPS connections can be downgraded or intercepted if the attacker uses techniques like SSL stripping.</p>
+</div>
 
-A man-in-the-middle (MITM) attack goes beyond passive listening. The attacker positions themselves between your device and the internet, actively intercepting, reading, and potentially modifying your traffic in real time. Even some HTTPS connections can be downgraded or intercepted if the attacker uses techniques like SSL stripping.
+
 
 Man-in-the-middle is the most sophisticated of the four attack types, and the one that can defeat protections the others cannot.
 
@@ -151,9 +166,12 @@ Quick self-check: Enable HTTPS-Only Mode. If your browser ever tries to load HTT
 
 ## The "HTTPS protects me" myth [#](#the-https-protects-me-myth)
 
-**Quick Answer**
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">HTTPS protects the content of your communication with the website you're visiting. It does not protect against evil twin networks, does not prevent an attacker from seeing which websites you visit (DNS and SNI are still visible), and can be bypassed by SSL stripping if your browser's HTTPS-Only mode is not enabled.</p>
+</div>
 
-HTTPS protects the content of your communication with the website you're visiting. It does not protect against evil twin networks, does not prevent an attacker from seeing which websites you visit (DNS and SNI are still visible), and can be bypassed by SSL stripping if your browser's HTTPS-Only mode is not enabled.
+
 
 HTTPS is essential. It is not sufficient.
 
@@ -173,9 +191,12 @@ Correct mental model: HTTPS protects the pipe between you and the server. It doe
 
 ## How likely is this, really? [#](#how-likely-is-this-really)
 
-**Quick Answer**
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The risk varies dramatically by context. A casual user reading news on a coffee shop Wi‑Fi is at low risk. A business traveler logging into a corporate VPN from a hotel network is at moderate risk. A journalist or activist connecting from a public library in a restrictive country is at high risk.</p>
+</div>
 
-The risk varies dramatically by context. A casual user reading news on a coffee shop Wi‑Fi is at low risk. A business traveler logging into a corporate VPN from a hotel network is at moderate risk. A journalist or activist connecting from a public library in a restrictive country is at high risk.
+
 
 For most people, most of the time: The risk of being specifically targeted on a public Wi‑Fi network is low. The attacker needs to be on the same network as you, at the same time, with the right tools and the intent to target you specifically.
 
@@ -193,9 +214,12 @@ The pragmatic takeaway: you do not need to be paranoid about public Wi‑Fi. You
 
 ## How to protect yourself [#](#how-to-protect-yourself)
 
-**Quick Answer**
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Use a VPN on every public Wi‑Fi network. Enable HTTPS-Only Mode in your browser. Turn off auto-connect to open networks. Forget the network when you're done. Keep your device and apps updated. These habits eliminate the vast majority of public Wi‑Fi risk.</p>
+</div>
 
-Use a VPN on every public Wi‑Fi network. Enable HTTPS-Only Mode in your browser. Turn off auto-connect to open networks. Forget the network when you're done. Keep your device and apps updated. These habits eliminate the vast majority of public Wi‑Fi risk.
+
 
 ## Layered protection: [#](#layered-protection)
 
@@ -213,7 +237,12 @@ Use a password manager. Reduces manual entry and helps avoid credential mistakes
 
 Your public Wi‑Fi checklist
 
-QUICK ANSWER: A five-minute routine before connecting to any public network.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A five-minute routine before connecting to any public network.</p>
+</div>
+
+
 
 ### ☐ VPN is connected before you join the Wi‑Fi network
 
@@ -253,9 +282,12 @@ Details
 
 ## Attack map: what each threat targets [#](#attack-map-what-each-threat-targets)
 
-**Quick Answer**
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Different attacks steal different things. Your defenses should match what’s being targeted.</p>
+</div>
 
-Different attacks steal different things. Your defenses should match what’s being targeted.
+
 
 Threat
 
@@ -267,9 +299,12 @@ What VPN/HTTPS does
 
 ## Honeypots and Canary Tokens: How to Detect if You’re Being Watched [#](#honeypots-and-canary-tokens-how-to-detect-if-you-re-being-watched)
 
-**Quick Answer**
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A "Honeypot" is a trap set by an attacker to lure you into connecting. Conversely, you can use "Canary Tokens"  -  tiny, invisible tracking files  -  to detect if an attacker is snooping through your data. If an attacker opens a "decoy" file on your laptop, the token "chirps," sending you an instant alert that your connection is compromised.</p>
+</div>
 
-A "Honeypot" is a trap set by an attacker to lure you into connecting. Conversely, you can use "Canary Tokens"  -  tiny, invisible tracking files  -  to detect if an attacker is snooping through your data. If an attacker opens a "decoy" file on your laptop, the token "chirps," sending you an instant alert that your connection is compromised.
+
 
 Most public Wi‑Fi advice is defensive. In 2026, the most advanced users are using active detection.
 
@@ -293,9 +328,12 @@ Verification tip: Treat a canary “chirp” as a signal to isolate the device (
 
 ## Juice Jacking: The USB-to-Wi‑Fi Pivot [#](#juice-jacking-the-usb-to-wi-fi-pivot)
 
-**Quick Answer**
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">"Juice Jacking" occurs when you use a public USB charging station (at an airport or mall) that has been tampered with. The USB port doesn't just provide power; it establishes a data connection. An attacker can use this to install a "Wi‑Fi bridge" on your phone, allowing them to bypass your VPN and sniff your traffic directly from the hardware level.</p>
+</div>
 
-"Juice Jacking" occurs when you use a public USB charging station (at an airport or mall) that has been tampered with. The USB port doesn't just provide power; it establishes a data connection. An attacker can use this to install a "Wi‑Fi bridge" on your phone, allowing them to bypass your VPN and sniff your traffic directly from the hardware level.
+
 
 This is the "physical" cousin of the public Wi‑Fi attack.
 
@@ -313,9 +351,12 @@ Quick self-check: If your phone suddenly shows new connection prompts (tethering
 
 ## The Psychology of the "Free" Button: Dark Patterns in Captive Portals [#](#the-psychology-of-the-free-button-dark-patterns-in-captive-portals)
 
-**Quick Answer**
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Captive portals often use "Dark Patterns"  -  manipulative user interface designs  -  to trick you into giving up more privacy than necessary. This includes "hidden" checkboxes that opt you into data brokerage or "forced" social media logins that give the network owner access to your friend list and private profile data.</p>
+</div>
 
-Captive portals often use "Dark Patterns"  -  manipulative user interface designs  -  to trick you into giving up more privacy than necessary. This includes "hidden" checkboxes that opt you into data brokerage or "forced" social media logins that give the network owner access to your friend list and private profile data.
+
 
 The threat isn't always a hacker in a hoodie; sometimes it's the marketing department of the hotel you're staying in.
 
@@ -333,9 +374,12 @@ Verification tip: If you’re prompted to install a certificate you didn’t req
 
 ## Side-Channel Analysis: Reading the "Silence" in Encryption [#](#side-channel-analysis-reading-the-silence-in-encryption)
 
-**Quick Answer**
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Even if your traffic is perfectly encrypted, an attacker can use "Side-Channel Analysis" to guess what you're doing. By measuring the timing and size of the encrypted bursts of data, they can identify which websites you are visiting or even what keys you are typing in a chat app.</p>
+</div>
 
-Even if your traffic is perfectly encrypted, an attacker can use "Side-Channel Analysis" to guess what you're doing. By measuring the timing and size of the encrypted bursts of data, they can identify which websites you are visiting or even what keys you are typing in a chat app.
+
 
 This is a "Layer 8" threat  -  it’s about patterns, not content.
 
@@ -353,9 +397,12 @@ Verification tip: If you want to validate “padding” claims, compare packet-s
 
 ## The "DarkHotel" Case Study: High-Value Targeting [#](#the-darkhotel-case-study-high-value-targeting)
 
-**Quick Answer**
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">"DarkHotel" is a real-world APT (Advanced Persistent Threat) group that has been active for over a decade. They specifically target high-profile executives and government officials by compromising the Wi‑Fi networks of luxury hotels. They wait for a specific target to check in, then use the hotel's own portal to push a "software update" that is actually a sophisticated piece of spyware.</p>
+</div>
 
-"DarkHotel" is a real-world APT (Advanced Persistent Threat) group that has been active for over a decade. They specifically target high-profile executives and government officials by compromising the Wi‑Fi networks of luxury hotels. They wait for a specific target to check in, then use the hotel's own portal to push a "software update" that is actually a sophisticated piece of spyware.
+
 
 This is the ultimate proof that "expensive" Wi‑Fi isn't "safe" Wi‑Fi.
 
@@ -373,9 +420,12 @@ The Lesson: Never, ever download a "required" update while on a public or hotel 
 
 ## · Li‑Fi: Is Light the Future of Secure Public Access? [#](#li-fi-is-light-the-future-of-secure-public-access)
 
-**Quick Answer**
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Li‑Fi (Light Fidelity) uses LED light bulbs to transmit data instead of radio waves. Because light cannot pass through walls, Li‑Fi is inherently more secure than Wi‑Fi. An attacker in the parking lot can't "sniff" a Li‑Fi network inside a cafe because they can't see the light.</p>
+</div>
 
-Li‑Fi (Light Fidelity) uses LED light bulbs to transmit data instead of radio waves. Because light cannot pass through walls, Li‑Fi is inherently more secure than Wi‑Fi. An attacker in the parking lot can't "sniff" a Li‑Fi network inside a cafe because they can't see the light.
+
 
 As we look toward 2027 and beyond, Li‑Fi is emerging as the "secure" alternative to Wi‑Fi in high-security environments.
 
@@ -391,9 +441,12 @@ The Current Reality: While Li‑Fi is faster and more secure, it requires specia
 
 ## · Zero Trust: Why the Network Doesn't Matter Anymore [#](#zero-trust-why-the-network-doesn-t-matter-anymore)
 
-**Quick Answer**
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">"Zero Trust" is a security philosophy that assumes the network is always compromised. Instead of trusting a "Safe" Wi‑Fi and fearing a "Public" one, Zero Trust requires every single request to be authenticated and encrypted, regardless of where it comes from.</p>
+</div>
 
-"Zero Trust" is a security philosophy that assumes the network is always compromised. Instead of trusting a "Safe" Wi‑Fi and fearing a "Public" one, Zero Trust requires every single request to be authenticated and encrypted, regardless of where it comes from.
+
 
 In a Zero Trust world, the "Public Wi‑Fi" problem is solved by making the network irrelevant.
 
@@ -409,9 +462,12 @@ OllaVPN and Zero Trust: We built OllaVPN with this mindset. We don't care if you
 
 ## The "Terms of Service" Trap: What You Legally Sign Away [#](#the-terms-of-service-trap-what-you-legally-sign-away)
 
-**Quick Answer**
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">When you click "I Agree" on a public Wi‑Fi portal, you are often signing a legal contract that allows the provider to track your location, sell your browsing history, and even inject "tracking pixels" into your traffic. In some cases, you are even waiving your right to sue if your data is breached due to their negligence.</p>
+</div>
 
-When you click "I Agree" on a public Wi‑Fi portal, you are often signing a legal contract that allows the provider to track your location, sell your browsing history, and even inject "tracking pixels" into your traffic. In some cases, you are even waiving your right to sue if your data is breached due to their negligence.
+
 
 ### The "Fine Print" Reality:
 
@@ -425,9 +481,12 @@ The Fix: Don't just "Agree." Use a VPN to encrypt the traffic so that even if th
 
 ## Travel Routers: Creating Your Own Secure Bubble [#](#travel-routers-creating-your-own-secure-bubble)
 
-**Quick Answer**
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A Travel Router is a small, portable device that connects to the public Wi‑Fi and then creates its own private Wi‑Fi network for your devices. This allows you to run a VPN at the router level, protecting your Apple Watch, Kindle, and Laptop all at once, while only showing "one device" to the hotel's billing system.</p>
+</div>
 
-A Travel Router is a small, portable device that connects to the public Wi‑Fi and then creates its own private Wi‑Fi network for your devices. This allows you to run a VPN at the router level, protecting your Apple Watch, Kindle, and Laptop all at once, while only showing "one device" to the hotel's billing system.
+
 
 ### Why Every Pro Traveler Carries One:
 
@@ -439,9 +498,12 @@ Always-On VPN: You can configure the router to use OllaVPN's [WireGuard](/free-w
 
 ## · Hardware Security: TPMs and Secure Enclaves [#](#hardware-security-tpms-and-secure-enclaves)
 
-**Quick Answer**
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Modern security isn't just about software; it's about hardware. Your device has a "Secure Enclave" (Apple) or "TPM" (Windows)  -  a tiny, isolated chip that stores your encryption keys. Even if a hacker on public Wi‑Fi compromises your operating system, they cannot "reach inside" these chips to steal your private keys.</p>
+</div>
 
-Modern security isn't just about software; it's about hardware. Your device has a "Secure Enclave" (Apple) or "TPM" (Windows)  -  a tiny, isolated chip that stores your encryption keys. Even if a hacker on public Wi‑Fi compromises your operating system, they cannot "reach inside" these chips to steal your private keys.
+
 
 ### The "Root of Trust"
 

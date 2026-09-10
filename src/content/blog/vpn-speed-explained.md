@@ -56,7 +56,10 @@ Every VPN slows your connection down at least a little - that's not a defect, it
 
 ## What actually determines VPN speed
 
-QUICK ANSWER: Your VPN speed is shaped by four things layered on top of each other: your own internet connection's ceiling, the distance and load on the server you're routed through, the efficiency of the VPN protocol doing the encryption, and anything else competing for bandwidth on your device or network at the same moment. A VPN can't make you faster than your raw connection allows - it can only get closer to or further from that ceiling.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Your VPN speed is shaped by four things layered on top of each other: your own internet connection's ceiling, the distance and load on the server you're routed through, the efficiency of the VPN protocol doing the encryption, and anything else competing for bandwidth on your device or network at the same moment. A VPN can't make you faster than your raw connection allows - it can only get closer to or further from that ceiling.</p>
+</div>
 
 Think of your internet connection like a pipe with a maximum width - that's your ISP plan's advertised speed, the hard ceiling nothing can exceed. A VPN doesn't widen that pipe. It adds a detour: instead of your traffic going straight from your device to the website you're visiting, it goes from your device, through an encrypted tunnel, to a VPN server somewhere else, and only then out to the website.
 
@@ -66,7 +69,10 @@ None of these four factors work in isolation. A great protocol on an overloaded 
 
 ## Why every VPN is slower than your raw connection
 
-QUICK ANSWER: Even a perfectly optimized VPN will be somewhat slower than your unprotected connection, because encrypting and rerouting data is inherently extra work - expected overhead, not a sign of a bad VPN. The real question is how small that overhead is.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Even a perfectly optimized VPN will be somewhat slower than your unprotected connection, because encrypting and rerouting data is inherently extra work - expected overhead, not a sign of a bad VPN. The real question is how small that overhead is.</p>
+</div>
 
 Encryption isn't free. Every byte of your traffic has to be mathematically transformed before it leaves your device and transformed back after it arrives - genuine computational work, handled by your device's processor or, on some hardware, dedicated encryption acceleration. On a modern phone or laptop this work is fast enough to be nearly invisible, but "nearly invisible" isn't the same as "zero."
 
@@ -78,7 +84,10 @@ Add all three together and you get overhead - the unavoidable performance cost o
 
 ## What "my VPN is slow" actually means
 
-QUICK ANSWER :"Slow" is a vague complaint that usually means one of three specific things: high latency (pages feel laggy even though downloads finish reasonably fast), low throughput (downloads and streaming are genuinely capped well below your normal speed), or inconsistency (speed that varies wildly from minute to minute). Figuring out which one you're experiencing is the first step to fixing it.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">"Slow" is a vague complaint that usually means one of three specific things: high latency (pages feel laggy even though downloads finish reasonably fast), low throughput (downloads and streaming are genuinely capped well below your normal speed), or inconsistency (speed that varies wildly from minute to minute). Figuring out which one you're experiencing is the first step to fixing it.</p>
+</div>
 
 People say "my VPN is slow" to describe different experiences, and the fix depends on which one you're actually dealing with.
 
@@ -90,7 +99,10 @@ Inconsistency feels like the VPN works fine for a while and then randomly crater
 
 ## What causes a slow VPN
 
-QUICK ANSWER :The most common causes, beyond unavoidable baseline overhead, are an outdated or inefficient protocol, a distant or overloaded server, [ISP throttling](/blog/vpn-for-avoiding-isp-throttling/) of VPN traffic specifically, weak device hardware struggling with encryption, a Wi-Fi bottleneck unrelated to the VPN at all, and - for free tiers - a deliberate speed cap. Most of these are fixable once you identify which one you're hitting.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The most common causes, beyond unavoidable baseline overhead, are an outdated or inefficient protocol, a distant or overloaded server, [ISP throttling](/blog/vpn-for-avoiding-isp-throttling/) of VPN traffic specifically, weak device hardware struggling with encryption, a Wi-Fi bottleneck unrelated to the VPN at all, and - for free tiers - a deliberate speed cap. Most of these are fixable once you identify which one you're hitting.</p>
+</div>
 
 Slow VPN speed rarely has one single cause - it's usually the layering of baseline overhead with one or two additional problems. Here are the ones we see most often.
 
@@ -108,7 +120,10 @@ A deliberate speed cap on free tiers: Many free VPN plans cap speed intentionall
 
 ## How to test your VPN speed properly
 
-QUICK ANSWER :Run a baseline speed test with the VPN off, then test again connected to a nearby server, then again connected to a distant one, comparing download speed, upload speed, and latency (ping) each time. A single speed test with the VPN on tells you almost nothing on its own - you need the comparison.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Run a baseline speed test with the VPN off, then test again connected to a nearby server, then again connected to a distant one, comparing download speed, upload speed, and latency (ping) each time. A single speed test with the VPN on tells you almost nothing on its own - you need the comparison.</p>
+</div>
 
 A huge share of "my VPN is slow" complaints come from a single speed test run once, with no baseline for comparison. That single number is nearly meaningless on its own - you need to know what "normal" looks like for your connection before you can judge whether the VPN is adding an unreasonable cost on top of it.
 
@@ -118,7 +133,10 @@ A huge share of "my VPN is slow" complaints come from a single speed test run on
 
 ## How to read your speed test results
 
-A speed test gives you three numbers that matter: download speed, upload speed, and ping (latency, in milliseconds). What "good" looks like depends on what you're comparing against, but the pattern to look for is consistent.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A speed test gives you three numbers that matter: download speed, upload speed, and ping (latency, in milliseconds). What "good" looks like depends on what you're comparing against, but the pattern to look for is consistent.</p>
+</div>
 
 Compare VPN-on to VPN-off, not to some abstract ideal. A VPN connection that delivers 70 - 90% of your baseline speed on a nearby server is a normal, healthy result for most modern protocols. Anything dramatically lower than that, on a nearby server, under normal conditions, suggests something beyond baseline overhead is happening.
 
@@ -130,7 +148,10 @@ A result that's inconsistent across repeated tests points to load or local netwo
 
 ## How to fix a slow VPN
 
-QUICK ANSWER :The most effective fixes, in rough order of how often they resolve the problem: switch to a nearby, less-crowded server; switch to WireGuard if your VPN offers it; test on a wired connection to rule out Wi-Fi; restart your router and VPN app; check whether your ISP is throttling VPN traffic; and, if none of that helps, consider that your provider's underlying infrastructure may simply be underpowered.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The most effective fixes, in rough order of how often they resolve the problem: switch to a nearby, less-crowded server; switch to WireGuard if your VPN offers it; test on a wired connection to rule out Wi-Fi; restart your router and VPN app; check whether your ISP is throttling VPN traffic; and, if none of that helps, consider that your provider's underlying infrastructure may simply be underpowered.</p>
+</div>
 
 If your properly-run comparison test showed a real, unexplained slowdown, here's the troubleshooting order that resolves the problem most often.
 
@@ -140,7 +161,10 @@ If your properly-run comparison test showed a real, unexplained slowdown, here's
 
 ## How to choose a fast VPN for good
 
-QUICK ANSWER :Choose a VPN that defaults to a modern, efficient protocol like WireGuard, is transparent about any speed caps rather than hiding them in vague language, operates enough server capacity that individual servers don't become overloaded, and publishes real information about its network rather than only marketing claims.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Choose a VPN that defaults to a modern, efficient protocol like WireGuard, is transparent about any speed caps rather than hiding them in vague language, operates enough server capacity that individual servers don't become overloaded, and publishes real information about its network rather than only marketing claims.</p>
+</div>
 
 The honest truth is that you shouldn't have to troubleshoot VPN speed regularly. A well-built, well-resourced VPN should feel fast enough that you stop thinking about it within the first few days of using it.
 
@@ -152,7 +176,10 @@ What to look for if you want to set it and forget it:
 
 ## Speed vs. security - not the same tradeoff people assume
 
-QUICK ANSWER :A lot of people assume "faster VPN" automatically means "less secure VPN," trading encryption strength for speed. That's mostly a myth in 2026 - modern protocols like WireGuard are both faster and more secure than older ones like OpenVPN, because efficient, well-audited code tends to have a smaller attack surface.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A lot of people assume "faster VPN" automatically means "less secure VPN," trading encryption strength for speed. That's mostly a myth in 2026 - modern protocols like WireGuard are both faster and more secure than older ones like OpenVPN, because efficient, well-audited code tends to have a smaller attack surface.</p>
+</div>
 
 This is worth correcting directly because it's one of the more persistent pieces of VPN folklore. The intuition goes: strong encryption is supposed to be slow, so a fast VPN must be cutting corners on security to get there. That intuition made more sense a decade ago than it does now.
 
@@ -162,7 +189,10 @@ Where a real speed-versus-security tradeoff can still show up is in deliberate c
 
 ## A note on protocol choice: WireGuard vs. OpenVPN vs. IKEv2
 
-Protocol choice deserves its own section because it's the single technical decision with the biggest, most consistent impact on VPN speed - and it's something most users never think to check.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Protocol choice deserves its own section because it's the single technical decision with the biggest, most consistent impact on VPN speed - and it's something most users never think to check.</p>
+</div>
 
 WireGuard is the modern standard most privacy-focused VPNs have adopted: fast, efficient on battery for mobile devices, modern cryptography, and a small, well-audited codebase. If your VPN offers a protocol choice, WireGuard is very often the right default.
 
@@ -182,7 +212,10 @@ If your VPN-on speed on a nearby server lands around 70 - 90% of your baseline a
 
 ## How OllaVPN handles speed
 
-We built OllaVPN around the idea that speed shouldn't be a mystery, and a "free" plan shouldn't come with a hidden, unpredictable throttle disguised as something else. Here's what that looks like in practice:
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">We built OllaVPN around the idea that speed shouldn't be a mystery, and a "free" plan shouldn't come with a hidden, unpredictable throttle disguised as something else. Here's what that looks like in practice:</p>
+</div>
 
 <ul style="margin: 16px 0 20px 20px; padding-left: 10px; line-height: 1.65; color: #334155; font-family: 'Lato', sans-serif;">
   <li style='margin-bottom:8px; font-size:0.90rem; line-height:1.62;'>WireGuard by default, on every connection.</li><li style='margin-bottom:8px; font-size:0.90rem; line-height:1.62;'>A stated, flat speed cap on the free tier - 10 Mbps, no exceptions and no vague "fair use" language.</li><li style='margin-bottom:8px; font-size:0.90rem; line-height:1.62;'>No artificial throttling beyond that flat, disclosed cap.</li><li style='margin-bottom:8px; font-size:0.90rem; line-height:1.62;'>Uncapped 10 Gbps on Plus.</li><li style='margin-bottom:8px; font-size:0.90rem; line-height:1.62;'>A QUIC option for restrictive networks where standard VPN traffic patterns are detected and throttled or blocked.</li><li style='margin-bottom:8px; font-size:0.90rem; line-height:1.62;'>Post-quantum cryptography ready from day one, using a hybrid handshake that adds negligible measurable overhead compared to classical-only encryption.</li>

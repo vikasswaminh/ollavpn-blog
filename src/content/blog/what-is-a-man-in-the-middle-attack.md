@@ -59,9 +59,12 @@ The plain-English guide to one of the oldest tricks in networking, still working
 
 ## Why this old attack still works in 2026
 
-QUICK ANSWER :
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">[Man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attacks exploit a basic structural fact about networking: your device usually can't directly verify who it's actually talking to at the network level  -  it can only verify identity at the application level (via certificates). Wherever that verification is missing, skipped, or spoofable  -  an unsecured Wi-Fi network, an unencrypted DNS lookup  -  an attacker positioned nearby can quietly take the place of the thing you meant to talk to.</p>
+</div>
 
-[Man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attacks exploit a basic structural fact about networking: your device usually can't directly verify who it's actually talking to at the network level  -  it can only verify identity at the application level (via certificates). Wherever that verification is missing, skipped, or spoofable  -  an unsecured Wi-Fi network, an unencrypted DNS lookup  -  an attacker positioned nearby can quietly take the place of the thing you meant to talk to.
+
 
 The idea behind a [MITM](/blog/what-is-a-man-in-the-middle-attack.html) attack predates the internet by a long way  -  intercepting mail, tapping phone lines, and forging diplomatic cables are all the same trick in earlier technology. What keeps it relevant in modern networking is that a lot of the infrastructure connecting your device to the internet was built for functionality first and authentication second.
 
@@ -97,9 +100,12 @@ Later sections in this guide walk through each of these individually, because th
 
 ## The three things every MITM attack needs
 
-QUICK ANSWER :
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Regardless of technique, every [MITM](/blog/what-is-a-man-in-the-middle-attack.html) attack requires three ingredients: positioning (getting traffic to route through the attacker), impersonation (convincing each side the attacker is the legitimate other party), and either passive interception or active tampering once traffic is flowing through them.</p>
+</div>
 
-Regardless of technique, every [MITM](/blog/what-is-a-man-in-the-middle-attack.html) attack requires three ingredients: positioning (getting traffic to route through the attacker), impersonation (convincing each side the attacker is the legitimate other party), and either passive interception or active tampering once traffic is flowing through them.
+
 
 It helps to break the attack down into its constituent requirements, because doing so makes the defenses much more intuitive.
 
@@ -121,9 +127,12 @@ Knowing the names matters less than understanding the shape of each one  -  but 
 
 ## The evil twin  -  fake Wi-Fi hotspots explained
 
-QUICK ANSWER :
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">An "evil twin" is a fake Wi-Fi access point set up to look identical to a legitimate one  -  often with the exact same network name  -  luring devices to connect to the attacker's hardware instead of the real network. Once connected, every byte of your traffic passes through the attacker's equipment before continuing on to the internet.</p>
+</div>
 
-An "evil twin" is a fake Wi-Fi access point set up to look identical to a legitimate one  -  often with the exact same network name  -  luring devices to connect to the attacker's hardware instead of the real network. Once connected, every byte of your traffic passes through the attacker's equipment before continuing on to the internet.
+
 
 This is the most accessible [MITM](/blog/what-is-a-man-in-the-middle-attack.html) technique in this guide, requiring nothing more exotic than inexpensive, widely available hardware and a public location where people expect free Wi-Fi. An attacker sets up a wireless access point broadcasting a network name identical or very similar to a legitimate one  -  "Airport\_Free\_WiFi," "Starbucks\_Guest," a hotel's actual network name copied exactly  -  often with a stronger signal than the real network, so nearby devices are more likely to connect to the impostor automatically.
 
@@ -149,9 +158,12 @@ This is precisely the kind of attack that a well-built VPN's network architectur
 
 ## DNS spoofing  -  sending you to the wrong address entirely
 
-QUICK ANSWER :
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">DNS spoofing involves an attacker forging responses to your device's domain-name lookups, redirecting you to a malicious server instead of the legitimate one  -  potentially without any visible change to the URL you typed. This can happen through a compromised local network, a poisoned DNS cache, or a malicious DNS resolver.</p>
+</div>
 
-DNS spoofing involves an attacker forging responses to your device's domain-name lookups, redirecting you to a malicious server instead of the legitimate one  -  potentially without any visible change to the URL you typed. This can happen through a compromised local network, a poisoned DNS cache, or a malicious DNS resolver.
+
 
 Every website visit typically starts with a DNS lookup translating a human-readable domain into a numeric IP address. By default, that lookup happens over an old, unauthenticated protocol.
 
@@ -165,9 +177,12 @@ Encrypted DNS  -  [DNS over HTTPS](/blog/what-is-dns-over-https/) (DoH) or DNS o
 
 ## SSL stripping and forged certificates
 
-QUICK ANSWER :
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">SSL stripping (or downgrade attacks) intercept a connection during its initial, often-unencrypted first request. Then it quietly keeps the victim on plain HTTP while presenting an encrypted HTTPS connection to the real website  -  meaning the attacker sees everything in plain text while the victim may not notice anything unusual.</p>
+</div>
 
-SSL stripping (or downgrade attacks) intercept a connection during its initial, often-unencrypted first request. Then it quietly keeps the victim on plain HTTP while presenting an encrypted HTTPS connection to the real website  -  meaning the attacker sees everything in plain text while the victim may not notice anything unusual.
+
 
 Forged or maliciously issued certificates achieve a similar result by convincing a device to trust an attacker-controlled encrypted connection outright.
 
@@ -227,9 +242,12 @@ If there's a single takeaway from this timeline, it's that [MITM](/blog/what-is-
 
 ## How HTTPS actually defeats most of this
 
-QUICK ANSWER :
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">HTTPS (TLS) was specifically designed to defeat [man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attacks by combining encryption (so intercepted traffic can't be read) with certificate-based identity verification (so an attacker can't convincingly impersonate the legitimate site without a fraudulent, detectable certificate). Where it's correctly implemented and not bypassed, it closes the large majority of MITM techniques covered in this guide.</p>
+</div>
 
-HTTPS (TLS) was specifically designed to defeat [man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attacks by combining encryption (so intercepted traffic can't be read) with certificate-based identity verification (so an attacker can't convincingly impersonate the legitimate site without a fraudulent, detectable certificate). Where it's correctly implemented and not bypassed, it closes the large majority of MITM techniques covered in this guide.
+
 
 It's worth pausing to give HTTPS real credit here, because a lot of [MITM](/blog/what-is-a-man-in-the-middle-attack.html)\-focused content skips past just how effective it actually is when working as intended.
 
@@ -283,9 +301,12 @@ This is precisely the point of a well-executed [MITM](/blog/what-is-a-man-in-the
 
 ## How to actually protect yourself
 
-QUICK ANSWER :
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The combination that closes almost every technique in this guide: never click through certificate warnings, use encrypted DNS, connect through a VPN on any network you don't fully control, keep an eye out for duplicate or unfamiliar Wi-Fi network names, and enable automatic HTTPS enforcement in your browser.</p>
+</div>
 
-The combination that closes almost every technique in this guide: never click through certificate warnings, use encrypted DNS, connect through a VPN on any network you don't fully control, keep an eye out for duplicate or unfamiliar Wi-Fi network names, and enable automatic HTTPS enforcement in your browser.
+
 
 Here's the practical, ordered list.
 

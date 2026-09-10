@@ -135,7 +135,12 @@ Enterprise and API: Business customers using ChatGPT Team, Enterprise, or the AP
 
 ## Does ChatGPT use your chats to train its AI?
 
-QUICK ANSWER : By default, on the free and Plus plans, your conversations can be used to improve OpenAI’s models. You can opt out - but even after opting out, OpenAI may still use conversations for safety monitoring. Enterprise and API customers are not subject to training data use by default.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">By default, on the free and Plus plans, your conversations can be used to improve OpenAI’s models. You can opt out - but even after opting out, OpenAI may still use conversations for safety monitoring. Enterprise and API customers are not subject to training data use by default.</p>
+</div>
+
+
 
 The default position: On free and ChatGPT Plus accounts, OpenAI’s policy states that your conversations may be used to train and improve its AI models. In principle, the content you type could be reviewed by OpenAI staff or used as training data.
 

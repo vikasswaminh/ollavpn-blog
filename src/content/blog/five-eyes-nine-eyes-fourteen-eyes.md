@@ -55,7 +55,12 @@ The plain-English guide to the intelligence-sharing alliances that come up in ev
 
 ## Why this comes up in every VPN conversation
 
-QUICK ANSWER The Five Eyes and its extensions are intelligence-sharing alliances between Western democracies. They come up in VPN conversations because the country where a VPN provider is legally based determines what government data requests the company could face, and what intelligence sharing those requests could feed into.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The Five Eyes and its extensions are intelligence-sharing alliances between Western democracies. They come up in VPN conversations because the country where a VPN provider is legally based determines what government data requests the company could face, and what intelligence sharing those requests could feed into.</p>
+</div>
+
+
 
 The simple reason this topic comes up so often: **a VPN provider is subject to the laws of the country where it's incorporated**. If a government in that country can compel the VPN to share data  -  or to do so secretly without telling its users  -  that data could then be shared with allied governments under treaty arrangements like the Five Eyes.
 
@@ -63,7 +68,12 @@ This is why "where is the VPN based?" is a standard question in any thoughtful p
 
 ## What the Five Eyes is
 
-QUICK ANSWER The Five Eyes (FVEY) is an intelligence-sharing alliance comprising the United States, United Kingdom, Canada, Australia, and New Zealand. It was formalized by the 1946 UKUSA Agreement and is the oldest and most integrated of the Eyes alliances.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The Five Eyes (FVEY) is an intelligence-sharing alliance comprising the United States, United Kingdom, Canada, Australia, and New Zealand. It was formalized by the 1946 UKUSA Agreement and is the oldest and most integrated of the Eyes alliances.</p>
+</div>
+
+
 
 The **Five Eyes**  -  sometimes written FVEY  -  is an intelligence alliance between five English-speaking countries:
 
@@ -79,7 +89,12 @@ The Five Eyes is the most formal and most integrated of the Eyes alliances. Coop
 
 ## What the Nine Eyes is
 
-QUICK ANSWER The Nine Eyes is an expanded version of the Five Eyes that adds Denmark, France, the Netherlands, and Norway. It is less formal than the Five Eyes core and represents a wider European cooperation framework.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The Nine Eyes is an expanded version of the Five Eyes that adds Denmark, France, the Netherlands, and Norway. It is less formal than the Five Eyes core and represents a wider European cooperation framework.</p>
+</div>
+
+
 
 The **Nine Eyes** extends the Five Eyes by adding four more European countries:
 
@@ -92,7 +107,12 @@ The Nine Eyes is less formally structured than the Five Eyes core. It's better u
 
 ## What the Fourteen Eyes is
 
-QUICK ANSWER The Fourteen Eyes  -  formally known as SIGINT Seniors Europe (SSEUR)  -  adds Germany, Belgium, Italy, Spain, and Sweden to the Nine Eyes countries. Cooperation has historically been focused on counterterrorism intelligence sharing.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The Fourteen Eyes  -  formally known as SIGINT Seniors Europe (SSEUR)  -  adds Germany, Belgium, Italy, Spain, and Sweden to the Nine Eyes countries. Cooperation has historically been focused on counterterrorism intelligence sharing.</p>
+</div>
+
+
 
 The **Fourteen Eyes** is the widest of the named alliances. It adds five more countries to the Nine Eyes group:
 
@@ -128,7 +148,12 @@ Red highlighted countries are the new additions at each tier. The Fourteen Eyes 
 
 ## What the alliances actually do
 
-QUICK ANSWER The Eyes alliances enable member governments to share signals intelligence  -  intercepted communications, metadata, and electronic surveillance data  -  with each other. They are not a single unified spying organization. Each member country operates its own intelligence services under its own laws and chooses what to share.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The Eyes alliances enable member governments to share signals intelligence  -  intercepted communications, metadata, and electronic surveillance data  -  with each other. They are not a single unified spying organization. Each member country operates its own intelligence services under its own laws and chooses what to share.</p>
+</div>
+
+
 
 This is where many marketing pages get carried away. Let's be precise.
 
@@ -200,7 +225,12 @@ For practical purposes as a VPN user, the named alliances are still the most use
 
 ## Does this matter for VPN users?
 
-QUICK ANSWER It matters more than VPN marketing sometimes admits, and less than VPN marketing often implies. Jurisdiction determines what legal demands a VPN could face. But a well-implemented [no-logs policy](/blog/what-logs-does-vpn-keep/) means there's little to hand over regardless of jurisdiction. The strongest privacy posture is "no logs, audited, regardless of country."
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">It matters more than VPN marketing sometimes admits, and less than VPN marketing often implies. Jurisdiction determines what legal demands a VPN could face. But a well-implemented [no-logs policy](/blog/what-logs-does-vpn-keep/) means there's little to hand over regardless of jurisdiction. The strongest privacy posture is "no logs, audited, regardless of country."</p>
+</div>
+
+
 
 This is the honest, balanced answer that most "Eyes" articles avoid. Let's break it down.
 
@@ -220,7 +250,12 @@ The principle: **a provider can't disclose what it doesn't have**. That's a stro
 
 ## Jurisdiction vs server location  -  they're not the same thing
 
-QUICK ANSWER Jurisdiction is the country where a VPN company is legally incorporated, and whose laws govern the company's obligations. Server location is the country where the physical or virtual servers are located. These are different things  -  and they affect privacy in different ways.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Jurisdiction is the country where a VPN company is legally incorporated, and whose laws govern the company's obligations. Server location is the country where the physical or virtual servers are located. These are different things  -  and they affect privacy in different ways.</p>
+</div>
+
+
 
 This distinction trips up a lot of readers, and it's worth being explicit about.
 

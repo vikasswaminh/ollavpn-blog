@@ -62,7 +62,10 @@ We'll walk through exactly what metadata still exists even with strong end-to-en
 
 ## Does WhatsApp Already Encrypt Your Messages? What a VPN Adds On Top
 
-Yes - WhatsApp uses end-to-end encryption (built on the Signal Protocol) for messages, voice calls, video calls, and media by default. That means only you and the recipient can read or hear the content - not Meta, and not anyone intercepting the connection in between. A VPN doesn't add a second layer of that same protection. It protects a different part of the picture entirely.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Yes - WhatsApp uses end-to-end encryption (built on the Signal Protocol) for messages, voice calls, video calls, and media by default. That means only you and the recipient can read or hear the content - not Meta, and not anyone intercepting the connection in between. A VPN doesn't add a second layer of that same protection. It protects a different part of the picture entirely.</p>
+</div>
 
 Its worth being precise here, because a lot of "free VPN for WhatsApp" content online makes it sound like your WhatsApp messages are somehow unprotected without a VPN. That's not accurate. End-to-end encryption means the content of what you send is scrambled on your device before it ever leaves, using keys that only your device and the recipient's device hold. Even Meta's own servers, which route the encrypted data between you, can't read it. This protection exists whether or not you're using a VPN, and a VPN doesn't strengthen or weaken it - the two systems work at completely different layers of the connection.
 
@@ -72,7 +75,10 @@ That distinction is the honest starting point for this entire guide. A VPN genui
 
 ## What Does a VPN Actually Change About Your WhatsApp Privacy?
 
-A VPN changes who can see that you're connecting to WhatsApp at all, masks your real IP address from anyone monitoring the network, encrypts the connection itself on networks where interception is a real risk (like public wifi), and can help WhatsApp traffic get through in places where it's actively blocked or throttled.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A VPN changes who can see that you're connecting to WhatsApp at all, masks your real IP address from anyone monitoring the network, encrypts the connection itself on networks where interception is a real risk (like public wifi), and can help WhatsApp traffic get through in places where it's actively blocked or throttled.</p>
+</div>
 
 Let's go through each one in plain terms, because "network-layer privacy" can sound abstract until you see what it actually stops someone from learning.
 
@@ -86,7 +92,10 @@ Helping WhatsApp connect where it's restricted. In a number of countries, WhatsA
 
 ## What Metadata Can Still Leak Even With End-to-End Encryption?
 
-Even with WhatsApp's content fully encrypted, metadata - who you're communicating with, when, how often, for how long, and from roughly where - is still visible to varying parties. And end-to-end encryption by design doesn't hide this information the same way it hides message content.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Even with WhatsApp's content fully encrypted, metadata - who you're communicating with, when, how often, for how long, and from roughly where - is still visible to varying parties. And end-to-end encryption by design doesn't hide this information the same way it hides message content.</p>
+</div>
 
 This is genuinely the most important part of this guide to understand, because it's where the real privacy conversation around WhatsApp actually lives. Encrypting content and hiding metadata are two separate engineering problems, and WhatsApp's end-to-end encryption was designed to solve the first one, not the second.
 
@@ -100,7 +109,10 @@ What a VPN does and doesn't do about this metadata. A VPN removes your real IP a
 
 ## Does OllaVPN Free Actually Improve WhatsApp Privacy?
 
-Yes, in the specific ways described above - IP masking, network-level metadata protection, and public-wifi security. OllaVPN Free applies to WhatsApp exactly as it does to any other traffic, with no special restrictions, at a flat 10 Mbps with no data cap, funded by Plus subscribers rather than ads or data sales.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Yes, in the specific ways described above - IP masking, network-level metadata protection, and public-wifi security. OllaVPN Free applies to WhatsApp exactly as it does to any other traffic, with no special restrictions, at a flat 10 Mbps with no data cap, funded by Plus subscribers rather than ads or data sales.</p>
+</div>
 
 We don't treat WhatsApp traffic any differently than any other traffic on our network. There's no separate "messaging-optimized" server list to hunt for, and no throttling specific to voice or video call traffic beyond the standard free-tier cap that applies across the board. If you connect to OllaVPN and open WhatsApp, your connection to WhatsApp's servers is folded into the same encrypted tunnel as everything else, you're doing on that device.
 
@@ -110,7 +122,10 @@ And underneath all of it, our [strict no-logs policy](/blog/what-logs-does-vpn-k
 
 ## How Do You Set Up OllaVPN for WhatsApp, Step by Step?
 
-Setting up OllaVPN for WhatsApp takes a few minutes: install the app, connect before opening WhatsApp, and - if you're specifically trying to route around a restriction - pick a server location where WhatsApp isn't blocked.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Setting up OllaVPN for WhatsApp takes a few minutes: install the app, connect before opening WhatsApp, and - if you're specifically trying to route around a restriction - pick a server location where WhatsApp isn't blocked.</p>
+</div>
 
 <ol style="margin: 16px 0 20px 20px; padding-left: 10px; line-height: 1.65; color: #334155; font-family: 'Lato', sans-serif;">
   <li style='margin-bottom:12px; font-size:0.92rem; line-height:1.65;'><strong style="color: #0F172A;">Download and install:</strong> Grab the app from ollavpn.com/dl for your platform &mdash; Windows, macOS, or Android currently, with iOS coming soon. No account, no email, and no card required for the free tier.</li>
@@ -123,7 +138,10 @@ Setting up OllaVPN for WhatsApp takes a few minutes: install the app, connect be
 
 ## How Does the Kill Switch Protect a WhatsApp Call Mid-Session?
 
-If your VPN connection drops during an active WhatsApp voice or video call, a kill switch immediately blocks all internet traffic - including the call itself - rather than silently letting the call continue over your unprotected connection, which is what happens by default without one.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">If your VPN connection drops during an active WhatsApp voice or video call, a kill switch immediately blocks all internet traffic - including the call itself - rather than silently letting the call continue over your unprotected connection, which is what happens by default without one.</p>
+</div>
 
 This is worth walking through specifically for calls, because the failure mode is different from browsing or messaging. A web page failing to load because the VPN dropped is obvious and immediate - you notice within a second or two and can act on it. A live voice or video call is different: many apps, WhatsApp included, are built to prioritize call continuity. That means if the underlying network path changes mid-call - including a VPN tunnel disappearing - the call will often just keep going over whatever connection is available, reconnecting seamlessly from the user's perspective.
 
@@ -135,7 +153,10 @@ This is exactly why we ship the kill switch on by default rather than as a setti
 
 ## Can a VPN Help WhatsApp Work in Countries That Restrict It?
 
-In many cases, yes - a VPN can route your connection through a server in a location where WhatsApp isn't blocked or throttled. That's often the difference between the app functioning normally and not connecting at all, though the effectiveness varies by country and by how the specific restriction is implemented.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">In many cases, yes - a VPN can route your connection through a server in a location where WhatsApp isn't blocked or throttled. That's often the difference between the app functioning normally and not connecting at all, though the effectiveness varies by country and by how the specific restriction is implemented.</p>
+</div>
 
 This is a genuinely important use case, and it's worth treating with care rather than making a blanket promise. Restrictions on WhatsApp and similar messaging apps have taken different technical forms in different places and at different times. Sometimes it's a full block of WhatsApp's servers at the network level. Sometimes it's throttling specifically of voice and video call traffic while text messages still get through. Sometimes its broader restrictions tied to periods of unrest or specific events rather than a permanent standing policy.
 
@@ -147,7 +168,10 @@ We'd rather be honest that this is "generally yes, with real variation by specif
 
 ## Why Is 10 Mbps Enough for WhatsApp Calls and Media?
 
-WhatsApp voice calls typically need well under 1 Mbps. Video calls generally run in the 1 - 4 Mbps range depending on quality settings. Even sending large media files rarely demands more than a few Mbps at a time - all comfortably inside a 10 Mbps cap with substantial headroom to spare.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">WhatsApp voice calls typically need well under 1 Mbps. Video calls generally run in the 1 - 4 Mbps range depending on quality settings. Even sending large media files rarely demands more than a few Mbps at a time - all comfortably inside a 10 Mbps cap with substantial headroom to spare.</p>
+</div>
 
 It helps to put real numbers against the claim rather than leaving "enough" vague. WhatsApp voice calls are bandwidth-light by design, typically needing well under 1 Mbps to run clearly - a fraction of even a modest connection. Video calls need more, generally landing somewhere in the 1 - 4 Mbps range depending on resolution and how many participants are on a group call, but still well within a 10 Mbps ceiling with plenty of room left over for anything else running on the same connection at the same time.
 
@@ -157,7 +181,10 @@ One honest caveat: extremely large media files (like a lengthy high-resolution v
 
 ## How Should You Evaluate Any Free VPN Before Trusting It With WhatsApp?
 
-You should evaluate any free VPN intended for use with a messaging app like WhatsApp by scrutinizing its funding model, checking for a genuine no-logs policy stated specifically rather than vaguely, confirming a kill switch is on by default, and being skeptical of any claim that it "encrypts" your WhatsApp messages beyond what WhatsApp already does.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">You should evaluate any free VPN intended for use with a messaging app like WhatsApp by scrutinizing its funding model, checking for a genuine no-logs policy stated specifically rather than vaguely, confirming a kill switch is on by default, and being skeptical of any claim that it "encrypts" your WhatsApp messages beyond what WhatsApp already does.</p>
+</div>
 
 The most important red flag is a funding model you can't identify. Every VPN has real infrastructure costs. If a free service doesn't ask for money and doesn't show ads, something else is covering those costs - and for a tool you're trusting with your messaging habits, that's a more consequential question than it would be for casual browsing. If a provider can't or won't explain how the free tier is funded, treat that absence as the answer.
 
@@ -169,7 +196,10 @@ And be skeptical of any VPN marketing that implies it adds a second layer of enc
 
 ## How Does OllaVPN Compare to Other Free VPNs for WhatsApp Use?
 
-Most free VPNs marketed around messaging apps fall into ad-funded, freemium-throttled, or (rarely) honest loss-leader categories. OllaVPN Free sits in the smallest, most rare category - funded by Plus subscribers, with no ads, no data cap, and no restrictions on WhatsApp traffic specifically.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Most free VPNs marketed around messaging apps fall into ad-funded, freemium-throttled, or (rarely) honest loss-leader categories. OllaVPN Free sits in the smallest, most rare category - funded by Plus subscribers, with no ads, no data cap, and no restrictions on WhatsApp traffic specifically.</p>
+</div>
 
 Ad-funded free VPNs are common in this category because "free VPN for WhatsApp" is a heavily searched term. That attracts providers optimizing for that traffic rather than for the underlying privacy need. These often bundle ad SDKs, show interstitial ads, or in less scrupulous cases monetize usage data - a genuinely bad fit for something you're using around private conversations. OllaVPN has no ads anywhere in the app, and we don't sell user data in any form.
 
@@ -179,7 +209,10 @@ Honest loss-leader free VPNs, the category OllaVPN fits into, are funded directl
 
 ## When Does OllaVPN Plus Make More Sense for Heavy WhatsApp Users?
 
-OllaVPN Plus makes more sense if you're regularly on group video calls with several participants, want the VPN active across multiple devices simultaneously (a phone for calls and a laptop for WhatsApp Web, for instance), or are relying on the VPN specifically to maintain access in a restricted-network environment where connection stability matters more than usual.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">OllaVPN Plus makes more sense if you're regularly on group video calls with several participants, want the VPN active across multiple devices simultaneously (a phone for calls and a laptop for WhatsApp Web, for instance), or are relying on the VPN specifically to maintain access in a restricted-network environment where connection stability matters more than usual.</p>
+</div>
 
 The free tier's 10 Mbps comfortably covers typical individual voice and video calls, as covered above. Where it can start to feel tight is larger group video calls, where WhatsApp's bandwidth needs scale up with more simultaneous video participants. That can push closer to or past what feels comfortable within the cap if anything else is also using the connection at the same time.
 
@@ -189,7 +222,10 @@ And for anyone relying on the VPN specifically to maintain WhatsApp access in a 
 
 ## What a VPN Still Can't Fix About WhatsApp Privacy
 
-A VPN doesn't change what Meta's own systems can see about your account activity. It doesn't anonymize you from WhatsApp itself (you're still logged into your account). It doesn't stop contacts from seeing your phone number or profile information. And it doesn't protect against device-level compromise like malware or someone physically accessing your unlocked phone.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A VPN doesn't change what Meta's own systems can see about your account activity. It doesn't anonymize you from WhatsApp itself (you're still logged into your account). It doesn't stop contacts from seeing your phone number or profile information. And it doesn't protect against device-level compromise like malware or someone physically accessing your unlocked phone.</p>
+</div>
 
 We think it's worth closing on this point directly, because it's the honest boundary around everything covered above. We'd rather state it plainly than let the rest of this guide imply a VPN is a complete privacy solution for messaging. A VPN operates at the network layer - it changes what an outside observer of your connection can learn. It has no visibility into, and no control over, what happens once you're connected to WhatsApp's own service with your own account.
 

@@ -55,7 +55,12 @@ There are dozens of free VPNs for Windows, and most of them aren't worth your ti
 
 ## What makes a free Windows VPN trustworthy
 
-QUICK ANSWER A trustworthy free Windows VPN has a transparent business model, runs a [no-logs policy](/blog/what-logs-does-vpn-keep/), includes a [kill switch](/blog/what-is-a-vpn-kill-switch/) enabled by default, protects against DNS and [IPv6 leaks](/blog/what-is-an-ipv6-leak/), and updates its app regularly. Most importantly, it's run by a company whose primary revenue doesn't depend on monetizing your data.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A trustworthy free Windows VPN has a transparent business model, runs a [no-logs policy](/blog/what-logs-does-vpn-keep/), includes a [kill switch](/blog/what-is-a-vpn-kill-switch/) enabled by default, protects against DNS and [IPv6 leaks](/blog/what-is-an-ipv6-leak/), and updates its app regularly. Most importantly, it's run by a company whose primary revenue doesn't depend on monetizing your data.</p>
+</div>
+
+
 
 Before we get to the names, here's the framework we use to evaluate every free Windows VPN.
 
@@ -325,7 +330,12 @@ GhostBear obfuscation
 
 ## How free VPNs actually make money  -  and why it matters
 
-QUICK ANSWER Reputable free VPNs are funded by paying customers on a separate paid tier. The free tier is offered as a way to introduce users to the brand and convert some of them to paid plans. If a free VPN doesn't have a paid tier and doesn't disclose how it operates, the funding likely comes from monetizing user data or activity  -  exactly what you're trying to avoid by using a VPN.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Reputable free VPNs are funded by paying customers on a separate paid tier. The free tier is offered as a way to introduce users to the brand and convert some of them to paid plans. If a free VPN doesn't have a paid tier and doesn't disclose how it operates, the funding likely comes from monetizing user data or activity  -  exactly what you're trying to avoid by using a VPN.</p>
+</div>
+
+
 
 This is the single most important concept in free VPN selection, and almost nobody explains it clearly.
 
@@ -357,7 +367,12 @@ The names in this guide pass all of these. Many free Windows VPNs you'll see in 
 
 ## Why post-quantum cryptography matters for free VPNs too
 
-QUICK ANSWER Post-quantum cryptography (PQC) protects against the "harvest now, decrypt later" threat  -  where adversaries capture encrypted traffic today to decrypt years from now. Free VPN users aren't exempt from this concern. The good news: PQC adds almost no overhead and a few VPNs now include it on their free tiers.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Post-quantum cryptography (PQC) protects against the "harvest now, decrypt later" threat  -  where adversaries capture encrypted traffic today to decrypt years from now. Free VPN users aren't exempt from this concern. The good news: PQC adds almost no overhead and a few VPNs now include it on their free tiers.</p>
+</div>
+
+
 
 One of the things we feel most strongly about  -  and the reason OllaVPN exists in this category at all  -  is that **privacy upgrades shouldn't be paywalled**.
 

@@ -65,7 +65,10 @@ We'll walk through what "no logs" needs to mean technically to be trustworthy (n
 
 ## Why is Android Different from Other Platforms for VPN Privacy?
 
-Android is different for VPN privacy because it's an open, permission-driven operating system running on devices from dozens of manufacturers. That means two things are bigger on Android: the opportunity for a VPN app to overreach, and the opportunity for a VPN app to be genuinely transparent.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Android is different for VPN privacy because it's an open, permission-driven operating system running on devices from dozens of manufacturers. That means two things are bigger on Android: the opportunity for a VPN app to overreach, and the opportunity for a VPN app to be genuinely transparent.</p>
+</div>
 
 That openness cuts both ways. On one hand, Android's permission model means a VPN app can request access to far more than it needs - device identifiers, precise location, contacts, storage. And plenty of "free" VPN apps in the Play Store do exactly that, buried in permission requests most people tap through without reading.
 
@@ -79,7 +82,10 @@ That's why the selection criteria in this guide matter more on Android than they
 
 ## What Does "Really Usable" Mean for a Free Android VPN?
 
-A really usable free Android VPN is one you'd keep using a month from now without thinking about it. That means speeds that don't visibly degrade your normal phone habits, no artificial data ceiling that cuts you off mid-week, and no nagging that pushes you toward a paid tier before you've had a fair chance to evaluate the free one.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A really usable free Android VPN is one you'd keep using a month from now without thinking about it. That means speeds that don't visibly degrade your normal phone habits, no artificial data ceiling that cuts you off mid-week, and no nagging that pushes you toward a paid tier before you've had a fair chance to evaluate the free one.</p>
+</div>
 
 We call this out because "usable" gets treated like a given in most free-VPN marketing. In practice, it's the biggest gap between what's promised and what's delivered.
 
@@ -93,7 +99,10 @@ The honest bar we think a free Android VPN needs to clear in 2026 is this: could
 
 ## What Should "No Logs" Actually Mean on Android?
 
-"No logs" should mean the provider doesn't retain connection timestamps, session-to-IP mappings, or activity data that could reconstruct what a specific device did on their network - not just that they promise not to look at your browsing content.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">"No logs" should mean the provider doesn't retain connection timestamps, session-to-IP mappings, or activity data that could reconstruct what a specific device did on their network - not just that they promise not to look at your browsing content.</p>
+</div>
 
 This distinction matters more than most marketing copy lets on. There's a meaningful difference between "we don't log your browsing history" (a claim almost every VPN makes, including shady ones) and "we don't retain any data that could link a device to a session at a specific time" (a much stronger, much rarer claim).
 
@@ -107,7 +116,10 @@ What we'd suggest looking for, concretely: a provider that states its [no-logs p
 
 ## What Privacy Risks Does Your Android Phone Create That a VPN Does and Doesn't Fix?
 
-A VPN protects the network layer. It hides your IP address and encrypts your traffic in transit. But it doesn't stop app-level tracking, advertising ID profiling, or account-based tracking once you're logged into a service - privacy risks that are especially common on Android.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A VPN protects the network layer. It hides your IP address and encrypts your traffic in transit. But it doesn't stop app-level tracking, advertising ID profiling, or account-based tracking once you're logged into a service - privacy risks that are especially common on Android.</p>
+</div>
 
 It's worth separating these clearly, because a lot of people install a VPN expecting it to be a general-purpose privacy fix for their phone. Then they're surprised when targeted ads keep following them.
 
@@ -133,7 +145,10 @@ We'd rather set that expectation clearly than let a VPN's marketing imply it's a
 
 ## What Should You Expect From Any Honest Free VPN on Android?
 
-An honest free VPN on Android should offer real encryption via a modern protocol, a kill switch active by default, a genuine no-logs policy, and unrestricted access to the provider's full server network - not a stripped-down subset designed to make the free tier frustrating enough to abandon.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">An honest free VPN on Android should offer real encryption via a modern protocol, a kill switch active by default, a genuine no-logs policy, and unrestricted access to the provider's full server network - not a stripped-down subset designed to make the free tier frustrating enough to abandon.</p>
+</div>
 
 Starting with encryption: you should expect a modern protocol, most commonly WireGuard, which balances strong encryption with efficiency that matters on a battery-powered device. Older protocols can work, but they tend to be heavier on battery and CPU - more noticeable on a phone you carry all day than on a desktop plugged into the wall. If a free Android VPN is still defaulting to an outdated protocol in 2026, that's worth noticing.
 
@@ -145,7 +160,10 @@ You should also expect a genuine no-logs policy stated specifically (not vaguely
 
 ## Does OllaVPN Free Actually Deliver on Android?
 
-Yes. OllaVPN Free gives Android users a flat 10 Mbps with no data cap, access to every server in our network, WireGuard by default with a QUIC fallback for restrictive networks, in-tunnel DNS, a kill switch on by default, and post-quantum-ready encryption - all without an account, a card, or ads, funded by our Plus subscribers.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Yes. OllaVPN Free gives Android users a flat 10 Mbps with no data cap, access to every server in our network, WireGuard by default with a QUIC fallback for restrictive networks, in-tunnel DNS, a kill switch on by default, and post-quantum-ready encryption - all without an account, a card, or ads, funded by our Plus subscribers.</p>
+</div>
 
 Here's what that looks like day to day:
 
@@ -161,7 +179,10 @@ Layered on top of all of that is post-quantum-ready encryption: a hybrid handsha
 
 ## How Does OllaVPN Free Compare to Other 'Free' Android VPNs?
 
-Most "free" Android VPNs fall into three categories: ad-funded, freemium-throttled, or (rarely) honest loss-leaders. OllaVPN Free sits in the third category - the smallest one - funded by Plus subscribers rather than by your data or your patience.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Most "free" Android VPNs fall into three categories: ad-funded, freemium-throttled, or (rarely) honest loss-leaders. OllaVPN Free sits in the third category - the smallest one - funded by Plus subscribers rather than by your data or your patience.</p>
+</div>
 
 Ad-funded free VPNs are the largest category by volume. They're free in the sense that you don't pay money, but you pay in ads - sometimes interstitial ads between connections, sometimes ad SDKs bundled into the app that track you for advertising purposes independent of the VPN function. Some go further and monetize by selling aggregated or even individual usage data to third parties, which directly contradicts why most people install a VPN in the first place. OllaVPN Free has no ads anywhere in the app, and we don't sell user data - no aggregated, no anonymized, not at all.
 
@@ -171,7 +192,10 @@ Honest loss-leader free VPNs are the rarest category, and it's the one we built 
 
 ## How Do You Set Up OllaVPN Free on Android?
 
-Setting up OllaVPN Free on Android takes a few minutes: install from the Play Store, open the app, grant the standard Android VPN permission, and tap Connect - no account or payment details required at any step.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Setting up OllaVPN Free on Android takes a few minutes: install from the Play Store, open the app, grant the standard Android VPN permission, and tap Connect - no account or payment details required at any step.</p>
+</div>
 
 <ol style="margin: 16px 0 20px 20px; padding-left: 10px; line-height: 1.65; color: #334155; font-family: 'Lato', sans-serif;">
   <li style='margin-bottom:12px; font-size:0.92rem; line-height:1.65;'><strong style="color: #0F172A;">Install the app:</strong> Open the Google Play Store, search "OllaVPN," and confirm you're installing our official listing (check the developer's name matches &mdash; always a good habit for any app, not just VPNs). Tap Install. It's lightweight, so it should install quickly even on a slower connection.</li>
@@ -184,7 +208,10 @@ Setting up OllaVPN Free on Android takes a few minutes: install from the Play St
 
 ## Is 10 Mbps Enough for Real Android Use?
 
-For the overwhelming majority of everyday phone use - HD streaming, video calls, browsing, social media, most gaming - 10 Mbps is genuinely sufficient. It's a noticeable ceiling for 4K streaming or very large downloads, but for normal day-to-day use it's fine.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">For the overwhelming majority of everyday phone use - HD streaming, video calls, browsing, social media, most gaming - 10 Mbps is genuinely sufficient. It's a noticeable ceiling for 4K streaming or very large downloads, but for normal day-to-day use it's fine.</p>
+</div>
 
 Put real numbers next to common activities. HD video streaming (1080p) on most major platforms typically needs about 3 - 6 Mbps. That fits comfortably inside a 10 Mbps cap with room to spare. Video calls, even group calls, generally run well under 4 Mbps per stream. Browsing, social media scrolling, and most messaging apps use negligible sustained bandwidth. In practice, the cap usually doesn't become a factor for these.
 
@@ -196,7 +223,10 @@ We set the cap based on how most people actually use a phone most of the time, n
 
 ## What Common Mistakes Do People Make Picking a Free Android VPN?
 
-The most common mistake is treating "free" and "no cost to me" as the same thing, without asking how the app stays in business. The second most common mistake is skipping the permissions screen and assuming a high star rating means the app is trustworthy.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The most common mistake is treating "free" and "no cost to me" as the same thing, without asking how the app stays in business. The second most common mistake is skipping the permissions screen and assuming a high star rating means the app is trustworthy.</p>
+</div>
 
 Not asking how it's funded is the mistake underneath most of the others. Every app has to be paid for somehow. If you're not paying with money, you're often paying with something else - attention (ads), data (sold or shared), or occasionally worse.
 
@@ -212,7 +242,10 @@ Finally, ignoring the app's actual privacy policy in favor of its marketing page
 
 ## Why Does Post-Quantum-Ready Encryption Matter on a Phone You'll Own for Years?
 
-Post-quantum-ready encryption matters on Android because a phone is a device you'll likely keep for several years. That means it generates an ongoing stream of data, and today's standard encryption could, in theory, be decrypted retroactively once sufficiently powerful quantum computers exist.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Post-quantum-ready encryption matters on Android because a phone is a device you'll likely keep for several years. That means it generates an ongoing stream of data, and today's standard encryption could, in theory, be decrypted retroactively once sufficiently powerful quantum computers exist.</p>
+</div>
 
 This threat model is often called "harvest now, decrypt later." It's worth explaining plainly. Today's quantum computers aren't capable of breaking the encryption standards that protect a typical VPN connection. But encrypted traffic can be captured and stored today by anyone positioned to do so, and held indefinitely - waiting for the point when decryption becomes possible.
 
@@ -224,7 +257,10 @@ It's not a feature you'll notice day to day like a speed cap. It's a quieter, lo
 
 ## When Does OllaVPN Plus Make More Sense Than Free on Android?
 
-OllaVPN Plus makes more sense than the free tier when you're regularly streaming 4K content, handling large downloads or uploads, want the VPN active on more than one device at the same time, or simply want to support the model that keeps the free tier ad-free and log-free for everyone else.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">OllaVPN Plus makes more sense than the free tier when you're regularly streaming 4K content, handling large downloads or uploads, want the VPN active on more than one device at the same time, or simply want to support the model that keeps the free tier ad-free and log-free for everyone else.</p>
+</div>
 
 The free tier comfortably handles the great majority of everyday phone use. Where it becomes a genuine constraint instead of a modest tradeoff is consistent 4K streaming, which needs more bandwidth than the 10 Mbps cap can comfortably provide. Large file transfers - big downloads, video uploads, cloud backups of substantial photo or video libraries - will take much longer capped at 10 Mbps than they would uncapped.
 
@@ -236,7 +272,10 @@ At 10 Gbps, Plus effectively removes the VPN itself as a bottleneck on Android. 
 
 ## How Does OllaVPN Secure Your Android Device Specifically?
 
-OllaVPN secures your Android device through encrypted WireGuard tunnels, in-tunnel DNS resolution, a default-on kill switch built for Android's frequent network transitions, and 4-layer peer isolation across the servers you share with other free-tier users.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">OllaVPN secures your Android device through encrypted WireGuard tunnels, in-tunnel DNS resolution, a default-on kill switch built for Android's frequent network transitions, and 4-layer peer isolation across the servers you share with other free-tier users.</p>
+</div>
 
 Every connection is encrypted through WireGuard by default. It's efficient enough not to meaningfully drain battery during extended use - an important consideration on a device you carry and check dozens of times a day.
 
@@ -250,7 +289,10 @@ And because Android phones move between Wi-Fi and mobile data constantly through
 
 ## How Can OllaVPN Stay Free Without Ads or Data Selling?
 
-OllaVPN funds its entire free tier through subscriptions to OllaVPN Plus. That means free users are supported by paying subscribers - not by advertising, data sales, or deliberately frustrating limits designed to push an upgrade.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">OllaVPN funds its entire free tier through subscriptions to OllaVPN Plus. That means free users are supported by paying subscribers - not by advertising, data sales, or deliberately frustrating limits designed to push an upgrade.</p>
+</div>
 
 It's a fair question to ask of any free service, and we'd rather answer it directly than leave "free" unexplained. Every VPN, free or paid, has real infrastructure costs - servers, bandwidth, ongoing development, and security work. Those costs get paid somehow.
 

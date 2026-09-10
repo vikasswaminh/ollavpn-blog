@@ -55,7 +55,12 @@ The plain-English guide to one of the most important  -  and most misunderstood 
 
 ## Why this matters now (not in ten years)
 
-QUICK ANSWER The internet is in the middle of a quiet but historic upgrade  -  the first major change to how online encryption works in over twenty years. The reason is the rise of quantum computing, which will eventually be able to break much of the encryption protecting the internet today. The work to replace it is happening now because it takes years to roll out a new standard safely.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The internet is in the middle of a quiet but historic upgrade  -  the first major change to how online encryption works in over twenty years. The reason is the rise of quantum computing, which will eventually be able to break much of the encryption protecting the internet today. The work to replace it is happening now because it takes years to roll out a new standard safely.</p>
+</div>
+
+
 
 Here is a fact that surprises most people the first time they hear it: **almost all sensitive traffic on the internet today is protected by a small number of cryptographic algorithms designed in the 1970s**. RSA. Diffie-Hellman. Elliptic-curve variants of those. They have been adjusted, hardened, and re-implemented many times, but the underlying mathematics is from another era of computing.
 
@@ -79,7 +84,12 @@ That is the whole story, in one paragraph. The rest is detail.
 
 ## What post-quantum cryptography actually is
 
-QUICK ANSWER Post-quantum cryptography (PQC) is a set of encryption and digital-signature algorithms built on mathematical problems that are believed to be hard for both classical and quantum computers. Unlike "quantum cryptography" (which uses quantum physics directly), PQC runs on the regular computers we already have.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Post-quantum cryptography (PQC) is a set of encryption and digital-signature algorithms built on mathematical problems that are believed to be hard for both classical and quantum computers. Unlike "quantum cryptography" (which uses quantum physics directly), PQC runs on the regular computers we already have.</p>
+</div>
+
+
 
 Two terms get confused in casual reading. Let's keep them straight.
 
@@ -90,7 +100,12 @@ Post-quantum cryptography is, in other words, the kind of fix the internet can a
 
 ## "Harvest now, decrypt later"  -  the threat that matters today
 
-QUICK ANSWER Harvest now, decrypt later (HNDL) is the practice of capturing encrypted internet traffic today and storing it for future decryption once quantum computers become powerful enough. It is treated as a real, ongoing threat by major governments and security companies  -  not a theoretical one. It is the central reason post-quantum cryptography matters this decade, not next.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Harvest now, decrypt later (HNDL) is the practice of capturing encrypted internet traffic today and storing it for future decryption once quantum computers become powerful enough. It is treated as a real, ongoing threat by major governments and security companies  -  not a theoretical one. It is the central reason post-quantum cryptography matters this decade, not next.</p>
+</div>
+
+
 
 The most common misunderstanding about post-quantum cryptography is the idea that it only matters once quantum computers exist. That is wrong, and the reason is a deceptively simple pattern called **"harvest now, decrypt later"**, sometimes abbreviated **HNDL** or **"store now, decrypt later"**.
 
@@ -104,7 +119,12 @@ This is why the rollout of post-quantum cryptography is happening today, ahead o
 
 ## When quantum computers might actually arrive
 
-QUICK ANSWER Today's quantum computers have hundreds to a few thousand physical qubits. Breaking the most common public-key encryption would require millions of error-corrected qubits. Mainstream expert estimates put the arrival of cryptographically relevant quantum computers between the early 2030s and the mid-2040s  -  but the work to replace today's encryption needs to happen years ahead of that.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Today's quantum computers have hundreds to a few thousand physical qubits. Breaking the most common public-key encryption would require millions of error-corrected qubits. Mainstream expert estimates put the arrival of cryptographically relevant quantum computers between the early 2030s and the mid-2040s  -  but the work to replace today's encryption needs to happen years ahead of that.</p>
+</div>
+
+
 
 Let's be honest about the timeline, because exaggerating it serves nobody.
 
@@ -122,7 +142,12 @@ Reasonable people disagree about the exact year. But almost everyone in the fiel
 
 ## The new NIST standards  -  the 2024 milestone
 
-QUICK ANSWER In August 2024, the U.S. National Institute of Standards and Technology (NIST) finalized the first three post-quantum standards: FIPS 203 (ML-KEM, for key exchange), FIPS 204 (ML-DSA, for digital signatures), and FIPS 205 (SLH-DSA, a backup signature scheme). These standards define what "post-quantum-ready" means in practice.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">In August 2024, the U.S. National Institute of Standards and Technology (NIST) finalized the first three post-quantum standards: FIPS 203 (ML-KEM, for key exchange), FIPS 204 (ML-DSA, for digital signatures), and FIPS 205 (SLH-DSA, a backup signature scheme). These standards define what "post-quantum-ready" means in practice.</p>
+</div>
+
+
 
 If post-quantum cryptography has felt fuzzy until now  -  a vague future thing  -  the reason it suddenly became concrete in 2024 is the finalization of formal standards. Standards are how the internet moves as a whole, not in pieces.
 
@@ -176,7 +201,12 @@ Lattice-based schemes have emerged as the practical default  -  they're fast, th
 
 ## Hybrid mode  -  the belt-and-suspenders approach
 
-QUICK ANSWER Most early post-quantum deployments use a hybrid mode that combines a classical algorithm and a post-quantum algorithm in the same handshake. The connection stays secure as long as either algorithm holds up. This protects against quantum attacks AND against the small chance that a flaw is later discovered in the new post-quantum math.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Most early post-quantum deployments use a hybrid mode that combines a classical algorithm and a post-quantum algorithm in the same handshake. The connection stays secure as long as either algorithm holds up. This protects against quantum attacks AND against the small chance that a flaw is later discovered in the new post-quantum math.</p>
+</div>
+
+
 
 One of the smartest moves the industry made early in the post-quantum rollout was the decision to use **hybrid modes**: combine a well-tested classical algorithm with a new post-quantum algorithm in the same handshake. The connection stays secure as long as _either_ one remains unbroken.
 
@@ -238,7 +268,12 @@ If you've been wondering "is this real yet?"  -  the answer is unambiguously yes
 
 ## What post-quantum cryptography means for a VPN specifically
 
-QUICK ANSWER A VPN's job is to encrypt all your traffic before it leaves your device. If that encryption is vulnerable to "harvest now, decrypt later," your VPN-protected sessions today could be readable in fifteen years. A post-quantum-ready VPN closes that window  -  the same encryption that protects you today is built to remain protective into the quantum era.
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A VPN's job is to encrypt all your traffic before it leaves your device. If that encryption is vulnerable to "harvest now, decrypt later," your VPN-protected sessions today could be readable in fifteen years. A post-quantum-ready VPN closes that window  -  the same encryption that protects you today is built to remain protective into the quantum era.</p>
+</div>
+
+
 
 Here is where post-quantum cryptography intersects directly with VPN choice.
 
@@ -287,7 +322,12 @@ It does not. Post-quantum cryptography runs on ordinary computers. Your phone ca
 
 ## How to evaluate a PQC-ready VPN
 
-QUICK ANSWER Look for: an explicit PQC capability described on the VPN's site, a hybrid mode that combines classical and post-quantum algorithms, no requirement that you manually enable it, no additional charge for it, and continued availability of standard features like the [kill switch](/blog/what-is-a-vpn-kill-switch/).
+<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Look for: an explicit PQC capability described on the VPN's site, a hybrid mode that combines classical and post-quantum algorithms, no requirement that you manually enable it, no additional charge for it, and continued availability of standard features like the [kill switch](/blog/what-is-a-vpn-kill-switch/).</p>
+</div>
+
+
 
 Not every "post-quantum" claim is the same. Here's what actually matters when evaluating one.
 
