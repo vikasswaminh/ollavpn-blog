@@ -113,22 +113,13 @@ And underneath all of it, our strict no-logs policy applies identically to Whats
 Setting up OllaVPN for WhatsApp takes a few minutes: install the app, connect before opening WhatsApp, and - if you're specifically trying to route around a restriction - pick a server location where WhatsApp isn't blocked.
 
 <ol style="margin: 16px 0 20px 20px; padding-left: 10px; line-height: 1.65; color: #334155; font-family: 'Lato', sans-serif;">
-  <li style='margin-bottom:10px; font-size:0.90rem; line-height:1.62;'>Step one: download and install. Grab the app from ollavpn.com/dl for your platform - Windows, macOS, or Android currently, with iOS coming soon. No account, no email, and no card required for the free tier.</li>
+  <li style='margin-bottom:12px; font-size:0.92rem; line-height:1.65;'><strong style="color: #0F172A;">Download and install:</strong> Grab the app from ollavpn.com/dl for your platform &mdash; Windows, macOS, or Android currently, with iOS coming soon. No account, no email, and no card required for the free tier.</li>
+  <li style='margin-bottom:12px; font-size:0.92rem; line-height:1.65;'><strong style="color: #0F172A;">Connect the VPN before opening WhatsApp, not after:</strong> This sounds like a minor detail, but it matters. If WhatsApp is already open and connected when you turn the VPN on, some of its background connections may not immediately re-route through the new tunnel until the app refreshes its connection. That briefly undermines the point of connecting in the first place. The cleaner sequence is always VPN first, app second.</li>
+  <li style='margin-bottom:12px; font-size:0.92rem; line-height:1.65;'><strong style="color: #0F172A;">Confirm you're actually connected before relying on it:</strong> Check your visible IP through our what-is-my-IP tool after connecting &mdash; it should show the VPN server's location, not your real one.</li>
+  <li style='margin-bottom:12px; font-size:0.92rem; line-height:1.65;'><strong style="color: #0F172A;">Pick a server location deliberately if you have a reason to:</strong> For general privacy on your home or public wifi connection, the automatically-selected fastest server is fine. If you're specifically trying to use WhatsApp somewhere it's restricted, you'll want to manually select a server in a location where WhatsApp operates normally &mdash; every location in our network is available to free users, not a restricted subset.</li>
+  <li style='margin-bottom:12px; font-size:0.92rem; line-height:1.65;'><strong style="color: #0F172A;">Confirm the kill switch is active:</strong> Especially if you make WhatsApp calls regularly. It's on by default, but it's worth a five-second check in Settings before a call that matters, given how much more disruptive a silent mid-call exposure is compared to a dropped web page.</li>
+  <li style='margin-bottom:12px; font-size:0.92rem; line-height:1.65;'><strong style="color: #0F172A;">Leave the VPN running for the duration of your session:</strong> Rather than toggling it on and off around specific messages. The metadata-obscuring benefit described above comes from your WhatsApp connection blending into your broader tunneled traffic pattern, which works better as a continuous habit than as a per-message decision.</li>
 </ol>
-
-Step two: connect the VPN before opening WhatsApp, not after. This sounds like a minor detail, but it matters. If WhatsApp is already open and connected when you turn the VPN on, some of its background connections may not immediately re-route through the new tunnel until the app refreshes its connection. That briefly undermines the point of connecting in the first place. The cleaner sequence is always VPN first, app second.
-
-<ol style="margin: 16px 0 20px 20px; padding-left: 10px; line-height: 1.65; color: #334155; font-family: 'Lato', sans-serif;">
-  <li style='margin-bottom:10px; font-size:0.90rem; line-height:1.62;'>Step three: confirm you're actually connected before relying on it for anything sensitive. Check your visible IP through our what-is-my-IP tool after connecting - it should show the VPN server's location, not your real one.</li>
-</ol>
-
-Step four: pick a server location deliberately if you have a reason to. For general privacy on your home or public wifi connection, the automatically-selected fastest server is fine. If you're specifically trying to use WhatsApp somewhere it's restricted, you'll want to manually select a server in a location where WhatsApp operates normally - every location in our network is available to free users, not a restricted subset.
-
-<ol style="margin: 16px 0 20px 20px; padding-left: 10px; line-height: 1.65; color: #334155; font-family: 'Lato', sans-serif;">
-  <li style='margin-bottom:10px; font-size:0.90rem; line-height:1.62;'>Step five: confirm the kill switch is active, especially if you make WhatsApp calls regularly. It's on by default, but it's worth a five-second check in Settings before a call that matters, given how much more disruptive a silent mid-call exposure is compared to a dropped web page.</li>
-</ol>
-
-Step six: leave the VPN running for the duration of your session rather than toggling it on and off around specific messages. The metadata-obscuring benefit described above comes from your WhatsApp connection blending into your broader tunneled traffic pattern, which works better as a continuous habit than as a per-message decision.
 
 ## How Does the Kill Switch Protect a WhatsApp Call Mid-Session?
 
