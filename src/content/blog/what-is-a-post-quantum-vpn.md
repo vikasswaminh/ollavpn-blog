@@ -53,9 +53,9 @@ tags: ['pillars']
 
 The plain-English guide to what a post-quantum VPN actually changes under the hood, why harvest-now-decrypt-later matters today, and how to verify real PQC protection.
 
-What Is a [Post-Quantum VPN](/blog/what-is-a-post-quantum-vpn.html) and Why Do You Need One?
+What Is a <a href="/blog/what-is-a-post-quantum-vpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">Post-Quantum VPN</a> and Why Do You Need One?
 
-The plain-English guide to the newest, most misunderstood label in the VPN world. What a “[post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html)” actually changes under the hood, why the timing of your upgrade matters even though quantum computers don’t exist yet, and how to tell a real post-quantum VPN from a marketing sticker.
+The plain-English guide to the newest, most misunderstood label in the VPN world. What a “<a href="/blog/what-is-a-post-quantum-vpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">post-quantum VPN</a>” actually changes under the hood, why the timing of your upgrade matters even though quantum computers don’t exist yet, and how to tell a real post-quantum VPN from a marketing sticker.
 
 ## Why "post-quantum VPN" suddenly became a real category
 
@@ -71,9 +71,9 @@ The reason it matters specifically for VPNs, more than for a single website you 
 
 Before getting into the post-quantum part, it helps to be clear about what a VPN is doing in the first place, because a lot of confusion about “post-quantum VPNs” comes from people not being sure what a regular VPN protects.
 
-When you turn on a VPN, your device builds an [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html) to a server run by your VPN provider. Everything that leaves your device, web requests, app traffic, DNS lookups, all of it, gets wrapped inside that tunnel before it reaches your Wi‑Fi router, your internet provider, or anyone else on the network path. Your internet provider can see that you’re connected to a VPN server, and roughly how much data is flowing, but it can’t see what’s inside. The websites and apps you talk to see the VPN server’s identity, not yours.
+When you turn on a VPN, your device builds an <a href="/blog/what-is-a-vpn-tunnel.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">encrypted tunnel</a> to a server run by your VPN provider. Everything that leaves your device, web requests, app traffic, DNS lookups, all of it, gets wrapped inside that tunnel before it reaches your Wi‑Fi router, your internet provider, or anyone else on the network path. Your internet provider can see that you’re connected to a VPN server, and roughly how much data is flowing, but it can’t see what’s inside. The websites and apps you talk to see the VPN server’s identity, not yours.
 
-The tunnel is built using a [VPN protocol](/blog/what-is-a-vpn-protocol.html), WireGuard and OpenVPN are the two you’ll hear about most often, and that protocol relies on cryptographic algorithms to do two jobs: agree on a secret key when the connection starts, and then use that key to scramble the data flowing through the tunnel for as long as the connection stays open.
+The tunnel is built using a <a href="/blog/what-is-a-vpn-protocol.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">VPN protocol</a>, WireGuard and OpenVPN are the two you’ll hear about most often, and that protocol relies on cryptographic algorithms to do two jobs: agree on a secret key when the connection starts, and then use that key to scramble the data flowing through the tunnel for as long as the connection stays open.
 
 That distinction, the “agreeing on a key” part versus the “using the key” part, is exactly where the post-quantum story lives.
 
@@ -89,15 +89,15 @@ This is the single most useful thing to understand if you want the rest of this 
 
 Here’s why that split matters: an attacker who wants to read your VPN traffic later doesn’t need to break your AES-256 bulk encryption directly. Symmetric algorithms like AES-256 are estimated to lose only about half their effective security margin against a quantum computer running Grover’s algorithm, and AES-256 has so much margin to begin with that this barely matters in practice. What the attacker actually wants is the secret key your handshake negotiated. If they can recover that, they can unlock everything that key protected. And the handshake is the kind of math (large-number factoring, discrete logarithms, and their elliptic-curve cousins) that a sufficiently powerful quantum computer is expected to solve.
 
-So when someone says “[post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html),” what they really mean, almost every time, is: the handshake has been upgraded. The bulk encryption usually doesn’t need to change at all.
+So when someone says “<a href="/blog/what-is-a-post-quantum-vpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">post-quantum VPN</a>,” what they really mean, almost every time, is: the handshake has been upgraded. The bulk encryption usually doesn’t need to change at all.
 
 ## What "post-quantum" changes, specifically
 
-A [post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html) replaces or supplements the handshake’s key-exchange algorithm with one built on different mathematics, mathematics that both classical and quantum computers are believed to struggle with. The leading approach, and the one NIST standardized as ML-KEM (Module-Lattice-based Key-Encapsulation Mechanism, formerly known by its project name, Kyber), is based on problems involving lattices: geometric structures in very high-dimensional space where finding certain hidden patterns is believed to be extremely hard, even with a quantum computer’s tricks.
+A <a href="/blog/what-is-a-post-quantum-vpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">post-quantum VPN</a> replaces or supplements the handshake’s key-exchange algorithm with one built on different mathematics, mathematics that both classical and quantum computers are believed to struggle with. The leading approach, and the one NIST standardized as ML-KEM (Module-Lattice-based Key-Encapsulation Mechanism, formerly known by its project name, Kyber), is based on problems involving lattices: geometric structures in very high-dimensional space where finding certain hidden patterns is believed to be extremely hard, even with a quantum computer’s tricks.
 
 None of this requires new hardware. It requires new software, an updated VPN client and an updated VPN server that both know how to run the new key-exchange algorithm during the handshake, typically alongside the classical one rather than replacing it (more on why that “alongside” matters in the hybrid-mode section below). Once the handshake completes and a shared secret has been established, everything downstream, the AES-256 tunnel, the way your traffic gets routed, the app you’re using, looks and behaves the same as it always has.
 
-In other words: a [post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html) doesn’t feel different, look different, or ask you to understand lattice mathematics. It’s a change to a few kilobytes of data exchanged in the first fraction of a second of your connection, designed so that the secret those kilobytes establish stays secret for decades, not just for as long as classical computers remain the only computers that exist.
+In other words: a <a href="/blog/what-is-a-post-quantum-vpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">post-quantum VPN</a> doesn’t feel different, look different, or ask you to understand lattice mathematics. It’s a change to a few kilobytes of data exchanged in the first fraction of a second of your connection, designed so that the secret those kilobytes establish stays secret for decades, not just for as long as classical computers remain the only computers that exist.
 
 ## Why you personally need one, not just governments
 
@@ -121,7 +121,7 @@ When your VPN client connects to a server, the handshake that establishes the sh
 
 Today, that recording is useless to them, cracking classical elliptic-curve or RSA-based key exchange with existing computers isn’t feasible, even with unlimited money and time within a human lifespan. But a cryptographically relevant quantum computer, once it exists, could run an algorithm (Shor’s algorithm, specifically) against that recorded handshake and recover the secret key it established. With that key in hand, all the tunnel traffic recorded alongside it, the AES-256-encrypted payload, becomes readable, because the key was the hard part, not the bulk cipher.
 
-This is exactly why the fix has to happen at the handshake, and why it has to happen before the quantum computer shows up, not after. Upgrading your VPN’s cryptography the week a cryptographically relevant quantum computer becomes public knowledge doesn’t protect the traffic you already sent. It only protects connections made after the upgrade. That’s the whole logic behind why [post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html) adoption is a today problem: every connection you make with old-style cryptography between now and your provider’s upgrade is a connection with a decryption expiration date somewhere in the 2030s or 2040s.
+This is exactly why the fix has to happen at the handshake, and why it has to happen before the quantum computer shows up, not after. Upgrading your VPN’s cryptography the week a cryptographically relevant quantum computer becomes public knowledge doesn’t protect the traffic you already sent. It only protects connections made after the upgrade. That’s the whole logic behind why <a href="/blog/what-is-a-post-quantum-vpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">post-quantum VPN</a> adoption is a today problem: every connection you make with old-style cryptography between now and your provider’s upgrade is a connection with a decryption expiration date somewhere in the 2030s or 2040s.
 
 ## How a quantum computer would actually break a VPN handshake
 
@@ -137,7 +137,7 @@ Estimates for when a “cryptographically relevant quantum computer” might exi
 
 In August 2024, NIST finalized FIPS 203 (ML-KEM), the key-exchange standard that post-quantum VPNs use for their handshake, alongside two signature standards (FIPS 204 and FIPS 205) that matter more for certificate authentication than for the VPN handshake itself.
 
-A [post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html) isn’t inventing its own cryptography from scratch, that would be a red flag, not a feature. It’s implementing algorithms that went through the U.S. National Institute of Standards and Technology’s public, multi-year [Post-Quantum Cryptography](/blog/what-is-post-quantum-cryptography/) competition, which ran from 2016 to 2024 and involved cryptographers around the world trying to break candidate algorithms in public.
+A <a href="/blog/what-is-a-post-quantum-vpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">post-quantum VPN</a> isn’t inventing its own cryptography from scratch, that would be a red flag, not a feature. It’s implementing algorithms that went through the U.S. National Institute of Standards and Technology’s public, multi-year <a href="/blog/what-is-post-quantum-cryptography/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">Post-Quantum Cryptography</a> competition, which ran from 2016 to 2024 and involved cryptographers around the world trying to break candidate algorithms in public.
 
 The result, finalized in August 2024:
 
@@ -153,7 +153,7 @@ For a VPN, the practical takeaway is simple: when a provider says “post-quantu
 
 ## Hybrid handshakes: the current best practice
 
-Almost every credible [post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html) implementation today combines a classical algorithm (like X25519) with a post-quantum one (like ML-KEM) in the same handshake, rather than replacing the classical algorithm outright. The connection stays secure as long as either algorithm holds up, which hedges against both quantum attacks and the small risk that a flaw is later found in the newer math.
+Almost every credible <a href="/blog/what-is-a-post-quantum-vpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">post-quantum VPN</a> implementation today combines a classical algorithm (like X25519) with a post-quantum one (like ML-KEM) in the same handshake, rather than replacing the classical algorithm outright. The connection stays secure as long as either algorithm holds up, which hedges against both quantum attacks and the small risk that a flaw is later found in the newer math.
 
 This is one of the more reassuring details in the whole story, and it directly affects how you should evaluate a VPN’s claims.
 
@@ -183,13 +183,13 @@ August 2023. Google Chrome starts rolling out the X25519Kyber768 hybrid for TLS 
 
 September 2023. Signal launches PQXDH, a post-quantum hybrid upgrade to the key-agreement protocol underlying its end-to-end encrypted messaging.
 
-February 2024. Apple ships PQ3, a post-quantum upgrade to iMessage’s [end-to-end encryption](/blog/what-is-end-to-end-encryption/) protocol.
+February 2024. Apple ships PQ3, a post-quantum upgrade to iMessage’s <a href="/blog/what-is-end-to-end-encryption/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">end-to-end encryption</a> protocol.
 
 August 2024. NIST finalizes FIPS 203, 204, and 205, the moment post-quantum cryptography stops being experimental and becomes a formal, deployable standard.
 
 2025 onward. Broad rollout accelerates across browsers, messaging platforms, cloud infrastructure, and VPN providers. VPNs built from the ground up in this period, OllaVPN among them, ship post-quantum handshakes as a default, not an opt-in.
 
-If you’ve been wondering whether “[post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html)” is real yet or still a few years off: it’s real, it’s shipped in products used by hundreds of millions of people, and the VPN category specifically is now in the middle of catching up to where browsers and messaging apps already are.
+If you’ve been wondering whether “<a href="/blog/what-is-a-post-quantum-vpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">post-quantum VPN</a>” is real yet or still a few years off: it’s real, it’s shipped in products used by hundreds of millions of people, and the VPN category specifically is now in the middle of catching up to where browsers and messaging apps already are.
 
 ## What doesn't change: symmetric encryption
 
@@ -197,7 +197,7 @@ It’s worth pausing to reassure you about the part of your VPN connection that 
 
 Once the handshake, classical, post-quantum, or hybrid, has established a shared secret, the rest of your traffic is scrambled with symmetric encryption, almost always AES-256 or ChaCha20. These don’t rely on the “hard math problem” structure that makes public-key cryptography vulnerable to Shor’s algorithm. The relevant quantum attack against symmetric ciphers, Grover’s algorithm, only roughly halves their effective security margin rather than breaking them outright, and AES-256 has so much margin to spare that even halved, it remains solidly secure.
 
-This is why the [post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html) conversation is narrower than it might sound. You don’t need a “post-quantum AES.” You need a post-quantum handshake, because that’s the only piece a quantum computer meaningfully threatens.
+This is why the <a href="/blog/what-is-a-post-quantum-vpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">post-quantum VPN</a> conversation is narrower than it might sound. You don’t need a “post-quantum AES.” You need a post-quantum handshake, because that’s the only piece a quantum computer meaningfully threatens.
 </div>
 
 <section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 12px 28px 24px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
@@ -214,7 +214,7 @@ This is why the [post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html) conver
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>2. A [post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html) will be noticeably slower.</span>
+      <span>2. A <a href="/blog/what-is-a-post-quantum-vpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">post-quantum VPN</a> will be noticeably slower.</span>
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
@@ -227,7 +227,7 @@ This is why the [post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html) conver
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Not quite. A broken handshake means an attacker with a future quantum computer could recover the session key for connections made before your VPN upgraded. It doesn’t retroactively unmask your identity if your provider had a strict [no-logs policy](/blog/which-free-vpn-does-not-keep-logs.html), and it doesn’t affect encryption that never depended on the vulnerable math in the first place, such as the AES-256 bulk cipher.
+      Not quite. A broken handshake means an attacker with a future quantum computer could recover the session key for connections made before your VPN upgraded. It doesn’t retroactively unmask your identity if your provider had a strict <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs policy</a>, and it doesn’t affect encryption that never depended on the vulnerable math in the first place, such as the AES-256 bulk cipher.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
@@ -257,7 +257,7 @@ This is why the [post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html) conver
     Navigating What Is a Post-Quantum VPN and Why Do You Need One? effectively requires choosing security architectures built on transparency, strong encryption, and verified zero data logging.
   </p>
   <p style="font-size: 0.925rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
-    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on [kill switch](/blog/what-is-a-vpn-kill-switch/) defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
+    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on <a href="/blog/what-is-a-vpn-kill-switch/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">kill switch</a> defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
   </p>
 </section>
 

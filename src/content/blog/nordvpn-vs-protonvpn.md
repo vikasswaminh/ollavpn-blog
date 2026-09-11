@@ -401,7 +401,7 @@ You can [try the free plan](../dl/) right now without an email or a card.
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Post-quantum cryptography (PQC) is a new family of encryption algorithms designed to remain secure even against future quantum computers. The concern, often called "harvest now, decrypt later," is that encrypted traffic captured today could be saved and decrypted years from now once quantum computers mature. A PQC-ready VPN protects your sessions against that future, today. [OllaVPN is built PQC-ready](../technology.html) from day one.
+      Post-quantum cryptography (PQC) is a new family of encryption algorithms designed to remain secure even against future quantum computers. The concern, often called "harvest now, decrypt later," is that encrypted traffic captured today could be saved and decrypted years from now once quantum computers mature. A PQC-ready VPN protects your sessions against that future, today. <a href="../technology.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">OllaVPN is built PQC-ready</a> from day one.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">

@@ -466,14 +466,14 @@ If nothing works, contact support and ask which server is currently recommended 
     Choosing the right VPN solution for <strong>Best VPN for Streaming 2026: Unblock Netflix, Prime Video, Disney+, and More</strong> requires balancing speed, genuine security, and uncompromised privacy.
   </p>
   <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
-    With OllaVPN, you benefit from lightweight WireGuard tunneling, zero bandwidth caps, default-on kill switch defense, and built-in [post-quantum cryptography](/blog/what-is-post-quantum-cryptography.html) to ensure your connection remains lightning-fast and private on every network.
+    With OllaVPN, you benefit from lightweight WireGuard tunneling, zero bandwidth caps, default-on kill switch defense, and built-in <a href="/blog/what-is-post-quantum-cryptography.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">post-quantum cryptography</a> to ensure your connection remains lightning-fast and private on every network.
   </p>
 </section>
 
 <section id="download" class="download-section-box" style="background: linear-gradient(135deg, #ffffff 0%, #FFF8F8 100%); border: 1.5px solid rgba(218, 41, 28, 0.2); border-radius: 18px; padding: 32px 28px; margin-bottom: 24px; text-align: center; width: 100%; box-shadow: 0 6px 24px rgba(218, 41, 28, 0.06); box-sizing: border-box;">
   <h2 style="font-size: 2rem; font-weight: 800; color: #0F172A; margin: 0 0 10px 0; border: none !important; padding-bottom: 0 !important;">Protect Your Connection with OllaVPN</h2>
   <p style="font-size: 1.05rem; color: #475569; max-width: 650px; margin: 0 auto 18px auto; line-height: 1.65;">
-    Enjoy unlimited data, next-generation [WireGuard encryption](/blog/wireguard-vs-openvpn.html), and audited zero activity logs on Android, iOS, Windows, and macOS.
+    Enjoy unlimited data, next-generation <a href="/blog/wireguard-vs-openvpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard encryption</a>, and audited zero activity logs on Android, iOS, Windows, and macOS.
   </p>
   <a href="https://ollavpn.com/apps.html" target="_blank" rel="noopener" class="btn-primary" style="display: inline-block; background: #DA291C !important; color: #FFFFFF !important; font-size: 1.08rem; font-weight: 800; padding: 14px 36px; border-radius: 10px; text-decoration: none !important; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.25); transition: all 0.2s ease;">
     Download OllaVPN Free &rarr;

@@ -107,7 +107,7 @@ The best way to think about it: a DNS leak doesn't undo your VPN, but it dramati
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The most common causes are VPNs that don't handle DNS inside their own infrastructure, IPv6 traffic bypassing the tunnel, unexpected VPN disconnects without a [kill switch](/blog/what-is-a-vpn-kill-switch/), and operating-system misconfigurations. Choosing a VPN that handles DNS correctly by default removes most of the risk.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The most common causes are VPNs that don't handle DNS inside their own infrastructure, IPv6 traffic bypassing the tunnel, unexpected VPN disconnects without a <a href="/blog/what-is-a-vpn-kill-switch/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">kill switch</a>, and operating-system misconfigurations. Choosing a VPN that handles DNS correctly by default removes most of the risk.</p>
 </div>
 
 
@@ -373,7 +373,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[emailÂ
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Some do, some don't. Many free VPNs use third-party DNS resolvers or fail to handle IPv6 traffic, which causes leaks. Reputable free options, including [OllaVPN's lifetime free plan](/free-vpn), route DNS through their own infrastructure inside the tunnel by default.
+      Some do, some don't. Many free VPNs use third-party DNS resolvers or fail to handle IPv6 traffic, which causes leaks. Reputable free options, including <a href="/free-vpn" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">OllaVPN's lifetime free plan</a>, route DNS through their own infrastructure inside the tunnel by default.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">

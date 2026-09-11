@@ -111,7 +111,7 @@ The relevant question isn’t “is this actually free right now?”, you can ve
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The free plan includes: 10 Mbps speed (no data cap), one simultaneous device, access to every country in OllaVPN's network, [WireGuard](/free-wireguard-vpn) protocol, post-quantum encryption (hybrid handshake), always-on [kill switch](/blog/what-is-a-vpn-kill-switch.html), in-tunnel DNS, IPv6 support, and no logging of activity. No credit card required. No email address required. No ads.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The free plan includes: 10 Mbps speed (no data cap), one simultaneous device, access to every country in OllaVPN's network, <a href="/free-wireguard-vpn" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard</a> protocol, post-quantum encryption (hybrid handshake), always-on <a href="/blog/what-is-a-vpn-kill-switch.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">kill switch</a>, in-tunnel DNS, IPv6 support, and no logging of activity. No credit card required. No email address required. No ads.</p>
 </div>
 
 

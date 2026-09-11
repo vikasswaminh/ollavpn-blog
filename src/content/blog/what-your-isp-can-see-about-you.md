@@ -139,11 +139,11 @@ DNS is often called the internet’s phone book: to call someone, you first look
 
 Two newer protocols address this directly:
 
-[DNS over HTTPS](/blog/what-is-dns-over-https/) (DoH) wraps DNS queries inside an encrypted HTTPS connection, so they look like ordinary web traffic and can’t be read by anyone in between, including your ISP.
+<a href="/blog/what-is-dns-over-https/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">DNS over HTTPS</a> (DoH) wraps DNS queries inside an encrypted HTTPS connection, so they look like ordinary web traffic and can’t be read by anyone in between, including your ISP.
 
 DNS over TLS (DoT) achieves the same encryption using a dedicated encrypted channel rather than disguising the traffic as HTTPS.
 
-Both are now supported natively in most modern browsers and operating systems, but neither is enabled by default in every configuration. And a plain VPN connection doesn’t automatically fix DNS either. A VPN that lets DNS queries leak outside its [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html) (a “DNS leak”) defeats much of the purpose. That’s why “does the VPN handle DNS inside the tunnel” is one of the first questions worth asking about any VPN product, not an afterthought.
+Both are now supported natively in most modern browsers and operating systems, but neither is enabled by default in every configuration. And a plain VPN connection doesn’t automatically fix DNS either. A VPN that lets DNS queries leak outside its <a href="/blog/what-is-a-vpn-tunnel.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">encrypted tunnel</a> (a “DNS leak”) defeats much of the purpose. That’s why “does the VPN handle DNS inside the tunnel” is one of the first questions worth asking about any VPN product, not an afterthought.
 
 ## What your ISP cannot see with a VPN
 
@@ -221,11 +221,11 @@ Myth 3 “My ISP only looks at my data if I’m suspected of something illegal.�
 
 Myth 4 “A VPN makes me completely invisible online.” The reality: A VPN shifts the trust equation rather than erasing your footprint. While it hides your endpoints from your ISP, your VPN provider sees exactly what your ISP used to. Logging policies and leak protection are what define your actual security.
 
-Myth 5 “Changing my DNS provider alone is enough to stop [ISP tracking](/blog/what-your-isp-can-see-about-you.html).” The reality: Pointing at a third-party resolver only shifts who answers the query. If those requests are sent over plain text (port 53), your ISP can inspect them in transit. The channel itself must be encrypted to keep it private.
+Myth 5 “Changing my DNS provider alone is enough to stop <a href="/blog/what-your-isp-can-see-about-you.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">ISP tracking</a>.” The reality: Pointing at a third-party resolver only shifts who answers the query. If those requests are sent over plain text (port 53), your ISP can inspect them in transit. The channel itself must be encrypted to keep it private.
 
 ## How to actually hide your activity from your ISP
 
-The combination that closes almost all of the gaps described above is: a VPN that routes all traffic, including DNS, through an encrypted tunnel, encrypted DNS as a backup layer, a browser or client that supports [Encrypted Client Hello](/blog/what-is-encrypted-client-hello.html) (ECH) to close the SNI leak, and basic hygiene like avoiding unencrypted HTTP sites and reviewing what your router and smart devices are permitted to do.
+The combination that closes almost all of the gaps described above is: a VPN that routes all traffic, including DNS, through an encrypted tunnel, encrypted DNS as a backup layer, a browser or client that supports <a href="/blog/what-is-encrypted-client-hello.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">Encrypted Client Hello</a> (ECH) to close the SNI leak, and basic hygiene like avoiding unencrypted HTTP sites and reviewing what your router and smart devices are permitted to do.
 
 Here’s the practical, ordered list.
 
@@ -233,7 +233,7 @@ The layers that actually work
 
 Use a VPN that encrypts DNS inside its encrypted tunnel. This is your first line of defense: it wraps your destination domains, DNS requests, and content in a single encrypted connection, blocking your provider's view.
 
-Confirm there’s no [DNS leak](/blog/what-is-a-dns-leak/). Your VPN might show "connected" while silently leaking queries. Use a leak test tool; if your provider's name shows up, your configurations need adjusting.
+Confirm there’s no <a href="/blog/what-is-a-dns-leak/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">DNS leak</a>. Your VPN might show "connected" while silently leaking queries. Use a leak test tool; if your provider's name shows up, your configurations need adjusting.
 
 Enable Encrypted Client Hello (ECH) where supported. This extension encrypts the SNI handshake header, stopping domain leaks on normal connections. Though adoption is ongoing, enable it in your browser flags.
 
@@ -265,7 +265,7 @@ The five questions that actually matter
 
 Does your VPN route DNS inside its encrypted tunnel, with no leaks? This is the difference between genuinely hiding your browsing from your ISP and just hiding half of it.
 
-Is the VPN’s [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) claim backed by anything, an audit, a warrant canary, a track record? A VPN that can see everything your ISP used to see needs to be at least as trustworthy as the ISP it’s replacing.
+Is the VPN’s <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs</a> claim backed by anything, an audit, a warrant canary, a track record? A VPN that can see everything your ISP used to see needs to be at least as trustworthy as the ISP it’s replacing.
 
 Does your browser or OS support Encrypted Client Hello, and is it enabled? This closes the SNI leak on any connection, VPN or not.
 
@@ -283,11 +283,11 @@ OllaVPN’s approach to this specific problem:
 
 DNS is handled entirely inside the encrypted tunnel by default, on every plan including the free tier, see our DNS leak guide for how to verify this yourself in under two minutes.
 
-A [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) policy means that even the visibility we could technically have as your VPN provider isn’t retained anywhere for anyone to request later.
+A <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs</a> policy means that even the visibility we could technically have as your VPN provider isn’t retained anywhere for anyone to request later.
 
-An always-on [kill switch](/blog/what-is-a-vpn-kill-switch/) means that if the encrypted tunnel drops unexpectedly, your traffic stops rather than silently falling back to your ISP’s unencrypted view.
+An always-on <a href="/blog/what-is-a-vpn-kill-switch/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">kill switch</a> means that if the encrypted tunnel drops unexpectedly, your traffic stops rather than silently falling back to your ISP’s unencrypted view.
 
-[Post-quantum cryptography](/blog/what-is-post-quantum-cryptography/) on every connection, including the lifetime free plan, protects against traffic captured today being decrypted years from now as quantum computing matures.
+<a href="/blog/what-is-post-quantum-cryptography/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">Post-quantum cryptography</a> on every connection, including the lifetime free plan, protects against traffic captured today being decrypted years from now as quantum computing matures.
 
 Free for life, the specific technical fixes in this guide shouldn’t be locked behind a subscription.
 

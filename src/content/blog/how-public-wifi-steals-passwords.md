@@ -51,9 +51,9 @@ tags: ['pillars']
 
 <div class="blog-main-content-box">
 
-## How Public Wi‑Fi Can Steal Your Passwords (2026 Guide) [#](#how-public-wi-fi-can-steal-your-passwords-2026-guide)
+## How Public Wi‑Fi Can Steal Your Passwords (2026 Guide) <a href="#how-public-wi-fi-can-steal-your-passwords-2026-guide" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">#</a>
 
-## How public Wi‑Fi attacks actually work [#](#how-public-wi-fi-attacks-actually-work)
+## How public Wi‑Fi attacks actually work <a href="#how-public-wi-fi-attacks-actually-work" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">#</a>
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>

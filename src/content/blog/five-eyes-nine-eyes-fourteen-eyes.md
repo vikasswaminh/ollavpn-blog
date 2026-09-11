@@ -227,7 +227,7 @@ For practical purposes as a VPN user, the named alliances are still the most use
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">It matters more than VPN marketing sometimes admits, and less than VPN marketing often implies. Jurisdiction determines what legal demands a VPN could face. But a well-implemented [no-logs policy](/blog/what-logs-does-vpn-keep/) means there's little to hand over regardless of jurisdiction. The strongest privacy posture is "no logs, audited, regardless of country."</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">It matters more than VPN marketing sometimes admits, and less than VPN marketing often implies. Jurisdiction determines what legal demands a VPN could face. But a well-implemented <a href="/blog/what-logs-does-vpn-keep/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs policy</a> means there's little to hand over regardless of jurisdiction. The strongest privacy posture is "no logs, audited, regardless of country."</p>
 </div>
 
 

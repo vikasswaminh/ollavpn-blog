@@ -130,7 +130,7 @@ How VPN routing affects gaming ping, a flat flow diagram showing a squiggly ISP 
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The five things that actually matter for gaming: [WireGuard protocol](/blog/wireguard-vs-openvpn/), unlimited bandwidth (no data cap), servers close to your game's regional servers, [peer isolation](/peer-isolation) so you're not on a shared IP with people who'll get you flagged, and a genuine [no-logs policy](/blog/what-logs-does-vpn-keep/). Everything else is secondary.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The five things that actually matter for gaming: <a href="/blog/wireguard-vs-openvpn/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard protocol</a>, unlimited bandwidth (no data cap), servers close to your game's regional servers, <a href="/peer-isolation" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">peer isolation</a> so you're not on a shared IP with people who'll get you flagged, and a genuine <a href="/blog/what-logs-does-vpn-keep/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs policy</a>. Everything else is secondary.</p>
 </div>
 
 
@@ -429,7 +429,7 @@ The Pro plan, starting at $2.99/month on a 24-month commitment, adds five simult
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      All domain lookups travel securely encapsulated inside the [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html) directly to zero-log DNS resolvers, guaranteeing your ISP and network operators observe only opaque UDP packets.
+      All domain lookups travel securely encapsulated inside the <a href="/blog/what-is-a-vpn-tunnel.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">encrypted tunnel</a> directly to zero-log DNS resolvers, guaranteeing your ISP and network operators observe only opaque UDP packets.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">

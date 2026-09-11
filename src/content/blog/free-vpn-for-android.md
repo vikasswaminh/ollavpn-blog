@@ -351,7 +351,7 @@ Test 6, Audit history. Search "[operator name] security audit" and look for a pu
       <span class="faq-accordion-icon" style="font-size: 1.15rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0; font-family: 'Lato', sans-serif;">
-      Not meaningfully. We use the [WireGuard protocol](/blog/wireguard-vs-openvpn/) by default specifically because it's efficient on battery and CPU compared to older, heavier [VPN protocols](/blog/what-is-a-vpn-protocol.html). That matters more on a phone you carry and check throughout the day than on a device that's usually plugged in.
+      Not meaningfully. We use the <a href="/blog/wireguard-vs-openvpn/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard protocol</a> by default specifically because it's efficient on battery and CPU compared to older, heavier <a href="/blog/what-is-a-vpn-protocol.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">VPN protocols</a>. That matters more on a phone you carry and check throughout the day than on a device that's usually plugged in.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">

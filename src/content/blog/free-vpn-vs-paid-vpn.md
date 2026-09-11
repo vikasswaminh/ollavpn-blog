@@ -71,13 +71,13 @@ Data caps | Yes, usually 500 MB to 10 GB/month | No (ProtonVPN, OllaVPN) | No
 
 Speed throttling | Common | Sometimes (server limits) | Rare
 
-Logging policy | Often vague or absent | Audited [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) | Audited no-logs
+Logging policy | Often vague or absent | Audited <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs</a> | Audited no-logs
 
 Monetization | Ads, data brokering, or both | Upgrade revenue / mission-funded | Subscription
 
 Server selection | Very limited (1–5 locations) | Limited but functional | Full network
 
-[Kill switch](/blog/what-is-a-vpn-kill-switch/) | Rarely included | Yes | Yes
+<a href="/blog/what-is-a-vpn-kill-switch/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">Kill switch</a> | Rarely included | Yes | Yes
 
 Streaming support | Almost never | Rarely on free tiers | Usually yes
 
@@ -95,13 +95,13 @@ Before you evaluate free vs paid, get clear on what you're actually using a VPN 
 
 Most people come to VPNs for one of four reasons. Understanding which one applies to you cuts through a lot of the noise.
 
-Reason 1: [Public Wi-Fi](/blog/how-public-wifi-steals-passwords.html) protection. You're in an airport, a hotel, or a coffee shop. You don't trust the network. You want a layer of encryption between your device and whoever might be snooping on the local connection. This is the most common reason people reach for a VPN. It's also a use case where a reputable free tier can genuinely serve you well, you're not doing this 24/7, data caps may not matter, and the main thing you need is solid encryption on the tunnel itself.
+Reason 1: <a href="/blog/how-public-wifi-steals-passwords.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">Public Wi-Fi</a> protection. You're in an airport, a hotel, or a coffee shop. You don't trust the network. You want a layer of encryption between your device and whoever might be snooping on the local connection. This is the most common reason people reach for a VPN. It's also a use case where a reputable free tier can genuinely serve you well, you're not doing this 24/7, data caps may not matter, and the main thing you need is solid encryption on the tunnel itself.
 
 Reason 2: Bypassing geographic content restrictions. You want to watch something that's only available in another country, or you're traveling and want to access your home streaming service. This is where free VPNs reliably fall short. Streaming platforms actively block VPN IP ranges, and the servers used by free tiers are usually the first to get identified and blacklisted. Paid tiers from providers that actively maintain streaming access are a much better fit.
 
 Reason 3: Privacy and anonymity from your ISP or network operator. You don't want your internet provider to see every site you visit. You're on a work or school network with restrictions you want to route around. You're in a country with heavy internet surveillance. This is where the logging policies and jurisdiction of the VPN provider become genuinely important. A free VPN whose logging policy you haven't read, or that doesn't have one, is potentially making your privacy situation worse, not better.
 
-Reason 4: High-stakes privacy work. Journalism, activist organizing, legal research in a sensitive case. If the consequences of your VPN failing or logging your activity are serious, you should not be relying on a free tier from any provider. You need a fully audited, [no-logs](/blog/which-free-vpn-does-not-keep-logs.html), paid service with a transparent ownership structure, and probably multi-hop routing on top of that.
+Reason 4: High-stakes privacy work. Journalism, activist organizing, legal research in a sensitive case. If the consequences of your VPN failing or logging your activity are serious, you should not be relying on a free tier from any provider. You need a fully audited, <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs</a>, paid service with a transparent ownership structure, and probably multi-hop routing on top of that.
 
 Knowing which category, you're in tells you most of what you need to know before you've compared a single spec.
 
@@ -125,25 +125,25 @@ Model 3: Data brokering. A significant chunk of the free VPN market funds itself
 
 Model 4: Adware and malware vectors. At the low end of the market, some free VPN apps are straightforward vectors for injecting ads into your traffic, redirecting searches, or outright malware delivery. Multiple academic studies over the past decade have found high rates of malicious behavior in free VPN apps available through official app stores. The 2017 CSIRO study of Android VPN apps found that 38% contained malware, 84% leaked user data or traffic. Things have improved since then, but the problem hasn't gone away.
 
-The two important tells: a published, independently audited [no-logs policy](/blog/which-free-vpn-does-not-keep-logs.html) and a clearly explained business model. If a free VPN can't point you to an independent audit of its privacy practices, treat the no-logs claim as unverified. If the company doesn't explain clearly how it funds its free tier, that's information too.
+The two important tells: a published, independently audited <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs policy</a> and a clearly explained business model. If a free VPN can't point you to an independent audit of its privacy practices, treat the no-logs claim as unverified. If the company doesn't explain clearly how it funds its free tier, that's information too.
 
 ## Security and encryption
 
-Modern encryption (AES-256, ChaCha20, WireGuard) is cheap to implement. The gap between free and paid VPNs isn't usually the cipher. It's the kill switch, [DNS leak](/blog/what-is-a-dns-leak/) protection, and the audit trail that verifies any of those claims are actually true.
+Modern encryption (AES-256, ChaCha20, WireGuard) is cheap to implement. The gap between free and paid VPNs isn't usually the cipher. It's the kill switch, <a href="/blog/what-is-a-dns-leak/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">DNS leak</a> protection, and the audit trail that verifies any of those claims are actually true.
 
 A lot of marketing energy goes into the phrase "military-grade encryption." Let's put that to rest: AES-256 encryption, the standard used by reputable VPNs across all tiers, is computationally impractical to brute-force with today's technology and, with post-quantum-safe additions, with tomorrow's as well. The encryption itself isn't the differentiator between free and paid.
 
 What actually differs:
 
-Kill switch. A kill switch cuts off your internet connection if the [VPN tunnel](/blog/what-is-a-vpn-tunnel.html) drops unexpectedly, so your real IP address is never briefly exposed. This is a critical feature that many free VPNs omit entirely, because implementing it properly across operating systems takes real engineering effort, and free-tier products often cut engineering corners. Paid VPNs from reputable providers almost universally include kill switches on every platform.
+Kill switch. A kill switch cuts off your internet connection if the <a href="/blog/what-is-a-vpn-tunnel.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">VPN tunnel</a> drops unexpectedly, so your real IP address is never briefly exposed. This is a critical feature that many free VPNs omit entirely, because implementing it properly across operating systems takes real engineering effort, and free-tier products often cut engineering corners. Paid VPNs from reputable providers almost universally include kill switches on every platform.
 
 DNS leak protection. When you use a VPN, your DNS queries, the requests that translate domain names like "google.com" into IP addresses, should travel through the encrypted tunnel, not around it. A DNS leak means those queries go to your ISP's DNS resolver instead, revealing every site you visit. Many free VPNs don't implement proper DNS leak protection. Reputable paid VPNs treat this as a baseline requirement.
 
-Independent security audits. This is the biggest gap in the market. Paid VPNs from privacy-focused providers, Mullvad, ProtonVPN, ExpressVPN, NordVPN, commission independent security audits from firms like Cure53, Securitum, and KPMG, and publish the results. Most free VPNs have never been independently audited. The difference matters because a company can claim [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) all day long; an independent auditor who has actually reviewed the codebase and server infrastructure is a verification that the claim holds up.
+Independent security audits. This is the biggest gap in the market. Paid VPNs from privacy-focused providers, Mullvad, ProtonVPN, ExpressVPN, NordVPN, commission independent security audits from firms like Cure53, Securitum, and KPMG, and publish the results. Most free VPNs have never been independently audited. The difference matters because a company can claim <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs</a> all day long; an independent auditor who has actually reviewed the codebase and server infrastructure is a verification that the claim holds up.
 
-Protocol selection. WireGuard is the current gold standard for [VPN protocols](/blog/what-is-a-vpn-protocol.html), modern, lean, auditable, and fast. Most serious paid VPN providers offer it as the default. Many free VPNs still use older protocols (PPTP in the worst case, which has known vulnerabilities) or run a proprietary protocol you can't verify independently.
+Protocol selection. WireGuard is the current gold standard for <a href="/blog/what-is-a-vpn-protocol.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">VPN protocols</a>, modern, lean, auditable, and fast. Most serious paid VPN providers offer it as the default. Many free VPNs still use older protocols (PPTP in the worst case, which has known vulnerabilities) or run a proprietary protocol you can't verify independently.
 
-[Post-quantum cryptography](/blog/what-is-post-quantum-cryptography/). This is where the frontier is in 2026. The threat isn't quantum computers that exist today, they don't yet have the scale to break modern VPN encryption. The threat is "harvest now, decrypt later": adversaries who are storing your encrypted traffic today, betting that quantum computers powerful enough to break it will exist within the next decade. [Post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html) tunnels are designed to be resistant to that future decryption. Mullvad pioneered this in production VPN tunnels. OllaVPN has built PQC readiness in from the start. No free VPN in the broader market offers this, with the exception of OllaVPN's free tier, which does.
+<a href="/blog/what-is-post-quantum-cryptography/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">Post-quantum cryptography</a>. This is where the frontier is in 2026. The threat isn't quantum computers that exist today, they don't yet have the scale to break modern VPN encryption. The threat is "harvest now, decrypt later": adversaries who are storing your encrypted traffic today, betting that quantum computers powerful enough to break it will exist within the next decade. <a href="/blog/what-is-a-post-quantum-vpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">Post-quantum VPN</a> tunnels are designed to be resistant to that future decryption. Mullvad pioneered this in production VPN tunnels. OllaVPN has built PQC readiness in from the start. No free VPN in the broader market offers this, with the exception of OllaVPN's free tier, which does.
 
 ## Speed and performance
 
@@ -169,11 +169,11 @@ One nuance worth naming: the best reputable free tiers, OllaVPN's free plan offe
 
 ## Privacy and logging policies
 
-A [no-logs policy](/blog/which-free-vpn-does-not-keep-logs.html) that hasn't been independently verified is a marketing claim, not a privacy guarantee. The most trustworthy signal is an independent audit from a named firm. For free VPNs, audited no-logs policies are rare. For reputable paid VPNs, they're increasingly standard.
+A <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs policy</a> that hasn't been independently verified is a marketing claim, not a privacy guarantee. The most trustworthy signal is an independent audit from a named firm. For free VPNs, audited no-logs policies are rare. For reputable paid VPNs, they're increasingly standard.
 
-The fundamental promise of any VPN's privacy story is: we don't keep records of what you did through our service. This is the [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) claim. And it's worth being rigorous about what it actually means, and how you verify it.
+The fundamental promise of any VPN's privacy story is: we don't keep records of what you did through our service. This is the <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs</a> claim. And it's worth being rigorous about what it actually means, and how you verify it.
 
-What "no logs" should mean. A true [no-logs policy](/blog/which-free-vpn-does-not-keep-logs.html) means the provider doesn't retain: your real IP address, the IP addresses you connected to (the sites you visited), timestamps of your sessions, the amount of data you transferred, or the DNS queries you made. Some providers log some of this "for service quality", those are not genuinely no-logs policies.
+What "no logs" should mean. A true <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs policy</a> means the provider doesn't retain: your real IP address, the IP addresses you connected to (the sites you visited), timestamps of your sessions, the amount of data you transferred, or the DNS queries you made. Some providers log some of this "for service quality", those are not genuinely no-logs policies.
 
 How you verify it. Three things matter:
 
@@ -181,7 +181,7 @@ Independent audit. A named firm, Cure53, Securitum, Radically Open Security, KPM
 
 Jurisdiction. The legal context in which a VPN operates affects what governments can compel it to disclose. Switzerland (ProtonVPN) and the British Virgin Islands (ExpressVPN) are examples of jurisdictions with strong privacy protections and no mandatory data-retention laws. Sweden (Mullvad) has faced legal pressure and won, specifically because there was no data to hand over.
 
-Warrant canary and legal history. Has the company ever been served a court order? What happened? Mullvad's public record of resisting Swedish police requests for data, and having nothing to hand over, is one of the strongest real-world tests of a [no-logs policy](/blog/which-free-vpn-does-not-keep-logs.html) in the VPN industry.
+Warrant canary and legal history. Has the company ever been served a court order? What happened? Mullvad's public record of resisting Swedish police requests for data, and having nothing to hand over, is one of the strongest real-world tests of a <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs policy</a> in the VPN industry.
 
 For most free VPNs, none of these three things are present. No audit. Jurisdiction unclear or unfriendly. No public legal history. That doesn't prove they're logging your data, but it means you have no way to verify that they're not.
 
@@ -193,7 +193,7 @@ Most free VPNs cap your monthly data, often severely. The exceptions (ProtonVPN 
 
 Data caps are the most immediately annoying feature of most free VPNs.
 
-Common limits in the free VPN market: 500 MB/month, 2 GB/month, 10 GB/month. For reference: a single hour of Netflix at standard quality uses roughly 1 GB. A video call at HD quality uses about 1.5 GB per hour. A data cap of 500 MB per month is enough to check your email on [public Wi-Fi](/blog/how-public-wifi-steals-passwords.html) a few times and not much else.
+Common limits in the free VPN market: 500 MB/month, 2 GB/month, 10 GB/month. For reference: a single hour of Netflix at standard quality uses roughly 1 GB. A video call at HD quality uses about 1.5 GB per hour. A data cap of 500 MB per month is enough to check your email on <a href="/blog/how-public-wifi-steals-passwords.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">public Wi-Fi</a> a few times and not much else.
 
 The no-cap exceptions, ProtonVPN Free and OllaVPN Free, are meaningful because they don't use artificial data limits to push you toward upgrading. You can use them as your daily driver for browsing and lower-bandwidth tasks without running into a wall.
 
@@ -211,7 +211,7 @@ Paid plans typically offer the full server network, often hundreds of servers ac
 
 ## Streaming and torrenting
 
-Free VPNs almost never work reliably for streaming. The IP ranges used by free tiers are usually the first to get blocked by platforms like Netflix and Disney+. For torrenting, the picture is mixed, some free VPNs allow it, many don't, and the privacy of doing it without a verified [no-logs policy](/blog/which-free-vpn-does-not-keep-logs.html) is questionable.
+Free VPNs almost never work reliably for streaming. The IP ranges used by free tiers are usually the first to get blocked by platforms like Netflix and Disney+. For torrenting, the picture is mixed, some free VPNs allow it, many don't, and the privacy of doing it without a verified <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs policy</a> is questionable.
 
 If streaming is why you're looking at a VPN, the honest answer is: skip the free tier. Not because the technology can't work, it can, but because the economics make it almost impossible for free tiers to keep up with streaming platforms' blocking behavior.
 
@@ -219,7 +219,7 @@ Streaming services have been playing a cat-and-mouse game with VPNs for years. T
 
 The result is predictable: most free VPN servers, especially the shared ones with many users, are already on Netflix's blocklist. You'll get the dreaded "proxy error" page, or you'll be routed to your home country's catalogue anyway, defeating the purpose.
 
-For torrenting, the picture is more nuanced. Some free VPNs allow P2P traffic; many don't. The bigger concern is privacy: torrenting exposes your IP to everyone in the swarm unless the VPN is actively protecting it. Without a verified [no-logs policy](/blog/which-free-vpn-does-not-keep-logs.html) and a functioning kill switch, the VPN may be providing less protection than you think. A paid VPN with an audited no-logs policy and a kill switch is the right tool for P2P use.
+For torrenting, the picture is more nuanced. Some free VPNs allow P2P traffic; many don't. The bigger concern is privacy: torrenting exposes your IP to everyone in the swarm unless the VPN is actively protecting it. Without a verified <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs policy</a> and a functioning kill switch, the VPN may be providing less protection than you think. A paid VPN with an audited no-logs policy and a kill switch is the right tool for P2P use.
 
 ## Device limits and platform support
 
@@ -281,7 +281,7 @@ Go paid when: you need streaming or torrenting to work reliably, you're doing an
 
 Streaming is part of the use case. If you need Netflix, Disney+, BBC iPlayer, or any regional catalog to work through your VPN, you need a paid plan from a provider that actively maintains streaming access.
 
-You're doing sensitive work. Journalism, legal research, activist organizing, anything where the consequences of exposure are serious. Use an audited, paid VPN with a verified [no-logs policy](/blog/which-free-vpn-does-not-keep-logs.html) and a clear jurisdiction.
+You're doing sensitive work. Journalism, legal research, activist organizing, anything where the consequences of exposure are serious. Use an audited, paid VPN with a verified <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs policy</a> and a clear jurisdiction.
 
 You need more than one device covered. If you're running a VPN on your phone, your laptop, and your work computer simultaneously, a paid plan is almost certainly more practical than managing multiple free accounts.
 
@@ -307,7 +307,7 @@ No ads, no data brokering, no traffic injection. The free tier is funded by paid
 
 Kill switch that can't be disabled. Privacy isn't an optional setting.
 
-Audited privacy practices. Same [no-logs policy](/blog/which-free-vpn-does-not-keep-logs.html) on free and paid tiers.
+Audited privacy practices. Same <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs policy</a> on free and paid tiers.
 
 Every country we serve. Free users aren't limited to a single server location.
 

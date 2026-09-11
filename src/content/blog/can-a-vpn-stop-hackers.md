@@ -57,7 +57,7 @@ OllaVPN is designed to handle the network-layer part the right way: post-quantum
 
 Shield your privacy with OllaVPN free, post-quantum encryption & zero logs.
 
-[DOWNLOAD →](/dl/)
+<a href="/dl/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">DOWNLOAD →</a>
 
 HOW-TO GUIDE · UPDATED July 16, 2026 · 14 MIN READ
 
@@ -186,7 +186,7 @@ Finally, there’s a myth that VPNs stop DDoS attacks entirely. Masking your rea
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Look for independent security audits, a specific named [no-logs policy](/blog/what-logs-does-vpn-keep/), transparency about the encryption protocols used, and, when available, open-source client software you can inspect for vulnerabilities.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Look for independent security audits, a specific named <a href="/blog/what-logs-does-vpn-keep/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs policy</a>, transparency about the encryption protocols used, and, when available, open-source client software you can inspect for vulnerabilities.</p>
 </div>
 
 

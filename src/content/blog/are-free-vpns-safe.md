@@ -53,7 +53,7 @@ tags: ['buyer-guides']
 
 The complete, no-spin breakdown of which free VPNs are genuinely safe, which ones are privacy traps in disguise, how to test any free VPN yourself, and the few that actually respect your data.
 
-[Are Free VPNs Safe](/blog/are-free-vpns-safe.html)? An Honest 2026 Guide
+<a href="/blog/are-free-vpns-safe.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">Are Free VPNs Safe</a>? An Honest 2026 Guide
 
 The complete, no-spin breakdown of which free VPNs are genuinely safe, which ones are privacy traps in disguise, how to tell the difference in under five minutes, and what the safety research actually says about the most popular free VPN apps in 2026.
 
@@ -69,7 +69,7 @@ The most significant academic study of free VPN apps, the Ikram et al. analysis 
 
 At the same time, not all free VPNs are dangerous. Services like OllaVPN offer genuinely free tiers funded by a small percentage of users who pay for premium features. These services have aligned incentives: they want the free tier to work well enough to demonstrate their product and attract upgrades. They do not need to sell your data because the business model does not require it.
 
-The practical question is not “[are free VPNs safe](/blog/are-free-vpns-safe.html)?” in the abstract, it's “how do I tell a safe free VPN from an unsafe one?” That's what the rest of this guide answers.
+The practical question is not “<a href="/blog/are-free-vpns-safe.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">are free VPNs safe</a>?” in the abstract, it's “how do I tell a safe free VPN from an unsafe one?” That's what the rest of this guide answers.
 
 ## What makes a free VPN dangerous?
 
@@ -83,7 +83,7 @@ Ad injection and tracking. Some free VPNs modify web traffic in transit to inser
 
 Bandwidth resale. Some free VPN apps use your device and internet connection as exit nodes in a commercial proxy network. Your IP appears in logs of whatever other customers are doing online, a security and potentially legal risk.
 
-Weak or missing encryption. Some free VPNs cut costs by using outdated protocols, skipping the [kill switch](/blog/what-is-a-vpn-kill-switch/), or not securing DNS queries through the tunnel. A VPN that looks connected but uses broken encryption provides the psychological comfort of privacy without any of the actual protection.
+Weak or missing encryption. Some free VPNs cut costs by using outdated protocols, skipping the <a href="/blog/what-is-a-vpn-kill-switch/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">kill switch</a>, or not securing DNS queries through the tunnel. A VPN that looks connected but uses broken encryption provides the psychological comfort of privacy without any of the actual protection.
 
 Malware bundling. In the worst cases, a “free VPN” is simply a vehicle for delivering malware. Common enough in early-generation apps to show up prominently in academic research.
 
@@ -101,9 +101,9 @@ Claims of “unlimited everything” with no paid tier.
 
 Real infrastructure has real costs. An unlimited-data, unlimited-speed VPN with no premium option is monetizing users in undisclosed ways.
 
-No independent audit of the [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) policy.
+No independent audit of the <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs</a> policy.
 
-Any VPN can claim [no-logs](/blog/which-free-vpn-does-not-keep-logs.html). The ones that mean it have commissioned independent security firms to verify it. An unaudited claim is unverifiable.
+Any VPN can claim <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs</a>. The ones that mean it have commissioned independent security firms to verify it. An unaudited claim is unverifiable.
 
 Permissions that don't make sense for a VPN.
 
@@ -147,7 +147,7 @@ Before installing any free VPN, figure out which model it operates on. If you ca
 
 Data logging is the most pervasive privacy risk inside free VPNs, and it is invisible from the user's side, making the privacy policy the only tool you have to evaluate it before something goes wrong.
 
-A credible [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) policy has three specific properties:
+A credible <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs</a> policy has three specific properties:
 
 What is not collected.
 
@@ -159,7 +159,7 @@ Legitimate VPN services collect some aggregate performance metrics. A credible p
 
 Independent verification.
 
-The [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) claim has been verified by an independent security firm that inspected the server infrastructure, not just reviewed the policy. A policy audit and a technical audit are different things.
+The <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs</a> claim has been verified by an independent security firm that inspected the server infrastructure, not just reviewed the policy. A policy audit and a technical audit are different things.
 
 The most common failure mode is a privacy policy that claims “we don't log your browsing activity” while logging connection timestamps, session durations, and bandwidth, data that in combination can reconstruct your online activity with reasonable accuracy. A secondary failure mode is the phrase “we may share your data with trusted partners”, which allows data to be sold to advertisers while technically not “logging” it.
 
@@ -181,9 +181,9 @@ Only 28% tunneled any traffic at all
 
 Specific documented incidents since 2016:
 
-SuperVPN (2020): A critical [man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) vulnerability was found after the app had been downloaded over 100 million times.
+SuperVPN (2020): A critical <a href="/blog/what-is-a-man-in-the-middle-attack.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">man-in-the-middle</a> vulnerability was found after the app had been downloaded over 100 million times.
 
-UFO VPN and six others (2020): Seven free VPNs left over 1.2 TB of user data exposed in an unsecured database, despite all claiming [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) policies. Data included real IP addresses, timestamps, and session activity.
+UFO VPN and six others (2020): Seven free VPNs left over 1.2 TB of user data exposed in an unsecured database, despite all claiming <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs</a> policies. Data included real IP addresses, timestamps, and session activity.
 
 Turbo VPN, VPN Proxy Master, and others: Multiple services with hundreds of millions of combined downloads have been linked to Chinese ownership, creating specific legal risks for user data
 
@@ -191,9 +191,9 @@ The takeaway: the free VPN category has a significantly elevated rate of malware
 
 ## DNS leaks and IP leaks in free VPNs
 
-[DNS leaks](/blog/what-is-a-dns-leak/) and IP leaks are the most common technical safety failures in free VPNs, and they can expose your real identity and browsing activity even when the VPN appears to be connected.
+<a href="/blog/what-is-a-dns-leak/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">DNS leaks</a> and IP leaks are the most common technical safety failures in free VPNs, and they can expose your real identity and browsing activity even when the VPN appears to be connected.
 
-A VPN routes all traffic, including DNS queries, through an [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html). When a VPN fails to route DNS queries through the tunnel, those queries leak through your regular connection. Your ISP can see every domain you visit even though you believe you're protected. This is a DNS leak.
+A VPN routes all traffic, including DNS queries, through an <a href="/blog/what-is-a-vpn-tunnel.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">encrypted tunnel</a>. When a VPN fails to route DNS queries through the tunnel, those queries leak through your regular connection. Your ISP can see every domain you visit even though you believe you're protected. This is a DNS leak.
 
 When a VPN fails to bind your real IP to the tunnel, your real IP can be exposed through WebRTC, IPv6, or fallback routes. This is an IP leak.
 
@@ -211,13 +211,13 @@ You can test for leaks yourself using OllaVPN's free tools at ollavpn.com/dns-lo
 
 ## Are free VPNs safe on public WiFi?
 
-A free VPN with proper encryption and a working kill switch significantly improves your safety on [public WiFi](/blog/how-public-wifi-steals-passwords.html), but one with DNS leaks or poor encryption may provide false confidence without real protection.
+A free VPN with proper encryption and a working kill switch significantly improves your safety on <a href="/blog/how-public-wifi-steals-passwords.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">public WiFi</a>, but one with DNS leaks or poor encryption may provide false confidence without real protection.
 
 On an unsecured public network, anyone with the right tools can intercept unencrypted traffic. A properly implemented VPN creates an encrypted tunnel from your device to the VPN server, making traffic unreadable to anyone on the same network.
 
 The key phrase is “properly implemented.” A free VPN that leaks DNS queries hides traffic content while leaking the domain names you visit. One without a kill switch leaves you exposed every time the connection drops.
 
-Minimum requirements for a free VPN to actually improve [public WiFi](/blog/how-public-wifi-steals-passwords.html) safety:
+Minimum requirements for a free VPN to actually improve <a href="/blog/how-public-wifi-steals-passwords.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">public WiFi</a> safety:
 
 Modern encryption (WireGuard or OpenVPN with AES-256)
 
@@ -227,19 +227,19 @@ Kill switch enabled by default
 
 No history of ad injection into the tunnel
 
-If a free VPN meets all four criteria, it meaningfully improves your safety on [public WiFi](/blog/how-public-wifi-steals-passwords.html). If it fails any of them, it provides partial or false protection, potentially worse than knowing you're unprotected, because you might take risks you wouldn't otherwise take.
+If a free VPN meets all four criteria, it meaningfully improves your safety on <a href="/blog/how-public-wifi-steals-passwords.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">public WiFi</a>. If it fails any of them, it provides partial or false protection, potentially worse than knowing you're unprotected, because you might take risks you wouldn't otherwise take.
 
-One underappreciated [public WiFi](/blog/how-public-wifi-steals-passwords.html) risk is the “evil twin” attack, a fake access point with the same name as a legitimate one (think “Airport\_Free\_WiFi”) set up by an attacker to capture traffic from devices that auto-connect. A VPN with an always-on kill switch mitigates this significantly, because even if your device connects to a hostile network, the VPN tunnel prevents the attacker from reading your traffic. A free VPN with no kill switch and DNS leaks provides essentially no protection in this scenario.
+One underappreciated <a href="/blog/how-public-wifi-steals-passwords.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">public WiFi</a> risk is the “evil twin” attack, a fake access point with the same name as a legitimate one (think “Airport\_Free\_WiFi”) set up by an attacker to capture traffic from devices that auto-connect. A VPN with an always-on kill switch mitigates this significantly, because even if your device connects to a hostile network, the VPN tunnel prevents the attacker from reading your traffic. A free VPN with no kill switch and DNS leaks provides essentially no protection in this scenario.
 
 ## Jurisdiction and legal exposure: where your VPN is based
 
-The legal jurisdiction of a VPN operator determines what data it can be compelled to produce under law, and free VPNs based in high-risk jurisdictions create meaningful risks even if they technically have a [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) policy.
+The legal jurisdiction of a VPN operator determines what data it can be compelled to produce under law, and free VPNs based in high-risk jurisdictions create meaningful risks even if they technically have a <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs</a> policy.
 
-Even a well-implemented [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) policy operates under the laws of the country the VPN is incorporated in. Those laws determine what data the government can compel the VPN to produce.
+Even a well-implemented <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs</a> policy operates under the laws of the country the VPN is incorporated in. Those laws determine what data the government can compel the VPN to produce.
 
 High-risk jurisdictions include:
 
-[Five Eyes](/blog/five-eyes-nine-eyes-fourteen-eyes/), Nine Eyes, or Fourteen Eyes member countries, alliances that share surveillance data across members.
+<a href="/blog/five-eyes-nine-eyes-fourteen-eyes/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">Five Eyes</a>, Nine Eyes, or Fourteen Eyes member countries, alliances that share surveillance data across members.
 
 Countries with mandatory data retention laws, where VPNs may be legally required to log the very data, they claim not to keep.
 
@@ -251,7 +251,7 @@ Lower-risk jurisdictions: Iceland, Switzerland, Panama, British Virgin Islands, 
 
 ## The difference between a safe free VPN and an unsafe one
 
-A safe free VPN and an unsafe one are separated by four specific properties: a transparent funding model, an audited [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) policy, modern encryption with no documented leaks, and a legal jurisdiction with strong privacy protections.
+A safe free VPN and an unsafe one are separated by four specific properties: a transparent funding model, an audited <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs</a> policy, modern encryption with no documented leaks, and a legal jurisdiction with strong privacy protections.
 
 Transparent funding model:
 
@@ -261,7 +261,7 @@ Is there a paid tier that plausibly covers operating costs?
 
 Is the limitation on speed or data (acceptable) rather than on privacy (not acceptable)?
 
-Audited [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) policy:
+Audited <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs</a> policy:
 
 Has the claim been verified by an independent security firm?
 
@@ -301,7 +301,7 @@ Short version: safe free VPN + HD streaming = yes. Safe free VPN + 4K = probably
 
 Even users of genuinely safe free VPNs should avoid specific behaviors that create risks the VPN cannot address.
 
-Trusting an unaudited [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) claim with sensitive activity. Free tiers are for everyday privacy improvement, not operational security. Journalists, activists, or people facing genuine adversarial surveillance need an enterprise-grade or specially configured setup with independent verification.
+Trusting an unaudited <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs</a> claim with sensitive activity. Free tiers are for everyday privacy improvement, not operational security. Journalists, activists, or people facing genuine adversarial surveillance need an enterprise-grade or specially configured setup with independent verification.
 
 Assuming the VPN makes public behavior private. A VPN masks your IP, it does not anonymize your identity at the application layer. If you're logged into Google, Google knows who you are regardless of your IP.
 
@@ -349,7 +349,7 @@ OllaVPN Plus gives you 10 Gbps on five devices for $2 a month. That upgrade fund
 
 OllaVPN plans:
 
-Lifetime free · $0 · 10 Mbps Zero-logs. In-tunnel DNS. Kill switch always on. [PQC](/blog/what-is-post-quantum-cryptography.html)-ready. No account required. No data caps. Every country.
+Lifetime free · $0 · 10 Mbps Zero-logs. In-tunnel DNS. Kill switch always on. <a href="/blog/what-is-post-quantum-cryptography.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">PQC</a>-ready. No account required. No data caps. Every country.
 
 Paid plan · $2 / month · 10 Gbps Same privacy architecture. Faster. Five devices.
 
@@ -365,7 +365,7 @@ Try the free plan, no email, no card.
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Not true. The business model determines safety, not the price. A free VPN funded by a paid upgrade tier with an audited [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) policy and modern encryption is safe for everyday use.
+      Not true. The business model determines safety, not the price. A free VPN funded by a paid upgrade tier with an audited <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs</a> policy and modern encryption is safe for everyday use.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
@@ -388,7 +388,7 @@ Try the free plan, no email, no card.
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>4. “A [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) policy means the VPN keeps no data at all.”</span>
+      <span>4. “A <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs</a> policy means the VPN keeps no data at all.”</span>
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">

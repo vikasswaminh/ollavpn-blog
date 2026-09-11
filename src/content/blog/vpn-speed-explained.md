@@ -101,7 +101,7 @@ Inconsistency feels like the VPN works fine for a while and then randomly crater
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The most common causes, beyond unavoidable baseline overhead, are an outdated or inefficient protocol, a distant or overloaded server, [ISP throttling](/blog/vpn-for-avoiding-isp-throttling/) of VPN traffic specifically, weak device hardware struggling with encryption, a Wi-Fi bottleneck unrelated to the VPN at all, and, for free tiers, a deliberate speed cap. Most of these are fixable once you identify which one you're hitting.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The most common causes, beyond unavoidable baseline overhead, are an outdated or inefficient protocol, a distant or overloaded server, <a href="/blog/vpn-for-avoiding-isp-throttling/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">ISP throttling</a> of VPN traffic specifically, weak device hardware struggling with encryption, a Wi-Fi bottleneck unrelated to the VPN at all, and, for free tiers, a deliberate speed cap. Most of these are fixable once you identify which one you're hitting.</p>
 </div>
 
 Slow VPN speed rarely has one single cause, it's usually the layering of baseline overhead with one or two additional problems. Here are the ones we see most often.
@@ -372,7 +372,7 @@ If the concept above is something a VPN genuinely can't fix (a fundamentally cap
 <section id="download" class="download-section-box" style="background: linear-gradient(135deg, #ffffff 0%, #FFF8F8 100%); border: 1.5px solid rgba(218, 41, 28, 0.2); border-radius: 18px; padding: 32px 28px; margin-bottom: 24px; text-align: center; width: 100%; box-shadow: 0 6px 24px rgba(218, 41, 28, 0.06); box-sizing: border-box; font-family: 'Lato', sans-serif;">
   <h2 style="font-size: 1.875rem; font-weight: 800; color: #0F172A; margin: 0 0 10px 0; border: none !important; padding-bottom: 0 !important; font-family: 'Lato', sans-serif;">Experience Truly Free Privacy with OllaVPN</h2>
   <p style="font-size: 0.925rem; color: #475569; max-width: 650px; margin: 0 auto 18px auto; line-height: 1.65; font-family: 'Lato', sans-serif;">
-    Unlimited data, default-on [kill switch](/blog/what-is-a-vpn-kill-switch/) protection, zero activity logs, and post-quantum encryption across all your devices.
+    Unlimited data, default-on <a href="/blog/what-is-a-vpn-kill-switch/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">kill switch</a> protection, zero activity logs, and post-quantum encryption across all your devices.
   </p>
   <a href="https://ollavpn.com/apps.html" target="_blank" rel="noopener" class="btn-primary" style="display: inline-block; background: #DA291C !important; color: #FFFFFF !important; font-size: 0.96rem; font-weight: 800; padding: 14px 36px; border-radius: 10px; text-decoration: none !important; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.25); transition: all 0.2s ease; font-family: 'Lato', sans-serif;">
     Download OllaVPN Free &rarr;

@@ -324,7 +324,7 @@ It does not. Post-quantum cryptography runs on ordinary computers. Your phone ca
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Look for: an explicit PQC capability described on the VPN's site, a hybrid mode that combines classical and post-quantum algorithms, no requirement that you manually enable it, no additional charge for it, and continued availability of standard features like the [kill switch](/blog/what-is-a-vpn-kill-switch/).</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Look for: an explicit PQC capability described on the VPN's site, a hybrid mode that combines classical and post-quantum algorithms, no requirement that you manually enable it, no additional charge for it, and continued availability of standard features like the <a href="/blog/what-is-a-vpn-kill-switch/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">kill switch</a>.</p>
 </div>
 
 

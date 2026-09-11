@@ -80,7 +80,7 @@ The short answer is yes, and understanding why clears up most of the confusion i
 
 The browser's padlock tells you the connection between your device and this specific site is encrypted. It says nothing about your IP address, your DNS queries, your location, or what your ISP can infer about the rest of your session.
 
-A VPN's connected indicator tells you that all of your device's traffic, this site, every other site, every app running in the background, is routed through an [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html) to a server elsewhere, and that your real IP address is hidden from everything past that server.
+A VPN's connected indicator tells you that all of your device's traffic, this site, every other site, every app running in the background, is routed through an <a href="/blog/what-is-a-vpn-tunnel.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">encrypted tunnel</a> to a server elsewhere, and that your real IP address is hidden from everything past that server.
 
 They are not the same claim, they don’t verify the same thing, and one being green doesn’t tell you anything about the state of the other. We mention this because it’s the single most common misunderstanding we hear from readers who assume “the site says it’s secure” settles the privacy question. It settles part of it.
 
@@ -118,7 +118,7 @@ The two protections are genuinely additive, not overlapping, which is the core r
 
 ## Security and encryption depth
 
-Both HTTPS and modern [VPN protocols](/blog/what-is-a-vpn-protocol.html) use encryption broadly considered uncrackable with today’s classical computers. The meaningful security difference isn’t strength, it’s scope: HTTPS secures one connection per site; a VPN secures every connection your device makes, plus hides IP-level identity.
+Both HTTPS and modern <a href="/blog/what-is-a-vpn-protocol.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">VPN protocols</a> use encryption broadly considered uncrackable with today’s classical computers. The meaningful security difference isn’t strength, it’s scope: HTTPS secures one connection per site; a VPN secures every connection your device makes, plus hides IP-level identity.
 
 We’ll spare you the cipher-suite wall. The plain-English summary: modern HTTPS (TLS 1.3) and modern VPN protocols (WireGuard, and OpenVPN with current ciphers) both use encryption that, with today’s classical computers, is not practically breakable. Neither is “more secure” than the other in the sense of stronger math, they’re both using comparable state-of-the-art cryptography. The difference that actually matters is scope.
 
@@ -126,7 +126,7 @@ HTTPS secures a single connection between your browser and a single certificate-
 
 A VPN secures every connection your device makes, browser and otherwise, for as long as the VPN is active, and it adds identity protection, hiding your real IP address, that HTTPS structurally can’t provide, because HTTPS operates one layer above the IP routing that a VPN controls directly.
 
-Where a VPN’s trustworthiness becomes its own question is that a VPN provider is, by design, positioned to see what your ISP used to see, which is exactly why a VPN’sno-logs policy, [kill switch](/blog/what-is-a-vpn-kill-switch/), and in-tunnel DNS handling matter as much as its encryption strength. You’re not eliminating a point of trust by using a VPN; you’re choosing which company gets to be that point of trust.
+Where a VPN’s trustworthiness becomes its own question is that a VPN provider is, by design, positioned to see what your ISP used to see, which is exactly why a VPN’sno-logs policy, <a href="/blog/what-is-a-vpn-kill-switch/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">kill switch</a>, and in-tunnel DNS handling matter as much as its encryption strength. You’re not eliminating a point of trust by using a VPN; you’re choosing which company gets to be that point of trust.
 
 ## Privacy, jurisdiction, and who can see what
 
@@ -250,7 +250,7 @@ Realistically, most privacy-aware people in 2026 don’t choose between the two.
 
 The post-quantum question, why it matters now
 
-[Post-quantum cryptography](/blog/what-is-post-quantum-cryptography/) (PQC) is a new family of encryption algorithms designed to remain secure against future quantum computers. Both HTTPS (via TLS 1.3 extensions) and leading VPN providers are rolling out PQC protections, addressing the “harvest now, decrypt later” risk to traffic captured today.
+<a href="/blog/what-is-post-quantum-cryptography/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">Post-quantum cryptography</a> (PQC) is a new family of encryption algorithms designed to remain secure against future quantum computers. Both HTTPS (via TLS 1.3 extensions) and leading VPN providers are rolling out PQC protections, addressing the “harvest now, decrypt later” risk to traffic captured today.
 
 One topic increasingly relevant to both sides of this comparison: post-quantum cryptography, often shortened to PQC.
 

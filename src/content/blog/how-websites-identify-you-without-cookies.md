@@ -148,7 +148,7 @@ You can see your own browser fingerprint using free, well-established testing to
 Instead of taking any of this on faith, the most convincing approach is to measure it directly. The EFF’s Cover Your Tracks tool (successor to the long-running Panopticlick project) shows which signals your browser exposes and explains, clearly, how unique your combination is. It also breaks down which specific tests (canvas, fonts, plugins, and more) contribute most to your uniqueness. It’s free, takes under a minute, and is often the most persuasive five minutes you can spend on this topic, because seeing your own score is different from reading about the concept in the abstract.
 Beyond that, it’s worth checking the basic signals that don’t require a dedicated fingerprinting test:
 Your own what-is-my-IP tool shows what your IP address reveals about your location and provider.
-Our DNS lookup tool and [WebRTC leak](/blog/what-is-a-webrtc-leak/) test help you see whether your browsing habits or real IP address are leaking through channels a quick glance at your address bar won’t reveal.
+Our DNS lookup tool and <a href="/blog/what-is-a-webrtc-leak/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WebRTC leak</a> test help you see whether your browsing habits or real IP address are leaking through channels a quick glance at your address bar won’t reveal.
 Individually, these don’t test canvas or audio fingerprinting. But together with a dedicated fingerprinting test, they give a more complete picture of what different parts of the internet can currently see about you.
 
 ## What actually reduces your fingerprint, and what’s mostly theater?
@@ -171,8 +171,8 @@ When you connect to a VPN, your traffic appears to originate from the VPN server
 It also stops your internet provider from building its own location and browsing-pattern profile of you, which matters for a separate but related set of reasons covered in our guide on what logs a VPN actually keeps.
 What a VPN does not do is touch your screen resolution, installed fonts, canvas-rendering quirks, or any of the other fingerprint signals covered earlier. Your device is still the same device, running the same browser and answering the same technical questions the same way, just routed through a different server.
 That’s why fingerprinting and IP-based tracking should be treated as two separate problems requiring two separate defenses, not as one problem a single tool can fully solve.
-Where a VPN becomes genuinely important is in closing off other leaks that can quietly undo the privacy you think you have, even while you’re focused on fingerprinting. A VPN that doesn’t properly route DNS lookups through its encrypted tunnel can leak the list of every site you visit to your internet provider, separately from fingerprinting or cookies. That’s covered in detail in our [DNS leak](/blog/what-is-a-dns-leak/) guide.
-And a VPN without a reliable [kill switch](/blog/what-is-a-vpn-kill-switch/) can briefly expose your real IP address when a connection drops, undoing the protection you expected, right when you least expect it.
+Where a VPN becomes genuinely important is in closing off other leaks that can quietly undo the privacy you think you have, even while you’re focused on fingerprinting. A VPN that doesn’t properly route DNS lookups through its encrypted tunnel can leak the list of every site you visit to your internet provider, separately from fingerprinting or cookies. That’s covered in detail in our <a href="/blog/what-is-a-dns-leak/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">DNS leak</a> guide.
+And a VPN without a reliable <a href="/blog/what-is-a-vpn-kill-switch/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">kill switch</a> can briefly expose your real IP address when a connection drops, undoing the protection you expected, right when you least expect it.
 
 ## What does OllaVPN specifically do to help here?
 
@@ -324,14 +324,14 @@ Combine layers rather than expecting one tool to solve everything. A fingerprint
     Choosing the right solution for <strong>How Websites Identify You Even Without Cookies</strong> requires balancing speed, genuine security, and uncompromised privacy.
   </p>
   <p style="font-size: 0.925rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
-    With OllaVPN, you benefit from lightweight WireGuard tunneling, zero bandwidth caps, default-on kill switch defense, and built-in [post-quantum cryptography](/blog/what-is-post-quantum-cryptography/) to ensure your connection remains lightning-fast and private on every network.
+    With OllaVPN, you benefit from lightweight WireGuard tunneling, zero bandwidth caps, default-on kill switch defense, and built-in <a href="/blog/what-is-post-quantum-cryptography/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">post-quantum cryptography</a> to ensure your connection remains lightning-fast and private on every network.
   </p>
 </section>
 
 <section id="download" class="download-section-box" style="background: linear-gradient(135deg, #ffffff 0%, #FFF8F8 100%); border: 1.5px solid rgba(218, 41, 28, 0.2); border-radius: 18px; padding: 32px 28px; margin-bottom: 24px; text-align: center; width: 100%; box-shadow: 0 6px 24px rgba(218, 41, 28, 0.06); box-sizing: border-box;">
   <h2 style="font-size: 1.875rem; font-weight: 800; color: #0F172A; margin: 0 0 10px 0; border: none !important; padding-bottom: 0 !important;">Protect Your Connection with OllaVPN</h2>
   <p style="font-size: 0.925rem; color: #475569; max-width: 650px; margin: 0 auto 18px auto; line-height: 1.65;">
-    Enjoy unlimited data, next-generation [WireGuard encryption](/blog/wireguard-vs-openvpn.html), and audited zero activity logs on Android, iOS, Windows, and macOS.
+    Enjoy unlimited data, next-generation <a href="/blog/wireguard-vs-openvpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard encryption</a>, and audited zero activity logs on Android, iOS, Windows, and macOS.
   </p>
   <a href="https://ollavpn.com/apps.html" target="_blank" rel="noopener" class="btn-primary" style="display: inline-block; background: #DA291C !important; color: #FFFFFF !important; font-size: 0.95rem; font-weight: 800; padding: 14px 36px; border-radius: 10px; text-decoration: none !important; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.25); transition: all 0.2s ease;">
     Download OllaVPN Free &rarr;

@@ -460,7 +460,7 @@ Smart DNS can work for geo-unblocking Netflix, it redirects the DNS queries that
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Look for: confirmed Netflix access backed by recent independent testing (not just the service's own claims), a paid tier that makes the business model legitimate, a [no-logs policy](/blog/what-logs-does-vpn-keep/) with audit backing, enough data to actually stream (10 GB/month at minimum; unlimited is obviously better), sufficient speed for HD streaming (5+ Mbps sustained), and active IP maintenance so the service still works next week.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Look for: confirmed Netflix access backed by recent independent testing (not just the service's own claims), a paid tier that makes the business model legitimate, a <a href="/blog/what-logs-does-vpn-keep/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs policy</a> with audit backing, enough data to actually stream (10 GB/month at minimum; unlimited is obviously better), sufficient speed for HD streaming (5+ Mbps sustained), and active IP maintenance so the service still works next week.</p>
 </div>
 
 

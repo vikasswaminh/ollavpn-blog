@@ -59,7 +59,7 @@ The honest trade-off is speed: 10 Mbps on free versus 10 Gbps on the $2/month Pl
 
 Shield your privacy with OllaVPN free, post-quantum encryption & zero logs.
 
-[DOWNLOAD →](/dl/)
+<a href="/dl/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">DOWNLOAD →</a>
 
 BUYER GUIDE · UPDATED July 12, 2026 · 15 MIN READ
 
@@ -121,7 +121,7 @@ Every claim we make about OllaVPN in this guide is measured against this list. I
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">OllaVPN Free gives your iPhone 10 Mbps speeds, access to every country in our network, the [WireGuard protocol](/blog/wireguard-vs-openvpn/), post-quantum-ready encryption, a kill switch on by default, in-tunnel DNS, and four-layer peer isolation, with no credit card, no email, and no ads required to use it.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">OllaVPN Free gives your iPhone 10 Mbps speeds, access to every country in our network, the <a href="/blog/wireguard-vs-openvpn/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard protocol</a>, post-quantum-ready encryption, a kill switch on by default, in-tunnel DNS, and four-layer peer isolation, with no credit card, no email, and no ads required to use it.</p>
 </div>
 
 

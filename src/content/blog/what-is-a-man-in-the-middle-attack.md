@@ -53,7 +53,7 @@ tags: ['pillars']
 
 The plain-English guide to one of the oldest tricks in networking, still working in 2026. How someone intercepts communications and how to defend yourself.
 
-What Is a [Man-in-the-Middle](/blog/what-is-a-man-in-the-middle-attack.html) (MITM) Attack?
+What Is a <a href="/blog/what-is-a-man-in-the-middle-attack.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">Man-in-the-Middle</a> (MITM) Attack?
 
 The plain-English guide to one of the oldest tricks in networking, still working in 2026. How someone can quietly insert themselves into a conversation you think is private, the specific techniques that make it possible, and the handful of habits that shut the door on almost all of them.
 
@@ -61,7 +61,7 @@ The plain-English guide to one of the oldest tricks in networking, still working
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">[Man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attacks exploit a basic structural fact about networking: your device usually can't directly verify who it's actually talking to at the network level, it can only verify identity at the application level (via certificates). Wherever that verification is missing, skipped, or spoofable, an unsecured Wi-Fi network, an unencrypted DNS lookup, an attacker positioned nearby can quietly take the place of the thing you meant to talk to.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;"><a href="/blog/what-is-a-man-in-the-middle-attack.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">Man-in-the-middle</a> attacks exploit a basic structural fact about networking: your device usually can't directly verify who it's actually talking to at the network level, it can only verify identity at the application level (via certificates). Wherever that verification is missing, skipped, or spoofable, an unsecured Wi-Fi network, an unencrypted DNS lookup, an attacker positioned nearby can quietly take the place of the thing you meant to talk to.</p>
 </div>
 
 
@@ -102,7 +102,7 @@ Later sections in this guide walk through each of these individually, because th
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Regardless of technique, every [MITM](/blog/what-is-a-man-in-the-middle-attack.html) attack requires three ingredients: positioning (getting traffic to route through the attacker), impersonation (convincing each side the attacker is the legitimate other party), and either passive interception or active tampering once traffic is flowing through them.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Regardless of technique, every <a href="/blog/what-is-a-man-in-the-middle-attack.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">MITM</a> attack requires three ingredients: positioning (getting traffic to route through the attacker), impersonation (convincing each side the attacker is the legitimate other party), and either passive interception or active tampering once traffic is flowing through them.</p>
 </div>
 
 
@@ -244,7 +244,7 @@ If there's a single takeaway from this timeline, it's that [MITM](/blog/what-is-
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">HTTPS (TLS) was specifically designed to defeat [man-in-the-middle](/blog/what-is-a-man-in-the-middle-attack.html) attacks by combining encryption (so intercepted traffic can't be read) with certificate-based identity verification (so an attacker can't convincingly impersonate the legitimate site without a fraudulent, detectable certificate). Where it's correctly implemented and not bypassed, it closes the large majority of MITM techniques covered in this guide.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">HTTPS (TLS) was specifically designed to defeat <a href="/blog/what-is-a-man-in-the-middle-attack.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">man-in-the-middle</a> attacks by combining encryption (so intercepted traffic can't be read) with certificate-based identity verification (so an attacker can't convincingly impersonate the legitimate site without a fraudulent, detectable certificate). Where it's correctly implemented and not bypassed, it closes the large majority of MITM techniques covered in this guide.</p>
 </div>
 
 
