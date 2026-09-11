@@ -5580,3 +5580,15 @@ article h2::before,
   opacity: 0.82;
   text-decoration-color: #BA1422 !important;
 }
+
+.ug-logo-img {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 8px !important;
+  display: block !important;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+.ug-logo-group:hover .ug-logo-img {
+  transform: scale(1.05) !important;
+  box-shadow: 0 6px 14px rgba(238, 44, 60, 0.38) !important;
+}
