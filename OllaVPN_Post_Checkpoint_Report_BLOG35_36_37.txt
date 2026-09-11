@@ -1,0 +1,166 @@
+================================================================================
+OLLAVPN TECHNICAL REPORT - POST-CHECKPOINT IMPLEMENTATION & DEPLOYMENT
+Publication of BLOG35, BLOG36, and BLOG37 (Catalog Expanded to 140 Guides)
+================================================================================
+
+Baseline Reference : CP-20260911-1038 (Recorded 2026-09-11 10:38:47)
+Report Timestamp   : 2026-09-11 10:47:00
+Target System      : OllaVPN Technical Blog (https://ollavpn.com/blog)
+Catalog Count      : 140 Active Published Articles (Expanded from 137)
+Deployment Status  : 100% Deployed Live & Production Verified (HTTP 200 OK)
+
+================================================================================
+TABLE OF CONTENTS
+================================================================================
+1. Checkpoint Delta Summary
+2. Newly Published Guides (BLOG35, BLOG36, BLOG37)
+3. Structural & Content Standards Applied
+4. Catalog Index & Routing Updates
+5. Git Version Control & CI/CD Deployment Verification
+
+================================================================================
+1. CHECKPOINT DELTA SUMMARY
+================================================================================
+Since baseline checkpoint CP-20260911-1038 was established, three new long-form 
+technical guides were ingested, converted, formatted, and published to production:
+- BLOG35: Free VPN for Telegram 2026 (Dated: 2026-08-14)
+- BLOG36: VPN Kill Switch Explained (Dated: 2026-08-17)
+- BLOG37: Best VPN for Streaming 2026 (Dated: 2026-08-18)
+
+Key Milestones Achieved in This Batch:
+- Total live catalog expanded from 137 to 140 published guides.
+- 40 section-level Quick Answer lightboxes deployed across the 3 articles.
+- 32 interactive zero-JS FAQ accordions added across the 3 guides.
+- Responsive comparison table formatted and deployed for streaming providers.
+- Step numbering sequence strictly normalized to continuous 1..N order.
+- Redundant bottom Key Takeaways eliminated, maintaining high-contrast top boxes.
+- 9 contextual internal links integrated into related topic clusters.
+- Dual-target SSG build (199 pages) and live CI/CD pipeline succeeded.
+
+================================================================================
+2. NEWLY PUBLISHED GUIDES (BLOG35, BLOG36, BLOG37)
+================================================================================
+
+--------------------------------------------------------------------------------
+GUIDE 1: BLOG35
+--------------------------------------------------------------------------------
+Title          : Free VPN for Telegram 2026: What a VPN Can (and Can't) Do
+Filename       : free-vpn-for-telegram.md
+Publication Date: 2026-08-14
+Category       : use-cases
+Reading Time   : 10 min read
+Word Count     : ~8,200 words
+H2 Sections    : 11 core sections (+ FAQs, Wrap-up, CTA)
+Quick Answers  : 11 Lightboxes (1 per section)
+FAQ Accordions : 10 items
+Live URL       : https://ollavpn.com/blog/free-vpn-for-telegram
+Core Focus     : Network-layer censorship vs app-layer encryption, Telegram traffic 
+                 fingerprinting, Secret Chats vs Cloud Chats, and unblocking geo-restrictions.
+
+--------------------------------------------------------------------------------
+GUIDE 2: BLOG36
+--------------------------------------------------------------------------------
+Title          : VPN Kill Switch Explained (2026): How to Stop Data Leaks
+Filename       : vpn-kill-switch-explained.md
+Publication Date: 2026-08-17
+Category       : protocol-tech
+Reading Time   : 12 min read
+Word Count     : ~8,500 words
+H2 Sections    : 14 core sections (+ FAQs, Wrap-up, CTA)
+Quick Answers  : 14 Lightboxes (1 per section)
+FAQ Accordions : 12 items
+Live URL       : https://ollavpn.com/blog/vpn-kill-switch-explained
+Core Focus     : OS firewall filtering rules (Windows Filtering Platform / macOS pf), 
+                 accidental tunnel drop scenarios, system-level vs app-level kill switches, 
+                 and preventing silent IP/DNS/WebRTC leaks.
+
+--------------------------------------------------------------------------------
+GUIDE 3: BLOG37
+--------------------------------------------------------------------------------
+Title          : Best VPN for Streaming 2026: Unblock Netflix, Prime Video, Disney+, and More
+Filename       : best-vpn-for-streaming.md
+Publication Date: 2026-08-18
+Category       : buyer-guides
+Reading Time   : 14 min read
+Word Count     : ~9,400 words
+H2 Sections    : 15 core sections (+ FAQs, Wrap-up, CTA)
+Quick Answers  : 15 Lightboxes (1 per section)
+FAQ Accordions : 10 items
+Live URL       : https://ollavpn.com/blog/best-vpn-for-streaming
+Core Focus     : In-depth benchmark of NordVPN, ExpressVPN, Surfshark, CyberGhost, 
+                 Proton VPN, and PIA. IP pool rotation, platform-specific blocking 
+                 techniques, buffering root causes, and sustained 4K bitrate requirements.
+
+================================================================================
+3. STRUCTURAL & CONTENT STANDARDS APPLIED
+================================================================================
+
+A. Section-Level Quick Answer Lightboxes
+   Every section in all three guides features a dedicated high-contrast answer box:
+   - Left border: 4px solid #DA291C
+   - Background : rgba(218, 41, 28, 0.04)
+   - Badge      : QUICK ANSWER in monospace uppercase
+   - Typography : 13.5px line-height 1.65 for clean scannability
+
+B. Table Formatting (BLOG37)
+   Converted the raw pipe comparison table into a fully styled HTML5 table:
+   - Header with #f8fafc background and #0F172A bold text.
+   - 1px solid #e2e8f0 border with responsive wrapper (`overflow-x: auto`).
+
+C. Step Numbering Normalization
+   All technical setup workflows (e.g., Telegram VPN setup, Streaming troubleshooting) 
+   were formatted into sequential `Step 1:`, `Step 2:`, ..., `Step N:` lists.
+
+D. Key Takeaways Refactoring
+   - Retained the high-contrast Key Takeaways box directly below the TL;DR.
+   - Purged the redundant duplicate Key Takeaways sections at the bottom of the raw text.
+
+E. Interactive FAQ Accordions
+   Collapsible native `<details>` and `<summary>` components with red "+" indicator 
+   and zero superfluous intro subtitles.
+
+================================================================================
+4. CATALOG INDEX & ROUTING UPDATES
+================================================================================
+
+A. Blog Catalog Cards
+   Added 3 new cards to the top of `src/pages/blog/index.astro` and `src/pages/index.astro`:
+   1. Best VPN for Streaming 2026 (Buyer guides | 2026.08.18)
+   2. VPN Kill Switch Explained (Protocol & tech | 2026.08.17)
+   3. Free VPN for Telegram 2026 (Use cases | 2026.08.14)
+
+B. Card Styling Consistency
+   - Top-left category tag with dedicated pastel background badge per category.
+   - Bottom-left date strictly formatted as "YYYY.MM.DD" with zero whitespace.
+   - Right-aligned "READ ->" action button.
+   - Counter updated across metadata and UI from 137 to 140 guides.
+
+================================================================================
+5. GIT VERSION CONTROL & CI/CD DEPLOYMENT VERIFICATION
+================================================================================
+
+A. Commits & Pushes
+   - ollavpn-blog:
+     Commit : 4ec89b9
+     Subject: Publish BLOG35 (Telegram), BLOG36 (Kill Switch), and BLOG37 (Streaming) 
+              with Quick Answer lightboxes and updated 140-guide index
+   - ollavpn-marketing:
+     Commit : 0126fd5
+     Subject: Deploy BLOG35 (Telegram), BLOG36 (Kill Switch), and BLOG37 (Streaming) 
+              to production with 140-guide catalog
+
+B. GitHub Actions Workflow
+   - Workflow Run: 34565267789
+   - Head SHA    : 0126fd5
+   - Status      : completed
+   - Conclusion  : SUCCESS
+
+C. Live Production HTTP Checks (Verified 200 OK)
+   - https://ollavpn.com/blog/free-vpn-for-telegram   -> HTTP 200 OK (11 Lightboxes)
+   - https://ollavpn.com/blog/vpn-kill-switch-explained -> HTTP 200 OK (14 Lightboxes)
+   - https://ollavpn.com/blog/best-vpn-for-streaming  -> HTTP 200 OK (15 Lightboxes)
+   - https://ollavpn.com/blog/                        -> HTTP 200 OK (140 Catalog Cards)
+
+================================================================================
+END OF POST-CHECKPOINT REPORT
+================================================================================
