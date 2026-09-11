@@ -1893,3 +1893,71 @@ button {
     grid-template-columns: 1fr !important;
   }
 }
+
+/* =====================================================
+   EXACT 40x40 BOX SHAPE LOGO (MATCHING SCREENSHOT)
+   ===================================================== */
+.ug-logo-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ug-logo-icon {
+  width: 40px !important;
+  height: 40px !important;
+  min-width: 40px !important;
+  min-height: 40px !important;
+  border-radius: 8px !important;
+  background: linear-gradient(135deg, #EE2C3C 0%, #BA1422 100%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 10px rgba(238, 44, 60, 0.28) !important;
+  flex-shrink: 0 !important;
+  box-sizing: border-box !important;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease !important;
+}
+
+.ug-logo-group:hover .ug-logo-icon {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(238, 44, 60, 0.35) !important;
+}
+
+.ug-logo-icon svg {
+  width: 24px !important;
+  height: 24px !important;
+  display: block !important;
+}
+
+.ug-logo-text-block {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.ug-brand-name {
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #191E27;
+  line-height: 1.1;
+}
+
+.ug-brand-name span {
+  color: #DA291C;
+}
+
+.ug-brand-badge {
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #8E95A2;
+  text-transform: uppercase;
+  margin-top: 1px;
+}
