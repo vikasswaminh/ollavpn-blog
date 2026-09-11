@@ -39,7 +39,7 @@
   --ug-shadow-cta: 0 8px 24px rgba(218, 41, 28, 0.25);
 
   /* Layout & Sizing */
-  --ug-max-width: 1280px;
+  --ug-max-width: 1360px;
   --ug-radius-sm: 6px;
   --ug-radius-md: 10px;
   --ug-radius-lg: 14px;
@@ -1753,4 +1753,126 @@ button {
 .ug-cat-btn span,
 .ug-cat-btn svg {
   pointer-events: none;
+}
+
+
+/* ==========================================================================
+   SCREEN SIZE & DEVICE OPTIMIZATIONS (FLUID MONITOR & MOBILE FIXES)
+   Prevents compact squishing on laptops and awkward stretching on 4K displays
+   ========================================================================== */
+.ug-container {
+  width: 100%;
+  max-width: var(--ug-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1rem, 2.5vw, 2rem) !important;
+  padding-right: clamp(1rem, 2.5vw, 2rem) !important;
+  box-sizing: border-box;
+}
+
+.ug-discover-layout {
+  display: grid !important;
+  grid-template-columns: 280px minmax(0, 1fr) !important;
+  gap: clamp(1.5rem, 2.5vw, 2.75rem) !important;
+  align-items: flex-start;
+  margin-top: 1.5rem;
+}
+
+.ug-category-sidebar {
+  position: sticky !important;
+  top: 86px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.55rem !important;
+}
+
+.ug-grid-3 {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 1.5rem !important;
+  margin-bottom: 2.5rem;
+}
+
+/* Laptops (1024px - 1280px): 2 roomy columns so cards never get cramped */
+@media (max-width: 1280px) and (min-width: 961px) {
+  .ug-discover-layout {
+    grid-template-columns: 250px minmax(0, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+  .ug-grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 1.25rem !important;
+  }
+}
+
+/* Tablets & Smaller Laptops (769px - 960px) */
+@media (max-width: 960px) {
+  .ug-discover-layout {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+  .ug-category-sidebar {
+    position: sticky !important;
+    top: 72px !important;
+    z-index: 40 !important;
+    background: #FFFFFF !important;
+    display: flex !important;
+    flex-direction: row !important;
+    overflow-x: auto !important;
+    gap: 0.5rem !important;
+    padding: 0.75rem 0 !important;
+    margin: 0 -1rem 1rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    border-bottom: 1px solid #EAEAEA !important;
+    scrollbar-width: none !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  .ug-category-sidebar::-webkit-scrollbar {
+    display: none;
+  }
+  .ug-cat-btn {
+    flex-shrink: 0 !important;
+    width: auto !important;
+    white-space: nowrap !important;
+    padding: 0.55rem 1rem !important;
+    border-radius: 9999px !important;
+    font-size: 0.88rem !important;
+  }
+  .ug-cat-arrow {
+    display: none !important;
+  }
+  .ug-grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 1rem !important;
+  }
+}
+
+/* Mobile Devices (< 768px): Single clean column stack */
+@media (max-width: 768px) {
+  .ug-header-inner {
+    height: 60px !important;
+  }
+  .ug-nav-menu, .ug-search-wrap {
+    display: none !important;
+  }
+  .ug-hero-h1 {
+    font-size: 1.65rem !important;
+  }
+  .ug-hero-card {
+    grid-template-columns: 1fr !important;
+  }
+  .ug-hero-media {
+    order: -1 !important;
+    aspect-ratio: 16 / 9 !important;
+  }
+  .ug-hero-content {
+    padding: 1.25rem !important;
+  }
+  .ug-grid-3 {
+    grid-template-columns: 1fr !important;
+  }
+  .ug-curriculum-grid, .ug-support-grid, .ug-footer-top {
+    grid-template-columns: 1fr !important;
+  }
 }
