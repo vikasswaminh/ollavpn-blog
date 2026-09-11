@@ -230,7 +230,7 @@ const curriculumTracks = [
           </p>
         </div>
         <div id="ug-active-count" style="font-size:0.88rem; font-weight:700; color:var(--ug-primary); background:var(--ug-primary-tint); padding:0.35rem 0.85rem; border-radius:9999px;">
-          Showing {allPosts.length} articles
+          Showing 1-9 of {allPosts.length} articles
         </div>
       </div>
 
@@ -441,10 +441,10 @@ const curriculumTracks = [
     </div>
   </section>
 
-  <!-- Client-Side Interactive Filtering, Search & Pagination Script -->
+    <!-- Client-Side Interactive Filtering, Search & Pagination Script -->
   <script is:inline>
     (function() {
-      const POSTS_PER_PAGE = 12; // 12 cards per page for optimal viewing
+      const POSTS_PER_PAGE = 9; // Exactly 9 cards (3 rows of 3)
       let activeCategory = 'All';
       let searchQuery = '';
       let currentPage = 1;
@@ -459,12 +459,11 @@ const curriculumTracks = [
       const nextBtn = document.getElementById('ug-next-page');
 
       function filterCards() {
-        let matching = cards.filter(card => {
+        const matching = cards.filter(card => {
           const category = card.getAttribute('data-category') || '';
-          const tags = (card.getAttribute('data-tags') || '').split(' ');
           const title = card.getAttribute('data-title') || '';
           
-          const matchesCat = activeCategory === 'All' || category === activeCategory || tags.includes(activeCategory);
+          const matchesCat = (activeCategory === 'All') || (category === activeCategory);
           const matchesSearch = !searchQuery || title.includes(searchQuery);
           
           return matchesCat && matchesSearch;
@@ -475,13 +474,19 @@ const curriculumTracks = [
         if (currentPage > totalPages) currentPage = 1;
 
         if (countDisplay) {
-          countDisplay.textContent = `Showing ${totalMatching} articles`;
+          if (totalMatching === 0) {
+            countDisplay.textContent = 'No articles found';
+          } else {
+            const startNum = (currentPage - 1) * POSTS_PER_PAGE + 1;
+            const endNum = Math.min(currentPage * POSTS_PER_PAGE, totalMatching);
+            countDisplay.textContent = `Showing ${startNum}-${endNum} of ${totalMatching} articles`;
+          }
         }
 
-        // Hide all cards first
+        // Hide all cards
         cards.forEach(card => card.style.display = 'none');
 
-        // Show cards for current page
+        // Show cards for current page (max 9 cards in 3x3 grid)
         const startIdx = (currentPage - 1) * POSTS_PER_PAGE;
         const endIdx = startIdx + POSTS_PER_PAGE;
         matching.slice(startIdx, endIdx).forEach(card => {
@@ -495,6 +500,11 @@ const curriculumTracks = [
         if (!pageNumbersContainer) return;
         pageNumbersContainer.innerHTML = '';
 
+        const paginationBar = document.getElementById('ug-pagination-bar');
+        if (paginationBar) {
+          paginationBar.style.display = totalPages <= 1 ? 'none' : 'flex';
+        }
+
         if (prevBtn) prevBtn.disabled = currentPage <= 1;
         if (nextBtn) nextBtn.disabled = currentPage >= totalPages;
 
@@ -507,8 +517,7 @@ const curriculumTracks = [
             btn.addEventListener('click', () => {
               currentPage = i;
               filterCards();
-              const section = document.getElementById('categories-section');
-              if (section) section.scrollIntoView({ behavior: 'smooth' });
+              scrollToGrid();
             });
             pageNumbersContainer.appendChild(btn);
           } else if (
@@ -524,16 +533,37 @@ const curriculumTracks = [
         }
       }
 
-      // Sidebar Category Button Click Handling
+      function scrollToGrid() {
+        const section = document.getElementById('categories-section');
+        if (section) {
+          const y = section.getBoundingClientRect().top + window.pageYOffset - 80;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+      }
+
+      // Bulletproof Category Click Handler
       catBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetBtn = this;
+          const cat = targetBtn.getAttribute('data-category') || 'All';
+          const label = targetBtn.getAttribute('data-label') || 'All Articles';
+
           catBtns.forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          activeCategory = btn.getAttribute('data-category') || 'All';
-          const label = btn.getAttribute('data-label') || 'All Articles';
-          if (breadcrumbActive) breadcrumbActive.textContent = label;
+          targetBtn.classList.add('active');
+
+          activeCategory = cat;
           currentPage = 1;
+          if (breadcrumbActive) breadcrumbActive.textContent = label;
+
           filterCards();
+
+          // Scroll active pill into view on mobile
+          if (window.innerWidth <= 960) {
+            targetBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+          }
+
+          scrollToGrid();
         });
       });
 
@@ -545,7 +575,6 @@ const curriculumTracks = [
           filterCards();
         });
 
-        // Shortcut /
         window.addEventListener('keydown', (e) => {
           if (e.key === '/' && document.activeElement !== searchInput) {
             e.preventDefault();
@@ -560,8 +589,7 @@ const curriculumTracks = [
           if (currentPage > 1) {
             currentPage--;
             filterCards();
-            const section = document.getElementById('categories-section');
-            if (section) section.scrollIntoView({ behavior: 'smooth' });
+            scrollToGrid();
           }
         });
       }
@@ -570,12 +598,11 @@ const curriculumTracks = [
         nextBtn.addEventListener('click', () => {
           currentPage++;
           filterCards();
-          const section = document.getElementById('categories-section');
-          if (section) section.scrollIntoView({ behavior: 'smooth' });
+          scrollToGrid();
         });
       }
 
-      // Initial filter run
+      // Initial filter run (shows first 9 cards)
       filterCards();
     })();
   </script>

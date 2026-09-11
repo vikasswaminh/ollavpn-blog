@@ -1762,9 +1762,14 @@ button {
     max-width: 180px;
   }
 }
-.ug-cat-btn span,
-.ug-cat-btn svg {
-  pointer-events: none;
+.ug-cat-btn * {
+  pointer-events: none !important;
+}
+.ug-cat-btn {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  user-select: none;
 }
 
 

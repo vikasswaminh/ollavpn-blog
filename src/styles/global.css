@@ -1569,14 +1569,14 @@ main.main-fullwidth {
 }
 
 
-/* Brand Logo Styling - Prominent & Highly Visible */
+/* Brand Logo Styling - Transparent Shield Checkmark Icon */
 .brand-logo-img {
-  height: 74px;
-  width: auto;
-  max-height: 78px;
+  width: 36px;
+  height: 36px;
   object-fit: contain;
   display: block;
-  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.06));
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 6px rgba(218, 41, 28, 0.2));
   transition: transform 0.2s ease;
 }
 
