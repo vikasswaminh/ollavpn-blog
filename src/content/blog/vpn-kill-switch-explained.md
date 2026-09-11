@@ -10,7 +10,7 @@ pillar: false
 ---
 
 <section id="tldr" class="article-tldr-box">
-<h3 style="font-size: 1.15rem; font-weight: 800; color: #323652; margin: 0 0 6px 0; font-family: var(--font), 'Lato', sans-serif;">TL;DR: The Short Answer</h3>
+<h3 style="font-size: 1.15rem; font-weight: 800; color: #323652; margin: 0 0 6px 0; font-family: var(--font), 'Lato', sans-serif;">TL;DR</h3>
 <p style="font-size: 1.05rem; line-height: 1.7; color: #09090b; margin: 0 0 8px 0; font-family: var(--font), 'Lato', sans-serif;">
 A VPN kill switch is a safety feature that instantly cuts your internet access the moment your VPN connection drops, so your real IP address and unencrypted data don't leak out to the open internet, even for a second.
 </p>

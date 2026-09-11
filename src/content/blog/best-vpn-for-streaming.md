@@ -10,7 +10,7 @@ pillar: false
 ---
 
 <section id="tldr" class="article-tldr-box">
-<h3 style="font-size: 1.15rem; font-weight: 800; color: #323652; margin: 0 0 6px 0; font-family: var(--font), 'Lato', sans-serif;">TL;DR: The Short Answer</h3>
+<h3 style="font-size: 1.15rem; font-weight: 800; color: #323652; margin: 0 0 6px 0; font-family: var(--font), 'Lato', sans-serif;">TL;DR</h3>
 <p style="font-size: 1.05rem; line-height: 1.7; color: #09090b; margin: 0 0 8px 0; font-family: var(--font), 'Lato', sans-serif;">
 If you want a VPN that reliably unblocks streaming platforms in 2026, the strongest all-around picks are NordVPN, [ExpressVPN](/blog/nordvpn-vs-expressvpn.html), [Surfshark](/blog/surfshark-vs-nordvpn.html), CyberGhost, Proton VPN, and Private Internet Access.
 </p>
