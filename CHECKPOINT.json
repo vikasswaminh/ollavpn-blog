@@ -1,0 +1,55 @@
+{
+  "checkpoint_id": "CP-20260911-1038",
+  "timestamp": "2026-09-11T10:38:47+05:30",
+  "description": "Baseline established for future technical work reports. All future reports will track changes exclusively starting after this point.",
+  "repositories": {
+    "ollavpn-blog": {
+      "path": "C:\\Users\\Dell\\ollavpn-blog",
+      "branch": "main",
+      "head_commit": "194423951adfdcce82c8ea7d6a867e6423c2ed5e",
+      "short_commit": "1944239",
+      "commit_subject": "Wrap section quick answers in stylized lightboxes across recent blogs and affected guides",
+      "commit_date": "2026-09-10 17:58:21 +0530"
+    },
+    "ollavpn-marketing": {
+      "path": "C:\\Users\\Dell\\ollavpn-marketing",
+      "branch": "main",
+      "head_commit": "934bf828721345b442c5d6e34c7a1335bea738b5",
+      "short_commit": "934bf82",
+      "commit_subject": "Deploy quick answer lightboxes for recent blogs and affected guides to production",
+      "commit_date": "2026-09-10 17:58:28 +0530"
+    }
+  },
+  "baseline_metrics": {
+    "total_active_blog_guides": 137,
+    "latest_guides_in_baseline": [
+      {
+        "id": "BLOG32",
+        "slug": "free-vpn-for-android",
+        "date": "2026-08-11",
+        "url": "https://ollavpn.com/blog/free-vpn-for-android"
+      },
+      {
+        "id": "BLOG33",
+        "slug": "vpn-speed-explained",
+        "date": "2026-08-12",
+        "url": "https://ollavpn.com/blog/vpn-speed-explained"
+      },
+      {
+        "id": "BLOG34",
+        "slug": "free-vpn-for-whatsapp",
+        "date": "2026-08-13",
+        "url": "https://ollavpn.com/blog/free-vpn-for-whatsapp"
+      }
+    ],
+    "completed_architectural_milestones": [
+      "Section-level Quick Answer lightboxes deployed site-wide",
+      "Redundant bottom Key Takeaways eliminated across all 137 guides",
+      "Step numbering normalized to continuous 1..N across setup guides",
+      "Card redesign with top-left category tags, bottom-left date (YYYY.MM.DD), right-aligned READ button",
+      "Complete color transition from legacy blue to OllaVPN red (#DA291C)",
+      "535+ contextual internal links deployed across all 137 articles",
+      "Astro SSG build & GitHub Actions CI/CD verified successful"
+    ]
+  }
+}
