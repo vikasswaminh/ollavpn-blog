@@ -25,7 +25,7 @@ tags: ['protocol-tech']
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">•</span>
       <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">A simple analogy  -  the padlock:</strong> Essential security requirement for verified digital privacy and network protection.
+        <strong style="color: #0F172A; font-weight: 800;">A simple analogy, the padlock:</strong> Essential security requirement for verified digital privacy and network protection.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
@@ -37,7 +37,7 @@ tags: ['protocol-tech']
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">•</span>
       <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">"Harvest now, decrypt later"  -  the threat that matters today:</strong> Essential security requirement for verified digital privacy and network protection.
+        <strong style="color: #0F172A; font-weight: 800;">"Harvest now, decrypt later", the threat that matters today:</strong> Essential security requirement for verified digital privacy and network protection.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
@@ -51,13 +51,13 @@ tags: ['protocol-tech']
 
 <div class="blog-main-content-box">
 
-The plain-English guide to one of the most important  -  and most misunderstood  -  shifts happening in internet security right now. What post-quantum cryptography actually is, why it matters this decade rather than next, and what to look for in a future-ready VPN.
+The plain-English guide to one of the most important, and most misunderstood, shifts happening in internet security right now. What post-quantum cryptography actually is, why it matters this decade rather than next, and what to look for in a future-ready VPN.
 
 ## Why this matters now (not in ten years)
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The internet is in the middle of a quiet but historic upgrade  -  the first major change to how online encryption works in over twenty years. The reason is the rise of quantum computing, which will eventually be able to break much of the encryption protecting the internet today. The work to replace it is happening now because it takes years to roll out a new standard safely.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The internet is in the middle of a quiet but historic upgrade, the first major change to how online encryption works in over twenty years. The reason is the rise of quantum computing, which will eventually be able to break much of the encryption protecting the internet today. The work to replace it is happening now because it takes years to roll out a new standard safely.</p>
 </div>
 
 
@@ -70,15 +70,15 @@ The thing that changes the picture is **quantum computing**. A quantum computer 
 
 That is why this matters now. The encryption that protects the internet was designed without quantum computers in mind. Replacing it is a generational engineering project, and it is well underway.
 
-## A simple analogy  -  the padlock
+## A simple analogy: the padlock
 
 Forget the math for a moment. Imagine you are sending a small box across a long, unsafe journey. Anyone on the route can pick the box up, but they cannot open it without the key.
 
 Today's internet uses a kind of digital padlock that requires solving a hard puzzle to open without the key. The puzzle is so hard that, with the best classical computers humanity has ever built, breaking the padlock would take longer than the age of the universe. So your box arrives safely.
 
-A **quantum computer** is a new kind of puzzle-solver that, in theory, could open this particular padlock in hours instead of trillions of years. Quantum computers powerful enough to actually do this don't exist yet  -  but researchers are building them.
+A **quantum computer** is a new kind of puzzle-solver that, in theory, could open this particular padlock in hours instead of trillions of years. Quantum computers powerful enough to actually do this don't exist yet, but researchers are building them.
 
-**Post-quantum cryptography** is a new family of padlocks, designed to resist this new kind of puzzle-solver. The puzzles are based on different math  -  math that researchers believe both classical and quantum computers will still find very hard to solve.
+**Post-quantum cryptography** is a new family of padlocks, designed to resist this new kind of puzzle-solver. The puzzles are based on different math, math that researchers believe both classical and quantum computers will still find very hard to solve.
 
 That is the whole story, in one paragraph. The rest is detail.
 
@@ -94,15 +94,15 @@ That is the whole story, in one paragraph. The rest is detail.
 Two terms get confused in casual reading. Let's keep them straight.
 
 *   **Quantum cryptography** uses the physics of quantum mechanics to send keys in a way that physically cannot be intercepted without detection. It requires specialized hardware. It is not what we're discussing here.
-*   **Post-quantum cryptography** is software. It runs on ordinary computers  -  phones, laptops, routers, servers. It uses new math instead of new physics. This is the practical, near-term answer to the quantum threat.
+*   **Post-quantum cryptography** is software. It runs on ordinary computers, phones, laptops, routers, servers. It uses new math instead of new physics. This is the practical, near-term answer to the quantum threat.
 
 Post-quantum cryptography is, in other words, the kind of fix the internet can actually deploy at scale. No new hardware. No specialized hardware. Just better math.
 
-## "Harvest now, decrypt later"  -  the threat that matters today
+## "Harvest now, decrypt later": the threat that matters today
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Harvest now, decrypt later (HNDL) is the practice of capturing encrypted internet traffic today and storing it for future decryption once quantum computers become powerful enough. It is treated as a real, ongoing threat by major governments and security companies  -  not a theoretical one. It is the central reason post-quantum cryptography matters this decade, not next.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Harvest now, decrypt later (HNDL) is the practice of capturing encrypted internet traffic today and storing it for future decryption once quantum computers become powerful enough. It is treated as a real, ongoing threat by major governments and security companies, not a theoretical one. It is the central reason post-quantum cryptography matters this decade, not next.</p>
 </div>
 
 
@@ -111,7 +111,7 @@ The most common misunderstanding about post-quantum cryptography is the idea tha
 
 Here is the pattern in one sentence: _capture the encrypted data today, store it, decrypt it when quantum computers are ready, even if that's ten or fifteen years from now._
 
-This isn't a theoretical concern. The U.S. government, the European Union, and major intelligence services in friendly and unfriendly nations alike are widely understood to be doing exactly this  -  vacuuming up encrypted traffic for archival. The Federal Reserve has published research on HNDL risk. The U.S. National Security Agency has explicitly warned about it. Major cybersecurity vendors treat it as a routine part of their threat modeling.
+This isn't a theoretical concern. The U.S. government, the European Union, and major intelligence services in friendly and unfriendly nations alike are widely understood to be doing exactly this, vacuuming up encrypted traffic for archival. The Federal Reserve has published research on HNDL risk. The U.S. National Security Agency has explicitly warned about it. Major cybersecurity vendors treat it as a routine part of their threat modeling.
 
 The data that matters most under this threat model isn't the trivial. It's **anything that will still be sensitive in ten or twenty years**: medical records, financial histories, government cables, journalist-source communications, business strategy, intellectual property, personal photos and messages, identity documents. The encrypted version sits in some archive somewhere right now. The decrypted version, eventually, will be readable.
 
@@ -121,7 +121,7 @@ This is why the rollout of post-quantum cryptography is happening today, ahead o
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Today's quantum computers have hundreds to a few thousand physical qubits. Breaking the most common public-key encryption would require millions of error-corrected qubits. Mainstream expert estimates put the arrival of cryptographically relevant quantum computers between the early 2030s and the mid-2040s  -  but the work to replace today's encryption needs to happen years ahead of that.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Today's quantum computers have hundreds to a few thousand physical qubits. Breaking the most common public-key encryption would require millions of error-corrected qubits. Mainstream expert estimates put the arrival of cryptographically relevant quantum computers between the early 2030s and the mid-2040s, but the work to replace today's encryption needs to happen years ahead of that.</p>
 </div>
 
 
@@ -130,7 +130,7 @@ Let's be honest about the timeline, because exaggerating it serves nobody.
 
 Quantum computers exist today, in real labs, doing real work. IBM has built quantum processors with more than a thousand physical qubits. Companies including Google, IonQ, Quantinuum, and Atom Computing all run real machines. They are remarkable engineering achievements.
 
-They are also, as of today, nowhere close to breaking RSA-2048 or the elliptic-curve cryptography that protects most of the internet. The reason is **error correction**. Quantum bits are extremely fragile, and one logical qubit  -  the kind you can actually do cryptographic work with  -  requires hundreds or thousands of physical qubits. Breaking modern encryption is estimated to need millions of error-corrected logical qubits, which means tens or hundreds of millions of physical qubits.
+They are also, as of today, nowhere close to breaking RSA-2048 or the elliptic-curve cryptography that protects most of the internet. The reason is **error correction**. Quantum bits are extremely fragile, and one logical qubit, the kind you can actually do cryptographic work with, requires hundreds or thousands of physical qubits. Breaking modern encryption is estimated to need millions of error-corrected logical qubits, which means tens or hundreds of millions of physical qubits.
 
 Mainstream expert estimates for when a **cryptographically relevant quantum computer (CRQC)** will exist:
 
@@ -140,7 +140,7 @@ Mainstream expert estimates for when a **cryptographically relevant quantum comp
 
 Reasonable people disagree about the exact year. But almost everyone in the field agrees on two things: **it will eventually happen**, and **the upgrade to post-quantum cryptography needs to happen well before it does**, because rolling out new cryptography across the entire internet takes years.
 
-## The new NIST standards  -  the 2024 milestone
+## The new NIST standards: the 2024 milestone
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
@@ -149,15 +149,15 @@ Reasonable people disagree about the exact year. But almost everyone in the fiel
 
 
 
-If post-quantum cryptography has felt fuzzy until now  -  a vague future thing  -  the reason it suddenly became concrete in 2024 is the finalization of formal standards. Standards are how the internet moves as a whole, not in pieces.
+If post-quantum cryptography has felt fuzzy until now, a vague future thing, the reason it suddenly became concrete in 2024 is the finalization of formal standards. Standards are how the internet moves as a whole, not in pieces.
 
-The body that did the work is the U.S. **National Institute of Standards and Technology (NIST)**, which has run public competitions to standardize cryptography since the 1970s. AES  -  the symmetric encryption that protects most of the data on the internet today  -  came out of a NIST competition. SHA-2 and SHA-3 came out of NIST processes. NIST's PQC competition was started in 2016 and ran for eight years.
+The body that did the work is the U.S. **National Institute of Standards and Technology (NIST)**, which has run public competitions to standardize cryptography since the 1970s. AES, the symmetric encryption that protects most of the data on the internet today, came out of a NIST competition. SHA-2 and SHA-3 came out of NIST processes. NIST's PQC competition was started in 2016 and ran for eight years.
 
 In August 2024, NIST finalized three post-quantum standards:
 
-*   **FIPS 203  -  ML-KEM** (Module-Lattice-based Key-Encapsulation Mechanism, formerly known as Kyber). This is the most important one for everyday traffic. It replaces the part of a secure connection that exchanges a shared secret key.
-*   **FIPS 204  -  ML-DSA** (Module-Lattice-based Digital Signature Algorithm, formerly Dilithium). This is for digital signatures  -  proving who signed something, like a software update or a TLS certificate.
-*   **FIPS 205  -  SLH-DSA** (Stateless Hash-based Digital Signature Algorithm, formerly SPHINCS+). Another signature scheme, based on different math, kept as a backup in case lattice-based approaches turn out to have weaknesses.
+*   **FIPS 203, ML-KEM** (Module-Lattice-based Key-Encapsulation Mechanism, formerly known as Kyber). This is the most important one for everyday traffic. It replaces the part of a secure connection that exchanges a shared secret key.
+*   **FIPS 204, ML-DSA** (Module-Lattice-based Digital Signature Algorithm, formerly Dilithium). This is for digital signatures, proving who signed something, like a software update or a TLS certificate.
+*   **FIPS 205, SLH-DSA** (Stateless Hash-based Digital Signature Algorithm, formerly SPHINCS+). Another signature scheme, based on different math, kept as a backup in case lattice-based approaches turn out to have weaknesses.
 
 A fourth algorithm, **FN-DSA** (formerly Falcon), is expected to be finalized soon. NIST is also running a fourth round to standardize **HQC** (a code-based algorithm) as an additional backup for key encapsulation.
 
@@ -197,9 +197,9 @@ Systems of multivariate polynomial equations
 
 None (broken during competition)
 
-Lattice-based schemes have emerged as the practical default  -  they're fast, the keys aren't huge, and decades of mathematical study back them. Hash-based schemes are slower with larger signatures, but they are based on the most well-understood mathematical primitive in cryptography, so they're kept as conservative backups.
+Lattice-based schemes have emerged as the practical default, they're fast, the keys aren't huge, and decades of mathematical study back them. Hash-based schemes are slower with larger signatures, but they are based on the most well-understood mathematical primitive in cryptography, so they're kept as conservative backups.
 
-## Hybrid mode  -  the belt-and-suspenders approach
+## Hybrid mode: the belt-and-suspenders approach
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
@@ -210,7 +210,7 @@ Lattice-based schemes have emerged as the practical default  -  they're fast, th
 
 One of the smartest moves the industry made early in the post-quantum rollout was the decision to use **hybrid modes**: combine a well-tested classical algorithm with a new post-quantum algorithm in the same handshake. The connection stays secure as long as _either_ one remains unbroken.
 
-The logic is simple. Post-quantum algorithms are new, and new algorithms occasionally turn out to have flaws that aren't visible until years of public scrutiny. We don't want to bet the entire internet on math that hasn't yet had decades of attempts to break it. So during the transition years  -  roughly 2023 through the early 2030s  -  most deployments combine the old and the new.
+The logic is simple. Post-quantum algorithms are new, and new algorithms occasionally turn out to have flaws that aren't visible until years of public scrutiny. We don't want to bet the entire internet on math that hasn't yet had decades of attempts to break it. So during the transition years, roughly 2023 through the early 2030s, most deployments combine the old and the new.
 
 You'll see hybrids written like `X25519Kyber768` (a classical X25519 key exchange combined with the post-quantum Kyber-768). Google Chrome uses exactly this hybrid in TLS. Cloudflare supports it. Signal's PQXDH does the same conceptual thing for messaging. Mullvad's quantum-resistant WireGuard tunnels combine Classic McEliece with the classical WireGuard handshake.
 
@@ -238,7 +238,7 @@ The NSA publishes **CNSA 2.0**, the next-generation cryptography suite for U.S. 
 
 2023
 
-**Mullvad** ships post-quantum-safe WireGuard tunnels using a Classic McEliece + Kyber hybrid  -  among the first commercial VPNs to do so.
+**Mullvad** ships post-quantum-safe WireGuard tunnels using a Classic McEliece + Kyber hybrid, among the first commercial VPNs to do so.
 
 Aug 2023
 
@@ -250,7 +250,7 @@ Sep 2023
 
 2023
 
-**Mullvad** makes quantum-resistant tunnels the **default on desktop**  -  every new connection by default now uses post-quantum protection.
+**Mullvad** makes quantum-resistant tunnels the **default on desktop**, every new connection by default now uses post-quantum protection.
 
 Feb 2024
 
@@ -258,31 +258,31 @@ Feb 2024
 
 Aug 2024
 
-**NIST finalizes FIPS 203, 204, and 205**  -  the first three post-quantum standards. The era of "experimental PQC" formally ends.
+**NIST finalizes FIPS 203, 204, and 205**, the first three post-quantum standards. The era of "experimental PQC" formally ends.
 
 2025 onward
 
-Broad industry rollout begins across browsers, messaging apps, cloud providers, and  -  increasingly  -  VPN services. **OllaVPN** ships PQC-ready from day one.
+Broad industry rollout begins across browsers, messaging apps, cloud providers, and, increasingly, VPN services. **OllaVPN** ships PQC-ready from day one.
 
-If you've been wondering "is this real yet?"  -  the answer is unambiguously yes. The internet's encryption layer has begun the largest single upgrade since SSL/TLS itself.
+If you've been wondering "is this real yet?", the answer is unambiguously yes. The internet's encryption layer has begun the largest single upgrade since SSL/TLS itself.
 
 ## What post-quantum cryptography means for a VPN specifically
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A VPN's job is to encrypt all your traffic before it leaves your device. If that encryption is vulnerable to "harvest now, decrypt later," your VPN-protected sessions today could be readable in fifteen years. A post-quantum-ready VPN closes that window  -  the same encryption that protects you today is built to remain protective into the quantum era.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A VPN's job is to encrypt all your traffic before it leaves your device. If that encryption is vulnerable to "harvest now, decrypt later," your VPN-protected sessions today could be readable in fifteen years. A post-quantum-ready VPN closes that window, the same encryption that protects you today is built to remain protective into the quantum era.</p>
 </div>
 
 
 
 Here is where post-quantum cryptography intersects directly with VPN choice.
 
-A VPN's whole purpose is to encrypt your network traffic  -  to put it inside a tunnel that no one along the route between you and the VPN server can read. That tunnel is built on the same family of cryptographic algorithms that protects everything else on the internet. If the algorithms are vulnerable to quantum attack, the tunnel is too. If they're future-proofed against quantum attack, the tunnel is too.
+A VPN's whole purpose is to encrypt your network traffic, to put it inside a tunnel that no one along the route between you and the VPN server can read. That tunnel is built on the same family of cryptographic algorithms that protects everything else on the internet. If the algorithms are vulnerable to quantum attack, the tunnel is too. If they're future-proofed against quantum attack, the tunnel is too.
 
 Specifically, a modern VPN tunnel uses cryptography in two places:
 
-*   **The initial handshake**  -  when your device and the VPN server agree on a shared secret. This is the part that is most vulnerable to "harvest now, decrypt later," because the handshake is what an attacker would capture and replay against a future quantum computer to recover the session key.
-*   **The symmetric encryption** for the rest of the session. Most VPNs use AES-256 or ChaCha20 for this, both of which are **much more resistant to quantum attack** than public-key algorithms. Symmetric encryption needs roughly double the key length to maintain security against quantum attack  -  AES-256 is already strong enough.
+*   **The initial handshake**, when your device and the VPN server agree on a shared secret. This is the part that is most vulnerable to "harvest now, decrypt later," because the handshake is what an attacker would capture and replay against a future quantum computer to recover the session key.
+*   **The symmetric encryption** for the rest of the session. Most VPNs use AES-256 or ChaCha20 for this, both of which are **much more resistant to quantum attack** than public-key algorithms. Symmetric encryption needs roughly double the key length to maintain security against quantum attack, AES-256 is already strong enough.
 
 The handshake is the thing that needs upgrading. Post-quantum-ready VPNs replace or supplement the handshake with PQC algorithms, while keeping the strong symmetric encryption already in place. The result is a tunnel that is genuinely future-ready end-to-end.
 
@@ -296,29 +296,29 @@ If you only ever read VPN marketing material, you might be forgiven for thinking
 *   **The European Telecommunications Standards Institute (ETSI)** has worked on PQC standards in parallel with NIST since 2014.
 *   **The Internet Engineering Task Force (IETF)** has been incorporating PQC into TLS, SSH, and other protocol standards.
 
-This level of coordinated public-sector activity is what drives industry adoption. When the U.S. government tells contractors they have until 2033 to migrate, the migration happens  -  and it happens early, because nobody wants to be the last vendor without PQC support.
+This level of coordinated public-sector activity is what drives industry adoption. When the U.S. government tells contractors they have until 2033 to migrate, the migration happens, and it happens early, because nobody wants to be the last vendor without PQC support.
 
 ## Five myths about post-quantum cryptography
 
 ### Myth 1: "Quantum computers don't exist yet, so PQC is premature."
 
-This misses the harvest-now-decrypt-later threat. Adversaries don't need quantum computers today  -  they only need patience. Storing encrypted data is cheap; future decryption is the bet. The earlier we upgrade, the more past traffic stays safe.
+This misses the harvest-now-decrypt-later threat. Adversaries don't need quantum computers today, they only need patience. Storing encrypted data is cheap; future decryption is the bet. The earlier we upgrade, the more past traffic stays safe.
 
 ### Myth 2: "Post-quantum encryption is much slower than regular encryption."
 
-This was somewhat true for early experimental schemes. With the NIST-standardized algorithms, the performance cost is small  -  a few extra kilobytes on a handshake and a few milliseconds of computation. For VPNs, browsers, and messaging apps, it's imperceptible in everyday use.
+This was somewhat true for early experimental schemes. With the NIST-standardized algorithms, the performance cost is small, a few extra kilobytes on a handshake and a few milliseconds of computation. For VPNs, browsers, and messaging apps, it's imperceptible in everyday use.
 
 ### Myth 3: "If quantum computers can break encryption, they can break everything."
 
-Not really. Quantum computers are particularly effective against certain kinds of math problems (factoring, discrete logarithms). They have a smaller speedup against many other kinds of problems  -  including the ones that PQC algorithms rely on. PQC works because we deliberately chose math problems where quantum computers don't have a dramatic advantage.
+Not really. Quantum computers are particularly effective against certain kinds of math problems (factoring, discrete logarithms). They have a smaller speedup against many other kinds of problems, including the ones that PQC algorithms rely on. PQC works because we deliberately chose math problems where quantum computers don't have a dramatic advantage.
 
 ### Myth 4: "Symmetric encryption like AES needs to be replaced too."
 
-AES is not broken by quantum attacks in the same way public-key encryption is. The relevant quantum algorithm (Grover's algorithm) provides a modest speedup, effectively halving the security margin of symmetric encryption. AES-256 is already strong enough that the post-quantum equivalent is  -  AES-256. The handshake is what needs upgrading, not the bulk encryption.
+AES is not broken by quantum attacks in the same way public-key encryption is. The relevant quantum algorithm (Grover's algorithm) provides a modest speedup, effectively halving the security margin of symmetric encryption. AES-256 is already strong enough that the post-quantum equivalent is, AES-256. The handshake is what needs upgrading, not the bulk encryption.
 
 ### Myth 5: "PQC means switching to quantum hardware."
 
-It does not. Post-quantum cryptography runs on ordinary computers. Your phone can do it. Your laptop can do it. A VPN server can do it. No new hardware is required  -  it's a pure software upgrade.
+It does not. Post-quantum cryptography runs on ordinary computers. Your phone can do it. Your laptop can do it. A VPN server can do it. No new hardware is required, it's a pure software upgrade.
 
 ## How to evaluate a PQC-ready VPN
 
@@ -333,11 +333,11 @@ Not every "post-quantum" claim is the same. Here's what actually matters when ev
 
 #### The PQC-ready VPN checklist
 
-*   **Explicit description of the post-quantum capability** on the company's website or technical documentation  -  not just a vague mention. You should be able to find the algorithm names.
-*   **Hybrid mode** combining a classical and post-quantum algorithm  -  not a pure post-quantum-only mode (which is more aggressive than the industry consensus recommends today).
+*   **Explicit description of the post-quantum capability** on the company's website or technical documentation, not just a vague mention. You should be able to find the algorithm names.
+*   **Hybrid mode** combining a classical and post-quantum algorithm, not a pure post-quantum-only mode (which is more aggressive than the industry consensus recommends today).
 *   **Available on every connection by default**, ideally without the user needing to flip any toggle. If PQC is buried in an advanced settings menu, most users won't ever benefit.
 *   **No additional charge** for PQC. Privacy upgrades should not be paywalled.
-*   **Continued availability of standard features**  -  kill switch, [DNS leak](/blog/what-is-a-dns-leak/) protection, IPv6 handling  -  while PQC is enabled.
+*   **Continued availability of standard features**, kill switch, [DNS leak](/blog/what-is-a-dns-leak/) protection, IPv6 handling, while PQC is enabled.
 *   **An ongoing commitment to the standards**. As NIST finalizes additional algorithms in coming years, the VPN's PQC mode should evolve to incorporate them.
 
 If a VPN claims post-quantum support but the details are missing, vague, or paywalled, treat the claim with friendly skepticism.
@@ -350,10 +350,10 @@ We built [**OllaVPN**](/free-wireguard-vpn) to answer one question: _what should
 *   **Hybrid mode by default**, combining the well-tested classical handshake with a post-quantum algorithm so your traffic stays protected as long as either one is unbroken.
 *   **Available on the lifetime free plan**. Privacy upgrades that matter aren't paywalled. Free users get the same future-readiness as paid users.
 *   **An always-on kill switch** that cannot be disabled. Privacy isn't a setting you should be able to accidentally turn off.
-*   **DNS handled inside the encrypted tunnel** by default  -  see our [DNS leak guide](what-is-a-dns-leak.html) for what that means.
+*   **DNS handled inside the encrypted tunnel** by default, see our [DNS leak guide](what-is-a-dns-leak.html) for what that means.
 *   **Ongoing commitment to the standards**. As NIST finalizes additional PQC algorithms in coming years, OllaVPN's mode will continue to evolve.
 
-**OllaVPN  -  PQC-ready out of the box:**
+**OllaVPN, PQC-ready out of the box:**
 
 Lifetime free
 
@@ -367,11 +367,11 @@ $2 / month · 10 Gbps
 
 Same post-quantum protection, faster connection. Five devices on one account.
 
-You can [try the free plan](../dl/) right now  -  no email, no card, no upsell. The post-quantum protection is on from your first connection.
+You can [try the free plan](../dl/) right now, no email, no card, no upsell. The post-quantum protection is on from your first connection.
 
 ## Deeper context worth knowing
 
-A definitional explainer should leave you understanding not just the concept but the surrounding category  -  what other concepts it connects to, what common misunderstandings to avoid, and which adjacent ideas you should know about. A few worth covering:
+A definitional explainer should leave you understanding not just the concept but the surrounding category, what other concepts it connects to, what common misunderstandings to avoid, and which adjacent ideas you should know about. A few worth covering:
 
 **The category history matters.** Most networking and privacy concepts you encounter today were invented to solve a specific problem that may or may not still be the dominant problem in 2026. Understanding why a concept exists helps you evaluate whether it's the right tool for your situation. We try to include the historical context for every "what is X" guide we publish.
 
@@ -468,7 +468,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Mainstream expert estimates range from the early 2030s to the mid-2040s. What is not uncertain is the timeline for migrating to post-quantum cryptography - that work needs to happen years ahead of the threat, which is why standardization happened in 2024 and major rollouts are happening now.
+      Mainstream expert estimates range from the early 2030s to the mid-2040s. What is not uncertain is the timeline for migrating to post-quantum cryptography, that work needs to happen years ahead of the threat, which is why standardization happened in 2024 and major rollouts are happening now.
     </p>
   </details>
   </div>

@@ -9,7 +9,7 @@ tags: ["buyer-guides"]
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    A free VPN creates an encrypted tunnel between your device and the internet on [public Wi-Fi](/blog/how-public-wifi-steals-passwords/)  -  protecting your passwords, session tokens, and browsing traffic from eavesdroppers, evil twins, and compromised routers. For basic web security at airports, hotels, and cafes, OllaVPN Free delivers unlimited data, WireGuard speeds, and zero activity logs without requiring credit card registration.
+    A free VPN creates an encrypted tunnel between your device and the internet on [public Wi-Fi](/blog/how-public-wifi-steals-passwords/), protecting your passwords, session tokens, and browsing traffic from eavesdroppers, evil twins, and compromised routers. For basic web security at airports, hotels, and cafes, OllaVPN Free delivers unlimited data, WireGuard speeds, and zero activity logs without requiring credit card registration.
   </p>
 </section>
 
@@ -55,7 +55,7 @@ tags: ["buyer-guides"]
 
 <div class="content-point-box">
 <h4 style="font-size: 0.95rem; font-weight: 700; margin: 0 0 6px 0; color: #0F172A;">Quick Answer</h4>
-<p style="font-size: 0.90rem; line-height: 1.65; color: #09090b; margin: 0;">A VPN encrypts your internet traffic between your device and the VPN server, so anyone else on the same public Wi-Fi network  -  including someone actively trying to intercept traffic  -  sees only unreadable, scrambled data instead of your browsing activity, logins, or messages.
+<p style="font-size: 0.90rem; line-height: 1.65; color: #09090b; margin: 0;">A VPN encrypts your internet traffic between your device and the VPN server, so anyone else on the same public Wi-Fi network, including someone actively trying to intercept traffic, sees only unreadable, scrambled data instead of your browsing activity, logins, or messages.
 </p>
 </div>
 
@@ -98,7 +98,7 @@ tags: ["buyer-guides"]
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.90rem; color: #1e293b; line-height: 1.7; margin-top: 12px; margin-bottom: 0; padding-top: 12px; border-top: 1px solid #e2e8f0;">
-      For most travel use  -  browsing, email, video calls, HD streaming, checking bank accounts  -  yes, comfortably. It becomes limiting mainly for 4K streaming or very large downloads, where OllaVPN Plus's 10 Gbps is a meaningful upgrade.
+      For most travel use, browsing, email, video calls, HD streaming, checking bank accounts, yes, comfortably. It becomes limiting mainly for 4K streaming or very large downloads, where OllaVPN Plus's 10 Gbps is a meaningful upgrade.
     </p>
   </details>
 
@@ -128,7 +128,7 @@ tags: ["buyer-guides"]
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.90rem; color: #1e293b; line-height: 1.7; margin-top: 12px; margin-bottom: 0; padding-top: 12px; border-top: 1px solid #e2e8f0;">
-      Because the data you send during a short trip  -  banking logins, work credentials, personal messages  -  often needs to stay private for years afterward, not just for the duration of the trip itself. Post-quantum-ready encryption protects the connection's handshake against future decryption of traffic recorded today, regardless of how brief the original session was.
+      Because the data you send during a short trip, banking logins, work credentials, personal messages, often needs to stay private for years afterward, not just for the duration of the trip itself. Post-quantum-ready encryption protects the connection's handshake against future decryption of traffic recorded today, regardless of how brief the original session was.
     </p>
   </details>
 
@@ -138,7 +138,7 @@ tags: ["buyer-guides"]
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.90rem; color: #1e293b; line-height: 1.7; margin-top: 12px; margin-bottom: 0; padding-top: 12px; border-top: 1px solid #e2e8f0;">
-      Yes. The encryption stack  -  WireGuard, the post-quantum-ready hybrid handshake, the default-on kill switch, and in-tunnel DNS  -  is identical on the free and paid plans. The only difference between tiers is speed and device count, not the underlying security protecting your connection.
+      Yes. The encryption stack, WireGuard, the post-quantum-ready hybrid handshake, the default-on kill switch, and in-tunnel DNS, is identical on the free and paid plans. The only difference between tiers is speed and device count, not the underlying security protecting your connection.
     </p>
   </details>
 

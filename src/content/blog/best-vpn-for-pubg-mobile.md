@@ -31,24 +31,24 @@ If you want a VPN that genuinely helps with PUBG Mobile's ping and [ISP throttli
     </li><li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">#1. OllaVPN - lightweight, WireGuard-based, and free:</strong> Essential technical context and verified guidance regarding #1. ollavpn - lightweight, wireguard-based, and free.
+        <strong style="color: #0F172A; font-weight: 800;">#1. OllaVPN, lightweight, WireGuard-based, and free:</strong> Essential technical context and verified guidance regarding #1. ollavpn, lightweight, wireguard-based, and free.
       </div>
     </li><li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">#2. ExpressVPN - consistently smooth mobile routing:</strong> Essential technical context and verified guidance regarding #2. expressvpn - consistently smooth mobile routing.
+        <strong style="color: #0F172A; font-weight: 800;">#2. ExpressVPN, consistently smooth mobile routing:</strong> Essential technical context and verified guidance regarding #2. expressvpn, consistently smooth mobile routing.
       </div>
     </li><li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">#3. NordVPN - NordLynx speed with a huge server map:</strong> Essential technical context and verified guidance regarding #3. nordvpn - nordlynx speed with a huge server map.
+        <strong style="color: #0F172A; font-weight: 800;">#3. NordVPN, NordLynx speed with a huge server map:</strong> Essential technical context and verified guidance regarding #3. nordvpn, nordlynx speed with a huge server map.
       </div>
     </li>
 </ul>
 </section>
 
 <div class="blog-main-content-box">
-You've optimized your sensitivity settings, cleaned out your storage, and closed every background app you can find, and you're still getting deleted by someone with a suspiciously smooth 40 ping while you're fighting a stuttery 140. Sometimes the fix isn't your phone at all - it's the road your data is taking to get to the game server. Here's the honest, hand-picked list of VPNs actually worth trying, and the real explanation of what a VPN can and can't do for your ping.
+You've optimized your sensitivity settings, cleaned out your storage, and closed every background app you can find, and you're still getting deleted by someone with a suspiciously smooth 40 ping while you're fighting a stuttery 140. Sometimes the fix isn't your phone at all, it's the road your data is taking to get to the game server. Here's the honest, hand-picked list of VPNs actually worth trying, and the real explanation of what a VPN can and can't do for your ping.
 
 ## What makes a VPN actually good for PUBG Mobile
 

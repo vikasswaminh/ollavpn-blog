@@ -51,7 +51,7 @@ tags: ['protocol-tech']
 
 <div class="blog-main-content-box">
 
-You know how websites use HTTPS to encrypt your connection, right? Well, even with that, anyone watching your network  -  like your internet provider  -  could still see \*which\* website you were trying to visit, even if they couldn't see what you were doing on it. Encrypted Client Hello (ECH) is here to fix that. It's a new privacy feature that stops those initial peeks, making it much harder for snoopers to know where you're going online. Let's dive into what ECH is, how it works, and why it's a big step forward for your digital privacy.
+You know how websites use HTTPS to encrypt your connection, right? Well, even with that, anyone watching your network, like your internet provider, could still see \*which\* website you were trying to visit, even if they couldn't see what you were doing on it. Encrypted Client Hello (ECH) is here to fix that. It's a new privacy feature that stops those initial peeks, making it much harder for snoopers to know where you're going online. Let's dive into what ECH is, how it works, and why it's a big step forward for your digital privacy.
 
 ## What exactly is Encrypted Client Hello (ECH)?
 
@@ -65,7 +65,7 @@ ECH works by encrypting the very first message your browser sends to a website, 
 
 Think of it like this: when you want to visit a website, your computer sends out a "hello" message, asking to connect. This first message, called the **Client Hello** in the [TLS handshake](/blog/what-is-tls), traditionally includes the name of the website you're trying to reach. This part is called the Server Name Indication, or SNI. It's really useful because many websites live on the same server, so the SNI tells the server which specific site you want. The problem is, this SNI has always been sent in plain text, meaning anyone monitoring your network traffic could see exactly which website you were trying to visit, even if the rest of your connection was encrypted.
 
-ECH, or Encrypted Client Hello, changes this. Instead of sending the SNI in the clear, your browser uses a trick to encrypt it right from the start. It gets a special **public key** for the website from its **DNS records** – those are like the internet's phone book, translating domain names into IP addresses. With this public key, your browser can scramble the SNI before it leaves your computer. So, when the Client Hello arrives at the server, the website's name is already encrypted, making it unreadable to anyone else along the way.
+ECH, or Encrypted Client Hello, changes this. Instead of sending the SNI in the clear, your browser uses a trick to encrypt it right from the start. It gets a special **public key** for the website from its **DNS records**, those are like the internet's phone book, translating domain names into IP addresses. With this public key, your browser can scramble the SNI before it leaves your computer. So, when the Client Hello arrives at the server, the website's name is already encrypted, making it unreadable to anyone else along the way.
 
 The server then uses its corresponding private key to decrypt the SNI, figures out which website you're after, and continues with the rest of the secure connection. From an outsider's perspective, they just see an encrypted blob of data going to a server, but they don't know \*which\* specific website on that server you're connecting to. This is a huge win for privacy because it removes a key piece of information that governments, ISPs, or even coffee shop Wi-Fi providers could use to track your online activity. While OllaVPN already encrypts all your traffic, ECH adds another layer of protection, particularly against advanced traffic analysis techniques that might otherwise try to infer your browsing.
 
@@ -87,7 +87,7 @@ Yes, many people misunderstand what ECH does and doesn't protect, often assuming
 
 The biggest misconception is that ECH is some kind of VPN replacement. It's absolutely not. While ECH encrypts the server name you're trying to reach (the SNI), that's just one tiny piece of your overall internet activity. Your IP address is still fully visible to your internet provider and anyone else watching your connection. ECH works at a very specific layer of the connection setup, meaning it only protects that initial handshake. It doesn't hide your location, nor does it encrypt the actual content of your browsing once the connection is established.
 
-Another common misunderstanding is that ECH encrypts all your traffic. Again, this isn't true. While it makes it harder for observers to see _which_ specific website you're visiting within a domain, the vast majority of your data - the actual content you're viewing, sending, or receiving - is still protected by HTTPS, not ECH. ECH simply helps obscure the destination of that encrypted tunnel. Think of it like putting an opaque wrapper on the label of a delivery truck; you can't tell exactly where it's going, but you can still see the truck driving by, and you certainly can't see what's inside.
+Another common misunderstanding is that ECH encrypts all your traffic. Again, this isn't true. While it makes it harder for observers to see _which_ specific website you're visiting within a domain, the vast majority of your data, the actual content you're viewing, sending, or receiving, is still protected by HTTPS, not ECH. ECH simply helps obscure the destination of that encrypted tunnel. Think of it like putting an opaque wrapper on the label of a delivery truck; you can't tell exactly where it's going, but you can still see the truck driving by, and you certainly can't see what's inside.
 
 So, while ECH is a welcome step forward for privacy, protecting that crucial SNI information from casual snooping, it's vital to remember its limitations. It's a foundational privacy feature, not a comprehensive solution. For true anonymity, IP address hiding, and encryption of all your network traffic from end to end, you still need a VPN like OllaVPN.
 
@@ -153,7 +153,7 @@ For truly robust censorship circumvention, a full [VPN is more effective](/what-
 
 ## Deeper context worth knowing
 
-A definitional explainer should leave you understanding not just the concept but the surrounding category  -  what other concepts it connects to, what common misunderstandings to avoid, and which adjacent ideas you should know about. A few worth covering:
+A definitional explainer should leave you understanding not just the concept but the surrounding category, what other concepts it connects to, what common misunderstandings to avoid, and which adjacent ideas you should know about. A few worth covering:
 
 **The category history matters.** Most networking and privacy concepts you encounter today were invented to solve a specific problem that may or may not still be the dominant problem in 2026. Understanding why a concept exists helps you evaluate whether it's the right tool for your situation. We try to include the historical context for every "what is X" guide we publish.
 
@@ -205,7 +205,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[email�
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Not directly dangerous, but ignoring ECH means you're leaving a small window open for network snoopers. It's not about security in the sense of keeping your data safe, but about privacy – who can see where you're going online. It's a piece of the puzzle for better digital anonymity.
+      Not directly dangerous, but ignoring ECH means you're leaving a small window open for network snoopers. It's not about security in the sense of keeping your data safe, but about privacy, who can see where you're going online. It's a piece of the puzzle for better digital anonymity.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">

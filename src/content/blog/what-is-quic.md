@@ -113,7 +113,7 @@ QUIC (Quick UDP Internet Connections) is a newer internet transport protocol des
 
 This process is called **encapsulation**. Essentially, your QUIC data packets are wrapped inside the VPN's encrypted tunnel, making them indistinguishable from other encrypted VPN traffic to anyone trying to snoop. This is crucial for your privacy because it prevents your Internet Service Provider (ISP) or anyone else from seeing that you're using QUIC, or what content you're accessing. Without this encapsulation, QUIC traffic could potentially bypass the VPN, leaving you exposed. OllaVPN ensures everything goes through the tunnel, and our [kill switch](/features/kill-switch) is always on by default to prevent any accidental leaks.
 
-Because OllaVPN uses WireGuard, which is built on UDP, it's inherently well-suited to handle QUIC traffic efficiently. WireGuard's design prioritizes speed and modern cryptography, making it a perfect match for encapsulating other modern protocols like QUIC without significant performance overhead. This means you get the benefits of QUIC's speed enhancements while still enjoying the full privacy and security of your VPN connection. If you're on OllaVPN Plus, with its 10 Gbps speeds, you'll hardly notice QUIC is even there – it just works seamlessly in the background.
+Because OllaVPN uses WireGuard, which is built on UDP, it's inherently well-suited to handle QUIC traffic efficiently. WireGuard's design prioritizes speed and modern cryptography, making it a perfect match for encapsulating other modern protocols like QUIC without significant performance overhead. This means you get the benefits of QUIC's speed enhancements while still enjoying the full privacy and security of your VPN connection. If you're on OllaVPN Plus, with its 10 Gbps speeds, you'll hardly notice QUIC is even there, it just works seamlessly in the background.
 
 ## What Practical Things Can You Do Today Regarding QUIC?
 
@@ -151,7 +151,7 @@ Crucially, integrating QUIC doesn't change our commitment to your privacy. We ma
 
 One pattern we've noticed across every privacy-and-networking topic we cover: the gap between what most users believe about a given topic and what the technical reality is keeps widening. Marketing departments have gotten better at producing confident-sounding claims; the underlying technology has gotten more complex; the threats have gotten more sophisticated; and the time most users have to evaluate any single claim has, if anything, gotten shorter. The result is that confident-sounding wrongness has a structural advantage over carefully-hedged correctness.
 
-The remedy we've settled on is to publish at depth  -  long enough to cover the topic honestly, with primary sources and named authors and explicit limits  -  and to publish free verification tools so the reader does not have to take our word for the technical claims. Both are choices that don't optimise for "users who skim and click." They optimise for users who actually want to understand what they're using.
+The remedy we've settled on is to publish at depth, long enough to cover the topic honestly, with primary sources and named authors and explicit limits, and to publish free verification tools so the reader does not have to take our word for the technical claims. Both are choices that don't optimise for "users who skim and click." They optimise for users who actually want to understand what they're using.
 
 If you've read this far, you're in the second group. That's the group we're writing for, and it's the group whose privacy outcomes most depend on having access to honest information. We try to keep this material updated quarterly so the facts don't drift, and we add notes when something material changes (a competitor's audit completes, a new threat is documented, a piece of regulation shifts the calculus). The [main free-VPN comparison](/best-free-vpn-2026), the [technology overview](/technology), and the [free privacy tools](/tools/) are the three pages most worth bookmarking from the OllaVPN site if you've found this guide useful.
 
@@ -169,7 +169,7 @@ For any claim on this page that affects a decision you're about to make, the ver
 
 ## Deeper context worth knowing
 
-A definitional explainer should leave you understanding not just the concept but the surrounding category  -  what other concepts it connects to, what common misunderstandings to avoid, and which adjacent ideas you should know about. A few worth covering:
+A definitional explainer should leave you understanding not just the concept but the surrounding category, what other concepts it connects to, what common misunderstandings to avoid, and which adjacent ideas you should know about. A few worth covering:
 
 **The category history matters.** Most networking and privacy concepts you encounter today were invented to solve a specific problem that may or may not still be the dominant problem in 2026. Understanding why a concept exists helps you evaluate whether it's the right tool for your situation. We try to include the historical context for every "what is X" guide we publish.
 

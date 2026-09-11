@@ -9,7 +9,7 @@ tags: ['pillars']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    Public Wi‑Fi networks  -  coffee shops, airports, hotels, libraries  -  are inherently open. Without encryption between your device and the websites you visit, anyone on the same network can see the data you send and receive... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
+    Public Wi‑Fi networks, coffee shops, airports, hotels, libraries, are inherently open. Without encryption between your device and the websites you visit, anyone on the same network can see the data you send and receive... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -31,7 +31,7 @@ tags: ['pillars']
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">•</span>
       <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">Packet sniffing  -  the silent listener [](packet-sniffing-the-silent-listener):</strong> Essential security requirement for verified digital privacy and network protection.
+        <strong style="color: #0F172A; font-weight: 800;">Packet sniffing, the silent listener [](packet-sniffing-the-silent-listener):</strong> Essential security requirement for verified digital privacy and network protection.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
@@ -43,7 +43,7 @@ tags: ['pillars']
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">•</span>
       <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">Evil twin attacks  -  the impostor network [](evil-twin-attacks-the-impostor-network):</strong> Essential security requirement for verified digital privacy and network protection.
+        <strong style="color: #0F172A; font-weight: 800;">Evil twin attacks, the impostor network [](evil-twin-attacks-the-impostor-network):</strong> Essential security requirement for verified digital privacy and network protection.
       </div>
     </li>
   </ul>
@@ -57,24 +57,24 @@ tags: ['pillars']
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Public Wi‑Fi networks don't encrypt traffic between connected devices. Any device on the same network can capture data packets sent by any other device. If those packets contain unencrypted information  -  like a password sent over HTTP or a session cookie sent without the Secure flag  -  the attacker can read it.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Public Wi‑Fi networks don't encrypt traffic between connected devices. Any device on the same network can capture data packets sent by any other device. If those packets contain unencrypted information, like a password sent over HTTP or a session cookie sent without the Secure flag, the attacker can read it.</p>
 </div>
 
 
 
 To understand how passwords get stolen on public Wi‑Fi, it helps to understand how Wi‑Fi itself works at a basic level.
 
-When you connect to a coffee shop's Wi‑Fi, your device and the router agree on a shared frequency. Every packet of data your device sends  -  every website request, every form submission, every app notification  -  is broadcast over that frequency. Other devices on the same network can see those packets. Whether they can understand them depends on encryption.
+When you connect to a coffee shop's Wi‑Fi, your device and the router agree on a shared frequency. Every packet of data your device sends, every website request, every form submission, every app notification, is broadcast over that frequency. Other devices on the same network can see those packets. Whether they can understand them depends on encryption.
 
-Most public Wi‑Fi networks use open authentication  -  no password required, or a simple portal page that gives everyone the same key. This means there is no per-device encryption between your device and the router. Any other device on the network can listen in.
+Most public Wi‑Fi networks use open authentication, no password required, or a simple portal page that gives everyone the same key. This means there is no per-device encryption between your device and the router. Any other device on the network can listen in.
 
-This is not a vulnerability in the coffee shop's router. It is a fundamental property of how shared wireless networks work. The security responsibility falls on the connection between your device and the websites you visit  -  not on the network itself.
+This is not a vulnerability in the coffee shop's router. It is a fundamental property of how shared wireless networks work. The security responsibility falls on the connection between your device and the websites you visit, not on the network itself.
 
-## Packet sniffing  -  the silent listener [#](#packet-sniffing-the-silent-listener)
+## Packet sniffing: the silent listener [#](#packet-sniffing-the-silent-listener)
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Packet sniffing is the simplest public Wi‑Fi attack. An attacker uses free software (like Wireshark) to capture data packets broadcast over the network. If your traffic is unencrypted  -  for example, a website still using HTTP  -  the attacker can read your passwords, emails, and messages in plain text.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Packet sniffing is the simplest public Wi‑Fi attack. An attacker uses free software (like Wireshark) to capture data packets broadcast over the network. If your traffic is unencrypted, for example, a website still using HTTP, the attacker can read your passwords, emails, and messages in plain text.</p>
 </div>
 
 
@@ -83,21 +83,21 @@ Packet sniffing is exactly what it sounds like: an attacker uses software to "sn
 
 ## What a packet sniffing attack looks like: [#](#what-a-packet-sniffing-attack-looks-like)
 
-The attacker connects to the same public Wi‑Fi network as you  -  the same coffee shop, airport lounge, or hotel lobby.
+The attacker connects to the same public Wi‑Fi network as you, the same coffee shop, airport lounge, or hotel lobby.
 
 The attacker starts a packet capture using a tool like Wireshark. The tool records every data packet broadcast over the network that the attacker's device can see.
 
 The attacker filters the capture for packets containing keywords like "password", "login", "Authorization", or "Cookie".
 
-If any of those packets are unencrypted  -  sent over HTTP instead of HTTPS, or containing a session cookie without the Secure and HttpOnly flags  -  the attacker can read them directly.
+If any of those packets are unencrypted, sent over HTTP instead of HTTPS, or containing a session cookie without the Secure and HttpOnly flags, the attacker can read them directly.
 
 Quick self-check (30 seconds): If you ever see a login page that loads over HTTP (no padlock, or browser warning), stop. That’s the exact scenario packet sniffers exploit.
 
-## Evil twin attacks  -  the impostor network [#](#evil-twin-attacks-the-impostor-network)
+## Evil twin attacks: the impostor network [#](#evil-twin-attacks-the-impostor-network)
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">An evil twin attack is when an attacker sets up a fake Wi‑Fi access point with the same name (SSID) as a legitimate network  -  like "Starbucks Wi‑Fi" or "Airport\_Free". Your device connects to the attacker's network instead of the real one, giving the attacker full visibility into everything you do online.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">An evil twin attack is when an attacker sets up a fake Wi‑Fi access point with the same name (SSID) as a legitimate network, like "Starbucks Wi‑Fi" or "Airport\_Free". Your device connects to the attacker's network instead of the real one, giving the attacker full visibility into everything you do online.</p>
 </div>
 
 
@@ -106,9 +106,9 @@ Packet sniffing requires the attacker to be on the same network as you. Evil twi
 
 ## How it works: [#](#how-it-works)
 
-The attacker sets up a portable Wi‑Fi hotspot  -  using a laptop, a Raspberry Pi, or a purpose-built device like a Wi‑Fi Pineapple  -  with the same network name (SSID) as a legitimate public Wi‑Fi network nearby.
+The attacker sets up a portable Wi‑Fi hotspot, using a laptop, a Raspberry Pi, or a purpose-built device like a Wi‑Fi Pineapple, with the same network name (SSID) as a legitimate public Wi‑Fi network nearby.
 
-Your device sees two networks with the same name. Because of how Wi‑Fi signal strength works, your device will typically connect to the stronger signal  -  which is often the attacker's hotspot, placed closer to you.
+Your device sees two networks with the same name. Because of how Wi‑Fi signal strength works, your device will typically connect to the stronger signal, which is often the attacker's hotspot, placed closer to you.
 
 Once connected, all your traffic passes through the attacker's device. The attacker can log every keystroke, capture every form submission, and even inject malicious code into pages you load.
 
@@ -116,18 +116,18 @@ The attacker can also forward your traffic to the real internet, so everything a
 
 Quick self-check (before you type anything): If your Wi‑Fi name is familiar but the captive portal looks “off” (different branding, weird certificate prompts, unexpected redirects), disconnect and reconnect using the official network instructions.
 
-## Session hijacking  -  stealing your login without the password [#](#session-hijacking-stealing-your-login-without-the-password)
+## Session hijacking: stealing your login without the password [#](#session-hijacking-stealing-your-login-without-the-password)
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Session hijacking (also called "sidejacking") targets your session cookie  -  the small token that keeps you logged in after you enter your password. If an attacker captures this cookie over public Wi‑Fi, they can import it into their own browser and access your account without ever knowing your password.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Session hijacking (also called "sidejacking") targets your session cookie, the small token that keeps you logged in after you enter your password. If an attacker captures this cookie over public Wi‑Fi, they can import it into their own browser and access your account without ever knowing your password.</p>
 </div>
 
 
 
 Session hijacking is the attack that TV shows get mostly right. It does not require the attacker to see your password at all. It targets something more valuable: your active session.
 
-When you log into a website  -  your email, your bank, your social media  -  the server gives your browser a session cookie. This cookie is a small text file that proves to the server, on every subsequent request, that you are the authenticated user. As long as you hold that cookie, you do not need to re-enter your password.
+When you log into a website, your email, your bank, your social media, the server gives your browser a session cookie. This cookie is a small text file that proves to the server, on every subsequent request, that you are the authenticated user. As long as you hold that cookie, you do not need to re-enter your password.
 
 On a public Wi‑Fi network, if that cookie is transmitted without encryption, an attacker who captures it can:
 
@@ -135,11 +135,11 @@ Copy the cookie value from their packet capture.
 
 Import it into their own browser using a cookie editor extension.
 
-Visit the same website. The server sees the valid cookie and grants the attacker access to your account  -  no password required.
+Visit the same website. The server sees the valid cookie and grants the attacker access to your account, no password required.
 
 Quick self-check: If you log in on public Wi‑Fi and then later see “new device login” alerts you didn’t trigger, assume session risk and rotate passwords from a trusted connection.
 
-## Man-in-the-middle  -  the active intercept [#](#man-in-the-middle-the-active-intercept)
+## Man-in-the-middle: the active intercept [#](#man-in-the-middle-the-active-intercept)
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
@@ -152,7 +152,7 @@ Man-in-the-middle is the most sophisticated of the four attack types, and the on
 
 In a passive sniffing attack, the attacker reads what is already visible. In a MITM attack, the attacker actively intercepts the connection between your device and the server, creating two separate connections: one between you and the attacker, and one between the attacker and the server. Your device thinks it is talking directly to the server. The server thinks it is talking directly to you. In reality, both are talking to the attacker.
 
-## SSL stripping (SSL downgrading)  -  how it works: [#](#ssl-stripping-ssl-downgrading-how-it-works)
+## SSL stripping (SSL downgrading): how it works: [#](#ssl-stripping-ssl-downgrading-how-it-works)
 
 Your browser attempts to connect to https://your-bank.com.
 
@@ -160,7 +160,7 @@ The attacker intercepts the request and establishes an HTTPS connection with the
 
 The attacker then serves the content to your browser over unencrypted HTTP, while keeping the encrypted connection to the bank open on the back end.
 
-Your browser shows no padlock  -  but many users do not notice. You enter your credentials. The attacker reads them in plain text on the HTTP side, then forwards them to the bank on the HTTPS side. The transaction completes normally. You never know your password was captured.
+Your browser shows no padlock, but many users do not notice. You enter your credentials. The attacker reads them in plain text on the HTTP side, then forwards them to the bank on the HTTPS side. The transaction completes normally. You never know your password was captured.
 
 Quick self-check: Enable HTTPS-Only Mode. If your browser ever tries to load HTTP for a site that should be HTTPS, that’s a red flag.
 
@@ -175,7 +175,7 @@ Quick self-check: Enable HTTPS-Only Mode. If your browser ever tries to load HTT
 
 HTTPS is essential. It is not sufficient.
 
-What HTTPS does: It encrypts the communication between your browser and the website's server. An attacker on the same Wi‑Fi network cannot read the contents of your HTTPS traffic  -  the credit card number you type into a form, the email you send, the password you enter on a properly configured login page.
+What HTTPS does: It encrypts the communication between your browser and the website's server. An attacker on the same Wi‑Fi network cannot read the contents of your HTTPS traffic, the credit card number you type into a form, the email you send, the password you enter on a properly configured login page.
 
 ## What HTTPS does NOT do: [#](#what-https-does-not-do)
 
@@ -223,7 +223,7 @@ The pragmatic takeaway: you do not need to be paranoid about public Wi‑Fi. You
 
 ## Layered protection: [#](#layered-protection)
 
-Use a VPN  -  always, on every public network. Encrypts all traffic before it leaves your device.
+Use a VPN, always, on every public network. Encrypts all traffic before it leaves your device.
 
 Enable HTTPS-Only Mode. Blocks HTTP loads and reduces SSL stripping success.
 
@@ -258,7 +258,7 @@ Your public Wi‑Fi checklist
 
 ☐ You will forget the network when you disconnect
 
-How OllaVPN handles public Wi‑Fi  -  by default, without configuration
+How OllaVPN handles public Wi‑Fi, by default, without configuration
 
 We built OllaVPN to be the answer to the question “what should a modern privacy VPN do automatically?” When it comes to public Wi‑Fi protection, the answer is straightforward:
 
@@ -301,7 +301,7 @@ What VPN/HTTPS does
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A "Honeypot" is a trap set by an attacker to lure you into connecting. Conversely, you can use "Canary Tokens"  -  tiny, invisible tracking files  -  to detect if an attacker is snooping through your data. If an attacker opens a "decoy" file on your laptop, the token "chirps," sending you an instant alert that your connection is compromised.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A "Honeypot" is a trap set by an attacker to lure you into connecting. Conversely, you can use "Canary Tokens", tiny, invisible tracking files, to detect if an attacker is snooping through your data. If an attacker opens a "decoy" file on your laptop, the token "chirps," sending you an instant alert that your connection is compromised.</p>
 </div>
 
 
@@ -310,7 +310,7 @@ Most public Wi‑Fi advice is defensive. In 2026, the most advanced users are us
 
 ### The Attacker’s Honeypot
 
-An attacker doesn't just wait for you to connect to "Airport\_Free\_WiFi." They might set up a Honeypot  -  a network that looks legitimate but is designed to log every single packet. They might even offer "High Speed" for a small fee, capturing your credit card info and your browsing data in one go.
+An attacker doesn't just wait for you to connect to "Airport\_Free\_WiFi." They might set up a Honeypot, a network that looks legitimate but is designed to log every single packet. They might even offer "High Speed" for a small fee, capturing your credit card info and your browsing data in one go.
 
 ### The User’s Counter-Attack: Canary Tokens
 
@@ -353,7 +353,7 @@ Quick self-check: If your phone suddenly shows new connection prompts (tethering
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Captive portals often use "Dark Patterns"  -  manipulative user interface designs  -  to trick you into giving up more privacy than necessary. This includes "hidden" checkboxes that opt you into data brokerage or "forced" social media logins that give the network owner access to your friend list and private profile data.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Captive portals often use "Dark Patterns", manipulative user interface designs, to trick you into giving up more privacy than necessary. This includes "hidden" checkboxes that opt you into data brokerage or "forced" social media logins that give the network owner access to your friend list and private profile data.</p>
 </div>
 
 
@@ -381,7 +381,7 @@ Verification tip: If you’re prompted to install a certificate you didn’t req
 
 
 
-This is a "Layer 8" threat  -  it’s about patterns, not content.
+This is a "Layer 8" threat, it’s about patterns, not content.
 
 ### The "VBR" Vulnerability
 
@@ -437,7 +437,7 @@ No Interference: Li‑Fi doesn't interfere with sensitive equipment (like in hos
 
 Directional Security: You have to be physically under the light beam to capture the data.
 
-The Current Reality: While Li‑Fi is faster and more secure, it requires specialized receivers. Until your phone has a Li‑Fi sensor built-in, we are stuck with the "leaky" radio waves of Wi‑Fi  -  and the need for a VPN.
+The Current Reality: While Li‑Fi is faster and more secure, it requires specialized receivers. Until your phone has a Li‑Fi sensor built-in, we are stuck with the "leaky" radio waves of Wi‑Fi, and the need for a VPN.
 
 ## · Zero Trust: Why the Network Doesn't Matter Anymore [#](#zero-trust-why-the-network-doesn-t-matter-anymore)
 
@@ -500,7 +500,7 @@ Always-On VPN: You can configure the router to use OllaVPN's [WireGuard](/free-w
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Modern security isn't just about software; it's about hardware. Your device has a "Secure Enclave" (Apple) or "TPM" (Windows)  -  a tiny, isolated chip that stores your encryption keys. Even if a hacker on public Wi‑Fi compromises your operating system, they cannot "reach inside" these chips to steal your private keys.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Modern security isn't just about software; it's about hardware. Your device has a "Secure Enclave" (Apple) or "TPM" (Windows), a tiny, isolated chip that stores your encryption keys. Even if a hacker on public Wi‑Fi compromises your operating system, they cannot "reach inside" these chips to steal your private keys.</p>
 </div>
 
 
@@ -517,9 +517,9 @@ The Future: As we move toward Passkeys, these hardware chips will become the pri
 
 One pattern we have noticed across every privacy-and-networking topic we cover: the gap between what most users believe about a given risk and what the technical reality is keeps widening. Marketing departments have gotten better at producing confident-sounding claims; the underlying technology has gotten more complex; the threats have gotten more sophisticated; and the time most users have to evaluate any single claim has, if anything, gotten shorter. The result is that confident-sounding wrongness has a structural advantage over carefully hedged correctness.
 
-The remedy we have settled on is to publish at depth  -  long enough to cover the topic honestly, with primary sources and named authors and explicit limits  -  and to publish free verification tools so the reader does not have to take our word for the technical claims. Both are choices that do not optimise for "users who skim and click." They optimise for users who actually want to understand what they are using.
+The remedy we have settled on is to publish at depth, long enough to cover the topic honestly, with primary sources and named authors and explicit limits, and to publish free verification tools so the reader does not have to take our word for the technical claims. Both are choices that do not optimise for "users who skim and click." They optimise for users who actually want to understand what they are using.
 
-If you have read this far, you are in the second group. That is the group we are writing for, and it is the group whose privacy outcomes most depend on having access to honest information. We try to keep this material updated quarterly so the facts do not drift, and we add notes when something material changes  -  a new attack technique is documented, a major platform changes its cookie security model, a piece of regulation shifts the calculus. The main free-VPN comparison is a good place to start if you are evaluating options, and the [post-quantum cryptography](/blog/what-is-post-quantum-cryptography.html) pillar covers the longer-term threat landscape that makes public Wi‑Fi protection relevant beyond just the coffee shop.
+If you have read this far, you are in the second group. That is the group we are writing for, and it is the group whose privacy outcomes most depend on having access to honest information. We try to keep this material updated quarterly so the facts do not drift, and we add notes when something material changes, a new attack technique is documented, a major platform changes its cookie security model, a piece of regulation shifts the calculus. The main free-VPN comparison is a good place to start if you are evaluating options, and the [post-quantum cryptography](/blog/what-is-post-quantum-cryptography.html) pillar covers the longer-term threat landscape that makes public Wi‑Fi protection relevant beyond just the coffee shop.
 
 ### Verify and Cross-Reference
 
@@ -543,7 +543,7 @@ Read the primary sources. NIST publications on PQC standards and IETF RFCs for m
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Partially. HTTPS encrypts the content of your communication with the website, but it does not hide which websites you visit (DNS and SNI are visible), does not protect against evil twin networks, and can be bypassed by SSL stripping if your browser's HTTPS-Only Mode is not enabled. What is the difference between packet sniffing and a man-in-the-middle attack? Packet sniffing is passive - the attacker listens to data traveling across the network without interfering. A man-in-the-middle attack is active - the attacker intercepts and potentially modifies the communication between your device and the server.
+      Partially. HTTPS encrypts the content of your communication with the website, but it does not hide which websites you visit (DNS and SNI are visible), does not protect against evil twin networks, and can be bypassed by SSL stripping if your browser's HTTPS-Only Mode is not enabled. What is the difference between packet sniffing and a man-in-the-middle attack? Packet sniffing is passive, the attacker listens to data traveling across the network without interfering. A man-in-the-middle attack is active, the attacker intercepts and potentially modifies the communication between your device and the server.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
@@ -552,7 +552,7 @@ Read the primary sources. NIST publications on PQC standards and IETF RFCs for m
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Yes. Even if you accidentally connect to an attacker's hotspot, a VPN encrypts all your traffic before it leaves your device. The attacker sees only encrypted data. However, the VPN must be connected before you join the Wi‑Fi network - or set to auto-connect - to ensure protection from the first packet.
+      Yes. Even if you accidentally connect to an attacker's hotspot, a VPN encrypts all your traffic before it leaves your device. The attacker sees only encrypted data. However, the VPN must be connected before you join the Wi‑Fi network, or set to auto-connect, to ensure protection from the first packet.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
@@ -561,7 +561,7 @@ Read the primary sources. NIST publications on PQC standards and IETF RFCs for m
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Mobile data (4G/5G) is generally more secure than public Wi‑Fi because cellular networks use per-device encryption. However, mobile data is not immune to all attacks - SS7 vulnerabilities, IMSI catchers, and network-level surveillance are possible. A VPN on mobile data provides the same encryption layer as on Wi‑Fi.
+      Mobile data (4G/5G) is generally more secure than public Wi‑Fi because cellular networks use per-device encryption. However, mobile data is not immune to all attacks, SS7 vulnerabilities, IMSI catchers, and network-level surveillance are possible. A VPN on mobile data provides the same encryption layer as on Wi‑Fi.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
@@ -570,4 +570,4 @@ Read the primary sources. NIST publications on PQC standards and IETF RFCs for m
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Not necessarily. Public Wi‑Fi is convenient and, for many people, essential. The goal is not to avoid it but to use it correctly - with a VPN, HTTPS-Only Mode, and the basic precautions in the checklist above. 
+      Not necessarily. Public Wi‑Fi is convenient and, for many people, essential. The goal is not to avoid it but to use it correctly, with a VPN, HTTPS-Only Mode, and the basic precautions in the checklist above. 
