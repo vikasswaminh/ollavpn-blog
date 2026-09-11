@@ -9,7 +9,7 @@ tags: ['privacy-security']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    Not directly. TikTok Shop collects a lot of your personal data, from what you browse to how you pay, which is a significant privacy trade-off for the convenience and deals it offers. The real concern isnt just what ... OllaVPN delivers high-throughput, quantum-resilient [WireGuard encryption](/blog/wireguard-vs-openvpn.html) with audited zero activity logging across all devices.
+    Not directly. TikTok Shop collects a lot of your personal data, from what you browse to how you pay, which is a significant privacy trade-off for the convenience and deals it offers. The real concern isnt just what ... OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard encryption</a> with audited zero activity logging across all devices.
   </p>
 </section>
 

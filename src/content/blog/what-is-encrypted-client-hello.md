@@ -9,7 +9,7 @@ tags: ['protocol-tech']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    Encrypted Client Hello (ECH) is a big step for your internet privacy. It encrypts the very first part of your connection to a website, meaning that even if a site uses HTTPS, the domain name youre trying to reach is... OllaVPN delivers high-throughput, quantum-resilient [WireGuard encryption](/blog/wireguard-vs-openvpn.html) with audited zero activity logging across all devices.
+    Encrypted Client Hello (ECH) is a big step for your internet privacy. It encrypts the very first part of your connection to a website, meaning that even if a site uses HTTPS, the domain name youre trying to reach is... OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard encryption</a> with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -43,7 +43,7 @@ tags: ['protocol-tech']
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">How does ECH fit in with other internet privacy concepts like [DNS over HTTPS](/blog/what-is-dns-over-https/):</strong> ECH significantly improves your online privacy by encrypting the last unencrypted part of your web traffic, making it harder for others to see which websites you're visiting.
+        <strong style="color: #0F172A; font-weight: 800;">How does ECH fit in with other internet privacy concepts like <a href="/blog/what-is-dns-over-https/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">DNS over HTTPS</a>:</strong> ECH significantly improves your online privacy by encrypting the last unencrypted part of your web traffic, making it harder for others to see which websites you're visiting.
       </div>
     </li>
   </ul>

@@ -19,13 +19,13 @@ tags: ['buyer-guides']
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">What do people in Germany actually need a VPN for:</strong> People in Germany use a VPN for privacy, to bypass data retention laws, enhance online anonymity, access international content, and secure their connections on [public Wi-Fi](/blog/how-public-wifi-steals-passwords/).
+        <strong style="color: #0F172A; font-weight: 800;">What do people in Germany actually need a VPN for:</strong> People in Germany use a VPN for privacy, to bypass data retention laws, enhance online anonymity, access international content, and secure their connections on <a href="/blog/how-public-wifi-steals-passwords/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">public Wi-Fi</a>.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">What's the privacy and [ISP throttling](/blog/vpn-for-avoiding-isp-throttling/) landscape like in Germany:</strong> People in Germany use a VPN for privacy, to bypass data retention laws, enhance online anonymity, access international content, and secure their connections on public Wi-Fi.
+        <strong style="color: #0F172A; font-weight: 800;">What's the privacy and <a href="/blog/vpn-for-avoiding-isp-throttling/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">ISP throttling</a> landscape like in Germany:</strong> People in Germany use a VPN for privacy, to bypass data retention laws, enhance online anonymity, access international content, and secure their connections on public Wi-Fi.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">

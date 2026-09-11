@@ -25,7 +25,7 @@ tags: ['buyer-guides']
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">What should you expect from any honest free VPN in this category:</strong> You should expect transparent funding, a clear [no-logs policy](/blog/what-logs-does-vpn-keep/), and robust security features even on a free tier.
+        <strong style="color: #0F172A; font-weight: 800;">What should you expect from any honest free VPN in this category:</strong> You should expect transparent funding, a clear <a href="/blog/what-logs-does-vpn-keep/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs policy</a>, and robust security features even on a free tier.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">

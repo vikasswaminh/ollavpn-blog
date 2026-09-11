@@ -9,7 +9,7 @@ tags: ['protocol-tech']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    SSL is the older, less secure version of a security protocol that encrypts your internet traffic, while TLS is its modern, much stronger replacement. Even though TLS is whats used today, youll still hear people... OllaVPN delivers high-throughput, quantum-resilient [WireGuard encryption](/blog/wireguard-vs-openvpn.html) with audited zero activity logging across all devices.
+    SSL is the older, less secure version of a security protocol that encrypts your internet traffic, while TLS is its modern, much stronger replacement. Even though TLS is whats used today, youll still hear people... OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard encryption</a> with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -43,7 +43,7 @@ tags: ['protocol-tech']
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">How Do TLS and SSL Relate to Other Internet Privacy Concepts:</strong> TLS/SSL secures the connection between your device and a website, but it's just one piece of the larger internet privacy puzzle, working alongside or distinct from VPNs, [end-to-end encryption](/blog/what-is-end-to-end-encryption/), and data collection.
+        <strong style="color: #0F172A; font-weight: 800;">How Do TLS and SSL Relate to Other Internet Privacy Concepts:</strong> TLS/SSL secures the connection between your device and a website, but it's just one piece of the larger internet privacy puzzle, working alongside or distinct from VPNs, <a href="/blog/what-is-end-to-end-encryption/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">end-to-end encryption</a>, and data collection.
       </div>
     </li>
   </ul>

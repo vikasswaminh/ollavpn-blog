@@ -31,7 +31,7 @@ tags: ['beginner-basics']
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">What Does OllaVPN Free Give You Specifically:</strong> OllaVPN Free gives you a privacy-first VPN connection with 10 Mbps speed, access to every country in our network, and advanced security features like post-quantum-ready encryption and a built-in [kill switch](/blog/what-is-a-vpn-kill-switch/), all for $0 forever.
+        <strong style="color: #0F172A; font-weight: 800;">What Does OllaVPN Free Give You Specifically:</strong> OllaVPN Free gives you a privacy-first VPN connection with 10 Mbps speed, access to every country in our network, and advanced security features like post-quantum-ready encryption and a built-in <a href="/blog/what-is-a-vpn-kill-switch/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">kill switch</a>, all for $0 forever.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">

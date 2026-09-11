@@ -19,7 +19,7 @@ tags: ['buyer-guides']
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">What Do Canadians Actually Need a VPN For:</strong> Canadians primarily need a VPN for enhanced online privacy, bypassing geo-restrictions, and protecting themselves from ISP practices and [public Wi-Fi](/blog/how-public-wifi-steals-passwords/) risks.
+        <strong style="color: #0F172A; font-weight: 800;">What Do Canadians Actually Need a VPN For:</strong> Canadians primarily need a VPN for enhanced online privacy, bypassing geo-restrictions, and protecting themselves from ISP practices and <a href="/blog/how-public-wifi-steals-passwords/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">public Wi-Fi</a> risks.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">

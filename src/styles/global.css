@@ -5566,3 +5566,17 @@ article h2::before,
   text-transform: uppercase;
   margin-top: 1px;
 }
+
+/* TL;DR Highlighted Links */
+.tldr-highlight-link {
+  color: #DA291C !important;
+  font-weight: 700 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px !important;
+  transition: opacity 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.tldr-highlight-link:hover {
+  opacity: 0.82;
+  text-decoration-color: #BA1422 !important;
+}

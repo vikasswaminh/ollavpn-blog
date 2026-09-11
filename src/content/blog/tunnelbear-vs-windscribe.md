@@ -31,7 +31,7 @@ tags: ['comparisons']
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">What about speed and available protocols:</strong> OllaVPN offers 10 Mbps on its free tier and 10 Gbps on its Plus tier, exclusively using the [WireGuard protocol](/blog/wireguard-vs-openvpn/) with advanced options like QUIC.
+        <strong style="color: #0F172A; font-weight: 800;">What about speed and available protocols:</strong> OllaVPN offers 10 Mbps on its free tier and 10 Gbps on its Plus tier, exclusively using the <a href="/blog/wireguard-vs-openvpn/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard protocol</a> with advanced options like QUIC.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">

@@ -21,7 +21,7 @@ Plenty of apps are technically free and technically encrypt something, but throt
 OllaVPN Free is built around the other definition: no ads, no data caps, no logs, and a flat 10 Mbps that's genuinely enough for HD streaming, calls, and normal browsing on your phone. It's available on every server in our network, forever, with no credit card or account required. It's funded by our optional Plus subscribers rather than by selling your activity or wearing you down with ads until you upgrade.
 </p>
 <p style="font-size: 0.925rem; line-height: 1.72; color: #09090b; margin: 0 0 8px 0; font-family: 'Lato', sans-serif;">
-We'll walk through what "no logs" needs to mean technically to be trustworthy (not just a slogan), what Android-specific privacy risks a VPN does and doesn't address, how OllaVPN's [kill switch](/blog/what-is-a-vpn-kill-switch/) and in-tunnel DNS work on your phone, the setup steps, honest speed math for common Android use cases, and how to verify every claim in this guide yourself, without taking our word for it.
+We'll walk through what "no logs" needs to mean technically to be trustworthy (not just a slogan), what Android-specific privacy risks a VPN does and doesn't address, how OllaVPN's <a href="/blog/what-is-a-vpn-kill-switch/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">kill switch</a> and in-tunnel DNS work on your phone, the setup steps, honest speed math for common Android use cases, and how to verify every claim in this guide yourself, without taking our word for it.
 </p>
 </section>
 

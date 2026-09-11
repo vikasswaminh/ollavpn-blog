@@ -19,7 +19,7 @@ tags: ['buyer-guides']
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">Why Do People in the USA Actually Need a VPN:</strong> People in the USA use VPNs primarily to protect their online privacy from aggressive data collection, bypass [ISP throttling](/blog/vpn-for-avoiding-isp-throttling/), and ensure greater digital freedom.
+        <strong style="color: #0F172A; font-weight: 800;">Why Do People in the USA Actually Need a VPN:</strong> People in the USA use VPNs primarily to protect their online privacy from aggressive data collection, bypass <a href="/blog/vpn-for-avoiding-isp-throttling/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">ISP throttling</a>, and ensure greater digital freedom.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">

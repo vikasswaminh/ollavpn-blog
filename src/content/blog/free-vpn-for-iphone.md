@@ -11,7 +11,7 @@ tags: ['buyer-guides']
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
     A genuinely free iPhone VPN with no credit card and no logs in 2026 means exactly what it says: you download the app, tap connect, and get a private, encrypted connection without entering payment details, without your usage being tracked or sold, and without a countdown timer quietly running in the background.
 
-OllaVPN Free gives you exactly that, 10 Mbps, every country in our network, post-quantum-ready encryption, a [kill switch](/blog/what-is-a-vpn-kill-switch/) on by default, and a [strict no-logs policy](/blog/what-logs-does-vpn-keep/), sustained by OllaVPN Plus subscribers rather than by your data.
+OllaVPN Free gives you exactly that, 10 Mbps, every country in our network, post-quantum-ready encryption, a <a href="/blog/what-is-a-vpn-kill-switch/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">kill switch</a> on by default, and a <a href="/blog/what-logs-does-vpn-keep/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">strict no-logs policy</a>, sustained by OllaVPN Plus subscribers rather than by your data.
 
 You’re not getting a stripped-down trial. You’re getting the real security stack, WireGuard, a hybrid post-quantum handshake, in-tunnel DNS, four-layer peer isolation, on a plan that never expires and never asks for a card.
 

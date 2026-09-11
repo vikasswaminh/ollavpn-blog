@@ -37,7 +37,7 @@ tags: ['comparisons']
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">Are Both VPNs Truly Private and Secure:</strong> Yes, both OllaVPN's free and Plus plans are designed to be truly private and secure, with a strong [no-logs policy](/blog/what-logs-does-vpn-keep/) and advanced encryption.
+        <strong style="color: #0F172A; font-weight: 800;">Are Both VPNs Truly Private and Secure:</strong> Yes, both OllaVPN's free and Plus plans are designed to be truly private and secure, with a strong <a href="/blog/what-logs-does-vpn-keep/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs policy</a> and advanced encryption.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">

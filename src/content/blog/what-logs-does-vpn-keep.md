@@ -43,7 +43,7 @@ tags: ['privacy-security']
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">Which jurisdictional considerations actually matter for VPN logs:</strong> The most important jurisdictional consideration for VPN logs is whether a country has mandatory data retention laws or is part of intelligence-sharing alliances like [Five Eyes](/blog/five-eyes-nine-eyes-fourteen-eyes/).
+        <strong style="color: #0F172A; font-weight: 800;">Which jurisdictional considerations actually matter for VPN logs:</strong> The most important jurisdictional consideration for VPN logs is whether a country has mandatory data retention laws or is part of intelligence-sharing alliances like <a href="/blog/five-eyes-nine-eyes-fourteen-eyes/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">Five Eyes</a>.
       </div>
     </li>
   </ul>

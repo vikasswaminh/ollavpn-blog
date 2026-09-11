@@ -19,7 +19,7 @@ tags: ['buyer-guides']
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">What Does a Truly [Free VPN for Android](/blog/free-vpn-for-android/) Actually Mean:</strong> A truly free VPN for Android gives you essential privacy and security features without demanding payment, harvesting your data, or bombarding you with ads.
+        <strong style="color: #0F172A; font-weight: 800;">What Does a Truly <a href="/blog/free-vpn-for-android/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">Free VPN for Android</a> Actually Mean:</strong> A truly free VPN for Android gives you essential privacy and security features without demanding payment, harvesting your data, or bombarding you with ads.
       </div>
     </li>
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">

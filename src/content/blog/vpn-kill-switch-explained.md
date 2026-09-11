@@ -12,13 +12,13 @@ pillar: false
 <section id="tldr" class="article-tldr-box">
 <h3 style="font-size: 1.15rem; font-weight: 800; color: #323652; margin: 0 0 6px 0; font-family: var(--font), 'Lato', sans-serif;">TL;DR</h3>
 <p style="font-size: 1.05rem; line-height: 1.7; color: #09090b; margin: 0 0 8px 0; font-family: var(--font), 'Lato', sans-serif;">
-A [VPN kill switch](/blog/what-is-a-vpn-kill-switch.html) is a safety feature that instantly cuts your internet access the moment your VPN connection drops, so your real IP address and unencrypted data don't leak out to the open internet, even for a second.
+A <a href="/blog/what-is-a-vpn-kill-switch.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">VPN kill switch</a> is a safety feature that instantly cuts your internet access the moment your VPN connection drops, so your real IP address and unencrypted data don't leak out to the open internet, even for a second.
 </p>
 <p style="font-size: 1.05rem; line-height: 1.7; color: #09090b; margin: 0 0 8px 0; font-family: var(--font), 'Lato', sans-serif;">
-It works by continuously monitoring your [VPN tunnel](/blog/what-is-a-vpn-tunnel.html). The instant it detects the tunnel has failed (a dead server, a Wi-Fi drop, a sleep/wake cycle, a network switch), it blocks all traffic at the firewall level until the tunnel is back up, or until you manually turn the VPN off. During that block, nothing "gets through" via your normal, unprotected connection.
+It works by continuously monitoring your <a href="/blog/what-is-a-vpn-tunnel.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">VPN tunnel</a>. The instant it detects the tunnel has failed (a dead server, a Wi-Fi drop, a sleep/wake cycle, a network switch), it blocks all traffic at the firewall level until the tunnel is back up, or until you manually turn the VPN off. During that block, nothing "gets through" via your normal, unprotected connection.
 </p>
 <p style="font-size: 1.05rem; line-height: 1.7; color: #09090b; margin: 0 0 8px 0; font-family: var(--font), 'Lato', sans-serif;">
-If you use [public Wi-Fi](/blog/how-public-wifi-steals-passwords.html), handle anything sensitive online, live somewhere with strict internet monitoring, or simply don't want your ISP logging your activity during the seconds a VPN connection wobbles, a kill switch isn't optional. It's the feature that makes the rest of the VPN's promises actually hold up in real life.
+If you use <a href="/blog/how-public-wifi-steals-passwords.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">public Wi-Fi</a>, handle anything sensitive online, live somewhere with strict internet monitoring, or simply don't want your ISP logging your activity during the seconds a VPN connection wobbles, a kill switch isn't optional. It's the feature that makes the rest of the VPN's promises actually hold up in real life.
 </p>
 </section>
 
