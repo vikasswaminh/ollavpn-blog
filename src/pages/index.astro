@@ -114,30 +114,29 @@ const curriculumTracks = [
   title="OllaVPN Blog | Cybersecurity, Protocols & Quantum Defense"
   description="140 peer-reviewed technical guides, protocol benchmarks, DNS leak testing, and post-quantum VPN architecture verified for 2026."
 >
-  
-  <!-- BreadcrumbList Schema JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://ollavpn.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Blog",
-        "item": "https://ollavpn.com/blog/"
-      }
-    ]
-  }
-  </script>
-
   <div class="ug-container">
+
+        <!-- BreadcrumbList Schema JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ollavpn.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://ollavpn.com/blog/"
+        }
+      ]
+    }
+    </script>
 
     <!-- 1. BREADCRUMBS -->
     <nav class="ug-breadcrumb-bar" aria-label="Breadcrumb">
@@ -160,48 +159,57 @@ const curriculumTracks = [
           <div>
             <div class="ug-meta-row">
               <span class="ug-badge">Post-Quantum Cryptography</span>
-              <span>&bull;</span>
-              <time datetime="2026-07-04">{formatDate(leadStory.data.pubDate)}</time>
-              <span>&bull;</span>
-              <span>{leadReadTime} min read</span>
+              <span class="ug-meta-dot">&bull;</span>
+              <time datetime="2026-07-04">04 Jul 2026</time>
+              <span class="ug-meta-dot">&bull;</span>
+              <span>23 min read</span>
             </div>
 
             <h2 class="ug-hero-title">
-              <a href={`/blog/${leadStory.slug}.html`}>
-                {leadStory.data.title}
+              <a href="/blog/what-is-a-post-quantum-vpn.html">
+                What Is a Post&ndash;Quantum VPN and Why Do You Need One?
               </a>
             </h2>
 
-            <p class="ug-hero-excerpt">
-              {leadStory.data.description}
-            </p>
+            <!-- Screenshot 2: Key Takeaway Callout Box -->
+            <div class="ug-key-takeaway">
+              <div class="ug-takeaway-label">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                </svg>
+                <span>KEY TAKEAWAY</span>
+              </div>
+              <p class="ug-takeaway-text">
+                Adversaries are actively intercepting encrypted VPN tunnels today under &ldquo;Harvest Now, Decrypt Later&rdquo; mandates. OllaVPN implements NIST-standardized Kyber-768 lattice key exchanges to ensure zero backward decryption even against quantum adversaries.
+              </p>
+            </div>
           </div>
 
-          <!-- Author Byline -->
+          <!-- Author Byline (Screenshot 2 exact match) -->
           <div class="ug-author-bar">
             <img 
               src="/images/vikas-swami-avatar.webp" 
-              alt="Mr. Vikas Swami" 
+              alt="Vikas Swami" 
               class="ug-author-avatar"
               width="36"
               height="36"
               loading="eager"
             />
-            <div>
-              <div class="ug-author-name">Mr. Vikas Swami</div>
-              <div class="ug-author-role">Dual CCIE #22239 &bull; Network Security Architect</div>
+            <div class="ug-author-info">
+              <div class="ug-author-name">Vikas Swami</div>
+              <div class="ug-author-role">Dual CCIE #22239 &bull; Founder &amp; Chief Architect</div>
             </div>
           </div>
         </div>
 
-        <!-- Hero Media Column -->
+        <!-- Hero Media Column (Screenshot 2: Hand holding phone with chrome lock on cream/purple split) -->
         <div class="ug-hero-media">
-          <a href={`/blog/${leadStory.slug}.html`} style="display:block; width:100%; height:100%;" aria-label={leadStory.data.title}>
+          <a href="/blog/what-is-a-post-quantum-vpn.html" style="display:block; width:100%; height:100%;" aria-label="What Is a Post-Quantum VPN and Why Do You Need One?">
             <img 
-              src="/images/category-pillars.webp" 
-              alt={leadStory.data.title}
-              width="650"
-              height="400"
+              src="/images/ollavpn-hero-lock.webp" 
+              alt="What Is a Post-Quantum VPN and Why Do You Need One?"
+              width="688"
+              height="384"
               loading="eager"
             />
           </a>
@@ -328,30 +336,7 @@ const curriculumTracks = [
 
   <!-- 4. MODULAR CURRICULA TRACKS -->
   <section class="ug-curriculum-section" id="curriculum-section" aria-labelledby="curriculum-heading">
-    
-  <!-- BreadcrumbList Schema JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://ollavpn.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Blog",
-        "item": "https://ollavpn.com/blog/"
-      }
-    ]
-  }
-  </script>
-
-  <div class="ug-container">
+    <div class="ug-container">
       <div class="ug-section-header">
         <div>
           <h2 id="curriculum-heading" class="ug-section-title">
@@ -394,30 +379,7 @@ const curriculumTracks = [
 
   <!-- 5. DUAL CCIE ADVISORY & LAB AUDITS SECTION -->
   <section class="ug-support-section" id="support-section">
-    
-  <!-- BreadcrumbList Schema JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://ollavpn.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Blog",
-        "item": "https://ollavpn.com/blog/"
-      }
-    ]
-  }
-  </script>
-
-  <div class="ug-container">
+    <div class="ug-container">
       <div class="ug-support-grid">
         <!-- Card 1 -->
         <div class="ug-support-card">
