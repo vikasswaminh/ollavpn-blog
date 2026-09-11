@@ -5510,27 +5510,9 @@ article h2::before,
   cursor: pointer;
 }
 
-.ug-logo-icon {
-  width: 40px !important;
-  height: 40px !important;
-  min-width: 40px !important;
-  min-height: 40px !important;
-  border-radius: 8px !important;
-  background: linear-gradient(135deg, #EE2C3C 0%, #BA1422 100%) !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  color: #FFFFFF !important;
-  box-shadow: 0 4px 10px rgba(238, 44, 60, 0.28) !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease !important;
-}
+.ug-logo-icon { background: none !important; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; }
 
-.ug-logo-group:hover .ug-logo-icon {
-  transform: scale(1.05);
-  box-shadow: 0 6px 14px rgba(238, 44, 60, 0.35) !important;
-}
+.ug-logo-group:hover .ug-logo-icon { background: none !important; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; }
 
 .ug-logo-icon svg {
   width: 24px !important;
