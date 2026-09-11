@@ -46,7 +46,7 @@
   --ug-radius-full: 9999px;
 
   /* Fonts */
-  --ug-font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --ug-font-sans: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 /* Base Resets */
@@ -117,6 +117,18 @@ button {
   justify-content: space-between;
   height: 72px;
   gap: 1.5rem;
+}
+
+.ug-logo-img {
+  width: 36px;
+  height: 36px;
+  display: block;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.ug-logo-group:hover .ug-logo-img {
+  transform: scale(1.06);
 }
 
 .ug-logo-group {
