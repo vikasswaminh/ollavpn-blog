@@ -55,7 +55,7 @@ Ever heard "VPN protocol" and felt like you needed a computer science degree to 
 
 ## What Is a VPN Protocol in Plain English?
 
-A VPN protocol is a set of rules that dictates how your device securely connects to a VPN server, essentially creating a private, encrypted tunnel for your internet traffic.
+A VPN protocol is a set of rules that dictates how your device securely connects to a VPN server, essentially creating a private, [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html) for your internet traffic.
 
 Think of it like this: when you want to send a secret message across a busy public square, you wouldn't just shout it out. You'd use a secret code and maybe a special, shielded tube to send it. A VPN protocol is that secret code and the design for that shielded tube, ensuring your data travels safely and privately.
 
@@ -169,7 +169,7 @@ A definitional explainer should leave you understanding not just the concept but
 
 If you've read this far, you probably want to know how the concept applies to OllaVPN's product. The short version:
 
-**If the concept above is something a VPN should provide** (no-logs, kill switch, in-tunnel DNS, peer isolation, post-quantum cryptography), OllaVPN ships it by default on the free tier. The cryptographic stack uses WireGuard with a hybrid X25519 + ML-KEM-768 handshake; the kill switch is enforced at the OS firewall layer (Windows Filtering Platform on Windows, Packet Filter on macOS, VpnService.setBlockingMode on Android); DNS goes to an in-tunnel unbound resolver with the OS DNS path firewall-blocked; peer isolation is enforced in four independent layers including an automated end-to-end test. Read the [technology page](/technology) for the complete architecture.
+**If the concept above is something a VPN should provide** (no-logs, kill switch, in-tunnel DNS, peer isolation, [post-quantum cryptography](/blog/what-is-post-quantum-cryptography.html)), OllaVPN ships it by default on the free tier. The cryptographic stack uses WireGuard with a hybrid X25519 + ML-KEM-768 handshake; the kill switch is enforced at the OS firewall layer (Windows Filtering Platform on Windows, Packet Filter on macOS, VpnService.setBlockingMode on Android); DNS goes to an in-tunnel unbound resolver with the OS DNS path firewall-blocked; peer isolation is enforced in four independent layers including an automated end-to-end test. Read the [technology page](/technology) for the complete architecture.
 
 **If the concept above is something only a VPN partially helps with** (anonymity, censorship circumvention, streaming geo-unblock), OllaVPN does what a privacy VPN can do but the underlying limits of the category apply. We don't oversell capabilities we don't have. The [best free VPN 2026 guide](/best-free-vpn-2026) covers what's realistic to expect from a free VPN versus what requires a paid tier or a different category of tool entirely.
 

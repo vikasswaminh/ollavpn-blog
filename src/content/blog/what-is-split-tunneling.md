@@ -9,7 +9,7 @@ tags: ['beginner-basics']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    Split tunneling is a clever feature that lets you decide which internet traffic uses your VPNs secure tunnel and which goes directly to the internet. Its like having two separate pathways for your online activi... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
+    Split tunneling is a clever feature that lets you decide which internet traffic uses your VPNs secure tunnel and which goes directly to the internet. Its like having two separate pathways for your online activi... OllaVPN delivers high-throughput, quantum-resilient [WireGuard encryption](/blog/wireguard-vs-openvpn.html) with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -55,7 +55,7 @@ You've probably heard that a VPN encrypts all your internet traffic, but what if
 
 ## What exactly is split tunneling?
 
-Split tunneling is a VPN feature that lets you choose which of your internet traffic goes through the encrypted VPN tunnel and which connects directly to the internet.
+Split tunneling is a VPN feature that lets you choose which of your internet traffic goes through the encrypted [VPN tunnel](/blog/what-is-a-vpn-tunnel.html) and which connects directly to the internet.
 
 It's essentially a form of **selective routing** for your online activity. Normally, when you connect to a VPN like OllaVPN, all your internet traffic, every single byte, travels through a secure, encrypted tunnel to a VPN server before heading out to the web. This is great for privacy and security, as it hides your IP address and encrypts your data from your device all the way to our servers. But sometimes, you don't need or want all your traffic to go through the VPN. Maybe you're streaming content from a service that performs better with a direct internet connection, or perhaps you're accessing a local network device (like a printer or a network-attached storage drive) that can only be reached if your traffic stays on your **local network**. Split tunneling gives you the flexibility to decide. You can tell specific applications or websites to use the VPN, while others bypass it entirely and use your regular **direct internet connection**. This means you can enjoy the privacy and security benefits of OllaVPN for your sensitive browsing, while simultaneously performing activities that require your real IP address or higher speeds, all without constantly connecting and disconnecting from your VPN. It's about giving you more control over your digital footprint and optimizing your internet usage for different needs.
 
@@ -161,7 +161,7 @@ A definitional explainer should leave you understanding not just the concept but
 
 If you've read this far, you probably want to know how the concept applies to OllaVPN's product. The short version:
 
-**If the concept above is something a VPN should provide** (no-logs, kill switch, in-tunnel DNS, peer isolation, post-quantum cryptography), OllaVPN ships it by default on the free tier. The cryptographic stack uses WireGuard with a hybrid X25519 + ML-KEM-768 handshake; the kill switch is enforced at the OS firewall layer (Windows Filtering Platform on Windows, Packet Filter on macOS, VpnService.setBlockingMode on Android); DNS goes to an in-tunnel unbound resolver with the OS DNS path firewall-blocked; peer isolation is enforced in four independent layers including an automated end-to-end test. Read the [technology page](/technology) for the complete architecture.
+**If the concept above is something a VPN should provide** (no-logs, kill switch, in-tunnel DNS, peer isolation, [post-quantum cryptography](/blog/what-is-post-quantum-cryptography.html)), OllaVPN ships it by default on the free tier. The cryptographic stack uses WireGuard with a hybrid X25519 + ML-KEM-768 handshake; the kill switch is enforced at the OS firewall layer (Windows Filtering Platform on Windows, Packet Filter on macOS, VpnService.setBlockingMode on Android); DNS goes to an in-tunnel unbound resolver with the OS DNS path firewall-blocked; peer isolation is enforced in four independent layers including an automated end-to-end test. Read the [technology page](/technology) for the complete architecture.
 
 **If the concept above is something only a VPN partially helps with** (anonymity, censorship circumvention, streaming geo-unblock), OllaVPN does what a privacy VPN can do but the underlying limits of the category apply. We don't oversell capabilities we don't have. The [best free VPN 2026 guide](/best-free-vpn-2026) covers what's realistic to expect from a free VPN versus what requires a paid tier or a different category of tool entirely.
 

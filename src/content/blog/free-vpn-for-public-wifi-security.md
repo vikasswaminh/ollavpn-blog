@@ -9,7 +9,7 @@ tags: ["buyer-guides"]
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    A free VPN creates an encrypted tunnel between your device and the internet on [public Wi-Fi](/blog/how-public-wifi-steals-passwords/), protecting your passwords, session tokens, and browsing traffic from eavesdroppers, evil twins, and compromised routers. For basic web security at airports, hotels, and cafes, OllaVPN Free delivers unlimited data, WireGuard speeds, and zero activity logs without requiring credit card registration.
+    A free VPN creates an [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html) between your device and the internet on [public Wi-Fi](/blog/how-public-wifi-steals-passwords/), protecting your passwords, session tokens, and browsing traffic from eavesdroppers, evil twins, and compromised routers. For basic web security at airports, hotels, and cafes, OllaVPN Free delivers unlimited data, WireGuard speeds, and zero activity logs without requiring credit card registration.
   </p>
 </section>
 
@@ -177,7 +177,7 @@ tags: ["buyer-guides"]
 <section id="download" class="download-section-box" style="background: linear-gradient(135deg, #ffffff 0%, #FFF8F8 100%); border: 1.5px solid rgba(218, 41, 28, 0.2); border-radius: 18px; padding: 32px 28px; margin-bottom: 24px; text-align: center; width: 100%; box-shadow: 0 6px 24px rgba(218, 41, 28, 0.06); box-sizing: border-box;">
   <h2 style="font-size: 1.875rem; font-weight: 800; color: #0F172A; margin: 0 0 10px 0; border: none !important; padding-bottom: 0 !important;">Protect Your Connection with OllaVPN</h2>
   <p style="font-size: 0.925rem; color: #475569; max-width: 650px; margin: 0 auto 18px auto; line-height: 1.65;">
-    Enjoy unlimited data, next-generation WireGuard encryption, and audited zero activity logs on Android, iOS, Windows, and macOS.
+    Enjoy unlimited data, next-generation [WireGuard encryption](/blog/wireguard-vs-openvpn.html), and audited zero activity logs on Android, iOS, Windows, and macOS.
   </p>
   <a href="https://ollavpn.com/apps.html" target="_blank" rel="noopener" class="btn-primary" style="display: inline-block; background: #DA291C !important; color: #FFFFFF !important; font-size: 0.95rem; font-weight: 800; padding: 14px 36px; border-radius: 10px; text-decoration: none !important; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.25); transition: all 0.2s ease;">
     Download OllaVPN Free &rarr;

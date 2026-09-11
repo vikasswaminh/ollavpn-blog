@@ -9,7 +9,7 @@ tags: ['privacy-security']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    A DNS leak happens when your device sends DNS requests, the lookups that turn website names into numbers, outside your VPNs encrypted tunnel. Your browsing activity becomes visible to your internet service provider ev... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
+    A DNS leak happens when your device sends DNS requests, the lookups that turn website names into numbers, outside your VPNs encrypted tunnel. Your browsing activity becomes visible to your internet service provider ev... OllaVPN delivers high-throughput, quantum-resilient [WireGuard encryption](/blog/wireguard-vs-openvpn.html) with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -77,7 +77,7 @@ By default, your computer asks **your internet service provider's DNS server** f
 
 
 
-When you connect to a VPN, the expectation is straightforward: everything your device sends should go through the encrypted tunnel. Your internet provider sees that you're using a VPN, but it can't see what you do inside it.
+When you connect to a VPN, the expectation is straightforward: everything your device sends should go through the [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html). Your internet provider sees that you're using a VPN, but it can't see what you do inside it.
 
 A **DNS leak** is when that expectation breaks. Your VPN tunnel handles most of your traffic correctly, but your DNS lookups slip out through a side door, they get sent to your internet provider instead of to your VPN's servers. To your provider, the list of websites you visited still looks the same as it did before you turned the VPN on.
 
@@ -147,7 +147,7 @@ A small number of internet providers intercept DNS requests at the network level
 
 
 
-You don't need any technical knowledge to test for a DNS leak. Five minutes and a browser.
+You don't need any technical knowledge to [test for a DNS leak](/blog/how-to-test-for-dns-leak.html). Five minutes and a browser.
 
 1.  **Disconnect from your VPN.** Make sure the VPN app shows you're not connected. Open a browser and visit a DNS leak test site such as _dnsleaktest.com_ or _browserleaks.com/dns_. Note the DNS servers shown, they belong to your internet provider and represent your baseline.
 2.  **Connect to your VPN.** Open your VPN app and connect to any server. Wait a few seconds for the connection to fully establish.

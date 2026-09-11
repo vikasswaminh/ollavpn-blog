@@ -152,7 +152,7 @@ We'd rather set that expectation clearly than let a VPN's marketing imply it's a
 
 Starting with encryption: you should expect a modern protocol, most commonly WireGuard, which balances strong encryption with efficiency that matters on a battery-powered device. Older protocols can work, but they tend to be heavier on battery and CPU, more noticeable on a phone you carry all day than on a desktop plugged into the wall. If a free Android VPN is still defaulting to an outdated protocol in 2026, that's worth noticing.
 
-Beyond the protocol, a kill switch on by default is close to non-negotiable. On a phone, network transitions happen constantly and invisibly, switching from Wi-Fi to mobile data as you walk out of a building, Wi-Fi briefly dropping, moving between cell towers. Each transition is a moment your VPN tunnel could theoretically drop. Without a kill switch, your traffic simply reverts to going out unprotected during that gap, usually without you noticing.
+Beyond the protocol, a kill switch on by default is close to non-negotiable. On a phone, network transitions happen constantly and invisibly, switching from Wi-Fi to mobile data as you walk out of a building, Wi-Fi briefly dropping, moving between cell towers. Each transition is a moment your [VPN tunnel](/blog/what-is-a-vpn-tunnel.html) could theoretically drop. Without a kill switch, your traffic simply reverts to going out unprotected during that gap, usually without you noticing.
 
 This should be the default state, not a toggle you have to know to look for in a settings menu.
 
@@ -351,7 +351,7 @@ Test 6, Audit history. Search "[operator name] security audit" and look for a pu
       <span class="faq-accordion-icon" style="font-size: 1.15rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0; font-family: 'Lato', sans-serif;">
-      Not meaningfully. We use the [WireGuard protocol](/blog/wireguard-vs-openvpn/) by default specifically because it's efficient on battery and CPU compared to older, heavier VPN protocols. That matters more on a phone you carry and check throughout the day than on a device that's usually plugged in.
+      Not meaningfully. We use the [WireGuard protocol](/blog/wireguard-vs-openvpn/) by default specifically because it's efficient on battery and CPU compared to older, heavier [VPN protocols](/blog/what-is-a-vpn-protocol.html). That matters more on a phone you carry and check throughout the day than on a device that's usually plugged in.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">

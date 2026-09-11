@@ -9,7 +9,7 @@ tags: ['how-to-guides']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    To quickly check if your OllaVPN is working, open the app, connect to a server in a different country, then immediately visit a site like ipleak.net or dnsleaktest.com. OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
+    To quickly check if your OllaVPN is working, open the app, connect to a server in a different country, then immediately visit a site like ipleak.net or dnsleaktest.com. OllaVPN delivers high-throughput, quantum-resilient [WireGuard encryption](/blog/wireguard-vs-openvpn.html) with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -61,7 +61,7 @@ You can quickly check if your VPN is doing its job in just a few minutes. First,
 
 Next, fire up your VPN app and **connect VPN** to a server location of your choice. Once it shows you're connected, go back to ipleak.net or dnsleaktest.com and refresh the page. What you're looking for is a change in your public IP address. It should now show an IP address that corresponds to the VPN server you connected to, not your actual location. For example, if you connected to a server in Japan, you should see a Japanese IP address.
 
-Beyond just the IP, you also want to check your **DNS servers**. These should also show up as being in or near the VPN server location you've chosen. If they still show your original ISP's DNS servers, or servers in a completely different country, that's a [DNS leak](/blog/what-is-a-dns-leak/), and it means your VPN isn't fully protecting your privacy. A good VPN, like OllaVPN, routes all your traffic, including DNS requests, through its encrypted tunnel. If everything matches your VPN server location, you're good to go!
+Beyond just the IP, you also want to check your **DNS servers**. These should also show up as being in or near the VPN server location you've chosen. If they still show your original ISP's DNS servers, or servers in a completely different country, that's a [DNS leak](/blog/what-is-a-dns-leak/), and it means your VPN isn't fully protecting your privacy. A good VPN, like OllaVPN, routes all your traffic, including DNS requests, through its [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html). If everything matches your VPN server location, you're good to go!
 
 ## Can you give me a step-by-step walkthrough for testing my VPN?
 
@@ -89,7 +89,7 @@ You know the drill: you flip on your VPN, expect instant privacy, and instead, y
 
 A common culprit is other software on your device. Your **firewall interference** or antivirus program might be blocking the VPN connection. Try temporarily disabling them to see if that resolves the issue; if it does, you'll need to add an exception for OllaVPN. Similarly, **browser extensions** can sometimes cause conflicts, especially if they're also privacy-focused or proxy-based. Try browsing in an incognito window or disabling extensions one by one to pinpoint the problem. And speaking of browsers, sometimes old data hangs around, a quick **clear cache** of your browser can work wonders.
 
-Inside OllaVPN, if you're experiencing drops, always double-check that your [kill switch](/blog/what-is-a-kill-switch) is active. It's on by default for a reason, to prevent accidental data leaks if your connection drops. If you're having trouble connecting to certain sites or services, it might be related to your [DNS settings](/blog/what-is-dns). OllaVPN uses its own secure DNS, but sometimes local network settings can interfere, or you might need to flush your DNS cache. Finally, if you're on a particularly restrictive network, like at a school or workplace, try switching protocols. OllaVPN offers both WireGuard and a QUIC option, which can sometimes bypass blocks that traditional VPN protocols can't.
+Inside OllaVPN, if you're experiencing drops, always double-check that your [kill switch](/blog/what-is-a-kill-switch) is active. It's on by default for a reason, to prevent accidental data leaks if your connection drops. If you're having trouble connecting to certain sites or services, it might be related to your [DNS settings](/blog/what-is-dns). OllaVPN uses its own secure DNS, but sometimes local network settings can interfere, or you might need to flush your DNS cache. Finally, if you're on a particularly restrictive network, like at a school or workplace, try switching protocols. OllaVPN offers both WireGuard and a QUIC option, which can sometimes bypass blocks that traditional [VPN protocols](/blog/what-is-a-vpn-protocol.html) can't.
 
 ## How do I verify my VPN is working correctly after troubleshooting?
 
@@ -129,11 +129,11 @@ For those who like to dig a little deeper, there are indeed some more technical 
 
 Another powerful tool is **packet capture (Wireshark)**. This allows you to inspect the actual data packets leaving your device. When OllaVPN is connected, you should see encrypted WireGuard traffic going to our network, and no unencrypted traffic related to your browsing or activity making it out. This is a definitive way to confirm that your data is being properly encapsulated and protected.
 
-You'll also want to check for potential vulnerabilities like **IPv6 leaks**. Many VPNs only secure IPv4 traffic, leaving your IPv6 address exposed. OllaVPN is designed to prevent these leaks, so you can use online tools to verify that both your IPv4 and IPv6 addresses are protected and showing our server's IP. Furthermore, given our commitment to future-proofing, you can rest assured that our **post-quantum ready** encryption means your traffic is secured against even theoretical future threats, a level of protection few others offer.
+You'll also want to check for potential vulnerabilities like **[IPv6 leaks](/blog/what-is-an-ipv6-leak.html)**. Many VPNs only secure IPv4 traffic, leaving your IPv6 address exposed. OllaVPN is designed to prevent these leaks, so you can use online tools to verify that both your IPv4 and IPv6 addresses are protected and showing our server's IP. Furthermore, given our commitment to future-proofing, you can rest assured that our **post-quantum ready** encryption means your traffic is secured against even theoretical future threats, a level of protection few others offer.
 
 ## How does OllaVPN ensure my connection is always working and secure?
 
-OllaVPN ensures your connection is always working and secure through a combination of advanced protocols, robust features, and a strict no-logs policy.
+OllaVPN ensures your connection is always working and secure through a combination of advanced protocols, robust features, and a [strict no-logs policy](/blog/what-logs-does-vpn-keep.html).
 
 You want your VPN to just work, and to keep you safe without you having to think about it. That's why we build OllaVPN with features like a **kill switch by default**. If your VPN connection ever drops unexpectedly, your internet traffic is immediately cut off, preventing any data leaks outside the secure tunnel. We also use the [WireGuard protocol](/technology#wireguard), which is known for its speed, efficiency, and strong cryptography, meaning a stable connection that won't drain your device battery.
 

@@ -9,7 +9,7 @@ tags: ['pillars']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    The full, plain-English guide to what someone can actually do with your IP address, location tracking, DDoS attacks, targeted hacking, identity fraud, and how to protect yourself. OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
+    The full, plain-English guide to what someone can actually do with your IP address, location tracking, DDoS attacks, targeted hacking, identity fraud, and how to protect yourself. OllaVPN delivers high-throughput, quantum-resilient [WireGuard encryption](/blog/wireguard-vs-openvpn.html) with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -259,7 +259,7 @@ IP addresses can also be spoofed in some contexts, meaning forged to appear as i
 
 ## ISP complaints and service blocks
 
-If someone files a copyright infringement complaint naming your IP address, or if your IP is flagged for abuse (including through a wrongful report), your ISP may throttle your connection, issue warnings, or terminate service after repeated incidents. This is a real and underappreciated risk, especially for IPs in shared or dynamically assigned environments.
+If someone files a copyright infringement complaint naming your IP address, or if your IP is flagged for abuse (including through a wrongful report), your ISP may [throttle your connection](/blog/vpn-for-avoiding-isp-throttling.html), issue warnings, or terminate service after repeated incidents. This is a real and underappreciated risk, especially for IPs in shared or dynamically assigned environments.
 
 This risk sits at the intersection of IP exposure and bureaucratic systems.
 
@@ -369,7 +369,7 @@ A VPN hides your real IP from sites, services, and other users by replacing it w
 
 Use a trustworthy VPN
 
-This is the single most effective step. A VPN routes your traffic through an encrypted tunnel to a server in a location you choose. Every site you visit, every game you play, and every service you connect to sees the VPN server’s IP, not yours. DDoS attacks aimed at “your IP” hit the VPN server. Geolocation of your IP points to the VPN server’s location, not your home.
+This is the single most effective step. A VPN routes your traffic through an [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html) to a server in a location you choose. Every site you visit, every game you play, and every service you connect to sees the VPN server’s IP, not yours. DDoS attacks aimed at “your IP” hit the VPN server. Geolocation of your IP points to the VPN server’s location, not your home.
 
 What matters when choosing:
 

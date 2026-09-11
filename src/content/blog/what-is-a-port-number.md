@@ -9,7 +9,7 @@ tags: ['beginner-basics']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    Think of a port number as a specific door or channel on your computer that applications use to send and receive information over the internet. Your IP address gets data to your device, but the port number makes sure that... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
+    Think of a port number as a specific door or channel on your computer that applications use to send and receive information over the internet. Your IP address gets data to your device, but the port number makes sure that... OllaVPN delivers high-throughput, quantum-resilient [WireGuard encryption](/blog/wireguard-vs-openvpn.html) with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -103,7 +103,7 @@ For the vast majority of your daily internet use, browsing, streaming, emailing,
 
 However, there are specific situations where understanding port numbers becomes crucial. If you're trying to set up a game server, host a website from your home computer, or use certain P2P applications, you'll often encounter terms like "port forwarding." This is because inbound connections to your home network are usually blocked by your router's firewall; you need to tell your router which specific port to open and which device on your network traffic for that port should be sent to. This is where **server hosting** and specific **P2P applications** like old torrent clients or some VoIP software often require manual configuration.
 
-Another key area is **troubleshooting connectivity**. If an application isn't connecting to the internet, checking if the required ports are open (or blocked by a firewall) can be a critical diagnostic step. Similarly, for those concerned with digital hygiene, understanding which ports are open on their devices or networks is part of basic **security audits**. OllaVPN handles all port negotiation for you within the VPN tunnel, so you don't have to worry about it when you're connected to us, but it's still good to know the basics for when you're not.
+Another key area is **troubleshooting connectivity**. If an application isn't connecting to the internet, checking if the required ports are open (or blocked by a firewall) can be a critical diagnostic step. Similarly, for those concerned with digital hygiene, understanding which ports are open on their devices or networks is part of basic **security audits**. OllaVPN handles all port negotiation for you within the [VPN tunnel](/blog/what-is-a-vpn-tunnel.html), so you don't have to worry about it when you're connected to us, but it's still good to know the basics for when you're not.
 
 ## How Does A Good VPN Handle Port Numbers For You Automatically?
 
@@ -149,7 +149,7 @@ A definitional explainer should leave you understanding not just the concept but
 
 If you've read this far, you probably want to know how the concept applies to OllaVPN's product. The short version:
 
-**If the concept above is something a VPN should provide** (no-logs, kill switch, in-tunnel DNS, peer isolation, post-quantum cryptography), OllaVPN ships it by default on the free tier. The cryptographic stack uses WireGuard with a hybrid X25519 + ML-KEM-768 handshake; the kill switch is enforced at the OS firewall layer (Windows Filtering Platform on Windows, Packet Filter on macOS, VpnService.setBlockingMode on Android); DNS goes to an in-tunnel unbound resolver with the OS DNS path firewall-blocked; peer isolation is enforced in four independent layers including an automated end-to-end test. Read the [technology page](/technology) for the complete architecture.
+**If the concept above is something a VPN should provide** (no-logs, kill switch, in-tunnel DNS, peer isolation, [post-quantum cryptography](/blog/what-is-post-quantum-cryptography.html)), OllaVPN ships it by default on the free tier. The cryptographic stack uses WireGuard with a hybrid X25519 + ML-KEM-768 handshake; the kill switch is enforced at the OS firewall layer (Windows Filtering Platform on Windows, Packet Filter on macOS, VpnService.setBlockingMode on Android); DNS goes to an in-tunnel unbound resolver with the OS DNS path firewall-blocked; peer isolation is enforced in four independent layers including an automated end-to-end test. Read the [technology page](/technology) for the complete architecture.
 
 **If the concept above is something only a VPN partially helps with** (anonymity, censorship circumvention, streaming geo-unblock), OllaVPN does what a privacy VPN can do but the underlying limits of the category apply. We don't oversell capabilities we don't have. The [best free VPN 2026 guide](/best-free-vpn-2026) covers what's realistic to expect from a free VPN versus what requires a paid tier or a different category of tool entirely.
 

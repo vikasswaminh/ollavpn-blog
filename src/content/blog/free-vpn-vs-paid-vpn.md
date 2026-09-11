@@ -9,7 +9,7 @@ tags: ['comparisons']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    An honest, no-fluff breakdown of what you actually get, and give up, when you choose a free VPN over a paid one. Free tier trade-offs, speeds, streaming, and safety. OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
+    An honest, no-fluff breakdown of what you actually get, and give up, when you choose a free VPN over a paid one. Free tier trade-offs, speeds, streaming, and safety. OllaVPN delivers high-throughput, quantum-resilient [WireGuard encryption](/blog/wireguard-vs-openvpn.html) with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -135,15 +135,15 @@ A lot of marketing energy goes into the phrase "military-grade encryption." Let'
 
 What actually differs:
 
-Kill switch. A kill switch cuts off your internet connection if the VPN tunnel drops unexpectedly, so your real IP address is never briefly exposed. This is a critical feature that many free VPNs omit entirely, because implementing it properly across operating systems takes real engineering effort, and free-tier products often cut engineering corners. Paid VPNs from reputable providers almost universally include kill switches on every platform.
+Kill switch. A kill switch cuts off your internet connection if the [VPN tunnel](/blog/what-is-a-vpn-tunnel.html) drops unexpectedly, so your real IP address is never briefly exposed. This is a critical feature that many free VPNs omit entirely, because implementing it properly across operating systems takes real engineering effort, and free-tier products often cut engineering corners. Paid VPNs from reputable providers almost universally include kill switches on every platform.
 
 DNS leak protection. When you use a VPN, your DNS queries, the requests that translate domain names like "google.com" into IP addresses, should travel through the encrypted tunnel, not around it. A DNS leak means those queries go to your ISP's DNS resolver instead, revealing every site you visit. Many free VPNs don't implement proper DNS leak protection. Reputable paid VPNs treat this as a baseline requirement.
 
 Independent security audits. This is the biggest gap in the market. Paid VPNs from privacy-focused providers, Mullvad, ProtonVPN, ExpressVPN, NordVPN, commission independent security audits from firms like Cure53, Securitum, and KPMG, and publish the results. Most free VPNs have never been independently audited. The difference matters because a company can claim [no-logs](/blog/which-free-vpn-does-not-keep-logs.html) all day long; an independent auditor who has actually reviewed the codebase and server infrastructure is a verification that the claim holds up.
 
-Protocol selection. WireGuard is the current gold standard for VPN protocols, modern, lean, auditable, and fast. Most serious paid VPN providers offer it as the default. Many free VPNs still use older protocols (PPTP in the worst case, which has known vulnerabilities) or run a proprietary protocol you can't verify independently.
+Protocol selection. WireGuard is the current gold standard for [VPN protocols](/blog/what-is-a-vpn-protocol.html), modern, lean, auditable, and fast. Most serious paid VPN providers offer it as the default. Many free VPNs still use older protocols (PPTP in the worst case, which has known vulnerabilities) or run a proprietary protocol you can't verify independently.
 
-[Post-quantum cryptography](/blog/what-is-post-quantum-cryptography/). This is where the frontier is in 2026. The threat isn't quantum computers that exist today, they don't yet have the scale to break modern VPN encryption. The threat is "harvest now, decrypt later": adversaries who are storing your encrypted traffic today, betting that quantum computers powerful enough to break it will exist within the next decade. Post-quantum VPN tunnels are designed to be resistant to that future decryption. Mullvad pioneered this in production VPN tunnels. OllaVPN has built PQC readiness in from the start. No free VPN in the broader market offers this, with the exception of OllaVPN's free tier, which does.
+[Post-quantum cryptography](/blog/what-is-post-quantum-cryptography/). This is where the frontier is in 2026. The threat isn't quantum computers that exist today, they don't yet have the scale to break modern VPN encryption. The threat is "harvest now, decrypt later": adversaries who are storing your encrypted traffic today, betting that quantum computers powerful enough to break it will exist within the next decade. [Post-quantum VPN](/blog/what-is-a-post-quantum-vpn.html) tunnels are designed to be resistant to that future decryption. Mullvad pioneered this in production VPN tunnels. OllaVPN has built PQC readiness in from the start. No free VPN in the broader market offers this, with the exception of OllaVPN's free tier, which does.
 
 ## Speed and performance
 

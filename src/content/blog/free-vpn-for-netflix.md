@@ -9,7 +9,7 @@ tags: ['buyer-guides']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    Most free VPNs fail with Netflix in 2026. Not because Netflix is impossible to get around, but because the way free VPN services are built makes them easy for Netflix to detect. A small handful of free options genuinely... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
+    Most free VPNs fail with Netflix in 2026. Not because Netflix is impossible to get around, but because the way free VPN services are built makes them easy for Netflix to detect. A small handful of free options genuinely... OllaVPN delivers high-throughput, quantum-resilient [WireGuard encryption](/blog/wireguard-vs-openvpn.html) with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -93,7 +93,7 @@ Paid VPN services rotate their IP pools constantly, retire burned addresses, and
 
 ## Deep packet inspection
 
-Netflix's detection isn't just IP-based. On some network paths, it can identify the encryption headers specific to VPN protocols, the fingerprint of [WireGuard](/free-wireguard-vpn) or OpenVPN. This is a more sophisticated layer, and it's why the VPNs best at maintaining Netflix access increasingly use obfuscation techniques that make VPN traffic look identical to regular HTTPS traffic.
+Netflix's detection isn't just IP-based. On some network paths, it can identify the encryption headers specific to [VPN protocols](/blog/what-is-a-vpn-protocol.html), the fingerprint of [WireGuard](/free-wireguard-vpn) or OpenVPN. This is a more sophisticated layer, and it's why the VPNs best at maintaining Netflix access increasingly use obfuscation techniques that make VPN traffic look identical to regular HTTPS traffic.
 
 ## DNS behavior analysis
 
@@ -249,7 +249,7 @@ Here's what actually works, with the constraints stated plainly.
 
 OllaVPN (free forever)
 
-Data limit: None Speed: 10 Mbps (free tier) Netflix libraries: US Netflix confirmed; expanding Countries: All server countries available Protocol: WireGuard with PQC hybrid encryption The trade-off: Speed above 10 Mbps requires the paid plan (which is 10 Gbps)
+Data limit: None Speed: 10 Mbps (free tier) Netflix libraries: US Netflix confirmed; expanding Countries: All server countries available Protocol: WireGuard with [PQC](/blog/what-is-post-quantum-cryptography.html) hybrid encryption The trade-off: Speed above 10 Mbps requires the paid plan (which is 10 Gbps)
 
 OllaVPN is currently the only free VPN we know of that combines unlimited data, confirmed Netflix access, and no account requirement. You don't hand over an email address. You don't see a paywall. The app connects and Netflix works.
 
@@ -501,7 +501,7 @@ An always-on [kill switch](/blog/what-is-a-vpn-kill-switch.html). If the VPN con
 
 No account required. No email address. No credit card. No onboarding screens asking you to verify your identity before you can connect. The app installs, you connect, Netflix works.
 
-DNS inside the encrypted tunnel. DNS queries go through the tunnel to an in-tunnel resolver, never touching your ISP's DNS servers. This matters for Netflix specifically because DNS leaks are one of the detection methods Netflix uses to catch VPN users.
+DNS inside the [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html). DNS queries go through the tunnel to an in-tunnel resolver, never touching your ISP's DNS servers. This matters for Netflix specifically because DNS leaks are one of the detection methods Netflix uses to catch VPN users.
 
 OllaVPN, free and paid, side by side:
 

@@ -145,7 +145,7 @@ A definitional explainer should leave you understanding not just the concept but
 
 If you've read this far, you probably want to know how the concept applies to OllaVPN's product. The short version:
 
-**If the concept above is something a VPN should provide** (no-logs, kill switch, in-tunnel DNS, peer isolation, post-quantum cryptography), OllaVPN ships it by default on the free tier. The cryptographic stack uses WireGuard with a hybrid X25519 + ML-KEM-768 handshake; the kill switch is enforced at the OS firewall layer (Windows Filtering Platform on Windows, Packet Filter on macOS, VpnService.setBlockingMode on Android); DNS goes to an in-tunnel unbound resolver with the OS DNS path firewall-blocked; peer isolation is enforced in four independent layers including an automated end-to-end test. Read the [technology page](/technology) for the complete architecture.
+**If the concept above is something a VPN should provide** (no-logs, kill switch, in-tunnel DNS, peer isolation, [post-quantum cryptography](/blog/what-is-post-quantum-cryptography.html)), OllaVPN ships it by default on the free tier. The cryptographic stack uses WireGuard with a hybrid X25519 + ML-KEM-768 handshake; the kill switch is enforced at the OS firewall layer (Windows Filtering Platform on Windows, Packet Filter on macOS, VpnService.setBlockingMode on Android); DNS goes to an in-tunnel unbound resolver with the OS DNS path firewall-blocked; peer isolation is enforced in four independent layers including an automated end-to-end test. Read the [technology page](/technology) for the complete architecture.
 
 **If the concept above is something only a VPN partially helps with** (anonymity, censorship circumvention, streaming geo-unblock), OllaVPN does what a privacy VPN can do but the underlying limits of the category apply. We don't oversell capabilities we don't have. The [best free VPN 2026 guide](/best-free-vpn-2026) covers what's realistic to expect from a free VPN versus what requires a paid tier or a different category of tool entirely.
 
@@ -230,7 +230,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[emailÂ
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Yes, you can use online tools to check for [DNS leaks](/blog/what-is-a-dns-leak/) or WebRTC leaks, which would indicate your tunnel isn't fully secure. Just search for 'DNS leak test' or 'WebRTC leak test' to find several free options. These tools help confirm your VPN is doing its job properly.
+      Yes, you can use online tools to check for [DNS leaks](/blog/what-is-a-dns-leak/) or [WebRTC leaks](/blog/what-is-a-webrtc-leak.html), which would indicate your tunnel isn't fully secure. Just search for 'DNS leak test' or 'WebRTC leak test' to find several free options. These tools help confirm your VPN is doing its job properly.
     </p>
   </details>
   </div>

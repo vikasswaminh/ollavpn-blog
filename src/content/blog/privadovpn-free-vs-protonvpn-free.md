@@ -221,7 +221,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[emailÂ
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Post-quantum cryptography refers to encryption methods designed to be secure against attacks from future quantum computers. It matters for VPNs because current encryption could eventually be broken by these powerful machines, potentially exposing your past and future encrypted data. OllaVPN is built with this forward-secure technology from the ground up to protect your data long-term.
+      [Post-quantum cryptography](/blog/what-is-post-quantum-cryptography.html) refers to encryption methods designed to be secure against attacks from future quantum computers. It matters for VPNs because current encryption could eventually be broken by these powerful machines, potentially exposing your past and future encrypted data. OllaVPN is built with this forward-secure technology from the ground up to protect your data long-term.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">

@@ -9,7 +9,7 @@ tags: ['privacy-security']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    The plain-English guide to what OpenAI actually does with everything you type into ChatGPT, how long it’s kept, how it’s used for training, and how to stop it. OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
+    The plain-English guide to what OpenAI actually does with everything you type into ChatGPT, how long it’s kept, how it’s used for training, and how to stop it. OllaVPN delivers high-throughput, quantum-resilient [WireGuard encryption](/blog/wireguard-vs-openvpn.html) with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -384,7 +384,7 @@ Masks your IP address from OpenAI’s servers. Every connection appears to come 
 
 Prevents your ISP from logging your AI tool usage. Without a VPN, your ISP sees every domain you connect to, including api.openai.com. With OllaVPN, your ISP sees only that you’re connected to a VPN server.
 
-Encrypted tunnel on public networks. OllaVPN encrypts the tunnel between your device and the VPN server, preventing anyone else on a public network from intercepting the connection.
+[Encrypted tunnel](/blog/what-is-a-vpn-tunnel.html) on public networks. OllaVPN encrypts the tunnel between your device and the VPN server, preventing anyone else on a public network from intercepting the connection.
 
 Zero-logs architecture. OllaVPN does not record connection timestamps, session durations, your real IP address, or DNS queries. There’s nothing to produce, not because we won’t share it, but because we don’t have it.
 
@@ -400,7 +400,7 @@ It cannot hide your conversation content from OpenAI. It cannot prevent OpenAI f
 
 OllaVPN plans:
 
-Lifetime free · $0 · 10 Mbps Zero-logs. In-tunnel DNS. [Kill switch](/blog/what-is-a-vpn-kill-switch/) always on. PQC-ready. No account required. No data caps. Every country.
+Lifetime free · $0 · 10 Mbps Zero-logs. In-tunnel DNS. [Kill switch](/blog/what-is-a-vpn-kill-switch/) always on. [PQC](/blog/what-is-post-quantum-cryptography.html)-ready. No account required. No data caps. Every country.
 
 Paid plan · $2 / month · 10 Gbps Same privacy architecture. Faster. Five devices.
 

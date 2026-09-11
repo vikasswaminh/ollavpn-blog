@@ -9,7 +9,7 @@ tags: ['privacy-security']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    The plain-English guide to exactly what your internet provider logs, sells, and hands over, down to the packet level. What HTTPS hides, and how to close every gap. OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
+    The plain-English guide to exactly what your internet provider logs, sells, and hands over, down to the packet level. What HTTPS hides, and how to close every gap. OllaVPN delivers high-throughput, quantum-resilient [WireGuard encryption](/blog/wireguard-vs-openvpn.html) with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -143,7 +143,7 @@ Two newer protocols address this directly:
 
 DNS over TLS (DoT) achieves the same encryption using a dedicated encrypted channel rather than disguising the traffic as HTTPS.
 
-Both are now supported natively in most modern browsers and operating systems, but neither is enabled by default in every configuration. And a plain VPN connection doesn’t automatically fix DNS either. A VPN that lets DNS queries leak outside its encrypted tunnel (a “DNS leak”) defeats much of the purpose. That’s why “does the VPN handle DNS inside the tunnel” is one of the first questions worth asking about any VPN product, not an afterthought.
+Both are now supported natively in most modern browsers and operating systems, but neither is enabled by default in every configuration. And a plain VPN connection doesn’t automatically fix DNS either. A VPN that lets DNS queries leak outside its [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html) (a “DNS leak”) defeats much of the purpose. That’s why “does the VPN handle DNS inside the tunnel” is one of the first questions worth asking about any VPN product, not an afterthought.
 
 ## What your ISP cannot see with a VPN
 
@@ -225,7 +225,7 @@ Myth 5 “Changing my DNS provider alone is enough to stop [ISP tracking](/blog/
 
 ## How to actually hide your activity from your ISP
 
-The combination that closes almost all of the gaps described above is: a VPN that routes all traffic, including DNS, through an encrypted tunnel, encrypted DNS as a backup layer, a browser or client that supports Encrypted Client Hello (ECH) to close the SNI leak, and basic hygiene like avoiding unencrypted HTTP sites and reviewing what your router and smart devices are permitted to do.
+The combination that closes almost all of the gaps described above is: a VPN that routes all traffic, including DNS, through an encrypted tunnel, encrypted DNS as a backup layer, a browser or client that supports [Encrypted Client Hello](/blog/what-is-encrypted-client-hello.html) (ECH) to close the SNI leak, and basic hygiene like avoiding unencrypted HTTP sites and reviewing what your router and smart devices are permitted to do.
 
 Here’s the practical, ordered list.
 

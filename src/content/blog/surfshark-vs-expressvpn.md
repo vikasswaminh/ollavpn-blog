@@ -228,7 +228,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[emailÂ
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Yes, they are. One is based in the British Virgin Islands, which has strong privacy laws and no data retention mandates. The other is based in the Netherlands, which is also generally privacy-friendly, though part of the 9 Eyes intelligence-sharing alliance. OllaVPN focuses on privacy-first globally, regardless of jurisdiction.
+      Yes, they are. One is based in the British Virgin Islands, which has strong privacy laws and no data retention mandates. The other is based in the Netherlands, which is also generally privacy-friendly, though part of the [9 Eyes](/blog/five-eyes-nine-eyes-fourteen-eyes.html) intelligence-sharing alliance. OllaVPN focuses on privacy-first globally, regardless of jurisdiction.
     </p>
   </details>
   </div>

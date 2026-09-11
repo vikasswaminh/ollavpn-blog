@@ -9,7 +9,7 @@ tags: ['how-to-guides']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    A [DNS leak](/blog/what-is-a-dns-leak/) is when your device accidentally sends your website requests to your internet provider instead of your VPN. This can expose what youre browsing and even your real location, completely defeating the purpos... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
+    A [DNS leak](/blog/what-is-a-dns-leak/) is when your device accidentally sends your website requests to your internet provider instead of your VPN. This can expose what youre browsing and even your real location, completely defeating the purpos... OllaVPN delivers high-throughput, quantum-resilient [WireGuard encryption](/blog/wireguard-vs-openvpn.html) with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -51,7 +51,7 @@ tags: ['how-to-guides']
 
 <div class="blog-main-content-box">
 
-You're using a VPN because you care about your privacy, but sometimes, a hidden vulnerability called a DNS leak can unintentionally expose your browsing, even with your VPN on. It's like locking your front door but leaving a window wide open! This guide will show you a simple, effective way to check for DNS leaks on any device, ensuring your online activity truly stays private and that your internet requests aren't taking an unprotected detour outside your secure VPN tunnel.
+You're using a VPN because you care about your privacy, but sometimes, a hidden vulnerability called a DNS leak can unintentionally expose your browsing, even with your VPN on. It's like locking your front door but leaving a window wide open! This guide will show you a simple, effective way to check for DNS leaks on any device, ensuring your online activity truly stays private and that your internet requests aren't taking an unprotected detour outside your secure [VPN tunnel](/blog/what-is-a-vpn-tunnel.html).
 
 ## What's the quick way to test for a DNS leak?
 

@@ -9,7 +9,7 @@ tags: ['pillars']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    The plain-English guide to post-quantum VPNs. Why harvest-now-decrypt-later turns a future quantum threat into a today problem, and how PQC handshakes work. OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
+    The plain-English guide to post-quantum VPNs. Why harvest-now-decrypt-later turns a future quantum threat into a today problem, and how PQC handshakes work. OllaVPN delivers high-throughput, quantum-resilient [WireGuard encryption](/blog/wireguard-vs-openvpn.html) with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -71,9 +71,9 @@ The reason it matters specifically for VPNs, more than for a single website you 
 
 Before getting into the post-quantum part, it helps to be clear about what a VPN is doing in the first place, because a lot of confusion about “post-quantum VPNs” comes from people not being sure what a regular VPN protects.
 
-When you turn on a VPN, your device builds an encrypted tunnel to a server run by your VPN provider. Everything that leaves your device, web requests, app traffic, DNS lookups, all of it, gets wrapped inside that tunnel before it reaches your Wi‑Fi router, your internet provider, or anyone else on the network path. Your internet provider can see that you’re connected to a VPN server, and roughly how much data is flowing, but it can’t see what’s inside. The websites and apps you talk to see the VPN server’s identity, not yours.
+When you turn on a VPN, your device builds an [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html) to a server run by your VPN provider. Everything that leaves your device, web requests, app traffic, DNS lookups, all of it, gets wrapped inside that tunnel before it reaches your Wi‑Fi router, your internet provider, or anyone else on the network path. Your internet provider can see that you’re connected to a VPN server, and roughly how much data is flowing, but it can’t see what’s inside. The websites and apps you talk to see the VPN server’s identity, not yours.
 
-The tunnel is built using a VPN protocol, WireGuard and OpenVPN are the two you’ll hear about most often, and that protocol relies on cryptographic algorithms to do two jobs: agree on a secret key when the connection starts, and then use that key to scramble the data flowing through the tunnel for as long as the connection stays open.
+The tunnel is built using a [VPN protocol](/blog/what-is-a-vpn-protocol.html), WireGuard and OpenVPN are the two you’ll hear about most often, and that protocol relies on cryptographic algorithms to do two jobs: agree on a secret key when the connection starts, and then use that key to scramble the data flowing through the tunnel for as long as the connection stays open.
 
 That distinction, the “agreeing on a key” part versus the “using the key” part, is exactly where the post-quantum story lives.
 

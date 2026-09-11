@@ -9,7 +9,7 @@ tags: ['how-to-guides']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    Partially, yes, and partially, no. A VPN encrypts your internet traffic and hides your real IP address. That genuinely blocks whole categories of hacking that depend on intercepting or watching your connection, especially on public Wi‑Fi. If a hacker is sitting on the same coffee-shop network as you, trying to snoop your traffic or run a man-in-the-middle attack, a properly configured VPN largely shuts them out.
+    Partially, yes, and partially, no. A VPN encrypts your internet traffic and hides your real IP address. That genuinely blocks whole categories of hacking that depend on intercepting or watching your connection, especially on public Wi‑Fi. If a hacker is sitting on the same coffee-shop network as you, trying to snoop your traffic or run a [man-in-the-middle attack](/blog/what-is-a-man-in-the-middle-attack.html), a properly configured VPN largely shuts them out.
 
 What a VPN doesn’t do is protect you from malware you download, phishing emails that trick you into handing over a password, weak or reused passwords, software vulnerabilities on your device, or a hacker who already has your account credentials. Those threats live at different layers. Encrypting the “pipe” your data travels through doesn’t magically fix what’s inside your device, or what you choose to click. (And that’s the part most ads conveniently skip.)
 
@@ -93,9 +93,9 @@ A VPN is like a heavily armored delivery truck. It protects your package from be
 
 
 
-When you connect to a VPN like OllaVPN, your device establishes an encrypted tunnel to one of our servers using a protocol such as WireGuard. Every request your device sends, logins, searches, uploads, gets encrypted before it ever touches the local network. That includes your home Wi‑Fi, a hotel network, or the open Wi‑Fi at an airport lounge.
+When you connect to a VPN like OllaVPN, your device establishes an [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html) to one of our servers using a protocol such as WireGuard. Every request your device sends, logins, searches, uploads, gets encrypted before it ever touches the local network. That includes your home Wi‑Fi, a hotel network, or the open Wi‑Fi at an airport lounge.
 
-So if someone is positioned to watch the traffic on that local network, they see only encrypted noise. They can’t read it, and they can’t realistically alter it in transit without breaking the encryption. Modern VPN protocols are designed so that doing that is computationally infeasible with today’s capabilities.
+So if someone is positioned to watch the traffic on that local network, they see only encrypted noise. They can’t read it, and they can’t realistically alter it in transit without breaking the encryption. Modern [VPN protocols](/blog/what-is-a-vpn-protocol.html) are designed so that doing that is computationally infeasible with today’s capabilities.
 
 This is what neutralizes a common attack called a man-in-the-middle attack. In that scenario, a hacker tries to sit between your device and the server you’re trying to reach, sometimes by setting up a fake Wi‑Fi hotspot that looks legitimate, sometimes by exploiting an unsecured network to intercept traffic passing through it. Without a VPN, if the only protection is a website’s own HTTPS (which is common, but not universal, and can sometimes be downgraded or spoofed by a determined attacker), a hacker positioned correctly on the network can sometimes intercept, read, or manipulate what’s being sent.
 

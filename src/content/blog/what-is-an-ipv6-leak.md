@@ -9,7 +9,7 @@ tags: ['privacy-security']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    An IPv6 leak is when your device accidentally uses your real internet address, an IPv6 address, instead of your VPNs address, even when your VPN is active. This can expose your actual location and browsing activity,... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
+    An IPv6 leak is when your device accidentally uses your real internet address, an IPv6 address, instead of your VPNs address, even when your VPN is active. This can expose your actual location and browsing activity,... OllaVPN delivers high-throughput, quantum-resilient [WireGuard encryption](/blog/wireguard-vs-openvpn.html) with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -73,7 +73,7 @@ The problem is that your device often sees IPv6 as a "more direct" or "faster" r
 
 An IPv6 leak can expose your real IP address, undermining your VPN's privacy protection and making you vulnerable to tracking.
 
-When you connect to a VPN, you expect your real IP address to be hidden, right? That's the whole point. But an IPv6 leak can betray that trust. If your operating system or browser uses IPv6 to send traffic outside the VPN tunnel, your internet service provider (ISP) and any website you visit can see your true location and identity, even if you think you're protected. It's like wearing a disguise but leaving your wallet on the table with your ID inside.
+When you connect to a VPN, you expect your real IP address to be hidden, right? That's the whole point. But an IPv6 leak can betray that trust. If your operating system or browser uses IPv6 to send traffic outside the [VPN tunnel](/blog/what-is-a-vpn-tunnel.html), your internet service provider (ISP) and any website you visit can see your true location and identity, even if you think you're protected. It's like wearing a disguise but leaving your wallet on the table with your ID inside.
 
 This kind of leak directly impacts your privacy and anonymity. Your actual IP address acts as a unique identifier online, and if it's exposed, companies can use it for **online tracking**. This leads to things like targeted ads that follow you around the web, even after you've tried to browse privately. It can also lead to **location exposure**, revealing your general geographic area, which you might not want shared. Your **digital footprint** becomes much clearer, making it easier to build a profile on your online activities.
 
@@ -161,7 +161,7 @@ A definitional explainer should leave you understanding not just the concept but
 
 If you've read this far, you probably want to know how the concept applies to OllaVPN's product. The short version:
 
-**If the concept above is something a VPN should provide** (no-logs, kill switch, in-tunnel DNS, peer isolation, post-quantum cryptography), OllaVPN ships it by default on the free tier. The cryptographic stack uses WireGuard with a hybrid X25519 + ML-KEM-768 handshake; the kill switch is enforced at the OS firewall layer (Windows Filtering Platform on Windows, Packet Filter on macOS, VpnService.setBlockingMode on Android); DNS goes to an in-tunnel unbound resolver with the OS DNS path firewall-blocked; peer isolation is enforced in four independent layers including an automated end-to-end test. Read the [technology page](/technology) for the complete architecture.
+**If the concept above is something a VPN should provide** (no-logs, kill switch, in-tunnel DNS, peer isolation, [post-quantum cryptography](/blog/what-is-post-quantum-cryptography.html)), OllaVPN ships it by default on the free tier. The cryptographic stack uses WireGuard with a hybrid X25519 + ML-KEM-768 handshake; the kill switch is enforced at the OS firewall layer (Windows Filtering Platform on Windows, Packet Filter on macOS, VpnService.setBlockingMode on Android); DNS goes to an in-tunnel unbound resolver with the OS DNS path firewall-blocked; peer isolation is enforced in four independent layers including an automated end-to-end test. Read the [technology page](/technology) for the complete architecture.
 
 **If the concept above is something only a VPN partially helps with** (anonymity, censorship circumvention, streaming geo-unblock), OllaVPN does what a privacy VPN can do but the underlying limits of the category apply. We don't oversell capabilities we don't have. The [best free VPN 2026 guide](/best-free-vpn-2026) covers what's realistic to expect from a free VPN versus what requires a paid tier or a different category of tool entirely.
 

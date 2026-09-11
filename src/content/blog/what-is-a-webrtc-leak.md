@@ -61,7 +61,7 @@ Think of it like this: you've put on a disguise (your VPN) to appear as someone 
 
 ## How does WebRTC actually work under the hood to expose my IP?
 
-WebRTC can expose your IP address by using STUN/TURN servers to establish a direct connection between your browser and another peer, bypassing your VPN tunnel.
+WebRTC can [expose your IP](/blog/what-happens-when-someone-knows-your-ip-address.html) address by using STUN/TURN servers to establish a direct connection between your browser and another peer, bypassing your VPN tunnel.
 
 Think of WebRTC (Web Real-Time Communication) as a set of tools that lets your web browser talk directly to another browser without needing a central server for everything. It's fantastic for video calls, voice chat, and file sharing right in your browser. The reason it can expose your IP address, even when you're using a VPN, comes down to how it tries to find the fastest, most direct route between two points.
 
@@ -149,7 +149,7 @@ A definitional explainer should leave you understanding not just the concept but
 
 If you've read this far, you probably want to know how the concept applies to OllaVPN's product. The short version:
 
-**If the concept above is something a VPN should provide** (no-logs, kill switch, in-tunnel DNS, peer isolation, post-quantum cryptography), OllaVPN ships it by default on the free tier. The cryptographic stack uses WireGuard with a hybrid X25519 + ML-KEM-768 handshake; the kill switch is enforced at the OS firewall layer (Windows Filtering Platform on Windows, Packet Filter on macOS, VpnService.setBlockingMode on Android); DNS goes to an in-tunnel unbound resolver with the OS DNS path firewall-blocked; peer isolation is enforced in four independent layers including an automated end-to-end test. Read the [technology page](/technology) for the complete architecture.
+**If the concept above is something a VPN should provide** (no-logs, kill switch, in-tunnel DNS, peer isolation, [post-quantum cryptography](/blog/what-is-post-quantum-cryptography.html)), OllaVPN ships it by default on the free tier. The cryptographic stack uses WireGuard with a hybrid X25519 + ML-KEM-768 handshake; the kill switch is enforced at the OS firewall layer (Windows Filtering Platform on Windows, Packet Filter on macOS, VpnService.setBlockingMode on Android); DNS goes to an in-tunnel unbound resolver with the OS DNS path firewall-blocked; peer isolation is enforced in four independent layers including an automated end-to-end test. Read the [technology page](/technology) for the complete architecture.
 
 **If the concept above is something only a VPN partially helps with** (anonymity, censorship circumvention, streaming geo-unblock), OllaVPN does what a privacy VPN can do but the underlying limits of the category apply. We don't oversell capabilities we don't have. The [best free VPN 2026 guide](/best-free-vpn-2026) covers what's realistic to expect from a free VPN versus what requires a paid tier or a different category of tool entirely.
 

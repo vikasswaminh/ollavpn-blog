@@ -197,7 +197,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[emailÂ
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Yes, absolutely. We built OllaVPN Free with privacy and security as our top priorities. You get our full post-quantum ready encryption, a strict no-logs policy, and a kill switch, all without needing an account or giving us any personal info. It's designed to be genuinely safe for your Chrome browsing.
+      Yes, absolutely. We built OllaVPN Free with privacy and security as our top priorities. You get our full post-quantum ready encryption, a [strict no-logs policy](/blog/what-logs-does-vpn-keep.html), and a kill switch, all without needing an account or giving us any personal info. It's designed to be genuinely safe for your Chrome browsing.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">

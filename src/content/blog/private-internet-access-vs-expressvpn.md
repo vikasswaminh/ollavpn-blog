@@ -161,7 +161,7 @@ A head-to-head comparison is only as honest as the methodology behind it. For ev
 
 **Data sources.** Each operator's publicly documented privacy policy (read fully, not skimmed); their published independent audit reports where available (Securitum, Cure53, Radically Open Security, and KPMG have all audited VPNs in the names we compare); their security disclosure pages and warrant canaries; their pricing pages at the time of writing; and our own hands-on testing on at least two of Windows, macOS, and Android during the most recent quarterly refresh.
 
-**What we test.** DNS-leak posture (using [our DNS lookup tool](/dns-lookup) + dnsleaktest.com cross-check), WebRTC leak posture via [our test](/webrtc-leak-test), kill-switch behavior under simulated network changes (toggling Wi-Fi off mid-session, putting the laptop to sleep with VPN active, swapping Wi-Fi networks), and IPv6 leak posture.
+**What we test.** DNS-leak posture (using [our DNS lookup tool](/dns-lookup) + dnsleaktest.com cross-check), WebRTC leak posture via [our test](/webrtc-leak-test), kill-switch behavior under simulated network changes (toggling Wi-Fi off mid-session, putting the laptop to sleep with VPN active, swapping Wi-Fi networks), and [IPv6 leak](/blog/what-is-an-ipv6-leak.html) posture.
 
 **What we do not test.** Long-term performance under heavy load (we lack multi-month data on competitors), specific streaming-service compatibility (rotates daily, unfair to compare), and per-region speed (depends on the user's ISP and exit choice, not the VPN's design).
 
@@ -249,7 +249,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[emailÂ
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Post-quantum cryptography refers to encryption methods designed to be secure against attacks from future quantum computers. It matters for VPNs because today's encryption could eventually be broken by these powerful machines, potentially exposing your past and future encrypted traffic. OllaVPN, for instance, is built with this long-term threat in mind.
+      [Post-quantum cryptography](/blog/what-is-post-quantum-cryptography.html) refers to encryption methods designed to be secure against attacks from future quantum computers. It matters for VPNs because today's encryption could eventually be broken by these powerful machines, potentially exposing your past and future encrypted traffic. OllaVPN, for instance, is built with this long-term threat in mind.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
@@ -258,7 +258,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[emailÂ
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Yes, both are based in jurisdictions generally considered privacy-friendly. One is in the British Virgin Islands, and the other is in the United States. While the US is part of the Five Eyes alliance, the US-based provider has a strong history of defending its no-logs policy in court.
+      Yes, both are based in jurisdictions generally considered privacy-friendly. One is in the British Virgin Islands, and the other is in the United States. While the US is part of the [Five Eyes](/blog/five-eyes-nine-eyes-fourteen-eyes.html) alliance, the US-based provider has a strong history of defending its no-logs policy in court.
     </p>
   </details>
   </div>

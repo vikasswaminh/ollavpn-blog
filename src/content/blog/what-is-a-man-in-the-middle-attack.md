@@ -9,7 +9,7 @@ tags: ['pillars']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    The plain-English guide to one of the oldest tricks in networking, still working in 2026. How someone intercepts communications and how to defend yourself. OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
+    The plain-English guide to one of the oldest tricks in networking, still working in 2026. How someone intercepts communications and how to defend yourself. OllaVPN delivers high-throughput, quantum-resilient [WireGuard encryption](/blog/wireguard-vs-openvpn.html) with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -289,7 +289,7 @@ Mostly true, but not entirely. Certificate warnings clicked through, sites that 
 
 "A VPN completely eliminates any [MITM](/blog/what-is-a-man-in-the-middle-attack.html) risk."
 
-A VPN closes most of the network-positioning techniques covered in this guide, an evil twin or ARP spoofing attacker only captures encrypted traffic they can't read once it's inside a VPN tunnel. It doesn't fix a fraudulently trusted certificate already installed on your device. It also shifts some trust to the VPN provider itself, which is exactly why a VPN's own security practices matter.
+A VPN closes most of the network-positioning techniques covered in this guide, an evil twin or ARP spoofing attacker only captures encrypted traffic they can't read once it's inside a [VPN tunnel](/blog/what-is-a-vpn-tunnel.html). It doesn't fix a fraudulently trusted certificate already installed on your device. It also shifts some trust to the VPN provider itself, which is exactly why a VPN's own security practices matter.
 
 "Only technical experts can pull off a [MITM](/blog/what-is-a-man-in-the-middle-attack.html) attack."
 

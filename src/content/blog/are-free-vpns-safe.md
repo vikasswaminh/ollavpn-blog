@@ -9,7 +9,7 @@ tags: ['buyer-guides']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    The complete breakdown of which free VPNs are genuinely safe, which ones are privacy traps in disguise, and how to test any free VPN yourself. OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
+    The complete breakdown of which free VPNs are genuinely safe, which ones are privacy traps in disguise, and how to test any free VPN yourself. OllaVPN delivers high-throughput, quantum-resilient [WireGuard encryption](/blog/wireguard-vs-openvpn.html) with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -193,7 +193,7 @@ The takeaway: the free VPN category has a significantly elevated rate of malware
 
 [DNS leaks](/blog/what-is-a-dns-leak/) and IP leaks are the most common technical safety failures in free VPNs, and they can expose your real identity and browsing activity even when the VPN appears to be connected.
 
-A VPN routes all traffic, including DNS queries, through an encrypted tunnel. When a VPN fails to route DNS queries through the tunnel, those queries leak through your regular connection. Your ISP can see every domain you visit even though you believe you're protected. This is a DNS leak.
+A VPN routes all traffic, including DNS queries, through an [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html). When a VPN fails to route DNS queries through the tunnel, those queries leak through your regular connection. Your ISP can see every domain you visit even though you believe you're protected. This is a DNS leak.
 
 When a VPN fails to bind your real IP to the tunnel, your real IP can be exposed through WebRTC, IPv6, or fallback routes. This is an IP leak.
 
@@ -349,7 +349,7 @@ OllaVPN Plus gives you 10 Gbps on five devices for $2 a month. That upgrade fund
 
 OllaVPN plans:
 
-Lifetime free · $0 · 10 Mbps Zero-logs. In-tunnel DNS. Kill switch always on. PQC-ready. No account required. No data caps. Every country.
+Lifetime free · $0 · 10 Mbps Zero-logs. In-tunnel DNS. Kill switch always on. [PQC](/blog/what-is-post-quantum-cryptography.html)-ready. No account required. No data caps. Every country.
 
 Paid plan · $2 / month · 10 Gbps Same privacy architecture. Faster. Five devices.
 

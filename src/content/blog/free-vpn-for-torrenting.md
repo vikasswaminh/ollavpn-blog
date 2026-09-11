@@ -116,7 +116,7 @@ Entire commercial businesses exist whose sole function is joining popular torren
 
 Your ISP can typically identify that you're using BitTorrent from traffic patterns alone. The protocol has a distinctive signature, many simultaneous connections to varied IPs on non-standard ports, even without decrypting the content. Some ISPs have historically responded to detected P2P traffic with throttling, regardless of what's inside those packets.
 
-A VPN addresses all three at once because they trace back to the same root cause: your real IP address and your ISP-visible traffic pattern being attached to the transfer. Tunnel the connection through a VPN server, and the swarm sees the VPN's IP. Monitoring firms log the VPN's IP. Your ISP sees encrypted tunnel traffic instead of a recognizable BitTorrent fingerprint.
+A VPN addresses all three at once because they trace back to the same root cause: your real IP address and your ISP-visible traffic pattern being attached to the transfer. Tunnel the connection through a VPN server, and the swarm sees the VPN's IP. Monitoring firms log the VPN's IP. Your ISP sees [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html) traffic instead of a recognizable BitTorrent fingerprint.
 
 A quick reminder: "encrypted" doesn't mean "invisible." Torrenting's privacy problem is about who can see your IP address and when, not about whether the file content is readable.
 

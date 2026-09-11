@@ -9,7 +9,7 @@ tags: ['pillars']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    Public Wi‑Fi networks, coffee shops, airports, hotels, libraries, are inherently open. Without encryption between your device and the websites you visit, anyone on the same network can see the data you send and receive... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
+    Public Wi‑Fi networks, coffee shops, airports, hotels, libraries, are inherently open. Without encryption between your device and the websites you visit, anyone on the same network can see the data you send and receive... OllaVPN delivers high-throughput, quantum-resilient [WireGuard encryption](/blog/wireguard-vs-openvpn.html) with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -150,7 +150,7 @@ Quick self-check: If you log in on public Wi‑Fi and then later see “new devi
 
 Man-in-the-middle is the most sophisticated of the four attack types, and the one that can defeat protections the others cannot.
 
-In a passive sniffing attack, the attacker reads what is already visible. In a MITM attack, the attacker actively intercepts the connection between your device and the server, creating two separate connections: one between you and the attacker, and one between the attacker and the server. Your device thinks it is talking directly to the server. The server thinks it is talking directly to you. In reality, both are talking to the attacker.
+In a passive sniffing attack, the attacker reads what is already visible. In a [MITM attack](/blog/what-is-a-man-in-the-middle-attack.html), the attacker actively intercepts the connection between your device and the server, creating two separate connections: one between you and the attacker, and one between the attacker and the server. Your device thinks it is talking directly to the server. The server thinks it is talking directly to you. In reality, both are talking to the attacker.
 
 ## SSL stripping (SSL downgrading): how it works: [#](#ssl-stripping-ssl-downgrading-how-it-works)
 

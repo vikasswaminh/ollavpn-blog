@@ -429,7 +429,7 @@ The Pro plan, starting at $2.99/month on a 24-month commitment, adds five simult
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      All domain lookups travel securely encapsulated inside the encrypted tunnel directly to zero-log DNS resolvers, guaranteeing your ISP and network operators observe only opaque UDP packets.
+      All domain lookups travel securely encapsulated inside the [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html) directly to zero-log DNS resolvers, guaranteeing your ISP and network operators observe only opaque UDP packets.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">

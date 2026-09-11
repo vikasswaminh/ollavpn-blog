@@ -55,7 +55,7 @@ Finding a truly free VPN for your iPhone that actually works, and doesn't compro
 
 ## What Does a Truly Free VPN for iPhone Actually Mean?
 
-For OllaVPN, a truly free VPN for iPhone means you get a privacy-first service with no hidden costs, no data selling, no ads, and no credit card ever required.
+For OllaVPN, a truly [free VPN for iPhone](/blog/free-vpn-for-iphone.html) means you get a privacy-first service with no hidden costs, no data selling, no ads, and no credit card ever required.
 
 When most services say "free VPN," they usually mean "free for a trial period," "free with data caps and constant upsells," or "free because we're selling your browsing habits." That's not how we operate. We built OllaVPN Free for iPhone to be genuinely free forever, providing you with a solid, secure connection without any strings attached. You get full access to every country in our network, 24/7, with no data limits, all without ever needing to put a credit card on file.
 
@@ -175,7 +175,7 @@ A list of recommendations is worth what the reader can verify. Each pick we made
 
 **Test 2, DNS in-tunnel.** Connect the VPN. Open [our DNS lookup tool](/dns-lookup) and resolve a domain. The resolver IP returned should be an operator-controlled one, not 8.8.8.8 (Google), 1.1.1.1 (Cloudflare default), or your ISP's resolver. Disconnect, repeat, the diff is your evidence.
 
-**Test 3, WebRTC and IPv6 leak.** Open [our WebRTC leak test](/webrtc-leak-test). The exit IP should be the only IP visible; your real IPv4 or IPv6 should not appear.
+**Test 3, WebRTC and [IPv6 leak](/blog/what-is-an-ipv6-leak.html).** Open [our WebRTC leak test](/webrtc-leak-test). The exit IP should be the only IP visible; your real IPv4 or IPv6 should not appear.
 
 **Test 4, Kill switch.** Connect VPN, start a continuous ping in your terminal (`ping 1.1.1.1`), disable your network adapter. Pings should immediately fail and stay failed until the network comes back. If they continue, the kill switch has a leak window.
 

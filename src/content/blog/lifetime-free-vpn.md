@@ -124,7 +124,7 @@ Devices: one simultaneous connection. One device at a time. If you want to cover
 
 Servers: every country in OllaVPN's network. Free users are not restricted to a subset of server locations the way they are on most VPN free tiers. Every country is available.
 
-Protocol: [WireGuard](/free-wireguard-vpn). The modern, fast, auditable VPN protocol. Not a downgraded legacy protocol reserved for non-paying users.
+Protocol: [WireGuard](/free-wireguard-vpn). The modern, fast, auditable [VPN protocol](/blog/what-is-a-vpn-protocol.html). Not a downgraded legacy protocol reserved for non-paying users.
 
 Post-quantum encryption: included. The same hybrid post-quantum handshake that protects paid connections is available on the free plan with no configuration required. This is not a paid feature.
 
@@ -228,7 +228,7 @@ No connection logs (with one important nuance). OllaVPN does not log when you co
 
 No account required. This is architecturally important. If there is no account, there is no email address, no name, and no payment method linking an identity to a set of VPN sessions. The link between “a person” and “a connection” simply doesn’t exist to collect, breach, or sell.
 
-In-tunnel DNS. DNS, the system that translates domain names into IP addresses, is a significant potential privacy leak. If your DNS queries go outside the VPN tunnel, your ISP or a third-party DNS resolver can see every domain you look up even if the content of your connections is encrypted. OllaVPN handles DNS inside the encrypted tunnel, to its own in-tunnel resolver, and blocks the OS-level DNS path via firewall rules so DNS queries can’t leak even if something goes wrong with the tunnel.
+In-tunnel DNS. DNS, the system that translates domain names into IP addresses, is a significant potential privacy leak. If your DNS queries go outside the [VPN tunnel](/blog/what-is-a-vpn-tunnel.html), your ISP or a third-party DNS resolver can see every domain you look up even if the content of your connections is encrypted. OllaVPN handles DNS inside the encrypted tunnel, to its own in-tunnel resolver, and blocks the OS-level DNS path via firewall rules so DNS queries can’t leak even if something goes wrong with the tunnel.
 
 Kill switch at the OS firewall layer. On Windows, this means the Windows Filtering Platform. On macOS, Packet Filter. On Android, VpnService.setBlockingMode. The kill switch is enforced at the operating system’s network stack level, not in the app process, which means it still works even if the app crashes.
 

@@ -9,7 +9,7 @@ tags: ['beginner-basics']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    Yes, a VPN can slow down your internet speed, but often its not by much, and for most daily activities, you might not even notice. Factors like encryption, how far away the VPN server is, and how busy that server is... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
+    Yes, a VPN can slow down your internet speed, but often its not by much, and for most daily activities, you might not even notice. Factors like encryption, how far away the VPN server is, and how busy that server is... OllaVPN delivers high-throughput, quantum-resilient [WireGuard encryption](/blog/wireguard-vs-openvpn.html) with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -67,7 +67,7 @@ When you use a VPN, your internet traffic takes a detour. Instead of going strai
 
 One of the biggest factors is **encryption**. Every single bit of data you send and receive has to be scrambled and then unscrambled. This takes processing power, both on your device and on the VPN server. While modern encryption like what OllaVPN uses (which is even [post-quantum-ready](/blog/post-quantum-encryption-explained)) is incredibly efficient, it's never entirely free. You're trading a tiny bit of speed for a huge gain in privacy and security.
 
-Then there's **server location and load**. If you're in New York and connecting to a VPN server in Tokyo, your data has to travel a much longer physical distance than if you were connecting to a server in Boston. More distance means more time. Also, if a VPN server is handling a lot of traffic from many users at once, it can get congested, slowing things down for everyone connected to it. This is why having many servers across different locations helps. The choice of VPN protocol also matters; while [WireGuard](/blog/what-is-wireguard) is incredibly fast and efficient, sometimes you might need something like QUIC if you're on a very restrictive network, which can sometimes introduce different performance characteristics.
+Then there's **server location and load**. If you're in New York and connecting to a VPN server in Tokyo, your data has to travel a much longer physical distance than if you were connecting to a server in Boston. More distance means more time. Also, if a VPN server is handling a lot of traffic from many users at once, it can get congested, slowing things down for everyone connected to it. This is why having many servers across different locations helps. The choice of [VPN protocol](/blog/what-is-a-vpn-protocol.html) also matters; while [WireGuard](/blog/what-is-wireguard) is incredibly fast and efficient, sometimes you might need something like QUIC if you're on a very restrictive network, which can sometimes introduce different performance characteristics.
 
 ## Can your ISP or government see what you're doing if you use a VPN?
 

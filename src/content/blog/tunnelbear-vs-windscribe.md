@@ -133,7 +133,7 @@ A head-to-head comparison is only as honest as the methodology behind it. For ev
 
 **Data sources.** Each operator's publicly documented privacy policy (read fully, not skimmed); their published independent audit reports where available (Securitum, Cure53, Radically Open Security, and KPMG have all audited VPNs in the names we compare); their security disclosure pages and warrant canaries; their pricing pages at the time of writing; and our own hands-on testing on at least two of Windows, macOS, and Android during the most recent quarterly refresh.
 
-**What we test.** DNS-leak posture (using [our DNS lookup tool](/dns-lookup) + dnsleaktest.com cross-check), WebRTC leak posture via [our test](/webrtc-leak-test), kill-switch behavior under simulated network changes (toggling Wi-Fi off mid-session, putting the laptop to sleep with VPN active, swapping Wi-Fi networks), and IPv6 leak posture.
+**What we test.** DNS-leak posture (using [our DNS lookup tool](/dns-lookup) + dnsleaktest.com cross-check), WebRTC leak posture via [our test](/webrtc-leak-test), kill-switch behavior under simulated network changes (toggling Wi-Fi off mid-session, putting the laptop to sleep with VPN active, swapping Wi-Fi networks), and [IPv6 leak](/blog/what-is-an-ipv6-leak.html) posture.
 
 **What we do not test.** Long-term performance under heavy load (we lack multi-month data on competitors), specific streaming-service compatibility (rotates daily, unfair to compare), and per-region speed (depends on the user's ISP and exit choice, not the VPN's design).
 

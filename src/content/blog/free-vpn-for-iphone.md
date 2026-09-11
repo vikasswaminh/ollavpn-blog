@@ -128,13 +128,13 @@ Every claim we make about OllaVPN in this guide is measured against this list. I
 
 You get the full core security stack on your iPhone, at no cost, indefinitely. We don’t ask for a credit card, an email address, or any personal information to use the free plan. There are no ads in the app, and we don’t sell your data. The free tier is funded entirely by OllaVPN Plus subscribers, which we explain later in this guide.
 
-On the technical side, your iPhone gets real protection, not a stripped-down demo version. We use the WireGuard protocol, which is fast and battery-efficient. That matters on a phone, where a poorly implemented VPN protocol can visibly drain your battery over the course of a day.
+On the technical side, your iPhone gets real protection, not a stripped-down demo version. We use the WireGuard protocol, which is fast and battery-efficient. That matters on a phone, where a poorly implemented [VPN protocol](/blog/what-is-a-vpn-protocol.html) can visibly drain your battery over the course of a day.
 
 Your connection is secured with a post-quantum-ready hybrid handshake. That means the key exchange protecting your session is designed to resist not only today’s attacks, but also the kind of decryption a future quantum computer might attempt against traffic recorded today. We explain why that matters for phones a bit further down.
 
 The kill switch is on by default and can’t be casually switched off. So if your VPN connection drops, moving between Wi‑Fi and cellular, for instance, which happens constantly on a phone, your iPhone blocks internet access rather than silently falling back to an unprotected connection.
 
-You also get in-tunnel DNS, which keeps DNS lookups (the requests that translate a site name like ollavpn.com into an address) inside the encrypted tunnel instead of leaking out to your carrier’s or Wi‑Fi network’s default resolver.
+You also get in-tunnel DNS, which keeps DNS lookups (the requests that translate a site name like ollavpn.com into an address) inside the [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html) instead of leaking out to your carrier’s or Wi‑Fi network’s default resolver.
 
 Every free user also benefits from four-layer peer isolation, which segments your connection away from other users on the same server. Even in the unlikely event another user’s session were compromised, it wouldn’t expose yours.
 

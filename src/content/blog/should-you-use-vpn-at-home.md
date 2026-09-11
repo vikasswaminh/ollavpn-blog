@@ -9,7 +9,7 @@ tags: ['privacy-security']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    You might think your home network is private, but your Internet Service Provider (ISP) can still see and log nearly everything you do online. A VPN creates a secure, encrypted tunnel for your internet traffic, essentiall... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
+    You might think your home network is private, but your Internet Service Provider (ISP) can still see and log nearly everything you do online. A VPN creates a secure, [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html) for your internet traffic, essentiall... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -143,7 +143,7 @@ Whether you're streaming, browsing, or just securing your smart home devices, Ol
 
 The topic above sits at the intersection of several broader concerns that are worth understanding even if your immediate question has been answered:
 
-**The privacy-tooling category has matured rapidly.** What was leading-edge in 2020 is table stakes in 2026. Standards have finalized (NIST PQC, RFC 9116 security disclosure, the IETF MASQUE work), jurisdictions have clarified (post-CERT-In, post-DSA, post-Investigatory Powers Act), and a clear trustworthy/untrustworthy line has emerged in the consumer VPN category specifically. Decisions you make today should reflect the 2026 state of the market, not the 2020 state.
+**The privacy-tooling category has matured rapidly.** What was leading-edge in 2020 is table stakes in 2026. Standards have finalized (NIST [PQC](/blog/what-is-post-quantum-cryptography.html), RFC 9116 security disclosure, the IETF MASQUE work), jurisdictions have clarified (post-CERT-In, post-DSA, post-Investigatory Powers Act), and a clear trustworthy/untrustworthy line has emerged in the consumer VPN category specifically. Decisions you make today should reflect the 2026 state of the market, not the 2020 state.
 
 **The threat landscape has shifted.** Bulk traffic capture by intelligence services is well-documented and continuous. The "harvest now, decrypt later" threat against captured-today-decrypted-tomorrow ciphertext is operational, not theoretical. ISP-level metadata sales to advertising data brokers are routine in the US. Geo-blocking and censorship are both more sophisticated and more widespread. The tools that defended you adequately five years ago may not be adequate now.
 

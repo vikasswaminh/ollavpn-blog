@@ -209,6 +209,53 @@ const jsonLd = {
           <slot />
         </div>
 
+        <!-- ============================================ -->
+        <!-- RELATED BLOGS: Topic Clustering Section     -->
+        <!-- ============================================ -->
+        {relatedPosts && relatedPosts.length > 0 && (
+          <section class="related-cluster-section" id="related-articles" aria-label="Related Articles in this Topic Cluster">
+            <div class="related-cluster-header">
+              <div class="related-cluster-pill">
+                <span class="related-pill-dot"></span>
+                <span>TOPIC CLUSTER DEEP DIVES</span>
+              </div>
+              <h2 class="related-cluster-title">Related Technical Guides</h2>
+              <p class="related-cluster-desc">
+                Continue reading related cybersecurity benchmarks, protocol analyses, and security guides clustered by topic.
+              </p>
+            </div>
+            
+            <div class="related-cluster-grid">
+              {relatedPosts.slice(0, 3).map((item: any) => {
+                const itemData = item.data || item;
+                const itemSlug = item.slug || (itemData.slug || '');
+                const itemTitle = itemData.title || '';
+                const itemDesc = itemData.description || '';
+                const itemTags = itemData.tags || [];
+                const itemTag = itemTags[0] ? itemTags[0].replace(/-/g, ' ') : 'Cybersecurity';
+                const itemMinutes = Math.max(3, Math.ceil((item.body ? item.body.split(/\s+/).length : 1200) / 220));
+                
+                return (
+                  <article class="related-card-clean">
+                    <a href={`/blog/${itemSlug}.html`} class="related-card-link-wrapper" aria-label={itemTitle}>
+                      <div class="related-card-badge-row">
+                        <span class="related-card-tag">{itemTag}</span>
+                        <span class="related-card-time">{itemMinutes} min read</span>
+                      </div>
+                      <h3 class="related-card-title">{itemTitle}</h3>
+                      <p class="related-card-excerpt">{itemDesc}</p>
+                      <div class="related-card-footer">
+                        <span class="related-card-author">OllaVPN Lab</span>
+                        <span class="related-card-arrow">Read Guide &rarr;</span>
+                      </div>
+                    </a>
+                  </article>
+                );
+              })}
+            </div>
+          </section>
+        )}
+
       </article>
 
       <!-- RIGHT SIDEBAR: Minimized Navigation + Minimized Promo Card -->

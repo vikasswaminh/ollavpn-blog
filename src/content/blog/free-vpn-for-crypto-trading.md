@@ -90,7 +90,7 @@ Why this matters more for crypto than for a lot of other browsing is simple: kno
 
 Man-in-the-middle interception is the most direct threat on shared or public networks. In some situations, an attacker on the same coffee-shop or airport Wi-Fi can intercept traffic between your device and the exchange's servers. That can expose session details or create openings for more advanced attacks. A VPN's encryption closes this gap by scrambling your traffic before it reaches the shared network hardware.
 
-DNS hijacking is the nastier cousin worth naming directly. If an attacker compromises a network's DNS settings, or tricks your device into using a malicious DNS server, they can redirect requests for a legitimate exchange's website toward a convincing fake one. The address bar might not look obviously wrong. A VPN with in-tunnel DNS handling routes lookups through its own resolver inside the encrypted tunnel, which blocks this redirection vector.
+DNS hijacking is the nastier cousin worth naming directly. If an attacker compromises a network's DNS settings, or tricks your device into using a malicious DNS server, they can redirect requests for a legitimate exchange's website toward a convincing fake one. The address bar might not look obviously wrong. A VPN with in-tunnel DNS handling routes lookups through its own resolver inside the [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html), which blocks this redirection vector.
 
 Traffic analysis and pattern identification is the subtler threat. Even if someone can't read your traffic's contents, they can sometimes infer that a device regularly connects to known crypto exchange IP ranges. That can help profile and target you. Masking your IP address removes this signal from view for anyone watching the local network or your ISP.
 
@@ -283,7 +283,7 @@ Look for an independent audit. Reputable providers periodically commission secur
 
 Test what you can from your own device. You can't directly verify "we don't log your activity," but you can verify related technical claims: whether your DNS requests route through the provider's resolver rather than leaking to your network, and whether your real IP is exposed anywhere.
 
-A DNS leak test or WebRTC leak test, run before and after connecting, shows the difference directly.
+A DNS leak test or [WebRTC leak](/blog/what-is-a-webrtc-leak.html) test, run before and after connecting, shows the difference directly.
 
 We publish our own policy specifics rather than vague reassurance. We'd encourage applying the same checklist to us, and to competitors, especially
 
@@ -320,7 +320,7 @@ Verify the technical claim from your own device. Our DNS lookup, WebRTC leak tes
 
 Cross-reference at least one third-party source. We're an operator with a commercial interest in the conclusion. Your exchange's security documentation,the Privacy Guides project, and established hardware wallet manufacturers' security guidance are reputable independent sources worth reading alongside this guide.
 
-Read the primary sources where they exist. NIST's post-quantum cryptography publications and your exchange's terms of service are primary sources.
+Read the primary sources where they exist. NIST's [post-quantum cryptography](/blog/what-is-post-quantum-cryptography.html) publications and your exchange's terms of service are primary sources.
 
 Vendor marketing pages and most comparison articles are derivatives.
 
