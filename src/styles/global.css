@@ -2227,7 +2227,7 @@ main.main-fullwidth {
 
 .quick-answer-box p {
   margin: 0 !important;
-  font-size: 1.02rem !important;
+  font-size: 1.08rem !important;
   line-height: 1.7 !important;
   color: #1e293b !important;
   font-weight: 500 !important;
@@ -2526,7 +2526,7 @@ main.main-fullwidth {
   display: flex !important;
   align-items: flex-start !important;
   gap: 0.75rem !important;
-  font-size: 1.02rem !important;
+  font-size: 1.08rem !important;
   line-height: 1.68 !important;
   color: #334155 !important;
 }
@@ -3643,7 +3643,7 @@ html, body, .article-page-wrapper, main {
 .takeaways-list li {
   position: relative !important;
   padding-left: 1.85rem !important;
-  font-size: 1.02rem !important;
+  font-size: 1.08rem !important;
   line-height: 1.65 !important;
   color: #20222B !important;
   margin: 0 !important;
@@ -4257,7 +4257,7 @@ html, body, .article-page-wrapper, main {
 
 .content-point-box p,
 .quick-answer-card-24obs p {
-  font-size: 1.02rem !important;
+  font-size: 1.08rem !important;
   line-height: 1.65 !important;
   color: #09090b !important;
   margin: 0 !important;
@@ -4391,7 +4391,7 @@ html, body, .article-page-wrapper, main {
 }
 
 .faq-accordion-content {
-  font-size: 1.02rem !important;
+  font-size: 1.08rem !important;
   color: #1e293b !important;
   line-height: 1.7 !important;
   margin-top: 12px !important;
@@ -5221,7 +5221,7 @@ article h2::before,
 #tldr p,
 .wrap-up-box p,
 #wrapping-it-up p {
-  font-size: 0.988rem !important;
+  font-size: 1.05rem !important;
   line-height: 1.72 !important;
   font-family: 'Lato', sans-serif !important;
 }
@@ -5233,7 +5233,7 @@ article h2::before,
 .takeaways-list-24obs li,
 .takeaways-list-24obs li div,
 .takeaways-list-24obs li strong {
-  font-size: 0.963rem !important;
+  font-size: 1.025rem !important;
   line-height: 1.62 !important;
   font-family: 'Lato', sans-serif !important;
 }
@@ -5270,18 +5270,18 @@ article h2::before,
   font-family: 'Lato', sans-serif !important;
 }
 .faqs-accordion-box p {
-  font-size: 0.988rem !important;
+  font-size: 1.05rem !important;
   font-family: 'Lato', sans-serif !important;
 }
 .faq-accordion-summary,
 .faq-accordion-summary span {
-  font-size: 0.988rem !important;
+  font-size: 1.05rem !important;
   font-family: 'Lato', sans-serif !important;
   font-weight: 800 !important;
 }
 .faq-accordion-content,
 .faq-accordion-content p {
-  font-size: 0.942rem !important;
+  font-size: 1.005rem !important;
   line-height: 1.68 !important;
   font-family: 'Lato', sans-serif !important;
 }
@@ -5290,13 +5290,13 @@ article h2::before,
 .answer-card p,
 .quick-answer-card-24obs p,
 .content-point-box p {
-  font-size: 14.5px !important;
+  font-size: 15.5px !important;
   font-family: 'Lato', sans-serif !important;
 }
 
 .specs-card,
 .specs-card * {
-  font-size: 14px !important;
+  font-size: 15px !important;
   font-family: 'Lato', sans-serif !important;
 }
 
@@ -5304,7 +5304,7 @@ article h2::before,
 .comparison-table td,
 .table-wrap th,
 .table-wrap td {
-  font-size: 14px !important;
+  font-size: 15px !important;
   font-family: 'Lato', sans-serif !important;
 }
 
@@ -5314,12 +5314,12 @@ article h2::before,
 }
 
 .download-section-box p {
-  font-size: 0.988rem !important;
+  font-size: 1.05rem !important;
   font-family: 'Lato', sans-serif !important;
 }
 
 .download-section-box .btn-primary {
-  font-size: 1.02rem !important;
+  font-size: 1.08rem !important;
   font-family: 'Lato', sans-serif !important;
 }
 
