@@ -334,7 +334,7 @@ The fix is straightforward in principle: either the VPN needs to tunnel IPv6 tra
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">Step 7:</strong> If you found a leak, apply one of the prevention methods above, then retest to confirm it\'s actually resolved. Don't assume a fix worked without re-running the same test that revealed the problem in the first place.
+  <strong style="color: #0F172A; font-weight: 800;">Step 7:</strong> If you found a leak, apply one of the prevention methods above, then retest to confirm it's actually resolved. Don't assume a fix worked without re-running the same test that revealed the problem in the first place.
 </p>
 
 ## A Jurisdiction-Style Checklist for Evaluating Any VPN's IPv6 Handling

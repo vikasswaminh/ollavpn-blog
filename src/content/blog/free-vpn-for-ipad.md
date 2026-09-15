@@ -117,7 +117,7 @@ If you want a genuinely free VPN for your iPad without a credit card, a trial cl
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">Step 3:</strong> Open OllaVPN once it\'s installed. iPadOS will ask you to approve a VPN configuration profile the first time , this is standard for every VPN app on iOS and iPadOS, not something specific to us, and it's what lets the app actually route your traffic through an encrypted tunnel rather than just sitting on your home screen. Approve it, and you'll land on a clean connection screen with a large button front and center.
+  <strong style="color: #0F172A; font-weight: 800;">Step 3:</strong> Open OllaVPN once it's installed. iPadOS will ask you to approve a VPN configuration profile the first time , this is standard for every VPN app on iOS and iPadOS, not something specific to us, and it's what lets the app actually route your traffic through an encrypted tunnel rather than just sitting on your home screen. Approve it, and you'll land on a clean connection screen with a large button front and center.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
@@ -125,7 +125,7 @@ If you want a genuinely free VPN for your iPad without a credit card, a trial cl
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">Step 5:</strong> Once connected, check that the kill switch indicator shows active (it\'s on by default, but it takes two seconds to confirm, and it\'s good practice to know where that indicator lives in the interface before you actually need it on an unfamiliar Wi-Fi network). 
+  <strong style="color: #0F172A; font-weight: 800;">Step 5:</strong> Once connected, check that the kill switch indicator shows active (it's on by default, but it takes two seconds to confirm, and it's good practice to know where that indicator lives in the interface before you actually need it on an unfamiliar Wi-Fi network). 
 </p>
 
 ## Why is a 10 Mbps cap enough for most people using a free VPN on iPad?
