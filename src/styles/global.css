@@ -5574,3 +5574,106 @@ article h2::before,
   transform: scale(1.05) !important;
   box-shadow: 0 6px 14px rgba(238, 44, 60, 0.38) !important;
 }
+
+
+/* =====================================================
+   DARK CTA DOWNLOAD SECTION FIX (ALL BLOGS)
+   ===================================================== */
+.cta-download-box,
+.download-section-box,
+section#cta-download {
+  background: #090B0E !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 20px !important;
+  padding: 38px 32px !important;
+  margin: 40px 0 32px 0 !important;
+  width: 100% !important;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.28) !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
+}
+
+.cta-download-box h2,
+.download-section-box h2,
+section#cta-download h2 {
+  color: #FFFFFF !important;
+  font-size: 1.85rem !important;
+  font-weight: 800 !important;
+  margin: 0 0 10px 0 !important;
+  border: none !important;
+  padding: 0 !important;
+  display: block !important;
+}
+
+.cta-download-box h2::before,
+.download-section-box h2::before,
+section#cta-download h2::before {
+  content: "" !important;
+  display: none !important;
+}
+
+.cta-download-box p,
+.download-section-box p,
+section#cta-download p {
+  color: #CBD5E1 !important;
+  font-size: 1.05rem !important;
+  line-height: 1.65 !important;
+  max-width: 640px !important;
+  margin: 0 auto 24px auto !important;
+}
+
+.cta-download-box a,
+.cta-download-box a:link,
+.cta-download-box a:visited,
+.download-section-box a,
+.download-section-box a:link,
+.download-section-box a:visited,
+section#cta-download a {
+  text-decoration: none !important;
+}
+
+.cta-download-box a:first-of-type,
+.download-section-box .btn-primary,
+section#cta-download a:first-of-type {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #DA291C !important;
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+  font-size: 1.02rem !important;
+  padding: 12px 28px !important;
+  border-radius: 10px !important;
+  border: none !important;
+  box-shadow: 0 4px 14px rgba(218, 41, 28, 0.4) !important;
+  transition: all 0.2s ease !important;
+}
+
+.cta-download-box a:first-of-type:hover,
+.download-section-box .btn-primary:hover,
+section#cta-download a:first-of-type:hover {
+  background: #B91C1C !important;
+  color: #FFFFFF !important;
+  transform: translateY(-1px) !important;
+}
+
+.cta-download-box a:last-of-type,
+section#cta-download a:last-of-type {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+  font-size: 1.02rem !important;
+  padding: 12px 24px !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  transition: all 0.2s ease !important;
+}
+
+.cta-download-box a:last-of-type:hover,
+section#cta-download a:last-of-type:hover {
+  background: rgba(255, 255, 255, 0.16) !important;
+  color: #FFFFFF !important;
+}

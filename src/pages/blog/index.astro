@@ -45,12 +45,16 @@ function getPrimaryCategory(slug: string, tags: string[] = []): string {
   return 'privacy-security';
 }
 
-// Compute dynamic count for each category
-const categoryCounts: Record<string, number> = { "All": allPosts.length };
+// Exclude the Hero Lead Story from the "All Articles" grid to prevent duplicate appearance
+const heroSlug = 'free-vpn-for-ipad';
+const gridPosts = allPosts.filter(p => p.slug !== heroSlug);
+
+// Compute dynamic count for each category (based on grid articles)
+const categoryCounts: Record<string, number> = { "All": gridPosts.length };
 for (const key of categoryKeys) {
   if (key !== "All") categoryCounts[key] = 0;
 }
-for (const post of allPosts) {
+for (const post of gridPosts) {
   const cat = getPrimaryCategory(post.slug, post.data.tags || []);
   categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
 }
@@ -226,11 +230,11 @@ const curriculumTracks = [
             Explore by <span style="color:var(--ug-primary);">Cybersecurity Category</span>
           </h2>
           <p style="font-size:0.92rem; color:var(--ug-text-muted); margin-top:0.35rem;">
-            Filter 143 technical guides by threat model, protocol architecture, or platform.
+            Filter 142 technical guides by threat model, protocol architecture, or platform.
           </p>
         </div>
         <div id="ug-active-count" style="font-size:0.88rem; font-weight:700; color:var(--ug-primary); background:var(--ug-primary-tint); padding:0.35rem 0.85rem; border-radius:9999px;">
-          Showing 1-9 of {allPosts.length} articles
+          Showing 1-9 of {gridPosts.length} articles
         </div>
       </div>
 
@@ -262,7 +266,7 @@ const curriculumTracks = [
         <!-- Right: Responsive Fluid Card Grid + Pagination -->
         <div class="ug-cards-container">
           <div class="ug-grid-3" id="ug-posts-grid">
-            {allPosts.map((post, idx) => {
+            {gridPosts.map((post, idx) => {
               const tags = post.data.tags || [];
               const readTime = readingTime(post.body);
               const primaryCategory = getPrimaryCategory(post.slug, tags);

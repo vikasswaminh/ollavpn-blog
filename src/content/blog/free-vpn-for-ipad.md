@@ -248,25 +248,18 @@ If you want a genuinely free VPN for your iPad without a credit card, a trial cl
 
 ## What we deliberately left out of this list
 
-
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">For transparency, here are the names we considered and specifically excluded from recommendation , and why.</p>
+  <p style="margin: 0; font-size: 15.5px; line-height: 1.65; color: #334155;">Avoid free iPad VPNs that require credit card trials up front, log device telemetry, or operate peer-to-peer proxy networks. Only use verified zero-logs providers with independent cryptographic infrastructure.</p>
 </div>
 
-## Most top-ranked "free VPN" results in the App Store's own search. Excluded as a category. A meaningful share of these listings are disguised-trial subscriptions requiring a card up front, and independent researchers have repeatedly found free mobile VPN apps that request excessive device permissions unrelated to VPN functionality, or that simply fail to encrypt traffic properly under real-world testing. Treat the top of an App Store search result for "free VPN" as a starting point for research, not a shortlist.
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;"><strong style="color: #0F172A; font-weight: 800;">Most top-ranked "free VPN" results in the App Store’s own search:</strong> Excluded as a category. A meaningful share of these listings are disguised-trial subscriptions requiring a card up front, and independent researchers have repeatedly found free mobile VPN apps that request excessive device permissions unrelated to VPN functionality, or that simply fail to encrypt traffic properly under real-world testing. Treat the top of an App Store search result for "free VPN" as a starting point for research, not a shortlist.</p>
 
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;"><strong style="color: #0F172A; font-weight: 800;">Peer-to-Peer &amp; Bandwidth-Sharing VPNs (e.g. Hola VPN):</strong> Excluded permanently, on any platform. Security researchers disclosed that peer-to-peer "free" models operate by routing other users' traffic through your personal connection and IP address, effectively turning your device into an exit node for strangers. Never install community-routing proxy apps on an iPad.</p>
 
-<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Hola VPN.</p>
-</div>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;"><strong style="color: #0F172A; font-weight: 800;">Discontinued &amp; Defunct Services (e.g. Atlas VPN):</strong> Atlas was acquired and formally shut down, with free users migrated to paid tiers. It is no longer an active, supported option in 2026, despite outdated forum threads that still reference it.</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Excluded permanently, on any platform. Security researchers disclosed in 2015 that Hola's "free" model worked by reselling users' own bandwidth as exit-node capacity to a commercial subsidiary , meaning free users were unknowingly hosting other people's traffic. The specific disclosure language has since changed, but the underlying structure has not.</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Atlas VPN. Atlas was acquired by Nord Security in 2021 and formally shut down in 2024, with its free users migrated toward NordVPN's paid tier. It's no longer an active, current option in 2026, despite older articles and app-store cache pages that still reference it.</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Any VPN whose iPad listing shows "Free" but whose only visible in-app action is "Start Free Trial." Excluded as a pattern rather than a specific name, because new entrants using this exact structure appear regularly. If the first screen you see after opening a "free" VPN app asks for a payment method to begin, it is not the free plan this guide is describing.</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;"><strong style="color: #0F172A; font-weight: 800;">Disguised Free Trial Apps:</strong> Any VPN whose App Store listing is labeled "Free" but whose only visible in-app action is "Start Free Trial." If opening the app immediately demands card details or initiates a 7-day auto-renewing billing clock, it does not meet our standard for a genuine free VPN.</p>
 
 </div>
 
