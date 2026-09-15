@@ -188,13 +188,13 @@ The fix is straightforward in principle: either the VPN needs to tunnel IPv6 tra
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Growing public and journalistic attention on VPN leak testing , including IPv6, DNS, and WebRTC leaks , pushes more VPN providers to explicitly address IPv6 handling, either through full tunneling support or default-disable options, rather than leaving it unaddressed by default.</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">2023, 2025</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
+  <strong style="color: #0F172A; font-weight: 800;">2023–2025:</strong> IPv6 adoption crosses major global thresholds, with a large and steadily growing share of worldwide internet traffic now IPv6-based according to major network operators' own reporting, making IPv6 handling an increasingly unavoidable requirement rather than a niche feature for any VPN serious about privacy claims.
+</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">IPv6 adoption crosses major global thresholds, with a large and steadily growing share of worldwide internet traffic now IPv6-based according to major network operators' own reporting, making IPv6 handling an increasingly unavoidable requirement rather than a niche feature for any VPN serious about privacy claims.</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">2026</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">IPv6-aware leak protection is increasingly treated as a baseline expectation in independent VPN reviews and audits, alongside DNS leak protection and kill switches , though meaningful gaps between providers persist, and the feature is still worth verifying rather than assuming.</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
+  <strong style="color: #0F172A; font-weight: 800;">2026:</strong> IPv6-aware leak protection is increasingly treated as a baseline expectation in independent VPN reviews and audits, alongside DNS leak protection and kill switches , though meaningful gaps between providers persist, and the feature is still worth verifying rather than assuming.
+</p>
 
 ## Beyond IPv6 : How This Connects to Other Leak Types
 
@@ -205,7 +205,7 @@ The fix is straightforward in principle: either the VPN needs to tunnel IPv6 tra
 </div>
 
 <ul style="margin: 16px 0 20px 20px; padding-left: 10px; line-height: 1.7; color: #334155;">
-  <li style='margin-bottom:8px;'>DNS leaks happen when the requests translating website names into addresses travel outside the VPN tunnel, even if the resulting traffic itself stays protected. They're a different mechanism from IPv6 leaks but share the same underlying cause: a VPN that tunnels some categories of traffic thoroughly while leaving another category unaddressed.</li><li style='margin-bottom:8px;'>WebRTC leaks happen at the browser level, where a technology used for real-time communication can reveal a device's real local and public IP addresses directly to a website, independent of whatever the operating system's network routing is doing. A browser can leak your real IPv6 address via WebRTC even on a VPN that otherwise tunnels IPv6 correctly at the OS level, because the leak happens through a different mechanism entirely.</li><li style='margin-bottom:8px;'>Kill switch gaps cover what happens during a VPN connection drop , a related but distinct concern from IPv6 handling, since a kill switch that only monitors the IPv4 tunnel's status can fail to notice or block a parallel IPv6 leak that was never routed through the tunnel to begin with.</li>
+  <li style='margin-bottom:8px;'><strong style="color: #0F172A; font-weight: 800;">DNS leaks happen when the requests translating website names into addresses travel outside the VPN tunnel, even if the resulting traffic itself stays protected. They're a different mechanism from IPv6 leaks but share the same underlying cause:</strong> a VPN that tunnels some categories of traffic thoroughly while leaving another category unaddressed.</li><li style='margin-bottom:8px;'>WebRTC leaks happen at the browser level, where a technology used for real-time communication can reveal a device's real local and public IP addresses directly to a website, independent of whatever the operating system's network routing is doing. A browser can leak your real IPv6 address via WebRTC even on a VPN that otherwise tunnels IPv6 correctly at the OS level, because the leak happens through a different mechanism entirely.</li><li style='margin-bottom:8px;'><strong style="color: #0F172A; font-weight: 800;">Kill switch gaps cover what happens during a VPN connection drop:</strong> a related but distinct concern from IPv6 handling, since a kill switch that only monitors the IPv4 tunnel's status can fail to notice or block a parallel IPv6 leak that was never routed through the tunnel to begin with.</li>
 </ul>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">For practical purposes, the most reliable posture layers all three together: IPv6 handled explicitly (tunneled or disabled), DNS routed inside the tunnel, and WebRTC exposure managed separately in the browser. Fixing IPv6 alone closes one door; it doesn't guarantee the others are closed too.</p>
@@ -249,18 +249,25 @@ The fix is straightforward in principle: either the VPN needs to tunnel IPv6 tra
 ## Five Common Misconceptions About IPv6 Leaks
 
 
-<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Myth 1: "If my VPN has a kill switch, IPv6 leaks aren't a concern." Untrue as a blanket statement. A kill switch's job is to block traffic if the VPN tunnel drops , it has nothing to do with traffic that was never routed through the tunnel to begin with. An IPv6 leak isn't a connection failure the kill switch would notice; it's a routing gap that exists even while the VPN is fully connected and working normally for IPv4.</p>
-</div>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
+  <strong style="color: #0F172A; font-weight: 800;">Myth 1: "If my VPN has a kill switch, IPv6 leaks aren't a concern."</strong><br/>Untrue as a blanket statement. A kill switch's job is to block traffic if the VPN tunnel drops , it has nothing to do with traffic that was never routed through the tunnel to begin with. An IPv6 leak isn't a connection failure the kill switch would notice; it's a routing gap that exists even while the VPN is fully connected and working normally for IPv4.
+</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Myth 2: "Disabling IPv6 on my router means none of my devices can leak." Partial truth. If your router genuinely blocks IPv6 for the entire network, individual devices behind it won't have IPv6 connectivity to leak over , but many consumer routers don't disable IPv6 as completely or reliably as their settings menu implies, and mobile devices switching to cellular data bypass the router's settings entirely.</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
+  <strong style="color: #0F172A; font-weight: 800;">Myth 2: "Disabling IPv6 on my router means none of my devices can leak."</strong><br/>Partial truth. If your router genuinely blocks IPv6 for the entire network, individual devices behind it won't have IPv6 connectivity to leak over , but many consumer routers don't disable IPv6 as completely or reliably as their settings menu implies, and mobile devices switching to cellular data bypass the router's settings entirely.
+</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Myth 3: "IPv6 leaks only affect a small number of unusual setups." Untrue, and probably the most consequential misconception here. Given how widely IPv6 has been adopted by mobile carriers and ISPs, and how many popular VPN apps have, at various points, shipped without full IPv6 handling, this affects a meaningful share of ordinary VPN users , not just people with unusual network configurations.</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
+  <strong style="color: #0F172A; font-weight: 800;">Myth 3: "IPv6 leaks only affect a small number of unusual setups."</strong><br/>Untrue, and probably the most consequential misconception here. Given how widely IPv6 has been adopted by mobile carriers and ISPs, and how many popular VPN apps have, at various points, shipped without full IPv6 handling, this affects a meaningful share of ordinary VPN users , not just people with unusual network configurations.
+</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Myth 4: "If my 'what is my IP' test shows the VPN server's address, I'm not leaking." Misleading, depending on the test. A basic IP-check page often only reports your IPv4 address unless it's specifically built to check IPv6 as well. A clean-looking result from a test that doesn't check IPv6 at all tells you nothing about whether you have an IPv6 leak , you need a test designed to check both.</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
+  <strong style="color: #0F172A; font-weight: 800;">Myth 4: "If my 'what is my IP' test shows the VPN server's address, I'm not leaking."</strong><br/>Misleading, depending on the test. A basic IP-check page often only reports your IPv4 address unless it's specifically built to check IPv6 as well. A clean-looking result from a test that doesn't check IPv6 at all tells you nothing about whether you have an IPv6 leak , you need a test designed to check both.
+</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Myth 5: "Once I've confirmed my VPN doesn't leak IPv6, I'm permanently covered." Untrue. VPN apps update, operating systems change default behaviors, and network conditions vary , a setup that tested clean once can regress after an app update or on a different network. Periodic re-testing, particularly after any change to your VPN app or network, is the only way to stay confident rather than just assuming.</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
+  <strong style="color: #0F172A; font-weight: 800;">Myth 5: "Once I've confirmed my VPN doesn't leak IPv6, I'm permanently covered."</strong><br/>Untrue. VPN apps update, operating systems change default behaviors, and network conditions vary , a setup that tested clean once can regress after an app update or on a different network. Periodic re-testing, particularly after any change to your VPN app or network, is the only way to stay confident rather than just assuming.
+</p>
 
 ## How to Actually Prevent an IPv6 Leak
 
@@ -329,7 +336,7 @@ The fix is straightforward in principle: either the VPN needs to tunnel IPv6 tra
 ### The four questions that actually matter:
 
 <ul style="margin: 16px 0 20px 20px; padding-left: 10px; line-height: 1.7; color: #334155;">
-  <li style='margin-bottom:8px;'>Does the provider explicitly document how it handles IPv6? Silence on this specific point, when competitors address it directly, is itself informative.</li><li style='margin-bottom:8px;'>Does the app offer a visible, user-controllable setting for IPv6, rather than leaving it as an invisible internal decision? Transparency here tends to correlate with the feature actually having been thought through.</li><li style='margin-bottom:8px;'>Have you personally tested it, on more than one network, including mobile? Documentation describes intent; testing confirms behavior.</li><li style='margin-bottom:8px;'>Does the provider's approach hold up across platforms , desktop, mobile, and router configurations alike , or only on the platform that happens to be best documented? A fix that only works on one platform isn't a complete fix.</li>
+  <li style='margin-bottom:8px;'>Does the provider explicitly document how it handles IPv6? Silence on this specific point, when competitors address it directly, is itself informative.</li><li style='margin-bottom:8px;'>Does the app offer a visible, user-controllable setting for IPv6, rather than leaving it as an invisible internal decision? Transparency here tends to correlate with the feature actually having been thought through.</li><li style='margin-bottom:8px;'>Have you personally tested it, on more than one network, including mobile? Documentation describes intent; testing confirms behavior.</li><li style='margin-bottom:8px;'><strong style="color: #0F172A; font-weight: 800;">Does the provider's approach hold up across platforms:</strong> desktop, mobile, and router configurations alike , or only on the platform that happens to be best documented? A fix that only works on one platform isn't a complete fix.</li>
 </ul>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">If a provider passes all four, IPv6 handling becomes a minor footnote in your evaluation. If it fails several, it's worth treating as a real gap rather than a theoretical one.</p>
@@ -442,15 +449,17 @@ The fix is straightforward in principle: either the VPN needs to tunnel IPv6 tra
   </p>
 </section>
 
-<section id="download" class="download-section-box" style="background: linear-gradient(135deg, #ffffff 0%, #FFF8F8 100%); border: 1.5px solid rgba(218, 41, 28, 0.2); border-radius: 18px; padding: 32px 28px; margin-bottom: 24px; text-align: center; width: 100%; box-shadow: 0 6px 24px rgba(218, 41, 28, 0.06); box-sizing: border-box;">
-  <h2 style="font-size: 2rem; font-weight: 800; color: #0F172A; margin: 0 0 10px 0; border: none !important; padding-bottom: 0 !important;">Protect Your Connection with OllaVPN</h2>
-  <p style="font-size: 1.05rem; color: #475569; max-width: 650px; margin: 0 auto 18px auto; line-height: 1.65;">
-    Enjoy unlimited data, next-generation WireGuard encryption, and audited zero activity logs on Android, iOS, Windows, and macOS.
+<section id="cta-download" class="cta-download-box" style="background: #090B0E; border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 36px 32px; margin-bottom: 28px; width: 100%; box-shadow: 0 8px 32px rgba(0,0,0,0.15); box-sizing: border-box; text-align: center;">
+  <h2 style="font-size: 1.85rem; font-weight: 800; color: #FFFFFF; margin: 0 0 10px 0; border: none !important; padding-bottom: 0 !important;">Protect Your Connection with OllaVPN</h2>
+  <p style="font-size: 1.05rem; line-height: 1.6; color: #94A3B8; max-width: 640px; margin: 0 auto 24px auto;">
+    Enterprise-grade encryption, default-on kill switch protection, zero logs, and quantum-resistant protocols built for every device.
   </p>
-  <a href="https://ollavpn.com/apps.html" target="_blank" rel="noopener" class="btn-primary" style="display: inline-block; background: #DA291C !important; color: #FFFFFF !important; font-size: 1.08rem; font-weight: 800; padding: 14px 36px; border-radius: 10px; text-decoration: none !important; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.25); transition: all 0.2s ease;">
-    Download OllaVPN Free &rarr;
-  </a>
-  <div style="margin-top: 14px; font-size: 0.85rem; color: #64748b; font-weight: 600;">
-    Available for iOS, Android, Windows &amp; macOS &bull; Instant Setup
+  <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+    <a href="https://ollavpn.com/download" style="display: inline-flex; align-items: center; justify-content: center; background: #DA291C; color: #FFFFFF; font-weight: 700; font-size: 0.95rem; padding: 12px 28px; border-radius: 10px; text-decoration: none; transition: background 0.2s ease;">
+      Download OllaVPN Free
+    </a>
+    <a href="https://ollavpn.com/#pricing" style="display: inline-flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.08); color: #FFFFFF; font-weight: 600; font-size: 0.95rem; padding: 12px 24px; border-radius: 10px; text-decoration: none; border: 1px solid rgba(255,255,255,0.12); transition: background 0.2s ease;">
+      View Premium Plans
+    </a>
   </div>
 </section>
