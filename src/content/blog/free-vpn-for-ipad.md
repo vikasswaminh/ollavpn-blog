@@ -369,16 +369,16 @@ If you want a genuinely free VPN for your iPad without a credit card, a trial cl
   </p>
 </section>
 
-<section id="cta-download" class="cta-download-box" style="background: #090B0E; border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 36px 32px; margin-bottom: 28px; width: 100%; box-shadow: 0 8px 32px rgba(0,0,0,0.15); box-sizing: border-box; text-align: center;">
-  <h2 style="font-size: 1.85rem; font-weight: 800; color: #FFFFFF; margin: 0 0 10px 0; border: none !important; padding-bottom: 0 !important;">Protect Your Connection with OllaVPN</h2>
-  <p style="font-size: 1.05rem; line-height: 1.6; color: #94A3B8; max-width: 640px; margin: 0 auto 24px auto;">
+<section id="cta-download" class="cta-download-box cta-red-box" style="background: linear-gradient(135deg, #DA291C 0%, #B91C1C 100%) !important; border: 1px solid rgba(255,255,255,0.25) !important; border-radius: 20px !important; padding: 40px 32px !important; margin: 40px 0 32px 0 !important; width: 100% !important; box-shadow: 0 14px 40px rgba(218, 41, 28, 0.28) !important; box-sizing: border-box !important; text-align: center !important;">
+  <h2 style="font-size: 1.95rem !important; font-weight: 800 !important; color: #FFFFFF !important; margin: 0 0 12px 0 !important; border: none !important; padding-bottom: 0 !important; font-family: 'Lato', sans-serif !important;">Protect Your Connection with OllaVPN</h2>
+  <p style="font-size: 1.08rem !important; line-height: 1.65 !important; color: #FFFFFF !important; max-width: 640px !important; margin: 0 auto 26px auto !important; font-family: 'Lato', sans-serif !important; opacity: 0.95 !important;">
     Enterprise-grade encryption, default-on kill switch protection, zero logs, and quantum-resistant protocols built for every device.
   </p>
   <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
-    <a href="https://ollavpn.com/download" style="display: inline-flex; align-items: center; justify-content: center; background: #DA291C; color: #FFFFFF; font-weight: 700; font-size: 0.95rem; padding: 12px 28px; border-radius: 10px; text-decoration: none; transition: background 0.2s ease;">
+    <a href="https://ollavpn.com/download" style="display: inline-flex; align-items: center; justify-content: center; background: #FFFFFF !important; color: #DA291C !important; font-weight: 800 !important; font-size: 1.02rem !important; padding: 13px 30px !important; border-radius: 10px !important; text-decoration: none !important; box-shadow: 0 4px 16px rgba(0,0,0,0.18) !important; transition: transform 0.2s ease, background 0.2s ease !important;">
       Download OllaVPN Free
     </a>
-    <a href="https://ollavpn.com/#pricing" style="display: inline-flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.08); color: #FFFFFF; font-weight: 600; font-size: 0.95rem; padding: 12px 24px; border-radius: 10px; text-decoration: none; border: 1px solid rgba(255,255,255,0.12); transition: background 0.2s ease;">
+    <a href="https://ollavpn.com/#pricing" style="display: inline-flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.18) !important; color: #FFFFFF !important; font-weight: 700 !important; font-size: 1.02rem !important; padding: 13px 26px !important; border-radius: 10px !important; text-decoration: none !important; border: 1.5px solid rgba(255,255,255,0.7) !important; backdrop-filter: blur(8px) !important; transition: background 0.2s ease !important;">
       View Premium Plans
     </a>
   </div>
