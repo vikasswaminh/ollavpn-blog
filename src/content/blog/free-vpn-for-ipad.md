@@ -226,17 +226,29 @@ If you want a genuinely free VPN for your iPad without a credit card, a trial cl
   <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A recommendation is only worth what you can verify on your own device. Every claim above can be checked from your iPad in under fifteen minutes using free tools.</p>
 </div>
 
-### Test 1 : Funding model. Open the provider's website on your iPad's browser and look for a clear explanation of how the free tier is funded. If you can't find a straightforward answer within about 30 seconds of looking, treat that as the answer itself.
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
+  <strong style="color: #0F172A; font-weight: 800;">Test 1 : Funding model.</strong> Open the provider's website on your iPad's browser and look for a clear explanation of how the free tier is funded. If you can't find a straightforward answer within about 30 seconds of looking, treat that as the answer itself.
+</p>
 
-### Test 2 : App Store listing behavior. Before downloading, check the App Store listing's screenshots and description for any mention of a "free trial" or subscription terms. If the primary in-app button after opening says "Start Free Trial" rather than "Connect," you're not looking at a genuinely free VPN.
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
+  <strong style="color: #0F172A; font-weight: 800;">Test 2 : App Store listing behavior.</strong> Before downloading, check the App Store listing's screenshots and description for any mention of a "free trial" or subscription terms. If the primary in-app button after opening says "Start Free Trial" rather than "Connect," you're not looking at a genuinely free VPN.
+</p>
 
-### Test 3 : DNS in-tunnel. Connect the VPN on your iPad, open our DNS lookup tool in Safari, and resolve a domain. The resolver IP shown should belong to the VPN operator, not to Google's 8.8.8.8, Cloudflare's default 1.1.1.1, or your ISP's own resolver. Disconnect and repeat the test : the difference between the two results is your evidence.
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
+  <strong style="color: #0F172A; font-weight: 800;">Test 3 : DNS in-tunnel.</strong> Connect the VPN on your iPad, open our DNS lookup tool in Safari, and resolve a domain. The resolver IP shown should belong to the VPN operator, not to Google's 8.8.8.8, Cloudflare's default 1.1.1.1, or your ISP's own resolver. Disconnect and repeat the test , the difference between the two results is your evidence.
+</p>
 
-### Test 4 : WebRTC and IP leak. Open our WebRTC leak test while connected. Only the VPN's exit IP should be visible; your real IP address should not appear anywhere in the result.
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
+  <strong style="color: #0F172A; font-weight: 800;">Test 4 : WebRTC and IP leak.</strong> Open our WebRTC leak test while connected. Only the VPN's exit IP should be visible; your real IP address should not appear anywhere in the result.
+</p>
 
-### Test 5 : Kill switch. Connect the VPN, start a continuous activity like a long video stream or a large page reload loop, then toggle Airplane Mode on and back off quickly. Traffic should pause the instant the connection drops and should not silently resume over an unprotected connection before the VPN reconnects.
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
+  <strong style="color: #0F172A; font-weight: 800;">Test 5 : Kill switch.</strong> Connect the VPN, start a continuous activity like a long video stream or a large page reload loop, then toggle Airplane Mode on and back off quickly. Traffic should pause the instant the connection drops and should not silently resume over an unprotected connection before the VPN reconnects.
+</p>
 
-### Test 6 : Audit history. Search "<provider name> security audit" and look for a published third-party report from a recognized security firm. A recent, clean audit is a strong trust signal; the complete absence of any audit : especially when competitors have one : is a signal worth weighing too.
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
+  <strong style="color: #0F172A; font-weight: 800;">Test 6 : Audit history.</strong> Search "<provider name> security audit" and look for a published third-party report from a recognized security firm. A recent, clean audit is a strong trust signal; the complete absence of any audit , especially when competitors have one , is a signal worth weighing too.
+</p>
 
 ## What we deliberately left out of this list
 
@@ -297,7 +309,7 @@ If you want a genuinely free VPN for your iPad without a credit card, a trial cl
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>Does OllaVPN Free work on more than one device, including my iPad and <a href="/blog/free-vpn-for-iphone.html" style="color: #DA291C; font-weight: 700; text-decoration: underline;">iPhone</a> together?</span>
+      <span>Does OllaVPN Free work on more than one device, including my iPad and iPhone together?</span>
       <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
@@ -392,7 +404,7 @@ If you want a genuinely free VPN for your iPad without a credit card, a trial cl
 <section id="download" class="download-section-box" style="background: linear-gradient(135deg, #ffffff 0%, #FFF8F8 100%); border: 1.5px solid rgba(218, 41, 28, 0.2); border-radius: 18px; padding: 32px 28px; margin-bottom: 24px; text-align: center; width: 100%; box-shadow: 0 6px 24px rgba(218, 41, 28, 0.06); box-sizing: border-box;">
   <h2 style="font-size: 2rem; font-weight: 800; color: #0F172A; margin: 0 0 10px 0; border: none !important; padding-bottom: 0 !important;">Protect Your Connection with OllaVPN</h2>
   <p style="font-size: 1.05rem; color: #475569; max-width: 650px; margin: 0 auto 18px auto; line-height: 1.65;">
-    Enjoy unlimited data, next-generation WireGuard encryption, and audited zero activity logs on <a href="/blog/free-vpn-for-android.html" style="color: #DA291C; font-weight: 700; text-decoration: underline;">Android</a>, iOS, Windows, and macOS.
+    Enjoy unlimited data, next-generation WireGuard encryption, and audited zero activity logs on Android, iOS, Windows, and macOS.
   </p>
   <a href="https://ollavpn.com/apps.html" target="_blank" rel="noopener" class="btn-primary" style="display: inline-block; background: #DA291C !important; color: #FFFFFF !important; font-size: 1.08rem; font-weight: 800; padding: 14px 36px; border-radius: 10px; text-decoration: none !important; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.25); transition: all 0.2s ease;">
     Download OllaVPN Free &rarr;
