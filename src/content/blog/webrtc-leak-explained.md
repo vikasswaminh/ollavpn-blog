@@ -63,7 +63,7 @@ A WebRTC leak happens when your browser's real-time communication feature reveal
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">A WebRTC leak is when that deal quietly falls apart for one specific browser feature. WebRTC needs to know your device's actual network addresses to set up peer-to-peer connections, and depending on your browser and operating system, it can gather that information through channels that sit outside your VPN's tunnel entirely — including your real local network address and, in many cases, your real public IP address. A website doesn't need your permission or a video call in progress to ask for this. A few lines of JavaScript are enough to quietly query it in the background.</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">It's a strange kind of leak, because nothing else about your connection looks wrong. Your DNS lookups might be clean. Your IP address might show the VPN's location everywhere else you check. But open a WebRTC leak test in the same browser, and your real address can be sitting right there on the page.</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">It's a strange kind of leak, because nothing else about your connection looks wrong. Your [DNS leak testing](/blog/what-is-a-dns-leak.html) lookups might be clean. Your IP address might show the VPN's location everywhere else you check. But open a WebRTC leak test in the same browser, and your real address can be sitting right there on the page.</p>
 
 ## Why WebRTC leaks matter
 
@@ -143,7 +143,7 @@ A WebRTC leak happens when your browser's real-time communication feature reveal
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">4.:</strong> Check every address listed, not just the first one. WebRTC leak tests often show multiple addresses at once — local network addresses, public IPv4, and public IPv6 addresses can all appear separately. A leak in any one of these fields still counts.
+  <strong style="color: #0F172A; font-weight: 800;">4.:</strong> Check every address listed, not just the first one. WebRTC leak tests often show multiple addresses at once — local network addresses, public IPv4, and public [IPv6 leak](/blog/what-is-an-ipv6-leak.html) addresses can all appear separately. A leak in any one of these fields still counts.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
@@ -179,7 +179,7 @@ A WebRTC leak happens when your browser's real-time communication feature reveal
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">If your test showed a leak, here's the order of things worth trying, starting with what's most likely to actually solve it.</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">1.:</strong> Check if your VPN has a dedicated WebRTC leak protection setting. Some VPN apps include this as a specific toggle, separate from the general kill switch. Make sure it's switched on.
+  <strong style="color: #0F172A; font-weight: 800;">1.:</strong> Check if your VPN has a dedicated WebRTC leak protection setting. Some VPN apps include this as a specific toggle, separate from the general [VPN kill switch](/blog/vpn-kill-switch-explained.html). Make sure it's switched on.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
@@ -323,7 +323,7 @@ A WebRTC leak happens when your browser's real-time communication feature reveal
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">If you've read this far, you probably want to know how the concept applies to OllaVPN's product. The short version:</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">If the concept above is something a VPN should provide (no-logs, kill switch, in-tunnel DNS, WebRTC leak protection, peer isolation, post-quantum cryptography), OllaVPN ships it by default on the free tier. The cryptographic stack uses WireGuard with a hybrid X25519 + ML-KEM-768 handshake; the kill switch is enforced at the OS firewall layer; WebRTC and DNS traffic are both routed through the tunnel with OS-level bypass paths firewall-blocked; peer isolation is enforced in four independent layers. Read the technology page for the complete architecture.</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">If the concept above is something a VPN should provide (no-logs, kill switch, in-tunnel DNS, WebRTC leak protection, peer isolation, post-quantum cryptography), OllaVPN ships it by default on the free tier. The cryptographic stack uses [WireGuard protocol](/blog/wireguard-vs-openvpn.html) with a hybrid X25519 + ML-KEM-768 handshake; the kill switch is enforced at the OS firewall layer; WebRTC and DNS traffic are both routed through the tunnel with OS-level bypass paths firewall-blocked; peer isolation is enforced in four independent layers. Read the technology page for the complete architecture.</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">If the concept above is something only a VPN partially helps with (anonymity, censorship circumvention, streaming geo-unblock), OllaVPN does what a privacy VPN can do but the underlying limits of the category apply. We don't oversell capabilities we don't have. The best free VPN 2026 guide covers what's realistic to expect from a free VPN versus what requires a paid tier or a different category of tool entirely.</p>
 
@@ -440,7 +440,7 @@ A WebRTC leak happens when your browser's real-time communication feature reveal
 <section id="cta-download" class="cta-download-box cta-red-box" style="background: #ee9999 !important; border: 1px solid rgba(255,255,255,0.35) !important; border-radius: 20px !important; padding: 40px 32px !important; margin: 40px 0 32px 0 !important; width: 100% !important; box-shadow: 0 12px 36px rgba(238, 153, 153, 0.3) !important; box-sizing: border-box !important; text-align: center !important;">
   <h2 style="font-size: 1.95rem !important; font-weight: 800 !important; color: #FFFFFF !important; text-shadow: 0 1px 3px rgba(0,0,0,0.15) !important; margin: 0 0 12px 0 !important; border: none !important; padding-bottom: 0 !important; font-family: 'Lato', sans-serif !important;">Protect Your Connection with OllaVPN</h2>
   <p style="font-size: 1.08rem !important; line-height: 1.65 !important; color: #FFFFFF !important; text-shadow: 0 1px 2px rgba(0,0,0,0.12) !important; max-width: 640px !important; margin: 0 auto 26px auto !important; font-family: 'Lato', sans-serif !important; opacity: 0.98 !important; font-weight: 500 !important;">
-    Enterprise-grade encryption, default-on kill switch protection, zero logs, and quantum-resistant protocols built for every device.
+    Enterprise-grade encryption, default-on kill switch protection, zero logs, and [post-quantum cryptography](/blog/what-is-post-quantum-cryptography.html) protocols built for every device.
   </p>
   <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
     <a href="https://ollavpn.com/download" style="display: inline-flex; align-items: center; justify-content: center; background: #FFFFFF !important; color: #d04b4b !important; font-weight: 800 !important; font-size: 1.02rem !important; padding: 13px 30px !important; border-radius: 10px !important; text-decoration: none !important; box-shadow: 0 4px 16px rgba(0,0,0,0.12) !important; transition: transform 0.2s ease, background 0.2s ease !important;">
