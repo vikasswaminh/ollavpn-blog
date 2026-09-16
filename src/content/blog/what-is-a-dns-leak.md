@@ -337,7 +337,7 @@ If you spot a fact that's drifted or an addition we should make, email `[[emailÂ
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Connect to your VPN, then visit a DNS leak test site such as dnsleaktest.com or browserleaks.com/dns. Run the extended test. If the only DNS servers shown belong to your VPN provider, there is no leak. If the test shows your internet provider's servers, your VPN is leaking DNS.
+      Connect to your VPN, then visit a DNS leak test site such as <a href="https://dnsleaktest.com" target="_blank" rel="noopener noreferrer">dnsleaktest.com</a> or <a href="https://browserleaks.com/dns" target="_blank" rel="noopener noreferrer">browserleaks.com/dns</a>. Run the extended test. If the only DNS servers shown belong to your VPN provider, there is no leak. If the test shows your internet provider's servers, your VPN is leaking DNS.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">

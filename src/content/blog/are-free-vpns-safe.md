@@ -207,7 +207,7 @@ No kill switch. When the VPN drops, traffic flows unencrypted through your regul
 
 WebRTC not blocked. WebRTC can reveal your real IP even when a VPN is connected. Many free VPNs don't block it.
 
-You can test for leaks yourself using OllaVPN's free tools at ollavpn.com/dns-lookup, ollavpn.com/webrtc-leak-test, and ollavpn.com/what-is-my-ip. If anything looks wrong, the VPN is leaking.
+You can test for leaks yourself using OllaVPN's free tools at ollavpn.com/dns-lookup, <a href="/webrtc-leak-test.html">ollavpn.com/webrtc-leak-test</a>, and ollavpn.com/what-is-my-ip. If anything looks wrong, the VPN is leaking.
 
 ## Are free VPNs safe on public WiFi?
 

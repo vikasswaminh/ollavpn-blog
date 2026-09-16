@@ -99,7 +99,7 @@ The easiest way to check if OllaVPN is doing its job is right in the app itself.
 
 However, if you want a deeper dive or just peace of mind, you can always use an **IP address checker**. Before connecting to OllaVPN, visit a site like whatismyip.com. Note your current public IP address and location. Then, connect to OllaVPN. Refresh that same website, and you should see a completely different IP address, one that corresponds to the country you've connected to through OllaVPN. This confirms your **location change** and that your traffic is routing through our network, effectively hiding your real IP.
 
-Even better, perform a **DNS leak test**. Some VPNs, especially less reputable free ones, might secure your IP but still "leak" your DNS requests, revealing your actual location to your internet provider. After connecting to OllaVPN, go to a site like dnsleaktest.com. Run the extended test. If everything is working correctly, you should only see DNS servers associated with OllaVPN or the country you've connected to, not your actual ISP's DNS servers. This is crucial for maintaining your privacy.
+Even better, perform a **DNS leak test**. Some VPNs, especially less reputable free ones, might secure your IP but still "leak" your DNS requests, revealing your actual location to your internet provider. After connecting to OllaVPN, go to a site like <a href="https://dnsleaktest.com" target="_blank" rel="noopener noreferrer">dnsleaktest.com</a>. Run the extended test. If everything is working correctly, you should only see DNS servers associated with OllaVPN or the country you've connected to, not your actual ISP's DNS servers. This is crucial for maintaining your privacy.
 
 ## What tools make setting up and using a VPN on Mac easier?
 
