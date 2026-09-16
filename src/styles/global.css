@@ -5677,3 +5677,113 @@ section#cta-download a:last-of-type:hover {
   background: rgba(255, 255, 255, 0.16) !important;
   color: #FFFFFF !important;
 }
+
+
+/* ==========================================================================
+   USER FIX: INTRO PARAGRAPHS & FAQ LIGHTBOX OVERRIDES
+   ========================================================================== */
+
+/* Remove red tick/pill on first paragraph (Screenshot 1 fix) */
+.prose > p:first-of-type::before,
+.lead-intro-paragraph::before,
+.prose p::before {
+  content: none !important;
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
+}
+
+/* Intro paragraphs flow naturally without separate box borders (Screenshot 1 fix) */
+.prose > p,
+.prose > p:first-of-type,
+.lead-intro-paragraph {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  padding-left: 0 !important;
+  box-shadow: none !important;
+  margin-bottom: 16px !important;
+  font-size: 1.05rem !important;
+  line-height: 1.75 !important;
+  color: #09090b !important;
+}
+
+/* FAQ Lightbox Card Container */
+.faq-lightbox-card,
+#faqs.faq-lightbox-card,
+#faqs {
+  background: #FFFFFF !important;
+  border: 1.5px solid #E2E8F0 !important;
+  border-radius: 16px !important;
+  padding: 32px 28px !important;
+  margin: 40px 0 32px 0 !important;
+  box-shadow: 0 4px 20px rgba(50, 54, 82, 0.04) !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+}
+
+.faq-lightbox-card h2,
+#faqs h2 {
+  font-size: 1.85rem !important;
+  font-weight: 800 !important;
+  margin: 0 0 24px 0 !important;
+  color: #0F172A !important;
+  border: none !important;
+  padding-bottom: 0 !important;
+  font-family: 'Lato', sans-serif !important;
+}
+
+.faq-accordion-item {
+  background: #F8FAFC !important;
+  border: 1.5px solid #E2E8F0 !important;
+  border-radius: 12px !important;
+  padding: 16px 20px !important;
+  margin-bottom: 12px !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02) !important;
+}
+
+.faq-accordion-item[open] {
+  background: #FFFFFF !important;
+  border-color: rgba(218, 41, 28, 0.3) !important;
+  box-shadow: 0 4px 14px rgba(218, 41, 28, 0.06) !important;
+}
+
+.faq-accordion-summary {
+  font-size: 1.05rem !important;
+  font-weight: 800 !important;
+  color: #0F172A !important;
+  list-style: none !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.faq-accordion-summary::-webkit-details-marker {
+  display: none !important;
+}
+
+.faq-accordion-icon {
+  font-size: 1.25rem !important;
+  color: #DA291C !important;
+  font-weight: 800 !important;
+  margin-left: 12px !important;
+  transition: transform 0.2s ease !important;
+}
+
+.faq-accordion-item[open] .faq-accordion-icon {
+  transform: rotate(45deg) !important;
+}
+
+.faq-accordion-content {
+  font-size: 1.0rem !important;
+  color: #1E293B !important;
+  line-height: 1.68 !important;
+  margin-top: 12px !important;
+  margin-bottom: 0 !important;
+  padding-top: 12px !important;
+  border-top: 1px solid #E2E8F0 !important;
+}

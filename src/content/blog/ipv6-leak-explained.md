@@ -355,7 +355,7 @@ The fix is straightforward in principle: either the VPN needs to tunnel IPv6 tra
 
 </div>
 
-<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 18px; padding: 28px 32px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 20px rgba(0,0,0,0.03); box-sizing: border-box;">
+<section id="faqs" class="faq-lightbox-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-radius: 16px !important; padding: 32px 28px !important; margin: 40px 0 32px 0 !important; box-shadow: 0 4px 20px rgba(50, 54, 82, 0.04) !important; box-sizing: border-box !important;">
   <h2 style="font-size: 1.85rem; font-weight: 800; color: #0F172A; margin: 0 0 8px 0; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
   <div class="faq-accordion-group" style="display: flex; flex-direction: column; gap: 12px; margin-top: 14px;">
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">

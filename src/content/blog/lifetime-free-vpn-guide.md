@@ -198,7 +198,7 @@ Choosing the right free tier comes down to three things: speed that's honest abo
 
 </div>
 
-<section id="faqs" style="margin-top: 40px; margin-bottom: 30px;">
+<section id="faqs" class="faq-lightbox-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-radius: 16px !important; padding: 32px 28px !important; margin: 40px 0 32px 0 !important; box-shadow: 0 4px 20px rgba(50, 54, 82, 0.04) !important; box-sizing: border-box !important;">
   <h2 style="font-size: 1.85rem; font-weight: 800; margin-bottom: 24px; color: #0F172A; border: none; font-family: 'Lato', sans-serif;">Frequently Asked Questions</h2>
   <div style="display: flex; flex-direction: column; gap: 14px;">
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">

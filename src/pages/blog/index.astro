@@ -45,8 +45,9 @@ function getPrimaryCategory(slug: string, tags: string[] = []): string {
   return 'privacy-security';
 }
 
-// Exclude the Hero Lead Story from the "All Articles" grid to prevent duplicate appearance
-const heroSlug = 'free-vpn-for-ipad';
+// Dynamically select the most recent blog post as the Hero Lead Story
+const leadStory = allPosts[0];
+const heroSlug = leadStory.slug;
 const gridPosts = allPosts.filter(p => p.slug !== heroSlug);
 
 // Compute dynamic count for each category (based on grid articles)
@@ -59,9 +60,13 @@ for (const post of gridPosts) {
   categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
 }
 
-// Hero Lead Story: Post-Quantum VPN or Newest Post
-const leadStory = allPosts.find(p => p.slug === 'what-is-a-post-quantum-vpn') || allPosts[0];
+const leadStoryCategoryKey = getPrimaryCategory(leadStory.slug, leadStory.data.tags || []);
+const leadStoryCategory = categoryLabels[leadStoryCategoryKey] || 'Buyer Guides & Audits';
 const leadReadTime = readingTime(leadStory.body);
+const leadPubDate = leadStory.data.pubDate;
+const leadFormattedDate = formatDate(leadPubDate);
+const leadIsoDate = typeof leadPubDate === 'string' ? leadPubDate : new Date(leadPubDate).toISOString().split('T')[0];
+const leadTakeawayText = leadStory.data.description || "Enterprise-grade encryption, default-on kill switch protection, zero logs, and quantum-resistant protocols built for every device.";
 
 // Curated 2D WebP Visuals Mapping
 function getPostImage(category: string): string {
@@ -162,16 +167,16 @@ const curriculumTracks = [
         <div class="ug-hero-content">
           <div>
             <div class="ug-meta-row">
-              <span class="ug-badge">Buyer Guides &amp; Audits</span>
+              <span class="ug-badge">{leadStoryCategory}</span>
               <span class="ug-meta-dot">&bull;</span>
-              <time datetime="2026-08-21">21 Aug 2026</time>
+              <time datetime={leadIsoDate}>{leadFormattedDate}</time>
               <span class="ug-meta-dot">&bull;</span>
-              <span>22 min read</span>
+              <span>{leadReadTime} min read</span>
             </div>
 
             <h2 class="ug-hero-title">
-              <a href="/blog/free-vpn-for-ipad.html">
-                Free VPN for iPad 2026: No Credit Card, No Logs (What to Expect)
+              <a href={`/blog/${leadStory.slug}.html`}>
+                {leadStory.data.title}
               </a>
             </h2>
 
@@ -184,7 +189,7 @@ const curriculumTracks = [
                 <span>KEY TAKEAWAY</span>
               </div>
               <p class="ug-takeaway-text">
-                Finding a genuinely free VPN for your iPad without a credit card, a trial countdown, or intrusive activity logging shouldn&rsquo;t feel impossible. OllaVPN delivers uncapped, zero-logs WireGuard and QUIC tunneling across all global nodes&mdash;completely free forever.
+                {leadTakeawayText}
               </p>
             </div>
           </div>
@@ -206,12 +211,12 @@ const curriculumTracks = [
           </div>
         </div>
 
-        <!-- Hero Media Column (Screenshot 2: Hand holding phone with chrome lock on cream/purple split) -->
+        <!-- Hero Media Column (Screenshot 2) -->
         <div class="ug-hero-media">
-          <a href="/blog/free-vpn-for-ipad.html" style="display:block; width:100%; height:100%;" aria-label="Free VPN for iPad 2026: No Credit Card, No Logs (What to Expect)">
+          <a href={`/blog/${leadStory.slug}.html`} style="display:block; width:100%; height:100%;" aria-label={leadStory.data.title}>
             <img 
               src="/images/ollavpn-hero-lock.webp" 
-              alt="Free VPN for iPad 2026: No Credit Card, No Logs (What to Expect)"
+              alt={leadStory.data.title}
               width="688"
               height="384"
               loading="eager"
