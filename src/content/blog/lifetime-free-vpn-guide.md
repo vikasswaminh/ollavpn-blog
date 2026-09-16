@@ -199,23 +199,23 @@ Choosing the right free tier comes down to three things: speed that’s honest a
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Claims on any provider’s marketing page are only worth what you can verify independently. Every property described above can be tested from your own browser or terminal. You shouldn’t have to take our word—or anyone else’s—on faith.</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">Test 1:</strong> — DNS stays inside the tunnel. Connect the VPN. Open our DNS lookup tool and resolve any domain. The resolver IP should belong to the VPN operator, not your internet provider. Disconnect and repeat—the difference is your evidence.
+  <strong style="color: #0F172A; font-weight: 800;">Test 1:</strong> DNS stays inside the tunnel. Connect the VPN. Open our DNS lookup tool and resolve any domain. The resolver IP should belong to the VPN operator, not your internet provider. Disconnect and repeat—the difference is your evidence.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">Test 2:</strong> — No WebRTC or IPv6 leak. Open our WebRTC leak test while connected. You should see only the VPN’s exit IP. If your real IP shows up anywhere, the leak protection has failed.
+  <strong style="color: #0F172A; font-weight: 800;">Test 2:</strong> No WebRTC or IPv6 leak. Open our WebRTC leak test while connected. You should see only the VPN’s exit IP. If your real IP shows up anywhere, the leak protection has failed.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">Test 3:</strong> — The kill switch actually kills. Connect the VPN and start a continuous ping (ping 1.1.1.1). Disable your network interface. The ping should fail immediately and stay failed until the network returns. If it keeps going, the kill switch isn’t doing its job.
+  <strong style="color: #0F172A; font-weight: 800;">Test 3:</strong> The kill switch actually kills. Connect the VPN and start a continuous ping (ping 1.1.1.1). Disable your network interface. The ping should fail immediately and stay failed until the network returns. If it keeps going, the kill switch isn’t doing its job.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">Test 4:</strong> — Apparent IP and country match your chosen exit. Open our what-is-my-IP tool. The IP shown should belong to the server location you picked, not your real one.
+  <strong style="color: #0F172A; font-weight: 800;">Test 4:</strong> Apparent IP and country match your chosen exit. Open our what-is-my-IP tool. The IP shown should belong to the server location you picked, not your real one.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">Test 5:</strong> — The advertised speed cap is honest. Run a speed test (fast.com, speedtest.net) while connected on a free tier. The result should land close to the advertised cap.
+  <strong style="color: #0F172A; font-weight: 800;">Test 5:</strong> The advertised speed cap is honest. Run a speed test (fast.com, speedtest.net) while connected on a free tier. The result should land close to the advertised cap.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">If a candidate VPN fails any of these tests, that’s hard evidence the claims and the actual product don’t line up. Providers worth trusting will encourage you to run these tests, not discourage it.</p>

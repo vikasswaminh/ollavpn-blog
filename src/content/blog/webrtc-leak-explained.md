@@ -131,23 +131,23 @@ A WebRTC leak happens when your browser's real-time communication feature reveal
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">You don't need any technical background to test for this. Five minutes and a browser is all it takes.</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">1.:</strong> Disconnect from your VPN. Confirm the VPN app shows you're not connected. Open a browser and visit a WebRTC leak test site such as browserleaks.com/webrtc or ollavpn.com/webrtc-leak-test. Note your IP address — this is your real, unprotected baseline.
+  <strong style="color: #0F172A; font-weight: 800;">1:</strong> Disconnect from your VPN. Confirm the VPN app shows you're not connected. Open a browser and visit a WebRTC leak test site such as browserleaks.com/webrtc or ollavpn.com/webrtc-leak-test. Note your IP address — this is your real, unprotected baseline.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">2.:</strong> Connect to your VPN. Open your VPN app and connect to any server. Give it a few seconds to fully establish the tunnel.
+  <strong style="color: #0F172A; font-weight: 800;">2:</strong> Connect to your VPN. Open your VPN app and connect to any server. Give it a few seconds to fully establish the tunnel.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">3.:</strong> Run the test again, in the same browser. Reload the leak-test page or run a fresh test. You should see a completely different IP address — the VPN server's address, not your real one.
+  <strong style="color: #0F172A; font-weight: 800;">3:</strong> Run the test again, in the same browser. Reload the leak-test page or run a fresh test. You should see a completely different IP address — the VPN server's address, not your real one.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">4.:</strong> Check every address listed, not just the first one. WebRTC leak tests often show multiple addresses at once — local network addresses, public IPv4, and public [IPv6 leak](/blog/what-is-an-ipv6-leak.html) addresses can all appear separately. A leak in any one of these fields still counts.
+  <strong style="color: #0F172A; font-weight: 800;">4:</strong> Check every address listed, not just the first one. WebRTC leak tests often show multiple addresses at once — local network addresses, public IPv4, and public [IPv6 leak](/blog/what-is-an-ipv6-leak.html) addresses can all appear separately. A leak in any one of these fields still counts.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">5.:</strong> Repeat the test in each browser you use. WebRTC leak behavior can differ between Chrome, Firefox, Safari, and Edge, even on the same device with the same VPN connected. A clean result in one browser doesn't guarantee a clean result in another.
+  <strong style="color: #0F172A; font-weight: 800;">5:</strong> Repeat the test in each browser you use. WebRTC leak behavior can differ between Chrome, Firefox, Safari, and Edge, even on the same device with the same VPN connected. A clean result in one browser doesn't guarantee a clean result in another.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">That's the whole test. It costs nothing and takes less time than it took to read this section. We'd recommend running it once when you first set up a VPN, and again any time you switch browsers or make a significant change to your network.</p>
@@ -179,27 +179,27 @@ A WebRTC leak happens when your browser's real-time communication feature reveal
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">If your test showed a leak, here's the order of things worth trying, starting with what's most likely to actually solve it.</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">1.:</strong> Check if your VPN has a dedicated WebRTC leak protection setting. Some VPN apps include this as a specific toggle, separate from the general [VPN kill switch](/blog/vpn-kill-switch-explained.html). Make sure it's switched on.
+  <strong style="color: #0F172A; font-weight: 800;">1:</strong> Check if your VPN has a dedicated WebRTC leak protection setting. Some VPN apps include this as a specific toggle, separate from the general [VPN kill switch](/blog/vpn-kill-switch-explained.html). Make sure it's switched on.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">2.:</strong> Update your VPN app to the latest version. Browser vendors periodically change how WebRTC behaves, and VPN apps need to keep pace. An outdated VPN client is more likely to have gaps a current browser update has opened up.
+  <strong style="color: #0F172A; font-weight: 800;">2:</strong> Update your VPN app to the latest version. Browser vendors periodically change how WebRTC behaves, and VPN apps need to keep pace. An outdated VPN client is more likely to have gaps a current browser update has opened up.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">3.:</strong> Disable WebRTC directly in your browser, if you don't rely on browser-based video calling. Firefox allows this through its internal configuration settings; Chrome and Edge generally require an extension, since Google has made it deliberately harder to fully disable WebRTC at the browser level.
+  <strong style="color: #0F172A; font-weight: 800;">3:</strong> Disable WebRTC directly in your browser, if you don't rely on browser-based video calling. Firefox allows this through its internal configuration settings; Chrome and Edge generally require an extension, since Google has made it deliberately harder to fully disable WebRTC at the browser level.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">4.:</strong> Use a reputable WebRTC-blocking extension if you want to keep WebRTC available for the occasions you do need it, but block the address-leaking behavior by default. Look for one that's actively maintained and has a track record of working against current browser versions.
+  <strong style="color: #0F172A; font-weight: 800;">4:</strong> Use a reputable WebRTC-blocking extension if you want to keep WebRTC available for the occasions you do need it, but block the address-leaking behavior by default. Look for one that's actively maintained and has a track record of working against current browser versions.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">5.:</strong> Update your browser to the latest version. Occasionally leaks are the result of a browser bug rather than a VPN gap, and browser vendors do patch these over time.
+  <strong style="color: #0F172A; font-weight: 800;">5:</strong> Update your browser to the latest version. Occasionally leaks are the result of a browser bug rather than a VPN gap, and browser vendors do patch these over time.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">6.:</strong> Switch to a VPN that handles this correctly by default. If you've tried the above and still see leaks across multiple browsers, the gap is likely in the VPN product itself rather than your setup. The simplest fix at that point is changing products.
+  <strong style="color: #0F172A; font-weight: 800;">6:</strong> Switch to a VPN that handles this correctly by default. If you've tried the above and still see leaks across multiple browsers, the gap is likely in the VPN product itself rather than your setup. The simplest fix at that point is changing products.
 </p>
 
 ## How to prevent leaks for good

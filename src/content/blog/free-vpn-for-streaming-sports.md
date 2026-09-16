@@ -195,23 +195,23 @@ Most "free" VPNs marketed for sports streaming are funded in ways that should wo
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">A recommendation is only worth what you can check yourself. Each claim above can be verified from your own device in under fifteen minutes, using free tools.</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">Test 1:</strong> — Funding model. Open the VPN provider's homepage and look for a clear page explaining how the free tier is funded. If you can't find a straightforward answer within about 30 seconds, treat that as your answer — walk away.
+  <strong style="color: #0F172A; font-weight: 800;">Test 1:</strong> Funding model. Open the VPN provider's homepage and look for a clear page explaining how the free tier is funded. If you can't find a straightforward answer within about 30 seconds, treat that as your answer — walk away.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">Test 2:</strong> — DNS in-tunnel. Connect to the VPN and use our DNS lookup tool to resolve a domain. The resolver IP shown should belong to the VPN operator, not your ISP's default resolver, and not a generic public resolver like 8.8.8.8 or 1.1.1.1. Disconnect and repeat the test — the difference between the two results is your evidence.
+  <strong style="color: #0F172A; font-weight: 800;">Test 2:</strong> DNS in-tunnel. Connect to the VPN and use our DNS lookup tool to resolve a domain. The resolver IP shown should belong to the VPN operator, not your ISP's default resolver, and not a generic public resolver like 8.8.8.8 or 1.1.1.1. Disconnect and repeat the test — the difference between the two results is your evidence.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">Test 3:</strong> — WebRTC and IP leak while streaming. Open our WebRTC leak test while connected to a sports-relevant server location. Only the VPN's exit IP should appear; your real IPv4 or [IPv6 leak prevention](/blog/what-is-an-ipv6-leak.html) address should never show up.
+  <strong style="color: #0F172A; font-weight: 800;">Test 3:</strong> WebRTC and IP leak while streaming. Open our WebRTC leak test while connected to a sports-relevant server location. Only the VPN's exit IP should appear; your real IPv4 or [IPv6 leak prevention](/blog/what-is-an-ipv6-leak.html) address should never show up.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">Test 4:</strong> — Kill switch under live conditions. Connect the VPN, start a live stream or a continuous ping (ping 1.1.1.1) in a terminal, then disable your device's network adapter or Wi-Fi. The connection should fail immediately and stay failed until the VPN reconnects — not silently continue on your real IP.
+  <strong style="color: #0F172A; font-weight: 800;">Test 4:</strong> Kill switch under live conditions. Connect the VPN, start a live stream or a continuous ping (ping 1.1.1.1) in a terminal, then disable your device's network adapter or Wi-Fi. The connection should fail immediately and stay failed until the VPN reconnects — not silently continue on your real IP.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">Test 5:</strong> — Country coverage check. Before committing to a free plan for a specific match, open the app's server list and confirm the exact country broadcasting the event is actually available on the free tier, not locked behind an upgrade prompt.
+  <strong style="color: #0F172A; font-weight: 800;">Test 5:</strong> Country coverage check. Before committing to a free plan for a specific match, open the app's server list and confirm the exact country broadcasting the event is actually available on the free tier, not locked behind an upgrade prompt.
 </p>
 
 ### What we deliberately left off this list
