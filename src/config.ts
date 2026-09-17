@@ -6,7 +6,7 @@ export const SITE = {
   brand: 'OllaVPN',
   title: 'OllaVPN Blog — Privacy & Security Insights',
   description: 'Expert articles on online privacy, zero-log VPN security, encryption & data protection.',
-  url: 'https://blogs.ollavpn.com',
+  url: 'https://ollavpn.com',
   marketingUrl: 'https://ollavpn.com',
   marketingLabel: 'ollavpn.com',
   author: 'OllaVPN Team',
