@@ -1933,3 +1933,325 @@ button {
   text-transform: uppercase;
   margin-top: 1px;
 }
+
+/* ==========================================================================
+   ROBUST UNIVERSAL MOBILE NAVIGATION & DRAWER SYSTEM
+   Ensures the nav bar never disappears on phones or small desktop windows
+   ========================================================================== */
+
+/* Hamburger Button */
+.mobile-nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  padding: 8px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-left: 0.75rem;
+  flex-shrink: 0;
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.mobile-nav-toggle:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+.mobile-nav-toggle:active {
+  transform: scale(0.96);
+}
+
+.hamburger-line {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #0f172a;
+  border-radius: 2px;
+  transition: all 0.25s ease;
+}
+
+.hamburger-line:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+/* Slide-out Drawer Overlay */
+.mobile-drawer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+  pointer-events: none;
+}
+
+.mobile-drawer-overlay.is-open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Backdrop */
+.mobile-drawer-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+/* Drawer Container */
+.mobile-drawer-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 320px;
+  max-width: 85vw;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -6px 0 28px rgba(0, 0, 0, 0.16);
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+  z-index: 2;
+}
+
+.mobile-drawer-overlay.is-open .mobile-drawer-container {
+  transform: translateX(0);
+}
+
+/* Drawer Header */
+.mobile-drawer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 1.25rem;
+  border-bottom: 1px solid #f1f5f9;
+  background: #fafafa;
+}
+
+.mobile-drawer-close-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mobile-drawer-close-btn:hover {
+  background: #fee2e2;
+  color: #DA291C;
+  border-color: #fca5a5;
+}
+
+/* Drawer Content & Scrolling */
+.mobile-drawer-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mobile-nav-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.mobile-section-label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #94a3b8;
+  margin-bottom: 0.35rem;
+  padding-left: 0.5rem;
+}
+
+.mobile-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.7rem 0.85rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1e293b;
+  border-radius: 8px;
+  text-decoration: none !important;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.mobile-nav-item:hover, .mobile-nav-item:active {
+  background: #f8fafc;
+  color: #DA291C;
+}
+
+.mobile-nav-icon {
+  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+}
+
+/* Drawer Footer / CTA */
+.mobile-drawer-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid #f1f5f9;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.mobile-cta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: #DA291C !important;
+  color: #ffffff !important;
+  font-weight: 800;
+  font-size: 0.95rem;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  text-decoration: none !important;
+  box-shadow: 0 4px 12px rgba(218, 41, 28, 0.25);
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.mobile-cta-btn:hover {
+  background: #b91c1c !important;
+  transform: translateY(-1px);
+}
+
+.mobile-cta-subtext {
+  text-align: center;
+  font-size: 0.72rem;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+/* RESPONSIVE BREAKPOINT HOOKS */
+@media (max-width: 960px) {
+  .site-header {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 9999 !important;
+    background: #ffffff !important;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06) !important;
+  }
+  
+  .header-inner {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    min-height: 64px !important;
+    height: 64px !important;
+    padding: 0 1rem !important;
+    width: 100% !important;
+  }
+
+  .header-left {
+    flex: 1;
+    min-width: 0;
+  }
+
+  /* Completely hide the squished desktop nav in favor of the drawer */
+  .site-header .nav-center {
+    display: none !important;
+  }
+
+  .header-right {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    flex-shrink: 0;
+  }
+
+  .mobile-nav-toggle {
+    display: inline-flex !important;
+  }
+
+  .btn-contact {
+    padding: 0.45rem 0.9rem !important;
+    font-size: 0.82rem !important;
+    white-space: nowrap !important;
+  }
+
+  /* UpgradHeader overrides */
+  .ug-header-wrap {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 9999 !important;
+  }
+
+  .ug-header-inner {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    height: 64px !important;
+    padding: 0 1rem !important;
+  }
+
+  .ug-search-wrap,
+  .ug-nav-menu {
+    display: none !important;
+  }
+
+  .ug-header-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+  }
+
+  .ug-mobile-toggle {
+    display: inline-flex !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-contact {
+    display: none !important; /* Hide small header button to prevent overlap, full CTA is inside drawer */
+  }
+
+  .ug-btn-cta span {
+    display: none !important; /* Keep icon only on ultra-small screens */
+  }
+  
+  .ug-btn-cta {
+    padding: 0.5rem !important;
+    width: 38px !important;
+    height: 38px !important;
+    justify-content: center !important;
+  }
+
+  .ug-logo-text-block .ug-brand-name {
+    font-size: 1.2rem !important;
+  }
+}
