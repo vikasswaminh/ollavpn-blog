@@ -1,5 +1,5 @@
 ---
-title: "<a href="/blog/are-free-vpns-safe.html" class="blog-internal-link" style="color: #DA291C !important; font-weight: 700 !important; text-decoration: underline !important; text-underline-offset: 3px !important;">Are Free VPNs Safe</a> for Banking? A 2026 Checklist (No Credit Card Required)"
+title: "Are Free VPNs Safe for Banking? A 2026 Checklist (No Credit Card Required)"
 description: "You're sitting in an airport lounge, your card balance needs checking, and the only Wi-Fi in sight is the kind that makes your laptop pop up three separ..."
 pubDate: 2026-09-01
 category: "use-cases"
