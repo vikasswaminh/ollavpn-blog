@@ -53,26 +53,6 @@ pillar: false
 </ul>
 </section>
 
-<section class="article-toc-box" style="background: #F8FAFC; border: 1.5px solid #E2E8F0; border-radius: 14px; padding: 22px 26px; margin: 28px 0;">
-<h3 style="font-size: 1.2rem; font-weight: 800; color: #0F172A; margin: 0 0 14px 0; font-family: var(--font), 'Lato', sans-serif;">Jump to a section</h3>
-<ol style="margin: 0; padding-left: 22px; line-height: 1.8; font-size: 1.0rem; color: #334155;">
-  <li><a href="#section-1" style="color: #1E293B; text-decoration: none; font-weight: 600;">Can a website track you with just your IP address?</a></li>
-  <li><a href="#section-2" style="color: #1E293B; text-decoration: none; font-weight: 600;">What does an IP address actually reveal about you?</a></li>
-  <li><a href="#section-3" style="color: #1E293B; text-decoration: none; font-weight: 600;">How does IP-based tracking actually work, technically?</a></li>
-  <li><a href="#section-4" style="color: #1E293B; text-decoration: none; font-weight: 600;">What can a website see beyond your IP address?</a></li>
-  <li><a href="#section-5" style="color: #1E293B; text-decoration: none; font-weight: 600;">How do cookies and browser fingerprinting compare to IP tracking?</a></li>
-  <li><a href="#section-6" style="color: #1E293B; text-decoration: none; font-weight: 600;">What role does your ISP play in all of this?</a></li>
-  <li><a href="#section-7" style="color: #1E293B; text-decoration: none; font-weight: 600;">Can your IP address be used to find your exact home address?</a></li>
-  <li><a href="#section-8" style="color: #1E293B; text-decoration: none; font-weight: 600;">What are the common myths about IP tracking, and what's actually true?</a></li>
-  <li><a href="#section-9" style="color: #1E293B; text-decoration: none; font-weight: 600;">How can you evaluate any claim about being "tracked by IP"?</a></li>
-  <li><a href="#section-10" style="color: #1E293B; text-decoration: none; font-weight: 600;">What does OllaVPN do specifically to stop IP-based tracking?</a></li>
-  <li><a href="#section-11" style="color: #1E293B; text-decoration: none; font-weight: 600;">Are there situations where hiding your IP still isn't enough?</a></li>
-  <li><a href="#section-12" style="color: #1E293B; text-decoration: none; font-weight: 600;">Is IP address tracking legal?</a></li>
-  <li><a href="#section-13" style="color: #1E293B; text-decoration: none; font-weight: 600;">What does the future hold for IP tracking and privacy?</a></li>
-  <li><a href="#faqs" style="color: #1E293B; text-decoration: none; font-weight: 600;">Frequently Asked Questions</a></li>
-</ol>
-</section>
-
 <div class="blog-main-content-box">
 
 <h2 id="section-1" style="font-size: 1.85rem; font-weight: 800; color: #0F172A; margin: 36px 0 18px 0; font-family: 'Lato', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">1. Can a website track you with just your IP address?</h2>
@@ -245,7 +225,7 @@ pillar: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Our no-logs policy means we don't retain connection timestamps, session data, or browsing activity that would allow matching IP assignments back to specific activity after the fact.</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">On top of IP masking, we run 4-layer peer isolation across our network architecture, separating your traffic from other users' traffic at multiple layers rather than just one. Our <a href="/blog/vpn-kill-switch-explained.html" class="blog-internal-link" style="color: #DA291C !important; font-weight: 700 !important; text-decoration: underline !important; text-underline-offset: 3px !important;">kill switch</a> is on by default, so if the VPN connection drops unexpectedly, your device doesn't fall back to broadcasting your real IP address without you noticing.</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">On top of IP masking, we run 4-layer peer isolation across our network architecture, separating your traffic from other users' traffic at multiple layers rather than just one. Our kill switch is on by default, so if the VPN connection drops unexpectedly, your device doesn't fall back to broadcasting your real IP address without you noticing.</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">All of this runs on the modern <a href="/blog/wireguard-vs-openvpn.html" class="blog-internal-link" style="color: #DA291C !important; font-weight: 700 !important; text-decoration: underline !important; text-underline-offset: 3px !important;">WireGuard protocol</a> with a post-quantum-ready hybrid handshake, so the encryption protecting your traffic today is also designed to hold up against stronger decryption attempts of tomorrow.</p>
 
@@ -306,17 +286,7 @@ pillar: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">A few signals separate trustworthy answers from junk: they cite primary sources where relevant (browser documentation, regulatory text, academic research) rather than just repeating what other blogs say; they name an author with a verifiable background instead of hiding behind "editorial team"; they're date-stamped recently, since outdated privacy advice is often confidently wrong; they disclose conflicts of interest rather than pretending to be neutral when there's a commercial stake; and they use hedged, specific language ("usually," "in most cases") rather than sweeping absolutes.</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">⭐ Key takeaways</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">An IP address alone usually reveals your city or region, your ISP, and your connection type, not your name or exact address.</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">IP tracking becomes far more powerful when combined with cookies, browser fingerprinting, or an account login.</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Your ISP sees far more than any single website does, since it can see every site you connect to, tied to your billing identity.</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">A VPN masks the IP address websites see and reduces what your ISP can infer, but it doesn't stop fingerprinting or account-based tracking on its own.</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Regulation increasingly treats IP addresses as personal data, pushing more websites to disclose how long they retain them and why.</p>
 
 </div>
 
