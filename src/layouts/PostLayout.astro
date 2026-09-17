@@ -92,6 +92,81 @@ const jsonLd = {
   mainEntityOfPage: canonical,
   ...(cover ? { image: new URL(cover, Astro.site).href } : {}),
 };
+// Extract FAQs from post body for Google FAQPage Schema
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+const body = post.body || '';
+const faqs: FAQItem[] = [];
+
+// Match accordion items: <details class="faq-accordion-item"...>
+const accordionRegex = /<details[^>]*class=['"][^'"]*faq-accordion-item[^'"]*['"][^>]*>([\s\S]*?)<\/details>/gi;
+let match;
+while ((match = accordionRegex.exec(body)) !== null) {
+  const itemContent = match[1];
+  
+  // Question match inside summary
+  let qMatch = /<summary[^>]*>[\s\S]*?<span>([\s\S]*?)<\/span>/i.exec(itemContent);
+  if (!qMatch) {
+    qMatch = /<summary[^>]*>([\s\S]*?)<\/summary>/i.exec(itemContent);
+  }
+  
+  // Answer match inside paragraph
+  let aMatch = /<p[^>]*class=['"][^'"]*faq-accordion-content[^'"]*['"][^>]*>([\s\S]*?)<\/p>/i.exec(itemContent);
+  let answerText = '';
+  if (aMatch) {
+    answerText = aMatch[1];
+  } else {
+    const parts = itemContent.split(/<\/summary>/i);
+    if (parts.length > 1) {
+      answerText = parts[1];
+    }
+  }
+  
+  if (qMatch) {
+    let q = qMatch[1].replace(/<[^>]+>/g, '').trim();
+    q = q.replace(/\s*\+\s*$/, '').trim();
+    q = q.replace(/\s+/g, ' ');
+    
+    let a = answerText.replace(/<[^>]+>/g, '').trim();
+    a = a.replace(/\s+/g, ' ');
+    
+    if (q && a) {
+      faqs.push({ question: q, answer: a });
+    }
+  }
+}
+
+// Fallback: Markdown ### question headings under FAQ
+if (faqs.length === 0) {
+  const faqSectionMatch = /##\s*(?:Frequently Asked Questions|FAQ|Common Questions)[\s\S]*/i.exec(body);
+  if (faqSectionMatch) {
+    const faqSection = faqSectionMatch[0];
+    const qBlocks = faqSection.matchAll(/###\s+([^\n\r]+)[\n\r]+([\s\S]*?)(?=(?:###|\Z|##))/gi);
+    for (const qBlock of qBlocks) {
+      let cleanQ = qBlock[1].replace(/<[^>]+>/g, '').trim().replace(/\s+/g, ' ');
+      let cleanA = qBlock[2].replace(/<[^>]+>/g, '').trim().replace(/\s+/g, ' ');
+      if (cleanA.length > 20) {
+        faqs.push({ question: cleanQ, answer: cleanA });
+      }
+    }
+  }
+}
+
+const faqJsonLd = faqs.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  'mainEntity': faqs.map((faq) => ({
+    '@type': 'Question',
+    'name': faq.question,
+    'acceptedAnswer': {
+      '@type': 'Answer',
+      'text': faq.answer
+    }
+  }))
+} : null;
 ---
 
 <BaseLayout
@@ -308,5 +383,9 @@ const jsonLd = {
 
     </div>
   </main>
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  {faqJsonLd && (
+    <script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} />
+  )}
 </BaseLayout>
