@@ -1,4 +1,4 @@
-﻿---
+---
 import BaseLayout from './BaseLayout.astro';
 import { SITE } from '../config';
 
@@ -34,7 +34,6 @@ const updatedFormattedDate = updatedDate
   : formattedDate;
 
 const firstTag = tags && tags[0] ? tags[0].replace(/-/g, ' ') : 'buyer guide';
-
 
 const categoryMap: Record<string, string> = {
   "privacy-security": "Privacy & Security",
@@ -75,7 +74,7 @@ const breadcrumbJsonLd = {
       '@type': 'ListItem',
       position: 4,
       name: title,
-      item: `https://ollavpn.com/blog/${post.slug}.html`
+      item: `https://ollavpn.com/blog/${post.slug}/`
     }
   ]
 };
@@ -92,6 +91,7 @@ const jsonLd = {
   mainEntityOfPage: canonical,
   ...(cover ? { image: new URL(cover, Astro.site).href } : {}),
 };
+
 // Extract FAQs from post body for Google FAQPage Schema
 interface FAQItem {
   question: string;
@@ -106,14 +106,12 @@ const accordionRegex = /<details[^>]*class=['"][^'"]*faq-accordion-item[^'"]*['"
 let match;
 while ((match = accordionRegex.exec(body)) !== null) {
   const itemContent = match[1];
-  
-  // Question match inside summary
+
   let qMatch = /<summary[^>]*>[\s\S]*?<span>([\s\S]*?)<\/span>/i.exec(itemContent);
   if (!qMatch) {
     qMatch = /<summary[^>]*>([\s\S]*?)<\/summary>/i.exec(itemContent);
   }
-  
-  // Answer match inside paragraph
+
   let aMatch = /<p[^>]*class=['"][^'"]*faq-accordion-content[^'"]*['"][^>]*>([\s\S]*?)<\/p>/i.exec(itemContent);
   let answerText = '';
   if (aMatch) {
@@ -124,15 +122,15 @@ while ((match = accordionRegex.exec(body)) !== null) {
       answerText = parts[1];
     }
   }
-  
+
   if (qMatch) {
     let q = qMatch[1].replace(/<[^>]+>/g, '').trim();
     q = q.replace(/\s*\+\s*$/, '').trim();
     q = q.replace(/\s+/g, ' ');
-    
+
     let a = answerText.replace(/<[^>]+>/g, '').trim();
     a = a.replace(/\s+/g, ' ');
-    
+
     if (q && a) {
       faqs.push({ question: q, answer: a });
     }
@@ -167,6 +165,9 @@ const faqJsonLd = faqs.length > 0 ? {
     }
   }))
 } : null;
+
+// Filter H2 headings for Table of Contents
+const tocHeadings = headings.filter(h => h.depth === 2);
 ---
 
 <BaseLayout
@@ -183,8 +184,8 @@ const faqJsonLd = faqs.length > 0 ? {
 >
   <main class="page-container-24obs">
     <div class="layout-flex-24obs">
-      
-      <!-- LEFT SIDEBAR: Minimized Navigation -->
+
+      <!-- LEFT SIDEBAR: Navigation -->
       <aside class="desktop-sidebar-24obs left-sidebar">
         <div class="sidebar-header-pill-wrap">
           <span class="sidebar-pill-badge">
@@ -230,39 +231,39 @@ const faqJsonLd = faqs.length > 0 ? {
 
       <!-- CENTER MAIN CONTENT COLUMN -->
       <article class="article-center-col">
-        
+
         <!-- Header: Eyebrow, H1, Subtitle -->
         <header class="article-header">
-        <!-- Structural Breadcrumbs -->
-        <nav class="article-breadcrumbs" aria-label="Breadcrumb">
-          <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumbs-list">
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-item">
-              <a itemprop="item" href="/" class="breadcrumb-link">
-                <span itemprop="name">Home</span>
-              </a>
-              <meta itemprop="position" content="1" />
-            </li>
-            <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-item">
-              <a itemprop="item" href="/blog/" class="breadcrumb-link">
-                <span itemprop="name">Blog</span>
-              </a>
-              <meta itemprop="position" content="2" />
-            </li>
-            <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-item">
-              <a itemprop="item" href={`/blog/?cat=${categorySlug}`} class="breadcrumb-link">
-                <span itemprop="name">{categoryName}</span>
-              </a>
-              <meta itemprop="position" content="3" />
-            </li>
-            <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-item current">
-              <span itemprop="name" class="breadcrumb-current" aria-current="page">{title}</span>
-              <meta itemprop="position" content="4" />
-            </li>
-          </ol>
-        </nav>
+          <!-- Structural Breadcrumbs -->
+          <nav class="article-breadcrumbs" aria-label="Breadcrumb">
+            <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumbs-list">
+              <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-item">
+                <a itemprop="item" href="/" class="breadcrumb-link">
+                  <span itemprop="name">Home</span>
+                </a>
+                <meta itemprop="position" content="1" />
+              </li>
+              <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
+              <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-item">
+                <a itemprop="item" href="/blog/" class="breadcrumb-link">
+                  <span itemprop="name">Blog</span>
+                </a>
+                <meta itemprop="position" content="2" />
+              </li>
+              <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
+              <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-item">
+                <a itemprop="item" href={`/blog/?cat=${categorySlug}`} class="breadcrumb-link">
+                  <span itemprop="name">{categoryName}</span>
+                </a>
+                <meta itemprop="position" content="3" />
+              </li>
+              <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
+              <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-item current">
+                <span itemprop="name" class="breadcrumb-current" aria-current="page">{title}</span>
+                <meta itemprop="position" content="4" />
+              </li>
+            </ol>
+          </nav>
 
           <div class="article-meta-row">
             <span>{firstTag.toUpperCase()}</span>
@@ -279,10 +280,53 @@ const faqJsonLd = faqs.length > 0 ? {
           </p>
         </header>
 
+        <!-- Dynamic Table of Contents (if >= 3 H2 headings) -->
+        {tocHeadings && tocHeadings.length >= 3 && (
+          <nav class="article-toc-box" aria-label="Table of Contents">
+            <div class="toc-header">
+              <span class="toc-badge-dot"></span>
+              <span class="toc-title">IN THIS GUIDE</span>
+            </div>
+            <ol class="toc-list">
+              {tocHeadings.map((h) => (
+                <li class="toc-item">
+                  <a href={`#${h.slug}`} class="toc-link">
+                    {h.text.replace(/^[0-9]+\.\s*/, '')}
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+        )}
+
         <!-- Markdown Article Prose Slot -->
         <div class="prose">
           <slot />
         </div>
+
+        <!-- In-Article High-Converting Free CTA Banner -->
+        <section class="article-bottom-cta-banner" aria-label="Get OllaVPN Free">
+          <div class="cta-banner-badge">
+            <span class="cta-pulse-dot"></span>
+            <span>ZERO LOGS &bull; 100% FREE NO CREDIT CARD</span>
+          </div>
+          <h3 class="cta-banner-title">
+            Protect Your Browsing with Quantum-Proof Speed
+          </h3>
+          <p class="cta-banner-desc">
+            Experience ultra-fast WireGuard protocols, in-tunnel DNS leak protection, and zero-compromise encryption on Windows, Android, and iOS with OllaVPN.
+          </p>
+          <div class="cta-banner-features">
+            <span class="cta-feature-item">✓ WireGuard &amp; PQC</span>
+            <span class="cta-feature-item">✓ No Email Required</span>
+            <span class="cta-feature-item">✓ Unlimited Free Access</span>
+          </div>
+          <div class="cta-btn-wrap">
+            <a href="/dl/" class="cta-banner-btn">
+              Download OllaVPN Free &rarr;
+            </a>
+          </div>
+        </section>
 
         <!-- ============================================ -->
         <!-- RELATED BLOGS: Topic Clustering Section     -->
@@ -299,7 +343,7 @@ const faqJsonLd = faqs.length > 0 ? {
                 Continue reading related cybersecurity benchmarks, protocol analyses, and security guides clustered by topic.
               </p>
             </div>
-            
+
             <div class="related-cluster-grid">
               {relatedPosts.slice(0, 3).map((item: any) => {
                 const itemData = item.data || item;
@@ -309,10 +353,10 @@ const faqJsonLd = faqs.length > 0 ? {
                 const itemTags = itemData.tags || [];
                 const itemTag = itemTags[0] ? itemTags[0].replace(/-/g, ' ') : 'Cybersecurity';
                 const itemMinutes = Math.max(3, Math.ceil((item.body ? item.body.split(/\s+/).length : 1200) / 220));
-                
+
                 return (
                   <article class="related-card-clean">
-                    <a href={`/blog/${itemSlug}.html`} class="related-card-link-wrapper" aria-label={itemTitle}>
+                    <a href={`/blog/${itemSlug}/`} class="related-card-link-wrapper" aria-label={itemTitle}>
                       <div class="related-card-badge-row">
                         <span class="related-card-tag">{itemTag}</span>
                         <span class="related-card-time">{itemMinutes} min read</span>
@@ -333,7 +377,7 @@ const faqJsonLd = faqs.length > 0 ? {
 
       </article>
 
-      <!-- RIGHT SIDEBAR: Minimized Navigation + Minimized Promo Card -->
+      <!-- RIGHT SIDEBAR: Navigation + Minimized Promo Card -->
       <aside class="desktop-sidebar-24obs right-sidebar">
         <div class="sidebar-header-pill-wrap">
           <span class="sidebar-pill-badge">
@@ -375,7 +419,7 @@ const faqJsonLd = faqs.length > 0 ? {
           <p class="sidebar-promo-text">
             Free, high-speed WireGuard VPN for public Wi-Fi security on every device.
           </p>
-          <a href={SITE.marketingUrl} class="sidebar-cta-btn">
+          <a href="/dl/" class="sidebar-cta-btn">
             Download OllaVPN Free &rarr;
           </a>
         </div>
@@ -383,9 +427,136 @@ const faqJsonLd = faqs.length > 0 ? {
 
     </div>
   </main>
-    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   {faqJsonLd && (
     <script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} />
   )}
 </BaseLayout>
+
+<style>
+  /* Table of Contents Styling */
+  .article-toc-box {
+    margin: 28px 0 36px 0;
+    padding: 20px 24px;
+    background: #0d0f12;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-left: 3px solid #DA291C;
+    border-radius: 8px;
+  }
+  .toc-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  .toc-badge-dot {
+    width: 7px;
+    height: 7px;
+    background: #DA291C;
+    border-radius: 50%;
+  }
+  .toc-title {
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #DA291C;
+  }
+  .toc-list {
+    margin: 0;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .toc-item {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    line-height: 1.45;
+  }
+  .toc-link {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+  .toc-link:hover {
+    color: #DA291C;
+    text-decoration: underline;
+  }
+
+  /* In-Article Bottom CTA Banner */
+  .article-bottom-cta-banner {
+    margin: 48px 0 40px 0;
+    padding: 32px 28px;
+    background: linear-gradient(145deg, #11141a 0%, #090b0e 100%);
+    border: 1px solid rgba(218, 41, 28, 0.25);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    text-align: center;
+  }
+  .cta-banner-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(218, 41, 28, 0.12);
+    border: 1px solid rgba(218, 41, 28, 0.3);
+    color: #ff5242;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    margin-bottom: 14px;
+  }
+  .cta-pulse-dot {
+    width: 6px;
+    height: 6px;
+    background: #ff5242;
+    border-radius: 50%;
+  }
+  .cta-banner-title {
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    line-height: 1.3;
+  }
+  .cta-banner-desc {
+    font-size: 0.98rem;
+    color: #94a3b8;
+    max-width: 620px;
+    margin: 0 auto 20px auto;
+    line-height: 1.55;
+  }
+  .cta-banner-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .cta-feature-item {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #cbd5e1;
+  }
+  .cta-btn-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  .cta-banner-btn {
+    display: inline-block;
+    background: #DA291C;
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.15s ease;
+  }
+  .cta-banner-btn:hover {
+    background: #b52216;
+    transform: translateY(-1px);
+  }
+</style>
