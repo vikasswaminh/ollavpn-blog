@@ -14,6 +14,31 @@ export async function getStaticPaths() {
 }
 
 const { posts, tag } = Astro.props;
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: 'https://ollavpn.com/'
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Tags',
+      item: 'https://ollavpn.com/tags/'
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: `#${tag}`,
+      item: `https://ollavpn.com/tags/${tag}/`
+    }
+  ]
+};
 ---
 
 <BaseLayout title={`#${tag}`} description={`Posts tagged ${tag}.`}>
@@ -33,4 +58,5 @@ const { posts, tag } = Astro.props;
       ))
     }
   </div>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
 </BaseLayout>

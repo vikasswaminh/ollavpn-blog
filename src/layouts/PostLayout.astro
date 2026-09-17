@@ -68,7 +68,7 @@ const breadcrumbJsonLd = {
       '@type': 'ListItem',
       position: 3,
       name: categoryName,
-      item: `https://ollavpn.com/blog/?cat=${categorySlug}`
+      item: `https://ollavpn.com/tags/${categorySlug}/`
     },
     {
       '@type': 'ListItem',
@@ -252,7 +252,7 @@ const tocHeadings = headings.filter(h => h.depth === 2);
               </li>
               <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
               <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-item">
-                <a itemprop="item" href={`/blog/?cat=${categorySlug}`} class="breadcrumb-link">
+                <a itemprop="item" href={`/tags/${categorySlug}/`} class="breadcrumb-link">
                   <span itemprop="name">{categoryName}</span>
                 </a>
                 <meta itemprop="position" content="3" />
