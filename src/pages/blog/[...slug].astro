@@ -10,7 +10,7 @@ export async function getStaticPaths() {
     const clusterMatches = (topicClusters as Record<string, any[]>)[post.slug];
     let relatedPosts: any[] = [];
     
-    if (clusterMatches && clusterMatches.length > 0) {
+    if (clusterMatches && clusterMatches.length >= 3) {
       relatedPosts = clusterMatches.map((item) => {
         const fullPost = posts.find((p) => p.slug === item.slug);
         return fullPost || {
@@ -23,17 +23,36 @@ export async function getStaticPaths() {
         };
       });
     } else {
-      // Fallback to shared tags / category
-      const postTags = post.data.tags || [];
-      const related = posts
+      // Robust normalized tag matching
+      const normalize = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
+      const postTags = (post.data.tags || []).map(normalize);
+      const postCategory = normalize(post.data.category || '');
+
+      const scoredPosts = posts
         .filter((p) => p.slug !== post.slug)
-        .filter((p) => {
-          const pTags = p.data.tags || [];
-          return pTags.some((t) => postTags.includes(t));
+        .map((p) => {
+          let score = 0;
+          const pTags = (p.data.tags || []).map(normalize);
+          const pCategory = normalize(p.data.category || '');
+
+          if (pCategory && pCategory === postCategory) score += 3;
+          for (const t of pTags) {
+            if (postTags.includes(t)) score += 2;
+          }
+          return { post: p, score };
         })
-        .slice(0, 3);
-      const fallback = posts.filter((p) => p.slug !== post.slug).slice(0, 3);
-      relatedPosts = related.length >= 2 ? related : fallback;
+        .sort((a, b) => b.score - a.score);
+
+      const topMatches = scoredPosts.map((sp) => sp.post);
+      relatedPosts = topMatches.slice(0, 3);
+
+      // Ensure always at least 3 items
+      if (relatedPosts.length < 3) {
+        const remaining = posts.filter(
+          (p) => p.slug !== post.slug && !relatedPosts.some((r) => r.slug === p.slug)
+        );
+        relatedPosts = [...relatedPosts, ...remaining].slice(0, 3);
+      }
     }
 
     return {
