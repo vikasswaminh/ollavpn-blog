@@ -276,18 +276,7 @@ draft: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Think of a browser extension as locking one window of your Chromebook while leaving the rest of the house open. A full Android VPN app locks every door and window at once. If you're actually trying to protect your privacy on ChromeOS rather than just your browsing history, the full app is the only version of "VPN for Chromebook" that does what the phrase implies.</p>
 
-<div class="wrapping-lightbox" style="margin-top: 36px; margin-bottom: 24px; padding: 28px; background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.25); border-left: 5px solid #DA291C; border-radius: 8px;">
-  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
-  <p style="font-size: 1.05rem; font-weight: 600; color: #64748B; margin: 0 0 18px 0;">A broader-context closing thought</p>
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">One pattern we've noticed across every privacy-and-networking topic we cover: the gap between what most users believe about a given topic and what the technical reality is keeps widening. Marketing departments have gotten better at producing confident-sounding claims; the underlying technology has gotten more complex; the threats have gotten more sophisticated; and the time most</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">users have to evaluate any single claim has, if anything, gotten shorter. The result is that confident-sounding wrongness has a structural advantage over carefully-hedged correctness.</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">On ChromeOS specifically, that gap shows up in a very concrete way: the platform's whole pitch is "it's just a browser, it's simple," which quietly hides a more layered reality of separate Android, browser, and Linux network paths - each with its own rules about what a VPN does and doesn't actually cover. The remedy we've settled on, here and everywhere else on this blog, is to publish at depth - long enough to explain the real architecture, with the settings spelled out rather than assumed, and free verification tools so you don't have to take our word for any of it. That's a slower way to write than a five-bullet listicle, and it doesn't optimize for skimmers. It optimizes for people who actually want their Chromebook protected the way they think it already is.</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">If you've read this far, you're in that second group. We keep this guide updated as ChromeOS itself changes - Google ships meaningful networking updates to the platform several times a year, and we re-test against the current version rather than assuming last year's menu paths still hold. The main free-VPN comparison, the technology overview, and the free privacy tools are the three pages most worth bookmarking if this guide was useful.</p>
-
-</div>
 
 
 ## Verify and cross-reference
@@ -487,4 +476,13 @@ draft: false
       </div>
     </details>
   </div>
+</section>
+
+<section id="wrapping-it-up" class="wrap-up-box wrapping-lightbox" style="margin-top: 36px; margin-bottom: 24px; padding: 28px; background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.25); border-left: 5px solid #DA291C; border-radius: 8px;">
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
+  <p style="font-size: 1.05rem; font-weight: 600; color: #64748B; margin: 0 0 18px 0;">A broader-context closing thought</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">One pattern we've noticed across every privacy-and-networking topic we cover: the gap between what most users believe about a given topic and what the technical reality is keeps widening. Marketing departments have gotten better at producing confident-sounding claims; the underlying technology has gotten more complex; the threats have gotten more sophisticated; and the time most</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">users have to evaluate any single claim has, if anything, gotten shorter. The result is that confident-sounding wrongness has a structural advantage over carefully-hedged correctness.</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">On ChromeOS specifically, that gap shows up in a very concrete way: the platform's whole pitch is "it's just a browser, it's simple," which quietly hides a more layered reality of separate Android, browser, and Linux network paths - each with its own rules about what a VPN does and doesn't actually cover. The remedy we've settled on, here and everywhere else on this blog, is to publish at depth - long enough to explain the real architecture, with the settings spelled out rather than assumed, and free verification tools so you don't have to take our word for any of it. That's a slower way to write than a five-bullet listicle, and it doesn't optimize for skimmers. It optimizes for people who actually want their Chromebook protected the way they think it already is.</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">If you've read this far, you're in that second group. We keep this guide updated as ChromeOS itself changes - Google ships meaningful networking updates to the platform several times a year, and we re-test against the current version rather than assuming last year's menu paths still hold. The main free-VPN comparison, the technology overview, and the free privacy tools are the three pages most worth bookmarking if this guide was useful.</p>
 </section>
