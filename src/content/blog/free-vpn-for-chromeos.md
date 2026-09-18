@@ -1,0 +1,420 @@
+---
+title: "Free VPN for ChromeOS 2026: Best Settings for Privacy and Speed"
+description: "Chromebooks are supposed to be the simple option: turn it on, sign into your Google account, and everything just works. Then you go looking for a VPN and sudden"
+pubDate: 2026-09-03
+author: 'OllaVPN Security Team'
+tags: ['buyer-guides']
+---
+
+<section id="tldr" class="article-tldr-box" style="background: #F8FAFC; border: 1.5px solid #CBD5E1; border-left: 5px solid #455b8a; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
+  <h3 style="font-size: 1.05rem; font-weight: 800; color: #455b8a; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
+  <p style="font-size: 0.95rem; line-height: 1.7; color: #1E293B; margin: 0;">
+    You want a free VPN for ChromeOS that actually protects your whole Chromebook, not just your open Chrome tabs, and you want it configured properly instead of left on default settings. OllaVPN Free gives you 10 Mbps speed, access to every country in our network, and post quantum-ready encryption, all with no data caps, no ads, and nothing pushing you to upgrade. It installs as a real Android app through Google Play, which means it covers your entire Chromebook: Android apps, background sync, everything: not just the browser.
+Unlike most free VPNs that throttle you to unusable speeds, cap your data, or quietly sell your browsing activity, we fund the free tier through our optional Plus subscribers. That means a reliable, private connection for browsing, video calls, and HD streaming, without hidden costs. We don't log your activity, so your privacy stays yours, whether you're on the free plan or paying us $2 a month.
+For settings, the short version: install through the Play Store rather than a browser extension, turn on Always on VPN in ChromeOS network settings, pick WireGuard over legacy protocols where you have the choice, and connect to the nearest server before touching anything else. We cover exactly why each of those matters below, along with the full setup walkthrough.
+  </p>
+</section>
+
+<section id="key-takeaways" class="article-takeaways-box" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; padding: 20px 24px; margin-bottom: 24px; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
+  <h3 style="font-size: 1.125rem; font-weight: 800; color: #0F172A; margin: 0 0 14px 0;">Key Takeaways</h3>
+  <ul class="takeaways-list-24obs" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column;">
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 10px;">
+      <span class="takeaway-bullet" style="color: #455b8a; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.92rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 700;">What does a truly "free" VPN for ChromeOS actually mean::</strong> A truly "free" VPN for ChromeOS means a service you can install through Google Play and use indefinitely, on your whole device, without paym
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 10px;">
+      <span class="takeaway-bullet" style="color: #455b8a; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.92rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 700;">What should you expect from any honest free VPN for ChromeOS::</strong> You should expect transparency about the business model, a plain language privacy policy, no forced account creation just to try it, and an 
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 10px;">
+      <span class="takeaway-bullet" style="color: #455b8a; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.92rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 700;">What does OllaVPN Free give you specifically for ChromeOS::</strong> OllaVPN Free gives you a proper Android VPN app that protects your entire Chromebook: not just Chrome: with 10 Mbps speed and access to ever
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 10px;">
+      <span class="takeaway-bullet" style="color: #455b8a; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.92rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 700;">How does OllaVPN Free compare to other free VPNs for ChromeOS::</strong> OllaVPN Free offers a genuinely private, no strings experience funded by paying Plus subscribers, while most other free VPNs for Chromebook 
+      </div>
+    </li>
+    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 10px;">
+      <span class="takeaway-bullet" style="color: #455b8a; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
+      <div style="font-size: 0.92rem; line-height: 1.65; color: #1E293B;">
+        <strong style="color: #0F172A; font-weight: 700;">How do you set up OllaVPN Free on ChromeOS, step by-step::</strong> Setting up OllaVPN Free on a Chromebook is straightforward: install the Android app from Google Play, open it, pick a server, and connect: t
+      </div>
+    </li>
+  </ul>
+</section>
+
+## What does a truly "free" VPN for ChromeOS actually mean?
+
+A truly "free" VPN for ChromeOS means a service you can install through Google Play and use indefinitely, on your whole device, without payment, data limits, ads, or privacy trade offs quietly baked into the fine print.
+
+When you hear "free VPN for Chromebook," it's worth pausing on what that phrase usually hides. A lot of free VPN apps in the Play Store are free the way a casino buffet is free: the cost shows up somewhere, just not at the door. That "somewhere" is usually your data: your browsing history bundled and sold to advertisers, ads quietly injected into pages you visit, or in the worst cases your idle bandwidth resold as someone else's exit node without you ever knowing. None of that is a hypothetical: it's happened, repeatedly, to real apps with real install counts in the millions.
+
+A genuinely free VPN for ChromeOS means something narrower and better: no data caps, so you're not rationed by the megabyte; no ads interrupting your browsing or your Android apps; no logs of what you did while connected; and no quiet monetization of your traffic to make up the difference. You get access to every country in our network, the same post quantum-ready encryption running on our paid tier, and a kill switch that's actually enforced at the system level rather than a suggestion buried in a settings menu.
+
+How do we actually make that work financially:  The same way it's always worked for the reputable names in this category: OllaVPN funds the free tier from Plus subscribers. People who need more speed or want to cover more devices pay $2 a month for that, and that revenue keeps the free tier running without us ever needing to sell your data or clutter your Chromebook with ads. Free users aren't the product here. They're just users.
+
+## What should you expect from any honest free VPN for ChromeOS?
+
+You should expect transparency about the business model, a plain language privacy policy, no forced account creation just to try it, and an app that actually protects your whole device rather than only your browser tabs.
+
+Here's the honest checklist we'd want you to hold any free ChromeOS VPN to, ours included. It should be upfront about how it makes money: if you can't find that answer in under a minute on the provider's own site, that's already a red flag. It should have a privacy policy you can actually read without a law degree, spelling out exactly what is and isn't logged. It shouldn't require an account, an email, or a credit card just to start using the free plan: if it does, ask yourself what that information is actually being collected for.
+
+Beyond the paperwork, an honest free ChromeOS VPN needs to deliver the thing it's promising: real encryption, a stable connection, and enough server choice to be useful. It shouldn't nag you constantly to upgrade, and it definitely shouldn't be showing you ads inside an app that's supposed to be protecting your privacy: that's a contradiction dressed up as a business model. Critically, on ChromeOS specifically, it should be installed as a proper Android app through Google Play, not marketed as a "Chromebook VPN" while actually only being a Chrome extension that leaves the rest of your device wide open.
+
+For us, the honest answer is simple: the free tier is fully funded by paid OllaVPN Plus subscribers. No ads, no data sales, no logs, and no bait and-switch where the free plan quietly gets worse a few months in. What you sign up for is what you keep getting.
+
+## What does OllaVPN Free give you specifically for ChromeOS?
+
+<div class="test-highlight-card" style="background: #F8FAFC; border: 1px solid #CBD5E1; border-radius: 12px; padding: 18px 20px; margin-bottom: 16px;">
+  <span style="background: #324468; color: #FFFFFF; font-size: 0.75rem; font-weight: 800; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; margin-right: 8px;">Security Benchmark</span>
+  <p style="margin: 6px 0 0 0; color: #1E293B; line-height: 1.65;">OllaVPN Free gives you a proper Android VPN app that protects your entire Chromebook: not just Chrome: with 10 Mbps speed and access to every country in our network.</p>
+</div>
+
+When you install OllaVPN Free through the Google Play Store on a Chromebook, you're getting a dedicated application, not a browser add on. That distinction matters more on ChromeOS than almost any other platform, because Chromebooks run Android apps, browser traffic, and (if you've enabled it) a Linux container, each with its own separate networking path under the hood. A dedicated app that registers as a system level Android VPN service covers all of that at once, which means your Chrome tabs, your Android apps, and your background sync traffic are all wrapped in the same encrypted tunnel.
+
+Under the hood, that tunnel runs on WireGuard, the modern protocol that's become the industry standard for a good reason: smaller codebase, faster handshakes, and meaningfully lower CPU overhead than leacy OpenVPN: which matters a lot on Chromebook hardware, since most Chromebooks are built around lighter, more power efficient processors than a typical Windows laptop. You also get in tunnel DNS, so your domain lookups route through us instead of leaking out to your ISP's resolver, and a kill switch that's on by default, which on ChromeOS specifically closes a real gap: Chromebooks hop between Wi Fi networks constantly: home, school, café: and each handoff is a moment where an unprotected VPN can briefly drop the tunnel without you noticing.
+
+<div class="test-highlight-card" style="background: #F8FAFC; border: 1px solid #CBD5E1; border-radius: 12px; padding: 18px 20px; margin-bottom: 16px;">
+  <span style="background: #324468; color: #FFFFFF; font-size: 0.75rem; font-weight: 800; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; margin-right: 8px;">Security Benchmark</span>
+  <p style="margin: 6px 0 0 0; color: #1E293B; line-height: 1.65;">The 10 Mbps cap on the free plan comfortably covers the things people actually do on a Chromebook: browsing with a dozen tabs open, HD video calls, streaming, and most cloud based work. And you're not boxed into a handful of countries: you get every location in our network, free plan or not, which is unusual; a lot of "free" competitors quietly restrict server choice to push you toward upgrading.</p>
+</div>
+
+## How does OllaVPN Free compare to other free VPNs for ChromeOS?
+
+OllaVPN Free offers a genuinely private, no strings experience funded by paying Plus subscribers, while most other free VPNs for Chromebook rely on ads, data selling, or throttling designed to push you toward a paid plan.
+
+Free VPNs available for ChromeOS generally sort into three buckets, and it's worth understanding all three before you install anything from the Play Store.
+
+The first bucket is ad funded free VPNs. These are free in the sense that no money changes hands, but they show you ads, track what you do, and often sell that activity data to advertisers. You're not skipping the cost: you're just paying with your privacy instead of your wallet. That's a trade we're not willing to make, and it's worth being suspicious of any free VPN app whose business model you can't identify in a minute of looking.
+
+<div class="test-highlight-card" style="background: #F8FAFC; border: 1px solid #CBD5E1; border-radius: 12px; padding: 18px 20px; margin-bottom: 16px;">
+  <span style="background: #324468; color: #FFFFFF; font-size: 0.75rem; font-weight: 800; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; margin-right: 8px;">Security Benchmark</span>
+  <p style="margin: 6px 0 0 0; color: #1E293B; line-height: 1.65;">The second bucket is freemium throttled VPNs. These hand you a small amount of free data, or cap your speed so aggressively its barely usable, hoping frustration nudges you toward the paid tier. OllaVPN Free does have a speed cap: 10 Mbps: but there's no data cap at all, and that speed is genuinely enough for HD streaming, video calls, and everyday browsing on a Chromebook, not a crippled preview designed to annoy you into upgrading.</p>
+</div>
+
+The third bucket is what we'd call honest loss leader VPNs: reputable paid providers offering a genuinely usable free tier, sometimes with a smaller server list or fewer features, but without compromising privacy. OllaVPN sits here too, with one difference we think matters: our free plan isn't a shrinking trial. It's meant to stay exactly as capable as it is today, indefinitely, because OllaVPN funds the free tier from Plus subscribers who need higher speeds or want to cover more devices.
+
+Their $2 a month keeps the free tier fully funded for everyone else, permanently: not as a limited time hook.
+
+## How do you set up OllaVPN Free on ChromeOS, step by-step?
+
+Setting up OllaVPN Free on a Chromebook is straightforward: install the Android app from Google Play, open it, pick a server, and connect: the whole thing takes about five minutes.
+
+Most VPN marketing pages for "Chromebook" quietly mean "Chrome browser extension." We do this differently, and deliberately, because a browser extension can only ever protect what happens inside Chrome. OllaVPN installs as a full Android app, which on a Play Store enabled Chromebook (the overwhelming majority sold since 2019) means it covers everything: Chrome, your other installed Android apps, and background system traffic alike.
+
+Here's the actual walkthrough:
+
+<div class="step-card" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 18px 22px; margin-bottom: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.02);">
+  <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+    <span style="background: #455b8a; color: #FFFFFF; font-size: 0.8rem; font-weight: 800; padding: 3px 8px; border-radius: 6px; text-transform: uppercase;">Step 1</span>
+    <h4 style="margin: 0; font-size: 1.05rem; font-weight: 700; color: #0F172A;">Open the Play Store on your Chromebook and search for OllaVPN, or go directly to our download page and follow the link through. Installing from the official listing</h4>
+  </div>
+  <p style="margin: 0; font-size: 0.95rem; line-height: 1.65; color: #334155;">not a similarly named clone: is worth the extra ten seconds of checking.</p>
+</div>
+
+<div class="step-card" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 18px 22px; margin-bottom: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.02);">
+  <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+    <span style="background: #455b8a; color: #FFFFFF; font-size: 0.8rem; font-weight: 800; padding: 3px 8px; border-radius: 6px; text-transform: uppercase;">Step 2</span>
+    <h4 style="margin: 0; font-size: 1.05rem; font-weight: 700; color: #0F172A;">Install the app. ChromeOS will show you the standard Android permission prompt. OllaVPN only needs the VPN service permission itself, nothing more.</h4>
+  </div>
+  <p style="margin: 0; font-size: 0.95rem; line-height: 1.65; color: #334155;">Install the app. ChromeOS will show you the standard Android permission prompt. OllaVPN only needs the VPN service permission itself, nothing more.</p>
+</div>
+
+<div class="step-card" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 18px 22px; margin-bottom: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.02);">
+  <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+    <span style="background: #455b8a; color: #FFFFFF; font-size: 0.8rem; font-weight: 800; padding: 3px 8px; border-radius: 6px; text-transform: uppercase;">Step 3</span>
+    <h4 style="margin: 0; font-size: 1.05rem; font-weight: 700; color: #0F172A;">Open the app. You'll see a clean list of available server locations</h4>
+  </div>
+  <p style="margin: 0; font-size: 0.95rem; line-height: 1.65; color: #334155;">no account screen, no email prompt, no credit card field. That's not an oversight; the free plan is built to need none of it.</p>
+</div>
+
+<div class="step-card" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 18px 22px; margin-bottom: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.02);">
+  <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+    <span style="background: #455b8a; color: #FFFFFF; font-size: 0.8rem; font-weight: 800; padding: 3px 8px; border-radius: 6px; text-transform: uppercase;">Step 4</span>
+    <h4 style="margin: 0; font-size: 1.05rem; font-weight: 700; color: #0F172A;">Pick a server. If you just want general privacy and speed, "Optimal Location" connects you to the fastest server we can currently offer you, which is almost always the right first choice. If you specifically need to appear in a particular country, choose that location instead.</h4>
+  </div>
+  <p style="margin: 0; font-size: 0.95rem; line-height: 1.65; color: #334155;">Pick a server. If you just want general privacy and speed, "Optimal Location" connects you to the fastest server we can currently offer you, which is almost always the right first choice. If you specifically need to appear in a particular country, choose that location instead.</p>
+</div>
+
+<div class="step-card" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 18px 22px; margin-bottom: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.02);">
+  <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+    <span style="background: #455b8a; color: #FFFFFF; font-size: 0.8rem; font-weight: 800; padding: 3px 8px; border-radius: 6px; text-transform: uppercase;">Step 5</span>
+    <h4 style="margin: 0; font-size: 1.05rem; font-weight: 700; color: #0F172A;">Grant the Android VPN permission when prompted</h4>
+  </div>
+  <p style="margin: 0; font-size: 0.95rem; line-height: 1.65; color: #334155;">this is the step that lets the tunnel register at the system level and cover your entire Chromebook, not just the browser.</p>
+</div>
+
+<div class="step-card" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 18px 22px; margin-bottom: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.02);">
+  <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+    <span style="background: #455b8a; color: #FFFFFF; font-size: 0.8rem; font-weight: 800; padding: 3px 8px; border-radius: 6px; text-transform: uppercase;">Step 6</span>
+    <h4 style="margin: 0; font-size: 1.05rem; font-weight: 700; color: #0F172A;">Hit Connect. The app will confirm once the tunnel is up, and from that point everything leaving your Chromebook</h4>
+  </div>
+  <p style="margin: 0; font-size: 0.95rem; line-height: 1.65; color: #334155;">Chrome tabs, Android apps, background sync: is routed through OllaVPN.</p>
+</div>
+
+That's the whole process. No separate desktop installer, no reboot required. From here, the settings below are what turn "installed" into "properly configured."
+
+## What are the best privacy settings for a free VPN on ChromeOS?
+
+The privacy settings that matter most, in order of impact: install as a full Android app rather than a browser extension, turn on Always on VPN in ChromeOS network settings, confirm in tunnel DNS is active, and separately check for WebRTC leaks in Chrome, since that's a browser layer issue a VPN doesn't automatically catch.
+
+This is the part most "best VPN for Chromebook" articles skip, and it's arguably the most useful section on this page, because a good VPN badly configured can still leak.
+
+Install through Android, not the Chrome Web Store. We've covered why above, but as a setting rather than a shopping decision: go to the Play Store, install the app, and grant it VPN permission when Android asks. That's what makes the tunnel cover the whole device instead of one browser tab at a time.
+
+Turn on Always on VPN. Go to ChromeOS Settings → Network → VPN (on newer builds it's under Security and Privacy → VPN), find OllaVPN in the list, and toggle Always on VPN. This tells ChromeOS to keep the tunnel active and reconnect automatically the instant the network changes: the practical equivalent of a kill switch on this platform, since it closes the small gap where a Chromebook can silently fall back to an unprotected connection while switching Wi Fi networks.
+
+Confirm in tunnel DNS is doing its job. Connect the VPN, then run our DNS lookup tool from Chrome. The resolver shown should belong to OllaVPN: not your ISP, not Google's 8.8.8.8, not Cloudflare's 1.1.1.1. If your ISP's resolver shows up while you're connected, something's leaking, and it's worth flagging.
+
+Test WebRTC separately. Chrome's own WebRTC implementation can occasionally expose your real IP address at the browser layer even when the underlying network traffic is properly tunneled: this is a Chrome quirk, not something unique to any one VPN. Run our WebRTC leak test with the tunnel connected. If your real IP shows up, that's worth investigating.
+
+Be deliberate about app permissions. A VPN app needs the Android VPN service permission and not much else. If a free VPN app on the Play Store is also asking for contacts, SMS, or broad storage access it can't justify, that's a real warning sign, and Android's permission model on ChromeOS makes it unusually easy to check before you even hit install.
+
+Keep auto update on for your VPN specifically, even if you've turned it off system wide to save data. Leak fixes and protocol patches land in updates, and a VPN app that hasn't shipped one in over a year is running against a year old threat model.
+
+## What are the best speed settings for a free VPN on ChromeOS?
+
+The single biggest speed lever on a Chromebook is picking the nearest server rather than whatever's marked "fastest," followed by using WireGuard instead of legacy protocols where you have the choice, and being realistic about what your specific Chromebook's hardware can actually handle.
+
+Chromebooks, on average, carry less raw CPU headroom than the Windows and Mac laptops most VPN speed advice is written for. That changes which settings actually move the needle.
+
+Server distance beats almost everything else. Speed loss on a VPN scale with the physical and network distance to the server, not just marketing claims about "blazing speeds." On a Chromebook specifically, where there's less processing power to spare for encryption overhead, picking a server two countries away instead of two continents away can be the difference between a smooth video call and one that stutters. OllaVPN's "Optimal Location" option handles this automatically, but if you're manually picking a country, closer is almost always faster.
+
+Use WireGuard. It's what OllaVPN runs by default specifically because its smaller cryptographic handshake means less CPU load per packet than older protocols like OpenVPN: a difference that's easy to ignore on a powerful desktop and very noticeable on a modest Chromebook processor.
+
+Skip obfuscation features unless you actually need them. Traffic disguising modes exist to get a VPN connection through networks that actively try to detect and block VPN traffic: some school and workplace networks do this. They're useful when you need them and pure overhead when you don't, so leave them off by default.
+
+Watch background Android apps. Because a full device VPN on ChromeOS runs through the same Android container as your installed apps, anything syncing in the background: email, cloud photo backup, chat apps: is sharing tunnel bandwidth with whatever you're actively doing. If things feel slow, checking what's mid sync is often more productive than switching servers.
+
+<div class="test-highlight-card" style="background: #F8FAFC; border: 1px solid #CBD5E1; border-radius: 12px; padding: 18px 20px; margin-bottom: 16px;">
+  <span style="background: #324468; color: #FFFFFF; font-size: 0.75rem; font-weight: 800; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; margin-right: 8px;">Security Benchmark</span>
+  <p style="margin: 6px 0 0 0; color: #1E293B; line-height: 1.65;">Test with tools, not vibes. Our what is-my IP tool confirms the tunnel is genuinely active, and a quick manual speed test run twice: once connected, once not: gives you a far more honest read than a glance at a number in an app.</p>
+</div>
+
+## Why is a 10 Mbps cap enough for most ChromeOS users?
+
+<div class="test-highlight-card" style="background: #F8FAFC; border: 1px solid #CBD5E1; border-radius: 12px; padding: 18px 20px; margin-bottom: 16px;">
+  <span style="background: #324468; color: #FFFFFF; font-size: 0.75rem; font-weight: 800; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; margin-right: 8px;">Security Benchmark</span>
+  <p style="margin: 6px 0 0 0; color: #1E293B; line-height: 1.65;">A 10 Mbps cap is enough for most ChromeOS users because it comfortably covers HD video, video calls, browsing, and most cloud based work: which is the overwhelming majority of what people actually do on a Chromebook.</p>
+</div>
+
+Ten megabits per second sounds slow next to the numbers your ISP advertises, but it's worth thinking about what a Chromebook is actually for. Chromebooks are built around lightweight, browser- and cloud centered use: email, docs, video calls, streaming, web apps: not the kind of heavy local processing or massive file transfers a gaming desktop handle.
+
+<div class="test-highlight-card" style="background: #F8FAFC; border: 1px solid #CBD5E1; border-radius: 12px; padding: 18px 20px; margin-bottom: 16px;">
+  <span style="background: #324468; color: #FFFFFF; font-size: 0.75rem; font-weight: 800; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; margin-right: 8px;">Security Benchmark</span>
+  <p style="margin: 6px 0 0 0; color: #1E293B; line-height: 1.65;">What 10 Mbps genuinely covers well: HD streaming at 1080p from YouTube, Netflix, or similar services, with no buffering caused by the VPN itself. Video calls on Google Meet or Zoom, including screen sharing, run smoothly. General browsing: a dozen tabs, downloads, social media, cloud documents: has no perceptible slowdown. Most Android apps and web apps that don't rely on sustained multi gigabyte transfers work exactly as they would unprotect.</p>
+</div>
+
+<div class="test-highlight-card" style="background: #F8FAFC; border: 1px solid #CBD5E1; border-radius: 12px; padding: 18px 20px; margin-bottom: 16px;">
+  <span style="background: #324468; color: #FFFFFF; font-size: 0.75rem; font-weight: 800; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; margin-right: 8px;">Security Benchmark</span>
+  <p style="margin: 6px 0 0 0; color: #1E293B; line-height: 1.65;">The truth is, gigabit class speeds mostly matter for very large downloads or 4K streaming, and neither is the typical day to-day Chromebook workload. That's why 10 Mbps, uncapped in terms of total data, ends up being a genuinely usable free tier rather than a crippled trial designed to frustrate you into upgrading.</p>
+</div>
+
+## What are the common mistakes people make when picking a free VPN for ChromeOS?
+
+The biggest mistake is assuming "free" means "no cost," when for a lot of free VPN apps in the Play Store it actually means you're paying with your privacy, your data, or your Chromebook's own performance.
+
+A specific mistake worth calling out on ChromeOS: mistaking a Chrome extension for a full VPN. A browser extension only ever touches traffic inside Chrome's tabs. It does nothing for your other Android apps, background sync, or system level traffic: which, on a device where a meaningful share of daily use happens through installed Android apps rather than the browser alone, leaves a real gap.
+
+Beyond that, the mistakes are familiar from any platform, but worth restating because the Play Store makes it dangerously easy to install something in thirty seconds without checking who's behind it. Vague or absent funding disclosure is the biggest red flag: if a free VPN app can't explain how it makes money, assume the money comes from your data. Data logging and selling is the natural consequence of that: some free VPNs collect browsing history and IP addresses and sell them to advertisers, which defeats the entire point of installing a VPN in the first place. Always check the privacy policy for explicit statements about what isn't logged, not just vague reassurances.
+
+Ad injection is another pattern to watch for: some free VPN apps insert their own ads into pages you visit or redirect you to affiliate sites, which is both annoying and a genuine security risk, since injected ads can link to malicious destinations. And then there's simple performance neglect: many free VPNs are slow because their free tier servers are overloaded, sometimes deliberately, to make the paid tier look more appealing by comparison. OllaVPN avoids all of this by funding the free tier directly from paid Plus subscribers, so there's no need to recoup costs through your data or your patience.
+
+## When does OllaVPN Plus make more sense than the free plan on ChromeOS?
+
+<div class="test-highlight-card" style="background: #F8FAFC; border: 1px solid #CBD5E1; border-radius: 12px; padding: 18px 20px; margin-bottom: 16px;">
+  <span style="background: #324468; color: #FFFFFF; font-size: 0.75rem; font-weight: 800; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; margin-right: 8px;">Security Benchmark</span>
+  <p style="margin: 6px 0 0 0; color: #1E293B; line-height: 1.65;">OllaVPN Plus makes more sense when you need more speed than 10 Mbps allows, want to protect multiple devices under one account, or regularly do things like large downloads or 4K streaming that push past what the free tier is built for.</p>
+</div>
+
+<div class="test-highlight-card" style="background: #F8FAFC; border: 1px solid #CBD5E1; border-radius: 12px; padding: 18px 20px; margin-bottom: 16px;">
+  <span style="background: #324468; color: #FFFFFF; font-size: 0.75rem; font-weight: 800; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; margin-right: 8px;">Security Benchmark</span>
+  <p style="margin: 6px 0 0 0; color: #1E293B; line-height: 1.65;">The free plan is designed to be genuinely free forever: 10 Mbps across our whole network, no data cap, no ads, no data sales. That's plenty for everyday Chromebook use: browsing, HD streaming, video calls, most cloud based work. But there are real situations where upgrading to OllaVPN Plus is the better call.</p>
+</div>
+
+The most common reason is speed and capacity. Ten megabits handles a lot, but it's not enough for 4K streaming or downloading large files quickly: a Linux development environment pulling big packages inside Crostini, for instance, or transferring large media files. Plus removes the speed cap entirely, giving you up to 10 Gbps.
+
+The second common reason is device count. The free plan covers one device at a time, which is fine for a single Chromebook. But if you're also protecting a phone, a second laptop, or a household's worth of devices, juggling multiple free accounts gets old fast. Plus covers up to five devices simultaneously under one account for $2 a month: a small price for not having to think about it device by device.
+
+## Is OllaVPN's encryption truly future proof on Chromebook hardware?
+
+Yes: OllaVPN's encryption is built to resist even theoretical quantum computer attacks, and it's specifically been tested to confirm that doesn't come at a meaningful cost on lower powered Chromebook processors.
+
+We've invested heavily in post quantum-ready encryption because privacy shouldn't have an expiration date tied to future computing power. Most VPNs today use encryption that's perfectly safe against current computers but could, in theory, be broken by a sufficiently powerful quantum computer down the line. If that happens, traffic captured today: even traffic that looks unreadable right now: could potentially be decrypted retroactively. That threat has a name in the security world: "harvest now, decrypt later."
+
+OllaVPN uses a hybrid handshake that pairs classical, well proven encryption with quantum resistant algorithms side by side. If one layer is ever theoretically compromised by future hardware, the other still holds. It's a forward secure design meant to keep what you send today private, regardless of what breakthroughs arrive over the next decade or two.
+
+There's a common assumption that this kind of forward looking cryptography is too heavy for lower powered ARM Chromebook chips. In practice, the added cost of post quantum key exchange is a small, one time expense at connection setup, not an ongoing tax on every packet: which is why it runs comfortably even on entry level Chromebook hardware without a noticeable hit to battery life or throughput. We've specifically verified this on lower end ARM Chromebook models rather than assuming it based on desktop benchmarks alone.
+
+## How does OllaVPN maintain its 'privacy first' commitment with a free tier?
+
+We fund the free tier entirely through paid Plus subscriptions, which means your privacy on ChromeOS is never compromised to make the free plan financially work.
+
+It's a fair question: how do we offer $0 forever, no card, no email tracking, no ads, no data sale, and no logs, while still running a business:  The answer is straightforward: OllaVPN funds the free tier from Plus subscribers.
+
+Most "free" VPNs either carry a hidden cost: selling data, running ads, pushing you into an unwanted subscription after a disguised trial period: or they simply aren't sustainable and eventually degrade or shut down. We didn't want to build either of those. Our goal is for privacy to be genuinely accessible, which means the free tier has to actually be free, not a bait for something else.
+
+When someone subscribes to OllaVPN Plus for $2 a month, a portion of that directly supports the infrastructure and bandwidth serving free users: including on ChromeOS, where the Android app layer means we're covering full device traffic, not just lightweight browser requests. That model lets us keep investing in the network, in security, and in post quantum readiness without ever needing to compromise the core promise: your data isn't the product, on the free plan or the paid one.
+
+## Why is a dedicated Android VPN app better than a Chrome extension on ChromeOS?
+
+A dedicated Android VPN app encrypts your entire Chromebook's internet traffic, while a Chrome extension only protects data passing through your browser tabs: everything else on the device stays exposed.
+
+This distinction matters more on ChromeOS than almost anywhere else, because a Chromebook isn't just a browser wrapped in a case: it's running Android apps in their own container, Chrome as its own process, and potentially a Linux (Crostini) environment too, each with a separate path to the network. A Chrome extension "VPN" only ever touches the Chrome piece. Everything else: your Gmail app, your Android games, your background photo sync, system update checks: goes out completely unprotected, even while the extension shows a reassuring "connected" icon in your browser toolbar.
+
+A dedicated app like OllaVPN registers as a genuine Android VPN service at the system level, which is what lets it cover the entire device at once: Chrome tabs, Android apps, and background traffic together, under the same encrypted tunnel. This is one of the biggest limitations of extension based "VPNs" in general: they're sandboxed to the browser by design and structurally can't see or protect anything outside it.
+
+Think of a browser extension as locking one window of your Chromebook while leaving the rest of the house open. A full Android VPN app locks every door and window at once. If you're actually trying to protect your privacy on ChromeOS rather than just your browsing history, the full app is the only version of "VPN for Chromebook" that does what the phrase implies.
+
+A broader context closing thought
+
+One pattern we've noticed across every privacy and-networking topic we cover: the gap between what most users believe about a given topic and what the technical reality is keeps widening. Marketing departments have gotten better at producing confident sounding claims; the underlying technology has gotten more complex; the threats have gotten more sophisticated; and the time most
+
+users have to evaluate any single claim has, if anything, gotten shorter. The result is that confident sounding wrongness has a structural advantage over carefully hedged correctness.
+
+On ChromeOS specifically, that gap shows up in a very concrete way: the platform's whole pitch is "it's just a browser, it's simple," which quietly hides a more layered reality of separate Android, browser, and Linux network paths: each with its own rules about what a VPN does and doesn't actually cover. The remedy we've settled on, here and everywhere else on this blog, is to publish at depth: long enough to explain the real architecture, with the settings spelled out rather than assumed, and free verification tools so you don't have to take our word for any of it. That's a slower way to write than a five bullet listicle, and it doesn't optimize for skimmers. It optimizes for people who actually want their Chromebook protected the way they think it already is.
+
+If you've read this far, you're in that second group. We keep this guide updated as ChromeOS itself changes: Google ships meaningful networking updates to the platform several times a year, and we re test against the current version rather than assuming last year's menu paths still hold. The main free VPN comparison, the technology overview, and the free privacy tools are the three pages most worth bookmarking if this guide was useful.
+
+Verify and cross reference
+
+For any claim on this page that affects a decision you're about to make, here's the verification path we'd recommend
+
+Verify the technical claim from your own Chromebook. Our DNS lookup, WebRTC leak test, what is-my IP, and the rest of our tools page are free, require no account, and run entirely in Chrome. Most claims in this guide can be checked from your own device in under fifteen minutes.
+
+Cross reference at least one independent source. We're an operator with a commercial interest in the conclusion. The most reputable independent voices in the privacy VPN category in 2026 are Mullvad's blog (no affiliate program, so no incentive to skew rankings), the Privacy Guides project documentation, the Restore Privacy site, and the academic literature on consumer VPN app security: the widely cited starting point is Ikram et al. 2016, "An Analysis of the Privacy and Security Risks of Android VPN Permission enabled Apps," presented at ACM IMC, which is especially relevant here since it studies Android VPN apps specifically, the same layer ChromeOS VPNs run on.
+
+Read primary sources where they exist. Google's own ChromeOS networking and enterprise policy documentation, Android's VPN API documentation, and the relevant IETF RFCs (WireGuard's RFC among them) are primary sources. Vendor marketing pages and most commentary: including this one: are derivatives. When a claim is specific enough to trace back to a standard or an official doc, it's worth reading that directly.
+
+Update your view as ChromeOS updates. Google ships new ChromeOS versions on a regular cadence, and menu locations for VPN and network settings do occasionally shift between major releases. This guide reflects the layout as of July 2026; check the "last fact checked" date at the top before treating a specific menu path as gospel months from now.
+
+How to verify any picks on this list yourself
+
+A list of recommendations is only worth what you can check yourself. Everything above can be verified from your own Chromebook in under fifteen minutes.
+
+Test 1: Funding model. Open the provider's homepage and look for the page explaining how the free tier is funded. If you can't find a clear answer within 30 seconds, that's the answer: walk away.
+
+Test 2: DNS in tunnel. Connect the app. Open our DNS lookup tool in Chrome and resolve a domain. The resolver shown should belong to your VPN provider: not 8.8.8.8, not 1.1.1.1, not your ISP. Disconnect and repeat; the difference is your evidence.
+
+Test 3: WebRTC and IP leak. Open our WebRTC leak test with the VPN connected. Only the VPN's exit IP should be visible: your real IP should not appear anywhere in the results.
+
+Test 4: Always on / kill switch behaviour. With the VPN connected and Always on VPN enabled in ChromeOS settings, switch Wi Fi networks (or toggle Wi Fi off and back on). Traffic should pause and resume automatically inside the tunnel rather than briefly falling back to an unprotected connection.
+
+Test 5: Audit history. Search "<provider name> security audit" and look for a published independent report from a firm like Cure53, Secretum, KPMG, or Radically Open Security. A recent, clean audit is a strong trust signal; the complete absence of one when competitors have them is its own signal.
+
+What we deliberately left out of this guide
+
+For completeness, here are the categories we considered and specifically excluded, and why.
+
+Standalone "VPN master" style Android apps with millions of Play Store installs but no identifiable company behind them. Excluded as a category. Academic research into Android VPN apps (Ikram et al. 2016, and later follow up studies) repeatedly found large numbers of these apps either request excessive permissions, transmit data to undisclosed third parties, or don't actually encrypt traffic at all despite the branding. A high install count on the Play Store measures marketing reach, not security: it's not a trust signal on its own.
+
+Chrome only "VPN" extensions marketed as full Chromebook VPN solutions. Excluded as a category for the reasons covered above: they only ever protect browser traffic, and several have previously been caught injecting ads or logging browsing history well beyond what a genuine VPN should ever see.
+
+Hola VPN. Excluded permanently, on ChromeOS as on every other platform. In 2015, researchers and the operators of 8chan independently confirmed Hola was quietly operating as a residential proxy network, reselling free users' own bandwidth as exit node capacity to a commercial subsidiary. The specific disclosure language has changed since, but the underlying model hasn't.
+
+Atlas VPN. Acquired by Nord Security in 2021 and shut down entirely in 2024, with free users migrated to NordVPN's paid tier. No longer a current option in 2026 on any platform, including ChromeOS.
+
+⭐ Key takeaways
+
+What to remember from this guide
+
+•A truly free VPN for ChromeOS means no data caps, no ads, no logs, and no hidden monetization of your traffic
+
+•Install as a full Android app through Google Play, not a Chrome extension: only a system level app covers your whole device
+
+•Turn on Always on VPN in ChromeOS settings to close the gap when switching Wi Fi networks
+
+•Use WireGuard for lower CPU overhead on Chromebook hardware
+
+•Pick the nearest server for the best speed: distance matters more on lower powered processors
+
+•Verify claims yourself: test DNS, WebRTC, and kill switch behavior from your own Chromebook
+
+•OllaVPN funds the free tier through Plus subscribers, so your data is never the product
+
+## Frequently Asked Questions
+
+<details class="faq-accordion-item" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 10px; padding: 14px 18px; margin-bottom: 12px;">
+  <summary style="font-weight: 700; color: #0F172A; cursor: pointer;">Is OllaVPN Free safe to use on ChromeOS?</summary>
+  <p class="faq-accordion-content" style="margin-top: 10px; color: #334155; line-height: 1.65;">Yes. We built OllaVPN Free with privacy and security as the top priority. You get our full post quantum-ready encryption, a strict no logs policy, and a kill switch that's actually enforced, all without needing an account or handing over any personal information. It's designed to be genuinely safe for your whole Chromebook, not just your browser.</p>
+</details>
+
+<details class="faq-accordion-item" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 10px; padding: 14px 18px; margin-bottom: 12px;">
+  <summary style="font-weight: 700; color: #0F172A; cursor: pointer;">Will OllaVPN Free slow down my Chromebook?</summary>
+  <p class="faq-accordion-content" style="margin-top: 10px; color: #334155; line-height: 1.65;">Not meaningfully. The free plan caps at 10 Mbps, which comfortably handles HD streaming, video calls, and general browsing. WireGuard's lightweight design also means less CPU overhead than older protocols, which matters more on Chromebook hardware than on a high powered desktop. You might notice a difference if you're used to gigabit speeds, but for everyday use it's more than enough.</p>
+</details>
+
+<details class="faq-accordion-item" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 10px; padding: 14px 18px; margin-bottom: 12px;">
+  <summary style="font-weight: 700; color: #0F172A; cursor: pointer;">Does OllaVPN Free require an account or credit card on ChromeOS?</summary>
+  <p class="faq-accordion-content" style="margin-top: 10px; color: #334155; line-height: 1.65;">No. You don't need to create an account, provide an email, or add a credit card to use OllaVPN Free. Install the app from the Play Store, open it, and connect. It's $0 forever, with no personal information required.</p>
+</details>
+
+<details class="faq-accordion-item" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 10px; padding: 14px 18px; margin-bottom: 12px;">
+  <summary style="font-weight: 700; color: #0F172A; cursor: pointer;">Does OllaVPN Free protect my Android apps on a Chromebook, or just Chrome?</summary>
+  <p class="faq-accordion-content" style="margin-top: 10px; color: #334155; line-height: 1.65;">It protects both. Because OllaVPN installs as a full Android VPN app rather than a Chrome extension, it covers your entire device: Chrome tabs, Android apps, and background sync traffic: under the same encrypted tunnel, not just what happens inside the browser.</p>
+</details>
+
+<details class="faq-accordion-item" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 10px; padding: 14px 18px; margin-bottom: 12px;">
+  <summary style="font-weight: 700; color: #0F172A; cursor: pointer;">What's the catch with OllaVPN Free on ChromeOS?</summary>
+  <p class="faq-accordion-content" style="margin-top: 10px; color: #334155; line-height: 1.65;">There isn't one in the usual sense. The only limitation is the 10 Mbps speed cap. We don't sell your data, inject ads, or push forced upgrades. The free tier is funded entirely by optional Plus subscriptions, so what you get is a genuinely free, private VPN, not a disguised trial.</p>
+</details>
+
+<details class="faq-accordion-item" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 10px; padding: 14px 18px; margin-bottom: 12px;">
+  <summary style="font-weight: 700; color: #0F172A; cursor: pointer;">How is OllaVPN's free plan different from other free Chromebook VPNs?</summary>
+  <p class="faq-accordion-content" style="margin-top: 10px; color: #334155; line-height: 1.65;">We offer unlimited data at a consistent 10 Mbps, access to every country in our network, and post quantum-ready encryption, all completely free, with no ads and no data logging. Many free Chromebook VPN apps either cap data heavily, inject ads, or are Chrome only extensions that leave the rest of your device unprotected.</p>
+</details>
+
+<details class="faq-accordion-item" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 10px; padding: 14px 18px; margin-bottom: 12px;">
+  <summary style="font-weight: 700; color: #0F172A; cursor: pointer;">Should I enable Always on VPN for OllaVPN on my Chromebook?</summary>
+  <p class="faq-accordion-content" style="margin-top: 10px; color: #334155; line-height: 1.65;">Yes, we'd recommend it. Turning on Always on VPN in ChromeOS network settings closes the brief gap that can occur when your Chromebook switches Wi Fi networks, ensuring traffic stays inside the tunnel instead of momentarily falling back to an unprotected connection.</p>
+</details>
+
+<details class="faq-accordion-item" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 10px; padding: 14px 18px; margin-bottom: 12px;">
+  <summary style="font-weight: 700; color: #0F172A; cursor: pointer;">Will OllaVPN Free still be free a year from now?</summary>
+  <p class="faq-accordion-content" style="margin-top: 10px; color: #334155; line-height: 1.65;">Yes. We're not running a limited time offer or a bait and-switch. Our business model is built around Plus subscribers funding the free tier, which keeps it free and fully functional for everyone, indefinitely: the same on ChromeOS as on every other platform we support.</p>
+</details>
+
+<details class="faq-accordion-item" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 10px; padding: 14px 18px; margin-bottom: 12px;">
+  <summary style="font-weight: 700; color: #0F172A; cursor: pointer;">Can I use OllaVPN Free for streaming or geo restricted content on my Chromebook?</summary>
+  <p class="faq-accordion-content" style="margin-top: 10px; color: #334155; line-height: 1.65;">Yes. 10 Mbps is enough for HD streaming on most platforms, and you can connect to any country in our network. For 4K streaming or very heavy downloads: like large Linux packages inside Crostini: OllaVPN Plus's 10 Gbps speed is a better fit.</p>
+</details>
+
+<details class="faq-accordion-item" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 10px; padding: 14px 18px; margin-bottom: 12px;">
+  <summary style="font-weight: 700; color: #0F172A; cursor: pointer;">How does the kill switch work on ChromeOS specifically?</summary>
+  <p class="faq-accordion-content" style="margin-top: 10px; color: #334155; line-height: 1.65;">If your VPN connection drops unexpectedly, the kill switch blocks internet traffic until the tunnel reconnects, preventing your real IP address or unencrypted data from leaking out in the gap. Combined with Always on VPN in ChromeOS settings, this covers the network switching scenarios that come up often on a Chromebook moving between Wi Fi networks.</p>
+</details>
+
+<details class="faq-accordion-item" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 10px; padding: 14px 18px; margin-bottom: 12px;">
+  <summary style="font-weight: 700; color: #0F172A; cursor: pointer;">What logs does OllaVPN Free keep on ChromeOS?</summary>
+  <p class="faq-accordion-content" style="margin-top: 10px; color: #334155; line-height: 1.65;">None that can identify you. We run a strict no logs policy across every platform we support, including ChromeOS: no tracking of browsing activity, connection timestamps, IP addresses, or bandwidth usage tied to you personally.</p>
+</details>
+
+<details class="faq-accordion-item" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 10px; padding: 14px 18px; margin-bottom: 12px;">
+  <summary style="font-weight: 700; color: #0F172A; cursor: pointer;">Will my school or workplace know I'm using a VPN on a managed Chromebook?</summary>
+  <p class="faq-accordion-content" style="margin-top: 10px; color: #334155; line-height: 1.65;">If your Chromebook is managed by a school or employer, administrators can disable VPN apps, block the Play Store, or enforce a managed network policy regardless of what you try to install. If you see a "managed device" notice, check with your IT administrator before assuming a personal VPN will work as expected.</p>
+</details>
+
+<details class="faq-accordion-item" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 10px; padding: 14px 18px; margin-bottom: 12px;">
+  <summary style="font-weight: 700; color: #0F172A; cursor: pointer;">When would I want to upgrade to OllaVPN Plus on ChromeOS?</summary>
+  <p class="faq-accordion-content" style="margin-top: 10px; color: #334155; line-height: 1.65;">Upgrade if you need faster speeds (up to 10 Gbps), want to protect multiple devices: a phone alongside your Chromebook, for instance: under one account, or regularly do things like 4K streaming or large downloads that the free tier's 10 Mbps cap isn't built for. It's $2 a month for a meaningful jump in capability.</p>
+</details>
+
+<section class="article-bottom-cta-banner" style="background: linear-gradient(135deg, #455b8a 0%, #324468 100%) !important; border: 1px solid rgba(255, 255, 255, 0.15) !important; border-radius: 16px !important; padding: 36px 32px !important; margin: 48px 0 24px 0 !important; text-align: center !important; color: #ffffff !important; box-shadow: 0 16px 36px rgba(50, 68, 104, 0.25) !important; box-sizing: border-box !important;">
+  <h3 style="font-size: 1.75rem !important; font-weight: 800 !important; color: #ffffff !important; margin: 0 0 10px 0 !important; letter-spacing: -0.02em !important;">Protect Your Connection with OllaVPN</h3>
+  <p style="font-size: 1.05rem !important; color: rgba(255, 255, 255, 0.9) !important; max-width: 600px !important; margin: 0 auto 20px auto !important; line-height: 1.6 !important;">High-speed WireGuard encryption, zero activity logs, and post-quantum security on every server.</p>
+  <div style="display: flex !important; justify-content: center !important; gap: 8px !important; flex-wrap: wrap !important; margin-bottom: 24px !important;">
+    <span style="background: rgba(255, 255, 255, 0.15) !important; color: #ffffff !important; font-size: 0.82rem !important; font-weight: 600 !important; padding: 5px 12px !important; border-radius: 9999px !important; border: 1px solid rgba(255, 255, 255, 0.25) !important;">Zero Logs</span>
+    <span style="background: rgba(255, 255, 255, 0.15) !important; color: #ffffff !important; font-size: 0.82rem !important; font-weight: 600 !important; padding: 5px 12px !important; border-radius: 9999px !important; border: 1px solid rgba(255, 255, 255, 0.25) !important;">WireGuard</span>
+    <span style="background: rgba(255, 255, 255, 0.15) !important; color: #ffffff !important; font-size: 0.82rem !important; font-weight: 600 !important; padding: 5px 12px !important; border-radius: 9999px !important; border: 1px solid rgba(255, 255, 255, 0.25) !important;">Kill Switch</span>
+    <span style="background: rgba(255, 255, 255, 0.15) !important; color: #ffffff !important; font-size: 0.82rem !important; font-weight: 600 !important; padding: 5px 12px !important; border-radius: 9999px !important; border: 1px solid rgba(255, 255, 255, 0.25) !important;">Multi-Device</span>
+  </div>
+  <a href="/download" style="display: inline-block !important; background: #ffffff !important; color: #324468 !important; font-weight: 700 !important; font-size: 1rem !important; padding: 14px 32px !important; border-radius: 9999px !important; text-decoration: none !important; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12) !important;">Get OllaVPN Free</a>
+</section>
