@@ -1,4 +1,4 @@
-﻿---
+---
 import { SITE } from '../config';
 
 interface Props {
@@ -14,13 +14,27 @@ interface Props {
 }
 
 const { title, description = SITE.description, image, article } = Astro.props;
-const canonical = new URL(Astro.url.pathname, Astro.site).href;
-const ogImage = image ? new URL(image, Astro.site).href : undefined;
-const fullTitle = title === SITE.title ? title : `${title} Â· ${SITE.brand} Blog`;
+
+// Standardize canonical with trailing slash if it is a directory path
+const pathname = Astro.url.pathname.endsWith('/') || Astro.url.pathname.includes('.') ? Astro.url.pathname : `${Astro.url.pathname}/`;
+const canonical = new URL(pathname, Astro.site).href;
+
+// Dynamic OpenGraph / Social Share Image with absolute fallback
+const defaultOgImage = new URL('/images/category-default.webp', Astro.site).href;
+const ogImage = image 
+  ? (image.startsWith('http') ? image : new URL(image, Astro.site).href)
+  : defaultOgImage;
+
+const fullTitle = title === SITE.title ? title : `${title} — ${SITE.brand} Blog`;
 ---
 
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Google Discover & High-CTR Rich Snippets Directives -->
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
 <link rel="icon" href="/favicon.ico" sizes="any" />
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -37,22 +51,27 @@ const fullTitle = title === SITE.title ? title : `${title} Â· ${SITE.brand} Bl
 <title>{fullTitle}</title>
 <meta name="description" content={description} />
 
-<!-- Google Fonts: Lato (300, 400, 700, 900) -->
+<!-- Google Fonts Preconnect & Font-Display Swap -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
 
+<!-- OpenGraph Metadata -->
 <meta property="og:type" content={article ? 'article' : 'website'} />
 <meta property="og:title" content={fullTitle} />
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonical} />
 <meta property="og:site_name" content={`${SITE.brand} Blog`} />
-{ogImage && <meta property="og:image" content={ogImage} />}
+<meta property="og:image" content={ogImage} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content={fullTitle} />
 
-<meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
+<!-- Twitter Card Metadata -->
+<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={fullTitle} />
 <meta name="twitter:description" content={description} />
-{ogImage && <meta name="twitter:image" content={ogImage} />}
+<meta name="twitter:image" content={ogImage} />
 
 {
   article && (
@@ -76,4 +95,3 @@ const fullTitle = title === SITE.title ? title : `${title} Â· ${SITE.brand} Bl
   title={`${SITE.brand} Blog`}
   href="/rss.xml"
 />
-

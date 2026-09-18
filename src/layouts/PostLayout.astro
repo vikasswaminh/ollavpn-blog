@@ -79,17 +79,54 @@ const breadcrumbJsonLd = {
   ]
 };
 
+const authorPersonJsonLd = {
+  '@type': 'Person',
+  name: 'Vikas Swami',
+  jobTitle: 'Dual CCIE #22239 & Chief Network Architect',
+  url: 'https://ollavpn.com/author/vikas-swami/',
+  sameAs: [
+    'https://networkershome.com',
+    'https://www.linkedin.com/in/vikas-swami-ccie'
+  ],
+  worksFor: {
+    '@type': 'Organization',
+    name: 'OllaVPN',
+    url: 'https://ollavpn.com'
+  }
+};
+
+const wordCount = post.body ? post.body.split(/\s+/).length : 1500;
+const isoReadingTime = `PT${minutes}M`;
+const defaultArticleImage = cover ? new URL(cover, Astro.site).href : new URL('/images/category-default.webp', Astro.site).href;
+
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'BlogPosting',
+  '@type': 'TechArticle',
   headline: title,
   description,
   datePublished: pubDate.toISOString(),
   dateModified: (updatedDate ?? pubDate).toISOString(),
-  author: { '@type': 'Organization', name: author ?? SITE.author },
-  publisher: { '@type': 'Organization', name: SITE.brand },
-  mainEntityOfPage: canonical,
-  ...(cover ? { image: new URL(cover, Astro.site).href } : {}),
+  inLanguage: 'en-US',
+  wordCount: wordCount,
+  timeRequired: isoReadingTime,
+  proficiencyLevel: 'Beginner to Advanced',
+  author: authorPersonJsonLd,
+  publisher: {
+    '@type': 'Organization',
+    name: 'OllaVPN',
+    url: 'https://ollavpn.com',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://ollavpn.com/favicon.svg'
+    }
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': canonical
+  },
+  image: defaultArticleImage,
+  articleSection: categoryName,
+  keywords: (tags || []).join(', ')
 };
 
 // Extract FAQs from post body for Google FAQPage Schema
