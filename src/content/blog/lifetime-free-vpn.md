@@ -64,7 +64,7 @@ The complete, no-fluff guide to what “lifetime free VPN” actually means in 2
 
 Here’s the part that gets skipped in most “best free VPN” roundups: running a VPN costs real money. Server infrastructure, bandwidth, engineering, security audits, legal compliance, customer support, none of it is free. So when a VPN says it’s free, you should ask a simple question: who is paying for all of this, and why?
 
-In most cases, the answer isn’t reassuring. Some providers sell your browsing data to advertisers. Some sell aggregate traffic data to data brokers. Some run adware. Some are shells for credential-harvesting operations, a 2020 study by the Commonwealth Scientific and Industrial Research Organisation (CSIRO) found that more than 38% of free Android VPN apps contained malware. And some are simply collecting email addresses and personal data to resell. The rest are “free” trials that stop working the moment you need them most.
+In most cases, the answer isn’t reassuring. Some providers sell your browsing data to advertisers. Some sell aggregate traffic data to data brokers. Some run adware. Some are shells for credential-harvesting operations, a 2020 study by the Commonwealth Scientific and Industrial Research Organisation (CSIRO) found that more than 38% of free <a href="/blog/best-free-vpn-for-android/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">Android VPN</a> apps contained malware. And some are simply collecting email addresses and personal data to resell. The rest are “free” trials that stop working the moment you need them most.
 
 This isn’t cynicism for its own sake. It’s the reality of an industry that has used “free” as a euphemism for “we make money from you in ways you didn’t agree to.” If you don’t understand the business model, you can’t evaluate whether a specific free VPN is actually worth using.
 
@@ -103,7 +103,7 @@ Meaning 2: A permanent free tier with feature limits. This is what OllaVPN offer
 
 Meaning 3: A disguised trial. Some services call themselves "forever free" while quietly throttling the experience so severely that it’s effectively unusable, a 200 MB/month data cap, for example, or speeds so low that video won’t stream. This is the model that does the most damage to the “free VPN” category. It’s technically free. It’s practically a paid product with the useful bits removed.
 
-OllaVPN's free plan is the second kind. 10 Mbps on a single device, no data cap, every country in the network, post-quantum encryption included, [kill switch](/blog/what-is-a-vpn-kill-switch.html) enforced, DNS handled inside the tunnel. Not a trial. Not a trick. Not a permanently crippled experience. A functional VPN that costs nothing.
+OllaVPN's free plan is the second kind. 10 Mbps on a single device, no data cap, every country in the network, <a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">post-quantum encryption</a> included, [kill switch](/blog/what-is-a-vpn-kill-switch.html) enforced, DNS handled inside the tunnel. Not a trial. Not a trick. Not a permanently crippled experience. A functional VPN that costs nothing.
 
 The relevant question isn’t “is this actually free right now?”, you can verify that by downloading it with no card and using it. The more interesting question is sustainability: will it still be free in five years? We’ll get to that.
 
@@ -124,11 +124,11 @@ Devices: one simultaneous connection. One device at a time. If you want to cover
 
 Servers: every country in OllaVPN's network. Free users are not restricted to a subset of server locations the way they are on most VPN free tiers. Every country is available.
 
-Protocol: [WireGuard](/free-wireguard-vpn). The modern, fast, auditable [VPN protocol](/blog/what-is-a-vpn-protocol.html). Not a downgraded legacy protocol reserved for non-paying users.
+Protocol: [<a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WireGuard</a>](/free-wireguard-vpn). The modern, fast, auditable [VPN protocol](/blog/what-is-a-vpn-protocol.html). Not a downgraded legacy protocol reserved for non-paying users.
 
 Post-quantum encryption: included. The same hybrid post-quantum handshake that protects paid connections is available on the free plan with no configuration required. This is not a paid feature.
 
-[Kill switch](/blog/what-is-a-vpn-kill-switch/): always-on, mandatory. If the VPN connection drops, traffic is blocked. There is no option to disable the kill switch. This is an unusual design choice, most VPNs make the kill switch optional, but it’s the right one for a privacy-first product.
+[<a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">Kill switch</a>](/blog/what-is-a-vpn-kill-switch/): always-on, mandatory. If the VPN connection drops, traffic is blocked. There is no option to disable the kill switch. This is an unusual design choice, most VPNs make the kill switch optional, but it’s the right one for a privacy-first product.
 
 DNS: in-tunnel. DNS queries go through OllaVPN's in-tunnel resolver rather than your ISP's or a third-party service. This prevents [DNS leaks](/blog/what-is-a-dns-leak/) by default.
 

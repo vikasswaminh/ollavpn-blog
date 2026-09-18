@@ -412,7 +412,7 @@ Note: uBlock Origin availability and extension capabilities depend on browser ve
 
 A VPN masks your IP address from every website you visit and prevents your ISP from seeing your browsing history. This addresses two tracking vectors: IP-based tracking and ISP data sales. It doesn’t stop cookie-based tracking or fingerprinting by itself, but it removes your ISP from the picture entirely and makes IP-based profiling harder.
 
-Choose a VPN with a genuine [no-logs policy](/blog/what-logs-does-vpn-keep/), an audited technical architecture, and a business model that doesn’t depend on selling your data.
+Choose a VPN with a genuine [<a href="/blog/which-free-vpn-does-not-keep-logs/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">no-logs policy</a>](/blog/what-logs-does-vpn-keep/), an audited technical architecture, and a business model that doesn’t depend on selling your data.
 
 ## Compartmentalize your logins
 
@@ -484,7 +484,7 @@ Zero-logs architecture, OllaVPN does not log connection timestamps, IP addresses
 
 DNS inside the [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html), your DNS queries are resolved inside the VPN tunnel by OllaVPN’s own resolver, not by your ISP and not by a third-party DNS provider that might log them.
 
-[Kill switch](/blog/what-is-a-vpn-kill-switch/) that cannot be accidentally disabled, if the VPN connection drops, the [kill switch](/blog/what-is-a-vpn-kill-switch.html) blocks all traffic until the connection is restored.
+[<a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">Kill switch</a>](/blog/what-is-a-vpn-kill-switch/) that cannot be accidentally disabled, if the VPN connection drops, the [kill switch](/blog/what-is-a-vpn-kill-switch.html) blocks all traffic until the connection is restored.
 
 Post-quantum-ready encryption on every connection, hybrid X25519 + ML-KEM-768. For “harvest now, decrypt later,” this matters. For everyday ad tracking, it’s a bonus on top of the core privacy properties.
 
@@ -494,7 +494,7 @@ No account required for the free plan, you don’t give OllaVPN an email address
 
 ## OllaVPN plans:
 
-Lifetime free · $0 · 10 Mbps IP masking, no-logs, in-tunnel DNS, [PQC](/blog/what-is-post-quantum-cryptography.html)-ready, [kill switch](/blog/what-is-a-vpn-kill-switch.html). Every country. No time limits. No data caps. No ads.
+Lifetime free · $0 · 10 Mbps IP masking, no-logs, <a href="/blog/what-is-a-dns-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">in-tunnel DNS</a>, [PQC](/blog/what-is-post-quantum-cryptography.html)-ready, [kill switch](/blog/what-is-a-vpn-kill-switch.html). Every country. No time limits. No data caps. No ads.
 
 Paid plan · $2 / month · 10 Gbps Same privacy stack, faster connections. Five devices on one account.
 
@@ -519,7 +519,7 @@ You can try the free plan right now, no email, no card, no upsell. Your ISP stop
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      By utilizing the optimized WireGuard kernel implementation, OllaVPN delivers sub-millisecond connection handshakes and negligible latency overhead (under 5%), preserving maximum bandwidth for streaming and downloads.
+      By utilizing the optimized <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WireGuard</a> kernel implementation, OllaVPN delivers sub-millisecond connection handshakes and negligible latency overhead (under 5%), preserving maximum bandwidth for streaming and downloads.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">

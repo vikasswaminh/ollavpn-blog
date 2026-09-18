@@ -262,7 +262,7 @@ This distinction trips up a lot of readers, and it's worth being explicit about.
 *   **Jurisdiction** is where the _company_ is incorporated. Switzerland, Panama, BVI, Sweden, etc. Determines what laws the company itself must obey.
 *   **Server location** is where individual VPN servers are _physically or virtually located_. A company based in Switzerland might run servers in fifty countries.
 
-When you connect to a Switzerland-based VPN's New York server, you are routing your traffic through New York. That traffic is subject to US server-location law for as long as it exists on those servers. _But_, and this is the important part, if the VPN runs a no-logs policy on RAM-only servers, the server-location matters less than people think, because nothing persists. The encrypted traffic is in transit, processed, and forgotten.
+When you connect to a Switzerland-based VPN's New York server, you are routing your traffic through New York. That traffic is subject to US server-location law for as long as it exists on those servers. _But_, and this is the important part, if the VPN runs a <a href="/blog/which-free-vpn-does-not-keep-logs/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">no-logs policy</a> on RAM-only servers, the server-location matters less than people think, because nothing persists. The encrypted traffic is in transit, processed, and forgotten.
 
 For users who want to be especially careful, the strongest posture combines **company jurisdiction outside Five Eyes** + **RAM-only server infrastructure regardless of location** + **audited no-logs policy** + **strong encryption**. That's belt and suspenders, and it's what the most privacy-conscious VPNs aim for.
 
@@ -331,7 +331,7 @@ Our position on this whole question is straightforward: **the strongest privacy 
 
 *   **A no-logs policy** means there is essentially nothing for any government to obtain through any legal process, regardless of jurisdiction.
 *   **An always-on [kill switch](/blog/what-is-a-vpn-kill-switch/)** means the connection fails closed, your traffic doesn't leak even briefly during reconnects.
-*   **[Post-quantum cryptography](what-is-post-quantum-cryptography.html) from day one**, on every connection including the lifetime free plan, protects against the "harvest now, decrypt later" threat, the encrypted traffic captured today that adversaries hope to decrypt years from now.
+*   **[<a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">Post-quantum cryptography</a>](what-is-post-quantum-cryptography.html) from day one**, on every connection including the lifetime free plan, protects against the "harvest now, decrypt later" threat, the encrypted traffic captured today that adversaries hope to decrypt years from now.
 *   **DNS is handled inside the [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html) by default**, see our [DNS leak guide](what-is-a-dns-leak.html) for what that means.
 *   **Free for life**, privacy upgrades worth having shouldn't be paywalled.
 
@@ -363,7 +363,7 @@ If you've read this far, you're in the second group. That's the group we're writ
 
 For any claim on this page that affects a decision you're about to make, the verification path we recommend:
 
-**Verify the technical claim from your own device.** Our [DNS lookup](/dns-lookup), [WebRTC leak test](/webrtc-leak-test), [what-is-my-IP](/what-is-my-ip), and the other tools at [our tools page](/tools/) are free, require no account, and run entirely in your browser. Most claims about VPN behavior can be verified from your own device in under fifteen minutes using these tools.
+**Verify the technical claim from your own device.** Our [DNS lookup](/dns-lookup), [<a href="/blog/what-is-a-webrtc-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WebRTC leak</a> test](/webrtc-leak-test), [what-is-my-IP](/what-is-my-ip), and the other tools at [our tools page](/tools/) are free, require no account, and run entirely in your browser. Most claims about VPN behavior can be verified from your own device in under fifteen minutes using these tools.
 
 **Cross-reference at least one third-party source.** We are an operator with a commercial interest in the conclusion. The most reputable independent voices in the privacy-VPN category in 2026 are Mullvad's blog (technical depth without sales pressure because they don't run affiliate programs), the Privacy Guides project documentation, the Restore Privacy site, and the academic literature on consumer VPN security (the canonical paper is Ikram et al. 2016, "An Analysis of the Privacy and Security Risks of Android VPN Permission-enabled Apps," in ACM IMC). Read across multiple sources before forming a strong view.
 

@@ -55,7 +55,7 @@ OllaVPN is designed to handle the network-layer part the right way: post-quantum
 
 <div class="blog-main-content-box">
 
-Shield your privacy with OllaVPN free, post-quantum encryption & zero logs.
+Shield your privacy with OllaVPN free, <a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">post-quantum encryption</a> & zero logs.
 
 <a href="/dl/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">DOWNLOAD →</a>
 
@@ -93,7 +93,7 @@ A VPN is like a heavily armored delivery truck. It protects your package from be
 
 
 
-When you connect to a VPN like OllaVPN, your device establishes an [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html) to one of our servers using a protocol such as WireGuard. Every request your device sends, logins, searches, uploads, gets encrypted before it ever touches the local network. That includes your home Wi‑Fi, a hotel network, or the open Wi‑Fi at an airport lounge.
+When you connect to a VPN like OllaVPN, your device establishes an [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html) to one of our servers using a protocol such as <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WireGuard</a>. Every request your device sends, logins, searches, uploads, gets encrypted before it ever touches the local network. That includes your home Wi‑Fi, a hotel network, or the open Wi‑Fi at an airport lounge.
 
 So if someone is positioned to watch the traffic on that local network, they see only encrypted noise. They can’t read it, and they can’t realistically alter it in transit without breaking the encryption. Modern [VPN protocols](/blog/what-is-a-vpn-protocol.html) are designed so that doing that is computationally infeasible with today’s capabilities.
 

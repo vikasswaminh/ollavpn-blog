@@ -212,7 +212,7 @@ One of the smartest moves the industry made early in the post-quantum rollout wa
 
 The logic is simple. Post-quantum algorithms are new, and new algorithms occasionally turn out to have flaws that aren't visible until years of public scrutiny. We don't want to bet the entire internet on math that hasn't yet had decades of attempts to break it. So during the transition years, roughly 2023 through the early 2030s, most deployments combine the old and the new.
 
-You'll see hybrids written like `X25519Kyber768` (a classical X25519 key exchange combined with the post-quantum Kyber-768). Google Chrome uses exactly this hybrid in TLS. Cloudflare supports it. Signal's PQXDH does the same conceptual thing for messaging. Mullvad's quantum-resistant WireGuard tunnels combine Classic McEliece with the classical WireGuard handshake.
+You'll see hybrids written like `X25519Kyber768` (a classical X25519 key exchange combined with the post-quantum Kyber-768). Google Chrome uses exactly this hybrid in TLS. Cloudflare supports it. Signal's PQXDH does the same conceptual thing for messaging. Mullvad's quantum-resistant <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WireGuard</a> tunnels combine Classic McEliece with the classical WireGuard handshake.
 
 The cost of hybrids is small: a few extra kilobytes of data on the initial handshake and a few extra milliseconds of computation. The benefit is large: belt-and-suspenders protection during a period when nobody wants to commit fully to either side alone.
 
@@ -337,7 +337,7 @@ Not every "post-quantum" claim is the same. Here's what actually matters when ev
 *   **Hybrid mode** combining a classical and post-quantum algorithm, not a pure post-quantum-only mode (which is more aggressive than the industry consensus recommends today).
 *   **Available on every connection by default**, ideally without the user needing to flip any toggle. If PQC is buried in an advanced settings menu, most users won't ever benefit.
 *   **No additional charge** for PQC. Privacy upgrades should not be paywalled.
-*   **Continued availability of standard features**, kill switch, [DNS leak](/blog/what-is-a-dns-leak/) protection, IPv6 handling, while PQC is enabled.
+*   **Continued availability of standard features**, kill switch, [<a href="/blog/what-is-a-dns-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">DNS leak</a>](/blog/what-is-a-dns-leak/) protection, IPv6 handling, while PQC is enabled.
 *   **An ongoing commitment to the standards**. As NIST finalizes additional algorithms in coming years, the VPN's PQC mode should evolve to incorporate them.
 
 If a VPN claims post-quantum support but the details are missing, vague, or paywalled, treat the claim with friendly skepticism.

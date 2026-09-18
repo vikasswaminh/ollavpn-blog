@@ -84,7 +84,7 @@ That's why the selection criteria in this guide matter more on Android than they
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A really usable free Android VPN is one you'd keep using a month from now without thinking about it. That means speeds that don't visibly degrade your normal phone habits, no artificial data ceiling that cuts you off mid-week, and no nagging that pushes you toward a paid tier before you've had a fair chance to evaluate the free one.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A really usable free <a href="/blog/best-free-vpn-for-android/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">Android VPN</a> is one you'd keep using a month from now without thinking about it. That means speeds that don't visibly degrade your normal phone habits, no artificial data ceiling that cuts you off mid-week, and no nagging that pushes you toward a paid tier before you've had a fair chance to evaluate the free one.</p>
 </div>
 
 We call this out because "usable" gets treated like a given in most free-VPN marketing. In practice, it's the biggest gap between what's promised and what's delivered.
@@ -93,7 +93,7 @@ A lot of free VPN apps are functional. They connect. They show a green checkmark
 
 "Really usable" also means not being nickel-and-dimed on locations. A free tier that only offers two overcrowded server cities isn't meaningfully free if those two servers are so congested that your real throughput is a fraction of the advertised cap.
 
-Usability isn't just the number on the settings page. It's what you actually experience in your hand: scrolling, streaming a show on the train, hopping on a video call, checking your bank app on [public Wi-Fi](/blog/how-public-wifi-steals-passwords/).
+Usability isn't just the number on the settings page. It's what you actually experience in your hand: scrolling, streaming a show on the train, hopping on a video call, checking your bank app on [<a href="/blog/how-public-wifi-steals-passwords/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">public Wi-Fi</a>](/blog/how-public-wifi-steals-passwords/).
 
 The honest bar we think a free Android VPN needs to clear in 2026 is this: could you make it your only VPN, permanently, without a nagging sense that you're on the discount tier of a service that's actively rooting for you to upgrade? If the answer is no, "free" is doing a lot of marketing work that the product itself doesn't back up.
 

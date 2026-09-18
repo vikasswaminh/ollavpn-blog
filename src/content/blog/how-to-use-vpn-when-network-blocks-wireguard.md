@@ -175,7 +175,7 @@ To maintain continuous connectivity across restrictive networks:
 **VPN blocking rarely presents as a clean error message; it frequently mimics slow internet, packet loss, or application crashes.**
 
 When a firewall partially filters VPN traffic, you may experience:
-- **Extreme Latency & Speed Drops:** Firewalls that employ bandwidth throttling intentionally throttle UDP traffic to 128 kbps, causing video buffering and sluggish page loads.
+- **Extreme Latency & Speed Drops:** Firewalls that employ <a href="/blog/vpn-for-avoiding-isp-throttling/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">bandwidth throttling</a> intentionally throttle UDP traffic to 128 kbps, causing video buffering and sluggish page loads.
 - **Random Disconnections Every 5 Minutes:** Stateful firewalls may terminate active UDP sessions if they exceed a configured idle timeout or data quota.
 - **Selective App Failures:** Browsers may load basic websites while communications apps (Zoom, Discord, Slack, WhatsApp) fail because the network selectively blocks VoIP UDP ports.
 
@@ -183,7 +183,7 @@ When a firewall partially filters VPN traffic, you may experience:
 
 ## When is the problem your VPN provider and not the network?
 
-**If connection failures persist across multiple completely independent networks (e.g., home broadband, cellular 5G, and public Wi-Fi), the issue lies with the VPN provider.**
+**If connection failures persist across multiple completely independent networks (e.g., home broadband, cellular 5G, and <a href="/blog/how-public-wifi-steals-passwords/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">public Wi-Fi</a>), the issue lies with the VPN provider.**
 
 Common signs of provider-side infrastructure failure include:
 - **Overloaded Nodes:** Budget or ad-supported VPN services pack thousands of users onto unmetered shared servers, causing massive packet loss and dropped handshakes.

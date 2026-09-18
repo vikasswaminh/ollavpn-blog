@@ -124,7 +124,7 @@ tags: ["buyer-guides"]
 
   <details class="faq-accordion-item" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px 20px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 0.95rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>7. Why does post-quantum encryption matter for a short trip, not just long-term data?</span>
+      <span>7. Why does <a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">post-quantum encryption</a> matter for a short trip, not just long-term data?</span>
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.90rem; color: #1e293b; line-height: 1.7; margin-top: 12px; margin-bottom: 0; padding-top: 12px; border-top: 1px solid #e2e8f0;">

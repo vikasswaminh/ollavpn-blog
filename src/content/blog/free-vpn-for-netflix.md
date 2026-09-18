@@ -93,7 +93,7 @@ Paid VPN services rotate their IP pools constantly, retire burned addresses, and
 
 ## Deep packet inspection
 
-Netflix's detection isn't just IP-based. On some network paths, it can identify the encryption headers specific to [VPN protocols](/blog/what-is-a-vpn-protocol.html), the fingerprint of [WireGuard](/free-wireguard-vpn) or OpenVPN. This is a more sophisticated layer, and it's why the VPNs best at maintaining Netflix access increasingly use obfuscation techniques that make VPN traffic look identical to regular HTTPS traffic.
+Netflix's detection isn't just IP-based. On some network paths, it can identify the encryption headers specific to [VPN protocols](/blog/what-is-a-vpn-protocol.html), the fingerprint of [<a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WireGuard</a>](/free-wireguard-vpn) or OpenVPN. This is a more sophisticated layer, and it's why the VPNs best at maintaining Netflix access increasingly use obfuscation techniques that make VPN traffic look identical to regular HTTPS traffic.
 
 ## DNS behavior analysis
 
@@ -226,7 +226,7 @@ Minimum speed
 
 ## What you'll realistically get from a free VPN
 
-Free VPN speed is essentially a function of how many users are sharing each server at a given moment. Well-maintained, large-pool servers deliver reasonable speeds; undersized, overloaded ones don't, and it gets measurably worse on weekday evenings and weekends when everyone's trying to stream at the same time.
+Free <a href="/blog/vpn-speed-explained/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">VPN speed</a> is essentially a function of how many users are sharing each server at a given moment. Well-maintained, large-pool servers deliver reasonable speeds; undersized, overloaded ones don't, and it gets measurably worse on weekday evenings and weekends when everyone's trying to stream at the same time.
 
 There's an important distinction worth understanding here between a stated speed cap and an implicit throttle:
 
@@ -471,7 +471,7 @@ Confirmed Netflix access, from independent testers, within the last three months
 
 A trustworthy business model, a paid tier that's clearly the company's actual revenue source. No paid tier, no obvious funding = red flag.
 
-Explicit no-logs policy, a specific public statement that traffic logs, DNS query logs, and behavioral data are not collected or sold. Vague "we care about your privacy" language doesn't count.
+Explicit <a href="/blog/which-free-vpn-does-not-keep-logs/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">no-logs policy</a>, a specific public statement that traffic logs, DNS query logs, and behavioral data are not collected or sold. Vague "we care about your privacy" language doesn't count.
 
 Independent audit, a security audit from a reputable firm (Cure53, SEC Consult, Leviathan Security) that verified the no-logs claim is actually implemented in the code, not just stated in a document.
 

@@ -72,7 +72,7 @@ But here's the part that some providers gloss over: your ISP's world isn't perfe
 
 The practical test is simple: check your ping to a game server without a VPN, then check it again with a VPN exit close to that server. If the VPN number is lower, your ISP routing was the problem. If it's higher, it wasn't, and you're adding overhead for no ping benefit. The access and security benefits may still make it worth running.
 
-When a free VPN for gaming helps vs hurts ping, flat infographic showing [ISP throttling](/blog/vpn-for-avoiding-isp-throttling/) on the left as the case for VPN, and already-optimal routing on the right as the case against
+When a free VPN for gaming helps vs hurts ping, flat infographic showing [<a href="/blog/vpn-for-avoiding-isp-throttling/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">ISP throttling</a>](/blog/vpn-for-avoiding-isp-throttling/) on the left as the case for VPN, and already-optimal routing on the right as the case against
 
 ## What's really causing your lag
 
@@ -145,7 +145,7 @@ Servers close to your game's servers, this is the one most people overlook. Game
 
 Peer isolation, when you share a VPN exit IP with other users (which shared infrastructure does), those other users are technically on the same network segment at the exit point. Without isolation, a malicious user on the same exit could probe your device. In gaming contexts, other users on the same exit could also target you with DDoS attacks if they can identify your shared IP. OllaVPN's [peer isolation](/peer-isolation) prevents this at multiple layers, with automated end-to-end testing to verify it.
 
-A [kill switch](/blog/what-is-a-vpn-kill-switch.html), if the VPN connection drops, a [kill switch](/blog/what-is-a-vpn-kill-switch.html) prevents your real IP from being exposed. For gaming, this matters less than it does for general privacy use, a brief IP leak during a Valorant match isn't the end of the world. But in games where other players can see your IP (older games, P2P matchmaking architectures), a kill switch protects you from targeted attacks.
+A [<a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">kill switch</a>](/blog/what-is-a-vpn-kill-switch.html), if the VPN connection drops, a [kill switch](/blog/what-is-a-vpn-kill-switch.html) prevents your real IP from being exposed. For gaming, this matters less than it does for general privacy use, a brief IP leak during a Valorant match isn't the end of the world. But in games where other players can see your IP (older games, P2P matchmaking architectures), a kill switch protects you from targeted attacks.
 
 A real no-logs policy, many free VPNs are free because they log your browsing data and sell it. This defeats the purpose. Look for an explicit, specific no-logs policy: no sites visited, no traffic patterns, no session metadata. Vague "privacy-friendly" claims aren't a substitute for a written commitment.
 

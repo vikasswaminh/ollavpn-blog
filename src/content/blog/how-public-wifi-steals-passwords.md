@@ -150,7 +150,7 @@ Quick self-check: If you log in on public Wi‑Fi and then later see “new devi
 
 Man-in-the-middle is the most sophisticated of the four attack types, and the one that can defeat protections the others cannot.
 
-In a passive sniffing attack, the attacker reads what is already visible. In a [MITM attack](/blog/what-is-a-man-in-the-middle-attack.html), the attacker actively intercepts the connection between your device and the server, creating two separate connections: one between you and the attacker, and one between the attacker and the server. Your device thinks it is talking directly to the server. The server thinks it is talking directly to you. In reality, both are talking to the attacker.
+In a passive sniffing attack, the attacker reads what is already visible. In a [<a href="/blog/what-is-a-man-in-the-middle-attack/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">MITM attack</a>](/blog/what-is-a-man-in-the-middle-attack.html), the attacker actively intercepts the connection between your device and the server, creating two separate connections: one between you and the attacker, and one between the attacker and the server. Your device thinks it is talking directly to the server. The server thinks it is talking directly to you. In reality, both are talking to the attacker.
 
 ## SSL stripping (SSL downgrading): how it works: [#](#ssl-stripping-ssl-downgrading-how-it-works)
 
@@ -266,9 +266,9 @@ All traffic is encrypted before it leaves your device.
 
 DNS requests stay inside the tunnel.
 
-The [kill switch](/blog/what-is-a-vpn-kill-switch.html) is always on.
+The [<a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">kill switch</a>](/blog/what-is-a-vpn-kill-switch.html) is always on.
 
-[Post-quantum cryptography](/blog/what-is-post-quantum-cryptography/) on every connection.
+[<a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">Post-quantum cryptography</a>](/blog/what-is-post-quantum-cryptography/) on every connection.
 
 No configuration required.
 
@@ -494,7 +494,7 @@ One Connection, Many Devices: Hotels often charge "per device." A travel router 
 
 Hardware Firewall: It acts as a physical barrier between the "hostile" hotel network and your "private" devices.
 
-Always-On VPN: You can configure the router to use OllaVPN's [WireGuard](/free-wireguard-vpn) settings. Every device that joins your private Wi‑Fi is automatically encrypted, even if the device itself doesn't support VPN apps (like a Chromecast).
+Always-On VPN: You can configure the router to use OllaVPN's [<a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WireGuard</a>](/free-wireguard-vpn) settings. Every device that joins your private Wi‑Fi is automatically encrypted, even if the device itself doesn't support VPN apps (like a Chromecast).
 
 ## · Hardware Security: TPMs and Secure Enclaves [#](#hardware-security-tpms-and-secure-enclaves)
 

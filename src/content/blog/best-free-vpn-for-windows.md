@@ -70,7 +70,7 @@ Before we get to the names, here's the framework we use to evaluate every free W
 4.  **Leak protection.** [DNS leaks](/blog/what-is-a-dns-leak/), IPv6 leaks, [WebRTC leaks](/blog/what-is-a-webrtc-leak/), a modern VPN should handle all of these out of the box without you configuring anything.
 5.  **Regular updates.** Networking edge cases get found and fixed over time. An app that hasn't updated in two years is more likely to leak than one that updates monthly.
 6.  **A real Windows app.** Not just OpenVPN config files. Not a browser extension. A native Windows application that integrates properly with Windows 10 and 11.
-7.  **Forward-looking encryption.** Increasingly, this means support for [post-quantum cryptography](what-is-post-quantum-cryptography.html). We'll explain why below.
+7.  **Forward-looking encryption.** Increasingly, this means support for [<a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">post-quantum cryptography</a>](what-is-post-quantum-cryptography.html). We'll explain why below.
 
 Every name in this guide meets all seven criteria. Many free VPNs you'll see in search results do not.
 

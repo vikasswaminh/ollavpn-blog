@@ -158,7 +158,7 @@ If you're downloading material, you don't hold rights to, a VPN reduces the odds
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A free VPN suitable for torrenting needs to explicitly allow P2P traffic on its servers, maintain a genuine no-logs policy, include a kill switch that's active by default, and be funded through a transparent business model rather than data sales or throttling designed to make the free tier unusable.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A free VPN suitable for torrenting needs to explicitly allow P2P traffic on its servers, maintain a genuine <a href="/blog/which-free-vpn-does-not-keep-logs/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">no-logs policy</a>, include a kill switch that's active by default, and be funded through a transparent business model rather than data sales or throttling designed to make the free tier unusable.</p>
 </div>
 
 P2P allowed, explicitly. If a provider's terms of service don't clearly state that torrenting is permitted, assume it either isn't, or that it works only inconsistently. This should be a stated policy, not something you have to test and discover.
@@ -306,7 +306,7 @@ Our remedy is to publish at depth and ship free verification tools so you don't 
 
 ## Verify and cross-reference
 
-For any claim here that affects a decision you're about to make: test technical claims yourself using free tools like DNS lookup, [WebRTC leak](/blog/what-is-a-webrtc-leak/) test, and what-is-my-IP. Most take under fifteen minutes.
+For any claim here that affects a decision you're about to make: test technical claims yourself using free tools like DNS lookup, [<a href="/blog/what-is-a-webrtc-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WebRTC leak</a>](/blog/what-is-a-webrtc-leak/) test, and what-is-my-IP. Most take under fifteen minutes.
 
 Cross-reference at least one independent source. Read primary sources for legal questions. And update your view as facts update.
 

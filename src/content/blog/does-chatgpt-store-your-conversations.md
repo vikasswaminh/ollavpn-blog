@@ -392,7 +392,7 @@ DNS inside the encrypted tunnel. Your DNS queries go through OllaVPN’s own res
 
 No account required on the free plan. No email address needed to get started.
 
-Post-quantum encryption on every connection. The hybrid X25519 + ML-KEM-768 handshake protects your VPN traffic against future quantum decryption.
+<a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">Post-quantum encryption</a> on every connection. The hybrid X25519 + ML-KEM-768 handshake protects your VPN traffic against future quantum decryption.
 
 What OllaVPN doesn't do:
 
@@ -400,7 +400,7 @@ It cannot hide your conversation content from OpenAI. It cannot prevent OpenAI f
 
 OllaVPN plans:
 
-Lifetime free · $0 · 10 Mbps Zero-logs. In-tunnel DNS. [Kill switch](/blog/what-is-a-vpn-kill-switch/) always on. [PQC](/blog/what-is-post-quantum-cryptography.html)-ready. No account required. No data caps. Every country.
+Lifetime free · $0 · 10 Mbps Zero-logs. In-tunnel DNS. [<a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">Kill switch</a>](/blog/what-is-a-vpn-kill-switch/) always on. [PQC](/blog/what-is-post-quantum-cryptography.html)-ready. No account required. No data caps. Every country.
 
 Paid plan · $2 / month · 10 Gbps Same privacy architecture. Faster. Five devices.
 
@@ -425,7 +425,7 @@ Try the free plan https://ollavpn.com/dl/, no email, no card. Your ISP stops see
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      By utilizing the optimized WireGuard kernel implementation, OllaVPN delivers sub-millisecond connection handshakes and negligible latency overhead (under 5%), preserving maximum bandwidth for streaming and downloads.
+      By utilizing the optimized <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WireGuard</a> kernel implementation, OllaVPN delivers sub-millisecond connection handshakes and negligible latency overhead (under 5%), preserving maximum bandwidth for streaming and downloads.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">

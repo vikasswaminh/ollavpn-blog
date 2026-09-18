@@ -62,10 +62,10 @@ Most "free" VPNs marketed for sports streaming are funded in ways that should wo
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">An honest free VPN for sports streaming should offer modern encryption, a [kill switch protection](/blog/vpn-kill-switch-explained.html) that's on by default, a genuine no-logs policy, and access to enough server locations to actually reach the broadcast region you need.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">An honest free VPN for sports streaming should offer modern encryption, a [<a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">kill switch</a> protection](/blog/vpn-kill-switch-explained.html) that's on by default, a genuine no-logs policy, and access to enough server locations to actually reach the broadcast region you need.</p>
 </div>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">The first thing to check is the protocol. [WireGuard protocol](/blog/wireguard-vs-openvpn.html) has become the standard for a reason, it's fast, it's efficient on battery and CPU, and it doesn't add the kind of latency that turns a live match into a slideshow. If a free VPN is still running on an outdated protocol, or worse, doesn't disclose what protocol it uses at all, that's a sign the service hasn't been built with streaming or security seriously in mind.</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">The first thing to check is the protocol. [<a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WireGuard protocol</a>](/blog/wireguard-vs-openvpn.html) has become the standard for a reason, it's fast, it's efficient on battery and CPU, and it doesn't add the kind of latency that turns a live match into a slideshow. If a free VPN is still running on an outdated protocol, or worse, doesn't disclose what protocol it uses at all, that's a sign the service hasn't been built with streaming or security seriously in mind.</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Next is the kill switch. This matters more for sports than almost any other use case, because live streams are sensitive to connection drops, a brief VPN disconnect during a match can silently fall back to your real IP address, which either breaks the stream or, worse, exposes your actual location to the platform you're trying to access anonymously. A kill switches on by default stops that leak the instant it happens, cutting your internet rather than letting your unencrypted traffic slip through.</p>
 
@@ -75,7 +75,7 @@ Most "free" VPNs marketed for sports streaming are funded in ways that should wo
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">For sports streaming, OllaVPN Free gives you [10 Mbps connection speeds](/blog/vpn-speed-explained.html) speed, access to every country in our network, the WireGuard protocol, an automatic kill switch, in-tunnel [DNS leak protection](/blog/what-is-a-dns-leak.html), and post-quantum-ready encryption, all without data caps or hidden costs.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">For sports streaming, OllaVPN Free gives you [10 Mbps connection speeds](/blog/vpn-speed-explained.html) speed, access to every country in our network, the WireGuard protocol, an automatic kill switch, in-tunnel [<a href="/blog/what-is-a-dns-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">DNS leak protection</a>](/blog/what-is-a-dns-leak.html), and post-quantum-ready encryption, all without data caps or hidden costs.</p>
 </div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">You get the full OllaVPN network on the free tier, which means if a match, tournament, or league is airing somewhere in the world, you have a real shot at connecting through a server in that country and watching it. We don't lock server locations behind the paid plan. Instead, we cap your speed at 10 Mbps per device, which, as we'll get into below, is enough for the vast majority of HD live sports streams without buffering.</p>
@@ -203,7 +203,7 @@ Most "free" VPNs marketed for sports streaming are funded in ways that should wo
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">Test 3:</strong> WebRTC and IP leak while streaming. Open our WebRTC leak test while connected to a sports-relevant server location. Only the VPN's exit IP should appear; your real IPv4 or [IPv6 leak prevention](/blog/what-is-an-ipv6-leak.html) address should never show up.
+  <strong style="color: #0F172A; font-weight: 800;">Test 3:</strong> WebRTC and IP leak while streaming. Open our <a href="/blog/what-is-a-webrtc-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WebRTC leak</a> test while connected to a sports-relevant server location. Only the VPN's exit IP should appear; your real IPv4 or [IPv6 leak prevention](/blog/what-is-an-ipv6-leak.html) address should never show up.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">

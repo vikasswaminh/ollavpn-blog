@@ -64,7 +64,7 @@ If you use <a href="/blog/how-public-wifi-steals-passwords.html" class="tldr-hig
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A VPN kill switch is a security feature built into the VPN app that automatically cuts your internet connection the moment it detects your VPN tunnel has failed, so your real IP address, location, and unencrypted traffic don't get exposed.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A VPN <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">kill switch</a> is a security feature built into the VPN app that automatically cuts your internet connection the moment it detects your VPN tunnel has failed, so your real IP address, location, and unencrypted traffic don't get exposed.</p>
 </div>
 
 Here's the simplest way to picture it.
@@ -119,7 +119,7 @@ ISP-level instability. Home and mobile connections can drop briefly more often t
 
 Server-side issues. VPN servers restart for maintenance, hit capacity limits, or occasionally crash. From your device's perspective, that looks identical to a network problem.
 
-Protocol-specific quirks. Some protocols handle short interruptions better than others. [WireGuard](/blog/wireguard-vs-openvpn.html), for example, is designed to re-establish quickly after short gaps, while older protocols may take longer to notice and recover.
+Protocol-specific quirks. Some protocols handle short interruptions better than others. [<a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WireGuard</a>](/blog/wireguard-vs-openvpn.html), for example, is designed to re-establish quickly after short gaps, while older protocols may take longer to notice and recover.
 
 None of this is exotic. It's the normal texture of using the internet on real-world networks. Treating a kill switch as an "edge case" is a mistake, because the edge case it protects against happens to most VPN users fairly regularly, you just don't notice it when nothing sensitive is in transit, or when the kill switch quietly catches it.
 

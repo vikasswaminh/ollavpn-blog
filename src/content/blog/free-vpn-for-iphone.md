@@ -13,7 +13,7 @@ tags: ['buyer-guides']
 
 OllaVPN Free gives you exactly that, 10 Mbps, every country in our network, post-quantum-ready encryption, a <a href="/blog/what-is-a-vpn-kill-switch/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">kill switch</a> on by default, and a <a href="/blog/what-logs-does-vpn-keep/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">strict no-logs policy</a>, sustained by OllaVPN Plus subscribers rather than by your data.
 
-You’re not getting a stripped-down trial. You’re getting the real security stack, WireGuard, a hybrid post-quantum handshake, in-tunnel DNS, four-layer peer isolation, on a plan that never expires and never asks for a card.
+You’re not getting a stripped-down trial. You’re getting the real security stack, WireGuard, a hybrid post-quantum handshake, <a href="/blog/what-is-a-dns-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">in-tunnel DNS</a>, four-layer peer isolation, on a plan that never expires and never asks for a card.
 
 The honest trade-off is speed: 10 Mbps on free versus 10 Gbps on the $2/month Plus plan. For most of what people actually do on an iPhone, browsing, HD streaming, video calls, messaging, that difference usually won’t be noticeable day to day.
   </p>
@@ -57,7 +57,7 @@ The honest trade-off is speed: 10 Mbps on free versus 10 Gbps on the $2/month Pl
 
 <div class="blog-main-content-box">
 
-Shield your privacy with OllaVPN free, post-quantum encryption & zero logs.
+Shield your privacy with OllaVPN free, <a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">post-quantum encryption</a> & zero logs.
 
 <a href="/dl/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">DOWNLOAD →</a>
 

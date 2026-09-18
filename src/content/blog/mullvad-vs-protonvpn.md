@@ -126,7 +126,7 @@ Fully open source
 
 Protocol
 
-WireGuard + OpenVPN
+<a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WireGuard</a> + OpenVPN
 
 WireGuard + OpenVPN
 
@@ -136,7 +136,7 @@ Default on desktop (pioneered)
 
 Rolling out
 
-[Kill switch](/blog/what-is-a-vpn-kill-switch/)
+[<a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">Kill switch</a>](/blog/what-is-a-vpn-kill-switch/)
 
 Yes, on all platforms
 
@@ -286,7 +286,7 @@ The open-source-on-both-sides situation is genuinely unusual. Most VPN apps are 
 
 This deserves its own section because Mullvad genuinely led the industry here, and it would be dishonest to tell this story without giving them direct credit.
 
-The concern that drives [post-quantum cryptography](/blog/what-is-post-quantum-cryptography/) is a pattern researchers call **"harvest now, decrypt later"**: an adversary captures and stores your encrypted traffic today, even though they can't read it today, on the bet that they'll be able to decrypt it five or ten years from now once quantum computers mature. The encrypted sessions you run this week could sit in storage somewhere, waiting for the locks to become breakable.
+The concern that drives [<a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">post-quantum cryptography</a>](/blog/what-is-post-quantum-cryptography/) is a pattern researchers call **"harvest now, decrypt later"**: an adversary captures and stores your encrypted traffic today, even though they can't read it today, on the bet that they'll be able to decrypt it five or ten years from now once quantum computers mature. The encrypted sessions you run this week could sit in storage somewhere, waiting for the locks to become breakable.
 
 Most of the encryption used on the internet today relies on math problems that a sufficiently powerful quantum computer could solve. Post-quantum algorithms are designed to resist that future. Some of the biggest names in security, Apple, Signal, Cloudflare, Google, have been rolling out PQC across their own products over the last two years.
 
@@ -404,7 +404,7 @@ Here's where we think OllaVPN fits on a privacy-first shortlist:
 
 *   **Post-quantum cryptography ready from day one.** Mullvad pioneered the move in production VPN tunnels. We've built the same future-readiness into OllaVPN from the start, available on every connection, free and paid alike.
 *   **A lifetime free plan with no data caps or time limits.** ProtonVPN's free tier is excellent and we genuinely admire it. We added country choice and the ability to use all the same protection features free users sometimes don't get elsewhere.
-*   **A $2/month paid plan, simpler and cheaper than Mullvad's flat rate.** Five devices on one account. 10 Gbps connection speed. No tiers to evaluate. No add-on bundles. No "Plus" version. Just a faster pipe and more devices.
+*   **A $2/month paid plan, simpler and cheaper than Mullvad's flat rate.** Five devices on one account. 10 Gbps <a href="/blog/vpn-speed-explained/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">connection speed</a>. No tiers to evaluate. No add-on bundles. No "Plus" version. Just a faster pipe and more devices.
 *   **A kill switch that's always on and can't be disabled.** Privacy isn't a setting you should be able to accidentally turn off.
 *   **One company, one product.** We don't sell a password manager, encrypted email, cloud storage, a calendar, or anything else. We make a VPN.
 

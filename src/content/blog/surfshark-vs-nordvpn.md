@@ -126,17 +126,17 @@ Password manager, malware blocking, dark-web monitor, encrypted storage, ID-thef
 
 Protocol family
 
-WireGuard + OpenVPN + IKEv2
+<a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WireGuard</a> + OpenVPN + IKEv2
 
 WireGuard-based (NordLynx) + OpenVPN
 
-[Kill switch](/blog/what-is-a-vpn-kill-switch/)
+[<a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">Kill switch</a>](/blog/what-is-a-vpn-kill-switch/)
 
 Yes, on all platforms
 
 Yes, on all platforms
 
-[Post-quantum cryptography](/blog/what-is-post-quantum-cryptography/)
+[<a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">Post-quantum cryptography</a>](/blog/what-is-post-quantum-cryptography/)
 
 Rolling out
 
@@ -238,7 +238,7 @@ The plain-English summary: **both companies use modern, well-respected encryptio
 On posture:
 
 *   **Surfshark** has been **independently audited** (Cure53 has audited the browser extensions and infrastructure has been reviewed by Deloitte). The apps are closed source. The company runs diskless RAM-only servers, which is the modern standard for VPN infrastructure because it limits the data that can be obtained from a seized server.
-*   **NordVPN** has also been **independently audited multiple times** by major firms including Deloitte and PwC, with the audits covering both the [no-logs policy](/blog/what-logs-does-vpn-keep/) and the application code. The apps are closed source. After a server-configuration incident in 2018, the company publicly disclosed what happened, addressed the root cause, and made a structural move to diskless RAM-only infrastructure.
+*   **NordVPN** has also been **independently audited multiple times** by major firms including Deloitte and PwC, with the audits covering both the [<a href="/blog/which-free-vpn-does-not-keep-logs/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">no-logs policy</a>](/blog/what-logs-does-vpn-keep/) and the application code. The apps are closed source. After a server-configuration incident in 2018, the company publicly disclosed what happened, addressed the root cause, and made a structural move to diskless RAM-only infrastructure.
 
 Both companies are also beginning to roll out **post-quantum cryptography** protections, more on what that means in the dedicated section further down.
 

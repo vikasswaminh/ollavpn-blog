@@ -143,7 +143,7 @@ A how-to guide is only useful if you can verify the outcome. After completing th
 
 The most common failure modes for any VPN setup task on Windows, macOS, or Android, in order of frequency:
 
-**The VPN refuses to connect at all.** Almost always a network-side issue: a restrictive firewall on the local network (school, corporate, hotel) blocking WireGuard's default UDP/51820 port. Try a different network briefly to confirm it's network-side. On Frankfurt the obfuscated MASQUE-on-port-443 transport works around many restrictive firewalls, switch to it in the country picker.
+**The VPN refuses to connect at all.** Almost always a network-side issue: a restrictive firewall on the local network (school, corporate, hotel) blocking <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WireGuard</a>'s default UDP/51820 port. Try a different network briefly to confirm it's network-side. On Frankfurt the obfuscated MASQUE-on-port-443 transport works around many restrictive firewalls, switch to it in the country picker.
 
 **The VPN connects but the internet is broken.** Almost always a DNS issue. The in-tunnel resolver hasn't taken precedence (sometimes after a macOS update or a Windows feature update, the supplemental DNS keys get cleared). Restarting the VPN typically fixes it; full disconnect and reconnect re-installs the DNS configuration.
 
