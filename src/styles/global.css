@@ -3547,13 +3547,12 @@ html, body, .article-page-wrapper, main {
   margin: 0 !important;
 }
 
-.takeaways-list li::before {
-  content: "✓" !important;
-  color: #DA291C !important;
-  font-weight: 900 !important;
-  font-size: 1.05rem !important;
-  line-height: 1.2 !important;
-  flex-shrink: 0 !important;
+.takeaways-list li::before,
+.takeaways-box-list li::before,
+.takeaways-list-24obs li::before,
+.article-takeaways-box li::before {
+  display: none !important;
+  content: none !important;
 }
 
 .takeaways-list li strong {
@@ -3618,13 +3617,12 @@ html, body, .article-page-wrapper, main {
   font-weight: 800 !important;
 }
 
-.takeaways-list li::before {
-  content: "✓" !important;
-  color: #DA291C !important;
-  font-weight: 900 !important;
-  font-size: 1.05rem !important;
-  line-height: 1.2 !important;
-  flex-shrink: 0 !important;
+.takeaways-list li::before,
+.takeaways-box-list li::before,
+.takeaways-list-24obs li::before,
+.article-takeaways-box li::before {
+  display: none !important;
+  content: none !important;
 }
 
 

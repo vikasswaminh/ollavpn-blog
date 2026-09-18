@@ -21,29 +21,29 @@ featured: false
 
 <section id="key-takeaways" class="article-takeaways-box" style="margin-bottom: 32px; padding: 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
   <h2 style="font-size: 1.25rem; font-weight: 700; color: #DA291C; margin-top: 0; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.05em;">KEY TAKEAWAYS</h2>
-  <ul class="takeaways-list" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px;">
-    <li style="display: flex; gap: 12px; align-items: flex-start;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
+  <ul class="takeaways-list-24obs" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px;">
+    <li style="display: flex; gap: 12px; align-items: flex-start; margin-bottom: 4px;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">A truly free VPN for YouTube means no data caps, no ads, no logs, and enough real speed to stream HD without added buffering - not a crippled trial disguised as a free plan</div>
     </li>
-    <li style="display: flex; gap: 12px; align-items: flex-start;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
+    <li style="display: flex; gap: 12px; align-items: flex-start; margin-bottom: 4px;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">ISP throttling and network path congestion cause more YouTube buffering than most people realize, and a VPN helps by hiding your traffic type and rerouting through a less congested path</div>
     </li>
-    <li style="display: flex; gap: 12px; align-items: flex-start;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
+    <li style="display: flex; gap: 12px; align-items: flex-start; margin-bottom: 4px;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">Bypassing region locks requires a VPN with actual servers in the country where the content is available - free VPNs that limit you to two or three locations won't cut it</div>
     </li>
-    <li style="display: flex; gap: 12px; align-items: flex-start;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
+    <li style="display: flex; gap: 12px; align-items: flex-start; margin-bottom: 4px;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">Mbps is genuinely enough for smooth 1080p YouTube streaming, with headroom to spare - 4K is where you'd feel the limit</div>
     </li>
-    <li style="display: flex; gap: 12px; align-items: flex-start;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
+    <li style="display: flex; gap: 12px; align-items: flex-start; margin-bottom: 4px;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">Post-quantum-ready encryption matters because your viewing data captured today could be decrypted years from now</div>
     </li>
-    <li style="display: flex; gap: 12px; align-items: flex-start;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
+    <li style="display: flex; gap: 12px; align-items: flex-start; margin-bottom: 4px;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">OllaVPN funds the free tier through Plus subscribers, so your watch history is never the product</div>
     </li>
   </ul>
