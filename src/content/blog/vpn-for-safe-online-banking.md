@@ -20,15 +20,36 @@ featured: false
 </section>
 
 <section id="key-takeaways" class="article-takeaways-box" style="margin-bottom: 32px; padding: 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <h2 style="font-size: 1.25rem; font-weight: 700; color: #DA291C; margin-top: 0; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em;">KEY TAKEAWAYS</h2>
-  <ul style="margin: 0; padding-left: 20px; color: #1E293B; line-height: 1.75; font-size: 1.05rem;">
-    <li style="margin-bottom: 8px;">What to remember from this guide</li>
-    <li style="margin-bottom: 8px;">A VPN protects the network path between you and your bank, not the bank's own security - it closes the specific gap created by public Wi-Fi, fake hotspots, and ISP-level monitoring</li>
-    <li style="margin-bottom: 8px;">The real risk on public Wi-Fi isn't just packet sniffing - it's fake "evil twin" hotspots designed to capture credentials directly, which a VPN neutralizes by encrypting everything before it touches the local network</li>
-    <li style="margin-bottom: 8px;">Using a VPN server in a different country can trigger bank fraud alerts; connecting to a same-country server near your location avoids this while keeping the security benefit</li>
-    <li style="margin-bottom: 8px;">Banking apps use so little bandwidth that a 10 Mbps cap has zero practical effect - the VPN is never the bottleneck during a banking session</li>
-    <li style="margin-bottom: 8px;">Post-quantum-ready encryption matters more for banking than almost any other use case, because financial data stays sensitive for decades</li>
-    <li style="margin-bottom: 8px;">A VPN does not replace good banking habits - it won't stop phishing emails or malware on your device</li>
+  <h2 style="font-size: 1.25rem; font-weight: 700; color: #DA291C; margin-top: 0; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.05em;">KEY TAKEAWAYS</h2>
+  <ul class="takeaways-list" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px;">
+    <li style="display: flex; gap: 12px; align-items: flex-start;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
+      <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">What to remember from this guide</div>
+    </li>
+    <li style="display: flex; gap: 12px; align-items: flex-start;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
+      <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">A VPN protects the network path between you and your bank, not the bank's own security - it closes the specific gap created by public Wi-Fi, fake hotspots, and ISP-level monitoring</div>
+    </li>
+    <li style="display: flex; gap: 12px; align-items: flex-start;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
+      <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">The real risk on public Wi-Fi isn't just packet sniffing - it's fake "evil twin" hotspots designed to capture credentials directly, which a VPN neutralizes by encrypting everything before it touches the local network</div>
+    </li>
+    <li style="display: flex; gap: 12px; align-items: flex-start;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
+      <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">Using a VPN server in a different country can trigger bank fraud alerts; connecting to a same-country server near your location avoids this while keeping the security benefit</div>
+    </li>
+    <li style="display: flex; gap: 12px; align-items: flex-start;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
+      <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">Banking apps use so little bandwidth that a 10 Mbps cap has zero practical effect - the VPN is never the bottleneck during a banking session</div>
+    </li>
+    <li style="display: flex; gap: 12px; align-items: flex-start;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
+      <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">Post-quantum-ready encryption matters more for banking than almost any other use case, because financial data stays sensitive for decades</div>
+    </li>
+    <li style="display: flex; gap: 12px; align-items: flex-start;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
+      <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">A VPN does not replace good banking habits - it won't stop phishing emails or malware on your device</div>
+    </li>
   </ul>
 </section>
 

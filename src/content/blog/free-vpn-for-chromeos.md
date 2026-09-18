@@ -20,16 +20,40 @@ featured: false
 </section>
 
 <section id="key-takeaways" class="article-takeaways-box" style="margin-bottom: 32px; padding: 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <h2 style="font-size: 1.25rem; font-weight: 700; color: #DA291C; margin-top: 0; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em;">KEY TAKEAWAYS</h2>
-  <ul style="margin: 0; padding-left: 20px; color: #1E293B; line-height: 1.75; font-size: 1.05rem;">
-    <li style="margin-bottom: 8px;">What to remember from this guide</li>
-    <li style="margin-bottom: 8px;">A truly free VPN for ChromeOS means no data caps, no ads, no logs, and no hidden monetization of your traffic</li>
-    <li style="margin-bottom: 8px;">Install as a full Android app through Google Play, not a Chrome extension - only a system-level app covers your whole device</li>
-    <li style="margin-bottom: 8px;">Turn on Always-on VPN in ChromeOS settings to close the gap when switching Wi-Fi networks</li>
-    <li style="margin-bottom: 8px;">Use WireGuard for lower CPU overhead on Chromebook hardware</li>
-    <li style="margin-bottom: 8px;">Pick the nearest server for the best speed - distance matters more on lower-powered processors</li>
-    <li style="margin-bottom: 8px;">Verify claims yourself: test DNS, WebRTC, and kill switch behavior from your own Chromebook</li>
-    <li style="margin-bottom: 8px;">OllaVPN funds the free tier through Plus subscribers, so your data is never the product</li>
+  <h2 style="font-size: 1.25rem; font-weight: 700; color: #DA291C; margin-top: 0; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.05em;">KEY TAKEAWAYS</h2>
+  <ul class="takeaways-list" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px;">
+    <li style="display: flex; gap: 12px; align-items: flex-start;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
+      <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">What to remember from this guide</div>
+    </li>
+    <li style="display: flex; gap: 12px; align-items: flex-start;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
+      <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">A truly free VPN for ChromeOS means no data caps, no ads, no logs, and no hidden monetization of your traffic</div>
+    </li>
+    <li style="display: flex; gap: 12px; align-items: flex-start;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
+      <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">Install as a full Android app through Google Play, not a Chrome extension - only a system-level app covers your whole device</div>
+    </li>
+    <li style="display: flex; gap: 12px; align-items: flex-start;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
+      <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">Turn on Always-on VPN in ChromeOS settings to close the gap when switching Wi-Fi networks</div>
+    </li>
+    <li style="display: flex; gap: 12px; align-items: flex-start;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
+      <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">Use WireGuard for lower CPU overhead on Chromebook hardware</div>
+    </li>
+    <li style="display: flex; gap: 12px; align-items: flex-start;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
+      <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">Pick the nearest server for the best speed - distance matters more on lower-powered processors</div>
+    </li>
+    <li style="display: flex; gap: 12px; align-items: flex-start;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
+      <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">Verify claims yourself: test DNS, WebRTC, and kill switch behavior from your own Chromebook</div>
+    </li>
+    <li style="display: flex; gap: 12px; align-items: flex-start;">
+      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
+      <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">OllaVPN funds the free tier through Plus subscribers, so your data is never the product</div>
+    </li>
   </ul>
 </section>
 
