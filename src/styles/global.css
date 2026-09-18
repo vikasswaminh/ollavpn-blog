@@ -6107,3 +6107,12 @@ section#cta-download a:last-of-type:hover {
     font-size: 1.2rem !important;
   }
 }
+
+/* Suppress legacy black download banner */
+.download-section-box,
+#download.download-section-box,
+section#download,
+section#cta-download,
+.cta-download-box {
+  display: none !important;
+}
