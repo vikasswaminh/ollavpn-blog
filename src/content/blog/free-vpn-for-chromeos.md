@@ -59,31 +59,6 @@ featured: false
 
 <div class="blog-main-content-box">
 
-<div class="article-toc-box" style="margin-bottom: 36px; padding: 20px 24px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px;">
-  <h3 style="font-size: 1.1rem; font-weight: 700; color: #0F172A; margin-top: 0; margin-bottom: 12px;">Table of Contents</h3>
-  <ol style="margin: 0; padding-left: 20px; color: #475569; line-height: 1.8; font-size: 0.98rem;">
-    <li><a href="#section-1" style="color: #DA291C; text-decoration: none; font-weight: 500;">What does a truly "free" VPN for ChromeOS actually mean?</a></li>
-    <li><a href="#section-2" style="color: #DA291C; text-decoration: none; font-weight: 500;">What should you expect from any honest free VPN for ChromeOS?</a></li>
-    <li><a href="#section-3" style="color: #DA291C; text-decoration: none; font-weight: 500;">What does OllaVPN Free give you specifically for ChromeOS?</a></li>
-    <li><a href="#section-4" style="color: #DA291C; text-decoration: none; font-weight: 500;">How does OllaVPN Free compare to other free VPNs for ChromeOS?</a></li>
-    <li><a href="#section-5" style="color: #DA291C; text-decoration: none; font-weight: 500;">How do you set up OllaVPN Free on ChromeOS, step-by-step?</a></li>
-    <li><a href="#section-6" style="color: #DA291C; text-decoration: none; font-weight: 500;">What are the best privacy settings for a free VPN on ChromeOS?</a></li>
-    <li><a href="#section-7" style="color: #DA291C; text-decoration: none; font-weight: 500;">What are the best speed settings for a free VPN on ChromeOS?</a></li>
-    <li><a href="#section-8" style="color: #DA291C; text-decoration: none; font-weight: 500;">Why is a 10 Mbps cap enough for most ChromeOS users?</a></li>
-    <li><a href="#section-9" style="color: #DA291C; text-decoration: none; font-weight: 500;">What are the common mistakes people make when picking a free VPN for ChromeOS?</a></li>
-    <li><a href="#section-10" style="color: #DA291C; text-decoration: none; font-weight: 500;">When does OllaVPN Plus make more sense than the free plan on ChromeOS?</a></li>
-    <li><a href="#section-11" style="color: #DA291C; text-decoration: none; font-weight: 500;">Is OllaVPN's encryption truly future-proof on Chromebook hardware?</a></li>
-    <li><a href="#section-12" style="color: #DA291C; text-decoration: none; font-weight: 500;">How does OllaVPN maintain its 'privacy-first' commitment with a free tier?</a></li>
-    <li><a href="#section-13" style="color: #DA291C; text-decoration: none; font-weight: 500;">Why is a dedicated Android VPN app better than a Chrome extension on ChromeOS?</a></li>
-    <li><a href="#section-14" style="color: #DA291C; text-decoration: none; font-weight: 500;">A broader-context closing thought</a></li>
-    <li><a href="#section-15" style="color: #DA291C; text-decoration: none; font-weight: 500;">Verify and cross-reference</a></li>
-    <li><a href="#section-16" style="color: #DA291C; text-decoration: none; font-weight: 500;">How to verify any picks on this list yourself</a></li>
-    <li><a href="#section-17" style="color: #DA291C; text-decoration: none; font-weight: 500;">What we deliberately left out of this guide</a></li>
-    <li><a href="#faqs" style="color: #DA291C; text-decoration: none; font-weight: 500;">Frequently Asked Questions</a></li>
-    <li><a href="#wrapping-it-up" style="color: #DA291C; text-decoration: none; font-weight: 500;">Wrapping It Up</a></li>
-  </ol>
-</div>
-
 <h2 id="section-1" style="font-size: 1.65rem; font-weight: 700; color: #09090b; margin-top: 36px; margin-bottom: 16px; scroll-margin-top: 80px;">What does a truly "free" VPN for ChromeOS actually mean?</h2>
 
 <div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
