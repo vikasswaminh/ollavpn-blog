@@ -2,7 +2,7 @@
 title: 'MASQUE Protocol Explained: What It Is, How It Works, and Why You Should Care'
 description: 'MASQUE is a behind-the-scenes internet technology that helps your online traffic flow more efficiently and stay incredibly private. Think of it as a smarter, more secure way to send different kinds of data—like your brow...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['protocol-tech']
 ---
 

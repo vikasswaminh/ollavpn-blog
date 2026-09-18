@@ -2,7 +2,7 @@
 title: "WebRTC Leak Explained (2026): How to Check and Fix It"
 description: "A plain-English guide to one of the strangest, most misunderstood privacy holes in your browser \u2014 what a WebRTC leak actually is, why it can expose your real IP address even with a VPN switched on, how to test for one in under five minutes, and how to close it for good."
 pubDate: 2026-08-25
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['privacy-security']
 ---
 

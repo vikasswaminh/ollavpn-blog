@@ -2,7 +2,7 @@
 title: 'Surfshark vs NordVPN (2026): Unlimited Devices vs Specialized Server Fleets'
 description: 'Shared parent company, different strengths: Surfshark''s unlimited household connections vs NordVPN''s dedicated IP and Onion-over-VPN infrastructure.'
 pubDate: 2026-05-16
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['comparisons']
 ---
 

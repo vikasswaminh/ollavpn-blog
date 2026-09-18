@@ -3,7 +3,7 @@ title: "How Websites Identify You Even Without Cookies"
 description: "Cookies are only one way sites track you. Learn how canvas fingerprinting, WebGL, audio API, ETags, and network signals identify you and how to protect yourself."
 pubDate: 2026-07-29
 category: "privacy-security"
-author: "Nathan Pratt"
+author: Vikas Swami
 readingTime: "15 min read"
 tags: ['privacy-security', 'tracking', 'cookies', 'fingerprinting']
 ---

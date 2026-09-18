@@ -2,7 +2,7 @@
 title: 'Free VPN vs Paid VPN: Which One Is Actually Worth It?'
 description: 'An honest, no-fluff breakdown of what you actually get, and give up, when you choose a free VPN over a paid one. Free tier trade-offs, speeds, streaming, and safety.'
 pubDate: 2026-06-16
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['comparisons']
 ---
 

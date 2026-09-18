@@ -2,7 +2,7 @@
 title: "VPN Blocked at School or Work? Here's How to Get Back Online Fast"
 description: "If your VPN isn't connecting at school, university, or work, restrictive network firewalls are likely blocking WireGuard UDP ports. Here is how to bypass VPN blocks fast using QUIC, port shifting, and stealth transports."
 pubDate: 2026-06-09
-author: "OllaVPN Team"
+author: Vikas Swami
 tags: ['how-to-guides', 'wireguard', 'troubleshooting']
 ---
 

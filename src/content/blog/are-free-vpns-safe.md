@@ -2,7 +2,7 @@
 title: 'Are Free VPNs Safe? An Honest 2026 Guide'
 description: 'The complete breakdown of which free VPNs are genuinely safe, which ones are privacy traps in disguise, and how to test any free VPN yourself.'
 pubDate: 2026-06-24
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['buyer-guides']
 ---
 

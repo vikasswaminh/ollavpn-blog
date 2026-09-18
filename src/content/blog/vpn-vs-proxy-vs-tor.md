@@ -2,7 +2,7 @@
 title: "VPN vs Proxy vs Tor: Which Protects Your Privacy Best?"
 description: "Three tools that all promise to hide you online, explained honestly — what each one hides, what each leaves exposed, and which situation calls for which tool."
 pubDate: 2026-07-24
-author: "OllaVPN Team"
+author: Vikas Swami
 category: "comparisons"
 tags: ["comparisons", "privacy", "security", "protocols"]
 pillar: false

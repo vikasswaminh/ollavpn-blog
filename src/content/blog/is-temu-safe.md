@@ -2,7 +2,7 @@
 title: 'Is Temu Safe? What You Need to Know Before You Shop'
 description: 'Not directly. Temu isn''t inherently "unsafe" in the sense of being a scam or directly stealing your money, but it does have significant privacy implications due to its data collection practices. Like many lar...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['privacy-security']
 ---
 

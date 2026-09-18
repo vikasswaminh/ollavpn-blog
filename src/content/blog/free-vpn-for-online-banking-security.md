@@ -3,7 +3,7 @@ title: "Free VPN for Online Banking in 2026: The Security Checklist"
 description: "The essential 10-point checklist before trusting any free VPN with bank logins. How in-tunnel DNS, kill switches, and zero logs safeguard financial transactions."
 pubDate: 2026-08-03
 category: "buyer-guides"
-author: "Nathan Pratt"
+author: Vikas Swami
 readingTime: "15 min read"
 tags: ['buyer-guides', 'banking', 'security', 'passwords']
 ---

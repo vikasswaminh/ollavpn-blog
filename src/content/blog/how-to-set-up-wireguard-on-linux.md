@@ -2,7 +2,7 @@
 title: 'WireGuard on Linux: Your Step-by-Step Setup Guide'
 description: 'Setting up WireGuard on Linux doesn''t have to be complicated. You''re looking for a straightforward guide to get your VPN running quickly, and we''ve got you covered. This guide will walk you through the essent...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['how-to-guides']
 ---
 

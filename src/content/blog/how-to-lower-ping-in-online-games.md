@@ -2,7 +2,7 @@
 title: 'How to Lower Ping in Online Games for a Smoother Experience'
 description: 'To lower your ping, you''re primarily going to optimize your local network connection. This means prioritizing a wired Ethernet connection over Wi-Fi, making sure your router isn''t overloaded, and closing backgrou...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['how-to-guides']
 ---
 

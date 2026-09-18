@@ -2,7 +2,7 @@
 title: 'What''s the Best Free VPN for Australia?'
 description: 'Yes, you''ve found a free VPN that works in Australia! OllaVPN gives you 10 Mbps speed, no data caps, and full access to our entire network, all without needing a credit card or selling your data. It''s genuinely f...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['buyer-guides']
 ---
 

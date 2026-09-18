@@ -2,7 +2,7 @@
 title: 'Best VPN for Chrome That Actually Protects Your Privacy'
 description: 'Chrome’s extension store is packed with “free VPN” listings that are often proxies in disguise. Here’s what actually protects your browser in 2026.'
 pubDate: 2026-07-08
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['buyer-guides']
 ---
 

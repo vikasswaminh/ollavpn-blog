@@ -2,7 +2,7 @@
 title: 'Free VPN for iPhone 2026: No Credit Card, No Logs'
 description: 'Finding a genuinely free iPhone VPN with no credit card, no logs, and no hidden trial timer. How WireGuard and post-quantum encryption protect iOS in 2026.'
 pubDate: 2026-07-12
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['buyer-guides']
 ---
 

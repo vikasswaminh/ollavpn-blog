@@ -2,7 +2,7 @@
 title: 'Private Internet Access vs ExpressVPN (2026): Court-Proven No-Logs vs Worldwide Exits'
 description: 'Multiple US court subpoena tests verifying zero logging vs polished cross-platform applications and unblocking reliability.'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['comparisons']
 ---
 

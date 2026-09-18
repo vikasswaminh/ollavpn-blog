@@ -2,7 +2,7 @@
 title: 'ExpressVPN vs CyberGhost (2026): Lightway Protocol Performance vs Dedicated Profiles'
 description: 'Proprietary high-speed RAM-only server network vs budget-friendly long-term plans with task-specific streaming server lists.'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['comparisons']
 ---
 

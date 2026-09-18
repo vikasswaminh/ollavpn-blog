@@ -2,7 +2,7 @@
 title: 'Surfshark vs ProtonVPN (2026): Streaming & WireGuard vs Swiss Jurisdictional Armor'
 description: 'Nexus rotating IP technology and streaming speeds vs Swiss legal jurisdiction, NetShield DNS filtering, and physical server security.'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['comparisons']
 ---
 

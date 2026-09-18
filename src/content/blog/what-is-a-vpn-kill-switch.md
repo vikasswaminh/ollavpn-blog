@@ -2,7 +2,7 @@
 title: 'What is a VPN Kill Switch, How Does it Work, and Why Does it Matter?'
 description: 'You know how a VPN keeps your online activity private? A kill switch is like the ultimate backup for that. It’s a crucial safety feature that automatically cuts off your internet connection if your VPN ever unexpectedly ...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['privacy-security']
 ---
 

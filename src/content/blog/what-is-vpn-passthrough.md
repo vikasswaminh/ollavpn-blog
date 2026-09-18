@@ -2,7 +2,7 @@
 title: 'What is VPN Passthrough and Why Should You Care?'
 description: 'VPN passthrough is basically your router''s way of making sure your VPN connection gets through your home network without a hitch. Imagine it like a special VIP lane for your encrypted data; without it, your VPN traff...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['beginner-basics']
 ---
 

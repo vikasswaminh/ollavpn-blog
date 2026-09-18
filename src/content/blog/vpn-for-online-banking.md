@@ -2,7 +2,7 @@
 title: 'Online Banking and VPNs: Do You Really Need One to Stay Safe?'
 description: 'Yes, you should definitely use a VPN for online banking, especially if you''re ever on public Wi-Fi. It''s like putting your financial information in a securely locked, encrypted tunnel, keeping it safe from anyone...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['use-cases']
 ---
 

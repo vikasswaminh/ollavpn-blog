@@ -2,7 +2,7 @@
 title: "Free VPN for ChromeOS: Safe, Setup Guide & What Works (2026)"
 description: "Everything you need to know about using a free VPN on ChromeOS in 2026. Android app vs browser extension vs native WireGuard setup, real speed test results, Play Store compatibility across Chromebook models, and how OllaVPN delivers genuinely free, secure ChromeOS protection."
 pubDate: 2026-09-03
-author: "OllaVPN Security Team"
+author: Vikas Swami
 category: "How-To Guides"
 tags: ["Free VPN", "ChromeOS", "Chromebook", "WireGuard", "Security", "Privacy", "Android VPN", "Setup Guide"]
 keywords: ["free vpn for chromeos", "chromebook vpn free", "best free vpn chromeos", "how to setup vpn on chromebook", "android vpn on chromebook", "free wireguard chromebook", "ollavpn chromeos"]

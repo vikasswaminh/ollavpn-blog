@@ -2,7 +2,7 @@
 title: 'What is DNS over HTTPS (DoH)? Your Privacy, Explained.'
 description: 'DNS over HTTPS (DoH) encrypts your website lookups, which are essentially the requests your computer sends to find a website''s address. Think of it like putting your destination in a sealed envelope instead of shouti...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['beginner-basics']
 ---
 

@@ -2,7 +2,7 @@
 title: 'What Exactly Is an IPSec VPN, and Why Should You Care?'
 description: 'IPSec is a set of rules that secures your internet traffic. Think of it as a digital bodyguard for your data, making sure that everything you send and receive online is private and hasn''t been messed with. It''s a...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['protocol-tech']
 ---
 

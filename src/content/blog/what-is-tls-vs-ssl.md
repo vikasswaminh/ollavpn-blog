@@ -2,7 +2,7 @@
 title: 'TLS vs SSL: What''s the Difference, and Why Should You Care?'
 description: 'SSL is the older, less secure version of a security protocol that encrypts your internet traffic, while TLS is its modern, much stronger replacement. Even though TLS is what''s used today, you''ll still hear people...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['protocol-tech']
 ---
 

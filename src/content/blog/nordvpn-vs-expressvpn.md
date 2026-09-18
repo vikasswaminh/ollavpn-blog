@@ -2,7 +2,7 @@
 title: 'NordVPN vs ExpressVPN (2026): Feature Density vs Protocol Polish'
 description: 'NordLynx double-encryption and threat protection vs Lightway simplicity and router firmware polish. Which global flagship performs best in 2026.'
 pubDate: 2026-05-16
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['comparisons']
 ---
 

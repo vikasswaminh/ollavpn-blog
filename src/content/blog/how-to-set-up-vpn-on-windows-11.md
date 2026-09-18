@@ -2,7 +2,7 @@
 title: 'How to Set Up a VPN on Windows 11: Your Simple Guide to Online Privacy'
 description: 'Setting up a VPN on Windows 11 is easiest with the OllaVPN app. It handles all the technical details for you, so there''s no need to mess with complicated settings or manual configurations. You just download, install,...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['how-to-guides']
 ---
 

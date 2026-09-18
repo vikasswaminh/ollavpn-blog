@@ -2,7 +2,7 @@
 title: 'How to Permanently Delete Your Telegram Account'
 description: 'If you''re looking to delete your Telegram account, you''ll need to use a web browser, not the app itself. Head over to Telegram''s official deactivation page, enter the phone number linked to your account, and ...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['privacy-security']
 ---
 

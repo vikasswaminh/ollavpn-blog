@@ -2,7 +2,7 @@
 title: 'Mullvad vs NordVPN (2026): Strict Zero-Knowledge vs Feature-Rich Powerhouse'
 description: 'Flat 5 Euro pricing with zero recurring subscriptions vs feature bundles with ad blocking, malware filtering, and dedicated streaming nodes.'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['comparisons']
 ---
 

@@ -2,7 +2,7 @@
 title: 'What is Multi-Hop VPN and How Does it Boost Your Privacy?'
 description: 'A multi-hop VPN sends your internet traffic through more than one VPN server, in different places, before it gets to where it''s going. It''s like adding extra stops on a journey to make it much harder for anyone t...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['protocol-tech']
 ---
 

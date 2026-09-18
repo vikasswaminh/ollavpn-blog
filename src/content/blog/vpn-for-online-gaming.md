@@ -2,7 +2,7 @@
 title: 'Free VPN for Online Gaming 2026: Low Ping & No Lag'
 description: 'The honest guide to free VPNs for gaming in 2026 — what actually reduces ping, which free tiers are worth using, and bufferbloat fixes.'
 pubDate: 2025-06-12
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['buyer-guides']
 ---
 

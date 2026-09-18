@@ -3,7 +3,7 @@ title: "Free VPN for Travel Abroad 2026: Stay Private on Hotel, Airport, and Roa
 description: "Stay secure on hotel, airport, and roaming Wi-Fi abroad with a free, post-quantum encrypted VPN. Unlimited data, zero logs, and no credit card required."
 pubDate: 2026-08-05
 category: "buyer-guides"
-author: "Nathan Pratt"
+author: Vikas Swami
 readingTime: "15 min read"
 tags: ['buyer-guides', 'privacy-security', 'travel', 'wifi']
 ---

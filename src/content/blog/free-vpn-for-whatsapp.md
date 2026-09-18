@@ -3,7 +3,7 @@ title: "Free VPN for WhatsApp 2026: Does It Improve Privacy?"
 description: "WhatsApp encrypts message content, but metadata, timestamps, and IP addresses remain visible. Discover how a free VPN adds essential network-layer privacy."
 pubDate: 2026-08-13
 category: "use-cases"
-author: "Nathan Pratt"
+author: Vikas Swami
 readingTime: "7 min read"
 tags: ['whatsapp', 'messaging', 'metadata', 'end-to-end-encryption', 'privacy', 'voip']
 pillar: false

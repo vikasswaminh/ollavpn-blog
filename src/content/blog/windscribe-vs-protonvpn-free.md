@@ -2,7 +2,7 @@
 title: 'Windscribe Free vs ProtonVPN Free (2026): 10 GB Data Cap vs Unlimited Bandwidth'
 description: '10+ global locations with streaming support on a 10 GB cap vs unlimited monthly data with single-device privacy and speed throttling.'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['comparisons']
 ---
 

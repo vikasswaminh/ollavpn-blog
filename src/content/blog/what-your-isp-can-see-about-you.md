@@ -2,7 +2,7 @@
 title: 'What Your ISP Can See About You (And How to Hide It)'
 description: 'The plain-English guide to exactly what your internet provider logs, sells, and hands over—down to the packet level. What HTTPS hides, and how to close every gap.'
 pubDate: 2026-06-26
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['privacy-security']
 ---
 

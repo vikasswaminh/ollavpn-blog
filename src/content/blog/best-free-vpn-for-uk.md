@@ -2,7 +2,7 @@
 title: 'Is OllaVPN the Best Free VPN for UK Users?'
 description: 'You''re looking for a genuinely free VPN for the UK, and OllaVPN delivers: 10 Mbps speed, unlimited data, and access to our entire network, forever. We don''t ask for your credit card or email, we don''t show yo...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['buyer-guides']
 ---
 

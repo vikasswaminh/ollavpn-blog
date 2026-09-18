@@ -3,7 +3,7 @@ title: "IPv6 Leak Explained (2026): Why It Happens and How to Prevent It"
 description: "The plain-English guide to one of the quietest, most commonly overlooked ways a VPN can fail to protect you. What an IPv6 leak is, why it happens even with an active VPN, how to test for it, and what genuinely fixes it."
 pubDate: 2026-08-19
 category: "protocol-tech"
-author: "Nathan Pratt"
+author: Vikas Swami
 readingTime: "24 min read"
 tags: ['ipv6', 'data-leaks', 'security', 'protocols', 'privacy-security']
 pillar: false

@@ -2,7 +2,7 @@
 title: 'How Advertisers Track You Across the Internet (And How to Fight Back)'
 description: 'The complete, plain-English guide to every method advertisers use to follow you around the web — third-party cookies, browser fingerprinting, pixel beacons, data brokers — and how to stop them.'
 pubDate: 2026-06-10
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['privacy-security']
 ---
 

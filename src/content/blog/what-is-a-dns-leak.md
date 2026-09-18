@@ -2,7 +2,7 @@
 title: 'What Is a DNS Leak? How to Test, Fix, and Prevent It (2026 Guide)'
 description: 'A DNS leak happens when your device sends DNS requests — the lookups that turn website names into numbers — outside your VPN''s encrypted tunnel. Your browsing activity becomes visible to your internet service provider ev...'
 pubDate: 2026-05-16
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['privacy-security']
 ---
 

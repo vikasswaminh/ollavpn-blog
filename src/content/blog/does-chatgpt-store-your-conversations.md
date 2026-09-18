@@ -2,7 +2,7 @@
 title: 'Does ChatGPT Store Your Conversations?'
 description: 'The plain-English guide to what OpenAI actually does with everything you type into ChatGPT—how long it’s kept, how it’s used for training, and how to stop it.'
 pubDate: 2026-06-22
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['privacy-security']
 ---
 

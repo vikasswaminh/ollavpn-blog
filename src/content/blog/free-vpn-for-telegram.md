@@ -3,7 +3,7 @@ title: "Free VPN for Telegram 2026: What a VPN Can (and Can't) Do"
 description: "A VPN reroutes and encrypts your internet traffic so your ISP or network operator can't see that you're connecting to Telegram, and so Telegram's servers see..."
 pubDate: 2026-08-14
 category: "use-cases"
-author: "Nathan Pratt"
+author: Vikas Swami
 readingTime: "10 min read"
 tags: ['telegram', 'messaging', 'privacy', 'free-vpn']
 pillar: false

@@ -2,7 +2,7 @@
 title: 'What Is a Post-Quantum VPN and Why Do You Need One?'
 description: 'The plain-English guide to post-quantum VPNs. Why harvest-now-decrypt-later turns a future quantum threat into a today problem, and how PQC handshakes work.'
 pubDate: 2026-07-04
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['pillars']
 ---
 

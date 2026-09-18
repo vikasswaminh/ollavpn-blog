@@ -2,7 +2,7 @@
 title: 'What Is A Port Number, And Why Should You Care?'
 description: 'Think of a port number as a specific door or channel on your computer that applications use to send and receive information over the internet. Your IP address gets data to your device, but the port number makes sure that...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['beginner-basics']
 ---
 

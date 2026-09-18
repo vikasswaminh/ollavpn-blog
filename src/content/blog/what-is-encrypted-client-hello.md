@@ -2,7 +2,7 @@
 title: 'What is Encrypted Client Hello (ECH) and Why Should You Care?'
 description: 'Encrypted Client Hello (ECH) is a big step for your internet privacy. It encrypts the very first part of your connection to a website, meaning that even if a site uses HTTPS, the domain name you''re trying to reach is...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['protocol-tech']
 ---
 

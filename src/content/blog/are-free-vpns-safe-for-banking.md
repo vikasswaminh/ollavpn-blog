@@ -3,7 +3,7 @@ title: "Are Free VPNs Safe for Banking? A 2026 Checklist (No Credit Card Require
 description: "You're sitting in an airport lounge, your card balance needs checking, and the only Wi-Fi in sight is the kind that makes your laptop pop up three separate security warnings. So you open your VPN app, the free one, and hesitate for half a second before tapping connect."
 pubDate: 2026-09-01
 category: "use-cases"
-author: "Nathan Pratt"
+author: Vikas Swami
 readingTime: "25 min read"
 tags: ['Security & Banking', 'use-cases', 'vpn-guides']
 pillar: false

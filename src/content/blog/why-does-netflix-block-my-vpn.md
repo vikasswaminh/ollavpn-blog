@@ -2,7 +2,7 @@
 title: 'Netflix VPN Not Working? You''re Not Alone. Here''s How to Fix It Fast.'
 description: 'If Netflix is blocking your VPN, it''s usually because it''s detected multiple users on the same IP address. Often, the quickest solution is to simply switch to a different server location in your VPN app. This giv...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['use-cases']
 ---
 

@@ -2,7 +2,7 @@
 title: 'TunnelBear vs Windscribe (2026): Friendly Simplicity vs Power-User Customization'
 description: 'Annual independent security audits and whimsical UI vs R.O.B.E.R.T. firewall blocking, custom port forwarding, and generous free tiers.'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['comparisons']
 ---
 

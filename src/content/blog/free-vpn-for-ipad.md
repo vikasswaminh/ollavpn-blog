@@ -3,7 +3,7 @@ title: "Free VPN for iPad 2026: No Credit Card, No Logs (What to Expect)"
 description: "Finding a genuinely free VPN for your iPad: one that doesn't quietly ask for a card number up front, start a trial countdown, or aggressively push upgrades: shouldn't feel like navigating a minefield. Here is what to expect from an honest free iPad VPN."
 pubDate: 2026-08-21
 category: "buyer-guides"
-author: "Nathan Pratt"
+author: Vikas Swami
 readingTime: "22 min read"
 tags: ['ipad-vpn', 'free-vpn', 'ios-security', 'privacy-security', 'buyer-guides']
 pillar: false

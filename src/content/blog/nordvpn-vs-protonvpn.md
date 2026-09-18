@@ -2,7 +2,7 @@
 title: 'NordVPN vs ProtonVPN (2026): Commercial Speed vs Open-Source Security'
 description: 'Fast global CDN unblocking vs Secure Core multi-hop architecture and audited open-source desktop apps. Testing real-world privacy differences.'
 pubDate: 2026-05-16
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['comparisons']
 ---
 

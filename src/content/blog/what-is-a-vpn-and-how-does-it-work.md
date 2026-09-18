@@ -2,7 +2,7 @@
 title: 'What is a VPN and How Does it Work?'
 description: 'A VPN, or Virtual Private Network, creates a secure, encrypted tunnel for your internet traffic. Think of it like putting your online activity into a private, locked box and sending it through a secret passage. This keep...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['beginner-basics']
 ---
 

@@ -2,7 +2,7 @@
 title: 'IPVanish vs NordVPN (2026): Self-Owned Tier-1 Network vs Massive Server Mesh'
 description: 'Direct ownership of core server hardware and unlimited device connections vs NordVPN''s meshnet, dark web monitor, and threat defense.'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['comparisons']
 ---
 

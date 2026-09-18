@@ -2,7 +2,7 @@
 title: 'The Best Free VPN for Linux? Here''s What That Actually Means.'
 description: 'Finding a truly free VPN for Linux that respects your privacy and actually works without a catch can feel impossible. OllaVPN''s free plan gives you 10 Mbps, access to every country in our network, and even post-quant...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['buyer-guides']
 ---
 

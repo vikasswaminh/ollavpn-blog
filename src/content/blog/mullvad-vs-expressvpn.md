@@ -2,7 +2,7 @@
 title: 'Mullvad vs ExpressVPN (2026): Hardcore Anonymity vs Global Unblocking Reach'
 description: 'No email required and quantum-resistant tunnels vs world-class streaming unblocking across 105 countries with 24/7 live support.'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['comparisons']
 ---
 

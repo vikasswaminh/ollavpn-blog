@@ -2,7 +2,7 @@
 title: 'Do I Really Need a VPN at Home?'
 description: 'You might think your home network is private, but your Internet Service Provider (ISP) can still see and log nearly everything you do online. A VPN creates a secure, encrypted tunnel for your internet traffic, essentiall...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['privacy-security']
 ---
 

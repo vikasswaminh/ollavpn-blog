@@ -2,7 +2,7 @@
 title: 'Can a VPN Stop Hackers? The Truth Explained'
 description: 'What a VPN actually stops, what it doesn''t touch at all (malware, phishing, passwords), and how network encryption fits into a real security plan.'
 pubDate: 2026-07-16
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['how-to-guides']
 ---
 

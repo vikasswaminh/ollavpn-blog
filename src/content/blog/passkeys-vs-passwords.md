@@ -2,7 +2,7 @@
 title: "Passkeys vs. Passwords: Which One Actually Protects You?"
 description: "How each one works under the hood, why one is fundamentally harder to steal, and what that means for your everyday accounts."
 pubDate: 2026-07-28
-author: "OllaVPN Team"
+author: Vikas Swami
 category: "beginner-basics"
 tags: ["beginner-basics", "passwords", "passkeys", "security"]
 pillar: false

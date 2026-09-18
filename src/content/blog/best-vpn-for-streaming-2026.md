@@ -2,7 +2,7 @@
 title: 'Best VPN for Streaming in 2026: An Honest Comparison'
 description: 'When you''re trying to pick a VPN, especially for streaming, you''ll often see two main types. One might be great if you just want something super simple and reliable for unblocking content, often with a huge serve...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['buyer-guides']
 ---
 

@@ -9,7 +9,7 @@ export const SITE = {
   url: 'https://ollavpn.com',
   marketingUrl: 'https://ollavpn.com',
   marketingLabel: 'ollavpn.com',
-  author: 'OllaVPN Team',
+  author: 'Vikas Swami',
   accent: '#DA291C',
   tagline: 'Privacy, unlocked.',
   locale: 'en',

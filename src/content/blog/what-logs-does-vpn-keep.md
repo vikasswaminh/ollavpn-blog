@@ -2,7 +2,7 @@
 title: 'What Logs Does a VPN Keep, and What Does That Really Mean for Your Privacy?'
 description: 'When a VPN says "no logs," what does that actually mean? It''s simple: it means they don''t record anything that can identify you or your online activities. That includes your IP address, connection times, ...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['privacy-security']
 ---
 

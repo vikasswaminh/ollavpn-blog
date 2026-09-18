@@ -2,7 +2,7 @@
 title: "HTTPS vs VPN: What's the Difference, and Do You Need Both?"
 description: "HTTPS vs VPN explained in 2026. Learn what HTTPS protects, what it leaves exposed to your ISP, what a VPN adds, and why you need both for total privacy."
 pubDate: 2026-05-20T00:00:00.000Z
-author: "Vikas Swami"
+author: Vikas Swami
 tags: ["protocol-tech", "security", "protocols"]
 cover: "/images/artistic-tracking.webp"
 ---

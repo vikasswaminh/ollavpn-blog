@@ -2,7 +2,7 @@
 title: 'How to Clear Instagram Cache: A Simple Guide for iPhone and Android'
 description: 'Clearing your Instagram cache is a simple fix for many common app issues, like slow loading or unexpected glitches. It''s like giving the app a fresh start without affecting your posts, messages, or account details. Y...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['privacy-security']
 ---
 

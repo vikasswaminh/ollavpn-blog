@@ -2,7 +2,7 @@
 title: 'What Is a Man-in-the-Middle (MITM) Attack?'
 description: 'The plain-English guide to one of the oldest tricks in networking, still working in 2026. How someone intercepts communications and how to defend yourself.'
 pubDate: 2026-06-20
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['pillars']
 ---
 

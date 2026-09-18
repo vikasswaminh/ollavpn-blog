@@ -2,7 +2,7 @@
 title: "Smart DNS vs VPN: Which Is Better for Streaming?"
 description: "Two very different tools that solve a similar-looking problem — explained without jargon, sales pitches, or acronym soup, with an honest answer for your TV."
 pubDate: 2026-07-21
-author: "OllaVPN Team"
+author: Vikas Swami
 tags: ["comparisons"]
 category: "comparisons"
 ---

@@ -2,7 +2,7 @@
 title: 'CyberGhost vs NordVPN (2026): Beginner UI Simplicity vs Advanced Security Tools'
 description: 'One-click streaming and torrenting profile filters vs NordLynx encryption, double VPN hops, and automated kill switch protection.'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['comparisons']
 ---
 

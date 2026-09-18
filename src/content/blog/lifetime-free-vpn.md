@@ -2,7 +2,7 @@
 title: 'Lifetime Free VPN: Is OllaVPN Really Free Forever?'
 description: 'The complete, no-fluff guide to what ''lifetime free VPN'' actually means in 2026. What the free plan includes, our sustainable funding model, and zero-log architecture.'
 pubDate: 2026-06-08
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['buyer-guides']
 ---
 

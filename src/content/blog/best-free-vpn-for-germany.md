@@ -2,7 +2,7 @@
 title: 'The Best Free VPN for Germany: Privacy, Speed, and No Hidden Catches'
 description: 'Looking for a truly free VPN in Germany? OllaVPN offers a free plan with 10 Mbps speed, unlimited data, and access to our full network, all without needing a credit card or selling your data. It''s $0 forever, no stri...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['buyer-guides']
 ---
 

@@ -2,7 +2,7 @@
 title: 'Can Websites Detect VPNs? What You Need to Know About Online Privacy'
 description: 'Yes, but with caveats. Websites can often tell you''re using *a* VPN, but they usually can''t tell *who* you are or *what* you''re doing. They''ll see an IP address that belongs to a VPN provider, not your ho...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['privacy-security']
 ---
 

@@ -2,7 +2,7 @@
 title: 'Is OllaVPN the Best Free VPN for the UAE?'
 description: 'Navigating the internet in the UAE can be a challenge, with certain services blocked and privacy concerns. OllaVPN offers a genuinely free solution: 10 Mbps speed, unlimited data, and strong privacy protections, all with...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['buyer-guides']
 ---
 

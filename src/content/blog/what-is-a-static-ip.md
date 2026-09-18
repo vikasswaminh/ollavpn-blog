@@ -2,7 +2,7 @@
 title: 'What is a Static IP Address and Why Should You Care?'
 description: 'A static IP address is like having a permanent street address on the internet that never changes. It''s often used for things like running your own server or accessing your home network from afar because it gives you ...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['beginner-basics']
 ---
 

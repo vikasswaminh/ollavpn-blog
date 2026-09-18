@@ -3,7 +3,7 @@ title: "Free VPN for Remote Work 2026: Secure Home Office Setup (No Credit Card)
 description: "Secure your home office with a 100% free VPN. How WireGuard encryption, kill switch protection, and no-logs privacy keep remote workers safe with no credit card."
 pubDate: 2026-08-04
 category: "buyer-guides"
-author: "Nathan Pratt"
+author: Vikas Swami
 readingTime: "15 min read"
 tags: ['buyer-guides', 'privacy-security', 'remote-work', 'home-office']
 ---

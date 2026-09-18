@@ -2,7 +2,7 @@
 title: 'DNS Server Not Responding? Here''s How to Fix It Quickly'
 description: 'When you see a "DNS server not responding" error, it means your computer can''t translate website names into the numerical addresses the internet uses. Think of it like your phone''s contact list suddenly d...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['how-to-guides']
 ---
 

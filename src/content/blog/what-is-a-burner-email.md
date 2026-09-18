@@ -2,7 +2,7 @@
 title: 'What Is a Burner Email, and Why Should You Care?'
 description: 'A burner email is simply a temporary, disposable email address. You use it for things like signing up for a new service, trying out a website, or anything where you expect to get a lot of spam. It''s like having a pay...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['beginner-basics']
 ---
 

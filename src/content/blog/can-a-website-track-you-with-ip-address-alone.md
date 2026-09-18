@@ -3,7 +3,7 @@ title: "Can a Website Track You with an IP Address Alone? (2026 Guide)"
 description: "You open a shopping site once, don't buy anything, and by the next morning the same pair of shoes is following you around every app on your phone. It's tempting to blame \"they tracked my IP address\" for basically everything creepy that happens online."
 pubDate: 2026-08-31
 category: "privacy-security"
-author: "Nathan Pratt"
+author: Vikas Swami
 readingTime: "24 min read"
 tags: ['Privacy & Security', 'privacy-security', 'vpn-guides']
 pillar: false

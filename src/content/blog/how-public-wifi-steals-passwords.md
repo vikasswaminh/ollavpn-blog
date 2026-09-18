@@ -2,7 +2,7 @@
 title: 'How Public Wi‑Fi Can Steal Your Passwords (2026 Guide)'
 description: 'Public Wi‑Fi networks — coffee shops, airports, hotels, libraries — are inherently open. Without encryption between your device and the websites you visit, anyone on the same network can see the data you send and receive...'
 pubDate: 2026-06-01
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['pillars']
 ---
 

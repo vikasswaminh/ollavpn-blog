@@ -2,7 +2,7 @@
 title: 'Which Free VPN Does Not Keep Logs? A 2026 No-Logs VPN Checklist'
 description: 'A plain-English guide to what “no logs” actually means, what it doesn’t mean, how to verify it, and which free VPNs in 2026 genuinely hold up under scrutiny.'
 pubDate: 2026-06-18
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['buyer-guides']
 ---
 

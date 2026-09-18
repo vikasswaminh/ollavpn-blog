@@ -2,7 +2,7 @@
 title: 'What Exactly Is a VPN Protocol, and Why Should You Care?'
 description: 'Think of a VPN protocol as the secret language your devices use to talk securely over the internet. It''s the instruction set that makes sure your online activity is encrypted and private, creating a secure tunnel bet...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['beginner-basics']
 ---
 

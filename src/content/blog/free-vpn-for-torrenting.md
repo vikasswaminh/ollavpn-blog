@@ -3,7 +3,7 @@ title: "Free VPN for Torrenting in 2026: Privacy, Risks, and a Safer Setup"
 description: "BitTorrent broadcasts your IP to the swarm by design. Learn how a kill switch, zero-logs policy, and in-tunnel DNS provide genuine P2P privacy."
 pubDate: 2026-08-10
 category: "privacy-security"
-author: "Nathan Pratt"
+author: Vikas Swami
 readingTime: "8 min read"
 tags: ["torrenting", "p2p", "privacy", "bittorrent", "security", "use-cases"]
 pillar: false

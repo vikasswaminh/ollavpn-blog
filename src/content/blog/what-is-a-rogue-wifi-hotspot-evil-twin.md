@@ -3,7 +3,7 @@ title: "What Is a Rogue Wi-Fi Hotspot (Evil Twin) and How to Spot It"
 description: "The plain-English guide to one of the oldest tricks in public Wi-Fi and one of the easiest to fall for. What an evil twin hotspot actually is, why attackers use it, what it lets them see, and the practical steps to spot one before you connect."
 pubDate: 2026-08-20
 category: "protocol-tech"
-author: "Nathan Pratt"
+author: Vikas Swami
 readingTime: "26 min read"
 tags: ['wifi-security', 'evil-twin', 'data-leaks', 'public-wifi', 'privacy-security']
 pillar: false

@@ -2,7 +2,7 @@
 title: "Free VPN for Streaming Sports 2026: Watch Without Geo-Blocks (Honest Guide)"
 description: "An honest, no-nonsense guide to streaming live sports with a free VPN in 2026: how to bypass geo-blocks, eliminate buffering, and protect your privacy without paying a cent."
 pubDate: 2026-08-24
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['streaming']
 ---
 

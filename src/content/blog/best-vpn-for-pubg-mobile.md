@@ -3,7 +3,7 @@ title: "Best VPN for PUBG Mobile: Reduce Ping and Avoid ISP Throttling"
 description: "How to reduce ping, stabilize packet routing, and bypass ISP throttling in PUBG Mobile using a lightweight WireGuard VPN with zero subscription fees."
 pubDate: 2026-07-31
 category: "use-cases"
-author: "Nathan Pratt"
+author: Vikas Swami
 readingTime: "14 min read"
 tags: ['use-cases', 'gaming', 'ping', 'throttling']
 ---

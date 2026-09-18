@@ -2,7 +2,7 @@
 title: 'Is Shein Safe? A Deep Dive into Your Privacy and Security'
 description: 'Shein isn''t "unsafe" in terms of malware, but it''s a major data collector, and its security track record isn''t perfect. You''re essentially trading convenience and low prices for potential exposure...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['privacy-security']
 ---
 

@@ -2,7 +2,7 @@
 title: 'What Happens When Someone Knows Your IP Address? A Complete 2026 Guide'
 description: 'The full, plain-English guide to what someone can actually do with your IP address: location tracking, DDoS attacks, targeted hacking, identity fraud, and how to protect yourself.'
 pubDate: 2026-06-14
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['pillars']
 ---
 

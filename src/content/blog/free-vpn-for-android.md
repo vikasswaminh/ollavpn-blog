@@ -3,7 +3,7 @@ title: "Free VPN for Android 2026: No Logs, No Ads, Really Usable"
 description: "Type 'free VPN Android' into Google Play and you get thousands of results. Here is what 'really usable' and genuine zero-logs mean on Android in 2026."
 pubDate: 2026-08-11
 category: "buyer-guides"
-author: "Nathan Pratt"
+author: Vikas Swami
 readingTime: "9 min read"
 tags: ['android', 'mobile', 'free-vpn', 'privacy', 'security', 'no-logs']
 pillar: false

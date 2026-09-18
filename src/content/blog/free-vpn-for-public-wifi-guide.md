@@ -2,7 +2,7 @@
 title: 'Is a Free VPN Safe for Public WiFi? What You Need to Know.'
 description: 'Using public Wi-Fi without a VPN is like broadcasting your private life to strangers. A VPN encrypts your internet connection, shielding your data from prying eyes and potential attackers on shared networks. This is esse...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['privacy-security']
 ---
 

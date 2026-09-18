@@ -2,7 +2,7 @@
 title: 'WireGuard vs. OpenVPN: Which VPN Protocol Should You Trust?'
 description: 'WireGuard is generally the better choice today for most people, offering a faster, simpler, and more efficient experience. Think of it like a modern, streamlined sports car compared to OpenVPN''s more traditional, arm...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['protocol-tech']
 ---
 

@@ -2,7 +2,7 @@
 title: 'Is OllaVPN the Best Free VPN for Canada?'
 description: 'If you''re in Canada looking for a truly free VPN, OllaVPN delivers. Our free plan gives you 10 Mbps speed, unlimited data, and access to our full network of countries, all without needing a credit card or dealing wit...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['buyer-guides']
 ---
 

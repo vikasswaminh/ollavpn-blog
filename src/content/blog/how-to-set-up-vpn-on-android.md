@@ -2,7 +2,7 @@
 title: 'How to Set Up a VPN on Android: Your 5-Minute Guide'
 description: 'Setting up a VPN on your Android is super straightforward. The fastest way is to just grab a good VPN app from the Google Play Store, sign up for an account (you can even start with our free plan!), and then just tap to ...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['how-to-guides']
 ---
 

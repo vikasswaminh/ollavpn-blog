@@ -2,7 +2,7 @@
 title: 'PrivadoVPN Free vs ProtonVPN Free (2026): Streaming Support vs Unlimited Privacy'
 description: 'Free US/UK server access that unblocks streaming catalogs vs unlimited browsing data backed by Swiss data protection laws.'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['comparisons']
 ---
 

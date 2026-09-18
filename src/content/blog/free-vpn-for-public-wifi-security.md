@@ -2,7 +2,7 @@
 title: "Free VPN for Public WiFi Security 2026"
 description: "Why public Wi-Fi at airports, hotels, and cafes is risky and how a free post-quantum VPN protects your passwords, banking, and data without subscriptions."
 pubDate: 2026-07-20
-author: "OllaVPN Team"
+author: Vikas Swami
 tags: ["buyer-guides"]
 ---
 

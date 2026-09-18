@@ -2,7 +2,7 @@
 title: 'Can Governments Really Track Your VPN? The Unvarnished Truth About Your Online Privacy'
 description: 'Not directly, no. A good VPN encrypts your traffic and hides your IP address, making it incredibly difficult for governments or ISPs to see what you''re doing online. They''ll know you''re using a VPN, but not m...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['privacy-security']
 ---
 

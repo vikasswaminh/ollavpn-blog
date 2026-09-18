@@ -2,7 +2,7 @@
 title: 'VPN vs. Proxy: What''s the Real Difference, and Why Should You Care?'
 description: 'A proxy acts like a middleman for specific apps or browser traffic, changing your IP address but not encrypting everything. Think of it as a partial disguise for one part of your online activity. It can be quicker for si...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['beginner-basics']
 ---
 

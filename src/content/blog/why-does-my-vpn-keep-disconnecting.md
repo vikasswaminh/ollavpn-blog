@@ -2,7 +2,7 @@
 title: 'Why Does My VPN Keep Disconnecting? Here''s How to Fix It.'
 description: 'If your VPN keeps dropping, don''t panic! Most of the time, it''s a simple fix. Your internet connection might be a bit wobbly, or the VPN server you''re on could be having a momentary hiccup. Often, just restar...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['beginner-basics']
 ---
 

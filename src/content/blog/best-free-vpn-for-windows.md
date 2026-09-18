@@ -2,7 +2,7 @@
 title: 'Best Free VPN for Windows in 2026: An Honest, Hand-Picked Guide'
 description: 'If you want a genuinely free Windows VPN that doesn''t sell your data, the strongest names in 2026 are OllaVPN, Proton VPN, Windscribe, PrivadoVPN, hide.me, and TunnelBear. All six are run by transparent companies, all si...'
 pubDate: 2026-05-16
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['buyer-guides']
 ---
 

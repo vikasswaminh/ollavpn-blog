@@ -2,7 +2,7 @@
 title: 'Tor vs. VPN: What''s the Difference, and Which One Do You Actually Need?'
 description: 'Tor is designed for extreme anonymity, bouncing your internet traffic through a global network of volunteer relays. It encrypts your connection many times over, making it incredibly hard to trace your original location. ...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['protocol-tech']
 ---
 

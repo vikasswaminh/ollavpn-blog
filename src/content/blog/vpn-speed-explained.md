@@ -3,7 +3,7 @@ title: "VPN Speed Explained (2026): Why Your VPN Is Slow and How to Fix It"
 description: "A plain-English guide to why every VPN introduces minor speed reduction, what causes latency and packet drops, and practical steps to optimize VPN throughput."
 pubDate: 2026-08-12
 category: "protocol-tech"
-author: "Nathan Pratt"
+author: Vikas Swami
 readingTime: "9 min read"
 tags: ['vpn-speed', 'wireguard', 'openvpn', 'latency', 'bandwidth', 'troubleshooting']
 pillar: false

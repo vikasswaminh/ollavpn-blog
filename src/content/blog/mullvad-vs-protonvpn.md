@@ -2,7 +2,7 @@
 title: 'Mullvad vs ProtonVPN (2026): Anonymous Signup vs Swiss Ecosystem'
 description: 'Numbered accounts and cash payments vs Swiss privacy laws and a full encrypted suite. A deep look at port forwarding, speed, and real-world anonymity.'
 pubDate: 2026-05-16
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['comparisons']
 ---
 

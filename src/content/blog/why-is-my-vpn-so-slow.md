@@ -2,7 +2,7 @@
 title: 'Why Is My VPN So Slow? Get Your Speed Back Now.'
 description: 'First, figure out if your VPN is actually the problem. Turn it off, run a speed test, and see how your regular internet performs. If your internet is still slow, then the VPN isn''t the culprit; you''ll need to tro...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['beginner-basics']
 ---
 

@@ -3,7 +3,7 @@ title: "Why HTTPS Alone Isn't Enough"
 description: "HTTPS protects what you send to a website, but not who you are talking to. Understand SNI leaks, DNS visibility, ISP tracking, and why you need a VPN."
 pubDate: 2026-07-30
 category: "protocol-tech"
-author: "Nathan Pratt"
+author: Vikas Swami
 readingTime: "14 min read"
 tags: ['protocol-tech', 'https', 'encryption', 'privacy']
 ---

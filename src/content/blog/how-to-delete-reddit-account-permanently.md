@@ -2,7 +2,7 @@
 title: 'How to Permanently Delete Your Reddit Account'
 description: 'To permanently delete your Reddit account, you''ll need to log in, head to ''User Settings,'' then ''Account Settings,'' and finally find the ''Delete Account'' option. You''ll confirm your passwo...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['privacy-security']
 ---
 

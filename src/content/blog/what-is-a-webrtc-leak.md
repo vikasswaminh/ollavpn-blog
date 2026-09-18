@@ -2,7 +2,7 @@
 title: 'What is a WebRTC Leak, and Why Does It Matter for Your Privacy?'
 description: 'A WebRTC leak is when your browser, despite you using a VPN, accidentally shows your real IP address. This can totally mess up your privacy, letting websites or services see where you''re actually located and who you ...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['privacy-security']
 ---
 

@@ -3,7 +3,7 @@ title: "Free VPN for Amazon Prime Video 2026: What Actually Gets Unblocked"
 description: "The honest, plain-English guide to what a free VPN can and can't do for Amazon Prime Video in 2026, which regional catalogs actually open up, why some free VPNs get blocked mid-episode, and what to look for before you trust a \"works with Prime Video\" claim."
 pubDate: 2026-09-02
 category: "streaming"
-author: "Nathan Pratt"
+author: Vikas Swami
 readingTime: "26 min read"
 tags: ['Streaming', 'streaming', 'vpn-guides']
 pillar: false

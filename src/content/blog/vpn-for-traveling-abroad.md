@@ -2,7 +2,7 @@
 title: 'VPN for Traveling Abroad: Your Essential Online Companion?'
 description: 'Yes, you absolutely should use a VPN when you''re traveling abroad, especially when you''re hopping onto public Wi-Fi. It''s not just about watching your favorite shows from home; it''s mostly about keeping y...'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['use-cases']
 ---
 

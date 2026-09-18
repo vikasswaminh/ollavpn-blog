@@ -2,7 +2,7 @@
 title: 'Surfshark vs ExpressVPN (2026): Budget Household Value vs Premium Stability'
 description: 'Low-cost multi-year pricing with unlimited logins vs ultra-reliable Lightway connection speeds and dedicated router apps.'
 pubDate: 2026-06-09
-author: 'OllaVPN Team'
+author: Vikas Swami
 tags: ['comparisons']
 ---
 
