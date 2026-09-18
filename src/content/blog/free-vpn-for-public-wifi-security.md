@@ -9,7 +9,7 @@ tags: ["buyer-guides"]
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    A free VPN creates an <a href="/blog/what-is-a-vpn-tunnel.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">encrypted tunnel</a> between your device and the internet on <a href="/blog/how-public-wifi-steals-passwords/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">public Wi-Fi</a>, protecting your passwords, session tokens, and browsing traffic from eavesdroppers, evil twins, and compromised routers. For basic web security at airports, hotels, and cafes, OllaVPN Free delivers unlimited data, WireGuard speeds, and zero activity logs without requiring credit card registration.
+    A free VPN creates an <a href="/blog/what-is-a-vpn-tunnel/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">encrypted tunnel</a> between your device and the internet on <a href="/blog/how-public-wifi-steals-passwords/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">public Wi-Fi</a>, protecting your passwords, session tokens, and browsing traffic from eavesdroppers, evil twins, and compromised routers. For basic web security at airports, hotels, and cafes, OllaVPN Free delivers unlimited data, WireGuard speeds, and zero activity logs without requiring credit card registration.
   </p>
 </section>
 
@@ -43,7 +43,7 @@ tags: ["buyer-guides"]
     <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">•</span>
       <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">Always Verify Your Tunnel:</strong> After connecting to public Wi-Fi, run an IP leak test and <a href="/blog/what-is-a-dns-leak/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">DNS leak</a> check to ensure your VPN tunnel and <a href="/blog/what-is-a-vpn-kill-switch/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">kill switch</a> are actively shielding traffic.
+        <strong style="color: #0F172A; font-weight: 800;">Always Verify Your Tunnel:</strong> After connecting to public Wi-Fi, run an IP leak test and <a href="/blog/what-is-a-dns-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">DNS leak</a> check to ensure your VPN tunnel and <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">kill switch</a> are actively shielding traffic.
       </div>
     </li>
   </ul>
@@ -124,7 +124,7 @@ tags: ["buyer-guides"]
 
   <details class="faq-accordion-item" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px 20px; cursor: pointer; transition: all 0.2s ease;">
     <summary class="faq-accordion-summary" style="font-size: 0.95rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>7. Why does <a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">post-quantum encryption</a> matter for a short trip, not just long-term data?</span>
+      <span>7. Why does <a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">post-quantum encryption</a> matter for a short trip, not just long-term data?</span>
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.90rem; color: #1e293b; line-height: 1.7; margin-top: 12px; margin-bottom: 0; padding-top: 12px; border-top: 1px solid #e2e8f0;">

@@ -9,7 +9,7 @@ tags: ['comparisons']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    Numbered accounts and cash payments vs Swiss privacy laws and a full encrypted suite. A deep look at port forwarding, speed, and real-world anonymity. OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard encryption</a> with audited zero activity logging across all devices.
+    Numbered accounts and cash payments vs Swiss privacy laws and a full encrypted suite. A deep look at port forwarding, speed, and real-world anonymity. OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard encryption</a> with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -126,7 +126,7 @@ Fully open source
 
 Protocol
 
-<a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WireGuard</a> + OpenVPN
+WireGuard + OpenVPN
 
 WireGuard + OpenVPN
 
@@ -136,7 +136,7 @@ Default on desktop (pioneered)
 
 Rolling out
 
-[<a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">Kill switch</a>](/blog/what-is-a-vpn-kill-switch/)
+<a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">Kill switch</a>
 
 Yes, on all platforms
 
@@ -286,7 +286,7 @@ The open-source-on-both-sides situation is genuinely unusual. Most VPN apps are 
 
 This deserves its own section because Mullvad genuinely led the industry here, and it would be dishonest to tell this story without giving them direct credit.
 
-The concern that drives [<a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">post-quantum cryptography</a>](/blog/what-is-post-quantum-cryptography/) is a pattern researchers call **"harvest now, decrypt later"**: an adversary captures and stores your encrypted traffic today, even though they can't read it today, on the bet that they'll be able to decrypt it five or ten years from now once quantum computers mature. The encrypted sessions you run this week could sit in storage somewhere, waiting for the locks to become breakable.
+The concern that drives <a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">post-quantum cryptography</a> is a pattern researchers call **"harvest now, decrypt later"**: an adversary captures and stores your encrypted traffic today, even though they can't read it today, on the bet that they'll be able to decrypt it five or ten years from now once quantum computers mature. The encrypted sessions you run this week could sit in storage somewhere, waiting for the locks to become breakable.
 
 Most of the encryption used on the internet today relies on math problems that a sufficiently powerful quantum computer could solve. Post-quantum algorithms are designed to resist that future. Some of the biggest names in security, Apple, Signal, Cloudflare, Google, have been rolling out PQC across their own products over the last two years.
 
@@ -404,7 +404,7 @@ Here's where we think OllaVPN fits on a privacy-first shortlist:
 
 *   **Post-quantum cryptography ready from day one.** Mullvad pioneered the move in production VPN tunnels. We've built the same future-readiness into OllaVPN from the start, available on every connection, free and paid alike.
 *   **A lifetime free plan with no data caps or time limits.** ProtonVPN's free tier is excellent and we genuinely admire it. We added country choice and the ability to use all the same protection features free users sometimes don't get elsewhere.
-*   **A $2/month paid plan, simpler and cheaper than Mullvad's flat rate.** Five devices on one account. 10 Gbps <a href="/blog/vpn-speed-explained/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">connection speed</a>. No tiers to evaluate. No add-on bundles. No "Plus" version. Just a faster pipe and more devices.
+*   **A $2/month paid plan, simpler and cheaper than Mullvad's flat rate.** Five devices on one account. 10 Gbps <a href="/blog/vpn-speed-explained/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">connection speed</a>. No tiers to evaluate. No add-on bundles. No "Plus" version. Just a faster pipe and more devices.
 *   **A kill switch that's always on and can't be disabled.** Privacy isn't a setting you should be able to accidentally turn off.
 *   **One company, one product.** We don't sell a password manager, encrypted email, cloud storage, a calendar, or anything else. We make a VPN.
 

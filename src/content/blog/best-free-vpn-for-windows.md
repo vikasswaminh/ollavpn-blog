@@ -9,7 +9,7 @@ tags: ['buyer-guides']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    If you want a genuinely free Windows VPN that doesnt sell your data, the strongest names in 2026 are OllaVPN, Proton VPN, Windscribe, PrivadoVPN, hide.me, and TunnelBear. All six are run by transparent companies, all si... OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard encryption</a> with audited zero activity logging across all devices.
+    If you want a genuinely free Windows VPN that doesnt sell your data, the strongest names in 2026 are OllaVPN, Proton VPN, Windscribe, PrivadoVPN, hide.me, and TunnelBear. All six are run by transparent companies, all si... OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard encryption</a> with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -57,7 +57,7 @@ There are dozens of free VPNs for Windows, and most of them aren't worth your ti
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A trustworthy free Windows VPN has a transparent business model, runs a <a href="/blog/what-logs-does-vpn-keep/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs policy</a>, includes a <a href="/blog/what-is-a-vpn-kill-switch/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">kill switch</a> enabled by default, protects against DNS and <a href="/blog/what-is-an-ipv6-leak/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">IPv6 leaks</a>, and updates its app regularly. Most importantly, it's run by a company whose primary revenue doesn't depend on monetizing your data.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A trustworthy free Windows VPN has a transparent business model, runs a <a href="/blog/what-logs-does-vpn-keep/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">no-logs policy</a>, includes a <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">kill switch</a> enabled by default, protects against DNS and <a href="/blog/what-is-an-ipv6-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">IPv6 leaks</a>, and updates its app regularly. Most importantly, it's run by a company whose primary revenue doesn't depend on monetizing your data.</p>
 </div>
 
 
@@ -67,10 +67,10 @@ Before we get to the names, here's the framework we use to evaluate every free W
 1.  **Transparent business model.** The single most important question to ask of any free VPN: _how does this company make money?_ Reputable free tiers are funded by paying customers on a separate paid tier. If a free VPN has no paid tier and no clear funding source, the product is probably you.
 2.  **Documented no-logs policy.** The company should explicitly state, in plain language, what it does not log. Ideally this has been audited by an independent firm.
 3.  **Built-in kill switch.** If the VPN connection drops, your traffic should be blocked until it's restored. This should be on by default. Our [DNS leak guide](what-is-a-dns-leak.html) covers why this matters in detail.
-4.  **Leak protection.** [DNS leaks](/blog/what-is-a-dns-leak/), IPv6 leaks, [WebRTC leaks](/blog/what-is-a-webrtc-leak/), a modern VPN should handle all of these out of the box without you configuring anything.
+4.  **Leak protection.** DNS leaks, IPv6 leaks, WebRTC leaks, a modern VPN should handle all of these out of the box without you configuring anything.
 5.  **Regular updates.** Networking edge cases get found and fixed over time. An app that hasn't updated in two years is more likely to leak than one that updates monthly.
 6.  **A real Windows app.** Not just OpenVPN config files. Not a browser extension. A native Windows application that integrates properly with Windows 10 and 11.
-7.  **Forward-looking encryption.** Increasingly, this means support for [<a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">post-quantum cryptography</a>](what-is-post-quantum-cryptography.html). We'll explain why below.
+7.  **Forward-looking encryption.** Increasingly, this means support for [<a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">post-quantum cryptography</a>](what-is-post-quantum-cryptography.html). We'll explain why below.
 
 Every name in this guide meets all seven criteria. Many free VPNs you'll see in search results do not.
 
@@ -154,7 +154,7 @@ EDITOR'S PICK
 
 ### OllaVPN
 
-Lifetime free · [Post-quantum cryptography](/blog/what-is-post-quantum-cryptography.html) ready · No card required
+Lifetime free · Post-quantum cryptography ready · No card required
 
 OllaVPN is a newer privacy-focused VPN built on three deliberate ideas: **post-quantum cryptography ready from day one**, a [lifetime free plan](/free-vpn-for-windows) with no time limits or data caps, and a simple paid tier at $2/month for users who want more speed and devices. The free plan offers 10 Mbps to every country we serve, with no upsell prompts and no ads. The kill switch is always on and cannot be disabled.
 
@@ -218,7 +218,7 @@ Canada · 10 GB / month free · Unlimited devices
 
 Windscribe is one of the most generous free tiers measured by features rather than data alone. You get 10 GB of data per month if you confirm your email (2 GB without), access to servers in 11 countries, and, unusually for any VPN tier, paid or free, **unlimited simultaneous device connections**. The Windows app includes Windscribe's R.O.B.E.R.T. feature, which blocks ads, trackers, and malware at the DNS layer.
 
-The company is based in Canada, which is a member of the [Five Eyes](/blog/five-eyes-nine-eyes-fourteen-eyes.html) intelligence-sharing arrangement, but Windscribe maintains a documented no-logs policy and has a long history of transparent communication.
+The company is based in Canada, which is a member of the Five Eyes intelligence-sharing arrangement, but Windscribe maintains a documented no-logs policy and has a long history of transparent communication.
 
 Free tier
 
@@ -306,7 +306,7 @@ No email required
 
 Canada · 2 GB / month free · Famously approachable design
 
-TunnelBear is on this list specifically because of how friendly its app design is. The bear-themed branding, the cheerful copy, and the genuinely simple interface make it one of the easiest VPNs to recommend to a less-technical family member who wants to try a VPN for the first time. The free tier offers **2 GB of data per month**, which is enough for occasional browsing on [public Wi-Fi](/blog/how-public-wifi-steals-passwords.html) but not for streaming or downloads.
+TunnelBear is on this list specifically because of how friendly its app design is. The bear-themed branding, the cheerful copy, and the genuinely simple interface make it one of the easiest VPNs to recommend to a less-technical family member who wants to try a VPN for the first time. The free tier offers **2 GB of data per month**, which is enough for occasional browsing on public Wi-Fi but not for streaming or downloads.
 
 TunnelBear has been independently audited and is owned by McAfee (since 2018). The Windows app supports the company's signature "GhostBear" feature, which obfuscates VPN traffic on restrictive networks.
 

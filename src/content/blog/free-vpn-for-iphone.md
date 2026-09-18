@@ -11,9 +11,9 @@ tags: ['buyer-guides']
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
     A genuinely free iPhone VPN with no credit card and no logs in 2026 means exactly what it says: you download the app, tap connect, and get a private, encrypted connection without entering payment details, without your usage being tracked or sold, and without a countdown timer quietly running in the background.
 
-OllaVPN Free gives you exactly that, 10 Mbps, every country in our network, post-quantum-ready encryption, a <a href="/blog/what-is-a-vpn-kill-switch/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">kill switch</a> on by default, and a <a href="/blog/what-logs-does-vpn-keep/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">strict no-logs policy</a>, sustained by OllaVPN Plus subscribers rather than by your data.
+OllaVPN Free gives you exactly that, 10 Mbps, every country in our network, post-quantum-ready encryption, a <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">kill switch</a> on by default, and a <a href="/blog/what-logs-does-vpn-keep/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">strict no-logs policy</a>, sustained by OllaVPN Plus subscribers rather than by your data.
 
-You’re not getting a stripped-down trial. You’re getting the real security stack, WireGuard, a hybrid post-quantum handshake, <a href="/blog/what-is-a-dns-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">in-tunnel DNS</a>, four-layer peer isolation, on a plan that never expires and never asks for a card.
+You’re not getting a stripped-down trial. You’re getting the real security stack, WireGuard, a hybrid post-quantum handshake, <a href="/blog/what-is-a-dns-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">in-tunnel DNS</a>, four-layer peer isolation, on a plan that never expires and never asks for a card.
 
 The honest trade-off is speed: 10 Mbps on free versus 10 Gbps on the $2/month Plus plan. For most of what people actually do on an iPhone, browsing, HD streaming, video calls, messaging, that difference usually won’t be noticeable day to day.
   </p>
@@ -57,7 +57,7 @@ The honest trade-off is speed: 10 Mbps on free versus 10 Gbps on the $2/month Pl
 
 <div class="blog-main-content-box">
 
-Shield your privacy with OllaVPN free, <a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">post-quantum encryption</a> & zero logs.
+Shield your privacy with OllaVPN free, <a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">post-quantum encryption</a> & zero logs.
 
 <a href="/dl/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">DOWNLOAD →</a>
 
@@ -121,20 +121,20 @@ Every claim we make about OllaVPN in this guide is measured against this list. I
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">OllaVPN Free gives your iPhone 10 Mbps speeds, access to every country in our network, the <a href="/blog/wireguard-vs-openvpn/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard protocol</a>, post-quantum-ready encryption, a kill switch on by default, in-tunnel DNS, and four-layer peer isolation, with no credit card, no email, and no ads required to use it.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">OllaVPN Free gives your iPhone 10 Mbps speeds, access to every country in our network, the <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard protocol</a>, post-quantum-ready encryption, a kill switch on by default, in-tunnel DNS, and four-layer peer isolation, with no credit card, no email, and no ads required to use it.</p>
 </div>
 
 
 
 You get the full core security stack on your iPhone, at no cost, indefinitely. We don’t ask for a credit card, an email address, or any personal information to use the free plan. There are no ads in the app, and we don’t sell your data. The free tier is funded entirely by OllaVPN Plus subscribers, which we explain later in this guide.
 
-On the technical side, your iPhone gets real protection, not a stripped-down demo version. We use the WireGuard protocol, which is fast and battery-efficient. That matters on a phone, where a poorly implemented [VPN protocol](/blog/what-is-a-vpn-protocol.html) can visibly drain your battery over the course of a day.
+On the technical side, your iPhone gets real protection, not a stripped-down demo version. We use the WireGuard protocol, which is fast and battery-efficient. That matters on a phone, where a poorly implemented VPN protocol can visibly drain your battery over the course of a day.
 
 Your connection is secured with a post-quantum-ready hybrid handshake. That means the key exchange protecting your session is designed to resist not only today’s attacks, but also the kind of decryption a future quantum computer might attempt against traffic recorded today. We explain why that matters for phones a bit further down.
 
 The kill switch is on by default and can’t be casually switched off. So if your VPN connection drops, moving between Wi‑Fi and cellular, for instance, which happens constantly on a phone, your iPhone blocks internet access rather than silently falling back to an unprotected connection.
 
-You also get in-tunnel DNS, which keeps DNS lookups (the requests that translate a site name like ollavpn.com into an address) inside the [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html) instead of leaking out to your carrier’s or Wi‑Fi network’s default resolver.
+You also get in-tunnel DNS, which keeps DNS lookups (the requests that translate a site name like ollavpn.com into an address) inside the encrypted tunnel instead of leaking out to your carrier’s or Wi‑Fi network’s default resolver.
 
 Every free user also benefits from four-layer peer isolation, which segments your connection away from other users on the same server. Even in the unlikely event another user’s session were compromised, it wouldn’t expose yours.
 
@@ -336,7 +336,7 @@ Verify and cross-reference
 
 For any claim on this page that affects a decision you’re about to make, the verification path we recommend:
 
-Verify the technical claim from your own device. Our DNS lookup, [WebRTC leak](/blog/what-is-a-webrtc-leak/) test, what-is-my-IP, and the other tools at our tools page are free, require no account, and run entirely in your browser.
+Verify the technical claim from your own device. Our DNS lookup, WebRTC leak test, what-is-my-IP, and the other tools at our tools page are free, require no account, and run entirely in your browser.
 
 Cross-reference at least one third-party source. We are an operator with a commercial interest in the conclusion. The most reputable independent voices in this category are Mullvad’s blog, the Privacy Guides project documentation, the Restore Privacy site, and the academic literature on consumer VPN security. Read across multiple sources before forming a strong view.
 

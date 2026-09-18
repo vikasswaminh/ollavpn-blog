@@ -11,7 +11,7 @@ pillar: false
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    How each one works under the hood, why one is fundamentally harder to steal, and what that means for your everyday accounts. OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard encryption</a> with audited zero activity logging across all devices.
+    How each one works under the hood, why one is fundamentally harder to steal, and what that means for your everyday accounts. OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard encryption</a> with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -112,9 +112,9 @@ Good implementations also handle the transition period sensibly. This usually me
 Beyond the setup flow, a security-conscious service should be transparent about where your passkey data actually lives, ideally in your device's own hardware-backed secure storage, synced through a platform you already trust (Apple, Google, Microsoft, or a dedicated password manager), rather than something the service itself can see, copy, or export.
 
 ## How Does OllaVPN Think About Account Security?
-OllaVPN treats account security and network privacy as two distinct but equally important layers, supporting passkey sign-in wherever the underlying platform allows it, while keeping our <a href="/blog/what-logs-does-vpn-keep/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">strict no-logs policy</a> in place regardless of how you sign in.
+OllaVPN treats account security and network privacy as two distinct but equally important layers, supporting passkey sign-in wherever the underlying platform allows it, while keeping our <a href="/blog/what-logs-does-vpn-keep/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">strict no-logs policy</a> in place regardless of how you sign in.
 It's worth being clear: a VPN's job is protecting your network traffic, not managing your account credentials. Those are two different layers of security, and conflating them is a common source of confusion. That said, we believe a privacy-focused company has a responsibility to get both layers right.
-For OllaVPN account sign-in, we support passkey authentication on platforms where the OS and browser support it, alongside traditional password-based sign-in for those who prefer it. Either way, the account layer is separate from, and doesn't change, the protections your actual VPN connection gets: a post-quantum-ready hybrid handshake on every connection, an always-on <a href="/blog/what-is-a-vpn-kill-switch/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">kill switch</a>, and in-tunnel DNS that keeps your browsing destinations away from your ISP.
+For OllaVPN account sign-in, we support passkey authentication on platforms where the OS and browser support it, alongside traditional password-based sign-in for those who prefer it. Either way, the account layer is separate from, and doesn't change, the protections your actual VPN connection gets: a post-quantum-ready hybrid handshake on every connection, an always-on <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">kill switch</a>, and in-tunnel DNS that keeps your browsing destinations away from your ISP.
 We also don't require an email address at all for our free tier, which sidesteps a large chunk of the account-security conversation entirely, there's simply less personally identifying information tied to the account in the first place. This mirrors our broader philosophy: reduce what there is to steal or misuse before layering additional protections on top of it.
 
 ## What Can You Do Today to Protect Your Accounts?
@@ -188,7 +188,7 @@ Implies passwords are disappearing immediately. A realistic account acknowledges
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      All domain lookups travel securely encapsulated inside the <a href="/blog/what-is-a-vpn-tunnel.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">encrypted tunnel</a> directly to zero-log DNS resolvers, guaranteeing your ISP and network operators observe only opaque UDP packets.
+      All domain lookups travel securely encapsulated inside the <a href="/blog/what-is-a-vpn-tunnel/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">encrypted tunnel</a> directly to zero-log DNS resolvers, guaranteeing your ISP and network operators observe only opaque UDP packets.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
@@ -218,7 +218,7 @@ Implies passwords are disappearing immediately. A realistic account acknowledges
     Navigating Passkeys vs. Passwords: Which One Actually Protects You? effectively requires choosing security architectures built on transparency, strong encryption, and verified zero data logging.
   </p>
   <p style="font-size: 0.925rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
-    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on kill switch defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
+    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on kill switch defense, and <a href="/blog/what-is-a-dns-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">in-tunnel DNS</a> resolution to ensure your internet connection stays completely private across every network.
   </p>
 </section>
 

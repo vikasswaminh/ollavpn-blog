@@ -9,7 +9,7 @@ tags: ['privacy-security']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    A DNS leak happens when your device sends DNS requests, the lookups that turn website names into numbers, outside your VPNs encrypted tunnel. Your browsing activity becomes visible to your internet service provider ev... OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard encryption</a> with audited zero activity logging across all devices.
+    A DNS leak happens when your device sends DNS requests, the lookups that turn website names into numbers, outside your VPNs encrypted tunnel. Your browsing activity becomes visible to your internet service provider ev... OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard encryption</a> with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -77,7 +77,7 @@ By default, your computer asks **your internet service provider's DNS server** f
 
 
 
-When you connect to a VPN, the expectation is straightforward: everything your device sends should go through the [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html). Your internet provider sees that you're using a VPN, but it can't see what you do inside it.
+When you connect to a VPN, the expectation is straightforward: everything your device sends should go through the encrypted tunnel. Your internet provider sees that you're using a VPN, but it can't see what you do inside it.
 
 A **DNS leak** is when that expectation breaks. Your VPN tunnel handles most of your traffic correctly, but your DNS lookups slip out through a side door, they get sent to your internet provider instead of to your VPN's servers. To your provider, the list of websites you visited still looks the same as it did before you turned the VPN on.
 
@@ -107,7 +107,7 @@ The best way to think about it: a DNS leak doesn't undo your VPN, but it dramati
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The most common causes are VPNs that don't handle DNS inside their own infrastructure, IPv6 traffic bypassing the tunnel, unexpected VPN disconnects without a <a href="/blog/what-is-a-vpn-kill-switch/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">kill switch</a>, and operating-system misconfigurations. Choosing a VPN that handles DNS correctly by default removes most of the risk.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The most common causes are VPNs that don't handle DNS inside their own infrastructure, IPv6 traffic bypassing the tunnel, unexpected VPN disconnects without a <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">kill switch</a>, and operating-system misconfigurations. Choosing a VPN that handles DNS correctly by default removes most of the risk.</p>
 </div>
 
 
@@ -147,7 +147,7 @@ A small number of internet providers intercept DNS requests at the network level
 
 
 
-You don't need any technical knowledge to [test for a DNS leak](/blog/how-to-test-for-dns-leak.html). Five minutes and a browser.
+You don't need any technical knowledge to test for a DNS leak. Five minutes and a browser.
 
 1.  **Disconnect from your VPN.** Make sure the VPN app shows you're not connected. Open a browser and visit a DNS leak test site such as _dnsleaktest.com_ or _browserleaks.com/dns_. Note the DNS servers shown, they belong to your internet provider and represent your baseline.
 2.  **Connect to your VPN.** Open your VPN app and connect to any server. Wait a few seconds for the connection to fully establish.
@@ -229,7 +229,7 @@ Most VPNs were originally built for IPv4, the older addressing system the intern
 
 Modern reputable VPNs handle IPv6 either by routing it through the tunnel or by disabling it inside the tunnel by default. Either is a valid approach. What's not valid is letting it leak.
 
-When you run a DNS leak test, also check whether the site offers an **[<a href="/blog/ipv6-leak-explained/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">IPv6 leak</a>](/blog/what-is-an-ipv6-leak/) test**, many do. Run both.
+When you run a DNS leak test, also check whether the site offers an **<a href="/blog/ipv6-leak-explained/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">IPv6 leak</a> test**, many do. Run both.
 
 ## Your privacy checklist
 
@@ -237,7 +237,7 @@ When you run a DNS leak test, also check whether the site offers an **[<a href="
 
 *   **Run a DNS leak test** while connected to your VPN. Standard _and_ extended.
 *   **Run an IPv6 leak test** at the same time.
-*   **Run a [<a href="/blog/what-is-a-webrtc-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WebRTC leak</a>](/blog/what-is-a-webrtc-leak/) test** from a browser. (Browsers sometimes leak real IPs through WebRTC even when the VPN is up.)
+*   **Run a <a href="/blog/what-is-a-webrtc-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WebRTC leak</a> test** from a browser. (Browsers sometimes leak real IPs through WebRTC even when the VPN is up.)
 *   **Verify the kill switch is enabled** in your VPN app's settings.
 *   **Update your VPN app** to the latest version.
 *   **Check that your operating system is up to date**, Windows, macOS, and Linux release networking fixes regularly.
@@ -252,7 +252,7 @@ We built **OllaVPN** to be the answer to the question "what should a modern priv
 *   **The kill switch is always on.** You can't accidentally disable it. If the tunnel ever drops, traffic stops until the tunnel is back.
 *   **IPv6 is handled by default.** No partial leaks, no manual configuration.
 *   **No third-party DNS resolver in the loop.** We don't hand your lookups to a public resolver and call it private. They go through us, inside the tunnel.
-*   **[<a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">Post-quantum cryptography</a>](/blog/what-is-post-quantum-cryptography/) ready from day one.** The same encryption that protects your traffic today is built to remain secure against future quantum computers, the "harvest now, decrypt later" concern explained in our [comparison guide](nordvpn-vs-protonvpn.html).
+*   **<a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">Post-quantum cryptography</a> ready from day one.** The same encryption that protects your traffic today is built to remain secure against future quantum computers, the "harvest now, decrypt later" concern explained in our [comparison guide](nordvpn-vs-protonvpn.html).
 
 The result: if you run a DNS leak test while connected to OllaVPN, the test should show only OllaVPN's resolver. Every connection. Every time. There's nothing for you to configure.
 

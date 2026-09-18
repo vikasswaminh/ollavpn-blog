@@ -55,7 +55,7 @@ Finding a truly free VPN for your iPhone that actually works, and doesn't compro
 
 ## What Does a Truly Free VPN for iPhone Actually Mean?
 
-For OllaVPN, a truly <a href="/blog/free-vpn-for-iphone.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">free VPN for iPhone</a> means you get a privacy-first service with no hidden costs, no data selling, no ads, and no credit card ever required.
+For OllaVPN, a truly <a href="/blog/free-vpn-for-iphone/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">free VPN for iPhone</a> means you get a privacy-first service with no hidden costs, no data selling, no ads, and no credit card ever required.
 
 When most services say "free VPN," they usually mean "free for a trial period," "free with data caps and constant upsells," or "free because we're selling your browsing habits." That's not how we operate. We built OllaVPN Free for iPhone to be genuinely free forever, providing you with a solid, secure connection without any strings attached. You get full access to every country in our network, 24/7, with no data limits, all without ever needing to put a credit card on file.
 
@@ -75,7 +75,7 @@ An ethical free VPN won't require your credit card details or even your email ad
 
 ## What Does OllaVPN Free Specifically Give Your iPhone?
 
-OllaVPN Free gives your iPhone privacy and security features, including 10 Mbps speed, access to every country in our network, the <a href="/blog/wireguard-vs-openvpn/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard protocol</a>, post-quantum-ready encryption, a <a href="/blog/what-is-a-vpn-kill-switch/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">kill switch</a>, in-tunnel DNS, and 4-layer peer isolation.
+OllaVPN Free gives your iPhone privacy and security features, including 10 Mbps speed, access to every country in our network, the <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard protocol</a>, post-quantum-ready encryption, a <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">kill switch</a>, in-tunnel DNS, and 4-layer peer isolation.
 
 You get all the core benefits of a premium VPN, completely free, right on your iPhone. That means you can browse, stream, and communicate securely without spending a dime. We don't ask for a credit card, email, or any personal info to use the free plan. There are no ads, and we definitely don't sell your data. We keep the lights on through our optional OllaVPN Plus subscriptions, which means your free plan is truly free, forever.
 
@@ -113,7 +113,7 @@ You're probably used to seeing much higher numbers from your internet provider, 
 
 The biggest mistake is assuming all "free" VPNs operate ethically, ignoring their often shady business models involving data sales, ads, or even malware.
 
-You're probably looking for a free VPN to protect your privacy and security on your iPhone, right? The irony is that many free VPNs, especially on app stores, do the exact opposite. They need to make money somehow, and if you're not paying, you're often the product. This leads to common pitfalls like VPNs with abysmal <a href="/blog/what-is-a-no-log-vpn" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">logging policies</a>, collecting vast amounts of your browsing data and then selling it to advertisers or other third parties.
+You're probably looking for a free VPN to protect your privacy and security on your iPhone, right? The irony is that many free VPNs, especially on app stores, do the exact opposite. They need to make money somehow, and if you're not paying, you're often the product. This leads to common pitfalls like VPNs with abysmal <a href="/blog/which-free-vpn-does-not-keep-logs/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">logging policies</a>, collecting vast amounts of your browsing data and then selling it to advertisers or other third parties.
 
 Another huge red flag is the proliferation of intrusive ads. Some free VPNs inject ads directly into your browsing experience, track your ad engagement, or even sell your attention. Beyond just being annoying, this often means they're monitoring your online activity in ways that completely undermine the point of using a VPN. And it gets worse: a significant number of "free" VPN apps found on app stores have been identified as carrying malware or other malicious software, turning your privacy solution into a security nightmare.
 
@@ -133,11 +133,11 @@ Your iPhone holds a ton of personal data, and while today's encryption is strong
 
 ## How Does OllaVPN Protect Your Privacy on iPhone?
 
-OllaVPN protects your privacy on an iPhone by encrypting your internet traffic, hiding your IP address, and ensuring your online activity remains private through a <a href="/blog/what-logs-does-vpn-keep/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">strict no-logs policy</a> and advanced security features.
+OllaVPN protects your privacy on an iPhone by encrypting your internet traffic, hiding your IP address, and ensuring your online activity remains private through a <a href="/blog/what-logs-does-vpn-keep/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">strict no-logs policy</a> and advanced security features.
 
-When you use OllaVPN on your iPhone, all your internet activity is routed through our secure, encrypted tunnels. This means your internet service provider (ISP), advertisers, and even potential snoopers on <a href="/blog/how-public-wifi-steals-passwords/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">public Wi-Fi</a> can't see what you're doing online. We swap your real IP address for one of ours, making it incredibly difficult to track your digital footsteps back to you. We're serious about privacy, which is why we have a strict **no-logs policy**, we don't track, collect, or store any information about your online activities.
+When you use OllaVPN on your iPhone, all your internet activity is routed through our secure, encrypted tunnels. This means your internet service provider (ISP), advertisers, and even potential snoopers on public Wi-Fi can't see what you're doing online. We swap your real IP address for one of ours, making it incredibly difficult to track your digital footsteps back to you. We're serious about privacy, which is why we have a strict **no-logs policy**, we don't track, collect, or store any information about your online activities.
 
-Beyond basic encryption, OllaVPN goes further with features designed to keep you safe. Our **4-layer peer isolation** prevents any single compromised server from exposing your data, even if another user on the same server might be having a bad day. We also use **in-tunnel DNS**, so your DNS requests (which translate website names like ollavpn.com into IP addresses) are also encrypted and handled by us, preventing <a href="/blog/what-is-a-dns-leak/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">DNS leaks</a> that could reveal your browsing habits.
+Beyond basic encryption, OllaVPN goes further with features designed to keep you safe. Our **4-layer peer isolation** prevents any single compromised server from exposing your data, even if another user on the same server might be having a bad day. We also use **in-tunnel DNS**, so your DNS requests (which translate website names like ollavpn.com into IP addresses) are also encrypted and handled by us, preventing DNS leaks that could reveal your browsing habits.
 
 For those moments when your connection might drop unexpectedly, the built-in **kill switch** is always on by default, ensuring your real IP address never gets exposed. It automatically blocks all internet traffic if the VPN connection falters, keeping your privacy intact. Whether you're browsing, streaming, or using apps on your iPhone, OllaVPN is designed to keep your private life, well, private.
 
@@ -175,7 +175,7 @@ A list of recommendations is worth what the reader can verify. Each pick we made
 
 **Test 2, DNS in-tunnel.** Connect the VPN. Open <a href="/dns-lookup" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">our DNS lookup tool</a> and resolve a domain. The resolver IP returned should be an operator-controlled one, not 8.8.8.8 (Google), 1.1.1.1 (Cloudflare default), or your ISP's resolver. Disconnect, repeat, the diff is your evidence.
 
-**Test 3, WebRTC and <a href="/blog/what-is-an-ipv6-leak.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">IPv6 leak</a>.** Open <a href="/webrtc-leak-test" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">our WebRTC leak test</a>. The exit IP should be the only IP visible; your real IPv4 or IPv6 should not appear.
+**Test 3, WebRTC and IPv6 leak.** Open <a href="/webrtc-leak-test" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">our WebRTC leak test</a>. The exit IP should be the only IP visible; your real IPv4 or IPv6 should not appear.
 
 **Test 4, Kill switch.** Connect VPN, start a continuous ping in your terminal (`ping 1.1.1.1`), disable your network adapter. Pings should immediately fail and stay failed until the network comes back. If they continue, the kill switch has a leak window.
 

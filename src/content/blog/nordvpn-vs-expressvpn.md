@@ -9,7 +9,7 @@ tags: ['comparisons']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    NordLynx double-encryption and threat protection vs Lightway simplicity and router firmware polish. Which global flagship performs best in 2026. OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard encryption</a> with audited zero activity logging across all devices.
+    NordLynx double-encryption and threat protection vs Lightway simplicity and router firmware polish. Which global flagship performs best in 2026. OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard encryption</a> with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -114,7 +114,7 @@ Money-back guarantee
 
 Signature protocol
 
-NordLynx (<a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WireGuard</a>-based)
+NordLynx (WireGuard-based)
 
 Lightway (in-house, open source)
 
@@ -124,7 +124,7 @@ Closed source (independently audited)
 
 Closed source (Lightway protocol is open source)
 
-[<a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">Kill switch</a>](/blog/what-is-a-vpn-kill-switch/)
+<a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">Kill switch</a>
 
 Yes, on all platforms
 
@@ -136,7 +136,7 @@ RAM-only diskless
 
 RAM-only diskless (TrustedServer)
 
-[<a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">Post-quantum cryptography</a>](/blog/what-is-post-quantum-cryptography/)
+<a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">Post-quantum cryptography</a>
 
 Rolling out
 
@@ -253,7 +253,7 @@ We promised at the top of this guide that we'd spare you the cipher-suite wall, 
 
 Where the security posture differs in interesting ways:
 
-*   **NordVPN** has been audited multiple times by major firms including Deloitte and PwC, covering both the [<a href="/blog/which-free-vpn-does-not-keep-logs/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">no-logs policy</a>](/blog/what-logs-does-vpn-keep/) and the application code. After a 2018 server-configuration incident, publicly disclosed, addressed at the root, and followed by a structural move to **RAM-only diskless servers**, the company's response was widely regarded as a positive example of how a security company should handle bad news.
+*   **NordVPN** has been audited multiple times by major firms including Deloitte and PwC, covering both the <a href="/blog/what-logs-does-vpn-keep/" style="color: #DA291C; text-decoration: underline; font-weight: 500;"><a href="/blog/which-free-vpn-does-not-keep-logs/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">no-logs policy</a></a> and the application code. After a 2018 server-configuration incident, publicly disclosed, addressed at the root, and followed by a structural move to **RAM-only diskless servers**, the company's response was widely regarded as a positive example of how a security company should handle bad news.
 *   **ExpressVPN** calls its RAM-only infrastructure **TrustedServer** and was an early mover in the industry to this model. The **Lightway protocol's open-source codebase** means independent researchers can, and have, inspected it directly. ExpressVPN's no-logs policy has been audited multiple times, including by KPMG and PwC.
 
 One thing worth highlighting because it matters more than people realize: ExpressVPN's no-logs policy has been **tested under real-world legal pressure**. In a well-documented incident, Turkish authorities seized an ExpressVPN server as part of an investigation. The forensic analysis turned up no user logs because there were none to find. That's the kind of evidence that no marketing copy can replace, and it's why ExpressVPN's privacy reputation is what it is.
@@ -307,7 +307,7 @@ NordVPN
 
 ExpressVPN
 
-[Split tunneling](/blog/what-is-split-tunneling/)
+Split tunneling
 
 Yes
 
@@ -323,7 +323,7 @@ Threat Manager
 
 Obfuscation / stealth mode
 
-[Obfuscated Servers](/blog/what-is-vpn-obfuscation.html)
+Obfuscated Servers
 
 Built into Lightway
 

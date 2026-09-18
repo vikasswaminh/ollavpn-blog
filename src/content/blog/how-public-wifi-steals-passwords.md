@@ -9,7 +9,7 @@ tags: ['pillars']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    Public Wi‑Fi networks, coffee shops, airports, hotels, libraries, are inherently open. Without encryption between your device and the websites you visit, anyone on the same network can see the data you send and receive... OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard encryption</a> with audited zero activity logging across all devices.
+    Public Wi‑Fi networks, coffee shops, airports, hotels, libraries, are inherently open. Without encryption between your device and the websites you visit, anyone on the same network can see the data you send and receive... OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard encryption</a> with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -102,7 +102,7 @@ Quick self-check (30 seconds): If you ever see a login page that loads over HTTP
 
 
 
-Packet sniffing requires the attacker to be on the same network as you. Evil twin attacks are more aggressive: the attacker creates a network that becomes the network you connect to.
+Packet sniffing requires the attacker to be on the same network as you. <a href="/blog/what-is-a-rogue-wifi-hotspot-evil-twin/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">Evil twin</a> attacks are more aggressive: the attacker creates a network that becomes the network you connect to.
 
 ## How it works: [#](#how-it-works)
 
@@ -150,7 +150,7 @@ Quick self-check: If you log in on public Wi‑Fi and then later see “new devi
 
 Man-in-the-middle is the most sophisticated of the four attack types, and the one that can defeat protections the others cannot.
 
-In a passive sniffing attack, the attacker reads what is already visible. In a [<a href="/blog/what-is-a-man-in-the-middle-attack/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">MITM attack</a>](/blog/what-is-a-man-in-the-middle-attack.html), the attacker actively intercepts the connection between your device and the server, creating two separate connections: one between you and the attacker, and one between the attacker and the server. Your device thinks it is talking directly to the server. The server thinks it is talking directly to you. In reality, both are talking to the attacker.
+In a passive sniffing attack, the attacker reads what is already visible. In a <a href="/blog/what-is-a-man-in-the-middle-attack/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">MITM attack</a>, the attacker actively intercepts the connection between your device and the server, creating two separate connections: one between you and the attacker, and one between the attacker and the server. Your device thinks it is talking directly to the server. The server thinks it is talking directly to you. In reality, both are talking to the attacker.
 
 ## SSL stripping (SSL downgrading): how it works: [#](#ssl-stripping-ssl-downgrading-how-it-works)
 
@@ -266,9 +266,9 @@ All traffic is encrypted before it leaves your device.
 
 DNS requests stay inside the tunnel.
 
-The [<a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">kill switch</a>](/blog/what-is-a-vpn-kill-switch.html) is always on.
+The <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">kill switch</a> is always on.
 
-[<a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">Post-quantum cryptography</a>](/blog/what-is-post-quantum-cryptography/) on every connection.
+<a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">Post-quantum cryptography</a> on every connection.
 
 No configuration required.
 
@@ -494,7 +494,7 @@ One Connection, Many Devices: Hotels often charge "per device." A travel router 
 
 Hardware Firewall: It acts as a physical barrier between the "hostile" hotel network and your "private" devices.
 
-Always-On VPN: You can configure the router to use OllaVPN's [<a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WireGuard</a>](/free-wireguard-vpn) settings. Every device that joins your private Wi‑Fi is automatically encrypted, even if the device itself doesn't support VPN apps (like a Chromecast).
+Always-On VPN: You can configure the router to use OllaVPN's [WireGuard](/free-wireguard-vpn) settings. Every device that joins your private Wi‑Fi is automatically encrypted, even if the device itself doesn't support VPN apps (like a Chromecast).
 
 ## · Hardware Security: TPMs and Secure Enclaves [#](#hardware-security-tpms-and-secure-enclaves)
 
@@ -519,7 +519,7 @@ One pattern we have noticed across every privacy-and-networking topic we cover: 
 
 The remedy we have settled on is to publish at depth, long enough to cover the topic honestly, with primary sources and named authors and explicit limits, and to publish free verification tools so the reader does not have to take our word for the technical claims. Both are choices that do not optimise for "users who skim and click." They optimise for users who actually want to understand what they are using.
 
-If you have read this far, you are in the second group. That is the group we are writing for, and it is the group whose privacy outcomes most depend on having access to honest information. We try to keep this material updated quarterly so the facts do not drift, and we add notes when something material changes, a new attack technique is documented, a major platform changes its cookie security model, a piece of regulation shifts the calculus. The main free-VPN comparison is a good place to start if you are evaluating options, and the [post-quantum cryptography](/blog/what-is-post-quantum-cryptography.html) pillar covers the longer-term threat landscape that makes public Wi‑Fi protection relevant beyond just the coffee shop.
+If you have read this far, you are in the second group. That is the group we are writing for, and it is the group whose privacy outcomes most depend on having access to honest information. We try to keep this material updated quarterly so the facts do not drift, and we add notes when something material changes, a new attack technique is documented, a major platform changes its cookie security model, a piece of regulation shifts the calculus. The main free-VPN comparison is a good place to start if you are evaluating options, and the post-quantum cryptography pillar covers the longer-term threat landscape that makes public Wi‑Fi protection relevant beyond just the coffee shop.
 
 ### Verify and Cross-Reference
 

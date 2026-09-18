@@ -12,13 +12,13 @@ pillar: false
 <section id="tldr" class="article-tldr-box">
 <h3 style="font-size: 1.15rem; font-weight: 800; color: #323652; margin: 0 0 6px 0; font-family: var(--font), 'Lato', sans-serif;">TL;DR</h3>
 <p style="font-size: 1.05rem; line-height: 1.7; color: #09090b; margin: 0 0 8px 0; font-family: var(--font), 'Lato', sans-serif;">
-A <a href="/blog/what-is-a-vpn-kill-switch.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">VPN kill switch</a> is a safety feature that instantly cuts your internet access the moment your VPN connection drops, so your real IP address and unencrypted data don't leak out to the open internet, even for a second.
+A <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">VPN kill switch</a> is a safety feature that instantly cuts your internet access the moment your VPN connection drops, so your real IP address and unencrypted data don't leak out to the open internet, even for a second.
 </p>
 <p style="font-size: 1.05rem; line-height: 1.7; color: #09090b; margin: 0 0 8px 0; font-family: var(--font), 'Lato', sans-serif;">
-It works by continuously monitoring your <a href="/blog/what-is-a-vpn-tunnel.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">VPN tunnel</a>. The instant it detects the tunnel has failed (a dead server, a Wi-Fi drop, a sleep/wake cycle, a network switch), it blocks all traffic at the firewall level until the tunnel is back up, or until you manually turn the VPN off. During that block, nothing "gets through" via your normal, unprotected connection.
+It works by continuously monitoring your <a href="/blog/what-is-a-vpn-tunnel/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">VPN tunnel</a>. The instant it detects the tunnel has failed (a dead server, a Wi-Fi drop, a sleep/wake cycle, a network switch), it blocks all traffic at the firewall level until the tunnel is back up, or until you manually turn the VPN off. During that block, nothing "gets through" via your normal, unprotected connection.
 </p>
 <p style="font-size: 1.05rem; line-height: 1.7; color: #09090b; margin: 0 0 8px 0; font-family: var(--font), 'Lato', sans-serif;">
-If you use <a href="/blog/how-public-wifi-steals-passwords.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">public Wi-Fi</a>, handle anything sensitive online, live somewhere with strict internet monitoring, or simply don't want your ISP logging your activity during the seconds a VPN connection wobbles, a kill switch isn't optional. It's the feature that makes the rest of the VPN's promises actually hold up in real life.
+If you use <a href="/blog/how-public-wifi-steals-passwords/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">public Wi-Fi</a>, handle anything sensitive online, live somewhere with strict internet monitoring, or simply don't want your ISP logging your activity during the seconds a VPN connection wobbles, a kill switch isn't optional. It's the feature that makes the rest of the VPN's promises actually hold up in real life.
 </p>
 </section>
 
@@ -64,7 +64,7 @@ If you use <a href="/blog/how-public-wifi-steals-passwords.html" class="tldr-hig
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A VPN <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">kill switch</a> is a security feature built into the VPN app that automatically cuts your internet connection the moment it detects your VPN tunnel has failed, so your real IP address, location, and unencrypted traffic don't get exposed.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A VPN kill switch is a security feature built into the VPN app that automatically cuts your internet connection the moment it detects your VPN tunnel has failed, so your real IP address, location, and unencrypted traffic don't get exposed.</p>
 </div>
 
 Here's the simplest way to picture it.
@@ -119,7 +119,7 @@ ISP-level instability. Home and mobile connections can drop briefly more often t
 
 Server-side issues. VPN servers restart for maintenance, hit capacity limits, or occasionally crash. From your device's perspective, that looks identical to a network problem.
 
-Protocol-specific quirks. Some protocols handle short interruptions better than others. [<a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WireGuard</a>](/blog/wireguard-vs-openvpn.html), for example, is designed to re-establish quickly after short gaps, while older protocols may take longer to notice and recover.
+Protocol-specific quirks. Some protocols handle short interruptions better than others. <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard</a>, for example, is designed to re-establish quickly after short gaps, while older protocols may take longer to notice and recover.
 
 None of this is exotic. It's the normal texture of using the internet on real-world networks. Treating a kill switch as an "edge case" is a mistake, because the edge case it protects against happens to most VPN users fairly regularly, you just don't notice it when nothing sensitive is in transit, or when the kill switch quietly catches it.
 
@@ -179,9 +179,9 @@ There's also a quieter, cumulative risk. Even a two-second gap, repeated occasio
 
 DNS leaks happen when your device sends DNS lookup requests, the "translate this website name into an IP address" requests that happen before almost every connection, outside the VPN tunnel. This can happen due to misconfigured settings or an app that hardcodes a specific DNS server. The result: your ISP can see which sites you're visiting, even if your browsing traffic itself looks encrypted. A kill switch that blocks all non-VPN traffic (including DNS) can close this gap, but one that only monitors the main data connection can miss it. That's why some VPNs route DNS through an in-tunnel resolver instead of relying on OS defaults.
 
-[IPv6 leaks](/blog/what-is-an-ipv6-leak.html) are a similar issue. Many VPNs were built primarily around IPv4 tunneling. If your device has IPv6 connectivity active, traffic can sometimes route over IPv6 outside the tunnel, meaning a kill switch that only watches the IPv4 path won't catch it. Good implementations either tunnel IPv6 too or disable it system-wide while connected.
+<a href="/blog/what-is-an-ipv6-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">IPv6 leaks</a> are a similar issue. Many VPNs were built primarily around IPv4 tunneling. If your device has IPv6 connectivity active, traffic can sometimes route over IPv6 outside the tunnel, meaning a kill switch that only watches the IPv4 path won't catch it. Good implementations either tunnel IPv6 too or disable it system-wide while connected.
 
-[WebRTC leaks](/blog/what-is-a-webrtc-leak.html) happen inside the browser, not at the network layer. WebRTC can reveal a device's real local and public IP addresses directly to a website through browser APIs that don't always respect system-wide VPN routing. A network-level kill switch generally won't stop this, because the leak happens at the browser level. It usually needs a browser setting or extension fix.
+WebRTC leaks happen inside the browser, not at the network layer. WebRTC can reveal a device's real local and public IP addresses directly to a website through browser APIs that don't always respect system-wide VPN routing. A network-level kill switch generally won't stop this, because the leak happens at the browser level. It usually needs a browser setting or extension fix.
 
 The takeaway: a kill switch is the right tool for connection-drop leaks specifically. It's one critical layer among several. A genuinely leak-resistant setup needs DNS handled inside the tunnel, IPv6 addressed explicitly, and WebRTC managed separately in the browser.
 
@@ -194,7 +194,7 @@ The takeaway: a kill switch is the right tool for connection-drop leaks specific
 
 High stakes: definitely check. Banking, taxes, or financial transactions over an unfamiliar network. Logging into work systems remotely, especially with sensitive company data. Traveling or communicating in regions with heavy internet surveillance or restrictive content laws. Journalism, activism, or any work where a leaked real IP address could put a source, or your safety, at risk. Using public Wi-Fi for anything beyond casual browsing.
 
-Moderate stakes: worth having on, less catastrophic if something slips. General private browsing where you'd rather your ISP not build a profile of your activity. Streaming geo-restricted content, where a dropped VPN mostly means the stream stops or throws a region error, annoying, not dangerous, though your ISP may briefly see what you tried to access. Torrenting or file-sharing, where a leak could [expose your IP](/blog/what-happens-when-someone-knows-your-ip-address.html) to other peers in a swarm, with consequences that depend on what's being shared and where you are.
+Moderate stakes: worth having on, less catastrophic if something slips. General private browsing where you'd rather your ISP not build a profile of your activity. Streaming geo-restricted content, where a dropped VPN mostly means the stream stops or throws a region error, annoying, not dangerous, though your ISP may briefly see what you tried to access. Torrenting or file-sharing, where a leak could expose your IP to other peers in a swarm, with consequences that depend on what's being shared and where you are.
 
 Lower stakes, but the kill switch is still quietly working. Casual browsing on your trusted home network, where a VPN drop is less likely and the practical risk of a brief unprotected moment is smaller. Even here, though, there's no real downside to leaving the kill switch on. It costs you nothing when the VPN is healthy, and it's there when you actually need it.
 
@@ -219,7 +219,7 @@ Step 5: Watch what happens. With a working kill switch, internet access should d
 
 Step 6: Recheck your IP the moment things start working again. Reload the IP page immediately as connectivity returns. If it briefly shows your real IP before the VPN fully reconnects, that's a leak, even if it corrects itself a second later.
 
-Step 7: Repeat with a [DNS leak](/blog/what-is-a-dns-leak.html) test. Run a dedicated DNS leak test during the same forced-disconnect process. If ISP-owned DNS servers show up at any point, DNS traffic is escaping the tunnel.
+Step 7: Repeat with a DNS leak test. Run a dedicated DNS leak test during the same forced-disconnect process. If ISP-owned DNS servers show up at any point, DNS traffic is escaping the tunnel.
 
 Run these tests a couple times on both Wi-Fi and mobile data if you use it. Behavior can differ. If it holds up cleanly, you can trust it. If not, you've learned something important before it cost you anything.
 

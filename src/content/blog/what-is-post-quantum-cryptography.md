@@ -9,7 +9,7 @@ tags: ['protocol-tech']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    Post-quantum cryptography (PQC) is a new family of encryption algorithms designed to remain secure even when powerful quantum computers eventually exist. Todays encryption protects most of the internet, but its based o... OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard encryption</a> with audited zero activity logging across all devices.
+    Post-quantum cryptography (PQC) is a new family of encryption algorithms designed to remain secure even when powerful quantum computers eventually exist. Todays encryption protects most of the internet, but its based o... OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard encryption</a> with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -64,7 +64,7 @@ The plain-English guide to one of the most important, and most misunderstood, sh
 
 Here is a fact that surprises most people the first time they hear it: **almost all sensitive traffic on the internet today is protected by a small number of cryptographic algorithms designed in the 1970s**. RSA. Diffie-Hellman. Elliptic-curve variants of those. They have been adjusted, hardened, and re-implemented many times, but the underlying mathematics is from another era of computing.
 
-Those algorithms have aged remarkably well. For half a century, they have resisted every serious attack that classical computers have thrown at them. The encryption that protects your bank login, your medical records, your encrypted messages, and your [VPN tunnel](/blog/what-is-a-vpn-tunnel.html) rests on a small set of math problems that classical computers simply cannot solve in any reasonable amount of time.
+Those algorithms have aged remarkably well. For half a century, they have resisted every serious attack that classical computers have thrown at them. The encryption that protects your bank login, your medical records, your encrypted messages, and your <a href="/blog/what-is-a-vpn-tunnel/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">VPN tunnel</a> rests on a small set of math problems that classical computers simply cannot solve in any reasonable amount of time.
 
 The thing that changes the picture is **quantum computing**. A quantum computer is not just a faster classical computer; it is a fundamentally different kind of machine that can solve certain problems exponentially faster than any classical computer ever could. And as it turns out, several of those problems are _exactly_ the ones that today's most common encryption algorithms rely on for their security.
 
@@ -212,7 +212,7 @@ One of the smartest moves the industry made early in the post-quantum rollout wa
 
 The logic is simple. Post-quantum algorithms are new, and new algorithms occasionally turn out to have flaws that aren't visible until years of public scrutiny. We don't want to bet the entire internet on math that hasn't yet had decades of attempts to break it. So during the transition years, roughly 2023 through the early 2030s, most deployments combine the old and the new.
 
-You'll see hybrids written like `X25519Kyber768` (a classical X25519 key exchange combined with the post-quantum Kyber-768). Google Chrome uses exactly this hybrid in TLS. Cloudflare supports it. Signal's PQXDH does the same conceptual thing for messaging. Mullvad's quantum-resistant <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WireGuard</a> tunnels combine Classic McEliece with the classical WireGuard handshake.
+You'll see hybrids written like `X25519Kyber768` (a classical X25519 key exchange combined with the post-quantum Kyber-768). Google Chrome uses exactly this hybrid in TLS. Cloudflare supports it. Signal's PQXDH does the same conceptual thing for messaging. Mullvad's quantum-resistant WireGuard tunnels combine Classic McEliece with the classical WireGuard handshake.
 
 The cost of hybrids is small: a few extra kilobytes of data on the initial handshake and a few extra milliseconds of computation. The benefit is large: belt-and-suspenders protection during a period when nobody wants to commit fully to either side alone.
 
@@ -324,7 +324,7 @@ It does not. Post-quantum cryptography runs on ordinary computers. Your phone ca
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Look for: an explicit PQC capability described on the VPN's site, a hybrid mode that combines classical and post-quantum algorithms, no requirement that you manually enable it, no additional charge for it, and continued availability of standard features like the <a href="/blog/what-is-a-vpn-kill-switch/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">kill switch</a>.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Look for: an explicit PQC capability described on the VPN's site, a hybrid mode that combines classical and post-quantum algorithms, no requirement that you manually enable it, no additional charge for it, and continued availability of standard features like the <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">kill switch</a>.</p>
 </div>
 
 
@@ -337,7 +337,7 @@ Not every "post-quantum" claim is the same. Here's what actually matters when ev
 *   **Hybrid mode** combining a classical and post-quantum algorithm, not a pure post-quantum-only mode (which is more aggressive than the industry consensus recommends today).
 *   **Available on every connection by default**, ideally without the user needing to flip any toggle. If PQC is buried in an advanced settings menu, most users won't ever benefit.
 *   **No additional charge** for PQC. Privacy upgrades should not be paywalled.
-*   **Continued availability of standard features**, kill switch, [<a href="/blog/what-is-a-dns-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">DNS leak</a>](/blog/what-is-a-dns-leak/) protection, IPv6 handling, while PQC is enabled.
+*   **Continued availability of standard features**, kill switch, <a href="/blog/what-is-a-dns-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">DNS leak</a> protection, IPv6 handling, while PQC is enabled.
 *   **An ongoing commitment to the standards**. As NIST finalizes additional algorithms in coming years, the VPN's PQC mode should evolve to incorporate them.
 
 If a VPN claims post-quantum support but the details are missing, vague, or paywalled, treat the claim with friendly skepticism.

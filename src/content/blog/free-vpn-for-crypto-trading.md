@@ -12,13 +12,13 @@ pillar: false
 <section id="tldr" class="article-tldr-box">
 <h3 style="font-size: 1.03rem; font-weight: 800; color: #323652; margin: 0 0 6px 0; font-family: 'Lato', sans-serif;">TL;DR</h3>
 <p style="font-size: 0.925rem; line-height: 1.7; color: #09090b; margin: 0 0 8px 0; font-family: 'Lato', sans-serif;">
-A VPN encrypts the connection between your device and the exchange or wallet interface you're using, and hides your IP address from anyone watching that connection. That's genuinely useful protection against network-level attacks like traffic interception on <a href="/blog/how-public-wifi-steals-passwords/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">public Wi-Fi</a>, and against your ISP or a local network operator seeing exactly which exchange you're logging into and when.
+A VPN encrypts the connection between your device and the exchange or wallet interface you're using, and hides your IP address from anyone watching that connection. That's genuinely useful protection against network-level attacks like traffic interception on <a href="/blog/how-public-wifi-steals-passwords/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">public Wi-Fi</a>, and against your ISP or a local network operator seeing exactly which exchange you're logging into and when.
 </p>
 <p style="font-size: 0.925rem; line-height: 1.7; color: #09090b; margin: 0 0 8px 0; font-family: 'Lato', sans-serif;">
 What a VPN does not do is protect your seed phrase, your private keys, your exchange account password, or you personally from a convincing phishing site. Those risks live outside the network layer, and no amount of encryption on your connection changes that.
 </p>
 <p style="font-size: 0.925rem; line-height: 1.7; color: #09090b; margin: 0 0 8px 0; font-family: 'Lato', sans-serif;">
-OllaVPN Free gives you the network-layer part done properly: 10 Mbps, every country in our network, post-quantum-ready encryption, a <a href="/blog/what-is-a-vpn-kill-switch/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">kill switch</a> on by default, in-tunnel DNS, and a <a href="/blog/what-logs-does-vpn-keep/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">strict no-logs policy</a>, no credit card, no email required. If you're trading or checking a portfolio from a cafe, an airport, or any network you don't fully control, that's a real, meaningful layer of protection. This guide also walks through the other layers that matter, and why.
+OllaVPN Free gives you the network-layer part done properly: 10 Mbps, every country in our network, post-quantum-ready encryption, a <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">kill switch</a> on by default, in-tunnel DNS, and a <a href="/blog/what-logs-does-vpn-keep/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">strict no-logs policy</a>, no credit card, no email required. If you're trading or checking a portfolio from a cafe, an airport, or any network you don't fully control, that's a real, meaningful layer of protection. This guide also walks through the other layers that matter, and why.
 </p>
 </section>
 
@@ -52,7 +52,7 @@ OllaVPN Free gives you the network-layer part done properly: 10 Mbps, every coun
 <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
       <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">What does OllaVPN Free specifically give crypto traders?:</strong> OllaVPN Free gives you 10 Mbps speeds, access to every country in our network, the <a href="/blog/wireguard-vs-openvpn/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard protocol</a>, post-quantum-ready encryption, a kill switch on by default, in-tunnel DNS handling, and four-layer peer isolation, with no credit card, no email, and no ads required.
+        <strong style="color: #0F172A; font-weight: 800;">What does OllaVPN Free specifically give crypto traders?:</strong> OllaVPN Free gives you 10 Mbps speeds, access to every country in our network, the <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard protocol</a>, post-quantum-ready encryption, a kill switch on by default, in-tunnel DNS handling, and four-layer peer isolation, with no credit card, no email, and no ads required.
       </div>
     </li>
 <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
@@ -90,7 +90,7 @@ Why this matters more for crypto than for a lot of other browsing is simple: kno
 
 Man-in-the-middle interception is the most direct threat on shared or public networks. In some situations, an attacker on the same coffee-shop or airport Wi-Fi can intercept traffic between your device and the exchange's servers. That can expose session details or create openings for more advanced attacks. A VPN's encryption closes this gap by scrambling your traffic before it reaches the shared network hardware.
 
-DNS hijacking is the nastier cousin worth naming directly. If an attacker compromises a network's DNS settings, or tricks your device into using a malicious DNS server, they can redirect requests for a legitimate exchange's website toward a convincing fake one. The address bar might not look obviously wrong. A VPN with <a href="/blog/what-is-a-dns-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">in-tunnel DNS</a> handling routes lookups through its own resolver inside the [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html), which blocks this redirection vector.
+DNS hijacking is the nastier cousin worth naming directly. If an attacker compromises a network's DNS settings, or tricks your device into using a malicious DNS server, they can redirect requests for a legitimate exchange's website toward a convincing fake one. The address bar might not look obviously wrong. A VPN with <a href="/blog/what-is-a-dns-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">in-tunnel DNS</a> handling routes lookups through its own resolver inside the encrypted tunnel, which blocks this redirection vector.
 
 Traffic analysis and pattern identification is the subtler threat. Even if someone can't read your traffic's contents, they can sometimes infer that a device regularly connects to known crypto exchange IP ranges. That can help profile and target you. Masking your IP address removes this signal from view for anyone watching the local network or your ISP.
 
@@ -224,7 +224,7 @@ Typing a seed phrase into any website, ever, VPN or not. No legitimate wallet re
 
 Connecting to a distant VPN server without understanding exchange verification consequences. This can trigger identity verification or temporary holds. It's worth understanding before you discover it mid-trade.
 
-Assuming every free VPN handles DNS properly. If a VPN doesn't route DNS lookups through its own in-tunnel resolver, DNS hijacking remains possible even while the rest of the connection looks encrypted. It's worth testing with a [DNS leak](/blog/what-is-a-dns-leak/) test.
+Assuming every free VPN handles DNS properly. If a VPN doesn't route DNS lookups through its own in-tunnel resolver, DNS hijacking remains possible even while the rest of the connection looks encrypted. It's worth testing with a DNS leak test.
 
 Ignoring two-factor authentication because "the VPN protects me." Two-factor authentication protects your exchange account from unauthorized login even if your password is compromised. It's a different layer, and it should never be skipped.
 
@@ -283,7 +283,7 @@ Look for an independent audit. Reputable providers periodically commission secur
 
 Test what you can from your own device. You can't directly verify "we don't log your activity," but you can verify related technical claims: whether your DNS requests route through the provider's resolver rather than leaking to your network, and whether your real IP is exposed anywhere.
 
-A DNS leak test or [WebRTC leak](/blog/what-is-a-webrtc-leak.html) test, run before and after connecting, shows the difference directly.
+A DNS leak test or WebRTC leak test, run before and after connecting, shows the difference directly.
 
 We publish our own policy specifics rather than vague reassurance. We'd encourage applying the same checklist to us, and to competitors, especially
 
@@ -320,7 +320,7 @@ Verify the technical claim from your own device. Our DNS lookup, WebRTC leak tes
 
 Cross-reference at least one third-party source. We're an operator with a commercial interest in the conclusion. Your exchange's security documentation,the Privacy Guides project, and established hardware wallet manufacturers' security guidance are reputable independent sources worth reading alongside this guide.
 
-Read the primary sources where they exist. NIST's [post-quantum cryptography](/blog/what-is-post-quantum-cryptography.html) publications and your exchange's terms of service are primary sources.
+Read the primary sources where they exist. NIST's post-quantum cryptography publications and your exchange's terms of service are primary sources.
 
 Vendor marketing pages and most comparison articles are derivatives.
 

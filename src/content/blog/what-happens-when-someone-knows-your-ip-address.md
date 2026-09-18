@@ -9,7 +9,7 @@ tags: ['pillars']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    The full, plain-English guide to what someone can actually do with your IP address, location tracking, DDoS attacks, targeted hacking, identity fraud, and how to protect yourself. OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard encryption</a> with audited zero activity logging across all devices.
+    The full, plain-English guide to what someone can actually do with your IP address, location tracking, DDoS attacks, targeted hacking, identity fraud, and how to protect yourself. OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard encryption</a> with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -259,7 +259,7 @@ IP addresses can also be spoofed in some contexts, meaning forged to appear as i
 
 ## ISP complaints and service blocks
 
-If someone files a copyright infringement complaint naming your IP address, or if your IP is flagged for abuse (including through a wrongful report), your ISP may <a href="/blog/vpn-for-avoiding-isp-throttling.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">throttle your connection</a>, issue warnings, or terminate service after repeated incidents. This is a real and underappreciated risk, especially for IPs in shared or dynamically assigned environments.
+If someone files a copyright infringement complaint naming your IP address, or if your IP is flagged for abuse (including through a wrongful report), your ISP may <a href="/blog/vpn-for-avoiding-isp-throttling/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">throttle your connection</a>, issue warnings, or terminate service after repeated incidents. This is a real and underappreciated risk, especially for IPs in shared or dynamically assigned environments.
 
 This risk sits at the intersection of IP exposure and bureaucratic systems.
 
@@ -323,7 +323,7 @@ It’s worth stating clearly what your IP address does not expose, because fear 
 
 They cannot read your messages or intercept your traffic.
 
-Knowing your IP address is not the same as being on your network. Traffic sent through your connection is encrypted in transit by HTTPS, <a href="/blog/what-is-end-to-end-encryption/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">end-to-end encryption</a>, and VPN tunnels. Knowing where traffic goes doesn’t let someone read it.
+Knowing your IP address is not the same as being on your network. Traffic sent through your connection is encrypted in transit by HTTPS, <a href="/blog/what-is-end-to-end-encryption/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">end-to-end encryption</a>, and VPN tunnels. Knowing where traffic goes doesn’t let someone read it.
 
 They cannot directly hack your device.
 
@@ -363,21 +363,21 @@ DDoS attacks, doxxing, stalking, and phishing don’t select only “guilty” p
 
 Myth 5: “A VPN makes my IP impossible to find.”
 
-A VPN hides your real IP from sites, services, and other users by replacing it with the VPN server’s IP. But if the VPN provider logs connections and is compelled by a court order to reveal them, your real IP can be recovered. A <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs</a> VPN makes this point less relevant; understanding what “no logs” actually means for your chosen provider still matters.
+A VPN hides your real IP from sites, services, and other users by replacing it with the VPN server’s IP. But if the VPN provider logs connections and is compelled by a court order to reveal them, your real IP can be recovered. A <a href="/blog/which-free-vpn-does-not-keep-logs/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">no-logs</a> VPN makes this point less relevant; understanding what “no logs” actually means for your chosen provider still matters.
 
 ## How to protect your IP address
 
 Use a trustworthy VPN
 
-This is the single most effective step. A VPN routes your traffic through an <a href="/blog/what-is-a-vpn-tunnel.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">encrypted tunnel</a> to a server in a location you choose. Every site you visit, every game you play, and every service you connect to sees the VPN server’s IP, not yours. DDoS attacks aimed at “your IP” hit the VPN server. Geolocation of your IP points to the VPN server’s location, not your home.
+This is the single most effective step. A VPN routes your traffic through an <a href="/blog/what-is-a-vpn-tunnel/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">encrypted tunnel</a> to a server in a location you choose. Every site you visit, every game you play, and every service you connect to sees the VPN server’s IP, not yours. DDoS attacks aimed at “your IP” hit the VPN server. Geolocation of your IP points to the VPN server’s location, not your home.
 
 What matters when choosing:
 
-Genuine <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs policy</a> (independently audited, not just claimed)
+Genuine no-logs policy (independently audited, not just claimed)
 
 Jurisdiction outside aggressive data-retention regimes
 
-<a href="/blog/what-is-a-vpn-kill-switch/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">Kill switch</a> that prevents traffic from flowing if the VPN connection drops
+Kill switch that prevents traffic from flowing if the VPN connection drops
 
 DNS handled inside the encrypted tunnel
 
@@ -421,13 +421,13 @@ We built OllaVPN to answer one question: what should a privacy-first VPN do auto
 
 Your real IP is replaced from the first packet. Every connection, web, app, game, streaming, goes through the encrypted tunnel before it reaches the open internet. Your home IP is never exposed to the destination.
 
-<a href="/blog/what-is-post-quantum-cryptography/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">Post-quantum cryptography</a>, built in. The tunnel uses a hybrid classical + ML-KEM-768 handshake designed to stay secure against future quantum computers. It’s not a paid upgrade. It’s on by default, including on the free plan.
+Post-quantum cryptography, built in. The tunnel uses a hybrid classical + ML-KEM-768 handshake designed to stay secure against future quantum computers. It’s not a paid upgrade. It’s on by default, including on the free plan.
 
 An always-on kill switch that cannot be disabled. If the VPN connection drops, your traffic stops. It doesn’t “fall back” to your real IP.
 
 DNS handled inside the encrypted tunnel. Your DNS queries, the requests that reveal which websites you’re visiting, go through the tunnel to our in-tunnel resolver. They never touch your ISP’s DNS servers.
 
-Genuine <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs policy</a>. We don’t log which sites you visit, when you connect, or what you do. There’s nothing to hand over.
+Genuine no-logs policy. We don’t log which sites you visit, when you connect, or what you do. There’s nothing to hand over.
 
 Available on the lifetime free plan. Privacy isn’t a premium feature.
 

@@ -72,7 +72,7 @@ But here's the part that some providers gloss over: your ISP's world isn't perfe
 
 The practical test is simple: check your ping to a game server without a VPN, then check it again with a VPN exit close to that server. If the VPN number is lower, your ISP routing was the problem. If it's higher, it wasn't, and you're adding overhead for no ping benefit. The access and security benefits may still make it worth running.
 
-When a free VPN for gaming helps vs hurts ping, flat infographic showing [<a href="/blog/vpn-for-avoiding-isp-throttling/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">ISP throttling</a>](/blog/vpn-for-avoiding-isp-throttling/) on the left as the case for VPN, and already-optimal routing on the right as the case against
+When a free VPN for gaming helps vs hurts ping, flat infographic showing <a href="/blog/vpn-for-avoiding-isp-throttling/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">ISP throttling</a> on the left as the case for VPN, and already-optimal routing on the right as the case against
 
 ## What's really causing your lag
 
@@ -130,7 +130,7 @@ How VPN routing affects gaming ping, a flat flow diagram showing a squiggly ISP 
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The five things that actually matter for gaming: <a href="/blog/wireguard-vs-openvpn/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard protocol</a>, unlimited bandwidth (no data cap), servers close to your game's regional servers, <a href="/peer-isolation" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">peer isolation</a> so you're not on a shared IP with people who'll get you flagged, and a genuine <a href="/blog/what-logs-does-vpn-keep/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs policy</a>. Everything else is secondary.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The five things that actually matter for gaming: <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard protocol</a>, unlimited bandwidth (no data cap), servers close to your game's regional servers, <a href="/peer-isolation" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">peer isolation</a> so you're not on a shared IP with people who'll get you flagged, and a genuine <a href="/blog/what-logs-does-vpn-keep/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">no-logs policy</a>. Everything else is secondary.</p>
 </div>
 
 
@@ -145,7 +145,7 @@ Servers close to your game's servers, this is the one most people overlook. Game
 
 Peer isolation, when you share a VPN exit IP with other users (which shared infrastructure does), those other users are technically on the same network segment at the exit point. Without isolation, a malicious user on the same exit could probe your device. In gaming contexts, other users on the same exit could also target you with DDoS attacks if they can identify your shared IP. OllaVPN's [peer isolation](/peer-isolation) prevents this at multiple layers, with automated end-to-end testing to verify it.
 
-A [<a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">kill switch</a>](/blog/what-is-a-vpn-kill-switch.html), if the VPN connection drops, a [kill switch](/blog/what-is-a-vpn-kill-switch.html) prevents your real IP from being exposed. For gaming, this matters less than it does for general privacy use, a brief IP leak during a Valorant match isn't the end of the world. But in games where other players can see your IP (older games, P2P matchmaking architectures), a kill switch protects you from targeted attacks.
+A <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">kill switch</a>, if the VPN connection drops, a kill switch prevents your real IP from being exposed. For gaming, this matters less than it does for general privacy use, a brief IP leak during a Valorant match isn't the end of the world. But in games where other players can see your IP (older games, P2P matchmaking architectures), a kill switch protects you from targeted attacks.
 
 A real no-logs policy, many free VPNs are free because they log your browsing data and sell it. This defeats the purpose. Look for an explicit, specific no-logs policy: no sites visited, no traffic patterns, no session metadata. Vague "privacy-friendly" claims aren't a substitute for a written commitment.
 
@@ -159,7 +159,7 @@ Servers in the same region as your game's servers
 
 Peer isolation at the exit node
 
-[Kill switch](/blog/what-is-a-vpn-kill-switch/) on by default
+Kill switch on by default
 
 Explicit no-logs policy with specifics
 
@@ -320,7 +320,7 @@ DDoS protection in competitive or streaming contexts, in competitive gaming (esp
 
 Regional game pricing, game prices on platforms like Steam vary by region. Connecting through a VPN exit in a lower-cost region sometimes allows purchases at local prices. This is a gray area that varies by platform's terms of service, so we're flagging it as an observed use case rather than a recommendation.
 
-Playing on [public Wi-Fi](/blog/how-public-wifi-steals-passwords/) without exposing your connection, gaming from a hotel, airport, or café Wi-Fi puts your traffic on a network with strangers. A VPN encrypts that traffic end-to-end, preventing anyone on the same network from intercepting or monitoring it. The WireGuard-class encryption in OllaVPN, combined with their [post-quantum](/pqc) key exchange, makes this a meaningful protection even on adversarial networks.
+Playing on public Wi-Fi without exposing your connection, gaming from a hotel, airport, or café Wi-Fi puts your traffic on a network with strangers. A VPN encrypts that traffic end-to-end, preventing anyone on the same network from intercepting or monitoring it. The WireGuard-class encryption in OllaVPN, combined with their [post-quantum](/pqc) key exchange, makes this a meaningful protection even on adversarial networks.
 
 ## How to set up your gaming VPN
 
@@ -429,7 +429,7 @@ The Pro plan, starting at $2.99/month on a 24-month commitment, adds five simult
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      All domain lookups travel securely encapsulated inside the <a href="/blog/what-is-a-vpn-tunnel.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">encrypted tunnel</a> directly to zero-log DNS resolvers, guaranteeing your ISP and network operators observe only opaque UDP packets.
+      All domain lookups travel securely encapsulated inside the <a href="/blog/what-is-a-vpn-tunnel/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">encrypted tunnel</a> directly to zero-log DNS resolvers, guaranteeing your ISP and network operators observe only opaque UDP packets.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">

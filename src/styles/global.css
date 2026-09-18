@@ -6116,3 +6116,18 @@ section#cta-download,
 .cta-download-box {
   display: none !important;
 }
+
+/* Contextual Internal Article Links */
+.blog-main-content-box a:not(.cta-banner-btn):not(.topic-cluster-card):not(.nav-item),
+.prose a:not(.cta-banner-btn):not(.topic-cluster-card):not(.nav-item) {
+  color: #DA291C !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px !important;
+  font-weight: 600 !important;
+  transition: color 0.15s ease, opacity 0.15s ease;
+}
+.blog-main-content-box a:not(.cta-banner-btn):not(.topic-cluster-card):not(.nav-item):hover,
+.prose a:not(.cta-banner-btn):not(.topic-cluster-card):not(.nav-item):hover {
+  color: #b91c1c !important;
+  opacity: 0.85;
+}

@@ -18,10 +18,10 @@ Torrenting is peer-to-peer, which means your IP address is visible to every peer
 Whether torrenting is legal depends on what you're downloading and where you live, not on whether you're using a VPN. A VPN doesn't make an illegal download legal, and it doesn't make a legal one illegal. What it does do is remove your home IP address from the swarm, which matters for privacy because IP addresses tied to torrent swarms get logged, scraped, and (in some jurisdictions) matched to ISP subscriber records for automated notices.
 </p>
 <p style="font-size: 0.925rem; line-height: 1.72; color: #09090b; margin: 0 0 8px 0; font-family: 'Lato', sans-serif;">
-For a VPN to actually work for this use case, it needs: a <a href="/blog/what-is-a-vpn-kill-switch/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">kill switch</a> on by default (so a dropped connection doesn't dump your real IP into an open swarm mid-transfer), no traffic logs, a policy that doesn't quietly block P2P traffic on the free tier, and a fast enough connection that seeding doesn't crawl. OllaVPN Free gives you all of that, kill switch on by default, <a href="/blog/what-logs-does-vpn-keep/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">strict no-logs policy</a>, P2P allowed on every server, and a 10 Mbps cap that's unlimited on data, funded by our Plus subscribers rather than by throttling free users into uselessness or selling their activity.
+For a VPN to actually work for this use case, it needs: a <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">kill switch</a> on by default (so a dropped connection doesn't dump your real IP into an open swarm mid-transfer), no traffic logs, a policy that doesn't quietly block P2P traffic on the free tier, and a fast enough connection that seeding doesn't crawl. OllaVPN Free gives you all of that, kill switch on by default, <a href="/blog/what-logs-does-vpn-keep/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">strict no-logs policy</a>, P2P allowed on every server, and a 10 Mbps cap that's unlimited on data, funded by our Plus subscribers rather than by throttling free users into uselessness or selling their activity.
 </p>
 <p style="font-size: 0.925rem; line-height: 1.72; color: #09090b; margin: 0 0 8px 0; font-family: 'Lato', sans-serif;">
-We'll also walk through the setup mistakes that defeat a VPN's protection, port forwarding through your ISP's router instead of the VPN, <a href="/blog/what-is-a-dns-leak/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">DNS leaks</a> that expose your resolver even while your traffic is tunneled, and split-tunneling misconfigurations that route your torrent client outside the tunnel entirely.
+We'll also walk through the setup mistakes that defeat a VPN's protection, port forwarding through your ISP's router instead of the VPN, <a href="/blog/what-is-a-dns-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">DNS leaks</a> that expose your resolver even while your traffic is tunneled, and split-tunneling misconfigurations that route your torrent client outside the tunnel entirely.
 </p>
 </section>
 
@@ -116,7 +116,7 @@ Entire commercial businesses exist whose sole function is joining popular torren
 
 Your ISP can typically identify that you're using BitTorrent from traffic patterns alone. The protocol has a distinctive signature, many simultaneous connections to varied IPs on non-standard ports, even without decrypting the content. Some ISPs have historically responded to detected P2P traffic with throttling, regardless of what's inside those packets.
 
-A VPN addresses all three at once because they trace back to the same root cause: your real IP address and your ISP-visible traffic pattern being attached to the transfer. Tunnel the connection through a VPN server, and the swarm sees the VPN's IP. Monitoring firms log the VPN's IP. Your ISP sees [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html) traffic instead of a recognizable BitTorrent fingerprint.
+A VPN addresses all three at once because they trace back to the same root cause: your real IP address and your ISP-visible traffic pattern being attached to the transfer. Tunnel the connection through a VPN server, and the swarm sees the VPN's IP. Monitoring firms log the VPN's IP. Your ISP sees encrypted tunnel traffic instead of a recognizable BitTorrent fingerprint.
 
 A quick reminder: "encrypted" doesn't mean "invisible." Torrenting's privacy problem is about who can see your IP address and when, not about whether the file content is readable.
 
@@ -158,7 +158,7 @@ If you're downloading material, you don't hold rights to, a VPN reduces the odds
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A free VPN suitable for torrenting needs to explicitly allow P2P traffic on its servers, maintain a genuine <a href="/blog/which-free-vpn-does-not-keep-logs/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">no-logs policy</a>, include a kill switch that's active by default, and be funded through a transparent business model rather than data sales or throttling designed to make the free tier unusable.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A free VPN suitable for torrenting needs to explicitly allow P2P traffic on its servers, maintain a genuine <a href="/blog/which-free-vpn-does-not-keep-logs/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">no-logs policy</a>, include a kill switch that's active by default, and be funded through a transparent business model rather than data sales or throttling designed to make the free tier unusable.</p>
 </div>
 
 P2P allowed, explicitly. If a provider's terms of service don't clearly state that torrenting is permitted, assume it either isn't, or that it works only inconsistently. This should be a stated policy, not something you have to test and discover.
@@ -306,7 +306,7 @@ Our remedy is to publish at depth and ship free verification tools so you don't 
 
 ## Verify and cross-reference
 
-For any claim here that affects a decision you're about to make: test technical claims yourself using free tools like DNS lookup, [<a href="/blog/what-is-a-webrtc-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WebRTC leak</a>](/blog/what-is-a-webrtc-leak/) test, and what-is-my-IP. Most take under fifteen minutes.
+For any claim here that affects a decision you're about to make: test technical claims yourself using free tools like DNS lookup, <a href="/blog/what-is-a-webrtc-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WebRTC leak</a> test, and what-is-my-IP. Most take under fifteen minutes.
 
 Cross-reference at least one independent source. Read primary sources for legal questions. And update your view as facts update.
 

@@ -69,7 +69,7 @@ To confirm whether the block is localized to your current Wi-Fi network:
 
 **The most common reason a VPN gets blocked on managed Wi-Fi is port restriction, and the fastest 30-second fix is switching your protocol transport to port 443.**
 
-Enterprise and school network administrators rarely monitor individual devices manually. Instead, they configure firewall rules that drop all outbound UDP traffic on non-standard ports. Because the default <a href="/blog/wireguard-vs-openvpn/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard protocol</a> operates over UDP port 51820, standard routers easily block it with a single firewall rule.
+Enterprise and school network administrators rarely monitor individual devices manually. Instead, they configure firewall rules that drop all outbound UDP traffic on non-standard ports. Because the default <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard protocol</a> operates over UDP port 51820, standard routers easily block it with a single firewall rule.
 
 Use these three quick fixes to get back online in 30 seconds:
 
@@ -175,7 +175,7 @@ To maintain continuous connectivity across restrictive networks:
 **VPN blocking rarely presents as a clean error message; it frequently mimics slow internet, packet loss, or application crashes.**
 
 When a firewall partially filters VPN traffic, you may experience:
-- **Extreme Latency & Speed Drops:** Firewalls that employ <a href="/blog/vpn-for-avoiding-isp-throttling/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">bandwidth throttling</a> intentionally throttle UDP traffic to 128 kbps, causing video buffering and sluggish page loads.
+- **Extreme Latency & Speed Drops:** Firewalls that employ <a href="/blog/vpn-for-avoiding-isp-throttling/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">bandwidth throttling</a> intentionally throttle UDP traffic to 128 kbps, causing video buffering and sluggish page loads.
 - **Random Disconnections Every 5 Minutes:** Stateful firewalls may terminate active UDP sessions if they exceed a configured idle timeout or data quota.
 - **Selective App Failures:** Browsers may load basic websites while communications apps (Zoom, Discord, Slack, WhatsApp) fail because the network selectively blocks VoIP UDP ports.
 
@@ -183,7 +183,7 @@ When a firewall partially filters VPN traffic, you may experience:
 
 ## When is the problem your VPN provider and not the network?
 
-**If connection failures persist across multiple completely independent networks (e.g., home broadband, cellular 5G, and <a href="/blog/how-public-wifi-steals-passwords/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">public Wi-Fi</a>), the issue lies with the VPN provider.**
+**If connection failures persist across multiple completely independent networks (e.g., home broadband, cellular 5G, and <a href="/blog/how-public-wifi-steals-passwords/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">public Wi-Fi</a>), the issue lies with the VPN provider.**
 
 Common signs of provider-side infrastructure failure include:
 - **Overloaded Nodes:** Budget or ad-supported VPN services pack thousands of users onto unmetered shared servers, causing massive packet loss and dropped handshakes.
@@ -199,7 +199,7 @@ Common signs of provider-side infrastructure failure include:
 When evaluating a block-resistant VPN:
 1. **Demand Modern Protocols:** Look for <a href="/free-wireguard-vpn" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard</a> and QUIC/MASQUE support rather than sluggish legacy protocols.
 2. **Verify a Transparent Business Model:** Avoid "free" VPNs funded by adware or user tracking. OllaVPN offers a transparent, ad-free free tier funded entirely by <a href="/pricing.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">OllaVPN Plus</a> subscribers.
-3. **Inspect Logging Policies:** A strict <a href="/blog/what-logs-does-vpn-keep/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">RAM-only no-logs architecture</a> guarantees that even if a server is subpoenaed or inspected, zero user session records exist.
+3. **Inspect Logging Policies:** A strict <a href="/blog/what-logs-does-vpn-keep/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">RAM-only no-logs architecture</a> guarantees that even if a server is subpoenaed or inspected, zero user session records exist.
 
 ---
 
@@ -220,7 +220,7 @@ OllaVPN delivers three architectural advantages that defeat censorship and netwo
 
 School and workplace networks routinely monitor unencrypted browsing, log DNS requests, and perform SSL inspection. Routing your connection through a quantum-resistant VPN tunnel ensures:
 - Network administrators cannot view the websites you visit or intercept sensitive passwords.
-- Public Wi-Fi attackers on the same local subnet cannot execute <a href="/blog/what-is-a-man-in-the-middle-attack.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">Man-in-the-Middle (MITM) attacks</a> or Evil Twin eavesdropping.
+- Public Wi-Fi attackers on the same local subnet cannot execute <a href="/blog/what-is-a-man-in-the-middle-attack/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">Man-in-the-Middle (MITM) attacks</a> or Evil Twin eavesdropping.
 - Your personal banking and communication data remains protected end-to-end.
 
 ---

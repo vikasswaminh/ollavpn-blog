@@ -21,7 +21,7 @@ Plenty of apps are technically free and technically encrypt something, but throt
 OllaVPN Free is built around the other definition: no ads, no data caps, no logs, and a flat 10 Mbps that's genuinely enough for HD streaming, calls, and normal browsing on your phone. It's available on every server in our network, forever, with no credit card or account required. It's funded by our optional Plus subscribers rather than by selling your activity or wearing you down with ads until you upgrade.
 </p>
 <p style="font-size: 0.925rem; line-height: 1.72; color: #09090b; margin: 0 0 8px 0; font-family: 'Lato', sans-serif;">
-We'll walk through what "no logs" needs to mean technically to be trustworthy (not just a slogan), what Android-specific privacy risks a VPN does and doesn't address, how OllaVPN's <a href="/blog/what-is-a-vpn-kill-switch/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">kill switch</a> and in-tunnel DNS work on your phone, the setup steps, honest speed math for common Android use cases, and how to verify every claim in this guide yourself, without taking our word for it.
+We'll walk through what "no logs" needs to mean technically to be trustworthy (not just a slogan), what Android-specific privacy risks a VPN does and doesn't address, how OllaVPN's <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">kill switch</a> and in-tunnel DNS work on your phone, the setup steps, honest speed math for common Android use cases, and how to verify every claim in this guide yourself, without taking our word for it.
 </p>
 </section>
 
@@ -84,7 +84,7 @@ That's why the selection criteria in this guide matter more on Android than they
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A really usable free <a href="/blog/best-free-vpn-for-android/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">Android VPN</a> is one you'd keep using a month from now without thinking about it. That means speeds that don't visibly degrade your normal phone habits, no artificial data ceiling that cuts you off mid-week, and no nagging that pushes you toward a paid tier before you've had a fair chance to evaluate the free one.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A really usable free <a href="/blog/best-free-vpn-for-android/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">Android VPN</a> is one you'd keep using a month from now without thinking about it. That means speeds that don't visibly degrade your normal phone habits, no artificial data ceiling that cuts you off mid-week, and no nagging that pushes you toward a paid tier before you've had a fair chance to evaluate the free one.</p>
 </div>
 
 We call this out because "usable" gets treated like a given in most free-VPN marketing. In practice, it's the biggest gap between what's promised and what's delivered.
@@ -93,7 +93,7 @@ A lot of free VPN apps are functional. They connect. They show a green checkmark
 
 "Really usable" also means not being nickel-and-dimed on locations. A free tier that only offers two overcrowded server cities isn't meaningfully free if those two servers are so congested that your real throughput is a fraction of the advertised cap.
 
-Usability isn't just the number on the settings page. It's what you actually experience in your hand: scrolling, streaming a show on the train, hopping on a video call, checking your bank app on [<a href="/blog/how-public-wifi-steals-passwords/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">public Wi-Fi</a>](/blog/how-public-wifi-steals-passwords/).
+Usability isn't just the number on the settings page. It's what you actually experience in your hand: scrolling, streaming a show on the train, hopping on a video call, checking your bank app on <a href="/blog/how-public-wifi-steals-passwords/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">public Wi-Fi</a>.
 
 The honest bar we think a free Android VPN needs to clear in 2026 is this: could you make it your only VPN, permanently, without a nagging sense that you're on the discount tier of a service that's actively rooting for you to upgrade? If the answer is no, "free" is doing a lot of marketing work that the product itself doesn't back up.
 
@@ -112,7 +112,7 @@ On Android, there's an extra wrinkle: the operating system itself, and the apps 
 
 So, a genuinely no-logs VPN is one meaningful layer of protection, not a blanket privacy fix for your entire device. We think it's worth saying that plainly, rather than letting "no logs" imply more than it actually covers.
 
-What we'd suggest looking for, concretely: a provider that states its [no-logs policy](/blog/what-logs-does-vpn-keep/) specifically (not vaguely), has published the policy somewhere you can actually read it, and, ideally, has been independently audited by a third-party security firm. A self-reported no-logs claim and an audited one are not the same category of evidence.
+What we'd suggest looking for, concretely: a provider that states its no-logs policy specifically (not vaguely), has published the policy somewhere you can actually read it, and, ideally, has been independently audited by a third-party security firm. A self-reported no-logs claim and an audited one are not the same category of evidence.
 
 ## What Privacy Risks Does Your Android Phone Create That a VPN Does and Doesn't Fix?
 
@@ -152,7 +152,7 @@ We'd rather set that expectation clearly than let a VPN's marketing imply it's a
 
 Starting with encryption: you should expect a modern protocol, most commonly WireGuard, which balances strong encryption with efficiency that matters on a battery-powered device. Older protocols can work, but they tend to be heavier on battery and CPU, more noticeable on a phone you carry all day than on a desktop plugged into the wall. If a free Android VPN is still defaulting to an outdated protocol in 2026, that's worth noticing.
 
-Beyond the protocol, a kill switch on by default is close to non-negotiable. On a phone, network transitions happen constantly and invisibly, switching from Wi-Fi to mobile data as you walk out of a building, Wi-Fi briefly dropping, moving between cell towers. Each transition is a moment your [VPN tunnel](/blog/what-is-a-vpn-tunnel.html) could theoretically drop. Without a kill switch, your traffic simply reverts to going out unprotected during that gap, usually without you noticing.
+Beyond the protocol, a kill switch on by default is close to non-negotiable. On a phone, network transitions happen constantly and invisibly, switching from Wi-Fi to mobile data as you walk out of a building, Wi-Fi briefly dropping, moving between cell towers. Each transition is a moment your VPN tunnel could theoretically drop. Without a kill switch, your traffic simply reverts to going out unprotected during that gap, usually without you noticing.
 
 This should be the default state, not a toggle you have to know to look for in a settings menu.
 
@@ -314,7 +314,7 @@ Test 1, Funding model. Open the provider's homepage and look for a clear explana
 
 Test 2, DNS in-tunnel. Connect the VPN on your phone, then open our DNS lookup tool in your mobile browser and resolve a domain. The resolver shown should be operator-controlled, not 8.8.8.8, 1.1.1.1, or your carrier's default resolver. Disconnect and repeat, the difference is your evidence.
 
-Test 3, IP and [WebRTC leak](/blog/what-is-a-webrtc-leak/). Open our WebRTC leak test while connected. Only the VPN server's exit IP should appear; your real mobile or Wi-Fi IP shouldn't show up anywhere in the result.
+Test 3, IP and WebRTC leak. Open our WebRTC leak test while connected. Only the VPN server's exit IP should appear; your real mobile or Wi-Fi IP shouldn't show up anywhere in the result.
 
 Test 4, Kill switch under real conditions. Connect the VPN, start a video stream or continuous download, then manually enable Airplane Mode and quickly switch back to Wi-Fi or mobile data (or walk out of Wi-Fi range). Traffic should pause and resume only once the tunnel is confirmed reconnected, not silently fall back to your unprotected connection during the gap.
 
@@ -351,7 +351,7 @@ Test 6, Audit history. Search "[operator name] security audit" and look for a pu
       <span class="faq-accordion-icon" style="font-size: 1.15rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0; font-family: 'Lato', sans-serif;">
-      Not meaningfully. We use the <a href="/blog/wireguard-vs-openvpn/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard protocol</a> by default specifically because it's efficient on battery and CPU compared to older, heavier <a href="/blog/what-is-a-vpn-protocol.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">VPN protocols</a>. That matters more on a phone you carry and check throughout the day than on a device that's usually plugged in.
+      Not meaningfully. We use the <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard protocol</a> by default specifically because it's efficient on battery and CPU compared to older, heavier <a href="/blog/what-is-a-vpn-protocol/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">VPN protocols</a>. That matters more on a phone you carry and check throughout the day than on a device that's usually plugged in.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">

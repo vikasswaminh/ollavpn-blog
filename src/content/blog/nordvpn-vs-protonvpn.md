@@ -9,7 +9,7 @@ tags: ['comparisons']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    Fast global CDN unblocking vs Secure Core multi-hop architecture and audited open-source desktop apps. Testing real-world privacy differences. OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard encryption</a> with audited zero activity logging across all devices.
+    Fast global CDN unblocking vs Secure Core multi-hop architecture and audited open-source desktop apps. Testing real-world privacy differences. OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard encryption</a> with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -120,17 +120,17 @@ Encrypted email, encrypted cloud storage, password manager, calendar
 
 Protocol family
 
-<a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WireGuard</a>-based (NordLynx) + OpenVPN
+WireGuard-based (NordLynx) + OpenVPN
 
 WireGuard + OpenVPN
 
-[<a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">Kill switch</a>](/blog/what-is-a-vpn-kill-switch/)
+<a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">Kill switch</a>
 
 Yes, on all platforms
 
 Yes, on all platforms
 
-[<a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">Post-quantum cryptography</a>](/blog/what-is-post-quantum-cryptography/)
+<a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">Post-quantum cryptography</a>
 
 Rolling out
 
@@ -203,11 +203,11 @@ For **torrenting**, both support P2P on appropriate servers. NordVPN supports P2
 
 This is the section where comparison articles usually descend into a wall of cipher acronyms. We'd like to spare you that.
 
-The plain-English summary: **both companies use modern, well-respected encryption**. Both run WireGuard or a WireGuard variant. Both include a **kill switch** that blocks your traffic if the VPN drops, on every platform. Both protect against the common categories of leak, [DNS leaks](/blog/what-is-a-dns-leak/), [IPv6 leaks](/blog/what-is-an-ipv6-leak/), WebRTC, by default.
+The plain-English summary: **both companies use modern, well-respected encryption**. Both run WireGuard or a WireGuard variant. Both include a **kill switch** that blocks your traffic if the VPN drops, on every platform. Both protect against the common categories of leak, <a href="/blog/what-is-a-dns-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">DNS leaks</a>, IPv6 leaks, WebRTC, by default.
 
 Where they differ in posture:
 
-*   **NordVPN** runs a closed-source app suite but has been **independently audited multiple times** by major firms including Deloitte and PwC, with the audits covering both the [<a href="/blog/which-free-vpn-does-not-keep-logs/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">no-logs policy</a>](/blog/what-logs-does-vpn-keep/) and the application code. After a server-configuration incident in 2018, the company publicly disclosed what happened, addressed the root cause, and made a structural move to diskless RAM-only servers. The transparency around that incident is, in our opinion, one of the company's better moments.
+*   **NordVPN** runs a closed-source app suite but has been **independently audited multiple times** by major firms including Deloitte and PwC, with the audits covering both the <a href="/blog/which-free-vpn-does-not-keep-logs/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">no-logs policy</a> and the application code. After a server-configuration incident in 2018, the company publicly disclosed what happened, addressed the root cause, and made a structural move to diskless RAM-only servers. The transparency around that incident is, in our opinion, one of the company's better moments.
 *   **ProtonVPN** publishes the full source code for every app, Windows, macOS, Linux, iOS, Android, browser extensions, and has had them externally audited. The combination of "fully open source" and "Swiss-based" is a particular kind of reassurance that some readers value highly.
 
 Both companies are also beginning to roll out **post-quantum cryptography** protections, more on what that means in the dedicated section further down.
@@ -225,7 +225,7 @@ Both providers have **independently audited no-logs policies**. Neither stores y
 
 The jurisdictions are meaningfully different in ways privacy-conscious readers will care about:
 
-*   **NordVPN** operates from **Panama**, which has no mandatory data-retention laws for VPN providers. Panama is outside the well-known "[Five Eyes](/blog/five-eyes-nine-eyes-fourteen-eyes.html) / Fourteen Eyes" intelligence-sharing arrangements.
+*   **NordVPN** operates from **Panama**, which has no mandatory data-retention laws for VPN providers. Panama is outside the well-known "Five Eyes / Fourteen Eyes" intelligence-sharing arrangements.
 *   **ProtonVPN** operates from **Switzerland**, which has some of the strongest data-protection laws in Europe and a long tradition of personal-privacy protections. Switzerland is also outside the Five/Fourteen Eyes structures.
 
 Both companies publish **transparency reports** about government data requests they receive. Both are responsive to public scrutiny when issues surface; they just communicate in slightly different registers, Proton with the tone of a privacy-rights nonprofit, Nord with the tone of a polished consumer-software company.

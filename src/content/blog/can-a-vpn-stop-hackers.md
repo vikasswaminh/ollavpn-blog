@@ -9,11 +9,11 @@ tags: ['how-to-guides']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    Partially, yes, and partially, no. A VPN encrypts your internet traffic and hides your real IP address. That genuinely blocks whole categories of hacking that depend on intercepting or watching your connection, especially on public Wi‑Fi. If a hacker is sitting on the same coffee-shop network as you, trying to snoop your traffic or run a <a href="/blog/what-is-a-man-in-the-middle-attack.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">man-in-the-middle attack</a>, a properly configured VPN largely shuts them out.
+    Partially, yes, and partially, no. A VPN encrypts your internet traffic and hides your real IP address. That genuinely blocks whole categories of hacking that depend on intercepting or watching your connection, especially on public Wi‑Fi. If a hacker is sitting on the same coffee-shop network as you, trying to snoop your traffic or run a <a href="/blog/what-is-a-man-in-the-middle-attack/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">man-in-the-middle attack</a>, a properly configured VPN largely shuts them out.
 
 What a VPN doesn’t do is protect you from malware you download, phishing emails that trick you into handing over a password, weak or reused passwords, software vulnerabilities on your device, or a hacker who already has your account credentials. Those threats live at different layers. Encrypting the “pipe” your data travels through doesn’t magically fix what’s inside your device, or what you choose to click. (And that’s the part most ads conveniently skip.)
 
-OllaVPN is designed to handle the network-layer part the right way: post-quantum-ready encryption, a <a href="/blog/what-is-a-vpn-kill-switch/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">kill switch</a> that’s on by default, in-tunnel DNS so your lookups don’t leak, and four-layer peer isolation so other users on the same server can’t reach you. And yes, all of that is included on our free plan, 10 Mbps, every country, $0 forever, no card required, because we don’t think this specific layer of protection should be locked behind a subscription.
+OllaVPN is designed to handle the network-layer part the right way: post-quantum-ready encryption, a <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">kill switch</a> that’s on by default, in-tunnel DNS so your lookups don’t leak, and four-layer peer isolation so other users on the same server can’t reach you. And yes, all of that is included on our free plan, 10 Mbps, every country, $0 forever, no card required, because we don’t think this specific layer of protection should be locked behind a subscription.
   </p>
 </section>
 
@@ -55,7 +55,7 @@ OllaVPN is designed to handle the network-layer part the right way: post-quantum
 
 <div class="blog-main-content-box">
 
-Shield your privacy with OllaVPN free, <a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">post-quantum encryption</a> & zero logs.
+Shield your privacy with OllaVPN free, <a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">post-quantum encryption</a> & zero logs.
 
 <a href="/dl/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">DOWNLOAD →</a>
 
@@ -93,9 +93,9 @@ A VPN is like a heavily armored delivery truck. It protects your package from be
 
 
 
-When you connect to a VPN like OllaVPN, your device establishes an [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html) to one of our servers using a protocol such as <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WireGuard</a>. Every request your device sends, logins, searches, uploads, gets encrypted before it ever touches the local network. That includes your home Wi‑Fi, a hotel network, or the open Wi‑Fi at an airport lounge.
+When you connect to a VPN like OllaVPN, your device establishes an encrypted tunnel to one of our servers using a protocol such as <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard</a>. Every request your device sends, logins, searches, uploads, gets encrypted before it ever touches the local network. That includes your home Wi‑Fi, a hotel network, or the open Wi‑Fi at an airport lounge.
 
-So if someone is positioned to watch the traffic on that local network, they see only encrypted noise. They can’t read it, and they can’t realistically alter it in transit without breaking the encryption. Modern [VPN protocols](/blog/what-is-a-vpn-protocol.html) are designed so that doing that is computationally infeasible with today’s capabilities.
+So if someone is positioned to watch the traffic on that local network, they see only encrypted noise. They can’t read it, and they can’t realistically alter it in transit without breaking the encryption. Modern VPN protocols are designed so that doing that is computationally infeasible with today’s capabilities.
 
 This is what neutralizes a common attack called a man-in-the-middle attack. In that scenario, a hacker tries to sit between your device and the server you’re trying to reach, sometimes by setting up a fake Wi‑Fi hotspot that looks legitimate, sometimes by exploiting an unsecured network to intercept traffic passing through it. Without a VPN, if the only protection is a website’s own HTTPS (which is common, but not universal, and can sometimes be downgraded or spoofed by a determined attacker), a hacker positioned correctly on the network can sometimes intercept, read, or manipulate what’s being sent.
 
@@ -186,7 +186,7 @@ Finally, there’s a myth that VPNs stop DDoS attacks entirely. Masking your rea
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Look for independent security audits, a specific named <a href="/blog/what-logs-does-vpn-keep/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs policy</a>, transparency about the encryption protocols used, and, when available, open-source client software you can inspect for vulnerabilities.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Look for independent security audits, a specific named <a href="/blog/what-logs-does-vpn-keep/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">no-logs policy</a>, transparency about the encryption protocols used, and, when available, open-source client software you can inspect for vulnerabilities.</p>
 </div>
 
 
@@ -199,11 +199,11 @@ Check which encryption protocol is actually named. “Military-grade encryption�
 
 Look for a kill switch, and confirm it’s on by default. A kill switch blocks all internet traffic if your VPN connection drops unexpectedly. That prevents your real IP and unprotected traffic from leaking during the gap, something that matters more than it sounds, especially on mobile networks where connections can be flaky.
 
-Check whether DNS requests are handled inside the tunnel. If DNS lookups leak outside the encrypted connection, your browsing habits can be reconstructed even while the rest of your traffic looks secure. A [DNS leak](/blog/what-is-a-dns-leak/) test is a practical way to verify this rather than trusting the claim.
+Check whether DNS requests are handled inside the tunnel. If DNS lookups leak outside the encrypted connection, your browsing habits can be reconstructed even while the rest of your traffic looks secure. A DNS leak test is a practical way to verify this rather than trusting the claim.
 
 Look at whether client software is open source, where possible. Open-source code can be reviewed by security researchers for vulnerabilities or intentional backdoors. Closed-source software can’t offer the same level of scrutiny.
 
-Under all of these checks is the same question: is the provider giving you something specific and verifiable, or just a confident adjective? “Hacker-proof” is a vibe. “[WireGuard protocol](/blog/wireguard-vs-openvpn/), independently audited, kill switch on by default” is something you can actually check.
+Under all of these checks is the same question: is the provider giving you something specific and verifiable, or just a confident adjective? “Hacker-proof” is a vibe. “WireGuard protocol, independently audited, kill switch on by default” is something you can actually check.
 
 ## What does OllaVPN specifically do to reduce your exposure to hackers?
 
@@ -273,7 +273,7 @@ Layered together, a VPN handles the network layer. A password manager and two-fa
 
 Hacking techniques don’t stand still, and neither does defense. One trend worth watching is how phishing and social engineering keep getting more convincing, especially as AI tools make it easier to generate personalized fake messages at scale. That’s a threat category network encryption doesn’t address directly, and it’s exactly where user awareness matters more over time.
 
-On the encryption side, the biggest structural shift is the move toward [post-quantum cryptography](/blog/what-is-post-quantum-cryptography/). Quantum computers powerful enough to break today’s encryption don’t exist yet. But the concern is “harvest now, decrypt later”, an adversary capturing encrypted VPN traffic today, storing it, and attempting to decrypt it once quantum computing becomes practical. Mainstream estimates place that somewhere between the early 2030s and mid-2040s. For anyone whose data needs to stay private for years (which is most people), that timeline matters.
+On the encryption side, the biggest structural shift is the move toward post-quantum cryptography. Quantum computers powerful enough to break today’s encryption don’t exist yet. But the concern is “harvest now, decrypt later”, an adversary capturing encrypted VPN traffic today, storing it, and attempting to decrypt it once quantum computing becomes practical. Mainstream estimates place that somewhere between the early 2030s and mid-2040s. For anyone whose data needs to stay private for years (which is most people), that timeline matters.
 
 OllaVPN’s hybrid post-quantum handshake is built around that concern. It combines a classical algorithm with a newer, quantum-resistant one, so a connection stays protected against both today’s threats and tomorrow’s. It’s a forward-looking version of the same job VPNs have always done: keeping the pipe secure as the tools attackers use keep improving.
 

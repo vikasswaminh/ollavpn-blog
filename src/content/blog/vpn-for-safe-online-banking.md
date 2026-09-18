@@ -37,7 +37,7 @@ draft: false
 
 <div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
-  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">Staying safe with a VPN for online banking means encrypting the connection between your device and your bank so that no one else on your local network - a stranger on <a href="/blog/how-public-wifi-steals-passwords/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">public Wi-Fi</a>, a compromised router, or your own ISP - can intercept, read, or tamper with your banking traffic</p>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">Staying safe with a VPN for online banking means encrypting the connection between your device and your bank so that no one else on your local network - a stranger on <a href="/blog/how-public-wifi-steals-passwords/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">public Wi-Fi</a>, a compromised router, or your own ISP - can intercept, read, or tamper with your banking traffic</p>
 </div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">It's worth being precise here, because "VPN for banking" gets thrown around as generic security advice without much explanation of what it's actually protecting against. Your bank's own website or app already uses HTTPS encryption, which protects the data itself reasonably well on modern connections. What a VPN adds is a second, separate layer that protects the network path itself - specifically the part between your device and the first point your traffic touches, which on public Wi-Fi is a router you don't own, run by people you've never met, shared with everyone else currently connected to it</p>
@@ -50,14 +50,14 @@ draft: false
 
 <div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
-  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">An honest VPN for banking should offer strong, modern encryption, a <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">kill switch</a> that's actually on by default, a genuine no-logs policy, and reliable enough performance that you're not tempted to disconnect it mid-session out of frustration.</p>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">An honest VPN for banking should offer strong, modern encryption, a <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">kill switch</a> that's actually on by default, a genuine no-logs policy, and reliable enough performance that you're not tempted to disconnect it mid-session out of frustration.</p>
 </div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Here's the checklist we think matters most for this specific use case.</p>
 
 <div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">1.</strong> <strong style="color: #0F172A !important; font-weight: 700 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Encryption strength and protocol quality:</strong>
-  <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">You want the <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WireGuard protocol</a> or an equally modern standard, not an outdated protocol with known weaknesses. For something as sensitive as a banking session, this isn't a place to compromise on "good enough."</span>
+  <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">You want the <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard protocol</a> or an equally modern standard, not an outdated protocol with known weaknesses. For something as sensitive as a banking session, this isn't a place to compromise on "good enough."</span>
 </div>
 
 <div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
@@ -66,7 +66,7 @@ draft: false
 </div>
 
 <div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">3.</strong> <strong style="color: #0F172A !important; font-weight: 700 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">A real <a href="/blog/which-free-vpn-does-not-keep-logs/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">no-logs policy</a>:</strong>
+  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">3.</strong> <strong style="color: #0F172A !important; font-weight: 700 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">A real <a href="/blog/which-free-vpn-does-not-keep-logs/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">no-logs policy</a>:</strong>
   <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">specifically covering connection metadata, not just browsing content. A VPN that logs which sites you connect to, when, and for how long is creating exactly the kind of record you were trying to avoid by using a VPN in the first place - and if that log ever leaks or gets subpoenaed, your banking habits are part of it</span>
 </div>
 
@@ -84,7 +84,7 @@ draft: false
 
 <div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
-  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">For online banking, OllaVPN Free gives you 10 Mbps of reliable throughput, the WireGuard protocol, a kill switch on by default, <a href="/blog/what-is-a-dns-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">in-tunnel DNS</a>, and post-quantum-ready encryption - all with no data caps, so your banking sessions are protected the same way every time, on any network.</p>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">For online banking, OllaVPN Free gives you 10 Mbps of reliable throughput, the WireGuard protocol, a kill switch on by default, <a href="/blog/what-is-a-dns-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">in-tunnel DNS</a>, and post-quantum-ready encryption - all with no data caps, so your banking sessions are protected the same way every time, on any network.</p>
 </div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Every core protection you'd want for a sensitive session is included on the free plan, with nothing held back for paying users. Your connection runs on the WireGuard protocol by default, a modern, well-audited standard that's become the industry benchmark for good reason - it's fast, efficient, and doesn't carry the legacy weaknesses of older protocols still used by some competitors. For banking specifically, that combination of speed and proven security means you're not trading performance for protection.</p>

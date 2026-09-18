@@ -9,7 +9,7 @@ tags: ['privacy-security']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    The plain-English guide to what OpenAI actually does with everything you type into ChatGPT, how long it’s kept, how it’s used for training, and how to stop it. OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard encryption</a> with audited zero activity logging across all devices.
+    The plain-English guide to what OpenAI actually does with everything you type into ChatGPT, how long it’s kept, how it’s used for training, and how to stop it. OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard encryption</a> with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -340,7 +340,7 @@ IP address masking from OpenAI: OpenAI’s servers see the VPN server’s IP, no
 
 ISP visibility: Without a VPN, your ISP can see that you’re connecting to OpenAI’s servers, a record that, in the US, can be sold to data brokers or compelled by law enforcement. A VPN prevents your ISP from seeing that you’re using ChatGPT at all.
 
-[Public WiFi](/blog/how-public-wifi-steals-passwords.html) eavesdropping: A VPN encrypts the connection between your device and the VPN server, preventing anyone else on a public network from intercepting your traffic.
+<a href="/blog/how-public-wifi-steals-passwords/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">Public WiFi</a> eavesdropping: A VPN encrypts the connection between your device and the VPN server, preventing anyone else on a public network from intercepting your traffic.
 
 What a VPN does not help with:
 
@@ -384,7 +384,7 @@ Masks your IP address from OpenAI’s servers. Every connection appears to come 
 
 Prevents your ISP from logging your AI tool usage. Without a VPN, your ISP sees every domain you connect to, including api.openai.com. With OllaVPN, your ISP sees only that you’re connected to a VPN server.
 
-[Encrypted tunnel](/blog/what-is-a-vpn-tunnel.html) on public networks. OllaVPN encrypts the tunnel between your device and the VPN server, preventing anyone else on a public network from intercepting the connection.
+<a href="/blog/what-is-a-vpn-tunnel/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">Encrypted tunnel</a> on public networks. OllaVPN encrypts the tunnel between your device and the VPN server, preventing anyone else on a public network from intercepting the connection.
 
 Zero-logs architecture. OllaVPN does not record connection timestamps, session durations, your real IP address, or DNS queries. There’s nothing to produce, not because we won’t share it, but because we don’t have it.
 
@@ -392,7 +392,7 @@ DNS inside the encrypted tunnel. Your DNS queries go through OllaVPN’s own res
 
 No account required on the free plan. No email address needed to get started.
 
-<a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">Post-quantum encryption</a> on every connection. The hybrid X25519 + ML-KEM-768 handshake protects your VPN traffic against future quantum decryption.
+<a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">Post-quantum encryption</a> on every connection. The hybrid X25519 + ML-KEM-768 handshake protects your VPN traffic against future quantum decryption.
 
 What OllaVPN doesn't do:
 
@@ -400,7 +400,7 @@ It cannot hide your conversation content from OpenAI. It cannot prevent OpenAI f
 
 OllaVPN plans:
 
-Lifetime free · $0 · 10 Mbps Zero-logs. In-tunnel DNS. [<a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">Kill switch</a>](/blog/what-is-a-vpn-kill-switch/) always on. [PQC](/blog/what-is-post-quantum-cryptography.html)-ready. No account required. No data caps. Every country.
+Lifetime free · $0 · 10 Mbps Zero-logs. In-tunnel DNS. <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">Kill switch</a> always on. PQC-ready. No account required. No data caps. Every country.
 
 Paid plan · $2 / month · 10 Gbps Same privacy architecture. Faster. Five devices.
 
@@ -425,7 +425,7 @@ Try the free plan https://ollavpn.com/dl/, no email, no card. Your ISP stops see
       <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
     </summary>
     <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      By utilizing the optimized <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WireGuard</a> kernel implementation, OllaVPN delivers sub-millisecond connection handshakes and negligible latency overhead (under 5%), preserving maximum bandwidth for streaming and downloads.
+      By utilizing the optimized WireGuard kernel implementation, OllaVPN delivers sub-millisecond connection handshakes and negligible latency overhead (under 5%), preserving maximum bandwidth for streaming and downloads.
     </p>
   </details>
   <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">

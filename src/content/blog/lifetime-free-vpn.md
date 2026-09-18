@@ -64,7 +64,7 @@ The complete, no-fluff guide to what “lifetime free VPN” actually means in 2
 
 Here’s the part that gets skipped in most “best free VPN” roundups: running a VPN costs real money. Server infrastructure, bandwidth, engineering, security audits, legal compliance, customer support, none of it is free. So when a VPN says it’s free, you should ask a simple question: who is paying for all of this, and why?
 
-In most cases, the answer isn’t reassuring. Some providers sell your browsing data to advertisers. Some sell aggregate traffic data to data brokers. Some run adware. Some are shells for credential-harvesting operations, a 2020 study by the Commonwealth Scientific and Industrial Research Organisation (CSIRO) found that more than 38% of free <a href="/blog/best-free-vpn-for-android/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">Android VPN</a> apps contained malware. And some are simply collecting email addresses and personal data to resell. The rest are “free” trials that stop working the moment you need them most.
+In most cases, the answer isn’t reassuring. Some providers sell your browsing data to advertisers. Some sell aggregate traffic data to data brokers. Some run adware. Some are shells for credential-harvesting operations, a 2020 study by the Commonwealth Scientific and Industrial Research Organisation (CSIRO) found that more than 38% of free <a href="/blog/best-free-vpn-for-android/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">Android VPN</a> apps contained malware. And some are simply collecting email addresses and personal data to resell. The rest are “free” trials that stop working the moment you need them most.
 
 This isn’t cynicism for its own sake. It’s the reality of an industry that has used “free” as a euphemism for “we make money from you in ways you didn’t agree to.” If you don’t understand the business model, you can’t evaluate whether a specific free VPN is actually worth using.
 
@@ -103,7 +103,7 @@ Meaning 2: A permanent free tier with feature limits. This is what OllaVPN offer
 
 Meaning 3: A disguised trial. Some services call themselves "forever free" while quietly throttling the experience so severely that it’s effectively unusable, a 200 MB/month data cap, for example, or speeds so low that video won’t stream. This is the model that does the most damage to the “free VPN” category. It’s technically free. It’s practically a paid product with the useful bits removed.
 
-OllaVPN's free plan is the second kind. 10 Mbps on a single device, no data cap, every country in the network, <a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">post-quantum encryption</a> included, [kill switch](/blog/what-is-a-vpn-kill-switch.html) enforced, DNS handled inside the tunnel. Not a trial. Not a trick. Not a permanently crippled experience. A functional VPN that costs nothing.
+OllaVPN's free plan is the second kind. 10 Mbps on a single device, no data cap, every country in the network, <a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">post-quantum encryption</a> included, kill switch enforced, DNS handled inside the tunnel. Not a trial. Not a trick. Not a permanently crippled experience. A functional VPN that costs nothing.
 
 The relevant question isn’t “is this actually free right now?”, you can verify that by downloading it with no card and using it. The more interesting question is sustainability: will it still be free in five years? We’ll get to that.
 
@@ -111,7 +111,7 @@ The relevant question isn’t “is this actually free right now?”, you can ve
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The free plan includes: 10 Mbps speed (no data cap), one simultaneous device, access to every country in OllaVPN's network, <a href="/free-wireguard-vpn" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard</a> protocol, post-quantum encryption (hybrid handshake), always-on <a href="/blog/what-is-a-vpn-kill-switch.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">kill switch</a>, in-tunnel DNS, IPv6 support, and no logging of activity. No credit card required. No email address required. No ads.</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The free plan includes: 10 Mbps speed (no data cap), one simultaneous device, access to every country in OllaVPN's network, <a href="/free-wireguard-vpn" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard</a> protocol, post-quantum encryption (hybrid handshake), always-on <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">kill switch</a>, in-tunnel DNS, IPv6 support, and no logging of activity. No credit card required. No email address required. No ads.</p>
 </div>
 
 
@@ -124,13 +124,13 @@ Devices: one simultaneous connection. One device at a time. If you want to cover
 
 Servers: every country in OllaVPN's network. Free users are not restricted to a subset of server locations the way they are on most VPN free tiers. Every country is available.
 
-Protocol: [<a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WireGuard</a>](/free-wireguard-vpn). The modern, fast, auditable [VPN protocol](/blog/what-is-a-vpn-protocol.html). Not a downgraded legacy protocol reserved for non-paying users.
+Protocol: [<a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard</a>](/free-wireguard-vpn). The modern, fast, auditable <a href="/blog/what-is-a-vpn-protocol/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">VPN protocol</a>. Not a downgraded legacy protocol reserved for non-paying users.
 
 Post-quantum encryption: included. The same hybrid post-quantum handshake that protects paid connections is available on the free plan with no configuration required. This is not a paid feature.
 
-[<a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">Kill switch</a>](/blog/what-is-a-vpn-kill-switch/): always-on, mandatory. If the VPN connection drops, traffic is blocked. There is no option to disable the kill switch. This is an unusual design choice, most VPNs make the kill switch optional, but it’s the right one for a privacy-first product.
+Kill switch: always-on, mandatory. If the VPN connection drops, traffic is blocked. There is no option to disable the kill switch. This is an unusual design choice, most VPNs make the kill switch optional, but it’s the right one for a privacy-first product.
 
-DNS: in-tunnel. DNS queries go through OllaVPN's in-tunnel resolver rather than your ISP's or a third-party service. This prevents [DNS leaks](/blog/what-is-a-dns-leak/) by default.
+DNS: in-tunnel. DNS queries go through OllaVPN's in-tunnel resolver rather than your ISP's or a third-party service. This prevents DNS leaks by default.
 
 IPv6: handled inside the tunnel. IPv6 traffic is protected rather than leaked. A common oversight in VPN implementations that OllaVPN addresses explicitly.
 
@@ -203,7 +203,7 @@ The honest framing: 10 Mbps is not a crippled speed, it’s a real, functional l
 
 One of the more unusual things about OllaVPN's free plan is that it includes post-quantum encryption without configuration, without a toggle, and without any additional cost.
 
-[Post-quantum cryptography](/blog/what-is-post-quantum-cryptography/) (PQC) is, in simple terms, a family of new encryption algorithms designed to remain secure even when powerful quantum computers eventually exist. The most important present-day threat it addresses is called "harvest now, decrypt later", adversaries capturing your encrypted VPN traffic today and storing it to decrypt later once quantum computers become capable. For a full explainer on how this works and why it matters, see our [post-quantum cryptography](/blog/what-is-post-quantum-cryptography.html) guide.
+Post-quantum cryptography (PQC) is, in simple terms, a family of new encryption algorithms designed to remain secure even when powerful quantum computers eventually exist. The most important present-day threat it addresses is called "harvest now, decrypt later", adversaries capturing your encrypted VPN traffic today and storing it to decrypt later once quantum computers become capable. For a full explainer on how this works and why it matters, see our post-quantum cryptography guide.
 
 The short version: your VPN traffic from today could be decryptable by a sufficiently advanced quantum computer in ten or fifteen years. Post-quantum encryption is designed to make that impossible. The U.S. NIST finalized the first three post-quantum standards, FIPS 203, 204, and 205, in August 2024, and major deployments followed at Apple, Signal, Google Chrome, Cloudflare, and Mullvad.
 
@@ -228,7 +228,7 @@ No connection logs (with one important nuance). OllaVPN does not log when you co
 
 No account required. This is architecturally important. If there is no account, there is no email address, no name, and no payment method linking an identity to a set of VPN sessions. The link between “a person” and “a connection” simply doesn’t exist to collect, breach, or sell.
 
-In-tunnel DNS. DNS, the system that translates domain names into IP addresses, is a significant potential privacy leak. If your DNS queries go outside the [VPN tunnel](/blog/what-is-a-vpn-tunnel.html), your ISP or a third-party DNS resolver can see every domain you look up even if the content of your connections is encrypted. OllaVPN handles DNS inside the encrypted tunnel, to its own in-tunnel resolver, and blocks the OS-level DNS path via firewall rules so DNS queries can’t leak even if something goes wrong with the tunnel.
+In-tunnel DNS. DNS, the system that translates domain names into IP addresses, is a significant potential privacy leak. If your DNS queries go outside the VPN tunnel, your ISP or a third-party DNS resolver can see every domain you look up even if the content of your connections is encrypted. OllaVPN handles DNS inside the encrypted tunnel, to its own in-tunnel resolver, and blocks the OS-level DNS path via firewall rules so DNS queries can’t leak even if something goes wrong with the tunnel.
 
 Kill switch at the OS firewall layer. On Windows, this means the Windows Filtering Platform. On macOS, Packet Filter. On Android, VpnService.setBlockingMode. The kill switch is enforced at the operating system’s network stack level, not in the app process, which means it still works even if the app crashes.
 
@@ -331,7 +331,7 @@ IPv6 support
 
 Access to every server country
 
-[WireGuard protocol](/blog/wireguard-vs-openvpn/)
+WireGuard protocol
 
 Four-layer [peer isolation](/peer-isolation)
 

@@ -9,7 +9,7 @@ tags: ['comparisons']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    Shared parent company, different strengths: Surfsharks unlimited household connections vs NordVPNs dedicated IP and Onion-over-VPN infrastructure. OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard encryption</a> with audited zero activity logging across all devices.
+    Shared parent company, different strengths: Surfsharks unlimited household connections vs NordVPNs dedicated IP and Onion-over-VPN infrastructure. OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard encryption</a> with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -126,17 +126,17 @@ Password manager, malware blocking, dark-web monitor, encrypted storage, ID-thef
 
 Protocol family
 
-<a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WireGuard</a> + OpenVPN + IKEv2
+WireGuard + OpenVPN + IKEv2
 
 WireGuard-based (NordLynx) + OpenVPN
 
-[<a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">Kill switch</a>](/blog/what-is-a-vpn-kill-switch/)
+<a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">Kill switch</a>
 
 Yes, on all platforms
 
 Yes, on all platforms
 
-[<a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">Post-quantum cryptography</a>](/blog/what-is-post-quantum-cryptography/)
+<a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">Post-quantum cryptography</a>
 
 Rolling out
 
@@ -233,12 +233,12 @@ For **torrenting**, both support P2P on supported servers. Both have kill switch
 
 ## Security and encryption
 
-The plain-English summary: **both companies use modern, well-respected encryption**. Both run WireGuard or a WireGuard variant. Both include a **kill switch** on every platform, on by default. Both protect against the common categories of leak, [DNS leaks](/blog/what-is-a-dns-leak/), [IPv6 leaks](/blog/what-is-an-ipv6-leak/), WebRTC, out of the box.
+The plain-English summary: **both companies use modern, well-respected encryption**. Both run WireGuard or a WireGuard variant. Both include a **kill switch** on every platform, on by default. Both protect against the common categories of leak, <a href="/blog/what-is-a-dns-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">DNS leaks</a>, IPv6 leaks, WebRTC, out of the box.
 
 On posture:
 
 *   **Surfshark** has been **independently audited** (Cure53 has audited the browser extensions and infrastructure has been reviewed by Deloitte). The apps are closed source. The company runs diskless RAM-only servers, which is the modern standard for VPN infrastructure because it limits the data that can be obtained from a seized server.
-*   **NordVPN** has also been **independently audited multiple times** by major firms including Deloitte and PwC, with the audits covering both the [<a href="/blog/which-free-vpn-does-not-keep-logs/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">no-logs policy</a>](/blog/what-logs-does-vpn-keep/) and the application code. The apps are closed source. After a server-configuration incident in 2018, the company publicly disclosed what happened, addressed the root cause, and made a structural move to diskless RAM-only infrastructure.
+*   **NordVPN** has also been **independently audited multiple times** by major firms including Deloitte and PwC, with the audits covering both the <a href="/blog/which-free-vpn-does-not-keep-logs/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">no-logs policy</a> and the application code. The apps are closed source. After a server-configuration incident in 2018, the company publicly disclosed what happened, addressed the root cause, and made a structural move to diskless RAM-only infrastructure.
 
 Both companies are also beginning to roll out **post-quantum cryptography** protections, more on what that means in the dedicated section further down.
 
@@ -299,7 +299,7 @@ Surfshark
 
 NordVPN
 
-[Split tunneling](/blog/what-is-split-tunneling.html)
+Split tunneling
 
 Bypasser
 
@@ -321,7 +321,7 @@ Obfuscation / stealth mode
 
 Camouflage Mode
 
-[Obfuscated Servers](/blog/what-is-vpn-obfuscation.html)
+Obfuscated Servers
 
 Private device-to-device network, Meshnet (free)
 

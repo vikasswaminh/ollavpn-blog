@@ -9,7 +9,7 @@ tags: ['privacy-security']
 <section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
   <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
   <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    The Five Eyes is an intelligence-sharing alliance between the United States, United Kingdom, Canada, Australia, and New Zealand, formalized by the 1946 UKUSA Agreement. The Nine Eyes adds Denmark, France, the Netherlands... OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">WireGuard encryption</a> with audited zero activity logging across all devices.
+    The Five Eyes is an intelligence-sharing alliance between the United States, United Kingdom, Canada, Australia, and New Zealand, formalized by the 1946 UKUSA Agreement. The Nine Eyes adds Denmark, France, the Netherlands... OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard encryption</a> with audited zero activity logging across all devices.
   </p>
 </section>
 
@@ -227,7 +227,7 @@ For practical purposes as a VPN user, the named alliances are still the most use
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">It matters more than VPN marketing sometimes admits, and less than VPN marketing often implies. Jurisdiction determines what legal demands a VPN could face. But a well-implemented <a href="/blog/what-logs-does-vpn-keep/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs policy</a> means there's little to hand over regardless of jurisdiction. The strongest privacy posture is "no logs, audited, regardless of country."</p>
+  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">It matters more than VPN marketing sometimes admits, and less than VPN marketing often implies. Jurisdiction determines what legal demands a VPN could face. But a well-implemented <a href="/blog/what-logs-does-vpn-keep/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">no-logs policy</a> means there's little to hand over regardless of jurisdiction. The strongest privacy posture is "no logs, audited, regardless of country."</p>
 </div>
 
 
@@ -262,7 +262,7 @@ This distinction trips up a lot of readers, and it's worth being explicit about.
 *   **Jurisdiction** is where the _company_ is incorporated. Switzerland, Panama, BVI, Sweden, etc. Determines what laws the company itself must obey.
 *   **Server location** is where individual VPN servers are _physically or virtually located_. A company based in Switzerland might run servers in fifty countries.
 
-When you connect to a Switzerland-based VPN's New York server, you are routing your traffic through New York. That traffic is subject to US server-location law for as long as it exists on those servers. _But_, and this is the important part, if the VPN runs a <a href="/blog/which-free-vpn-does-not-keep-logs/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">no-logs policy</a> on RAM-only servers, the server-location matters less than people think, because nothing persists. The encrypted traffic is in transit, processed, and forgotten.
+When you connect to a Switzerland-based VPN's New York server, you are routing your traffic through New York. That traffic is subject to US server-location law for as long as it exists on those servers. _But_, and this is the important part, if the VPN runs a <a href="/blog/which-free-vpn-does-not-keep-logs/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">no-logs policy</a> on RAM-only servers, the server-location matters less than people think, because nothing persists. The encrypted traffic is in transit, processed, and forgotten.
 
 For users who want to be especially careful, the strongest posture combines **company jurisdiction outside Five Eyes** + **RAM-only server infrastructure regardless of location** + **audited no-logs policy** + **strong encryption**. That's belt and suspenders, and it's what the most privacy-conscious VPNs aim for.
 
@@ -330,9 +330,9 @@ Our position on this whole question is straightforward: **the strongest privacy 
 [OllaVPN's](/free-vpn) approach reflects that view:
 
 *   **A no-logs policy** means there is essentially nothing for any government to obtain through any legal process, regardless of jurisdiction.
-*   **An always-on [kill switch](/blog/what-is-a-vpn-kill-switch/)** means the connection fails closed, your traffic doesn't leak even briefly during reconnects.
-*   **[<a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">Post-quantum cryptography</a>](what-is-post-quantum-cryptography.html) from day one**, on every connection including the lifetime free plan, protects against the "harvest now, decrypt later" threat, the encrypted traffic captured today that adversaries hope to decrypt years from now.
-*   **DNS is handled inside the [encrypted tunnel](/blog/what-is-a-vpn-tunnel.html) by default**, see our [DNS leak guide](what-is-a-dns-leak.html) for what that means.
+*   **An always-on kill switch** means the connection fails closed, your traffic doesn't leak even briefly during reconnects.
+*   **[<a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">Post-quantum cryptography</a>](what-is-post-quantum-cryptography.html) from day one**, on every connection including the lifetime free plan, protects against the "harvest now, decrypt later" threat, the encrypted traffic captured today that adversaries hope to decrypt years from now.
+*   **DNS is handled inside the encrypted tunnel by default**, see our [DNS leak guide](what-is-a-dns-leak.html) for what that means.
 *   **Free for life**, privacy upgrades worth having shouldn't be paywalled.
 
 **OllaVPN, built around the things that actually matter:**
@@ -363,7 +363,7 @@ If you've read this far, you're in the second group. That's the group we're writ
 
 For any claim on this page that affects a decision you're about to make, the verification path we recommend:
 
-**Verify the technical claim from your own device.** Our [DNS lookup](/dns-lookup), [<a href="/blog/what-is-a-webrtc-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 600;">WebRTC leak</a> test](/webrtc-leak-test), [what-is-my-IP](/what-is-my-ip), and the other tools at [our tools page](/tools/) are free, require no account, and run entirely in your browser. Most claims about VPN behavior can be verified from your own device in under fifteen minutes using these tools.
+**Verify the technical claim from your own device.** Our [DNS lookup](/dns-lookup), [<a href="/blog/what-is-a-webrtc-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WebRTC leak</a> test](/webrtc-leak-test), [what-is-my-IP](/what-is-my-ip), and the other tools at [our tools page](/tools/) are free, require no account, and run entirely in your browser. Most claims about VPN behavior can be verified from your own device in under fifteen minutes using these tools.
 
 **Cross-reference at least one third-party source.** We are an operator with a commercial interest in the conclusion. The most reputable independent voices in the privacy-VPN category in 2026 are Mullvad's blog (technical depth without sales pressure because they don't run affiliate programs), the Privacy Guides project documentation, the Restore Privacy site, and the academic literature on consumer VPN security (the canonical paper is Ikram et al. 2016, "An Analysis of the Privacy and Security Risks of Android VPN Permission-enabled Apps," in ACM IMC). Read across multiple sources before forming a strong view.
 
@@ -375,7 +375,7 @@ For any claim on this page that affects a decision you're about to make, the ver
 
 The topic above sits at the intersection of several broader concerns that are worth understanding even if your immediate question has been answered:
 
-**The privacy-tooling category has matured rapidly.** What was leading-edge in 2020 is table stakes in 2026. Standards have finalized (NIST [PQC](/blog/what-is-post-quantum-cryptography.html), RFC 9116 security disclosure, the IETF MASQUE work), jurisdictions have clarified (post-CERT-In, post-DSA, post-Investigatory Powers Act), and a clear trustworthy/untrustworthy line has emerged in the consumer VPN category specifically. Decisions you make today should reflect the 2026 state of the market, not the 2020 state.
+**The privacy-tooling category has matured rapidly.** What was leading-edge in 2020 is table stakes in 2026. Standards have finalized (NIST PQC, RFC 9116 security disclosure, the IETF MASQUE work), jurisdictions have clarified (post-CERT-In, post-DSA, post-Investigatory Powers Act), and a clear trustworthy/untrustworthy line has emerged in the consumer VPN category specifically. Decisions you make today should reflect the 2026 state of the market, not the 2020 state.
 
 **The threat landscape has shifted.** Bulk traffic capture by intelligence services is well-documented and continuous. The "harvest now, decrypt later" threat against captured-today-decrypted-tomorrow ciphertext is operational, not theoretical. ISP-level metadata sales to advertising data brokers are routine in the US. Geo-blocking and censorship are both more sophisticated and more widespread. The tools that defended you adequately five years ago may not be adequate now.
 
