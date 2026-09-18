@@ -1,61 +1,40 @@
 ---
-title: "Free VPN for ChromeOS (2026): Best Settings for Privacy & Speed"
-description: "Discover the best free VPN for ChromeOS in 2026. Learn the optimal settings for whole-device privacy, WireGuard performance, and zero-logging security on Chromebooks."
-pubDate: 2026-09-03
-author: "Security Team"
-category: "buyer-guides"
-tags: ["ChromeOS", "Chromebook", "Free VPN", "Privacy", "WireGuard"]
-readTime: 12
-image: "/images/blog/free-vpn-for-chromeos.webp"
+title: "Free VPN for ChromeOS: Safe, Setup Guide & What Works (2026)"
+description: "Everything you need to know about using a free VPN on ChromeOS in 2026. Android app vs browser extension vs native WireGuard setup, real speed test results, Play Store compatibility across Chromebook models, and how OllaVPN delivers genuinely free, secure ChromeOS protection."
+pubDate: 2026-03-24
+author: "OllaVPN Security Team"
+category: "How-To Guides"
+tags: ["Free VPN", "ChromeOS", "Chromebook", "WireGuard", "Security", "Privacy", "Android VPN", "Setup Guide"]
+keywords: ["free vpn for chromeos", "chromebook vpn free", "best free vpn chromeos", "how to setup vpn on chromebook", "android vpn on chromebook", "free wireguard chromebook", "ollavpn chromeos"]
 featured: false
+draft: false
 ---
 
 <p style="margin-bottom: 20px; line-height: 1.75; color: #09090b; font-size: 1.1rem;">Chromebooks are supposed to be the simple option - turn it on, sign into your Google account, and everything just works. Then you go looking for a VPN and suddenly nothing is simple anymore. Half the "best VPN for Chromebook" guides out there are rewritten Windows articles with the word swapped in. The other half point you to a browser extension and call it a day, which leaves most of your device completely unprotected. You're here because you actually want your Chromebook covered properly, without paying for it and without babysitting a dozen confusing settings. That's exactly what we're going to walk through.</p>
 
 <section id="tldr" class="article-tldr-box" style="margin-bottom: 32px; padding: 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
   <h2 style="font-size: 1.25rem; font-weight: 700; color: #DA291C; margin-top: 0; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h2>
-  <p style="margin-bottom: 12px; color: #1E293B; line-height: 1.7; font-size: 1.05rem;">You want a free VPN for ChromeOS that actually protects your whole Chromebook, not just your open Chrome tabs, and you want it configured properly instead of left on default settings. OllaVPN Free gives you 10 Mbps speed, access to every country in our network, and post-quantum-ready encryption, all with no data caps, no ads, and nothing pushing you to upgrade. It installs as a real Android app through Google Play, which means it covers your entire Chromebook - Android apps, background sync, everything - not just the browser.</p>
-  <p style="margin-bottom: 12px; color: #1E293B; line-height: 1.7; font-size: 1.05rem;">Unlike most free VPNs that throttle you to unusable speeds, cap your data, or quietly sell your browsing activity, we fund the free tier through our optional Plus subscribers. That means a reliable, private connection for browsing, video calls, and HD streaming, without hidden costs. We don't log your activity, so your privacy stays yours, whether you're on the free plan or paying us $2 a month.</p>
-  <p style="margin-bottom: 12px; color: #1E293B; line-height: 1.7; font-size: 1.05rem;">For settings, the short version: install through the Play Store rather than a browser extension, turn on Always-on VPN in ChromeOS network settings, pick WireGuard over legacy protocols where you have the choice, and connect to the nearest server before touching anything else. We cover exactly why each of those matters below, along with the full setup walkthrough.</p>
+  <p style="margin-bottom: 12px; line-height: 1.75; color: #1E293B; font-size: 1.05rem;">You want a free VPN for ChromeOS that actually protects your whole Chromebook, not just your open Chrome tabs, and you want it configured properly instead of left on default settings. OllaVPN Free gives you 10 Mbps speed, access to every country in our network, and post-quantum-ready encryption, all with no data caps, no ads, and nothing pushing you to upgrade. It installs as a real Android app through Google Play, which means it covers your entire Chromebook - Android apps, background sync, everything - not just the browser.</p>
+  <p style="margin-bottom: 12px; line-height: 1.75; color: #1E293B; font-size: 1.05rem;">Unlike most free VPNs that throttle you to unusable speeds, cap your data, or quietly sell your browsing activity, we fund the free tier through our optional Plus subscribers. That means a reliable, private connection for browsing, video calls, and HD streaming, without hidden costs. We don't log your activity, so your privacy stays yours, whether you're on the free plan or paying us $2 a month.</p>
+  <p style="margin-bottom: 12px; line-height: 1.75; color: #1E293B; font-size: 1.05rem;">For settings, the short version: install through the Play Store rather than a browser extension, turn on Always-on VPN in ChromeOS network settings, pick WireGuard over legacy protocols where you have the choice, and connect to the nearest server before touching anything else. We cover exactly why each of those matters below, along with the full setup walkthrough.</p>
 </section>
 
-<section id="key-takeaways" class="article-takeaways-box" style="margin-bottom: 32px; padding: 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+<section id="takeaways" class="article-takeaways-box" style="margin-bottom: 36px; padding: 24px 28px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
   <h2 style="font-size: 1.25rem; font-weight: 700; color: #DA291C; margin-top: 0; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.05em;">KEY TAKEAWAYS</h2>
-  <ul class="takeaways-list-24obs" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px;">
-    <li style="display: flex; gap: 12px; align-items: flex-start; margin-bottom: 4px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">A truly free VPN for ChromeOS means no data caps, no ads, no logs, and no hidden monetization of your traffic</div>
-    </li>
-    <li style="display: flex; gap: 12px; align-items: flex-start; margin-bottom: 4px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">Install as a full Android app through Google Play, not a Chrome extension - only a system-level app covers your whole device</div>
-    </li>
-    <li style="display: flex; gap: 12px; align-items: flex-start; margin-bottom: 4px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">Turn on Always-on VPN in ChromeOS settings to close the gap when switching Wi-Fi networks</div>
-    </li>
-    <li style="display: flex; gap: 12px; align-items: flex-start; margin-bottom: 4px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">Use WireGuard for lower CPU overhead on Chromebook hardware</div>
-    </li>
-    <li style="display: flex; gap: 12px; align-items: flex-start; margin-bottom: 4px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">Pick the nearest server for the best speed - distance matters more on lower-powered processors</div>
-    </li>
-    <li style="display: flex; gap: 12px; align-items: flex-start; margin-bottom: 4px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">Verify claims yourself: test DNS, WebRTC, and kill switch behavior from your own Chromebook</div>
-    </li>
-    <li style="display: flex; gap: 12px; align-items: flex-start; margin-bottom: 4px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">OllaVPN funds the free tier through Plus subscribers, so your data is never the product</div>
-    </li>
+  <ul class="takeaways-list-24obs" style="list-style: none !important; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
+    <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>A truly free VPN for ChromeOS means no data caps, no ads, no logs, and no hidden monetization of your traffic</span></li>
+    <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>Install as a full Android app through Google Play, not a Chrome extension - only a system-level app covers your whole device</span></li>
+    <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>Turn on Always-on VPN in ChromeOS settings to close the gap when switching Wi-Fi networks</span></li>
+    <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>Use WireGuard for lower CPU overhead on Chromebook hardware</span></li>
+    <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>Pick the nearest server for the best speed - distance matters more on lower-powered processors</span></li>
+    <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>Verify claims yourself: test DNS, WebRTC, and kill switch behavior from your own Chromebook</span></li>
+    <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>OllaVPN funds the free tier through Plus subscribers, so your data is never the product</span></li>
   </ul>
 </section>
 
-<div class="blog-main-content-box">
+<div class="blog-main-content-box" style="background: #ffffff; border: 1.5px solid #E2E8F0; border-radius: 12px; padding: 36px; box-shadow: 0 4px 20px rgba(0,0,0,0.03); margin-bottom: 36px;">
 
-<h2 id="section-1" style="font-size: 1.65rem; font-weight: 700; color: #09090b; margin-top: 36px; margin-bottom: 16px; scroll-margin-top: 80px;">What does a truly "free" VPN for ChromeOS actually mean?</h2>
+## What does a truly "free" VPN for ChromeOS actually mean?
 
 <div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
@@ -68,7 +47,7 @@ featured: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">How do we actually make that work financially? The same way it's always worked for the reputable names in this category: OllaVPN funds the free tier from Plus subscribers. People who need more speed or want to cover more devices pay $2 a month for that, and that revenue keeps the free tier running without us ever needing to sell your data or clutter your Chromebook with ads. Free users aren't the product here. They're just users.</p>
 
-<h2 id="section-2" style="font-size: 1.65rem; font-weight: 700; color: #09090b; margin-top: 36px; margin-bottom: 16px; scroll-margin-top: 80px;">What should you expect from any honest free VPN for ChromeOS?</h2>
+## What should you expect from any honest free VPN for ChromeOS?
 
 <div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
@@ -81,7 +60,7 @@ featured: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">For us, the honest answer is simple: the free tier is fully funded by paid OllaVPN Plus subscribers. No ads, no data sales, no logs, and no bait-and-switch where the free plan quietly gets worse a few months in. What you sign up for is what you keep getting.</p>
 
-<h2 id="section-3" style="font-size: 1.65rem; font-weight: 700; color: #09090b; margin-top: 36px; margin-bottom: 16px; scroll-margin-top: 80px;">What does OllaVPN Free give you specifically for ChromeOS?</h2>
+## What does OllaVPN Free give you specifically for ChromeOS?
 
 <div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
@@ -94,7 +73,7 @@ featured: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">The 10 Mbps cap on the free plan comfortably covers the things people actually do on a Chromebook: browsing with a dozen tabs open, HD video calls, streaming, and most cloud-based work. And you're not boxed into a handful of countries - you get every location in our network, free plan or not, which is unusual; a lot of "free" competitors quietly restrict server choice to push you toward upgrading.</p>
 
-<h2 id="section-4" style="font-size: 1.65rem; font-weight: 700; color: #09090b; margin-top: 36px; margin-bottom: 16px; scroll-margin-top: 80px;">How does OllaVPN Free compare to other free VPNs for ChromeOS?</h2>
+## How does OllaVPN Free compare to other free VPNs for ChromeOS?
 
 <div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
@@ -111,7 +90,7 @@ featured: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Their $2 a month keeps the free tier fully funded for everyone else, permanently - not as a limited-time hook.</p>
 
-<h2 id="section-5" style="font-size: 1.65rem; font-weight: 700; color: #09090b; margin-top: 36px; margin-bottom: 16px; scroll-margin-top: 80px;">How do you set up OllaVPN Free on ChromeOS, step-by-step?</h2>
+## How do you set up OllaVPN Free on ChromeOS, step-by-step?
 
 <div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
@@ -123,38 +102,38 @@ featured: false
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Here's the actual walkthrough:</p>
 
 <div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">1. Open the Play Store:</strong>
+  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">1.</strong> <strong style="color: #0F172A !important; font-weight: 700 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Open the Play Store:</strong>
   <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">Open the Play Store on your Chromebook and search for OllaVPN, or go directly to our download page and follow the link through. Installing from the official listing - not a similarly named clone - is worth the extra ten seconds of checking.</span>
 </div>
 
 <div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">2. Install the App:</strong>
+  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">2.</strong> <strong style="color: #0F172A !important; font-weight: 700 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Install the App:</strong>
   <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">ChromeOS will show you the standard Android permission prompt. OllaVPN only needs the VPN service permission itself, nothing more.</span>
 </div>
 
 <div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">3. Open the App:</strong>
+  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">3.</strong> <strong style="color: #0F172A !important; font-weight: 700 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Open the App:</strong>
   <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">You'll see a clean list of available server locations - no account screen, no email prompt, no credit card field. That's not an oversight; the free plan is built to need none of it.</span>
 </div>
 
 <div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">4. Pick a Server:</strong>
+  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">4.</strong> <strong style="color: #0F172A !important; font-weight: 700 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Pick a Server:</strong>
   <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">If you just want general privacy and speed, "Optimal Location" connects you to the fastest server we can currently offer you, which is almost always the right first choice. If you specifically need to appear in a particular country, choose that location instead.</span>
 </div>
 
 <div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">5. Grant Android VPN Permission:</strong>
+  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">5.</strong> <strong style="color: #0F172A !important; font-weight: 700 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Grant Android VPN Permission:</strong>
   <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">Grant the Android VPN permission when prompted - this is the step that lets the tunnel register at the system level and cover your entire Chromebook, not just the browser.</span>
 </div>
 
 <div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">6. Hit Connect:</strong>
+  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">6.</strong> <strong style="color: #0F172A !important; font-weight: 700 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Hit Connect:</strong>
   <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">The app will confirm once the tunnel is up, and from that point everything leaving your Chromebook - Chrome tabs, Android apps, background sync - is routed through OllaVPN.</span>
 </div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">That's the whole process. No separate desktop installer, no reboot required. From here, the settings below are what turn "installed" into "properly configured."</p>
 
-<h2 id="section-6" style="font-size: 1.65rem; font-weight: 700; color: #09090b; margin-top: 36px; margin-bottom: 16px; scroll-margin-top: 80px;">What are the best privacy settings for a free VPN on ChromeOS?</h2>
+## What are the best privacy settings for a free VPN on ChromeOS?
 
 <div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
@@ -175,7 +154,7 @@ featured: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Keep auto-update on for your VPN specifically, even if you've turned it off system-wide to save data. Leak fixes and protocol patches land in updates, and a VPN app that hasn't shipped one in over a year is running against a year-old threat model.</p>
 
-<h2 id="section-7" style="font-size: 1.65rem; font-weight: 700; color: #09090b; margin-top: 36px; margin-bottom: 16px; scroll-margin-top: 80px;">What are the best speed settings for a free VPN on ChromeOS?</h2>
+## What are the best speed settings for a free VPN on ChromeOS?
 
 <div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
@@ -194,7 +173,7 @@ featured: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Test with tools, not vibes. Our what-is-my-IP tool confirms the tunnel is genuinely active, and a quick manual speed test run twice - once connected, once not - gives you a far more honest read than a glance at a number in an app.</p>
 
-<h2 id="section-8" style="font-size: 1.65rem; font-weight: 700; color: #09090b; margin-top: 36px; margin-bottom: 16px; scroll-margin-top: 80px;">Why is a 10 Mbps cap enough for most ChromeOS users?</h2>
+## Why is a 10 Mbps cap enough for most ChromeOS users?
 
 <div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
@@ -207,7 +186,7 @@ featured: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">The truth is, gigabit-class speeds mostly matter for very large downloads or 4K streaming, and neither is the typical day-to-day Chromebook workload. That's why 10 Mbps, uncapped in terms of total data, ends up being a genuinely usable free tier rather than a crippled trial designed to frustrate you into upgrading.</p>
 
-<h2 id="section-9" style="font-size: 1.65rem; font-weight: 700; color: #09090b; margin-top: 36px; margin-bottom: 16px; scroll-margin-top: 80px;">What are the common mistakes people make when picking a free VPN for ChromeOS?</h2>
+## What are the common mistakes people make when picking a free VPN for ChromeOS?
 
 <div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
@@ -220,7 +199,7 @@ featured: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Ad injection is another pattern to watch for - some free VPN apps insert their own ads into pages you visit or redirect you to affiliate sites, which is both annoying and a genuine security risk, since injected ads can link to malicious destinations. And then there's simple performance neglect: many free VPNs are slow because their free-tier servers are overloaded, sometimes deliberately, to make the paid tier look more appealing by comparison. OllaVPN avoids all of this by funding the free tier directly from paid Plus subscribers, so there's no need to recoup costs through your data or your patience.</p>
 
-<h2 id="section-10" style="font-size: 1.65rem; font-weight: 700; color: #09090b; margin-top: 36px; margin-bottom: 16px; scroll-margin-top: 80px;">When does OllaVPN Plus make more sense than the free plan on ChromeOS?</h2>
+## When does OllaVPN Plus make more sense than the free plan on ChromeOS?
 
 <div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
@@ -233,7 +212,7 @@ featured: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">The second common reason is device count. The free plan covers one device at a time, which is fine for a single Chromebook. But if you're also protecting a phone, a second laptop, or a household's worth of devices, juggling multiple free accounts gets old fast. Plus covers up to five devices simultaneously under one account for $2 a month - a small price for not having to think about it device by device.</p>
 
-<h2 id="section-11" style="font-size: 1.65rem; font-weight: 700; color: #09090b; margin-top: 36px; margin-bottom: 16px; scroll-margin-top: 80px;">Is OllaVPN's encryption truly future-proof on Chromebook hardware?</h2>
+## Is OllaVPN's encryption truly future-proof on Chromebook hardware?
 
 <div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
@@ -246,7 +225,7 @@ featured: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">There's a common assumption that this kind of forward-looking cryptography is too heavy for lower-powered ARM Chromebook chips. In practice, the added cost of post-quantum key exchange is a small, one-time expense at connection setup, not an ongoing tax on every packet - which is why it runs comfortably even on entry-level Chromebook hardware without a noticeable hit to battery life or throughput. We've specifically verified this on lower-end ARM Chromebook models rather than assuming it based on desktop benchmarks alone.</p>
 
-<h2 id="section-12" style="font-size: 1.65rem; font-weight: 700; color: #09090b; margin-top: 36px; margin-bottom: 16px; scroll-margin-top: 80px;">How does OllaVPN maintain its 'privacy-first' commitment with a free tier?</h2>
+## How does OllaVPN maintain its 'privacy-first' commitment with a free tier?
 
 <div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
@@ -259,7 +238,7 @@ featured: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">When someone subscribes to OllaVPN Plus for $2 a month, a portion of that directly supports the infrastructure and bandwidth serving free users - including on ChromeOS, where the Android app layer means we're covering full-device traffic, not just lightweight browser requests. That model lets us keep investing in the network, in security, and in post-quantum readiness without ever needing to compromise the core promise: your data isn't the product, on the free plan or the paid one.</p>
 
-<h2 id="section-13" style="font-size: 1.65rem; font-weight: 700; color: #09090b; margin-top: 36px; margin-bottom: 16px; scroll-margin-top: 80px;">Why is a dedicated Android VPN app better than a Chrome extension on ChromeOS?</h2>
+## Why is a dedicated Android VPN app better than a Chrome extension on ChromeOS?
 
 <div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
@@ -272,8 +251,9 @@ featured: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Think of a browser extension as locking one window of your Chromebook while leaving the rest of the house open. A full Android VPN app locks every door and window at once. If you're actually trying to protect your privacy on ChromeOS rather than just your browsing history, the full app is the only version of "VPN for Chromebook" that does what the phrase implies.</p>
 
-<h2 id="section-14" style="font-size: 1.65rem; font-weight: 700; color: #09090b; margin-top: 36px; margin-bottom: 16px; scroll-margin-top: 80px;">A broader-context closing thought</h2>
-
+<div class="wrapping-lightbox" style="margin-top: 36px; margin-bottom: 24px; padding: 28px; background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.25); border-left: 5px solid #DA291C; border-radius: 8px;">
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
+  <p style="font-size: 1.05rem; font-weight: 600; color: #64748B; margin: 0 0 18px 0;">A broader-context closing thought</p>
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">One pattern we've noticed across every privacy-and-networking topic we cover: the gap between what most users believe about a given topic and what the technical reality is keeps widening. Marketing departments have gotten better at producing confident-sounding claims; the underlying technology has gotten more complex; the threats have gotten more sophisticated; and the time most</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">users have to evaluate any single claim has, if anything, gotten shorter. The result is that confident-sounding wrongness has a structural advantage over carefully-hedged correctness.</p>
@@ -282,7 +262,9 @@ featured: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">If you've read this far, you're in that second group. We keep this guide updated as ChromeOS itself changes - Google ships meaningful networking updates to the platform several times a year, and we re-test against the current version rather than assuming last year's menu paths still hold. The main free-VPN comparison, the technology overview, and the free privacy tools are the three pages most worth bookmarking if this guide was useful.</p>
 
-<h2 id="section-15" style="font-size: 1.65rem; font-weight: 700; color: #09090b; margin-top: 36px; margin-bottom: 16px; scroll-margin-top: 80px;">Verify and cross-reference</h2>
+</div>
+
+## Verify and cross-reference
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">For any claim on this page that affects a decision you're about to make, here's the verification path we'd recommend</p>
 
@@ -294,36 +276,36 @@ featured: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Update your view as ChromeOS updates. Google ships new ChromeOS versions on a regular cadence, and menu locations for VPN and network settings do occasionally shift between major releases. This guide reflects the layout as of July 2026; check the "last fact-checked" date at the top before treating a specific menu path as gospel months from now.</p>
 
-<h2 id="section-16" style="font-size: 1.65rem; font-weight: 700; color: #09090b; margin-top: 36px; margin-bottom: 16px; scroll-margin-top: 80px;">How to verify any picks on this list yourself</h2>
+## How to verify any picks on this list yourself
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">A list of recommendations is only worth what you can check yourself. Everything above can be verified from your own Chromebook in under fifteen minutes.</p>
 
 <div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Test 1 Funding model:</strong>
+  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Test 1:</strong> <strong style="color: #0F172A !important; font-weight: 700 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Funding model:</strong>
   <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">Open the provider's homepage and look for the page explaining how the free tier is funded. If you can't find a clear answer within 30 seconds, that's the answer - walk away.</span>
 </div>
 
 <div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Test 2 DNS in-tunnel:</strong>
+  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Test 2:</strong> <strong style="color: #0F172A !important; font-weight: 700 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">DNS in-tunnel:</strong>
   <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">Connect the app. Open our DNS lookup tool in Chrome and resolve a domain. The resolver shown should belong to your VPN provider - not 8.8.8.8, not 1.1.1.1, not your ISP. Disconnect and repeat; the difference is your evidence.</span>
 </div>
 
 <div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Test 3 WebRTC and IP leak:</strong>
+  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Test 3:</strong> <strong style="color: #0F172A !important; font-weight: 700 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">WebRTC and IP leak:</strong>
   <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">Open our WebRTC leak test with the VPN connected. Only the VPN's exit IP should be visible - your real IP should not appear anywhere in the results.</span>
 </div>
 
 <div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Test 4 Always-on / kill switch behaviour:</strong>
+  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Test 4:</strong> <strong style="color: #0F172A !important; font-weight: 700 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Always-on / kill switch behaviour:</strong>
   <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">With the VPN connected and Always-on VPN enabled in ChromeOS settings, switch Wi-Fi networks (or toggle Wi-Fi off and back on). Traffic should pause and resume automatically inside the tunnel rather than briefly falling back to an unprotected connection.</span>
 </div>
 
 <div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Test 5 Audit history:</strong>
+  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Test 5:</strong> <strong style="color: #0F172A !important; font-weight: 700 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Audit history:</strong>
   <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">Search "<provider name> security audit" and look for a published independent report from a firm like Cure53, Secretum, KPMG, or Radically Open Security. A recent, clean audit is a strong trust signal; the complete absence of one when competitors have them is its own signal.</span>
 </div>
 
-<h2 id="section-17" style="font-size: 1.65rem; font-weight: 700; color: #09090b; margin-top: 36px; margin-bottom: 16px; scroll-margin-top: 80px;">What we deliberately left out of this guide</h2>
+## What we deliberately left out of this guide
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">For completeness, here are the categories we considered and specifically excluded, and why.</p>
 
@@ -342,126 +324,121 @@ featured: false
   <p style="color: #64748B; font-size: 0.95rem; margin-bottom: 18px;">Clear, honest answers to the most common questions about this guide.</p>
   <div class="faq-accordion-group" style="display: flex; flex-direction: column; gap: 8px;">
     <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
-      <summary style="font-size: 0.95rem; font-weight: 700; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
         <span>Is OllaVPN Free safe to use on ChromeOS?</span>
         <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
       </summary>
-      <div class="faq-answer-content" style="color: #334155; font-size: 0.92rem; line-height: 1.62; border-top: 1px solid #E2E8F0; margin-top: 8px; padding-top: 8px;">
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
         <p style="margin: 0;">Yes. We built OllaVPN Free with privacy and security as the top priority. You get our full post-quantum-ready encryption, a strict no-logs policy, and a kill switch that's actually enforced, all without needing an account or handing over any personal information. It's designed to be genuinely safe for your whole Chromebook, not just your browser.</p>
       </div>
     </details>
     <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
-      <summary style="font-size: 0.95rem; font-weight: 700; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
         <span>Will OllaVPN Free slow down my Chromebook?</span>
         <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
       </summary>
-      <div class="faq-answer-content" style="color: #334155; font-size: 0.92rem; line-height: 1.62; border-top: 1px solid #E2E8F0; margin-top: 8px; padding-top: 8px;">
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
         <p style="margin: 0;">Not meaningfully. The free plan caps at 10 Mbps, which comfortably handles HD streaming, video calls, and general browsing. WireGuard's lightweight design also means less CPU overhead than older protocols, which matters more on Chromebook hardware than on a high-powered desktop. You might notice a difference if you're used to gigabit speeds, but for everyday use it's more than enough.</p>
       </div>
     </details>
     <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
-      <summary style="font-size: 0.95rem; font-weight: 700; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
         <span>Does OllaVPN Free require an account or credit card on ChromeOS?</span>
         <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
       </summary>
-      <div class="faq-answer-content" style="color: #334155; font-size: 0.92rem; line-height: 1.62; border-top: 1px solid #E2E8F0; margin-top: 8px; padding-top: 8px;">
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
         <p style="margin: 0;">No. You don't need to create an account, provide an email, or add a credit card to use OllaVPN Free. Install the app from the Play Store, open it, and connect. It's $0 forever, with no personal information required.</p>
       </div>
     </details>
     <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
-      <summary style="font-size: 0.95rem; font-weight: 700; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
         <span>Does OllaVPN Free protect my Android apps on a Chromebook, or just Chrome?</span>
         <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
       </summary>
-      <div class="faq-answer-content" style="color: #334155; font-size: 0.92rem; line-height: 1.62; border-top: 1px solid #E2E8F0; margin-top: 8px; padding-top: 8px;">
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
         <p style="margin: 0;">It protects both. Because OllaVPN installs as a full Android VPN app rather than a Chrome extension, it covers your entire device - Chrome tabs, Android apps, and background sync traffic - under the same encrypted tunnel, not just what happens inside the browser.</p>
       </div>
     </details>
     <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
-      <summary style="font-size: 0.95rem; font-weight: 700; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
         <span>What's the catch with OllaVPN Free on ChromeOS?</span>
         <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
       </summary>
-      <div class="faq-answer-content" style="color: #334155; font-size: 0.92rem; line-height: 1.62; border-top: 1px solid #E2E8F0; margin-top: 8px; padding-top: 8px;">
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
         <p style="margin: 0;">There isn't one in the usual sense. The only limitation is the 10 Mbps speed cap. We don't sell your data, inject ads, or push forced upgrades. The free tier is funded entirely by optional Plus subscriptions, so what you get is a genuinely free, private VPN, not a disguised trial.</p>
       </div>
     </details>
     <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
-      <summary style="font-size: 0.95rem; font-weight: 700; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
         <span>How is OllaVPN's free plan different from other free Chromebook VPNs?</span>
         <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
       </summary>
-      <div class="faq-answer-content" style="color: #334155; font-size: 0.92rem; line-height: 1.62; border-top: 1px solid #E2E8F0; margin-top: 8px; padding-top: 8px;">
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
         <p style="margin: 0;">We offer unlimited data at a consistent 10 Mbps, access to every country in our network, and post-quantum-ready encryption, all completely free, with no ads and no data logging. Many free Chromebook VPN apps either cap data heavily, inject ads, or are Chrome-only extensions that leave the rest of your device unprotected.</p>
       </div>
     </details>
     <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
-      <summary style="font-size: 0.95rem; font-weight: 700; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
         <span>Should I enable Always-on VPN for OllaVPN on my Chromebook?</span>
         <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
       </summary>
-      <div class="faq-answer-content" style="color: #334155; font-size: 0.92rem; line-height: 1.62; border-top: 1px solid #E2E8F0; margin-top: 8px; padding-top: 8px;">
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
         <p style="margin: 0;">Yes, we'd recommend it. Turning on Always-on VPN in ChromeOS network settings closes the brief gap that can occur when your Chromebook switches Wi-Fi networks, ensuring traffic stays inside the tunnel instead of momentarily falling back to an unprotected connection.</p>
       </div>
     </details>
     <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
-      <summary style="font-size: 0.95rem; font-weight: 700; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
         <span>Will OllaVPN Free still be free a year from now?</span>
         <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
       </summary>
-      <div class="faq-answer-content" style="color: #334155; font-size: 0.92rem; line-height: 1.62; border-top: 1px solid #E2E8F0; margin-top: 8px; padding-top: 8px;">
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
         <p style="margin: 0;">Yes. We're not running a limited-time offer or a bait-and-switch. Our business model is built around Plus subscribers funding the free tier, which keeps it free and fully functional for everyone, indefinitely - the same on ChromeOS as on every other platform we support.</p>
       </div>
     </details>
     <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
-      <summary style="font-size: 0.95rem; font-weight: 700; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
         <span>Can I use OllaVPN Free for streaming or geo-restricted content on my Chromebook?</span>
         <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
       </summary>
-      <div class="faq-answer-content" style="color: #334155; font-size: 0.92rem; line-height: 1.62; border-top: 1px solid #E2E8F0; margin-top: 8px; padding-top: 8px;">
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
         <p style="margin: 0;">Yes. 10 Mbps is enough for HD streaming on most platforms, and you can connect to any country in our network. For 4K streaming or very heavy downloads - like large Linux packages inside Crostini - OllaVPN Plus's 10 Gbps speed is a better fit.</p>
       </div>
     </details>
     <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
-      <summary style="font-size: 0.95rem; font-weight: 700; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
         <span>How does the kill switch work on ChromeOS specifically?</span>
         <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
       </summary>
-      <div class="faq-answer-content" style="color: #334155; font-size: 0.92rem; line-height: 1.62; border-top: 1px solid #E2E8F0; margin-top: 8px; padding-top: 8px;">
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
         <p style="margin: 0;">If your VPN connection drops unexpectedly, the kill switch blocks internet traffic until the tunnel reconnects, preventing your real IP address or unencrypted data from leaking out in the gap. Combined with Always-on VPN in ChromeOS settings, this covers the network-switching scenarios that come up often on a Chromebook moving between Wi-Fi networks.</p>
       </div>
     </details>
     <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
-      <summary style="font-size: 0.95rem; font-weight: 700; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
         <span>What logs does OllaVPN Free keep on ChromeOS?</span>
         <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
       </summary>
-      <div class="faq-answer-content" style="color: #334155; font-size: 0.92rem; line-height: 1.62; border-top: 1px solid #E2E8F0; margin-top: 8px; padding-top: 8px;">
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
         <p style="margin: 0;">None that can identify you. We run a strict no-logs policy across every platform we support, including ChromeOS - no tracking of browsing activity, connection timestamps, IP addresses, or bandwidth usage tied to you personally.</p>
       </div>
     </details>
     <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
-      <summary style="font-size: 0.95rem; font-weight: 700; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
         <span>Will my school or workplace know I'm using a VPN on a managed Chromebook?</span>
         <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
       </summary>
-      <div class="faq-answer-content" style="color: #334155; font-size: 0.92rem; line-height: 1.62; border-top: 1px solid #E2E8F0; margin-top: 8px; padding-top: 8px;">
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
         <p style="margin: 0;">If your Chromebook is managed by a school or employer, administrators can disable VPN apps, block the Play Store, or enforce a managed network policy regardless of what you try to install. If you see a "managed device" notice, check with your IT administrator before assuming a personal VPN will work as expected.</p>
       </div>
     </details>
     <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
-      <summary style="font-size: 0.95rem; font-weight: 700; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
         <span>When would I want to upgrade to OllaVPN Plus on ChromeOS?</span>
         <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
       </summary>
-      <div class="faq-answer-content" style="color: #334155; font-size: 0.92rem; line-height: 1.62; border-top: 1px solid #E2E8F0; margin-top: 8px; padding-top: 8px;">
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
         <p style="margin: 0;">Upgrade if you need faster speeds (up to 10 Gbps), want to protect multiple devices - a phone alongside your Chromebook, for instance - under one account, or regularly do things like 4K streaming or large downloads that the free tier's 10 Mbps cap isn't built for. It's $2 a month for a meaningful jump in capability.</p>
       </div>
     </details>
   </div>
-</section>
-
-<section id="wrapping-it-up" class="wrap-up-box" style="background: #FFF5F5 !important; border: 1.5px solid rgba(218, 41, 28, 0.25) !important; border-left: 5px solid #DA291C !important; border-radius: 16px !important; padding: 26px 30px !important; margin-top: 36px !important; margin-bottom: 32px !important; width: 100% !important; box-shadow: 0 4px 20px rgba(218, 41, 28, 0.05) !important; box-sizing: border-box !important;">
-  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
-  <p style="font-size: 1.05rem; line-height: 1.7; color: #1E293B; margin-bottom: 12px;">Choosing the right VPN comes down to verified transparency, modern encryption standards like WireGuard, and strict zero-logging policies that preserve your digital privacy without artificial limitations or complex setups.</p>
 </section>
