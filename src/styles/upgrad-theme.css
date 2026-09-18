@@ -926,7 +926,7 @@ button {
 }
 
 .ug-footer-brand-desc {
-  font-size: 0.88rem;
+  font-size: 0.94rem;
   color: #9AA3AF;
   line-height: 1.55;
   margin-top: 1rem;
@@ -934,7 +934,7 @@ button {
 }
 
 .ug-footer-col-title {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -950,7 +950,7 @@ button {
 }
 
 .ug-footer-links a {
-  font-size: 0.85rem;
+  font-size: 0.92rem;
   color: #A0AAB8;
   transition: color 0.15s ease;
 }
@@ -964,7 +964,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 0.8rem;
+  font-size: 0.88rem;
   color: #6C757D;
 }
 
