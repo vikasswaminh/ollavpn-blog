@@ -6,44 +6,35 @@ author: 'OllaVPN Team'
 tags: ['privacy-security']
 ---
 
-<section id="tldr" class="article-tldr-box">
-<h3 style="font-size: 1.3rem; font-weight: 800; color: #323652; margin: 0 0 12px 0; font-family: var(--font), 'Lato', sans-serif;">TL;DR</h3>
-<p style="font-size: 1.05rem; line-height: 1.7; color: #09090b; margin-bottom: 12px; font-family: var(--font), 'Lato', sans-serif;">
-A WebRTC leak happens when your browser's real-time communication feature reveals your true IP address directly to a website, bypassing your VPN's encrypted tunnel entirely, even while every other sign in your browser says "you're protected." To test: connect to your VPN, then visit a WebRTC leak test site such as <a href="https://browserleaks.com/webrtc" target="_blank" rel="noopener noreferrer">browserleaks.com/webrtc</a>. If only your VPN's IP address appears, you're safe. If your real IP shows up anywhere on the page, you have a leak. To prevent it for good: use a VPN with dedicated WebRTC leak protection built into its browser handling, or a browser configuration that blocks the leak at the source. OllaVPN blocks this automatically on every connection.
-</p>
+<section id="tldr" class="article-tldr-box" style="margin-bottom: 32px; padding: 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <h2 style="font-size: 1.25rem; font-weight: 700; color: #DA291C; margin-top: 0; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h2>
+  <p style="margin-bottom: 12px; line-height: 1.75; color: #1E293B; font-size: 1.05rem;">A WebRTC leak happens when your browser's real-time communication feature reveals your true IP address directly to a website, bypassing your VPN's encrypted tunnel entirely, even while every other sign in your browser says "you're protected." To test: connect to your VPN, then visit a WebRTC leak test site such as <a href="https://browserleaks.com/webrtc" target="_blank" rel="noopener noreferrer">browserleaks.com/webrtc</a>. If only your VPN's IP address appears, you're safe. If your real IP shows up anywhere on the page, you have a leak. To prevent it for good: use a VPN with dedicated WebRTC leak protection built into its browser handling, or a browser configuration that blocks the leak at the source. OllaVPN blocks this automatically on every connection.</p>
 </section>
 
-<section id="key-takeaways" class="article-takeaways-box">
-<h3 style="font-size: 1.3rem; font-weight: 800; color: #323652; margin: 0 0 16px 0; font-family: var(--font), 'Lato', sans-serif;">Key Takeaways</h3>
-<ul class="takeaways-list-24obs">
-  <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">A WebRTC leak happens when:</strong> your browser's real-time communication feature reveals your real IP address directly to a website, bypassing your VPN's encrypted tunnel entirely.
-      </div>
-  </li>
-  <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">How to test your connection:</strong> connect to your VPN and visit a WebRTC leak test tool. If only your VPN's IP address appears, you are safe; if your ISP-assigned IP appears, your browser is leaking.
-      </div>
-  </li>
-  <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">How to prevent leaks for good:</strong> use a VPN with dedicated WebRTC shielding built into its client by default, or disable WebRTC in your browser settings. OllaVPN blocks WebRTC leaks automatically on every connection.
-      </div>
-  </li>
-</ul>
+<section id="takeaways" class="article-takeaways-box" style="margin-bottom: 36px; padding: 24px 28px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <h2 style="font-size: 1.25rem; font-weight: 700; color: #DA291C; margin-top: 0; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.05em;">KEY TAKEAWAYS</h2>
+  <ul class="takeaways-list-24obs" style="list-style: none !important; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
+    <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>&bull;
+      
+        A WebRTC leak happens when: your browser's real-time communication feature reveals your real IP address directly to a website, bypassing your VPN's encrypted tunnel entirely.</span></li>
+    <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>&bull;
+      
+        How to test your connection: connect to your VPN and visit a WebRTC leak test tool. If only your VPN's IP address appears, you are safe; if your ISP-assigned IP appears, your browser is leaking.</span></li>
+    <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>&bull;
+      
+        How to prevent leaks for good: use a VPN with dedicated WebRTC shielding built into its client by default, or disable WebRTC in your browser settings. OllaVPN blocks WebRTC leaks automatically on every connection.</span></li>
+  </ul>
 </section>
 
-<div class="blog-main-content-box">
+<div class="blog-main-content-box" style="background: #ffffff; border: 1.5px solid #E2E8F0; border-radius: 12px; padding: 36px; box-shadow: 0 4px 20px rgba(0,0,0,0.03); margin-bottom: 36px;">
+
 
 ## What WebRTC actually does
 
-<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">WebRTC, Web Real-Time Communication, is a browser feature that lets two devices connect and exchange audio, video, or data directly with each other, without routing everything through a central server. It's what powers video calls, voice chat, and screen sharing inside your browser. To make that direct connection work, it has to figure out each device's real network address, and that's the step that can leak.</p>
+
+<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">WebRTC, Web Real-Time Communication, is a browser feature that lets two devices connect and exchange audio, video, or data directly with each other, without routing everything through a central server. It's what powers video calls, voice chat, and screen sharing inside your browser. To make that direct connection work, it has to figure out each device's real network address, and that's the step that can leak.</p>
 </div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Video calling inside a browser, no app to install, no plugin to download, feels effortless today, and WebRTC is the technology quietly making it possible. It's an open standard, built into every major browser, that lets your device and someone else's establish a direct, peer-to-peer connection for audio, video, or data, rather than bouncing everything through a server in the middle.</p>
@@ -52,11 +43,13 @@ A WebRTC leak happens when your browser's real-time communication feature reveal
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">That address-discovery step is normal, necessary, and usually invisible. The problem is that it doesn't ask your VPN for permission first.</p>
 
+
 ## What a WebRTC leak is
 
-<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A <a href="/blog/what-is-a-webrtc-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WebRTC leak</a> is when your browser reveals your real IP address to a website through this real-time communication feature, even while your VPN is connected and hiding your IP everywhere else. The rest of your traffic looks protected, but a single line of JavaScript on the page can quietly ask your browser for its real address, and WebRTC will often just hand it over.</p>
+
+<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">A <a href="/blog/what-is-a-webrtc-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WebRTC leak</a> is when your browser reveals your real IP address to a website through this real-time communication feature, even while your VPN is connected and hiding your IP everywhere else. The rest of your traffic looks protected, but a single line of JavaScript on the page can quietly ask your browser for its real address, and WebRTC will often just hand it over.</p>
 </div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">When you connect to a VPN, the deal is simple: your real IP address should be replaced by the VPN server's IP address, for everything you do in your browser and everywhere else on your device. Websites should only ever see the VPN's address, never yours.</p>
@@ -65,16 +58,18 @@ A WebRTC leak happens when your browser's real-time communication feature reveal
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">It's a strange kind of leak, because nothing else about your connection looks wrong. Your <a href="/blog/what-is-a-dns-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">DNS leak</a> testing lookups might be clean. Your IP address might show the VPN's location everywhere else you check. But open a WebRTC leak test in the same browser, and your real address can be sitting right there on the page.</p>
 
+
 ## Why WebRTC leaks matter
 
-<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A WebRTC leak exposes your real IP address specifically, not your browsing content, but the single most identifying piece of location data a VPN is supposed to hide. For casual browsing it's a meaningful gap in your privacy. For anyone actively relying on a VPN to hide their location, journalists, activists, people evading targeted harassment, or anyone on a network where their real location carries risk, it can undo the entire point of using a VPN in the first place.</p>
+
+<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">A WebRTC leak exposes your real IP address specifically, not your browsing content, but the single most identifying piece of location data a VPN is supposed to hide. For casual browsing it's a meaningful gap in your privacy. For anyone actively relying on a VPN to hide their location, journalists, activists, people evading targeted harassment, or anyone on a network where their real location carries risk, it can undo the entire point of using a VPN in the first place.</p>
 </div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Let's be honest about what's actually being exposed. A WebRTC leak doesn't reveal which pages you're reading or what you typed into a form. What it reveals is your real IP address, which, on its own, is usually enough to identify roughly where you are, who your internet provider is, and in some cases, tie directly back to your home network.</p>
 
-### Where WebRTC leaks matter most
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">### Where WebRTC leaks matter most</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">If you're using a VPN specifically to hide your location, for accessing region-restricted content, for personal safety reasons, or simply because you don't want a website to know where you actually are, a WebRTC leak defeats that purpose completely, silently, while every other indicator suggests you're protected.</p>
 
@@ -88,44 +83,48 @@ A WebRTC leak happens when your browser's real-time communication feature reveal
   <strong style="color: #0F172A; font-weight: 800;">The way to think about it:</strong> a WebRTC leak doesn't touch the content of what you do online, but it can undo the one thing most people turn on a VPN to get in the first place, which is hiding where the request is actually coming from.
 </p>
 
+
 ## What causes WebRTC leaks
 
-<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The most common causes are browsers with WebRTC enabled by default and no VPN-aware handling, VPN apps that don't route browser-level API calls through the tunnel, misconfigured or absent browser extensions meant to block the leak, and STUN/TURN server queries that bypass the VPN entirely. Choosing a VPN or browser setup built with this specific leak in mind removes most of the risk.</p>
+
+<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">The most common causes are browsers with WebRTC enabled by default and no VPN-aware handling, VPN apps that don't route browser-level API calls through the tunnel, misconfigured or absent browser extensions meant to block the leak, and STUN/TURN server queries that bypass the VPN entirely. Choosing a VPN or browser setup built with this specific leak in mind removes most of the risk.</p>
 </div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">WebRTC leaks come from a small, fairly consistent set of root causes. Almost none of them are malicious on the website's part, the leak exists because of how the underlying technology was designed, not because someone is doing something exotic to find you.</p>
 
-### The browser gathers addresses through STUN/TURN servers
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">### The browser gathers addresses through STUN/TURN servers</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">WebRTC uses a discovery process (built on protocols called STUN and TURN) to figure out your device's addresses so a peer-to-peer connection can be set up. This discovery step queries external servers directly from your device, and depending on how your VPN handles browser traffic, those queries can travel outside the encrypted tunnel, handing your real address straight to whatever site is asking.</p>
 
-### The VPN doesn't account for browser-level APIs
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">### The VPN doesn't account for browser-level APIs</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Many VPNs do a solid job of tunneling your general network traffic but were never built with WebRTC specifically in mind. WebRTC operates through a browser API that behaves differently from a normal web request, and a VPN that only tunnels standard traffic can simply miss it.</p>
 
-### WebRTC is enabled by default with no leak protection
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">### WebRTC is enabled by default with no leak protection</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Every major browser ship with WebRTC turned on, because disabling it outright would break legitimate video calling and voice chat features people rely on daily. Most browsers don't include built-in leak protection against this specific issue, leaving it entirely up to your VPN or a manual browser setting to close the gap.</p>
 
-### Browser extensions that claim to block leaks, but don't fully
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">### Browser extensions that claim to block leaks, but don't fully</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">A number of browser extensions marketed as "WebRTC blockers" only partially address the issue, some block one discovery method but not another, or apply only to certain browsers. An extension that hasn't been updated to match recent browser changes can quietly stop working while still showing as "enabled."</p>
 
-### Multiple network interfaces on your device
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">### Multiple network interfaces on your device</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">If your device has more than one active network connection, Wi-Fi and a wired connection, for example, or a virtual adapter from other software, WebRTC can sometimes gather and expose addresses from an interface your VPN isn't covering, even if the VPN itself is working correctly on your primary connection.</p>
 
-### Local network address exposure
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">### Local network address exposure</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Even when your real public IP address doesn't leak, WebRTC can still reveal your local network address (like 192.168.x.x). This is a smaller privacy concern than a public IP leak but is still information a well-configured setup shouldn't hand over to a website.</p>
 
+
 ## How to test for a WebRTC leak
 
-<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Disconnect your VPN, visit a WebRTC leak test site to record your real IP as a baseline, then reconnect to the VPN and run the test again in the same browser. If any trace of your real IP address still appears, you have a leak.</p>
+
+<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">Disconnect your VPN, visit a WebRTC leak test site to record your real IP as a baseline, then reconnect to the VPN and run the test again in the same browser. If any trace of your real IP address still appears, you have a leak.</p>
 </div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">You don't need any technical background to test for this. Five minutes and a browser is all it takes.</p>
@@ -152,11 +151,13 @@ A WebRTC leak happens when your browser's real-time communication feature reveal
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">That's the whole test. It costs nothing and takes less time than it took to read this section. We'd recommend running it once when you first set up a VPN, and again any time you switch browsers or make a significant change to your network.</p>
 
+
 ## How to read the test results
 
-<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A WebRTC leak test result typically shows a short list of detected IP addresses, sometimes broken out by type: local IP, public IPv4, and public IPv6. What counts as a problem depends on what you expect to see.</p>
+
+<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">A WebRTC leak test result typically shows a short list of detected IP addresses, sometimes broken out by type: local IP, public IPv4, and public IPv6. What counts as a problem depends on what you expect to see.</p>
 </div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">The public IPv4 address should match your VPN server's address, not the address your internet provider assigned you. If it shows your home or mobile provider's IP while the VPN is connected, that's a leak.</p>
@@ -169,11 +170,13 @@ A WebRTC leak happens when your browser's real-time communication feature reveal
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">A clean result shows only VPN-associated addresses, consistently, across every field the test checks. A leaky one shows your real IP address appearing anywhere on the page.</p>
 
+
 ## How to fix a WebRTC leak
 
-<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The most reliable fix is a VPN with dedicated WebRTC leak protection built in. Other options include disabling WebRTC directly in your browser settings, using a trustworthy WebRTC-blocking extension, and keeping both your browser and VPN app updated to the latest versions.</p>
+
+<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">The most reliable fix is a VPN with dedicated WebRTC leak protection built in. Other options include disabling WebRTC directly in your browser settings, using a trustworthy WebRTC-blocking extension, and keeping both your browser and VPN app updated to the latest versions.</p>
 </div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">If your test showed a leak, here's the order of things worth trying, starting with what's most likely to actually solve it.</p>
@@ -202,16 +205,18 @@ A WebRTC leak happens when your browser's real-time communication feature reveal
   <strong style="color: #0F172A; font-weight: 800;">6:</strong> Switch to a VPN that handles this correctly by default. If you've tried the above and still see leaks across multiple browsers, the gap is likely in the VPN product itself rather than your setup. The simplest fix at that point is changing products.
 </p>
 
+
 ## How to prevent leaks for good
 
-<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">Choose a VPN with WebRTC leak protection built in by default, so your browser's real-time communication features are automatically routed through the encrypted tunnel or blocked from leaking your real address, without you needing to touch a single browser setting.</p>
+
+<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">Choose a VPN with WebRTC leak protection built in by default, so your browser's real-time communication features are automatically routed through the encrypted tunnel or blocked from leaking your real address, without you needing to touch a single browser setting.</p>
 </div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">The honest truth is that you shouldn't have to think about WebRTC leaks at all. This is a genuinely obscure issue for most people to know about, let alone manage manually, and a well-built modern VPN should close this gap automatically the moment you connect.</p>
 
-### What to look for in a VPN if you want to set it and forget it
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">### What to look for in a VPN if you want to set it and forget it</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">The VPN specifically addresses WebRTC, not just general traffic tunneling. Ask or check the VPN's technology documentation for an explicit mention of WebRTC leak protection, general marketing about "no leaks" isn't the same as confirming this specific issue is covered.</p>
 
@@ -223,11 +228,13 @@ A WebRTC leak happens when your browser's real-time communication feature reveal
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">The VPN passes its own WebRTC leak test. Test it yourself once, in each browser you actually use, just to confirm. Then let it run.</p>
 
+
 ## WebRTC leak protection vs the kill switch
 
-<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">A kill switch blocks all traffic when your VPN connection drops, preventing leaks during those disconnect windows. WebRTC leak protection prevents a specific browser feature from bypassing the tunnel while the VPN is actively connected and working normally. You want both, they guard against completely different failure modes.</p>
+
+<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">A kill switch blocks all traffic when your VPN connection drops, preventing leaks during those disconnect windows. WebRTC leak protection prevents a specific browser feature from bypassing the tunnel while the VPN is actively connected and working normally. You want both, they guard against completely different failure modes.</p>
 </div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">A piece of advice that circulates a lot online is "just turn on the kill switch and you're covered." For WebRTC specifically, that's not accurate.</p>
@@ -238,22 +245,26 @@ A WebRTC leak happens when your browser's real-time communication feature reveal
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">What you actually want is both, working on different layers: an always-on kill switch around your whole connection, plus dedicated WebRTC leak protection inside your browser. One catches connection failures. The other catches a feature that quietly ignores your VPN even when the VPN is doing everything right.</p>
 
+
 ## A note on browser-specific quirks
 
-<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">WebRTC behavior isn't identical across browsers, and this is one of the more common sources of confusion when people test for leaks and get inconsistent results.</p>
+
+<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">WebRTC behavior isn't identical across browsers, and this is one of the more common sources of confusion when people test for leaks and get inconsistent results.</p>
 </div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Chrome and Chromium-based browsers (including Edge and Brave) have historically made WebRTC harder to fully disable through built-in settings alone, often requiring an extension to achieve full protection. Firefox exposes internal configuration flags that let advanced users disable or restrict WebRTC directly, without needing a third-party extension. Safari has generally been more conservative about exposing address information through WebRTC by default, though this shouldn't be relied upon as a substitute for actually testing.</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">If you use more than one browser, which most people do, even if it's just a work browser and a personal one, treat each one as a separate thing to check. A VPN that closes the leak cleanly in one browser has not necessarily closed it in another, and the only way to know is to run the test in each one.</p>
 
+
 ## Your privacy checklist
 
-<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">The five-minute "no-leak" sanity check, once a year</p>
+
+<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">The five-minute "no-leak" sanity check, once a year</p>
 </div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Run a WebRTC leak test while connected to your VPN, checking local, public IPv4, and public IPv6 fields.</p>
@@ -270,11 +281,13 @@ A WebRTC leak happens when your browser's real-time communication feature reveal
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">If all six come back clean, you can stop worrying about this particular leak for the rest of the year.</p>
 
+
 ## How OllaVPN handles WebRTC
 
-<div class="answer-card" style="margin: 20px 0 24px; border-left: 4px solid #DA291C; background: rgba(218, 41, 28, 0.04); padding: 16px 20px; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 13.5px; line-height: 1.65; color: #334155;">We built OllaVPN to be the answer to the question "what should a modern privacy VPN handle automatically, without making the user become a part-time network engineer?" When it comes to WebRTC, the answer is simple:</p>
+
+<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">We built OllaVPN to be the answer to the question "what should a modern privacy VPN handle automatically, without making the user become a part-time network engineer?" When it comes to WebRTC, the answer is simple:</p>
 </div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">WebRTC discovery traffic stays inside the encrypted tunnel. The address your browser gathers and shares through WebRTC is the VPN's address, not your real one, whether you're on Chrome, Firefox, Edge, or Safari.</p>
@@ -291,13 +304,13 @@ A WebRTC leak happens when your browser's real-time communication feature reveal
   <strong style="color: #0F172A; font-weight: 800;">The result:</strong> if you run a WebRTC leak test while connected to OllaVPN, the test should show only OllaVPN's address, in every field, in every major browser. Every connection. Every time. There's nothing for you to configure.
 </p>
 
-### A broader-context closing thought
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">### A broader-context closing thought</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">One pattern we've noticed across every privacy-and-networking topic we cover: the gap between what most users believe about a given feature and what the technical reality is keeps widening. WebRTC is a good example, it was built to make video calling frictionless, not to be a privacy hole, and the people who built it weren't thinking about VPN users when they designed the address-discovery step. That gap between "this feature exists to help people talk to each other" and "this feature can quietly expose your real IP to any website that asks" is exactly the kind of thing confident-sounding marketing tends to paper over rather than explain.</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">The remedy we've settled on is to publish at depth, with the actual mechanism explained and explicit limits stated, and to publish free verification tools so the reader doesn't have to take our word for the technical claims. We try to keep this material updated quarterly so the facts don't drift, and we add notes when something material changes, a browser vendor alters WebRTC's default behavior, a new leak vector gets documented, an extension people relied on stops working. The main free-VPN comparison, the technology overview, and the free privacy tools are the three pages most worth bookmarking from the OllaVPN site if you've found this guide useful.</p>
 
-### Verify and cross-reference
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">### Verify and cross-reference</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">For any claim on this page that affects a decision you're about to make, the verification path we recommend:</p>
 
@@ -309,7 +322,7 @@ A WebRTC leak happens when your browser's real-time communication feature reveal
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Update your view when the facts update. Browser behavior shifts, VPN products change, standards evolve. The view you formed a year ago about how a specific browser handles WebRTC may not be accurate today. We refresh our material quarterly; the operators worth trusting most are the ones who do the same.</p>
 
-### Deeper context worth knowing
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">### Deeper context worth knowing</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">A definitional explainer should leave you understanding not just the concept but the surrounding category, what other concepts it connects to, what common misunderstandings to avoid, and which adjacent ideas you should know about. A few worth covering:</p>
 
@@ -319,7 +332,7 @@ A WebRTC leak happens when your browser's real-time communication feature reveal
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">The threat model matters. The same WebRTC feature that's a genuine privacy risk for someone hiding their location from a hostile website is a completely reasonable, desirable feature for someone making a video call to a family member. "Leaks your IP" doesn't mean "should never be used", it means "should be routed through your VPN's protection, the same as everything else you do online."</p>
 
-### How this connects to OllaVPN specifically
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">### How this connects to OllaVPN specifically</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">If you've read this far, you probably want to know how the concept applies to OllaVPN's product. The short version:</p>
 
@@ -331,109 +344,99 @@ A WebRTC leak happens when your browser's real-time communication feature reveal
 
 </div>
 
-<section id="faqs" class="faq-lightbox-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-radius: 16px !important; padding: 32px 28px !important; margin: 40px 0 32px 0 !important; box-shadow: 0 4px 20px rgba(50, 54, 82, 0.04) !important; box-sizing: border-box !important;">
-  <h2 style="font-size: 1.85rem; font-weight: 800; margin: 0 0 24px 0; color: #0F172A; border: none !important; font-family: 'Lato', sans-serif;">Frequently Asked Questions</h2>
-  <div style="display: flex; flex-direction: column; gap: 14px;">
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>What is a WebRTC leak in simple terms?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
-    </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      A WebRTC leak happens when your browser's real-time communication feature, the technology behind browser-based video calls, reveals your real IP address directly to a website, bypassing your VPN's protection entirely. Even though the rest of your traffic looks protected, the leaked address can reveal roughly where you actually are.
-    </p>
-  </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>How do I check if I have a WebRTC leak?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
-    </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Connect to your VPN, then visit a WebRTC leak test site such as <a href="https://browserleaks.com/webrtc" target="_blank" rel="noopener noreferrer">browserleaks.com/webrtc</a> or <a href="/webrtc-leak-test.html">ollavpn.com/webrtc-leak-test</a>. Check every address field the test shows, local IP, public IPv4, and public IPv6. If only your VPN's address appears in every field, there's no leak. If your real IP shows up anywhere, your setup is leaking.
-    </p>
-  </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>Are WebRTC leaks dangerous?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
-    </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      A WebRTC leak exposes your real IP address, not the content of your browsing. For most casual users that's a meaningful privacy gap rather than an emergency. For anyone actively relying on a VPN to hide their location, journalists, activists, people avoiding targeted harassment, or anyone on a network where their real location carries risk, it can undo the entire reason they're using a VPN.
-    </p>
-  </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>What causes a WebRTC leak?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
-    </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Common causes include a VPN that doesn't route browser-level WebRTC traffic through its tunnel, STUN/TURN address discovery bypassing the VPN, WebRTC being enabled by default with no leak protection, partially effective browser extensions, and multiple active network interfaces on your device. The simplest fix is a VPN built with WebRTC leak protection included by default.
-    </p>
-  </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>Does a kill switch prevent WebRTC leaks?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
-    </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      No, not directly. A kill switch prevents leaks during a VPN disconnect by blocking all traffic until the tunnel reconnects. WebRTC leaks typically happen while the VPN is connected and working normally, through a browser feature the kill switch was never designed to monitor. You want both: dedicated WebRTC leak protection AND an always-on kill switch.
-    </p>
-  </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>Do free VPNs leak through WebRTC?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
-    </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Some do; some don't. Many free VPNs focus only on tunneling general traffic and never specifically address browser-level WebRTC behavior, which causes leaks.
-    </p>
-  </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>Can I prevent WebRTC leaks without a VPN?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
-    </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Partially. You can disable WebRTC directly in some browsers (Firefox allows this through internal settings) or install a dedicated WebRTC-blocking extension. This stops the specific leak but doesn't encrypt or hide the rest of your traffic, for that you still need a VPN, and you'll lose the ability to make browser-based video calls if you fully disable WebRTC.
-    </p>
-  </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>Is a WebRTC leak the same as a DNS leak?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
-    </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      No. A WebRTC leak exposes your real IP address directly through a browser feature. A DNS leak exposes which websites you visit through unprotected domain lookups. They're different issues with different causes, and a good VPN protects against both, it's worth testing for each separately.
-    </p>
-  </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>How often should I test for WebRTC leaks?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
-    </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Once when you first install a VPN, once after any major browser update, and once whenever you start using a new browser regularly. A reputable VPN handles this correctly out of the box, so frequent testing isn't usually necessary, but because browser behavior around WebRTC changes over time, an occasional recheck is worthwhile.
-    </p>
-  </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 1.05rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>Does OllaVPN protect against WebRTC leaks?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.25rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
-    </summary>
-    <p class="faq-accordion-content" style="font-size: 1.0rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Yes. OllaVPN routes WebRTC discovery traffic inside the encrypted tunnel by default, across Chrome, Firefox, Edge, and Safari, covering both IPv4 and IPv6, there is nothing to configure. The kill switch is always on. The result: when you're connected to OllaVPN, a WebRTC leak test should show only OllaVPN's address, every time.
-    </p>
-  </details>
+<section id="faqs" class="blog-main-content-box" style="margin-top: 36px; margin-bottom: 32px; scroll-margin-top: 80px;">
+  <h2 style="font-size: 1.45rem; font-weight: 700; color: #09090b; margin-top: 0; margin-bottom: 6px;">Frequently Asked Questions</h2>
+  <p style="color: #64748B; font-size: 0.95rem; margin-bottom: 18px;">Clear, honest answers to the most common questions about this guide.</p>
+  <div class="faq-accordion-group" style="display: flex; flex-direction: column; gap: 8px;">
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+        <span>What is a WebRTC leak in simple terms?</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+      </summary>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">A WebRTC leak happens when your browser's real-time communication feature, the technology behind browser-based video calls, reveals your real IP address directly to a website, bypassing your VPN's protection entirely. Even though the rest of your traffic looks protected, the leaked address can reveal roughly where you actually are.</p>
+      </div>
+    </details>
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+        <span>How do I check if I have a WebRTC leak?</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+      </summary>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">Connect to your VPN, then visit a WebRTC leak test site such as <a href="https://browserleaks.com/webrtc" target="_blank" rel="noopener noreferrer">browserleaks.com/webrtc</a> or <a href="/webrtc-leak-test.html">ollavpn.com/webrtc-leak-test</a>. Check every address field the test shows, local IP, public IPv4, and public IPv6. If only your VPN's address appears in every field, there's no leak. If your real IP shows up anywhere, your setup is leaking.</p>
+      </div>
+    </details>
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+        <span>Are WebRTC leaks dangerous?</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+      </summary>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">A WebRTC leak exposes your real IP address, not the content of your browsing. For most casual users that's a meaningful privacy gap rather than an emergency. For anyone actively relying on a VPN to hide their location, journalists, activists, people avoiding targeted harassment, or anyone on a network where their real location carries risk, it can undo the entire reason they're using a VPN.</p>
+      </div>
+    </details>
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+        <span>What causes a WebRTC leak?</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+      </summary>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">Common causes include a VPN that doesn't route browser-level WebRTC traffic through its tunnel, STUN/TURN address discovery bypassing the VPN, WebRTC being enabled by default with no leak protection, partially effective browser extensions, and multiple active network interfaces on your device. The simplest fix is a VPN built with WebRTC leak protection included by default.</p>
+      </div>
+    </details>
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+        <span>Does a kill switch prevent WebRTC leaks?</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+      </summary>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">No, not directly. A kill switch prevents leaks during a VPN disconnect by blocking all traffic until the tunnel reconnects. WebRTC leaks typically happen while the VPN is connected and working normally, through a browser feature the kill switch was never designed to monitor. You want both: dedicated WebRTC leak protection AND an always-on kill switch.</p>
+      </div>
+    </details>
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+        <span>Do free VPNs leak through WebRTC?</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+      </summary>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">Some do; some don't. Many free VPNs focus only on tunneling general traffic and never specifically address browser-level WebRTC behavior, which causes leaks.</p>
+      </div>
+    </details>
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+        <span>Can I prevent WebRTC leaks without a VPN?</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+      </summary>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">Partially. You can disable WebRTC directly in some browsers (Firefox allows this through internal settings) or install a dedicated WebRTC-blocking extension. This stops the specific leak but doesn't encrypt or hide the rest of your traffic, for that you still need a VPN, and you'll lose the ability to make browser-based video calls if you fully disable WebRTC.</p>
+      </div>
+    </details>
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+        <span>Is a WebRTC leak the same as a DNS leak?</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+      </summary>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">No. A WebRTC leak exposes your real IP address directly through a browser feature. A DNS leak exposes which websites you visit through unprotected domain lookups. They're different issues with different causes, and a good VPN protects against both, it's worth testing for each separately.</p>
+      </div>
+    </details>
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+        <span>How often should I test for WebRTC leaks?</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+      </summary>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">Once when you first install a VPN, once after any major browser update, and once whenever you start using a new browser regularly. A reputable VPN handles this correctly out of the box, so frequent testing isn't usually necessary, but because browser behavior around WebRTC changes over time, an occasional recheck is worthwhile.</p>
+      </div>
+    </details>
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+        <span>Does OllaVPN protect against WebRTC leaks?</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+      </summary>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">Yes. OllaVPN routes WebRTC discovery traffic inside the encrypted tunnel by default, across Chrome, Firefox, Edge, and Safari, covering both IPv4 and IPv6, there is nothing to configure. The kill switch is always on. The result: when you're connected to OllaVPN, a WebRTC leak test should show only OllaVPN's address, every time.</p>
+      </div>
+    </details>
   </div>
 </section>
-
-<section id="wrapping-it-up" class="wrap-up-box" style="background: #FFF5F5 !important; border: 1.5px solid rgba(218, 41, 28, 0.25) !important; border-left: 5px solid #DA291C !important; border-radius: 16px !important; padding: 26px 30px !important; margin-bottom: 24px !important; width: 100% !important; box-shadow: 0 4px 20px rgba(218, 41, 28, 0.05) !important; box-sizing: border-box !important;">
-  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
-  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 12px;">
-    Choosing the right VPN solution for <strong>WebRTC Leak Explained (2026): How to Check and Fix It</strong> requires balancing speed, genuine security, and uncompromised privacy.
-  </p>
-  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
-    With OllaVPN, your browser gets automatic WebRTC shielding, default-on kill switch protection, and complete zero-log infrastructure so your real IP is never exposed.
-  </p>
-</section>
-

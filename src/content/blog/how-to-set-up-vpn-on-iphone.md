@@ -6,251 +6,323 @@ author: 'OllaVPN Team'
 tags: ['how-to-guides']
 ---
 
-<section id="tldr" class="article-tldr-box" style="background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.2); border-left: 5px solid #DA291C; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.04); box-sizing: border-box;">
-  <h3 style="font-size: 1.03rem; font-weight: 800; color: #DA291C; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h3>
-  <p style="font-size: 0.925rem; line-height: 1.7; color: #1E293B; margin: 0;">
-    Setting up OllaVPN on your iPhone is super easy. You just download the app from the App Store, install it, and then tap a single button to connect. Our app takes care of all the tricky technical stuff in the background, ... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.
-  </p>
+<section id="tldr" class="article-tldr-box" style="margin-bottom: 32px; padding: 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <h2 style="font-size: 1.25rem; font-weight: 700; color: #DA291C; margin-top: 0; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h2>
+  <p style="margin-bottom: 12px; line-height: 1.75; color: #1E293B; font-size: 1.05rem;">Setting up OllaVPN on your iPhone is super easy. You just download the app from the App Store, install it, and then tap a single button to connect. Our app takes care of all the tricky technical stuff in the background, ... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.</p>
 </section>
 
-<section id="key-takeaways" class="article-takeaways-box" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; padding: 20px 24px; margin-bottom: 24px; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
-  <h3 style="font-size: 1.125rem; font-weight: 800; color: #0F172A; margin: 0 0 14px 0;">Key Takeaways</h3>
-  <ul class="takeaways-list-24obs" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column;">
-    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">What's the short answer, what will you do in 5 minutes:</strong> In 5 minutes, you'll have OllaVPN installed and running, protecting your online privacy with just a tap.
-      </div>
-    </li>
-    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">How do you set up a VPN on your iPhone, step-by-step:</strong> Setting up OllaVPN on your iPhone is straightforward: download the app from the App Store, grant it permission to add VPN configurations, and tap the connect button.
-      </div>
-    </li>
-    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">What should you do if a step doesn't work or fails:</strong> If a step in the setup process fails, start by checking your internet connection, then restart the OllaVPN app, your device, and as a last resort, reinstall the app before contacting support.
-      </div>
-    </li>
-    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">Why does using a dedicated app work better than other methods:</strong> Using a dedicated VPN app like OllaVPN provides a far more secure, reliable, and user-friendly experience than manual setups or browser extensions.
-      </div>
-    </li>
-    <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.125rem; line-height: 1.2;">&bull;</span>
-      <div style="font-size: 0.90rem; line-height: 1.65; color: #1E293B;">
-        <strong style="color: #0F172A; font-weight: 800;">What are common errors and their quick fixes:</strong> Most common OllaVPN errors are easily fixed by checking your internet connection, restarting the app, or switching server locations.
-      </div>
-    </li>
+<section id="takeaways" class="article-takeaways-box" style="margin-bottom: 36px; padding: 24px 28px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <h2 style="font-size: 1.25rem; font-weight: 700; color: #DA291C; margin-top: 0; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.05em;">KEY TAKEAWAYS</h2>
+  <ul class="takeaways-list-24obs" style="list-style: none !important; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
+    <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>&bull;
+      
+        What's the short answer, what will you do in 5 minutes: In 5 minutes, you'll have OllaVPN installed and running, protecting your online privacy with just a tap.</span></li>
+    <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>&bull;
+      
+        How do you set up a VPN on your iPhone, step-by-step: Setting up OllaVPN on your iPhone is straightforward: download the app from the App Store, grant it permission to add VPN configurations, and tap the connect button.</span></li>
+    <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>&bull;
+      
+        What should you do if a step doesn't work or fails: If a step in the setup process fails, start by checking your internet connection, then restart the OllaVPN app, your device, and as a last resort, reinstall the app before contacting support.</span></li>
+    <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>&bull;
+      
+        Why does using a dedicated app work better than other methods: Using a dedicated VPN app like OllaVPN provides a far more secure, reliable, and user-friendly experience than manual setups or browser extensions.</span></li>
+    <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>&bull;
+      
+        What are common errors and their quick fixes: Most common OllaVPN errors are easily fixed by checking your internet connection, restarting the app, or switching server locations.</span></li>
   </ul>
 </section>
 
-<div class="blog-main-content-box">
+<div class="blog-main-content-box" style="background: #ffffff; border: 1.5px solid #E2E8F0; border-radius: 12px; padding: 36px; box-shadow: 0 4px 20px rgba(0,0,0,0.03); margin-bottom: 36px;">
 
-Setting up a VPN on your iPhone might sound like a tech chore, but it's surprisingly simple, especially with the right guidance. You're just a few taps away from creating a secure, private tunnel for all your internet traffic, protecting your online activity from prying eyes, even when you're on <a href="/blog/how-public-wifi-steals-passwords/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">public Wi-Fi</a>. We'll walk you through each step, making sure your data stays private and your browsing remains truly yours. No steep learning curve, just clear instructions to get you connected quickly.
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Setting up a VPN on your iPhone might sound like a tech chore, but it's surprisingly simple, especially with the right guidance. You're just a few taps away from creating a secure, private tunnel for all your internet traffic, protecting your online activity from prying eyes, even when you're on <a href="/blog/how-public-wifi-steals-passwords/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">public Wi-Fi</a>. We'll walk you through each step, making sure your data stays private and your browsing remains truly yours. No steep learning curve, just clear instructions to get you connected quickly.</p>
+
 
 ## What's the short answer: what will you do in 5 minutes?
 
-In 5 minutes, you'll have OllaVPN installed and running, protecting your online privacy with just a tap.
 
-It's really that simple. You don't need to be a tech wizard or spend ages configuring network settings. We designed OllaVPN to be incredibly straightforward from the moment you decide to try it. Your first step is to just <a href="/download" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">download the app</a> for your device, whether it's your phone, laptop, or desktop computer. We support all the major operating systems, so you're covered. Once you've got the app installed, all you need to do is open it up and tap the "Connect" button. That's it. There's no manual setup, no complicated server selection (unless you want to pick a specific country, which is also just a tap away), and no confusing options to wade through. The app handles everything in the background, establishing a secure, encrypted connection to our network. You'll see a confirmation, and then you're all set. From that moment on, all your internet traffic is routed through OllaVPN, giving you immediate **privacy benefits** like hiding your IP address from websites, encrypting your data to protect it from snoopers on public Wi-Fi, and bypassing geo-restrictions. It literally takes less time than making a cup of coffee to get robust online protection, all without needing to enter any payment details or even an email address to get started.
+<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">In 5 minutes, you'll have OllaVPN installed and running, protecting your online privacy with just a tap.</p>
+</div>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">In 5 minutes, you'll have OllaVPN installed and running, protecting your online privacy with just a tap.</p>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">It's really that simple. You don't need to be a tech wizard or spend ages configuring network settings. We designed OllaVPN to be incredibly straightforward from the moment you decide to try it. Your first step is to just <a href="/download" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">download the app</a> for your device, whether it's your phone, laptop, or desktop computer. We support all the major operating systems, so you're covered. Once you've got the app installed, all you need to do is open it up and tap the "Connect" button. That's it. There's no manual setup, no complicated server selection (unless you want to pick a specific country, which is also just a tap away), and no confusing options to wade through. The app handles everything in the background, establishing a secure, encrypted connection to our network. You'll see a confirmation, and then you're all set. From that moment on, all your internet traffic is routed through OllaVPN, giving you immediate **privacy benefits** like hiding your IP address from websites, encrypting your data to protect it from snoopers on public Wi-Fi, and bypassing geo-restrictions. It literally takes less time than making a cup of coffee to get robust online protection, all without needing to enter any payment details or even an email address to get started.</p>
+
 
 ## How do you set up a VPN on your iPhone, step-by-step?
 
-Setting up OllaVPN on your iPhone is straightforward: download the app from the App Store, grant it permission to add VPN configurations, and tap the connect button.
 
-First things first, you'll need to head over to the Apple <a href="https://apps.apple.com/us/app/ollavpn/idxxxxxxxxxx" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">App Store</a>. Search for "OllaVPN" and once you find our app, tap "Get" or the cloud icon to download and install it. It's a small app, so it shouldn't take long to download even on a slower connection. Once installed, just tap the OllaVPN icon on your home screen or in your App Library to open it up.
+<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">Setting up OllaVPN on your iPhone is straightforward: download the app from the App Store, grant it permission to add VPN configurations, and tap the connect button.</p>
+</div>
 
-When you open the app for the first time, you'll see a simple interface. If you're planning to use the free plan, you don't need to create an account, provide an email, or even give us a credit card, it just works. If you're a OllaVPN Plus subscriber, you'll have an option to log in and unlock your 10 Gbps speeds and five device limit. Either way, the next step is to tap the prominent "Connect" button. The app will then ask for permission to add VPN configurations to your device. This is a standard iOS security prompt; you'll need to tap "Allow" and, if prompted, enter your device passcode, Touch ID, or Face ID to confirm. This step lets your iPhone know that OllaVPN is allowed to manage your internet connection securely.
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Setting up OllaVPN on your iPhone is straightforward: download the app from the App Store, grant it permission to add VPN configurations, and tap the connect button.</p>
 
-Once you've granted permission, the "Connect" button will change to "Disconnect," and you’ll see a small VPN icon appear in your iPhone's notification bar (usually next to the Wi-Fi or cellular signal indicator). This icon is your visual confirmation that the VPN is active and your traffic is being routed securely through OllaVPN. You can then close the app and browse, stream, or work as usual, knowing your connection is private. If you ever want to disconnect, just open the OllaVPN app again and tap the "Disconnect" button.
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">First things first, you'll need to head over to the Apple <a href="https://apps.apple.com/us/app/ollavpn/idxxxxxxxxxx" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">App Store</a>. Search for "OllaVPN" and once you find our app, tap "Get" or the cloud icon to download and install it. It's a small app, so it shouldn't take long to download even on a slower connection. Once installed, just tap the OllaVPN icon on your home screen or in your App Library to open it up.</p>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">When you open the app for the first time, you'll see a simple interface. If you're planning to use the free plan, you don't need to create an account, provide an email, or even give us a credit card, it just works. If you're a OllaVPN Plus subscriber, you'll have an option to log in and unlock your 10 Gbps speeds and five device limit. Either way, the next step is to tap the prominent "Connect" button. The app will then ask for permission to add VPN configurations to your device. This is a standard iOS security prompt; you'll need to tap "Allow" and, if prompted, enter your device passcode, Touch ID, or Face ID to confirm. This step lets your iPhone know that OllaVPN is allowed to manage your internet connection securely.</p>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Once you've granted permission, the "Connect" button will change to "Disconnect," and you’ll see a small VPN icon appear in your iPhone's notification bar (usually next to the Wi-Fi or cellular signal indicator). This icon is your visual confirmation that the VPN is active and your traffic is being routed securely through OllaVPN. You can then close the app and browse, stream, or work as usual, knowing your connection is private. If you ever want to disconnect, just open the OllaVPN app again and tap the "Disconnect" button.</p>
+
 
 ## What should you do if a step doesn't work or fails?
 
-If a step in the setup process fails, start by checking your internet connection, then restart the OllaVPN app, your device, and as a last resort, reinstall the app before contacting support.
 
-It's frustrating when things don't work as expected, but most setup issues are pretty easy to fix. The first thing you should always check is your internet connection. Make sure you're connected to Wi-Fi or have mobile data enabled and that other apps can access the internet. Sometimes, a temporary network glitch is all it takes to throw things off. If your internet seems fine, the next step is usually to restart the OllaVPN app itself. Just close it completely and open it again. This often clears up minor software hiccups. If that doesn't work, try restarting your entire phone or computer. A fresh start for your device can resolve deeper system conflicts that might be interfering with the VPN. Think of it like giving everything a good shake and then putting it back together. Still having trouble? Your next move should be to reinstall the app. Sometimes a download can be corrupted, or an update didn't apply correctly. Uninstalling OllaVPN and then downloading the latest version from our website or your device's app store can fix these trickier issues. If none of these steps work, don't worry, we're here to help. You can always <a href="/support" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">contact support</a>, and our team will guide you through more specific troubleshooting. We'll get you connected.
+<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">If a step in the setup process fails, start by checking your internet connection, then restart the OllaVPN app, your device, and as a last resort, reinstall the app before contacting support.</p>
+</div>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">If a step in the setup process fails, start by checking your internet connection, then restart the OllaVPN app, your device, and as a last resort, reinstall the app before contacting support.</p>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">It's frustrating when things don't work as expected, but most setup issues are pretty easy to fix. The first thing you should always check is your internet connection. Make sure you're connected to Wi-Fi or have mobile data enabled and that other apps can access the internet. Sometimes, a temporary network glitch is all it takes to throw things off. If your internet seems fine, the next step is usually to restart the OllaVPN app itself. Just close it completely and open it again. This often clears up minor software hiccups. If that doesn't work, try restarting your entire phone or computer. A fresh start for your device can resolve deeper system conflicts that might be interfering with the VPN. Think of it like giving everything a good shake and then putting it back together. Still having trouble? Your next move should be to reinstall the app. Sometimes a download can be corrupted, or an update didn't apply correctly. Uninstalling OllaVPN and then downloading the latest version from our website or your device's app store can fix these trickier issues. If none of these steps work, don't worry, we're here to help. You can always <a href="/support" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">contact support</a>, and our team will guide you through more specific troubleshooting. We'll get you connected.</p>
+
 
 ## Why does using a dedicated app work better than other methods?
 
-Using a dedicated VPN app like OllaVPN provides a far more secure, reliable, and user-friendly experience than manual setups or browser extensions.
 
-When you use our app, you're not just getting a connection; you're getting a fully managed, secure tunnel. This means you don't have to worry about configuring complex settings, choosing the right server, or ensuring your connection is truly private. Our app handles all that for you, making it incredibly easy to use. It automatically selects the fastest server in the country you choose, sets up the secure <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard protocol</a>, and even takes care of post-quantum-ready encryption to help protect your data against future threats.
+<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">Using a dedicated VPN app like OllaVPN provides a far more secure, reliable, and user-friendly experience than manual setups or browser extensions.</p>
+</div>
 
-Beyond the sheer convenience, a dedicated app offers crucial security features that manual configurations often miss or get wrong. For instance, our app includes a <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">kill switch</a> that automatically disconnects your internet if the VPN drops, preventing any accidental data leaks. It also uses <a href="/blog/what-is-a-dns-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">in-tunnel DNS</a>, meaning your DNS requests, which can reveal a lot about your online activity, are routed securely through the VPN, not exposed to your ISP. These aren't just "nice-to-haves"; they're essential components of a truly private internet experience. Plus, with automatic updates, you're always running the latest, most secure version of our software without lifting a finger.
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Using a dedicated VPN app like OllaVPN provides a far more secure, reliable, and user-friendly experience than manual setups or browser extensions.</p>
 
-Browser extensions, while convenient, only protect traffic within that specific browser and can't secure other applications on your device. Manual setups, on the other hand, often lack the advanced features and continuous monitoring a dedicated app provides. With OllaVPN, you get comprehensive protection across your entire device, backed by our commitment to no data logging, no ads, and no selling your information. Our <a href="/free-vpn" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">free plan</a> even gives you 10 Mbps speed, no data cap, and access to every country in our network, all funded by our Plus subscribers, ensuring your privacy isn't compromised to pay the bills.
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">When you use our app, you're not just getting a connection; you're getting a fully managed, secure tunnel. This means you don't have to worry about configuring complex settings, choosing the right server, or ensuring your connection is truly private. Our app handles all that for you, making it incredibly easy to use. It automatically selects the fastest server in the country you choose, sets up the secure <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard protocol</a>, and even takes care of post-quantum-ready encryption to help protect your data against future threats.</p>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Beyond the sheer convenience, a dedicated app offers crucial security features that manual configurations often miss or get wrong. For instance, our app includes a <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">kill switch</a> that automatically disconnects your internet if the VPN drops, preventing any accidental data leaks. It also uses <a href="/blog/what-is-a-dns-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">in-tunnel DNS</a>, meaning your DNS requests, which can reveal a lot about your online activity, are routed securely through the VPN, not exposed to your ISP. These aren't just "nice-to-haves"; they're essential components of a truly private internet experience. Plus, with automatic updates, you're always running the latest, most secure version of our software without lifting a finger.</p>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Browser extensions, while convenient, only protect traffic within that specific browser and can't secure other applications on your device. Manual setups, on the other hand, often lack the advanced features and continuous monitoring a dedicated app provides. With OllaVPN, you get comprehensive protection across your entire device, backed by our commitment to no data logging, no ads, and no selling your information. Our <a href="/free-vpn" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">free plan</a> even gives you 10 Mbps speed, no data cap, and access to every country in our network, all funded by our Plus subscribers, ensuring your privacy isn't compromised to pay the bills.</p>
+
 
 ## What are common errors and their quick fixes?
 
-Most common OllaVPN errors are easily fixed by checking your internet connection, restarting the app, or switching server locations.
 
-You might occasionally hit a snag, but don't worry, most issues are pretty straightforward to resolve. If you're seeing a **"VPN not connecting"** message, the first thing to check is your own internet connection. Is your Wi-Fi or cellular data working? Try loading a regular website without the VPN. If that's fine, sometimes simply restarting the OllaVPN app or even your device can clear up a temporary glitch. Also, make sure you don't have another VPN client or proxy service running at the same time, as they can conflict with each other. It's best to disable any other VPNs before trying to connect with OllaVPN. Another common concern is **"slow speed."** While our free plan is capped at 10 Mbps, if you're experiencing speeds significantly lower than that, or if you're on Plus and it's dragging, try switching to a different server location. Sometimes a particular server might be experiencing higher load, or you might have better routing to a different region. You can easily do this within the app. If you're using our free plan and need more speed, remember that <a href="/plus" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">OllaVPN Plus</a> boosts you to 10 Gbps for just $2 a month, which is a massive leap. If you're dealing with **"app crashing"** or getting **"no internet access"** even when the VPN says it's connected, these issues often point to a need to restart the app or clear its cache (though usually a restart is enough). For "no internet access," double-check that your device's network settings haven't been manually altered by another application. Our built-in kill switch is designed to prevent data leaks if the VPN connection drops, but it shouldn't stop internet access when connected. If all else fails, a quick reinstall of the app usually fixes these more stubborn problems by ensuring you have the latest version and a clean setup.
+<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">Most common OllaVPN errors are easily fixed by checking your internet connection, restarting the app, or switching server locations.</p>
+</div>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Most common OllaVPN errors are easily fixed by checking your internet connection, restarting the app, or switching server locations.</p>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">You might occasionally hit a snag, but don't worry, most issues are pretty straightforward to resolve. If you're seeing a **"VPN not connecting"** message, the first thing to check is your own internet connection. Is your Wi-Fi or cellular data working? Try loading a regular website without the VPN. If that's fine, sometimes simply restarting the OllaVPN app or even your device can clear up a temporary glitch. Also, make sure you don't have another VPN client or proxy service running at the same time, as they can conflict with each other. It's best to disable any other VPNs before trying to connect with OllaVPN. Another common concern is **"slow speed."** While our free plan is capped at 10 Mbps, if you're experiencing speeds significantly lower than that, or if you're on Plus and it's dragging, try switching to a different server location. Sometimes a particular server might be experiencing higher load, or you might have better routing to a different region. You can easily do this within the app. If you're using our free plan and need more speed, remember that <a href="/plus" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">OllaVPN Plus</a> boosts you to 10 Gbps for just $2 a month, which is a massive leap. If you're dealing with **"app crashing"** or getting **"no internet access"** even when the VPN says it's connected, these issues often point to a need to restart the app or clear its cache (though usually a restart is enough). For "no internet access," double-check that your device's network settings haven't been manually altered by another application. Our built-in kill switch is designed to prevent data leaks if the VPN connection drops, but it shouldn't stop internet access when connected. If all else fails, a quick reinstall of the app usually fixes these more stubborn problems by ensuring you have the latest version and a clean setup.</p>
+
 
 ## How can you verify your VPN is working correctly?
 
-You can verify your VPN is working by checking your public IP address and location, looking for the VPN icon in your notification bar, and confirming your Kill Switch is active.
 
-The easiest way to confirm OllaVPN is doing its job is to open our app. You'll see a clear "Connected" status and the name of the country you're connected to. Beyond that, most operating systems will show a small \*\*notification bar icon\*\* (often a key or shield) indicating an active VPN connection. This is a good first sign, but it doesn't tell the whole story about what your browser or other apps might be doing. For a clearer picture, you'll want to use an \*\*IP address checker\*\*. Simply open a web browser and search "what is my IP address" or visit a site like <a href="https://whatismyipaddress.com" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">whatismyipaddress.com</a>. Before connecting to OllaVPN, note down your actual IP and location. Then, connect to OllaVPN, pick a country, and refresh the page. If the IP address and reported location have changed to match the country you selected in OllaVPN, you're good to go. If it still shows your real location, there might be a connection issue. Another quick check is to see if your \*\*Kill Switch\*\* is enabled. OllaVPN's Kill Switch is on by default, ensuring your internet connection is automatically blocked if the VPN connection ever drops unexpectedly. You can test this by connecting to OllaVPN, then deliberately disconnecting it from within the app (or even momentarily cutting your internet connection if you're feeling brave). Your internet should stop working until the VPN reconnects or you disable the Kill Switch. This confirms your privacy is protected even during brief outages.
+<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">You can verify your VPN is working by checking your public IP address and location, looking for the VPN icon in your notification bar, and confirming your Kill Switch is active.</p>
+</div>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">You can verify your VPN is working by checking your public IP address and location, looking for the VPN icon in your notification bar, and confirming your Kill Switch is active.</p>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">The easiest way to confirm OllaVPN is doing its job is to open our app. You'll see a clear "Connected" status and the name of the country you're connected to. Beyond that, most operating systems will show a small \*\*notification bar icon\*\* (often a key or shield) indicating an active VPN connection. This is a good first sign, but it doesn't tell the whole story about what your browser or other apps might be doing. For a clearer picture, you'll want to use an \*\*IP address checker\*\*. Simply open a web browser and search "what is my IP address" or visit a site like <a href="https://whatismyipaddress.com" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">whatismyipaddress.com</a>. Before connecting to OllaVPN, note down your actual IP and location. Then, connect to OllaVPN, pick a country, and refresh the page. If the IP address and reported location have changed to match the country you selected in OllaVPN, you're good to go. If it still shows your real location, there might be a connection issue. Another quick check is to see if your \*\*Kill Switch\*\* is enabled. OllaVPN's Kill Switch is on by default, ensuring your internet connection is automatically blocked if the VPN connection ever drops unexpectedly. You can test this by connecting to OllaVPN, then deliberately disconnecting it from within the app (or even momentarily cutting your internet connection if you're feeling brave). Your internet should stop working until the VPN reconnects or you disable the Kill Switch. This confirms your privacy is protected even during brief outages.</p>
+
 
 ## What tools make setting up a VPN easier?
 
-The OllaVPN app is designed to make setting up and using a VPN as simple as possible.
 
-You don't need to be a network engineer to get started with OllaVPN. We've built our app from the ground up to take the complexity out of VPNs. Instead of complicated configurations, you'll find a simple interface with a big, friendly **one-tap connect** button. Just launch the app, tap that button, and you're immediately protected. Our intelligent **automatic server selection** feature will pick the fastest, most reliable server for you, so you don't have to manually browse through lists of locations.
+<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">The OllaVPN app is designed to make setting up and using a VPN as simple as possible.</p>
+</div>
 
-Beyond just connecting, the OllaVPN app also handles crucial security features for you. The **kill switch**, for example, is on by default. This means if your VPN connection ever unexpectedly drops, your internet access is immediately cut off, preventing any accidental data leaks. You don't have to remember to turn it on or worry about configuring it; it just works. We also use the highly efficient and secure **WireGuard protocol** under the hood, which means faster speeds and better reliability without you having to understand a single technical detail.
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">The OllaVPN app is designed to make setting up and using a VPN as simple as possible.</p>
 
-Ultimately, the best tool for making a VPN easier is an app that just works the way you expect it to. We believe you shouldn't need a manual to protect your privacy, and that's exactly what we've aimed for with the OllaVPN app.
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">You don't need to be a network engineer to get started with OllaVPN. We've built our app from the ground up to take the complexity out of VPNs. Instead of complicated configurations, you'll find a simple interface with a big, friendly **one-tap connect** button. Just launch the app, tap that button, and you're immediately protected. Our intelligent **automatic server selection** feature will pick the fastest, most reliable server for you, so you don't have to manually browse through lists of locations.</p>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Beyond just connecting, the OllaVPN app also handles crucial security features for you. The **kill switch**, for example, is on by default. This means if your VPN connection ever unexpectedly drops, your internet access is immediately cut off, preventing any accidental data leaks. You don't have to remember to turn it on or worry about configuring it; it just works. We also use the highly efficient and secure **WireGuard protocol** under the hood, which means faster speeds and better reliability without you having to understand a single technical detail.</p>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Ultimately, the best tool for making a VPN easier is an app that just works the way you expect it to. We believe you shouldn't need a manual to protect your privacy, and that's exactly what we've aimed for with the OllaVPN app.</p>
+
 
 ## How does a VPN help (or not help) with setting up a VPN on your iPhone?
 
-A VPN doesn't help you set up another VPN on your iPhone; it's the thing you're setting up to protect your internet traffic.
 
-You don't need an existing VPN connection to install or configure OllaVPN on your iPhone. Think of it this way: the VPN is the solution, not a tool for its own setup. Your iPhone's standard internet connection (either Wi-Fi or cellular data) is all you need to download the OllaVPN app from the App Store and go through the initial configuration steps. Once OllaVPN is installed and activated, that's when it starts doing its job. It encrypts your internet traffic and routes it through our secure servers, protecting your online activity from snooping. So, while a VPN doesn't assist in its own installation, it definitely secures your internet traffic \*after\* you've got it running. Setting up OllaVPN on your iPhone is designed to be straightforward. You download the app, sign in (or create an account if you're going for a <a href="/free-vpn" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">free plan</a>), and then toggle the connection on. It's a quick process that ensures your device is protected as soon as possible.
+<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">A VPN doesn't help you set up another VPN on your iPhone; it's the thing you're setting up to protect your internet traffic.</p>
+</div>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">A VPN doesn't help you set up another VPN on your iPhone; it's the thing you're setting up to protect your internet traffic.</p>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">You don't need an existing VPN connection to install or configure OllaVPN on your iPhone. Think of it this way: the VPN is the solution, not a tool for its own setup. Your iPhone's standard internet connection (either Wi-Fi or cellular data) is all you need to download the OllaVPN app from the App Store and go through the initial configuration steps. Once OllaVPN is installed and activated, that's when it starts doing its job. It encrypts your internet traffic and routes it through our secure servers, protecting your online activity from snooping. So, while a VPN doesn't assist in its own installation, it definitely secures your internet traffic \*after\* you've got it running. Setting up OllaVPN on your iPhone is designed to be straightforward. You download the app, sign in (or create an account if you're going for a <a href="/free-vpn" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">free plan</a>), and then toggle the connection on. It's a quick process that ensures your device is protected as soon as possible.</p>
+
 
 ## Can you manually configure a VPN on your iPhone without an app?
 
-Yes, you can manually configure a VPN on your iPhone using its built-in settings, but it's not generally recommended for most users.
 
-Your iPhone has **iOS built-in VPN settings** that allow you to set up a VPN connection manually. These settings typically support older protocols like L2TP/IPSec and IKEv2. While this means you don't need a dedicated app for the basic connection, it does come with some significant downsides. It's often a much more complex process, requiring you to manually enter server addresses, usernames, passwords, and shared secrets. Get one detail wrong, and it simply won't connect. Beyond the complexity, manual configurations are usually less secure. The protocols available for manual setup, like L2TP/IPSec, are older and generally considered less robust than modern options like WireGuard. You also lose out on essential advanced features that a dedicated VPN app provides. Things like a kill switch (which protects you if the VPN connection drops), in-tunnel DNS, or OllaVPN's post-quantum-ready encryption simply aren't available through a manual setup. Because of these security and complexity concerns, OllaVPN doesn't support manual configuration for our free tier. Our goal is to make privacy and security as simple and accessible as possible, and that means providing a user-friendly app that handles all the technical complexities for you. It ensures you're always using the strongest encryption and have access to features that truly protect your data, all without needing to be a network engineer yourself.
+<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">Yes, you can manually configure a VPN on your iPhone using its built-in settings, but it's not generally recommended for most users.</p>
+</div>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Yes, you can manually configure a VPN on your iPhone using its built-in settings, but it's not generally recommended for most users.</p>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Your iPhone has **iOS built-in VPN settings** that allow you to set up a VPN connection manually. These settings typically support older protocols like L2TP/IPSec and IKEv2. While this means you don't need a dedicated app for the basic connection, it does come with some significant downsides. It's often a much more complex process, requiring you to manually enter server addresses, usernames, passwords, and shared secrets. Get one detail wrong, and it simply won't connect. Beyond the complexity, manual configurations are usually less secure. The protocols available for manual setup, like L2TP/IPSec, are older and generally considered less robust than modern options like WireGuard. You also lose out on essential advanced features that a dedicated VPN app provides. Things like a kill switch (which protects you if the VPN connection drops), in-tunnel DNS, or OllaVPN's post-quantum-ready encryption simply aren't available through a manual setup. Because of these security and complexity concerns, OllaVPN doesn't support manual configuration for our free tier. Our goal is to make privacy and security as simple and accessible as possible, and that means providing a user-friendly app that handles all the technical complexities for you. It ensures you're always using the strongest encryption and have access to features that truly protect your data, all without needing to be a network engineer yourself.</p>
+
 
 ## What are the key security and privacy considerations when setting up a VPN?
 
-The key security and privacy considerations when setting up a VPN involve scrutinizing its encryption, logging practices, and protocol choices to ensure your data remains protected and anonymous.
 
-When you're picking a VPN, you're essentially trusting that service with your entire internet connection. That's a big deal, so you want to be sure they're taking security seriously. The first thing to look for is their **logging policy**. A truly private VPN will have a strict <a href="/no-logs" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs policy</a>, meaning they don't record your activity, your IP address, or any data that could identify you. If they log, even a little, your anonymity is compromised, and your data privacy is at risk. Then, there's the encryption. You need to know your connection is scrambled so no one can snoop on your traffic, especially on public Wi-Fi where security is often weak. We're talking about robust, modern encryption that's built to last. OllaVPN, for example, uses **post-quantum-ready encryption**, meaning it's designed to withstand future threats from powerful quantum computers, offering a forward-looking layer of security that most VPNs can't match. This isn't just about today's threats; it's about protecting your data for the long haul. Finally, consider the protocols. The protocol is the method your VPN uses to create that secure tunnel. You want something fast, efficient, and secure. **WireGuard** is the gold standard here, known for its lean codebase and strong performance, which is why it's our default. Other older protocols can be slower or have known vulnerabilities. A good VPN will also offer features like a kill switch, which automatically disconnects your internet if the VPN drops, ensuring your IP masking is always maintained and your real IP address never leaks.
+<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">The key security and privacy considerations when setting up a VPN involve scrutinizing its encryption, logging practices, and protocol choices to ensure your data remains protected and anonymous.</p>
+</div>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">The key security and privacy considerations when setting up a VPN involve scrutinizing its encryption, logging practices, and protocol choices to ensure your data remains protected and anonymous.</p>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">When you're picking a VPN, you're essentially trusting that service with your entire internet connection. That's a big deal, so you want to be sure they're taking security seriously. The first thing to look for is their **logging policy**. A truly private VPN will have a strict <a href="/no-logs" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">no-logs policy</a>, meaning they don't record your activity, your IP address, or any data that could identify you. If they log, even a little, your anonymity is compromised, and your data privacy is at risk. Then, there's the encryption. You need to know your connection is scrambled so no one can snoop on your traffic, especially on public Wi-Fi where security is often weak. We're talking about robust, modern encryption that's built to last. OllaVPN, for example, uses **post-quantum-ready encryption**, meaning it's designed to withstand future threats from powerful quantum computers, offering a forward-looking layer of security that most VPNs can't match. This isn't just about today's threats; it's about protecting your data for the long haul. Finally, consider the protocols. The protocol is the method your VPN uses to create that secure tunnel. You want something fast, efficient, and secure. **WireGuard** is the gold standard here, known for its lean codebase and strong performance, which is why it's our default. Other older protocols can be slower or have known vulnerabilities. A good VPN will also offer features like a kill switch, which automatically disconnects your internet if the VPN drops, ensuring your IP masking is always maintained and your real IP address never leaks.</p>
+
 
 ## What's the difference between a free and paid VPN, and which should you choose?
 
-The main difference is speed and device count; OllaVPN's free plan offers 10 Mbps on one device for $0 forever, while Plus provides 10 Gbps on five devices for $2/month.
 
-Most free VPNs come with significant trade-offs: data caps, annoying ads, or even selling your browsing data to third parties. That's how they pay the bills. At OllaVPN, we decided to do things differently. Our free plan is genuinely free forever, no credit card required, no email tracking, no ads, and absolutely no selling your data. You get 10 Mbps speed, unlimited data, and access to servers in every country in our network, all on one device. It's designed to be enough for HD streaming, video calls, and general browsing without feeling restrictive.
+<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">The main difference is speed and device count; OllaVPN's free plan offers 10 Mbps on one device for $0 forever, while Plus provides 10 Gbps on five devices for $2/month.</p>
+</div>
 
-So, why would you upgrade to OllaVPN Plus? It's all about pushing past those limits. With Plus, your speed jumps to a blazing 10 Gbps, and you can connect up to five devices simultaneously. This means ultra-fast downloads, seamless 4K streaming, and gaming without a hitch across your entire digital life. Plus also helps us maintain our unique funding model: the small subscription fee from our Plus users directly supports the free tier, ensuring we never have to compromise on privacy or resort to ads or data selling for anyone.
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">The main difference is speed and device count; OllaVPN's free plan offers 10 Mbps on one device for $0 forever, while Plus provides 10 Gbps on five devices for $2/month.</p>
 
-Choosing between them really comes down to your needs. If you're looking for solid, reliable privacy and security for everyday tasks on a single device, and you don't need extreme speeds, the free plan is perfect. It's a truly private, no-strings-attached VPN experience. But if you're a heavy internet user, have multiple devices, or demand the absolute fastest speeds for things like 4K content or large file transfers, then the upgrade to OllaVPN Plus is a fantastic value at just $2 a month. It's about giving you the choice to scale your privacy and performance as you need it.
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Most free VPNs come with significant trade-offs: data caps, annoying ads, or even selling your browsing data to third parties. That's how they pay the bills. At OllaVPN, we decided to do things differently. Our free plan is genuinely free forever, no credit card required, no email tracking, no ads, and absolutely no selling your data. You get 10 Mbps speed, unlimited data, and access to servers in every country in our network, all on one device. It's designed to be enough for HD streaming, video calls, and general browsing without feeling restrictive.</p>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">So, why would you upgrade to OllaVPN Plus? It's all about pushing past those limits. With Plus, your speed jumps to a blazing 10 Gbps, and you can connect up to five devices simultaneously. This means ultra-fast downloads, seamless 4K streaming, and gaming without a hitch across your entire digital life. Plus also helps us maintain our unique funding model: the small subscription fee from our Plus users directly supports the free tier, ensuring we never have to compromise on privacy or resort to ads or data selling for anyone.</p>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Choosing between them really comes down to your needs. If you're looking for solid, reliable privacy and security for everyday tasks on a single device, and you don't need extreme speeds, the free plan is perfect. It's a truly private, no-strings-attached VPN experience. But if you're a heavy internet user, have multiple devices, or demand the absolute fastest speeds for things like 4K content or large file transfers, then the upgrade to OllaVPN Plus is a fantastic value at just $2 a month. It's about giving you the choice to scale your privacy and performance as you need it.</p>
+
 
 ## How to know it actually worked
 
-A how-to guide is only useful if you can verify the outcome. After completing the steps above, the easiest checks to confirm the configuration is in place:
 
-**Visible state in the app.** The OllaVPN menu-bar or system-tray icon should be green (connected) and any status panel should show the country you selected. If the icon is gray or amber, the tunnel didn't fully come up, retry the connect.
+<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">A how-to guide is only useful if you can verify the outcome. After completing the steps above, the easiest checks to confirm the configuration is in place:</p>
+</div>
 
-**IP address changed.** Open <a href="/what-is-my-ip" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">our what-is-my-IP tool</a>. The IP shown should be the exit's IP, not your real ISP's IP, and the country shown should match the country you selected in the app. If you still see your real IP, the tunnel isn't carrying traffic, the most common cause is a firewall on the local network blocking WireGuard's UDP/51820. Try a different network briefly to isolate.
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">A how-to guide is only useful if you can verify the outcome. After completing the steps above, the easiest checks to confirm the configuration is in place:</p>
 
-**DNS is going through the tunnel.** Open <a href="/dns-lookup" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">our DNS lookup tool</a>. The resolver IP shown should be the in-tunnel one (CGNAT 100.64.x.x range), not your ISP's DNS. If you see your ISP's resolver, DNS is leaking, see our <a href="/in-tunnel-dns" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">in-tunnel DNS page</a> for the technical details on why this happens and how OllaVPN prevents it.
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">**Visible state in the app.** The OllaVPN menu-bar or system-tray icon should be green (connected) and any status panel should show the country you selected. If the icon is gray or amber, the tunnel didn't fully come up, retry the connect.</p>
 
-**No <a href="/blog/what-is-a-webrtc-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WebRTC leak</a>.** Open <a href="/webrtc-leak-test" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">our WebRTC leak test</a>. You should see only the exit's IPv4 address. If your real IP appears (private LAN address or public IPv4/IPv6), WebRTC is bypassing the VPN, either OllaVPN's leak prevention has failed (file a report at `[[email protected]](/cdn-cgi/l/email-protection)`) or your browser has a WebRTC-specific privacy issue we can help diagnose.
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">**IP address changed.** Open <a href="/what-is-my-ip" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">our what-is-my-IP tool</a>. The IP shown should be the exit's IP, not your real ISP's IP, and the country shown should match the country you selected in the app. If you still see your real IP, the tunnel isn't carrying traffic, the most common cause is a firewall on the local network blocking WireGuard's UDP/51820. Try a different network briefly to isolate.</p>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">**DNS is going through the tunnel.** Open <a href="/dns-lookup" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">our DNS lookup tool</a>. The resolver IP shown should be the in-tunnel one (CGNAT 100.64.x.x range), not your ISP's DNS. If you see your ISP's resolver, DNS is leaking, see our <a href="/in-tunnel-dns" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">in-tunnel DNS page</a> for the technical details on why this happens and how OllaVPN prevents it.</p>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">**No <a href="/blog/what-is-a-webrtc-leak/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WebRTC leak</a>.** Open <a href="/webrtc-leak-test" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">our WebRTC leak test</a>. You should see only the exit's IPv4 address. If your real IP appears (private LAN address or public IPv4/IPv6), WebRTC is bypassing the VPN, either OllaVPN's leak prevention has failed (file a report at `[[email protected]](/cdn-cgi/l/email-protection)`) or your browser has a WebRTC-specific privacy issue we can help diagnose.</p>
+
 
 ## If a step fails, here's how to debug
 
-The most common failure modes for any VPN setup task on Windows, macOS, or Android, in order of frequency:
 
-**The VPN refuses to connect at all.** Almost always a network-side issue: a restrictive firewall on the local network (school, corporate, hotel) blocking WireGuard's default UDP/51820 port. Try a different network briefly to confirm it's network-side. On Frankfurt the obfuscated MASQUE-on-port-443 transport works around many restrictive firewalls, switch to it in the country picker.
+<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">The most common failure modes for any VPN setup task on Windows, macOS, or Android, in order of frequency:</p>
+</div>
 
-**The VPN connects but the internet is broken.** Almost always a DNS issue. The in-tunnel resolver hasn't taken precedence (sometimes after a macOS update or a Windows feature update, the supplemental DNS keys get cleared). Restarting the VPN typically fixes it; full disconnect and reconnect re-installs the DNS configuration.
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">The most common failure modes for any VPN setup task on Windows, macOS, or Android, in order of frequency:</p>
 
-**Some apps work but others don't.** Either the app has its own proxy settings configured separately (some corporate apps), or the app uses a protocol the VPN doesn't carry (very rare, almost everything is TCP/UDP and works fine through the tunnel). Check the app's settings before assuming the VPN is at fault.
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">**The VPN refuses to connect at all.** Almost always a network-side issue: a restrictive firewall on the local network (school, corporate, hotel) blocking WireGuard's default UDP/51820 port. Try a different network briefly to confirm it's network-side. On Frankfurt the obfuscated MASQUE-on-port-443 transport works around many restrictive firewalls, switch to it in the country picker.</p>
 
-**Speed is much slower than expected.** The exit you picked is either congested or geographically far from you. Try a closer exit (the country picker shows latency). The free-tier 10 Mbps cap is the ceiling regardless of exit choice; if you need more, the Pro tier at $2/mo annual lifts it to 10 Gbps.
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">**The VPN connects but the internet is broken.** Almost always a DNS issue. The in-tunnel resolver hasn't taken precedence (sometimes after a macOS update or a Windows feature update, the supplemental DNS keys get cleared). Restarting the VPN typically fixes it; full disconnect and reconnect re-installs the DNS configuration.</p>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">**Some apps work but others don't.** Either the app has its own proxy settings configured separately (some corporate apps), or the app uses a protocol the VPN doesn't carry (very rare, almost everything is TCP/UDP and works fine through the tunnel). Check the app's settings before assuming the VPN is at fault.</p>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">**Speed is much slower than expected.** The exit you picked is either congested or geographically far from you. Try a closer exit (the country picker shows latency). The free-tier 10 Mbps cap is the ceiling regardless of exit choice; if you need more, the Pro tier at $2/mo annual lifts it to 10 Gbps.</p>
+
 
 ## About this guide
 
-Maintained by <a href="/about/team#nathan-pratt" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">Nathan Pratt</a>, OllaVPN's Privacy & Security Lead. Fact-checked by <a href="/about/team#hannah-wu" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">Hannah Wu</a>, Senior Security Engineer. We refresh this post quarterly so its facts, recommendations, and competitor comparisons stay accurate as the category evolves. The last full re-evaluation was 23 June 2026; the next is scheduled for September 2026.
 
-If you spot a fact that's drifted or an addition we should make, email `[[email protected]](/cdn-cgi/l/email-protection)`. Reader corrections drive a meaningful percentage of our quarterly updates.
+<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">Maintained by <a href="/about/team#nathan-pratt" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">Nathan Pratt</a>, OllaVPN's Privacy & Security Lead. Fact-checked by <a href="/about/team#hannah-wu" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">Hannah Wu</a>, Senior Security Engineer. We refresh this post quarterly so its facts, recommendations, and competitor comparisons stay accurate as the category evolves. The last full re-evaluation was 23 June 2026; the next is scheduled for September 2026.</p>
 </div>
 
-<section id="faqs" class="faqs-accordion-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 12px 28px 24px; margin-bottom: 24px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.02); box-sizing: border-box;">
-  <h2 style="font-size: 1.625rem; font-weight: 800; margin: 0 0 14px 0; color: #0F172A; border: none !important; padding-bottom: 0 !important;">Frequently Asked Questions</h2>
-  <div style="display: flex; flex-direction: column;">
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>1. How long does it take to set up a VPN on my iPhone?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
-    </summary>
-    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      You're looking at about 5 minutes, tops, to get OllaVPN installed and connected on your iPhone. Most of that time is just downloading the app. Once it's on your phone, it's usually just a tap to connect. We've made the process as quick and painless as possible so you can get protected fast.
-    </p>
-  </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>2. Do I need to be technical to set up a VPN on my iPhone?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
-    </summary>
-    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Not at all! We've designed the OllaVPN app to be super user-friendly. You just download it, open it, and tap 'connect.' The app handles all the complex stuff in the background, like our post-quantum-ready encryption, so you don't need any special tech skills. It's truly 'set it and forget it' simple.
-    </p>
-  </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>3. What if a step doesn't work for me during the setup?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
-    </summary>
-    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Don't sweat it if a step doesn't work. First, try restarting the app or even your phone. Make sure you have a stable internet connection. If you're still stuck, our support team is happy to help you out. We want to make sure you get connected and protected without a hitch.
-    </p>
-  </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>4. Will setting up a VPN delete my data permanently?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
-    </summary>
-    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Absolutely not. Setting up a VPN like OllaVPN on your iPhone simply routes your internet traffic through our secure servers. It doesn't touch your personal data, photos, or apps on your device in any way. Your device's local data remains exactly where it is, safe and sound.
-    </p>
-  </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>5. Can I undo the VPN setup if I change my mind?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
-    </summary>
-    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      Yep, you can easily disconnect from the VPN with a single tap in the OllaVPN app. If you want to remove the app entirely, just delete it like any other app from your iPhone's home screen. There are no lingering configurations or hidden settings to worry about.
-    </p>
-  </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>6. Is it safe to set up a VPN on a public Wi-Fi network?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
-    </summary>
-    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      It's generally safe to set up the VPN itself. In fact, connecting to a VPN is \especially\ important on public Wi-Fi. Once you're connected, your data is encrypted, protecting you from potential snoopers on that network. Always connect to OllaVPN before doing anything sensitive on public Wi-Fi.
-    </p>
-  </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>7. Should I use a VPN while I'm setting up another VPN?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
-    </summary>
-    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      No, you don't need to use a VPN while setting up OllaVPN. Your goal is to get OllaVPN running to protect your connection \after\ it's set up. It's not a prerequisite for the installation process. Just get OllaVPN installed, and then you're good to go.
-    </p>
-  </details>
-  <details class="faq-accordion-item" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s ease;">
-    <summary class="faq-accordion-summary" style="font-size: 0.925rem; font-weight: 800; color: #0F172A; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-      <span>8. How do I verify my VPN actually worked after setting it up?</span>
-      <span class="faq-accordion-icon" style="font-size: 1.125rem; color: #DA291C; font-weight: 800; margin-left: 12px;">+</span>
-    </summary>
-    <p class="faq-accordion-content" style="font-size: 0.88rem; color: #1E293B; line-height: 1.68; margin-top: 10px; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #E2E8F0;">
-      The easiest way is to use an online IP address checker. Before connecting to OllaVPN, note your IP. After connecting, check again. If your IP address has changed and shows a different location, you're good to go! You'll know OllaVPN is actively protecting your connection.
-    </p>
-  </details>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Maintained by <a href="/about/team#nathan-pratt" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">Nathan Pratt</a>, OllaVPN's Privacy & Security Lead. Fact-checked by <a href="/about/team#hannah-wu" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">Hannah Wu</a>, Senior Security Engineer. We refresh this post quarterly so its facts, recommendations, and competitor comparisons stay accurate as the category evolves. The last full re-evaluation was 23 June 2026; the next is scheduled for September 2026.</p>
+
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">If you spot a fact that's drifted or an addition we should make, email `[[email protected]](/cdn-cgi/l/email-protection)`. Reader corrections drive a meaningful percentage of our quarterly updates.</p>
+
+</div>
+
+<section id="faqs" class="blog-main-content-box" style="margin-top: 36px; margin-bottom: 32px; scroll-margin-top: 80px;">
+  <h2 style="font-size: 1.45rem; font-weight: 700; color: #09090b; margin-top: 0; margin-bottom: 6px;">Frequently Asked Questions</h2>
+  <p style="color: #64748B; font-size: 0.95rem; margin-bottom: 18px;">Clear, honest answers to the most common questions about this guide.</p>
+  <div class="faq-accordion-group" style="display: flex; flex-direction: column; gap: 8px;">
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+        <span>How long does it take to set up a VPN on my iPhone?</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+      </summary>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">You're looking at about 5 minutes, tops, to get OllaVPN installed and connected on your iPhone. Most of that time is just downloading the app. Once it's on your phone, it's usually just a tap to connect. We've made the process as quick and painless as possible so you can get protected fast.</p>
+      </div>
+    </details>
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+        <span>Do I need to be technical to set up a VPN on my iPhone?</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+      </summary>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">Not at all! We've designed the OllaVPN app to be super user-friendly. You just download it, open it, and tap 'connect.' The app handles all the complex stuff in the background, like our post-quantum-ready encryption, so you don't need any special tech skills. It's truly 'set it and forget it' simple.</p>
+      </div>
+    </details>
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+        <span>What if a step doesn't work for me during the setup?</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+      </summary>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">Don't sweat it if a step doesn't work. First, try restarting the app or even your phone. Make sure you have a stable internet connection. If you're still stuck, our support team is happy to help you out. We want to make sure you get connected and protected without a hitch.</p>
+      </div>
+    </details>
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+        <span>Will setting up a VPN delete my data permanently?</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+      </summary>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">Absolutely not. Setting up a VPN like OllaVPN on your iPhone simply routes your internet traffic through our secure servers. It doesn't touch your personal data, photos, or apps on your device in any way. Your device's local data remains exactly where it is, safe and sound.</p>
+      </div>
+    </details>
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+        <span>Can I undo the VPN setup if I change my mind?</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+      </summary>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">Yep, you can easily disconnect from the VPN with a single tap in the OllaVPN app. If you want to remove the app entirely, just delete it like any other app from your iPhone's home screen. There are no lingering configurations or hidden settings to worry about.</p>
+      </div>
+    </details>
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+        <span>Is it safe to set up a VPN on a public Wi-Fi network?</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+      </summary>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">It's generally safe to set up the VPN itself. In fact, connecting to a VPN is \especially\ important on public Wi-Fi. Once you're connected, your data is encrypted, protecting you from potential snoopers on that network. Always connect to OllaVPN before doing anything sensitive on public Wi-Fi.</p>
+      </div>
+    </details>
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+        <span>Should I use a VPN while I'm setting up another VPN?</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+      </summary>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">No, you don't need to use a VPN while setting up OllaVPN. Your goal is to get OllaVPN running to protect your connection \after\ it's set up. It's not a prerequisite for the installation process. Just get OllaVPN installed, and then you're good to go.</p>
+      </div>
+    </details>
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+        <span>How do I verify my VPN actually worked after setting it up?</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+      </summary>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">The easiest way is to use an online IP address checker. Before connecting to OllaVPN, note your IP. After connecting, check again. If your IP address has changed and shows a different location, you're good to go! You'll know OllaVPN is actively protecting your connection.</p>
+      </div>
+    </details>
   </div>
 </section>
-
-<section id="wrapping-it-up" class="wrap-up-box" style="background: #FFF5F5 !important; border: 1.5px solid rgba(218, 41, 28, 0.25) !important; border-left: 5px solid #DA291C !important; border-radius: 16px !important; padding: 26px 30px !important; margin-bottom: 24px !important; width: 100% !important; box-shadow: 0 4px 20px rgba(218, 41, 28, 0.05) !important; box-sizing: border-box !important;">
-  <h2 style="font-size: 1.625rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
-  <p style="font-size: 0.925rem; line-height: 1.75; color: #1E293B; margin-bottom: 12px;">
-    Navigating How to Set Up a VPN on Your iPhone, Step-by-Step effectively requires choosing security architectures built on transparency, strong encryption, and verified zero data logging.
-  </p>
-  <p style="font-size: 0.925rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
-    With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on kill switch defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.
-  </p>
-</section>
-
