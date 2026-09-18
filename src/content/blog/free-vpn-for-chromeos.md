@@ -127,28 +127,28 @@ featured: false
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Here's the actual walkthrough:</p>
 
 <div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">1.:</strong>
+  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">1. Open the Play Store:</strong>
   <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">Open the Play Store on your Chromebook and search for OllaVPN, or go directly to our download page and follow the link through. Installing from the official listing - not a similarly named clone - is worth the extra ten seconds of checking.</span>
 </div>
 
 <div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">2. Install the app:</strong>
+  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">2. Install the App:</strong>
   <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">ChromeOS will show you the standard Android permission prompt. OllaVPN only needs the VPN service permission itself, nothing more.</span>
 </div>
 
 <div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">3. Open the app:</strong>
+  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">3. Open the App:</strong>
   <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">You'll see a clean list of available server locations - no account screen, no email prompt, no credit card field. That's not an oversight; the free plan is built to need none of it.</span>
 </div>
 
 <div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">4. Pick a server:</strong>
+  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">4. Pick a Server:</strong>
   <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">If you just want general privacy and speed, "Optimal Location" connects you to the fastest server we can currently offer you, which is almost always the right first choice. If you specifically need to appear in a particular country, choose that location instead.</span>
 </div>
 
 <div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">5. Grant the Android VPN permission when prompted:</strong>
-  <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">this is the step that lets the tunnel register at the system level and cover your entire Chromebook, not just the browser.</span>
+  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">5. Grant Android VPN Permission:</strong>
+  <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">Grant the Android VPN permission when prompted - this is the step that lets the tunnel register at the system level and cover your entire Chromebook, not just the browser.</span>
 </div>
 
 <div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
@@ -278,10 +278,7 @@ featured: false
 
 <h2 id="section-14" style="font-size: 1.65rem; font-weight: 700; color: #09090b; margin-top: 36px; margin-bottom: 16px; scroll-margin-top: 80px;">A broader-context closing thought</h2>
 
-<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
-  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">One pattern we've noticed across every privacy-and-networking topic we cover: the gap between what most users believe about a given topic and what the technical reality is keeps widening. Marketing departments have gotten better at producing confident-sounding claims; the underlying technology has gotten more complex; the threats have gotten more sophisticated; and the time most</p>
-</div>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">One pattern we've noticed across every privacy-and-networking topic we cover: the gap between what most users believe about a given topic and what the technical reality is keeps widening. Marketing departments have gotten better at producing confident-sounding claims; the underlying technology has gotten more complex; the threats have gotten more sophisticated; and the time most</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">users have to evaluate any single claim has, if anything, gotten shorter. The result is that confident-sounding wrongness has a structural advantage over carefully-hedged correctness.</p>
 
@@ -291,10 +288,7 @@ featured: false
 
 <h2 id="section-15" style="font-size: 1.65rem; font-weight: 700; color: #09090b; margin-top: 36px; margin-bottom: 16px; scroll-margin-top: 80px;">Verify and cross-reference</h2>
 
-<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
-  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">For any claim on this page that affects a decision you're about to make, here's the verification path we'd recommend</p>
-</div>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">For any claim on this page that affects a decision you're about to make, here's the verification path we'd recommend</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Verify the technical claim from your own Chromebook. Our DNS lookup, WebRTC leak test, what-is-my-IP, and the rest of our tools page are free, require no account, and run entirely in Chrome. Most claims in this guide can be checked from your own device in under fifteen minutes.</p>
 
@@ -306,10 +300,7 @@ featured: false
 
 <h2 id="section-16" style="font-size: 1.65rem; font-weight: 700; color: #09090b; margin-top: 36px; margin-bottom: 16px; scroll-margin-top: 80px;">How to verify any picks on this list yourself</h2>
 
-<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
-  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">A list of recommendations is only worth what you can check yourself. Everything above can be verified from your own Chromebook in under fifteen minutes.</p>
-</div>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">A list of recommendations is only worth what you can check yourself. Everything above can be verified from your own Chromebook in under fifteen minutes.</p>
 
 <div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Test 1 Funding model:</strong>
@@ -338,10 +329,7 @@ featured: false
 
 <h2 id="section-17" style="font-size: 1.65rem; font-weight: 700; color: #09090b; margin-top: 36px; margin-bottom: 16px; scroll-margin-top: 80px;">What we deliberately left out of this guide</h2>
 
-<div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
-  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">For completeness, here are the categories we considered and specifically excluded, and why.</p>
-</div>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">For completeness, here are the categories we considered and specifically excluded, and why.</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Standalone "VPN master" style Android apps with millions of Play Store installs but no identifiable company behind them. Excluded as a category. Academic research into Android VPN apps (Ikram et al. 2016, and later follow-up studies) repeatedly found large numbers of these apps either request excessive permissions, transmit data to undisclosed third parties, or don't actually encrypt traffic at all despite the branding. A high install count on the Play Store measures marketing reach, not security - it's not a trust signal on its own.</p>
 

@@ -77,11 +77,20 @@ featured: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Here's the checklist we think matters most for this specific use case. First, encryption strength and protocol quality. You want the WireGuard protocol or an equally modern standard, not an outdated protocol with known weaknesses. For something as sensitive as a banking session, this isn't a place to compromise on "good enough."</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Second, a kill switch that's on by default, not buried three menus deep or something you have to remember to enable. If your VPN connection drops for even a second mid-transfer, an active kill switch stops all traffic immediately rather than letting your device silently fall back to an unencrypted connection at the exact moment you're mid-login or mid-transaction.</p>
+<div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Second:</strong>
+  <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">a kill switch that's on by default, not buried three menus deep or something you have to remember to enable. If your VPN connection drops for even a second mid-transfer, an active kill switch stops all traffic immediately rather than letting your device silently fall back to an unencrypted connection at the exact moment you're mid-login or mid-transaction.</span>
+</div>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Third, a real no-logs policy, specifically covering connection metadata, not just browsing content. A VPN that logs which sites you connect to, when, and for how long is creating exactly the kind of record you were trying to avoid by using a VPN in the first place - and if that log ever leaks or gets subpoenaed, your banking habits are part of it</p>
+<div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Third:</strong>
+  <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">a real no-logs policy, specifically covering connection metadata, not just browsing content. A VPN that logs which sites you connect to, when, and for how long is creating exactly the kind of record you were trying to avoid by using a VPN in the first place - and if that log ever leaks or gets subpoenaed, your banking habits are part of it</span>
+</div>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Fourth, reliability over marketing speed claims. A VPN that frequently drops connections is actually worse for banking than no VPN at all, since a mid-session disconnect can interrupt a transaction or, in rare cases, contribute to a session being flagged. You want consistency more than you want a headline speed number.</p>
+<div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Fourth: reliability over marketing speed claims:</strong>
+  <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">A VPN that frequently drops connections is actually worse for banking than no VPN at all, since a mid-session disconnect can interrupt a transaction or, in rare cases, contribute to a session being flagged. You want consistency more than you want a headline speed number.</span>
+</div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Finally, you should expect the provider to be transparent about how VPN use interacts with your bank's own fraud detection - a topic most VPN marketing pages conveniently skip, and one we cover in detail further down, because it's genuinely useful to understand before your first VPN-protected login attempt.</p>
 
