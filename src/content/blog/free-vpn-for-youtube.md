@@ -246,22 +246,6 @@ We use the WireGuard protocol, post quantum-ready encryption, a kill switch on b
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Think of the free plan as a genuine offering, not bait. We believe privacy: and the ability to actually watch what you want, from wherever you happen to be: shouldn't be gated behind a payment. By keeping the free tier robust and actually usable for something as demanding as video streaming, we build trust, and some portion of free users eventually choose to upgrade because they want more, not because the free plan quietly stopped working. That's the sustainable version of "free," and it's the only one we think is honest.</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">⭐ Key takeaway</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">What to remember from this guide</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">•A truly free VPN for YouTube means no data caps, no ads, no logs, and enough real speed to stream HD without added buffering: not a crippled trial disguised as a free plan</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">•ISP throttling and network path congestion cause more YouTube buffering than most people realize, and a VPN helps by hiding your traffic type and rerouting through a less congested path</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">•Bypassing region locks requires a VPN with actual servers in the country where the content is available: free VPNs that limit you to two or three locations won't cut it</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">•10 Mbps is genuinely enough for smooth 1080p YouTube streaming, with headroom to spare: 4K is where you'd feel the limit</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">•Post quantum-ready encryption matters because your viewing data captured today could be decrypted years from now</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">•OllaVPN funds the free tier through Plus subscribers, so your watch history is never the product</p>
-
 </div>
 
 <section id="faqs" style="margin-top: 40px; margin-bottom: 30px;">
@@ -377,16 +361,4 @@ We use the WireGuard protocol, post quantum-ready encryption, a kill switch on b
   <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
     With OllaVPN, your connection routes around ISP throttling and geo-restrictions seamlessly with full WireGuard protocol speeds for $0 forever.
   </p>
-</section>
-
-<section class="article-bottom-cta-banner" style="background: linear-gradient(135deg, #455b8a 0%, #324468 100%) !important; border: 1px solid rgba(255, 255, 255, 0.15) !important; border-radius: 16px !important; padding: 36px 32px !important; margin: 48px 0 24px 0 !important; text-align: center !important; color: #ffffff !important; box-shadow: 0 16px 36px rgba(50, 68, 104, 0.25) !important; box-sizing: border-box !important;">
-  <h3 style="font-size: 1.75rem !important; font-weight: 800 !important; color: #ffffff !important; margin: 0 0 10px 0 !important; letter-spacing: -0.02em !important;">Protect Your Connection with OllaVPN</h3>
-  <p style="font-size: 1.05rem !important; color: rgba(255, 255, 255, 0.9) !important; max-width: 600px !important; margin: 0 auto 20px auto !important; line-height: 1.6 !important;">High-speed WireGuard encryption, zero activity logs, and post-quantum security on every server.</p>
-  <div style="display: flex !important; justify-content: center !important; gap: 8px !important; flex-wrap: wrap !important; margin-bottom: 24px !important;">
-    <span style="background: rgba(255, 255, 255, 0.15) !important; color: #ffffff !important; font-size: 0.82rem !important; font-weight: 600 !important; padding: 5px 12px !important; border-radius: 9999px !important; border: 1px solid rgba(255, 255, 255, 0.25) !important;">Zero Logs</span>
-    <span style="background: rgba(255, 255, 255, 0.15) !important; color: #ffffff !important; font-size: 0.82rem !important; font-weight: 600 !important; padding: 5px 12px !important; border-radius: 9999px !important; border: 1px solid rgba(255, 255, 255, 0.25) !important;">WireGuard</span>
-    <span style="background: rgba(255, 255, 255, 0.15) !important; color: #ffffff !important; font-size: 0.82rem !important; font-weight: 600 !important; padding: 5px 12px !important; border-radius: 9999px !important; border: 1px solid rgba(255, 255, 255, 0.25) !important;">Kill Switch</span>
-    <span style="background: rgba(255, 255, 255, 0.15) !important; color: #ffffff !important; font-size: 0.82rem !important; font-weight: 600 !important; padding: 5px 12px !important; border-radius: 9999px !important; border: 1px solid rgba(255, 255, 255, 0.25) !important;">Multi-Device</span>
-  </div>
-  <a href="/download" style="display: inline-block !important; background: #ffffff !important; color: #324468 !important; font-weight: 700 !important; font-size: 1rem !important; padding: 14px 32px !important; border-radius: 9999px !important; text-decoration: none !important; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12) !important;">Get OllaVPN Free</a>
 </section>

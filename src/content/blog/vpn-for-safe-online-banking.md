@@ -246,22 +246,6 @@ We use the WireGuard protocol, a kill switches on by default, in tunnel DNS, and
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Think of the free plan as the genuine offering, not a hook. We believe the specific protection a VPN provides: closing the network level gap that makes public Wi Fi banking risky: shouldn't be gated behind a payment, because the risk itself isn't gated by income either. By keeping the free tier fully capable, including for something as sensitive as banking, we build trust the honest way: some free users eventually upgrade because they want more speed or more devices, not because the free plan was ever deliberately weakened to push them there.</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">⭐ Key takeaways</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">What to remember from this guide</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">•A VPN protects the network path between you and your bank, not the bank's own security: it closes the specific gap created by public Wi Fi, fake hotspots, and ISP level monitoring</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">•The real risk on public Wi Fi isn't just packet sniffing: it's fake "evil twin" hotspots designed to capture credentials directly, which a VPN neutralizes by encrypting everything before it touches the local network</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">•Using a VPN server in a different country can trigger bank fraud alerts; connecting to a same country server near your location avoids this while keeping the security benefit</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">•Banking apps use so little bandwidth that a 10 Mbps cap has zero practical effect: the VPN is never the bottleneck during a banking session</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">•Post quantum-ready encryption matters more for banking than almost any other use case, because financial data stays sensitive for decades</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">•A VPN does not replace good banking habits: it won't stop phishing emails or malware on your device</p>
-
 </div>
 
 <section id="faqs" style="margin-top: 40px; margin-bottom: 30px;">
@@ -377,16 +361,4 @@ We use the WireGuard protocol, a kill switches on by default, in tunnel DNS, and
   <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
     With OllaVPN, your online banking sessions are safeguarded by automatic kill switches, zero activity logging, and post-quantum cryptography on every server node.
   </p>
-</section>
-
-<section class="article-bottom-cta-banner" style="background: linear-gradient(135deg, #455b8a 0%, #324468 100%) !important; border: 1px solid rgba(255, 255, 255, 0.15) !important; border-radius: 16px !important; padding: 36px 32px !important; margin: 48px 0 24px 0 !important; text-align: center !important; color: #ffffff !important; box-shadow: 0 16px 36px rgba(50, 68, 104, 0.25) !important; box-sizing: border-box !important;">
-  <h3 style="font-size: 1.75rem !important; font-weight: 800 !important; color: #ffffff !important; margin: 0 0 10px 0 !important; letter-spacing: -0.02em !important;">Protect Your Connection with OllaVPN</h3>
-  <p style="font-size: 1.05rem !important; color: rgba(255, 255, 255, 0.9) !important; max-width: 600px !important; margin: 0 auto 20px auto !important; line-height: 1.6 !important;">High-speed WireGuard encryption, zero activity logs, and post-quantum security on every server.</p>
-  <div style="display: flex !important; justify-content: center !important; gap: 8px !important; flex-wrap: wrap !important; margin-bottom: 24px !important;">
-    <span style="background: rgba(255, 255, 255, 0.15) !important; color: #ffffff !important; font-size: 0.82rem !important; font-weight: 600 !important; padding: 5px 12px !important; border-radius: 9999px !important; border: 1px solid rgba(255, 255, 255, 0.25) !important;">Zero Logs</span>
-    <span style="background: rgba(255, 255, 255, 0.15) !important; color: #ffffff !important; font-size: 0.82rem !important; font-weight: 600 !important; padding: 5px 12px !important; border-radius: 9999px !important; border: 1px solid rgba(255, 255, 255, 0.25) !important;">WireGuard</span>
-    <span style="background: rgba(255, 255, 255, 0.15) !important; color: #ffffff !important; font-size: 0.82rem !important; font-weight: 600 !important; padding: 5px 12px !important; border-radius: 9999px !important; border: 1px solid rgba(255, 255, 255, 0.25) !important;">Kill Switch</span>
-    <span style="background: rgba(255, 255, 255, 0.15) !important; color: #ffffff !important; font-size: 0.82rem !important; font-weight: 600 !important; padding: 5px 12px !important; border-radius: 9999px !important; border: 1px solid rgba(255, 255, 255, 0.25) !important;">Multi-Device</span>
-  </div>
-  <a href="/download" style="display: inline-block !important; background: #ffffff !important; color: #324468 !important; font-weight: 700 !important; font-size: 1rem !important; padding: 14px 32px !important; border-radius: 9999px !important; text-decoration: none !important; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12) !important;">Get OllaVPN Free</a>
 </section>

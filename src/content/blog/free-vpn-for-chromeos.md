@@ -345,24 +345,6 @@ For settings, the short version: install through the Play Store rather than a br
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Atlas VPN. Acquired by Nord Security in 2021 and shut down entirely in 2024, with free users migrated to NordVPN's paid tier. No longer a current option in 2026 on any platform, including ChromeOS.</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">⭐ Key takeaways</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">What to remember from this guide</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">•A truly free VPN for ChromeOS means no data caps, no ads, no logs, and no hidden monetization of your traffic</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">•Install as a full Android app through Google Play, not a Chrome extension: only a system level app covers your whole device</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">•Turn on Always on VPN in ChromeOS settings to close the gap when switching Wi Fi networks</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">•Use WireGuard for lower CPU overhead on Chromebook hardware</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">•Pick the nearest server for the best speed: distance matters more on lower powered processors</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">•Verify claims yourself: test DNS, WebRTC, and kill switch behavior from your own Chromebook</p>
-
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">•OllaVPN funds the free tier through Plus subscribers, so your data is never the product</p>
-
 </div>
 
 <section id="faqs" style="margin-top: 40px; margin-bottom: 30px;">
@@ -496,16 +478,4 @@ For settings, the short version: install through the Play Store rather than a br
   <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">
     With OllaVPN, your Chromebook traffic stays fully protected by Android-level WireGuard tunneling, audited zero logging, and quantum-resistant encryption for $0 forever.
   </p>
-</section>
-
-<section class="article-bottom-cta-banner" style="background: linear-gradient(135deg, #455b8a 0%, #324468 100%) !important; border: 1px solid rgba(255, 255, 255, 0.15) !important; border-radius: 16px !important; padding: 36px 32px !important; margin: 48px 0 24px 0 !important; text-align: center !important; color: #ffffff !important; box-shadow: 0 16px 36px rgba(50, 68, 104, 0.25) !important; box-sizing: border-box !important;">
-  <h3 style="font-size: 1.75rem !important; font-weight: 800 !important; color: #ffffff !important; margin: 0 0 10px 0 !important; letter-spacing: -0.02em !important;">Protect Your Connection with OllaVPN</h3>
-  <p style="font-size: 1.05rem !important; color: rgba(255, 255, 255, 0.9) !important; max-width: 600px !important; margin: 0 auto 20px auto !important; line-height: 1.6 !important;">High-speed WireGuard encryption, zero activity logs, and post-quantum security on every server.</p>
-  <div style="display: flex !important; justify-content: center !important; gap: 8px !important; flex-wrap: wrap !important; margin-bottom: 24px !important;">
-    <span style="background: rgba(255, 255, 255, 0.15) !important; color: #ffffff !important; font-size: 0.82rem !important; font-weight: 600 !important; padding: 5px 12px !important; border-radius: 9999px !important; border: 1px solid rgba(255, 255, 255, 0.25) !important;">Zero Logs</span>
-    <span style="background: rgba(255, 255, 255, 0.15) !important; color: #ffffff !important; font-size: 0.82rem !important; font-weight: 600 !important; padding: 5px 12px !important; border-radius: 9999px !important; border: 1px solid rgba(255, 255, 255, 0.25) !important;">WireGuard</span>
-    <span style="background: rgba(255, 255, 255, 0.15) !important; color: #ffffff !important; font-size: 0.82rem !important; font-weight: 600 !important; padding: 5px 12px !important; border-radius: 9999px !important; border: 1px solid rgba(255, 255, 255, 0.25) !important;">Kill Switch</span>
-    <span style="background: rgba(255, 255, 255, 0.15) !important; color: #ffffff !important; font-size: 0.82rem !important; font-weight: 600 !important; padding: 5px 12px !important; border-radius: 9999px !important; border: 1px solid rgba(255, 255, 255, 0.25) !important;">Multi-Device</span>
-  </div>
-  <a href="/download" style="display: inline-block !important; background: #ffffff !important; color: #324468 !important; font-weight: 700 !important; font-size: 1rem !important; padding: 14px 32px !important; border-radius: 9999px !important; text-decoration: none !important; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12) !important;">Get OllaVPN Free</a>
 </section>
