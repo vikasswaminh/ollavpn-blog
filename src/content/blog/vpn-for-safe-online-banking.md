@@ -24,10 +24,6 @@ featured: false
   <ul class="takeaways-list" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px;">
     <li style="display: flex; gap: 12px; align-items: flex-start;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">What to remember from this guide</div>
-    </li>
-    <li style="display: flex; gap: 12px; align-items: flex-start;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">A VPN protects the network path between you and your bank, not the bank's own security - it closes the specific gap created by public Wi-Fi, fake hotspots, and ISP-level monitoring</div>
     </li>
     <li style="display: flex; gap: 12px; align-items: flex-start;">
@@ -75,7 +71,12 @@ featured: false
   <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">An honest VPN for banking should offer strong, modern encryption, a kill switch that's actually on by default, a genuine no-logs policy, and reliable enough performance that you're not tempted to disconnect it mid-session out of frustration.</p>
 </div>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Here's the checklist we think matters most for this specific use case. First, encryption strength and protocol quality. You want the WireGuard protocol or an equally modern standard, not an outdated protocol with known weaknesses. For something as sensitive as a banking session, this isn't a place to compromise on "good enough."</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Here's the checklist we think matters most for this specific use case.</p>
+
+<div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">First: encryption strength and protocol quality:</strong>
+  <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">You want the WireGuard protocol or an equally modern standard, not an outdated protocol with known weaknesses. For something as sensitive as a banking session, this isn't a place to compromise on "good enough."</span>
+</div>
 
 <div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Second:</strong>
@@ -92,7 +93,10 @@ featured: false
   <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">A VPN that frequently drops connections is actually worse for banking than no VPN at all, since a mid-session disconnect can interrupt a transaction or, in rare cases, contribute to a session being flagged. You want consistency more than you want a headline speed number.</span>
 </div>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Finally, you should expect the provider to be transparent about how VPN use interacts with your bank's own fraud detection - a topic most VPN marketing pages conveniently skip, and one we cover in detail further down, because it's genuinely useful to understand before your first VPN-protected login attempt.</p>
+<div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Finally:</strong>
+  <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">you should expect the provider to be transparent about how VPN use interacts with your bank's own fraud detection - a topic most VPN marketing pages conveniently skip, and one we cover in detail further down, because it's genuinely useful to understand before your first VPN-protected login attempt.</span>
+</div>
 
 <h2 id="section-3" style="font-size: 1.65rem; font-weight: 700; color: #09090b; margin-top: 36px; margin-bottom: 16px; scroll-margin-top: 80px;">What Does OllaVPN Free Give You Specifically for Online Banking?</h2>
 

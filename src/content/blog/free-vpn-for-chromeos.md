@@ -24,10 +24,6 @@ featured: false
   <ul class="takeaways-list" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px;">
     <li style="display: flex; gap: 12px; align-items: flex-start;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">What to remember from this guide</div>
-    </li>
-    <li style="display: flex; gap: 12px; align-items: flex-start;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">A truly free VPN for ChromeOS means no data caps, no ads, no logs, and no hidden monetization of your traffic</div>
     </li>
     <li style="display: flex; gap: 12px; align-items: flex-start;">

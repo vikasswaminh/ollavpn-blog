@@ -24,10 +24,6 @@ featured: false
   <ul class="takeaways-list" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px;">
     <li style="display: flex; gap: 12px; align-items: flex-start;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
-      <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">What to remember from this guide</div>
-    </li>
-    <li style="display: flex; gap: 12px; align-items: flex-start;">
-      <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.3rem; line-height: 1.2; flex-shrink: 0;">&bull;</span>
       <div style="font-size: 1.02rem; line-height: 1.68; color: #1E293B;">A truly free VPN for YouTube means no data caps, no ads, no logs, and enough real speed to stream HD without added buffering - not a crippled trial disguised as a free plan</div>
     </li>
     <li style="display: flex; gap: 12px; align-items: flex-start;">
@@ -75,7 +71,12 @@ featured: false
   <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">An honest free VPN for YouTube should offer enough real speed to stream HD without added buffering, a genuine choice of server countries, strong encryption, and no ads or data logging tied to your viewing habits.</p>
 </div>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Here's the baseline we think any honest free VPN for streaming should meet. First, the speed has to be real - not a marketing number, but enough sustained throughput to actually stream 1080p YouTube without stuttering. A lot of free VPNs technically "work" but are so oversubscribed on their free-tier servers that video quality auto-drops to 480p the moment you connect, which defeats the purpose entirely.</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Here's the baseline we think any honest free VPN for streaming should meet.</p>
+
+<div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
+  <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">First: the speed has to be real:</strong>
+  <span style="color: #1E293B; font-size: 1.02rem; line-height: 1.68;">not a marketing number, but enough sustained throughput to actually stream 1080p YouTube without stuttering. A lot of free VPNs technically "work" but are so oversubscribed on their free-tier servers that video quality auto-drops to 480p the moment you connect, which defeats the purpose entirely.</span>
+</div>
 
 <div class="step-highlight-card" style="margin-bottom: 16px; padding: 18px 20px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Second:</strong>
