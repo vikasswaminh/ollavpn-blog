@@ -369,15 +369,3 @@ If the concept above is something a VPN genuinely can't fix (a fundamentally cap
   </p>
 </section>
 
-<section id="download" class="download-section-box" style="background: linear-gradient(135deg, #ffffff 0%, #FFF8F8 100%); border: 1.5px solid rgba(218, 41, 28, 0.2); border-radius: 18px; padding: 32px 28px; margin-bottom: 24px; text-align: center; width: 100%; box-shadow: 0 6px 24px rgba(218, 41, 28, 0.06); box-sizing: border-box; font-family: 'Lato', sans-serif;">
-  <h2 style="font-size: 1.875rem; font-weight: 800; color: #0F172A; margin: 0 0 10px 0; border: none !important; padding-bottom: 0 !important; font-family: 'Lato', sans-serif;">Experience Truly Free Privacy with OllaVPN</h2>
-  <p style="font-size: 0.925rem; color: #475569; max-width: 650px; margin: 0 auto 18px auto; line-height: 1.65; font-family: 'Lato', sans-serif;">
-    Unlimited data, default-on <a href="/blog/what-is-a-vpn-kill-switch/" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">kill switch</a> protection, zero activity logs, and post-quantum encryption across all your devices.
-  </p>
-  <a href="https://ollavpn.com/apps.html" target="_blank" rel="noopener" class="btn-primary" style="display: inline-block; background: #DA291C !important; color: #FFFFFF !important; font-size: 0.96rem; font-weight: 800; padding: 14px 36px; border-radius: 10px; text-decoration: none !important; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.25); transition: all 0.2s ease; font-family: 'Lato', sans-serif;">
-    Download OllaVPN Free &rarr;
-  </a>
-  <div style="margin-top: 14px; font-size: 0.75rem; color: #64748b; font-weight: 600; font-family: 'Lato', sans-serif;">
-    Available for iOS, Android, Windows &amp; macOS &bull; Instant Setup &bull; No Logs
-  </div>
-</section>
