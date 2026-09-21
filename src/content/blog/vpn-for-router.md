@@ -11,13 +11,13 @@ pillar: false
 
 <p class="article-lede" style="font-size: 1.18rem; line-height: 1.82; color: #1E293B; font-weight: 400; margin-bottom: 24px; font-family: 'Lato', sans-serif;">The complete guide to running a VPN at the router level instead of device by device. What it actually protects, which devices benefit the most, especially the ones that can't run a VPN app themselves, the real trade-offs in speed and setup complexity, and how to decide if it's the right move for your household.</p>
 
-<div class="article-tldr-box" style="background: #FFF5F5 !important; border-left: 4px solid #DA291C !important; border-radius: 8px !important; padding: 20px 24px !important; margin: 28px 0 24px 0 !important; box-shadow: 0 2px 10px rgba(218, 41, 28, 0.04) !important;">
-  <strong style="color: #DA291C !important; display: block !important; margin-bottom: 8px !important; font-family: 'Lato', sans-serif !important; font-size: 1.12rem !important; letter-spacing: 0.02em !important; font-weight: 800 !important; text-transform: uppercase !important;">TL;DR — The Short Answer</strong>
+<section id="tldr" class="article-tldr-box" style="margin-bottom: 28px; padding: 24px; background: #EFEFF0; border: 1px solid #E2E8F0; border-left: 5px solid #DA291C; border-radius: 0 12px 12px 0;">
+  <h2 style="font-size: 1.35rem; font-weight: 800; color: #0F172A; margin-top: 0; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.04em; font-family: 'Lato', sans-serif;">TL;DR</h2>
   <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.04rem !important; font-family: 'Lato', sans-serif !important;">A router-level VPN encrypts traffic for your entire home network at a single point, the router itself, instead of requiring a VPN app on every individual device. That single change solves a problem device-by-device VPN apps can't: smart TVs, game consoles, smart speakers, thermostats, and most other "smart home" gadgets can't run a VPN app at all, which normally leaves them completely unprotected even while every laptop and phone in the house is covered. Setting up a VPN on a router isn't hard technically, but it does require either a router that natively supports it or a small amount of firmware work, and it comes with real trade-offs in speed, since your router now has to do the encryption work that dozens of individual devices used to split between them. This guide covers exactly when a router-level VPN is worth it, which devices benefit most, and how to set one up without turning your home network into a support ticket. OllaVPN supports router-level setup on its Pro and Business plans, with configuration files ready for the most common router platforms.</p>
-</div>
+</section>
 
-<div class="article-takeaways-box" style="background: #FFF5F5 !important; border-left: 4px solid #DA291C !important; border-radius: 8px !important; padding: 20px 24px !important; margin: 0 0 32px 0 !important; box-shadow: 0 2px 10px rgba(218, 41, 28, 0.04) !important;">
-  <strong style="color: #DA291C !important; display: block !important; margin-bottom: 12px !important; font-family: 'Lato', sans-serif !important; font-size: 1.12rem !important; letter-spacing: 0.02em !important; font-weight: 800 !important; text-transform: uppercase !important;">Key Takeaways</strong>
+<section id="takeaways" class="article-takeaways-box" style="margin-bottom: 32px; padding: 24px 28px; background: #EFEFF0; border: 1px solid #E2E8F0; border-left: 5px solid #DA291C; border-radius: 0 12px 12px 0;">
+  <h2 style="font-size: 1.25rem; font-weight: 800; color: #0F172A; margin-top: 0; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.05em; font-family: 'Lato', sans-serif;">KEY TAKEAWAYS</h2>
   <ul class="takeaways-list-24obs" style="list-style: none !important; margin: 0 !important; padding: 0 !important; display: flex !important; flex-direction: column !important; gap: 10px !important;">
     <li style="display: flex !important; align-items: flex-start !important; gap: 10px !important; color: #1E293B !important; font-size: 1.02rem !important; line-height: 1.68 !important; margin: 0 !important; padding: 0 !important;">
       <span class="takeaway-bullet" style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.25rem !important; line-height: 1.35 !important; flex-shrink: 0 !important;">&bull;</span>
@@ -40,7 +40,9 @@ pillar: false
       <span>Router-level protection and device-level VPN apps solve different problems and work best together.</span>
     </li>
   </ul>
-</div>
+</section>
+
+<div class="blog-main-content-box" style="background: #ffffff !important; border: 1.5px solid #E2E8F0 !important; border-radius: 14px !important; padding: 36px !important; box-shadow: 0 4px 20px rgba(0,0,0,0.03) !important; margin-bottom: 36px !important;">
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">If you've ever counted the devices connected to your home Wi-Fi and been mildly startled by the number, a couple of phones, a couple of laptops, a smart TV, a game console, a robot vacuum, a video doorbell, three or four smart speakers, and something called a "hub" you installed two years ago and forgot about, this guide is for you. Most of those devices have no privacy protection at all right now, and most people don't realize it, because the conversation about VPNs is almost always about phones and laptops.</p>
 
@@ -448,7 +450,9 @@ pillar: false
   <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Local boundaries</strong>If the concern above is something a router-level VPN doesn't address at all (isolating compromised devices from each other on your local network, physical security of devices in your home), we say so plainly. That's a network segmentation and device-security conversation, not a VPN conversation, and treating a VPN as a complete answer to smart-home security would be overselling what it does.</p>
 </div>
 
-<div class="faq-lightbox-container" style="background: #FBFBFC; border: 1.5px solid #E2E8F0; border-radius: 16px; padding: 28px 24px; margin: 36px 0 28px 0; box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03);">
+</div>
+
+<section id="faqs" class="blog-main-content-box" style="margin-top: 36px; margin-bottom: 32px; scroll-margin-top: 80px; padding: 26px 30px; background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-radius: 14px !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.04) !important;">
   <h2 style="font-size: 1.65rem; font-weight: 800; color: #0F172A; margin: 0 0 20px 0; font-family: 'Lato', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">Frequently Asked Questions</h2>
   
   <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 10px; margin-bottom: 12px; background: #FFFFFF; overflow: hidden; padding: 14px 18px;">
@@ -530,10 +534,10 @@ pillar: false
     </summary>
     <p style="margin: 12px 0 0 0; font-size: 1rem; line-height: 1.68; color: #334155; font-family: 'Lato', sans-serif;">Yes. OllaVPN provides pre-configured WireGuard configuration files and detailed setup guides for major router platforms on Pro and Business plans, with in-tunnel DNS and post-quantum hybrid protection built in by default.</p>
   </details>
-</div>
+</section>
 
-
-<div class="wrapping-up-box" style="background: #FFF5F5 !important; border: 1.5px solid #FED7D7 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 24px 26px !important; margin: 36px 0 28px 0 !important; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.05) !important;">
-  <h2 style="font-size: 1.45rem !important; font-weight: 800 !important; color: #DA291C !important; margin: 0 0 12px 0 !important; font-family: 'Lato', sans-serif !important; text-align: center !important; letter-spacing: 0.01em !important;">Wrapping It Up</h2>
-  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;">Setting up a VPN on your router gives every device on your home Wi-Fi immediate, always-on encryption without requiring dedicated software on each phone, smart TV, or IoT gadget. While it demands a capable router and a small speed trade-off, combining router-level coverage at home with device-level apps when traveling offers complete digital privacy across every environment.</p>
-</div>
+<section id="wrapping-it-up" class="wrap-up-box wrapping-lightbox" style="margin-top: 36px; margin-bottom: 24px; padding: 28px; background: #FFF5F5 !important; border: 1.5px solid rgba(218, 41, 28, 0.25) !important; border-left: 5px solid #DA291C !important; border-radius: 12px !important; text-align: left !important;">
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C !important; border: none !important; padding-bottom: 0 !important; text-align: center !important; font-family: 'Lato', sans-serif !important;">Wrapping It Up</h2>
+  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B !important; margin-bottom: 12px; text-align: left !important; font-family: 'Lato', sans-serif !important;">Setting up a VPN on your router gives every device on your home Wi-Fi immediate, always-on encryption without requiring dedicated software on each phone, smart TV, or IoT gadget. While it demands a capable router and a small speed trade-off, combining router-level coverage at home with device-level apps when traveling offers complete digital privacy across every environment.</p>
+  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B !important; margin-bottom: 0; text-align: left !important; font-family: 'Lato', sans-serif !important;">With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on kill switch defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.</p>
+</section>
