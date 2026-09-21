@@ -6,13 +6,13 @@ author: Vikas Swami
 tags: ['buyer-guides']
 ---
 
-<section id="tldr" class="article-tldr-box" style="margin-bottom: 32px; padding: 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <h2 style="font-size: 1.25rem; font-weight: 700; color: #DA291C; margin-top: 0; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h2>
+<section id="tldr" class="article-tldr-box" style="margin-bottom: 28px; padding: 24px; background: #EFEFF0; border: 1px solid #E2E8F0; border-left: 5px solid #DA291C; border-radius: 0 12px 12px 0;">
+  <h2 style="font-size: 1.35rem; font-weight: 800; color: #0F172A; margin-top: 0; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.04em; font-family: 'Lato', sans-serif;">TL;DR</h2>
   <p style="margin-bottom: 12px; line-height: 1.75; color: #1E293B; font-size: 1.05rem;">Chrome’s extension store is packed with “free VPN” listings that are often proxies in disguise. Here’s what actually protects your browser in 2026. OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard encryption</a> with audited zero activity logging across all devices.</p>
 </section>
 
-<section id="takeaways" class="article-takeaways-box" style="margin-bottom: 36px; padding: 24px 28px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <h2 style="font-size: 1.25rem; font-weight: 700; color: #DA291C; margin-top: 0; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.05em;">KEY TAKEAWAYS</h2>
+<section id="takeaways" class="article-takeaways-box" style="margin-bottom: 32px; padding: 24px 28px; background: #EFEFF0; border: 1px solid #E2E8F0; border-left: 5px solid #DA291C; border-radius: 0 12px 12px 0;">
+  <h2 style="font-size: 1.25rem; font-weight: 800; color: #0F172A; margin-top: 0; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.05em; font-family: 'Lato', sans-serif;">KEY TAKEAWAYS</h2>
   <ul class="takeaways-list-24obs" style="list-style: none !important; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
     <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>Why "VPN for Chrome" is a slightly misleading phrase: People searching “VPN for Chrome” usually want their browsing private, but the phrase makes it sound like the fix belongs inside the browser.</span></li>
     <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>Browser extension vs system-level VPN: the difference that matters: A system-level VPN encrypts all traffic leaving your device at the operating-system layer, before any individual app gets involved.</span></li>

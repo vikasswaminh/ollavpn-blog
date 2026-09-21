@@ -7,15 +7,15 @@ tags: ['Smart TV', 'Fire TV', 'Android TV', 'Streaming', 'VPN Setup']
 category: 'guides'
 ---
 
-<section id="tldr" class="article-tldr-box" style="margin-bottom: 32px; padding: 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <h2 style="font-size: 1.25rem; font-weight: 700; color: #DA291C; margin-top: 0; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h2>
+<section id="tldr" class="article-tldr-box" style="margin-bottom: 28px; padding: 24px; background: #EFEFF0; border: 1px solid #E2E8F0; border-left: 5px solid #DA291C; border-radius: 0 12px 12px 0;">
+  <h2 style="font-size: 1.35rem; font-weight: 800; color: #0F172A; margin-top: 0; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.04em; font-family: 'Lato', sans-serif;">TL;DR</h2>
   <p style="margin-bottom: 12px; line-height: 1.75; color: #1E293B; font-size: 1.05rem;">Fire TV runs a forked version of Android, and Android TV is, well, Android — so in theory any VPN with an Android app should install. In practice, Amazon's Appstore only lists a handful of VPNs, Google Play's Android TV storefront lists fewer still, and a lot of the "VPN for Fire Stick" tutorials you'll find online route you through sideloading an APK, which brings its own risks if you're not careful about the source.</p>
   <p style="margin-bottom: 12px; line-height: 1.75; color: #1E293B; font-size: 1.05rem;">The honest streaming reality is this: a VPN changes your IP address, and that's genuinely useful for privacy on a device that's almost always connected and often shared across a household. It is a much less reliable tool for reaching a foreign catalog of a paid streaming service, because most major platforms actively detect and block VPN and datacentre IP ranges — so "unblocks Netflix" is a claim that's true today and possibly false again next Tuesday, for any provider.</p>
   <p style="margin-bottom: 12px; line-height: 1.75; color: #1E293B; font-size: 1.05rem;">We'll walk through exactly how to get a VPN running on both Fire TV and Android TV, including the router-level workaround for devices that plain refuse a VPN app, and we'll be upfront about which streaming claims hold up and which ones are marketing.</p>
 </section>
 
-<section id="takeaways" class="article-takeaways-box" style="margin-bottom: 36px; padding: 24px 28px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <h2 style="font-size: 1.25rem; font-weight: 700; color: #DA291C; margin-top: 0; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.05em;">KEY TAKEAWAYS</h2>
+<section id="takeaways" class="article-takeaways-box" style="margin-bottom: 32px; padding: 24px 28px; background: #EFEFF0; border: 1px solid #E2E8F0; border-left: 5px solid #DA291C; border-radius: 0 12px 12px 0;">
+  <h2 style="font-size: 1.25rem; font-weight: 800; color: #0F172A; margin-top: 0; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.05em; font-family: 'Lato', sans-serif;">KEY TAKEAWAYS</h2>
   <ul class="takeaways-list-24obs" style="list-style: none !important; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
     <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
       <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>

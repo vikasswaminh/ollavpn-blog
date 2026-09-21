@@ -6,13 +6,13 @@ author: Vikas Swami
 tags: ['privacy-security']
 ---
 
-<section id="tldr" class="article-tldr-box" style="margin-bottom: 32px; padding: 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <h2 style="font-size: 1.25rem; font-weight: 700; color: #DA291C; margin-top: 0; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h2>
+<section id="tldr" class="article-tldr-box" style="margin-bottom: 28px; padding: 24px; background: #EFEFF0; border: 1px solid #E2E8F0; border-left: 5px solid #DA291C; border-radius: 0 12px 12px 0;">
+  <h2 style="font-size: 1.35rem; font-weight: 800; color: #0F172A; margin-top: 0; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.04em; font-family: 'Lato', sans-serif;">TL;DR</h2>
   <p style="margin-bottom: 12px; line-height: 1.75; color: #1E293B; font-size: 1.05rem;">A WebRTC leak happens when your browser's real-time communication feature reveals your true IP address directly to a website, bypassing your VPN's encrypted tunnel entirely, even while every other sign in your browser says "you're protected." To test: connect to your VPN, then visit a WebRTC leak test site such as <a href="https://browserleaks.com/webrtc" target="_blank" rel="noopener noreferrer">browserleaks.com/webrtc</a>. If only your VPN's IP address appears, you're safe. If your real IP shows up anywhere on the page, you have a leak. To prevent it for good: use a VPN with dedicated WebRTC leak protection built into its browser handling, or a browser configuration that blocks the leak at the source. OllaVPN blocks this automatically on every connection.</p>
 </section>
 
-<section id="takeaways" class="article-takeaways-box" style="margin-bottom: 36px; padding: 24px 28px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <h2 style="font-size: 1.25rem; font-weight: 700; color: #DA291C; margin-top: 0; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.05em;">KEY TAKEAWAYS</h2>
+<section id="takeaways" class="article-takeaways-box" style="margin-bottom: 32px; padding: 24px 28px; background: #EFEFF0; border: 1px solid #E2E8F0; border-left: 5px solid #DA291C; border-radius: 0 12px 12px 0;">
+  <h2 style="font-size: 1.25rem; font-weight: 800; color: #0F172A; margin-top: 0; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.05em; font-family: 'Lato', sans-serif;">KEY TAKEAWAYS</h2>
   <ul class="takeaways-list-24obs" style="list-style: none !important; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
     <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>A WebRTC leak happens when: your browser's real-time communication feature reveals your real IP address directly to a website, bypassing your VPN's encrypted tunnel entirely.</span></li>
     <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>How to test your connection: connect to your VPN and visit a WebRTC leak test tool. If only your VPN's IP address appears, you are safe; if your ISP-assigned IP appears, your browser is leaking.</span></li>

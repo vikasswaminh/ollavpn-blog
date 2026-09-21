@@ -6,8 +6,8 @@ author: Vikas Swami
 tags: ['buyer-guides']
 ---
 
-<section id="tldr" class="article-tldr-box" style="margin-bottom: 32px; padding: 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <h2 style="font-size: 1.25rem; font-weight: 700; color: #DA291C; margin-top: 0; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h2>
+<section id="tldr" class="article-tldr-box" style="margin-bottom: 28px; padding: 24px; background: #EFEFF0; border: 1px solid #E2E8F0; border-left: 5px solid #DA291C; border-radius: 0 12px 12px 0;">
+  <h2 style="font-size: 1.35rem; font-weight: 800; color: #0F172A; margin-top: 0; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.04em; font-family: 'Lato', sans-serif;">TL;DR</h2>
   <p style="margin-bottom: 12px; line-height: 1.75; color: #1E293B; font-size: 1.05rem;">A genuinely free iPhone VPN with no credit card and no logs in 2026 means exactly what it says: you download the app, tap connect, and get a private, encrypted connection without entering payment details, without your usage being tracked or sold, and without a countdown timer quietly running in the background.
 
 OllaVPN Free gives you exactly that, 10 Mbps, every country in our network, post-quantum-ready encryption, a <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">kill switch</a> on by default, and a <a href="/blog/what-logs-does-vpn-keep/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">strict no-logs policy</a>, sustained by OllaVPN Plus subscribers rather than by your data.
@@ -17,8 +17,8 @@ You’re not getting a stripped-down trial. You’re getting the real security s
 The honest trade-off is speed: 10 Mbps on free versus 10 Gbps on the $2/month Plus plan. For most of what people actually do on an iPhone, browsing, HD streaming, video calls, messaging, that difference usually won’t be noticeable day to day.</p>
 </section>
 
-<section id="takeaways" class="article-takeaways-box" style="margin-bottom: 36px; padding: 24px 28px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <h2 style="font-size: 1.25rem; font-weight: 700; color: #DA291C; margin-top: 0; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.05em;">KEY TAKEAWAYS</h2>
+<section id="takeaways" class="article-takeaways-box" style="margin-bottom: 32px; padding: 24px 28px; background: #EFEFF0; border: 1px solid #E2E8F0; border-left: 5px solid #DA291C; border-radius: 0 12px 12px 0;">
+  <h2 style="font-size: 1.25rem; font-weight: 800; color: #0F172A; margin-top: 0; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.05em; font-family: 'Lato', sans-serif;">KEY TAKEAWAYS</h2>
   <ul class="takeaways-list-24obs" style="list-style: none !important; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
     <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>What does "no credit card, no logs" actually mean: “No credit card” means you can download, install, and start using the VPN without entering payment details, not a free trial that quietly converts to a paid subscription.</span></li>
     <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>What should you expect from any honest free iPhone VPN in 2026: An honest free iPhone VPN has a transparent, explainable business model, a specific and verifiable no-logs policy, a usable service with reasonable limitations, and no requirement for a credit card or email address just to get started.</span></li>

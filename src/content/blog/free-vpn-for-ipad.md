@@ -9,13 +9,13 @@ tags: ['ipad-vpn', 'free-vpn', 'ios-security', 'privacy-security', 'buyer-guides
 pillar: false
 ---
 
-<section id="tldr" class="article-tldr-box" style="margin-bottom: 32px; padding: 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <h2 style="font-size: 1.25rem; font-weight: 700; color: #DA291C; margin-top: 0; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em;">TL;DR</h2>
+<section id="tldr" class="article-tldr-box" style="margin-bottom: 28px; padding: 24px; background: #EFEFF0; border: 1px solid #E2E8F0; border-left: 5px solid #DA291C; border-radius: 0 12px 12px 0;">
+  <h2 style="font-size: 1.35rem; font-weight: 800; color: #0F172A; margin-top: 0; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.04em; font-family: 'Lato', sans-serif;">TL;DR</h2>
   <p style="margin-bottom: 12px; line-height: 1.75; color: #1E293B; font-size: 1.05rem;">If you want a genuinely free VPN for your iPad without a credit card, a trial clock, or a logging policy that quietly betrays the whole point of using a VPN, OllaVPN Free is built for exactly that. No card at signup, no email required, no ads, no logs, and no seven-day countdown hiding in the fine print. You'll get a steady 10 Mbps, which comfortably covers browsing, HD streaming, video calls, and casual gaming on an iPad, in every country in our network. It's not built for 4K downloads or shuttling huge files, but for the overwhelming majority of what people actually do on an iPad, it holds up without a hiccup. We fund this free tier through our optional OllaVPN Plus plan, just $2 a month, which unlocks 10 Gbps across up to five devices along with our forward-secure, post-quantum-ready encryption. That funding model is the whole reason our free plan never has to fall back on ads or your data to stay in business.</p>
 </section>
 
-<section id="takeaways" class="article-takeaways-box" style="margin-bottom: 36px; padding: 24px 28px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
-  <h2 style="font-size: 1.25rem; font-weight: 700; color: #DA291C; margin-top: 0; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.05em;">KEY TAKEAWAYS</h2>
+<section id="takeaways" class="article-takeaways-box" style="margin-bottom: 32px; padding: 24px 28px; background: #EFEFF0; border: 1px solid #E2E8F0; border-left: 5px solid #DA291C; border-radius: 0 12px 12px 0;">
+  <h2 style="font-size: 1.25rem; font-weight: 800; color: #0F172A; margin-top: 0; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.05em; font-family: 'Lato', sans-serif;">KEY TAKEAWAYS</h2>
   <ul class="takeaways-list-24obs" style="list-style: none !important; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
     <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>What does "no credit: card" actually mean on an iPad, and why does it matter more here?</span></li>
     <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>What should you expect: from any honest free VPN in this category?</span></li>
