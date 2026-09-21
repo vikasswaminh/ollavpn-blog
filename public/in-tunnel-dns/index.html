@@ -1,0 +1,991 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>What Is In-Tunnel DNS, and Why Does It Matter?</title>
+<meta name="description" content="How OllaVPN's in-tunnel DNS prevents leaks and enhances privacy by keeping DNS requests encrypted inside the VPN tunnel." />
+<link rel="canonical" href="https://ollavpn.com/in-tunnel-dns" />
+<meta name="theme-color" content="#FFFFFF" />
+<meta name="msapplication-TileColor" content="#DC2626" />
+<meta name="author" content="The OllaVPN team" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="OllaVPN" />
+<meta property="og:title" content="What Is In-Tunnel DNS, and Why Does It Matter?" />
+<meta property="og:description" content="How OllaVPN's in-tunnel DNS prevents leaks and enhances privacy by keeping DNS requests encrypted inside the VPN tunnel." />
+<meta property="og:url" content="https://ollavpn.com/in-tunnel-dns" />
+<meta property="og:image" content="https://ollavpn.com/og-in-tunnel-dns.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="In-Tunnel Dns Vpn - explained by OllaVPN" />
+<meta property="article:published_time" content="2026-06-09T00:00:00Z" />
+<meta property="article:modified_time" content="2026-06-09T00:00:00Z" />
+<meta property="article:author" content="The OllaVPN team" />
+<meta property="article:section" content="Free VPN" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="What Is In-Tunnel DNS, and Why Does It Matter?" />
+<meta name="twitter:description" content="How OllaVPN's in-tunnel DNS prevents leaks and enhances privacy by keeping DNS requests encrypted inside the VPN tunnel." />
+<meta name="twitter:image" content="https://ollavpn.com/og-in-tunnel-dns.png" />
+
+<link rel="preload" href="/fonts/lato-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/lato-700-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/lato.css" />
+<link rel="preload" href="/fonts/inter-variable-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/inter.css" />
+<link rel="stylesheet" href="/jetbrains-mono.css" />
+<link rel="stylesheet" href="/styles.css?v=20260921_restored_v3" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "In-Tunnel DNS: Why It's Crucial for Your VPN Privacy",
+  "description": "Learn how OllaVPN's in-tunnel DNS prevents leaks and enhances your privacy by keeping your DNS requests encrypted and within the VPN tunnel. Understand its technical benefits.",
+  "image": "https://ollavpn.com/og-in-tunnel-dns.png",
+  "author": {
+    "@type": "Organization",
+    "name": "OllaVPN",
+    "url": "https://ollavpn.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "OllaVPN",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ollavpn.com/favicon-256.png"
+    }
+  },
+  "datePublished": "2026-06-09",
+  "dateModified": "2026-06-09",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ollavpn.com/in-tunnel-dns"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does in-tunnel DNS protect me against in plain terms?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It stops your internet provider, or anyone else on your local network, from seeing what websites you're trying to visit. Think of it like putting your request to find 'ollavpn.com' into a sealed, encrypted envelope that only OllaVPN can open, preventing anyone from peeking at the address you're going to. It's a key privacy layer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is in-tunnel DNS on by default with OllaVPN?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, absolutely! It's a core privacy feature, so we've made sure it's enabled by default for everyone, right out of the box. You don't need to configure anything to get this critical protection. We believe fundamental privacy shouldn't be something you have to hunt for in settings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I turn off in-tunnel DNS in OllaVPN?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, you can't turn it off. It's an integral part of how OllaVPN protects your privacy and prevents DNS leaks. Disabling it would compromise your security and defeat a major purpose of using a VPN. We keep it on to ensure you're always protected, on every connection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I verify that in-tunnel DNS is working?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can use a third-party DNS leak test website. Connect to OllaVPN, then visit one of these sites. It should show that your DNS requests are being handled by OllaVPN's servers, not your internet provider's. This confirms your DNS traffic is securely routed through our tunnel, just as intended."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does in-tunnel DNS slow down my internet connection?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not noticeably. The overhead is minimal, and our private DNS resolvers are optimized for speed. You won't feel a difference on the free plan. It's designed to be fast and invisible, keeping your browsing fluid."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will in-tunnel DNS break my smart-home devices or LAN access?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, it shouldn't. In-tunnel DNS primarily handles external website resolution. Your local network access for smart devices or file sharing within your LAN should continue to function normally. Those requests typically don't go through the VPN tunnel, so your home setup stays connected."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is OllaVPN's in-tunnel DNS implementation open source or audited?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "While the specific implementation isn't open source externally, our entire system is built on well-vetted, open-source components like WireGuard. We're committed to transparency and plan for independent audits of our infrastructure as we grow. We want you to trust that it works as advertised."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does OllaVPN's in-tunnel DNS compare to what other VPNs do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many VPNs rely on your operating system's default DNS, which can leak your activity. OllaVPN builds DNS directly into the encrypted tunnel, ensuring your requests never leave our secure environment. This crucial difference means your DNS queries are protected from the moment they leave your device."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does in-tunnel DNS NOT protect against?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It won't stop websites from tracking you with cookies or browser fingerprinting. It also doesn't protect against malware or phishing attacks if you click a malicious link. It's a crucial layer for privacy by hiding your destination, but it's not a silver bullet for all online risks you might encounter."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will in-tunnel DNS still work in 5 or 10 years?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we're building for the long term. Our DNS infrastructure is designed to be robust and secure. Coupled with our post-quantum-ready encryption, we're confident it will remain a strong privacy primitive for years to come, protecting your data against future threats."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the free plan include in-tunnel DNS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! Every OllaVPN user gets the full benefit of in-tunnel DNS. We believe fundamental privacy shouldn't be behind a paywall, and you don't even need a card on file for it. It's part of our \"free forever\" promise."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is in-tunnel DNS related to OllaVPN's post-quantum readiness?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In-tunnel DNS ensures your DNS queries are encrypted within the tunnel. Our post-quantum-ready encryption then protects that entire tunnel, including the DNS traffic, against future quantum computing threats. This offers end-to-end forward security for your privacy, future-proofing your connection."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ollavpn.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Technology",
+      "item": "https://ollavpn.com/technology.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "In-tunnel DNS",
+      "item": "https://ollavpn.com/in-tunnel-dns"
+    }
+  ]
+}
+</script>
+
+<style>
+
+/* ==========================================================================
+   BULLETPROOF HIGH-CONTRAST DARK NAVIGATION BAR SYSTEM
+   ========================================================================== */
+.utilbar {
+  background: #F9FAFB !important;
+  color: #667085 !important;
+  font-family: var(--mono, monospace) !important;
+  font-size: 11.5px !important;
+  border-bottom: 1px solid rgba(16, 24, 40, 0.08) !important;
+  padding: 7px 0 !important;
+  letter-spacing: 0.04em !important;
+}
+.utilbar a {
+  color: #475467 !important;
+  text-decoration: none !important;
+}
+.utilbar a:hover {
+  color: #101828 !important;
+}
+.utilbar .green-dot {
+  color: #34D399 !important;
+}
+
+.nav {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+  background: #FFFFFF !important;
+  background-color: rgba(255, 255, 255, 0.94) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-bottom: 1px solid rgba(16, 24, 40, 0.10) !important;
+  transition: background .15s ease, box-shadow .15s ease, border-color .15s ease !important;
+}
+.nav.scrolled {
+  background: #FFFFFF !important;
+  background-color: rgba(255, 255, 255, 0.98) !important;
+  border-bottom-color: rgba(99, 102, 241, 0.40) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.85) !important;
+}
+.nav-inner {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  height: 64px !important;
+  padding: 0 28px !important;
+  max-width: 1440px !important;
+  margin: 0 auto !important;
+}
+.brand, a.brand, .brand:visited {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+  font-size: 17.5px !important;
+  color: #101828 !important;
+  text-decoration: none !important;
+  flex: 1 !important;
+}
+.brand span {
+  color: #101828 !important;
+  font-weight: 700 !important;
+}
+
+
+.nav-links {
+  display: flex !important;
+  align-items: center !important;
+  gap: 26px !important;
+  font-size: 14px !important;
+  color: #475467 !important;
+  justify-content: center !important;
+  flex: 2 !important;
+}
+.nav-links a, .nav-item, .nav-item .nav-head {
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 6px 0 !important;
+  color: #475467 !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  transition: color .15s ease !important;
+  white-space: nowrap !important;
+  line-height: 1 !important;
+  cursor: pointer !important;
+}
+.nav-links > a::after, .nav-item::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: -6px !important;
+  height: 2px !important;
+  background: #DA291C !important;
+  transform: scaleX(0) !important;
+  transform-origin: left !important;
+  transition: transform .18s ease !important;
+}
+.nav-links a:hover, .nav-item:hover, .nav-item:hover .nav-head, .nav-item:focus-within .nav-head {
+  color: #101828 !important;
+}
+.nav-links a.active, .nav-item.active, .nav-item.active .nav-head {
+  color: #DA291C !important;
+  font-weight: 600 !important;
+}
+.nav-links > a:hover::after, .nav-links > a.active::after, .nav-item:hover::after, .nav-item.active::after {
+  transform: scaleX(1) !important;
+}
+.nav-item .caret {
+  display: inline-block !important;
+  margin-left: 5px !important;
+  font-size: 10px !important;
+  color: #667085 !important;
+  transition: transform .18s ease, color .18s ease !important;
+}
+.nav-item:hover .caret, .nav-item:focus-within .caret {
+  transform: rotate(180deg) !important;
+  color: #101828 !important;
+}
+
+/* Mega dropdown */
+.mega {
+  position: absolute !important;
+  top: calc(100% + 2px) !important;
+  left: 50% !important;
+  transform: translate(-50%, -4px) !important;
+  min-width: 720px !important;
+  background: #F9FAFB !important;
+  border: 1px solid #1E293B !important;
+  border-radius: 14px !important;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.95), 0 4px 20px rgba(0, 0, 0, 0.8) !important;
+  padding: 24px !important;
+  z-index: 99999 !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transition: opacity .15s ease, transform .15s ease, visibility .15s !important;
+}
+.nav-item:hover .mega, .nav-item:focus-within .mega, .mega:hover {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  transform: translate(-50%, 0) !important;
+}
+.mega-col h5 {
+  margin: 0 0 12px !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: #667085 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+}
+.mega-col a {
+  display: block !important;
+  padding: 8px 10px !important;
+  margin: 0 -10px !important;
+  font-size: 14px !important;
+  color: #475467 !important;
+  font-weight: 500 !important;
+  border-radius: 8px !important;
+  text-decoration: none !important;
+  transition: background .12s, color .12s !important;
+}
+.mega-col a:hover {
+  background: #F9FAFB !important;
+  color: #101828 !important;
+}
+
+/* Nav CTAs */
+.nav-cta {
+  display: flex !important;
+  gap: 12px !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  flex: 1 !important;
+}
+.nav-cta .btn.ghost {
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 8px 16px !important;
+  font-size: 13.5px !important;
+  font-weight: 500 !important;
+  color: #475467 !important;
+  background: #F9FAFB !important;
+  border: 1px solid rgba(16, 24, 40, 0.16) !important;
+  border-radius: 8px !important;
+  text-decoration: none !important;
+  transition: all .15s ease !important;
+}
+.nav-cta .btn.ghost:hover {
+  background: #F9FAFB !important;
+  color: #101828 !important;
+  border-color: #475467 !important;
+}
+.nav-cta .btn.primary {
+  display: inline-flex !important;
+  align-items: center !important;
+  background: #DA291C !important;
+  color: #101828 !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  padding: 9px 18px !important;
+  font-size: 13.5px !important;
+  text-decoration: none !important;
+  border: none !important;
+  transition: all .15s ease !important;
+}
+.nav-cta .btn.primary:hover {
+  background: #A61E1E !important;
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.45) !important;
+  color: #101828 !important;
+}
+
+/* Mobile Hamburger & Drawer */
+.nav-hamburger {
+  align-items: center !important;
+  justify-content: center !important;
+  width: 40px !important;
+  height: 40px !important;
+  background: #F9FAFB !important;
+  border: 1px solid rgba(16, 24, 40, 0.14) !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  color: #101828 !important;
+  padding: 0 !important;
+  margin-left: 4px !important;
+}
+.nav-hamburger .bars, .nav-hamburger .bars::before, .nav-hamburger .bars::after {
+  background: #FFFFFF !important;
+}
+.mobile-drawer {
+  background: #F2F4F7 !important;
+  border-left: 1px solid rgba(16, 24, 40, 0.12) !important;
+}
+.mobile-drawer a {
+  color: #101828 !important;
+  border-bottom: 1px solid rgba(16, 24, 40, 0.08) !important;
+  text-decoration: none !important;
+}
+.mobile-drawer h5 {
+  color: #667085 !important;
+}
+
+  .article-hero { padding: 88px 0 36px; position: relative; overflow: hidden; }
+  .article-hero::before { content:""; position:absolute; inset:0;
+    background: radial-gradient(50% 50% at 50% 0%, rgba(238,62,71,0.10), transparent 60%);
+    pointer-events:none; }
+  .article-hero .wrap { position: relative; max-width: 1180px; margin: 0 auto; padding: 0 28px; }
+  .article-hero .meta { font-family: var(--mono); font-size: 12px; color: var(--text-mute);
+    letter-spacing: 0.06em; text-transform: uppercase; }
+  .article-hero h1 { font-family: var(--display); font-weight: 600; letter-spacing: -0.025em;
+    line-height: 1.08; font-size: clamp(30px, 4vw, 46px); margin-top: 18px; color: var(--text);
+    max-width: 880px; }
+  .article-hero .lede { font-size: 19px; line-height: 1.55; color: var(--text-dim);
+    margin-top: 20px; max-width: 760px; }
+
+  .article-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 12px 28px 56px;
+    gap: 56px;
+  }
+  @media (min-width: 980px) {
+    .article-layout { grid-template-columns: minmax(0, 720px) 260px; align-items: start; gap: 64px; }
+  }
+
+  .article {
+    min-width: 0;
+    font-size: 17px; line-height: 1.72; color: var(--text);
+  }
+  .article > p { margin: 0 0 1.25em; }
+  .article h2 {
+    font-family: var(--display); font-weight: 600;
+    font-size: 28px; letter-spacing: -0.02em;
+    margin: 2.4em 0 0.5em; scroll-margin-top: 96px;
+    color: var(--text);
+  }
+  .article .short-answer {
+    font-size: 20px; font-weight: 600; line-height: 1.45;
+    color: var(--text); margin: 0 0 0.9em;
+  }
+  .article p strong { font-weight: 700; color: var(--text); }
+  .article a { color: var(--red); text-decoration: underline; text-underline-offset: 3px;
+    text-decoration-thickness: 1px; }
+  .article a:hover { text-decoration-thickness: 2px; }
+
+  .tldr { border: 1px solid var(--line); border-radius: 12px; background: var(--panel);
+    padding: 22px 26px; margin: 0 0 2em; }
+  .tldr .label { font-family: var(--mono); font-size: 11px; color: var(--red);
+    letter-spacing: 0.08em; text-transform: uppercase; }
+  .tldr p { margin: 12px 0 0; font-size: 16px; line-height: 1.65; }
+
+  .toc-rail { display: none; }
+  @media (min-width: 980px) {
+    .toc-rail { display: block; position: sticky; top: 96px; align-self: start; padding: 4px 0 0; }
+  }
+  .toc-inline {
+    display: block; margin: 0 0 2.2em;
+    border: 1px solid var(--line); border-radius: 12px; padding: 18px 24px;
+    background: var(--panel);
+  }
+  @media (min-width: 980px) { .toc-inline { display: none; } }
+
+  .toc-rail .label, .toc-inline .label {
+    font-family: var(--mono); font-size: 11px; color: var(--text-mute);
+    letter-spacing: 0.08em; text-transform: uppercase;
+    padding-bottom: 12px; border-bottom: 1px solid var(--line); display: block;
+  }
+  .toc-rail ol, .toc-inline ol {
+    list-style: none; margin: 0; padding: 12px 0 0;
+  }
+  .toc-rail ol li, .toc-inline ol li {
+    font-size: 14px; line-height: 1.5; margin: 0 0 8px;
+  }
+  .toc-rail ol li a, .toc-inline ol li a {
+    color: var(--text-dim); text-decoration: none;
+    display: block; padding: 4px 0 4px 14px;
+    border-left: 2px solid transparent;
+    transition: border-color .12s ease, color .12s ease;
+  }
+  .toc-rail ol li a:hover,
+  .toc-inline ol li a:hover,
+  .toc-rail ol li.is-current a {
+    color: var(--red); border-left-color: var(--red);
+  }
+
+  .faq h3 { font-family: var(--display); font-weight: 600; font-size: 18px;
+    margin: 1.8em 0 0.4em; color: var(--text); scroll-margin-top: 96px; }
+  .faq h3 + p { margin-top: 0.4em; }
+
+  .related { border-top: 1px solid var(--line); margin-top: 3em; padding-top: 1.8em; }
+  .related h2 { font-size: 20px; margin: 0 0 0.8em; }
+  .related ul { list-style: none; padding-left: 0; }
+  .related ul li { margin: 0.55em 0; font-size: 16px; }
+  .related ul li::before { content: "-> "; color: var(--red); font-weight: 700; }
+
+/* Mega Dropdown Clean Item Styling & Underline Removal */
+.mega a::after,
+.mega-col a::after,
+.mega a:hover::after,
+.mega-col a:hover::after {
+  display: none !important;
+  content: none !important;
+  opacity: 0 !important;
+}
+
+.mega-col a {
+  display: block !important;
+  padding: 6px 10px !important;
+  margin: 2px 0 !important;
+  font-size: 13.5px !important;
+  color: #475467 !important;
+  font-weight: 500 !important;
+  border-radius: 6px !important;
+  text-decoration: none !important;
+  border: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  transition: all 0.15s ease !important;
+}
+
+.mega-col a:hover {
+  background: #FEF2F2 !important;
+  color: #DA291C !important;
+  font-weight: 600 !important;
+  border: none !important;
+  border-bottom: none !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+}
+
+</style>
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+</head>
+
+<body>
+<div class="utilbar">
+  <div class="wrap">
+    <div class="utilbar-left">
+      <span class="green-dot">&#9679;</span> All systems operational
+      <a href="https://status.ollavpn.com/" style="margin-left:8px;">status.ollavpn.com</a>
+    </div>
+    <div class="utilbar-right">
+      <a href="/technology.html">Trust</a>
+      <span style="opacity:.4;">&middot;</span>
+      <a href="/blog/">Blogs</a>
+      <span style="opacity:.4;">&middot;</span>
+      <a href="/contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/index.html"><img src="/logo.png" srcset="/logo.png 1x, /logo@2x.png 2x" alt="OllaVPN Logo" width="40" height="40" class="brand-img" style="width: 40px; height: 40px; border-radius: 8px; display: block; flex-shrink: 0;" /><span class="brand-text">Olla<span class="brand-red">VPN</span></span></a>
+    <div class="nav-links">
+      <div class="nav-item">
+        <a href="/technology.html" class="nav-head">Technology <span class="caret">&#9662;</span></a>
+        <div class="mega" role="menu">
+          <div class="mega-cols">
+            <div class="mega-col">
+              <h5>Crypto</h5>
+              <a href="/pqc">Post-quantum crypto <span class="sub">Hybrid handshake on every connect</span></a>
+            </div>
+            <div class="mega-col">
+              <h5>Privacy</h5>
+              <a href="/killswitch">Kill switch <span class="sub">On by default</span></a>
+              <a href="/in-tunnel-dns">In-tunnel DNS <span class="sub">No leaks, no logs</span></a>
+            </div>
+            <div class="mega-col">
+              <h5>Architecture</h5>
+              <a href="/peer-isolation">Peer isolation <span class="sub">4-layer, enforced</span></a>
+              <a href="/technology.html">All technology &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-item active">
+        <a href="/blog/" class="nav-head">Blogs <span class="caret">&#9662;</span></a>
+        <div class="mega" role="menu">
+          <div class="mega-cols">
+            <div class="mega-col">
+              <h5>Guides</h5>
+              <a href="/blog/best-free-vpn-for-windows.html">Best free VPN for Windows</a>
+              <a href="/blog/">DNS leak test <span class="sub">What it catches, what it misses</span></a>
+              <a href="/blog/">What is post-quantum crypto?</a>
+            </div>
+            <div class="mega-col">
+              <h5>Comparisons</h5>
+              <a href="/blog/mullvad-vs-protonvpn.html">Mullvad vs ProtonVPN</a>
+              <a href="/blog/nordvpn-vs-protonvpn.html">NordVPN vs ProtonVPN</a>
+              <a href="/blog/nordvpn-vs-expressvpn.html">NordVPN vs ExpressVPN</a>
+              <a href="/blog/five-eyes-nine-eyes-fourteen-eyes.html">5/9/14-Eyes explained</a>
+            </div>
+            <div class="mega-col">
+              <h5>Tools</h5>
+              <a href="https://status.ollavpn.com/">Status page</a>
+              <a href="/blog/">Changelog</a>
+              <a href="/llms.txt">llms.txt</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="/free-vpn">Free VPN</a>
+      <a href="/apps.html">Apps</a>
+      <a href="/dl/">Download</a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn ghost" href="https://login.ollavpn.com/">Sign in</a>
+      <a class="btn primary" href="/dl/">Download free <span class="arrow">&rarr;</span></a>
+      <button class="nav-hamburger" type="button" aria-label="Open navigation menu"><span class="bars" aria-hidden="true"></span></button>
+    </div>
+  </div>
+</nav>
+
+<header class="article-hero">
+  <div class="wrap">
+    <div class="meta">FEATURE · ALWAYS CURRENT
+      <div class="tag-chips"><a href="/blog/?tag=privacy">PRIVACY</a> <a href="/blog/?tag=dns">DNS</a></div>
+    </div>
+    <h1>In-Tunnel DNS: Why It&#39;s Crucial for Your VPN Privacy</h1>
+    <p class="lede">You&#39;re probably using a VPN to keep your online activity private, but have you ever thought about how your device finds the websites you want to visit? That&#39;s DNS, and if your VPN isn&#39;t handling it correctly, your browsing habits might still be exposed, even when you think you&#39;re fully protected. Many VPNs overlook this common pitfall, but OllaVPN&#39;s in-tunnel DNS makes sure your DNS requests are just as secure and private as your traffic, closing a critical privacy gap.</p>
+  <div class="reviewer-block">
+        <span class="reviewer-label">&#10003; Reviewed</span><br/>
+        <span class="reviewer-name">Hannah Wu</span> &middot; Senior Security Engineer<br/>
+        <span>Last fact-checked 10 June 2026</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="article-layout" style="max-width: 1200px; margin: 0 auto; padding: 24px 28px 64px;">
+  <article class="article" style="min-width: 0;">
+
+    <section id="tldr" class="article-tldr-box" style="margin-bottom: 28px; padding: 24px; background: #EFEFF0; border: 1px solid #E2E8F0; border-left: 5px solid #DA291C; border-radius: 0 12px 12px 0;">
+      <h2 style="font-size: 1.35rem; font-weight: 800; color: #0F172A; margin-top: 0; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.04em; font-family: 'Lato', sans-serif;">TL;DR</h2>
+      <p style="margin-bottom: 12px; line-height: 1.75; color: #1E293B; font-size: 1.05rem;">In-tunnel DNS routes all your domain name resolution requests exclusively through encrypted VPN tunnels to private, zero-log DNS resolvers operated directly by OllaVPN. This eliminates DNS leaks, prevents ISP surveillance, and protects your browsing history from being recorded or monetized.</p>
+      <p style="margin-bottom: 0; line-height: 1.75; color: #1E293B; font-size: 1.05rem;">Unlike weak VPNs that fall back to public DNS resolvers or leak queries at the OS level, OllaVPN enforces kernel-level firewall rules blocking port-53 leaks and pairs every DNS query with post-quantum WireGuard encryption across all platforms on the free tier.</p>
+    </section>
+
+    <section id="takeaways" class="article-takeaways-box" style="margin-bottom: 32px; padding: 24px 28px; background: #EFEFF0; border: 1px solid #E2E8F0; border-left: 5px solid #DA291C; border-radius: 0 12px 12px 0;">
+      <h2 style="font-size: 1.25rem; font-weight: 800; color: #0F172A; margin-top: 0; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.05em; font-family: 'Lato', sans-serif;">KEY TAKEAWAYS</h2>
+      <ul class="takeaways-list-24obs" style="list-style: none !important; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
+        <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
+          <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
+          <span><strong>Zero DNS Leaks:</strong> DNS requests are resolved inside the encrypted tunnel, completely hiding website domain lookups from your ISP.</span>
+        </li>
+        <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
+          <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
+          <span><strong>Operator-Controlled Resolvers:</strong> Runs on private Unbound DNS nodes with strict zero-logging and DNSSEC validation.</span>
+        </li>
+        <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
+          <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
+          <span><strong>Firewall-Enforced Protection:</strong> OS-level firewall rules block all outbound port-53 queries outside the tunnel to prevent silent leaks.</span>
+        </li>
+        <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
+          <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
+          <span><strong>100% Free by Default:</strong> Included on every OllaVPN connection with no subscription fees, credit cards, or logs required.</span>
+        </li>
+      </ul>
+    </section>
+
+    <div class="blog-main-content-box" style="background: #ffffff !important; border: 1.5px solid #E2E8F0 !important; border-radius: 14px !important; padding: 36px !important; box-shadow: 0 4px 20px rgba(0,0,0,0.03) !important; margin-bottom: 36px !important;">
+
+      <h2 id="what-is-in-tunnel-dns" style="font-size: 1.85rem; font-weight: 800; color: #0F172A; margin: 36px 0 18px 0; font-family: 'Lato', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">What is in-tunnel DNS and why is it so important?</h2>
+      <div class="answer-card" style="margin: 20px 0 24px; border-left: 5px solid #DA291C; background: #FFF5F5; padding: 18px 22px; border-radius: 0 10px 10px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 800;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.02rem; line-height: 1.6;">In-tunnel DNS ensures that every domain lookup your device makes is encrypted and routed exclusively through the VPN tunnel to private, zero-log resolvers, completely shielding your destination requests from your ISP.</p>
+</div>
+      <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">When you type a website address into your browser, your computer first needs to look up that domain's IP address. Without in-tunnel DNS, those lookup requests (DNS queries) travel unencrypted across your local network directly to your internet service provider (ISP). Even if your subsequent website traffic is encrypted, your ISP still captures a complete record of every single domain you attempt to visit.</p>
+      <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">In-tunnel DNS closes this critical security gap by hijacking your device's DNS settings at the network stack level. All DNS packets are encrypted and transported inside the secure WireGuard tunnel to private resolvers operated exclusively by OllaVPN.</p>
+
+      <h2 id="how-it-works-under-the-hood" style="font-size: 1.85rem; font-weight: 800; color: #0F172A; margin: 36px 0 18px 0; font-family: 'Lato', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">How does OllaVPN's in-tunnel DNS work, step-by-step?</h2>
+      <div class="answer-card" style="margin: 20px 0 24px; border-left: 5px solid #DA291C; background: #FFF5F5; padding: 18px 22px; border-radius: 0 10px 10px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 800;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.02rem; line-height: 1.6;">OllaVPN intercepts your DNS requests on your device, encrypts them, and sends them through the secure VPN tunnel to our private, no-log DNS resolvers, which then fetch the IP addresses for the websites you want to visit.</p>
+</div>
+      <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">When you connect to OllaVPN, our app takes over your device's DNS settings. This means that instead of sending your domain name requests (like "ollavpn.com") to your internet provider's DNS servers, all those requests are immediately redirected to OllaVPN. From the moment you hit "connect," every bit of traffic, including your DNS queries, travels through our <a href="/technology#encrypted-tunnel" style="color: #DA291C; font-weight: 500; text-decoration: underline;">encrypted tunnel</a>, making it impossible for your ISP or anyone else to see what sites you're trying to reach.</p>
+      <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Once inside the tunnel, your DNS queries are sent directly to <strong>OllaVPN's private DNS resolvers</strong>. These aren't just any public DNS servers; they're infrastructure we operate ourselves, specifically designed to uphold our strict no-logs policy. They don't keep records of your activity, ensuring your browsing habits remain private. Using our own resolvers, rather than relying on third parties, is a critical part of how we protect your privacy end-to-end. Your requests stay within our trusted network until the very last step.</p>
+      <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">After our resolvers look up the IP address for the website you're visiting, that information is sent back to your device, still protected within the secure tunnel. Only then does your device know where to send the actual request for the website's content. This whole process happens incredibly fast, thanks to the efficiency of the <a href="/blog/the-wireguard-protocol/" style="color: #DA291C; font-weight: 500; text-decoration: underline;">WireGuard protocol</a> that OllaVPN uses.</p>
+
+      <h2 id="what-other-vpns-get-wrong" style="font-size: 1.85rem; font-weight: 800; color: #0F172A; margin: 36px 0 18px 0; font-family: 'Lato', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">What do other VPNs often get wrong with DNS, and how is OllaVPN different?</h2>
+      <div class="answer-card" style="margin: 20px 0 24px; border-left: 5px solid #DA291C; background: #FFF5F5; padding: 18px 22px; border-radius: 0 10px 10px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 800;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.02rem; line-height: 1.6;">Many VPNs leave your DNS requests vulnerable to leaks or use third-party servers, while OllaVPN encrypts and routes all your DNS traffic directly through its own secure, private resolvers inside the VPN tunnel.</p>
+</div>
+      <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">A lot of VPNs, especially ad-funded or freemium throttled providers, overlook DNS security or cut corners. Even if your web traffic is encrypted, your DNS queries might still go through your ISP or a public third-party resolver. This creates a severe privacy hole known as a <a href="/blog/what-is-a-dns-leak/" style="color: #DA291C; font-weight: 500; text-decoration: underline;">DNS leak</a>.</p>
+      <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Some VPNs try to fix this by using publicly available DNS resolvers like Cloudflare or Google. While these are faster than ISP resolvers, they are still third parties that log and analyze connection telemetry. Furthermore, weak clients fail to enforce firewall rules, causing the operating system to fall back to unencrypted local DNS.</p>
+      <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">OllaVPN operates its own private, zero-log Unbound DNS resolvers co-located on every exit node. DNS requests are resolved entirely in-memory with zero disk logging, eliminating DNS hijacking and accidental leaks.</p>
+
+      <h2 id="real-world-protection" style="font-size: 1.85rem; font-weight: 800; color: #0F172A; margin: 36px 0 18px 0; font-family: 'Lato', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">What real-world threats does in-tunnel DNS protect you against?</h2>
+      <div class="answer-card" style="margin: 20px 0 24px; border-left: 5px solid #DA291C; background: #FFF5F5; padding: 18px 22px; border-radius: 0 10px 10px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 800;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.02rem; line-height: 1.6;">In-tunnel DNS protects your online activity from being snooped on by your internet provider, bypasses government or corporate content filters, and helps prevent you from landing on malicious websites.</p>
+</div>
+      <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">When you type a website address into your browser, your computer needs to translate that into an IP address. Normally, your internet provider handles this translation, allowing them to build an exhaustive log of your daily habits, shopping, banking, and medical research.</p>
+      <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">ISP Data Harvesting Defense:</strong> Your ISP only observes encrypted WireGuard packets traveling to a single OllaVPN exit node, with zero visibility into individual hostnames or destinations.</p>
+</div>
+      <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">DNS Filtering & Censorship Bypass:</strong> Bypasses restrictive ISP-level and state-sponsored DNS filters by resolving domain records through our uncensored international resolvers.</p>
+</div>
+      <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">DNS Spoofing & Phishing Immunity:</strong> Eliminates rogue local Wi-Fi hotspot attacks where malicious routers return fake IP addresses for banking and login portals.</p>
+</div>
+
+      <h2 id="defaults-and-configuration" style="font-size: 1.85rem; font-weight: 800; color: #0F172A; margin: 36px 0 18px 0; font-family: 'Lato', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">Are OllaVPN's DNS features on by default, and can you customize them?</h2>
+      <div class="answer-card" style="margin: 20px 0 24px; border-left: 5px solid #DA291C; background: #FFF5F5; padding: 18px 22px; border-radius: 0 10px 10px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 800;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.02rem; line-height: 1.6;">Yes, OllaVPN's in-tunnel DNS is enabled by default across all platforms with zero configuration required, while offering custom resolver options for power users.</p>
+</div>
+      <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">OllaVPN automatically enforces in-tunnel DNS the moment you connect. No manual IP entry, scripts, or network configuration is required. Our client configures the network stack and firewall silently in the background.</p>
+      <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">For advanced users requiring specialized upstream resolution (such as custom Pi-hole filters or internal corporate resolvers), OllaVPN provides full customization options inside the application settings, continuing to route those queries securely through the encrypted tunnel.</p>
+
+      <h2 id="how-to-verify" style="font-size: 1.85rem; font-weight: 800; color: #0F172A; margin: 36px 0 18px 0; font-family: 'Lato', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">How can you verify that OllaVPN's in-tunnel DNS is working?</h2>
+      <div class="answer-card" style="margin: 20px 0 24px; border-left: 5px solid #DA291C; background: #FFF5F5; padding: 18px 22px; border-radius: 0 10px 10px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 800;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.02rem; line-height: 1.6;">You can verify your DNS protection in less than five minutes using our built-in DNS lookup tool and independent leak tests.</p>
+</div>
+      <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">We encourage every user to independently verify their DNS security rather than taking marketing claims on faith. Here is the exact verification procedure:</p>
+      <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Step 1 — Baseline Test:</strong> Without OllaVPN connected, run our DNS lookup tool. Note your ISP's resolver IP address.</p>
+</div>
+      <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Step 2 — Connected Verification:</strong> Connect to OllaVPN and re-run the test. You will see an in-tunnel CGNAT address in the 100.64.0.0/10 range, proving resolution happens inside the tunnel.</p>
+</div>
+      <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Step 3 — Third-Party Leak Test:</strong> Visit an independent DNS leak test site while connected. Confirm that zero ISP resolvers or external IP addresses are visible.</p>
+</div>
+
+      <h2 id="limits-and-trade-offs" style="font-size: 1.85rem; font-weight: 800; color: #0F172A; margin: 36px 0 18px 0; font-family: 'Lato', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">What are the limitations of in-tunnel DNS, and what doesn't it solve?</h2>
+      <div class="answer-card" style="margin: 20px 0 24px; border-left: 5px solid #DA291C; background: #FFF5F5; padding: 18px 22px; border-radius: 0 10px 10px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 800;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.02rem; line-height: 1.6;">In-tunnel DNS protects domain resolution and prevents ISP eavesdropping, but it does not stop browser fingerprinting, cookies, or phishing links you voluntarily click.</p>
+</div>
+      <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Understanding your threat model means understanding what each security layer does and does not accomplish:</p>
+      <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">What It Solves:</strong> Encrypts all DNS queries, stops ISP browsing logs, blocks rogue Wi-Fi spoofing, and bypasses DNS-based website blocking.</p>
+</div>
+      <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">What It Does Not Solve:</strong> Application-level trackers, tracking cookies stored in your browser, social media account logins, or malware downloads.</p>
+</div>
+
+      <h2 id="connecting-to-other-primitives" style="font-size: 1.85rem; font-weight: 800; color: #0F172A; margin: 36px 0 18px 0; font-family: 'Lato', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">How does in-tunnel DNS integrate with OllaVPN's other privacy features?</h2>
+      <div class="answer-card" style="margin: 20px 0 24px; border-left: 5px solid #DA291C; background: #FFF5F5; padding: 18px 22px; border-radius: 0 10px 10px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 800;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.02rem; line-height: 1.6;">In-tunnel DNS works symbiotically with OllaVPN's default kill switch, post-quantum cryptography stack, and strict peer isolation.</p>
+</div>
+      <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Security primitives in OllaVPN are designed to operate as a cohesive, layered architecture:</p>
+      <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Kill Switch Integration:</strong> If the VPN tunnel drops unexpectedly, the OS firewall instantly blocks all network traffic, preventing any unencrypted DNS packets from escaping.</p>
+</div>
+      <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Post-Quantum Cryptography:</strong> Our hybrid X25519 + ML-KEM-768 handshake protects the entire tunnel, including DNS queries, against future quantum decryption.</p>
+</div>
+      <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Peer Isolation:</strong> Prevents any device connected to the same VPN exit node from intercepting or snooping on your in-tunnel DNS requests.</p>
+</div>
+
+      <h2 id="performance-impact" style="font-size: 1.85rem; font-weight: 800; color: #0F172A; margin: 36px 0 18px 0; font-family: 'Lato', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">Does in-tunnel DNS impact my connection speed or latency?</h2>
+      <div class="answer-card" style="margin: 20px 0 24px; border-left: 5px solid #DA291C; background: #FFF5F5; padding: 18px 22px; border-radius: 0 10px 10px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 800;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.02rem; line-height: 1.6;">No. In-tunnel DNS runs directly on co-located exit node resolvers with sub-millisecond local caching, resulting in faster and more responsive domain lookups.</p>
+</div>
+      <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Because our Unbound resolvers are physically deployed directly on each VPN exit server, DNS resolution latency is nearly instantaneous. Hot domain lookups are cached directly in RAM, often returning responses faster than congested residential ISP resolvers.</p>
+
+      <h2 id="future-proofing" style="font-size: 1.85rem; font-weight: 800; color: #0F172A; margin: 36px 0 18px 0; font-family: 'Lato', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">Is OllaVPN's in-tunnel DNS future-proof against evolving threats?</h2>
+      <div class="answer-card" style="margin: 20px 0 24px; border-left: 5px solid #DA291C; background: #FFF5F5; padding: 18px 22px; border-radius: 0 10px 10px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 800;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.02rem; line-height: 1.6;">Yes. In-tunnel DNS is hardened with DNSSEC cryptographic signature validation and protected by post-quantum encryption.</p>
+</div>
+      <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Our resolvers validate upstream DNSSEC cryptographic signatures from authoritative root servers, ensuring responses cannot be forged or tampered with. Combined with our post-quantum key exchange, your historical browsing metadata remains secure against future quantum decryptors.</p>
+
+      <h2 id="free-plan-inclusion" style="font-size: 1.85rem; font-weight: 800; color: #0F172A; margin: 36px 0 18px 0; font-family: 'Lato', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">Is in-tunnel DNS available on OllaVPN's free plan?</h2>
+      <div class="answer-card" style="margin: 20px 0 24px; border-left: 5px solid #DA291C; background: #FFF5F5; padding: 18px 22px; border-radius: 0 10px 10px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 800;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.02rem; line-height: 1.6;">Yes. In-tunnel DNS, kill switch enforcement, and WireGuard tunneling are 100% free by default for all users.</p>
+</div>
+      <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">We believe essential privacy is a fundamental human right, not a luxury feature to be paywalled. Every free plan user receives the exact same in-tunnel DNS security, no-logs protection, and encryption stack as our Plus subscribers.</p>
+
+      <h2 id="dns-vs-competitors" style="font-size: 1.85rem; font-weight: 800; color: #0F172A; margin: 36px 0 18px 0; font-family: 'Lato', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">How does OllaVPN's DNS posture compare to other free VPNs?</h2>
+      <div class="answer-card" style="margin: 20px 0 24px; border-left: 5px solid #DA291C; background: #FFF5F5; padding: 18px 22px; border-radius: 0 10px 10px 0;">
+  <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 800;">QUICK ANSWER</strong>
+  <p style="margin: 0; color: #1E293B; font-size: 1.02rem; line-height: 1.6;">OllaVPN operates its own zero-log resolvers and enforces kernel-level firewall blocking on port 53, whereas competitors frequently leak queries or rely on third-party public resolvers.</p>
+</div>
+      <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Operator-Controlled vs Third-Party:</strong> OllaVPN operates dedicated, zero-log Unbound resolvers on every server. Competitors often route queries through third-party services like Google or Cloudflare.</p>
+</div>
+      <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Firewall-Enforced vs Advisory Routing:</strong> OllaVPN installs kernel firewall rules (Windows Filtering Platform / macOS Packet Filter / Android VpnService) to block all non-tunnel port-53 queries. Weak VPNs allow the OS to silently fall back to ISP DNS.</p>
+</div>
+
+      <h2 id="dns-not-shipped" style="font-size: 1.85rem; font-weight: 800; color: #0F172A; margin: 36px 0 18px 0; font-family: 'Lato', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">What our DNS layer deliberately doesn't ship</h2>
+      <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">To maintain maximum stability and privacy, here is what our DNS architecture deliberately avoids:</p>
+      <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">No Public Resolver Fallback:</strong> We never silently fall back to Google (8.8.8.8) or Cloudflare (1.1.1.1) if a lookup stalls; if the tunnel resolver is unreachable, the kill switch safely halts traffic rather than leaking data.</p>
+</div>
+      <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">No Commercial Telemetry:</strong> Our resolvers run with query logging disabled in source code, with zero analytics, marketing tracking, or telemetry collection.</p>
+</div>
+      <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">No Aggressive False-Positive Blocklists:</strong> We avoid unvetted DNS ad-blocking lists that break legitimate websites without user consent, favoring client-side browser extensions like uBlock Origin.</p>
+</div>
+    </div>
+
+    <section id="faqs" class="blog-main-content-box" style="margin-top: 36px; margin-bottom: 32px; scroll-margin-top: 80px; padding: 26px 30px; background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.04);">
+      <h2 style="font-size: 1.65rem; font-weight: 800; color: #0F172A; margin: 0 0 18px 0; font-family: 'Lato', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">Frequently Asked Questions</h2>
+      <div class="faq-accordion-group" style="display: flex; flex-direction: column; gap: 8px;">
+        <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+          <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+            <span>What does in-tunnel DNS protect me against in plain terms?</span>
+            <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+          </summary>
+          <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+            <p style="margin: 0;">It stops your internet service provider (ISP) and anyone on your local network from seeing which websites you visit. All domain lookup requests are sealed and encrypted inside the VPN tunnel, ensuring complete destination privacy.</p>
+          </div>
+        </details>
+        <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+          <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+            <span>Can I customize my DNS servers in OllaVPN?</span>
+            <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+          </summary>
+          <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+            <p style="margin: 0;">Yes. While OllaVPN provides private, zero-log resolvers by default, you can easily configure custom primary and secondary DNS server IPs in the app settings, and they will still be routed securely through the encrypted tunnel.</p>
+          </div>
+        </details>
+        <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+          <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+            <span>Does in-tunnel DNS slow down my internet connection?</span>
+            <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+          </summary>
+          <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+            <p style="margin: 0;">No. Because our private DNS resolvers are co-located directly on each VPN server, lookups resolve in sub-milliseconds with local RAM caching, often outperforming congested ISP resolvers.</p>
+          </div>
+        </details>
+        <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+          <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+            <span>How does in-tunnel DNS prevent DNS hijacking on public Wi-Fi?</span>
+            <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+          </summary>
+          <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+            <p style="margin: 0;">On untrusted public Wi-Fi, rogue routers often intercept DNS requests to redirect users to malicious clones of banking and login pages. In-tunnel DNS bypasses local Wi-Fi DNS completely by encrypting queries directly to our verified servers.</p>
+          </div>
+        </details>
+        <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+          <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+            <span>Does in-tunnel DNS protect against cookies and browser fingerprinting?</span>
+            <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+          </summary>
+          <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+            <p style="margin: 0;">No. In-tunnel DNS secures your network-level destination lookups. For application-level privacy against tracking cookies and browser fingerprinting, we recommend using content blockers such as uBlock Origin alongside your VPN.</p>
+          </div>
+        </details>
+        <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+          <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+            <span>Does OllaVPN's resolver support DNSSEC validation?</span>
+            <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+          </summary>
+          <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+            <p style="margin: 0;">Yes. Our Unbound resolvers validate upstream DNSSEC cryptographic signatures from root and TLD authorities, rejecting forged or invalid records automatically.</p>
+          </div>
+        </details>
+        <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+          <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+            <span>How does in-tunnel DNS interact with IPv6?</span>
+            <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+          </summary>
+          <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+            <p style="margin: 0;">DNS lookups inside the tunnel support AAAA (IPv6) queries seamlessly. To prevent IPv6 leak vulnerabilities on unsupported networks, IPv6 traffic is safely disabled at the tunnel interface while apps connect cleanly via IPv4.</p>
+          </div>
+        </details>
+        <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+          <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+            <span>Is in-tunnel DNS included on the free plan?</span>
+            <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+          </summary>
+          <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+            <p style="margin: 0;">Yes. Every OllaVPN user on the $0 forever plan receives full in-tunnel DNS protection with no bandwidth caps on DNS, no card required, and zero activity logs.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section id="wrapping-it-up" class="wrap-up-box wrapping-lightbox" style="margin-top: 36px; margin-bottom: 24px; padding: 28px; background: #FFF5F5 !important; border: 1.5px solid rgba(218, 41, 28, 0.25) !important; border-left: 5px solid #DA291C !important; border-radius: 12px !important; text-align: left !important;">
+      <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C !important; border: none !important; padding-bottom: 0 !important; text-align: center !important; font-family: 'Lato', sans-serif !important;">Wrapping It Up</h2>
+      <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B !important; margin-bottom: 12px; text-align: left !important; font-family: 'Lato', sans-serif !important;">In-tunnel DNS is a fundamental cornerstone of genuine internet privacy. Without it, standard VPN encryption leaves your browsing destinations completely exposed to your ISP and local network operators.</p>
+      <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B !important; margin-bottom: 0; text-align: left !important; font-family: 'Lato', sans-serif !important;">With OllaVPN, you get operator-controlled zero-log Unbound resolvers, kernel firewall-enforced port-53 blocking, and post-quantum WireGuard encryption built-in by default on all platforms.</p>
+    </section>
+
+    <div class="feature-cta" style="margin-top: 36px; padding: 32px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 14px; text-align: center;">
+      <h3 style="font-size: 1.5rem; font-weight: 800; color: #0F172A; margin: 0 0 8px 0; font-family: 'Lato', sans-serif;">Want this on your device?</h3>
+      <p style="font-size: 1.05rem; color: #475467; margin: 0 0 18px 0;">OllaVPN is free forever for 1 device. No card, no email tricks.</p>
+      <a class="btn primary lg" href="/dl/" style="display: inline-block; background: #DA291C; color: #ffffff; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 1rem; box-shadow: 0 4px 14px rgba(218, 41, 28, 0.25);">Get OllaVPN free &rarr;</a>
+      <div style="margin-top: 12px; font-size: 0.9rem; color: #667085;">100% free &middot; <a href="/free-vpn" style="color: #DA291C; text-decoration: underline;">why it's free</a></div>
+    </div>
+
+  </article>
+
+  <aside class="toc-rail" aria-label="On this page" style="position: sticky; top: 96px; align-self: start;">
+    <span class="label" style="font-family: var(--mono); font-size: 11px; color: #667085; letter-spacing: 0.08em; text-transform: uppercase; padding-bottom: 12px; border-bottom: 1px solid #E2E8F0; display: block; font-weight: 700;">On this page</span>
+    <ol style="list-style: none; margin: 0; padding: 12px 0 0;">
+      <li style="font-size: 13.5px; line-height: 1.45; margin: 0 0 6px;"><a href="#what-is-in-tunnel-dns" style="color: #475467; text-decoration: none; display: block; padding: 4px 0 4px 10px; border-left: 2px solid transparent;">What is in-tunnel DNS?</a></li>
+      <li style="font-size: 13.5px; line-height: 1.45; margin: 0 0 6px;"><a href="#how-it-works-under-the-hood" style="color: #475467; text-decoration: none; display: block; padding: 4px 0 4px 10px; border-left: 2px solid transparent;">How it works step-by-step</a></li>
+      <li style="font-size: 13.5px; line-height: 1.45; margin: 0 0 6px;"><a href="#what-other-vpns-get-wrong" style="color: #475467; text-decoration: none; display: block; padding: 4px 0 4px 10px; border-left: 2px solid transparent;">What other VPNs get wrong</a></li>
+      <li style="font-size: 13.5px; line-height: 1.45; margin: 0 0 6px;"><a href="#real-world-protection" style="color: #475467; text-decoration: none; display: block; padding: 4px 0 4px 10px; border-left: 2px solid transparent;">Real-world threats protected</a></li>
+      <li style="font-size: 13.5px; line-height: 1.45; margin: 0 0 6px;"><a href="#defaults-and-configuration" style="color: #475467; text-decoration: none; display: block; padding: 4px 0 4px 10px; border-left: 2px solid transparent;">Defaults and configuration</a></li>
+      <li style="font-size: 13.5px; line-height: 1.45; margin: 0 0 6px;"><a href="#how-to-verify" style="color: #475467; text-decoration: none; display: block; padding: 4px 0 4px 10px; border-left: 2px solid transparent;">How to verify it's working</a></li>
+      <li style="font-size: 13.5px; line-height: 1.45; margin: 0 0 6px;"><a href="#limits-and-trade-offs" style="color: #475467; text-decoration: none; display: block; padding: 4px 0 4px 10px; border-left: 2px solid transparent;">Limitations and trade-offs</a></li>
+      <li style="font-size: 13.5px; line-height: 1.45; margin: 0 0 6px;"><a href="#connecting-to-other-primitives" style="color: #475467; text-decoration: none; display: block; padding: 4px 0 4px 10px; border-left: 2px solid transparent;">Integration with other features</a></li>
+      <li style="font-size: 13.5px; line-height: 1.45; margin: 0 0 6px;"><a href="#performance-impact" style="color: #475467; text-decoration: none; display: block; padding: 4px 0 4px 10px; border-left: 2px solid transparent;">Performance and speed impact</a></li>
+      <li style="font-size: 13.5px; line-height: 1.45; margin: 0 0 6px;"><a href="#future-proofing" style="color: #475467; text-decoration: none; display: block; padding: 4px 0 4px 10px; border-left: 2px solid transparent;">Future-proofing & DNSSEC</a></li>
+      <li style="font-size: 13.5px; line-height: 1.45; margin: 0 0 6px;"><a href="#free-plan-inclusion" style="color: #475467; text-decoration: none; display: block; padding: 4px 0 4px 10px; border-left: 2px solid transparent;">Free plan inclusion</a></li>
+      <li style="font-size: 13.5px; line-height: 1.45; margin: 0 0 6px;"><a href="#dns-vs-competitors" style="color: #475467; text-decoration: none; display: block; padding: 4px 0 4px 10px; border-left: 2px solid transparent;">Comparison with competitors</a></li>
+      <li style="font-size: 13.5px; line-height: 1.45; margin: 0 0 6px;"><a href="#dns-not-shipped" style="color: #475467; text-decoration: none; display: block; padding: 4px 0 4px 10px; border-left: 2px solid transparent;">What we don't ship</a></li>
+      <li style="font-size: 13.5px; line-height: 1.45; margin: 0 0 6px;"><a href="#faqs" style="color: #475467; text-decoration: none; display: block; padding: 4px 0 4px 10px; border-left: 2px solid transparent;">Frequently asked questions</a></li>
+    </ol>
+  </aside>
+</div>
+<footer class="footer">
+  <div class="wrap">
+    <div class="top">
+      <div><div class="brand"><img src="/logo.png" srcset="/logo.png 1x, /logo@2x.png 2x" alt="OllaVPN Logo" width="40" height="40" class="brand-img" style="width: 40px; height: 40px; border-radius: 8px; display: block; flex-shrink: 0;" /><span class="brand-text">Olla<span class="brand-red">VPN</span></span></div><p class="muted mt-16" style="max-width:260px">Free, post-quantum-ready VPN.</p></div>
+      <div><h4>Product</h4><ul><li><a href="../apps.html">Apps</a></li><li><a href="../technology.html">Technology</a></li><li><a href="../dl/">Download</a></li></ul></div>
+      <div><h4>Free VPN</h4><ul><li><a href="/free-vpn">Free VPN - honest guide</a></li><li><a href="/free-vpn-for-windows">Free VPN for Windows</a></li><li><a href="/free-vpn-for-india">Free VPN for India</a></li><li><a href="/free-wireguard-vpn">Free WireGuard VPN</a></li><li><a href="/free-quic-vpn">Free QUIC VPN</a></li></ul></div><div><h4>Account</h4><ul><li><a href="https://login.ollavpn.com/">Sign in</a></li><li><a href="https://login.ollavpn.com/signup">Sign up</a></li></ul></div>
+      <div><h4>Project</h4><ul><li><a href="./">Blog</a></li><li><a href="#">Source repo</a></li><li><a href="#">Status</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><a href="/privacy">Privacy policy (draft)</a></li><li><a href="/warrant-canary">Warrant canary (template)</a></li></ul></div>
+    </div>
+    <div class="bottom"><span>© 2026 OllaVPN · A modern, post-quantum-ready privacy VPN.</span><span class="badges"><span>PQC-READY</span><span>OPEN STACK</span><span>NO LOGS</span></span></div>
+  </div>
+</footer>
+
+
+<script defer src="/shared.js?v=20260820_v2"></script>
+</body>
+</html>
