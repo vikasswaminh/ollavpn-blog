@@ -433,8 +433,60 @@ category: 'security'
 
 </div>
 
-<section id="wrapping-it-up" class="wrap-up-box wrapping-lightbox" style="margin-top: 36px; margin-bottom: 24px; padding: 28px; background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.25); border-left: 5px solid #DA291C; border-radius: 8px;">
-  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
-  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 12px;">Navigating <strong>VPN for Router 2026: Protect Every Device in Your Home</strong> effectively requires choosing security architectures built on transparency, strong encryption, and verified zero data logging.</p>
-  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 0;">With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on kill switch defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.</p>
+<section id="faqs" class="blog-main-content-box" style="margin-top: 36px; margin-bottom: 32px; scroll-margin-top: 80px; padding: 26px 30px; background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.04);">
+  <h2 style="font-size: 1.65rem; font-weight: 800; color: #0F172A; margin: 0 0 18px 0; font-family: 'Lato', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">Frequently Asked Questions</h2>
+  <div class="faq-accordion-group" style="display: flex; flex-direction: column; gap: 8px;">
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+        <span>Why install a VPN on a router instead of individual devices?</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+      </summary>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">A router-level VPN automatically encrypts and protects every single device connected to your network, including IoT smart gadgets, gaming consoles (PlayStation, Xbox), and Smart TVs (Samsung, LG, Roku) that lack native VPN client support.</p>
+      </div>
+    </details>
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+        <span>Does a router VPN slow down my home Wi-Fi speeds?</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+      </summary>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">Because routers have low-power CPUs, running heavy cryptography like legacy OpenVPN can bottleneck speeds. Using modern WireGuard tunneling significantly reduces CPU processing requirements, maintaining high throughput for smooth 4K streaming and gaming across all devices.</p>
+      </div>
+    </details>
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+        <span>Can I exclude specific devices from the router VPN using Split Tunneling?</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+      </summary>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">Yes. Routers running advanced firmware (like Asuswrt-Merlin, OpenWrt, GL.iNet, or DD-WRT) feature Policy-Based Routing (PBR), enabling you to direct specific devices (such as work laptops or banking PCs) through the VPN while allowing latency-sensitive devices direct WAN access.</p>
+      </div>
+    </details>
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+        <span>Which router firmware is best for setting up a VPN?</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+      </summary>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">Asuswrt-Merlin (for ASUS routers) and GL.iNet firmware offer the easiest native WireGuard client support with zero configuration friction. OpenWrt and pfSense/OPNsense provide the most robust enterprise-grade routing options.</p>
+      </div>
+    </details>
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+        <span>Is OllaVPN compatible with home routers?</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
+      </summary>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">Yes. OllaVPN provides standard WireGuard and OpenVPN configuration profiles that can be imported directly into any VPN-capable router for whole-home encryption.</p>
+      </div>
+    </details>
+  </div>
 </section>
+
+<section id="wrapping-it-up" class="wrap-up-box wrapping-lightbox" style="margin-top: 36px; margin-bottom: 24px; padding: 28px; background: #FFF5F5 !important; border: 1.5px solid rgba(218, 41, 28, 0.25) !important; border-left: 5px solid #DA291C !important; border-radius: 12px !important; text-align: left !important;">
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C !important; border: none !important; padding-bottom: 0 !important; text-align: left !important; font-family: 'Lato', sans-serif !important;">Wrapping It Up</h2>
+  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B !important; margin-bottom: 12px; text-align: left !important; font-family: 'Lato', sans-serif !important;">Navigating <strong>VPN for Router 2026: Protect Every Device in Your Home</strong> effectively requires choosing security architectures built on transparency, strong encryption, and verified zero data logging.</p>
+  <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B !important; margin-bottom: 0; text-align: left !important; font-family: 'Lato', sans-serif !important;">With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on kill switch defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.</p>
+</section>
+
