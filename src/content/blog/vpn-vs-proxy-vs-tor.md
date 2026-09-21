@@ -329,7 +329,6 @@ Dismissing Tor as "just for illegal stuff." Tor has a long, well-documented hist
 
 <section id="faqs" class="blog-main-content-box" style="margin-top: 36px; margin-bottom: 32px; scroll-margin-top: 80px;">
   <h2 style="font-size: 1.45rem; font-weight: 700; color: #09090b; margin-top: 0; margin-bottom: 6px;">Frequently Asked Questions</h2>
-  <p style="color: #64748B; font-size: 0.95rem; margin-bottom: 18px;">Clear, honest answers to the most common questions about this guide.</p>
   <div class="faq-accordion-group" style="display: flex; flex-direction: column; gap: 8px;">
     <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
       <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
