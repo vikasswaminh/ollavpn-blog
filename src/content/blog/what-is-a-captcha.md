@@ -1,6 +1,6 @@
 ---
 title: 'What is a CAPTCHA and Why Do You Keep Seeing Them?'
-description: 'A CAPTCHA is basically a quick test designed to tell if you''re a human or a computer. It stands for "Completely Automated Public Turing test to tell Computers and Humans Apart," and its main goal is to stop b...'
+description: "A CAPTCHA is basically a quick test designed to tell if you''re a human or a computer. It stands for \"Completely Automated Public Turing test to tell Computers and Humans Apart,\" and its main goal is to stop b."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['beginner-basics']

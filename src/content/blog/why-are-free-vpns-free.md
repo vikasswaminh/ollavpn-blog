@@ -1,6 +1,6 @@
 ---
 title: 'Why Are Free VPNs Free? What''s the Catch?'
-description: 'Most "free" VPNs aren''t actually free; they often come with hidden costs like data caps, intrusive ads, selling your browsing history, or tricky auto-renewing subscriptions. These methods undermine your priva...'
+description: "Most \"free\" VPNs aren''t actually free; they often come with hidden costs like data caps, intrusive ads, selling your browsing history, or tricky auto-renewing subscriptions. These methods undermine your priva."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['beginner-basics']

@@ -1,6 +1,6 @@
 ---
 title: 'The Best Free VPN for Firefox: Secure Your Browser, Protect Your Privacy'
-description: 'Most "free" VPNs come with hidden costs like ads, selling your data, or strict limits. OllaVPN Free offers you a real alternative: 10 Mbps speed, access to every country in our network, and strong privacy for you...'
+description: "Most \"free\" VPNs come with hidden costs like ads, selling your data, or strict limits. OllaVPN Free offers you a real alternative: 10 Mbps speed, access to every country in our network, and strong privacy for you."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['buyer-guides']

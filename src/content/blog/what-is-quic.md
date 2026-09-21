@@ -1,6 +1,6 @@
 ---
 title: 'What is QUIC and Why Should You Care?'
-description: 'QUIC is a modern internet protocol that makes your web connections faster and more secure than older methods. It''s like a big upgrade to how your browser talks to websites, bringing together the best parts of TCP and...'
+description: "QUIC is a modern internet protocol that makes your web connections faster and more secure than older methods. Its like a big upgrade."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['protocol-tech']

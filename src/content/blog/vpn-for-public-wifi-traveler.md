@@ -1,6 +1,6 @@
 ---
 title: 'Public WiFi and Travel: Do You Really Need a VPN?'
-description: 'Yes, you absolutely need a VPN on public Wi-Fi. It''s not just about hiding your browsing history; it''s about putting a secure, encrypted tunnel around your internet connection, protecting your sensitive data from...'
+description: "Yes, you absolutely need a VPN on public Wi-Fi. It''s not just about hiding your browsing history; it''s about putting a secure, encrypted tunnel around your internet connection, protecting your sensitive data from."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['privacy-security']

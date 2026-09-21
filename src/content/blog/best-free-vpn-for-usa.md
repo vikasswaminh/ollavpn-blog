@@ -1,6 +1,6 @@
 ---
 title: 'The Best Free VPN for USA: What You Really Need to Know'
-description: 'If you''re looking for a truly free VPN in the USA, OllaVPN has you covered. You get 10 Mbps speed, unlimited data, and access to our entire network, every single day, with no hidden costs, no data caps, no ads, and n...'
+description: "If you''re looking for a truly free VPN in the USA, OllaVPN has you covered. You get 10 Mbps speed, unlimited data, and access to our entire network, every single day, with no hidden costs, no data caps, no ads, and n."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['buyer-guides']

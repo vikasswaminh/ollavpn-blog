@@ -1,6 +1,6 @@
 ---
 title: "VPN Kill Switch Explained (2026): How to Stop Data Leaks"
-description: "A VPN kill switch is a safety feature that instantly cuts your internet access the moment your VPN connection drops, so your real IP address and unencrypted ..."
+description: "A VPN kill switch is a safety feature that instantly cuts your internet access the moment your VPN connection drops, so your real IP address and unencrypted."
 pubDate: 2026-08-17
 category: "protocol-tech"
 author: Vikas Swami

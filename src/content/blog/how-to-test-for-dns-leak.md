@@ -1,6 +1,6 @@
 ---
 title: 'How Do You Test for a DNS Leak, and Why Does It Matter?'
-description: 'A DNS leak is when your device accidentally sends your website requests to your internet provider instead of your VPN. This can expose what you''re browsing and even your real location, completely defeating the purpos...'
+description: "A DNS leak is when your device accidentally sends your website requests to your internet provider instead of your VPN. This can expose what you''re browsing and even your real location, completely defeating the purpos."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['how-to-guides']

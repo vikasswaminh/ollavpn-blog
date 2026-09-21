@@ -1,6 +1,6 @@
 ---
 title: 'What is RCS Messaging and Why Should You Care About It?'
-description: 'RCS messaging is essentially an upgrade to your standard text messages, giving you features like read receipts, typing indicators, and much better quality for sharing photos and videos. It''s designed to make your pho...'
+description: "RCS messaging is essentially an upgrade to your standard text messages, giving you features like read receipts, typing indicators, and much better quality for sharing photos and videos. Its designed to make your pho."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['protocol-tech']

@@ -1,6 +1,6 @@
 ---
 title: 'Is TikTok Shop Safe? An Honest Look at Your Privacy and Data'
-description: 'Not directly. TikTok Shop collects a lot of your personal data, from what you browse to how you pay, which is a significant privacy trade-off for the convenience and deals it offers. The real concern isn''t just what ...'
+description: "Not directly. TikTok Shop collects a lot of your personal data, from what you browse to how you pay, which is a significant privacy trade-off for the convenience and deals it offers. The real concern isnt just what."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['privacy-security']

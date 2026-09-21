@@ -1,6 +1,6 @@
 ---
 title: 'What is End-to-End Encryption, and Why Should You Care?'
-description: 'End-to-end encryption (E2EE) means your messages and data get scrambled on your device and can only be read by the person you send them to. Think of it like putting your private thoughts in a locked box where only the in...'
+description: "End-to-end encryption (E2EE) means your messages and data get scrambled on your device and can only be read by the person you send them to. OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['beginner-basics']

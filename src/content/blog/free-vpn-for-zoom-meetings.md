@@ -1,6 +1,6 @@
 ---
 title: "Free VPN for Zoom Meetings 2026: Stop ISP Snooping (Realistic Guide)"
-description: "Your internet provider can see, in real time, that you're on a video call, the traffic pattern for Zoom is distinctive enough that ISPs routinely identify i..."
+description: "Your internet provider can see, in real time, that you're on a video call, the traffic pattern for Zoom is distinctive enough that ISPs routinely identify it without needing to read any content, along with roughly how long the call lasts, how much data it uses, and which Zoom server you're connected to. What they generally can't see, thanks to Zoom's own encryption, is what's actually said or shown on screen."
 pubDate: 2026-08-06
 category: "use-cases"
 author: Vikas Swami

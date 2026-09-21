@@ -1,6 +1,6 @@
 ---
 title: 'Do You Need a VPN for Cryptocurrency and Web3 Activity?'
-description: 'Yes, you absolutely need a VPN for most cryptocurrency and Web3 activities. While it won''t stop you from making a bad trade or clicking a phishing link, it''s crucial for protecting your privacy, securing your con...'
+description: "Yes, you absolutely need a VPN for most cryptocurrency and Web3 activities. While it won''t stop you from making a bad trade or clicking a phishing link, it''s crucial for protecting your privacy, securing your con."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['use-cases']

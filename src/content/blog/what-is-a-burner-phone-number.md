@@ -1,6 +1,6 @@
 ---
 title: 'What is a Burner Phone Number, and Why Should You Care?'
-description: 'A burner phone number is essentially a temporary, disposable phone number you use for a limited time to keep your real identity private. It''s like having a pseudonym for your phone, letting you communicate without ev...'
+description: "A burner phone number is essentially a temporary, disposable phone number you use for a limited time to keep your real identity private. Its like having a pseudonym for your phone, letting you communicate without ev."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['beginner-basics']

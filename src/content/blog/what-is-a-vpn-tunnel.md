@@ -1,6 +1,6 @@
 ---
 title: 'What Exactly Is a VPN Tunnel, and Why Should You Care?'
-description: 'Think of a VPN tunnel as a private, encrypted pathway for your internet traffic. Instead of your data traveling openly across the internet where anyone can peek, it''s wrapped up securely and sent through a hidden tub...'
+description: "Think of a VPN tunnel as a private, encrypted pathway for your internet traffic. Instead of your data traveling openly across the internet where anyone can peek, its wrapped up securely and sent through a hidden tub. OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['beginner-basics']

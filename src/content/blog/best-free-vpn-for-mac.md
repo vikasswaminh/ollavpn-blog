@@ -1,6 +1,6 @@
 ---
 title: 'The Best Free VPN for Mac: Seriously Free, Seriously Private'
-description: 'If you''re looking for a genuinely free VPN for your Mac without the usual catches, OllaVPN Free is built for you. We don''t ask for your credit card, track your email, show you ads, or sell your data. It''s tru...'
+description: "If you''re looking for a genuinely free VPN for your Mac without the usual catches, OllaVPN Free is built for you. We don''t ask for your credit card, track your email, show you ads, or sell your data. It''s tru."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['buyer-guides']

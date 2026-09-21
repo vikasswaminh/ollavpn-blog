@@ -1,6 +1,6 @@
 ---
 title: 'How to Find Saved Passwords on Your Device: A Quick Guide'
-description: 'Lost track of a saved password? Don''t worry, you can almost always find it directly within your web browser''s settings or your device''s system settings. Whether you''re using Chrome, Firefox, Edge, Safari...'
+description: "Lost track of a saved password? Don''t worry, you can almost always find it directly within your web browser''s settings or your device''s system settings. Whether you''re using Chrome, Firefox, Edge, Safari."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['privacy-security']

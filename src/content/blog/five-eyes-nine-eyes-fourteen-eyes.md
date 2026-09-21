@@ -1,6 +1,6 @@
 ---
 title: 'Five Eyes, Nine Eyes, and Fourteen Eyes Explained (2026 Guide)'
-description: 'The Five Eyes is an intelligence-sharing alliance between the United States, United Kingdom, Canada, Australia, and New Zealand, formalized by the 1946 UKUSA Agreement. The Nine Eyes adds Denmark, France, the Netherlands...'
+description: "The Five Eyes is an intelligence-sharing alliance between the United States, United Kingdom, Canada, Australia, and New Zealand, formalized by the 1946 UKUSA Agreement. The Nine Eyes adds Denmark, France, the Netherlands."
 pubDate: 2026-05-16
 author: Vikas Swami
 tags: ['privacy-security']

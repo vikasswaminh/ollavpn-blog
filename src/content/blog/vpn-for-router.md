@@ -1,6 +1,6 @@
 ---
 title: "VPN for Router 2026: Protect Every Device in Your Home"
-description: "The complete guide to running a VPN at the router level instead of device by device. What it actually protects, which devices benefit the most, especia..."
+description: "The complete guide to running a VPN at the router level instead of device by device. What it actually protects, which devices benefit the most, especially the ones that can't run a VPN app themselves, the real trade-offs in speed and setup complexity, and how to decide if it's the right move for your household."
 pubDate: '2026-09-10T00:00:00.000Z'
 author: 'Vikas Swami (Dual CCIE #22239)'
 tags: ['Router VPN', 'Home Network', 'IoT Security', 'Smart Home', 'WireGuard']

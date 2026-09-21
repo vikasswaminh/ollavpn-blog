@@ -1,6 +1,6 @@
 ---
 title: 'VPN for Journalists & Activists: Your Essential Digital Shield?'
-description: 'If you''re a journalist or activist, a VPN isn''t just a nice-to-have; it''s a critical tool for your safety and your work. It creates a secure tunnel for your internet traffic, protecting your communications, s...'
+description: "If you''re a journalist or activist, a VPN isn''t just a nice-to-have; it''s a critical tool for your safety and your work. It creates a secure tunnel for your internet traffic, protecting your communications, s."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['use-cases']

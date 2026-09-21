@@ -1,6 +1,6 @@
 ---
 title: 'Best Free VPN for India 2026: No Credit Card, No Logs, Really Free'
-description: 'A genuinely free VPN for India in 2026, with no credit card and no logs, means what it sounds like: you download the app, connect, and get a private, encrypted tunnel without entering payment details, without your brow...'
+description: "A genuinely free VPN for India in 2026, with no credit card and no logs, means what it sounds like: you download the app, connect, and get a private, encrypted tunnel without entering payment details, without your brow."
 pubDate: 2026-06-03
 author: Vikas Swami
 tags: ['buyer-guides']

@@ -1,6 +1,6 @@
 ---
 title: 'Is Your ISP Slowing You Down? How a VPN Can Help You Beat Throttling'
-description: 'Yes, a VPN can definitely help you get around ISP throttling. When you''re connected to OllaVPN, your internet provider can''t peek into your online activities. This means they can''t selectively slow down thing...'
+description: "Yes, a VPN can definitely help you get around ISP throttling. When youre connected to OllaVPN, your internet provider cant peek into your online activities. This means they cant selectively slow down thing. OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['use-cases']

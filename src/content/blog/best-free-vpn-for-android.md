@@ -1,6 +1,6 @@
 ---
 title: 'The Best Free VPN for Android: Truly Free, No Catch, No Compromises'
-description: 'OllaVPN Free gives you 10 Mbps, unlimited data, and access to our entire network on your Android device, forever. You won''t need a credit card, we don''t ask for an account, there are no ads, and we absolutely don...'
+description: "OllaVPN Free gives you 10 Mbps, unlimited data, and access to our entire network on your Android device, forever. You wont need a credit card, we dont ask for an account, there are no ads, and we absolutely don. OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['buyer-guides']

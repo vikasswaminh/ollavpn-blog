@@ -1,6 +1,6 @@
 ---
 title: 'The Best Free VPN for Chromebook: What You Need to Know'
-description: 'You''ve probably noticed most "free" VPNs aren''t really free; they often come with hidden costs like ads, data limits, or even selling your browsing history. OllaVPN is different. Our free plan gives you a...'
+description: "You''ve probably noticed most \"free\" VPNs aren''t really free; they often come with hidden costs like ads, data limits, or even selling your browsing history. OllaVPN is different. Our free plan gives you a."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['buyer-guides']

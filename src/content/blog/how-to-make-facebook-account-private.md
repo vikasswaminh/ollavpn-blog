@@ -1,6 +1,6 @@
 ---
 title: 'How to Make Your Facebook Account Private: A Step-by-Step Guide to Digital Privacy'
-description: 'You can make your Facebook account much more private in just a few minutes. The main thing is to restrict who can see your past posts, future posts, and personal information to just your "Friends" or even "On...'
+description: "You can make your Facebook account much more private in just a few minutes. The main thing is to restrict who can see your past posts, future posts, and personal information to just your \"Friends\" or even \"On."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['privacy-security']

@@ -1,6 +1,6 @@
 ---
 title: 'What Exactly Is a VPN Concentrator, and Why Should You Care?'
-description: 'A VPN concentrator is basically a specialized server that juggles tons of secure VPN connections all at once. Think of it as the central brain where all your encrypted data tunnels arrive, get decrypted, and then head ou...'
+description: "A VPN concentrator is basically a specialized server that juggles tons of secure VPN connections all at once. Think of it as the central brain where all your encrypted data tunnels arrive, get decrypted, and then head ou."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['beginner-basics']

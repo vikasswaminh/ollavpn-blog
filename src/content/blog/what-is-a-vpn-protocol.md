@@ -1,6 +1,6 @@
 ---
 title: 'What Exactly Is a VPN Protocol, and Why Should You Care?'
-description: 'Think of a VPN protocol as the secret language your devices use to talk securely over the internet. It''s the instruction set that makes sure your online activity is encrypted and private, creating a secure tunnel bet...'
+description: "Think of a VPN protocol as the secret language your devices use to talk securely over the internet. Its the instruction set that makes sure your online activity is encrypted and private, creating a secure tunnel bet. OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['beginner-basics']

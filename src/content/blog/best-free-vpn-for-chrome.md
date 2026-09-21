@@ -1,6 +1,6 @@
 ---
 title: 'What''s the Best Free VPN for Chrome in 2024? (Hint: It''s Us.)'
-description: 'You''re looking for a free VPN for Chrome that actually works and doesn''t betray your trust. OllaVPN Free gives you 10 Mbps speed, access to every country in our network, and strong post-quantum-ready encryption...'
+description: "You''re looking for a free VPN for Chrome that actually works and doesn''t betray your trust. OllaVPN Free gives you 10 Mbps speed, access to every country in our network, and strong post-quantum-ready encryption."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['buyer-guides']

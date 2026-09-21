@@ -1,6 +1,6 @@
 ---
 title: 'VPN Not Connecting on Mac? Your Guide to Getting Back Online'
-description: 'Most VPN connection issues on your Mac are pretty straightforward: outdated software, network hiccups, or wrong settings. Start with the easiest fixes: restart your Mac, your router, and the VPN app itself. Often, just t...'
+description: "Most VPN connection issues on your Mac are pretty straightforward: outdated software, network hiccups, or wrong settings. Start with the easiest fixes: restart your Mac, your router, and the VPN app itself."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['how-to-guides']

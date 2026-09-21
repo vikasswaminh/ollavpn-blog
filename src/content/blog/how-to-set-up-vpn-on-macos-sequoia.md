@@ -1,6 +1,6 @@
 ---
 title: 'How to Set Up a VPN on macOS Sequoia for Free Privacy'
-description: 'Setting up OllaVPN on your Mac is super straightforward. You just download our app, install it, and click to connect. That''s it. We''ve built the app to handle all the tricky stuff like network settings and certif...'
+description: "Setting up OllaVPN on your Mac is super straightforward. You just download our app, install it, and click to connect. That''s it. We''ve built the app to handle all the tricky stuff like network settings and certif."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['how-to-guides']

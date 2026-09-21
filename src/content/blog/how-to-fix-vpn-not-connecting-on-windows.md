@@ -1,6 +1,6 @@
 ---
 title: 'VPN Not Connecting on Windows? Let''s Get You Connected.'
-description: 'If your OllaVPN isn''t connecting on Windows, start with the easiest fixes: restart both the app and your computer. Then, try switching to a different server location within the OllaVPN app. Often, connection hiccups ...'
+description: "If your OllaVPN isn''t connecting on Windows, start with the easiest fixes: restart both the app and your computer. Then, try switching to a different server location within the OllaVPN app. Often, connection hiccups."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['how-to-guides']

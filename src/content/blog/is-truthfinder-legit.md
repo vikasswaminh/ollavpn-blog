@@ -1,6 +1,6 @@
 ---
 title: 'Is Truthfinder Legit? Unpacking the Truth About People Search Services'
-description: 'Truthfinder is a legitimate data aggregator, meaning it gathers publicly available information from various sources and compiles it into organized reports. It''s not a private investigator or a hacking tool; what it s...'
+description: "Truthfinder is a legitimate data aggregator, meaning it gathers publicly available information from various sources and compiles it into organized reports. Its not a private investigator or a hacking tool; what it s."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['privacy-security']

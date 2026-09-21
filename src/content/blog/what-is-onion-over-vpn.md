@@ -1,6 +1,6 @@
 ---
 title: 'What is Onion Over VPN, and Why Should You Care?'
-description: '"Onion Over VPN" means you connect to your VPN first, and then your internet traffic gets routed through the Tor network. This setup gives you the privacy benefits of your VPN, like keeping your real IP address ...'
+description: "Onion Over VPN\" means you connect to your VPN first, and then your internet traffic gets routed through the Tor network. This setup gives you the privacy benefits of your VPN, like keeping your real IP address."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['protocol-tech']

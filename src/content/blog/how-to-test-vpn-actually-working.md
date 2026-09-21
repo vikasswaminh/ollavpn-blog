@@ -1,6 +1,6 @@
 ---
 title: 'How to Test If Your VPN Is Actually Working (And Fix It If It Isn''t)'
-description: 'To quickly check if your OllaVPN is working, open the app, connect to a server in a different country, then immediately visit a site like <a href="https://ipleak.net">ipleak.net</a> or <a href="...'
+description: "To quickly check if your OllaVPN is working, open the app, connect to a server in a different country, then immediately visit a site like <a href=\"https://ipleak.net\">ipleak.net</a> or <a href=\"."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['how-to-guides']

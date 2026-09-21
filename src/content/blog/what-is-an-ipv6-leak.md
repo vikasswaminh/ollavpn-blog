@@ -1,6 +1,6 @@
 ---
 title: 'What is an IPv6 Leak, and How Does It Affect Your Privacy?'
-description: 'An IPv6 leak is when your device accidentally uses your real internet address, an IPv6 address, instead of your VPN''s address, even when your VPN is active. This can expose your actual location and browsing activity...'
+description: "An IPv6 leak is when your device accidentally uses your real internet address, an IPv6 address, instead of your VPNs address, even when your VPN is active. This can expose your actual location and browsing activity."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['privacy-security']

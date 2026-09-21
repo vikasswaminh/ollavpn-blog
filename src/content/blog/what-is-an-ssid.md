@@ -1,6 +1,6 @@
 ---
 title: 'What is an SSID? Your Wi-Fi Network Name, Explained Simply'
-description: 'An SSID is just the name of a Wi-Fi network, like "OllaVPN_Guest" or "MyHomeNetwork." It''s how your devices see and connect to different wireless internet access points. Think of it as a signpost for ...'
+description: "An SSID is just the name of a Wi-Fi network, like \"OllaVPN_Guest\" or \"MyHomeNetwork.\" It''s how your devices see and connect to different wireless internet access points. Think of it as a signpost for."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['beginner-basics']

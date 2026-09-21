@@ -1,6 +1,6 @@
 ---
 title: 'Can Your ISP See Your VPN Traffic? Let''s Get Real About Privacy.'
-description: 'No, your internet service provider (ISP) can''t see the content of your encrypted VPN traffic. Once you connect to OllaVPN, everything you do online, the websites you visit, the videos you stream, the messages you se...'
+description: "No, your internet service provider (ISP) cant see the content of your encrypted VPN traffic. Once you connect to OllaVPN, everything you do online, the websites you visit, the videos you stream, the messages you se. OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['privacy-security']

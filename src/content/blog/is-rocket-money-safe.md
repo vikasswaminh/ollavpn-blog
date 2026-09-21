@@ -1,6 +1,6 @@
 ---
 title: 'Is Rocket Money Safe to Use? What You Need to Know About Your Financial Data'
-description: 'Rocket Money is generally safe from a technical security standpoint; they use strong encryption and follow industry best practices. They''re not going to just hand over your bank login details to anyone. However, like...'
+description: "Rocket Money is generally safe from a technical security standpoint; they use strong encryption and follow industry best practices. Theyre not going to just hand over your bank login details to anyone."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['privacy-security']

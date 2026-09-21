@@ -1,6 +1,6 @@
 ---
 title: 'Does a VPN Slow Down Your Internet Speed? The Honest Truth.'
-description: 'Yes, a VPN can slow down your internet speed, but often it''s not by much, and for most daily activities, you might not even notice. Factors like encryption, how far away the VPN server is, and how busy that server is...'
+description: "Yes, a VPN can slow down your internet speed, but often its not by much, and for most daily activities, you might not even notice. Factors like encryption, how far away the VPN server is, and how busy that server is."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['beginner-basics']

@@ -1,6 +1,6 @@
 ---
 title: 'WireGuard vs. IKEv2: What''s the Real Difference, and Why Should You Care?'
-description: 'WireGuard generally outshines IKEv2 for most users by being faster, simpler, and more modern. It offers excellent security with a much smaller codebase, which means fewer places for bugs to hide. IKEv2 is also very secur...'
+description: "WireGuard generally outshines IKEv2 for most users by being faster, simpler, and more modern. It offers excellent security with a much smaller codebase, which means fewer places for bugs to hide. IKEv2 is also very secur. OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['protocol-tech']

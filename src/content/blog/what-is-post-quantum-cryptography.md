@@ -1,6 +1,6 @@
 ---
 title: 'What Is Post-Quantum Cryptography? A 2026 Guide for Anyone Who Cares About Privacy'
-description: 'Post-quantum cryptography (PQC) is a new family of encryption algorithms designed to remain secure even when powerful quantum computers eventually exist. Today''s encryption protects most of the internet, but it''s based o...'
+description: "Post-quantum cryptography (PQC) is a new family of encryption algorithms designed to remain secure even when powerful quantum computers eventually exist. Today''s encryption protects most of the internet, but it''s based o."
 pubDate: 2026-05-16
 author: Vikas Swami
 tags: ['protocol-tech']

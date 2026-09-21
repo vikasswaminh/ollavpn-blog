@@ -1,6 +1,6 @@
 ---
 title: 'How to Set Up a VPN on Your iPhone, Step-by-Step'
-description: 'Setting up OllaVPN on your iPhone is super easy. You just download the app from the App Store, install it, and then tap a single button to connect. Our app takes care of all the tricky technical stuff in the background...'
+description: "Setting up OllaVPN on your iPhone is super easy. You just download the app from the App Store, install it, and then tap a single button to connect. Our app takes care of all the tricky technical stuff in the background. OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['how-to-guides']

@@ -1,6 +1,6 @@
 ---
 title: 'What is Split Tunneling and Why Should You Care?'
-description: 'Split tunneling is a clever feature that lets you decide which internet traffic uses your VPN''s secure tunnel and which goes directly to the internet. It''s like having two separate pathways for your online activi...'
+description: "Split tunneling is a clever feature that lets you decide which internet traffic uses your VPN''s secure tunnel and which goes directly to the internet. It''s like having two separate pathways for your online activi."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['beginner-basics']

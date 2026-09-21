@@ -1,6 +1,6 @@
 ---
 title: 'What is VPN Obfuscation and Why Does it Matter for Your Online Freedom?'
-description: 'VPN obfuscation is like a stealth mode for your internet connection. It makes your encrypted VPN traffic look like regular, unencrypted browsing, helping you bypass strict firewalls and censorship that try to block VPNs....'
+description: "VPN obfuscation is like a stealth mode for your internet connection. It makes your encrypted VPN traffic look like regular, unencrypted browsing, helping you bypass strict firewalls and censorship that try to block VPNs. OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices."
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['beginner-basics']
