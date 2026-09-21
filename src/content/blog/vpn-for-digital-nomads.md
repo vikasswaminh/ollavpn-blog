@@ -38,7 +38,7 @@ pillar: false
   </ul>
 </section>
 
-<div class="blog-main-content-box" style="background: #ffffff; border: 1.5px solid #E2E8F0; border-radius: 12px; padding: 36px; box-shadow: 0 4px 20px rgba(0,0,0,0.03); margin-bottom: 36px;">
+<div class="blog-main-content-box" style="background: #ffffff !important; border: 1.5px solid #E2E8F0 !important; border-radius: 14px !important; padding: 36px !important; box-shadow: 0 4px 20px rgba(0,0,0,0.03) !important; margin-bottom: 36px !important;">
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">If you've ever sat in a departure lounge, opened your laptop to finish an invoice before boarding, and paused for half a second before joining "Airport_Free_WiFi", this guide is for you. It's written for people who don't have a single home network, a single home country, or a single set of rules to follow. It's written by people who've spent a fair amount of time doing exactly that.</p>
 
@@ -57,20 +57,17 @@ pillar: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">On an untrusted network, three things are true that aren't true at home:</p>
 
-<ul class="takeaways-list-24obs" style="list-style: none !important; margin: 0 0 20px 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>You don't know who configured the router:</strong> A poorly secured or intentionally malicious router can redirect your traffic, inject ads, or worse, before it ever leaves the building.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>You don't know who else is on the network:</strong> Public and semi-public Wi-Fi puts you on the same local segment as strangers, some of whom may be running tools to intercept traffic that isn't encrypted.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>You don't know the network's history:</strong> A "free" hotspot with an unusually generic name is a known pattern for what security researchers call an <a href="/blog/what-is-a-rogue-wifi-hotspot-evil-twin/" style="color: #DA291C; font-weight: 500; text-decoration: underline;">evil twin</a>, a fake access point set up specifically to intercept traffic from people who don't check carefully.</span>
-  </li>
-</ul>
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">You don't know who configured the router</strong>A poorly secured or intentionally malicious router can redirect your traffic, inject ads, or worse, before it ever leaves the building.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">You don't know who else is on the network</strong>Public and semi-public Wi-Fi puts you on the same local segment as strangers, some of whom may be running tools to intercept traffic that isn't encrypted.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">You don't know the network's history</strong>A "free" hotspot with an unusually generic name is a known pattern for what security researchers call an <a href="/blog/what-is-a-rogue-wifi-hotspot-evil-twin/" style="color: #DA291C; font-weight: 500; text-decoration: underline;">evil twin</a>, a fake access point set up specifically to intercept traffic from people who don't check carefully.</p>
+</div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">None of this means every airport network is secretly run by a criminal. Most aren't. But the nomad lifestyle means you take this exact risk, repeatedly, dozens of times a month, for years at a stretch, and the cost of encrypting your traffic is close to zero, while the cost of not doing it, on the one network in fifty that matters, can be significant.</p>
 
@@ -87,24 +84,21 @@ pillar: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">This matters specifically for the traffic types nomads handle constantly:</p>
 
-<ul class="takeaways-list-24obs" style="list-style: none !important; margin: 0 0 20px 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Client calls and video meetings:</strong> Over networks you've never used before, sometimes in countries with an active interest in the content of foreign business communications.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>File transfers:</strong> Contracts, invoices, project files, sometimes containing client data you're contractually obligated to protect.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Login sessions for SaaS tools:</strong> Most of which you're logged into permanently and would rather not have hijacked via a stolen session cookie.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Cloud storage sync:</strong> Running quietly in the background on networks you never explicitly agreed to trust it with.</span>
-  </li>
-</ul>
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Client calls and video meetings</strong>Over networks you've never used before, sometimes in countries with an active interest in the content of foreign business communications.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">File transfers</strong>Contracts, invoices, project files, sometimes containing client data you're contractually obligated to protect.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Login sessions for SaaS tools</strong>Most of which you're logged into permanently and would rather not have hijacked via a stolen session cookie.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Cloud storage sync</strong>Running quietly in the background on networks you never explicitly agreed to trust it with.</p>
+</div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">A VPN addresses all four of these the same way: by encrypting the traffic between your device and the VPN server, so that whatever happens on the local network, a misconfigured router, a nosy fellow guest, an actual evil-twin hotspot, the content of your traffic isn't readable. It doesn't make the local network trustworthy. It makes the local network irrelevant to your traffic's confidentiality, which is the more achievable and more useful goal.</p>
 
@@ -121,20 +115,17 @@ pillar: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">A few practical tips for <a href="/blog/vpn-for-safe-online-banking/" style="color: #DA291C; font-weight: 500; text-decoration: underline;">banking over a VPN</a> on the road:</p>
 
-<ul class="takeaways-list-24obs" style="list-style: none !important; margin: 0 0 20px 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Stick to the same server region:</strong> Don't connect from five different cities across your home country in the same afternoon. Consistency reduces anomaly scores.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Check your kill switch:</strong> Ensure the <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; font-weight: 500; text-decoration: underline;">kill switch</a> is active before initiating financial sessions so no packets leak if the connection drops.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Keep backup authentication:</strong> Always have app-based authenticator tools or hardware keys rather than relying solely on local SMS.</span>
-  </li>
-</ul>
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Stick to the same server region</strong>Don't connect from five different cities across your home country in the same afternoon. Consistency reduces anomaly scores.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Check your kill switch</strong>Ensure the <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; font-weight: 500; text-decoration: underline;">kill switch</a> is active before initiating financial sessions so no packets leak if the connection drops.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Keep backup authentication</strong>Always have app-based authenticator tools or hardware keys rather than relying solely on local SMS.</p>
+</div>
 
 <h2 id="section-4" style="font-size: 1.85rem; font-weight: 800; color: #0F172A; margin: 36px 0 18px 0; font-family: 'Lato', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">Streaming, subscriptions, and the geo-fence problem</h2>
 
@@ -189,28 +180,25 @@ pillar: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Abstract advice is easier to apply with a concrete example, so here's what a fairly typical nomad week looks like through the privacy lens, and where a VPN quietly does its job.</p>
 
-<ul class="takeaways-list-24obs" style="list-style: none !important; margin: 0 0 20px 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Monday, Co-working space:</strong> You open your laptop on a shared network with forty strangers. VPN connects automatically before your first browser tab opens; client emails and invoices go out over an encrypted tunnel rather than open Wi-Fi.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Tuesday, Banking Day:</strong> You switch the VPN to a server in your home country first, avoiding the unfamiliar country login flag that would otherwise trigger extra verification.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Wednesday, Travel Day:</strong> Airport Wi-Fi, then mobile data on landing, then hotel Wi-Fi, three different untrusted networks. The <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; font-weight: 500; text-decoration: underline;">kill switch</a> blocks traffic rather than silently falling back to an unencrypted connection.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Thursday, Client Video Call:</strong> You split-tunnel the call app to run on direct connection for maximum call quality, while sensitive apps stay protected.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Friday, Downtime Streaming:</strong> You connect to a home-region server to stream your favorite show from your subscribed catalog.</span>
-  </li>
-</ul>
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Monday, Co-working space</strong>You open your laptop on a shared network with forty strangers. VPN connects automatically before your first browser tab opens; client emails and invoices go out over an encrypted tunnel rather than open Wi-Fi.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Tuesday, Banking Day</strong>You switch the VPN to a server in your home country first, avoiding the unfamiliar country login flag that would otherwise trigger extra verification.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Wednesday, Travel Day</strong>Airport Wi-Fi, then mobile data on landing, then hotel Wi-Fi, three different untrusted networks. The <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; font-weight: 500; text-decoration: underline;">kill switch</a> blocks traffic rather than silently falling back to an unencrypted connection.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Thursday, Client Video Call</strong>You split-tunnel the call app to run on direct connection for maximum call quality, while sensitive apps stay protected.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Friday, Downtime Streaming</strong>You connect to a home-region server to stream your favorite show from your subscribed catalog.</p>
+</div>
 
 <h2 id="section-10" style="font-size: 1.85rem; font-weight: 800; color: #0F172A; margin: 36px 0 18px 0; font-family: 'Lato', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">Common mistakes nomads make with VPNs</h2>
 
@@ -275,40 +263,37 @@ pillar: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">The nomad VPN checklist:</p>
 
-<ul class="takeaways-list-24obs" style="list-style: none !important; margin: 0 0 20px 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Always-on Kill Switch:</strong> A kill switch that's on by default and enforced at the operating-system level, not just a toggle inside the app that can silently fail during a network switch.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Wide Server Map:</strong> A wide, genuinely maintained server map covering the regions you actually plan to visit, not just a large number padded with underused locations.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Modern Protocols:</strong> A modern protocol like <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; font-weight: 500; text-decoration: underline;">WireGuard</a>, for the speed margin that matters most on already-weak connections.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Split Tunneling:</strong> <a href="/blog/what-is-split-tunneling/" style="color: #DA291C; font-weight: 500; text-decoration: underline;">Split tunneling</a> support, so you can route selectively rather than all-or-nothing.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Audited No-Logs Policy:</strong> A specific, checkable no-logs policy, ideally one that's been independently audited, rather than a vague marketing promise.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Multi-Device Kit Support:</strong> Multi-device support that scales with your actual kit: laptop, phone, tablet, sometimes a travel router.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Fair Pricing:</strong> Pricing that doesn't punish you for traveling long-term. A model that charges per device or requires an annual contract can be a poor fit.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Instant Reconnection:</strong> Straightforward reconnection behavior after a network change, since nomads change networks constantly.</span>
-  </li>
-</ul>
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Always-on Kill Switch</strong>A kill switch that's on by default and enforced at the operating-system level, not just a toggle inside the app that can silently fail during a network switch.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Wide Server Map</strong>A wide, genuinely maintained server map covering the regions you actually plan to visit, not just a large number padded with underused locations.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Modern Protocols</strong>A modern protocol like <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; font-weight: 500; text-decoration: underline;">WireGuard</a>, for the speed margin that matters most on already-weak connections.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Split Tunneling</strong><a href="/blog/what-is-split-tunneling/" style="color: #DA291C; font-weight: 500; text-decoration: underline;">Split tunneling</a> support, so you can route selectively rather than all-or-nothing.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Audited No-Logs Policy</strong>A specific, checkable no-logs policy, ideally one that's been independently audited, rather than a vague marketing promise.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Multi-Device Kit Support</strong>Multi-device support that scales with your actual kit: laptop, phone, tablet, sometimes a travel router.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Fair Pricing</strong>Pricing that doesn't punish you for traveling long-term. A model that charges per device or requires an annual contract can be a poor fit.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Instant Reconnection</strong>Straightforward reconnection behavior after a network change, since nomads change networks constantly.</p>
+</div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">If a provider's website is vague about any of the above, no clear kill switch explanation, no server list, no logging specifics you can actually read, treat the marketing with the same skepticism you'd apply to a "guaranteed" streaming unblock claim.</p>
 
