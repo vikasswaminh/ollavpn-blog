@@ -34,27 +34,6 @@ category: 'security'
   </ul>
 </section>
 
-<nav class="table-of-contents" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 10px; padding: 20px 24px; margin-bottom: 36px;">
-  <h3 style="font-size: 1.1rem; font-weight: 700; color: #0F172A; margin: 0 0 12px 0;">On this page</h3>
-  <ol style="margin: 0; padding-left: 20px; color: #475569; display: flex; flex-direction: column; gap: 6px; font-size: 0.98rem; line-height: 1.5;">
-    <li><a href="#section-1" style="color: #2563EB; text-decoration: none;">Overview & Context</a></li>
-    <li><a href="#section-2" style="color: #2563EB; text-decoration: none;">What a router-level VPN actually is</a></li>
-    <li><a href="#section-3" style="color: #2563EB; text-decoration: none;">The device-by-device problem it solves</a></li>
-    <li><a href="#section-4" style="color: #2563EB; text-decoration: none;">Which devices benefit most</a></li>
-    <li><a href="#section-5" style="color: #2563EB; text-decoration: none;">How router VPNs actually work under the hood</a></li>
-    <li><a href="#section-6" style="color: #2563EB; text-decoration: none;">Router requirements — what you actually need</a></li>
-    <li><a href="#section-7" style="color: #2563EB; text-decoration: none;">The speed trade-off, honestly explained</a></li>
-    <li><a href="#section-8" style="color: #2563EB; text-decoration: none;">VPN router vs. VPN app vs. dedicated VPN router — picking the right layer</a></li>
-    <li><a href="#section-9" style="color: #2563EB; text-decoration: none;">Setting it up — the general process</a></li>
-    <li><a href="#section-10" style="color: #2563EB; text-decoration: none;">Common problems and how to avoid them</a></li>
-    <li><a href="#section-11" style="color: #2563EB; text-decoration: none;">Splitting traffic — not everything needs to go through the VPN</a></li>
-    <li><a href="#section-12" style="color: #2563EB; text-decoration: none;">Five myths about router-level VPNs</a></li>
-    <li><a href="#section-13" style="color: #2563EB; text-decoration: none;">How to choose a router-VPN-ready provider</a></li>
-    <li><a href="#section-14" style="color: #2563EB; text-decoration: none;">How OllaVPN handles router-level protection</a></li>
-    <li><a href="#wrapping-it-up" style="color: #2563EB; text-decoration: none;">Wrapping It Up</a></li>
-  </ol>
-</nav>
-
 <div class="blog-main-content-box" style="background: #ffffff; border: 1.5px solid #E2E8F0; border-radius: 12px; padding: 36px; box-shadow: 0 4px 20px rgba(0,0,0,0.03); margin-bottom: 36px;">
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">The complete guide to running a VPN at the router level instead of device by device. What it actually protects, which devices benefit the most — especially the ones that can't run a VPN app themselves — the real trade-offs in speed and setup complexity, and how to decide if it's the right move for your household.</p>

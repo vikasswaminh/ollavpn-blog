@@ -36,27 +36,6 @@ category: 'guides'
   </ul>
 </section>
 
-<nav class="table-of-contents" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 10px; padding: 20px 24px; margin-bottom: 36px;">
-  <h3 style="font-size: 1.1rem; font-weight: 700; color: #0F172A; margin: 0 0 12px 0;">On this page</h3>
-  <ol style="margin: 0; padding-left: 20px; color: #475569; display: flex; flex-direction: column; gap: 6px; font-size: 0.98rem; line-height: 1.5;">
-    <li><a href="#section-1" style="color: #2563EB; text-decoration: none;">Why does a VPN behave differently on Smart TV than it does on your phone or laptop —</a></li>
-    <li><a href="#section-2" style="color: #2563EB; text-decoration: none;">What should you actually expect from a VPN on Fire TV or Android TV —</a></li>
-    <li><a href="#section-3" style="color: #2563EB; text-decoration: none;">How do you install and set up a VPN on Amazon Fire TV, step-by-step —</a></li>
-    <li><a href="#section-4" style="color: #2563EB; text-decoration: none;">How do you install and set up a VPN on Android TV / Google TV, step-by-step —</a></li>
-    <li><a href="#section-5" style="color: #2563EB; text-decoration: none;">What if your Smart TV app store doesn't offer a VPN app at all —</a></li>
-    <li><a href="#section-6" style="color: #2563EB; text-decoration: none;">What is the actual streaming reality once you're connected —</a></li>
-    <li><a href="#section-7" style="color: #2563EB; text-decoration: none;">How does OllaVPN compare to other VPNs for Smart TV —</a></li>
-    <li><a href="#section-8" style="color: #2563EB; text-decoration: none;">What common mistakes do people make setting up a VPN on their TV —</a></li>
-    <li><a href="#section-9" style="color: #2563EB; text-decoration: none;">When does a router-level VPN make more sense than a TV app —</a></li>
-    <li><a href="#section-10" style="color: #2563EB; text-decoration: none;">What speed do you actually need for smooth 4K streaming through a VPN —</a></li>
-    <li><a href="#section-11" style="color: #2563EB; text-decoration: none;">What security and privacy features actually matter on a shared living-room device —</a></li>
-    <li><a href="#section-12" style="color: #2563EB; text-decoration: none;">Is OllaVPN compatible with Fire TV, Fire Stick, and Android TV models —</a></li>
-    <li><a href="#section-13" style="color: #2563EB; text-decoration: none;">How to verify any VPN for your Smart TV yourself</a></li>
-    <li><a href="#section-14" style="color: #2563EB; text-decoration: none;">What we deliberately left out of this guide</a></li>
-    <li><a href="#wrapping-it-up" style="color: #2563EB; text-decoration: none;">Wrapping It Up</a></li>
-  </ol>
-</nav>
-
 <div class="blog-main-content-box" style="background: #ffffff; border: 1.5px solid #E2E8F0; border-radius: 12px; padding: 36px; box-shadow: 0 4px 20px rgba(0,0,0,0.03); margin-bottom: 36px;">
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Putting a VPN on your TV sounds like it should be simple — it's just another app, right —  Except most Smart TV app stores don't carry a VPN app at all, the ones that do carry a stripped-down version with half the features missing, and the moment you actually connect, half the streaming apps on the home screen start throwing error codes at you. We've spent a lot of time getting this right on Fire TV and Android TV specifically, and this guide is the version of the story we wish someone had given us before we started: what actually installs, what actually connects, and what streaming actually looks like once you're through.</p>

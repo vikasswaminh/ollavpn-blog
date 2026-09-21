@@ -34,26 +34,6 @@ category: 'privacy'
   </ul>
 </section>
 
-<nav class="table-of-contents" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 10px; padding: 20px 24px; margin-bottom: 36px;">
-  <h3 style="font-size: 1.1rem; font-weight: 700; color: #0F172A; margin: 0 0 12px 0;">On this page</h3>
-  <ol style="margin: 0; padding-left: 20px; color: #475569; display: flex; flex-direction: column; gap: 6px; font-size: 0.98rem; line-height: 1.5;">
-    <li><a href="#section-1" style="color: #2563EB; text-decoration: none;">Overview & Context</a></li>
-    <li><a href="#section-2" style="color: #2563EB; text-decoration: none;">Why nomads have a different threat model</a></li>
-    <li><a href="#section-3" style="color: #2563EB; text-decoration: none;">The airport Wi-Fi problem</a></li>
-    <li><a href="#section-4" style="color: #2563EB; text-decoration: none;">Banking and payments while you travel</a></li>
-    <li><a href="#section-5" style="color: #2563EB; text-decoration: none;">Streaming, subscriptions, and the geo-fence problem</a></li>
-    <li><a href="#section-6" style="color: #2563EB; text-decoration: none;">Censorship and restricted countries</a></li>
-    <li><a href="#section-7" style="color: #2563EB; text-decoration: none;">Speed — the thing that actually breaks nomad workflows</a></li>
-    <li><a href="#section-8" style="color: #2563EB; text-decoration: none;">The legal picture, country by country</a></li>
-    <li><a href="#section-9" style="color: #2563EB; text-decoration: none;">A week in the life — what this looks like in practice</a></li>
-    <li><a href="#section-10" style="color: #2563EB; text-decoration: none;">Common mistakes nomads make with VPNs</a></li>
-    <li><a href="#section-11" style="color: #2563EB; text-decoration: none;">Five myths about VPNs for travellers</a></li>
-    <li><a href="#section-12" style="color: #2563EB; text-decoration: none;">How to choose a nomad-ready VPN</a></li>
-    <li><a href="#section-13" style="color: #2563EB; text-decoration: none;">How OllaVPN handles the nomad use case</a></li>
-    <li><a href="#wrapping-it-up" style="color: #2563EB; text-decoration: none;">Wrapping It Up</a></li>
-  </ol>
-</nav>
-
 <div class="blog-main-content-box" style="background: #ffffff; border: 1.5px solid #E2E8F0; border-radius: 12px; padding: 36px; box-shadow: 0 4px 20px rgba(0,0,0,0.03); margin-bottom: 36px;">
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">A practical, no-nonsense guide for anyone working from airports, co-working spaces, and rented apartments in a different country every few weeks. What actually threatens your privacy on the road, which VPN features matter versus which are marketing noise, and how to pick one that survives a full year of hotel Wi-Fi.</p>
