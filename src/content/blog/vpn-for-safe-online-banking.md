@@ -359,7 +359,7 @@ draft: false
 </section>
 
 <section id="wrapping-it-up" class="wrap-up-box wrapping-lightbox" style="margin-top: 36px; margin-bottom: 24px; padding: 28px; background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.25); border-left: 5px solid #DA291C; border-radius: 8px;">
-  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C !important; border: none !important; padding-bottom: 0 !important; text-align: center !important; font-family: 'Lato', sans-serif !important;">Wrapping It Up</h2>
   <p style="font-size: 1.05rem; font-weight: 600; color: #64748B; margin: 0 0 18px 0;">Best Practices for Securing Your Financial Data</p>
   <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Navigating online banking securely requires understanding where the real network vulnerabilities lie. While HTTPS encrypts your web session data, open Wi-Fi networks and untrusted ISPs can still leak DNS queries, session metadata, and expose your device to man-in-the-middle attacks.</p>
   <p style="margin-bottom: 0; line-height: 1.75; color: #09090b; font-size: 1.05rem;">With OllaVPN, your financial transactions run over post-quantum protected WireGuard tunneling, default-on kill switch defense, and verified zero-log infrastructure, giving you complete peace of mind without requiring payment info or credit card registration.</p>

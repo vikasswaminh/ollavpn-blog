@@ -403,7 +403,7 @@ pillar: false
 </section>
 
 <section id="wrapping-it-up" class="wrap-up-box wrapping-lightbox" style="margin-top: 36px; margin-bottom: 24px; padding: 28px; background: #FFF5F5 !important; border: 1.5px solid rgba(218, 41, 28, 0.25) !important; border-left: 5px solid #DA291C !important; border-radius: 12px !important; text-align: left !important;">
-  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C !important; border: none !important; padding-bottom: 0 !important; text-align: left !important; font-family: 'Lato', sans-serif !important;">Wrapping It Up</h2>
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C !important; border: none !important; padding-bottom: 0 !important; text-align: center !important; font-family: 'Lato', sans-serif !important;">Wrapping It Up</h2>
   <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B !important; margin-bottom: 12px; text-align: left !important; font-family: 'Lato', sans-serif !important;">Navigating <strong>VPN for Digital Nomads 2026: Stay Private on the Go</strong> effectively requires choosing security architectures built on transparency, strong encryption, and verified zero data logging.</p>
   <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B !important; margin-bottom: 0; text-align: left !important; font-family: 'Lato', sans-serif !important;">With OllaVPN, you get post-quantum protected WireGuard tunneling, default-on kill switch defense, and in-tunnel DNS resolution to ensure your internet connection stays completely private across every network.</p>
 </section>

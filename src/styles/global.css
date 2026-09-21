@@ -4287,11 +4287,15 @@ html, body, .article-page-wrapper, main {
 
 
 #wrapping-it-up h2,
-.wrap-up-box h2 {
-  font-size: 1.8rem !important;
+.wrap-up-box h2,
+.wrapping-lightbox h2 {
+  font-size: 1.75rem !important;
   font-weight: 800 !important;
-  margin: 0 0 10px 0 !important;
-  color: #0F172A !important;
+  margin: 0 0 12px 0 !important;
+  color: #DA291C !important;
+  text-align: center !important;
+  border: none !important;
+  padding-bottom: 0 !important;
 }
 
 #wrapping-it-up p,

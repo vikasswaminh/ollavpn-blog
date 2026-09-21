@@ -478,7 +478,7 @@ draft: false
 </section>
 
 <section id="wrapping-it-up" class="wrap-up-box wrapping-lightbox" style="margin-top: 36px; margin-bottom: 24px; padding: 28px; background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.25); border-left: 5px solid #DA291C; border-radius: 8px;">
-  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C !important; border: none !important; padding-bottom: 0 !important; text-align: center !important; font-family: 'Lato', sans-serif !important;">Wrapping It Up</h2>
   <p style="font-size: 1.05rem; font-weight: 600; color: #64748B; margin: 0 0 18px 0;">A broader-context closing thought</p>
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">One pattern we've noticed across every privacy-and-networking topic we cover: the gap between what most users believe about a given topic and what the technical reality is keeps widening. Marketing departments have gotten better at producing confident-sounding claims; the underlying technology has gotten more complex; the threats have gotten more sophisticated; and the time most</p>
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">users have to evaluate any single claim has, if anything, gotten shorter. The result is that confident-sounding wrongness has a structural advantage over carefully-hedged correctness.</p>

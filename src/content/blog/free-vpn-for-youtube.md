@@ -353,7 +353,7 @@ draft: false
 </section>
 
 <section id="wrapping-it-up" class="wrap-up-box wrapping-lightbox" style="margin-top: 36px; margin-bottom: 24px; padding: 28px; background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.25); border-left: 5px solid #DA291C; border-radius: 8px;">
-  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C !important; border: none !important; padding-bottom: 0 !important; text-align: center !important; font-family: 'Lato', sans-serif !important;">Wrapping It Up</h2>
   <p style="font-size: 1.05rem; font-weight: 600; color: #64748B; margin: 0 0 18px 0;">Final Thoughts on Free YouTube Streaming</p>
   <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Streaming YouTube without constant buffering or annoying geographical blocks shouldn't require surrendering your personal privacy or paying high monthly subscription fees. While most free VPNs throttle your speed or monetize your data behind the scenes, OllaVPN Free delivers transparent, reliable performance backed by WireGuard encryption and an active kill switch.</p>
   <p style="margin-bottom: 0; line-height: 1.75; color: #09090b; font-size: 1.05rem;">With 10 Mbps unlimited bandwidth and complete zero-log infrastructure funded sustainably by Plus subscribers, you can enjoy uninterrupted HD streaming and private browsing across all your favorite devices.</p>

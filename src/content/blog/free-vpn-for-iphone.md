@@ -441,7 +441,7 @@ The honest trade-off is speed: 10 Mbps on free versus 10 Gbps on the $2/month Pl
 </section>
 
 <section id="wrapping-it-up" class="wrap-up-box wrapping-lightbox" style="margin-top: 36px; margin-bottom: 24px; padding: 28px; background: #FFF5F5; border: 1.5px solid rgba(218, 41, 28, 0.25); border-left: 5px solid #DA291C; border-radius: 8px;">
-  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C; border: none !important; padding-bottom: 0 !important;">Wrapping It Up</h2>
+  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C !important; border: none !important; padding-bottom: 0 !important; text-align: center !important; font-family: 'Lato', sans-serif !important;">Wrapping It Up</h2>
   <p style="font-size: 1.05rem; line-height: 1.75; color: #1E293B; margin-bottom: 12px;">
     Navigating <strong>Free VPN for iPhone 2026: No Credit Card, No Logs</strong> effectively requires choosing security architectures built on transparency, strong encryption, and verified zero data logging.
   </p>
