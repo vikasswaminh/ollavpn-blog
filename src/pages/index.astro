@@ -175,7 +175,7 @@ const curriculumTracks = [
             </div>
 
             <h2 class="ug-hero-title">
-              <a href={`/blog/${leadStory.slug}.html`}>
+              <a href={`/blog/${leadStory.slug}/`}>
                 {leadStory.data.title}
               </a>
             </h2>
@@ -213,7 +213,7 @@ const curriculumTracks = [
 
         <!-- Hero Media Column (Screenshot 2) -->
         <div class="ug-hero-media">
-          <a href={`/blog/${leadStory.slug}.html`} style="display:block; width:100%; height:100%;" aria-label={leadStory.data.title}>
+          <a href={`/blog/${leadStory.slug}/`} style="display:block; width:100%; height:100%;" aria-label={leadStory.data.title}>
             <img 
               src="/images/ollavpn-hero-lock.webp" 
               alt={leadStory.data.title}
@@ -287,7 +287,7 @@ const curriculumTracks = [
                   data-title={post.data.title.toLowerCase()}
                   data-index={idx}
                 >
-                  <a href={`/blog/${post.slug}.html`} class="ug-card-clean-media" aria-label={post.data.title}>
+                  <a href={`/blog/${post.slug}/`} class="ug-card-clean-media" aria-label={post.data.title}>
                     <!-- Red Bookmark Ribbon Badge -->
                     <div class="ug-card-ribbon" aria-hidden="true">
                       <svg viewBox="0 0 24 24" fill="currentColor">
@@ -311,7 +311,7 @@ const curriculumTracks = [
                     </div>
 
                     <h3 class="ug-card-clean-title">
-                      <a href={`/blog/${post.slug}.html`}>
+                      <a href={`/blog/${post.slug}/`}>
                         {post.data.title}
                       </a>
                     </h3>
@@ -371,7 +371,7 @@ const curriculumTracks = [
                 {track.guides.map(g => (
                   <li class="ug-track-item">
                     <span class="ug-track-bullet">&rarr;</span>
-                    <a href={`/blog/${g.slug}.html`}>{g.title}</a>
+                    <a href={`/blog/${g.slug}/`}>{g.title}</a>
                   </li>
                 ))}
               </ul>
@@ -421,7 +421,7 @@ const curriculumTracks = [
             <p class="ug-support-desc">
               Independent packet capture inspections, RAM-only diskless node verifications, and cryptographic handshake reviews.
             </p>
-            <a href="/blog/which-free-vpn-does-not-keep-logs.html" class="ug-support-link">
+            <a href="/blog/which-free-vpn-does-not-keep-logs/" class="ug-support-link">
               <span>View Audit Reports</span> &rarr;
             </a>
           </div>
@@ -441,7 +441,7 @@ const curriculumTracks = [
             <p class="ug-support-desc">
               Clear, transparent guides on WireGuard throughput, DNS leak diagnostics, WebRTC prevention, and kill switch configurations.
             </p>
-            <a href="/blog/how-to-test-for-dns-leak.html" class="ug-support-link">
+            <a href="/blog/how-to-test-for-dns-leak/" class="ug-support-link">
               <span>Run Leak Diagnostics</span> &rarr;
             </a>
           </div>
