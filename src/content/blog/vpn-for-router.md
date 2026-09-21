@@ -537,23 +537,3 @@ pillar: false
   <h2 style="font-size: 1.45rem !important; font-weight: 800 !important; color: #DA291C !important; margin: 0 0 12px 0 !important; font-family: 'Lato', sans-serif !important; text-align: center !important; letter-spacing: 0.01em !important;">Wrapping It Up</h2>
   <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;">Setting up a VPN on your router gives every device on your home Wi-Fi immediate, always-on encryption without requiring dedicated software on each phone, smart TV, or IoT gadget. While it demands a capable router and a small speed trade-off, combining router-level coverage at home with device-level apps when traveling offers complete digital privacy across every environment.</p>
 </div>
-
-<div class="article-cta-box" style="background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); border-radius: 16px; padding: 36px 32px; margin: 40px 0; text-align: center; color: #FFFFFF; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.15);">
-  <h3 style="font-size: 1.6rem; font-weight: 800; margin: 0 0 12px 0; color: #FFFFFF; font-family: 'Lato', sans-serif;">Ready for whole-home privacy?</h3>
-  <p style="font-size: 1.05rem; line-height: 1.65; color: #94A3B8; max-width: 600px; margin: 0 auto 24px auto;">Protect all your smart TVs, game consoles, and IoT devices with OllaVPN router configuration files and quantum-resistant encryption.</p>
-  <a href="/pricing/" style="display: inline-block; background: #DA291C; color: #FFFFFF; font-weight: 700; font-size: 1.05rem; padding: 14px 32px; border-radius: 8px; text-decoration: none; transition: background 0.2s ease; font-family: 'Lato', sans-serif;">Get OllaVPN for Your Router &rarr;</a>
-</div>
-
-<div class="related-posts" style="margin: 40px 0 20px 0; padding-top: 24px; border-top: 2px solid #F1F5F9;">
-  <h3 style="font-size: 1.35rem; font-weight: 800; color: #0F172A; margin-bottom: 20px; font-family: 'Lato', sans-serif;">Related Reading</h3>
-  <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
-    <li style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 10px; padding: 16px 20px;">
-      <a href="/blog/what-is-a-dns-leak/" style="color: #DA291C; font-weight: 700; text-decoration: none; font-size: 1.02rem; display: block; margin-bottom: 6px;">What Is a DNS Leak? &rarr;</a>
-      <p style="margin: 0; font-size: 0.92rem; color: #64748B; line-height: 1.5;">Learn how unencrypted DNS queries expose your browsing habits even when using a VPN.</p>
-    </li>
-    <li style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 10px; padding: 16px 20px;">
-      <a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; font-weight: 700; text-decoration: none; font-size: 1.02rem; display: block; margin-bottom: 6px;">What Is Post-Quantum Cryptography? &rarr;</a>
-      <p style="margin: 0; font-size: 0.92rem; color: #64748B; line-height: 1.5;">Why quantum computing poses a threat to standard encryption and how hybrid handshakes protect you.</p>
-    </li>
-  </ul>
-</div>
