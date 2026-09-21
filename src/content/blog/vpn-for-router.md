@@ -65,39 +65,36 @@ pillar: false
 
 <div class="answer-card" style="margin: 20px 0 24px; border-left: 5px solid #DA291C; background: #FFF5F5; padding: 18px 22px; border-radius: 0 10px 10px 0;">
   <strong style="color: #DA291C; display: block; margin-bottom: 6px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 800;">QUICK ANSWER</strong>
-  <p style="margin: 0; font-size: 1.02rem; line-height: 1.68; color: #1E293B; font-weight: 500;">A typical modern home has a growing number of devices that simply cannot run a VPN app, smart TVs, streaming boxes, game consoles, smart speakers, security cameras, and most IoT devices. A device-by-device VPN strategy leaves all of them completely unprotected, often without the household realizing it.</p>
+  <p style="margin: 0; font-size: 1.02rem; line-height: 1.68; color: #1E293B; font-weight: 500;">A typical modern home has a growing number of devices that simply cannot run a VPN app — smart TVs, streaming boxes, game consoles, smart speakers, security cameras, and most IoT devices. A device-by-device VPN strategy leaves all of them completely unprotected, often without the household realizing it.</p>
 </div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Here's a fact that surprises a lot of people once they actually count: in most homes today, the majority of connected devices cannot run a VPN app at all. Not "won't," not "shouldn't", genuinely can't. Their operating systems don't support third-party app installation, or they're locked-down embedded systems with no concept of a VPN client in the first place.</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Walk through a fairly ordinary modern household and count what falls into that category:</p>
 
-<ul class="takeaways-list-24obs" style="list-style: none !important; margin: 0 0 20px 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Smart TVs and streaming boxes:</strong> Most run closed operating systems that don't allow arbitrary app installation, and even the ones that technically support a VPN app often handle it poorly.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Game consoles:</strong> Almost universally have no native VPN client support at all.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Smart speakers and displays:</strong> Constantly listening and constantly reporting back to their manufacturer's servers, with zero ability to add privacy software.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Security cameras and video doorbells:</strong> Ironically some of the most privacy-sensitive devices in the house, streaming footage to the cloud with no VPN protection whatsoever.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Smart thermostats, plugs, light bulbs, and other IoT gadgets:</strong> Often produced by manufacturers with a spotty track record on security and privacy practices, communicating constantly with servers you have no visibility into.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Guest devices:</strong> A visiting relative's laptop, a kid's tablet, a friend's phone, that you'd have to individually configure every single time, which nobody actually does.</span>
-  </li>
-</ul>
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Smart TVs and streaming boxes</strong>Most run closed operating systems that don't allow arbitrary app installation, and even the ones that technically support a VPN app often handle it poorly.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Game consoles</strong>Almost universally have no native VPN support at all.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Smart speakers and displays</strong>Constantly listening and constantly reporting back to their manufacturer's servers, with zero ability to add privacy software.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Security cameras and video doorbells</strong>Ironically some of the most privacy-sensitive devices in the house, streaming footage to the cloud with no VPN protection whatsoever.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Smart thermostats, plugs, light bulbs, and other IoT gadgets</strong>Often produced by manufacturers with a spotty track record on security and privacy practices, communicating constantly with servers you have no visibility into.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Guest devices</strong>A visiting relative's laptop, a kid's tablet, a friend's phone, that you'd have to individually configure every single time, which nobody actually does.</p>
+</div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">The device-by-device model means your household's actual privacy protection is only as strong as the least protected device on the network, and for most households, that's a long, uncounted list of gadgets that were never protected to begin with. A router-level VPN closes that gap in one move, by protecting the network itself rather than trying to chase every device that connects to it.</p>
 
@@ -107,45 +104,39 @@ pillar: false
 
 <h3 style="font-size: 1.35rem; font-weight: 700; color: #0F172A; margin: 24px 0 14px 0; font-family: 'Lato', sans-serif;">High-value devices, the ones that gain the most</h3>
 
-<ul class="takeaways-list-24obs" style="list-style: none !important; margin: 0 0 20px 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Smart speakers and home assistants:</strong> In near-constant contact with manufacturer servers and otherwise have zero privacy tooling available to them.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Security cameras and video doorbells:</strong> Given how sensitive the footage they transmit actually is, and how varied camera manufacturers' security track records are.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Smart TVs and streaming devices:</strong> Notorious for aggressive data collection through automatic content recognition, a practice where the TV itself analyzes what's on screen and reports viewing habits back to advertisers.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>IoT gadgets generally:</strong> Thermostats, plugs, sensors, robot vacuums, many of which come from manufacturers with limited security update practices and correspondingly limited trust.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Guest and kids' devices:</strong> Benefit from automatic protection precisely because nobody is going to manually configure a VPN app on a twelve-year-old's tablet or a weekend guest's phone.</span>
-  </li>
-</ul>
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Smart speakers and home assistants</strong>In near-constant contact with manufacturer servers and otherwise have zero privacy tooling available to them.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Security cameras and video doorbells</strong>Given how sensitive the footage they transmit actually is, and how varied camera manufacturers' security track records are.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Smart TVs and streaming devices</strong>Notorious for aggressive data collection through automatic content recognition, a practice where the TV itself analyzes what's on screen and reports viewing habits back to advertisers.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">IoT gadgets generally</strong>Thermostats, plugs, sensors, robot vacuums, many of which come from manufacturers with limited security update practices and correspondingly limited trust.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Guest and kids' devices</strong>Benefit from automatic protection precisely because nobody is going to manually configure a VPN app on a twelve-year-old's tablet or a weekend guest's phone.</p>
+</div>
 
 <h3 style="font-size: 1.35rem; font-weight: 700; color: #0F172A; margin: 24px 0 14px 0; font-family: 'Lato', sans-serif;">Devices where it matters less, or where you might want to opt out</h3>
 
-<ul class="takeaways-list-24obs" style="list-style: none !important; margin: 0 0 20px 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Devices already running a strong dedicated VPN app:</strong> Like a work laptop with a company-mandated VPN; routing that through a second VPN at the router level can cause conflicts rather than added protection.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Devices doing local-network-only tasks:</strong> Like a printer or a local media server that only ever talks to other devices on your home network and never reaches the internet directly.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Bandwidth-sensitive devices:</strong> Where local speed matters more than routing through a distant server, some households choose to exclude a 4K streaming box from the VPN tunnel specifically to avoid any added latency, accepting the trade-off in privacy for that one device.</span>
-  </li>
-</ul>
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Devices already running a strong dedicated VPN app</strong>Like a work laptop with a company-mandated VPN; routing that through a second VPN at the router level can cause conflicts rather than added protection.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Devices doing local-network-only tasks</strong>Like a printer or a local media server that only ever talks to other devices on your home network and never reaches the internet directly.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Bandwidth-sensitive devices</strong>Where local speed matters more than routing through a distant server, some households choose to exclude a 4K streaming box from the VPN tunnel specifically to avoid any added latency, accepting the trade-off in privacy for that one device.</p>
+</div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">This is a genuinely personal calculation, not a one-size-fits-all rule, which is why the ability to selectively exclude specific devices, covered later in this guide, tends to matter more in practice than blanket "protect everything, always" advice.</p>
 
@@ -173,24 +164,21 @@ pillar: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Not every router can do this, and it's worth knowing what you're actually looking for before assuming your current router will handle it:</p>
 
-<ul class="takeaways-list-24obs" style="list-style: none !important; margin: 0 0 20px 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Native VPN client support:</strong> A growing number of consumer routers, particularly from manufacturers that build for the enthusiast and privacy-conscious market, include built-in VPN client configuration in their standard firmware. This is the easiest path, no flashing, no risk of bricking anything, just entering connection details in a settings page.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Third-party firmware compatibility:</strong> Routers that support alternative firmware like OpenWrt or DD-WRT can gain VPN client capability even if the stock firmware doesn't include it. This unlocks a much wider range of supported routers, but it comes with real technical risk, flashing firmware incorrectly can disable a router entirely, and it voids most manufacturer warranties.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Adequate processing power:</strong> This is the requirement people underestimate most. Encrypting and decrypting traffic for an entire household's worth of devices simultaneously is real computational work, and a budget router built for basic Wi-Fi distribution may simply not have the processing headroom to do it without a significant speed penalty. Routers marketed specifically for VPN use tend to include beefier processors for exactly this reason.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>A dedicated VPN router as an alternative:</strong> Rather than modifying your existing router, some households add a second router, configured purely to run the VPN, positioned between the main router and the rest of the home network. This isolates the VPN traffic from your primary network and sidesteps compatibility concerns with your existing hardware entirely.</span>
-  </li>
-</ul>
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Native VPN client support</strong>A growing number of consumer routers, particularly from manufacturers that build for the enthusiast and privacy-conscious market, include built-in VPN client configuration in their standard firmware. This is the easiest path, no flashing, no risk of bricking anything, just entering connection details in a settings page.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Third-party firmware compatibility</strong>Routers that support alternative firmware like OpenWrt or DD-WRT can gain VPN client capability even if the stock firmware doesn't include it. This unlocks a much wider range of supported routers, but it comes with real technical risk, flashing firmware incorrectly can disable a router entirely, and it voids most manufacturer warranties.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Adequate processing power</strong>This is the requirement people underestimate most. Encrypting and decrypting traffic for an entire household's worth of devices simultaneously is real computational work, and a budget router built for basic Wi-Fi distribution may simply not have the processing headroom to do it without a significant speed penalty. Routers marketed specifically for VPN use tend to include beefier processors for exactly this reason.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">A dedicated VPN router as an alternative</strong>Rather than modifying your existing router, some households add a second router, configured purely to run the VPN, positioned between the main router and the rest of the home network. This isolates the VPN traffic from your primary network and sidesteps compatibility concerns with your existing hardware entirely.</p>
+</div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">If you're shopping for a router with this use case specifically in mind, look for one explicitly marketed as supporting VPN client mode, with published throughput numbers for VPN use specifically, general Wi-Fi speed numbers don't tell you how it'll perform once it's also doing encryption for the whole house.</p>
 
@@ -205,24 +193,21 @@ pillar: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">A few things that determine how much this actually costs you in practice:</p>
 
-<ul class="takeaways-list-24obs" style="list-style: none !important; margin: 0 0 20px 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Router processing power:</strong> As covered above, a budget router will show this bottleneck much sooner than a router built with VPN throughput in mind.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>VPN protocol:</strong> Modern, lean protocols like WireGuard require meaningfully less processing overhead than older protocols like OpenVPN, and the difference is more noticeable at the router level than on an individual device, because the router doesn't have the surplus processing headroom a modern phone has.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Total household bandwidth demand:</strong> A household with one person browsing casually experiences this differently than a household with four people simultaneously streaming, gaming, and video calling, the encryption overhead scales with total traffic, not per device.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Distance to the VPN server:</strong> The same latency physics that affect a single device apply here too, just felt across the whole household at once rather than by one person.</span>
-  </li>
-</ul>
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Router processing power</strong>As covered above, a budget router will show this bottleneck much sooner than a router built with VPN throughput in mind.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">VPN protocol</strong>Modern, lean protocols like WireGuard require meaningfully less processing overhead than older protocols like OpenVPN, and the difference is more noticeable at the router level than on an individual device, because the router doesn't have the surplus processing headroom a modern phone has.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Total household bandwidth demand</strong>A household with one person browsing casually experiences this differently than a household with four people simultaneously streaming, gaming, and video calling, the encryption overhead scales with total traffic, not per device.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Distance to the VPN server</strong>The same latency physics that affect a single device apply here too, just felt across the whole household at once rather than by one person.</p>
+</div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">The honest recommendation: if your household's internet plan is already near the upper edge of what your router can handle, expect a real, noticeable dip after adding router-level VPN encryption on top. If you have meaningful headroom in your connection speed relative to what you actually use day to day, you may not notice the difference at all. Testing before committing your entire household to it, rather than assuming it'll be fine, is worth the twenty minutes it takes.</p>
 
@@ -270,59 +255,56 @@ pillar: false
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Exact steps vary meaningfully by router model and VPN provider, so treat this as the shape of the process rather than a literal step-by-step for your specific hardware, always check your router manufacturer's and VPN provider's current documentation for the exact details.</p>
 
 <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
-  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">1. Confirm router compatibility:</strong> Check whether your router natively supports VPN client mode in its firmware or supports third-party open-source firmware like OpenWrt or DD-WRT before beginning configuration.</p>
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">1. Confirm router compatibility</strong>Check whether your router natively supports VPN client mode in its firmware or supports third-party open-source firmware like OpenWrt or DD-WRT before beginning configuration.</p>
 </div>
 
 <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
-  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">2. Obtain VPN router configuration files:</strong> Download WireGuard configuration files or connection credentials specifically generated for router deployment from your VPN provider's manual setup dashboard.</p>
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">2. Obtain VPN router configuration files</strong>Download WireGuard configuration files or connection credentials specifically generated for router deployment from your VPN provider's manual setup dashboard.</p>
 </div>
 
 <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
-  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">3. Access router administration panel:</strong> Open a web browser pointed to your router's local gateway address (typically 192.168.1.1) and log into the administrative management console.</p>
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">3. Access router administration panel</strong>Open a web browser pointed to your router's local gateway address (typically 192.168.1.1) and log into the administrative management console.</p>
 </div>
 
 <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
-  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">4. Import connection parameters:</strong> Upload the configuration file or input the server endpoint, public key, private key, and handshake parameters provided by your VPN service.</p>
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">4. Import connection parameters</strong>Upload the configuration file or input the server endpoint, public key, private key, and handshake parameters provided by your VPN service.</p>
 </div>
 
 <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
-  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">5. Save and activate the client tunnel:</strong> Enable the VPN client interface and verify that the tunnel status transitions to active with transmitted and received packet counters incrementing.</p>
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">5. Save and activate the client tunnel</strong>Enable the VPN client interface and verify that the tunnel status transitions to active with transmitted and received packet counters incrementing.</p>
 </div>
 
 <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
-  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">6. Validate from client devices:</strong> Perform an external IP address and DNS leak test from connected phones, laptops, and smart TVs to ensure all traffic routes through the encrypted VPN gateway.</p>
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">6. Validate from client devices</strong>Perform an external IP address and DNS leak test from connected phones, laptops, and smart TVs to ensure all traffic routes through the encrypted VPN gateway.</p>
 </div>
 
 <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
-  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">7. Configure policy-based routing exclusions:</strong> Set up bypass rules for latency-sensitive hardware, game consoles, or local work devices that should route through standard WAN.</p>
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">7. Configure policy-based routing exclusions</strong>Set up bypass rules for latency-sensitive hardware, game consoles, or local work devices that should route through standard WAN.</p>
 </div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">If your router doesn't natively support this and you're considering flashing third-party firmware to add the capability, that's a meaningfully bigger step than the process above, with real risk of misconfiguring or disabling your router if done incorrectly. It's worth reading your specific router model's community documentation thoroughly, and understanding that it will likely void your manufacturer's warranty, before proceeding.</p>
 
 <h2 id="section-9" style="font-size: 1.85rem; font-weight: 800; color: #0F172A; margin: 36px 0 18px 0; font-family: 'Lato', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">Common problems and how to avoid them</h2>
 
-<ul class="takeaways-list-24obs" style="list-style: none !important; margin: 0 0 20px 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Assuming the connection is active when it isn't:</strong> Always verify with an actual connectivity or IP check from a device on the network, not just a green light on the router's admin page, which can sometimes be misleading.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Double-VPN conflicts:</strong> Running a device-level VPN app on a laptop that's also behind a router-level VPN can cause connection failures or unexpected routing, decide deliberately whether a given device should use one, the other, or neither, rather than letting both run simultaneously by accident.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Underestimating the processing hit:</strong> As covered above, a household that doesn't test actual throughput after setup sometimes doesn't realize their connection has slowed meaningfully until it becomes a daily frustration.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Forgetting local devices need local access:</strong> Some smart home setups rely on devices finding each other on the local network, a printer, a media server, certain smart home hubs. Routing everything through a VPN can sometimes interfere with this kind of local device discovery, which is one of the more common reasons to selectively exclude specific devices from the tunnel.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Not having a fallback plan:</strong> If the router-level VPN connection drops for any reason, understand in advance whether your setup fails open (devices fall back to an unprotected connection) or fails closed (devices lose internet access entirely until the VPN reconnects), and pick the router configuration option that matches what you'd actually want to happen.</span>
-  </li>
-</ul>
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Assuming the connection is active when it isn't</strong>Always verify with an actual connectivity or IP check from a device on the network, not just a green light on the router's admin page, which can sometimes be misleading.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Double-VPN conflicts</strong>Running a device-level VPN app on a laptop that's also behind a router-level VPN can cause connection failures or unexpected routing, decide deliberately whether a given device should use one, the other, or neither, rather than letting both run simultaneously by accident.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Underestimating the processing hit</strong>As covered above, a household that doesn't test actual throughput after setup sometimes doesn't realize their connection has slowed meaningfully until it becomes a daily frustration.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Forgetting local devices need local access</strong>Some smart home setups rely on devices finding each other on the local network, a printer, a media server, certain smart home hubs. Routing everything through a VPN can sometimes interfere with this kind of local device discovery, which is one of the more common reasons to selectively exclude specific devices from the tunnel.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Not having a fallback plan</strong>If the router-level VPN connection drops for any reason, understand in advance whether your setup fails open (devices fall back to an unprotected connection) or fails closed (devices lose internet access entirely until the VPN reconnects), and pick the router configuration option that matches what you'd actually want to happen.</p>
+</div>
 
 <h2 id="section-10" style="font-size: 1.85rem; font-weight: 800; color: #0F172A; margin: 36px 0 18px 0; font-family: 'Lato', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">Splitting traffic — not everything needs to go through the VPN</h2>
 
@@ -335,47 +317,44 @@ pillar: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">This matters for a few recurring situations:</p>
 
-<ul class="takeaways-list-24obs" style="list-style: none !important; margin: 0 0 20px 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>A 4K streaming device:</strong> Where you've decided the marginal privacy benefit isn't worth a potential speed or buffering trade-off, and you'd rather it use the direct connection.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Smart home hubs that rely on local device discovery:</strong> Where routing through a VPN can interfere with devices finding each other on the local network.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>A gaming console:</strong> Where latency matters enough for competitive play that some households prefer to exclude it, accepting the reduced privacy in exchange for the fastest possible connection.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>A device that already runs its own separate VPN:</strong> Avoiding the conflict of nesting one VPN connection inside another.</span>
-  </li>
-</ul>
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">A 4K streaming device</strong>Where you've decided the marginal privacy benefit isn't worth a potential speed or buffering trade-off, and you'd rather it use the direct connection.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Smart home hubs that rely on local device discovery</strong>Where routing through a VPN can interfere with devices finding each other on the local network.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">A gaming console</strong>Where latency matters enough for competitive play that some households prefer to exclude it, accepting the reduced privacy in exchange for the fastest possible connection.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">A device that already runs its own separate VPN</strong>Avoiding the conflict of nesting one VPN connection inside another.</p>
+</div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">The practical approach most privacy-conscious households land on: protect everything by default, then carve out specific, deliberate exceptions for devices where you've made an informed trade-off, rather than the reverse of protecting nothing until you remember to add something.</p>
 
 <h2 id="section-11" style="font-size: 1.85rem; font-weight: 800; color: #0F172A; margin: 36px 0 18px 0; font-family: 'Lato', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">Five myths about router-level VPNs</h2>
 
 <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
-  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Myth 1: "A router VPN protects devices from each other on the same network."</strong> It doesn't, and this is a genuinely important distinction. A router-level VPN encrypts traffic leaving your home network on its way to the internet. It doesn't isolate devices on your local network from each other, a compromised smart device could, in principle, still probe other devices on the same Wi-Fi network. That's a separate problem, addressed by network segmentation (like a dedicated guest or IoT network), not by a VPN.</p>
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Myth 1: "A router VPN protects devices from each other on the same network."</strong>It doesn't, and this is a genuinely important distinction. A router-level VPN encrypts traffic leaving your home network on its way to the internet. It doesn't isolate devices on your local network from each other, a compromised smart device could, in principle, still probe other devices on the same Wi-Fi network. That's a separate problem, addressed by network segmentation (like a dedicated guest or IoT network), not by a VPN.</p>
 </div>
 
 <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
-  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Myth 2: "Setting up a VPN on a router is only for advanced tech users."</strong> It used to be closer to true, back when the main path was manually flashing custom firmware. In 2026, a meaningful number of consumer routers support VPN client configuration natively, with a standard settings page, no firmware flashing required. It's still more involved than tapping "connect" in a phone app, but it's no longer an enthusiast-only project.</p>
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Myth 2: "Setting up a VPN on a router is only for advanced tech users."</strong>It used to be closer to true, back when the main path was manually flashing custom firmware. In 2026, a meaningful number of consumer routers support VPN client configuration natively, with a standard settings page, no firmware flashing required. It's still more involved than tapping "connect" in a phone app, but it's no longer an enthusiast-only project.</p>
 </div>
 
 <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
-  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Myth 3: "If I have a router VPN, I don't need VPN apps on my phone and laptop anymore."</strong> A router-level VPN only protects devices while they're connected to that specific router. The moment your laptop or phone leaves the house and joins a coffee shop or airport network, the router-level protection doesn't travel with it, you're back to needing a device-level VPN app for protection on the go.</p>
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Myth 3: "If I have a router VPN, I don't need VPN apps on my phone and laptop anymore."</strong>A router-level VPN only protects devices while they're connected to that specific router. The moment your laptop or phone leaves the house and joins a coffee shop or airport network, the router-level protection doesn't travel with it, you're back to needing a device-level VPN app for protection on the go.</p>
 </div>
 
 <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
-  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Myth 4: "A VPN router will always slow down my whole household's internet noticeably."</strong> It depends heavily on the router's processing power and the VPN protocol in use, not on router-level VPNs as a category. A capable router running a modern, lean protocol can keep the slowdown small enough that most households don't notice it in daily use. A budget router running an older protocol is a different story.</p>
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Myth 4: "A VPN router will always slow down my whole household's internet noticeably."</strong>It depends heavily on the router's processing power and the VPN protocol in use, not on router-level VPNs as a category. A capable router running a modern, lean protocol can keep the slowdown small enough that most households don't notice it in daily use. A budget router running an older protocol is a different story.</p>
 </div>
 
 <div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
-  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Myth 5: "Smart home devices don't send enough data to matter."</strong> Individually, maybe not. Collectively, a modern smart home generates a near-constant stream of traffic to manufacturer servers, usage patterns, voice snippets, video footage, sensor data, and most of it happens without the household actively thinking about it in the moment. The cumulative picture is a lot more revealing than any single device's traffic in isolation.</p>
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Myth 5: "Smart home devices don't send enough data to matter."</strong>Individually, maybe not. Collectively, a modern smart home generates a near-constant stream of traffic to manufacturer servers, usage patterns, voice snippets, video footage, sensor data, and most of it happens without the household actively thinking about it in the moment. The cumulative picture is a lot more revealing than any single device's traffic in isolation.</p>
 </div>
 
 <h2 id="section-12" style="font-size: 1.85rem; font-weight: 800; color: #0F172A; margin: 36px 0 18px 0; font-family: 'Lato', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">How to choose a router-VPN-ready provider</h2>
@@ -387,28 +366,25 @@ pillar: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">The router-VPN provider checklist:</p>
 
-<ul class="takeaways-list-24obs" style="list-style: none !important; margin: 0 0 20px 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Published, current router setup documentation:</strong> Not just a generic app download page, but actual configuration details for router-level use, ideally with guides for popular router platforms and firmware.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>A modern, efficient protocol like WireGuard:</strong> Since the processing efficiency matters more at the router level than for a single device.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Reasonable device-count policies:</strong> A router-level setup effectively means every device on your network counts against your plan's device limit from the VPN provider's perspective in some pricing models, look for a plan structure that doesn't penalize this.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>A specific, checkable no-logs policy:</strong> Since router-level use means the provider is now positioned to see traffic patterns for your entire household, not just one device, making the trustworthiness of that policy more important, not less.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Responsive support for setup issues:</strong> Router configuration has more moving parts than app installation, and a provider with genuinely helpful documentation and support for this specific use case saves real frustration.</span>
-  </li>
-</ul>
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Published, current router setup documentation</strong>Not just a generic app download page, but actual configuration details for router-level use, ideally with guides for popular router platforms and firmware.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">A modern, efficient protocol like WireGuard</strong>Since the processing efficiency matters more at the router level than for a single device.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Reasonable device-count policies</strong>A router-level setup effectively means every device on your network counts against your plan's device limit from the VPN provider's perspective in some pricing models, look for a plan structure that doesn't penalize this.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">A specific, checkable no-logs policy</strong>Since router-level use means the provider is now positioned to see traffic patterns for your entire household, not just one device, making the trustworthiness of that policy more important, not less.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Responsive support for setup issues</strong>Router configuration has more moving parts than app installation, and a provider with genuinely helpful documentation and support for this specific use case saves real frustration.</p>
+</div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">If a provider's website mentions router support only in passing, with no actual configuration files or setup guide you can find, that's a sign the feature may be more theoretical than practical for that provider.</p>
 
@@ -416,61 +392,61 @@ pillar: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">We built OllaVPN around the idea that whole-home protection shouldn't require a networking degree. Here's how that shaped the router-level experience specifically:</p>
 
-<ul class="takeaways-list-24obs" style="list-style: none !important; margin: 0 0 20px 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>WireGuard configuration files:</strong> Generated per router, ready to import into supported router firmware without manual credential entry.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Clear, current setup documentation:</strong> For the most common consumer router platforms, kept up to date as firmware and router models change.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>No artificial penalty for whole-home use:</strong> Router-level protection is supported on the Pro and Business plans, sized around real households rather than treating a router as an unusually expensive "device."</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>An always-on kill switch philosophy:</strong> Carried through to router setups, configuration guidance includes how to decide whether your router should fail open or fail closed if the VPN tunnel drops.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Post-quantum-ready hybrid handshake:</strong> On every connection, including router-level tunnels, so the whole household's traffic gets the same future-facing protection, see our <a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; font-weight: 500; text-decoration: underline;">post-quantum cryptography guide</a> for the full explanation.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>In-tunnel DNS by default:</strong> Closing one of the most common leaks in DIY router VPN setups, see our <a href="/blog/what-is-a-dns-leak/" style="color: #DA291C; font-weight: 500; text-decoration: underline;">DNS leak guide</a> for why this matters.</span>
-  </li>
-</ul>
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">WireGuard configuration files</strong>Generated per router, ready to import into supported router firmware without manual credential entry.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Clear, current setup documentation</strong>For the most common consumer router platforms, kept up to date as firmware and router models change.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">No artificial penalty for whole-home use</strong>Router-level protection is supported on the Pro and Business plans, sized around real households rather than treating a router as an unusually expensive "device."</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">An always-on kill switch philosophy</strong>Carried through to router setups, configuration guidance includes how to decide whether your router should fail open or fail closed if the VPN tunnel drops.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Post-quantum-ready hybrid handshake</strong>On every connection, including router-level tunnels, so the whole household's traffic gets the same future-facing protection, see our <a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; font-weight: 500; text-decoration: underline;">post-quantum cryptography guide</a> for the full explanation.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">In-tunnel DNS by default</strong>Closing one of the most common leaks in DIY router VPN setups, see our <a href="/blog/what-is-a-dns-leak/" style="color: #DA291C; font-weight: 500; text-decoration: underline;">DNS leak guide</a> for why this matters.</p>
+</div>
 
 <h2 id="section-14" style="font-size: 1.85rem; font-weight: 800; color: #0F172A; margin: 36px 0 18px 0; font-family: 'Lato', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">Deeper context worth knowing</h2>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">A setup-focused guide like this should leave you understanding not just the how, but the surrounding decisions, what problem this specific approach solves, what it doesn't, and where it fits alongside the rest of a home network's security. A few things worth carrying with you:</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;"><strong>The smart home problem is bigger than any single fix.</strong> Router-level VPN protection addresses traffic confidentiality, encrypting what leaves your network. It doesn't address device-level security flaws, weak default passwords on IoT gadgets, or a manufacturer's own data practices once your traffic reaches their servers. Those are separate, real problems worth addressing on their own terms: strong unique passwords on smart devices, keeping firmware updated, and researching a manufacturer's privacy practices before buying, are all part of the same broader picture.</p>
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">The smart home problem is bigger than any single fix</strong>Router-level VPN protection addresses traffic confidentiality, encrypting what leaves your network. It doesn't address device-level security flaws, weak default passwords on IoT gadgets, or a manufacturer's own data practices once your traffic reaches their servers. Those are separate, real problems worth addressing on their own terms: strong unique passwords on smart devices, keeping firmware updated, and researching a manufacturer's privacy practices before buying, are all part of the same broader picture.</p>
+</div>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;"><strong>Network segmentation is a complementary, not competing, tool.</strong> Many router platforms support a separate "IoT" or "guest" network, isolated from your main devices. This solves a different problem than a VPN does, containing a compromised device rather than encrypting its traffic, and the two approaches work well together rather than being alternatives to each other.</p>
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Network segmentation is a complementary, not competing, tool</strong>Many router platforms support a separate "IoT" or "guest" network, isolated from your main devices. This solves a different problem than a VPN does, containing a compromised device rather than encrypting its traffic, and the two approaches work well together rather than being alternatives to each other.</p>
+</div>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;"><strong>Hardware capability sets the ceiling.</strong> No VPN provider, however well engineered, can make a severely underpowered router handle whole-home encryption without a speed cost. If router-level protection matters enough to your household, it's worth budgeting for a router genuinely capable of the job, rather than assuming any router will do.</p>
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Hardware capability sets the ceiling</strong>No VPN provider, however well engineered, can make a severely underpowered router handle whole-home encryption without a speed cost. If router-level protection matters enough to your household, it's worth budgeting for a router genuinely capable of the job, rather than assuming any router will do.</p>
+</div>
 
 <h3 style="font-size: 1.35rem; font-weight: 700; color: #0F172A; margin: 24px 0 14px 0; font-family: 'Lato', sans-serif;">How this connects to OllaVPN specifically</h3>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">If you've read this far, you probably want to know how this applies to OllaVPN's product specifically. The short version:</p>
 
-<ul class="takeaways-list-24obs" style="list-style: none !important; margin: 0 0 20px 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Direct solutions:</strong> If the concern above is something router-level VPN protection directly solves (encrypting traffic for devices that can't run their own VPN app, covering an entire household from one connection point), OllaVPN supports this with WireGuard-based router configuration, published setup documentation, and no artificial device-count penalty on the Pro and Business plans. Read the technology page for the full architecture.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Partial protections:</strong> If the concern above is something a router-level VPN only partially helps with (overall smart-home security, device-level vulnerabilities, manufacturer data practices), OllaVPN does what a VPN honestly can, encrypting the traffic in transit, and we're upfront that it isn't a substitute for device hygiene, strong passwords, or researching a smart device manufacturer's own practice before buying.</span>
-  </li>
-  <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;">
-    <span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span>
-    <span><strong>Local boundaries:</strong> If the concern above is something a router-level VPN doesn't address at all (isolating compromised devices from each other on your local network, physical security of devices in your home), we say so plainly. That's a network segmentation and device-security conversation, not a VPN conversation, and treating a VPN as a complete answer to smart-home security would be overselling what it does.</span>
-  </li>
-</ul>
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Direct solutions</strong>If the concern above is something router-level VPN protection directly solves (encrypting traffic for devices that can't run their own VPN app, covering an entire household from one connection point), OllaVPN supports this with WireGuard-based router configuration, published setup documentation, and no artificial device-count penalty on the Pro and Business plans. Read the technology page for the full architecture.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Partial protections</strong>If the concern above is something a router-level VPN only partially helps with (overall smart-home security, device-level vulnerabilities, manufacturer data practices), OllaVPN does what a VPN honestly can, encrypting the traffic in transit, and we're upfront that it isn't a substitute for device hygiene, strong passwords, or researching a smart device manufacturer's own practice before buying.</p>
+</div>
+
+<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: block !important; margin-bottom: 6px !important;">Local boundaries</strong>If the concern above is something a router-level VPN doesn't address at all (isolating compromised devices from each other on your local network, physical security of devices in your home), we say so plainly. That's a network segmentation and device-security conversation, not a VPN conversation, and treating a VPN as a complete answer to smart-home security would be overselling what it does.</p>
+</div>
 
 <div class="faq-lightbox-container" style="background: #FBFBFC; border: 1.5px solid #E2E8F0; border-radius: 16px; padding: 28px 24px; margin: 36px 0 28px 0; box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03);">
   <h2 style="font-size: 1.65rem; font-weight: 800; color: #0F172A; margin: 0 0 20px 0; font-family: 'Lato', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">Frequently Asked Questions</h2>
@@ -517,26 +493,10 @@ pillar: false
 
   <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 10px; margin-bottom: 12px; background: #FFFFFF; overflow: hidden; padding: 14px 18px;">
     <summary style="font-weight: 700; color: #0F172A; font-size: 1.05rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; font-family: 'Lato', sans-serif;">
-      <span>Does a router VPN protect smart devices from being hacked?</span>
+      <span>What is policy-based routing, and why does it matter?</span>
       <span style="color: #DA291C; font-size: 1.2rem; font-weight: bold;">+</span>
     </summary>
-    <p style="margin: 12px 0 0 0; font-size: 1rem; line-height: 1.68; color: #334155; font-family: 'Lato', sans-serif;">No, that's a different problem. A router-level VPN encrypts traffic in transit between your home network and the internet. It doesn't fix security vulnerabilities in a device itself, doesn't stop a device with weak default credentials from being compromised, and doesn't isolate devices from each other on your local network. Those require separate measures like strong passwords, firmware updates, and network segmentation.</p>
-  </details>
-
-  <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 10px; margin-bottom: 12px; background: #FFFFFF; overflow: hidden; padding: 14px 18px;">
-    <summary style="font-weight: 700; color: #0F172A; font-size: 1.05rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; font-family: 'Lato', sans-serif;">
-      <span>Can I exclude specific devices from the router VPN?</span>
-      <span style="color: #DA291C; font-size: 1.2rem; font-weight: bold;">+</span>
-    </summary>
-    <p style="margin: 12px 0 0 0; font-size: 1rem; line-height: 1.68; color: #334155; font-family: 'Lato', sans-serif;">Usually, yes. Most router VPN setups worth using support policy-based routing, letting you selectively exclude specific devices from the tunnel while everything else stays protected. This is common for local-network-dependent devices, latency-sensitive devices like game consoles, or devices that already run their own separate VPN.</p>
-  </details>
-
-  <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 10px; margin-bottom: 12px; background: #FFFFFF; overflow: hidden; padding: 14px 18px;">
-    <summary style="font-weight: 700; color: #0F172A; font-size: 1.05rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; font-family: 'Lato', sans-serif;">
-      <span>Is setting up a VPN on a router difficult?</span>
-      <span style="color: #DA291C; font-size: 1.2rem; font-weight: bold;">+</span>
-    </summary>
-    <p style="margin: 12px 0 0 0; font-size: 1rem; line-height: 1.68; color: #334155; font-family: 'Lato', sans-serif;">It depends on your router. If your router natively supports VPN client configuration, the process is closer to a settings-page task than a technical project. If it doesn't, and you need to flash third-party firmware to add support, that's a meaningfully more involved and riskier process, with real potential to misconfigure the router if done carelessly.</p>
+    <p style="margin: 12px 0 0 0; font-size: 1rem; line-height: 1.68; color: #334155; font-family: 'Lato', sans-serif;">Policy-based routing lets you specify which devices on your network use the VPN tunnel and which use your normal internet connection directly. This is useful for excluding bandwidth-heavy or latency-sensitive devices (like gaming consoles or 4K streaming boxes) or devices with their own separate VPN already running.</p>
   </details>
 
   <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 10px; margin-bottom: 12px; background: #FFFFFF; overflow: hidden; padding: 14px 18px;">
@@ -544,46 +504,56 @@ pillar: false
       <span>What happens if the router VPN connection drops?</span>
       <span style="color: #DA291C; font-size: 1.2rem; font-weight: bold;">+</span>
     </summary>
-    <p style="margin: 12px 0 0 0; font-size: 1rem; line-height: 1.68; color: #334155; font-family: 'Lato', sans-serif;">It depends on how the router is configured. Some setups "fail open," letting devices fall back to an unprotected direct connection if the VPN drops. Others "fail closed," cutting off internet access entirely until the VPN reconnects. Understanding which behavior your setup uses, and choosing the one you'd actually want, is worth doing during setup, not after a problem happens.</p>
+    <p style="margin: 12px 0 0 0; font-size: 1rem; line-height: 1.68; color: #334155; font-family: 'Lato', sans-serif;">Depending on your router's configuration, it either "fails open" (devices continue using the internet unprotected) or "fails closed" (devices lose internet access until the VPN reconnects, acting as a network-wide kill switch). You should choose the behavior that matches your household's privacy priorities.</p>
   </details>
 
-  <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 10px; margin-bottom: 0; background: #FFFFFF; overflow: hidden; padding: 14px 18px;">
+  <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 10px; margin-bottom: 12px; background: #FFFFFF; overflow: hidden; padding: 14px 18px;">
     <summary style="font-weight: 700; color: #0F172A; font-size: 1.05rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; font-family: 'Lato', sans-serif;">
-      <span>Does OllaVPN support router-level VPN setup?</span>
+      <span>Can a router VPN protect my smart home devices from being hacked locally?</span>
       <span style="color: #DA291C; font-size: 1.2rem; font-weight: bold;">+</span>
     </summary>
-    <p style="margin: 12px 0 0 0; font-size: 1rem; line-height: 1.68; color: #334155; font-family: 'Lato', sans-serif;">Yes. OllaVPN provides WireGuard-based router configuration and setup documentation on its Pro and Business plans, without an artificial penalty for covering a whole household.</p>
+    <p style="margin: 12px 0 0 0; font-size: 1rem; line-height: 1.68; color: #334155; font-family: 'Lato', sans-serif;">No. A router VPN encrypts traffic leaving your network for the internet; it does not isolate devices on your local Wi-Fi from each other. Local protection requires network segmentation, such as placing IoT devices on a dedicated guest or VLAN network.</p>
+  </details>
+
+  <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 10px; margin-bottom: 12px; background: #FFFFFF; overflow: hidden; padding: 14px 18px;">
+    <summary style="font-weight: 700; color: #0F172A; font-size: 1.05rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; font-family: 'Lato', sans-serif;">
+      <span>How does a dedicated secondary VPN router work?</span>
+      <span style="color: #DA291C; font-size: 1.2rem; font-weight: bold;">+</span>
+    </summary>
+    <p style="margin: 12px 0 0 0; font-size: 1rem; line-height: 1.68; color: #334155; font-family: 'Lato', sans-serif;">Instead of replacing or modifying your existing primary router, you connect a second VPN-capable router to it. Devices connected to the second router go through the VPN, while devices connected to the main router use the standard internet connection. This avoids compatibility issues with ISP-provided modems.</p>
+  </details>
+
+  <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 10px; margin-bottom: 12px; background: #FFFFFF; overflow: hidden; padding: 14px 18px;">
+    <summary style="font-weight: 700; color: #0F172A; font-size: 1.05rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; font-family: 'Lato', sans-serif;">
+      <span>Does OllaVPN support router-level setup?</span>
+      <span style="color: #DA291C; font-size: 1.2rem; font-weight: bold;">+</span>
+    </summary>
+    <p style="margin: 12px 0 0 0; font-size: 1rem; line-height: 1.68; color: #334155; font-family: 'Lato', sans-serif;">Yes. OllaVPN provides pre-configured WireGuard configuration files and detailed setup guides for major router platforms on Pro and Business plans, with in-tunnel DNS and post-quantum hybrid protection built in by default.</p>
   </details>
 </div>
 
-<div class="wrapping-lightbox" style="background: #FFF5F5 !important; border-left: 4px solid #DA291C !important; border-radius: 8px !important; padding: 24px 26px !important; margin: 36px 0 32px 0 !important; box-shadow: 0 2px 10px rgba(218, 41, 28, 0.04) !important;">
-  <h2 style="font-size: 1.75rem; font-weight: 800; margin: 0 0 12px 0; color: #DA291C !important; border: none !important; padding-bottom: 0 !important; text-align: center !important; font-family: 'Lato', sans-serif !important;">Wrapping It Up</h2>
-  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.04rem !important; font-family: 'Lato', sans-serif !important;">Running a VPN on your router transforms your home network security from a fragmented device-by-device chore into a unified, automatic protective blanket. By shifting encryption to the network perimeter, smart TVs, IoT sensors, gaming consoles, and smart speakers are shielded without needing native software apps. When paired with policy-based routing to bypass latency-sensitive gear and device-level apps for travel, a router VPN offers the ultimate whole-household privacy architecture.</p>
+
+<div class="wrapping-up-box" style="background: #FFF5F5 !important; border: 1.5px solid #FED7D7 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 24px 26px !important; margin: 36px 0 28px 0 !important; box-shadow: 0 4px 16px rgba(218, 41, 28, 0.05) !important;">
+  <h2 style="font-size: 1.45rem !important; font-weight: 800 !important; color: #DA291C !important; margin: 0 0 12px 0 !important; font-family: 'Lato', sans-serif !important; text-align: center !important; letter-spacing: 0.01em !important;">Wrapping It Up</h2>
+  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;">Setting up a VPN on your router gives every device on your home Wi-Fi immediate, always-on encryption without requiring dedicated software on each phone, smart TV, or IoT gadget. While it demands a capable router and a small speed trade-off, combining router-level coverage at home with device-level apps when traveling offers complete digital privacy across every environment.</p>
 </div>
 
-<div class="cta-banner" style="background: #30475E; border-radius: 12px; padding: 32px 28px; margin: 40px 0; text-align: center; color: #FFFFFF;">
-  <h3 style="color: #FFFFFF; font-size: 1.6rem; font-weight: 800; margin: 0 0 12px 0; font-family: 'Lato', sans-serif;">Protect Your Entire Home Network with OllaVPN</h3>
-  <p style="color: #E2E8F0; font-size: 1.05rem; line-height: 1.65; max-width: 600px; margin: 0 auto 24px auto; font-family: 'Lato', sans-serif;">Download WireGuard-ready router configuration files, secure every IoT device in your household, and enjoy zero-log privacy across all your connected hardware.</p>
-  <a href="/apps.html" style="display: inline-block; background: #DA291C; color: #FFFFFF; font-weight: 700; font-size: 1.05rem; padding: 14px 32px; border-radius: 8px; text-decoration: none; transition: background 0.2s ease;">Get OllaVPN for Router</a>
+<div class="article-cta-box" style="background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); border-radius: 16px; padding: 36px 32px; margin: 40px 0; text-align: center; color: #FFFFFF; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.15);">
+  <h3 style="font-size: 1.6rem; font-weight: 800; margin: 0 0 12px 0; color: #FFFFFF; font-family: 'Lato', sans-serif;">Ready for whole-home privacy?</h3>
+  <p style="font-size: 1.05rem; line-height: 1.65; color: #94A3B8; max-width: 600px; margin: 0 auto 24px auto;">Protect all your smart TVs, game consoles, and IoT devices with OllaVPN router configuration files and quantum-resistant encryption.</p>
+  <a href="/pricing/" style="display: inline-block; background: #DA291C; color: #FFFFFF; font-weight: 700; font-size: 1.05rem; padding: 14px 32px; border-radius: 8px; text-decoration: none; transition: background 0.2s ease; font-family: 'Lato', sans-serif;">Get OllaVPN for Your Router &rarr;</a>
 </div>
 
-<div class="related-posts" style="margin-top: 48px; border-top: 2px solid #F1F5F9; padding-top: 32px;">
-  <h3 style="font-size: 1.45rem; font-weight: 800; color: #0F172A; margin-bottom: 20px; font-family: 'Lato', sans-serif;">Related Research & Guides</h3>
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
-    <a href="/blog/what-is-a-vpn-and-how-does-it-work/" style="display: block; border: 1px solid #E2E8F0; border-radius: 10px; padding: 18px; text-decoration: none; background: #FFFFFF; transition: transform 0.2s ease, box-shadow 0.2s ease;">
-      <span style="font-size: 0.85rem; color: #DA291C; font-weight: 700; text-transform: uppercase;">VPN Basics</span>
-      <h4 style="font-size: 1.08rem; font-weight: 700; color: #0F172A; margin: 8px 0; line-height: 1.4;">What is a VPN and How Does It Work?</h4>
-      <p style="font-size: 0.92rem; color: #64748B; margin: 0; line-height: 1.5;">The complete beginner's guide to encrypted tunneling and network privacy.</p>
-    </a>
-    <a href="/blog/best-vpn-for-smart-tv/" style="display: block; border: 1px solid #E2E8F0; border-radius: 10px; padding: 18px; text-decoration: none; background: #FFFFFF; transition: transform 0.2s ease, box-shadow 0.2s ease;">
-      <span style="font-size: 0.85rem; color: #DA291C; font-weight: 700; text-transform: uppercase;">Streaming</span>
-      <h4 style="font-size: 1.08rem; font-weight: 700; color: #0F172A; margin: 8px 0; line-height: 1.4;">Best Free VPN for Smart TV in 2026</h4>
-      <p style="font-size: 0.92rem; color: #64748B; margin: 0; line-height: 1.5;">How to set up VPN protection and unblock streams on smart televisions.</p>
-    </a>
-    <a href="/blog/how-to-set-up-wireguard-on-linux/" style="display: block; border: 1px solid #E2E8F0; border-radius: 10px; padding: 18px; text-decoration: none; background: #FFFFFF; transition: transform 0.2s ease, box-shadow 0.2s ease;">
-      <span style="font-size: 0.85rem; color: #DA291C; font-weight: 700; text-transform: uppercase;">WireGuard Setup</span>
-      <h4 style="font-size: 1.08rem; font-weight: 700; color: #0F172A; margin: 8px 0; line-height: 1.4;">How to Set Up WireGuard on Linux</h4>
-      <p style="font-size: 0.92rem; color: #64748B; margin: 0; line-height: 1.5;">Step-by-step configuration guide for high-speed WireGuard tunnels.</p>
-    </a>
-  </div>
+<div class="related-posts" style="margin: 40px 0 20px 0; padding-top: 24px; border-top: 2px solid #F1F5F9;">
+  <h3 style="font-size: 1.35rem; font-weight: 800; color: #0F172A; margin-bottom: 20px; font-family: 'Lato', sans-serif;">Related Reading</h3>
+  <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+    <li style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 10px; padding: 16px 20px;">
+      <a href="/blog/what-is-a-dns-leak/" style="color: #DA291C; font-weight: 700; text-decoration: none; font-size: 1.02rem; display: block; margin-bottom: 6px;">What Is a DNS Leak? &rarr;</a>
+      <p style="margin: 0; font-size: 0.92rem; color: #64748B; line-height: 1.5;">Learn how unencrypted DNS queries expose your browsing habits even when using a VPN.</p>
+    </li>
+    <li style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 10px; padding: 16px 20px;">
+      <a href="/blog/what-is-post-quantum-cryptography/" style="color: #DA291C; font-weight: 700; text-decoration: none; font-size: 1.02rem; display: block; margin-bottom: 6px;">What Is Post-Quantum Cryptography? &rarr;</a>
+      <p style="margin: 0; font-size: 0.92rem; color: #64748B; line-height: 1.5;">Why quantum computing poses a threat to standard encryption and how hybrid handshakes protect you.</p>
+    </li>
+  </ul>
 </div>
