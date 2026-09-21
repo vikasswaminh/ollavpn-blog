@@ -264,36 +264,6 @@ category: 'guides'
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">"Guaranteed Netflix unblock" marketing claims, as a category. We're deliberately not naming or ranking providers by streaming-unblock claims in this guide, because those claims have a shelf life measured in weeks, not years, as platforms update detection. A guide that ranks VPNs by a screenshot taken on one specific day is out of date by the time you read it, testing your own server, on your own night, per the checks above, is the only claim that holds up.</p>
 
-<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
-  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Key Checklist:</strong> Key takeaways</p>
-</div>
-
-<h2 id="what-to-remember-from-this-guide" style="font-size: 1.85rem; font-weight: 800; color: #0F172A; margin: 36px 0 18px 0; font-family: \'Lato\', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">What to remember from this guide</h2>
-
-<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
-  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Security Check:</strong> Smart TV platforms are more locked-down than phones, app store selection is thin, and streaming apps are specifically hardened to detect VPN traffic</p>
-</div>
-
-<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
-  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Security Check:</strong> A VPN reliably gives you privacy and IP protection on your TV; it unreliably gives you access to other regions' streaming catalogs, because detection changes constantly</p>
-</div>
-
-<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
-  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Security Check:</strong> Sideloading an APK is possible but risky, only ever use the VPN provider's own official download page, never third-party repositories</p>
-</div>
-
-<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
-  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Security Check:</strong> A router-level VPN is the better option for TVs that don't support native VPN apps, and it also bypasses per-device connection limits</p>
-</div>
-
-<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
-  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Security Check:</strong> 4K streaming needs roughly 25 Mbps sustained through the VPN; HD (1080p) needs only 5 to 10 Mbps</p>
-</div>
-
-<div class="step-highlight-card" style="background: #FFFFFF !important; border: 1.5px solid #E2E8F0 !important; border-left: 5px solid #DA291C !important; border-radius: 14px !important; padding: 18px 22px !important; margin: 16px 0 !important; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important; box-sizing: border-box !important; width: 100% !important;">
-  <p style="margin: 0 !important; line-height: 1.72 !important; color: #1E293B !important; font-size: 1.02rem !important; font-family: 'Lato', sans-serif !important;"><strong style="color: #DA291C !important; font-weight: 800 !important; font-size: 1.05rem !important; display: inline-block !important; margin-right: 6px !important;">Security Check:</strong> A <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; font-weight: 500; text-decoration: underline;">kill switch</a> that's on by default matters more on a TV than almost any other device, because TVs run for hours unattended</p>
-</div>
-
 </div>
 
 <section id="faqs" class="blog-main-content-box" style="margin-top: 36px; margin-bottom: 32px; scroll-margin-top: 80px; padding: 26px 30px; background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.04);">
