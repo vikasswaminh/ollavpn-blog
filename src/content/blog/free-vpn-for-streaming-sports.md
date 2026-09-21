@@ -16,15 +16,9 @@ tags: ['streaming']
 <section id="takeaways" class="article-takeaways-box" style="margin-bottom: 36px; padding: 24px 28px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
   <h2 style="font-size: 1.25rem; font-weight: 700; color: #DA291C; margin-top: 0; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.05em;">KEY TAKEAWAYS</h2>
   <ul class="takeaways-list-24obs" style="list-style: none !important; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
-    <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>&bull;
-      
-        OllaVPN Free gives you: 10 Mbps speed, unlimited data, and full access to every global server country, with zero account sign-up and no credit card required.</span></li>
-    <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>&bull;
-      
-        No monetization through user data: Most sports VPNs inject ads or resell bandwidth. OllaVPN is sustained entirely by optional $2/mo Plus subscribers, keeping your viewing habits strictly private.</span></li>
-    <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>&bull;
-      
-        10 Mbps covers live HD streams: 10 Mbps comfortably handles single-device live HD sports. If you need 4K streaming or multiple simultaneous devices, OllaVPN Plus upgrades you to 10 Gbps across 5 devices.</span></li>
+    <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>OllaVPN Free gives you: 10 Mbps speed, unlimited data, and full access to every global server country, with zero account sign-up and no credit card required.</span></li>
+    <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>No monetization through user data: Most sports VPNs inject ads or resell bandwidth. OllaVPN is sustained entirely by optional $2/mo Plus subscribers, keeping your viewing habits strictly private.</span></li>
+    <li style="display: flex; align-items: flex-start; gap: 10px; color: #1E293B; font-size: 1.02rem; line-height: 1.68; margin: 0; padding: 0;"><span class="takeaway-bullet" style="color: #DA291C; font-weight: 800; font-size: 1.25rem; line-height: 1.35; flex-shrink: 0;">&bull;</span><span>10 Mbps covers live HD streams: 10 Mbps comfortably handles single-device live HD sports. If you need 4K streaming or multiple simultaneous devices, OllaVPN Plus upgrades you to 10 Gbps across 5 devices.</span></li>
   </ul>
 </section>
 
