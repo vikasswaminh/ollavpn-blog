@@ -1,6 +1,6 @@
 ---
 title: 'How Public Wi‑Fi Can Steal Your Passwords (2026 Guide)'
-description: 'Public Wi‑Fi networks — coffee shops, airports, hotels, libraries — are inherently open. Without encryption between your device and the websites you visit, anyone on the same network can see the data you send and receive...'
+description: 'Public Wi‑Fi networks, coffee shops, airports, hotels, libraries, are inherently open. Without encryption between your device and the websites you visit, anyone on the same network can see the data you send and receive...'
 pubDate: 2026-06-01
 author: Vikas Swami
 tags: ['pillars']
@@ -403,7 +403,7 @@ tags: ['pillars']
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Most video streaming and web traffic uses Variable Bitrate (VBR).</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">The Pattern: Loading a specific page on Wikipedia creates a very specific "fingerprint" of data bursts (e.g., a 2MB burst, followed by three 50KB bursts).</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">The Pattern: Loading a specific page on Wikipedia creates a very specific "fingerprint" of data bursts (e.g. a 2MB burst, followed by three 50KB bursts).</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">The Attack: An attacker on the Wi‑Fi can compare your encrypted "burst pattern" against a database of known website fingerprints. They don't need to decrypt the data to know you are looking at a specific medical page or a competitor's website.</p>
 

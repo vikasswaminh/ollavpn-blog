@@ -145,7 +145,7 @@ pillar: false
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">2023–2025:</strong> IPv6 adoption crosses major global thresholds, with a large and steadily growing share of worldwide internet traffic now IPv6-based according to major network operators' own reporting, making IPv6 handling an increasingly unavoidable requirement rather than a niche feature for any VPN serious about privacy claims.
+  <strong style="color: #0F172A; font-weight: 800;">2023 to 2025:</strong> IPv6 adoption crosses major global thresholds, with a large and steadily growing share of worldwide internet traffic now IPv6-based according to major network operators' own reporting, making IPv6 handling an increasingly unavoidable requirement rather than a niche feature for any VPN serious about privacy claims.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
@@ -168,7 +168,7 @@ pillar: false
 </ul>
 
 
-## Does This Actually Matter for You ?
+## Does This Actually Matter for You?
 
 
 <div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">

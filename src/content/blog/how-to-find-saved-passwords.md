@@ -1,6 +1,6 @@
 ---
 title: 'How to Find Saved Passwords on Your Device: A Quick Guide'
-description: 'Lost track of a saved password? Don''t worry, you can almost always find it directly within your web browser''s settings or your device''s system settings. Whether you''re using Chrome, Firefox, Edge, Safari,...'
+description: 'Lost track of a saved password? Don''t worry, you can almost always find it directly within your web browser''s settings or your device''s system settings. Whether you''re using Chrome, Firefox, Edge, Safari...'
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['privacy-security']
@@ -8,7 +8,7 @@ tags: ['privacy-security']
 
 <section id="tldr" class="article-tldr-box" style="margin-bottom: 28px; padding: 24px; background: #EFEFF0; border: 1px solid #E2E8F0; border-left: 5px solid #DA291C; border-radius: 0 12px 12px 0;">
   <h2 style="font-size: 1.35rem; font-weight: 800; color: #0F172A; margin-top: 0; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.04em; font-family: 'Lato', sans-serif;">TL;DR</h2>
-  <p style="margin-bottom: 12px; line-height: 1.75; color: #1E293B; font-size: 1.05rem;">Lost track of a saved password? Dont worry, you can almost always find it directly within your web browsers settings or your devices system settings. Whether youre using Chrome, Firefox, Edge, Safari,... OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard encryption</a> with audited zero activity logging across all devices.</p>
+  <p style="margin-bottom: 12px; line-height: 1.75; color: #1E293B; font-size: 1.05rem;">Lost track of a saved password? Dont worry, you can almost always find it directly within your web browsers settings or your devices system settings. Whether youre using Chrome, Firefox, Edge, Safari... OllaVPN delivers high-throughput, quantum-resilient <a href="/blog/wireguard-vs-openvpn/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">WireGuard encryption</a> with audited zero activity logging across all devices.</p>
 </section>
 
 <section id="takeaways" class="article-takeaways-box" style="margin-bottom: 32px; padding: 24px 28px; background: #EFEFF0; border: 1px solid #E2E8F0; border-left: 5px solid #DA291C; border-radius: 0 12px 12px 0;">

@@ -56,7 +56,7 @@ tags: ['comparisons']
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Monetization | Ads, data brokering, or both | Upgrade revenue / mission-funded | Subscription</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Server selection | Very limited (1–5 locations) | Limited but functional | Full network</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Server selection | Very limited (1 to 5 locations) | Limited but functional | Full network</p>
 
 <a href="/blog/what-is-a-vpn-kill-switch/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">Kill switch</a> | Rarely included | Yes | Yes
 

@@ -1,6 +1,6 @@
 ---
 title: 'What''s the Best Free VPN for Chrome in 2024? (Hint: It''s Us.)'
-description: 'You''re looking for a free VPN for Chrome that actually works and doesn''t betray your trust. OllaVPN Free gives you 10 Mbps speed, access to every country in our network, and strong post-quantum-ready encryption, ...'
+description: 'You''re looking for a free VPN for Chrome that actually works and doesn''t betray your trust. OllaVPN Free gives you 10 Mbps speed, access to every country in our network, and strong post-quantum-ready encryption...'
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['buyer-guides']
@@ -8,7 +8,7 @@ tags: ['buyer-guides']
 
 <section id="tldr" class="article-tldr-box" style="margin-bottom: 28px; padding: 24px; background: #EFEFF0; border: 1px solid #E2E8F0; border-left: 5px solid #DA291C; border-radius: 0 12px 12px 0;">
   <h2 style="font-size: 1.35rem; font-weight: 800; color: #0F172A; margin-top: 0; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.04em; font-family: 'Lato', sans-serif;">TL;DR</h2>
-  <p style="margin-bottom: 12px; line-height: 1.75; color: #1E293B; font-size: 1.05rem;">Youre looking for a free VPN for Chrome that actually works and doesnt betray your trust. OllaVPN Free gives you 10 Mbps speed, access to every country in our network, and strong post-quantum-ready encryption, ... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.</p>
+  <p style="margin-bottom: 12px; line-height: 1.75; color: #1E293B; font-size: 1.05rem;">Youre looking for a free VPN for Chrome that actually works and doesnt betray your trust. OllaVPN Free gives you 10 Mbps speed, access to every country in our network, and strong post-quantum-ready encryption... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.</p>
 </section>
 
 <section id="takeaways" class="article-takeaways-box" style="margin-bottom: 32px; padding: 24px 28px; background: #EFEFF0; border: 1px solid #E2E8F0; border-left: 5px solid #DA291C; border-radius: 0 12px 12px 0;">

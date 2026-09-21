@@ -43,7 +43,7 @@ tags: ['how-to-guides', 'wireguard', 'troubleshooting']
 2. **Launch the VPN connection:** Attempt to reconnect to OllaVPN over cellular data.
 3. **Analyze the outcome:** If the VPN connects instantly and loads websites smoothly over cellular data, your VPN provider and credentials are working perfectly. The local Wi-Fi router or enterprise firewall is actively filtering VPN handshakes.</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">---</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">-</p>
 
 
 ## What's the most common cause of a blocked VPN, and what's the 30-second fix?
@@ -70,7 +70,7 @@ tags: ['how-to-guides', 'wireguard', 'troubleshooting']
 <div class="step-highlight-card" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-left: 4px solid #DA291C; border-radius: 12px; padding: 18px 20px; margin-bottom: 16px;">
   <strong style="color: #DA291C; font-size: 1.05rem; display: block; margin-bottom: 6px;">2. Cycle to an Alternative Server Endpoint</strong>
   <p style="margin: 0; color: #334155; font-size: 0.95rem; line-height: 1.65;">
-    Some commercial firewalls (e.g., Fortinet, Palo Alto, Cisco Meraki) maintain lists of known VPN server IP addresses. Open the server location picker and select a different exit city or server cluster within the same country to route through an unflagged IP address.
+    Some commercial firewalls (e.g. Fortinet, Palo Alto, Cisco Meraki) maintain lists of known VPN server IP addresses. Open the server location picker and select a different exit city or server cluster within the same country to route through an unflagged IP address.
   </p>
 </div>
 
@@ -81,7 +81,7 @@ tags: ['how-to-guides', 'wireguard', 'troubleshooting']
   </p>
 </div>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">---</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">-</p>
 
 
 ## What should you do if the quick fix didn't work?
@@ -111,7 +111,7 @@ tags: ['how-to-guides', 'wireguard', 'troubleshooting']
 <div class="step-highlight-card" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-left: 4px solid #DA291C; border-radius: 12px; padding: 18px 20px; margin-bottom: 16px;">
   <strong style="color: #DA291C; font-size: 1.05rem; display: block; margin-bottom: 6px;">Step 3: Check for Device Firewall or Antivirus Conflicts</strong>
   <p style="margin: 0; color: #334155; font-size: 0.95rem; line-height: 1.65;">
-    Third-party security suites (e.g., Avast, Norton, McAfee, Bitdefender) frequently block virtual network adapters created by WireGuard. Check your local firewall settings to confirm that OllaVPN's network interface (Wintun on Windows or utun on macOS) is granted full network permissions.
+    Third-party security suites (e.g. Avast, Norton, McAfee, Bitdefender) frequently block virtual network adapters created by WireGuard. Check your local firewall settings to confirm that OllaVPN's network interface (Wintun on Windows or utun on macOS) is granted full network permissions.
   </p>
 </div>
 
@@ -122,7 +122,7 @@ tags: ['how-to-guides', 'wireguard', 'troubleshooting']
   </p>
 </div>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">---</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">-</p>
 
 
 ## Why does this specific problem happen with VPNs?
@@ -158,7 +158,7 @@ tags: ['how-to-guides', 'wireguard', 'troubleshooting']
   </p>
 </div>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">---</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">-</p>
 
 
 ## How can you prevent your VPN from being blocked again?
@@ -171,12 +171,9 @@ tags: ['how-to-guides', 'wireguard', 'troubleshooting']
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">**You can prevent future network blocks by configuring stealth protocols, avoiding static endpoints, and ensuring your client employs obfuscated tunneling.**</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">To maintain continuous connectivity across restrictive networks:
-- **Enable QUIC / Stealth Mode by Default:** Configure your client to use obfuscated QUIC transport whenever connecting to untrusted public or institutional Wi-Fi.
-- **Maintain Fallback Server Locations:** Bookmark server clusters in neutral neighboring jurisdictions (e.g., Switzerland, Iceland, Frankfurt) that feature high-capacity, unthrottled routing.
-- **Keep Your App Updated:** Regular client updates rotate server domain names and routing keys to stay ahead of automated firewall blacklists.</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">To maintain continuous connectivity across restrictive networks: **Enable QUIC / Stealth Mode by Default:** Configure your client to use obfuscated QUIC transport whenever connecting to untrusted public or institutional Wi-Fi. **Maintain Fallback Server Locations:** Bookmark server clusters in neutral neighboring jurisdictions (e.g. Switzerland, Iceland, Frankfurt) that feature high-capacity, unthrottled routing. **Keep Your App Updated:** Regular client updates rotate server domain names and routing keys to stay ahead of automated firewall blacklists.</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">---</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">-</p>
 
 
 ## What other issues might you be experiencing that are related to VPN blocking?
@@ -189,12 +186,9 @@ tags: ['how-to-guides', 'wireguard', 'troubleshooting']
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">**VPN blocking rarely presents as a clean error message; it frequently mimics slow internet, packet loss, or application crashes.**</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">When a firewall partially filters VPN traffic, you may experience:
-- **Extreme Latency & Speed Drops:** Firewalls that employ <a href="/blog/vpn-for-avoiding-isp-throttling/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">bandwidth throttling</a> intentionally throttle UDP traffic to 128 kbps, causing video buffering and sluggish page loads.
-- **Random Disconnections Every 5 Minutes:** Stateful firewalls may terminate active UDP sessions if they exceed a configured idle timeout or data quota.
-- **Selective App Failures:** Browsers may load basic websites while communications apps (Zoom, Discord, Slack, WhatsApp) fail because the network selectively blocks VoIP UDP ports.</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">When a firewall partially filters VPN traffic, you may experience: **Extreme Latency & Speed Drops:** Firewalls that employ <a href="/blog/vpn-for-avoiding-isp-throttling/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">bandwidth throttling</a> intentionally throttle UDP traffic to 128 kbps, causing video buffering and sluggish page loads. **Random Disconnections Every 5 Minutes:** Stateful firewalls may terminate active UDP sessions if they exceed a configured idle timeout or data quota. **Selective App Failures:** Browsers may load basic websites while communications apps (Zoom, Discord, Slack, WhatsApp) fail because the network selectively blocks VoIP UDP ports.</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">---</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">-</p>
 
 
 ## When is the problem your VPN provider and not the network?
@@ -202,17 +196,14 @@ tags: ['how-to-guides', 'wireguard', 'troubleshooting']
 
 <div class="answer-card" style="margin-bottom: 24px; padding: 20px 24px; background: #FFF5F5; border-left: 5px solid #DA291C; border-radius: 0 8px 8px 0;">
   <strong style="color: #DA291C; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 8px;">QUICK ANSWER</strong>
-  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">**If connection failures persist across multiple completely independent networks (e.g., home broadband, cellular 5G, and <a href="/blog/how-public-wifi-steals-passwords/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">public Wi-Fi</a>), the issue lies with the VPN provider.**</p>
+  <p style="margin: 0; color: #1E293B; font-size: 1.05rem; line-height: 1.7; font-weight: 500;">**If connection failures persist across multiple completely independent networks (e.g. home broadband, cellular 5G, and <a href="/blog/how-public-wifi-steals-passwords/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">public Wi-Fi</a>), the issue lies with the VPN provider.**</p>
 </div>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">**If connection failures persist across multiple completely independent networks (e.g., home broadband, cellular 5G, and <a href="/blog/how-public-wifi-steals-passwords/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">public Wi-Fi</a>), the issue lies with the VPN provider.**</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">**If connection failures persist across multiple completely independent networks (e.g. home broadband, cellular 5G, and <a href="/blog/how-public-wifi-steals-passwords/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">public Wi-Fi</a>), the issue lies with the VPN provider.**</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Common signs of provider-side infrastructure failure include:
-- **Overloaded Nodes:** Budget or ad-supported VPN services pack thousands of users onto unmetered shared servers, causing massive packet loss and dropped handshakes.
-- **Outdated Cryptographic Protocols:** Services relying on legacy PPTP, L2TP, or un-obfuscated OpenVPN are trivial for modern firewalls to detect and disable.
-- **Unresponsive Customer Support:** When servers go offline or IP addresses get banned by hosting providers, low-tier VPNs take days to deploy fresh endpoints.</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Common signs of provider-side infrastructure failure include: **Overloaded Nodes:** Budget or ad-supported VPN services pack thousands of users onto unmetered shared servers, causing massive packet loss and dropped handshakes. **Outdated Cryptographic Protocols:** Services relying on legacy PPTP, L2TP, or un-obfuscated OpenVPN are trivial for modern firewalls to detect and disable. **Unresponsive Customer Support:** When servers go offline or IP addresses get banned by hosting providers, low-tier VPNs take days to deploy fresh endpoints.</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">---</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">-</p>
 
 
 ## How can you switch to a VPN that handles these blocking scenarios better?
@@ -230,7 +221,7 @@ tags: ['how-to-guides', 'wireguard', 'troubleshooting']
 2. **Verify a Transparent Business Model:** Avoid "free" VPNs funded by adware or user tracking. OllaVPN offers a transparent, ad-free free tier funded entirely by <a href="/pricing.html" class="tldr-highlight-link" style="color: #DA291C; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">OllaVPN Plus</a> subscribers.
 3. **Inspect Logging Policies:** A strict <a href="/blog/what-logs-does-vpn-keep/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">RAM-only no-logs architecture</a> guarantees that even if a server is subpoenaed or inspected, zero user session records exist.</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">---</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">-</p>
 
 
 ## How does OllaVPN specifically help when your VPN is blocked?
@@ -243,12 +234,9 @@ tags: ['how-to-guides', 'wireguard', 'troubleshooting']
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">**OllaVPN integrates next-generation QUIC tunneling and post-quantum encryption to bypass restrictive network firewalls seamlessly.**</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">OllaVPN delivers three architectural advantages that defeat censorship and network blocking:
-- **QUIC / MASQUE Over Port 443:** Disguises your encrypted VPN packets as standard Google/YouTube HTTP/3 traffic, preventing enterprise firewalls from distinguishing your VPN session from normal web activity.
-- **Post-Quantum Cryptography (PQC):** Incorporates hybrid post-quantum key exchange algorithms that create unpredictable cryptographic handshakes, defeating automated protocol fingerprinting tools.
-- **Default-On Kill Switch & In-Tunnel DNS:** Enforces all DNS requests through isolated 100.64.x.x CGNAT resolvers, eliminating ISP eavesdropping and preventing data leaks if the Wi-Fi signal fluctuates.</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">OllaVPN delivers three architectural advantages that defeat censorship and network blocking: **QUIC / MASQUE Over Port 443:** Disguises your encrypted VPN packets as standard Google/YouTube HTTP/3 traffic, preventing enterprise firewalls from distinguishing your VPN session from normal web activity. **Post-Quantum Cryptography (PQC):** Incorporates hybrid post-quantum key exchange algorithms that create unpredictable cryptographic handshakes, defeating automated protocol fingerprinting tools. **Default-On Kill Switch & In-Tunnel DNS:** Enforces all DNS requests through isolated 100.64.x.x CGNAT resolvers, eliminating ISP eavesdropping and preventing data leaks if the Wi-Fi signal fluctuates.</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">---</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">-</p>
 
 
 ## Are there any security implications when bypassing network blocks?
@@ -261,12 +249,9 @@ tags: ['how-to-guides', 'wireguard', 'troubleshooting']
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">**Bypassing institutional network blocks using an encrypted VPN significantly enhances your security by shielding your credentials from local network monitoring.**</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">School and workplace networks routinely monitor unencrypted browsing, log DNS requests, and perform SSL inspection. Routing your connection through a quantum-resistant VPN tunnel ensures:
-- Network administrators cannot view the websites you visit or intercept sensitive passwords.
-- Public Wi-Fi attackers on the same local subnet cannot execute <a href="/blog/what-is-a-man-in-the-middle-attack/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">Man-in-the-Middle (MITM) attacks</a> or Evil Twin eavesdropping.
-- Your personal banking and communication data remains protected end-to-end.</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">School and workplace networks routinely monitor unencrypted browsing, log DNS requests, and perform SSL inspection. Routing your connection through a quantum-resistant VPN tunnel ensures: Network administrators cannot view the websites you visit or intercept sensitive passwords. Public Wi-Fi attackers on the same local subnet cannot execute <a href="/blog/what-is-a-man-in-the-middle-attack/" style="color: #DA291C; text-decoration: underline; font-weight: 500;">Man-in-the-Middle (MITM) attacks</a> or Evil Twin eavesdropping. Your personal banking and communication data remains protected end-to-end.</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">---</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">-</p>
 
 
 ## Ready to get connected and stay private?
@@ -281,7 +266,7 @@ tags: ['how-to-guides', 'wireguard', 'troubleshooting']
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">With **OllaVPN Free**, you get 10 Mbps speeds, unlimited data, and global server access with zero registration required. If you need 10 Gbps unthrottled throughput across five concurrent devices for 4K streaming and high-speed downloads, **OllaVPN Plus** is available for just $2/month. Both tiers feature audited RAM-only logging and complete post-quantum cryptographic protection.</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">---</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">-</p>
 
 
 ## How to know it actually worked
@@ -322,7 +307,7 @@ tags: ['how-to-guides', 'wireguard', 'troubleshooting']
   </p>
 </div>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">---</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">-</p>
 
 
 ## If a step fails, here's how to debug
@@ -367,7 +352,7 @@ tags: ['how-to-guides', 'wireguard', 'troubleshooting']
   </p>
 </div>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">---</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">-</p>
 
 
 ## About this guide

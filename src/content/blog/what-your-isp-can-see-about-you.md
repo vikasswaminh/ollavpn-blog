@@ -1,6 +1,6 @@
 ---
 title: 'What Your ISP Can See About You (And How to Hide It)'
-description: 'The plain-English guide to exactly what your internet provider logs, sells, and hands over—down to the packet level. What HTTPS hides, and how to close every gap.'
+description: 'The plain-English guide to exactly what your internet provider logs, sells, and hands over, down to the packet level. What HTTPS hides, and how to close every gap.'
 pubDate: 2026-06-26
 author: Vikas Swami
 tags: ['privacy-security']
@@ -202,7 +202,7 @@ tags: ['privacy-security']
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Additional US states, Virginia, Colorado, Connecticut, and others, pass their own comprehensive privacy laws, creating a patchwork of protections that varies significantly depending on where a customer lives.</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">2024–2026 :</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">2024 to 2026 :</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Enforcement actions and settlements against major US carriers over location-data resale practices bring renewed regulatory and public attention to what telecom companies do with subscriber data, even without new federal legislation being passed.</p>
 

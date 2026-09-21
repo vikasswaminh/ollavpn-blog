@@ -114,7 +114,7 @@ tags: ['pillars']
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Your country. This is usually very accurate, essentially 100% for major IP geolocation databases.</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Your region or city. Accuracy varies. Big metro areas are often close. Suburbs can be off by 10–30 miles. Rural areas may only be accurate to the state or county level. Geolocation databases are maintained privately and their quality differs.</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Your region or city. Accuracy varies. Big metro areas are often close. Suburbs can be off by 10 to 30 miles. Rural areas may only be accurate to the state or county level. Geolocation databases are maintained privately and their quality differs.</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Whether you’re on a VPN, Tor, or a data center IP. This is often detectable by comparing your IP against known VPN, Tor exit node, and data center ranges.</p>
 
@@ -177,7 +177,7 @@ tags: ['pillars']
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">What it actually costs to do:</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">DDoS-for-hire services (illegal in most jurisdictions, but widely available) often charge a few dollars for a short burst. A determined attacker willing to spend $20–50 can cause significant disruption to a residential connection.</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">DDoS-for-hire services (illegal in most jurisdictions, but widely available) often charge a few dollars for a short burst. A determined attacker willing to spend $20 to $50 can cause significant disruption to a residential connection.</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">How to defend against it:</p>
 

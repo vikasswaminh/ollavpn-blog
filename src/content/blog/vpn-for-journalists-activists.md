@@ -204,7 +204,7 @@ tags: ['use-cases']
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">**What the VPN doesn't change.** Whether the destination service can fingerprint your browser. Whether your account login identifies you to the service you're logging into. Whether your installed apps phone home with telemetry. Whether your operating system itself has compromised components. The VPN is one privacy layer; it doesn't replace browser hardening, account hygiene, or endpoint security.</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">**What success looks like in this use case.** For most use cases that fit the scenario above, success means: the third party you're trying to hide from cannot see what you're doing. If that third party is your ISP, the VPN is fully sufficient. If that third party is the destination website (e.g., for evading detection), the VPN helps but the destination has many other detection methods (browser fingerprint, account, device ID) that the VPN doesn't address.</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">**What success looks like in this use case.** For most use cases that fit the scenario above, success means: the third party you're trying to hide from cannot see what you're doing. If that third party is your ISP, the VPN is fully sufficient. If that third party is the destination website (e.g. for evading detection), the VPN helps but the destination has many other detection methods (browser fingerprint, account, device ID) that the VPN doesn't address.</p>
 
 
 ## When a VPN is not the right tool

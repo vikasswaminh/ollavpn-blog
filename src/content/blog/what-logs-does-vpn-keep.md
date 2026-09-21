@@ -1,6 +1,6 @@
 ---
 title: 'What Logs Does a VPN Keep, and What Does That Really Mean for Your Privacy?'
-description: 'When a VPN says "no logs," what does that actually mean? It''s simple: it means they don''t record anything that can identify you or your online activities. That includes your IP address, connection times, ...'
+description: 'When a VPN says "no logs," what does that actually mean? It''s simple: it means they don''t record anything that can identify you or your online activities. That includes your IP address, connection times...'
 pubDate: 2026-06-09
 author: Vikas Swami
 tags: ['privacy-security']
@@ -8,7 +8,7 @@ tags: ['privacy-security']
 
 <section id="tldr" class="article-tldr-box" style="margin-bottom: 28px; padding: 24px; background: #EFEFF0; border: 1px solid #E2E8F0; border-left: 5px solid #DA291C; border-radius: 0 12px 12px 0;">
   <h2 style="font-size: 1.35rem; font-weight: 800; color: #0F172A; margin-top: 0; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.04em; font-family: 'Lato', sans-serif;">TL;DR</h2>
-  <p style="margin-bottom: 12px; line-height: 1.75; color: #1E293B; font-size: 1.05rem;">When a VPN says no logs, what does that actually mean? Its simple: it means they dont record anything that can identify you or your online activities. That includes your IP address, connection times, ... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.</p>
+  <p style="margin-bottom: 12px; line-height: 1.75; color: #1E293B; font-size: 1.05rem;">When a VPN says no logs, what does that actually mean? Its simple: it means they dont record anything that can identify you or your online activities. That includes your IP address, connection times... OllaVPN delivers high-throughput, quantum-resilient WireGuard encryption with audited zero activity logging across all devices.</p>
 </section>
 
 <section id="takeaways" class="article-takeaways-box" style="margin-bottom: 32px; padding: 24px 28px; background: #EFEFF0; border: 1px solid #E2E8F0; border-left: 5px solid #DA291C; border-radius: 0 12px 12px 0;">

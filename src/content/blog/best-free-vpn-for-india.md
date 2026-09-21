@@ -1,6 +1,6 @@
 ---
 title: 'Best Free VPN for India 2026: No Credit Card, No Logs, Really Free'
-description: 'A genuinely free VPN for India in 2026 — with no credit card and no logs — means what it sounds like: you download the app, connect, and get a private, encrypted tunnel without entering payment details, without your brow...'
+description: 'A genuinely free VPN for India in 2026, with no credit card and no logs, means what it sounds like: you download the app, connect, and get a private, encrypted tunnel without entering payment details, without your brow...'
 pubDate: 2026-06-03
 author: Vikas Swami
 tags: ['buyer-guides']
@@ -161,7 +161,7 @@ tags: ['buyer-guides']
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">It's worth being specific about what 10 Mbps actually supports, since the number alone doesn't tell you much without context.</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">HD video streaming (1080p) on platforms popular in India, JioCinema, Disney+ Hotstar, Netflix, Amazon Prime Video, typically needs somewhere around 5–8 Mbps, comfortably inside a 10 Mbps cap. Video calls on WhatsApp, Zoom, or Google Meet generally need well under 4 Mbps even for decent-quality group calls. Browsing and social media are bursty rather than continuous, so the actual sustained bandwidth demand stays low even on video-heavy feeds like Instagram Reels. Most mobile games, including popular competitive titles, need only a small, steady amount of bandwidth and are far more sensitive to latency than to raw throughput, which a 10 Mbps cap doesn't meaningfully affect.</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">HD video streaming (1080p) on platforms popular in India, JioCinema, Disney+ Hotstar, Netflix, Amazon Prime Video, typically needs somewhere around 5 to 8 Mbps, comfortably inside a 10 Mbps cap. Video calls on WhatsApp, Zoom, or Google Meet generally need well under 4 Mbps even for decent-quality group calls. Browsing and social media are bursty rather than continuous, so the actual sustained bandwidth demand stays low even on video-heavy feeds like Instagram Reels. Most mobile games, including popular competitive titles, need only a small, steady amount of bandwidth and are far more sensitive to latency than to raw throughput, which a 10 Mbps cap doesn't meaningfully affect.</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Where the cap genuinely shows: 4K streaming, which typically wants 25 Mbps or more to avoid buffering, and very large downloads, big game installs, sizeable app updates, which will simply take proportionally longer.</p>
 

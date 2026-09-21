@@ -162,7 +162,7 @@ pillar: false
 </div>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">2007–2008:</strong> Security researchers publicly demonstrate evil twin attacks against airport and café Wi-Fi as a mainstream conference topic, popularizing the term and showing how easily consumer laptops can be turned into rogue access points.
+  <strong style="color: #0F172A; font-weight: 800;">2007 to 2008:</strong> Security researchers publicly demonstrate evil twin attacks against airport and café Wi-Fi as a mainstream conference topic, popularizing the term and showing how easily consumer laptops can be turned into rogue access points.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
@@ -170,7 +170,7 @@ pillar: false
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">2015–2016:</strong> Penetration testers and security journalists repeatedly demonstrate evil twin setups at technology and security conferences , including well-publicized stunts at events themselves , to illustrate how quickly attendees connect to spoofed "Conference-WiFi-Free" networks.
+  <strong style="color: #0F172A; font-weight: 800;">2015 to 2016:</strong> Penetration testers and security journalists repeatedly demonstrate evil twin setups at technology and security conferences , including well-publicized stunts at events themselves , to illustrate how quickly attendees connect to spoofed "Conference-WiFi-Free" networks.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
@@ -178,11 +178,11 @@ pillar: false
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">2019–2022:</strong> Multiple security vendors publish airport and hotel Wi-Fi research showing a meaningful share of travelers connect to open networks without checking with staff which SSID is official, based on signal strength and a familiar-looking name alone.
+  <strong style="color: #0F172A; font-weight: 800;">2019 to 2022:</strong> Multiple security vendors publish airport and hotel Wi-Fi research showing a meaningful share of travelers connect to open networks without checking with staff which SSID is official, based on signal strength and a familiar-looking name alone.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">
-  <strong style="color: #0F172A; font-weight: 800;">2023–2025:</strong> Public-sector guidance (including U.S. FBI and CISA advisories on "evil twin" and "juice jacking"-adjacent public Wi-Fi risks) becomes a recurring seasonal warning around holiday travel periods, reflecting sustained real-world incident volume rather than a one-off scare.
+  <strong style="color: #0F172A; font-weight: 800;">2023 to 2025:</strong> Public-sector guidance (including U.S. FBI and CISA advisories on "evil twin" and "juice jacking"-adjacent public Wi-Fi risks) becomes a recurring seasonal warning around holiday travel periods, reflecting sustained real-world incident volume rather than a one-off scare.
 </p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">

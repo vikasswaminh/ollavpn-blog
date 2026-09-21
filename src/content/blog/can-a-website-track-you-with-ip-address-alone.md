@@ -260,7 +260,7 @@ pillar: false
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">It also depends on your situation: whether you're logging into accounts, what browser you use, and what you're actually trying to protect against. And the answer keeps changing as browser privacy defaults, ad-tech practices, and data regulations continue to evolve.</p>
 
-<h3 style="font-size: 1.45rem; font-weight: 800; color: #0F172A; margin: 34px 0 16px 0; font-family: 'Lato', sans-serif; border-left: 4px solid #DA291C; padding-left: 12px;">How to evaluate any answer you read on the web</h3>
+<h3 style="font-size: 1.45rem; font-weight: 800; color: #0F172A; margin: 34px 0 16px 0; font-family: 'Lato', sans-serif; border-left: 4px solid #DA291C; padding-left: 12px;">How to evaluate any answer you read on the web?</h3>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">A few signals separate trustworthy answers from junk: they cite primary sources where relevant (browser documentation, regulatory text, academic research) rather than just repeating what other blogs say; they name an author with a verifiable background instead of hiding behind "editorial team"; they're date-stamped recently, since outdated privacy advice is often confidently wrong; they disclose conflicts of interest rather than pretending to be neutral when there's a commercial stake; and they use hedged, specific language rather than sweeping absolutes.</p>
 

@@ -92,7 +92,7 @@ tags: ['buyer-guides']
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Here is the full list of what the free plan actually includes, without any of the asterisks:</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Speed: 10 Mbps, no data cap. This is the primary limit that separates the free tier from Plus. 10 Mbps is more than sufficient for HD video streaming (which typically needs 5–8 Mbps), video calls, general browsing, and most online gaming. It is not sufficient for 4K streaming or large file downloads at speed. There is no monthly data allowance, you can run the VPN at 10 Mbps twenty-four hours a day, seven days a week, and there is no meter ticking.</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Speed: 10 Mbps, no data cap. This is the primary limit that separates the free tier from Plus. 10 Mbps is more than sufficient for HD video streaming (which typically needs 5 to 8 Mbps), video calls, general browsing, and most online gaming. It is not sufficient for 4K streaming or large file downloads at speed. There is no monthly data allowance, you can run the VPN at 10 Mbps twenty-four hours a day, seven days a week, and there is no meter ticking.</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Devices: one simultaneous connection. One device at a time. If you want to cover a laptop, a phone, and a tablet simultaneously, you need Plus (which supports five devices).</p>
 
@@ -144,21 +144,21 @@ tags: ['buyer-guides']
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Activity Typical requirement Works at 10 Mbps?</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Standard web browsing 1–5 Mbps Yes, comfortably</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Standard web browsing 1 to 5 Mbps Yes, comfortably</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">HD video (1080p) streaming 5–8 Mbps Yes, adequately</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">HD video (1080p) streaming 5 to 8 Mbps Yes, adequately</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Video calls (standard) 1–4 Mbps Yes</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Video calls (standard) 1 to 4 Mbps Yes</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">HD video calls 3–6 Mbps Yes</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">HD video calls 3 to 6 Mbps Yes</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Online gaming (low latency) 1–3 Mbps + low ping Yes (depends on server)</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Online gaming (low latency) 1 to 3 Mbps + low ping Yes (depends on server)</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">4K HDR streaming 15–25 Mbps No</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">4K HDR streaming 15 to 25 Mbps No</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Large file downloads Depends on patience Slow but works</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Multiple simultaneous HD streams 15–25 Mbps+ No</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Multiple simultaneous HD streams 15 to 25 Mbps+ No</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">For one person doing typical daily tasks, browsing, email, watching video, occasional calls, 10 Mbps is usually perfectly adequate. In practice, the experience won’t feel slow in most contexts because WireGuard uses so little overhead that you get close to the full 10 Mbps rather than a theoretical number that gets eaten by protocol drag.</p>
 
@@ -277,7 +277,7 @@ tags: ['buyer-guides']
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">OllaVPN doesn’t do this. Free users run WireGuard, the same WireGuard implementation, on the same server infrastructure, with the same hybrid post-quantum handshake, as paid users. The only meaningful difference is that free connections are rate-limited at 10 Mbps.</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">WireGuard's efficiency matters here in a specific way. When you’re operating at a 10 Mbps cap, you want as much of that 10 Mbps going to actual user traffic as possible. Older protocols like OpenVPN can consume 10–15% of available bandwidth just in overhead, cryptographic operations, packet framing, control-channel messaging. WireGuard’s overhead is tiny by comparison, typically less than 5%. At a 10 Mbps cap, that difference is noticeable. A 10 Mbps WireGuard connection feels closer to 10 Mbps. A 10 Mbps OpenVPN connection can feel closer to 8.5 Mbps.</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">WireGuard's efficiency matters here in a specific way. When you’re operating at a 10 Mbps cap, you want as much of that 10 Mbps going to actual user traffic as possible. Older protocols like OpenVPN can consume 10 to 15 % of available bandwidth just in overhead, cryptographic operations, packet framing, control-channel messaging. WireGuard’s overhead is tiny by comparison, typically less than 5%. At a 10 Mbps cap, that difference is noticeable. A 10 Mbps WireGuard connection feels closer to 10 Mbps. A 10 Mbps OpenVPN connection can feel closer to 8.5 Mbps.</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">The other WireGuard property that matters for free users is reconnection speed. When your device wakes from sleep, switches from Wi-Fi to cellular, or briefly loses signal, WireGuard re-establishes the tunnel dramatically faster than older protocols. For a free user who might be using the VPN on a mobile device moving between networks, that reconnection behavior is a real quality-of-life improvement.</p>
 

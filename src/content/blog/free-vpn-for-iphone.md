@@ -170,7 +170,7 @@ The honest trade-off is speed: 10 Mbps on free versus 10 Gbps on the $2/month Pl
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">It helps to be concrete about what 10 Mbps supports, because the number alone doesn’t mean much without context.</p>
 
-<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">HD video streaming (1080p) on services like YouTube or Netflix typically needs somewhere around 5–8 Mbps, which fits comfortably inside a 10 Mbps cap with room to spare.</p>
+<p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">HD video streaming (1080p) on services like YouTube or Netflix typically needs somewhere around 5 to 8 Mbps, which fits comfortably inside a 10 Mbps cap with room to spare.</p>
 
 <p style="margin-bottom: 16px; line-height: 1.75; color: #09090b; font-size: 1.05rem;">Video calls, FaceTime, Zoom, WhatsApp video, generally need well under 4 Mbps even for good-quality group calls.</p>
 
