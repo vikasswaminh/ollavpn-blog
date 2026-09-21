@@ -324,90 +324,82 @@ pillar: false
 
 </div>
 
-<section id="faqs" class="faqs-accordion-box" style="margin-top: 36px; margin-bottom: 36px; padding: 32px 36px; background: #ffffff; border: 1.5px solid #E2E8F0; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
-  <h2 style="font-size: 1.85rem; font-weight: 800; color: #0F172A; margin: 0 0 24px 0; font-family: 'Lato', sans-serif; border-bottom: 2px solid #F1F5F9; padding-bottom: 8px;">Frequently asked questions</h2>
-  <div style="display: flex; flex-direction: column; gap: 14px;">
-    
-    <details class="faq-item" style="border: 1px solid #E2E8F0; border-radius: 10px; padding: 18px 22px; background: #FAFAFA; transition: all 0.2s ease;">
-      <summary style="font-size: 1.12rem; font-weight: 700; color: #0F172A; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; font-family: 'Lato', sans-serif;">
+<section id="faqs" class="blog-main-content-box" style="margin-top: 36px; margin-bottom: 32px; scroll-margin-top: 80px;">
+  <h2 style="font-size: 1.45rem; font-weight: 700; color: #09090b; margin-top: 0; margin-bottom: 6px;">Frequently Asked Questions</h2>
+  <p style="color: #64748B; font-size: 0.95rem; margin-bottom: 18px;">Clear, honest answers to the most common questions about this guide.</p>
+  <div class="faq-accordion-group" style="display: flex; flex-direction: column; gap: 8px;">
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
         <span>Do digital nomads really need a VPN, or is it overkill?</span>
-        <span class="faq-chevron" style="color: #DA291C; font-size: 1.3rem; font-weight: 800; line-height: 1;">+</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
       </summary>
-      <p style="margin: 14px 0 0 0; font-size: 1.02rem; line-height: 1.72; color: #334155; font-family: 'Lato', sans-serif;">For most nomads, yes, it's genuinely useful rather than overkill. The defining feature of nomad life is constantly connecting to networks you don't control, hotels, co-working spaces, airports, and a VPN is one of the lowest-effort ways to make that habit meaningfully safer. It's not the only security step worth taking, but it's one of the easiest.</p>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">For most nomads, yes, it's genuinely useful rather than overkill. The defining feature of nomad life is constantly connecting to networks you don't control, hotels, co-working spaces, airports, and a VPN is one of the lowest-effort ways to make that habit meaningfully safer. It's not the only security step worth taking, but it's one of the easiest.</p>
+      </div>
     </details>
-
-    <details class="faq-item" style="border: 1px solid #E2E8F0; border-radius: 10px; padding: 18px 22px; background: #FAFAFA; transition: all 0.2s ease;">
-      <summary style="font-size: 1.12rem; font-weight: 700; color: #0F172A; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; font-family: 'Lato', sans-serif;">
-        <span>Can a VPN stop my bank from locking my account while I travel?</span>
-        <span class="faq-chevron" style="color: #DA291C; font-size: 1.3rem; font-weight: 800; line-height: 1;">+</span>
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
+        <span>Is it legal to use a VPN while traveling internationally?</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
       </summary>
-      <p style="margin: 14px 0 0 0; font-size: 1.02rem; line-height: 1.72; color: #334155; font-family: 'Lato', sans-serif;">It can reduce the chance of it happening, but it isn't a guarantee. Routing banking traffic through a server in your home country removes one of the strongest signals that trigger fraud-detection holds. Combining that with notifying your bank of travel plans and carrying a backup payment method is the more complete approach.</p>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">It depends entirely on the specific country, and the picture is genuinely inconsistent worldwide. Most countries place no restriction on personal VPN use. A smaller number restrict it inconsistently, require state-approved providers, or in rare cases treat unauthorized use more seriously. Research your specific destination's current rules before you travel.</p>
+      </div>
     </details>
-
-    <details class="faq-item" style="border: 1px solid #E2E8F0; border-radius: 10px; padding: 18px 22px; background: #FAFAFA; transition: all 0.2s ease;">
-      <summary style="font-size: 1.12rem; font-weight: 700; color: #0F172A; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; font-family: 'Lato', sans-serif;">
-        <span>Will a VPN let me watch my home country's streaming shows while abroad?</span>
-        <span class="faq-chevron" style="color: #DA291C; font-size: 1.3rem; font-weight: 800; line-height: 1;">+</span>
-      </summary>
-      <p style="margin: 14px 0 0 0; font-size: 1.02rem; line-height: 1.72; color: #334155; font-family: 'Lato', sans-serif;">Often, but not reliably every time. Streaming platforms actively detect and block known VPN IP ranges, and this is an ongoing cat-and-mouse dynamic across the whole industry. A VPN with a wide server map improves your odds significantly, but no provider can honestly promise universal, permanent access.</p>
-    </details>
-
-    <details class="faq-item" style="border: 1px solid #E2E8F0; border-radius: 10px; padding: 18px 22px; background: #FAFAFA; transition: all 0.2s ease;">
-      <summary style="font-size: 1.12rem; font-weight: 700; color: #0F172A; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; font-family: 'Lato', sans-serif;">
-        <span>Is it legal to use a VPN while traveling?</span>
-        <span class="faq-chevron" style="color: #DA291C; font-size: 1.3rem; font-weight: 800; line-height: 1;">+</span>
-      </summary>
-      <p style="margin: 14px 0 0 0; font-size: 1.02rem; line-height: 1.72; color: #334155; font-family: 'Lato', sans-serif;">It depends entirely on the specific country, and the picture is genuinely inconsistent worldwide. Most countries place no restriction on personal VPN use. A smaller number restrict it inconsistently, require state-approved providers, or in rare cases treat unauthorized use more seriously. Research your specific destination's current rules before you travel.</p>
-    </details>
-
-    <details class="faq-item" style="border: 1px solid #E2E8F0; border-radius: 10px; padding: 18px 22px; background: #FAFAFA; transition: all 0.2s ease;">
-      <summary style="font-size: 1.12rem; font-weight: 700; color: #0F172A; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; font-family: 'Lato', sans-serif;">
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
         <span>What VPN feature matters most for someone who changes networks constantly?</span>
-        <span class="faq-chevron" style="color: #DA291C; font-size: 1.3rem; font-weight: 800; line-height: 1;">+</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
       </summary>
-      <p style="margin: 14px 0 0 0; font-size: 1.02rem; line-height: 1.72; color: #334155; font-family: 'Lato', sans-serif;">A kill switch enforced at the operating-system level, not just inside the app. Nomads switch networks, Wi-Fi to mobile data, one hotspot to another, far more often than typical users, and each switch is a moment where a weaker kill switch implementation can silently leak traffic.</p>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">A kill switch enforced at the operating-system level, not just inside the app. Nomads switch networks, Wi-Fi to mobile data, one hotspot to another, far more often than typical users, and each switch is a moment where a weaker kill switch implementation can silently leak traffic.</p>
+      </div>
     </details>
-
-    <details class="faq-item" style="border: 1px solid #E2E8F0; border-radius: 10px; padding: 18px 22px; background: #FAFAFA; transition: all 0.2s ease;">
-      <summary style="font-size: 1.12rem; font-weight: 700; color: #0F172A; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; font-family: 'Lato', sans-serif;">
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
         <span>Does a VPN slow down my internet connection while traveling?</span>
-        <span class="faq-chevron" style="color: #DA291C; font-size: 1.3rem; font-weight: 800; line-height: 1;">+</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
       </summary>
-      <p style="margin: 14px 0 0 0; font-size: 1.02rem; line-height: 1.72; color: #334155; font-family: 'Lato', sans-serif;">Some slowdown is normal with any VPN, but a modern protocol like WireGuard keeps the overhead small enough to be barely noticeable on a decent connection. On an already weak hostel or airport connection, protocol choice, server proximity, and server load matter far more than on a fast home connection.</p>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">Some slowdown is normal with any VPN, but a modern protocol like WireGuard keeps the overhead small enough to be barely noticeable on a decent connection. On an already weak hostel or airport connection, protocol choice, server proximity, and server load matter far more than on a fast home connection.</p>
+      </div>
     </details>
-
-    <details class="faq-item" style="border: 1px solid #E2E8F0; border-radius: 10px; padding: 18px 22px; background: #FAFAFA; transition: all 0.2s ease;">
-      <summary style="font-size: 1.12rem; font-weight: 700; color: #0F172A; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; font-family: 'Lato', sans-serif;">
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
         <span>Should I connect to a VPN server in my current country or my home country?</span>
-        <span class="faq-chevron" style="color: #DA291C; font-size: 1.3rem; font-weight: 800; line-height: 1;">+</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
       </summary>
-      <p style="margin: 14px 0 0 0; font-size: 1.02rem; line-height: 1.72; color: #334155; font-family: 'Lato', sans-serif;">It depends on what you're doing. For banking and services tied to your home identity, a home-country server usually works better. For faster general browsing or accessing local services, a nearby or local server is usually faster. Split tunneling lets you avoid choosing just one for everything.</p>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">It depends on what you're doing. For banking and services tied to your home identity, a home-country server usually works better. For faster general browsing or accessing local services, a nearby or local server is usually faster. Split tunneling lets you avoid choosing just one for everything.</p>
+      </div>
     </details>
-
-    <details class="faq-item" style="border: 1px solid #E2E8F0; border-radius: 10px; padding: 18px 22px; background: #FAFAFA; transition: all 0.2s ease;">
-      <summary style="font-size: 1.12rem; font-weight: 700; color: #0F172A; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; font-family: 'Lato', sans-serif;">
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
         <span>Is a free VPN good enough for a full-time nomad?</span>
-        <span class="faq-chevron" style="color: #DA291C; font-size: 1.3rem; font-weight: 800; line-height: 1;">+</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
       </summary>
-      <p style="margin: 14px 0 0 0; font-size: 1.02rem; line-height: 1.72; color: #334155; font-family: 'Lato', sans-serif;">It depends on the provider, not just the price. A free VPN with a clear, specific no-logs policy, a real kill switch, and reasonable speed can genuinely cover daily needs. A free VPN that's vague about logging or funded by data collection is a different story. Read the actual policy, not just the price tag.</p>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">It depends on the provider, not just the price. A free VPN with a clear, specific no-logs policy, a real kill switch, and reasonable speed can genuinely cover daily needs. A free VPN that's vague about logging or funded by data collection is a different story. Read the actual policy, not just the price tag.</p>
+      </div>
     </details>
-
-    <details class="faq-item" style="border: 1px solid #E2E8F0; border-radius: 10px; padding: 18px 22px; background: #FAFAFA; transition: all 0.2s ease;">
-      <summary style="font-size: 1.12rem; font-weight: 700; color: #0F172A; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; font-family: 'Lato', sans-serif;">
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
         <span>What should I do if my VPN doesn't work in a country I'm visiting?</span>
-        <span class="faq-chevron" style="color: #DA291C; font-size: 1.3rem; font-weight: 800; line-height: 1;">+</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
       </summary>
-      <p style="margin: 14px 0 0 0; font-size: 1.02rem; line-height: 1.72; color: #334155; font-family: 'Lato', sans-serif;">Research this before you arrive, not after. Some countries block or throttle specific VPN providers, and an obfuscated or stealth server mode, designed to disguise VPN traffic as ordinary encrypted traffic, has a better chance of working where standard VPN traffic gets blocked, though nothing is guaranteed.</p>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">Research this before you arrive, not after. Some countries block or throttle specific VPN providers, and an obfuscated or stealth server mode, designed to disguise VPN traffic as ordinary encrypted traffic, has a better chance of working where standard VPN traffic gets blocked, though nothing is guaranteed.</p>
+      </div>
     </details>
-
-    <details class="faq-item" style="border: 1px solid #E2E8F0; border-radius: 10px; padding: 18px 22px; background: #FAFAFA; transition: all 0.2s ease;">
-      <summary style="font-size: 1.12rem; font-weight: 700; color: #0F172A; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; font-family: 'Lato', sans-serif;">
+    <details class="faq-accordion-item" style="border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; overflow: hidden; padding: 10px 14px; transition: all 0.2s ease;">
+      <summary class="faq-accordion-summary" style="font-weight: 600; color: #0F172A; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 1rem;">
         <span>Is OllaVPN a good fit for digital nomads?</span>
-        <span class="faq-chevron" style="color: #DA291C; font-size: 1.3rem; font-weight: 800; line-height: 1;">+</span>
+        <span class="faq-icon" style="color: #DA291C; font-size: 1.05rem; font-weight: bold; margin-left: 10px;">+</span>
       </summary>
-      <p style="margin: 14px 0 0 0; font-size: 1.02rem; line-height: 1.72; color: #334155; font-family: 'Lato', sans-serif;">Yes, it was built with exactly this use case in mind. An always-on kill switch enforced at the OS level, WireGuard for speed on weak connections, and a lifetime free plan with no card required make it a low-friction default for people whose network changes every few days. You can try it free before your next trip.</p>
+      <div class="faq-accordion-content" style="padding-top: 8px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+        <p style="margin: 0;">Yes, it was built with exactly this use case in mind. An always-on kill switch enforced at the OS level, WireGuard for speed on weak connections, and a lifetime free plan with no card required make it a low-friction default for people whose network changes every few days. You can try it free before your next trip.</p>
+      </div>
     </details>
-
   </div>
 </section>
 
